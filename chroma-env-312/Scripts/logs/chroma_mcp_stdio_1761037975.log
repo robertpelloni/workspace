@@ -1,0 +1,4 @@
+2025-10-21 05:12:55,089 - root - INFO - STDIO MODE: Logging configured - all logs redirected to C:\Users\hyper\chroma-env-312\Scripts\logs\chroma_mcp_stdio_1761037975.log
+2025-10-21 05:12:55,089 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-21 05:12:55,089 - root - INFO - Log retention policy set to 7 days
+2025-10-21 05:12:55,090 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only

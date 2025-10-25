@@ -1,0 +1,204 @@
+﻿{
+    "Script":  "comprehensive_mcp_test",
+    "GeneratedAt":  "2025-10-24T13:56:29.0692574-04:00",
+    "Results":  [
+                    {
+                        "Name":  "codex mcp list",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "list"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.7357237-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.7918091-04:00",
+                        "DurationSeconds":  0.026,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get serena",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "serena"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.8178235-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.8438980-04:00",
+                        "DurationSeconds":  0.006,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get sequential-thinking",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "sequential-thinking"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.8458969-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.8684275-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get filesystem",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "filesystem"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.8719439-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.8929600-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get memory",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "memory"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.8954743-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.9187829-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get everything",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "everything"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.9207846-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.9440199-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get chroma-knowledge",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "chroma-knowledge"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.9470193-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.9695791-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get zen-mcp-server",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "zen-mcp-server"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.9715799-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:28.9940740-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex mcp get gemini-mcp",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "mcp",
+                                          "get",
+                                          "gemini-mcp"
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:28.9970987-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:29.0196695-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    },
+                    {
+                        "Name":  "codex dry-run prompt",
+                        "Command":  "codex",
+                        "ResolvedCommand":  "C:\\Users\\hyper\\AppData\\Roaming\\npm\\codex.ps1",
+                        "Arguments":  [
+                                          "-p",
+                                          "Use the filesystem MCP to list the root directory."
+                                      ],
+                        "StartTimestamp":  "2025-10-24T13:56:29.0236706-04:00",
+                        "EndTimestamp":  "2025-10-24T13:56:29.0461910-04:00",
+                        "DurationSeconds":  0.005,
+                        "ExitCode":  null,
+                        "StdOut":  {
+
+                                   },
+                        "StdErr":  "This command cannot be run due to the error: %1 is not a valid Win32 application.",
+                        "Status":  "Failed",
+                        "SkipIfMissing":  false
+                    }
+                ]
+}

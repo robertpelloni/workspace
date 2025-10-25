@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "N5fNGbI6TU4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hyper\\fwber\\tools_config_files\\handshake_proxy\\handshake_proxy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hyper\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.21\\microsoft.net.illink.tasks.8.0.21.nupkg.sha512",
+    "C:\\Users\\hyper\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.21\\microsoft.netcore.app.runtime.win-x64.8.0.21.nupkg.sha512",
+    "C:\\Users\\hyper\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.21\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.21.nupkg.sha512",
+    "C:\\Users\\hyper\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.21\\microsoft.aspnetcore.app.runtime.win-x64.8.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}

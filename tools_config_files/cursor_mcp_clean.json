@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/client-typescript/main/schemas/mcp-config.schema.json",
+  "mcpServers": {
+    "filesystem": {
+      "command": "mcp-server-filesystem",
+      "args": ["C:\\Users\\hyper\\fwber\\"],
+      "startupTimeoutMs": 90000,
+      "timeoutMs": 30000
+    },
+    "sequential-thinking": {
+      "command": "mcp-server-sequential-thinking",
+      "args": ["stdio"],
+      "startupTimeoutMs": 90000,
+      "timeoutMs": 30000
+    },
+    "serena": {
+      "command": "%USERPROFILE%\\.local\\bin\\uv.exe",
+      "args": ["run","--directory","%USERPROFILE%\\serena\\","serena","start-mcp-server","--context","cursor","--project","C:\\Users\\hyper\\fwber\\"],
+      "env": {
+        "PROJECT_ROOT": "C:\\Users\\hyper\\fwber\\",
+        "USERPROFILE": "C:\\Users\\hyper"
+      },
+      "startupTimeoutMs": 90000,
+      "timeoutMs": 30000
+    },
+    "gemini-mcp": {
+      "command": "gemini-mcp",
+      "args": ["stdio"],
+      "env": {
+        "GEMINI_API_KEY": "${env:GEMINI_API_KEY}"
+      },
+      "startupTimeoutMs": 90000,
+      "timeoutMs": 30000
+    },
+    "codex-mcp-server": {
+      "command": "codex-mcp-server",
+      "args": ["stdio"],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}",
+        "OPENAI_ORG": "${env:OPENAI_ORG}"
+      },
+      "startupTimeoutMs": 90000,
+      "timeoutMs": 30000
+    }
+  },
+  "security": {
+    "allowedPaths": ["C:\\Users\\hyper\\fwber"],
+    "redactLogs": true
+  }
+}

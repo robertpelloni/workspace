@@ -1,0 +1,61 @@
+2025-10-25 02:09:00,598 - root - INFO - STDIO MODE: Logging configured - all logs redirected to c:\Users\hyper\workspace\logs\chroma_mcp_stdio_1761372540.log
+2025-10-25 02:09:00,598 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,599 - root - INFO - Log retention policy set to 7 days
+2025-10-25 02:09:00,601 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-25 02:09:00,619 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,619 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,620 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:02,292 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/auth/identity "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,177 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,181 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,240 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/codebase_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,244 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/chat_history_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,248 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,253 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/thinking_sessions_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,256 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/validation_evidence_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,259 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/test_results_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:09:03,262 - root - INFO - Entering stdio mode - all logs are going to file only
+2025-10-25 02:09:03,270 - root - INFO - Successfully imported tool modules inside main_stdio.
+2025-10-25 02:09:03,270 - root - INFO - Explicitly imported chroma_mcp.server.
+2025-10-25 02:09:03,270 - root - INFO - Creating initialization options...
+2025-10-25 02:09:03,276 - root - INFO - Initialization options created. Calling server.run...
+2025-10-25 02:09:03,286 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:09:03,287 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:03,317 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-10-25 02:09:03,320 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-10-25 02:16:32,830 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:16:32,833 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:32,833 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:32,833 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:32,833 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:32,833 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:32,834 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:32,869 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2025-10-25 02:16:32,879 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/1027957e-b1b2-4d53-b68c-b34d9aec9e3b/count "HTTP/1.1 200 OK"
+2025-10-25 02:16:49,424 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:16:49,424 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:49,556 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:16:49,561 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:49,561 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:49,562 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:49,566 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/workspace_insights "HTTP/1.1 200 OK"
+2025-10-25 02:16:49,567 - chromamcp.unconfigured - ERROR - Value error: Expected metadata value to be a str, int, float, bool, SparseVector, or None, got ['workspace', 'tooling', 'overview'] which is a list in add.
+Traceback (most recent call last):
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chroma_mcp\tools\document_tools.py", line 512, in _add_document_with_id_and_metadata_impl
+    collection.add(
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\models\Collection.py", line 84, in add
+    add_request = self._validate_and_prepare_add_request(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 103, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 235, in _validate_and_prepare_add_request
+    validate_insert_record_set(record_set=add_records)
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\types.py", line 380, in validate_insert_record_set
+    validate_metadatas(record_set["metadatas"])
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\types.py", line 1037, in validate_metadatas
+    validate_metadata(metadata)
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\types.py", line 956, in validate_metadata
+    raise ValueError(
+ValueError: Expected metadata value to be a str, int, float, bool, SparseVector, or None, got ['workspace', 'tooling', 'overview'] which is a list in add.
+2025-10-25 02:16:50,210 - root - INFO - server.run completed successfully.

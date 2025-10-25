@@ -1,0 +1,109 @@
+{
+	"servers": {
+		// add your MCP servers configuration here. 
+		// support both local(stdio) and remote(SSE/Streamable HTTP) servers.
+		// reference: https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-chat-with-mcp?tool=jetbrains
+		// example:
+		// "my-mcp-server": {
+		//     "type": "stdio",
+		//     "command": "my-command",
+		//     "args": [],
+		//     "env": {
+		//         "TOKEN": "my_token"
+		//     }
+		// },
+		// "github": {
+		//     "url": "https://api.githubcopilot.com/mcp/",
+		//     "requestInit": {
+		//         "headers": {
+		//             "Authorization": "Bearer my_token"
+		//         }
+		//     }
+		// }
+		"serena": {
+			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+			"args": [
+				"run",
+				"--directory",
+				"C:\\Users\\hyper\\serena\\",
+				"serena",
+				"start-mcp-server",
+				"--context",
+				"ide-assistant",
+				"--project",
+				"C:\\Users\\hyper\\workspace\\"
+			]
+		},
+		"zen-mcp-server": {
+			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+			"args": [
+				"run",
+				"--directory",
+				"C:\\Users\\hyper\\zen-mcp-server\\",
+				"zen-mcp-server"
+			],
+			"env": {
+			}
+		},
+		"chroma-knowledge": {
+			"command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+			"args": [
+				"--mode",
+				"stdio",
+				"--client-type",
+				"http",
+				"--host",
+				"localhost",
+				"--port",
+				"8000",
+				"--ssl",
+				"false"
+			]
+		},
+		"codex-mcp-server": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"codex-mcp-server"
+			]
+		},
+		"gemini-mcp-tool": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"gemini-mcp-tool"
+			]
+		},
+		"memory": {
+			"command": "mcp-server-memory",
+			"args": [
+			]
+		},
+		"sequential-thinking": {
+			"command": "mcp-server-sequential-thinking",
+			"args": [
+			]
+		},
+		"filesystem": {
+			"command": "mcp-server-filesystem",
+			"args": [
+				"C:\\Users\\hyper\\workspace\\"
+			]
+		},
+		"tavily-remote-mcp": {
+			"command": "mcp-remote",
+			"args": [
+				"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
+				"stdio"
+			]
+		},
+		"tavily-mcp": {
+			"command": "tavily-mcp",
+			"args": [
+				"stdio"
+			]
+		}
+	}
+}

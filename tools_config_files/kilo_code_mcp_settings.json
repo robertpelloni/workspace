@@ -1,0 +1,232 @@
+{
+  "mcpServers": {
+    "serena": {
+      "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\hyper\\serena\\",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide-assistant",
+        "--project",
+        "C:\\Users\\hyper\\workspace\\"
+      ],
+      "startupTimeoutMs": 90000,
+      "timeoutMs": 30000,
+      "alwaysAllow": [
+        "*",
+        "check_onboarding_performed",
+        "think_about_collected_information",
+        "serena_memory.add_entry",
+        "list_tools",
+        "list_dir",
+        "find_file",
+        "search_for_pattern",
+        "get_symbols_overview",
+        "find_symbol",
+        "find_referencing_symbols",
+        "replace_symbol_body",
+        "insert_after_symbol",
+        "think_about_task_adherence",
+        "think_about_whether_you_are_done",
+        "insert_before_symbol",
+        "write_memory",
+        "read_memory",
+        "list_memories",
+        "delete_memory",
+        "onboarding"
+      ],
+      "timeout": 300
+    },
+    "zen-mcp-server": {
+      "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\hyper\\zen-mcp-server\\",
+        "zen-mcp-server"
+      ],
+      "env": {},
+      "startupTimeoutMs": 120000,
+      "timeoutMs": 60000,
+      "alwaysAllow": [
+        "*",
+        "list_tools",
+        "chat",
+        "clink",
+        "thinkdeep",
+        "planner",
+        "consensus",
+        "codereview",
+        "precommit",
+        "debug",
+        "analyze",
+        "docgen",
+        "secaudit",
+        "refactor",
+        "version",
+        "listmodels",
+        "tracer",
+        "testgen",
+        "apilookup",
+        "challenge"
+      ],
+      "timeout": 300
+    },
+    "chroma-knowledge": {
+      "command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+      "args": [
+        "--mode",
+        "stdio",
+        "--client-type",
+        "http",
+        "--host",
+        "localhost",
+        "--port",
+        "8000",
+        "--ssl",
+        "false"
+      ],
+      "startupTimeoutMs": 60000,
+      "timeoutMs": 30000,
+      "alwaysAllow": [
+        "*",
+        "chroma_create_collection",
+        "chroma_log_chat",
+        "chroma_get_server_version",
+        "chroma_find_similar_sessions",
+        "chroma_get_session_summary",
+        "chroma_find_similar_thoughts",
+        "chroma_sequential_thinking",
+        "chroma_update_document_metadata",
+        "chroma_peek_collection",
+        "chroma_delete_collection",
+        "chroma_update_document_content",
+        "chroma_delete_document_by_id",
+        "chroma_get_documents_by_ids_all",
+        "chroma_list_collections",
+        "chroma_get_collection",
+        "chroma_rename_collection",
+        "chroma_add_document_with_id",
+        "chroma_create_collection_with_metadata",
+        "chroma_add_document",
+        "chroma_add_document_with_id_and_metadata",
+        "chroma_get_documents_by_ids"
+      ],
+      "timeout": 300
+    },
+    "codex-mcp-server": {
+      "command": "codex-mcp-server",
+      "args": [
+        "stdio"
+      ],
+      "timeoutMs": 60000,
+      "startupTimeoutMs": 90000,
+      "alwaysAllow": [
+        "*",
+        "codex",
+        "ping",
+        "help",
+        "listSessions"
+      ],
+      "timeout": 300
+    },
+    "gemini-mcp": {
+      "command": "gemini-mcp",
+      "args": [
+        "stdio"
+      ],
+      "timeoutMs": 60000,
+      "startupTimeoutMs": 90000,
+      "alwaysAllow": [
+        "*",
+        "timeout-test",
+        "fetch-chunk",
+        "brainstorm",
+        "Help",
+        "ping",
+        "ask-gemini"
+      ],
+      "timeout": 300
+    },
+    "memory": {
+      "command": "mcp-server-memory",
+      "args": [],
+      "startupTimeoutMs": 60000,
+      "timeoutMs": 30000,
+      "alwaysAllow": [
+        "*",
+        "list_tools",
+        "open_nodes",
+        "search_nodes",
+        "read_graph",
+        "delete_relations",
+        "delete_observations",
+        "delete_entities",
+        "add_observations",
+        "create_relations",
+        "create_entities"
+      ],
+      "timeout": 300
+    },
+    "sequential-thinking": {
+      "command": "mcp-server-sequential-thinking",
+      "args": [],
+      "startupTimeoutMs": 60000,
+      "timeoutMs": 30000,
+      "alwaysAllow": [
+        "*",
+        "sequentialthinking"
+      ],
+      "timeout": 300
+    },
+    "filesystem": {
+      "command": "mcp-server-filesystem",
+      "args": [
+        "C:\\Users\\hyper\\workspace\\"
+      ],
+      "startupTimeoutMs": 60000,
+      "timeoutMs": 30000,
+      "alwaysAllow": [
+        "*",
+        "list_allowed_directories",
+        "get_file_info",
+        "search_files",
+        "move_file",
+        "directory_tree",
+        "list_directory_with_sizes",
+        "list_directory",
+        "create_directory",
+        "edit_file",
+        "write_file",
+        "read_multiple_files",
+        "read_media_file",
+        "read_text_file",
+        "read_file"
+      ],
+      "timeout": 300
+    },
+    "tavily-remote-mcp": {
+      "command": "mcp-remote",
+      "args": [
+        "https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
+        "stdio"
+      ],
+      "alwaysAllow": [
+        "tavily_search",
+        "tavily_extract",
+        "tavily_crawl",
+        "tavily_map"
+      ],
+      "timeout": 300
+    },
+    "tavily-mcp": {
+      "command": "tavily-mcp",
+      "args": [
+        "stdio"
+      ]
+    }
+  }
+}

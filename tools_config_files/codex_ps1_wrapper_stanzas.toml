@@ -1,0 +1,76 @@
+# Codex MCP stanzas using a PowerShell wrapper (no pre-output, reliable CreateProcess on Windows)
+# Apply: copy the desired [mcp_servers.*] blocks into C:\Users\hyper\.codex\config.toml replacing existing ones.
+# Phase 1 (canary): enable only sequential-thinking; keep others disabled. After it works, enable others one by one.
+#
+# Wrapper script location: C:\Users\hyper\fwber\tools_config_files\mcp_npx_launcher.ps1
+# Sanity test (outside Codex):
+#   powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "C:\Users\hyper\fwber\tools_config_files\mcp_npx_launcher.ps1" @modelcontextprotocol/server-sequential-thinking stdio
+#
+# Notes:
+# - The wrapper emits no stdout before the MCP JSON-RPC handshake.
+# - It invokes the real npx.cmd and inherits stdio.
+# - No dependence on PATH resolution inside Codex; absolute paths used.
+
+[mcp_servers.sequential-thinking]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\fwber\\tools_config_files\\mcp_npx_launcher.ps1","@modelcontextprotocol/server-sequential-thinking","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.filesystem]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\fwber\\tools_config_files\\mcp_npx_launcher.ps1","@modelcontextprotocol/server-filesystem","C:\\Users\\hyper\\fwber","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+[mcp_servers.everything]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\fwber\\tools_config_files\\mcp_npx_launcher.ps1","@modelcontextprotocol/server-everything","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+[mcp_servers.memory]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\fwber\\tools_config_files\\mcp_npx_launcher.ps1","@modelcontextprotocol/server-memory","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+[mcp_servers.gemini-mcp]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\fwber\\tools_config_files\\mcp_npx_launcher.ps1","gemini-mcp-tool","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+# Python/uv servers unchanged; keep disabled until Node canary passes
+[mcp_servers.serena]
+command = "C:\\Users\\hyper\\.local\\bin\\uv.exe"
+args = ["run","--directory","C:\\Users\\hyper\\serena","serena","start-mcp-server","--context","codex","--project","C:\\Users\\hyper\\fwber"]
+startup_timeout_ms = 150000
+timeout_ms = 60000
+enabled = false
+
+[mcp_servers.zen-mcp-server]
+command = "C:\\Users\\hyper\\.local\\bin\\uv.exe"
+args = ["run","--directory","C:\\Users\\hyper\\zen-mcp-server","zen-mcp-server"]
+startup_timeout_ms = 150000
+timeout_ms = 60000
+enabled = false
+
+[mcp_servers.chroma-knowledge]
+command = "python"
+args = ["-m","chroma_mcp_server"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+# If Codex strict env sandboxing is on, ensure [security].env_allowlist contains (merge once into your TOML):
+# PATH, Path, PATHEXT, ComSpec, COMSPEC, SystemRoot, WINDIR, SystemDrive, ProgramFiles, ProgramFiles(x86), ProgramW6432,
+# ProgramData, CommonProgramFiles, CommonProgramFiles(x86), APPDATA, LOCALAPPDATA, TEMP, TMP, HOME, HOMEDRIVE, HOMEPATH,
+# USERPROFILE, USERNAME, USERDOMAIN, NPM_CONFIG_PREFIX, npm_config_prefix, NPM_CONFIG_CACHE, npm_config_cache, NO_COLOR,
+# FORCE_COLOR, NODE_DISABLE_COLORS, HTTP_PROXY, HTTPS_PROXY, NO_PROXY, REQUESTS_CA_BUNDLE, SSL_CERT_FILE, NODE_EXTRA_CA_CERTS,
+# PYTHONUTF8, PYTHONIOENCODING, PYTHONUNBUFFERED, VIRTUAL_ENV, PYTHONPATH, UV_PROJECT_ENV, UV_CACHE_DIR, CHROMA_CLIENT_TYPE, CHROMA_HOST, CHROMA_PORT

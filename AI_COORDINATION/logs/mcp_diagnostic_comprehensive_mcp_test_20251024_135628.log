@@ -1,0 +1,81 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251024135628
+Username: PINK\hyper
+RunAs User: PINK\hyper
+Configuration Name: 
+Machine: PINK (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File .\comprehensive_mcp_test.ps1
+Process ID: 63252
+PSVersion: 5.1.26100.6899
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.6899
+BuildVersion: 10.0.26100.6899
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2025-10-24T13:56:28.6517889-04:00 :: Starting diagnostics for comprehensive_mcp_test
+2025-10-24T13:56:28.6920296-04:00 :: Running test 'codex mcp list'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.8103046-04:00 :: Completed 'codex mcp list' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.8168248-04:00 :: Running test 'codex mcp get serena'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.8438980-04:00 :: Completed 'codex mcp get serena' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.8458969-04:00 :: Running test 'codex mcp get sequential-thinking'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.8694341-04:00 :: Completed 'codex mcp get sequential-thinking' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.8709439-04:00 :: Running test 'codex mcp get filesystem'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.8929600-04:00 :: Completed 'codex mcp get filesystem' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.8954743-04:00 :: Running test 'codex mcp get memory'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.9187829-04:00 :: Completed 'codex mcp get memory' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.9207846-04:00 :: Running test 'codex mcp get everything'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.9450193-04:00 :: Completed 'codex mcp get everything' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.9460196-04:00 :: Running test 'codex mcp get chroma-knowledge'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.9695791-04:00 :: Completed 'codex mcp get chroma-knowledge' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.9715799-04:00 :: Running test 'codex mcp get zen-mcp-server'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:28.9945806-04:00 :: Completed 'codex mcp get zen-mcp-server' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:28.9960903-04:00 :: Running test 'codex mcp get gemini-mcp'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:29.0196695-04:00 :: Completed 'codex mcp get gemini-mcp' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:29.0226710-04:00 :: Running test 'codex dry-run prompt'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:29.0466982-04:00 :: Completed 'codex dry-run prompt' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+
+=== Test Summary ===
+
+Name                              Status ExitCode DurationSeconds
+----                              ------ -------- ---------------
+codex mcp list                    Failed                    0.026
+codex mcp get serena              Failed                    0.006
+codex mcp get sequential-thinking Failed                    0.005
+codex mcp get filesystem          Failed                    0.005
+codex mcp get memory              Failed                    0.005
+codex mcp get everything          Failed                    0.005
+codex mcp get chroma-knowledge    Failed                    0.005
+codex mcp get zen-mcp-server      Failed                    0.005
+codex mcp get gemini-mcp          Failed                    0.005
+codex dry-run prompt              Failed                    0.005
+Failed: 10
+Summary JSON saved to: C:\Users\hyper\fwber\AI_COORDINATION\logs\mcp_diagnostic_comprehensive_mcp_test_20251024_135628.json
+Transcript saved to: C:\Users\hyper\fwber\AI_COORDINATION\logs\mcp_diagnostic_comprehensive_mcp_test_20251024_135628.log
+**********************
+Windows PowerShell transcript end
+End time: 20251024135629
+**********************

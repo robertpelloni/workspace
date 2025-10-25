@@ -1,0 +1,50 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "mcp-server-filesystem",
+      "args": ["C:\\Users\\hyper\\fwber\\"],
+      "timeout": 30000
+    },
+    "sequential-thinking": {
+      "command": "mcp-server-sequential-thinking",
+      "args": ["stdio"],
+      "timeout": 30000
+    },
+    "serena": {
+      "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+      "args": ["run","--directory","C:\\Users\\hyper\\serena\\","serena","start-mcp-server","--context","claude","--project","C:\\Users\\hyper\\fwber\\"],
+      "env": {
+        "PROJECT_ROOT": "C:\\Users\\hyper\\fwber\\",
+        "USERPROFILE": "C:\\Users\\hyper"
+      },
+      "timeout": 30000
+    },
+    "codex-mcp-server": {
+      "command": "codex-mcp-server",
+      "args": ["stdio"],
+      "env": {
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+        "OPENAI_ORG": "${OPENAI_ORG}"
+      },
+      "timeout": 30000
+    },
+    "gemini-mcp": {
+      "command": "gemini-mcp",
+      "args": ["stdio"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      },
+      "timeout": 30000
+    },
+    "chroma-knowledge": {
+      "command": "python",
+      "args": ["-m", "chroma_mcp_server"],
+      "env": {
+        "CHROMA_CLIENT_TYPE": "http",
+        "CHROMA_HOST": "localhost",
+        "CHROMA_PORT": "8000"
+      },
+      "timeout": 30000
+    }
+  }
+}

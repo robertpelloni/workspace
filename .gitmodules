@@ -1,0 +1,45 @@
+[submodule "BobsGameOnline"]
+	path = BobsGameOnline
+	url = https://github.com/robertpelloni/BobsGameOnline.git
+[submodule "serena"]
+	path = serena
+	url = https://github.com/robertpelloni/serena
+[submodule "zen-mcp-server"]
+	path = zen-mcp-server
+	url = https://github.com/robertpelloni/zen-mcp-server
+[submodule "beatoraja"]
+	path = beatoraja
+	url = https://github.com/robertpelloni/beatoraja
+[submodule "itgmania"]
+	path = itgmania
+	url = https://github.com/robertpelloni/itgmania
+[submodule "okgame"]
+	path = okgame
+	url = https://github.com/robertpelloni/okgame
+[submodule "FileOrganizer"]
+	path = FileOrganizer
+	url = https://github.com/robertpelloni/FileOrganizer
+[submodule "ai-file-sorter"]
+	path = ai-file-sorter
+	url = https://github.com/robertpelloni/ai-file-sorter
+[submodule "Local-File-Organizer"]
+	path = Local-File-Organizer
+	url = https://github.com/robertpelloni/Local-File-Organizer
+[submodule "fwber"]
+	path = fwber
+	url = https://github.com/robertpelloni/fwber
+[submodule "hellven"]
+	path = hellven
+	url = https://gitlab.com/robertpelloni/hellven
+[submodule "Neothesia"]
+	path = Neothesia
+	url = https://github.com/robertpelloni/Neothesia
+[submodule "chroma"]
+	path = chroma
+	url = https://github.com/chroma-core/chroma
+[submodule "playwright"]
+	path = playwright
+	url = https://github.com/microsoft/playwright
+[submodule "playwright-mcp"]
+	path = playwright-mcp
+	url = https://github.com/microsoft/playwright-mcp

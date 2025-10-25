@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "serena": {
+      "type": "stdio",
+      "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\hyper\\serena\\",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "gemini",
+        "--project",
+        "C:\\Users\\hyper\\fwber\\"
+      ]
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "C:\\Users\\hyper\\AppData\\Roaming\\npm\\mcp-server-memory.cmd",
+      "args": []
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "C:\\Users\\hyper\\AppData\\Roaming\\npm\\mcp-server-filesystem.cmd",
+      "args": ["C:\\Users\\hyper\\fwber\\"]
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "C:\\Users\\hyper\\AppData\\Roaming\\npm\\mcp-server-sequential-thinking.cmd",
+      "args": []
+    },
+    "zen-mcp-server": {
+      "type": "stdio",
+      "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\hyper\\zen-mcp-server\\",
+        "zen-mcp-server"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "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",
+        "OPENROUTER_API_KEY": "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",
+        "GEMINI_API_KEY": "AIzaSyAncTefXv2gnUe_k-KWTxfdUvIau3ybIjY"
+      }
+    },
+    "chroma-knowledge": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "-m",
+        "chroma_mcp_server"
+      ],
+      "env": {
+        "CHROMA_CLIENT_TYPE": "http",
+        "CHROMA_HOST": "localhost",
+        "CHROMA_PORT": "8000"
+      }
+    }
+  }
+}

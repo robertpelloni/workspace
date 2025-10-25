@@ -1,0 +1,511 @@
+{
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "general": {
+    "firstRun": false,
+    "safeKeys": true,
+    "onboardingDone": false,
+    "keepRunning": true,
+    "hideOnStartup": true,
+    "proxyMode": "default",
+    "customProxy": "",
+    "tips": {
+      "trayIcon": false,
+      "realtime": false
+    },
+    "confirm": {
+      "retryGeneration": true
+    },
+    "locale": "",
+    "webappEvictionMinutes": 30,
+    "enableHttpEndpoints": true,
+    "cliInstallError": false
+  },
+  "llm": {
+    "locale": "",
+    "forceLocale": false,
+    "engine": "google",
+    "instructions": "standard",
+    "favorites": [],
+    "autoVisionSwitch": true,
+    "conversationLength": 50,
+    "imageResize": 768,
+    "defaults": [],
+    "customInstructions": [],
+    "additionalInstructions": {
+      "toolRetry": true,
+      "datetime": true,
+      "mermaid": true,
+      "artifacts": true
+    }
+  },
+  "deepresearch": {
+    "runtime": "ms",
+    "breadth": 4,
+    "depth": 2,
+    "searchResults": 8
+  },
+  "appearance": {
+    "theme": "system",
+    "lighTint": "white",
+    "darkTint": "black",
+    "chatList": {
+      "mode": "timeline",
+      "layout": "normal"
+    },
+    "chat": {
+      "autoPreview": {
+        "html": true
+      },
+      "copyFormat": "markdown",
+      "showReasoning": true,
+      "showToolCalls": "always",
+      "theme": "openai",
+      "fontFamily": "",
+      "fontSize": 3
+    },
+    "lightTint": "white"
+  },
+  "scratchpad": {
+    "engine": "google",
+    "model": "gemini-pro-latest",
+    "fontSize": "3",
+    "fontFamily": "serif"
+  },
+  "prompt": {
+    "engine": "",
+    "model": "",
+    "autosave": true,
+    "disableStreaming": false,
+    "tools": null,
+    "disableTools": false
+  },
+  "commands": {
+    "engine": "",
+    "model": ""
+  },
+  "automation": {
+    "altWinCopyPaste": false
+  },
+  "studio": {
+    "type": "image",
+    "engines": {
+      "image": "openai",
+      "imageEdit": "google",
+      "video": "replicate",
+      "videoEdit": "replicate"
+    },
+    "favorites": [],
+    "defaults": []
+  },
+  "shortcuts": {
+    "main": {
+      "key": "Space",
+      "ctrl": true
+    },
+    "command": {
+      "key": "Space",
+      "alt": true,
+      "ctrl": true
+    },
+    "prompt": {
+      "key": "P",
+      "shift": true,
+      "meta": true
+    },
+    "transcribe": {
+      "key": "Space",
+      "shift": true,
+      "ctrl": true,
+      "alt": true
+    },
+    "readaloud": {
+      "key": "Space",
+      "alt": true,
+      "shift": false,
+      "ctrl": true,
+      "meta": true
+    },
+    "scratchpad": {
+      "key": "N",
+      "meta": true,
+      "alt": true
+    },
+    "realtime": {
+      "key": "none"
+    }
+  },
+  "rag": {
+    "maxDocumentSizeMB": 1,
+    "chunkSize": 500,
+    "chunkOverlap": 50,
+    "searchResultCount": 5,
+    "relevanceCutOff": 0.2
+  },
+  "stt": {
+    "engine": "openai",
+    "model": "whisper-1",
+    "locale": "",
+    "vocabulary": [],
+    "autoStart": false,
+    "pushToTalk": false,
+    "silenceDetection": true,
+    "silenceDuration": 2000,
+    "silenceAction": "stop_transcribe",
+    "customOpenAI": {
+      "baseURL": ""
+    },
+    "nvidia": {
+      "prompt": "Transcribe the audio clip into text.\nFormat sentences with clear line breaks and paragraphs for natural reading. Remove filler words like um, uh.\nYour response should be formatted as follows:\n\"transcribed text here\""
+    },
+    "mistralai": {
+      "prompt": "Transcribe the audio clip into text.\nFormat sentences with clear line breaks and paragraphs for natural reading. Remove filler words like um, uh.\nYour response should be formatted as follows:\n\"transcribed text here\""
+    },
+    "whisper": {
+      "gpu": true
+    },
+    "soniox": {
+      "cleanup": false,
+      "audioFormat": "auto"
+    }
+  },
+  "tts": {
+    "engine": "openai",
+    "model": "tts-1",
+    "voice": "alloy",
+    "customOpenAI": {
+      "baseURL": ""
+    }
+  },
+  "realtime": {
+    "engine": "openai"
+  },
+  "engines": {
+    "__favorites__": {
+      "models": {
+        "chat": [],
+        "image": [],
+        "video": []
+      },
+      "model": {
+        "chat": "",
+        "image": "",
+        "video": ""
+      }
+    },
+    "openai": {
+      "hideDatedModels": true,
+      "model": {
+        "chat": "gpt-5-chat-latest",
+        "image": "gpt-image-1",
+        "vision": "gpt-5"
+      },
+      "realtime": {
+        "model": "gpt-4o-mini-realtime-preview",
+        "voice": "ash"
+      },
+      "disableTools": false
+    },
+    "anthropic": {
+      "model": {
+        "chat": "claude-sonnet-4-5-20250929",
+        "image": "",
+        "vision": "claude-sonnet-4-5-20250929"
+      },
+      "disableTools": false
+    },
+    "google": {
+      "vertexai": false,
+      "model": {
+        "chat": "gemini-pro-latest",
+        "image": "gemini-2.5-flash-image",
+        "imageEdit": "gemini-2.0-flash-exp",
+        "vision": "gemini-2.5-flash-preview-09-2025"
+      },
+      "disableTools": false
+    },
+    "groq": {
+      "model": {
+        "chat": "qwen/qwen3-32b",
+        "image": "",
+        "vision": "meta-llama/llama-4-scout-17b-16e-instruct"
+      }
+    },
+    "xai": {
+      "model": {
+        "chat": "grok-4-0709",
+        "image": "grok-2-image-1212",
+        "vision": "grok-2-vision-1212"
+      },
+      "disableTools": false
+    },
+    "openrouter": {
+      "model": {
+        "chat": "google/gemini-2.0-flash-exp:free",
+        "image": "",
+        "vision": "meta-llama/llama-4-maverick:free"
+      }
+    },
+    "deepseek": {
+      "model": {
+        "chat": "deepseek-chat",
+        "image": ""
+      }
+    },
+    "cerebras": {
+      "model": {
+        "chat": "qwen-3-32b",
+        "image": ""
+      }
+    },
+    "meta": {
+      "model": {
+        "chat": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+        "image": "",
+        "vision": "Llama-4-Scout-17B-16E-Instruct-FP8"
+      }
+    },
+    "mistralai": {
+      "model": {
+        "chat": "mistral-medium-latest",
+        "image": "",
+        "vision": "pixtral-large-latest"
+      }
+    },
+    "nvidia": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "lmstudio": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "ollama": {
+      "keepAlive": "",
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "huggingface": {
+      "model": {
+        "chat": "",
+        "image": "black-forest-labs/FLUX.1-schnell"
+      }
+    },
+    "replicate": {
+      "model": {
+        "chat": "",
+        "image": "black-forest-labs/flux-schnell",
+        "video": "google/veo-3",
+        "videoEdit": "arielreplicate/deoldify_video"
+      }
+    },
+    "elevenlabs": {},
+    "sdwebui": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "falai": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "gladia": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "speechmatics": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "fireworks": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    },
+    "soniox": {
+      "model": {
+        "chat": "",
+        "image": ""
+      }
+    }
+  },
+  "plugins": {
+    "browse": {
+      "enabled": true
+    },
+    "python": {
+      "enabled": false
+    },
+    "search": {
+      "enabled": true,
+      "engine": "local",
+      "contentLength": 5000,
+      "maxResults": 5
+    },
+    "youtube": {
+      "enabled": true
+    },
+    "image": {
+      "enabled": true,
+      "engine": "openai",
+      "model": "gpt-image-1"
+    },
+    "memory": {
+      "enabled": true,
+      "engine": "openai",
+      "model": "text-embedding-3-small"
+    },
+    "video": {
+      "enabled": true,
+      "engine": "google",
+      "model": "veo-3.1-fast-generate-preview"
+    },
+    "vega": {
+      "enabled": false
+    },
+    "mcp": {
+      "enabled": true
+    },
+    "filesystem": {
+      "enabled": true,
+      "allowedPaths": [
+        "C:\\Users\\hyper\\Documents\\AI"
+      ],
+      "allowWrite": true,
+      "skipConfirmation": false
+    },
+    "knowledge": {
+      "enabled": true
+    }
+  },
+  "mcp": {
+    "servers": [
+      {
+        "uuid": "88984f63-fa0f-499b-8b05-6c25c7ecb6e0",
+        "registryId": "88984f63-fa0f-499b-8b05-6c25c7ecb6e0",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "mcp-server-filesystem",
+        "url": "C:\\Users\\hyper\\workspace\\",
+        "env": {},
+        "toolSelection": null
+      },
+      {
+        "uuid": "97c0c570-8099-4537-b7b3-6a0342654e4d",
+        "registryId": "97c0c570-8099-4537-b7b3-6a0342654e4d",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "mcp-server-sequential-thinking",
+        "url": "stdio",
+        "env": {},
+        "toolSelection": null
+      },
+      {
+        "uuid": "348d6e1b-5195-4f38-a062-d21aecfc6690",
+        "registryId": "348d6e1b-5195-4f38-a062-d21aecfc6690",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+        "url": "run --directory C:\\Users\\hyper\\serena\\ serena start-mcp-server --context agent --project C:\\Users\\hyper\\workspace\\",
+        "env": {
+          "PROJECT_ROOT": "C:\\Users\\hyper\\workspace\\",
+          "USERPROFILE": "C:\\Users\\hyper"
+        },
+        "toolSelection": null
+      },
+      {
+        "uuid": "38559478-a383-4b4e-9186-656701b20208",
+        "registryId": "38559478-a383-4b4e-9186-656701b20208",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+        "url": "run --directory C:\\Users\\hyper\\zen-mcp-server\\ zen-mcp-server",
+        "toolSelection": null
+      },
+      {
+        "uuid": "0a897a54-49ae-4985-bfff-ee32a5337ab2",
+        "registryId": "0a897a54-49ae-4985-bfff-ee32a5337ab2",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+        "url": "--mode stdio --client-type http --host localhost --port 8000 --ssl false",
+        "env": {},
+        "toolSelection": null
+      },
+      {
+        "uuid": "a6ccfca1-1eff-4a49-847d-633b402a0221",
+        "registryId": "a6ccfca1-1eff-4a49-847d-633b402a0221",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "npx",
+        "url": "-y codex-mcp-server",
+        "env": {},
+        "toolSelection": null
+      },
+      {
+        "uuid": "31699b06-6774-4525-96b7-d538d632b64e",
+        "registryId": "31699b06-6774-4525-96b7-d538d632b64e",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "npx",
+        "url": "-y gemini-mcp-tool",
+        "env": {},
+        "toolSelection": null,
+        "cwd": "",
+        "headers": {},
+        "oauth": null
+      },
+      {
+        "uuid": "f11edc07-6910-4892-ae8f-4d31dff49ec5",
+        "registryId": "f11edc07-6910-4892-ae8f-4d31dff49ec5",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "mcp-server-memory",
+        "url": "",
+        "env": {},
+        "toolSelection": null
+      },
+      {
+        "uuid": "594f3330-3df7-481e-b479-e2f1822104e6",
+        "registryId": "594f3330-3df7-481e-b479-e2f1822104e6",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "npx",
+        "url": "-y tavily-mcp",
+        "env": {},
+        "toolSelection": null,
+        "cwd": "",
+        "headers": {},
+        "oauth": null
+      },
+      {
+        "uuid": "31373dba-e80d-4737-8523-75a416ae5968",
+        "registryId": "31373dba-e80d-4737-8523-75a416ae5968",
+        "state": "enabled",
+        "type": "stdio",
+        "command": "mcp-remote",
+        "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY} stdio",
+        "env": {},
+        "toolSelection": null
+      }
+    ],
+    "mcpServersExtra": {}
+  },
+  "mcpServers": {},
+  "instructions": {
+    "chat": {}
+  }
+}

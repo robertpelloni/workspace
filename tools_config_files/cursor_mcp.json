@@ -1,0 +1,114 @@
+{
+	"$schema": "https://raw.githubusercontent.com/modelcontextprotocol/client-typescript/main/schemas/mcp-config.schema.json",
+	"mcpServers": {
+		"serena": {
+			"type": "stdio",
+			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+			"args": [
+				"run",
+				"--directory",
+				"C:\\Users\\hyper\\serena\\",
+				"serena",
+				"start-mcp-server",
+				"--context",
+				"ide-assistant",
+				"--project",
+				"C:\\Users\\hyper\\workspace\\"
+			],
+			"startupTimeoutMs": 90000,
+			"timeoutMs": 30000
+		},
+		"zen-mcp-server": {
+			"type": "stdio",
+			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+			"args": [
+				"run",
+				"--directory",
+				"C:\\Users\\hyper\\zen-mcp-server\\",
+				"zen-mcp-server"
+			],
+			"env": {
+			},
+			"startupTimeoutMs": 120000,
+			"timeoutMs": 60000
+		},
+		"chroma-knowledge": {
+			"type": "stdio",
+			"command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+			"args": [
+				"--mode",
+				"stdio",
+				"--client-type",
+				"http",
+				"--host",
+				"localhost",
+				"--port",
+				"8000",
+				"--ssl",
+				"false"
+			],
+			"startupTimeoutMs": 60000,
+			"timeoutMs": 30000
+		},
+		"codex-mcp-server": {
+			"command": "codex-mcp-server",
+			"args": [
+				"stdio"
+			],
+			"env": {
+			}
+		},
+		"gemini-mcp": {
+			"command": "gemini-mcp",
+			"args": [
+				"stdio"
+			],
+			"env": {
+			}
+		},
+		"filesystem": {
+			"type": "stdio",
+			"command": "mcp-server-filesystem",
+			"args": [
+				"C:\\Users\\hyper\\workspace\\"
+			],
+			"startupTimeoutMs": 60000,
+			"timeoutMs": 30000
+		},
+		"memory": {
+			"type": "stdio",
+			"command": "mcp-server-memory",
+			"args": [
+			],
+			"startupTimeoutMs": 60000,
+			"timeoutMs": 30000
+		},
+		"sequential-thinking": {
+			"type": "stdio",
+			"command": "mcp-server-sequential-thinking",
+			"args": [
+			],
+			"startupTimeoutMs": 60000,
+			"timeoutMs": 30000
+		},
+		"tavily-remote-mcp": {
+			"command": "mcp-remote",
+			"args": [
+				"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
+				"stdio"
+			]
+		},
+		"tavily-mcp": {
+			"command": "tavily-mcp",
+			"args": [
+				"stdio"
+			]
+		}
+	},
+	"security": {
+		"allowedPaths": [
+			"C:\\Users\\hyper\\workspace"
+		],
+		"redactLogs": false
+	}
+}

@@ -1,0 +1,161 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251024135501
+Username: PINK\hyper
+RunAs User: PINK\hyper
+Configuration Name: 
+Machine: PINK (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File .\tools_config_files\test_all_mcp_servers.ps1
+Process ID: 75944
+PSVersion: 5.1.26100.6899
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.6899
+BuildVersion: 10.0.26100.6899
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2025-10-24T13:55:01.8854647-04:00 :: Starting diagnostics for test_all_mcp_servers
+2025-10-24T13:55:01.9191075-04:00 :: Running test 'UV Version'
+2025-10-24T13:55:02.1084474-04:00 :: Completed 'UV Version' with status Failed
+  stderr:
+2025-10-24T13:55:02.1149740-04:00 :: Running test 'Python Version'
+2025-10-24T13:55:02.1602831-04:00 :: Completed 'Python Version' with status Failed
+  stderr:
+2025-10-24T13:55:02.1617977-04:00 :: Running test 'Node Version'
+2025-10-24T13:55:02.2240785-04:00 :: Completed 'Node Version' with status Failed
+  stderr:
+2025-10-24T13:55:02.2260786-04:00 :: Running test 'npm Version'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:55:02.3251047-04:00 :: Completed 'npm Version' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:55:02.3286263-04:00 :: Running test 'npx Version'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:55:02.3858475-04:00 :: Completed 'npx Version' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:55:02.3915313-04:00 :: Running test 'Filesystem MCP via npx'
+2025-10-24T13:55:07.1508630-04:00 :: Completed 'Filesystem MCP via npx' with status Failed
+  stderr: Error accessing directory C:\Users\hyper\fwber\--help: Error: ENOENT: no such file or directory, stat 'C:\Users\hyper\fwber\--help'
+    at async Object.stat (node:internal/fs/promises:1039:18)
+    at async file:///C:/Users/hyper/AppData/Roaming/npm/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js:43:23
+    at async Promise.all (index 0)
+    at async file:///C:/Users/hyper/AppData/Roaming/npm/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js:41:1 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\hyper\\fwber\\--help'
+}
+2025-10-24T13:55:07.1548668-04:00 :: Running test 'Sequential Thinking MCP via npx'
+2025-10-24T13:55:11.0247222-04:00 :: Completed 'Sequential Thinking MCP via npx' with status Failed
+  stderr: Sequential Thinking MCP Server running on stdio
+2025-10-24T13:55:11.0267278-04:00 :: Running test 'Memory MCP via npx'
+2025-10-24T13:55:14.6484089-04:00 :: Completed 'Memory MCP via npx' with status Failed
+  stderr: Knowledge Graph MCP Server running on stdio
+2025-10-24T13:55:14.6499100-04:00 :: Running test 'Everything MCP via npx'
+2025-10-24T13:55:18.2281579-04:00 :: Completed 'Everything MCP via npx' with status Failed
+  stderr: Unknown script: --help
+2025-10-24T13:55:18.2301657-04:00 :: Running test 'Puppeteer MCP via npx'
+2025-10-24T13:55:30.5180485-04:00 :: Completed 'Puppeteer MCP via npx' with status Failed
+  stderr:
+2025-10-24T13:55:30.5200472-04:00 :: Running test 'Smart Crawler MCP via npx'
+2025-10-24T13:55:50.2054210-04:00 :: Completed 'Smart Crawler MCP via npx' with status Failed
+  stderr: Checking and ensuring Playwright Chromium browser is installed...
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ WARNING: It looks like you are running 'npx playwright install' without first â•‘
+â•‘ installing your project's dependencies.                                       â•‘
+â•‘                                                                               â•‘
+â•‘ To avoid unexpected behavior, please install your dependencies first, and     â•‘
+â•‘ then run Playwright's install command:                                        â•‘
+â•‘                                                                               â•‘
+â•‘     npm install                                                               â•‘
+â•‘     npx playwright install                                                    â•‘
+â•‘                                                                               â•‘
+â•‘ If your project does not yet depend on Playwright, first install the          â•‘
+â•‘ applicable npm package (most commonly @playwright/test), and                  â•‘
+â•‘ then run Playwright's install command to download the browsers:               â•‘
+â•‘                                                                               â•‘
+â•‘     npm install @playwright/test                                              â•‘
+â•‘     npx playwright install                                                    â•‘
+â•‘                                                                               â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Chromium installation check complete.
+No --download-folder specified, using default: ./downloads
+Created download folder: C:\Users\hyper\AppData\Roaming\npm\node_modules\mcp-smart-crawler\build\downloads
+MCP Server running on stdio
+2025-10-24T13:55:50.2074291-04:00 :: Running test 'Playwright MCP via npx'
+2025-10-24T13:55:57.6332189-04:00 :: Completed 'Playwright MCP via npx' with status Failed
+  stderr:
+2025-10-24T13:55:57.6357308-04:00 :: Running test 'Chrome DevTools MCP via npx'
+2025-10-24T13:56:07.8187132-04:00 :: Completed 'Chrome DevTools MCP via npx' with status Failed
+  stderr:
+2025-10-24T13:56:07.8207172-04:00 :: Running test 'Terry MCP via npx'
+2025-10-24T13:56:09.3880167-04:00 :: Completed 'Terry MCP via npx' with status Failed
+  stderr: Terry MCP Server running on stdio
+2025-10-24T13:56:09.3905545-04:00 :: Running test 'Codex MCP via npx'
+2025-10-24T13:56:11.2246776-04:00 :: Completed 'Codex MCP via npx' with status Failed
+  stderr: codex-mcp-server started successfully
+2025-10-24T13:56:11.2267193-04:00 :: Running test 'Gemini MCP via npx'
+2025-10-24T13:56:15.0542316-04:00 :: Completed 'Gemini MCP via npx' with status Failed
+  stderr: [GMCPT] init gemini-mcp-tool
+
+[GMCPT] gemini-mcp-tool listening on stdio
+2025-10-24T13:56:15.0563186-04:00 :: Running test 'codex --version'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:15.1277532-04:00 :: Completed 'codex --version' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:15.1298051-04:00 :: Running test 'copilot --version'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:15.1880342-04:00 :: Completed 'copilot --version' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:15.1900338-04:00 :: Running test 'gemini --version'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:15.2437440-04:00 :: Completed 'gemini --version' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:15.2447488-04:00 :: Running test 'grok --version'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:15.2970259-04:00 :: Completed 'grok --version' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:15.2990244-04:00 :: Running test 'qwen --version'
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: %1 is not a valid Win32 application."
+2025-10-24T13:56:15.3509590-04:00 :: Completed 'qwen --version' with status Failed
+  stderr: This command cannot be run due to the error: %1 is not a valid Win32 application.
+2025-10-24T13:56:15.3529577-04:00 :: Running test 'cursor-agent --version'
+PS>TerminatingError(Get-Command): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: The term 'cursor-agent' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+2025-10-24T13:56:15.4236476-04:00 :: Completed 'cursor-agent --version' with status NotFound
+  Optional dependency missing for 'cursor-agent --version'; continuing.
+
+=== Test Summary ===
+
+Name                            Status   ExitCode DurationSeconds
+----                            ------   -------- ---------------
+UV Version                      Failed                      0.076
+Python Version                  Failed                      0.032
+Node Version                    Failed                      0.051
+npm Version                     Failed                      0.063
+npx Version                     Failed                      0.022
+Filesystem MCP via npx          Failed                       4.75
+Sequential Thinking MCP via npx Failed                       3.86
+Memory MCP via npx              Failed                      3.613
+Everything MCP via npx          Failed                       3.57
+Puppeteer MCP via npx           Failed                      12.28
+Smart Crawler MCP via npx       Failed                     19.675
+Playwright MCP via npx          Failed                      7.419
+Chrome DevTools MCP via npx     Failed                     10.174
+Terry MCP via npx               Failed                      1.559
+Codex MCP via npx               Failed                      1.811
+Gemini MCP via npx              Failed                       3.82
+codex --version                 Failed                      0.024
+copilot --version               Failed                      0.019
+gemini --version                Failed                       0.02
+grok --version                  Failed                      0.018
+qwen --version                  Failed                       0.02
+cursor-agent --version          NotFound                    0.063
+Failed: 21
+NotFound: 1
+Summary JSON saved to: C:\Users\hyper\fwber\AI_COORDINATION\logs\mcp_diagnostic_test_all_mcp_servers_20251024_135501.json
+Transcript saved to: C:\Users\hyper\fwber\AI_COORDINATION\logs\mcp_diagnostic_test_all_mcp_servers_20251024_135501.log
+**********************
+Windows PowerShell transcript end
+End time: 20251024135616
+**********************

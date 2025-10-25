@@ -1,0 +1,21 @@
+{
+  "model": "gemini-2.5-flash",
+  "taskId": "task_1760250616839_pb8hxgl0p",
+  "response": "Mock response from gemini-2.5-flash for: Alternative Analysis: test orchestration",
+  "confidence": 0.888668069772788,
+  "timestamp": "2025-10-12T06:30:16.841Z",
+  "capabilities": {
+    "tier": 5,
+    "strengths": [
+      "rapid-prototyping",
+      "iteration",
+      "quick-analysis",
+      "creativity"
+    ],
+    "weaknesses": [
+      "deep-reasoning",
+      "complex-architecture"
+    ],
+    "contextWindow": 32000
+  }
+}

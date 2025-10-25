@@ -1,0 +1,150 @@
+#Core model config
+model = "gpt-5-codex-high"
+model_reasoning_effort = "medium"
+windows_wsl_setup_acknowledged = true
+
+#Global MCP server timeout settings
+#Note: timeouts are not the root cause, but safe ceilings prevent false timeouts on cold starts.
+mcp_server_startup_timeout_ms = 120000
+mcp_server_timeout_ms = 60000
+
+#Security: explicit env allowlist and least-privilege filesystem roots
+[security]
+env_allowlist = [
+
+#Existing project/env
+"PROJECT_ROOT","AI_COORDINATION_DIR","MCP_CONFIG_PATH","MCP_FILESYSTEM_ROOTS",
+"LOG_DIR","TEMP_DIR","SERENA_HOME",
+"OPENAI_API_KEY","OPENAI_ORG","ANTHROPIC_API_KEY","GEMINI_API_KEY","XAI_API_KEY","OPENROUTER_API_KEY","GITHUB_TOKEN",
+"USERPROFILE",
+
+#Resolver invariants (dual-case + extensions)
+"PATH","Path","PATHEXT",
+
+#Windows bootstrap + common paths
+"ComSpec","SystemRoot","WINDIR","SystemDrive",
+"ProgramFiles","ProgramFiles(x86)","ProgramW6432",
+"ProgramData","CommonProgramFiles","CommonProgramFiles(x86)",
+"APPDATA","LOCALAPPDATA",
+"TEMP","TMP",
+"HOME","HOMEDRIVE","HOMEPATH",
+"USERNAME","USERDOMAIN",
+
+#Node/npm/npx toolchain + colors + notifiers (upper + lower where commonly used)
+"NVM_HOME","NVM_SYMLINK","PNPM_HOME","VOLTA_HOME","NODE_PATH",
+"NPM_CONFIG_PREFIX","npm_config_prefix",
+"NPM_CONFIG_CACHE","npm_config_cache",
+"NPM_CONFIG_UPDATE_NOTIFIER","npm_config_update_notifier",
+"NPM_CONFIG_AUDIT","npm_config_audit",
+"NPM_CONFIG_FUND","npm_config_fund",
+"NPM_CONFIG_LOGLEVEL","npm_config_loglevel",
+"NODE_DISABLE_COLORS","NO_COLOR","FORCE_COLOR",
+
+#Python/uv stability (UTF-8 + unbuffered)
+"VIRTUAL_ENV","PYTHONUTF8","PYTHONIOENCODING","PYTHONUNBUFFERED","PYTHONPATH",
+"UV_PROJECT_ENV","UV_CACHE_DIR",
+
+#Proxy/cert passthrough (only used if present on host)
+"HTTP_PROXY","HTTPS_PROXY","NO_PROXY",
+"REQUESTS_CA_BUNDLE","SSL_CERT_FILE","NODE_EXTRA_CA_CERTS",
+
+#Locale/terminal
+"LANG","LC_ALL","TERM",
+
+#Chroma client (HTTP)
+"CHROMA_CLIENT_TYPE","CHROMA_HOST","CHROMA_PORT",
+
+"MCP_DEBUG","DEBUG",
+"MCP_WRAPPER_LOG","NPX_CMD"
+]
+
+filesystem_roots = [
+"C:\\Users\\hyper\\workspace",
+"C:\\Users\\hyper\\workspace\\fwber",
+"C:\\Users\\hyper\\workspace\\BobsGameOnline",
+"C:\\Users\\hyper\\workspace\\okgame",
+"C:\\Users\\hyper\\workspace\\FileOrganizer",
+"C:\\Users\\hyper\\workspace\\AI_COORDINATION"
+]
+
+#======================
+#MCP SERVERS (Windows-safe)
+#All NPX-based servers launched via: cmd /d /s /c npx.cmd …
+#/d disables AutoRun (prevents pre-handshake stdout noise)
+#/s handles quotes correctly with /c
+#======================
+
+
+
+[mcp_servers.sequential-thinking]
+command = "powershell.exe" 
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-server-sequential-thinking.cmd","stdio"] 
+startup_timeout_ms = 120000 
+timeout_ms = 60000 
+enabled = true
+
+[mcp_servers.filesystem]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-server-filesystem.cmd","C:\\Users\\hyper\\workspace","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.memory]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-server-memory.cmd","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.gemini-mcp]
+command = "C:\\Windows\\System32\\cmd.exe" 
+args = ["/s","/c","'C:\\Program Files\\nodejs\\npx.cmd' -y gemini-mcp-tool stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.serena]
+command = "C:\\Windows\\System32\\cmd.exe"
+args = ["/s","/c","'C:\\Users\\hyper\\.local\\bin\\uv.exe' run --directory 'C:\\Users\\hyper\\serena' serena start-mcp-server --context codex --project 'C:\\Users\\hyper\\workspace'"]
+startup_timeout_ms = 150000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.zen-mcp-server]
+command = "C:\\Windows\\System32\\cmd.exe"
+args = ["/s","/c","'C:\\Users\\hyper\\.local\\bin\\uv.exe' run --directory 'C:\\Users\\hyper\\zen-mcp-server' zen-mcp-server"]
+startup_timeout_ms = 150000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.chroma-knowledge]
+command = "C:\\Windows\\System32\\cmd.exe"
+args = ["/s","/c","'C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe' --mode stdio --client-type http --host localhost --port 8000 --ssl false"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.tavily-remote-mcp]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-remote.cmd","https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.tavily-mcp]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\tavily-mcp.cmd","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+#Project trust (required by Codex for workspace operations)
+[projects.'\?\C:\\Users\\hyper\\workspace']
+trust_level = "trusted"
+
+[projects.'\?\C:\Users\hyper\workspace']
+trust_level = "trusted"
+
+[projects.'\\?\C:\Users\hyper\workspace']
+trust_level = "trusted"

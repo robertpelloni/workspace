@@ -1,0 +1,95 @@
+<application>
+  <component name="McpApplicationServerCommands" modifiable="true">
+    <McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="serena" />
+      <option name="programPath" value="C:\\Users\\hyper\\.local\\bin\\uv.exe" />
+      <option name="arguments" value="run --directory C:\\Users\\hyper\\serena\\ serena start-mcp-server --context ide-assistant --project C:\\Users\\hyper\\workspace\\" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="zen-mcp-server" />
+      <option name="programPath" value="C:\\Users\\hyper\\.local\\bin\\uv.exe" />
+      <option name="arguments" value="run --directory C:\\Users\\hyper\\zen-mcp-server\\ zen-mcp-server" />
+      <option name="workingDirectory" value="" />
+      <envs>
+      </envs>
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="chroma-knowledge" />
+      <option name="programPath" value="C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe" />
+      <option name="arguments" value="--mode stdio --client-type http --host localhost --port 8000 --ssl false" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="codex-mcp-server" />
+      <option name="programPath" value="npx" />
+      <option name="arguments" value="-y codex-mcp-server" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="gemini-mcp-tool" />
+      <option name="programPath" value="npx" />
+      <option name="arguments" value="-y gemini-mcp-tool" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="memory" />
+      <option name="programPath" value="mcp-server-memory" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="sequential-thinking" />
+      <option name="programPath" value="mcp-server-sequential-thinking" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="filesystem" />
+      <option name="programPath" value="mcp-server-filesystem" />
+      <option name="arguments" value="C:\\Users\\hyper\workspace\\" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="tavily-remote-mcp" />
+      <option name="programPath" value="mcp-remote" />
+      <option name="arguments" value="https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="tavily-mcp" />
+      <option name="programPath" value="tavily-mcp" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+  </component>
+</application>

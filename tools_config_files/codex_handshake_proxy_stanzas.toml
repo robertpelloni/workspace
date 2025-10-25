@@ -1,0 +1,79 @@
+# Codex MCP stanzas using a native handshake proxy (Windows)
+# The proxy writes a minimal MCP header immediately, then execs the real server and bridges stdio.
+# Build the proxy first:
+#   powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\hyper\fwber\tools_config_files\build_handshake_proxy.ps1"
+# The EXE will be created at:
+#   C:\Users\hyper\fwber\tools_config_files\handshake_proxy\out\handshake_proxy.exe
+#
+# Apply: Copy/merge the desired [mcp_servers.*] blocks into C:\Users\hyper\.codex\config.toml replacing existing ones.
+# Start with stdio-test canary only. Once it works, enable sequential-thinking, then filesystem, then memory.
+
+# ===== Canary: stdio-test (header-first server) =====
+[mcp_servers.stdio-test]
+command = "C:\\Users\\hyper\\fwber\\tools_config_files\\handshake_proxy\\out\\handshake_proxy.exe"
+args = ["C:\\Progra~1\\nodejs\\mcp-server-stdio-test.cmd","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+# ===== Sequential Thinking =====
+[mcp_servers.sequential-thinking]
+command = "C:\\Users\\hyper\\fwber\\tools_config_files\\handshake_proxy\\out\\handshake_proxy.exe"
+args = ["C:\\Progra~1\\nodejs\\mcp-server-sequential-thinking.cmd","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+# ===== Filesystem =====
+[mcp_servers.filesystem]
+command = "C:\\Users\\hyper\\fwber\\tools_config_files\\handshake_proxy\\out\\handshake_proxy.exe"
+args = ["C:\\Progra~1\\nodejs\\mcp-server-filesystem.cmd","C:\\Users\\hyper\\fwber","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+# ===== Memory =====
+[mcp_servers.memory]
+command = "C:\\Users\\hyper\\fwber\\tools_config_files\\handshake_proxy\\out\\handshake_proxy.exe"
+args = ["C:\\Progra~1\\nodejs\\mcp-server-memory.cmd","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+# Optional: Everything (after others work)
+[mcp_servers.everything]
+command = "C:\\Users\\hyper\\fwber\\tools_config_files\\handshake_proxy\\out\\handshake_proxy.exe"
+args = ["C:\\Progra~1\\nodejs\\mcp-server-everything.cmd","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = false
+
+# Python/uv servers unchanged; keep disabled until Node canary passes
+[mcp_servers.serena]
+command = "C:\\Users\\hyper\\.local\\bin\\uv.exe"
+args = ["run","--directory","C:\\Users\\hyper\\serena","serena","start-mcp-server","--context","codex","--project","C:\\Users\\hyper\\fwber"]
+startup_timeout_ms = 150000
+timeout_ms = 60000
+enabled = false
+
+[mcp_servers.zen-mcp-server]
+command = "C:\\Users\\hyper\\.local\\bin\\uv.exe"
+args = ["run","--directory","C:\\Users\\hyper\\zen-mcp-server","zen-mcp-server"]
+startup_timeout_ms = 150000
+timeout_ms = 60000
+enabled = false
+
+# Security allowlist note:
+# The proxy does not require additional env, but ensure Windows basics are allowed (PATH/Path, PATHEXT, ComSpec/COMSPEC, SystemRoot, WINDIR).
+# Example merge (only if missing):
+# [security]
+# env_allowlist = [
+#   "PATH","Path","PATHEXT","ComSpec","COMSPEC","SystemRoot","WINDIR","SystemDrive",
+#   "ProgramFiles","ProgramFiles(x86)","ProgramW6432","ProgramData","CommonProgramFiles","CommonProgramFiles(x86)",
+#   "APPDATA","LOCALAPPDATA","TEMP","TMP","HOME","HOMEDRIVE","HOMEPATH","USERPROFILE","USERNAME","USERDOMAIN"
+# ]
+
+# Verification (after building proxy and pasting stdio-test block):
+#   codex mcp list      # should show handshake_proxy.exe for stdio-test
+#   codex mcp get stdio-test
+# If stdio-test connects, enable sequential-thinking (set enabled = true), test, then filesystem, then memory.
