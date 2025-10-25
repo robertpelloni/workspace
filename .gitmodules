@@ -61,3 +61,9 @@
 [submodule "AirSim"]
 	path = AirSim
 	url = https://github.com/microsoft/AirSim
+[submodule "spec-kit"]
+	path = spec-kit
+	url = https://github.com/github/spec-kit
+[submodule "claude-squad"]
+	path = claude-squad
+	url = https://github.com/smtg-ai/claude-squad
