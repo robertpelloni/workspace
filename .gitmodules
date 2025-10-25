@@ -43,3 +43,21 @@
 [submodule "playwright-mcp"]
 	path = playwright-mcp
 	url = https://github.com/microsoft/playwright-mcp
+[submodule "vcpkg"]
+	path = vcpkg
+	url = https://github.com/microsoft/vcpkg
+[submodule "OmniParser"]
+	path = OmniParser
+	url = https://github.com/microsoft/OmniParser
+[submodule "autogen"]
+	path = autogen
+	url = https://github.com/microsoft/autogen
+[submodule "graphrag"]
+	path = graphrag
+	url = https://github.com/microsoft/graphrag
+[submodule "amplifier"]
+	path = amplifier
+	url = https://github.com/microsoft/amplifier
+[submodule "AirSim"]
+	path = AirSim
+	url = https://github.com/microsoft/AirSim
