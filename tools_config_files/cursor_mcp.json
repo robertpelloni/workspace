@@ -7,7 +7,7 @@
 			"args": [
 				"run",
 				"--directory",
-				"C:\\Users\\hyper\\serena\\",
+				"C:\\Users\\hyper\\workspace\\serena\\",
 				"serena",
 				"start-mcp-server",
 				"--context",
@@ -24,7 +24,7 @@
 			"args": [
 				"run",
 				"--directory",
-				"C:\\Users\\hyper\\zen-mcp-server\\",
+				"C:\\Users\\hyper\\workspace\\zen-mcp-server\\",
 				"zen-mcp-server"
 			],
 			"env": {
@@ -34,7 +34,7 @@
 		},
 		"chroma-knowledge": {
 			"type": "stdio",
-			"command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
 			"args": [
 				"--mode",
 				"stdio",

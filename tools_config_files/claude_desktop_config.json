@@ -1,7 +1,7 @@
 {
 	"mcpServers": {
 		"serena": {
-			"command": "C:\\Users\\hyper\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\workspace\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
 			"type": "stdio",
 			"transport": "stdio",
 			"args": [
@@ -14,7 +14,7 @@
 			"startupTimeout": 60000
 		},
 		"zen-mcp-server": {
-			"command": "C:\\Users\\hyper\\zen-mcp-server\\.venv\\Scripts\\zen-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\workspace\\zen-mcp-server\\.venv\\Scripts\\zen-mcp-server.exe",
 			"args": [
 			],
 			"env": {
@@ -23,7 +23,7 @@
 			"startupTimeout": 60000
 		},
 		"chroma-knowledge": {
-			"command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
 			"args": [
 				"--mode",
 				"stdio",

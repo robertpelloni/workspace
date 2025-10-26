@@ -106,21 +106,21 @@ enabled = true
 
 [mcp_servers.serena]
 command = "C:\\Windows\\System32\\cmd.exe"
-args = ["/s","/c","'C:\\Users\\hyper\\.local\\bin\\uv.exe' run --directory 'C:\\Users\\hyper\\serena' serena start-mcp-server --context codex --project 'C:\\Users\\hyper\\workspace'"]
+args = ["/s","/c","'C:\\Users\\hyper\\.local\\bin\\uv.exe' run --directory 'C:\\Users\\hyper\\workspace\\serena' serena start-mcp-server --context codex --project 'C:\\Users\\hyper\\workspace'"]
 startup_timeout_ms = 150000
 timeout_ms = 60000
 enabled = true
 
 [mcp_servers.zen-mcp-server]
 command = "C:\\Windows\\System32\\cmd.exe"
-args = ["/s","/c","'C:\\Users\\hyper\\.local\\bin\\uv.exe' run --directory 'C:\\Users\\hyper\\zen-mcp-server' zen-mcp-server"]
+args = ["/s","/c","'C:\\Users\\hyper\\.local\\bin\\uv.exe' run --directory 'C:\\Users\\hyper\\workspace\\zen-mcp-server' zen-mcp-server"]
 startup_timeout_ms = 150000
 timeout_ms = 60000
 enabled = true
 
 [mcp_servers.chroma-knowledge]
 command = "C:\\Windows\\System32\\cmd.exe"
-args = ["/s","/c","'C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe' --mode stdio --client-type http --host localhost --port 8000 --ssl false"]
+args = ["/s","/c","'C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe' --mode stdio --client-type http --host localhost --port 8000 --ssl false"]
 startup_timeout_ms = 120000
 timeout_ms = 60000
 enabled = true

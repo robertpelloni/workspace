@@ -3,7 +3,7 @@
 #  * For JavaScript, use typescript
 # Special requirements:
 #  * csharp: Requires the presence of a .sln file in the project folder.
-language: cpp
+language: typescript
 
 # whether to use the project's gitignore file to ignore files
 # Added on 2025-04-07
@@ -12,7 +12,28 @@ ignore_all_files_in_gitignore: true
 # same syntax as gitignore, so you can use * and **
 # Was previously called `ignored_dirs`, please update your config if you are using that.
 # Added (renamed) on 2025-04-07
-ignored_paths: []
+ignored_paths: [
+"AI_COORDINATION",
+"ai-file-sorter",
+"AirSim",
+"amplifier",
+"autogen",
+"chroma",
+"chroma-env",
+"chroma-env-312",
+"claude-squad",
+"consolidated-skills",
+"graphrag",
+"Local-File-Organizer",
+"OmniParser",
+"playwright",
+"playwright-mcp",
+"serena",
+"spec-kit",
+"tools-config-files",
+"vcpkg",
+"zen-mcp-server"
+]
 
 # whether the project is in read-only mode
 # If set to true, all editing tools will be disabled and attempts to use them will result in an error

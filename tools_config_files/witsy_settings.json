@@ -419,7 +419,7 @@
         "state": "enabled",
         "type": "stdio",
         "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
-        "url": "run --directory C:\\Users\\hyper\\serena\\ serena start-mcp-server --context agent --project C:\\Users\\hyper\\workspace\\",
+        "url": "run --directory C:\\Users\\hyper\\workspace\\serena\\ serena start-mcp-server --context agent --project C:\\Users\\hyper\\workspace\\",
         "env": {
           "PROJECT_ROOT": "C:\\Users\\hyper\\workspace\\",
           "USERPROFILE": "C:\\Users\\hyper"
@@ -432,7 +432,7 @@
         "state": "enabled",
         "type": "stdio",
         "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
-        "url": "run --directory C:\\Users\\hyper\\zen-mcp-server\\ zen-mcp-server",
+        "url": "run --directory C:\\Users\\hyper\\workspace\\zen-mcp-server\\ zen-mcp-server",
         "toolSelection": null
       },
       {
@@ -440,7 +440,7 @@
         "registryId": "0a897a54-49ae-4985-bfff-ee32a5337ab2",
         "state": "enabled",
         "type": "stdio",
-        "command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+        "command": "C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
         "url": "--mode stdio --client-type http --host localhost --port 8000 --ssl false",
         "env": {},
         "toolSelection": null

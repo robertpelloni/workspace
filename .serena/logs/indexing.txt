@@ -1,0 +1,2 @@
+okgame\lib\TiMidity++-2.14.0\doc\ja_JP.eucJP\README.mts
+File read failed.

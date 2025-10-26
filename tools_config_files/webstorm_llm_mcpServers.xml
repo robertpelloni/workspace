@@ -5,7 +5,7 @@
       <option name="enabled" value="true" />
       <option name="name" value="serena" />
       <option name="programPath" value="C:\\Users\\hyper\\.local\\bin\\uv.exe" />
-      <option name="arguments" value="run --directory C:\\Users\\hyper\\serena\\ serena start-mcp-server --context ide-assistant --project C:\\Users\\hyper\\workspace\\" />
+      <option name="arguments" value="run --directory C:\\Users\\hyper\\workspace\\serena\\ serena start-mcp-server --context ide-assistant --project C:\\Users\\hyper\\workspace\\" />
       <option name="workingDirectory" value="" />
       <envs />
     </McpServerCommand>
@@ -14,7 +14,7 @@
       <option name="enabled" value="true" />
       <option name="name" value="zen-mcp-server" />
       <option name="programPath" value="C:\\Users\\hyper\\.local\\bin\\uv.exe" />
-      <option name="arguments" value="run --directory C:\\Users\\hyper\\zen-mcp-server\\ zen-mcp-server" />
+      <option name="arguments" value="run --directory C:\\Users\\hyper\\workspace\\zen-mcp-server\\ zen-mcp-server" />
       <option name="workingDirectory" value="" />
       <envs>
       </envs>
@@ -23,7 +23,7 @@
       <option name="allowedToolsNames" />
       <option name="enabled" value="true" />
       <option name="name" value="chroma-knowledge" />
-      <option name="programPath" value="C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe" />
+      <option name="programPath" value="C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe" />
       <option name="arguments" value="--mode stdio --client-type http --host localhost --port 8000 --ssl false" />
       <option name="workingDirectory" value="" />
       <envs />
