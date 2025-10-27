@@ -1,30 +1,12 @@
 {
 	"$schema": "https://raw.githubusercontent.com/modelcontextprotocol/client-typescript/main/schemas/mcp-config.schema.json",
 	"mcpServers": {
-		"serena": {
-			"type": "stdio",
-			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
-			"args": [
-				"run",
-				"--directory",
-				"C:\\Users\\hyper\\workspace\\serena\\",
-				"serena",
-				"start-mcp-server",
-				"--context",
-				"ide-assistant",
-				"--project",
-				"C:\\Users\\hyper\\workspace\\"
-			],
-			"startupTimeoutMs": 90000,
-			"timeoutMs": 30000
-		},
 		"zen-mcp-server": {
-			"type": "stdio",
 			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
 			"args": [
 				"run",
 				"--directory",
-				"C:\\Users\\hyper\\workspace\\zen-mcp-server\\",
+				"C:\\Users\\hyper\\zen-mcp-server\\",
 				"zen-mcp-server"
 			],
 			"env": {
@@ -33,8 +15,7 @@
 			"timeoutMs": 60000
 		},
 		"chroma-knowledge": {
-			"type": "stdio",
-			"command": "C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
 			"args": [
 				"--mode",
 				"stdio",
@@ -50,33 +31,7 @@
 			"startupTimeoutMs": 60000,
 			"timeoutMs": 30000
 		},
-		"codex-mcp-server": {
-			"command": "codex-mcp-server",
-			"args": [
-				"stdio"
-			],
-			"env": {
-			}
-		},
-		"gemini-mcp": {
-			"command": "gemini-mcp",
-			"args": [
-				"stdio"
-			],
-			"env": {
-			}
-		},
-		"filesystem": {
-			"type": "stdio",
-			"command": "mcp-server-filesystem",
-			"args": [
-				"C:\\Users\\hyper\\workspace\\"
-			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
-		},
 		"memory": {
-			"type": "stdio",
 			"command": "mcp-server-memory",
 			"args": [
 			],
@@ -84,31 +39,24 @@
 			"timeoutMs": 30000
 		},
 		"sequential-thinking": {
-			"type": "stdio",
 			"command": "mcp-server-sequential-thinking",
 			"args": [
 			],
 			"startupTimeoutMs": 60000,
 			"timeoutMs": 30000
 		},
-		"tavily-remote-mcp": {
-			"command": "mcp-remote",
+		"everything": {
+			"command": "mcp-server-everything",
 			"args": [
-				"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
-				"stdio"
-			]
-		},
-		"tavily-mcp": {
-			"command": "tavily-mcp",
-			"args": [
-				"stdio"
-			]
+			],
+			"startupTimeoutMs": 60000,
+			"timeoutMs": 30000
 		}
 	},
 	"security": {
 		"allowedPaths": [
-			"C:\\Users\\hyper\\workspace"
+			"C:\\Users\\hyper\\fwber"
 		],
-		"redactLogs": false
+		"redactLogs": true
 	}
 }

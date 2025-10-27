@@ -23,3 +23,6 @@
 2025-10-26 17:05:18,702 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
 2025-10-26 17:05:18,774 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
 2025-10-26 17:05:18,778 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-10-26 20:51:59,429 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-26 20:51:59,457 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-26 21:03:30,034 - root - INFO - server.run completed successfully.

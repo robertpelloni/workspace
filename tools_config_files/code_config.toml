@@ -1,0 +1,87 @@
+model = "gpt-5-codex-high"
+model_reasoning_effort = "medium"
+windows_wsl_setup_acknowledged = true
+
+# Global MCP server timeout settings (keep short to prevent lingering processes)
+mcp_server_startup_timeout_ms = 90000
+mcp_server_timeout_ms = 30000
+
+# Security: explicit env allowlist and least-privilege filesystem roots
+[security]
+env_allowlist = [
+  "PROJECT_ROOT",
+  "AI_COORDINATION_DIR",
+  "MCP_CONFIG_PATH",
+  "MCP_FILESYSTEM_ROOTS",
+  "LOG_DIR",
+  "TEMP_DIR",
+  "SERENA_HOME",
+  "OPENAI_API_KEY",
+  "OPENAI_ORG",
+  "ANTHROPIC_API_KEY",
+  "GEMINI_API_KEY",
+  "XAI_API_KEY",
+  "OPENROUTER_API_KEY",
+  "GITHUB_TOKEN",
+  "USERPROFILE",
+  "PATH"
+]
+filesystem_roots = [
+  "C:\\Users\\hyper\\fwber",
+  "C:\\Users\\hyper\\fwber\\AI_COORDINATION"
+]
+
+# CORE SERVERS - Essential for all workflows
+
+# Filesystem server (global bin: mcp-server-filesystem)
+[mcp_servers.filesystem]
+command = "mcp-server-filesystem"
+args = ["C:\\Users\\hyper\\fwber\\"]
+startup_timeout_ms = 90000
+timeout_ms = 30000
+enabled = true
+
+# Sequential Thinking server (global bin: mcp-server-sequential-thinking)
+[mcp_servers.sequential-thinking]
+command = "mcp-server-sequential-thinking"
+args = ["stdio"]
+startup_timeout_ms = 90000
+timeout_ms = 30000
+enabled = true
+
+# Serena MCP (Python/uv) - Memory and symbol analysis
+[mcp_servers.serena]
+command = "%USERPROFILE%\\.local\\bin\\uv.exe"
+args = ["run","--directory","%USERPROFILE%\\serena\\","serena","start-mcp-server","--context","codex","--project","C:\\Users\\hyper\\fwber\\"]
+startup_timeout_ms = 90000
+timeout_ms = 30000
+enabled = true
+
+# CROSS-MODEL INTEGRATION - For multi-model orchestration
+
+# Gemini MCP (global bin: gemini-mcp) - Consult Gemini from Codex
+[mcp_servers.gemini-mcp]
+command = "gemini-mcp"
+args = ["stdio"]
+startup_timeout_ms = 90000
+timeout_ms = 30000
+enabled = true
+
+# Chroma Knowledge Server - Vector database for semantic search and knowledge management
+[mcp_servers.chroma-knowledge]
+command = "python"
+args = ["-m", "chroma_mcp_server"]
+startup_timeout_ms = 90000
+timeout_ms = 30000
+enabled = true
+
+# Note: codex-mcp-server NOT included - redundant since Codex CLI already has OpenAI access
+
+# Project trust (required by Codex for workspace operations)
+[projects.'\\?\\C:\\Users\\hyper\\fwber']
+trust_level = "trusted"
+
+[projects.'C:\Users\hyper\fwber']
+trust_level = "trusted"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"

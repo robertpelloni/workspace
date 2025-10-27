@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\hyper\\logs\\.d15b9c9413c84d035357a7e44c74b5ab8a795a6a-audit.json",
+    "files": [
+        {
+            "date": 1760252708558,
+            "name": "C:\\Users\\hyper\\logs\\mcp-puppeteer-2025-10-12.log",
+            "hash": "4505aa09b3f01a9f5da591e7727aaa6b78fbf7413e538682aceae80a8fedd356"
+        },
+        {
+            "date": 1760332949639,
+            "name": "C:\\Users\\hyper\\logs\\mcp-puppeteer-2025-10-13.log",
+            "hash": "1e65e8084702f8adc440c3d5464042b7d960878cd871d35c9b59284f76ed62dc"
+        },
+        {
+            "date": 1760549596787,
+            "name": "C:\\Users\\hyper\\logs\\mcp-puppeteer-2025-10-15.log",
+            "hash": "cf6f5e3077ac250a288221fb3bafccc82096344c20730cc259a3c2de8c063853"
+        },
+        {
+            "date": 1760762269075,
+            "name": "C:\\Users\\hyper\\logs\\mcp-puppeteer-2025-10-18.log",
+            "hash": "6d9e16f903d862255e4f4ee707fdaf8b86de316593bd2e4be25b850af1f82809"
+        }
+    ],
+    "hashType": "sha256"
+}

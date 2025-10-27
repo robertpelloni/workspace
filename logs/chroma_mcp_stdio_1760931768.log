@@ -1,0 +1,27 @@
+2025-10-19 23:42:48,604 - root - INFO - STDIO MODE: Logging configured - all logs redirected to C:\Users\hyper\logs\chroma_mcp_stdio_1760931768.log
+2025-10-19 23:42:48,605 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:48,605 - root - INFO - Log retention policy set to 7 days
+2025-10-19 23:42:48,605 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-19 23:42:48,615 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:48,615 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:48,615 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:49,328 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/auth/identity "HTTP/1.1 200 OK"
+2025-10-19 23:42:49,765 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant "HTTP/1.1 200 OK"
+2025-10-19 23:42:49,768 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database "HTTP/1.1 200 OK"
+2025-10-19 23:42:49,799 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/codebase_v1 "HTTP/1.1 404 Not Found"
+2025-10-19 23:42:49,874 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2025-10-19 23:42:49,876 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/chat_history_v1 "HTTP/1.1 404 Not Found"
+2025-10-19 23:42:49,929 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2025-10-19 23:42:49,931 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 404 Not Found"
+2025-10-19 23:42:49,986 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2025-10-19 23:42:49,988 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/thinking_sessions_v1 "HTTP/1.1 404 Not Found"
+2025-10-19 23:42:50,046 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2025-10-19 23:42:50,048 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/validation_evidence_v1 "HTTP/1.1 404 Not Found"
+2025-10-19 23:42:50,099 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2025-10-19 23:42:50,101 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/test_results_v1 "HTTP/1.1 404 Not Found"
+2025-10-19 23:42:50,156 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2025-10-19 23:42:50,158 - root - INFO - Entering stdio mode - all logs are going to file only
+2025-10-19 23:42:50,163 - root - INFO - Successfully imported tool modules inside main_stdio.
+2025-10-19 23:42:50,163 - root - INFO - Explicitly imported chroma_mcp.server.
+2025-10-19 23:42:50,163 - root - INFO - Creating initialization options...
+2025-10-19 23:42:50,166 - root - INFO - Initialization options created. Calling server.run...

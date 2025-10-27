@@ -21,43 +21,26 @@
 		//     }
 		// }
 		"serena": {
-			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+			"command": "uv",
+			"type": "stdio",
+			"transport": "stdio",
 			"args": [
 				"run",
 				"--directory",
-				"C:\\Users\\hyper\\workspace\\serena\\",
+				"C:\\Users\\hyper\\serena\\",
 				"serena",
 				"start-mcp-server",
 				"--context",
 				"ide-assistant",
 				"--project",
-				"C:\\Users\\hyper\\workspace\\"
+				"C:\\Users\\hyper\\fwber\\"
 			]
 		},
-		"zen-mcp-server": {
-			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+		"sequential-thinking": {
+			"command": "npx",
 			"args": [
-				"run",
-				"--directory",
-				"C:\\Users\\hyper\\workspace\\zen-mcp-server\\",
-				"zen-mcp-server"
-			],
-			"env": {
-			}
-		},
-		"chroma-knowledge": {
-			"command": "C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
-			"args": [
-				"--mode",
-				"stdio",
-				"--client-type",
-				"http",
-				"--host",
-				"localhost",
-				"--port",
-				"8000",
-				"--ssl",
-				"false"
+				"-y",
+				"@modelcontextprotocol/server-sequential-thinking"
 			]
 		},
 		"codex-mcp-server": {
@@ -76,34 +59,53 @@
 				"gemini-mcp-tool"
 			]
 		},
-		"memory": {
-			"command": "mcp-server-memory",
-			"args": [
-			]
-		},
-		"sequential-thinking": {
-			"command": "mcp-server-sequential-thinking",
-			"args": [
-			]
-		},
 		"filesystem": {
-			"command": "mcp-server-filesystem",
+			"command": "npx",
 			"args": [
-				"C:\\Users\\hyper\\workspace\\"
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"C:\\Users\\hyper\\fwber\\"
 			]
 		},
-		"tavily-remote-mcp": {
-			"command": "mcp-remote",
+		"memory": {
+			"command": "npx",
 			"args": [
-				"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
-				"stdio"
+				"-y",
+				"@modelcontextprotocol/server-memory"
 			]
 		},
-		"tavily-mcp": {
-			"command": "tavily-mcp",
+		"everything": {
+			"command": "npx",
 			"args": [
-				"stdio"
+				"-y",
+				"@modelcontextprotocol/server-everything"
 			]
+		},
+		"zen-mcp-server": {
+			"command": "uv",
+			"args": [
+				"run",
+				"--directory",
+				"C:\\Users\\hyper\\zen-mcp-server\\",
+				"zen-mcp-server"
+			],
+			"env": {
+				"OPENAI_API_KEY": "${OPENAI_API_KEY}",
+				"OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+				"GEMINI_API_KEY": "${GEMINI_API_KEY}"
+			}
+		},
+		"chroma-knowledge": {
+			"command": "python",
+			"args": [
+				"-m",
+				"chroma_mcp_server"
+			],
+			"env": {
+				"CHROMA_CLIENT_TYPE": "http",
+				"CHROMA_HOST": "localhost",
+				"CHROMA_PORT": "8000"
+			}
 		}
 	}
 }

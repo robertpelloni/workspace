@@ -9,8 +9,7 @@
     "proxyMode": "default",
     "customProxy": "",
     "tips": {
-      "trayIcon": false,
-      "realtime": false
+      "trayIcon": false
     },
     "confirm": {
       "retryGeneration": true
@@ -89,7 +88,7 @@
   "studio": {
     "type": "image",
     "engines": {
-      "image": "openai",
+      "image": "xai",
       "imageEdit": "google",
       "video": "replicate",
       "videoEdit": "replicate"
@@ -217,7 +216,7 @@
       "vertexai": false,
       "model": {
         "chat": "gemini-pro-latest",
-        "image": "gemini-2.5-flash-image",
+        "image": "imagen-4.0-fast-generate-001",
         "imageEdit": "gemini-2.0-flash-exp",
         "vision": "gemini-2.5-flash-preview-09-2025"
       },
@@ -233,7 +232,7 @@
     "xai": {
       "model": {
         "chat": "grok-4-0709",
-        "image": "grok-2-image-1212",
+        "image": "",
         "vision": "grok-2-vision-1212"
       },
       "disableTools": false
@@ -386,9 +385,6 @@
       ],
       "allowWrite": true,
       "skipConfirmation": false
-    },
-    "knowledge": {
-      "enabled": true
     }
   },
   "mcp": {
@@ -399,7 +395,7 @@
         "state": "enabled",
         "type": "stdio",
         "command": "mcp-server-filesystem",
-        "url": "C:\\Users\\hyper\\workspace\\",
+        "url": "C:\\Users\\hyper\\fwber\\",
         "env": {},
         "toolSelection": null
       },
@@ -419,9 +415,9 @@
         "state": "enabled",
         "type": "stdio",
         "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
-        "url": "run --directory C:\\Users\\hyper\\workspace\\serena\\ serena start-mcp-server --context agent --project C:\\Users\\hyper\\workspace\\",
+        "url": "run --directory C:\\Users\\hyper\\serena\\ serena start-mcp-server --context agent --project C:\\Users\\hyper\\fwber\\",
         "env": {
-          "PROJECT_ROOT": "C:\\Users\\hyper\\workspace\\",
+          "PROJECT_ROOT": "C:\\Users\\hyper\\fwber\\",
           "USERPROFILE": "C:\\Users\\hyper"
         },
         "toolSelection": null
@@ -432,7 +428,12 @@
         "state": "enabled",
         "type": "stdio",
         "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
-        "url": "run --directory C:\\Users\\hyper\\workspace\\zen-mcp-server\\ zen-mcp-server",
+        "url": "run --directory C:\\Users\\hyper\\zen-mcp-server\\ zen-mcp-server",
+        "env": {
+          "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+          "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+          "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+        },
         "toolSelection": null
       },
       {
@@ -440,7 +441,7 @@
         "registryId": "0a897a54-49ae-4985-bfff-ee32a5337ab2",
         "state": "enabled",
         "type": "stdio",
-        "command": "C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
+        "command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
         "url": "--mode stdio --client-type http --host localhost --port 8000 --ssl false",
         "env": {},
         "toolSelection": null
@@ -479,25 +480,12 @@
         "toolSelection": null
       },
       {
-        "uuid": "594f3330-3df7-481e-b479-e2f1822104e6",
-        "registryId": "594f3330-3df7-481e-b479-e2f1822104e6",
+        "uuid": "b54a7a3c-d884-4dde-9863-57c64bac9666",
+        "registryId": "b54a7a3c-d884-4dde-9863-57c64bac9666",
         "state": "enabled",
         "type": "stdio",
-        "command": "npx",
-        "url": "-y tavily-mcp",
-        "env": {},
-        "toolSelection": null,
-        "cwd": "",
-        "headers": {},
-        "oauth": null
-      },
-      {
-        "uuid": "31373dba-e80d-4737-8523-75a416ae5968",
-        "registryId": "31373dba-e80d-4737-8523-75a416ae5968",
-        "state": "enabled",
-        "type": "stdio",
-        "command": "mcp-remote",
-        "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY} stdio",
+        "command": "mcp-server-everything",
+        "url": "",
         "env": {},
         "toolSelection": null
       }

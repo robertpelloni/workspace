@@ -1,50 +1,27 @@
 {
 	"mcpServers": {
 		"serena": {
-			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+			"command": "uv",
+			"type": "stdio",
+			"transport": "stdio",
 			"args": [
 				"run",
 				"--directory",
-				"C:\\Users\\hyper\\workspace\\serena\\",
+				"C:\\Users\\hyper\\serena\\",
 				"serena",
 				"start-mcp-server",
 				"--context",
-				"ide-assistant",
+				"agent",
 				"--project",
-				"C:\\Users\\hyper\\workspace\\"
-			],
-			"startupTimeoutMs": 90000,
-			"timeoutMs": 30000
+				"C:\\Users\\hyper\\fwber\\"
+			]
 		},
-		"zen-mcp-server": {
-			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+		"sequential-thinking": {
+			"command": "npx",
 			"args": [
-				"run",
-				"--directory",
-				"C:\\Users\\hyper\\workspace\\zen-mcp-server\\",
-				"zen-mcp-server"
-			],
-			"env": {
-			},
-			"startupTimeoutMs": 120000,
-			"timeoutMs": 60000
-		},
-		"chroma-knowledge": {
-			"command": "C:\\Users\\hyper\\workspace\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
-			"args": [
-				"--mode",
-				"stdio",
-				"--client-type",
-				"http",
-				"--host",
-				"localhost",
-				"--port",
-				"8000",
-				"--ssl",
-				"false"
-			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
+				"-y",
+				"@modelcontextprotocol/server-sequential-thinking"
+			]
 		},
 		"codex-mcp-server": {
 			"type": "stdio",
@@ -52,44 +29,65 @@
 			"args": [
 				"-y",
 				"codex-mcp-server"
+			]
+		},
+		"filesystem": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"C:\\Users\\hyper\\fwber\\"
 			],
 			"timeout": 30000,
 			"startupTimeout": 60000
 		},
 		"memory": {
-			"command": "mcp-server-memory",
+			"command": "npx",
 			"args": [
+				"-y",
+				"@modelcontextprotocol/server-memory"
 			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
+			"timeout": 30000,
+			"startupTimeout": 60000
 		},
-		"sequential-thinking": {
-			"command": "mcp-server-sequential-thinking",
+		"everything": {
+			"command": "npx",
 			"args": [
+				"-y",
+				"@modelcontextprotocol/server-everything"
 			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
+			"timeout": 30000,
+			"startupTimeout": 60000
 		},
-		"filesystem": {
-			"command": "mcp-server-filesystem",
+		"zen-mcp-server": {
+			"command": "uv",
 			"args": [
-				"C:\\Users\\hyper\\workspace\\"
+				"run",
+				"--directory",
+				"C:\\Users\\hyper\\zen-mcp-server\\",
+				"zen-mcp-server"
 			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
+			"env": {
+				"OPENAI_API_KEY": "${OPENAI_API_KEY}",
+				"OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+				"GEMINI_API_KEY": "${GEMINI_API_KEY}"
+			},
+			"timeout": 30000,
+			"startupTimeout": 60000
 		},
-		"tavily-remote-mcp": {
-			"command": "mcp-remote",
+		"chroma-knowledge": {
+			"command": "python",
 			"args": [
-				"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
-				"stdio"
-			]
-		},
-		"tavily-mcp": {
-			"command": "tavily-mcp",
-			"args": [
-				"stdio"
-			]
+				"-m",
+				"chroma_mcp_server"
+			],
+			"env": {
+				"CHROMA_CLIENT_TYPE": "http",
+				"CHROMA_HOST": "localhost",
+				"CHROMA_PORT": "8000"
+			},
+			"timeout": 30000,
+			"startupTimeout": 60000
 		}
 	},
 	"selectedAuthType": "qwen-oauth"

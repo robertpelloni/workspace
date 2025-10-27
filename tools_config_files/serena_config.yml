@@ -83,4 +83,4 @@ token_count_estimator: TIKTOKEN_GPT4O
 # instruct Serena to activate the project by its path for first-time activation.
 # NOTE: Make sure there are no name collisions in the names of registered projects.
 projects:
-- C:\Users\hyper\workspace
+- C:\Users\hyper\fwber

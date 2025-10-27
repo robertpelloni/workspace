@@ -2,7 +2,7 @@
 # This doesn't require administrator privileges
 
 # Change to the tools_config_files directory
-Set-Location "C:\Users\hyper\workspace\tools_config_files"
+Set-Location "C:\Users\hyper\fwber\tools_config_files"
 
 # List of configuration files and their target names
 $configFiles = @{
@@ -50,5 +50,3 @@ foreach ($linkName in $configFiles.Keys) {
 
 Write-Host "`nFile copying completed!" -ForegroundColor Green
 Write-Host "You can now add these files to git tracking." -ForegroundColor Cyan
-
-Pause
