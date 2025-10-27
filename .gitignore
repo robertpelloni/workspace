@@ -1,2 +1,83 @@
 chroma-env-312/Lib/site-packages/torch/lib/torch_cpu.dll
 chroma-env-312/Lib/site-packages/torch/lib/torch_cpu.lib
+
+# Ignore IDE settings
+/.idea/*
+.vscode/
+*.swp
+*.swo
+.serena/memories/*
+.serena/cache/*
+.serena/logs/*
+
+# Secrets and environment
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.production.local
+.env.test.local
+.encryption_key
+
+# API Keys and Secrets (CRITICAL - Never commit these!)
+*api_key*
+*secret*
+*.key
+*.secret
+*_secrets*
+*_keys*
+
+# Configuration files with potential API keys
+unified-copilot-config.json
+unified-cline-config.json
+unified-ai-orchestrator.js
+setup_wsl_*.ps1
+*_config.json
+*_config.toml
+
+# Tools configuration directory (contains API key placeholders)
+#tools_config_files/
+
+# Configuration backups
+config-backups/
+tool-optimization-backups/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Vendor (PHP Composer) - optional if vendor is committed elsewhere
+# vendor/
+
+# Local runtime files
+*.log
+logs/
+
+# Legacy secrets file already handled
+_secrets.php
+test-db-connection.php
+FIXING_MCP_FOR_REAL_PARALLEL_WORK.md
+fix-database-quick.ps1
+fwber-backend/.env.mysql
+COMPREHENSIVE_DEVELOPMENT_STATUS_2025_01_19.md
+DEVELOPMENT_STATUS_2025_01_19.md
+FWBER_DEVELOPMENT_PROGRESS_2025_01_19.md
+test-token.txt
+API_CONFIGURATION_SOLUTION_2025_01_21.md
+.serena/memories/api_configuration_troubleshooting_2025_01_21.md
+.serena/memories/api_fix_success_2025_01_21.md
+.serena/memories/fwber_phase1_security_complete_2025_01_19.md
+.serena/memories/iphone_4_recovery_summary.md
+.serena/memories/proximity_chatroom_testing_and_deployment.md
+/tools_config_files/handshake_proxy/bin
+/tools_config_files/handshake_proxy/obj
+/tools_config_files/handshake_proxy/out

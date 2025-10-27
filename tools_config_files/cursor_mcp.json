@@ -2,12 +2,9 @@
 	"$schema": "https://raw.githubusercontent.com/modelcontextprotocol/client-typescript/main/schemas/mcp-config.schema.json",
 	"mcpServers": {
 		"zen-mcp-server": {
-			"command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
+			"type": "stdio",
+			"command": "C:\\Users\\hyper\\zen-mcp-server\\.venv\\Scripts\\zen-mcp-server.exe",
 			"args": [
-				"run",
-				"--directory",
-				"C:\\Users\\hyper\\zen-mcp-server\\",
-				"zen-mcp-server"
 			],
 			"env": {
 			},
@@ -15,6 +12,7 @@
 			"timeoutMs": 60000
 		},
 		"chroma-knowledge": {
+			"type": "stdio",
 			"command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
 			"args": [
 				"--mode",
@@ -28,10 +26,27 @@
 				"--ssl",
 				"false"
 			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
+			"startupTimeoutMs": 120000,
+			"timeoutMs": 120000
+		},
+		"codex-mcp-server": {
+			"command": "codex-mcp-server",
+			"args": [
+				"stdio"
+			],
+			"env": {
+			}
+		},
+		"gemini-mcp": {
+			"command": "gemini-mcp",
+			"args": [
+				"stdio"
+			],
+			"env": {
+			}
 		},
 		"memory": {
+			"type": "stdio",
 			"command": "mcp-server-memory",
 			"args": [
 			],
@@ -39,24 +54,31 @@
 			"timeoutMs": 30000
 		},
 		"sequential-thinking": {
+			"type": "stdio",
 			"command": "mcp-server-sequential-thinking",
 			"args": [
 			],
 			"startupTimeoutMs": 60000,
 			"timeoutMs": 30000
 		},
-		"everything": {
-			"command": "mcp-server-everything",
+		"tavily-remote-mcp": {
+			"command": "mcp-remote",
 			"args": [
-			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
+				"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
+				"stdio"
+			]
+		},
+		"tavily-mcp": {
+			"command": "tavily-mcp",
+			"args": [
+				"stdio"
+			]
 		}
 	},
 	"security": {
 		"allowedPaths": [
-			"C:\\Users\\hyper\\fwber"
+			"C:\\Users\\hyper\\workspace\\"
 		],
-		"redactLogs": true
+		"redactLogs": false
 	}
 }

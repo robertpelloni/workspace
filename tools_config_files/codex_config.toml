@@ -52,93 +52,71 @@ env_allowlist = [
 "LANG","LC_ALL","TERM",
 
 #Chroma client (HTTP)
-"CHROMA_CLIENT_TYPE","CHROMA_HOST","CHROMA_PORT"
+"CHROMA_CLIENT_TYPE","CHROMA_HOST","CHROMA_PORT",
+
+"MCP_DEBUG","DEBUG",
+"MCP_WRAPPER_LOG","NPX_CMD"
 ]
 
 filesystem_roots = [
-"C:\\Users\\hyper\\fwber",
-"C:\\Users\\hyper\\BobsGameOnline",
-"C:\\Users\\hyper\\okgame",
-"C:\\Users\\hyper\\FileOrganizer",
-"C:\\Users\\hyper\\fwber\\AI_COORDINATION"
+"C:\\Users\\hyper\\"
 ]
 
-#======================
-#MCP SERVERS (Windows-safe)
-#All NPX-based servers launched via: cmd /d /s /c npx.cmd …
-#/d disables AutoRun (prevents pre-handshake stdout noise)
-#/s handles quotes correctly with /c
-#======================
-#Filesystem (NPX official server)
-[mcp_servers.filesystem]
-command = "cmd"
-args = ["/d","/s","/c","npx.cmd","-y","@modelcontextprotocol/server-filesystem","C:\\Users\\hyper\\fwber"]
-startup_timeout_ms = 120000
-timeout_ms = 60000
-enabled = true
-
-#Sequential Thinking (NPX)
-[mcp_servers.sequential-thinking]
-command = "cmd"
-args = ["/d","/s","/c","npx.cmd","-y","@modelcontextprotocol/server-sequential-thinking"]
-startup_timeout_ms = 120000
-timeout_ms = 60000
-enabled = true
-
-#Everything test server (NPX)
-[mcp_servers.everything]
-command = "cmd"
-args = ["/d","/s","/c","npx.cmd","-y","@modelcontextprotocol/server-everything"]
-startup_timeout_ms = 120000
-timeout_ms = 60000
-enabled = true
-
-#Memory (NPX) — simple baseline echo/memory tools for sanity checks
-[mcp_servers.memory]
-command = "cmd"
-args = ["/d","/s","/c","npx.cmd","-y","@modelcontextprotocol/server-memory"]
-startup_timeout_ms = 120000
-timeout_ms = 60000
-enabled = true
-
-#Gemini MCP (NPX)
-[mcp_servers.gemini-mcp]
-command = "cmd"
-args = ["/d","/s","/c","npx.cmd","-y","gemini-mcp-tool"]
-startup_timeout_ms = 120000
-timeout_ms = 60000
-enabled = true
-
-#Serena (uv run) — keep explicit uv.exe path and codex context
-[mcp_servers.serena]
-command = "C:\\Users\\hyper\\.local\\bin\\uv.exe"
-args = ["run","--directory","C:\\Users\\hyper\\serena","serena","start-mcp-server","--context","codex","--project","C:\\Users\\hyper\\fwber"]
-startup_timeout_ms = 150000
-timeout_ms = 60000
-enabled = true
-
-#Zen MCP (uv run) — requires API key(s) in env (e.g., OPENAI_API_KEY, GEMINI_API_KEY)
 [mcp_servers.zen-mcp-server]
-command = "C:\\Users\\hyper\\.local\\bin\\uv.exe"
-args = ["run","--directory","C:\\Users\\hyper\\zen-mcp-server","zen-mcp-server"]
+command = "C:\\Windows\\System32\\cmd.exe"
+args = ["/s","/c","C:\\Users\\hyper\\zen-mcp-server\\.venv\\Scripts\\zen-mcp-server.exe"]
 startup_timeout_ms = 150000
 timeout_ms = 60000
 enabled = true
 
-#Chroma Knowledge (Python module) — relies on CHROMA_* env and local Chroma HTTP service
 [mcp_servers.chroma-knowledge]
-command = "python"
-args = ["-m","chroma_mcp_server"]
+command = "C:\\Windows\\System32\\cmd.exe"
+args = ["/s","/c","'C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe' --mode stdio --client-type http --host localhost --port 8000 --ssl false"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.gemini-mcp]
+command = "C:\\Windows\\System32\\cmd.exe" 
+args = ["/s","/c","'C:\\Program Files\\nodejs\\npx.cmd' -y gemini-mcp-tool stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.sequential-thinking]
+command = "powershell.exe" 
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-server-sequential-thinking.cmd","stdio"] 
+startup_timeout_ms = 120000 
+timeout_ms = 60000 
+enabled = true
+
+[mcp_servers.memory]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-server-memory.cmd","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.tavily-remote-mcp]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-remote.cmd","https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.tavily-mcp]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\tavily-mcp.cmd","stdio"]
 startup_timeout_ms = 120000
 timeout_ms = 60000
 enabled = true
 
 #Project trust (required by Codex for workspace operations)
-[projects.'\?\C:\\Users\\hyper\\fwber']
+[projects.'\?\C:\\Users\\hyper\\workspace\\']
 trust_level = "trusted"
 
-[projects.'\?\C:\Users\hyper\fwber']
+[projects.'\?\C:\Users\hyper\workspace\\']
 trust_level = "trusted"
 
-[projects.'\\?\C:\Users\hyper\fwber']
+[projects.'\\?\C:\Users\hyper\workspace\\']
 trust_level = "trusted"

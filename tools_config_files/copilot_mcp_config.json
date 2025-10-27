@@ -1,128 +1,96 @@
 {
 	"mcpServers": {
-		"serena": {
+		"zen-mcp-server": {
 			"type": "local",
-			"command": "uv",
-			"tools": [
-				"*"
-			],
+			"command": "C:\\Users\\hyper\\zen-mcp-server\\.venv\\Scripts\\zen-mcp-server.exe",
 			"args": [
-				"run",
-				"--directory",
-				"C:\\Users\\hyper\\serena\\",
-				"serena",
-				"start-mcp-server",
-				"--context",
-				"agent",
-				"--project",
-				"C:\\Users\\hyper\\fwber\\"
+			"stdio"
+			],
+			"tools": [
+			"*"
 			]
 		},
-		"sequential-thinking": {
+		"chroma-knowledge": {
 			"type": "local",
-			"command": "npx",
-			"tools": [
-				"*"
-			],
+			"command": "C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe",
 			"args": [
-				"-y",
-				"@modelcontextprotocol/server-sequential-thinking"
+				"--mode",
+				"stdio",
+				"--client-type",
+				"http",
+				"--host",
+				"localhost",
+				"--port",
+				"8000",
+				"--ssl",
+				"false"
+			],
+			"tools": [
+			"*"
 			]
 		},
 		"codex-mcp-server": {
 			"type": "local",
 			"command": "npx",
-			"tools": [
-				"*"
-			],
 			"args": [
 				"-y",
 				"codex-mcp-server"
+			],
+			"tools": [
+			"*"
 			]
 		},
 		"gemini-mcp-tool": {
 			"type": "local",
 			"command": "npx",
-			"tools": [
-				"*"
-			],
 			"args": [
 				"-y",
 				"gemini-mcp-tool"
+			],
+			"tools": [
+			"*"
 			]
 		},
-		"filesystem": {
-			"command": "npx",
-			"args": [
-				"-y",
-				"@modelcontextprotocol/server-filesystem",
-				"C:\\Users\\hyper\\fwber\\"
-			],
-			"tools": [
-				"*"
-			],
-			"timeout": 30000,
-			"startupTimeout": 60000
-		},
 		"memory": {
-			"command": "npx",
+			"type": "local",
+			"command": "mcp-server-memory",
 			"args": [
-				"-y",
-				"@modelcontextprotocol/server-memory"
+			"stdio"
 			],
 			"tools": [
-				"*"
-			],
-			"timeout": 30000,
-			"startupTimeout": 60000
+			"*"
+			]
 		},
-		"everything": {
-			"command": "npx",
+		"sequential-thinking": {
+			"type": "local",
+			"command": "mcp-server-sequential-thinking",
 			"args": [
-				"-y",
-				"@modelcontextprotocol/server-everything"
+			"stdio"
 			],
 			"tools": [
-				"*"
-			],
-			"timeout": 30000,
-			"startupTimeout": 60000
+			"*"
+			]
 		},
-		"zen-mcp-server": {
-			"command": "uv",
+		"tavily-remote-mcp": {
+			"type": "local",
+			"command": "mcp-remote",
 			"args": [
-				"run",
-				"--directory",
-				"C:\\Users\\hyper\\zen-mcp-server\\",
-				"zen-mcp-server"
+				"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}",
+				"stdio"
 			],
 			"tools": [
-				"*"
-			],
-			"env": {
-				"OPENAI_API_KEY": "${OPENAI_API_KEY}",
-				"OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
-				"GEMINI_API_KEY": "${GEMINI_API_KEY}"
-			},
-			"timeout": 30000,
-			"startupTimeout": 60000
+			"*"
+			]
 		},
-		"chroma-knowledge": {
-			"command": "python",
+		"tavily-mcp": {
+			"type": "local",
+			"command": "tavily-mcp",
 			"args": [
-				"-m",
-				"chroma_mcp_server"
+				"stdio"
 			],
 			"tools": [
-				"*"
-			],
-			"env": {
-				"CHROMA_CLIENT_TYPE": "http",
-				"CHROMA_HOST": "localhost",
-				"CHROMA_PORT": "8000"
-			},
-			"timeout": 30000,
-			"startupTimeout": 60000
+			"*"
+			]
 		}
 	}
 }

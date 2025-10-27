@@ -4,44 +4,27 @@
       <option name="allowedToolsNames" />
       <option name="enabled" value="true" />
       <option name="name" value="serena" />
-      <option name="programPath" value="uv" />
-      <option name="arguments" value="run --directory C:\\Users\\hyper\\serena\\ serena start-mcp-server --context ide-assistant --project C:\\Users\\hyper\\fwber\\" />
+      <option name="programPath" value="C:\\Users\\hyper\\serena\\.venv\\Scripts\\serena-mcp-server.exe" />
+      <option name="arguments" value="--context ide-assistant --project C:\\Users\\hyper\\workspace\\" />
       <option name="workingDirectory" value="" />
       <envs />
     </McpServerCommand>
 	<McpServerCommand sourceId="UserConfigurationSource">
       <option name="allowedToolsNames" />
       <option name="enabled" value="true" />
-      <option name="name" value="sequential-thinking" />
-      <option name="programPath" value="npx" />
-      <option name="arguments" value="-y @modelcontextprotocol/server-sequential-thinking" />
+      <option name="name" value="zen-mcp-server" />
+      <option name="programPath" value="C:\\Users\\hyper\\zen-mcp-server\\.venv\\Scripts\\zen-mcp-server.exe" />
+      <option name="arguments" value="" />
       <option name="workingDirectory" value="" />
-      <envs />
+      <envs>
+      </envs>
     </McpServerCommand>
 	<McpServerCommand sourceId="UserConfigurationSource">
       <option name="allowedToolsNames" />
       <option name="enabled" value="true" />
-      <option name="name" value="filesystem" />
-      <option name="programPath" value="npx" />
-      <option name="arguments" value="-y @modelcontextprotocol/server-filesystem C:\Users\hyper\fwber\" />
-      <option name="workingDirectory" value="" />
-      <envs />
-    </McpServerCommand>
-	<McpServerCommand sourceId="UserConfigurationSource">
-      <option name="allowedToolsNames" />
-      <option name="enabled" value="true" />
-      <option name="name" value="memory" />
-      <option name="programPath" value="npx" />
-      <option name="arguments" value="-y @modelcontextprotocol/server-memory" />
-      <option name="workingDirectory" value="" />
-      <envs />
-    </McpServerCommand>
-	<McpServerCommand sourceId="UserConfigurationSource">
-      <option name="allowedToolsNames" />
-      <option name="enabled" value="true" />
-      <option name="name" value="everything" />
-      <option name="programPath" value="npx" />
-      <option name="arguments" value="-y @modelcontextprotocol/server-everything" />
+      <option name="name" value="chroma-knowledge" />
+      <option name="programPath" value="C:\\Users\\hyper\\chroma-env-312\\Scripts\\chroma-mcp-server.exe" />
+      <option name="arguments" value="--mode stdio --client-type http --host localhost --port 8000 --ssl false" />
       <option name="workingDirectory" value="" />
       <envs />
     </McpServerCommand>
@@ -66,22 +49,45 @@
 	<McpServerCommand sourceId="UserConfigurationSource">
       <option name="allowedToolsNames" />
       <option name="enabled" value="true" />
-      <option name="name" value="zen-mcp-server" />
-      <option name="programPath" value="uv" />
-      <option name="arguments" value="run --directory C:\Users\hyper\zen-mcp-server\ zen-mcp-server" />
+      <option name="name" value="memory" />
+      <option name="programPath" value="mcp-server-memory" />
+      <option name="arguments" value="" />
       <option name="workingDirectory" value="" />
-      <envs>
-        <env name="OPENAI_API_KEY" value="${OPENAI_API_KEY}" />
-        <env name="OPENROUTER_API_KEY" value="${OPENROUTER_API_KEY}" />
-        <env name="GEMINI_API_KEY" value="${GEMINI_API_KEY}" />
-      </envs>
+      <envs />
     </McpServerCommand>
 	<McpServerCommand sourceId="UserConfigurationSource">
       <option name="allowedToolsNames" />
       <option name="enabled" value="true" />
-      <option name="name" value="chroma-knowledge" />
-      <option name="programPath" value="C:\Users\hyper\chroma-env-312\Scripts\chroma-mcp-server.exe" />
-      <option name="arguments" value="--mode stdio --client-type http --host localhost --port 8000 --ssl false" />
+      <option name="name" value="sequential-thinking" />
+      <option name="programPath" value="mcp-server-sequential-thinking" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="filesystem" />
+      <option name="programPath" value="mcp-server-filesystem" />
+      <option name="arguments" value="C:\\Users\\hyper\workspace\\" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="tavily-remote-mcp" />
+      <option name="programPath" value="mcp-remote" />
+      <option name="arguments" value="https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+	<McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="tavily-mcp" />
+      <option name="programPath" value="tavily-mcp" />
+      <option name="arguments" value="" />
       <option name="workingDirectory" value="" />
       <envs />
     </McpServerCommand>

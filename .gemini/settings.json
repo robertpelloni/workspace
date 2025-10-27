@@ -1,5 +1,4 @@
 {
-	"$schema": "https://raw.githubusercontent.com/modelcontextprotocol/client-typescript/main/schemas/mcp-config.schema.json",
 	"mcpServers": {
 		"serena": {
 			"type": "stdio",
@@ -10,11 +9,10 @@
 				"--project",
 				"C:\\Users\\hyper\\workspace\\"
 			],
-			"startupTimeoutMs": 120000,
-			"timeoutMs": 120000
+			"startupTimeoutMs": 90000,
+			"timeoutMs": 30000
 		},
 		"filesystem": {
-			"type": "stdio",
 			"command": "mcp-server-filesystem",
 			"args": [
 				"C:\\Users\\hyper\\workspace\\"
@@ -24,9 +22,8 @@
 		}
 	},
 	"security": {
-		"allowedPaths": [
-			"C:\\Users\\hyper\\workspace\\"
-		],
-		"redactLogs": false
+		"auth": {
+			"selectedType": "oauth-personal"
+		}
 	}
 }

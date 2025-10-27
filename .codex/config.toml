@@ -1,0 +1,28 @@
+filesystem_roots = [
+"C:\\Users\\hyper\\workspace\\"
+]
+
+[mcp_servers.filesystem]
+command = "powershell.exe"
+args = ["-NoLogo","-NoProfile","-ExecutionPolicy","Bypass","-File","C:\\Users\\hyper\\workspace\\tools_config_files\\mcp_cmd_quiet.ps1","C:\\Progra~1\\nodejs\\mcp-server-filesystem.cmd","C:\\Users\\hyper\\workspace\\","stdio"]
+startup_timeout_ms = 120000
+timeout_ms = 60000
+enabled = true
+
+[mcp_servers.serena]
+command = "C:\\Windows\\System32\\cmd.exe"
+args = ["/s","/c","C:\\Users\\hyper\\serena\\.venv\\Scripts\\serena-mcp-server.exe --context codex --project 'C:\\Users\\hyper\\workspace\\'"]
+startup_timeout_ms = 150000
+timeout_ms = 60000
+enabled = true
+
+#Project trust (required by Codex for workspace operations)
+[projects.'\?\C:\\Users\\hyper\\workspace\\']
+trust_level = "trusted"
+
+[projects.'\?\C:\Users\hyper\workspace\']
+trust_level = "trusted"
+
+[projects.'\\?\C:\Users\hyper\workspace\']
+trust_level = "trusted"
+

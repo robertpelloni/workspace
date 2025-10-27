@@ -1,4 +1,4 @@
-gui_log_window: false
+gui_log_window: true
 # whether to open a graphical window with Serena's logs.
 # This is mainly supported on Windows and (partly) on Linux; not available on macOS.
 # If you want to see the logs in a web browser, use the `web_dashboard` option instead.
@@ -83,4 +83,5 @@ token_count_estimator: TIKTOKEN_GPT4O
 # instruct Serena to activate the project by its path for first-time activation.
 # NOTE: Make sure there are no name collisions in the names of registered projects.
 projects:
-- C:\Users\hyper\fwber
+- C:\Users\hyper\workspace
+- C:\Users\hyper\workspace\fwber
