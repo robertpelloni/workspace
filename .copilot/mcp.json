@@ -7,11 +7,10 @@
 				"--context",
 				"ide-assistant",
 				"--project",
-				"C:\\Users\\hyper\\workspace\\",
-				"stdio"
+				"C:\\Users\\hyper\\workspace\\"
 			],
 			"tools": [
-			"*"
+				"*"
 			]
 		},
 		"filesystem": {
@@ -21,7 +20,7 @@
 				"C:\\Users\\hyper\\workspace\\"
 			],
 			"tools": [
-			"*"
+				"*"
 			]
 		}
 	}

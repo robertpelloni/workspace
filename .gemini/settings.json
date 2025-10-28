@@ -13,6 +13,7 @@
 			"timeoutMs": 30000
 		},
 		"filesystem": {
+			"type": "stdio",
 			"command": "mcp-server-filesystem",
 			"args": [
 				"C:\\Users\\hyper\\workspace\\"

@@ -15,7 +15,7 @@
 	url = https://github.com/robertpelloni/FileOrganizer
 [submodule "ai-file-sorter"]
 	path = ai-file-sorter
-	url = https://github.com/robertpelloni/ai-file-sorter
+	url = https://github.com/hyperfield/ai-file-sorter
 [submodule "Local-File-Organizer"]
 	path = Local-File-Organizer
 	url = https://github.com/robertpelloni/Local-File-Organizer
@@ -73,3 +73,6 @@
 [submodule "mcp-tool-chainer"]
 	path = mcp-tool-chainer
 	url = https://github.com/thirdstrandstudio/mcp-tool-chainer
+[submodule "chroma-mcp"]
+	path = chroma-mcp
+	url = https://github.com/chroma-core/chroma-mcp

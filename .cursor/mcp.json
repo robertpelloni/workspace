@@ -8,8 +8,7 @@
 				"--context",
 				"ide-assistant",
 				"--project",
-				"C:\\Users\\hyper\\workspace\\",
-				"stdio"
+				"C:\\Users\\hyper\\workspace\\"
 			],
 			"startupTimeoutMs": 120000,
 			"timeoutMs": 120000
