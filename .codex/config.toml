@@ -11,7 +11,7 @@ enabled = true
 
 [mcp_servers.serena]
 command = "C:\\Windows\\System32\\cmd.exe"
-args = ["/s","/c","C:\\Users\\hyper\\serena\\.venv\\Scripts\\serena-mcp-server.exe --context codex --project 'C:\\Users\\hyper\\workspace\\'"]
+args = ["/s","/c","C:\\Users\\hyper\\workspace\\serena\\.venv\\Scripts\\serena-mcp-server.exe --context codex --project 'C:\\Users\\hyper\\workspace\\'","stdio"]
 startup_timeout_ms = 150000
 timeout_ms = 60000
 enabled = true

@@ -1,12 +1,6 @@
 [submodule "BobsGameOnline"]
 	path = BobsGameOnline
 	url = https://github.com/robertpelloni/BobsGameOnline.git
-[submodule "serena"]
-	path = serena
-	url = https://github.com/robertpelloni/serena
-[submodule "zen-mcp-server"]
-	path = zen-mcp-server
-	url = https://github.com/robertpelloni/zen-mcp-server
 [submodule "beatoraja"]
 	path = beatoraja
 	url = https://github.com/robertpelloni/beatoraja
@@ -34,6 +28,12 @@
 [submodule "Neothesia"]
 	path = Neothesia
 	url = https://github.com/robertpelloni/Neothesia
+[submodule "serena"]
+	path = serena
+	url = https://github.com/oraios/serena
+[submodule "zen-mcp-server"]
+	path = zen-mcp-server
+	url = https://github.com/BeehiveInnovations/zen-mcp-server
 [submodule "chroma"]
 	path = chroma
 	url = https://github.com/chroma-core/chroma
@@ -67,3 +67,9 @@
 [submodule "claude-squad"]
 	path = claude-squad
 	url = https://github.com/smtg-ai/claude-squad
+[submodule "kilocode"]
+	path = kilocode
+	url = https://github.com/Kilo-Org/kilocode
+[submodule "mcp-tool-chainer"]
+	path = mcp-tool-chainer
+	url = https://github.com/thirdstrandstudio/mcp-tool-chainer

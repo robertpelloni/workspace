@@ -2,7 +2,7 @@
 	"mcpServers": {
 		"serena": {
 			"type": "local",
-			"command": "C:\\Users\\hyper\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\workspace\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
 			"args": [
 				"--context",
 				"ide-assistant",
@@ -18,8 +18,7 @@
 			"type": "local",
 			"command": "mcp-server-filesystem",
 			"args": [
-				"C:\\Users\\hyper\\workspace\\",
-				"stdio"
+				"C:\\Users\\hyper\\workspace\\"
 			],
 			"tools": [
 			"*"

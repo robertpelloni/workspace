@@ -2,7 +2,7 @@
 	"mcpServers": {
 		"serena": {
 			"type": "stdio",
-			"command": "C:\\Users\\hyper\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\workspace\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
 			"args": [
 				"--context",
 				"ide-assistant",

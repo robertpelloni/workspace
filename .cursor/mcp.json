@@ -3,12 +3,13 @@
 	"mcpServers": {
 		"serena": {
 			"type": "stdio",
-			"command": "C:\\Users\\hyper\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
+			"command": "C:\\Users\\hyper\\workspace\\serena\\.venv\\Scripts\\serena-mcp-server.exe",
 			"args": [
 				"--context",
 				"ide-assistant",
 				"--project",
-				"C:\\Users\\hyper\\workspace\\"
+				"C:\\Users\\hyper\\workspace\\",
+				"stdio"
 			],
 			"startupTimeoutMs": 120000,
 			"timeoutMs": 120000
@@ -19,8 +20,8 @@
 			"args": [
 				"C:\\Users\\hyper\\workspace\\"
 			],
-			"startupTimeoutMs": 60000,
-			"timeoutMs": 30000
+			"startupTimeoutMs": 120000,
+			"timeoutMs": 120000
 		}
 	},
 	"security": {

@@ -10,7 +10,7 @@
     },
     "serena": {
       "command": "C:\\Users\\hyper\\.local\\bin\\uv.exe",
-      "args": ["run","--directory","C:\\Users\\hyper\\serena\\","serena","start-mcp-server","--context","gemini","--project","C:\\Users\\hyper\\fwber\\"],
+      "args": ["run","--directory","C:\\Users\\hyper\\workspace\\serena\\","serena","start-mcp-server","--context","gemini","--project","C:\\Users\\hyper\\fwber\\"],
       "env": {
         "PROJECT_ROOT": "C:\\Users\\hyper\\fwber\\",
         "USERPROFILE": "C:\\Users\\hyper"
