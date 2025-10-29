@@ -145,3 +145,9 @@
 [submodule "pluggedin-app"]
 	path = pluggedin-app
 	url = https://github.com/VeriTeknik/pluggedin-app
+[submodule "openevolve"]
+	path = openevolve
+	url = https://github.com/codelion/openevolve
+[submodule "devin.cursorrules"]
+	path = devin.cursorrules
+	url = https://github.com/grapeot/devin.cursorrules
