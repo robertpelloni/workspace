@@ -151,3 +151,51 @@
 [submodule "devin.cursorrules"]
 	path = devin.cursorrules
 	url = https://github.com/grapeot/devin.cursorrules
+[submodule "goose"]
+	path = goose
+	url = https://github.com/block/goose
+[submodule "agent-cli"]
+	path = agent-cli
+	url = https://github.com/basnijholt/agent-cli
+[submodule "agentmux"]
+	path = agentmux
+	url = https://github.com/stevehuang0115/agentmux
+[submodule "aichat"]
+	path = aichat
+	url = https://github.com/sigoden/aichat
+[submodule "plandex"]
+	path = plandex
+	url = https://github.com/plandex-ai/plandex
+[submodule "continue"]
+	path = continue
+	url = https://github.com/continuedev/continue
+[submodule "Kode"]
+	path = Kode
+	url = https://github.com/shareAI-lab/Kode
+[submodule "OpenHands"]
+	path = OpenHands
+	url = https://github.com/OpenHands/OpenHands
+[submodule "agent-client-protocol"]
+	path = agent-client-protocol
+	url = https://github.com/agentclientprotocol/agent-client-protocol
+[submodule "ccmanager"]
+	path = ccmanager
+	url = https://github.com/kbwo/ccmanager
+[submodule "cherry-studio"]
+	path = cherry-studio
+	url = https://github.com/CherryHQ/cherry-studio
+[submodule "LibreChat"]
+	path = LibreChat
+	url = https://github.com/danny-avila/LibreChat
+[submodule "witsy"]
+	path = witsy
+	url = https://github.com/nbonamy/witsy
+[submodule "inspector"]
+	path = inspector
+	url = https://github.com/MCPJam/inspector
+[submodule "Windows-MCP"]
+	path = Windows-MCP
+	url = https://github.com/CursorTouch/Windows-MCP
+[submodule "Windows-Use"]
+	path = Windows-Use
+	url = https://github.com/CursorTouch/Windows-Use
