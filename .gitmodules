@@ -1,33 +1,33 @@
 [submodule "BobsGameOnline"]
 	path = BobsGameOnline
 	url = https://github.com/robertpelloni/BobsGameOnline.git
-[submodule "beatoraja"]
-	path = beatoraja
-	url = https://github.com/robertpelloni/beatoraja
-[submodule "itgmania"]
-	path = itgmania
-	url = https://github.com/robertpelloni/itgmania
 [submodule "okgame"]
 	path = okgame
 	url = https://github.com/robertpelloni/okgame
 [submodule "FileOrganizer"]
 	path = FileOrganizer
 	url = https://github.com/robertpelloni/FileOrganizer
-[submodule "ai-file-sorter"]
-	path = ai-file-sorter
-	url = https://github.com/hyperfield/ai-file-sorter
-[submodule "Local-File-Organizer"]
-	path = Local-File-Organizer
-	url = https://github.com/robertpelloni/Local-File-Organizer
 [submodule "fwber"]
 	path = fwber
 	url = https://github.com/robertpelloni/fwber
 [submodule "hellven"]
 	path = hellven
 	url = https://gitlab.com/robertpelloni/hellven
+[submodule "ai-file-sorter"]
+	path = ai-file-sorter
+	url = https://github.com/hyperfield/ai-file-sorter
+[submodule "Local-File-Organizer"]
+	path = Local-File-Organizer
+	url = https://github.com/QiuYannnn/Local-File-Organizer
+[submodule "beatoraja"]
+	path = beatoraja
+	url = https://github.com/exch-bms2/beatoraja
+[submodule "itgmania"]
+	path = itgmania
+	url = https://github.com/itgmania/itgmania
 [submodule "Neothesia"]
 	path = Neothesia
-	url = https://github.com/robertpelloni/Neothesia
+	url = https://github.com/PolyMeilex/Neothesia
 [submodule "serena"]
 	path = serena
 	url = https://github.com/oraios/serena
@@ -76,3 +76,66 @@
 [submodule "chroma-mcp"]
 	path = chroma-mcp
 	url = https://github.com/chroma-core/chroma-mcp
+[submodule "crush"]
+	path = crush
+	url = https://github.com/charmbracelet/crush
+[submodule "opencode"]
+	path = opencode
+	url = https://github.com/sst/opencode
+[submodule "Switchboard"]
+	path = Switchboard
+	url = https://github.com/George5562/Switchboard
+[submodule "mcpproxy-go"]
+	path = mcpproxy-go
+	url = https://github.com/smart-mcp-proxy/mcpproxy-go
+[submodule "mcpproxy"]
+	path = mcpproxy
+	url = https://github.com/Dumbris/mcpproxy
+[submodule "meta-mcp-proxy"]
+	path = meta-mcp-proxy
+	url = https://github.com/nullplatform/meta-mcp-proxy
+[submodule "metamcp"]
+	path = metamcp
+	url = https://github.com/metatool-ai/metamcp
+[submodule "Unified-MCP-Tool-Graph"]
+	path = Unified-MCP-Tool-Graph
+	url = https://github.com/pratikjadhav2726/Unified-MCP-Tool-Graph
+[submodule "mcphub"]
+	path = mcphub
+	url = https://github.com/samanhappy/mcphub
+[submodule "mcp-use"]
+	path = mcp-use
+	url = https://github.com/mcp-use/mcp-use
+[submodule "mcp-agent"]
+	path = mcp-agent
+	url = https://github.com/lastmile-ai/mcp-agent
+[submodule "mcp-context-forge"]
+	path = mcp-context-forge
+	url = https://github.com/IBM/mcp-context-forge
+[submodule "vibesdk"]
+	path = vibesdk
+	url = https://github.com/cloudflare/vibesdk
+[submodule "changesets"]
+	path = changesets
+	url = https://github.com/changesets/changesets
+[submodule "lootbox"]
+	path = lootbox
+	url = https://github.com/jx-codes/lootbox
+[submodule "lazy-mcp"]
+	path = lazy-mcp
+	url = https://github.com/machjesusmoto/lazy-mcp
+[submodule "claude-lazy-loading"]
+	path = claude-lazy-loading
+	url = https://github.com/machjesusmoto/claude-lazy-loading
+[submodule "autorouter-package"]
+	path = autorouter-package
+	url = https://github.com/Mikethebot44/autorouter-package
+[submodule "mcp-proxy"]
+	path = mcp-proxy
+	url = https://github.com/TBXark/mcp-proxy
+[submodule "ai-that-works"]
+	path = ai-that-works
+	url = https://github.com/ai-that-works/ai-that-works/
+[submodule "mcp-hub"]
+	path = mcp-hub
+	url = https://github.com/ravitemer/mcp-hub
