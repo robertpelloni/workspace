@@ -199,3 +199,93 @@
 [submodule "Windows-Use"]
 	path = Windows-Use
 	url = https://github.com/CursorTouch/Windows-Use
+[submodule "gemini-bridge"]
+	path = gemini-bridge
+	url = https://github.com/eLyiN/gemini-bridge
+[submodule "mcp-everything-search"]
+	path = mcp-everything-search
+	url = https://github.com/mamertofabian/mcp-everything-search
+[submodule "DesktopCommanderMCP"]
+	path = DesktopCommanderMCP
+	url = https://github.com/wonderwhy-er/DesktopCommanderMCP
+[submodule "mcp-server-deep-research"]
+	path = mcp-server-deep-research
+	url = https://github.com/reading-plus-ai/mcp-server-deep-research
+[submodule "computer-control-mcp"]
+	path = computer-control-mcp
+	url = https://github.com/AB498/computer-control-mcp
+[submodule "raindrop-io-mcp-server"]
+	path = raindrop-io-mcp-server
+	url = https://github.com/hiromitsusasaki/raindrop-io-mcp-server
+[submodule "sourcerer-mcp"]
+	path = sourcerer-mcp
+	url = https://github.com/st3v3nmw/sourcerer-mcp
+[submodule "vibe-check-mcp-server"]
+	path = vibe-check-mcp-server
+	url = https://github.com/PV-Bhat/vibe-check-mcp-server
+[submodule "voicemode"]
+	path = voicemode
+	url = https://github.com/mbailey/voicemode
+[submodule "youtube-video-summarizer-mcp"]
+	path = youtube-video-summarizer-mcp
+	url = https://github.com/nabid-pf/youtube-video-summarizer-mcp
+[submodule "mcp-toolz"]
+	path = mcp-toolz
+	url = https://github.com/taylorleese/mcp-toolz
+[submodule "servers"]
+	path = servers
+	url = https://github.com/modelcontextprotocol/servers
+[submodule "grok-cli"]
+	path = grok-cli
+	url = https://github.com/superagent-ai/grok-cli
+[submodule "copilot-cli"]
+	path = copilot-cli
+	url = https://github.com/github/copilot-cli
+[submodule "Agent-MCP"]
+	path = Agent-MCP
+	url = https://github.com/rinadelph/Agent-MCP
+[submodule "magg"]
+	path = magg
+	url = https://github.com/sitbon/magg
+[submodule "superpowers"]
+	path = superpowers
+	url = https://github.com/obra/superpowers
+[submodule "code"]
+	path = code
+	url = https://github.com/just-every/code
+[submodule "qwen-code"]
+	path = qwen-code
+	url = https://github.com/QwenLM/qwen-code
+[submodule "claude-code-subagents-collection"]
+	path = claude-code-subagents-collection
+	url = https://github.com/davepoon/claude-code-subagents-collection
+[submodule "gemini-mcp-tool"]
+	path = gemini-mcp-tool
+	url = https://github.com/jamubc/gemini-mcp-tool
+[submodule "codex-bridge"]
+	path = codex-bridge
+	url = https://github.com/eLyiN/codex-bridge
+[submodule "codex"]
+	path = codex
+	url = https://github.com/openai/codex
+[submodule "gemini-cli"]
+	path = gemini-cli
+	url = https://github.com/google-gemini/gemini-cli
+[submodule "claude-code"]
+	path = claude-code
+	url = https://github.com/anthropics/claude-code
+[submodule "mcp-server-gemini"]
+	path = mcp-server-gemini
+	url = https://github.com/aliargun/mcp-server-gemini
+[submodule "ultra-mcp"]
+	path = ultra-mcp
+	url = https://github.com/RealMikeChong/ultra-mcp
+[submodule "mcp-zen"]
+	path = mcp-zen
+	url = https://github.com/199-mcp/mcp-zen
+[submodule "Super-MCP"]
+	path = Super-MCP
+	url = https://github.com/JoshuaWohle/Super-MCP
+[submodule "mcp-router"]
+	path = mcp-router
+	url = https://github.com/mcp-router/mcp-router
