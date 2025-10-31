@@ -298,3 +298,6 @@
 [submodule "beads"]
 	path = beads
 	url = https://github.com/steveyegge/beads
+[submodule "robertpelloni.com"]
+	path = robertpelloni.com
+	url = https://gitlab.com/robertpelloni/robertpelloni.com
