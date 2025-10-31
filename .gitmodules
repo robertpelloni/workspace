@@ -289,3 +289,12 @@
 [submodule "mcp-router"]
 	path = mcp-router
 	url = https://github.com/mcp-router/mcp-router
+[submodule "copyparty"]
+	path = copyparty
+	url = https://github.com/9001/copyparty
+[submodule "computer-use-preview"]
+	path = computer-use-preview
+	url = https://github.com/google-gemini/computer-use-preview
+[submodule "beads"]
+	path = beads
+	url = https://github.com/steveyegge/beads
