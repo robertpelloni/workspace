@@ -301,3 +301,30 @@
 [submodule "robertpelloni.com"]
 	path = robertpelloni.com
 	url = https://gitlab.com/robertpelloni/robertpelloni.com
+[submodule "RAG-Anything"]
+	path = RAG-Anything
+	url = https://github.com/HKUDS/RAG-Anything
+[submodule "context-portal"]
+	path = context-portal
+	url = https://github.com/GreatScottyMac/context-portal
+[submodule "piston"]
+	path = piston
+	url = https://github.com/engineer-man/piston
+[submodule "piston-mcp"]
+	path = piston-mcp
+	url = https://github.com/alvii147/piston-mcp
+[submodule "chrome-devtools-mcp"]
+	path = chrome-devtools-mcp
+	url = https://github.com/ChromeDevTools/chrome-devtools-mcp
+[submodule "kapture"]
+	path = kapture
+	url = https://github.com/williamkapke/kapture
+[submodule "VERT"]
+	path = VERT
+	url = https://github.com/VERT-sh/VERT
+[submodule "pluggedin-mcp-proxy"]
+	path = pluggedin-mcp-proxy
+	url = https://github.com/VeriTeknik/pluggedin-mcp-proxy
+[submodule "pluggedin-mcp"]
+	path = pluggedin-mcp
+	url = https://github.com/VeriTeknik/pluggedin-mcp
