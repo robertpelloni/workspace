@@ -328,3 +328,12 @@
 [submodule "pluggedin-mcp"]
 	path = pluggedin-mcp
 	url = https://github.com/VeriTeknik/pluggedin-mcp
+[submodule "CodeMachine-CLI"]
+	path = CodeMachine-CLI
+	url = https://github.com/moazbuilds/CodeMachine-CLI
+[submodule "web-ui"]
+	path = web-ui
+	url = https://github.com/browser-use/web-ui
+[submodule "browser-use"]
+	path = browser-use
+	url = https://github.com/browser-use/browser-use
