@@ -16,7 +16,8 @@ jobs:
       - name: Determine OS and set environment
         shell: bash
         run: |
-          # Determine runner OS (use GitHub-provided RUNNER_OS or fallback to uname)
+          # Determine runner OS (use GitHub-provided RUNNER_OS or
+          # fallback to uname)
           if [ -z "${RUNNER_OS:-}" ]; then
             RUNNER_OS="$(uname -s 2>/dev/null || echo Unknown)"
           fi
@@ -35,9 +36,12 @@ jobs:
               echo "Runner OS is macOS — continuing."
               ;;
             *)
-              # Unknown or unsupported OS — do not exit; mark that some steps should skip if needed
+              # Unknown or unsupported OS — do not exit; mark that
+              # some steps should skip if needed
               echo "SHOULD_CONTINUE=false" >> "$GITHUB_ENV"
-              echo "Runner OS ($RUNNER_OS) is not explicitly supported. Continuing without quitting; subsequent steps should check SHOULD_CONTINUE."
+              echo "Runner OS ($RUNNER_OS) is not explicitly" \
+                "supported. Continuing without quitting;" \
+                "subsequent steps should check SHOULD_CONTINUE."
               ;;
           esac
 
