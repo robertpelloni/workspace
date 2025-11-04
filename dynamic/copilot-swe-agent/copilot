@@ -1,0 +1,52 @@
+name: Copilot SWE Agent
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - copilot/evaluate-software-stack
+
+jobs:
+  copilot-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine OS and set environment
+        shell: bash
+        run: |
+          # Determine runner OS (use GitHub-provided RUNNER_OS or
+          # fallback to uname)
+          if [ -z "${RUNNER_OS:-}" ]; then
+            RUNNER_OS="$(uname -s 2>/dev/null || echo Unknown)"
+          fi
+
+          case "$RUNNER_OS" in
+            Linux|linux)
+              echo "SHOULD_CONTINUE=true" >> "$GITHUB_ENV"
+              echo "Runner OS is Linux — continuing."
+              ;;
+            Windows|Windows_NT|MINGW*|CYGWIN*|msys*)
+              echo "SHOULD_CONTINUE=true" >> "$GITHUB_ENV"
+              echo "Runner OS is Windows — continuing."
+              ;;
+            Darwin|Mac|macOS)
+              echo "SHOULD_CONTINUE=true" >> "$GITHUB_ENV"
+              echo "Runner OS is macOS — continuing."
+              ;;
+            *)
+              # Unknown or unsupported OS — do not exit; mark that
+              # some steps should skip if needed
+              echo "SHOULD_CONTINUE=false" >> "$GITHUB_ENV"
+              printf '%s\n' \
+                "Runner OS ($RUNNER_OS) is not explicitly supported." \
+                "Continuing without quitting; check SHOULD_CONTINUE."
+              ;;
+          esac
+
+      - name: Run Copilot Agent
+        if: env.SHOULD_CONTINUE == 'true'
+        run: |
+          echo "Running Copilot SWE Agent..."
+          # Add your Copilot agent commands here
