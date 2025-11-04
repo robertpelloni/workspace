@@ -39,9 +39,9 @@ jobs:
               # Unknown or unsupported OS — do not exit; mark that
               # some steps should skip if needed
               echo "SHOULD_CONTINUE=false" >> "$GITHUB_ENV"
-              echo "Runner OS ($RUNNER_OS) is not explicitly supported."
-              echo "Continuing without quitting; subsequent steps" \
-                "should check SHOULD_CONTINUE."
+              printf '%s\n' \
+                "Runner OS ($RUNNER_OS) is not explicitly supported." \
+                "Continuing without quitting; check SHOULD_CONTINUE."
               ;;
           esac
 
