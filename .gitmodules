@@ -337,3 +337,12 @@
 [submodule "browser-use"]
 	path = browser-use
 	url = https://github.com/browser-use/browser-use
+[submodule "Distil-NPCs"]
+	path = Distil-NPCs
+	url = https://github.com/distil-labs/Distil-NPCs
+[submodule "echogarden"]
+	path = echogarden
+	url = https://github.com/echogarden-project/echogarden
+[submodule "libjxl"]
+	path = libjxl
+	url = https://github.com/libjxl/libjxl

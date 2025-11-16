@@ -82,3 +82,11 @@ API_CONFIGURATION_SOLUTION_2025_01_21.md
 /tools_config_files/handshake_proxy/obj
 /tools_config_files/handshake_proxy/out
 
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+fwber-backup-20251115-124940.tar.gz
+fwber-backup-20251115-125243.tar.gz
