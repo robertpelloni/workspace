@@ -14,10 +14,10 @@ magg serve --http --port 3334
 
 npx samanhappy/mcphub
 
-mcpproxy serve
+mcpproxy serve (default 8080)
 mcpproxy serve --listen 127.0.0.1:8081
 mcpproxy-tray
-
+https://github.com/smart-mcp-proxy/mcpproxy-go
 
 chroma
 zen

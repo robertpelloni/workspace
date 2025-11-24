@@ -346,3 +346,9 @@
 [submodule "libjxl"]
 	path = libjxl
 	url = https://github.com/libjxl/libjxl
+[submodule "mcp-easy-installer"]
+	path = mcp-easy-installer
+	url = https://github.com/onigetoc/mcp-easy-installer.git
+[submodule "mcp-manager"]
+	path = mcp-manager
+	url = https://github.com/timetime-software/mcp-manager
