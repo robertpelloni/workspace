@@ -7,8 +7,9 @@ cd C:\\Users\\hyper\\workspace\\zen-mcp-server\\
 cd C:\\Users\\hyper\\workspace\\mem0-mcp
 uv run main.py
 
-npx @srbhptl39/mcp-superassistant-proxy@latest --config ./.superassistant.json --outputTransport ws
+npx -y @srbhptl39/mcp-superassistant-proxy@latest --config ./.superassistant.json --outputTransport streamableHttp
 
+http://localhost:3006/mcp
 
 
 
@@ -41,7 +42,9 @@ http://127.0.0.1:12008
 
 
 
-
+ google help me budget connect to gmail put all financial events on calendar predict stuff help me make money
+ 
+ uniswap bot
 
 
 Please check in and have a conference with all the other major AI models through zen and come up with a definitive list of features to develop and their priority, and then come back and document your decisions, findings, recommendations, and plans in detail using both the memory systems in place and md documentation in the project folder.
@@ -94,9 +97,10 @@ http://localhost:12008/metamcp/dev/mcp
 			"type": "stdio",
 			"command": "npx",
 			"args": [
-			"-y", 
-			"@pluggedin/pluggedin-mcp-proxy@latest"
-			"--pluggedin-api-key","pg_in_Fad5q36WJ4XSKdm5rpzy1zDJOtzRa3nTStmQWyjPCYfMnQuRITx6SQ0XJjdZcHW4"
+				"-y",
+				"@pluggedin/pluggedin-mcp-proxy@latest",
+				"--pluggedin-api-key",
+				"pg_in_Fad5q36WJ4XSKdm5rpzy1zDJOtzRa3nTStmQWyjPCYfMnQuRITx6SQ0XJjdZcHW4"
 			]
 		},
 		"super-mcp-router": {
