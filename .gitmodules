@@ -1,6 +1,6 @@
 [submodule "BobsGameOnline"]
 	path = BobsGameOnline
-	url = https://github.com/robertpelloni/BobsGameOnline.git
+	url = https://github.com/robertpelloni/BobsGameOnline
 [submodule "okgame"]
 	path = okgame
 	url = https://github.com/robertpelloni/okgame
@@ -21,19 +21,16 @@
 	url = https://github.com/QiuYannnn/Local-File-Organizer
 [submodule "beatoraja"]
 	path = beatoraja
-	url = https://github.com/exch-bms2/beatoraja
+	url = https://github.com/robertpelloni/beatoraja
 [submodule "itgmania"]
 	path = itgmania
-	url = https://github.com/itgmania/itgmania
+	url = https://github.com/robertpelloni/itgmania
 [submodule "Neothesia"]
 	path = Neothesia
-	url = https://github.com/PolyMeilex/Neothesia
+	url = https://github.com/robertpelloni/Neothesia
 [submodule "serena"]
 	path = serena
 	url = https://github.com/oraios/serena
-[submodule "zen-mcp-server"]
-	path = zen-mcp-server
-	url = https://github.com/BeehiveInnovations/zen-mcp-server
 [submodule "chroma"]
 	path = chroma
 	url = https://github.com/chroma-core/chroma
@@ -66,13 +63,13 @@
 	url = https://github.com/github/spec-kit
 [submodule "claude-squad"]
 	path = claude-squad
-	url = https://github.com/smtg-ai/claude-squad
+	url = https://github.com/robertpelloni/claude-squad
 [submodule "kilocode"]
 	path = kilocode
 	url = https://github.com/Kilo-Org/kilocode
 [submodule "mcp-tool-chainer"]
 	path = mcp-tool-chainer
-	url = https://github.com/thirdstrandstudio/mcp-tool-chainer
+	url = https://github.com/robertpelloni/mcp-tool-chainer
 [submodule "chroma-mcp"]
 	path = chroma-mcp
 	url = https://github.com/chroma-core/chroma-mcp
@@ -87,7 +84,7 @@
 	url = https://github.com/George5562/Switchboard
 [submodule "mcpproxy-go"]
 	path = mcpproxy-go
-	url = https://github.com/smart-mcp-proxy/mcpproxy-go
+	url = https://github.com/robertpelloni/mcpproxy-go
 [submodule "mcpproxy"]
 	path = mcpproxy
 	url = https://github.com/Dumbris/mcpproxy
@@ -96,13 +93,13 @@
 	url = https://github.com/nullplatform/meta-mcp-proxy
 [submodule "metamcp"]
 	path = metamcp
-	url = https://github.com/metatool-ai/metamcp
+	url = https://github.com/robertpelloni/metamcp
 [submodule "Unified-MCP-Tool-Graph"]
 	path = Unified-MCP-Tool-Graph
 	url = https://github.com/pratikjadhav2726/Unified-MCP-Tool-Graph
 [submodule "mcphub"]
 	path = mcphub
-	url = https://github.com/samanhappy/mcphub
+	url = https://github.com/robertpelloni/mcphub
 [submodule "mcp-use"]
 	path = mcp-use
 	url = https://github.com/mcp-use/mcp-use
@@ -144,16 +141,13 @@
 	url = https://github.com/pathintegral-institute/mcpm.sh
 [submodule "pluggedin-app"]
 	path = pluggedin-app
-	url = https://github.com/VeriTeknik/pluggedin-app
+	url = https://github.com/robertpelloni/pluggedin-app
 [submodule "openevolve"]
 	path = openevolve
 	url = https://github.com/codelion/openevolve
 [submodule "devin.cursorrules"]
 	path = devin.cursorrules
 	url = https://github.com/grapeot/devin.cursorrules
-[submodule "goose"]
-	path = goose
-	url = https://github.com/block/goose
 [submodule "agent-cli"]
 	path = agent-cli
 	url = https://github.com/basnijholt/agent-cli
@@ -246,7 +240,7 @@
 	url = https://github.com/rinadelph/Agent-MCP
 [submodule "magg"]
 	path = magg
-	url = https://github.com/sitbon/magg
+	url = https://github.com/robertpelloni/magg
 [submodule "superpowers"]
 	path = superpowers
 	url = https://github.com/obra/superpowers
@@ -265,9 +259,6 @@
 [submodule "codex-bridge"]
 	path = codex-bridge
 	url = https://github.com/eLyiN/codex-bridge
-[submodule "codex"]
-	path = codex
-	url = https://github.com/openai/codex
 [submodule "gemini-cli"]
 	path = gemini-cli
 	url = https://github.com/google-gemini/gemini-cli
@@ -285,7 +276,7 @@
 	url = https://github.com/199-mcp/mcp-zen
 [submodule "Super-MCP"]
 	path = Super-MCP
-	url = https://github.com/JoshuaWohle/Super-MCP
+	url = https://github.com/robertpelloni/Super-MCP
 [submodule "mcp-router"]
 	path = mcp-router
 	url = https://github.com/mcp-router/mcp-router
@@ -324,10 +315,10 @@
 	url = https://github.com/VERT-sh/VERT
 [submodule "pluggedin-mcp-proxy"]
 	path = pluggedin-mcp-proxy
-	url = https://github.com/VeriTeknik/pluggedin-mcp-proxy
+	url = https://github.com/robertpelloni/pluggedin-mcp-proxy
 [submodule "pluggedin-mcp"]
 	path = pluggedin-mcp
-	url = https://github.com/VeriTeknik/pluggedin-mcp
+	url = https://github.com/robertpelloni/pluggedin-mcp
 [submodule "CodeMachine-CLI"]
 	path = CodeMachine-CLI
 	url = https://github.com/moazbuilds/CodeMachine-CLI
@@ -348,7 +339,7 @@
 	url = https://github.com/libjxl/libjxl
 [submodule "mcp-easy-installer"]
 	path = mcp-easy-installer
-	url = https://github.com/onigetoc/mcp-easy-installer.git
+	url = https://github.com/onigetoc/mcp-easy-installer
 [submodule "mcp-manager"]
 	path = mcp-manager
 	url = https://github.com/timetime-software/mcp-manager
@@ -357,7 +348,7 @@
 	url = https://github.com/moeru-ai/mcp-launcher
 [submodule "mcp-gearbox"]
 	path = mcp-gearbox
-	url = https://github.com/rohitsoni007/mcp-gearbox.git
+	url = https://github.com/rohitsoni007/mcp-gearbox
 [submodule "mcp-gearbox-js"]
 	path = mcp-gearbox-js
 	url = https://github.com/rohitsoni007/mcp-gearbox-js
@@ -375,4 +366,61 @@
 	url = https://github.com/mem0ai/mem0-mcp
 [submodule "mem0"]
 	path = mem0
-	url = https://github.com/mem0ai/mem0.git
+	url = https://github.com/mem0ai/mem0
+[submodule "onyx"]
+	path = onyx
+	url = https://github.com/onyx-dot-app/onyx
+[submodule "zep"]
+	path = zep
+	url = https://github.com/getzep/zep
+[submodule "software-agent-sdk"]
+	path = software-agent-sdk
+	url = https://github.com/OpenHands/software-agent-sdk
+[submodule "OpenHands-CLI"]
+	path = OpenHands-CLI
+	url = https://github.com/OpenHands/OpenHands-CLI
+[submodule "gram"]
+	path = gram
+	url = https://github.com/speakeasy-api/gram
+[submodule "JWildfire"]
+	path = JWildfire
+	url = https://github.com/robertpelloni/JWildfire
+[submodule "notebooklm-mcp"]
+	path = notebooklm-mcp
+	url = https://github.com/robertpelloni/notebooklm-mcp
+[submodule "ffr-difficulty-model"]
+	path = ffr-difficulty-model
+	url = https://github.com/robertpelloni/ffr-difficulty-model
+[submodule "pal-mcp-server"]
+	path = pal-mcp-server
+	url = https://github.com/robertpelloni/pal-mcp-server
+[submodule "ddc"]
+	path = ddc
+	url = https://github.com/robertpelloni/ddc
+[submodule "AIOS"]
+	path = AIOS
+	url = https://github.com/robertpelloni/AIOS
+[submodule "jules-app"]
+	path = jules-app
+	url = https://github.com/robertpelloni/jules-app
+[submodule "Resume-Matcher"]
+	path = Resume-Matcher
+	url = https://github.com/srbhr/Resume-Matcher
+[submodule "ArrowVortex"]
+	path = ArrowVortex
+	url = https://github.com/robertpelloni/ArrowVortex
+[submodule "stepmania"]
+	path = stepmania
+	url = https://github.com/robertpelloni/stepmania
+[submodule "raindropioapp"]
+	path = raindropioapp
+	url = https://github.com/robertpelloni/raindropioapp
+[submodule "bobcoin"]
+	path = bobcoin
+	url = https://github.com/robertpelloni/bobcoin
+[submodule "trae-agent"]
+	path = trae-agent
+	url = https://github.com/bytedance/trae-agent
+[submodule "goose"]
+	path = goose
+	url = https://github.com/block/goose
