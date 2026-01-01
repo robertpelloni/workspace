@@ -424,3 +424,6 @@
 [submodule "goose"]
 	path = goose
 	url = https://github.com/block/goose
+[submodule "opencode-autopilot-council"]
+	path = opencode-autopilot-council
+	url = https://github.com/robertpelloni/opencode-autopilot-council
