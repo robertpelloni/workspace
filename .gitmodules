@@ -343,5 +343,3 @@
 [submodule "goose"]
 	path = goose
 	url = https://github.com/block/goose
-[submodule "submodules/mcp-manager"]
-	url = https://github.com/timetime-software/mcp-manager
