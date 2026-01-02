@@ -13,12 +13,6 @@
 [submodule "hellven"]
 	path = hellven
 	url = https://gitlab.com/robertpelloni/hellven
-[submodule "ai-file-sorter"]
-	path = ai-file-sorter
-	url = https://github.com/hyperfield/ai-file-sorter
-[submodule "Local-File-Organizer"]
-	path = Local-File-Organizer
-	url = https://github.com/QiuYannnn/Local-File-Organizer
 [submodule "beatoraja"]
 	path = beatoraja
 	url = https://github.com/robertpelloni/beatoraja
@@ -31,9 +25,6 @@
 [submodule "serena"]
 	path = serena
 	url = https://github.com/oraios/serena
-[submodule "chroma"]
-	path = chroma
-	url = https://github.com/chroma-core/chroma
 [submodule "playwright"]
 	path = playwright
 	url = https://github.com/microsoft/playwright
@@ -49,9 +40,6 @@
 [submodule "autogen"]
 	path = autogen
 	url = https://github.com/microsoft/autogen
-[submodule "graphrag"]
-	path = graphrag
-	url = https://github.com/microsoft/graphrag
 [submodule "amplifier"]
 	path = amplifier
 	url = https://github.com/microsoft/amplifier
@@ -94,18 +82,12 @@
 [submodule "metamcp"]
 	path = metamcp
 	url = https://github.com/robertpelloni/metamcp
-[submodule "Unified-MCP-Tool-Graph"]
-	path = Unified-MCP-Tool-Graph
-	url = https://github.com/pratikjadhav2726/Unified-MCP-Tool-Graph
 [submodule "mcphub"]
 	path = mcphub
 	url = https://github.com/robertpelloni/mcphub
 [submodule "mcp-use"]
 	path = mcp-use
 	url = https://github.com/mcp-use/mcp-use
-[submodule "mcp-agent"]
-	path = mcp-agent
-	url = https://github.com/lastmile-ai/mcp-agent
 [submodule "mcp-context-forge"]
 	path = mcp-context-forge
 	url = https://github.com/IBM/mcp-context-forge
@@ -121,21 +103,12 @@
 [submodule "lazy-mcp"]
 	path = lazy-mcp
 	url = https://github.com/machjesusmoto/lazy-mcp
-[submodule "claude-lazy-loading"]
-	path = claude-lazy-loading
-	url = https://github.com/machjesusmoto/claude-lazy-loading
 [submodule "autorouter-package"]
 	path = autorouter-package
 	url = https://github.com/Mikethebot44/autorouter-package
 [submodule "mcp-proxy"]
 	path = mcp-proxy
 	url = https://github.com/TBXark/mcp-proxy
-[submodule "ai-that-works"]
-	path = ai-that-works
-	url = https://github.com/ai-that-works/ai-that-works/
-[submodule "mcp-hub"]
-	path = mcp-hub
-	url = https://github.com/ravitemer/mcp-hub
 [submodule "mcpm.sh"]
 	path = mcpm.sh
 	url = https://github.com/pathintegral-institute/mcpm.sh
@@ -148,30 +121,18 @@
 [submodule "devin.cursorrules"]
 	path = devin.cursorrules
 	url = https://github.com/grapeot/devin.cursorrules
-[submodule "agent-cli"]
-	path = agent-cli
-	url = https://github.com/basnijholt/agent-cli
-[submodule "agentmux"]
-	path = agentmux
-	url = https://github.com/stevehuang0115/agentmux
 [submodule "aichat"]
 	path = aichat
 	url = https://github.com/sigoden/aichat
 [submodule "plandex"]
 	path = plandex
 	url = https://github.com/plandex-ai/plandex
-[submodule "continue"]
-	path = continue
-	url = https://github.com/continuedev/continue
 [submodule "Kode"]
 	path = Kode
 	url = https://github.com/shareAI-lab/Kode
 [submodule "OpenHands"]
 	path = OpenHands
 	url = https://github.com/OpenHands/OpenHands
-[submodule "agent-client-protocol"]
-	path = agent-client-protocol
-	url = https://github.com/agentclientprotocol/agent-client-protocol
 [submodule "ccmanager"]
 	path = ccmanager
 	url = https://github.com/kbwo/ccmanager
@@ -187,21 +148,12 @@
 [submodule "inspector"]
 	path = inspector
 	url = https://github.com/MCPJam/inspector
-[submodule "Windows-MCP"]
-	path = Windows-MCP
-	url = https://github.com/CursorTouch/Windows-MCP
 [submodule "Windows-Use"]
 	path = Windows-Use
 	url = https://github.com/CursorTouch/Windows-Use
-[submodule "gemini-bridge"]
-	path = gemini-bridge
-	url = https://github.com/eLyiN/gemini-bridge
 [submodule "mcp-everything-search"]
 	path = mcp-everything-search
 	url = https://github.com/mamertofabian/mcp-everything-search
-[submodule "DesktopCommanderMCP"]
-	path = DesktopCommanderMCP
-	url = https://github.com/wonderwhy-er/DesktopCommanderMCP
 [submodule "mcp-server-deep-research"]
 	path = mcp-server-deep-research
 	url = https://github.com/reading-plus-ai/mcp-server-deep-research
@@ -232,12 +184,6 @@
 [submodule "grok-cli"]
 	path = grok-cli
 	url = https://github.com/superagent-ai/grok-cli
-[submodule "copilot-cli"]
-	path = copilot-cli
-	url = https://github.com/github/copilot-cli
-[submodule "Agent-MCP"]
-	path = Agent-MCP
-	url = https://github.com/rinadelph/Agent-MCP
 [submodule "magg"]
 	path = magg
 	url = https://github.com/robertpelloni/magg
@@ -262,9 +208,6 @@
 [submodule "gemini-cli"]
 	path = gemini-cli
 	url = https://github.com/google-gemini/gemini-cli
-[submodule "claude-code"]
-	path = claude-code
-	url = https://github.com/anthropics/claude-code
 [submodule "mcp-server-gemini"]
 	path = mcp-server-gemini
 	url = https://github.com/aliargun/mcp-server-gemini
@@ -283,27 +226,15 @@
 [submodule "copyparty"]
 	path = copyparty
 	url = https://github.com/9001/copyparty
-[submodule "computer-use-preview"]
-	path = computer-use-preview
-	url = https://github.com/google-gemini/computer-use-preview
 [submodule "beads"]
 	path = beads
 	url = https://github.com/steveyegge/beads
 [submodule "robertpelloni.com"]
 	path = robertpelloni.com
 	url = https://gitlab.com/robertpelloni/robertpelloni.com
-[submodule "RAG-Anything"]
-	path = RAG-Anything
-	url = https://github.com/HKUDS/RAG-Anything
 [submodule "context-portal"]
 	path = context-portal
 	url = https://github.com/GreatScottyMac/context-portal
-[submodule "piston"]
-	path = piston
-	url = https://github.com/engineer-man/piston
-[submodule "piston-mcp"]
-	path = piston-mcp
-	url = https://github.com/alvii147/piston-mcp
 [submodule "chrome-devtools-mcp"]
 	path = chrome-devtools-mcp
 	url = https://github.com/ChromeDevTools/chrome-devtools-mcp
@@ -325,9 +256,6 @@
 [submodule "web-ui"]
 	path = web-ui
 	url = https://github.com/browser-use/web-ui
-[submodule "browser-use"]
-	path = browser-use
-	url = https://github.com/browser-use/browser-use
 [submodule "Distil-NPCs"]
 	path = Distil-NPCs
 	url = https://github.com/distil-labs/Distil-NPCs
@@ -343,9 +271,6 @@
 [submodule "mcp-manager"]
 	path = mcp-manager
 	url = https://github.com/timetime-software/mcp-manager
-[submodule "mcp-launcher"]
-	path = mcp-launcher
-	url = https://github.com/moeru-ai/mcp-launcher
 [submodule "mcp-gearbox"]
 	path = mcp-gearbox
 	url = https://github.com/rohitsoni007/mcp-gearbox
@@ -355,9 +280,6 @@
 [submodule "mcp-gearbox-cli"]
 	path = mcp-gearbox-cli
 	url = https://github.com/rohitsoni007/mcp-gearbox-cli
-[submodule "litellm"]
-	path = litellm
-	url = https://github.com/BerriAI/litellm
 [submodule "mcp-mem0"]
 	path = mcp-mem0
 	url = https://github.com/coleam00/mcp-mem0
@@ -370,9 +292,6 @@
 [submodule "onyx"]
 	path = onyx
 	url = https://github.com/onyx-dot-app/onyx
-[submodule "zep"]
-	path = zep
-	url = https://github.com/getzep/zep
 [submodule "software-agent-sdk"]
 	path = software-agent-sdk
 	url = https://github.com/OpenHands/software-agent-sdk
@@ -424,6 +343,6 @@
 [submodule "goose"]
 	path = goose
 	url = https://github.com/block/goose
-[submodule "opencode-autopilot-council"]
+[submodule "opencode-autopilot"]
 	path = opencode-autopilot
-	url = https://github.com/robertpelloni/opencode-autopilot-council
+	url = https://github.com/robertpelloni/opencode-autopilot
