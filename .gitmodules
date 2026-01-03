@@ -346,3 +346,12 @@
 [submodule "submodules/mcp-manager"]
 	path = submodules/mcp-manager
 	url = https://github.com/timetime-software/mcp-manager
+[submodule "submodules/supertorrent"]
+	path = submodules/supertorrent
+	url = https://github.com/robertpelloni/supertorrent
+[submodule "submodules/metamcp"]
+	path = submodules/metamcp
+	url = https://github.com/robertpelloni/metamcp
+[submodule "submodules/mcpenetes"]
+	path = submodules/mcpenetes
+	url = https://github.com/robertpelloni/mcpenetes
