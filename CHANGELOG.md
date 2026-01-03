@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-01-02
+
+### Changed
+- Converted `opencode-autopilot` to a Next.js application.
+- Setup Vercel-compatible API routes.
+- Migrated Supervisor and Council logic to the new structure.
+
 ## [1.0.1] - 2025-12-31
 
 ### Added
