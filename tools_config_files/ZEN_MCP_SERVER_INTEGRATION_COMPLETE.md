@@ -63,7 +63,7 @@ Zen MCP Server has been added to **ALL 7** configuration files:
 17. **`listmodels`** - Model listing and information
 18. **`version`** - Version information and updates
 
-### **FWBer.me Specific Benefits:**
+### **fwber.me Specific Benefits:**
 - **PHP/Laravel Support:** Advanced PHP code analysis and refactoring
 - **Next.js Integration:** Frontend development assistance
 - **Database Operations:** Enhanced database interaction via OpenRouter models
@@ -153,7 +153,7 @@ gemini mcp list  # Should show zen-mcp-server
 3. **Explore advanced features** like multi-model consensus and security auditing
 4. **Optimize configuration** based on usage patterns
 
-### **Impact on FWBer.me Development:**
+### **Impact on fwber.me Development:**
 - **Enhanced Code Quality:** Multi-model code review and analysis
 - **Improved Security:** Built-in security auditing capabilities
 - **Better Testing:** Automated test generation and coverage

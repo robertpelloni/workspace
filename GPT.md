@@ -23,13 +23,13 @@ GPT (Generative Pre-trained Transformer) is OpenAI's advanced AI model family, k
 ### Using Zen MCP for Orchestration
 ```bash
 # Access GPT through Zen MCP server
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement FWBer matching algorithm with advanced features"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement fwber matching algorithm with advanced features"
 ```
 
 ### Using Serena MCP for Code Context
 ```bash
 # Store code patterns and implementation strategies in Serena memory
-mcp_serena_write_memory --memory_name "gpt_implementations" --content "Code patterns and implementation strategies for FWBer"
+mcp_serena_write_memory --memory_name "gpt_implementations" --content "Code patterns and implementation strategies for fwber"
 
 # Retrieve code context
 mcp_serena_read_memory --memory_file_name "gpt_implementations"
@@ -38,7 +38,7 @@ mcp_serena_read_memory --memory_file_name "gpt_implementations"
 ### Using Chroma MCP for Code Storage
 ```bash
 # Store code implementations in Chroma
-mcp_chroma-knowledge_chroma_add_document --collection_name "code_implementations" --document "GPT: FWBer matching algorithm implementation..."
+mcp_chroma-knowledge_chroma_add_document --collection_name "code_implementations" --document "GPT: fwber matching algorithm implementation..."
 ```
 
 ## Best Practices for GPT
@@ -75,25 +75,25 @@ mcp_chroma-knowledge_chroma_add_document --collection_name "code_implementations
 ### Code Generation
 ```bash
 # Generate comprehensive code implementation
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement a scalable matching algorithm for FWBer with Redis caching and real-time updates"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement a scalable matching algorithm for fwber with Redis caching and real-time updates"
 ```
 
 ### API Development
 ```bash
 # Create REST API endpoints
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Design and implement REST API endpoints for FWBer user management with authentication and rate limiting"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Design and implement REST API endpoints for fwber user management with authentication and rate limiting"
 ```
 
 ### Database Operations
 ```bash
 # Database schema and queries
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Design optimized database schema for FWBer with spatial indexing for location-based matching"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Design optimized database schema for fwber with spatial indexing for location-based matching"
 ```
 
 ### Testing Implementation
 ```bash
 # Comprehensive test suite
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Write comprehensive test suite for FWBer matching algorithm including unit tests, integration tests, and performance tests"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Write comprehensive test suite for fwber matching algorithm including unit tests, integration tests, and performance tests"
 ```
 
 ### Knowledge Storage
@@ -112,7 +112,7 @@ mcp_chroma-knowledge_chroma_add_document --collection_name "fwber_project" --doc
 ### Consensus Building for Implementation
 Always use Zen MCP's consensus tool for complex technical decisions:
 ```bash
-mcp_zen-mcp-server_consensus --models '[{"model":"gpt-5-codex","stance":"for"},{"model":"anthropic/claude-sonnet-4.5","stance":"neutral"},{"model":"gemini-2.5-pro","stance":"against"}]' --step "Evaluate microservices vs monolith architecture for FWBer implementation"
+mcp_zen-mcp-server_consensus --models '[{"model":"gpt-5-codex","stance":"for"},{"model":"anthropic/claude-sonnet-4.5","stance":"neutral"},{"model":"gemini-2.5-pro","stance":"against"}]' --step "Evaluate microservices vs monolith architecture for fwber implementation"
 ```
 
 ## Memory Management
@@ -152,25 +152,25 @@ mcp_zen-mcp-server_consensus --models '[{"model":"gpt-5-codex","stance":"for"},{
 ### Code Generation
 ```bash
 # Generate production-ready code
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement a complete user authentication system for FWBer with JWT tokens, password hashing, and session management"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement a complete user authentication system for fwber with JWT tokens, password hashing, and session management"
 ```
 
 ### API Development
 ```bash
 # Create comprehensive API
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Design and implement a complete REST API for FWBer with endpoints for user management, matching, and messaging"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Design and implement a complete REST API for fwber with endpoints for user management, matching, and messaging"
 ```
 
 ### Database Operations
 ```bash
 # Database implementation
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement database operations for FWBer with optimized queries, indexing, and data validation"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Implement database operations for fwber with optimized queries, indexing, and data validation"
 ```
 
 ### Testing Implementation
 ```bash
 # Comprehensive testing
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Write complete test suite for FWBer including unit tests, integration tests, and end-to-end tests"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Write complete test suite for fwber including unit tests, integration tests, and end-to-end tests"
 ```
 
 ## Advanced Features

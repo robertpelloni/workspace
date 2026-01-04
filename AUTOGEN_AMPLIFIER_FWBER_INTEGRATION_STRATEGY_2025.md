@@ -1,10 +1,10 @@
-# AutoGen, Amplifier & FWBer Integration Strategy - January 21, 2025
+# AutoGen, Amplifier & fwber Integration Strategy - January 21, 2025
 
 ## Executive Summary
 
-**CRITICAL SCOPE CLARIFICATION**: This document presents a strategy for using AutoGen (distributed multi-agent framework) and Amplifier (Claude Code amplification system) as **DEVELOPMENT TOOLING** to accelerate the development of FWBer and other projects. The AI orchestration systems are NOT features to be built into FWBer itself - they are tools to make development faster, better, and more efficient.
+**CRITICAL SCOPE CLARIFICATION**: This document presents a strategy for using AutoGen (distributed multi-agent framework) and Amplifier (Claude Code amplification system) as **DEVELOPMENT TOOLING** to accelerate the development of fwber and other projects. The AI orchestration systems are NOT features to be built into fwber itself - they are tools to make development faster, better, and more efficient.
 
-FWBer remains a clean, simple dating platform with minimal AI features (ComfyUI avatars, basic matching, profile suggestions). The AI orchestration is purely for development acceleration.
+fwber remains a clean, simple dating platform with minimal AI features (ComfyUI avatars, basic matching, profile suggestions). The AI orchestration is purely for development acceleration.
 
 ## 🎯 Strategic Integration Opportunities (DEVELOPMENT TOOLING ONLY)
 
@@ -31,7 +31,7 @@ class PerformanceOptimizerAgent(RoutedAgent):
 #### Amplifier Development Pattern
 ```markdown
 # Amplifier Recipe: Development Workflow
-/ultrathink-task "Develop better FWBer matching algorithm"
+/ultrathink-task "Develop better fwber matching algorithm"
   → Task algorithm-designer: "Design improved matching logic"
   → Task code-generator: "Generate optimized matching code"
   → Task test-creator: "Create comprehensive tests"
@@ -81,7 +81,7 @@ class ContentModeratorAgent(RoutedAgent):
 
 #### AutoGen Task-Centric Memory
 ```python
-# Memory Controller for FWBer
+# Memory Controller for fwber
 memory_controller = MemoryController(
     reset=False,
     client=openai_client,
@@ -99,7 +99,7 @@ matching_agent = AssistantAgent(
 
 #### Amplifier Memory Integration
 ```markdown
-# Amplifier Memory System for FWBer
+# Amplifier Memory System for fwber
 @DISCOVERIES.md
 - User prefers profiles with outdoor activities
 - Conversation starters about travel get 3x more responses
@@ -112,7 +112,7 @@ matching_agent = AssistantAgent(
 
 ```mermaid
 graph TD
-    A[FWBer Frontend] --> B[API Gateway]
+    A[fwber Frontend] --> B[API Gateway]
     B --> C[AutoGen gRPC Runtime]
     C --> D[Distributed Agent Network]
     D --> E[Profile Analyzer Agent]
@@ -134,8 +134,8 @@ graph TD
 ### Pattern 2: Multi-Model Consensus Integration
 
 ```python
-# FWBer Multi-Model Consensus Service
-class FWBerConsensusService:
+# fwber Multi-Model Consensus Service
+class fwberConsensusService:
     def __init__(self):
         self.autogen_runtime = GrpcWorkerAgentRuntime()
         self.amplifier_orchestrator = AmplifierOrchestrator()
@@ -182,19 +182,19 @@ amplifier_workflow_insights:
 **Goal**: Establish basic integration infrastructure
 
 #### Week 1: AutoGen Integration
-- [ ] Set up AutoGen gRPC runtime for FWBer
+- [ ] Set up AutoGen gRPC runtime for fwber
 - [ ] Create basic ProfileAnalyzer agent
 - [ ] Implement distributed matching prototype
 - [ ] Test with small user subset
 
 #### Week 2: Amplifier Integration
-- [ ] Create FWBer-specific Amplifier recipes
+- [ ] Create fwber-specific Amplifier recipes
 - [ ] Implement content generation workflow
 - [ ] Set up memory system for user preferences
 - [ ] Test parallel processing capabilities
 
 ### Phase 2: Core Services (Weeks 3-4)
-**Goal**: Refactor key FWBer services to multi-agent architecture
+**Goal**: Refactor key fwber services to multi-agent architecture
 
 #### Week 3: Matching Engine Refactor
 - [ ] Decompose AIMatchingService into specialized agents
@@ -233,7 +233,7 @@ amplifier_workflow_insights:
 from autogen_core import RoutedAgent, MessageContext, message_handler
 from autogen_ext.runtimes.grpc import GrpcWorkerAgentRuntime
 
-class FWBerMatchingService:
+class fwberMatchingService:
     def __init__(self):
         self.runtime = GrpcWorkerAgentRuntime()
         self.agents = {
@@ -252,7 +252,7 @@ class FWBerMatchingService:
 #### 2. Content Generation Service
 ```python
 # fwber/autogen_services/content_service.py
-class FWBerContentService:
+class fwberContentService:
     def __init__(self):
         self.runtime = GrpcWorkerAgentRuntime()
         self.agents = {
@@ -270,7 +270,7 @@ class FWBerContentService:
 
 ### Amplifier Integration
 
-#### 1. FWBer-Specific Recipes
+#### 1. fwber-Specific Recipes
 ```markdown
 # amplifier/recipes/fwber_matching.md
 ## Enhanced Matching Recipe
@@ -299,12 +299,12 @@ Generate high-quality matches using multi-agent analysis
 #### 2. Memory System Integration
 ```python
 # amplifier/memory/fwber_memory.py
-class FWBerMemorySystem:
+class fwberMemorySystem:
     def __init__(self):
         self.memory_controller = MemoryController(
             memory_bank_path="./fwber_memory_bank"
         )
-        self.discoveries = FWBerDiscoveries()
+        self.discoveries = fwberDiscoveries()
     
     def learn_from_interaction(self, user_id: int, interaction: Interaction):
         # Learn from user behavior
@@ -365,7 +365,7 @@ amplifier:
 # monorepo/DISCOVERIES.md
 ## Cross-Project AI Insights
 
-### FWBer Matching Insights
+### fwber Matching Insights
 - Users with 3+ photos get 2x more matches
 - Bio length of 100-200 characters optimal
 - Outdoor activity photos increase engagement by 60%
@@ -388,7 +388,7 @@ amplifier:
 
 ## 📊 Performance & Scalability Analysis
 
-### Current FWBer Performance
+### Current fwber Performance
 - **Matching Service**: 2-3 seconds per request
 - **Content Generation**: 5-8 seconds per request
 - **Concurrent Users**: ~100 users
@@ -463,7 +463,7 @@ amplifier:
 ## 🚀 Next Steps
 
 ### Immediate Actions (This Week)
-1. **Set up AutoGen gRPC runtime** for FWBer
+1. **Set up AutoGen gRPC runtime** for fwber
 2. **Create basic ProfileAnalyzer agent** as proof of concept
 3. **Implement Amplifier recipe** for content generation
 4. **Establish shared memory system** across projects
@@ -475,7 +475,7 @@ amplifier:
 4. **Establish performance monitoring**
 
 ### Long-term Vision (Next Quarter)
-1. **Full multi-agent orchestration** across all FWBer services
+1. **Full multi-agent orchestration** across all fwber services
 2. **Self-learning AI system** with persistent memory
 3. **Unified development platform** for all projects
 4. **Industry-leading AI orchestration** capabilities
@@ -487,4 +487,4 @@ amplifier:
 **Confidence Level**: High (9/10)  
 **Next Review**: Weekly progress validation
 
-This integration strategy represents a transformative opportunity to create a world-class AI orchestration platform that combines the best of AutoGen's distributed architecture, Amplifier's capability multiplication, and FWBer's production-ready foundation.
+This integration strategy represents a transformative opportunity to create a world-class AI orchestration platform that combines the best of AutoGen's distributed architecture, Amplifier's capability multiplication, and fwber's production-ready foundation.

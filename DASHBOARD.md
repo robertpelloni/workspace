@@ -8,7 +8,7 @@ The workspace is a mono-repo style collection of various tools, agents, applicat
 
 Key high-level directories and their purposes:
 
-*   **`AIOS/`**: The AI Operating System core.
+*   **`aios/`**: The AI Operating System core.
 *   **`opencode-autopilot/`**: The primary autopilot interface, recently migrated to a Next.js web application.
 *   **`fwber/`**: A significant project component (Framework/Backend reference).
 *   **`submodules/`**: Contains various Git submodules integrated into the project (e.g., `mcp-manager`).
@@ -22,11 +22,11 @@ The following table lists the Git submodules currently initialized and tracked i
 
 | Submodule Name | Path | Description | Version/Status |
 | :--- | :--- | :--- | :--- |
-| **AIOS** | `AIOS` | AI Operating System Core | `19f9bee` (main) |
+| **aios** | `aios` | AI Operating System Core | `19f9bee` (main) |
 | **AirSim** | `AirSim` | Simulator for drones, cars and more | `1344870` (v1.1.8) |
 | **ArrowVortex** | `ArrowVortex` | Rhythm game simulator/editor | `9e867fa` (v1.0.1) |
 | **BobsGameOnline** | `BobsGameOnline` | Online game project | `4f3015f` (main) |
-| **FileOrganizer** | `FileOrganizer` | File organization utility | `470c27b` (v2.1.0) |
+| **filez** | `filez` | File organization utility | `470c27b` (v2.1.0) |
 | **JWildfire** | `JWildfire` | Java fractal flame editor | `999faa6` (master) |
 | **LibreChat** | `LibreChat` | Enhanced ChatGPT Clone | `cda6d58` (v0.8.2-rc1) |
 | **Neothesia** | `Neothesia` | Rhythm game focused on VSRG | `698a3f4` (v0.3.1) |

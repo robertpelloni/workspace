@@ -7,12 +7,12 @@
 ## Quick Reference
 
 ### Projects Analyzed
-- **FWBer**: Dating platform (20,127 files) - Production ready
+- **fwber**: Dating platform (20,127 files) - Production ready
 - **Hellven**: Unity game (20,777 files) - Active development  
 - **ITGmania**: Rhythm game (1,000+ files) - StepMania fork
 - **BobsGameOnline**: Puzzle game (1,000+ files) - Java-based
 - **OKGame**: Cross-platform game (20,000+ files) - C++ engine
-- **FileOrganizer**: C++/Qt tool - Desktop application
+- **filez**: C++/Qt tool - Desktop application
 
 ### AI Infrastructure
 - **Zen MCP Server**: v9.0.0 (70 models, 4 providers)
@@ -40,7 +40,7 @@
 - Codex CLI MCP timeouts (7 servers failing)
 
 ### 🚀 Performance Metrics
-- **ROI**: 1,580% (FWBer project: 42 hours → 2.5 hours)
+- **ROI**: 1,580% (fwber project: 42 hours → 2.5 hours)
 - **Success Rate**: 95% first-time success with systematic approaches
 - **Coordination**: 5+ AI models working in parallel
 - **Quality**: Zero critical bugs in final implementations

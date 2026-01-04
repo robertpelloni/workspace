@@ -15,9 +15,9 @@
 ## 3. Active Issues/Tasks
 - **Session Persistence:** The `SessionManager` (`opencode-autopilot/lib/session-manager.ts`) is a stateless stub. It requires a real persistence layer (Redis, Postgres, or similar) to function correctly in a production serverless environment.
 - **Council Capabilities:** The `Council` logic no longer spawns child processes directly, adapting to the serverless constraints.
-- **FWBer Status:** The Reverb server was successfully started, but the frontend connection fix has not been fully verified.
+- **fwber Status:** The Reverb server was successfully started, but the frontend connection fix has not been fully verified.
 
 ## 4. Next Steps
 - **Deployment:** User to deploy the new `opencode-autopilot` Next.js app to Vercel.
 - **Feature Work:** Implement a persistent storage adapter for `SessionManager`.
-- **Debugging:** Resume FWBer debugging, specifically verifying the Reverb connection on the frontend.
+- **Debugging:** Resume fwber debugging, specifically verifying the Reverb connection on the frontend.

@@ -82,13 +82,13 @@ mcp_chroma-knowledge_chroma_add_document --collection_name "project_analysis" --
 ### Architecture Analysis with Consensus
 ```bash
 # Get multi-model consensus on architecture with specialized routing
-mcp_zen-mcp-server_consensus --models '[{"model":"anthropic/claude-sonnet-4.5","stance":"neutral"},{"model":"gpt-5-codex","stance":"for"},{"model":"gemini-2.5-pro","stance":"against"}]' --step "Evaluate microservices vs monolith architecture for FWBer project"
+mcp_zen-mcp-server_consensus --models '[{"model":"anthropic/claude-sonnet-4.5","stance":"neutral"},{"model":"gpt-5-codex","stance":"for"},{"model":"gemini-2.5-pro","stance":"against"}]' --step "Evaluate microservices vs monolith architecture for fwber project"
 ```
 
 ### Code Review with Quality Gates
 ```bash
 # Comprehensive code review with automated quality gates
-mcp_zen-mcp-server_codereview --model anthropic/claude-sonnet-4.5 --step "Review FWBer security implementation" --relevant_files '["C:\\Users\\hyper\\fwber\\security-manager.php"]'
+mcp_zen-mcp-server_codereview --model anthropic/claude-sonnet-4.5 --step "Review fwber security implementation" --relevant_files '["C:\\Users\\hyper\\fwber\\security-manager.php"]'
 ```
 
 ### Knowledge Storage with Enhanced Metadata

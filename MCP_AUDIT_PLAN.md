@@ -2,7 +2,7 @@
 
 ## Quick Reference
 
-**Priority**: Complete this efficiently so you can focus on FWBer monetization
+**Priority**: Complete this efficiently so you can focus on fwber monetization
 
 ## Phase 1: Edge Tabs Extraction (15-30 min)
 
@@ -77,9 +77,9 @@ Based on your setup, you likely have:
 3. **Create template**: For adding new servers quickly
 4. **Test current stack**: Make sure what works continues to work
 
-## FWBer Priority Checklist (When You Return)
+## fwber Priority Checklist (When You Return)
 
-Since you mentioned FWBer needs finishing:
+Since you mentioned fwber needs finishing:
 - [ ] Review current production readiness
 - [ ] Identify monetization features needed
 - [ ] Test deployment pipeline
@@ -96,7 +96,7 @@ Since you mentioned FWBer needs finishing:
 - Testing: 60 min
 - Documentation: 30 min
 
-**Then focus on FWBer monetization** - that's where the real value is.
+**Then focus on fwber monetization** - that's where the real value is.
 
 ## Notes
 
@@ -106,5 +106,5 @@ Since you mentioned FWBer needs finishing:
 
 ---
 
-**Remember**: The goal is to improve your development workflow, not to create a perfect MCP setup. Good enough and back to FWBer is better than perfect MCP setup and delayed monetization.
+**Remember**: The goal is to improve your development workflow, not to create a perfect MCP setup. Good enough and back to fwber is better than perfect MCP setup and delayed monetization.
 

@@ -30,7 +30,7 @@ Based on multi-model analysis (Gemini 2.5 Pro, GPT-5 Pro, Claude Sonnet 4.5, Gro
 ### Using Zen MCP for Orchestration
 ```bash
 # Access GPT-5-Codex through Zen MCP server
-mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Generate secure authentication system for FWBer"
+mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Generate secure authentication system for fwber"
 ```
 
 ### Using Serena MCP for Code Context
@@ -88,13 +88,13 @@ mcp_zen-mcp-server_chat --model gpt-5-codex --prompt "Generate a secure JWT auth
 ### Code Review
 ```bash
 # Comprehensive security code review
-mcp_zen-mcp-server_codereview --model gpt-5-codex --step "Review FWBer authentication system for security vulnerabilities" --relevant_files '["C:\\Users\\hyper\\fwber\\security-manager.php"]'
+mcp_zen-mcp-server_codereview --model gpt-5-codex --step "Review fwber authentication system for security vulnerabilities" --relevant_files '["C:\\Users\\hyper\\fwber\\security-manager.php"]'
 ```
 
 ### Refactoring Analysis
 ```bash
 # Analyze code for refactoring opportunities
-mcp_zen-mcp-server_refactor --model gpt-5-codex --step "Analyze FWBer matching engine for refactoring opportunities" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php"]'
+mcp_zen-mcp-server_refactor --model gpt-5-codex --step "Analyze fwber matching engine for refactoring opportunities" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php"]'
 ```
 
 ### Knowledge Storage
@@ -113,7 +113,7 @@ mcp_chroma-knowledge_chroma_add_document --collection_name "code_solutions" --do
 ### Consensus Building for Code
 Always use Zen MCP's consensus tool for complex coding decisions:
 ```bash
-mcp_zen-mcp-server_consensus --models '[{"model":"gpt-5-codex","stance":"for"},{"model":"anthropic/claude-sonnet-4.5","stance":"neutral"},{"model":"gemini-2.5-pro","stance":"against"}]' --step "Evaluate microservices architecture implementation for FWBer"
+mcp_zen-mcp-server_consensus --models '[{"model":"gpt-5-codex","stance":"for"},{"model":"anthropic/claude-sonnet-4.5","stance":"neutral"},{"model":"gemini-2.5-pro","stance":"against"}]' --step "Evaluate microservices architecture implementation for fwber"
 ```
 
 ## Memory Management
@@ -152,19 +152,19 @@ mcp_zen-mcp-server_consensus --models '[{"model":"gpt-5-codex","stance":"for"},{
 ### Test Generation
 ```bash
 # Generate comprehensive test suites
-mcp_zen-mcp-server_testgen --model gpt-5-codex --step "Generate test suite for FWBer matching engine" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php"]'
+mcp_zen-mcp-server_testgen --model gpt-5-codex --step "Generate test suite for fwber matching engine" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php"]'
 ```
 
 ### Debugging Analysis
 ```bash
 # Systematic debugging approach
-mcp_zen-mcp-server_debug --model gpt-5-codex --step "Debug FWBer authentication issues" --relevant_files '["C:\\Users\\hyper\\fwber\\security-manager.php"]'
+mcp_zen-mcp-server_debug --model gpt-5-codex --step "Debug fwber authentication issues" --relevant_files '["C:\\Users\\hyper\\fwber\\security-manager.php"]'
 ```
 
 ### Documentation Generation
 ```bash
 # Generate comprehensive code documentation
-mcp_zen-mcp-server_docgen --model gpt-5-codex --step "Document FWBer API endpoints" --relevant_files '["C:\\Users\\hyper\\fwber\\api"]'
+mcp_zen-mcp-server_docgen --model gpt-5-codex --step "Document fwber API endpoints" --relevant_files '["C:\\Users\\hyper\\fwber\\api"]'
 ```
 
 ## Troubleshooting

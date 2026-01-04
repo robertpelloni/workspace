@@ -3,7 +3,7 @@
 ## Workspace Composition
 - **BobsGameOnline** — PHP-driven online game portal with account management workflows and jQuery-based UI assets.
 - **consolidated-skills** — Documentation repository of .skill workflow guides with markdown indices.
-- **FileOrganizer** — Python file-organization utility driven by `fileorganizer.py` and INI settings.
+- **filez** — Python file-organization utility driven by `fileorganizer.py` and INI settings.
 - **fwber** — PHP venue and match coordination system including secure/vulnerable account flows and orchestration JavaScript.
 - **hellven** — Unity/VRChat SDK project manifest collection comprised of multiple `.csproj` files.
 - **itgmania** — Rhythm-game mod asset set containing Lua receptor scripts alongside art resources.

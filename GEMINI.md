@@ -22,7 +22,7 @@ Gemini is Google's advanced AI model family, known for its multimodal capabiliti
 ### Using Zen MCP for Orchestration
 ```bash
 # Access Gemini through Zen MCP server
-mcp_zen-mcp-server_chat --model gemini-2.5-pro --prompt "Analyze FWBer performance bottlenecks"
+mcp_zen-mcp-server_chat --model gemini-2.5-pro --prompt "Analyze fwber performance bottlenecks"
 ```
 
 ### Using Serena MCP for Analysis Context
@@ -37,7 +37,7 @@ mcp_serena_read_memory --memory_file_name "gemini_insights"
 ### Using Chroma MCP for Analysis Storage
 ```bash
 # Store analysis results in Chroma
-mcp_chroma-knowledge_chroma_add_document --collection_name "performance_analysis" --document "Gemini: FWBer performance analysis..."
+mcp_chroma-knowledge_chroma_add_document --collection_name "performance_analysis" --document "Gemini: fwber performance analysis..."
 ```
 
 ## Best Practices for Gemini
@@ -74,13 +74,13 @@ mcp_chroma-knowledge_chroma_add_document --collection_name "performance_analysis
 ### Performance Analysis
 ```bash
 # Comprehensive performance analysis
-mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Analyze FWBer performance bottlenecks and optimization opportunities" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\service-worker.js"]'
+mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Analyze fwber performance bottlenecks and optimization opportunities" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\service-worker.js"]'
 ```
 
 ### Architecture Analysis
 ```bash
 # System architecture evaluation
-mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Evaluate FWBer architecture for scalability and maintainability" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php","C:\\Users\\hyper\\fwber\\ProfileManager.php"]'
+mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Evaluate fwber architecture for scalability and maintainability" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php","C:\\Users\\hyper\\fwber\\ProfileManager.php"]'
 ```
 
 ### Multimodal Analysis
@@ -105,7 +105,7 @@ mcp_chroma-knowledge_chroma_add_document --collection_name "fwber_project" --doc
 ### Consensus Building for Analysis
 Always use Zen MCP's consensus tool for complex analysis decisions:
 ```bash
-mcp_zen-mcp-server_consensus --models '[{"model":"gemini-2.5-pro","stance":"neutral"},{"model":"anthropic/claude-sonnet-4.5","stance":"for"},{"model":"gpt-5-codex","stance":"against"}]' --step "Evaluate microservices vs monolith for FWBer performance"
+mcp_zen-mcp-server_consensus --models '[{"model":"gemini-2.5-pro","stance":"neutral"},{"model":"anthropic/claude-sonnet-4.5","stance":"for"},{"model":"gpt-5-codex","stance":"against"}]' --step "Evaluate microservices vs monolith for fwber performance"
 ```
 
 ## Memory Management
@@ -144,13 +144,13 @@ mcp_zen-mcp-server_consensus --models '[{"model":"gemini-2.5-pro","stance":"neut
 ### Performance Analysis
 ```bash
 # Systematic performance analysis
-mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Analyze FWBer frontend performance" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\service-worker.js"]'
+mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Analyze fwber frontend performance" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\service-worker.js"]'
 ```
 
 ### Architecture Analysis
 ```bash
 # Comprehensive architecture review
-mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Review FWBer system architecture" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php","C:\\Users\\hyper\\fwber\\ProfileManager.php"]'
+mcp_zen-mcp-server_analyze --model gemini-2.5-pro --step "Review fwber system architecture" --relevant_files '["C:\\Users\\hyper\\fwber\\MatchingEngine.php","C:\\Users\\hyper\\fwber\\ProfileManager.php"]'
 ```
 
 ### Data Analysis

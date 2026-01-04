@@ -68,7 +68,7 @@ mcp_zen-mcp-server_secaudit --model anthropic/claude-sonnet-4.5 --step "Security
 
 ## Project Quick Access
 
-### FWBer (Dating Platform)
+### fwber (Dating Platform)
 - **Path**: `C:\Users\hyper\workspace\fwber`
 - **Tech**: Laravel/Next.js, PostgreSQL
 - **Status**: Production ready
@@ -94,8 +94,8 @@ mcp_zen-mcp-server_secaudit --model anthropic/claude-sonnet-4.5 --step "Security
 - **Tech**: C++
 - **Status**: Cross-platform development
 
-### FileOrganizer
-- **Path**: `C:\Users\hyper\workspace\FileOrganizer`
+### filez
+- **Path**: `C:\Users\hyper\workspace\filez`
 - **Tech**: C++/Qt
 - **Status**: Desktop application
 
@@ -187,7 +187,7 @@ mcp_zen-mcp-server_version
 ## Performance Metrics
 
 ### Achievements
-- **ROI**: 1,580% (FWBer project)
+- **ROI**: 1,580% (fwber project)
 - **Success Rate**: 95% first-time success
 - **Speed**: 3x faster problem resolution
 - **Quality**: Zero critical bugs

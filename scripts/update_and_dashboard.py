@@ -41,8 +41,8 @@ def update_submodules(submodules):
     success_count = 0
     fail_count = 0
     for sub in submodules:
-        if sub["name"] == "AIOS":
-            print(f"Skipping AIOS due to lock issue.")
+        if sub["name"] == "aios":
+            print(f"Skipping aios due to lock issue.")
             continue
 
         print(f"Updating {sub['name']}...")

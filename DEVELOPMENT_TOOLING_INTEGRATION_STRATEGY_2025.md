@@ -4,7 +4,7 @@
 
 **AI orchestration systems (AutoGen, Amplifier, Zen MCP) are DEVELOPMENT TOOLING ONLY**
 
-- **NOT** features to be built into FWBer or other projects
+- **NOT** features to be built into fwber or other projects
 - **ARE** tools to accelerate development, improve code quality, and enhance development workflows
 - **PURPOSE**: Make development faster, better, and more efficient
 
@@ -25,7 +25,7 @@
 ┌─────────────────────────────────────────────────────────────┐
 │                    PRODUCTION APPLICATIONS                  │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
-│  │    FWBer    │  │   Other     │  │   Other     │        │
+│  │    fwber    │  │   Other     │  │   Other     │        │
 │  │ (Clean Dating│  │  Projects   │  │  Projects   │        │
 │  │  Platform)  │  │             │  │             │        │
 │  └─────────────┘  └─────────────┘  └─────────────┘        │
@@ -40,23 +40,23 @@
 #### AutoGen Development Pattern
 ```python
 # Development Agents (NOT production features)
-class FWBerCodeGenerator(RoutedAgent):
-    """Generates optimized FWBer code"""
+class fwberCodeGenerator(RoutedAgent):
+    """Generates optimized fwber code"""
     
 class TestGeneratorAgent(RoutedAgent):
-    """Creates comprehensive tests for FWBer"""
+    """Creates comprehensive tests for fwber"""
     
 class DocumentationGenerator(RoutedAgent):
-    """Generates FWBer documentation"""
+    """Generates fwber documentation"""
     
 class PerformanceOptimizer(RoutedAgent):
-    """Optimizes FWBer performance"""
+    """Optimizes fwber performance"""
 ```
 
 #### Amplifier Development Pattern
 ```markdown
-# Amplifier Recipe: FWBer Development Workflow
-/ultrathink-task "Develop new FWBer feature"
+# Amplifier Recipe: fwber Development Workflow
+/ultrathink-task "Develop new fwber feature"
   → Task feature-designer: "Design feature architecture"
   → Task code-generator: "Generate optimized code"
   → Task test-creator: "Create comprehensive tests"
@@ -71,16 +71,16 @@ class PerformanceOptimizer(RoutedAgent):
 ```python
 # Quality Assurance Agents
 class CodeReviewerAgent(RoutedAgent):
-    """Reviews FWBer code for quality issues"""
+    """Reviews fwber code for quality issues"""
     
 class SecurityAuditorAgent(RoutedAgent):
-    """Audits FWBer for security vulnerabilities"""
+    """Audits fwber for security vulnerabilities"""
     
 class PerformanceTesterAgent(RoutedAgent):
-    """Tests FWBer performance and scalability"""
+    """Tests fwber performance and scalability"""
     
 class BugHunterAgent(RoutedAgent):
-    """Finds and reports bugs in FWBer"""
+    """Finds and reports bugs in fwber"""
 ```
 
 ### 3. **Project Management & Coordination**
@@ -90,24 +90,24 @@ class BugHunterAgent(RoutedAgent):
 ```python
 # Project Management Agents
 class TaskPlannerAgent(RoutedAgent):
-    """Plans development tasks for FWBer"""
+    """Plans development tasks for fwber"""
     
 class DependencyManagerAgent(RoutedAgent):
     """Manages dependencies across projects"""
     
 class ReleaseManagerAgent(RoutedAgent):
-    """Manages FWBer releases and deployments"""
+    """Manages fwber releases and deployments"""
     
 class DocumentationManagerAgent(RoutedAgent):
     """Manages documentation across projects"""
 ```
 
-## 🏗️ **FWBer Production Architecture (Clean & Simple)**
+## 🏗️ **fwber Production Architecture (Clean & Simple)**
 
-### **FWBer Features (Minimal AI)**
+### **fwber Features (Minimal AI)**
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        FWBer                                │
+│                        fwber                                │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
 │  │   Frontend  │  │   Backend   │  │   Database  │        │
 │  │   (Clean    │  │  (Laravel   │  │   (MySQL    │        │
@@ -123,13 +123,13 @@ class DocumentationManagerAgent(RoutedAgent):
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### **Allowed FWBer AI Features:**
+### **Allowed fwber AI Features:**
 1. **ComfyUI Avatar Generation**: Generate user avatars
 2. **Basic AI Matching**: Simple matching algorithm
 3. **Profile Suggestions**: Basic AI suggestions for profile completion
 4. **Content Moderation**: Basic AI content filtering
 
-### **Prohibited FWBer AI Features:**
+### **Prohibited fwber AI Features:**
 1. **Multi-Agent Orchestration**: No distributed agent networks
 2. **Complex AI Workflows**: No orchestrated AI processes
 3. **User-Facing AI Chat**: No AI assistants or chatbots
@@ -142,27 +142,27 @@ class DocumentationManagerAgent(RoutedAgent):
 
 #### Week 1: AutoGen Development Setup
 - [ ] Set up AutoGen gRPC runtime for development workflows
-- [ ] Create FWBer-specific development agents
+- [ ] Create fwber-specific development agents
 - [ ] Implement code generation workflows
-- [ ] Test with small FWBer features
+- [ ] Test with small fwber features
 
 #### Week 2: Amplifier Development Setup
-- [ ] Create FWBer-specific Amplifier recipes
+- [ ] Create fwber-specific Amplifier recipes
 - [ ] Implement development workflow automation
 - [ ] Set up memory system for development patterns
 - [ ] Test parallel development capabilities
 
-### **Phase 2: FWBer Development Enhancement (Weeks 3-4)**
-**Goal**: Use AI orchestration to develop FWBer faster and better
+### **Phase 2: fwber Development Enhancement (Weeks 3-4)**
+**Goal**: Use AI orchestration to develop fwber faster and better
 
 #### Week 3: Code Generation & Testing
-- [ ] Use AI agents to generate FWBer code
+- [ ] Use AI agents to generate fwber code
 - [ ] Implement automated testing workflows
 - [ ] Create comprehensive test suites
-- [ ] Optimize FWBer performance
+- [ ] Optimize fwber performance
 
 #### Week 4: Documentation & Quality
-- [ ] Generate FWBer documentation
+- [ ] Generate fwber documentation
 - [ ] Implement code review workflows
 - [ ] Create security audit processes
 - [ ] Establish quality assurance workflows
@@ -210,7 +210,7 @@ class DocumentationManagerAgent(RoutedAgent):
 - **Easier Maintenance**: AI-optimized code that's easy to maintain
 - **Cross-Project Benefits**: Shared development tools and patterns
 
-### **FWBer Production Outcomes:**
+### **fwber Production Outcomes:**
 - **Clean Platform**: Simple, focused dating application
 - **Minimal AI**: Only essential AI features (avatars, matching)
 - **User Focus**: Great user experience without AI complexity
@@ -225,16 +225,16 @@ class DocumentationManagerAgent(RoutedAgent):
 ## 🚨 **Critical Reminders**
 
 ### **DO:**
-- Use AI orchestration to develop FWBer faster and better
+- Use AI orchestration to develop fwber faster and better
 - Apply AI tools to code generation, testing, and documentation
 - Leverage multi-agent systems for development workflows
 - Use AI orchestration across the monorepo for development
 
 ### **DON'T:**
-- Add complex AI orchestration as FWBer features
+- Add complex AI orchestration as fwber features
 - Expose multi-agent systems to end users
 - Build distributed AI networks in production
-- Make AI orchestration visible to FWBer users
+- Make AI orchestration visible to fwber users
 
 ## 📝 **Documentation Updates**
 
@@ -246,7 +246,7 @@ class DocumentationManagerAgent(RoutedAgent):
 
 ### **Key Changes:**
 - Clarified that AI orchestration is development tooling only
-- Removed complex AI orchestration from FWBer feature descriptions
+- Removed complex AI orchestration from fwber feature descriptions
 - Updated architecture diagrams to show clear separation
 - Revised implementation roadmaps to focus on development tooling
 

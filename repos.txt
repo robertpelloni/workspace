@@ -1,6 +1,6 @@
-AIOS
+aios
 fwber
-FileOrganizer
+filez
 BobsGameOnline
 jules-autopilot
 opencode-autopilot

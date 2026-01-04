@@ -9,7 +9,7 @@ This document provides a comprehensive overview of all registered submodules in 
 
 | Name | URL | Status (HEAD) |
 |------|-----|---------------|
-| **AIOS** | `https://github.com/robertpelloni/AIOS` | `heads/main` |
+| **aios** | `https://github.com/robertpelloni/aios` | `heads/main` |
 | **Agent-MCP** | `https://github.com/rinadelph/Agent-MCP` | `v4.20.0-19-g13d98b2` |
 | **AirSim** | `https://github.com/microsoft/AirSim` | `v1.1.8-2529-g13448700` |
 | **ArrowVortex** | `https://github.com/robertpelloni/ArrowVortex` | `v1.0.1-157-gb70d142` |
@@ -17,7 +17,7 @@ This document provides a comprehensive overview of all registered submodules in 
 | **CodeMachine-CLI** | `https://github.com/moazbuilds/CodeMachine-CLI` | `v0.2.3-37-gdb10ce0` |
 | **DesktopCommanderMCP** | `https://github.com/wonderwhy-er/DesktopCommanderMCP` | `v0.2.7-80-ge3afba4` |
 | **Distil-NPCs** | `https://github.com/distil-labs/Distil-NPCs` | `heads/main` |
-| **FileOrganizer** | `https://github.com/robertpelloni/FileOrganizer` | `heads/main` |
+| **filez** | `https://github.com/robertpelloni/filez` | `heads/main` |
 | **JWildfire** | `https://github.com/robertpelloni/JWildfire` | `heads/master` |
 | **Kode** | `https://github.com/shareAI-lab/Kode` | `heads/main` |
 | **LibreChat** | `https://github.com/danny-avila/LibreChat` | `chart-1.9.1-58-g0e05ff484` |

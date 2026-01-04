@@ -206,12 +206,12 @@
 				}
 			}
 		},
-		"C:\\Users\\hyper\\workspace\\FileOrganizer\\": {
+		"C:\\Users\\hyper\\workspace\\filez\\": {
 			"env": {
-				"PROJECT_ROOT": "C:\\Users\\workspace\\hyper\\workspace\\FileOrganizer\\",
-				"PROJECT_DIR": "C:\\Users\\workspace\\hyper\\workspace\\FileOrganizer\\",
-				"PWD": "C:\\Users\\hyper\\workspace\\workspace\\FileOrganizer\\",
-				"pwd": "C:\\Users\\hyper\\workspace\\workspace\\FileOrganizer\\"
+				"PROJECT_ROOT": "C:\\Users\\workspace\\hyper\\workspace\\filez\\",
+				"PROJECT_DIR": "C:\\Users\\workspace\\hyper\\workspace\\filez\\",
+				"PWD": "C:\\Users\\hyper\\workspace\\workspace\\filez\\",
+				"pwd": "C:\\Users\\hyper\\workspace\\workspace\\filez\\"
 			},
 			"mcpServers": {
 				"serena": {
@@ -221,7 +221,7 @@
 						"--context",
 						"ide-assistant",
 						"--project",
-						"C:\\Users\\hyper\\workspace\\FileOrganizer\\"
+						"C:\\Users\\hyper\\workspace\\filez\\"
 					],
 					"startupTimeoutMs": 120000,
 					"timeoutMs": 120000
@@ -229,7 +229,7 @@
 				"filesystem": {
 					"command": "mcp-server-filesystem",
 					"args": [
-						"C:\\Users\\hyper\\workspace\\FileOrganizer\\"
+						"C:\\Users\\hyper\\workspace\\filez\\"
 					]
 				}
 			}

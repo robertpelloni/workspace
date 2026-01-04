@@ -4,7 +4,7 @@
 
 ### **AI Orchestration is for DEVELOPMENT TOOLING ONLY**
 
-**IMPORTANT**: The AI orchestration systems (AutoGen, Amplifier, Zen MCP, etc.) are **development tools and process enhancers**, NOT features to be built into FWBer or other projects.
+**IMPORTANT**: The AI orchestration systems (AutoGen, Amplifier, Zen MCP, etc.) are **development tools and process enhancers**, NOT features to be built into fwber or other projects.
 
 ## 📋 **Corrected Scope Definition**
 
@@ -17,20 +17,20 @@
 - **Cross-Project Coordination**: Managing dependencies and integrations
 
 ### ❌ **What AI Orchestration is NOT For:**
-- **FWBer User Features**: No complex AI orchestration as user-facing features
+- **fwber User Features**: No complex AI orchestration as user-facing features
 - **Production AI Services**: No distributed agent networks in production
 - **User-Facing AI**: No multi-agent systems exposed to end users
 - **Complex AI Workflows**: No orchestrated AI processes in the application layer
 
-## 🎯 **FWBer AI Scope (Minimal & Clean)**
+## 🎯 **fwber AI Scope (Minimal & Clean)**
 
-### **Allowed AI Features in FWBer:**
+### **Allowed AI Features in fwber:**
 1. **Avatar Generation**: ComfyUI-generated avatars for user profiles
 2. **Auto Profile Suggestions**: Basic AI suggestions for profile completion
 3. **Matching Algorithm**: Simple AI-enhanced matching (not orchestrated)
 4. **Content Moderation**: Basic AI content filtering
 
-### **Prohibited AI Features in FWBer:**
+### **Prohibited AI Features in fwber:**
 1. **Multi-Agent Orchestration**: No distributed agent networks
 2. **Complex AI Workflows**: No orchestrated AI processes
 3. **User-Facing AI Chat**: No AI assistants or chatbots
@@ -53,17 +53,17 @@
 ┌─────────────────────────────────────────────────────────────┐
 │                    PRODUCTION APPLICATIONS                  │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
-│  │    FWBer    │  │   Other     │  │   Other     │        │
+│  │    fwber    │  │   Other     │  │   Other     │        │
 │  │ (Clean Dating│  │  Projects   │  │  Projects   │        │
 │  │  Platform)  │  │             │  │             │        │
 │  └─────────────┘  └─────────────┘  └─────────────┘        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### **FWBer Production Architecture (Simplified)**
+### **fwber Production Architecture (Simplified)**
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        FWBer                                │
+│                        fwber                                │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
 │  │   Frontend  │  │   Backend   │  │   Database  │        │
 │  │   (Clean    │  │  (Laravel   │  │   (MySQL    │        │
@@ -82,12 +82,12 @@
 ## 🔧 **Corrected Integration Strategy**
 
 ### **Development Tooling Integration (AutoGen + Amplifier)**
-- **Purpose**: Accelerate development of FWBer and other projects
+- **Purpose**: Accelerate development of fwber and other projects
 - **Scope**: Development workflows, code generation, testing, documentation
 - **Implementation**: Behind-the-scenes development tools
 - **Visibility**: Developers only, not end users
 
-### **FWBer Production Integration (Minimal AI)**
+### **fwber Production Integration (Minimal AI)**
 - **Purpose**: Basic AI features for user experience
 - **Scope**: Avatar generation, profile suggestions, simple matching
 - **Implementation**: Clean, simple AI services
@@ -103,7 +103,7 @@
 5. Project documentation - **CLARIFY**
 
 ### **Key Changes:**
-- Remove complex AI orchestration from FWBer feature descriptions
+- Remove complex AI orchestration from fwber feature descriptions
 - Clarify that AI orchestration is development tooling only
 - Update architecture diagrams to show clear separation
 - Revise implementation roadmaps to focus on development tooling
@@ -114,13 +114,13 @@
 - Set up AutoGen for development workflow acceleration
 - Implement Amplifier recipes for code generation
 - Create development-specific AI orchestration
-- **NOT**: Complex AI features in FWBer
+- **NOT**: Complex AI features in fwber
 
-### **Phase 2: FWBer Development Enhancement**
-- Use AI orchestration to develop FWBer faster
+### **Phase 2: fwber Development Enhancement**
+- Use AI orchestration to develop fwber faster
 - Generate code, tests, and documentation
 - Accelerate development cycles
-- **NOT**: Add AI orchestration to FWBer itself
+- **NOT**: Add AI orchestration to fwber itself
 
 ### **Phase 3: Cross-Project Development**
 - Apply AI orchestration to other projects
@@ -131,16 +131,16 @@
 ## 🚨 **Critical Reminders**
 
 ### **DO:**
-- Use AI orchestration to develop FWBer faster and better
+- Use AI orchestration to develop fwber faster and better
 - Apply AI tools to code generation, testing, and documentation
 - Leverage multi-agent systems for development workflows
 - Use AI orchestration across the monorepo for development
 
 ### **DON'T:**
-- Add complex AI orchestration as FWBer features
+- Add complex AI orchestration as fwber features
 - Expose multi-agent systems to end users
 - Build distributed AI networks in production
-- Make AI orchestration visible to FWBer users
+- Make AI orchestration visible to fwber users
 
 ## 📊 **Success Metrics (Corrected)**
 
@@ -150,7 +150,7 @@
 - **Documentation**: 100% automated documentation
 - **Testing**: 95% automated test coverage
 
-### **FWBer Production Metrics:**
+### **fwber Production Metrics:**
 - **User Experience**: Clean, simple dating platform
 - **Performance**: Fast, reliable service
 - **AI Features**: Minimal, focused AI (avatars, matching)
@@ -164,7 +164,7 @@
 - **Easier Maintenance**: AI orchestration simplifies development
 - **Cross-Project Benefits**: Shared development tools and patterns
 
-### **FWBer Outcomes:**
+### **fwber Outcomes:**
 - **Clean Platform**: Simple, focused dating application
 - **Minimal AI**: Only essential AI features (avatars, matching)
 - **User Focus**: Great user experience without AI complexity

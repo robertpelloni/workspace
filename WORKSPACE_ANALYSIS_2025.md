@@ -10,7 +10,7 @@ This document provides a comprehensive analysis of the multi-AI orchestration wo
 
 - **Scope Expansion**: Additional active initiatives detected since the January baseline, including `ai-file-sorter` (C++ desktop utility with cross-platform launchers) and emerging research repositories (`amplifier`, `graphrag`, `Local-File-Organizer`, `OmniParser`, `spec-kit`, `playwright-mcp`). These complement the six flagship projects and illustrate continued diversification.
 
-**CRITICAL SCOPE CLARIFICATION**: AI orchestration systems (AutoGen, Amplifier, Zen MCP) are **DEVELOPMENT TOOLING ONLY** - they are NOT features to be built into FWBer or other projects. They are tools to accelerate development, improve code quality, and enhance development workflows. FWBer remains a clean, simple dating platform with minimal AI features (ComfyUI avatars, basic matching, profile suggestions).
+**CRITICAL SCOPE CLARIFICATION**: AI orchestration systems (AutoGen, Amplifier, Zen MCP) are **DEVELOPMENT TOOLING ONLY** - they are NOT features to be built into fwber or other projects. They are tools to accelerate development, improve code quality, and enhance development workflows. fwber remains a clean, simple dating platform with minimal AI features (ComfyUI avatars, basic matching, profile suggestions).
 - **Configuration Drift**: Cursor’s primary MCP settings file `.kilocode/mcp.json` is presently empty (`{"mcpServers":{}}`), while curated templates under `tools_config_files/` (e.g., `cursor_mcp.json`, `enhanced_mcp_settings.json`) provide populated definitions for Serena, Chroma, Gemini, Codex, Tavily, filesystem access, and orchestration helpers. Synchronising the active config with the curated variant will reinstate the expected server roster.
 - **Serena Memory Inventory**: `.serena/memories` now contains three canonical entries—`robert_pelloni_profile.md`, `workspace_analysis_2025.md`, and the October update `WorkspaceToolingOverview_2025-10-25.md`—ensuring historical perspective is preserved alongside the latest workspace summary.
 - **Tooling Observations**: Template reports (`FINAL_MCP_CONFIGURATION_REPORT.md`, `FINAL_CONFIGURATION_SUMMARY.md`, `MCP_SERVER_DIAGNOSTICS.md`) confirm prior cross-tool parity (Copilot, Codex, Gemini) with unified MCP access, though some referenced servers (e.g., `everything`) do not appear in the current active config and should be revalidated.
@@ -21,7 +21,7 @@ The remainder of this document retains the January 2025 baseline analysis for hi
 
 ### Major Projects (6 total)
 
-#### 1. FWBer - Dating Platform (Production Ready)
+#### 1. fwber - Dating Platform (Production Ready)
 - **Files**: 20,127 files
 - **Technology**: Laravel/Next.js stack
 - **Status**: Production-ready with comprehensive security
@@ -52,7 +52,7 @@ The remainder of this document retains the January 2025 baseline analysis for hi
 - **Status**: Cross-platform development
 - **Features**: Multi-platform support, game engine development
 
-#### 6. FileOrganizer - File Management Tool
+#### 6. filez - File Management Tool
 - **Files**: C++/Qt application
 - **Technology**: C++/Qt file management
 - **Status**: Desktop application
@@ -109,7 +109,7 @@ The remainder of this document retains the January 2025 baseline analysis for hi
   - `thinking_sessions_v1` - Extended reasoning sessions
   - `validation_evidence_v1` - Validation and testing evidence
   - `codebase_v1` - Codebase analysis and documentation
-  - `fwber_project_analysis` - FWBer project analysis
+  - `fwber_project_analysis` - fwber project analysis
 
 ### Serena Memory System
 - **Memories**: 25+ active memories
@@ -171,7 +171,7 @@ The remainder of this document retains the January 2025 baseline analysis for hi
 
 ## Key Achievements
 
-### FWBer Project Success
+### fwber Project Success
 - **Generated Code**: 1,625 lines of production-ready code
 - **ROI**: 1,580% (42 hours of work completed in 2.5 hours)
 - **Security**: Fixed 2 critical vulnerabilities (encryption key + SQL injection)

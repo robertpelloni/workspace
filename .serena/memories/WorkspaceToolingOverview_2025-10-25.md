@@ -1,7 +1,7 @@
 Workspace composition:
 - BobsGameOnline – PHP-driven online game portal with account management and jQuery assets.
 - consolidated-skills – Documentation repository of .skill workflows with markdown indices.
-- FileOrganizer – Python utility with fileorganizer.py and INI settings.
+- filez – Python utility with fileorganizer.py and INI settings.
 - fwber – PHP venue/match coordination app with secure/vulnerable variants and orchestration JS.
 - hellven – Unity/VRChat SDK-related .csproj collection.
 - itgmania – Rhythm game mod assets, Lua scripts, and art resources.

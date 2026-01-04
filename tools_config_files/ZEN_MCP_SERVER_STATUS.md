@@ -123,7 +123,7 @@ uvx zenable-mcp install mcp cursor --global
 ### **Phase 3: Advanced Features (2 hours)**
 1. **Explore Zen's advanced tools** and capabilities
 2. **Implement auto model selection** features
-3. **Set up multi-model workflows** for FWBer.me
+3. **Set up multi-model workflows** for fwber.me
 4. **Document best practices** for team use
 
 ## 🔍 **Zen MCP Server Capabilities**
@@ -141,7 +141,7 @@ uvx zenable-mcp install mcp cursor --global
 - **Conversation Continuity:** Maintain context across model switches
 - **Tool Integration:** 17+ tools for code analysis and development
 
-### **FWBer.me Specific Benefits:**
+### **fwber.me Specific Benefits:**
 - **PHP/Laravel Support:** Advanced PHP code analysis
 - **Next.js Integration:** Frontend development assistance
 - **Database Operations:** Enhanced database interaction
@@ -173,7 +173,7 @@ uvx zenable-mcp install mcp cursor --global
 2. **Test basic functionality** (10 minutes)  
 3. **Integrate with existing setup** (15 minutes)
 
-Once these are complete, we'll have a powerful multi-model orchestration system that combines our existing 8 MCP servers with Zen's advanced capabilities, providing the most comprehensive AI development environment possible for the FWBer.me project.
+Once these are complete, we'll have a powerful multi-model orchestration system that combines our existing 8 MCP servers with Zen's advanced capabilities, providing the most comprehensive AI development environment possible for the fwber.me project.
 
 **The system is 95% ready - just needs API key configuration to be fully operational!**
 

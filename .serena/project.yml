@@ -79,7 +79,7 @@ ignored_paths: [
 "okgame/lib",
 "BobsGameOnline/libs",
 "fwber/images",
-"FileOrganizer/libs"
+"filez/libs"
 ]
 
 # whether the project is in read-only mode

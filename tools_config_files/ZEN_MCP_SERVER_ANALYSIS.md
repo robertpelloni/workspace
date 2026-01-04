@@ -145,6 +145,6 @@ docker run -p 8000:8000 \
 - ✅ **Cross-tool MCP communication** - 13 MCP servers configured across 7 tools
 - ✅ **Multi-model orchestration** - Working system with Serena, Sequential Thinking, Codex, Gemini
 - ✅ **Advanced capabilities** - File system, memory, database, web automation
-- ✅ **Project-specific tools** - All necessary tools for FWBer.me development
+- ✅ **Project-specific tools** - All necessary tools for fwber.me development
 
 **The system is fully functional without Zen MCP Server, providing all the requested cross-tool communication capabilities.**

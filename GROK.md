@@ -20,13 +20,13 @@ Grok is X.AI's advanced AI model, known for its creative problem-solving, altern
 ### Using Zen MCP for Orchestration
 ```bash
 # Access Grok through Zen MCP server
-mcp_zen-mcp-server_chat --model grok-4 --prompt "Design innovative UX solutions for FWBer matching interface"
+mcp_zen-mcp-server_chat --model grok-4 --prompt "Design innovative UX solutions for fwber matching interface"
 ```
 
 ### Using Serena MCP for Creative Context
 ```bash
 # Store creative solutions and alternative approaches in Serena memory
-mcp_serena_write_memory --memory_name "grok_innovations" --content "Creative UX solutions and alternative approaches for FWBer"
+mcp_serena_write_memory --memory_name "grok_innovations" --content "Creative UX solutions and alternative approaches for fwber"
 
 # Retrieve creative context
 mcp_serena_read_memory --memory_file_name "grok_innovations"
@@ -35,7 +35,7 @@ mcp_serena_read_memory --memory_file_name "grok_innovations"
 ### Using Chroma MCP for Innovation Storage
 ```bash
 # Store creative solutions in Chroma
-mcp_chroma-knowledge_chroma_add_document --collection_name "ux_innovations" --document "Grok: Innovative UX solutions for FWBer..."
+mcp_chroma-knowledge_chroma_add_document --collection_name "ux_innovations" --document "Grok: Innovative UX solutions for fwber..."
 ```
 
 ## Best Practices for Grok
@@ -72,7 +72,7 @@ mcp_chroma-knowledge_chroma_add_document --collection_name "ux_innovations" --do
 ### UX/UI Analysis
 ```bash
 # Comprehensive UX analysis
-mcp_zen-mcp-server_analyze --model grok-4 --step "Analyze FWBer user experience and propose innovative improvements" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\index.php"]'
+mcp_zen-mcp-server_analyze --model grok-4 --step "Analyze fwber user experience and propose innovative improvements" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\index.php"]'
 ```
 
 ### Creative Problem-Solving
@@ -90,7 +90,7 @@ mcp_zen-mcp-server_consensus --models '[{"model":"grok-4","stance":"against"},{"
 ### Knowledge Storage
 ```bash
 # Store creative solutions
-mcp_chroma-knowledge_chroma_add_document --collection_name "ux_innovations" --document "Grok: Innovative UX Solutions for FWBer - [detailed creative solutions]"
+mcp_chroma-knowledge_chroma_add_document --collection_name "ux_innovations" --document "Grok: Innovative UX Solutions for fwber - [detailed creative solutions]"
 ```
 
 ## Integration with Other Models
@@ -143,13 +143,13 @@ mcp_zen-mcp-server_consensus --models '[{"model":"grok-4","stance":"for"},{"mode
 ### UX/UI Analysis
 ```bash
 # Comprehensive UX analysis
-mcp_zen-mcp-server_analyze --model grok-4 --step "Analyze FWBer user interface and propose innovative improvements" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\index.php"]'
+mcp_zen-mcp-server_analyze --model grok-4 --step "Analyze fwber user interface and propose innovative improvements" --relevant_files '["C:\\Users\\hyper\\fwber\\styles.css","C:\\Users\\hyper\\fwber\\index.php"]'
 ```
 
 ### Creative Problem-Solving
 ```bash
 # Generate innovative solutions
-mcp_zen-mcp-server_chat --model grok-4 --prompt "Design creative solutions for FWBer user engagement challenges"
+mcp_zen-mcp-server_chat --model grok-4 --prompt "Design creative solutions for fwber user engagement challenges"
 ```
 
 ### Alternative Approach Analysis

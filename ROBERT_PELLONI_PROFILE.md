@@ -42,7 +42,7 @@ Robert Pelloni (also known as "Bob") is an independent video game developer and 
 - Open-source components available
 - Active community engagement
 
-### FWBer Dating Platform (2024-2025) - AI Orchestration Success
+### fwber Dating Platform (2024-2025) - AI Orchestration Success
 
 **Project Overview:**
 - **Technology Stack**: Laravel/Next.js with PostgreSQL database
@@ -93,7 +93,7 @@ Robert Pelloni (also known as "Bob") is an independent video game developer and 
 
 ## Current Projects (2025)
 
-### 1. FWBer - Dating Platform (Production Ready)
+### 1. fwber - Dating Platform (Production Ready)
 - **Files**: 20,127 files
 - **Status**: Production-ready with comprehensive security
 - **Technology**: Laravel/Next.js stack
@@ -123,7 +123,7 @@ Robert Pelloni (also known as "Bob") is an independent video game developer and 
 - **Status**: Cross-platform development
 - **Features**: Multi-platform support, game engine development
 
-### 6. FileOrganizer - File Management Tool
+### 6. filez - File Management Tool
 - **Files**: C++/Qt application
 - **Technology**: C++/Qt file management
 - **Status**: Desktop application
@@ -192,7 +192,7 @@ Robert Pelloni (also known as "Bob") is an independent video game developer and 
 - **Technical Innovation**: Pioneer in multi-AI orchestration for development workflows
 
 ### Performance Metrics
-- **ROI Success**: 1,580% ROI through AI coordination in FWBer project
+- **ROI Success**: 1,580% ROI through AI coordination in fwber project
 - **Quality Metrics**: 95% first-time success rate with systematic approaches
 - **Development Speed**: 3x faster problem resolution through parallel AI processing
 - **Code Quality**: Zero critical bugs in final implementations

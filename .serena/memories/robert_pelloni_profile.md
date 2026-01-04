@@ -20,7 +20,7 @@
   - 2017: Released on Steam (February 21, 2017)
 - **Current Status**: Available on Steam, open-source components
 
-### FWBer Dating Platform (2024-2025)
+### fwber Dating Platform (2024-2025)
 - **Technology Stack**: Laravel/Next.js, PostgreSQL
 - **AI Integration**: Multi-AI orchestration with Claude 4.5, GPT-5-Codex, Gemini 2.5 Pro/Flash, Grok 4
 - **Achievements**: 1,625 lines of production code, 1,580% ROI
@@ -49,11 +49,11 @@
 - **Quality Focus**: Achieves high ROI through systematic approaches
 
 ## Current Projects (2025)
-- **FWBer**: Production-ready dating platform
+- **fwber**: Production-ready dating platform
 - **Hellven**: Unity game project (20,777 files)
 - **ITGmania**: Rhythm game fork (1,000+ files)
 - **OKGame**: Cross-platform game (20,000+ files)
-- **FileOrganizer**: C++/Qt file management tool
+- **filez**: C++/Qt file management tool
 - **AI Coordination**: Multi-AI orchestration system development
 
 ## Technical Expertise
