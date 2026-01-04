@@ -313,9 +313,6 @@
 [submodule "pal-mcp-server"]
 	path = pal-mcp-server
 	url = https://github.com/robertpelloni/pal-mcp-server
-[submodule "ddc"]
-	path = ddc
-	url = https://github.com/robertpelloni/ddc
 [submodule "AIOS"]
 	path = AIOS
 	url = https://github.com/robertpelloni/AIOS
