@@ -43,9 +43,6 @@
 [submodule "amplifier"]
 	path = amplifier
 	url = https://github.com/microsoft/amplifier
-[submodule "AirSim"]
-	path = AirSim
-	url = https://github.com/microsoft/AirSim
 [submodule "spec-kit"]
 	path = spec-kit
 	url = https://github.com/github/spec-kit
@@ -136,15 +133,9 @@
 [submodule "ccmanager"]
 	path = ccmanager
 	url = https://github.com/kbwo/ccmanager
-[submodule "cherry-studio"]
-	path = cherry-studio
-	url = https://github.com/CherryHQ/cherry-studio
 [submodule "LibreChat"]
 	path = LibreChat
 	url = https://github.com/danny-avila/LibreChat
-[submodule "witsy"]
-	path = witsy
-	url = https://github.com/nbonamy/witsy
 [submodule "inspector"]
 	path = inspector
 	url = https://github.com/MCPJam/inspector
@@ -289,9 +280,6 @@
 [submodule "mem0"]
 	path = mem0
 	url = https://github.com/mem0ai/mem0
-[submodule "onyx"]
-	path = onyx
-	url = https://github.com/onyx-dot-app/onyx
 [submodule "software-agent-sdk"]
 	path = software-agent-sdk
 	url = https://github.com/OpenHands/software-agent-sdk
