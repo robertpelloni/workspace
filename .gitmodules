@@ -5,7 +5,7 @@
 	path = okgame
 	url = https://github.com/robertpelloni/okgame
 [submodule "FileOrganizer"]
-	path = FileOrganizer
+	path = filez
 	url = https://github.com/robertpelloni/FileOrganizer
 [submodule "fwber"]
 	path = fwber
@@ -314,7 +314,7 @@
 	path = pal-mcp-server
 	url = https://github.com/robertpelloni/pal-mcp-server
 [submodule "AIOS"]
-	path = AIOS
+	path = aios
 	url = https://github.com/robertpelloni/AIOS
 [submodule "jules-autopilot"]
 	path = jules-autopilot
