@@ -313,9 +313,9 @@
 [submodule "pal-mcp-server"]
 	path = pal-mcp-server
 	url = https://github.com/robertpelloni/pal-mcp-server
-[submodule "AIOS"]
+[submodule "aios"]
 	path = aios
-	url = https://github.com/robertpelloni/AIOS
+	url = https://github.com/robertpelloni/aios
 [submodule "jules-autopilot"]
 	path = jules-autopilot
 	url = https://github.com/robertpelloni/jules-autopilot
