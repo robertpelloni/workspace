@@ -130,9 +130,6 @@
 [submodule "ccmanager"]
 	path = ccmanager
 	url = https://github.com/kbwo/ccmanager
-[submodule "LibreChat"]
-	path = LibreChat
-	url = https://github.com/danny-avila/LibreChat
 [submodule "inspector"]
 	path = inspector
 	url = https://github.com/MCPJam/inspector
