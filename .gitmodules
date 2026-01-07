@@ -112,9 +112,6 @@
 [submodule "pluggedin-app"]
 	path = pluggedin-app
 	url = https://github.com/robertpelloni/pluggedin-app
-[submodule "openevolve"]
-	path = openevolve
-	url = https://github.com/codelion/openevolve
 [submodule "devin.cursorrules"]
 	path = devin.cursorrules
 	url = https://github.com/grapeot/devin.cursorrules
@@ -295,9 +292,6 @@
 [submodule "notebooklm-mcp"]
 	path = notebooklm-mcp
 	url = https://github.com/robertpelloni/notebooklm-mcp
-[submodule "ffr-difficulty-model"]
-	path = ffr-difficulty-model
-	url = https://github.com/robertpelloni/ffr-difficulty-model
 [submodule "pal-mcp-server"]
 	path = pal-mcp-server
 	url = https://github.com/robertpelloni/pal-mcp-server
