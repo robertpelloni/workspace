@@ -304,3 +304,9 @@
 [submodule "goose"]
 	path = goose
 	url = https://github.com/block/goose
+[submodule "ii-agent"]
+	path = ii-agent
+	url = https://github.com/Intelligent-Internet/ii-agent
+[submodule "junie"]
+	path = junie
+	url = https://github.com/jetbrains-junie/junie
