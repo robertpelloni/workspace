@@ -313,3 +313,6 @@
 [submodule "neverball"]
 	path = neverball
 	url = https://github.com/robertpelloni/neverball.git
+[submodule "topaz-ffmpeg"]
+	path = topaz-ffmpeg
+	url = https://github.com/TopazLabs/ffmpeg
