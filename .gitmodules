@@ -232,3 +232,15 @@
 [submodule "GWEN"]
 	path = GWEN
 	url = https://github.com/robertpelloni/GWEN
+[submodule "picard"]
+	path = picard
+	url = https://github.com/robertpelloni/picard
+[submodule "qBittorrent"]
+	path = qBittorrent
+	url = https://github.com/robertpelloni/qBittorrent
+[submodule "ardour"]
+	path = ardour
+	url = https://github.com/robertpelloni/ardour
+[submodule "audacity"]
+	path = audacity
+	url = https://github.com/robertpelloni/audacity
