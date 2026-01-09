@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2026-01-08
+
+### Added
+- Created `scripts/orchestrate_agents.py`: A CLI tool to orchestrate `trae-agent` and `ii-agent` using `uv` and `subprocess`.
+- Refactored `aios/openevolve` to use standard `src/` directory layout (Moved `openevolve` package to `src/openevolve`).
+
+### Fixed
+- Verified `trae-agent` and `ii-agent` installation and registered them in `AGENTS.md`.
+- Updated `pyproject.toml` in `openevolve` to support the new `src` layout.
+
 ## [1.0.4] - 2026-01-08
 
 ### Fixed
