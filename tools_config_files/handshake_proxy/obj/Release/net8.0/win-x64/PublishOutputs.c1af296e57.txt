@@ -1,2 +1,0 @@
-C:\Users\hyper\fwber\tools_config_files\handshake_proxy\out\handshake_proxy.pdb
-C:\Users\hyper\fwber\tools_config_files\handshake_proxy\out\handshake_proxy.exe

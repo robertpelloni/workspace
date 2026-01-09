@@ -310,3 +310,6 @@
 [submodule "junie"]
 	path = junie
 	url = https://github.com/jetbrains-junie/junie
+[submodule "pianogame"]
+	path = pianogame
+	url = https://github.com/robertpelloni/pianogame.git
