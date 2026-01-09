@@ -211,18 +211,6 @@
 [submodule "bonsai"]
 	path = bonsai
 	url = https://github.com/robertpelloni/bonsai
-[submodule "geiss"]
-	path = geiss
-	url = https://github.com/robertpelloni/geiss
-[submodule "BeatDrop"]
-	path = BeatDrop
-	url = https://github.com/robertpelloni/BeatDrop
-[submodule "MilkDrop3"]
-	path = MilkDrop3
-	url = https://github.com/robertpelloni/MilkDrop3
-[submodule "projectm"]
-	path = projectm
-	url = https://github.com/robertpelloni/projectm
 [submodule "apophysis-j"]
 	path = apophysis-j
 	url = https://github.com/robertpelloni/apophysis-j
