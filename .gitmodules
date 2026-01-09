@@ -112,12 +112,6 @@
 [submodule "devin.cursorrules"]
 	path = devin.cursorrules
 	url = https://github.com/grapeot/devin.cursorrules
-[submodule "aichat"]
-	path = aichat
-	url = https://github.com/sigoden/aichat
-[submodule "plandex"]
-	path = plandex
-	url = https://github.com/plandex-ai/plandex
 [submodule "Kode"]
 	path = Kode
 	url = https://github.com/shareAI-lab/Kode
@@ -298,18 +292,24 @@
 [submodule "bobcoin"]
 	path = bobcoin
 	url = https://github.com/robertpelloni/bobcoin
-[submodule "trae-agent"]
-	path = trae-agent
-	url = https://github.com/bytedance/trae-agent
 [submodule "goose"]
 	path = goose
 	url = https://github.com/block/goose
-[submodule "ii-agent"]
-	path = ii-agent
-	url = https://github.com/Intelligent-Internet/ii-agent
 [submodule "junie"]
 	path = junie
 	url = https://github.com/jetbrains-junie/junie
 [submodule "pianogame"]
 	path = pianogame
 	url = https://github.com/robertpelloni/pianogame.git
+[submodule "linthesia"]
+	path = linthesia
+	url = https://github.com/robertpelloni/linthesia.git
+[submodule "sm64coopdx"]
+	path = sm64coopdx
+	url = https://github.com/robertpelloni/sm64coopdx.git
+[submodule "f-zerox"]
+	path = f-zerox
+	url = https://github.com/robertpelloni/f-zerox.git
+[submodule "neverball"]
+	path = neverball
+	url = https://github.com/robertpelloni/neverball.git

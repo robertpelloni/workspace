@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - 2026-01-09
+
+### Added
+- Added `linthesia` (robertpelloni/linthesia) as root submodule - music learning game
+- Added game submodules: `hellven`, `sm64coopdx`, `mk64`, `f-zerox`, `neverball`
+- Created `SUBMODULE_DASHBOARD.md` with comprehensive 25-submodule inventory and structure overview
+
+### Changed
+- Synced all submodules with remote repositories
+- Updated project structure documentation
+
 ## [1.0.5] - 2026-01-08
 
 ### Added
