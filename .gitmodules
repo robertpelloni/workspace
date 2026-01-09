@@ -28,9 +28,6 @@
 [submodule "playwright"]
 	path = playwright
 	url = https://github.com/microsoft/playwright
-[submodule "playwright-mcp"]
-	path = playwright-mcp
-	url = https://github.com/microsoft/playwright-mcp
 [submodule "vcpkg"]
 	path = vcpkg
 	url = https://github.com/microsoft/vcpkg
@@ -49,12 +46,6 @@
 [submodule "kilocode"]
 	path = kilocode
 	url = https://github.com/Kilo-Org/kilocode
-[submodule "mcp-tool-chainer"]
-	path = mcp-tool-chainer
-	url = https://github.com/robertpelloni/mcp-tool-chainer
-[submodule "chroma-mcp"]
-	path = chroma-mcp
-	url = https://github.com/chroma-core/chroma-mcp
 [submodule "crush"]
 	path = crush
 	url = https://github.com/charmbracelet/crush
@@ -64,27 +55,6 @@
 [submodule "Switchboard"]
 	path = Switchboard
 	url = https://github.com/George5562/Switchboard
-[submodule "mcpproxy-go"]
-	path = mcpproxy-go
-	url = https://github.com/robertpelloni/mcpproxy-go
-[submodule "mcpproxy"]
-	path = mcpproxy
-	url = https://github.com/Dumbris/mcpproxy
-[submodule "meta-mcp-proxy"]
-	path = meta-mcp-proxy
-	url = https://github.com/nullplatform/meta-mcp-proxy
-[submodule "metamcp"]
-	path = metamcp
-	url = https://github.com/robertpelloni/metamcp
-[submodule "mcphub"]
-	path = mcphub
-	url = https://github.com/robertpelloni/mcphub
-[submodule "mcp-use"]
-	path = mcp-use
-	url = https://github.com/mcp-use/mcp-use
-[submodule "mcp-context-forge"]
-	path = mcp-context-forge
-	url = https://github.com/IBM/mcp-context-forge
 [submodule "vibesdk"]
 	path = vibesdk
 	url = https://github.com/cloudflare/vibesdk
@@ -94,18 +64,9 @@
 [submodule "lootbox"]
 	path = lootbox
 	url = https://github.com/jx-codes/lootbox
-[submodule "lazy-mcp"]
-	path = lazy-mcp
-	url = https://github.com/machjesusmoto/lazy-mcp
 [submodule "autorouter-package"]
 	path = autorouter-package
 	url = https://github.com/Mikethebot44/autorouter-package
-[submodule "mcp-proxy"]
-	path = mcp-proxy
-	url = https://github.com/TBXark/mcp-proxy
-[submodule "mcpm.sh"]
-	path = mcpm.sh
-	url = https://github.com/pathintegral-institute/mcpm.sh
 [submodule "pluggedin-app"]
 	path = pluggedin-app
 	url = https://github.com/robertpelloni/pluggedin-app
@@ -115,9 +76,6 @@
 [submodule "Kode"]
 	path = Kode
 	url = https://github.com/shareAI-lab/Kode
-[submodule "OpenHands"]
-	path = OpenHands
-	url = https://github.com/OpenHands/OpenHands
 [submodule "ccmanager"]
 	path = ccmanager
 	url = https://github.com/kbwo/ccmanager
@@ -127,33 +85,9 @@
 [submodule "Windows-Use"]
 	path = Windows-Use
 	url = https://github.com/CursorTouch/Windows-Use
-[submodule "mcp-everything-search"]
-	path = mcp-everything-search
-	url = https://github.com/mamertofabian/mcp-everything-search
-[submodule "mcp-server-deep-research"]
-	path = mcp-server-deep-research
-	url = https://github.com/reading-plus-ai/mcp-server-deep-research
-[submodule "computer-control-mcp"]
-	path = computer-control-mcp
-	url = https://github.com/AB498/computer-control-mcp
-[submodule "raindrop-io-mcp-server"]
-	path = raindrop-io-mcp-server
-	url = https://github.com/hiromitsusasaki/raindrop-io-mcp-server
-[submodule "sourcerer-mcp"]
-	path = sourcerer-mcp
-	url = https://github.com/st3v3nmw/sourcerer-mcp
-[submodule "vibe-check-mcp-server"]
-	path = vibe-check-mcp-server
-	url = https://github.com/PV-Bhat/vibe-check-mcp-server
 [submodule "voicemode"]
 	path = voicemode
 	url = https://github.com/mbailey/voicemode
-[submodule "youtube-video-summarizer-mcp"]
-	path = youtube-video-summarizer-mcp
-	url = https://github.com/nabid-pf/youtube-video-summarizer-mcp
-[submodule "mcp-toolz"]
-	path = mcp-toolz
-	url = https://github.com/taylorleese/mcp-toolz
 [submodule "servers"]
 	path = servers
 	url = https://github.com/modelcontextprotocol/servers
@@ -175,30 +109,12 @@
 [submodule "claude-code-subagents-collection"]
 	path = claude-code-subagents-collection
 	url = https://github.com/davepoon/claude-code-subagents-collection
-[submodule "gemini-mcp-tool"]
-	path = gemini-mcp-tool
-	url = https://github.com/jamubc/gemini-mcp-tool
 [submodule "codex-bridge"]
 	path = codex-bridge
 	url = https://github.com/eLyiN/codex-bridge
 [submodule "gemini-cli"]
 	path = gemini-cli
 	url = https://github.com/google-gemini/gemini-cli
-[submodule "mcp-server-gemini"]
-	path = mcp-server-gemini
-	url = https://github.com/aliargun/mcp-server-gemini
-[submodule "ultra-mcp"]
-	path = ultra-mcp
-	url = https://github.com/RealMikeChong/ultra-mcp
-[submodule "mcp-zen"]
-	path = mcp-zen
-	url = https://github.com/199-mcp/mcp-zen
-[submodule "Super-MCP"]
-	path = Super-MCP
-	url = https://github.com/robertpelloni/Super-MCP
-[submodule "mcp-router"]
-	path = mcp-router
-	url = https://github.com/mcp-router/mcp-router
 [submodule "copyparty"]
 	path = copyparty
 	url = https://github.com/9001/copyparty
@@ -211,15 +127,6 @@
 [submodule "context-portal"]
 	path = context-portal
 	url = https://github.com/GreatScottyMac/context-portal
-[submodule "chrome-devtools-mcp"]
-	path = chrome-devtools-mcp
-	url = https://github.com/ChromeDevTools/chrome-devtools-mcp
-[submodule "pluggedin-mcp-proxy"]
-	path = pluggedin-mcp-proxy
-	url = https://github.com/robertpelloni/pluggedin-mcp-proxy
-[submodule "pluggedin-mcp"]
-	path = pluggedin-mcp
-	url = https://github.com/robertpelloni/pluggedin-mcp
 [submodule "CodeMachine-CLI"]
 	path = CodeMachine-CLI
 	url = https://github.com/moazbuilds/CodeMachine-CLI
@@ -232,54 +139,21 @@
 [submodule "libjxl"]
 	path = libjxl
 	url = https://github.com/libjxl/libjxl
-[submodule "mcp-easy-installer"]
-	path = mcp-easy-installer
-	url = https://github.com/onigetoc/mcp-easy-installer
-[submodule "mcp-manager"]
-	path = mcp-manager
-	url = https://github.com/timetime-software/mcp-manager
-[submodule "mcp-gearbox"]
-	path = mcp-gearbox
-	url = https://github.com/rohitsoni007/mcp-gearbox
-[submodule "mcp-gearbox-js"]
-	path = mcp-gearbox-js
-	url = https://github.com/rohitsoni007/mcp-gearbox-js
-[submodule "mcp-gearbox-cli"]
-	path = mcp-gearbox-cli
-	url = https://github.com/rohitsoni007/mcp-gearbox-cli
-[submodule "mcp-mem0"]
-	path = mcp-mem0
-	url = https://github.com/coleam00/mcp-mem0
-[submodule "mem0-mcp"]
-	path = mem0-mcp
-	url = https://github.com/mem0ai/mem0-mcp
 [submodule "mem0"]
 	path = mem0
 	url = https://github.com/mem0ai/mem0
-[submodule "OpenHands-CLI"]
-	path = OpenHands-CLI
-	url = https://github.com/OpenHands/OpenHands-CLI
 [submodule "gram"]
 	path = gram
 	url = https://github.com/speakeasy-api/gram
 [submodule "JWildfire"]
 	path = JWildfire
 	url = https://github.com/robertpelloni/JWildfire
-[submodule "notebooklm-mcp"]
-	path = notebooklm-mcp
-	url = https://github.com/robertpelloni/notebooklm-mcp
-[submodule "pal-mcp-server"]
-	path = pal-mcp-server
-	url = https://github.com/robertpelloni/pal-mcp-server
 [submodule "aios"]
 	path = aios
 	url = https://github.com/robertpelloni/aios
 [submodule "jules-autopilot"]
 	path = jules-autopilot
 	url = https://github.com/robertpelloni/jules-autopilot
-[submodule "Resume-Matcher"]
-	path = Resume-Matcher
-	url = https://github.com/srbhr/Resume-Matcher
 [submodule "ArrowVortex"]
 	path = ArrowVortex
 	url = https://github.com/robertpelloni/ArrowVortex
@@ -316,3 +190,12 @@
 [submodule "topaz-ffmpeg"]
 	path = topaz-ffmpeg
 	url = https://github.com/TopazLabs/ffmpeg
+[submodule "MarbleBlast"]
+	path = MarbleBlast
+	url = https://github.com/robertpelloni/MarbleBlast.git
+[submodule "mk64"]
+	path = mk64
+	url = https://github.com/robertpelloni/mk64.git
+[submodule "OpenMBU"]
+	path = OpenMBU
+	url = https://github.com/robertpelloni/OpenMBU.git
