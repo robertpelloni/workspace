@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2026-01-08
+
+### Fixed
+- Repaired `trae-agent` installation (cloned to root, fixed submodule path).
+- Fixed recursive submodule definitions in `aios`, `bobcoin`, `filez`.
+- Resolved merge conflicts in `jules-autopilot` and `opencode-autopilot`.
+
+### Added
+- Created `AGENTS.md` to track installed agents and environment findings.
+- Updated `DASHBOARD.md` with comprehensive 519-submodule inventory.
+
+## [1.0.3] - 2026-01-07
+
+### Fixed
+- Resolved recursive submodule issues in `Neothesia` (merge conflicts) and `OpenQode` (broken gitlinks).
+- Fixed `aios` submodule pointers to correctly track nested dependencies.
+
+### Added
+- Created `PROJECT_STRUCTURE.md` providing a comprehensive dashboard of all recursive submodules.
+- Integrated `openevolve` directly into `aios` structure.
+
 ## [1.0.2] - 2026-01-02
 
 ### Changed

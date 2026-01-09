@@ -100,3 +100,8 @@ fwber-backup-20251115-125243.tar.gz
 .augment/rules/byterover-rules.md
 ssh_pass
 ssh_pass_clean
+/data/processed
+/data/processed/feats
+/data/processed
+/data/processed
+/data/raw

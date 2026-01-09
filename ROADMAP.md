@@ -1,19 +1,23 @@
 # Project Roadmap
 
-## Current Status (v1.0.1)
-- [x] Initial project setup with comprehensive submodule integration.
-- [x] Dashboard creation for tracking submodule status.
-- [x] Automated scripts for submodule updates and dashboard generation.
-- [x] Versioning system implementation (`VERSION` file, `CHANGELOG.md`).
+## Current Status (v1.0.4)
+- [x] **Git Repair**: Fixed recursive submodule definitions (`aios`, `bobcoin`, `filez`) and resolved merge conflicts.
+- [x] **Agent Setup**: Installed and verified `trae-agent` (local), `ii-agent` (local), and `junie` (global).
+- [x] **Inventory**: Generated comprehensive `DASHBOARD.md` listing 519 active submodules.
+- [x] **Structure Analysis**: Created `AGENTS.md` identifying project-specific conventions and deviations.
 
 ## Short-term Goals (v1.1.0)
-- [ ] **Submodule Stabilization**: Resolve git lock issues with `aios` submodule and ensure clean recursive updates.
-- [ ] **Unified Documentation**: Consolidate agent instructions into `AGENTS.md` and `CLAUDE.md`.
-- [ ] **Deployment Pipeline**: Stabilize the redeployment process for the main application.
-- [ ] **Test Coverage**: Implement basic integration tests to verify submodule connectivity.
+- [ ] **Standardization**:
+    - [ ] Enforce `src/` layout for new Python modules in `aios`.
+    - [ ] Consolidate Node.js projects to use `pnpm` exclusively.
+- [ ] **Build Unification**:
+    - [ ] Migrate legacy Makefiles in `ITGMania` to CMake where feasible.
+    - [ ] Standardize `vcpkg` integration across C++ projects.
+- [ ] **Agent Orchestration**:
+    - [ ] Integrate `trae-agent` into the central orchestration loop.
+    - [ ] Establish communication protocol between `ii-agent` and `aios`.
 
 ## Medium-term Goals (v1.2.0)
-- [ ] **Agent Orchestration**: Implement a central controller to coordinate between different agent submodules (e.g., passing tasks from `OpenHands` to `aios`).
 - [ ] **Unified Interface**: Create a CLI or Web UI wrapper that exposes key functionalities of the underlying submodules.
 - [ ] **Performance Optimization**: Analyze and optimize the build and update process for the large number of submodules.
 
