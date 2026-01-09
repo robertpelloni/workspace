@@ -4,37 +4,50 @@
 **Version:** 1.0.5
 
 ## 🏁 Session Summary
-We have successfully integrated a new agent orchestration script and refactored the `aios/openevolve` module to follow standard Python best practices.
+We have finalized the **"Standardization & Orchestration" Sprint**. The `aios` monorepo now adheres to strict `src/` layout conventions for Python (SDK) and TypeScript (UI) packages. The orchestration script has been robustified, and all changes are committed to the root repository.
 
 ## 🛠 Actions Taken
-1.  **Agent Orchestration:**
-    *   Created `scripts/orchestrate_agents.py`: A wrapper script to launch `trae-agent` (via CLI/uv) and `ii-agent` (via `start.sh`).
-    *   Verified `trae-agent` configuration (`pyproject.toml`) and `ii-agent` entry points.
-2.  **Codebase Refactoring (`aios`):**
-    *   Refactored `aios/openevolve` to use a `src/openevolve` directory layout.
-    *   Updated `pyproject.toml` to point to the new package location.
-    *   Verified the new structure by installing it in editable mode (`pip install -e .`) and importing it successfully.
-    *   Committed changes locally within the `aios` submodule.
-3.  **Documentation & Versioning:**
-    *   Updated `CHANGELOG.md` to version **1.0.5**.
-    *   Bumped `VERSION` file to **1.0.5**.
 
-## 🚧 Pending Tasks / Next Steps
-1.  **Git Push:** The workspace changes (including `scripts/orchestrate_agents.py` and documentation updates) need to be committed and pushed to `origin main`.
-    *   *Note:* The `aios` submodule pointer in the root repo will update automatically upon the next root commit.
-2.  **Agent Testing:**
-    *   Run `python scripts/orchestrate_agents.py --agent trae "test prompt"` to verify end-to-end functionality.
-    *   Run `python scripts/orchestrate_agents.py --agent ii "test"` to verify the II-Agent server startup.
-3.  **Broaden Refactoring:**
-    *   Apply the `src/` layout pattern to other Python modules in `aios` if `openevolve` proves stable.
+### 1. SDK Refactoring (`aios/software-agent-sdk`)
+*   **Structure:** Moved all packages to `src/` layout:
+    *   `openhands-sdk` → `src/openhands/sdk`
+    *   `openhands-agent-server` → `src/openhands/agent_server`
+    *   `openhands-tools` → `src/openhands/tools`
+    *   `openhands-workspace` → `src/openhands/workspace`
+*   **Config:** Updated `pyproject.toml` files to reflect new paths.
+
+### 2. UI Standardization (`aios/packages/ui`)
+*   **Structure:** Moved `components`, `lib`, `hooks` to `src/` to align with Next.js App Router conventions.
+*   **Fixes:**
+    *   Created `src/types/jules.ts` to resolve missing type definitions causing build failures.
+    *   Verified build success with `pnpm build`.
+
+### 3. Orchestration & Tooling
+*   **`scripts/orchestrate_agents.py`:** Refined with:
+    *   Robust path resolution (repo root detection).
+    *   `PYTHONPATH` injection for the new SDK `src/` layout.
+    *   Error handling for missing `uv` or agent directories.
+*   **Version Control:** Updated root repository `aios` submodule pointer to commit `8d551b2`.
+
+## 🔮 Sprint Plan: Deep Integration (Next Phase)
+
+**Goal:** Connect the standardized UI with the underlying agent ecosystem dynamically.
+
+### Objectives
+1.  **Dynamic Submodule Data:**
+    *   Integrate `scripts/generate_submodules_json.py` into the UI build/runtime pipeline.
+    *   Ensure the `/submodules` page in the dashboard pulls live data from the generated JSON.
+2.  **Agent Control Plane:**
+    *   Expose `scripts/orchestrate_agents.py` capabilities via a local API (or FastMCP server) so the UI can trigger agents ("Run Trae", "Start II-Agent").
+3.  **Unified Config:**
+    *   Create a single `aios-config.json` that maps agents to their respective working directories and start commands, replacing hardcoded paths in scripts.
 
 ## 📝 Context for Next Model
-- **`trae-agent`** is installed in the root directory.
-- **`ii-agent`** is installed in the root directory.
-- **`aios`** is a submodule containing `openevolve`.
-- **`scripts/orchestrate_agents.py`** is the new entry point for agent interaction.
-- The environment uses `uv` for Python package management where possible.
-
-## ⚠️ Known Issues / Notes
-- `ii-agent` runs as a server; the orchestration script currently just starts it. Future work should implement a client interaction layer.
-- `openevolve` refactoring involved moving files; ensure no hardcoded paths in other scripts were broken (basic import test passed).
+*   **Repo State:** Clean. All refactors committed.
+*   **Critical Paths:**
+    *   SDK: `aios/software-agent-sdk/src`
+    *   UI: `aios/packages/ui/src`
+    *   Scripts: `scripts/`
+*   **Verification:**
+    *   Run `python scripts/orchestrate_agents.py --help` to verify the orchestrator.
+    *   Check `aios/packages/ui` for successful build if modifying UI further.

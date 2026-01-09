@@ -3,69 +3,105 @@ import argparse
 import subprocess
 import sys
 import shutil
+import os
 from pathlib import Path
 
 
+def get_repo_root():
+    script_path = Path(__file__).resolve()
+    return script_path.parent.parent
+
+
+def setup_environment(repo_root):
+    env = os.environ.copy()
+
+    sdk_path = repo_root / "aios" / "software-agent-sdk" / "src"
+
+    if sdk_path.exists():
+        current_pythonpath = env.get("PYTHONPATH", "")
+        env["PYTHONPATH"] = f"{sdk_path}{os.pathsep}{current_pythonpath}"
+        print(f"[*] Added SDK to PYTHONPATH: {sdk_path}")
+    else:
+        print(f"[!] Warning: SDK path not found at {sdk_path}")
+
+    return env
+
+
 def check_dependencies():
-    """Check if required tools are available."""
     if not shutil.which("uv"):
-        print("Warning: 'uv' not found. It is recommended for running agents.")
+        print(
+            "[!] Warning: 'uv' not found. It is recommended for running agents efficiently."
+        )
+        return False
+    return True
 
 
-def run_trae_agent(prompt, verbose=False):
-    """Run Trae Agent with the given prompt."""
-    print(f"🚀 Launching Trae Agent with prompt: '{prompt}'")
+def run_trae_agent(repo_root, prompt, env, verbose=False):
+    agent_dir = repo_root / "trae-agent"
 
-    # Locate trae-agent directory
-    agent_dir = Path("trae-agent")
     if not agent_dir.exists():
-        print("Error: trae-agent directory not found.")
+        print(f"[x] Error: trae-agent directory not found at {agent_dir}")
         return
 
-    # Construct command
-    # Assuming 'uv run trae-cli run' is the method, based on common uv usage patterns
-    # If trae-cli is installed globally or in venv, adjustment might be needed.
-    # We will try running it via python module if cli isn't directly exposed,
-    # but based on findings, let's try direct CLI or uv run.
+    print(f"[*] Launching Trae Agent...")
+    print(f"    Prompt: '{prompt}'")
+    print(f"    Working Directory: {agent_dir}")
 
     cmd = ["uv", "run", "trae-cli", "run", prompt]
 
+    if verbose:
+        cmd.append("--verbose")
+
     try:
-        subprocess.run(cmd, cwd=agent_dir, check=True)
+        subprocess.run(cmd, cwd=agent_dir, env=env, check=True)
+        print("[*] Trae Agent task completed.")
     except subprocess.CalledProcessError as e:
-        print(f"Error running Trae Agent: {e}")
+        print(f"[x] Error running Trae Agent (Exit Code {e.returncode})")
     except FileNotFoundError:
-        print("Error: 'uv' command not found. Please install uv.")
+        print("[x] Error: Command not found. Ensure 'uv' is installed.")
+    except Exception as e:
+        print(f"[x] Unexpected error: {e}")
 
 
-def run_ii_agent(prompt, verbose=False):
-    """Run II-Agent (Interpretable Intelligence Agent)."""
-    print(f"🚀 Launching II-Agent...")
-    print("Note: II-Agent typically runs as a WebSocket server.")
+def run_ii_agent(repo_root, prompt, env, verbose=False):
+    agent_dir = repo_root / "ii-agent"
 
-    # Locate ii-agent directory
-    agent_dir = Path("ii-agent")
     if not agent_dir.exists():
-        print("Error: ii-agent directory not found.")
+        print(f"[x] Error: ii-agent directory not found at {agent_dir}")
         return
 
-    # For now, we will attempt to start the server as the 'task'
-    # since a direct 'run task' CLI wasn't clearly identified in the quick scan.
-    # We will pass the prompt as an env var or arg if supported later.
+    print(f"[*] Launching II-Agent Server...")
+    print(
+        f"    Note: II-Agent runs as a server. Prompt '{prompt}' will be logged but not auto-executed yet."
+    )
 
-    print("Starting II-Agent Server (Ctrl+C to stop)...")
+    start_script = agent_dir / "start.sh"
+    if not start_script.exists():
+        print(f"[x] Error: start.sh not found in {agent_dir}")
+        return
+
+    if not os.access(start_script, os.X_OK):
+        try:
+            os.chmod(start_script, 0o755)
+            print("[*] Made start.sh executable")
+        except Exception as e:
+            print(f"[!] Warning: Could not chmod start.sh: {e}")
+
     cmd = ["./start.sh"]
 
     try:
-        subprocess.run(cmd, cwd=agent_dir, check=True)
+        print("[*] Starting process (Ctrl+C to stop)...")
+        subprocess.run(cmd, cwd=agent_dir, env=env, check=True)
     except subprocess.CalledProcessError as e:
-        print(f"Error running II-Agent: {e}")
+        print(f"[x] Error running II-Agent: {e}")
     except KeyboardInterrupt:
-        print("\nStopping II-Agent...")
+        print("\n[*] Stopping II-Agent...")
+    except Exception as e:
+        print(f"[x] Unexpected error: {e}")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="AIOS Agent Orchestrator")
+    parser = argparse.ArgumentParser(description="AIOS Agent Orchestrator (v1.0.5)")
     parser.add_argument(
         "--agent", choices=["trae", "ii"], required=True, help="Which agent to run"
     )
@@ -76,12 +112,14 @@ def main():
 
     args = parser.parse_args()
 
+    repo_root = get_repo_root()
+    env = setup_environment(repo_root)
     check_dependencies()
 
     if args.agent == "trae":
-        run_trae_agent(args.prompt, args.verbose)
+        run_trae_agent(repo_root, args.prompt, env, args.verbose)
     elif args.agent == "ii":
-        run_ii_agent(args.prompt, args.verbose)
+        run_ii_agent(repo_root, args.prompt, env, args.verbose)
 
 
 if __name__ == "__main__":
