@@ -211,9 +211,6 @@
 [submodule "bonsai"]
 	path = bonsai
 	url = https://github.com/robertpelloni/bonsai
-[submodule "electricsheep"]
-	path = electricsheep
-	url = https://github.com/robertpelloni/electricsheep
 [submodule "lr2oraja-endlessdream"]
 	path = lr2oraja-endlessdream
 	url = https://github.com/robertpelloni/lr2oraja-endlessdream
