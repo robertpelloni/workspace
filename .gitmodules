@@ -241,3 +241,6 @@
 [submodule "audacity"]
 	path = audacity
 	url = https://github.com/robertpelloni/audacity
+[submodule "PowerTrader_AI"]
+	path = PowerTrader_AI
+	url = https://github.com/robertpelloni/PowerTrader_AI
