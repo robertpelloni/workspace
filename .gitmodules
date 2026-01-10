@@ -211,12 +211,6 @@
 [submodule "bonsai"]
 	path = bonsai
 	url = https://github.com/robertpelloni/bonsai
-[submodule "lr2oraja-endlessdream"]
-	path = lr2oraja-endlessdream
-	url = https://github.com/robertpelloni/lr2oraja-endlessdream
-[submodule "lr2oraja"]
-	path = lr2oraja
-	url = https://github.com/robertpelloni/lr2oraja
 [submodule "nanovg"]
 	path = nanovg
 	url = https://github.com/robertpelloni/nanovg
