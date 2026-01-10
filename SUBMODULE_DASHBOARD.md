@@ -1,8 +1,8 @@
 # Submodule Dashboard
 
 **Generated:** 2026-01-09
-**Version:** 1.0.8
-**Total Root Submodules:** 67
+**Version:** 1.0.9
+**Total Root Submodules:** 79
 
 ## Project Structure Overview
 
@@ -224,7 +224,14 @@ The `aios/` directory is the AI brain containing 273+ nested submodules:
 2. **Added in v1.0.8**: mk64, MarbleBlast, OpenMBU
 3. Music visualizers (MilkDrop3, projectm) → belong in okgame/BobsGameOnline
 4. Simply-Love-SM5 → belongs in itgmania/stepmania themes
-5. lr2oraja variants → not needed (have beatoraja)
+5. lr2oraja variants → moved into beatoraja as nested submodules (v1.0.9)
+
+### Added in v1.0.9
+- **Music Production (5)**: zrythm, lmms, timidity, ardour, audacity
+- **Graphics & Libraries (4)**: nanovg, GWEN, bonsai, leraine-studio
+- **Gaming (2)**: ksm-v2, picard
+- **Networking**: qBittorrent
+- **Trading**: PowerTrader_AI
 
 ---
-*Last updated: 2026-01-09 05:15 EST*
+*Last updated: 2026-01-09 21:10 EST*
