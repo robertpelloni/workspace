@@ -42,7 +42,7 @@
 	url = https://github.com/github/spec-kit
 [submodule "claude-squad"]
 	path = claude-squad
-	url = https://github.com/robertpelloni/claude-squad
+	url = https://github.com/smtg-ai/claude-squad
 [submodule "kilocode"]
 	path = kilocode
 	url = https://github.com/Kilo-Org/kilocode
@@ -69,7 +69,7 @@
 	url = https://github.com/Mikethebot44/autorouter-package
 [submodule "pluggedin-app"]
 	path = pluggedin-app
-	url = https://github.com/robertpelloni/pluggedin-app
+	url = https://github.com/VeriTeknik/pluggedin-app
 [submodule "devin.cursorrules"]
 	path = devin.cursorrules
 	url = https://github.com/grapeot/devin.cursorrules
@@ -96,7 +96,7 @@
 	url = https://github.com/superagent-ai/grok-cli
 [submodule "magg"]
 	path = magg
-	url = https://github.com/robertpelloni/magg
+	url = https://github.com/sitbon/magg
 [submodule "superpowers"]
 	path = superpowers
 	url = https://github.com/obra/superpowers
@@ -210,10 +210,10 @@
 	url = https://github.com/robertpelloni/lmms
 [submodule "bonsai"]
 	path = bonsai
-	url = https://github.com/robertpelloni/bonsai
+	url = https://github.com/scallyw4g/bonsai
 [submodule "nanovg"]
 	path = nanovg
-	url = https://github.com/robertpelloni/nanovg
+	url = https://github.com/memononen/nanovg
 [submodule "timidity"]
 	path = timidity
 	url = https://github.com/robertpelloni/timidity
