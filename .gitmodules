@@ -211,9 +211,6 @@
 [submodule "bonsai"]
 	path = bonsai
 	url = https://github.com/scallyw4g/bonsai
-[submodule "nanovg"]
-	path = nanovg
-	url = https://github.com/memononen/nanovg
 [submodule "timidity"]
 	path = timidity
 	url = https://github.com/robertpelloni/timidity
@@ -238,3 +235,6 @@
 [submodule "musicbrainz-soulseek-downloader"]
 	path = musicbrainz-soulseek-downloader
 	url = https://github.com/robertpelloni/picard
+[submodule "supertorrent"]
+	path = supertorrent
+	url = https://github.com/robertpelloni/supertorrent.git
