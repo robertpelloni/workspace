@@ -12,33 +12,43 @@
 - [x] **Bobcoin Cleanup**: Removed inappropriate crypto references from non-crypto projects (ArrowVortex, raindropioapp).
 - [x] **Documentation**: Created session handoffs, updated CHANGELOG, synchronized VERSION.
 
-## Discovered Forgotten Features (Audit 2026-01-09)
+## FWBER Status (Updated Jan 10, 2026)
 
-### 🔴 Critical Priority (fwber - Backend Complete, Frontend Missing)
-- [ ] **Achievements System** - Gamification UI needed (`fwber/docs/MISSING_FEATURES.md`)
-- [ ] **Proximity Chatrooms** - Core social feature partially implemented
-- [ ] **Paid Photo Reveals** - Monetization feature
-- [ ] **Merchant Promotions Discovery** - Local commerce integration
+### ✅ Phase 4B: Missing Frontend UIs - COMPLETE
+All Phase 4B features have been implemented and verified:
+- [x] **Achievements System UI** - `fwber/fwber-frontend/app/achievements/page.tsx`
+- [x] **Proximity Chatrooms Discovery** - `fwber/fwber-frontend/app/proximity-chatrooms/page.tsx`
+- [x] **Paid Photo Reveals** - `fwber/fwber-frontend/app/photos/reveals/page.tsx`
+- [x] **Merchant Promotions Discovery** - `fwber/fwber-frontend/app/deals/page.tsx`
+- [x] **Share-to-Unlock System** - `fwber/fwber-frontend/app/share-unlock/page.tsx`
+- [x] **Bulletin Boards** - `fwber/fwber-frontend/app/bulletin-boards/page.tsx`
+- [x] **Profile View Tracking** - `fwber/fwber-frontend/app/profile-views/page.tsx`
+- [x] **Group-to-Group Matching** - `fwber/fwber-frontend/app/groups/matching/page.tsx`
+- [x] **Message Reactions** - Integrated in chatroom components
+- [x] **Extended Viral Content** - All wingman features (fortune, cosmic, vibe, roast, nemesis)
+- [x] **Matchmaker Bounties** - `fwber/fwber-frontend/app/bounties/page.tsx`
 
-### 🟡 High Priority
-- [ ] **Share-to-Unlock System** - Viral growth mechanism
-- [ ] **Bulletin Boards** - Community discussion (routes commented out in fwber)
-- [ ] **Profile View Tracking** - "Who viewed you" feature
-- [ ] **AI Wingman Chat Suggestions** - Phase 4 roadmap item
+### 🟡 Phase 4C: Technical Debt - In Progress
+- [ ] **Enable Feature Flags** - chatrooms, recommendations, ai_wingman, video_chat in `config/features.php`
+- [ ] **Enable Bulletin Board Routes** - Uncomment in `routes/api.php`
+- [ ] **Merchant Analytics Dashboard** - K-Factor tracking, retention metrics, revenue analytics
+- [ ] **Replace Mock APIs** - Real content moderation (AWS Rekognition/Google Vision)
 
-### 🟢 Medium Priority
-- [ ] **Content Unlock System** - Flexible monetization
-- [ ] **Group-to-Group Matching** - Group dynamics feature
-- [ ] **Message Reactions** - Modern messaging UX
-- [ ] **Extended Viral Content** - Fortunes, cosmic matches
-- [ ] **Bobcoin Mining Integration** - aios Phase 6 (`aios/ROADMAP.md`)
-- [ ] **Video Deduplication** - filez Tier 3 (`filez/docs/VISION.md`)
+## Other Project Status
 
-### 🔵 Low Priority
-- [ ] **Download Accelerator** - copyparty enhancement
-- [ ] **Config GUI** - copyparty web configuration
-- [ ] **AI Sorter Userscript** - raindropioapp integration
-- [ ] **Infrastructure Automation** - CI/CD improvements
+### 🟢 AIOS (AI Operating System) - Phase 9 COMPLETE
+All 9 phases completed per `aios/ROADMAP.md`:
+- Phases 1-5: Core infrastructure, MCP servers, consensus mechanisms
+- Phase 6: Bobcoin mining integration
+- Phases 7-9: Advanced orchestration, self-improvement, production hardening
+
+### 🟡 Other Projects - Various States
+- **itgmania**: Rhythm game engine (StepMania fork) - active development
+- **okgame**: Cross-platform game engine - active development
+- **BobsGameOnline**: Online multiplayer puzzle game - maintenance mode
+- **beatoraja**: Rhythm game - maintenance mode
+- **filez**: Desktop file management - Tier 2 complete, Tier 3 pending
+- **JWildfire**: Fractal flame generator - integrated
 
 ## Short-term Goals (v1.1.0)
 - [ ] **Standardization**:
@@ -68,8 +78,12 @@
 ---
 
 ## Reference Documents
-- `fwber/docs/MISSING_FEATURES.md` - Detailed fwber feature gaps
-- `fwber/docs/ROADMAP.md` - fwber Phase 4-5 plans
-- `aios/ROADMAP.md` - AIOS Phase 6-7 plans
+- `fwber/docs/MISSING_FEATURES.md` - Detailed fwber feature gaps (updated Jan 10, 2026)
+- `fwber/docs/ROADMAP.md` - fwber Phase 4-5 plans (Phase 4B COMPLETE)
+- `aios/ROADMAP.md` - AIOS Phase 6-7 plans (All phases COMPLETE)
 - `filez/docs/VISION.md` - filez Tier 3 features
 - `docs/archive/AI_FEATURES_CONSENSUS_PLAN_2025-11-08.md` - Multi-model consensus roadmap
+
+---
+
+**Last Updated:** January 10, 2026

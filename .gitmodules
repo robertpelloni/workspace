@@ -235,3 +235,6 @@
 [submodule "PowerTrader_AI"]
 	path = PowerTrader_AI
 	url = https://github.com/robertpelloni/PowerTrader_AI
+[submodule "musicbrainz-soulseek-downloader"]
+	path = musicbrainz-soulseek-downloader
+	url = https://github.com/robertpelloni/picard
