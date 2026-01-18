@@ -1,9 +1,9 @@
 # BrobocallZ Roadmap
 
 ## Vision
-BrobocallZ aims to be the leading AI-powered phone system for small businesses, providing enterprise-grade features at SMB pricing.
+BrobocallZ aims to be leading AI-powered phone system for small businesses, providing enterprise-grade features at SMB pricing.
 
-## Current Version: 1.0.0
+## Current Version: 1.4.0
 
 ---
 
@@ -47,6 +47,66 @@ BrobocallZ aims to be the leading AI-powered phone system for small businesses, 
 - [x] SendGrid email configuration
 - [x] Business context customization
 - [x] Server configuration
+
+### Monitoring & Analytics (v1.2.0)
+- [x] Web dashboard for active calls monitoring
+- [x] Live transcript display
+- [x] Call duration tracking
+- [x] Real-time connection status
+- [x] Call volume metrics (daily/weekly/monthly)
+- [x] Average call duration
+- [x] Call success/failure rates
+- [x] Peak calling hours analysis
+- [x] Cost tracking per call
+- [x] Customer engagement metrics
+- [x] Export analytics to CSV/Excel
+- [ ] Application performance monitoring (APM)
+- [ ] Error tracking (Sentry integration)
+- [ ] Uptime monitoring
+- [ ] Alert system for critical errors
+- [ ] Log aggregation (e.g., Loggly, Papertrail)
+
+### Call Management (v1.3.0)
+- [x] Audio recording for all calls
+- [x] Secure storage for recordings
+- [x] Recording playback in dashboard
+- [x] Recording download functionality
+- [x] Retention policy configuration
+- [x] Voicemail system for missed calls
+- [x] Voicemail transcription
+- [x] Email notification for new voicemails
+- [x] Voicemail management in dashboard
+- [ ] Voicemail-to-email forwarding
+- [ ] Call queueing system
+- [ ] Queue position announcements
+- [ ] Estimated wait time
+- [ ] Queue music/hold music
+- [ ] Maximum queue length
+- [ ] Queue abandonment tracking
+
+### Advanced AI Features (v1.4.0) - IN PROGRESS
+- [x] RAG (Retrieval-Augmented Generation) implementation
+- [x] Business document upload (PDF, Word, etc.)
+- [x] Vector database integration (Pinecone)
+- [x] Context injection for AI responses
+- [ ] Knowledge base management UI
+- [ ] Knowledge base testing tools
+- [ ] Warm transfer to human agents
+- [ ] Transfer via SIP or phone number
+- [ ] Transfer context summary
+- [ ] Agent availability status
+- [ ] Transfer to multiple agents (load balancing)
+- [ ] Transfer failure handling
+- [ ] Interactive Voice Response (IVR) menu
+- [ ] Multi-level menu navigation
+- [ ] Dynamic menu configuration
+- [ ] Key press detection
+- [ ] IVR analytics (menu path tracking)
+- [ ] Language detection
+- [ ] Multi-language prompts
+- [ ] Language-specific AI models
+- [ ] Language preference storage
+- [ ] Translation for transcripts
 
 ---
 
@@ -148,11 +208,11 @@ BrobocallZ aims to be the leading AI-powered phone system for small businesses, 
 **Estimated: 7-10 days**
 
 ### Knowledge Base / RAG
-- [ ] Implement RAG (Retrieval-Augmented Generation)
-- [ ] Business document upload (PDF, Word, etc.)
+- [x] Implement RAG (Retrieval-Augmented Generation)
+- [x] Business document upload (PDF, Word, etc.)
+- [x] Vector database integration (Pinecone/Weaviate)
+- [x] Context injection for AI responses
 - [ ] Knowledge base management UI
-- [ ] Vector database integration (Pinecone/Weaviate)
-- [ ] Context injection for AI responses
 - [ ] Knowledge base testing tools
 
 ### Call Transfer

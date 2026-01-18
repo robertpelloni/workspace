@@ -1,8 +1,9 @@
 import WebSocket from 'ws';
 import logger from '../utils/logger.js';
+import * as rag from './rag.js';
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-const SYSTEM_PROMPT = `${process.env.BUSINESS_CONTEXT || 'You are a helpful AI receptionist.'}
+const BASE_SYSTEM_PROMPT = `${process.env.BUSINESS_CONTEXT || 'You are a helpful AI receptionist.'}
 
 Key behaviors:
 - Be warm, friendly, and professional
@@ -11,13 +12,20 @@ Key behaviors:
 - If you don't know something specific, offer to take a message for the owner
 - Always end by confirming you'll pass along the message`;
 
+function getSystemPrompt() {
+  return BASE_SYSTEM_PROMPT;
+}
+
 export async function handleMediaStream(ws, activeCalls) {
   const { OpenAIWebSocketClient } = await import('../utils/openaiClient.js');
-  
+
   let openaiClient = null;
   let streamSid = null;
   let callSid = null;
   let callData = null;
+  let ragEnabled = rag.getRAGStats().enabled;
+  let conversationHistory = [];
+  let lastContextUpdate = 0;
 
   ws.on('message', async (message) => {
     try {
@@ -112,7 +120,7 @@ export async function handleMediaStream(ws, activeCalls) {
   });
 
   if (openaiClient) {
-    openaiClient.ws.on('message', (data) => {
+    openaiClient.ws.on('message', async (data) => {
       try {
         const response = JSON.parse(data);
 
@@ -141,11 +149,51 @@ export async function handleMediaStream(ws, activeCalls) {
 
           case 'conversation.item.input_audio_transcription.completed':
             if (callData && response.transcript) {
+              const transcript = response.transcript;
+
               callData.transcript.push({
                 role: 'user',
-                content: response.transcript,
+                content: transcript,
                 timestamp: new Date().toISOString()
               });
+
+              conversationHistory.push({ role: 'user', content: transcript });
+
+              if (ragEnabled && openaiClient?.getReadyState() === WebSocket.OPEN) {
+                const now = Date.now();
+                if (now - lastContextUpdate > 5000) {
+                  try {
+                    const ragResult = await rag.getContextForQuery(transcript, { topK: 3 });
+
+                    if (ragResult.success && ragResult.context.length > 0) {
+                      const augmentedPrompt = rag.augmentSystemPrompt(getSystemPrompt(), ragResult.context);
+
+                      const sessionUpdate = {
+                        type: 'session.update',
+                        session: {
+                          instructions: augmentedPrompt
+                        }
+                      };
+
+                      openaiClient.send(JSON.stringify(sessionUpdate));
+                      lastContextUpdate = now;
+
+                      logger.info('RAG context injected', {
+                        callSid,
+                        contextLength: ragResult.context.length,
+                        results: ragResult.results?.length
+                      });
+
+                      callData.ragContext = ragResult.context;
+                    }
+                  } catch (err) {
+                    logger.error('Failed to inject RAG context', {
+                      callSid,
+                      error: err.message
+                    });
+                  }
+                }
+              }
             }
             logger.debug('User transcription completed', { transcript: response.transcript, callSid });
             break;
