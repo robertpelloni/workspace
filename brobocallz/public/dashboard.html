@@ -196,6 +196,12 @@
         <div class="stat-value" id="monthly-cost">$0.00</div>
         <div class="stat-label">Estimated monthly cost</div>
       </div>
+      
+      <div class="stat-card">
+        <h3>🎙️ Recordings</h3>
+        <div class="stat-value" id="recordings-count">0</div>
+        <div class="stat-label">Total recordings</div>
+      </div>
     </div>
     
     <div class="stat-card">
@@ -218,6 +224,33 @@
       <div id="calls-empty" class="loading" style="display: none;">
         <div class="spinner"></div>
         <p>No active calls</p>
+      </div>
+    </div>
+    
+    <div class="stat-card">
+      <h3>🎙️ Call Recordings</h3>
+      <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+        <button class="refresh-btn" onclick="loadRecordings()">🔄 Refresh Recordings</button>
+        <button class="refresh-btn" onclick="cleanupRecordings()">🧹 Cleanup Old</button>
+      </div>
+      <table class="calls-table">
+        <thead>
+          <tr>
+            <th>Call SID</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Size</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="recordings-table-body">
+        </tbody>
+      </table>
+      <div id="recordings-empty" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>No recordings found</p>
       </div>
     </div>
     

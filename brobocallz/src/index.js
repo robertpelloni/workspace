@@ -10,7 +10,18 @@ import cleanupService from './utils/callCleanup.js';
 import { realtimeMiddleware } from './routes/api.js';
 import { getAnalytics, updateCallStats, getRealtimeStats } from './services/analytics.js';
 import { getMonthlyCost } from './services/costTracking.js';
+import {
+  listRecordings,
+  getRecording,
+  deleteRecording,
+  getRecordingStats,
+  cleanupOldRecordings,
+  isRecordingEnabled
+} from './services/recording.js';
+import fs from 'fs';
+import path from 'path';
 
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,8 +35,149 @@ const server = createServer(app);
 const wss = new WebSocketServer({ server });
 
 export const activeCalls = new Map();
+app.set('activeCalls', activeCalls);
 
 app.use(express.static('public'));
+
+app.post('/incoming-call', handleIncomingCall);
+app.post('/outbound-answer', handleMediaStream);
+app.post('/call-status', handleCallStatus);
+
+app.get('/api/calls', realtimeMiddleware);
+
+app.get('/api/analytics', (req, res) => {
+  const days = parseInt(req.query.days || '7', 10);
+  try {
+    const analytics = getAnalytics(days);
+    res.json({ success: true, data: analytics });
+  } catch (err) {
+    logger.error('Failed to get analytics', { error: err.message });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/costs', (req, res) => {
+  try {
+    const costs = getMonthlyCost();
+    res.json({ success: true, data: costs });
+  } catch (err) {
+    logger.error('Failed to get costs', { error: err.message });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/recordings', (req, res) => {
+  try {
+    const recordings = listRecordings();
+    res.json({ success: true, data: recordings });
+  } catch (err) {
+    logger.error('Failed to list recordings', { error: err.message });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/recordings/:callSid', (req, res) => {
+  const { callSid } = req.params;
+  try {
+    const recording = getRecording(callSid);
+    if (!recording) {
+      return res.status(404).json({ success: false, error: 'Recording not found' });
+    }
+    res.json({ success: true, data: recording });
+  } catch (err) {
+    logger.error('Failed to get recording', { callSid, error: err.message });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/recordings/:callSid/download', (req, res) => {
+  const { callSid } = req.params;
+  try {
+    const recording = getRecording(callSid);
+    if (!recording || !recording.localPath) {
+      return res.status(404).json({ success: false, error: 'Recording file not found' });
+    }
+
+    if (!fs.existsSync(recording.localPath)) {
+      logger.error('Recording file missing from filesystem', { callSid, localPath: recording.localPath });
+      return res.status(404).json({ success: false, error: 'Recording file not found on disk' });
+    }
+
+    const filename = path.basename(recording.localPath);
+    res.download(recording.localPath, filename, (err) => {
+      if (err) {
+        logger.error('Failed to download recording file', { callSid, error: err.message });
+        if (!res.headersSent) {
+          res.status(500).json({ success: false, error: 'Download failed' });
+        }
+      } else {
+        logger.info('Recording file downloaded', { callSid, filename });
+      }
+    });
+  } catch (err) {
+    logger.error('Error in recording download', { callSid, error: err.message });
+    if (!res.headersSent) {
+      res.status(500).json({ success: false, error: err.message });
+    }
+  }
+});
+
+app.delete('/api/recordings/:callSid', (req, res) => {
+  const { callSid } = req.params;
+  try {
+    const result = deleteRecording(callSid);
+    res.json({ success: result.success, message: result.message });
+  } catch (err) {
+    logger.error('Failed to delete recording', { callSid, error: err.message });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/recordings-stats', (req, res) => {
+  try {
+    const stats = getRecordingStats();
+    res.json({ success: true, data: stats });
+  } catch (err) {
+    logger.error('Failed to get recording stats', { error: err.message });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/recordings/cleanup', (req, res) => {
+  try {
+    const result = cleanupOldRecordings();
+    res.json({ success: true, data: result });
+  } catch (err) {
+    logger.error('Failed to cleanup recordings', { error: err.message });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+server.listen(PORT, () => {
+  logger.info('BrobocallZ server started', {
+    port: PORT,
+    business: process.env.BUSINESS_NAME || 'Not configured',
+    environment: process.env.NODE_ENV || 'development',
+    version: '1.2.0',
+    recordingEnabled: isRecordingEnabled(),
+    endpoints: [
+      'GET /api/calls - Real-time call data',
+      'GET /api/analytics - Call analytics',
+      'GET /api/costs - Cost tracking',
+      'GET /api/recordings - List all recordings',
+      'GET /api/recordings/:callSid - Get recording details',
+      'GET /api/recordings/:callSid/download - Download recording file',
+      'DELETE /api/recordings/:callSid - Delete recording',
+      'GET /api/recordings-stats - Recording statistics',
+      'POST /api/recordings/cleanup - Clean up old recordings',
+      'GET /dashboard.html - Web dashboard',
+      'POST /incoming-call - Twilio webhook',
+      'POST /outbound-answer - Outbound call handler',
+      'POST /call-status - Call status callback',
+      'WSS /media-stream - Real-time audio'
+    ]
+  });
+});
 
 server.listen(PORT, () => {
   logger.info('BrobocallZ server started', {

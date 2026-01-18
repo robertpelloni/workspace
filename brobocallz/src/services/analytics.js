@@ -1,6 +1,7 @@
-import logger from '../logger.js';
-import { getCallStats } from './routes/api.js';
+import logger from '../utils/logger.js';
+import { getCallStats } from '../routes/api.js';
 import { activeCalls } from '../index.js';
+import { getRecordingStats as getRecordingStatsFromService } from './recording.js';
 
 const statsHistory = [];
 const STATS_HISTORY_SIZE = 100;
@@ -12,7 +13,7 @@ export function updateCallStats(callSid, status) {
   if (status === 'completed') {
     callData.endTime = new Date();
   }
-  
+
   statsHistory.push({
     callSid,
     from: callData.from,
@@ -33,14 +34,14 @@ export function updateCallStats(callSid, status) {
 
 export function getAnalytics(days = 7) {
   const cutoffDate = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
-  
+
   const recentStats = statsHistory.filter(s => s.timestamp >= cutoffDate.getTime());
-  
+
   const totalCalls = recentStats.length;
   const completedCalls = recentStats.filter(s => s.status === 'completed');
   const inboundCalls = recentStats.filter(s => s.direction === 'inbound').length;
   const outboundCalls = recentStats.filter(s => s.direction === 'outbound').length;
-  
+
   let totalDuration = 0;
   for (const stat of completedCalls) {
     const duration = (stat.endTime?.getTime() || stat.startTime.getTime()) - stat.startTime.getTime();
@@ -48,13 +49,13 @@ export function getAnalytics(days = 7) {
   }
 
   const avgDuration = completedCalls.length > 0 ? totalDuration / completedCalls.length : 0;
-  
+
   const hourBuckets = Array(24).fill(0);
   for (const stat of completedCalls) {
     const hour = stat.startTime.getHours();
     hourBuckets[hour]++;
   }
-  
+
   const peakHour = hourBuckets.indexOf(Math.max(...hourBuckets));
   const peakCalls = Math.max(...hourBuckets);
 
@@ -77,7 +78,8 @@ export function getAnalytics(days = 7) {
       peakHour,
       peakCalls,
       callsByHour: hourBuckets.map((count, hour) => ({ hour, count }))
-    }
+    },
+    recordings: getRecordingStatsFromService()
   };
 }
 
@@ -92,15 +94,15 @@ export function getRealtimeStats() {
 export function clearOldStats(days = 30) {
   const cutoffDate = Date.now() - days * 24 * 60 * 60 * 1000;
   const beforeCount = statsHistory.length;
-  
+
   statsHistory = statsHistory.filter(s => s.timestamp >= cutoffDate);
-  
+
   const removedCount = beforeCount - statsHistory.length;
-  logger.info('Cleared old analytics data', { 
-    days, 
+  logger.info('Cleared old analytics data', {
+    days,
     removedCount,
-    remainingCount: statsHistory.length 
+    remainingCount: statsHistory.length
   });
-  
+
   return removedCount;
 }
