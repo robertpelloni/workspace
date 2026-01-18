@@ -13,7 +13,6 @@ This workspace represents a **unified development ecosystem** spanning 519+ subm
 
 The three pillars of this vision are:
 
-1. **Bobcoin** — A "Proof of Health" cryptocurrency that rewards physical activity
 2. **AIOS** — An AI Operating System that orchestrates all development and tools
 3. **The Game Ecosystem** — Rhythm games and engines that serve as both entertainment and mining infrastructure
 
@@ -23,9 +22,7 @@ The three pillars of this vision are:
 
 ### 1.1 Proof of Health: The Core Innovation
 
-Traditional cryptocurrencies reward computational work (Proof of Work) or capital (Proof of Stake). **Bobcoin** introduces a third paradigm: **Proof of Health**.
 
-> "Bobcoin is not just a cryptocurrency; it is a **Proof of Health** economy. It rewards physical activity (specifically dancing), social interaction, and healthy relationships."
 
 **How It Works:**
 - **Mining Oracles**: Arcade dance machines and exercise equipment verify physical exertion
@@ -35,7 +32,6 @@ Traditional cryptocurrencies reward computational work (Proof of Work) or capita
 **Technical Foundation:**
 - Privacy layer based on Monero/Solana for speed + anonymity
 - Arcade machines double as Tor nodes, distributed storage (MegaTorrents), and game servers
-- The Super AI Plugin connects miners to the Bobcoin network
 
 ### 1.2 Completeness via Aggregation
 
@@ -59,7 +55,6 @@ Every project has a logical home. The workspace follows strict organizational pr
 | **Rhythm Games** | Root + `itgmania/` + `stepmania/` | Core engines at root, themes inside parent |
 | **Game Engines** | Root + `okgame/` + `BobsGameOnline/` | Engines at root, plugins inside parent |
 | **Web Applications** | Root | Standalone applications (fwber, copyparty) |
-| **Cryptocurrency** | `bobcoin/` | Proof of Health implementation |
 
 **Guiding Principles:**
 1. Everything has a home — no orphan repositories
@@ -67,7 +62,6 @@ Every project has a logical home. The workspace follows strict organizational pr
 3. AI is centralized — all AI/MCP/agent work lives in `aios/`
 4. Games are sacred — rhythm games and engines are core focus
 5. History matters — preserve decompilations and legacy code
-6. Bobcoin is isolated — crypto only where it belongs
 
 ---
 
@@ -165,12 +159,10 @@ Critical decisions shouldn't rely on a single model. AIOS implements debate patt
 
 ### 3.1 Rhythm Games: The Mining Infrastructure
 
-The rhythm game ecosystem serves dual purposes: entertainment AND Bobcoin mining infrastructure.
 
 ```
 Rhythm Game Ecosystem
 ├── itgmania/              # Tournament-grade StepMania fork (stable)
-├── stepmania/             # Modern fork with Bobcoin integration (experimental)
 ├── beatoraja/             # BMS/IIDX-style rhythm game
 ├── ArrowVortex/           # Professional simfile editor
 │   └── DDC Integration    # ML-powered auto-charting
@@ -180,7 +172,6 @@ Rhythm Game Ecosystem
 ```
 
 **ITGMania** = Stability, tournament play, cabinet performance  
-**StepMania** = Innovation, Bobcoin economy, online rankings, modern features  
 **ArrowVortex** = Content creation, ML-assisted charting, Lua scripting
 
 ### 3.2 Game Development Ecosystem
@@ -261,7 +252,6 @@ Infrastructure supporting the entire ecosystem:
 - Auth & security
 
 ✅ **Economy Integration**
-- Bobcoin submodule + Economy Manager
 - Node Manager (Tor, Torrent, Storage)
 - Miner CLI (`super-ai mine`)
 - Physical mining (Serial/GPIO for "Proof of Dance")
@@ -368,7 +358,6 @@ Infrastructure supporting the entire ecosystem:
 1. Step on dance pad connected to ITGMania cabinet
 2. Play songs, burn calories
 3. Arcade machine validates physical exertion
-4. Bobcoin tokens deposited to wallet
 5. Tokens usable in BobsGameOnline MMORPG economy
 6. Cabinet simultaneously serves as Tor node and game server
 
@@ -388,12 +377,10 @@ Infrastructure supporting the entire ecosystem:
 |---------|------|--------|-------------|
 | aios | AI/Orchestration | Active | Meta-Orchestrator for MCP |
 | itgmania | Rhythm Game | Active | Tournament-grade StepMania fork |
-| stepmania | Rhythm Game | Reference | Modern StepMania with Bobcoin |
 | ArrowVortex | Tool | Active | Simfile editor with ML |
 | okgame | Game Engine | Active | Multiplayer puzzle engine |
 | BobsGameOnline | Game | Active | 2D MMORPG |
 | fwber | Web App | Active | Privacy-first dating platform |
-| bobcoin | Crypto | Active | Proof of Health cryptocurrency |
 | filez | Tool | Active | File deduplication engine |
 | hellven | Game | Active | Unity game project |
 
@@ -439,7 +426,6 @@ Infrastructure supporting the entire ecosystem:
 | Term | Definition |
 |------|------------|
 | **AIOS** | AI Operating System — the meta-orchestrator |
-| **Bobcoin** | Proof of Health cryptocurrency |
 | **MCP** | Model Context Protocol — standard for AI tool communication |
 | **Progressive Disclosure** | Hiding tools until needed to save context |
 | **Swiss Army Knife** | Strategy of aggregating CLI tools rather than competing |

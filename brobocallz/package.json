@@ -1,0 +1,33 @@
+{
+  "name": "brobocallz",
+  "version": "1.0.0",
+  "description": "AI-powered inbound and outbound call system using Twilio + OpenAI Realtime API",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "outbound": "node src/outbound.js",
+    "test-call": "node src/test-call.js"
+  },
+  "keywords": [
+    "twilio",
+    "openai",
+    "voice",
+    "ai",
+    "calling",
+    "realtime"
+  ],
+  "author": "BrobocallZ Team",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^4.0.0",
+    "twilio": "^5.0.0",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "ws": "^8.16.0"
+  }
+}

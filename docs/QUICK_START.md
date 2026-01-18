@@ -13,7 +13,6 @@ This workspace is a **519+ submodule monorepo** containing:
 - **Rhythm Games**: ITGMania, StepMania, ArrowVortex
 - **Game Engines**: okgame, BobsGameOnline, sm64coopdx
 - **Web Apps**: fwber (dating), copyparty (file server)
-- **Crypto**: Bobcoin (Proof of Health)
 
 **Central Command**: Everything AI-related lives in `aios/`
 
@@ -80,7 +79,6 @@ workspace/
 ├── sm64coopdx/             # 🎮 SM64 multiplayer
 │
 ├── fwber/                  # 🌐 Dating platform
-├── bobcoin/                # 💰 Proof of Health crypto
 ├── filez/                  # 🛠️ File deduplication
 │
 ├── docs/                   # 📚 Root documentation
@@ -145,7 +143,6 @@ workspace/
 ### Anti-Patterns (Don't Do)
 
 - ❌ Never use `taskkill` on all Node processes
-- ❌ Never put Bobcoin references in non-crypto projects
 - ❌ Never duplicate repos that should be submodules
 - ❌ Never suppress TypeScript errors with `as any`
 - ❌ Never commit without version number

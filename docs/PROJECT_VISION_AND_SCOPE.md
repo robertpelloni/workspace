@@ -17,7 +17,6 @@ We are maintaining two distinct forks of StepMania with specific goals. Ideally,
 *   **Base:** StepMania 5.2+ (Modern architecture).
 *   **Key Features:**
     *   **Modernization:** Features from Etterna, Outfox, and SMOnline.
-    *   **Economy:** Bobcoin integration.
     *   **Online:** Global ranking systems.
     *   **Parity:** Feature parity with StepManiaX and DDR A.
     *   **Experimental:** Playground for new mechanics and code.

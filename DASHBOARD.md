@@ -1,182 +1,95 @@
-# PROJECT DASHBOARD
-**Generated:** 2026-01-09
-**Status:** Post-Reorganization (v1.0.6)
+# Project Dashboard
 
-## Quick Stats
-- **Direct Submodules:** 29
-- **Total (Recursive):** 96
-- **Recent Change:** Major reorganization removed 42 duplicate submodules
+**Last Updated:** 2026-01-13 02:07:26
 
-## MAJOR PROJECTS
+## Project Structure & Submodules
 
-| Project | Path | Version/Commit | Status |
-|---|---|---|---|
-| **AIOS** | `aios` | `heads/main` | Active Development |
-| **ArrowVortex** | `ArrowVortex` | `v1.0.1-284` | Active |
-| **BobsGameOnline** | `BobsGameOnline` | `heads/main` | Active |
-| **Bobcoin** | `bobcoin` | `heads/main` | Active |
-| **Fwber** | `fwber` | `v0.3.25-5` | Production |
-| **Hellven** | `hellven` | `heads/main` | Active |
-| **ITGMania** | `itgmania` | `v0.8.0-749` | Active |
-| **Filez** | `filez` | `v2.1.0-16` | Active |
-| **OKGame** | `okgame` | `69431-114` | Active |
+This project integrates various AI agents, tools, and libraries as submodules. Below is the status of each component.
 
-## GAMES & ENGINES
+| Name | Path | Version (Commit) | Last Commit Date | Build/Status |
+|---|---|---|---|---|
+| [BobsGameOnline](https://github.com/robertpelloni/BobsGameOnline) | `BobsGameOnline` | `ecf7275` | 2026-01-11 | 🟢 Clean |
+| [okgame](https://github.com/robertpelloni/okgame) | `okgame` | `e51b9d67d` | 2026-01-13 | modifications |
+| [bobfilez](https://github.com/robertpelloni/bobfilez) | `bobfilez` | `804bc269` | 2026-01-12 | 🟢 Clean |
+| [fwber](https://github.com/robertpelloni/fwber) | `fwber` | `ccccfd7e3` | 2026-01-11 | 🟢 Clean |
+| [hellven](https://gitlab.com/robertpelloni/hellven) | `hellven` | `ae5d8ee8` | 2025-10-25 | 🟢 Clean |
+| [beatoraja](https://github.com/robertpelloni/beatoraja) | `beatoraja` | `e964306e` | 2026-01-10 | 🟢 Clean |
+| [itgmania](https://github.com/robertpelloni/itgmania) | `itgmania` | `c0f9e7279d` | 2026-01-09 | modifications |
+| Neothesia | `Neothesia` | *Not Initialized* | - | ❌ |
+| serena | `serena` | *Not Initialized* | - | ❌ |
+| playwright | `playwright` | *Not Initialized* | - | ❌ |
+| vcpkg | `vcpkg` | *Not Initialized* | - | ❌ |
+| autogen | `autogen` | *Not Initialized* | - | ❌ |
+| amplifier | `amplifier` | *Not Initialized* | - | ❌ |
+| spec-kit | `spec-kit` | *Not Initialized* | - | ❌ |
+| claude-squad | `claude-squad` | *Not Initialized* | - | ❌ |
+| kilocode | `kilocode` | *Not Initialized* | - | ❌ |
+| crush | `crush` | *Not Initialized* | - | ❌ |
+| opencode | `opencode` | *Not Initialized* | - | ❌ |
+| Switchboard | `Switchboard` | *Not Initialized* | - | ❌ |
+| vibesdk | `vibesdk` | *Not Initialized* | - | ❌ |
+| [changesets](https://github.com/changesets/changesets) | `changesets` | `9657b26` | 2025-10-02 | 🟢 Clean |
+| [lootbox](https://github.com/jx-codes/lootbox) | `lootbox` | `0ddfea5` | 2025-10-09 | 🟢 Clean |
+| autorouter-package | `autorouter-package` | *Not Initialized* | - | ❌ |
+| pluggedin-app | `pluggedin-app` | *Not Initialized* | - | ❌ |
+| devin.cursorrules | `devin.cursorrules` | *Not Initialized* | - | ❌ |
+| Kode | `Kode` | *Not Initialized* | - | ❌ |
+| [ccmanager](https://github.com/kbwo/ccmanager) | `ccmanager` | `0d853a5` | 2026-01-10 | 🟢 Clean |
+| inspector | `inspector` | *Not Initialized* | - | ❌ |
+| Windows-Use | `Windows-Use` | *Not Initialized* | - | ❌ |
+| voicemode | `voicemode` | *Not Initialized* | - | ❌ |
+| [servers](https://github.com/modelcontextprotocol/servers) | `servers` | `c7c5497` | 2025-10-29 | 🟢 Clean |
+| grok-cli | `grok-cli` | *Not Initialized* | - | ❌ |
+| magg | `magg` | *Not Initialized* | - | ❌ |
+| superpowers | `superpowers` | *Not Initialized* | - | ❌ |
+| code | `code` | *Not Initialized* | - | ❌ |
+| qwen-code | `qwen-code` | *Not Initialized* | - | ❌ |
+| claude-code-subagents-collection | `claude-code-subagents-collection` | *Not Initialized* | - | ❌ |
+| codex-bridge | `codex-bridge` | *Not Initialized* | - | ❌ |
+| gemini-cli | `gemini-cli` | *Not Initialized* | - | ❌ |
+| [copyparty](https://github.com/9001/copyparty) | `copyparty` | `7357d46f` | 2026-01-10 | 🟢 Clean |
+| beads | `beads` | *Not Initialized* | - | ❌ |
+| [robertpelloni.com](https://gitlab.com/robertpelloni/robertpelloni.com) | `robertpelloni.com` | `c2cb81a` | 2026-01-10 | 🟢 Clean |
+| context-portal | `context-portal` | *Not Initialized* | - | ❌ |
+| CodeMachine-CLI | `CodeMachine-CLI` | *Not Initialized* | - | ❌ |
+| Distil-NPCs | `Distil-NPCs` | *Not Initialized* | - | ❌ |
+| echogarden | `echogarden` | *Not Initialized* | - | ❌ |
+| libjxl | `libjxl` | *Not Initialized* | - | ❌ |
+| mem0 | `mem0` | *Not Initialized* | - | ❌ |
+| gram | `gram` | *Not Initialized* | - | ❌ |
+| [JWildfire](https://github.com/robertpelloni/JWildfire) | `JWildfire` | `fb0b61fe` | 2026-01-09 | modifications |
+| [aios](https://github.com/robertpelloni/aios) | `aios` | `b9e0508` | 2026-01-13 | modifications |
+| jules-autopilot | `jules-autopilot` | *Not Initialized* | - | ❌ |
+| [ArrowVortex](https://github.com/robertpelloni/ArrowVortex) | `ArrowVortex` | `a6f37fb` | 2026-01-10 | 🟢 Clean |
+| [stepmania](https://github.com/robertpelloni/stepmania) | `stepmania` | `15453eb691` | 2026-01-09 | modifications |
+| [raindropioapp](https://github.com/robertpelloni/raindropioapp) | `raindropioapp` | `ed60444d` | 2026-01-09 | 🟢 Clean |
+| [bobcoin](https://github.com/robertpelloni/bobcoin) | `bobcoin` | `53124d9` | 2026-01-11 | modifications |
+| goose | `goose` | *Not Initialized* | - | ❌ |
+| [pianogame](https://github.com/robertpelloni/pianogame.git) | `pianogame` | `e20435c` | 2012-05-04 | 🟢 Clean |
+| [linthesia](https://github.com/robertpelloni/linthesia.git) | `linthesia` | `0548da8` | 2026-01-09 | 🟢 Clean |
+| [sm64coopdx](https://github.com/robertpelloni/sm64coopdx.git) | `sm64coopdx` | `655704f93` | 2026-01-09 | 🟢 Clean |
+| [f-zerox](https://github.com/robertpelloni/f-zerox.git) | `f-zerox` | `a01186f` | 2026-01-09 | 🟢 Clean |
+| [neverball](https://github.com/robertpelloni/neverball.git) | `neverball` | `de360213` | 2025-09-29 | 🟢 Clean |
+| [topaz-ffmpeg](https://github.com/TopazLabs/ffmpeg) | `topaz-ffmpeg` | `8e7ad9f` | 2025-04-03 | 🟢 Clean |
+| [MarbleBlast](https://github.com/robertpelloni/MarbleBlast.git) | `MarbleBlast` | `b4880e4` | 2025-09-26 | 🟢 Clean |
+| [mk64](https://github.com/robertpelloni/mk64.git) | `mk64` | `2f7a1af` | 2026-01-09 | modifications |
+| [OpenMBU](https://github.com/robertpelloni/OpenMBU.git) | `OpenMBU` | `137fbc0` | 2025-09-06 | 🟢 Clean |
+| [leraine-studio](https://github.com/robertpelloni/leraine-studio) | `leraine-studio` | `542b036` | 2026-01-07 | 🟢 Clean |
+| [zrythm](https://github.com/robertpelloni/zrythm) | `zrythm` | `9cca91d51` | 2025-12-15 | 🟢 Clean |
+| [ksm-v2](https://github.com/robertpelloni/ksm-v2) | `ksm-v2` | `40c9cb7` | 2025-12-17 | modifications |
+| [lmms](https://github.com/robertpelloni/lmms) | `lmms` | `e731231c6` | 2025-12-27 | modifications |
+| [bonsai](https://github.com/scallyw4g/bonsai) | `bonsai` | `07f79e0e` | 2025-12-17 | 🟢 Clean |
+| [timidity](https://github.com/robertpelloni/timidity) | `timidity` | `7d8eea5` | 2025-11-15 | 🟢 Clean |
+| [GWEN](https://github.com/robertpelloni/GWEN) | `GWEN` | `cda4170` | 2025-01-05 | 🟢 Clean |
+| [picard](https://github.com/robertpelloni/picard) | `picard` | `5fa7ff930` | 2025-12-23 | 🟢 Clean |
+| [qBittorrent](https://github.com/robertpelloni/qBittorrent) | `qBittorrent` | `5abf458` | 2025-12-13 | 🟢 Clean |
+| [ardour](https://github.com/robertpelloni/ardour) | `ardour` | `a64c8a8` | 2025-12-24 | 🟢 Clean |
+| [audacity](https://github.com/robertpelloni/audacity) | `audacity` | `773ac79` | 2025-12-24 | 🟢 Clean |
+| [PowerTrader_AI](https://github.com/robertpelloni/PowerTrader_AI) | `PowerTrader_AI` | `96dd1e5` | 2026-01-09 | modifications |
+| [musicbrainz-soulseek-downloader](https://github.com/robertpelloni/picard) | `musicbrainz-soulseek-downloader` | `5fa7ff930` | 2025-12-23 | 🟢 Clean |
+| [supertorrent](https://github.com/robertpelloni/supertorrent.git) | `supertorrent` | `3ace4b6` | 2026-01-13 | modifications |
 
-| Project | Path | Description |
-|---|---|---|
-| **MarbleBlast** | `MarbleBlast` | Marble Blast game |
-| **OpenMBU** | `OpenMBU` | Marble Blast Ultra engine |
-| **Linthesia** | `linthesia` | Piano learning game |
-| **Pianogame** | `pianogame` | Piano rhythm game |
-| **Beatoraja** | `beatoraja` | BMS rhythm game |
-| **StepMania** | `stepmania` | DDR-style rhythm game |
-| **Neverball** | `neverball` | Marble rolling game |
-| **SM64CoopDX** | `sm64coopdx` | Super Mario 64 co-op |
-| **MK64** | `mk64` | Mario Kart 64 decompilation |
-| **F-ZeroX** | `f-zerox` | F-Zero X decompilation |
+## Directory Layout Explanation
 
-## SUBMODULE INVENTORY (96 Total)
-
-<details>
-<summary><strong>Click to view full 96 submodule list</strong></summary>
-
-```text
-ArrowVortex (v1.0.1-284-g0636720)
-ArrowVortex/lib/ddc (v1.0-174-g8952e18)
-ArrowVortex/lib/ddc/ddc_onset (heads/main)
-ArrowVortex/lib/ddc/ffr-difficulty-model (heads/master)
-BobsGameOnline (heads/main)
-BobsGameOnline/libs/GeoIP2-java (v4.3.0-232-g10d5699)
-BobsGameOnline/libs/GeoIP2-java/src/test/resources/maxmind-db (heads/main-12-gb6eb21d)
-BobsGameOnline/libs/commons-lang (rel/commons-lang-3.20.0-141-g8b91981bf)
-BobsGameOnline/libs/jinput (2.0.10-134-g45fe725)
-BobsGameOnline/libs/lwjgl3 (3.3.6-216-g50f3b0e6f)
-BobsGameOnline/libs/lz4-java (1.8.0-13-gbe9ce57)
-BobsGameOnline/libs/lz4-java/src/lz4 (v1.9.4)
-BobsGameOnline/libs/micromod (heads/master)
-BobsGameOnline/libs/mysql-connector-j (9.5.0)
-BobsGameOnline/libs/twl-lwjgl3 (heads/master)
-BobsGameOnline/libs/xpp3 (xpp3-1.1.4c.0-9-g68498e7)
-BobsGameOnline/libs/xz-java (v1.11-2-ge52d9ad)
-JWildfire (heads/master)
-MarbleBlast (heads/master)
-OpenMBU (heads/master)
-aios (heads/main)
-aios/OmniParser (v.2.0.1)
-aios/external/agents_repos/agent-sessions (remotes/origin/HEAD)
-aios/external/agents_repos/agentic (heads/master)
-aios/external/agents_repos/claude-squad (v1.0.14)
-aios/external/agents_repos/humanlayer (experimental-0.1.0-experimental-20793791135)
-aios/external/agents_repos/maestro (remotes/origin/HEAD)
-aios/external/agents_repos/mark-hingston-workflows (heads/main)
-aios/external/agents_repos/open-agents (remotes/origin/HEAD)
-aios/external/agents_repos/openchamber (v1.4.5)
-aios/external/agents_repos/opencode-agents (heads/main)
-aios/external/agents_repos/opencode-elf (heads/main)
-aios/external/agents_repos/opencode-maestro (heads/main)
-aios/external/agents_repos/opencode-parallel-agents (remotes/origin/HEAD)
-aios/external/agents_repos/opencodetisan (heads/main)
-aios/external/agents_repos/personal-agent-systems (heads/main)
-aios/external/agents_repos/rse-agents (remotes/origin/HEAD)
-aios/external/agents_repos/subagents (heads/main)
-aios/external/auth/anthropic (remotes/origin/HEAD)
-aios/external/auth/copilot (remotes/origin/HEAD)
-aios/external/auth/gemini (v1.3.7)
-aios/external/auth/openai-codex (v4.3.1)
-aios/external/auth/opencode-antigravity-auth (remotes/origin/HEAD)
-aios/external/auth/opencode-google-antigravity-auth (v0.2.13)
-aios/external/config_repos/Setup_Ultimate_OpenCode (heads/master)
-aios/external/config_repos/opencode-config-joelhooks (remotes/origin/HEAD)
-aios/external/config_repos/opencode-config-nexxeln (heads/main)
-aios/external/config_repos/opencode-flake (v1.0.203)
-aios/external/config_repos/opencode-manager (remotes/origin/HEAD)
-aios/external/config_repos/opencode-plugin-template (heads/main)
-aios/external/config_repos/opencode-template (remotes/origin/HEAD)
-aios/external/misc/OpenCode-Hrishikesh (heads/main)
-aios/external/misc/awesome-opencode (remotes/origin/HEAD)
-aios/external/misc/hephaestus (heads/main)
-aios/external/misc/ocmonitor-share (remotes/origin/HEAD)
-aios/external/misc/oh-my-opencode (v1.1.0-668-g79e9fd8)
-aios/external/misc/openMode (1.0.1)
-aios/external/misc/openapi-ts (@hey-api/codegen-core@0.5.2)
-aios/external/misc/opencode-box (heads/main)
-aios/external/misc/opencode-context-analysis (heads/main)
-aios/external/misc/opencode-intersystems (v0.1.0-beta.1-17-ga268e2b)
-aios/external/misc/opencode-mobile (v1.0.0-140-g829521f)
-aios/external/misc/opencode-pty (v0.1.4)
-aios/external/misc/opencode-roadmap (heads/main)
-aios/external/misc/opencode-sessions (v1.0.0-1-g99b40df)
-aios/external/misc/opencode-supermemory (remotes/origin/HEAD)
-aios/external/misc/opencode-tokenscope (v1.5.0-3-g14120ae)
-aios/external/misc/opencode-vibe (@opencode-vibe/core@0.3.0-46-g8f0843e)
-aios/external/misc/opencode-wrapped (v1.2.0-1-ge77b462)
-aios/external/misc/tokscale (v1.0.22)
-aios/external/opencode-bench (heads/main)
-aios/external/opencode-core (latest-1231-g13305966e)
-aios/external/opencode-sdk-go (v0.19.2)
-aios/external/opencode-sdk-js (v0.1.0-alpha.21)
-aios/external/opencode-sdk-python (v0.1.0-alpha.36)
-aios/external/plugins/ericc-ch-opencode-plugins (opencode-plugin-copilot@0.0.6)
-aios/external/plugins/opencode-background (v0.2.0-alpha.2)
-aios/external/plugins/opencode-codex-plugin (heads/master)
-aios/external/plugins/opencode-codex-provider (heads/main)
-aios/external/plugins/opencode-dynamic-context-pruning (v1.1.4)
-aios/external/plugins/opencode-google-ai-search (heads/master)
-aios/external/plugins/opencode-md-table-formatter (v0.0.3-3-g24b7ce2)
-aios/external/plugins/opencode-morph-fast-apply (heads/trunk)
-aios/external/plugins/opencode-notificator (heads/main)
-aios/external/plugins/opencode-notifier (remotes/origin/HEAD)
-aios/external/plugins/opencode-shell-strategy (remotes/origin/HEAD)
-aios/external/plugins/opencode-smart-title (v0.1.7)
-aios/external/plugins/opencode-type-inject (v1.3.1)
-aios/external/plugins/opencode-wakatime (v1.1.0-4-gbac1e3a)
-aios/external/plugins/opencode-websearch-cited (v1.1.1)
-aios/external/plugins/opencode-zed-extension (heads/main)
-aios/external/plugins/pickle-thinker (heads/master)
-aios/external/plugins/shantur-opencode-gemini-auth (heads/main)
-aios/external/research/OpenCodeEval (heads/main)
-aios/external/research/OpenCoder-llm (heads/main)
-aios/external/research/OpenQode (remotes/origin/HEAD)
-beatoraja (0.7.6-859-gebfa678b)
-bobcoin (heads/main)
-ccmanager (v2.9.2-1-ge06dd9d)
-changesets (@changesets/apply-release-plan@7.0.13-1-g9657b26)
-copyparty (v0.7.3-3915-ge9ab040c)
-f-zerox (heads/main)
-filez (v2.1.0-16-gc28c382c)
-fwber (v0.3.25-5-g344eaaa7f)
-hellven (heads/main)
-itgmania (v0.8.0-749-gf11362e4e1)
-junie (108.1-1-g3e912f2)
-linthesia (0.8.0-22-g7f9d7f5)
-lootbox (heads/main)
-mk64 (heads/master)
-neverball (1.7.0-alpha.3-239-gde360213)
-okgame (69431-114-g1d98286cc)
-pianogame (heads/master)
-raindropioapp (latest-159-g459c0ad1)
-robertpelloni.com (heads/main)
-servers (typescript-servers-0.6.2-3460-gc7c5497)
-sm64coopdx (v1.4)
-stepmania (v5.1.0-12-g52a1dc3e77)
-topaz-ffmpeg (heads/topaz/develop)
-```
-</details>
-
-## Key Documentation
-
-| Document | Path | Description |
-|---|---|---|
-| Vision | `docs/VISION_DOCUMENT.md` | Complete vision & architecture |
-| Quick Start | `docs/QUICK_START.md` | Onboarding guide |
-| Root Roadmap | `ROADMAP.md` | Workspace-level roadmap |
-| AIOS Roadmap | `aios/ROADMAP.md` | AIOS-specific roadmap |
-
-## Recent Changes (2026-01-09)
-
-- Major reorganization: removed 42 duplicate submodules
-- Added game projects: MarbleBlast, OpenMBU, Linthesia, Pianogame, Neverball, SM64CoopDX, MK64, F-ZeroX
-- Created comprehensive VISION_DOCUMENT.md
-- Created QUICK_START.md for onboarding
-- Fixed AIOS UI Vercel build issues
+- **Root**: Contains main configuration and orchestration logic.
+- **Submodules**: Located in their respective directories, containing standalone tools or agents.

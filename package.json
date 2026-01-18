@@ -23,6 +23,7 @@
   "dependencies": {
     "firecrawl-mcp": "^3.6.2",
     "mem0ai": "^2.1.38",
+    "opencode-ai": "^1.1.18",
     "task-master-ai": "^0.35.0"
   }
 }

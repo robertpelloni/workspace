@@ -1,0 +1,5 @@
+[
+  { "name": "John Smith", "phone": "+11234567890", "equipment": "Riding mower" },
+  { "name": "Jane Doe", "phone": "+11234567891", "equipment": "Chainsaw" },
+  { "name": "Bob Wilson", "phone": "+11234567892", "equipment": "Generator" }
+]
