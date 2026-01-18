@@ -19,6 +19,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Voicemail system
 - IVR navigation
 
+## [1.2.0] - 2025-01-18
+
+### Added
+- Startup validation with environment variable checks
+- Structured logging with Winston (console + file + rotation)
+- Request validation for all API endpoints
+- Call data cleanup with TTL (1 hour) to prevent memory leaks
+- Graceful shutdown handlers (SIGTERM, SIGINT, uncaught exceptions)
+- Unhandled rejection tracking
+- Connection timeout and retry logic for OpenAI WebSocket
+- Automatic reconnection with exponential backoff
+- Keepalive ping/pong mechanism (30 second intervals)
+- OpenAIWebSocketClient class for robust connection management
+- Test utilities and mock Twilio/OpenAI event generators
+- Comprehensive test-call.js script with interactive menu
+- Customer data validation in outbound campaigns
+- Cleanup statistics endpoint (/cleanup-stats)
+
+### Changed
+- Migrated all console.log to structured logger
+- Enhanced error handling with try-catch blocks
+- Improved WebSocket connection resilience
+- Added max call limit enforcement (100 concurrent calls)
+
+### Fixed
+- Memory leak from failed call cleanup
+- Missing error handling in webhook endpoints
+- Undefined callSid access without null checks
+- Empty customer list file handling
+- Invalid JSON in customers.json crash
+
+### Security
+- Added request validation for all endpoints
+- Implemented Twilio webhook signature verification (optional)
+- Protected against invalid phone numbers
+- Protected against malformed Twilio requests
+
 ## [1.0.0] - 2025-01-11
 
 ### Added
