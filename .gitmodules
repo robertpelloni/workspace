@@ -4,9 +4,9 @@
 [submodule "okgame"]
 	path = okgame
 	url = https://github.com/robertpelloni/okgame
-[submodule "filez"]
-	path = filez
-	url = https://github.com/robertpelloni/filez
+[submodule "bobfilez"]
+	path = bobfilez
+	url = https://github.com/robertpelloni/bobfilez
 [submodule "fwber"]
 	path = fwber
 	url = https://github.com/robertpelloni/fwber
