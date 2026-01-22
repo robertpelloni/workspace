@@ -19,141 +19,18 @@
 [submodule "itgmania"]
 	path = itgmania
 	url = https://github.com/robertpelloni/itgmania
-[submodule "Neothesia"]
-	path = Neothesia
-	url = https://github.com/robertpelloni/Neothesia
-[submodule "serena"]
-	path = serena
-	url = https://github.com/oraios/serena
-[submodule "playwright"]
-	path = playwright
-	url = https://github.com/microsoft/playwright
-[submodule "vcpkg"]
-	path = vcpkg
-	url = https://github.com/microsoft/vcpkg
-[submodule "autogen"]
-	path = autogen
-	url = https://github.com/microsoft/autogen
-[submodule "amplifier"]
-	path = amplifier
-	url = https://github.com/microsoft/amplifier
-[submodule "spec-kit"]
-	path = spec-kit
-	url = https://github.com/github/spec-kit
-[submodule "claude-squad"]
-	path = claude-squad
-	url = https://github.com/smtg-ai/claude-squad
-[submodule "kilocode"]
-	path = kilocode
-	url = https://github.com/Kilo-Org/kilocode
-[submodule "crush"]
-	path = crush
-	url = https://github.com/charmbracelet/crush
-[submodule "opencode"]
-	path = opencode
-	url = https://github.com/sst/opencode
-[submodule "Switchboard"]
-	path = Switchboard
-	url = https://github.com/George5562/Switchboard
-[submodule "vibesdk"]
-	path = vibesdk
-	url = https://github.com/cloudflare/vibesdk
-[submodule "changesets"]
-	path = changesets
-	url = https://github.com/changesets/changesets
-[submodule "lootbox"]
-	path = lootbox
-	url = https://github.com/jx-codes/lootbox
-[submodule "autorouter-package"]
-	path = autorouter-package
-	url = https://github.com/Mikethebot44/autorouter-package
-[submodule "pluggedin-app"]
-	path = pluggedin-app
-	url = https://github.com/VeriTeknik/pluggedin-app
-[submodule "devin.cursorrules"]
-	path = devin.cursorrules
-	url = https://github.com/grapeot/devin.cursorrules
-[submodule "Kode"]
-	path = Kode
-	url = https://github.com/shareAI-lab/Kode
-[submodule "ccmanager"]
-	path = ccmanager
-	url = https://github.com/kbwo/ccmanager
-[submodule "inspector"]
-	path = inspector
-	url = https://github.com/MCPJam/inspector
-[submodule "Windows-Use"]
-	path = Windows-Use
-	url = https://github.com/CursorTouch/Windows-Use
-[submodule "voicemode"]
-	path = voicemode
-	url = https://github.com/mbailey/voicemode
-[submodule "servers"]
-	path = servers
-	url = https://github.com/modelcontextprotocol/servers
-[submodule "grok-cli"]
-	path = grok-cli
-	url = https://github.com/superagent-ai/grok-cli
-[submodule "magg"]
-	path = magg
-	url = https://github.com/sitbon/magg
-[submodule "superpowers"]
-	path = superpowers
-	url = https://github.com/obra/superpowers
-[submodule "code"]
-	path = code
-	url = https://github.com/just-every/code
-[submodule "qwen-code"]
-	path = qwen-code
-	url = https://github.com/QwenLM/qwen-code
-[submodule "claude-code-subagents-collection"]
-	path = claude-code-subagents-collection
-	url = https://github.com/davepoon/claude-code-subagents-collection
-[submodule "codex-bridge"]
-	path = codex-bridge
-	url = https://github.com/eLyiN/codex-bridge
-[submodule "gemini-cli"]
-	path = gemini-cli
-	url = https://github.com/google-gemini/gemini-cli
 [submodule "copyparty"]
 	path = copyparty
 	url = https://github.com/9001/copyparty
-[submodule "beads"]
-	path = beads
-	url = https://github.com/steveyegge/beads
 [submodule "robertpelloni.com"]
 	path = robertpelloni.com
 	url = https://gitlab.com/robertpelloni/robertpelloni.com
-[submodule "context-portal"]
-	path = context-portal
-	url = https://github.com/GreatScottyMac/context-portal
-[submodule "CodeMachine-CLI"]
-	path = CodeMachine-CLI
-	url = https://github.com/moazbuilds/CodeMachine-CLI
-[submodule "Distil-NPCs"]
-	path = Distil-NPCs
-	url = https://github.com/distil-labs/Distil-NPCs
-[submodule "echogarden"]
-	path = echogarden
-	url = https://github.com/echogarden-project/echogarden
-[submodule "libjxl"]
-	path = libjxl
-	url = https://github.com/libjxl/libjxl
-[submodule "mem0"]
-	path = mem0
-	url = https://github.com/mem0ai/mem0
-[submodule "gram"]
-	path = gram
-	url = https://github.com/speakeasy-api/gram
 [submodule "JWildfire"]
 	path = JWildfire
 	url = https://github.com/robertpelloni/JWildfire
 [submodule "borg"]
 	path = borg
 	url = https://github.com/robertpelloni/borg.git
-[submodule "jules-autopilot"]
-	path = jules-autopilot
-	url = https://github.com/robertpelloni/jules-autopilot
 [submodule "ArrowVortex"]
 	path = ArrowVortex
 	url = https://github.com/robertpelloni/ArrowVortex
@@ -166,9 +43,6 @@
 [submodule "bobcoin"]
 	path = bobcoin
 	url = https://github.com/robertpelloni/bobcoin
-[submodule "goose"]
-	path = goose
-	url = https://github.com/block/goose
 [submodule "pianogame"]
 	path = pianogame
 	url = https://github.com/robertpelloni/pianogame.git
