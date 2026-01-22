@@ -18,6 +18,8 @@ import {
   cleanupOldRecordings,
   isRecordingEnabled
 } from './services/recording.js';
+import * as knowledgeBase from './services/knowledgeBase.js';
+import { setupKnowledgeBaseRoutes } from './routes/knowledgeBase.js';
 import fs from 'fs';
 import path from 'path';
 
@@ -38,6 +40,8 @@ export const activeCalls = new Map();
 app.set('activeCalls', activeCalls);
 
 app.use(express.static('public'));
+
+setupKnowledgeBaseRoutes(app);
 
 app.post('/incoming-call', handleIncomingCall);
 app.post('/outbound-answer', handleMediaStream);
@@ -153,48 +157,57 @@ app.post('/api/recordings/cleanup', (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
-  logger.info('BrobocallZ server started', {
-    port: PORT,
-    business: process.env.BUSINESS_NAME || 'Not configured',
-    environment: process.env.NODE_ENV || 'development',
-    version: '1.2.0',
-    recordingEnabled: isRecordingEnabled(),
-    endpoints: [
-      'GET /api/calls - Real-time call data',
-      'GET /api/analytics - Call analytics',
-      'GET /api/costs - Cost tracking',
-      'GET /api/recordings - List all recordings',
-      'GET /api/recordings/:callSid - Get recording details',
-      'GET /api/recordings/:callSid/download - Download recording file',
-      'DELETE /api/recordings/:callSid - Delete recording',
-      'GET /api/recordings-stats - Recording statistics',
-      'POST /api/recordings/cleanup - Clean up old recordings',
-      'GET /dashboard.html - Web dashboard',
-      'POST /incoming-call - Twilio webhook',
-      'POST /outbound-answer - Outbound call handler',
-      'POST /call-status - Call status callback',
-      'WSS /media-stream - Real-time audio'
-    ]
-  });
-});
+async function initializeServices() {
+  if (knowledgeBase.isKnowledgeBaseEnabled()) {
+    logger.info('Initializing knowledge base service...');
+    const initialized = await knowledgeBase.initialize();
+    if (initialized) {
+      logger.info('Knowledge base service initialized successfully');
+    } else {
+      logger.warn('Knowledge base service initialization failed, continuing without it');
+    }
+  } else {
+    logger.info('Knowledge base is disabled in configuration');
+  }
+}
 
-server.listen(PORT, () => {
-  logger.info('BrobocallZ server started', {
-    port: PORT,
-    business: process.env.BUSINESS_NAME || 'Not configured',
-    environment: process.env.NODE_ENV || 'development',
-    version: '1.2.0',
-    endpoints: [
-      'GET /api/calls - Real-time call data',
-      'GET /api/analytics - Call analytics',
-      'GET /api/costs - Cost tracking',
-      'GET /dashboard.html - Web dashboard',
-      'POST /incoming-call - Twilio webhook',
-      'POST /outbound-answer - Outbound call handler',
-      'POST /call-status - Call status callback',
-      'WSS /media-stream - Real-time audio',
-      'GET /cleanup-stats - Cleanup statistics'
-    ]
+initializeServices().then(() => {
+  server.listen(PORT, () => {
+    logger.info('BrobocallZ server started', {
+      port: PORT,
+      business: process.env.BUSINESS_NAME || 'Not configured',
+      environment: process.env.NODE_ENV || 'development',
+      version: '1.4.0',
+      recordingEnabled: isRecordingEnabled(),
+      knowledgeBaseEnabled: knowledgeBase.isKnowledgeBaseEnabled(),
+      endpoints: [
+        'GET /api/calls - Real-time call data',
+        'GET /api/analytics - Call analytics',
+        'GET /api/costs - Cost tracking',
+        'GET /api/recordings - List all recordings',
+        'GET /api/recordings/:callSid - Get recording details',
+        'GET /api/recordings/:callSid/download - Download recording file',
+        'DELETE /api/recordings/:callSid - Delete recording',
+        'GET /api/recordings-stats - Recording statistics',
+        'POST /api/recordings/cleanup - Clean up old recordings',
+        'POST /api/knowledge-base/upload - Upload document (PDF, DOCX, TXT)',
+        'POST /api/knowledge-base/text - Ingest text content',
+        'GET /api/knowledge-base/documents - List all documents',
+        'GET /api/knowledge-base/documents/:docId - Get document details',
+        'DELETE /api/knowledge-base/documents/:docId - Delete document',
+        'POST /api/knowledge-base/search - Search knowledge base',
+        'GET /api/knowledge-base/stats - Get RAG statistics',
+        'GET /api/knowledge-base/ingestion-info - Get ingestion configuration',
+        'POST /api/knowledge-base/cache/clear - Clear RAG context cache',
+        'GET /dashboard.html - Web dashboard',
+        'POST /incoming-call - Twilio webhook',
+        'POST /outbound-answer - Outbound call handler',
+        'POST /call-status - Call status callback',
+        'WSS /media-stream - Real-time audio'
+      ]
+    });
   });
+}).catch(err => {
+  logger.error('Failed to initialize services', { error: err.message });
+  process.exit(1);
 });

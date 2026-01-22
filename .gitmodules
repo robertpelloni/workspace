@@ -148,9 +148,9 @@
 [submodule "JWildfire"]
 	path = JWildfire
 	url = https://github.com/robertpelloni/JWildfire
-[submodule "aios"]
-	path = aios
-	url = https://github.com/robertpelloni/aios
+[submodule "borg"]
+	path = borg
+	url = https://github.com/robertpelloni/borg.git
 [submodule "jules-autopilot"]
 	path = jules-autopilot
 	url = https://github.com/robertpelloni/jules-autopilot

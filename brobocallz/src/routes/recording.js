@@ -1,13 +1,3 @@
-import logger from '../utils/logger.js';
-import { 
-  getRecording, 
-  saveRecording, 
-  getAllRecordings, 
-  deleteRecording,
-  getRecordingStats,
-  cleanupOldRecordings
-} from '../services/recording.js';
-
 export async function createRecording(req, res) {
   try {
     const { callSid, format = 'wav' } = req.body;
@@ -18,16 +8,10 @@ export async function createRecording(req, res) {
 
     logger.info('Creating recording', { callSid, format });
 
-    const result = await saveRecording(callSid, Buffer.alloc(0), format);
+    const audioData = Buffer.alloc(0);
     
-    if (result.success) {
-      const callData = activeCalls.get(callSid);
-      if (callData) {
-        callData.recordingUrl = result.url;
-        callData.recordingFormat = format;
-      }
-    }
-
+    const result = await saveRecording(callSid, audioData, format);
+    
     res.json({
       success: result.success,
       filePath: result.filePath,
@@ -57,7 +41,7 @@ export async function listRecordings(req, res) {
     res.json({
       success: true,
       count: result.count,
-      totalSize: recordingsList.reduce((sum, r) => sum + r.size, 0),
+      totalSize: result.totalSize,
       recordings: recordingsList
     });
   } catch (err) {
@@ -85,7 +69,6 @@ export async function downloadRecording(req, res) {
     res.download(recordingInfo.filePath, `recording_${callSid}.wav`);
     
     logger.info('Recording download initiated', { callSid, path: recordingInfo.filePath });
-    
   } catch (err) {
     logger.error('Error downloading recording', { callSid, error: err.message });
     res.status(500).json({ error: 'Failed to download recording' });
@@ -106,7 +89,7 @@ export async function deleteRecording(req, res) {
     
     res.json(result);
   } catch (err) {
-    logger.error('Error deleting recording', { error: err.message });
+    logger.error('Error deleting recording', { callSid, error: err.message });
     res.status(500).json({ error: 'Failed to delete recording' });
   }
 }
@@ -130,7 +113,7 @@ export async function cleanupRecordings(req, res) {
     const retentionDays = parseInt(req.query.days || process.env.RECORDING_RETENTION_DAYS || '30');
     
     logger.info('Cleaning up old recordings', { retentionDays });
-    
+
     const deletedCount = await cleanupOldRecordings();
     
     res.json({
