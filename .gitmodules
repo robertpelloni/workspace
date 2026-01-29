@@ -112,3 +112,6 @@
 [submodule "supertorrent"]
 	path = supertorrent
 	url = https://github.com/robertpelloni/supertorrent.git
+[submodule "hymnmania"]
+	path = hymnmania
+	url = https://github.com/robertpelloni/hymnmania
