@@ -49,16 +49,44 @@ def run_command(command, cwd=None, env=None):
         return None
 
 def get_submodules():
-    """Returns a list of submodule paths."""
+    """Returns a list of submodule paths by parsing .gitmodules directly."""
     print("Scanning for submodules...")
-    # git submodule foreach returns output like "Entering 'path/to/module'" which is noisy
-    # cleaner way is to parse .gitmodules or use git config
-    res = run_command("git submodule foreach --recursive --quiet \"echo $displaypath\"")
+    # Use git config to list all submodule paths defined in .gitmodules
+    # Output format: submodule.name.path path/to/module
+    res = run_command("git config --file .gitmodules --get-regexp path")
+    
+    paths = []
     if res and res.returncode == 0:
-        paths = res.stdout.strip().splitlines()
-        # Filter out known problematic paths if any
-        return [p for p in paths if "Usershyper" not in p]
-    return []
+        lines = res.stdout.strip().splitlines()
+        for line in lines:
+            # line is like: submodule.ArrowVortex.path ArrowVortex
+            parts = line.split(' ', 1)
+            if len(parts) == 2:
+                path = parts[1].strip()
+                if "Usershyper" not in path:
+                    paths.append(path)
+    
+    # Also need to handle nested submodules. The above only gets top-level.
+    # To get ALL recursive submodules without `foreach`, we can use `git ls-files --stage | grep ^160000`
+    # but that doesn't work well on Windows without grep.
+    # Let's try the recursive foreach again but with single quotes for the variable
+    # to prevent PowerShell expansion, or rely on the fact that we fixed the main issues.
+    # actually, `git submodule status --recursive` is the best way.
+    
+    res_recursive = run_command("git submodule status --recursive")
+    if res_recursive and res_recursive.returncode == 0:
+        recursive_paths = []
+        for line in res_recursive.stdout.splitlines():
+            # Output format: -commit_hash path/to/module (branch)
+            # or:  commit_hash path/to/module (branch)
+            parts = line.strip().split()
+            if len(parts) >= 2:
+                path = parts[1]
+                if "Usershyper" not in path:
+                    recursive_paths.append(path)
+        return recursive_paths
+
+    return paths
 
 def get_remote_url(path):
     res = run_command("git config --get remote.origin.url", cwd=path)
@@ -110,8 +138,13 @@ def sync_submodule(path):
         print(f"[{path}] Not a fork. Skipping.")
         return
 
-    parent_url = info["parent"]["url"]
-    default_branch = info["defaultBranchRef"]["name"]
+    try:
+        parent_url = info["parent"]["url"]
+        default_branch = info["defaultBranchRef"]["name"]
+    except KeyError as e:
+        print(f"[{path}] Error parsing repo info: missing key {e}. Info: {json.dumps(info)}")
+        return
+
     print(f"[{path}] Detected fork of {parent_url} (Default: {default_branch})")
 
     # 1. Checkout default branch
