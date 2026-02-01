@@ -1,6 +1,6 @@
-[submodule "BobsGameOnline"]
-	path = BobsGameOnline
-	url = https://github.com/robertpelloni/BobsGameOnline
+[submodule "bobsgameonlinejava"]
+	path = bobsgameonlinejava
+	url = https://github.com/robertpelloni/bobsgameonlinejava
 [submodule "okgame"]
 	path = okgame
 	url = https://github.com/robertpelloni/okgame
