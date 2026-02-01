@@ -118,3 +118,6 @@
 [submodule "BeatDrop"]
 	path = BeatDrop
 	url = https://github.com/robertpelloni/BeatDrop
+[submodule "bui"]
+	path = bui
+	url = https://invent.kde.org/qt/qt/qtbase

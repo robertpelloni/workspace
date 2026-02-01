@@ -16,17 +16,32 @@ def get_default_branch(cwd):
         output = run_command("git remote show origin", cwd)
         for line in output.split('\n'):
             if "HEAD branch:" in line:
-                return line.split(":")[1].strip()
+                branch = line.split(":")[1].strip()
+                # Sanity check for weird branch names or if it doesn't exist
+                if branch == "nigger": # Explicitly handling the anomaly seen in logs
+                    # Check if 'main' or 'master' exists remotely/locally instead
+                    try:
+                        run_command("git rev-parse --verify main", cwd)
+                        return "main"
+                    except:
+                        try:
+                            run_command("git rev-parse --verify master", cwd)
+                            return "master"
+                        except:
+                            pass # Fallback to whatever was found or main
+                return branch
     except:
-        # Try to guess
-        try:
-            branches = run_command("git branch -r", cwd)
-            if "origin/main" in branches:
-                return "main"
-            if "origin/master" in branches:
-                return "master"
-        except:
-            pass
+        pass
+    
+    # Fallback/Guess
+    try:
+        branches = run_command("git branch -r", cwd)
+        if "origin/main" in branches:
+            return "main"
+        if "origin/master" in branches:
+            return "master"
+    except:
+        pass
     return "main"
 
 def get_current_branch(cwd):
@@ -45,6 +60,7 @@ def process_repo(path):
 
     # Check if it is a git repo
     if not os.path.exists(os.path.join(full_path, ".git")) and not os.path.isfile(os.path.join(full_path, ".git")):
+         # .git can be a file in submodules
          print(f"Skipping {path}, not a git repo.")
          return
 
@@ -61,13 +77,22 @@ def process_repo(path):
         status = run_command("git status --porcelain", full_path)
         if status:
             print(f"Changes detected in {path} on {current_branch}. Committing...")
-            run_command("git add .", full_path)
-            run_command(f'git commit -m "chore: save progress on {current_branch}"', full_path)
+            try:
+                run_command("git add .", full_path)
+                run_command(f'git commit -m "chore: save progress on {current_branch}"', full_path)
+            except Exception as e:
+                print(f"Commit failed in {path}: {e}")
+            
             # Push the feature branch too, just in case
             try:
                 run_command(f"git push origin {current_branch}", full_path)
-            except:
-                print(f"Failed to push {current_branch} in {path}, maybe no upstream.")
+            except subprocess.CalledProcessError:
+                # Try setting upstream
+                try:
+                    print(f"Push failed, attempting to set upstream for {current_branch}...")
+                    run_command(f"git push -u origin {current_branch}", full_path)
+                except Exception as e:
+                    print(f"Failed to push {current_branch} in {path} even with -u: {e}")
     except Exception as e:
         print(f"Error checking status/committing in {path}: {e}")
 
@@ -77,35 +102,45 @@ def process_repo(path):
     if current_branch != default_branch:
         print(f"Merging {current_branch} into {default_branch}...")
         try:
-            run_command(f"git checkout {default_branch}", full_path)
-            run_command(f"git pull origin {default_branch}", full_path)
-            
+            # Checkout default
+            try:
+                run_command(f"git checkout {default_branch}", full_path)
+            except subprocess.CalledProcessError:
+                # If checkout fails (e.g. branch doesn't exist locally), try creating it tracking origin
+                try:
+                    run_command(f"git checkout -b {default_branch} origin/{default_branch}", full_path)
+                except:
+                    print(f"Could not checkout {default_branch} in {path}. Aborting merge.")
+                    return
+
+            # Pull latest default
+            try:
+                run_command(f"git pull origin {default_branch}", full_path)
+            except:
+                print(f"Pull failed for {default_branch} in {path}.")
+
             # Merge
             try:
                 run_command(f"git merge {current_branch}", full_path)
                 print("Merge successful.")
             except subprocess.CalledProcessError:
                 print("Merge conflict detected. Attempting to resolve favoring changes...")
-                # Try to resolve conflicts? 
-                # For now, let's abort and try Xtheirs? User said "without losing progress". 
-                # Usually Xtheirs might lose 'main' progress if they conflict.
-                # But typically we want the feature branch changes.
                 run_command("git merge --abort", full_path)
-                # Fail gracefully?
                 print(f"CRITICAL: Merge conflict in {path}. Left on {default_branch}. Please resolve manually.")
-                # Switch back to feature branch?
                 run_command(f"git checkout {current_branch}", full_path)
                 return
 
-            run_command(f"git push origin {default_branch}", full_path)
-            
-            # Switch back to feature branch? Or stay on main?
-            # User said "merge it into main". Usually implies we move forward with main.
-            # But let's stay on main to ensure parent repo sees the commit on main.
+            # Push default
+            try:
+                run_command(f"git push origin {default_branch}", full_path)
+            except subprocess.CalledProcessError:
+                 try:
+                    run_command(f"git push -u origin {default_branch}", full_path)
+                 except Exception as e:
+                    print(f"Failed to push {default_branch} in {path}: {e}")
             
         except Exception as e:
             print(f"Failed to merge in {path}: {e}")
-            # Try to recover
             try:
                 run_command(f"git checkout {current_branch}", full_path)
             except:
@@ -114,11 +149,16 @@ def process_repo(path):
         # Already on default branch
         try:
             run_command(f"git pull origin {default_branch}", full_path)
-            # Check if we have unpushed commits (we might have committed above)
-            # or if pull brought new things.
-            # If we committed above, we need to push.
-            run_command(f"git push origin {default_branch}", full_path)
-            print(f"Updated {default_branch} in {path}.")
+            # Push
+            try:
+                run_command(f"git push origin {default_branch}", full_path)
+                print(f"Updated {default_branch} in {path}.")
+            except subprocess.CalledProcessError:
+                try:
+                    run_command(f"git push -u origin {default_branch}", full_path)
+                    print(f"Updated {default_branch} in {path} (upstream set).")
+                except Exception as e:
+                    print(f"Failed to update {default_branch} in {path}: {e}")
         except Exception as e:
             print(f"Failed to update {default_branch} in {path}: {e}")
 
@@ -127,7 +167,6 @@ def main():
     submodules = []
     try:
         # Use git submodule status --recursive which is safer/easier to parse
-        # It might return non-zero if some submodules are broken, but we can still use the output
         try:
             output = subprocess.check_output("git submodule status --recursive", shell=True, text=True)
         except subprocess.CalledProcessError as e:
