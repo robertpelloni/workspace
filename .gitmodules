@@ -10,9 +10,6 @@
 [submodule "fwber"]
 	path = fwber
 	url = https://github.com/robertpelloni/fwber
-[submodule "hellven"]
-	path = hellven
-	url = https://gitlab.com/robertpelloni/hellven
 [submodule "beatoraja"]
 	path = beatoraja
 	url = https://github.com/robertpelloni/beatoraja
@@ -22,9 +19,6 @@
 [submodule "copyparty"]
 	path = copyparty
 	url = https://github.com/9001/copyparty
-[submodule "robertpelloni.com"]
-	path = robertpelloni.com
-	url = https://gitlab.com/robertpelloni/robertpelloni.com
 [submodule "JWildfire"]
 	path = JWildfire
 	url = https://github.com/robertpelloni/JWildfire
@@ -34,9 +28,9 @@
 [submodule "ArrowVortex"]
 	path = ArrowVortex
 	url = https://github.com/robertpelloni/ArrowVortex
-[submodule "stepmania"]
-	path = stepmania
-	url = https://github.com/robertpelloni/stepmania
+[submodule "bobmania"]
+	path = bobmania
+	url = https://github.com/robertpelloni/bobmania
 [submodule "raindropioapp"]
 	path = raindropioapp
 	url = https://github.com/robertpelloni/raindropioapp
@@ -115,9 +109,6 @@
 [submodule "hymnmania"]
 	path = hymnmania
 	url = https://github.com/robertpelloni/hymnmania
-[submodule "BeatDrop"]
-	path = BeatDrop
-	url = https://github.com/robertpelloni/BeatDrop
 [submodule "bui"]
 	path = bui
 	url = https://invent.kde.org/qt/qt/qtbase
