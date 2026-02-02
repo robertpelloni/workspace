@@ -26,7 +26,7 @@ This document tracks the top-level projects and submodules in the Robert Pelloni
 | Path | Commit Hash | Version/Branch |
 | :--- | :--- | :--- |
 | **ArrowVortex** | 8845656afecc5a5d3a0e4d10dbb900f21e35c634 | v1.0.1-245 |
-| **BobsGameOnline** | 4f3015f99e379f284b42a1f6a403b6b036e14e07 | main |
+| **bobsgameonlinejava** | 4f3015f99e379f284b42a1f6a403b6b036e14e07 | main |
 | **JWildfire** | bc2c370ecfe3ef4efac83b982a29f44dad50f49f | master |
 | **Neothesia** | 3cd211a5a9da81c91c517267df7a0154363da412 | v0.3.1-125 |
 | **Resume-Matcher** | 87800695c672adcb6d99ca80b2285c0a8f18747a | 0.1.2 |

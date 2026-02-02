@@ -1,6 +1,6 @@
-[submodule "BobsGameOnline"]
-	path = BobsGameOnline
-	url = https://github.com/robertpelloni/BobsGameOnline
+[submodule "bobsgameonlinejava"]
+	path = bobsgameonlinejava
+	url = https://github.com/robertpelloni/bobsgameonlinejava
 [submodule "okgame"]
 	path = okgame
 	url = https://github.com/robertpelloni/okgame
@@ -100,12 +100,12 @@
 [submodule "ardour"]
 	path = ardour
 	url = https://github.com/robertpelloni/ardour
-[submodule "audacity"]
-	path = audacity
-	url = https://github.com/robertpelloni/audacity
-[submodule "PowerTrader_AI"]
-	path = PowerTrader_AI
-	url = https://github.com/robertpelloni/PowerTrader_AI
+[submodule "bobeditpro"]
+	path = bobeditpro
+	url = https://github.com/robertpelloni/bobeditpro
+[submodule "bobtrader"]
+	path = bobtrader
+	url = https://github.com/robertpelloni/bobtrader
 [submodule "musicbrainz-soulseek-downloader"]
 	path = musicbrainz-soulseek-downloader
 	url = https://github.com/robertpelloni/picard
@@ -121,3 +121,6 @@
 [submodule "bui"]
 	path = bui
 	url = https://invent.kde.org/qt/qt/qtbase
+[submodule "baw"]
+	path = baw
+	url = ./baw

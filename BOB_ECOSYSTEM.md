@@ -11,7 +11,7 @@ All bobproducts will dominate their respective categories. Eventually all softwa
 | Project | Exists As | Location | Tech Stack | Status |
 |---------|-----------|----------|------------|--------|
 | **bobcoin** | bobcoin | `bobcoin/` | Solana, Node.js | Active - proof-of-play research |
-| **bobsgame** | BobsGameOnline | `BobsGameOnline/` | Java/Gradle, Lua | Has SQL schema, client code |
+| **bobsgame** | bobsgameonlinejava | `bobsgameonlinejava/` | Java/Gradle, Lua | Has SQL schema, client code |
 | **supertorrent** | supertorrent | `bobcoin/supertorrent/` | Node.js | Blockchain-integrated torrent |
 | **bobfilez** | bobfilez | `bobfilez/` | Qt/C++ | File organizer - **REBRANDED** |
 | **FWBer** | fwber | `fwber/` | Laravel 12, API-first | Dating platform - **REBRANDED** |
@@ -47,7 +47,7 @@ These already exist and just need renaming/branding:
 4. **BobsGameOnline → bobsgame**
    - Already correctly named
    - Java game client with Lua scripting
-   - Location: `BobsGameOnline/`
+   - Location: `bobsgameonlinejava/`
 
 ### Phase 2: Fork & Customize (Medium Effort)
 
@@ -113,6 +113,7 @@ All bobproducts interoperate:
 │  │       │              │                 │             │    │
 │  │       └──────────────┼─────────────────┘             │    │
 │  │                      │                               │    │
+│  │              ┌───────▼───────┐                       │    │
 │  │              ┌───────▼───────┐                       │    │
 │  │              │    bobcoin    │ (payments/rewards)    │    │
 │  │              └───────┬───────┘                       │    │

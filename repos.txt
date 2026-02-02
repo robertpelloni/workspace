@@ -1,7 +1,7 @@
 aios
 fwber
 filez
-BobsGameOnline
+bobsgameonlinejava
 jules-autopilot
 opencode-autopilot
 ArrowVortex
