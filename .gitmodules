@@ -112,9 +112,9 @@
 [submodule "bobui"]
 	path = bobui
 	url = https://github.com/robertpelloni/bobui
-[submodule "baw"]
-	path = baw
-	url = https://github.com/robertpelloni/baw.git
+[submodule "bobtrax"]
+	path = bobtrax
+	url = https://github.com/robertpelloni/bobtrax.git
 [submodule "bobium"]
 	path = bobium
 	url = https://github.com/robertpelloni/bobium

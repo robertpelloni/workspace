@@ -64,6 +64,7 @@ workspace/
 │   └── inspector/           # Code inspection
 │
 ├── [INFRASTRUCTURE]
+│   ├── bobtrax/             # Audio production bundle
 │   ├── servers/             # TypeScript MCP servers
 │   ├── copyparty/           # File sharing server
 │   ├── ccmanager/           # Context manager

@@ -15,6 +15,7 @@ This document tracks the top-level projects and submodules in the Robert Pelloni
 | Project | Path | Description |
 |---------|------|-------------|
 | **AIOS** | `aios/` | AI Operating System & Agent Infrastructure |
+| **bobtrax** | `bobtrax/` | Audio Production Bundle |
 | **ArrowVortex** | `ArrowVortex/` | Rhythm Game Editor |
 | **Fwber** | `fwber/` | Dating Platform (Laravel/Next.js) |
 | **ITGmania** | `itgmania/` | Rhythm Game Engine (ITG Fork) |
