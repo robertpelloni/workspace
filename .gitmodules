@@ -124,3 +124,6 @@
 [submodule "ChamberLaw"]
 	path = ChamberLaw
 	url = https://github.com/robertpelloni/ChamberLaw
+[submodule "baw"]
+	path = baw
+	url = https://github.com/robertpelloni/baw.git
