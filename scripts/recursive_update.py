@@ -13,44 +13,50 @@ def run_command(cmd, cwd, check=True):
             raise e
         return None
 
-def get_submodules():
-    # Returns list of (path, url, branch)
-    # We use git submodule status --recursive to get paths
+def get_submodules(cwd):
+    # Returns list of paths relative to cwd
     submodules = []
     try:
-        output = run_command("git submodule status --recursive", os.getcwd())
-        for line in output.split('\n'):
-            if not line.strip(): continue
-            parts = line.strip().split()
-            path = parts[1]
-            submodules.append(path)
+        # git ls-files --stage | grep ^160000
+        # Output: 160000 <hash> <stage> <path>
+        output = run_command("git ls-files --stage", cwd)
+        if output:
+            for line in output.split('\n'):
+                if line.startswith("160000"):
+                    parts = line.split('\t')
+                    if len(parts) >= 2:
+                        path = parts[1]
+                        submodules.append(path)
     except Exception as e:
-        print(f"Error listing submodules: {e}")
+        print(f"Error listing submodules in {cwd}: {e}")
     return submodules
 
 def determine_default_branch(cwd):
-    # Try to find the default branch (main/master/develop)
-    remotes = run_command("git branch -r", cwd)
-    if not remotes: return "main"
-    
-    candidates = ["origin/main", "origin/master", "origin/develop"]
-    for cand in candidates:
-        if cand in remotes:
-            return cand.split('/')[1]
-    
-    # Fallback to whatever HEAD points to if available
     try:
+        remotes = run_command("git branch -r", cwd)
+        if not remotes: return "main"
+        
+        candidates = ["origin/main", "origin/master", "origin/develop"]
+        for cand in candidates:
+            if cand in remotes:
+                return cand.split('/')[1]
+        
+        # Fallback to whatever HEAD points to if available
         head = run_command("git symbolic-ref refs/remotes/origin/HEAD", cwd)
-        return head.split('/')[-1]
+        if head:
+            return head.split('/')[-1]
     except:
         pass
-
     return "main"
 
 def process_repo(path):
     full_path = os.path.abspath(path)
     print(f"Processing: {path}")
     
+    if "baw" in path.split(os.sep) or "borg" in path.split(os.sep):
+        print(f"  [INFO] Skipping {path} (excluded)")
+        return
+
     if not os.path.exists(full_path):
         print(f"  [WARN] Path does not exist: {path}")
         return
@@ -60,7 +66,15 @@ def process_repo(path):
         print(f"  [WARN] Not a git repo: {path}")
         return
 
+    # Recurse first (depth-first)
+    submodules = get_submodules(full_path)
+    for sm in submodules:
+        process_repo(os.path.join(full_path, sm))
+
     try:
+        # Update current repo
+        print(f"  Updating {path}...")
+        
         # Fetch all
         run_command("git fetch --all", full_path, check=False)
 
@@ -74,23 +88,10 @@ def process_repo(path):
 
         print(f"  Branch: {current_branch} (Default: {default_branch})")
 
-        # Logic:
-        # If detached, checkout default.
-        # If on feature branch, merge to default.
-        # Pull default.
-        # Push default.
-
-        target_branch = default_branch
-        
         if current_branch and current_branch != default_branch:
-             # We are on a named branch that is not default. Assume feature branch.
              print(f"  [INFO] Merging feature branch '{current_branch}' into '{default_branch}'")
-             
-             # Checkout default
              run_command(f"git checkout {default_branch}", full_path)
              run_command(f"git pull origin {default_branch}", full_path)
-             
-             # Merge
              try:
                  run_command(f"git merge {current_branch}", full_path)
              except subprocess.CalledProcessError:
@@ -103,29 +104,32 @@ def process_repo(path):
             try:
                 run_command(f"git checkout {default_branch}", full_path)
             except:
-                # If local branch doesn't exist, create tracking
                 try:
                     run_command(f"git checkout -b {default_branch} origin/{default_branch}", full_path)
                 except:
                      print(f"  [ERROR] Could not checkout {default_branch}")
                      return
 
-        # Now we are on default_branch. Pull.
+        # Now on default_branch. Pull.
         print(f"  [INFO] Pulling {default_branch}")
         try:
             run_command(f"git pull origin {default_branch}", full_path)
         except:
             print(f"  [WARN] Pull failed (no upstream?)")
 
-        # Check for uncommitted changes (including submodule updates from children)
+        # Check for uncommitted changes
         status = run_command("git status --porcelain", full_path)
         if status:
             print(f"  [INFO] Changes detected. Committing...")
-            run_command("git add .", full_path)
             try:
+                # We need to add everything.
+                # If we are in root, 'git add .' might fail on 'bobtorrent/nul'.
+                # But we can try 'git add -u' (updates known) + 'git add .' (new).
+                # Or just 'git add .' and ignore errors?
+                run_command("git add .", full_path)
                 run_command('git commit -m "chore: update submodules and merge features"', full_path)
-            except:
-                pass # Nothing to commit?
+            except Exception as e:
+                print(f"  [WARN] Commit failed: {e}")
 
         # Push
         print(f"  [INFO] Pushing {default_branch}")
@@ -142,17 +146,7 @@ def process_repo(path):
         print(f"  [ERROR] Processing failed for {path}: {e}")
 
 def main():
-    root_dir = os.getcwd()
-    submodules = get_submodules()
-    
-    # Sort by length descending (leaves first)
-    submodules.sort(key=len, reverse=True)
-    
-    # Process submodules
-    for sm in submodules:
-        process_repo(sm)
-        
-    # Process root
+    # Start from root
     process_repo(".")
 
 if __name__ == "__main__":
