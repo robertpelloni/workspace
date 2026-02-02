@@ -109,12 +109,12 @@
 [submodule "hymnmania"]
 	path = hymnmania
 	url = https://github.com/robertpelloni/hymnmania
-[submodule "bui"]
-	path = bui
-	url = https://github.com/robertpelloni/bui
+[submodule "bobui"]
+	path = bobui
+	url = https://github.com/robertpelloni/bobui
 [submodule "baw"]
 	path = baw
-	url = https://github.com/robertpelloni/baw
+	url = https://github.com/robertpelloni/baw.git
 [submodule "bobium"]
 	path = bobium
 	url = https://github.com/robertpelloni/bobium
