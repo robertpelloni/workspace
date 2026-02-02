@@ -24,7 +24,7 @@
 	url = https://github.com/robertpelloni/JWildfire
 [submodule "borg"]
 	path = borg
-	url = https://github.com/robertpelloni/borg.git
+	url = https://github.com/robertpelloni/borg
 [submodule "ArrowVortex"]
 	path = ArrowVortex
 	url = https://github.com/robertpelloni/ArrowVortex
@@ -103,18 +103,18 @@
 [submodule "musicbrainz-soulseek-downloader"]
 	path = musicbrainz-soulseek-downloader
 	url = https://github.com/robertpelloni/picard
-[submodule "supertorrent"]
-	path = supertorrent
-	url = https://github.com/robertpelloni/supertorrent.git
+[submodule "bobtorrent"]
+	path = bobtorrent
+	url = https://github.com/robertpelloni/bobtorrent.git
 [submodule "hymnmania"]
 	path = hymnmania
 	url = https://github.com/robertpelloni/hymnmania
 [submodule "bui"]
 	path = bui
-	url = https://invent.kde.org/qt/qt/qtbase
+	url = https://github.com/robertpelloni/bui
 [submodule "baw"]
 	path = baw
-	url = ./baw
+	url = https://github.com/robertpelloni/baw
 [submodule "bobium"]
 	path = bobium
 	url = https://github.com/robertpelloni/bobium
