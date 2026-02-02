@@ -124,3 +124,9 @@
 [submodule "baw"]
 	path = baw
 	url = ./baw
+[submodule "bobium"]
+	path = bobium
+	url = https://github.com/robertpelloni/bobium
+[submodule "bobzilla"]
+	path = bobzilla
+	url = https://github.com/robertpelloni/bobzilla
