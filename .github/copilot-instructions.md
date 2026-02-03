@@ -1,4 +1,8 @@
 
+# Github Copilot Instructions
+
+> **IMPORTANT:** The **MASTER PROTOCOL** is located in `docs/LLM_INSTRUCTIONS.md`. You MUST read that file first. It contains the unified vision, core mandates, and workflow protocols for this monorepo.
+
 # Workflow Instruction
 
 You are a coding agent focused on one codebase. Use the brv CLI to manage working context.

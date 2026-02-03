@@ -1,6 +1,7 @@
 # Project Roadmap
 
-## Current Status (v1.1.0)
+## Current Status (v1.1.1)
+- [x] **Documentation Overhaul**: Consolidated instructions into `docs/LLM_INSTRUCTIONS.md` and created model-specific guides (`CLAUDE.md`, etc.).
 - [x] **Git Repair**: Fixed recursive submodule definitions (`aios`, `bobcoin`, `filez`) and resolved merge conflicts.
 - [x] **Agent Setup**: Installed and verified `trae-agent` (local), `ii-agent` (local), and `junie` (global).
 - [x] **Inventory**: Generated comprehensive `SUBMODULE_DASHBOARD.md` listing 250+ root and nested submodules.
@@ -10,7 +11,6 @@
 - [x] **Visualizers**: Added JWildfire, apophysis-j, electricsheep, bonsai fractal/visualization tools.
 - [x] **Video Tools**: Added topaz-ffmpeg (TopazLabs AI video enhancement fork).
 - [x] **Bobcoin Cleanup**: Removed inappropriate crypto references from non-crypto projects (ArrowVortex, raindropioapp).
-- [x] **Documentation**: Created session handoffs, updated CHANGELOG, synchronized VERSION.
 - [x] **Submodule Sync**: Recursively updated all submodules to latest upstream/local changes.
 
 ## FWBER Status (Updated Jan 10, 2026)

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2026-02-02
+
+### Documentation
+- **Unified Protocols**: Consolidated `LLM_INSTRUCTIONS.md` (root) with `docs/LLM_INSTRUCTIONS.md`.
+- **Model-Specific Guides**: Created/Updated `CLAUDE.md`, `GPT.md`, `GEMINI.md`, and `.github/copilot-instructions.md` to reference the master protocol.
+- **Dashboard**: Regenerated `SUBMODULE_DASHBOARD.md`.
+
+### Maintenance
+- **Submodule Fixes**: Identified issues with `itgmania` paths and `lmms` recursion.
+- **Workflow**: Enhanced `scripts/update_repos.py` with skip lists for problematic repos (`voidsprite`).
+
 ## [1.1.0] - 2026-02-02
 
 ### Major Maintenance
