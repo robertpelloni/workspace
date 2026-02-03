@@ -435,3 +435,4 @@ C:\Users\hyper\workspace\timidity
 C:\Users\hyper\workspace\topaz-ffmpeg
 C:\Users\hyper\workspace\zrythm\doc/dev/doxygen-awesome-css
 C:\Users\hyper\workspace\zrythm
+C:\Users\hyper\workspace
