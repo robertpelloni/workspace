@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2026-02-03
+
+### Fixed
+- **Okgame**: Cleaned up deleted libraries (`BeatDrop`, `nanovg`) and synchronized submodules.
+- **Bobsgameonlinejava**: Resolved broken `GeoIP2-java` submodule reference.
+- **Bobfilez**: Removed broken `Local-File-Organizer` reference.
+
 ## [1.1.1] - 2026-02-02
 
 ### Documentation
