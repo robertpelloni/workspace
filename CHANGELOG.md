@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-02-02
+
+### Major Maintenance
+- **Massive Submodule Sync**: Recursively updated ~250 submodules to their latest default branches, resolving detached HEADs and merging local changes.
+- **Documentation Overhaul**: Created `docs/LLM_INSTRUCTIONS.md` as the single source of truth for all AI agents. Standardized `AGENTS.md` and model-specific instructions.
+- **Dashboard Automation**: Implemented `scripts/generate_dashboard.py` and regenerated `SUBMODULE_DASHBOARD.md` with live git status.
+- **Repository Cleaning**: Fixed invalid directory names and missing submodule mappings in `itgmania`, `lmms`, `bonsai`, and `bobtorrent`.
+
+### Added
+- `scripts/update_repos.py`: Robust recursive submodule update script with timeout handling and error recovery.
+- `docs/LLM_INSTRUCTIONS.md`: Unified protocol for Autonomy, Versioning, and Workflow.
+
 ## [1.0.10] - 2026-01-13
 
 ### Verified

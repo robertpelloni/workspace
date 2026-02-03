@@ -1,16 +1,17 @@
 # Project Roadmap
 
-## Current Status (v1.0.6)
+## Current Status (v1.1.0)
 - [x] **Git Repair**: Fixed recursive submodule definitions (`aios`, `bobcoin`, `filez`) and resolved merge conflicts.
 - [x] **Agent Setup**: Installed and verified `trae-agent` (local), `ii-agent` (local), and `junie` (global).
-- [x] **Inventory**: Generated comprehensive `SUBMODULE_DASHBOARD.md` listing 82 root submodules (273+ nested in aios).
-- [x] **Structure Analysis**: Created `AGENTS.md` identifying project-specific conventions and deviations.
+- [x] **Inventory**: Generated comprehensive `SUBMODULE_DASHBOARD.md` listing 250+ root and nested submodules.
+- [x] **Structure Analysis**: Created `AGENTS.md` and `docs/LLM_INSTRUCTIONS.md` identifying project-specific conventions.
 - [x] **Game Submodules**: Added linthesia, hellven, sm64coopdx, f-zerox, neverball, mk64, MarbleBlast, OpenMBU game engines.
 - [x] **Music Tools**: Added ardour, audacity, picard, qBittorrent, zrythm, lmms, timidity.
 - [x] **Visualizers**: Added JWildfire, apophysis-j, electricsheep, bonsai fractal/visualization tools.
 - [x] **Video Tools**: Added topaz-ffmpeg (TopazLabs AI video enhancement fork).
 - [x] **Bobcoin Cleanup**: Removed inappropriate crypto references from non-crypto projects (ArrowVortex, raindropioapp).
 - [x] **Documentation**: Created session handoffs, updated CHANGELOG, synchronized VERSION.
+- [x] **Submodule Sync**: Recursively updated all submodules to latest upstream/local changes.
 
 ## FWBER Status (Updated Jan 10, 2026)
 
