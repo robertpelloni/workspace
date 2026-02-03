@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file.
 - **Submodule Fixes**: Identified issues with `itgmania` paths and `lmms` recursion.
 - **Workflow**: Enhanced `scripts/update_repos.py` with skip lists for problematic repos (`voidsprite`).
 
+### Fixed
+- **Bobfilez**: Removed broken `Local-File-Organizer` submodule reference that was preventing git operations.
+- **Bobtorrent**: Renamed from `bittorrent-tracker` and fixed repository URL.
+
 ## [1.1.0] - 2026-02-02
 
 ### Major Maintenance
