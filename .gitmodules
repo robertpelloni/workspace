@@ -127,3 +127,6 @@
 [submodule "Alti"]
 	path = Alti
 	url = https://github.com/robertpelloni/Alti
+[submodule "RentalHome"]
+	path = RentalHome
+	url = https://github.com/robertpelloni/RentalHome.git
