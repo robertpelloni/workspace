@@ -136,3 +136,6 @@
 [submodule "cointrade"]
 	path = cointrade
 	url = https://github.com/mnmballa2323/cointrade.git
+[submodule "coin.project"]
+	path = coin.project
+	url = https://github.com/mnmballa2323/coin.project.git
