@@ -130,3 +130,9 @@
 [submodule "RentalHome"]
 	path = RentalHome
 	url = https://github.com/robertpelloni/RentalHome.git
+[submodule "Tickerstone"]
+	path = Tickerstone
+	url = https://github.com/robertpelloni/Tickerstone.git
+[submodule "cointrade"]
+	path = cointrade
+	url = https://github.com/mnmballa2323/cointrade.git
