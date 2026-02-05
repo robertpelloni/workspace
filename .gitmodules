@@ -16,9 +16,6 @@
 [submodule "itgmania"]
 	path = itgmania
 	url = https://github.com/robertpelloni/itgmania
-[submodule "copyparty"]
-	path = copyparty
-	url = https://github.com/9001/copyparty
 [submodule "JWildfire"]
 	path = JWildfire
 	url = https://github.com/robertpelloni/JWildfire
@@ -39,31 +36,31 @@
 	url = https://github.com/robertpelloni/bobcoin
 [submodule "pianogame"]
 	path = pianogame
-	url = https://github.com/robertpelloni/pianogame.git
+	url = https://github.com/robertpelloni/pianogame
 [submodule "linthesia"]
 	path = linthesia
-	url = https://github.com/robertpelloni/linthesia.git
+	url = https://github.com/robertpelloni/linthesia
 [submodule "sm64coopdx"]
 	path = sm64coopdx
-	url = https://github.com/robertpelloni/sm64coopdx.git
+	url = https://github.com/robertpelloni/sm64coopdx
 [submodule "f-zerox"]
 	path = f-zerox
-	url = https://github.com/robertpelloni/f-zerox.git
+	url = https://github.com/robertpelloni/f-zerox
 [submodule "neverball"]
 	path = neverball
-	url = https://github.com/robertpelloni/neverball.git
+	url = https://github.com/robertpelloni/neverball
 [submodule "topaz-ffmpeg"]
 	path = topaz-ffmpeg
 	url = https://github.com/TopazLabs/ffmpeg
 [submodule "MarbleBlast"]
 	path = MarbleBlast
-	url = https://github.com/robertpelloni/MarbleBlast.git
+	url = https://github.com/robertpelloni/MarbleBlast
 [submodule "mk64"]
 	path = mk64
-	url = https://github.com/robertpelloni/mk64.git
+	url = https://github.com/robertpelloni/mk64
 [submodule "OpenMBU"]
 	path = OpenMBU
-	url = https://github.com/robertpelloni/OpenMBU.git
+	url = https://github.com/robertpelloni/OpenMBU
 [submodule "leraine-studio"]
 	path = leraine-studio
 	url = https://github.com/robertpelloni/leraine-studio
@@ -76,18 +73,6 @@
 [submodule "lmms"]
 	path = lmms
 	url = https://github.com/robertpelloni/lmms
-[submodule "bonsai"]
-	path = bonsai
-	url = https://github.com/scallyw4g/bonsai
-[submodule "timidity"]
-	path = timidity
-	url = https://github.com/robertpelloni/timidity
-[submodule "GWEN"]
-	path = GWEN
-	url = https://github.com/robertpelloni/GWEN
-[submodule "picard"]
-	path = picard
-	url = https://github.com/robertpelloni/picard
 [submodule "qBittorrent"]
 	path = qBittorrent
 	url = https://github.com/robertpelloni/qBittorrent
@@ -102,10 +87,10 @@
 	url = https://github.com/robertpelloni/bobtrader
 [submodule "musicbrainz-soulseek-downloader"]
 	path = musicbrainz-soulseek-downloader
-	url = https://github.com/robertpelloni/picard
+	url = https://github.com/robertpelloni/musicbrainz-soulseek-downloader
 [submodule "bobtorrent"]
 	path = bobtorrent
-	url = https://github.com/robertpelloni/bobtorrent.git
+	url = https://github.com/robertpelloni/bobtorrent
 [submodule "hymnmania"]
 	path = hymnmania
 	url = https://github.com/robertpelloni/hymnmania
@@ -114,28 +99,37 @@
 	url = https://github.com/robertpelloni/bobui
 [submodule "bobtrax"]
 	path = bobtrax
-	url = https://github.com/robertpelloni/bobtrax.git
+	url = https://github.com/robertpelloni/bobtrax
 [submodule "bobium"]
 	path = bobium
 	url = https://github.com/robertpelloni/bobium
 [submodule "bobzilla"]
 	path = bobzilla
 	url = https://github.com/robertpelloni/bobzilla
-[submodule "ChamberLaw"]
-	path = ChamberLaw
-	url = https://github.com/robertpelloni/ChamberLaw
-[submodule "Alti"]
-	path = Alti
-	url = https://github.com/robertpelloni/Alti
-[submodule "RentalHome"]
-	path = RentalHome
-	url = https://github.com/robertpelloni/RentalHome.git
+[submodule "jules-autopilot"]
+	path = jules-autopilot
+	url = https://github.com/robertpelloni/jules-autopilot
+[submodule "Chamber.Law"]
+	path = Chamber.Law
+	url = https://github.com/mnmballa2323/Chamber.Law
+[submodule "Alti.Assistant"]
+	path = Alti.Assistant
+	url = https://github.com/mnmballa2323/Alti.Assistant
+[submodule "Alti.Code.Studio"]
+	path = Alti.Code.Studio
+	url = https://github.com/mnmballa2323/Alti.Code.Studio
+[submodule "rental.home"]
+	path = rental.home
+	url = https://github.com/mnmballa2323/rental.home
 [submodule "Tickerstone"]
 	path = Tickerstone
-	url = https://github.com/robertpelloni/Tickerstone.git
+	url = https://github.com/mnmballa2323/Tickerstone
 [submodule "cointrade"]
 	path = cointrade
-	url = https://github.com/mnmballa2323/cointrade.git
+	url = https://github.com/mnmballa2323/cointrade
 [submodule "coin.project"]
 	path = coin.project
-	url = https://github.com/mnmballa2323/coin.project.git
+	url = https://github.com/mnmballa2323/coin.project
+[submodule "Stone.Ledger"]
+	path = Stone.Ledger
+	url = https://github.com/mnmballa2323/Stone.Ledger
