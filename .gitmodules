@@ -49,12 +49,6 @@
 [submodule "Chamber.Law"]
 	path = Chamber.Law
 	url = https://github.com/mnmballa2323/Chamber.Law
-[submodule "Alti.Assistant"]
-	path = Alti.Assistant
-	url = https://github.com/mnmballa2323/Alti.Assistant
-[submodule "Alti.Code.Studio"]
-	path = Alti.Code.Studio
-	url = https://github.com/mnmballa2323/Alti.Code.Studio
 [submodule "rental.home"]
 	path = rental.home
 	url = https://github.com/mnmballa2323/rental.home
