@@ -31,9 +31,6 @@
 [submodule "bobtrader"]
 	path = bobtrader
 	url = https://github.com/robertpelloni/bobtrader
-[submodule "musicbrainz-soulseek-downloader"]
-	path = musicbrainz-soulseek-downloader
-	url = https://github.com/robertpelloni/musicbrainz-soulseek-downloader
 [submodule "bobtorrent"]
 	path = bobtorrent
 	url = https://github.com/robertpelloni/bobtorrent
@@ -61,18 +58,6 @@
 [submodule "rental.home"]
 	path = rental.home
 	url = https://github.com/mnmballa2323/rental.home
-[submodule "Tickerstone"]
-	path = Tickerstone
-	url = https://github.com/mnmballa2323/Tickerstone
-[submodule "cointrade"]
-	path = cointrade
-	url = https://github.com/mnmballa2323/cointrade
-[submodule "coin.project"]
-	path = coin.project
-	url = https://github.com/mnmballa2323/coin.project
-[submodule "Stone.Ledger"]
-	path = Stone.Ledger
-	url = https://github.com/mnmballa2323/Stone.Ledger
 [submodule "bobmani/bobmania"]
 	path = bobmani/bobmania
 	url = https://github.com/robertpelloni/bobmania
