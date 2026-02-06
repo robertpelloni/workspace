@@ -1,30 +1,15 @@
-[submodule "bobsgameonlinejava"]
-	path = bobsgameonlinejava
-	url = https://github.com/robertpelloni/bobsgameonlinejava
-[submodule "okgame"]
-	path = okgame
-	url = https://github.com/robertpelloni/okgame
 [submodule "bobfilez"]
 	path = bobfilez
 	url = https://github.com/robertpelloni/bobfilez
 [submodule "fwber"]
 	path = fwber
 	url = https://github.com/robertpelloni/fwber
-[submodule "beatoraja"]
-	path = beatoraja
-	url = https://github.com/robertpelloni/beatoraja
-[submodule "itgmania"]
-	path = itgmania
-	url = https://github.com/robertpelloni/itgmania
 [submodule "bobsaver"]
 	path = bobsaver
 	url = https://github.com/robertpelloni/bobsaver
 [submodule "borg"]
 	path = borg
 	url = https://github.com/robertpelloni/borg
-[submodule "bobmani"]
-	path = bobmani
-	url = https://github.com/robertpelloni/bobmania
 [submodule "raindropioapp"]
 	path = raindropioapp
 	url = https://github.com/robertpelloni/raindropioapp
@@ -52,15 +37,9 @@
 [submodule "bobtorrent"]
 	path = bobtorrent
 	url = https://github.com/robertpelloni/bobtorrent
-[submodule "hymnmania"]
-	path = hymnmania
-	url = https://github.com/robertpelloni/hymnmania
 [submodule "bobui"]
 	path = bobui
 	url = https://github.com/robertpelloni/bobui
-[submodule "bobtrax"]
-	path = bobtrax
-	url = https://github.com/robertpelloni/bobtrax
 [submodule "bobium"]
 	path = bobium
 	url = https://github.com/robertpelloni/bobium
