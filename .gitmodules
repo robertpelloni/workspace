@@ -24,7 +24,7 @@
 	url = https://github.com/robertpelloni/borg
 [submodule "bobmani"]
 	path = bobmani
-	url = https://github.com/robertpelloni/bobmani
+	url = https://github.com/robertpelloni/bobmania
 [submodule "raindropioapp"]
 	path = raindropioapp
 	url = https://github.com/robertpelloni/raindropioapp
@@ -94,3 +94,24 @@
 [submodule "Stone.Ledger"]
 	path = Stone.Ledger
 	url = https://github.com/mnmballa2323/Stone.Ledger
+[submodule "bobmani/bobmania"]
+	path = bobmani/bobmania
+	url = https://github.com/robertpelloni/bobmania
+[submodule "bobmani/itgmania"]
+	path = bobmani/itgmania
+	url = https://github.com/robertpelloni/itgmania
+[submodule "bobmani/beatoraja"]
+	path = bobmani/beatoraja
+	url = https://github.com/robertpelloni/beatoraja
+[submodule "bobmani/hymnmania"]
+	path = bobmani/hymnmania
+	url = https://github.com/robertpelloni/hymnmania
+[submodule "bobmani/ksm-v2"]
+	path = bobmani/ksm-v2
+	url = https://github.com/robertpelloni/ksm-v2
+[submodule "bobmani/linthesia"]
+	path = bobmani/linthesia
+	url = https://github.com/robertpelloni/linthesia
+[submodule "bobmani/pianogame"]
+	path = bobmani/pianogame
+	url = https://github.com/robertpelloni/pianogame
