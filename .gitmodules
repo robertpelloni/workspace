@@ -73,3 +73,6 @@
 [submodule "bobmani/pianogame"]
 	path = bobmani/pianogame
 	url = https://github.com/robertpelloni/pianogame
+[submodule "Azure.Cybersecurity"]
+	path = Azure.Cybersecurity
+	url = https://github.com/mnmballa2323/Azure.Cybersecurity
