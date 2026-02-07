@@ -76,3 +76,12 @@
 [submodule "Azure.Cybersecurity"]
 	path = Azure.Cybersecurity
 	url = https://github.com/mnmballa2323/Azure.Cybersecurity
+[submodule "claude-mem"]
+	path = claude-mem
+	url = https://github.com/robertpelloni/claude-mem
+[submodule "metamcp"]
+	path = metamcp
+	url = https://github.com/robertpelloni/metamcp
+[submodule "mcp-superassistant"]
+	path = mcp-superassistant
+	url = https://github.com/robertpelloni/mcp-superassistant
