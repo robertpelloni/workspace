@@ -85,3 +85,18 @@
 [submodule "mcp-superassistant"]
 	path = mcp-superassistant
 	url = https://github.com/robertpelloni/mcp-superassistant
+[submodule "mcpenetes"]
+	path = mcpenetes
+	url = https://github.com/robertpelloni/mcpenetes
+[submodule "bobmani/ffr-difficulty-model"]
+	path = bobmani/ffr-difficulty-model
+	url = https://github.com/robertpelloni/ffr-difficulty-model
+[submodule "bobmani/leraine-studio"]
+	path = bobmani/leraine-studio
+	url = https://github.com/robertpelloni/leraine-studio
+[submodule "bobmani/ddc"]
+	path = bobmani/ddc
+	url = https://github.com/robertpelloni/ddc
+[submodule "bobmani/arrowvortex"]
+	path = bobmani/arrowvortex
+	url = https://github.com/robertpelloni/arrowvortex
