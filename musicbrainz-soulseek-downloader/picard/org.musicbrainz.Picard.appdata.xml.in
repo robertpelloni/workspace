@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>%(app-id)s</id>
+  <project_license>GPL-2.0-or-later</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <name>MusicBrainz Picard</name>
+  <summary>
+    Picard is a cross-platform music tagger powered by the MusicBrainz database
+  </summary>
+
+  <description>
+    <p>
+      Do you need to clean up your music library? Picard is an open-source
+      cross-platform music tagger by MusicBrainz. It has the ability to
+      identify audio files even without any existing metadata.
+    </p>
+    <p>
+      Picard helps you organize your music collection by renaming your music
+      files and sorting them into a folder structure exactly the way you want
+      it. A variety of plugins are available and you can even write your own.
+      Picard supports a wide range of audio formats and can also lookup an
+      entire CD for you.
+    </p>
+    <p>
+      Tagging audio files has never been easier.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>
+        Multiple formats: Picard supports all popular music formats,
+        including MP3, FLAC, OGG, M4A, WMA, WAV, and more.
+      </li>
+      <li>
+        AcoustID: Picard uses AcoustID audio fingerprints, allowing files
+        to be identified by the actual music, even if they have no metadata.
+      </li>
+      <li>
+        Comprehensive database: Picard uses the open and
+        community-maintained MusicBrainz database to provide accurate
+        information about millions of music releases.
+      </li>
+      <li>
+        CD lookups: Picard can lookup entire music CDs with a click.
+      </li>
+      <li>
+        Plugin support: If you need a particular feature, you can choose
+        from a selection of available plugins or write your own.
+      </li>
+      <li>
+        Scripting: A flexible but easy to learn scripting language allows
+        you to exactly specify how your music files will be named and how the
+        tags will look like.
+      </li>
+      <li>
+        Cover Art: Picard can find and download the correct cover art for
+        your albums.
+      </li>
+      <li>
+        Open Source: Picard is licensed under the GNU General Public License 2.0
+        or later, and is hosted on GitHub where it is actively
+        developed by some awesome developers.
+      </li>
+    </ul>
+  </description>
+
+  <categories>
+    <category>AudioVideo</category>
+    <category>Audio</category>
+    <category>AudioVideoEditing</category>
+  </categories>
+
+  <launchable type="desktop-id">%(desktop-id)s</launchable>
+
+  <provides>
+    <binary>picard</binary>
+  </provides>
+
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <display_length compare="ge">768</display_length>
+    <internet>always</internet>
+  </recommends>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://picard.musicbrainz.org/static/img/screenshots/picard-main-windows.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://picard.musicbrainz.org/static/img/screenshots/picard-options-about.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://picard.musicbrainz.org/static/img/screenshots/picard-options-plugins.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://picard.musicbrainz.org/static/img/screenshots/picard-options-lookup.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://picard.musicbrainz.org/static/img/screenshots/picard-cover-art.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://picard.musicbrainz.org/</url>
+  <url type="bugtracker">https://tickets.metabrainz.org/projects/PICARD/issues/</url>
+  <url type="faq">https://picard-docs.musicbrainz.org/en/faq/faq.html</url>
+  <url type="help">https://picard-docs.musicbrainz.org/</url>
+  <url type="donation">https://metabrainz.org/donate</url>
+  <url type="translate">https://translations.metabrainz.org/projects/picard/</url>
+
+  <translation type="gettext">picard</translation>
+  <developer_name>MetaBrainz Foundation</developer_name>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="money-purchasing">mild</content_attribute>
+  </content_rating>
+
+  <releases>
+    %(releases)s
+  </releases>
+</component>

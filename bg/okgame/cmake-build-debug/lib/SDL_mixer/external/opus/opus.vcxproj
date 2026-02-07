@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AC115FC7-19D8-317A-8AAF-5F80A4112670}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opus</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opus.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opus-0</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opus.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opus-0</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opus.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opus-0</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opus.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opus-0</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";opus_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GS</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/Debug/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/Debug/opus-0.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.9</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";opus_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GS</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/Release/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/Release/opus-0.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.9</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";opus_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GS</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/MinSizeRel/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/MinSizeRel/opus-0.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.9</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";opus_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GS</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/RelWithDebInfo/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/RelWithDebInfo/opus-0.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.9</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/SDL_mixer/external/opus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\CFeatureCheck.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusBuildtype.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusFunctions.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusPackageVersion.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusSources.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\config.h.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\vla.c;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\opus.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/SDL_mixer/external/opus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\CFeatureCheck.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusBuildtype.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusFunctions.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusPackageVersion.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusSources.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\config.h.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\vla.c;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\opus.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/SDL_mixer/external/opus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\CFeatureCheck.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusBuildtype.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusFunctions.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusPackageVersion.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusSources.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\config.h.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\vla.c;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\opus.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/SDL_mixer/external/opus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opus/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\CFeatureCheck.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusBuildtype.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusFunctions.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusPackageVersion.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\OpusSources.cmake;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\config.h.cmake.in;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\cmake\vla.c;C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\opus.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\opus\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include\opus.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include\opus_multistream.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include\opus_projection.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_private.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\analysis.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\mapping_matrix.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\mlp.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\tansig_table.h" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_decoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_encoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_multistream.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_multistream_encoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_multistream_decoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\repacketizer.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_projection_encoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\opus_projection_decoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\mapping_matrix.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\analysis.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\mlp.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\src\mlp_data.c" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include\opus_defines.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include\opus_types.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\debug.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\control.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\errors.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\API.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\typedef.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\define.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\main.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\x86\main_sse.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\PLC.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\structs.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tuning_parameters.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\Inlines.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\MacroCount.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\MacroDebug.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\macros.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NSQ.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\pitch_est_defines.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_private.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_rom.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_structs.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\SigProc_FIX.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\x86\SigProc_FIX_sse.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\biquad_alt_arm.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\LPC_inv_pred_gain_arm.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\macros_armv4.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\macros_armv5e.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\macros_arm64.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\SigProc_FIX_armv4.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\SigProc_FIX_armv5e.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\NSQ_del_dec_arm.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\arm\NSQ_neon.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\fixed\main_FIX.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\fixed\structs_FIX.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\fixed\arm\warped_autocorrelation_FIX_arm.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\fixed\mips\noise_shape_analysis_FIX_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\fixed\mips\warped_autocorrelation_FIX_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\main_FLP.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\structs_FLP.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\SigProc_FLP.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\mips\macros_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\mips\NSQ_del_dec_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\mips\sigproc_fix_mipsr1.h" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\CNG.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\code_signs.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\init_decoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\decode_core.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\decode_frame.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\decode_parameters.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\decode_indices.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\decode_pulses.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\decoder_set_fs.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\dec_API.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\enc_API.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\encode_indices.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\encode_pulses.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\gain_quant.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\interpolate.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\LP_variable_cutoff.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF_decode.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NSQ.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NSQ_del_dec.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\PLC.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\shell_coder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables_gain.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables_LTP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables_NLSF_CB_NB_MB.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables_NLSF_CB_WB.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables_other.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables_pitch_lag.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\tables_pulses_per_block.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\VAD.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\control_audio_bandwidth.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\quant_LTP_gains.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\VQ_WMat_EC.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\HP_variable_cutoff.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF_encode.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF_VQ.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF_unpack.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF_del_dec_quant.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\process_NLSFs.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\stereo_LR_to_MS.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\stereo_MS_to_LR.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\check_control_input.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\control_SNR.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\init_encoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\control_codec.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\A2NLSF.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\ana_filt_bank_1.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\biquad_alt.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\bwexpander_32.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\bwexpander.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\debug.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\decode_pitch.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\inner_prod_aligned.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\lin2log.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\log2lin.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\LPC_analysis_filter.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\LPC_inv_pred_gain.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\table_LSF_cos.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF2A.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF_stabilize.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\NLSF_VQ_weights_laroia.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\pitch_est_tables.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_down2_3.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_down2.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_private_AR2.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_private_down_FIR.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_private_IIR_FIR.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_private_up2_HQ.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\resampler_rom.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\sigm_Q15.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\sort.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\sum_sqr_shift.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\stereo_decode_pred.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\stereo_encode_pred.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\stereo_find_predictor.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\stereo_quant_pred.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\LPC_fit.c" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arch.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\bands.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\celt.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\cpu_support.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\include\opus_custom.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\cwrs.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\ecintrin.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\entcode.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\entdec.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\entenc.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\fixed_debug.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\fixed_generic.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\float_cast.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\_kiss_fft_guts.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\kiss_fft.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\laplace.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mathops.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mdct.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mfrngcod.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\modes.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\os_support.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\pitch.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\celt_lpc.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\celt_lpc_sse.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\quant_bands.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\rate.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\stack_alloc.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\vq.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\static_modes_float.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\static_modes_fixed.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\static_modes_float_arm_ne10.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\static_modes_fixed_arm_ne10.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\armcpu.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\fixed_armv4.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\fixed_armv5e.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\fixed_arm64.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\kiss_fft_armv4.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\kiss_fft_armv5e.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\pitch_arm.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\fft_arm.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\arm\mdct_arm.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mips\celt_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mips\fixed_generic_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mips\kiss_fft_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mips\mdct_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mips\pitch_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mips\vq_mipsr1.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\pitch_sse.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\vq_sse.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\x86cpu.h" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\bands.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\celt.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\celt_encoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\celt_decoder.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\cwrs.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\entcode.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\entdec.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\entenc.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\kiss_fft.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\laplace.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mathops.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\mdct.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\modes.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\pitch.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\celt_lpc.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\quant_bands.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\rate.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\vq.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\apply_sine_window_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\corrMatrix_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\encode_frame_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\find_LPC_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\find_LTP_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\find_pitch_lags_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\find_pred_coefs_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\LPC_analysis_filter_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\LTP_analysis_filter_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\LTP_scale_ctrl_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\noise_shape_analysis_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\process_gains_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\regularize_correlations_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\residual_energy_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\warped_autocorrelation_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\wrappers_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\autocorrelation_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\burg_modified_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\bwexpander_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\energy_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\inner_product_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\k2a_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\LPC_inv_pred_gain_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\pitch_analysis_core_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\scale_copy_vector_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\scale_vector_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\schur_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\float\sort_FLP.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\x86cpu.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\x86_celt_map.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\x86\x86_silk_map.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\pitch_sse.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\pitch_sse2.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\vq_sse2.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\celt_lpc_sse4_1.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\celt\x86\pitch_sse4_1.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\x86\NSQ_sse4_1.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\x86\NSQ_del_dec_sse4_1.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\x86\VAD_sse4_1.c" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\opus\silk\x86\VQ_WMat_EC_sse4_1.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

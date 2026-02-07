@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ABF4BD4B-5254-3293-855C-2F42599B5A1A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Data</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Data.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PocoDatad</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Data.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PocoData</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Data.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PocoData</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Data.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PocoData</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;_DEBUG;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";Data_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";Data_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;_DEBUG;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";Data_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\PocoFoundationd.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/PocoDatad.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/PocoDatad.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>112.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="Release";Data_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";Data_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="Release";Data_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\PocoFoundation.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/PocoData.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/PocoData.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>112.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";Data_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\";Data_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";Data_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\PocoFoundation.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/PocoData.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/PocoData.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>112.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";Data_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";Data_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SQLParser_EXPORTS;POCO_DLL;POCO_CMAKE;UTF8PROC_STATIC;POCO_ENABLE_CPP20;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";Data_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\poco\Data\include;C:\Users\hyper\workspace\okgame\lib\poco\Data\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src;C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser;C:\Users\hyper\workspace\okgame\lib\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\PocoFoundation.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/PocoData.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/PocoData.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>112.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/Data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/Data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\Data\cmake\PocoDataConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/Data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/Data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\Data\cmake\PocoDataConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/Data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/Data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\Data\cmake\PocoDataConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/Data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/Data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\Data\cmake\PocoDataConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\AbstractBinder.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\AbstractBinding.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\AbstractExtraction.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\AbstractExtractor.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\AbstractPreparation.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\AbstractPreparator.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\ArchiveStrategy.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Bulk.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Connector.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\DataException.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Date.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\DynamicLOB.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\JSONRowFormatter.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Limit.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\MetaColumn.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\PooledSessionHolder.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\PooledSessionImpl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Position.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Range.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\RecordSet.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Row.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\RowFilter.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\RowFormatter.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\RowIterator.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\SQLChannel.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Session.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\SessionFactory.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\SessionImpl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\SessionPool.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\SessionPoolContainer.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\SimpleRowFormatter.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Statement.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\StatementCreator.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\StatementImpl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Time.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Transaction.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\src\Transcoder.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\SQLParser.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\SQLParserResult.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\parser\bison_parser.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\parser\flex_lexer.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\sql\CreateStatement.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\sql\Expr.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\sql\PrepareStatement.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\sql\SQLStatement.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\sql\statements.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\SQLParser\src\util\sqlhelper.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AbstractBinder.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AbstractBinding.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AbstractExtraction.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AbstractExtractor.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AbstractPreparation.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AbstractPreparator.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AbstractSessionImpl.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\ArchiveStrategy.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\AutoTransaction.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Binding.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Bulk.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\BulkBinding.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\BulkExtraction.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Column.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Connector.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Constants.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Data.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\DataException.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Date.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\DynamicDateTime.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\DynamicLOB.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Extraction.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\JSONRowFormatter.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\LOB.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\LOBStream.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Limit.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\MetaColumn.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\PooledSessionHolder.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\PooledSessionImpl.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Position.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Preparation.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Range.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\RecordSet.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Row.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\RowFilter.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\RowFormatter.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\RowIterator.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\SQLChannel.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Session.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\SessionFactory.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\SessionImpl.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\SessionPool.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\SessionPoolContainer.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\SimpleRowFormatter.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Statement.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\StatementCreator.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\StatementImpl.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Time.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Transaction.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\Transcoder.h" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\Data\include\Poco\Data\TypeHandler.h" />
+    <ResourceCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\DLLVersion.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Foundation\Foundation.vcxproj">
+      <Project>{2F9FB338-8BD2-34C6-9A45-0CAFFDFD608F}</Project>
+      <Name>Foundation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

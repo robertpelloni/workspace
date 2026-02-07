@@ -1,0 +1,141 @@
+name: Run tests
+
+on:
+  push:
+    paths: &path-list
+    - '.github/workflows/run-tests.yml'
+    - 'picard/**'
+    - 'po/**.po'
+    - 'test/**'
+    - 'pyproject.toml'
+    - 'setup.py'
+    - 'tagger.py.in'
+    - 'win.version-info.txt.in'
+  pull_request:
+    paths: *path-list
+permissions: {}
+
+jobs:
+  test-latest:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-14, ubuntu-latest, windows-2022]
+        python-version: ['3.10', '3.11', '3.12', '>=3.13.5 <3.14', '3.14']
+    env:
+      UV_FROZEN: 1
+
+    steps:
+    - uses: actions/checkout@v6
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v6
+      id: setup-python
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install uv
+      uses: astral-sh/setup-uv@v7
+    - name: Install dependencies (Linux)
+      if: runner.os == 'linux'
+      run: |
+        sudo apt-get update
+        sudo apt-get install gettext libegl1
+    - name: Install gettext (Windows)
+      if: runner.os == 'Windows'
+      run: |
+        & .\scripts\package\win-setup-gettext.ps1 `
+          -GettextVersion $Env:GETTEXT_VERSION -GettextSha256Sum $Env:GETTEXT_SHA256SUM
+        Add-Content $env:GITHUB_PATH (Join-Path -Path (Resolve-Path .) -ChildPath gettext\bin)
+      shell: pwsh
+      env:
+        GETTEXT_VERSION: 0.22.4
+        GETTEXT_SHA256SUM: 220068ac0b9e7aedda03534a3088e584640ac1e639800b3a0baa9410aa6d012a
+    - name: Install dependencies
+      run: uv sync --group build --group dev
+    - name: Test with pytest
+      timeout-minutes: 30
+      run: |
+        uv run python setup.py build_locales
+        uv run pytest --verbose --cov=picard --cov-report html:htmlcov test
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v6
+      with:
+        name: coverage-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}
+        path: htmlcov/
+
+  test-requirements:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ['3.10']
+        dependencies: [
+          "PyQt6==6.5.3 PyQt6-Qt6==6.5.3 mutagen==1.45 PyYAML==5.1 tomlkit==0.13.3 pygit2==1.18.2",  # minimal versions, minimum dependencies
+          "PyQt6>=6.5.3 PyQt6-Qt6!=6.10.* mutagen~=1.45 PyYAML~=6.0 discid==1.0 tomlkit==0.13.3 pygit2==1.18.2",
+          "PyQt6>=6.5.3 PyQt6-Qt6!=6.10.* mutagen~=1.45 PyYAML~=6.0 python-libdiscid tomlkit==0.13.3 pygit2==1.18.2",
+          "PyQt6>=6.5.3 PyQt6-Qt6!=6.10.* mutagen~=1.45 PyYAML~=6.0 charset-normalizer==2.0.6 tomlkit==0.13.3 pygit2==1.18.2",
+          "PyQt6>=6.5.3 PyQt6-Qt6!=6.10.* mutagen~=1.45 PyYAML~=6.0 chardet==3.0.4 tomlkit==0.13.3 pygit2==1.18.2",
+        ]
+
+    steps:
+    - uses: actions/checkout@v6
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v6
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies (Linux)
+      if: runner.os == 'linux'
+      run: |
+        sudo apt-get update
+        sudo apt-get install libdiscid-dev libegl1 libgit2-dev
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install $DEPENDENCIES
+      env:
+        DEPENDENCIES: ${{ matrix.dependencies }}
+    - name: Test with pytest
+      timeout-minutes: 30
+      run: |
+        pip install pytest pytest-randomly
+        pytest --verbose test
+
+  pip-install: # Test whether a clean pip install from source works
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-14, ubuntu-latest, windows-latest]
+        python-version: ['3.10', '3.14']
+
+    steps:
+    - uses: actions/checkout@v6
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v6
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install gettext and libegl1 (Linux)
+      if: runner.os == 'Linux'
+      run: |
+        sudo apt-get update
+        sudo apt-get install gettext libegl1 libgit2-dev
+    - name: Install gettext (Windows)
+      if: runner.os == 'Windows'
+      run: |
+        & .\scripts\package\win-setup-gettext.ps1 `
+          -GettextVersion $Env:GETTEXT_VERSION -GettextSha256Sum $Env:GETTEXT_SHA256SUM
+        Add-Content $env:GITHUB_PATH (Join-Path -Path (Resolve-Path .) -ChildPath gettext\bin)
+      env:
+        GETTEXT_VERSION: 0.22.4
+        GETTEXT_SHA256SUM: 220068ac0b9e7aedda03534a3088e584640ac1e639800b3a0baa9410aa6d012a
+    - name: Run pip install .
+      run: |
+        python -m pip install --upgrade pip
+        pip install --verbose .
+    - name: Test running installed package
+      if: runner.os != 'Windows'
+      run: picard --long-version --no-crash-dialog
+    - name: Verify sdist package
+      if: runner.os != 'Windows'
+      timeout-minutes: 30
+      run: |
+        pip install build pytest
+        scripts/package/run-sdist-test.sh

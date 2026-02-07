@@ -1,0 +1,22 @@
+﻿/*
+ * SIE CONFIDENTIAL
+ * PlayStation(R)4 Programmer Tool Runtime Library Release 04.508.001
+ * Copyright (C) 2016 Sony Interactive Entertainment Inc.
+ * All Rights Reserved.
+ */
+/* data passed from vertex shader to pixel shader */
+struct vertexOutput {
+    float4 HPosition	: POSITION;
+    float2 UV		: TEXCOORD0;
+};
+
+
+///////// PIXEL SHADING //////////////////////
+
+float4 main(vertexOutput IN,
+			  uniform sampler2D ColorSampler : TEXUNIT0
+			  ) : COLOR 
+{
+	float4 result = tex2D(ColorSampler, IN.UV);
+	return result;
+}

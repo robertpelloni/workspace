@@ -1,0 +1,328 @@
+> Task :clean
+
+> Task :compileJava
+/app/src/main/java/com/bobsgame/ServerMain.java:542: warning: [deprecation] writeStringToFile(File,String,boolean) in FileUtils has been deprecated
+								FileUtils.writeStringToFile(new File("/var/www/html/stats.html"),statsString,false);
+								         ^
+/app/src/main/java/com/bobsgame/ServerMain.java:596: warning: [deprecation] URL(String) in URL has been deprecated
+				HttpURLConnection con = (HttpURLConnection) new URL("http://checkip.amazonaws.com").openConnection();
+				                                            ^
+/app/src/main/java/com/bobsgame/server/IndexClientTCP.java:407: warning: [deprecation] exec(String) in Runtime has been deprecated
+			Process p = Runtime.getRuntime().exec("reboot");
+			                                ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:667: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadSkillData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:684: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadDialogueData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:701: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadFlagData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:718: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadGameStringData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:735: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadEventData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:752: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadSpriteData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:785: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadSoundData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:812: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadMusicData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java:834: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
+		try{b64List = IOUtils.readLines(Utils.getResourceAsStream("res/PreloadMapData"));}catch(IOException e){e.printStackTrace();}
+		                     ^
+/app/src/main/java/com/bobsgame/client/engine/game/gui/PlayerEditMenu.java:832: warning: [deprecation] URL(String) in URL has been deprecated
+			url = new URL(GEOCODER_REQUEST_PREFIX_FOR_XML + "?q=" + URLEncoder.encode(address, "UTF-8"));
+			      ^
+/app/src/main/java/com/bobsgame/client/engine/game/gui/PlayerEditMenu.java:1030: warning: [deprecation] URL(String) in URL has been deprecated
+			url = new URL(GEOCODER_REQUEST_PREFIX_FOR_XML + "?address=" + URLEncoder.encode(address, "UTF-8") + "&sensor=false");
+			      ^
+/app/src/main/java/com/bobsgame/client/engine/game/gui/PlayerEditMenu.java:1500: warning: [deprecation] URL(String) in URL has been deprecated
+									url = new URL("http://www.bobsgame.com/facebook.php?u="+GameSave().userID);
+									      ^
+/app/src/main/java/com/bobsgame/puzzle/CustomGameEditor.java:111: error: incompatible types: <anonymous Runnable> cannot be converted to CallbackWithReason<CallbackReason>
+        blockListBox.addCallback(new Runnable() {
+                                 ^
+/app/src/main/java/com/bobsgame/audio/AudioUtils.java:306: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+				loadedSoundHashMap.put(nameForSoundCache, new Integer(buf.get(0)));
+				                                          ^
+/app/src/main/java/com/bobsgame/audio/AudioUtils.java:346: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+				loadedSoundHashMap.put(nameForSoundCache, new Integer(buf.get(0)));
+				                                          ^
+/app/src/main/java/com/bobsgame/IndexServerMain.java:260: warning: [deprecation] writeStringToFile(File,String,boolean) in FileUtils has been deprecated
+								FileUtils.writeStringToFile(new File("/var/www/html/stats.html"),statsString,false);
+								         ^
+/app/src/main/java/com/bobsgame/IndexServerMain.java:324: warning: [deprecation] writeStringToFile(File,String,boolean) in FileUtils has been deprecated
+								FileUtils.writeStringToFile(new File("/var/www/html/index.html"),indexString,false);
+								         ^
+/app/src/main/java/com/bobsgame/IndexServerMain.java:384: warning: [deprecation] URL(String) in URL has been deprecated
+				HttpURLConnection con = (HttpURLConnection) new URL("http://checkip.amazonaws.com").openConnection();
+				                                            ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1404: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int leftMask = InputEvent.BUTTON1_MASK;
+		                         ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1405: warning: [deprecation] BUTTON2_MASK in InputEvent has been deprecated
+		int middleMask = InputEvent.BUTTON2_MASK;
+		                           ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1406: warning: [deprecation] BUTTON3_MASK in InputEvent has been deprecated
+		int rightMask = InputEvent.BUTTON3_MASK;
+		                          ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1407: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int shiftClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK;
+		                               ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1407: warning: [deprecation] SHIFT_MASK in InputEvent has been deprecated
+		int shiftClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK;
+		                                                         ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1409: warning: [deprecation] BUTTON3_MASK in InputEvent has been deprecated
+		int ctrlRightClickMask = InputEvent.BUTTON3_MASK + InputEvent.CTRL_MASK;
+		                                   ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1409: warning: [deprecation] CTRL_MASK in InputEvent has been deprecated
+		int ctrlRightClickMask = InputEvent.BUTTON3_MASK + InputEvent.CTRL_MASK;
+		                                                             ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1433: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+					if(me.getModifiers() == leftMask || me.getModifiers() == rightMask)
+					     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1433: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+					if(me.getModifiers() == leftMask || me.getModifiers() == rightMask)
+					                                      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1435: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask)val = 1;
+						     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1436: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == rightMask)val = 0;
+						     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1452: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+					if(me.getModifiers() == middleMask)
+					     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1466: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == middleMask)
+						     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1466: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == middleMask)
+						                                      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1490: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+										if(me.getModifiers() == middleMask)doorWindow.showDoorWindow();
+										     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1510: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+										if(me.getModifiers() == middleMask)entityWindow.showEntityWindow();
+										     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1530: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+										if(me.getModifiers() == middleMask)areaWindow.showAreaWindow();
+										     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1548: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == rightMask || me.getModifiers() == middleMask)
+						     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1548: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == rightMask || me.getModifiers() == middleMask)
+						                                      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1548: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == rightMask || me.getModifiers() == middleMask)
+						                                                                        ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1571: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+										if(me.getModifiers() == middleMask)
+										     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1587: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+									if(me.getModifiers() == rightMask)
+									     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1679: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == rightMask || me.getModifiers() == middleMask)
+						     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1679: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == rightMask || me.getModifiers() == middleMask)
+						                                      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1679: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == rightMask || me.getModifiers() == middleMask)
+						                                                                        ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1705: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+									if(me.getModifiers() == middleMask)
+									     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1720: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+								if(me.getModifiers() == rightMask)
+								     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1777: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == middleMask)
+						     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1777: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == middleMask)
+						                                      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1801: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+									if(me.getModifiers() == middleMask)
+									     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1818: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+										me.getModifiers() == middleMask
+										  ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1851: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == middleMask)
+						     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1851: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+						if(me.getModifiers() == leftMask || me.getModifiers() == middleMask)
+						                                      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1879: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+									if(me.getModifiers() == middleMask)
+									     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1897: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+										me.getModifiers() == middleMask
+										  ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1934: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+					if(me.getModifiers() == leftMask)
+					     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1964: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+					else if(me.getModifiers() == ctrlRightClickMask)
+					          ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1972: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+					else if(me.getModifiers() == rightMask)
+					          ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:1998: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+					else if(me.getModifiers() == middleMask)
+					          ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2009: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if((me.getModifiers() == middleMask || me.getModifiers() == shiftClickMask) && mouseDragged==false)
+			      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2009: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if((me.getModifiers() == middleMask || me.getModifiers() == shiftClickMask) && mouseDragged==false)
+			                                         ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2092: warning: [deprecation] BUTTON2_MASK in InputEvent has been deprecated
+		int middleMask = InputEvent.BUTTON2_MASK;
+		                           ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2110: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+		if(me.getModifiers() == middleMask)
+		     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2175: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int leftMask = InputEvent.BUTTON1_MASK;
+		                         ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2176: warning: [deprecation] BUTTON3_MASK in InputEvent has been deprecated
+		int rightMask = InputEvent.BUTTON3_MASK;
+		                          ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2177: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int ctrlClickMask = InputEvent.BUTTON1_MASK + InputEvent.CTRL_MASK;
+		                              ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2177: warning: [deprecation] CTRL_MASK in InputEvent has been deprecated
+		int ctrlClickMask = InputEvent.BUTTON1_MASK + InputEvent.CTRL_MASK;
+		                                                        ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2178: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int shiftClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK;
+		                               ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2178: warning: [deprecation] SHIFT_MASK in InputEvent has been deprecated
+		int shiftClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK;
+		                                                         ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2179: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int shiftCtrlClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK + InputEvent.CTRL_MASK;
+		                                   ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2179: warning: [deprecation] SHIFT_MASK in InputEvent has been deprecated
+		int shiftCtrlClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK + InputEvent.CTRL_MASK;
+		                                                             ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2179: warning: [deprecation] CTRL_MASK in InputEvent has been deprecated
+		int shiftCtrlClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK + InputEvent.CTRL_MASK;
+		                                                                                     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2209: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if((me.getModifiers() == rightMask || me.getModifiers() == ctrlClickMask))
+			      ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2209: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if((me.getModifiers() == rightMask || me.getModifiers() == ctrlClickMask))
+			                                        ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2216: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2237: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2267: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2309: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == ctrlClickMask || me.getModifiers() == rightMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2309: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == ctrlClickMask || me.getModifiers() == rightMask)
+			                                           ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2340: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2399: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == ctrlClickMask || me.getModifiers() == rightMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2399: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == ctrlClickMask || me.getModifiers() == rightMask)
+			                                           ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2421: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2466: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2487: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == ctrlClickMask || me.getModifiers() == rightMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2487: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == ctrlClickMask || me.getModifiers() == rightMask)
+			                                           ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2509: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == shiftClickMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2516: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2532: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+		if(areaArrivalDragged && (me.getModifiers() == leftMask || me.getModifiers() == shiftClickMask ))
+		                            ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2532: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+		if(areaArrivalDragged && (me.getModifiers() == leftMask || me.getModifiers() == shiftClickMask ))
+		                                                             ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2536: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == shiftClickMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2543: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+			if(me.getModifiers() == leftMask)
+			     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2664: warning: [deprecation] getModifiers() in InputEvent has been deprecated
+				if(me.getModifiers() == shiftCtrlClickMask)
+				     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2811: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int leftMask = InputEvent.BUTTON1_MASK;
+		                         ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2812: warning: [deprecation] BUTTON2_MASK in InputEvent has been deprecated
+		int middleMask = InputEvent.BUTTON2_MASK;
+		                           ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2813: warning: [deprecation] BUTTON3_MASK in InputEvent has been deprecated
+		int rightMask = InputEvent.BUTTON3_MASK;
+		                          ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2814: warning: [deprecation] BUTTON1_MASK in InputEvent has been deprecated
+		int shiftClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK;
+		                               ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2814: warning: [deprecation] SHIFT_MASK in InputEvent has been deprecated
+		int shiftClickMask = InputEvent.BUTTON1_MASK + InputEvent.SHIFT_MASK;
+		                                                         ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2815: warning: [deprecation] BUTTON2_MASK in InputEvent has been deprecated
+		int shiftMiddleClickMask = InputEvent.BUTTON2_MASK + InputEvent.SHIFT_MASK;
+		                                     ^
+/app/src/main/java/com/bobsgame/editor/MapCanvas/MapCanvas.java:2815: warning: [deprecation] SHIFT_MASK in InputEvent has been deprecated
+		int shiftMiddleClickMask = InputEvent.BUTTON2_MASK + InputEvent.SHIFT_MASK;
+		                                                               ^
+Note: Some input files additionally use or override a deprecated API.
+Note: Some input files additionally use or override a deprecated API that is marked for removal.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+100 warnings
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 4s
+2 actionable tasks: 2 executed

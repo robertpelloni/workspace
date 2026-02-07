@@ -1,0 +1,125 @@
+import libc {...}
+import sdl {...}
+import collections {...}
+
+#extern (preamble = 
+"""
+#ifdef __linux__
+#define OS "linux"
+#define PLATFORM 1
+#endif 
+#ifdef __APPLE__
+#define OS "macos"
+#define PLATFORM 1
+#endif 
+#ifdef _WIN32
+#define OS "windows"
+#define PLATFORM 1
+#endif
+#if defined(__EMSCRIPTEN__) || defined(EMSCRIPTEN)
+#include <emscripten.h>
+#define OS "web"
+#define PLATFORM 2
+
+void src__main_loop(void);
+#endif 
+
+void web_loop(void) {
+#if defined(__EMSCRIPTEN__) || defined(EMSCRIPTEN)
+	emscripten_set_main_loop(src__main_loop, 60, 1);
+#endif
+}
+""")
+
+@extern 
+global PLATFORM:int;
+
+@extern 
+global OS:char*;
+
+@extern 
+func web_loop():void;
+
+#extern (header = "audio.h")
+#extern (header = "streamsource.h")
+#extern (header = "staticsource.h")
+#extern (header = "graphics.h")
+#extern (header = "geometry.h")
+#extern (header = "font.h")
+#extern (header = "matrixstack.h")
+#extern (header = "filesystem.h")
+#extern (header = "timer.h")
+#extern (header = "joystick.h")
+#extern (header = "mouse.h")
+#extern (header = "keyboard.h")
+#extern (header = "love.h")
+
+priv func main_loop()
+{
+	timer_step();
+	
+	//update code
+
+	graphics_clear();
+
+	//draw code
+
+	graphics_swap();
+
+	event:SDL_Event;
+	while(SDL_PollEvent(&event)) {
+		if (event.type == SDL_WINDOWEVENT) {
+			switch (event.window.event) {
+				case SDL_WINDOWEVENT_ENTER:
+				case SDL_WINDOWEVENT_LEAVE:
+				case SDL_WINDOWEVENT_FOCUS_LOST:
+				case SDL_WINDOWEVENT_FOCUS_GAINED:
+			}
+		}
+		switch(event.wheel.type) {
+			case SDL_MOUSEWHEEL:
+				//event.wheel.y
+		}
+		switch(event.type) {
+			case SDL_KEYDOWN:
+				//event.key.keysym.sym
+			case SDL_KEYUP:
+				//event.key.keysym.sym
+			case SDL_TEXTINPUT:
+			case SDL_MOUSEMOTION:
+				//event.motion.x, event.motion.y
+			case SDL_MOUSEBUTTONDOWN:
+				//event.button.x, event.button.y, event.button.button
+			case SDL_MOUSEBUTTONUP:
+				//event.button.x, event.button.y, event.button.button
+				break;
+			case SDL_QUIT:
+		}
+	}
+	audio_updateStreams();
+}
+
+
+func main(argc:int, argv:char**):int
+{
+    timer_init();
+    keyboard_init();
+    joystick_init();
+    filesystem_init(argv[0], 1);
+    audio_init(1);
+
+    graphics_init(game_width, game_height, false, true, true);
+    
+	if (PLATFORM == 1) {
+		while (game_running) {
+			main_loop();
+		}
+	} else {
+		web_loop();
+	}
+
+    graphics_destroyWindow();
+    audio_close();
+    return 0;
+}
+

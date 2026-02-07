@@ -1,0 +1,4 @@
+C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/MinSizeRel/info.obj
+C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/MinSizeRel/internal.obj
+C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/MinSizeRel/opusfile.obj
+C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/MinSizeRel/stream.obj

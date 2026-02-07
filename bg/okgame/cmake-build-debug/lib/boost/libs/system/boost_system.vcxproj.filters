@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\extra\boost_system.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\cerrno.hpp">
+      <Filter>Header Files\boost</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system.hpp">
+      <Filter>Header Files\boost</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\api_config.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\config.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\append_int.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\cerrno.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\config.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\enable_if.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\errc.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\error_category.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\error_category_impl.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\error_code.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\error_condition.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\generic_category.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\generic_category_message.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\interop_category.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\is_same.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\mutex.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\snprintf.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\std_category.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\std_category_impl.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\system_category.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\system_category_condition_win32.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\system_category_impl.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\system_category_message.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\system_category_message_win32.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\detail\throws.hpp">
+      <Filter>Header Files\boost\system\detail</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\errc.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\error_category.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\error_code.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\error_condition.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\generic_category.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\is_error_code_enum.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\is_error_condition_enum.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\linux_error.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\result.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\system_category.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\system_error.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\system\include\boost\system\windows_error.hpp">
+      <Filter>Header Files\boost\system</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{103AACF8-938D-304A-8AFC-196E1CC3AF36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\boost">
+      <UniqueIdentifier>{8A214483-F022-331B-BE9D-FAA6D3EA98D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\boost\system">
+      <UniqueIdentifier>{54A50BD0-F694-3845-B80E-A5A45342909F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\boost\system\detail">
+      <UniqueIdentifier>{9F72240B-C12D-3D00-9BDB-D228782E1D7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

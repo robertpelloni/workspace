@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D55C2F29-2E03-33FE-AA32-36E3F4BB5CDA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>GWEN_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GWEN_static.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GWEN_staticd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GWEN_static.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GWEN_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GWEN_static.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GWEN_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GWEN_static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GWEN_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/GWEN/gwen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/GWEN/gwen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\GWEN\gwen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/GWEN/gwen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/GWEN/gwen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\GWEN\gwen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/GWEN/gwen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/GWEN/gwen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\GWEN\gwen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/GWEN/gwen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/GWEN/gwen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\GWEN\gwen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Anim.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Application.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\BaseRender.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\ControlList.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\DragAndDrop.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Gwen.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Hook.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Skin.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\ToolTip.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Utility.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\events.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\inputhandler.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Base.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Button.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Canvas.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\CheckBox.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\CollapsibleCategory.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ColorControls.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ColorPicker.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ComboBox.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\CrossSplitter.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\DockBase.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\DockedTabControl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Dragger.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\GroupBox.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\HSVColorPicker.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\HorizontalScrollBar.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\HorizontalSlider.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ImagePanel.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Label.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\LabelClickable.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ListBox.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Menu.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\MenuItem.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\MenuStrip.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\NumericUpDown.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\PageControl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ProgressBar.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Properties.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\PropertyTree.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\RadioButton.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\RadioButtonController.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Rectangle.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ResizableControl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Resizer.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\RichLabel.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ScrollBar.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ScrollBarBar.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ScrollBarButton.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\ScrollControl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Slider.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\SplitterBar.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TabButton.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TabControl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TabStrip.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TabTitleBar.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Text.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TextBox.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TextBoxNumeric.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TreeControl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\TreeNode.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\VerticalScrollBar.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\VerticalSlider.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\WindowCanvas.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\WindowControl.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Dialog\FileOpen.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Dialog\FileSave.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Dialog\FolderOpen.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Controls\Dialog\Query.cpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\src\Platforms\Windows.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FD0D9A9-7454-3922-894A-C74C0085485C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>projectM_main</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">projectM_main.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">projectM_main.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">projectM_main.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">projectM_main.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">projectM_main.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">projectM_main.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">projectM_main.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">projectM_main.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;projectM_api_EXPORTS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Audio;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Logging.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Logging.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Preset.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\PresetFactory.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\PresetFactory.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\PresetFactoryManager.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\PresetFactoryManager.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\PresetFileParser.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\PresetFileParser.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\ProjectM.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\ProjectM.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\ProjectMCWrapper.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\ProjectMCWrapper.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\TimeKeeper.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\TimeKeeper.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Utils.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Utils.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\projectM-opengl.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Audio\Audio.vcxproj">
+      <Project>{1D1CE393-55CA-3844-9A57-84FD50CF3765}</Project>
+      <Name>Audio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\MilkdropPreset\MilkdropPreset.vcxproj">
+      <Project>{D794DF67-E0EA-392C-935D-1AA03B438526}</Project>
+      <Name>MilkdropPreset</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\Renderer.vcxproj">
+      <Project>{FD1AECE4-A343-34A9-827F-F1B697CC39E3}</Project>
+      <Name>Renderer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\vendor\SOIL2\SOIL2.vcxproj">
+      <Project>{4FB1BE2F-C9F1-34CA-8782-E0E35F321254}</Project>
+      <Name>SOIL2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\glew.vcxproj">
+      <Project>{B7595768-D1F9-3F3D-AC9F-5BF0FF98B2ED}</Project>
+      <Name>glew</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\vendor\glm\glm.vcxproj">
+      <Project>{0E56C595-EAE4-385E-B52F-E157C628E15A}</Project>
+      <Name>glm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\vendor\hlslparser\hlslparser.vcxproj">
+      <Project>{ECEE3F6D-32FF-3D6C-B6FD-5E9B0F01F405}</Project>
+      <Name>hlslparser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\projectM_api.vcxproj">
+      <Project>{E509DF31-2919-3DFC-B2ED-10C379F66155}</Project>
+      <Name>projectM_api</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\vendor\projectm-eval\projectm-eval\projectM_eval.vcxproj">
+      <Project>{9A3B2E90-33F5-3CBC-90CD-DAA3901A1FD2}</Project>
+      <Name>projectM_eval</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

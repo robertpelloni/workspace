@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\src\JWTException.cpp">
+      <Filter>JWT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\src\Serializer.cpp">
+      <Filter>JWT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\src\Signer.cpp">
+      <Filter>JWT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\src\Token.cpp">
+      <Filter>JWT\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\include\Poco\JWT\JWT.h">
+      <Filter>JWT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\include\Poco\JWT\JWTException.h">
+      <Filter>JWT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\include\Poco\JWT\Serializer.h">
+      <Filter>JWT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\include\Poco\JWT\Signer.h">
+      <Filter>JWT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\include\Poco\JWT\Token.h">
+      <Filter>JWT\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\poco\JWT\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\DLLVersion.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="JWT">
+      <UniqueIdentifier>{943C8EFF-B2A4-358C-84F0-68EFCB3437D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JWT\Header Files">
+      <UniqueIdentifier>{6AB50EC5-9160-3265-9F48-7BE35D26388E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JWT\Source Files">
+      <UniqueIdentifier>{F37E951C-9CF2-37B8-8ED3-6BCF23B19193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{3254F111-23A4-3FD3-9849-4D16DC8377F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

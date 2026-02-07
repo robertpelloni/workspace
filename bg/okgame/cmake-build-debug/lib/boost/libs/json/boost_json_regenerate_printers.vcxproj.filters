@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\json\src\boost_json_gdb_printers.py" />
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\41c17f3cb9b5abd8eb5b401303d45a8e\boost_json_regenerate_printers.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\json\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\json\CMakeFiles\boost_json_regenerate_printers" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D40E2C96-91AF-32F4-865D-F04E3269BCFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TagsOptionsPage</class>
+ <widget class="QWidget" name="TagsOptionsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>567</width>
+    <height>525</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QCheckBox" name="write_tags">
+     <property name="text">
+      <string>Write tags to files</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="preserve_timestamps">
+     <property name="text">
+      <string>Preserve timestamps of tagged files</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="before_tagging">
+     <property name="title">
+      <string>Before Tagging</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>7</number>
+      </property>
+      <item>
+       <widget class="QCheckBox" name="clear_existing_tags">
+        <property name="text">
+         <string>Clear existing tags</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="preserve_images">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Keep embedded images when clearing tags</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="remove_id3_from_flac">
+        <property name="text">
+         <string>Remove ID3 tags from FLAC files</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="remove_ape_from_mp3">
+        <property name="text">
+         <string>Remove APEv2 tags from MP3 files</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="fix_missing_seekpoints_flac">
+        <property name="text">
+         <string>Fix missing seekpoints for FLAC files</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>6</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="preserved_tags_label">
+        <property name="text">
+         <string>Preserve these tags from being cleared or overwritten with MusicBrainz data:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="TagListEditor" name="preserved_tags" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TagListEditor</class>
+   <extends>QWidget</extends>
+   <header>picard.ui.widgets.taglisteditor</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>write_tags</tabstop>
+  <tabstop>preserve_timestamps</tabstop>
+  <tabstop>clear_existing_tags</tabstop>
+  <tabstop>preserve_images</tabstop>
+  <tabstop>remove_id3_from_flac</tabstop>
+  <tabstop>remove_ape_from_mp3</tabstop>
+  <tabstop>fix_missing_seekpoints_flac</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>clear_existing_tags</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>preserve_images</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>283</x>
+     <y>132</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

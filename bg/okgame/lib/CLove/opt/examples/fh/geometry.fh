@@ -1,0 +1,55 @@
+fn love_joystick_pressed(j) {
+}
+
+fn love_mousepressed(m) {
+}
+
+fn love_mousereleased(m) {
+}
+
+fn love_wheelmoved(y) {
+}
+
+fn love_textinput(text) {
+}
+
+fn love_keypressed(key) {
+}
+
+fn love_keyreleased(key) {
+}
+
+fn love_quit() {
+}
+
+fn love_focus(focused) {
+}
+
+fn love_update(dt) {
+
+}
+
+fn love_load()  {
+
+}
+
+fn love_draw() {
+    love_geometry_circle("line", 320, 220, 16);
+    love_geometry_circle("fill", 220, 260, 16);
+    love_geometry_circle("fill", 280, 260, 16, 6);
+
+    love_geometry_rectangle("line", 150, 150, 32);
+    love_geometry_rectangle("fill", 230, 150, 32, 32, 45);
+
+    for (let i = 0; i < 10; i = i + 1) {
+        love_geometry_points(50 + i * 5, 250);
+        love_geometry_points(70, 230 + i * 5);
+    }
+
+    love_geometry_vertex("fill", [50, 50, 150, 50, 50, 150]);
+    love_geometry_vertex("line", [200,50, 400,50, 500,300, 100,300, 200,50]);
+}
+
+fn main() {
+
+}

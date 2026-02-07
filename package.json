@@ -18,7 +18,9 @@
   "homepage": "https://github.com/robertpelloni/workspace#readme",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.10.0"
+    "@types/node": "^24.10.0",
+    "sinon": "^21.0.1",
+    "supertest": "^7.2.2"
   },
   "dependencies": {
     "firecrawl-mcp": "^3.6.2",

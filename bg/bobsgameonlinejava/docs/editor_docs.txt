@@ -1,0 +1,251 @@
+
+
+**** to output very large maps to hq2x, you need to use 16 gigs of virtual memory!!!!
+c:\java\jdk1.6.0_07-64bit\bin\java.exe -Xmx16000m -XX:+UseParallelGC com.bobsgame.editor.BgEditor
+
+----------------------------------------------------------------------------------
+TILE
+----------------------------------------------------------------------------------
+[f] for focus tileset on selected tile
+
+select area on tileset and [ctrl][c/x] will cut/copy tiles for moving around on tileset. cannot paste to map just yet. (**but can fill with selection and [t], see below)
+disables tileset selection and draws a transparent red/green box over copy/cut tiles until pasted. pastes at new selected tile.
+
+[u][d][l][r] select next/previous tile
+
+[middle click] = selection tool / deselect (also [shift][leftclick])
+[rightclick] = eyedropper / copy selection (also [ctrl][leftclick])
+[leftclick] = draw / move selection
+if left-drag selection, moves
+if right-drag selection, copies
+
+if [select tiles] and [double right click] opens MULTIPLE TILE EDITOR
+
+
+
+----------------------------------------------------------------------------------
+MAP
+----------------------------------------------------------------------------------
+
+
+[pgup][pgdwn] Next/previous Map.
+
+
+------------------
+Standard functions
+------------------
+
+[middle click] = selection tool / deselect (also [shift][leftclick])
+
+[rightclick] = eyedropper / copy selection (also [ctrl][leftclick])
+
+[leftclick] = draw / move selection
+
+[left-drag selection] Swaps selection.
+[right-drag selection] Copies (overwrites) selection.
+
+[ctrl][c/x/v] = Copy/cut/paste selection. (Cut and paste will swap.)
+[a][ctrl][c/x/v] = Copy/cut/paste selection all layers.
+
+[del] Deletes selection.
+[a][del] Deletes all layers
+
+------------------
+Undo/Redo
+------------------
+[ctrl][z] / [ctrl][y] Does undo/redo for map operations, sort of buggy so dont rely on it. There are a few undo levels but they wrap around and skip levels.
+Need to fix this, but it should work in a pinch.
+This should work for MTE and Sprite Editor as well.
+
+------------------
+zooming in and out
+------------------
+
+[+/-] Or [mouse wheel up/down] = Zoom in/out
+
+If area is selected, zoom will focus on the selection.
+
+[l] = Holding [l] and selecting an area will set a "Zoom Lock". Holding [l] and middle-clicking anywhere will disable it.
+If a "Zoom Lock" exists, zooming in and out will focus on this. (If there is not a normal selection)
+This is handy for working on very large maps and keeping the focus on the area you are working on.
+
+------------------
+Selecting Layers
+------------------
+[`]-[0], [F1]-[F5] = Select layer 0-10, special layers.
+*also works with numpad
+
+[a] = Select all layers (Can ctrl-c/v copy/paste, right drag copy, left drag swap, double click make new tiles from all layers)
+
+------------------
+Toggling Layers
+------------------
+[ctrl][`/1/2/3/4/5/6/7/8/9/0] Turn on/off layer 0-10
+[ctrl][F1-F5] Turn on/off special layers (sprite, hit, camera, light mask, light, action)
+
+[ctrl][shift][layer] Will "solo" that layer.  If the layer is off, it will turn all others off and that one on.
+If the layer is currently on, it will turn all the other layers on and that one off.
+
+------------------
+Editing a group of tiles
+------------------
+If [select tiles] on map and [double RIGHT click], opens "Multiple Tile Editor" with the selected Map tiles combined in a single image.
+Be careful, editing these tiles will edit their corresponding tiles in the tileset. 
+
+If [select tiles] on map and [CTRL][double RIGHT click], opens MTE with the selected tiles COPIED into NEW tiles and appended at the bottom of the tileset.
+*Careful! This automatically replaces the tiles that were selected on the map as well!
+This is for quickly making new tiles from what's already there.
+
+
+If you want to make a whole new group of tiles with all the layers COMBINED, hold [a]. (See next note.)
+
+------------------
+Making and editing combined tiles on all layers
+------------------
+If [select tiles] on map and hold [a] and [double RIGHT click], all enabled layers will be MERGED into completely NEW tiles, appended to the bottom of the tileset.
+These tiles then open in MTE. Useful for making totally new tiles really easily!
+*Includes Shadow layers, does NOT include disabled layers, special layers (hit/camera/action/sprite/light/lightmask/shader)
+*Note this does not replace those tiles on the map, this must be done manually, or you can use [m] for this.
+
+
+
+------------------
+Filling the Map from the Tile Canvas
+------------------
+[t] Will fill the map selection with the selected tile.
+If there is a group of tiles selected on the tile panel, it will fill it with that selection!
+
+------------------
+Merging tiles
+------------------
+[m] Merge all selected tiles on enabled layers into the bottom enabled layer. Makes new tiles. 
+Useful for making solid 1-layer tile objects out of many layers (couches, etc)
+*Skips shadow layers, disabled layers, and special layers.
+
+------------------
+Outputting textures
+------------------
+[n] output selected tiles to texture for import into google sketchup. mashes all visible layers and 2x sizes them. 
+includes shadow layers, skips special layers (hit, shader, action, sprite)
+
+------------------
+Moving Tiles up and down a layer
+------------------
+"["
+"]"For moving selected tiles up and down a layer.
+*Doesnt overwrite existing tiles. 
+*Skips shadow and fx layers.
+*Doesn't care if target layer is enabled or not!
+
+------------------
+Merging tiles to Shadow Tiles
+------------------
+[s] selection on all enabled layers will be combined to new tiles, masked to all black, FLIPPED upside down, and placed at the BOTTOM of the selection.
+this is for making quick shadows. *MUST have shadow layer selected. skips disabled layers, special layers.
+
+
+
+
+
+------------------
+[Use Map Canvas Layer Buffer]
+------------------
+usually each layer is generated on-the-fly and drawn to a single buffer image.
+this option stores each layer as a separate buffer image, so actions that need to redraw all layers are much faster- such as turning layers on and off.
+it uses a lot of ram on very large maps, as it is storing 12 bitmaps in memory.
+
+------------------
+[Sprite Layer]
+------------------
+[Right click] on map to place a sprite from the Sprite Editor.
+[Click] to select a placed sprite, [click and drag] to move, hold [ctrl] to copy it. press [delete] to delete.
+[Double click] to open Info Window.
+*There is an option to move Map Sprites by pixels or tiles in the Sprite Menu.
+
+------------------
+[Light Mask Layer]
+------------------
+Light mask layer will block all light from the light layer.
+It can use any tile, which will show as transparent orange.
+This is for masking out walls, objects, and areas that you don't want affected by a light source.
+
+------------------
+[Light Layer]
+------------------
+[Select] an area and [double click] on it to open the Light Editor window.
+Select a light by [clicking] on the center of it. [Double click] to open editor.
+Select a light and [drag] to move it, hold [ctrl] to copy it. Press [delete] to delete.
+
+------------------
+[Action Layer]
+------------------
+[Select] an area and [double click] on it to open the Action Editor Window.
+[Click and drag] to move. [Delete] to delete.
+[Double click] to open editor again.
+If it is enabled as a door, it will have an arrival point marker. [Click] to select the action and then [click and drag] to set the arrival point.
+
+
+
+
+----------------------------------------------------------------------------------
+PALETTE
+----------------------------------------------------------------------------------
+
+[numpad +/-] Next/previous Palette color
+
+[shift]->[left click drag] on palette moves colors.
+right click drag on palette copies them.
+[shift]->[a]->[left click drag] moves colors for all tileset palletes, be careful. (used if sorting identical palettes)
+
+now palette uses HSV along with RGB, can easily make darker/lighter shades by adjusting v
+
+[ctrl][F4] sort palette by gray then HSV, can do many times for different effects.
+
+----------------------------------------------------------------------------------
+MULTIPLE TILE EDITOR/SPRITE EDITOR
+----------------------------------------------------------------------------------
+
+[+/-] == [mouse wheel up/down] = zoom in/out
+
+[middle click] = selection tool / deselect (also [shift][leftclick])
+[rightclick] = eyedropper / copy selection (also [ctrl][leftclick])
+[leftclick] = draw / move selection
+if left-drag selection, moves
+if right-drag selection, copies
+
+[ctrl][c/x/v] = copy/cut/paste selection
+[del] deletes selection.
+
+[ctrl][f] flip vertical
+[ctrl][r] reverse horizontal
+
+[ctrl][z] does undo, sort of buggy so dont rely on it. theres a few undo levels but they wrap around and skip levels
+
+Sprite editor
+[a][s] back/forward frame
+[pgup][pgdown] next/previous sprite.
+
+[h] set hitbox offsets from selection box
+[u] set utility point from selection box upper left corner
+
+TO COPY TILES FROM ONE TILESET TO ANOTHER
+can open MultiTileEditor, copy, keep MultiTileEditor open [switch tilesets] and paste. make sure tiles are blank!
+colors will be screwed up unless palette values are identical
+
+
+
+//----------------------------------------------------------------------------------
+//OTHER
+//----------------------------------------------------------------------------------
+
+[ctrl][/] special menu
+
+
+[F10] DS Preview Mode
+
+[k] copy selected coords to clipboard as x*8,y*8,x*8,y*8
+
+[ctrl][F10] Attempt Export All Current Tileset Maps To PNGs 0,1,2,3,4,5,6,3021,3021456
+[ctrl][F11] Export Current Map To Custom TouchMap PNGs >=64x64 302,1
+[ctrl][F12] Export Current Map To PNGs 0,1,2,3,4,5,6,3021,3021456
+

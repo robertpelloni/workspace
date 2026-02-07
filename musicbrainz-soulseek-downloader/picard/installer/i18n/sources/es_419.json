@@ -1,0 +1,17 @@
+{
+    "MsgAlreadyInstalled": "${PRODUCT_NAME} ya esta instalado y debe ser desinstalado antes de instalar esta actualizacion a la version ${PRODUCT_VERSION}.\n\nHaga click en \"OK\" para proceder o en \"Cancel\" para cancelar esta actualizacion.",
+    "MsgApplicationRunning": "",
+    "MsgRequires64Bit": "",
+    "MsgUninstallFailed": "",
+    "MuiDescriptionDesktop": "",
+    "MuiDescriptionLang": "",
+    "MuiDescriptionRequired": "",
+    "MuiDescriptionShortcuts": "",
+    "MuiDescriptionStartMenu": "",
+    "OptionRemoveSettings": "",
+    "SectionDesktop": "",
+    "SectionLanguages": "",
+    "SectionRequired": "",
+    "SectionShortcuts": "",
+    "SectionStartMenu": ""
+}

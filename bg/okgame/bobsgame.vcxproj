@@ -1,0 +1,1679 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ORBIS">
+      <Configuration>Debug</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ORBIS">
+      <Configuration>Release</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF7EAEC1-0865-4133-9A48-C8097F619525}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bobsgame</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <LinkIncremental />
+    <ExtensionsToDeleteOnClean>*.o;*.d;*.map;*.pch;*.gch;*.tmp;*.rsp;*.tlog;*.plist;*.json;*.xml;*.sdb;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExtensionsToDeleteOnClean>*.o;*.d;*.map;*.pch;*.gch;*.tmp;*.rsp;*.tlog;*.plist;*.json;*.xml;*.sdb;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>
+      </Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.;.\lib;.\lib\glew-2.0.0\include;.\lib\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;.\lib\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\include;.\lib\SDL2_mixer-devel-2.0.1-VC\SDL2_mixer-2.0.1\include;.\lib\SDL2_image-devel-2.0.1-VC\SDL2_image-2.0.1\include;.\lib\SDL2_net-devel-2.0.1-VC\SDL2_net-2.0.1\include;.\lib\SDL2_gfx-1.0.3;.\lib\soloud_20160109\include;.\lib\hyperic-sigar-1.6.4\sigar-bin\include;.\lib\poco-1.7.8p3-all\Foundation\include;.\lib\poco-1.7.8p3-all\JSON\include;.\lib\poco-1.7.8p3-all\Net\include;.\lib\poco-1.7.8p3-all\Util\include;.\lib\poco-1.7.8p3-all\XML\include;.\lib\poco-1.7.8p3-all\Zip\include;.\lib\enet-1.3.13\include;.\lib\zlib-1.2.8\include;.\lib\libzip-1.1.3\lib;.\lib\libzip-1.1.3\src;.\lib\zlib-1.2.8\contrib\minizip;.\lib\minilzo-2.09;.\lib\miniz-master;.\lib\cereal-master\include;F:\boost_1_64_0;.\lib\GWEN-master\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <MinimalRebuild>true</MinimalRebuild>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib\glew-2.0.0\lib;.\lib\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;.\lib\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\lib\x86;.\lib\SDL2_mixer-devel-2.0.1-VC\SDL2_mixer-2.0.1\lib\x86;.\lib\SDL2_image-devel-2.0.1-VC\SDL2_image-2.0.1\lib\x86;.\lib\SDL2_net-devel-2.0.1-VC\SDL2_net-2.0.1\lib\x86;.\lib\soloud_20160109\lib;.\lib\hyperic-sigar-1.6.4\sigar-bin\lib;.\lib\poco-1.7.8p3-all\_lib;.\lib\zlib-1.2.8\lib;.\lib\libzip-1.1.3\Release;F:\boost_1_64_0\stage\lib;.\lib\GWEN-master\gwen\lib\windows\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2_image.lib;SDL2_net.lib;opengl32.lib;sigar-x86-winnt.lib;PocoFoundationmtd.lib;PocoNetmtd.lib;PocoUtilmtd.lib;PocoZipmtd.lib;gwen_staticd.lib;GWEND-Renderer-OpenGL_TruetypeFontd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <MapExports />
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>
+      </Optimization>
+      <PreprocessorDefinitions>HAVE_STDIO_H;ORBIS;__ORBIS__;ENABLE_ADDCONT;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.;.\lib;.\lib\GWEN-master\gwen\include;.\lib\boost-serialization\serialization;C:\boost_1_64_0;C:\Users\Administrator\workspace\bobsgame\lib\miniz-master;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\platform_gnm;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\graphics\api_gnm;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\graphics\api_gnm\toolkit;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\graphics\tutorial_graphics_programming\common;C:\Users\Administrator\workspace\bobsgame\lib\SDL2_ttf-2.0.14\external\freetype-2.4.12\include;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\tinyxml;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil;C:\SCE\ORBIS SDKs\5.500\libpiglet_2017_patched\opengl\code\include;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external;lib\SDL2_ttf-2.0.14\external\freetype-2.4.12\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>true</MinimalRebuild>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+      <CppExceptions>true</CppExceptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>%(OrbisPreprocessorDefinitions) %(ClCompile.AdditionalOptions) -ferror-limit=999</AdditionalOptions>
+      <CppLanguageStd>Cpp14</CppLanguageStd>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProcessorNumber>
+      </ProcessorNumber>
+      <DisableSpecificWarnings>-Wno-unknown-pragmas;-Wno-unused-variable;-Wno-unused-function%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SCE_ORBIS_SDK_DIR)\target\lib;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\lib\external;.\ORBIS_Debug;C:\SCE\ORBIS SDKs\5.500\libpiglet_2017_patched\opengl\code\out\orbis_x86_64_debug_vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>-lScePiglet_stub_weak;libScePosix_stub_weak.a;libSceGnmx.a;libSceGnm.a;libSceGpuAddress.a;libSceShaderBinary.a;libSceGnmDriver_stub_weak.a;libSceVideoOut_stub_weak.a;libSceNpToolkit2_stub_weak.a;libSceFios2_stub_weak.a;libSceMouse_stub_weak.a;libScePad_stub_weak.a;liblua.a;-lSceSaveDataDialog_stub_weak;-lSceMsgDialog_stub_weak;-lSceJson2_stub_weak;-lScePadTracker_stub_weak;-lSceCamera_stub_weak;-lSceGameLiveStreaming_stub_weak;-lSceAppContent_stub_weak;-lSceNpCommon_stub_weak;-lSceNpManager_stub_weak;-lSceNpTrophy_stub_weak;-lSceNpScore_stub_weak;-lSceUlt_stub_weak;-lSceNpSnsFacebookDialog_stub_weak;-lSceNpSns_stub_weak;-lSceSigninDialog_stub_weak;-lSceCommonDialog_stub_weak;-lScePlayGo_stub_weak;-lSceDbgPlayGo_stub_weak;-lSceVideoRecording_stub_weak;-lSceAvPlayer_stub_weak;-lSceXml_stub_weak;-lSceRtc_stub_weak;-lSceSystemService_stub_weak;-lSceNpUtility_stub_weak;libSceNpCommerce_stub_weak.a;freetype.a;gwen_static.a;GwenRendererPS4.a;Boost_Serialization.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <MapExports>
+      </MapExports>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.;.\lib;.\lib\glew-2.0.0\include;.\lib\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;.\lib\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\include;.\lib\SDL2_mixer-devel-2.0.1-VC\SDL2_mixer-2.0.1\include;.\lib\SDL2_image-devel-2.0.1-VC\SDL2_image-2.0.1\include;.\lib\SDL2_net-devel-2.0.1-VC\SDL2_net-2.0.1\include;.\lib\SDL2_gfx-1.0.3;.\lib\soloud_20160109\include;.\lib\hyperic-sigar-1.6.4\sigar-bin\include;.\lib\poco-1.7.8p3-all\Foundation\include;.\lib\poco-1.7.8p3-all\JSON\include;.\lib\poco-1.7.8p3-all\Net\include;.\lib\poco-1.7.8p3-all\Util\include;.\lib\poco-1.7.8p3-all\XML\include;.\lib\poco-1.7.8p3-all\Zip\include;.\lib\enet-1.3.13\include;.\lib\zlib-1.2.8\include;.\lib\libzip-1.1.3\lib;.\lib\libzip-1.1.3\src;.\lib\zlib-1.2.8\contrib\minizip;.\lib\minilzo-2.09;.\lib\miniz-master;.\lib\cereal-master\include;F:\boost_1_64_0;.\lib\GWEN-master\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <SmallerTypeCheck />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>.\lib\glew-2.0.0\lib;.\lib\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;.\lib\SDL2_ttf-devel-2.0.14-VC\SDL2_ttf-2.0.14\lib\x86;.\lib\SDL2_mixer-devel-2.0.1-VC\SDL2_mixer-2.0.1\lib\x86;.\lib\SDL2_image-devel-2.0.1-VC\SDL2_image-2.0.1\lib\x86;.\lib\SDL2_net-devel-2.0.1-VC\SDL2_net-2.0.1\lib\x86;.\lib\soloud_20160109\lib;.\lib\hyperic-sigar-1.6.4\sigar-bin\lib;.\lib\poco-1.7.8p3-all\_lib;.\lib\zlib-1.2.8\lib;.\lib\libzip-1.1.3\Release;F:\boost_1_64_0\stage\lib;.\lib\GWEN-master\gwen\lib\windows\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2_image.lib;SDL2_net.lib;opengl32.lib;sigar-x86-winnt.lib;PocoFoundationmt.lib;PocoNetmt.lib;PocoUtilmt.lib;PocoZipmt.lib;gwen_static.lib;GWEN-Renderer-OpenGL_TruetypeFont.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <MapExports />
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>HAVE_STDIO_H;ORBIS;__ORBIS__;ENABLE_ADDCONT;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.;.\lib;.\lib\GWEN-master\gwen\include;.\lib\boost-serialization\serialization;C:\boost_1_64_0;C:\Users\Administrator\workspace\bobsgame\lib\miniz-master;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\platform_gnm;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\graphics\api_gnm;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\graphics\api_gnm\toolkit;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\graphics\tutorial_graphics_programming\common;C:\Users\Administrator\workspace\bobsgame\lib\SDL2_ttf-2.0.14\external\freetype-2.4.12\include;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\tinyxml;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil;C:\SCE\ORBIS SDKs\5.500\libpiglet_2017_patched\opengl\code\include;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external;lib\SDL2_ttf-2.0.14\external\freetype-2.4.12\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <SmallerTypeCheck>
+      </SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+      <CppExceptions>true</CppExceptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>%(OrbisPreprocessorDefinitions) %(ClCompile.AdditionalOptions) -ferror-limit=999</AdditionalOptions>
+      <CppLanguageStd>Cpp14</CppLanguageStd>
+      <ProcessorNumber>
+      </ProcessorNumber>
+      <DisableSpecificWarnings>-Wno-unknown-pragmas;-Wno-unused-variable;-Wno-unused-function%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SCE_ORBIS_SDK_DIR)\target\lib;C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\lib\external;.\ORBIS_Release;C:\SCE\ORBIS SDKs\5.500\libpiglet_2017_patched\opengl\code\out\orbis_x86_64_release_vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>-lScePiglet_stub_weak;libScePosix_stub_weak.a;libSceGnmx.a;libSceGnm.a;libSceGpuAddress.a;libSceShaderBinary.a;libSceGnmDriver_stub_weak.a;libSceVideoOut_stub_weak.a;libSceNpToolkit2_stub_weak.a;libSceFios2_stub_weak.a;libSceMouse_stub_weak.a;libScePad_stub_weak.a;liblua.a;-lSceSaveDataDialog_stub_weak;-lSceMsgDialog_stub_weak;-lSceJson2_stub_weak;-lScePadTracker_stub_weak;-lSceCamera_stub_weak;-lSceGameLiveStreaming_stub_weak;-lSceAppContent_stub_weak;-lSceNpCommon_stub_weak;-lSceNpManager_stub_weak;-lSceNpTrophy_stub_weak;-lSceNpScore_stub_weak;-lSceUlt_stub_weak;-lSceNpSnsFacebookDialog_stub_weak;-lSceNpSns_stub_weak;-lSceSigninDialog_stub_weak;-lSceCommonDialog_stub_weak;-lScePlayGo_stub_weak;-lSceDbgPlayGo_stub_weak;-lSceVideoRecording_stub_weak;-lSceAvPlayer_stub_weak;-lSceXml_stub_weak;-lSceRtc_stub_weak;-lSceSystemService_stub_weak;-lSceNpUtility_stub_weak;libSceNpCommerce_stub_weak.a;freetype.a;gwen_static.a;GwenRendererPS4.a;Boost_Serialization.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <MapExports>
+      </MapExports>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\animation.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\app_data_service.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\av_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\camera.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\camera_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\collada_object.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\config.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\core_system.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\debug_window.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\dialog.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\event.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\game.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\game_log_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\game_object.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\input_device_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\live_and_video_service.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\lua_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\network_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\np_score_ranking.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\pad_tracker_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\player_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\play_style.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\psarc_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\resource_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\save_data_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\service.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\setting_window.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\sound_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\string_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\thread_util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\top_level_hud.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\trophy_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\ui.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\user_entry_manager.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\util.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\single_user\game_scene.h" />
+    <ClInclude Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\single_user\player_save_data.h" />
+    <ClInclude Include="bobtypes.h" />
+    <ClInclude Include="lib\authenticate-GWEN-master\include\Gwen\renderer\gwen_renderer_sdl2.h" />
+    <ClInclude Include="lib\base64.h" />
+    <ClInclude Include="lib\CTPL-master\ctpl_stl.h" />
+    <ClInclude Include="lib\DG_misc.h" />
+    <ClInclude Include="lib\GWEN-master\gwen\include\Gwen\Input\GwenInputPS4.h" />
+    <ClInclude Include="lib\GWEN-master\gwen\include\Gwen\Input\gwen_input_base.h" />
+    <ClInclude Include="lib\GWEN-master\gwen\include\Gwen\Input\gwen_input_sdl2.h" />
+    <ClInclude Include="lib\libzip-1.1.3\lib\zipconf.h" />
+    <ClInclude Include="lib\lz4-1.7.5\lib\lz4.h" />
+    <ClInclude Include="lib\lz4-1.7.5\lib\lz4frame.h" />
+    <ClInclude Include="lib\lz4-1.7.5\lib\lz4frame_static.h" />
+    <ClInclude Include="lib\lz4-1.7.5\lib\lz4hc.h" />
+    <ClInclude Include="lib\lz4-1.7.5\lib\lz4opt.h" />
+    <ClInclude Include="lib\lz4-1.7.5\lib\xxhash.h" />
+    <ClInclude Include="lib\md5.h" />
+    <ClInclude Include="lib\SDL2_ttf-2.0.14\external\freetype-2.4.12\include\ft2build.h" />
+    <ClInclude Include="lib\SDL_platform.h" />
+    <ClInclude Include="lib\stb_image_resize.h" />
+    <ClInclude Include="lib\stb_image_write.h" />
+    <ClInclude Include="lib\stb_truetype.h" />
+    <ClInclude Include="src\Engine\network\TCPServerConnection.h" />
+    <ClInclude Include="src\Engine\state\LogoState.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\input_output_devices\api_pad_mouse\basic\api_mouse.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\lauxlib.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\lua.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\lua.hpp" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\luaconf.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\lualib.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\tinyxml\tinystr.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\external\tinyxml\tinyxml.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\audio.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\audio\context.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\audio\data.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\audio\voice.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\debug\menu.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\debug\console.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\buffer.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\collada.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\collada\collada_animation.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\collada\collada_base.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\collada\collada_effect.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\collada\collada_geometry.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\collada\collada_image.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\collada\collada_scene.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\constant.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\context.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\effect.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\font.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\loader.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\platform.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\platform_gnm\platform_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\program.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\sprite.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\input.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\input\controller.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\input\motion.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\input\touch.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\sampleutil_common.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\sampleutil_error.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\skeleton.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\system.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_blit.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_blit_auto.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_blit_copy.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_blit_slow.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_pixels.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_pixels_c.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_rect.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_rect_c.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_RLEaccel_c.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_rwops.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_stuff.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_surface.h" />
+    <ClInclude Include="src\orbis\SDL\SDL_ttf.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\audio_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_stream.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_module.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\debug\debug_menu_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_material.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_scene.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_transform.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_util.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_animation.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_common.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_control.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_data_flow.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_effect.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_geometry.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_scene.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_transform.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_vscene.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\constant_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\font_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\graphics_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\image.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\buffer_internal_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\constant_internal_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\context_internal_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\font_orbis.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\gnm_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\heap_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\image_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\loader_internal_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\program_internal_gnm.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\sprite_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\input\controller_common.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\input\pad_common.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\resource.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\resource_manager.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\shader_base.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\std_cbuffer.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\sampleutil_internal.h" />
+    <ClInclude Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\util\util.h" />
+    <ClInclude Include="src\Puzzle\Legacy.h" />
+    <ClInclude Include="src\Puzzle\Room.h" />
+    <ClInclude Include="src\Puzzle\Stats\LeaderBoardAndHighScoreBoardEntry.h" />
+    <ClInclude Include="src\Puzzle\Stats\GameStats.h" />
+    <ClInclude Include="src\Puzzle\Stats\UserStatsForSpecificGameAndDifficulty.h" />
+    <ClInclude Include="src\Puzzle\CustomGameEditor.h" />
+    <ClInclude Include="src\Puzzle\GameSequence.h" />
+    <ClInclude Include="src\Puzzle\GameSequenceEditor.h" />
+    <ClInclude Include="src\Puzzle\GameTestMenu.h" />
+    <ClInclude Include="src\Puzzle\GlobalSettings.h" />
+    <ClInclude Include="src\Puzzle\PuzzlePlayer.h" />
+    <ClInclude Include="src\Utility\ArrayList.h" />
+    <ClInclude Include="src\Utility\audio\AudioData.h" />
+    <ClInclude Include="src\Utility\audio\AudioFile.h" />
+    <ClInclude Include="src\Utility\BobMath.h" />
+    <ClInclude Include="src\Utility\BobMenu.h" />
+    <ClInclude Include="src\Utility\BobString.h" />
+    <ClInclude Include="src\Utility\HashMap.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="lib\HQ2X\HQ2X.h" />
+    <ClInclude Include="lib\SDL_stbimage.h" />
+    <ClInclude Include="lib\stb_image.h" />
+    <ClInclude Include="src\Engine\cinematics\CinematicsManager.h" />
+    <ClInclude Include="src\Engine\cinematics\Letterbox.h" />
+    <ClInclude Include="src\Engine\cinematics\ScreenOverlay.h" />
+    <ClInclude Include="src\Engine\Engine.h" />
+    <ClInclude Include="src\Engine\EnginePart.h" />
+    <ClInclude Include="src\Engine\entity\Cameraman.h" />
+    <ClInclude Include="src\Engine\entity\Character.h" />
+    <ClInclude Include="src\Engine\entity\Entity.h" />
+    <ClInclude Include="src\Engine\entity\PathFinder.h" />
+    <ClInclude Include="src\Engine\entity\RandomCharacter.h" />
+    <ClInclude Include="src\Engine\entity\ScreenSprite.h" />
+    <ClInclude Include="src\Engine\entity\BobSprite.h" />
+    <ClInclude Include="src\Engine\entity\SpriteAnimationSequence.h" />
+    <ClInclude Include="src\Engine\entity\SpriteData.h" />
+    <ClInclude Include="src\Engine\entity\SpriteManager.h" />
+    <ClInclude Include="src\Engine\rpg\event\ActionManager.h" />
+    <ClInclude Include="src\Engine\rpg\event\Dialogue.h" />
+    <ClInclude Include="src\Engine\rpg\event\DialogueData.h" />
+    <ClInclude Include="src\Engine\rpg\event\BobEvent.h" />
+    <ClInclude Include="src\Engine\rpg\event\EventCommand.h" />
+    <ClInclude Include="src\Engine\rpg\event\EventData.h" />
+    <ClInclude Include="src\Engine\rpg\event\EventManager.h" />
+    <ClInclude Include="src\Engine\rpg\event\EventParameter.h" />
+    <ClInclude Include="src\Engine\rpg\event\Flag.h" />
+    <ClInclude Include="src\Engine\rpg\event\FlagData.h" />
+    <ClInclude Include="src\Engine\rpg\event\GameString.h" />
+    <ClInclude Include="src\Engine\rpg\event\GameStringData.h" />
+    <ClInclude Include="src\Engine\network\ServerObject.h" />
+    <ClInclude Include="src\Engine\rpg\event\Skill.h" />
+    <ClInclude Include="src\Engine\rpg\event\SkillData.h" />
+    <ClInclude Include="src\Engine\rpg\BGClientEngine.h" />
+    <ClInclude Include="src\Engine\rpg\FriendCharacter.h" />
+    <ClInclude Include="src\Engine\rpg\FriendManager.h" />
+    <ClInclude Include="src\Engine\network\GameSave.h" />
+    <ClInclude Include="src\Engine\rpg\Clock.h" />
+    <ClInclude Include="src\Engine\rpg\EasingTest.h" />
+    <ClInclude Include="src\Engine\rpg\gui\CountryCodes.h" />
+    <ClInclude Include="src\Engine\rpg\gui\GameChallengeNotificationPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\gameStore\GameItem.h" />
+    <ClInclude Include="src\Engine\rpg\gui\gameStore\GameStore.h" />
+    <ClInclude Include="src\Engine\rpg\gui\GUIManager.h" />
+    <ClInclude Include="src\Engine\rpg\gui\MenuPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\PlayerEditMenu.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\buttons\GameStoreButton.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\buttons\NDButton.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\buttons\StatusBarButton.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\buttons\StuffButton.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\captions\ClockCaption.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\captions\DayCaption.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\captions\MoneyCaption.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\captions\StatusBarCaption.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\NotificationManager.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\notification\Notification.h" />
+    <ClInclude Include="src\Engine\rpg\gui\statusbar\StatusBar.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\StuffMenu.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\ControlsPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\DebugInfoPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\FriendsPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\ItemsPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\LogsPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\MessagesPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\SettingsPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\subMenus\StatusPanel.h" />
+    <ClInclude Include="src\Engine\rpg\gui\stuffMenu\SubPanel.h" />
+    <ClInclude Include="src\Engine\rpg\Item.h" />
+    <ClInclude Include="src\Engine\MiniGameEngine.h" />
+    <ClInclude Include="src\Engine\nd\GameDataLoader.h" />
+    <ClInclude Include="src\Engine\nd\LibretroGame.h" />
+    <ClInclude Include="src\Engine\nd\ND.h" />
+    <ClInclude Include="src\Engine\nd\NDGameEngine.h" />
+    <ClInclude Include="src\Engine\nd\ndmenu\NDMenu.h" />
+    <ClInclude Include="src\Engine\nd\ndmenu\NDMenuBackground.h" />
+    <ClInclude Include="src\Engine\nd\ndmenu\NDMenuWheel.h" />
+    <ClInclude Include="src\Engine\nd\ndmenu\wheelitem\NDMenuInfoPanel.h" />
+    <ClInclude Include="src\Engine\nd\ndmenu\wheelitem\NDMenuMovie.h" />
+    <ClInclude Include="src\Engine\nd\ndmenu\wheelitem\NDMenuWheelItem.h" />
+    <ClInclude Include="src\Engine\nd\ping\PingBackground.h" />
+    <ClInclude Include="src\Engine\nd\ping\PingBall.h" />
+    <ClInclude Include="src\Engine\nd\ping\PingPaddle.h" />
+    <ClInclude Include="src\Engine\nd\ping\Ping.h" />
+    <ClInclude Include="src\Engine\nd\ramio\RamioBackground.h" />
+    <ClInclude Include="src\Engine\nd\ramio\RamioBlock.h" />
+    <ClInclude Include="src\Engine\nd\ramio\RamioBoba.h" />
+    <ClInclude Include="src\Engine\nd\ramio\RamioBrickBlock.h" />
+    <ClInclude Include="src\Engine\nd\ramio\RamioGuy.h" />
+    <ClInclude Include="src\Engine\nd\ramio\RamioMoneyBlock.h" />
+    <ClInclude Include="src\Engine\nd\ramio\Ramio.h" />
+    <ClInclude Include="src\Engine\stadium\BobsGameStadium.h" />
+    <ClInclude Include="src\Engine\stadium\StadiumScreen.h" />
+    <ClInclude Include="src\Engine\rpg\Player.h" />
+    <ClInclude Include="src\Engine\rpg\Wallet.h" />
+    <ClInclude Include="src\Engine\map\Area.h" />
+    <ClInclude Include="src\Engine\map\AreaData.h" />
+    <ClInclude Include="src\Engine\map\Door.h" />
+    <ClInclude Include="src\Engine\map\DoorData.h" />
+    <ClInclude Include="src\Engine\map\EntityData.h" />
+    <ClInclude Include="src\Engine\map\Light.h" />
+    <ClInclude Include="src\Engine\map\LightData.h" />
+    <ClInclude Include="src\Engine\map\Map.h" />
+    <ClInclude Include="src\Engine\map\MapData.h" />
+    <ClInclude Include="src\Engine\map\MapManager.h" />
+    <ClInclude Include="src\Engine\map\MapState.h" />
+    <ClInclude Include="src\Engine\map\MapStateData.h" />
+    <ClInclude Include="src\Engine\map\WarpArea.h" />
+    <ClInclude Include="src\Engine\network\BobNet.h" />
+    <ClInclude Include="src\Engine\network\UDPPeerConnection.h" />
+    <ClInclude Include="src\Engine\state\CreateNewAccountState.h" />
+    <ClInclude Include="src\Engine\state\GlowTileBackgroundMenuPanel.h" />
+    <ClInclude Include="src\Engine\state\KeyboardMenuPanel.h" />
+    <ClInclude Include="src\Engine\state\LegalMenuPanel.h" />
+    <ClInclude Include="src\Engine\state\LoggedOutState.h" />
+    <ClInclude Include="src\Engine\state\LoginState.h" />
+    <ClInclude Include="src\Engine\state\ServersHaveShutDownState.h" />
+    <ClInclude Include="src\Engine\state\StateManager.h" />
+    <ClInclude Include="src\Engine\state\TitleScreenState.h" />
+    <ClInclude Include="src\Engine\state\YouWillBeNotifiedState.h" />
+    <ClInclude Include="src\Engine\text\TextManager.h" />
+    <ClInclude Include="src\Engine\text\TextWindow.h" />
+    <ClInclude Include="src\Utility\audio\Sound.h" />
+    <ClInclude Include="src\Utility\BobBool.h" />
+    <ClInclude Include="src\Utility\BufferedImage.h" />
+    <ClInclude Include="src\Utility\BobConsole.h" />
+    <ClInclude Include="src\Utility\ConsoleText.h" />
+    <ClInclude Include="src\Utility\gl\BobTexture.h" />
+    <ClInclude Include="src\Utility\Logger.h" />
+    <ClInclude Include="src\Utility\Easing.h" />
+    <ClInclude Include="src\Utility\FileUtils.h" />
+    <ClInclude Include="src\Utility\stringconverter.h" />
+    <ClInclude Include="src\Puzzle\Block.h" />
+    <ClInclude Include="src\Puzzle\BobsGame.h" />
+    <ClInclude Include="src\Puzzle\GameLogic.h" />
+    <ClInclude Include="src\Puzzle\Grid.h" />
+    <ClInclude Include="src\Puzzle\Piece.h" />
+    <ClInclude Include="src\Puzzle\GameType.h" />
+    <ClInclude Include="src\Utility\AssetData.h" />
+    <ClInclude Include="src\Utility\audio\AudioManager.h" />
+    <ClInclude Include="src\Utility\BobFont.h" />
+    <ClInclude Include="src\Utility\Caption.h" />
+    <ClInclude Include="src\Utility\CaptionManager.h" />
+    <ClInclude Include="src\Utility\ControlsManager.h" />
+    <ClInclude Include="src\Utility\gl\GLUtils.h" />
+    <ClInclude Include="src\Utility\System.h" />
+    <ClInclude Include="src\Utility\Color.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\resource_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\util\util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\animation.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\app_data_service.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\av_util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\camera_util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\config.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\debug_window.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\dialog.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\event.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\game.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\game_log_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\game_object.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\input_device_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\live_and_video_service.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\lua_util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\network_util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\np_score_ranking.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\pad_tracker_util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\player_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\play_style.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\psarc_util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\resource_manager_common.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\save_data_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\service.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\setting_window.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\sound_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\thread_util.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\top_level_hud.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\trophy_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\ui.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\user_entry_manager.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\util_common.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\single_user\game_scene.cpp" />
+    <ClCompile Include="..\..\..\..\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\single_user\player_save_data.cpp" />
+    <ClCompile Include="lib\glew-2.0.0\src\glew.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\GWEN-master\gwen\src\Input\GwenInputPS4.cpp" />
+    <ClCompile Include="lib\GWEN-master\gwen\src\input\gwen_input_sdl2.cpp" />
+    <ClCompile Include="lib\HQ2X\HQ2X.cpp" />
+    <ClCompile Include="lib\lz4-1.7.5\lib\lz4.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\lz4-1.7.5\lib\lz4frame.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\lz4-1.7.5\lib\lz4hc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\lz4-1.7.5\lib\xxhash.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\md5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\miniz-master\timer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\miniz-master\tinfl.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Engine\network\TCPServerConnection.cpp" />
+    <ClCompile Include="src\Engine\state\LogoState.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\input_output_devices\api_pad_mouse\basic\api_mouse.cpp" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit_0.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit_1.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit_A.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit_auto.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit_copy.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit_N.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_blit_slow.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_fillrect.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_pixels.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_rect.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_RLEaccel.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_rwops.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_surface.c" />
+    <ClCompile Include="src\orbis\SDL\SDL_ttf.c" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\audio.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\audio_data.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_context.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_data.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_rack.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_stream.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_thread.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs2\ngs2_voice.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_audio_util.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_buss.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_context.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_data.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_module.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_stream.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_voice.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\audio\ngs\ngs_worker_thread.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\debug\debug_menu_item_group.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\debug\menu.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\debug\console.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\buffer.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_animation.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_base.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_controller.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_effect.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_geometry.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_image.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_scene.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\collada_util.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_animation.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_control.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_data_flow.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_effect.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_geom.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_geometry.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_scene.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\collada\dae\dae_transform.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\effect.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\font.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\frame_buffer.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\image.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\loader.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\buffer_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\constant_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\context_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\font_orbis.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\frame_buffer_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\heap_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\image_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\loader_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\memory_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\program_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\render_target_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\shader_loader_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\platform_gnm\texture_gnm.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\program.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\sprite.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\sprite_effect_2d.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\graphics\texture.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\input\controller_common.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\input\orbis\pad_orbis.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\input\pad_common.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\dllmain.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\sampleutil_common.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\skeleton.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\system\orbis\save_data_orbis.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\system\orbis\user_orbis.cpp" />
+    <ClCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\util\util_streaming.cpp" />
+    <ClCompile Include="src\Puzzle\BobsGameMenus.cpp" />
+    <ClCompile Include="src\Engine\cinematics\CinematicsManager.cpp" />
+    <ClCompile Include="src\Engine\cinematics\Letterbox.cpp" />
+    <ClCompile Include="src\Engine\cinematics\ScreenOverlay.cpp" />
+    <ClCompile Include="src\Engine\Engine.cpp" />
+    <ClCompile Include="src\Engine\EnginePart.cpp" />
+    <ClCompile Include="src\Engine\entity\Cameraman.cpp" />
+    <ClCompile Include="src\Engine\entity\Character.cpp" />
+    <ClCompile Include="src\Engine\entity\Entity.cpp" />
+    <ClCompile Include="src\Engine\entity\PathFinder.cpp" />
+    <ClCompile Include="src\Engine\entity\RandomCharacter.cpp" />
+    <ClCompile Include="src\Engine\entity\ScreenSprite.cpp" />
+    <ClCompile Include="src\Engine\entity\BobSprite.cpp" />
+    <ClCompile Include="src\Engine\entity\SpriteAnimationSequence.cpp" />
+    <ClCompile Include="src\Engine\entity\SpriteData.cpp" />
+    <ClCompile Include="src\Engine\entity\SpriteManager.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\ActionManager.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\Dialogue.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\DialogueData.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\BobEvent.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\EventCommand.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\EventData.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\EventManager.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\EventParameter.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\Flag.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\FlagData.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\GameString.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\GameStringData.cpp" />
+    <ClCompile Include="src\Puzzle\CustomGameEditor.cpp" />
+    <ClCompile Include="src\Puzzle\GameSequence.cpp" />
+    <ClCompile Include="src\Puzzle\GameSequenceEditor.cpp" />
+    <ClCompile Include="src\Puzzle\BobsGameNetwork.cpp" />
+    <ClCompile Include="src\Puzzle\GameTestMenu.cpp" />
+    <ClCompile Include="src\Utility\audio\AudioData.cpp" />
+    <ClCompile Include="src\Utility\audio\AudioFile.cpp" />
+    <ClCompile Include="src\Engine\network\ServerObject.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\Skill.cpp" />
+    <ClCompile Include="src\Engine\rpg\event\SkillData.cpp" />
+    <ClCompile Include="src\Engine\rpg\BGClientEngine.cpp" />
+    <ClCompile Include="src\Engine\rpg\FriendCharacter.cpp" />
+    <ClCompile Include="src\Engine\rpg\FriendManager.cpp" />
+    <ClCompile Include="src\Engine\network\GameSave.cpp" />
+    <ClCompile Include="src\Engine\rpg\Clock.cpp" />
+    <ClCompile Include="src\Engine\rpg\EasingTest.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\CountryCodes.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\GameChallengeNotificationPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\gameStore\GameItem.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\gameStore\GameStore.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\GUIManager.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\MenuPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\PlayerEditMenu.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\buttons\GameStoreButton.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\buttons\NDButton.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\buttons\StatusBarButton.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\buttons\StuffButton.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\captions\ClockCaption.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\captions\DayCaption.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\captions\MoneyCaption.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\captions\StatusBarCaption.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\NotificationManager.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\notification\Notification.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\statusbar\StatusBar.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\StuffMenu.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\ControlsPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\DebugInfoPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\FriendsPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\ItemsPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\LogsPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\MessagesPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\SettingsPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\subMenus\StatusPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\gui\stuffMenu\SubPanel.cpp" />
+    <ClCompile Include="src\Engine\rpg\Item.cpp" />
+    <ClCompile Include="src\Engine\MiniGameEngine.cpp" />
+    <ClCompile Include="src\Engine\nd\GameDataLoader.cpp" />
+    <ClCompile Include="src\Engine\nd\LibretroGame.cpp" />
+    <ClCompile Include="src\Engine\nd\ND.cpp" />
+    <ClCompile Include="src\Engine\nd\NDGameEngine.cpp" />
+    <ClCompile Include="src\Engine\nd\ndmenu\NDMenu.cpp" />
+    <ClCompile Include="src\Engine\nd\ndmenu\NDMenuBackground.cpp" />
+    <ClCompile Include="src\Engine\nd\ndmenu\NDMenuWheel.cpp" />
+    <ClCompile Include="src\Engine\nd\ndmenu\wheelitem\NDMenuInfoPanel.cpp" />
+    <ClCompile Include="src\Engine\nd\ndmenu\wheelitem\NDMenuMovie.cpp" />
+    <ClCompile Include="src\Engine\nd\ndmenu\wheelitem\NDMenuWheelItem.cpp" />
+    <ClCompile Include="src\Engine\nd\ping\PingBackground.cpp" />
+    <ClCompile Include="src\Engine\nd\ping\PingBall.cpp" />
+    <ClCompile Include="src\Engine\nd\ping\PingPaddle.cpp" />
+    <ClCompile Include="src\Engine\nd\ping\Ping.cpp" />
+    <ClCompile Include="src\Engine\nd\ramio\RamioBackground.cpp" />
+    <ClCompile Include="src\Engine\nd\ramio\RamioBlock.cpp" />
+    <ClCompile Include="src\Engine\nd\ramio\RamioBoba.cpp" />
+    <ClCompile Include="src\Engine\nd\ramio\RamioBrickBlock.cpp" />
+    <ClCompile Include="src\Engine\nd\ramio\RamioGuy.cpp" />
+    <ClCompile Include="src\Engine\nd\ramio\RamioMoneyBlock.cpp" />
+    <ClCompile Include="src\Engine\nd\ramio\Ramio.cpp" />
+    <ClCompile Include="src\Engine\stadium\BobsGameStadium.cpp" />
+    <ClCompile Include="src\Engine\stadium\StadiumScreen.cpp" />
+    <ClCompile Include="src\Engine\rpg\Player.cpp" />
+    <ClCompile Include="src\Engine\rpg\Wallet.cpp" />
+    <ClCompile Include="src\Engine\map\Area.cpp" />
+    <ClCompile Include="src\Engine\map\AreaData.cpp" />
+    <ClCompile Include="src\Engine\map\Door.cpp" />
+    <ClCompile Include="src\Engine\map\DoorData.cpp" />
+    <ClCompile Include="src\Engine\map\EntityData.cpp" />
+    <ClCompile Include="src\Engine\map\Light.cpp" />
+    <ClCompile Include="src\Engine\map\LightData.cpp" />
+    <ClCompile Include="src\Engine\map\Map.cpp" />
+    <ClCompile Include="src\Engine\map\MapData.cpp" />
+    <ClCompile Include="src\Engine\map\MapManager.cpp" />
+    <ClCompile Include="src\Engine\map\MapState.cpp" />
+    <ClCompile Include="src\Engine\map\MapStateData.cpp" />
+    <ClCompile Include="src\Engine\map\WarpArea.cpp" />
+    <ClCompile Include="src\Engine\network\BobNet.cpp" />
+    <ClCompile Include="src\Engine\network\UDPPeerConnection.cpp" />
+    <ClCompile Include="src\Engine\state\CreateNewAccountState.cpp" />
+    <ClCompile Include="src\Engine\state\GlowTileBackgroundMenuPanel.cpp" />
+    <ClCompile Include="src\Engine\state\KeyboardMenuPanel.cpp" />
+    <ClCompile Include="src\Engine\state\LegalMenuPanel.cpp" />
+    <ClCompile Include="src\Engine\state\LoggedOutState.cpp" />
+    <ClCompile Include="src\Engine\state\LoginState.cpp" />
+    <ClCompile Include="src\Engine\state\ServersHaveShutDownState.cpp" />
+    <ClCompile Include="src\Engine\state\StateManager.cpp" />
+    <ClCompile Include="src\Engine\state\TitleScreenState.cpp" />
+    <ClCompile Include="src\Engine\state\YouWillBeNotifiedState.cpp" />
+    <ClCompile Include="src\Engine\text\TextManager.cpp" />
+    <ClCompile Include="src\Engine\text\TextWindow.cpp" />
+    <ClCompile Include="src\Utility\audio\Sound.cpp" />
+    <ClCompile Include="src\Utility\BobBool.cpp" />
+    <ClCompile Include="src\Utility\BobMath.cpp" />
+    <ClCompile Include="src\Utility\BobMenu.cpp" />
+    <ClCompile Include="src\Utility\BobString.cpp" />
+    <ClCompile Include="src\Utility\BufferedImage.cpp" />
+    <ClCompile Include="src\Utility\BobConsole.cpp" />
+    <ClCompile Include="src\Utility\ConsoleText.cpp" />
+    <ClCompile Include="src\Utility\gl\BobTexture.cpp" />
+    <ClCompile Include="src\Utility\Logger.cpp" />
+    <ClCompile Include="src\Puzzle\Block.cpp" />
+    <ClCompile Include="src\Puzzle\BobsGame.cpp" />
+    <ClCompile Include="src\Puzzle\GameLogic.cpp" />
+    <ClCompile Include="src\Puzzle\Grid.cpp" />
+    <ClCompile Include="src\Puzzle\Piece.cpp" />
+    <ClCompile Include="src\Puzzle\GameType.cpp" />
+    <ClCompile Include="src\Utility\Easing.cpp" />
+    <ClCompile Include="src\Utility\FileUtils.cpp" />
+    <ClCompile Include="src\Utility\AssetData.cpp" />
+    <ClCompile Include="src\Utility\audio\AudioManager.cpp" />
+    <ClCompile Include="src\Utility\BobFont.cpp" />
+    <ClCompile Include="src\Utility\Caption.cpp" />
+    <ClCompile Include="src\Utility\CaptionManager.cpp" />
+    <ClCompile Include="src\Utility\ControlsManager.cpp" />
+    <ClCompile Include="src\Utility\gl\GLUtils.cpp" />
+    <ClCompile Include="src\Utility\Color.cpp" />
+    <ClCompile Include="src\Utility\System.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="bobsgame.rc" />
+    <ResourceCompile Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\libSceSampleUtil.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico" />
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_ascii.tga">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+copy "%(FullPath)" "$(IntDir)%(Filename).tga"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).tga" "%(Filename).obj"
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+copy "%(FullPath)" "$(IntDir)%(Filename).tga"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).tga" "%(Filename).obj"
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\SDL2_gfx-1.0.1\SDL2_gfx-1.0.1\SDL2_gfx.pc.in" />
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_wireframe_f.cg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_wireframe_v.cg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_fill2d_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+      </AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+      </AdditionalInputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_fill2d_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_clear_p.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_clear_vv.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_point_sprite2d_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+      </AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+      </AdditionalInputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_point_sprite2d_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_collada_skinning_phong_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_collada_skinning_phong_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis  "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_2_f.pssl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_2_v.pssl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_yuy2_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_yuy2_v.pssl">
+      <FileType>Document</FileType>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_fill3d_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj;</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_fill3d_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_sb.obj;</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_sb.obj;</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_wireframe_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_wireframe_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_ycbcr_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\source\sampleutil\resource\sampleutil_sprite2d_ycbcr_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+    <ItemGroup>
+    <None Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\data\app\game_data\config.lua" />
+    <None Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\data\app\game_data\lua_script\text.lua" />
+    <None Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\data\app\game_data\lua_script\ui.lua" />
+    <None Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\data\app\game_data\resources.lua" />
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\shader\billboard_f.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Patch|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_ps_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Patch|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Patch|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\shader\billboard_v.pssl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Patch|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">if not exist "$(IntDir)" md "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-wave-psslc.exe" -profile sce_vs_vs_orbis "%(FullPath)" -o "$(IntDir)%(Filename).sb"
+pushd "$(IntDir)"
+"$(SCE_ORBIS_SDK_DIR)\host_tools\bin\orbis-objcopy.exe"  -I binary -O elf64-x86-64  -B i386 "%(Filename).sb" "%(Filename)_sb.obj"
+popd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Patch|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Patch|ORBIS'">$(IntDir)%(Filename)_sb.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

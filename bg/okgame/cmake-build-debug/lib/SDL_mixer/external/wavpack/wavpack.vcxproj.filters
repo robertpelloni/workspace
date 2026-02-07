@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\common_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\decorr_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\entropy_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\extra1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\extra2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\open_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\open_filename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\open_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\open_raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\pack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\pack_dns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\pack_floats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\pack_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\read_words.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\tags.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\tag_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\unpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\unpack_floats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\unpack_seek.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\unpack_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\write_words.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\pack_dsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\unpack_dsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\decorr_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\unpack3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\wavpack_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\src\wavpack_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\SDL_mixer\external\wavpack\libwavpack.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\hyper\workspace\okgame\lib\SDL_mixer\external\wavpack\wavpackdll\wavpackdll.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{103AACF8-938D-304A-8AFC-196E1CC3AF36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3597AA8E-DEED-3192-90FF-72D8632E6250}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

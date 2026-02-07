@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+from picard import register_excepthook
+register_excepthook()
+
+from picard.tagger import main
+main(autoupdate=%(autoupdate)s)

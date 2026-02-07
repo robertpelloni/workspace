@@ -1,0 +1,16 @@
+{
+  "name": "supertorrent",
+  "version": "1.0.0",
+  "description": "P2P Storage and Delivery System for Bobcoin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.91.0",
+    "@lightprotocol/stateless.js": "^0.1.0",
+    "@lightprotocol/compressed-token": "^0.1.0",
+    "x402-solana": "^0.0.1",
+    "bn.js": "^5.2.1"
+  }
+}

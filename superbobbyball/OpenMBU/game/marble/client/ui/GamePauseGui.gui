@@ -1,0 +1,315 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(GamePauseGui) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 2";
+   visible = "1";
+      resumingGame = "1";
+      helpTag = "0";
+      
+   new GuiControl(PauseCenterCtrl) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "640 480";
+      minExtent = "8 8";
+      visible = "1";
+
+      new GuiXboxListCtrl(PauseMenu) {
+         profile = isWidescreen()? "TextMenuListProfile" : "TextMenuListSmallProfile";
+         horizSizing = "left";
+         vertSizing = "height";
+         position = isWidescreen()? "60 -25" : "290 -30"; // will autocenter vertically
+         extent = "640 480";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function GamePauseGui::onWake(%this)
+{
+   $GamePauseGuiActive = true;
+   
+   // Fix inputs getting stuck
+   clearInputs();
+   
+   // resize to screen resolution
+   %width = getWord(getResolution(), 0);
+   %height = getWord(getResolution(), 1);
+   %this.resize(0, 0, %width, %height);
+
+   %w = getWord($Shell::Resolution,0);
+   %h = getWord($Shell::Resolution,1);
+   %offsetX = getWord($Shell::Offset,0);
+   %offsetY = getWord($Shell::Offset,1);
+   %this.add(PauseCenterCtrl);
+   PauseCenterCtrl.resize(%offsetX,%offsetY,%w,%h);
+   
+   PauseMenu.clear();
+	PauseMenu.addRow($Text::Resume, "0", 0, 2);
+   if (!ServerConnection.isMultiplayer)
+      PauseMenu.addRow($Text::Restart, "1", 0, 2);
+   //PauseMenu.addRow($Text::InvY, "2");
+   if (!$testLevel)
+      PauseMenu.addRow($Text::ExitLevelOption, "8", 20, 10);
+   if (isDemoLaunch())
+      PauseMenu.addRow($Text::UnlockFullGame, "3", 0, 2);
+   //PauseMenu.addRow($Text::AboutBasics, "4", 0, 8);
+   PauseMenu.addRow($Text::HelpAndOptions, "5", 0, 8);
+   if (!$testLevel)
+   {
+      PauseMenu.addRow($Text::LeaderBoards, "6", 0, 6);
+      PauseMenu.addRow($Text::Achievements, "7", 0, 6);
+      PauseMenu.addRow($Text::MainMenuOption, "9", 0, 10);
+   }
+   
+   if ($testLevel)
+   {
+      PauseMenu.addRow("Exit", "10", 0, 10);
+   }
+      
+   setHudVisible( false );
+   
+   %level = "";
+   if (!$client::connectedmultiplayer) %level = "<just:left>" @ $Text::Level SPC GameMissionInfo.getCurrentMission().level;
+   LevelTitle.setText(%level);
+   
+   RootGui.setTitle($Text::Paused);
+
+   if ($Server::Hosting && $pref::Lobby::InviteVisibility)
+      LevelTitle.setText($Text::LobbyHostInviteCode @ $Text::Colon SPC $Server::InviteCode);
+      
+   if ($pref::UI::LegacyUI)
+   {
+      RootGui.setA($Text::Go);
+      RootGui.setX($Text::AboutBasics);
+   }
+   
+   DemoTimerGui.pause(1);
+   
+   %this.resumingGame = true;
+   moveMap.pop();
+}
+
+function GamePauseGui::onSleep(%this)
+{
+   $GamePauseGuiActive = false;
+   RootGui.setTitle("");
+   LevelTitle.setText("");
+   RootGui.setA("");
+   RootGui.setX("");
+   RootBackgroundFadeOut.setVisible(0);
+
+   DemoTimerGui.pause(0);
+   
+   if (%this.resumingGame)
+      moveMap.push();
+}
+
+function GamePauseGui::onA()
+{
+   sfxPlay( AudioButtonDown );
+   
+   %idx = PauseMenu.getSelectedData();
+   
+   %unpause = true;
+   switch ( %idx )
+   {
+      case 0:
+         %this.resumingGame = true;
+      case 1: 
+         if (!ServerConnection.isMultiplayer && ServerConnection.gameState !$= "wait")
+         {
+            %this.resumingGame = true;
+            restartLevel();
+         }
+      case 2:
+         %this.resumingGame = true;
+      	$pref::invertYCamera = !$pref::invertYCamera;
+         checkProfileWrite("saveUserPrefs( \"$pref::invert*\" );");
+      case 3: 
+         %unpause = false;
+         %this.resumingGame = false;
+         if (isDemoLaunch())
+            clientShowMarketplaceUI();
+      case 4:
+         // marble controls
+         %unpause = false;
+         RootGui.setContent(ControlerDisplayGui, PlayGui);
+      case 5:
+         // help and options
+         %unpause = false;
+         RootGui.setContent(HelpAndOptionsGui, PlayGui);
+      case 6:
+         // leaderboards
+         %unpause = false;
+         //%level = GameMissionInfo.getCurrentMission().level;
+         %level = GameMissionInfo.getCurrentMission().guid;
+         
+         if( ServerConnection.isMultiplayer )
+         {
+            RootGui.setContent( LevelScoresGui, GameMissionInfo.MPMode, %level, PlayGui );
+         }
+         else
+         {
+            //RootGui.setContent( LevelScoresGui, GameMissionInfo.SPMode, %level, PlayGui );
+            RootGui.setContent( LevelScoresGui, GameMissionInfo.getMode(), %level, PlayGui );
+         }
+      case 7:
+         // achievements
+         %unpause = false;
+         XBLiveShowAchievementsUI();
+
+      case 8: 
+         %unpause = false;
+         %this.resumingGame = false;
+         
+         // figure out what message we are displaying
+         // set default message
+         %msg = $Text::ExitLevelConfirm;
+         %forcePreview = false;
+         if (XBLiveIsRanked() && $Client::connectedMultiplayer)
+         {
+            if ($Server::Hosting)
+               %msg = $Text::RankedHostConfirm;
+            else
+               %msg = $Text::RankedClientConfirm;
+               
+            // in ranked mode we disconnect totally and bounce to preview mode
+            %forcePreview = true;
+         }
+         %okTxt = $Text::OK;
+         %cancelTxt = $Text::Cancel;
+         if (!$pref::UI::LegacyUI)
+         {
+            %okTxt = $Text::Yes;
+            %cancelTxt = $Text::No;
+         }
+         XMessagePopupDlg.show(0, %msg, 
+            %okTxt, "resumeGame();escapeFromGame(" @ %forcePreview @ ");", 
+            %cancelTxt);
+      case 9: 
+         %unpause = false;
+         %this.resumingGame = false;
+         
+         // figure out what message we are displaying
+         if ($Server::Hosting)
+            %msg = $Text::HostMMConfirm;
+         else
+            %msg = $Text::ExitLevelConfirm; //$Text::ClientMMConfirm;
+                             
+         // special message for ranked mode
+         if (XBLiveIsRanked() && $Client::connectedMultiplayer)
+         {
+            if ($Server::Hosting)
+               %msg = $Text::RankedHostConfirm;
+            else
+               %msg = $Text::RankedClientConfirm;
+         }
+         
+         %okTxt = $Text::OK;
+         %cancelTxt = $Text::Cancel;
+         if (!$pref::UI::LegacyUI)
+         {
+            %okTxt = $Text::Yes;
+            %cancelTxt = $Text::No;
+         }
+         XMessagePopupDlg.show(0, %msg, 
+            %okTxt, "GamePauseGui.onMMSelected();", 
+            %cancelTxt);
+      case 10:
+         %unpause = false;
+         %this.resumingGame = false;
+         
+         XMessagePopupDlg.show(0, "Are you sure you want to exit the level test?", 
+            $Text::Yes, "quit();", 
+            $Text::No);
+         
+   }
+   
+   if (%unpause)
+   {
+      setHudVisible( true );
+      Canvas.popDialog( GamePauseGui );
+      Canvas.popDialog( LevelCompleteLogOnDemoGui ); // Just to be safe
+      Canvas.popDialog( LevelCompleteTimeGui );
+      
+	   RootGui.setTitle("");
+	   RootGui.setA("");
+
+      resumeGame();
+   }
+   
+   return true;
+}
+
+function GamePauseGui::onMMSelected(%this)
+{
+   resumeGame();
+   $disconnectGui = MainMenuGui;
+   escapeFromGame(true); // true = force preview mode (don't return to Lobby if we are MP)
+}
+
+function GamePauseGui::onSignInComplete(%this, %showAchUI, %showMarketplace)
+{
+   if (XBLiveIsSignedIn() && %showAchUI)
+      XBLiveShowAchievementsUI();
+   else if (%showMarketplace)
+      clientShowMarketplaceUI();
+}
+
+function checkProfileWrite( %fxn, %callCt )
+{
+   if ($Input::LockedController < 0)
+   {
+      error("Locked controller not set, can't do profile write");
+      return;
+   }
+   
+   if( xbIsProfileContentReady( $Input::LockedController ) )
+   {
+      eval( %fxn );
+   }
+   else
+   {
+      if( %callCt == 0 )
+      {
+         if( xbInitProfileContent( $Input::LockedController ) )
+         {
+            schedule( 2000, 0, "checkProfileWrite", %fxn, 1 );
+         }
+      }
+      else if( %callCt < 10 ) // Add a time out here
+      {
+         schedule( 2000, 0, "checkProfileWrite", %fxn, %callCt++ );
+      }
+   }
+}
+
+function GamePauseGui::onB()
+{
+   sfxPlay( AudioButtonDown );
+   Canvas.popDialog( GamePauseGui );
+   setHudVisible( true );
+   resumeGame();
+   
+   return true;
+}
+
+function GamePauseGui::onX()
+{
+   sfxPlay( AudioButtonDown );
+   RootGui.setContent(ControlerDisplayGui, PlayGui);
+   
+   return true;
+}
+
+function GamePauseGui::onBack()
+{
+   return true;
+}
+

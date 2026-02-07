@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\src\ActiveRecord.cpp">
+      <Filter>ActiveRecord\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\src\Context.cpp">
+      <Filter>ActiveRecord\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\src\IDTraits.cpp">
+      <Filter>ActiveRecord\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\src\StatementPlaceholderProvider.cpp">
+      <Filter>ActiveRecord\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\include\Poco\ActiveRecord\ActiveRecord.h">
+      <Filter>ActiveRecord\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\include\Poco\ActiveRecord\ActiveRecordLib.h">
+      <Filter>ActiveRecord\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\include\Poco\ActiveRecord\Context.h">
+      <Filter>ActiveRecord\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\include\Poco\ActiveRecord\IDTraits.h">
+      <Filter>ActiveRecord\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\include\Poco\ActiveRecord\Query.h">
+      <Filter>ActiveRecord\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\include\Poco\ActiveRecord\StatementPlaceholderProvider.h">
+      <Filter>ActiveRecord\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\poco\ActiveRecord\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\DLLVersion.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ActiveRecord">
+      <UniqueIdentifier>{6B5EFB19-DD50-3900-B1FF-DC6ED273947F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActiveRecord\Header Files">
+      <UniqueIdentifier>{5546926C-7CDF-3996-A5DF-8DC327593451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActiveRecord\Source Files">
+      <UniqueIdentifier>{EDB55807-85F3-3D42-9A0A-E52B8B606AA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{3254F111-23A4-3FD3-9849-4D16DC8377F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,57 @@
+﻿/*
+ * SIE CONFIDENTIAL
+ * PlayStation(R)4 Programmer Tool Runtime Library Release 04.508.001
+ * Copyright (C) 2016 Sony Interactive Entertainment Inc.
+ * All Rights Reserved.
+ */
+/* data from application vertex buffer */
+struct appdata {
+    float3 Position	: POSITION;
+    float4 UV		: TEXCOORD0;
+	float4 Color    : COLOR0;
+};
+
+/* data passed from vertex shader to pixel shader */
+struct vertexOutput {
+    float4 HPosition	: POSITION;
+    float2 UV		: TEXCOORD0;
+    float4 Color    : COLOR0;
+#ifndef MAYA
+  float4 vShadowCoord : TEXCOORD1;
+#endif
+
+};
+ 
+///////// VERTEX SHADING /////////////////////
+
+/*********** Generic Vertex Shader ******/
+
+vertexOutput main(appdata IN,
+		  uniform float4x4 mvpMatrix  : WORLDVIEWPROJECTION
+#ifndef MAYA
+		  ,
+		  uniform float4x4 shadowViewProjMatrix
+#endif
+					) 
+{
+    vertexOutput OUT;
+    OUT.UV = IN.UV.xy;
+#ifndef MAYA
+    OUT.UV.y = 1.0 - OUT.UV.y;
+#endif
+    OUT.HPosition = mul(mvpMatrix, float4(IN.Position.xyz,1));
+    OUT.Color     = IN.Color;
+
+#ifndef MAYA
+    //OUT.vShadowCoord = mul(shadowTexViewProj, float4(IN.Position.xyz,1));
+    float4 scod = mul(shadowViewProjMatrix, float4(IN.Position.xyz,1));
+    OUT.vShadowCoord.x = 0.5f * scod.x / scod.w + 0.5f;
+    OUT.vShadowCoord.y = -0.5f * scod.y / scod.w + 0.5f;
+    OUT.vShadowCoord.z = 0.5 * scod.z / scod.w + 0.5f;
+    OUT.vShadowCoord.w = 1.0f;
+
+#endif
+
+    return OUT;
+}
+

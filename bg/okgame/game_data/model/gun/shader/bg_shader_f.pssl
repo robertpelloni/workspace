@@ -1,0 +1,42 @@
+﻿/*
+ * SIE CONFIDENTIAL
+ * PlayStation(R)4 Programmer Tool Runtime Library Release 04.508.001
+ * Copyright (C) 2016 Sony Interactive Entertainment Inc.
+ * All Rights Reserved.
+ */
+/* data passed from vertex shader to pixel shader */
+struct vertexOutput {
+    float4 HPosition	: S_POSITION;
+    float2 UV		: TEXCOORD0;
+    float4 Color    : COLOR0;
+  float4 vShadowCoord : TEXCOORD1;
+};
+
+
+///////// PIXEL SHADING //////////////////////
+
+SamplerState ColorSamplerState : register(s0);
+Texture2D ColorSampler : register( t0 );
+
+SamplerComparisonState shadowTexState : register(s1);
+Texture2D shadowTex : register( t1 );
+
+float4 main(vertexOutput IN
+	   ) : S_TARGET_OUTPUT
+{
+    float4 diffuseColor = ColorSampler.Sample(ColorSamplerState, IN.UV);
+
+#ifdef ENABLE_SHADOW
+    float4 shadowTerm = shadowTex.GatherCmp(shadowTexState, 
+											IN.vShadowCoord.xy/ IN.vShadowCoord.w, 
+											IN.vShadowCoord.z/ IN.vShadowCoord.w);
+    float4 result = diffuseColor * (IN.Color * shadowTerm);
+#else
+	float4 result = diffuseColor * IN.Color;
+#endif
+    float4 ret = result;
+	//ret.a = 1.0f;
+	//ret.r = IN.Color.r;
+    return ret;
+}
+ 

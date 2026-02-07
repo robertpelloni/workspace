@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F925CC08-2241-3D0A-8A07-1FBE8E22F2E1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>boost_unordered</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" />
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/unordered/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/unordered/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\unordered\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/unordered/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/unordered/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\unordered\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/unordered/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/unordered/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\unordered\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/unordered/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/unordered/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\unordered\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_flat_map.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_flat_map_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_flat_set.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_flat_set_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_node_map.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_node_map_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_node_set.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\concurrent_node_set_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\allocator_constructed.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\archive_constructed.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\bad_archive_exception.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\concurrent_static_asserts.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\fca.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\concurrent_table.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\core.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\cumulative_stats.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\element_type.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\flat_map_types.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\flat_set_types.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\ignore_wshadow.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\node_handle.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\node_map_handle.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\node_map_types.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\node_set_handle.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\node_set_types.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\reentrancy_check.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\restore_wshadow.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\rw_spinlock.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\table.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\tuple_rotate_right.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\foa\types_constructibility.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\implementation.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\map.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\mulx.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\narrow_cast.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\opt_storage.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\prime_fmod.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\serialization_version.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\serialize_container.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\serialize_fca_container.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\serialize_tracked_address.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\set.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\static_assert.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\throw_exception.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\type_traits.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\unordered_printers.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\detail\xmx.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\hash_traits.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_flat_map.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_flat_map_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_flat_set.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_flat_set_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_map.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_map_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_node_map.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_node_map_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_node_set.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_node_set_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_set.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered\unordered_set_fwd.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered_map.hpp">
+    </None>
+    <None Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\include\boost\unordered_set.hpp">
+    </None>
+    <Natvis Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\unordered\extra\boost_unordered.natvis">
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

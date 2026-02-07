@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\dummy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\playlist\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\playlist\projectM_playlist_main.dir\$(Configuration)\Filter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\playlist\projectM_playlist_main.dir\$(Configuration)\Item.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\playlist\projectM_playlist_main.dir\$(Configuration)\Playlist.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\playlist\projectM_playlist_main.dir\$(Configuration)\PlaylistCWrapper.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{21E01067-8A7E-3E15-A42C-90784057BDB0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3597AA8E-DEED-3192-90FF-72D8632E6250}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+
+
+movePlayer(1);
+

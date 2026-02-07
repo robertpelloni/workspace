@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FD1AECE4-A343-34A9-827F-F1B697CC39E3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Renderer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Renderer.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Renderer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Renderer.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Renderer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Renderer.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Renderer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Renderer.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Renderer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH=\"\";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LIB_DIAGNOSTIC=1;NOMINMAX;DATADIR_PATH="";WIN32_LEAN_AND_MEAN;STBI_NO_DDS;GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\include;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\..;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer;C:\Users\hyper\workspace\okgame\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\include;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\glm\..;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\src;C:\Users\hyper\workspace\okgame\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\hlslparser\..\..\src;C:\Users\hyper\workspace\okgame\lib\projectm\vendor\SOIL2\src;C:\Users\hyper\workspace\okgame\lib\GWEN\gwen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\1b580f5f8dc2ba102891a356ae476aec\BuiltInTransitionsResources.hpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag -D OUTPUT_FILE=C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P C:/Users/hyper/workspace/okgame/lib/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\lib\projectm\cmake\ShaderResources.hpp.in;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResourcesScript.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag -D OUTPUT_FILE=C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P C:/Users/hyper/workspace/okgame/lib/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\lib\projectm\cmake\ShaderResources.hpp.in;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResourcesScript.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag -D OUTPUT_FILE=C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P C:/Users/hyper/workspace/okgame/lib/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\lib\projectm\cmake\ShaderResources.hpp.in;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResourcesScript.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag -D OUTPUT_FILE=C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P C:/Users/hyper/workspace/okgame/lib/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\lib\projectm\cmake\ShaderResources.hpp.in;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResourcesScript.cmake;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/projectm/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\BlendMode.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\BlendMode.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Color.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\CopyTexture.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\CopyTexture.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\FileScanner.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\FileScanner.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Framebuffer.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Framebuffer.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\IdleTextures.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Mesh.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Mesh.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\MilkdropNoise.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\MilkdropNoise.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Point.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\PresetTransition.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\PresetTransition.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\RenderContext.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Sampler.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Sampler.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Shader.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Shader.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\ShaderCache.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\ShaderCache.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Texture.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\Texture.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TextureAttachment.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TextureAttachment.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TextureManager.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TextureManager.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TextureSamplerDescriptor.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TextureSamplerDescriptor.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TextureUV.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaderManager.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\TransitionShaderManager.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\VertexArray.hpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\VertexBuffer.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\VertexBufferUsage.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\VertexBufferUsage.hpp" />
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\VertexIndexArray.cpp" />
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\projectm\src\libprojectM\Renderer\VertexIndexArray.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\vendor\SOIL2\SOIL2.vcxproj">
+      <Project>{4FB1BE2F-C9F1-34CA-8782-E0E35F321254}</Project>
+      <Name>SOIL2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\glew.vcxproj">
+      <Project>{B7595768-D1F9-3F3D-AC9F-5BF0FF98B2ED}</Project>
+      <Name>glew</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\vendor\glm\glm.vcxproj">
+      <Project>{0E56C595-EAE4-385E-B52F-E157C628E15A}</Project>
+      <Name>glm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\vendor\hlslparser\hlslparser.vcxproj">
+      <Project>{ECEE3F6D-32FF-3D6C-B6FD-5E9B0F01F405}</Project>
+      <Name>hlslparser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\projectm\src\api\projectM_api.vcxproj">
+      <Project>{E509DF31-2919-3DFC-B2ED-10C379F66155}</Project>
+      <Name>projectM_api</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

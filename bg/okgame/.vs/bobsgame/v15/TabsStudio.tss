@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>c:\Users\bob\workspace\bobsgame PS4\src\main.cpp</string>
+      <string>C:\Users\bob\workspace\bobsgame PS4\src\main.h</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\bob\workspace\bobsgame PS4\bobtypes.h</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\bob\workspace\bobsgame PS4\stdafx.h</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\bob\workspace\bobsgame PS4\src\orbis\SDL\SDL_ttf.c</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\bob\workspace\bobsgame PS4\src\Utility\BobFont.cpp</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\bob\workspace\bobsgame PS4\src\Utility\gl\GLUtils.cpp</string>
+      <string>C:\Users\bob\workspace\bobsgame PS4\src\Utility\gl\GLUtils.h</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common\resource_manager.h</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SCE\ORBIS SDKs\5.500\target\samples\sample_code\common\include\sampleutil\graphics\loader.h</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\bob\workspace\bobsgame PS4\src\Utility\gl\BobTexture.h</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

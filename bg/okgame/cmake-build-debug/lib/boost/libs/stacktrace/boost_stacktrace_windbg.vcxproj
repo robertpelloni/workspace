@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27CD7317-7BCF-3717-890B-8EC16E8974E1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>boost_stacktrace_windbg</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">boost_stacktrace_windbg.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">boost_stacktrace_windbg-vc142-mt-gd-x64-1_90d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">boost_stacktrace_windbg.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">boost_stacktrace_windbg-vc142-mt-x64-1_90</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">boost_stacktrace_windbg.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">boost_stacktrace_windbg-vc142-mt-x64-1_90</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">boost_stacktrace_windbg.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">boost_stacktrace_windbg-vc142-mt-x64-1_90</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="Debug";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR=\"Debug\";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="Debug";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>dbgeng.lib;ole32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost_stacktrace_windbg-vc142-mt-gd-x64-1_90d.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/boost_stacktrace_windbg-vc142-mt-gd-x64-1_90d.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.90</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="Release";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR=\"Release\";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="Release";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>dbgeng.lib;ole32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost_stacktrace_windbg-vc142-mt-x64-1_90.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/boost_stacktrace_windbg-vc142-mt-x64-1_90.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.90</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="MinSizeRel";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR=\"MinSizeRel\";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="MinSizeRel";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>dbgeng.lib;ole32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost_stacktrace_windbg-vc142-mt-x64-1_90.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/boost_stacktrace_windbg-vc142-mt-x64-1_90.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.90</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fpermissive</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(VCToolsVersion)' &gt;= '14.29'"></SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="RelWithDebInfo";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR=\"RelWithDebInfo\";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_STACKTRACE_NO_LIB;BOOST_STACKTRACE_SOURCE;_GNU_SOURCE=1;BOOST_STACKTRACE_DYN_LINK;CMAKE_INTDIR="RelWithDebInfo";boost_stacktrace_windbg_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\config\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\container_hash\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\describe\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\mp11\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\core\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\throw_exception\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\predef\include;C:\Users\hyper\workspace\okgame\lib\boost\libs\winapi\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>dbgeng.lib;ole32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost_stacktrace_windbg-vc142-mt-x64-1_90.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/hyper/workspace/okgame/cmake-build-debug/bin/boost_stacktrace_windbg-vc142-mt-x64-1_90.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.90</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/stacktrace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/stacktrace/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\stacktrace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/stacktrace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/stacktrace/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\stacktrace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/stacktrace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/stacktrace/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\stacktrace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/boost/libs/stacktrace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/boost/libs/stacktrace/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\stacktrace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\stacktrace\src\windbg.cpp" />
+    <Natvis Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\extra\boost_assert.natvis">
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\assert\boost_assert.vcxproj">
+      <Project>{FC3D8B6C-D475-391C-8447-8F81D778D068}</Project>
+      <Name>boost_assert</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\boost\libs\core\boost_core.vcxproj">
+      <Project>{ECD29D7C-00E9-3389-AFF5-BA382FA04537}</Project>
+      <Name>boost_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

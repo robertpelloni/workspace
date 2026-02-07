@@ -1,0 +1,359 @@
+[submodule "lib/boost"]
+	path = lib/boost
+	url = https://github.com/boostorg/boost
+[submodule "lib/CTPL"]
+	path = lib/CTPL
+	url = https://github.com/vit-vit/CTPL
+[submodule "lib/glew"]
+	path = lib/glew
+	url = https://github.com/nigels-com/glew
+[submodule "lib/GWEN"]
+	path = lib/GWEN
+	url = https://github.com/robertpelloni/GWEN
+[submodule "lib/sigar"]
+	path = lib/sigar
+	url = https://github.com/hyperic/sigar
+[submodule "lib/imgui"]
+	path = lib/imgui
+	url = https://github.com/ocornut/imgui
+[submodule "lib/libmodplug"]
+	path = lib/libmodplug
+	url = https://github.com/Konstanty/libmodplug
+[submodule "lib/lz4-java"]
+	path = lib/lz4-java
+	url = https://github.com/lz4/lz4-java
+[submodule "lib/MicroPather"]
+	path = lib/MicroPather
+	url = https://github.com/leethomason/MicroPather
+[submodule "lib/miniz"]
+	path = lib/miniz
+	url = https://github.com/richgel999/miniz
+[submodule "lib/MODPlay"]
+	path = lib/MODPlay
+	url = https://github.com/prochazkaml/MODPlay
+[submodule "lib/nanogui"]
+	path = lib/nanogui
+	url = https://github.com/wjakob/nanogui
+[submodule "lib/nanogui-sdl"]
+	path = lib/nanogui-sdl
+	url = https://gitlab.com/MrPepperoni/nanogui-sdl
+[submodule "lib/nngui"]
+	path = lib/nngui
+	url = https://github.com/draekko/nngui
+[submodule "lib/poco"]
+	path = lib/poco
+	url = https://github.com/pocoproject/poco
+[submodule "lib/SDL"]
+	path = lib/SDL
+	url = https://github.com/libsdl-org/SDL
+	branch = SDL2
+[submodule "lib/SDL_image"]
+	path = lib/SDL_image
+	url = https://github.com/libsdl-org/SDL_image
+	branch = SDL2
+[submodule "lib/SDL_ttf"]
+	path = lib/SDL_ttf
+	url = https://github.com/libsdl-org/SDL_ttf
+	branch = SDL2
+[submodule "lib/SDL_mixer"]
+	path = lib/SDL_mixer
+	url = https://github.com/libsdl-org/SDL_mixer
+	branch = SDL2
+[submodule "lib/SDL_net"]
+	path = lib/SDL_net
+	url = https://github.com/libsdl-org/SDL_net
+	branch = SDL2
+[submodule "lib/sdl2-compat"]
+	path = lib/sdl2-compat
+	url = https://github.com/libsdl-org/sdl2-compat
+[submodule "lib/SDL_rtf"]
+	path = lib/SDL_rtf
+	url = https://github.com/libsdl-org/SDL_rtf
+[submodule "lib/libtiff"]
+	path = lib/libtiff
+	url = https://github.com/libsdl-org/libtiff
+[submodule "lib/SDL_gesture"]
+	path = lib/SDL_gesture
+	url = https://github.com/libsdl-org/SDL_gesture
+[submodule "lib/Maelstrom"]
+	path = lib/Maelstrom
+	url = https://github.com/libsdl-org/Maelstrom
+[submodule "lib/SDL_native_midi"]
+	path = lib/SDL_native_midi
+	url = https://github.com/libsdl-org/SDL_native_midi
+[submodule "lib/jpeg"]
+	path = lib/jpeg
+	url = https://github.com/libsdl-org/jpeg
+[submodule "lib/harfbuzz"]
+	path = lib/harfbuzz
+	url = https://github.com/libsdl-org/harfbuzz
+[submodule "lib/freetype"]
+	path = lib/freetype
+	url = https://github.com/libsdl-org/freetype
+[submodule "lib/mpg123"]
+	path = lib/mpg123
+	url = https://github.com/libsdl-org/mpg123
+[submodule "lib/dav1d"]
+	path = lib/dav1d
+	url = https://github.com/libsdl-org/dav1d
+[submodule "lib/libjxl"]
+	path = lib/libjxl
+	url = https://github.com/libsdl-org/libjxl
+[submodule "lib/aom"]
+	path = lib/aom
+	url = https://github.com/libsdl-org/aom
+[submodule "lib/highway"]
+	path = lib/highway
+	url = https://github.com/libsdl-org/highway
+[submodule "lib/libavif"]
+	path = lib/libavif
+	url = https://github.com/libsdl-org/libavif
+[submodule "lib/libpng"]
+	path = lib/libpng
+	url = https://github.com/libsdl-org/libpng
+[submodule "lib/flac"]
+	path = lib/flac
+	url = https://github.com/libsdl-org/flac
+[submodule "lib/game-music-emu"]
+	path = lib/game-music-emu
+	url = https://github.com/libsdl-org/game-music-emu
+[submodule "lib/stb"]
+	path = lib/stb
+	url = https://github.com/libsdl-org/stb
+[submodule "lib/plutovg"]
+	path = lib/plutovg
+	url = https://github.com/libsdl-org/plutovg
+[submodule "lib/libxmp"]
+	path = lib/libxmp
+	url = https://github.com/libsdl-org/libxmp
+[submodule "lib/libwebp"]
+	path = lib/libwebp
+	url = https://github.com/libsdl-org/libwebp
+[submodule "lib/plutosvg"]
+	path = lib/plutosvg
+	url = https://github.com/libsdl-org/plutosvg
+[submodule "lib/vorbis"]
+	path = lib/vorbis
+	url = https://github.com/libsdl-org/vorbis
+[submodule "lib/brotli"]
+	path = lib/brotli
+	url = https://github.com/libsdl-org/brotli
+[submodule "lib/WavPack"]
+	path = lib/WavPack
+	url = https://github.com/libsdl-org/WavPack
+[submodule "lib/opusfile"]
+	path = lib/opusfile
+	url = https://github.com/libsdl-org/opusfile
+[submodule "lib/opus"]
+	path = lib/opus
+	url = https://github.com/libsdl-org/opus
+[submodule "lib/ogg"]
+	path = lib/ogg
+	url = https://github.com/libsdl-org/ogg
+[submodule "lib/zlib"]
+	path = lib/zlib
+	url = https://github.com/libsdl-org/zlib
+[submodule "lib/tremor"]
+	path = lib/tremor
+	url = https://github.com/libsdl-org/tremor
+[submodule "lib/SDL2_gfx"]
+	path = lib/SDL2_gfx
+	url = https://github.com/giroletm/SDL2_gfx
+[submodule "lib/glad"]
+	path = lib/glad
+	url = https://github.com/Dav1dde/glad
+[submodule "lib/glfw"]
+	path = lib/glfw
+	url = https://github.com/glfw/glfw
+[submodule "lib/cppcodec"]
+	path = lib/cppcodec
+	url = https://github.com/tplgy/cppcodec
+[submodule "lib/Snippets"]
+	path = lib/Snippets
+	url = https://github.com/DanielGibson/Snippets
+[submodule "lib/md5-c"]
+	path = lib/md5-c
+	url = https://github.com/Zunawe/md5-c
+[submodule "lib/paulxstretch"]
+	path = lib/paulxstretch
+	url = https://github.com/essej/paulxstretch
+[submodule "lib/soundtouch"]
+	path = lib/soundtouch
+	url = https://codeberg.org/soundtouch/soundtouch
+[submodule "lib/mpv"]
+	path = lib/mpv
+	url = https://github.com/mpv-player/mpv
+[submodule "lib/raylib"]
+	path = lib/raylib
+	url = https://github.com/raysan5/raylib
+[submodule "lib/lvgl"]
+	path = lib/lvgl
+	url = https://github.com/lvgl/lvgl
+[submodule "lib/sumatrapdf"]
+	path = lib/sumatrapdf
+	url = https://github.com/sumatrapdfreader/sumatrapdf
+[submodule "lib/libusb"]
+	path = lib/libusb
+	url = https://github.com/libusb/libusb
+[submodule "lib/UACME"]
+	path = lib/UACME
+	url = https://github.com/hfiref0x/UACME
+[submodule "lib/Nuklear"]
+	path = lib/Nuklear
+	url = https://github.com/Immediate-Mode-UI/Nuklear
+[submodule "lib/Craft"]
+	path = lib/Craft
+	url = https://github.com/fogleman/Craft
+[submodule "lib/libretro-super"]
+	path = lib/libretro-super
+	url = https://github.com/libretro/libretro-super
+[submodule "lib/melonDS"]
+	path = lib/melonDS
+	url = https://github.com/melonDS-emu/melonDS
+[submodule "lib/desmume"]
+	path = lib/desmume
+	url = https://github.com/TASEmulators/desmume
+[submodule "lib/Genesis-Plus-GX"]
+	path = lib/Genesis-Plus-GX
+	url = https://github.com/ekeeke/Genesis-Plus-GX
+[submodule "lib/snes9x2010"]
+	path = lib/snes9x2010
+	url = https://github.com/libretro/snes9x2010
+[submodule "lib/mgba"]
+	path = lib/mgba
+	url = https://github.com/libretro/mgba
+[submodule "lib/libretro-database"]
+	path = lib/libretro-database
+	url = https://github.com/libretro/libretro-database
+[submodule "lib/vbam-libretro"]
+	path = lib/vbam-libretro
+	url = https://github.com/libretro/vbam-libretro
+[submodule "lib/RetroArch"]
+	path = lib/RetroArch
+	url = https://github.com/libretro/RetroArch
+[submodule "lib/retroarch-joypad-autoconfig"]
+	path = lib/retroarch-joypad-autoconfig
+	url = https://github.com/libretro/retroarch-joypad-autoconfig
+[submodule "lib/FBNeo"]
+	path = lib/FBNeo
+	url = https://github.com/libretro/FBNeo
+[submodule "lib/retroarch-assets"]
+	path = lib/retroarch-assets
+	url = https://github.com/libretro/retroarch-assets
+[submodule "lib/picodrive"]
+	path = lib/picodrive
+	url = https://github.com/libretro/picodrive
+[submodule "lib/snes9x"]
+	path = lib/snes9x
+	url = https://github.com/libretro/snes9x
+[submodule "lib/gpsp"]
+	path = lib/gpsp
+	url = https://github.com/libretro/gpsp
+[submodule "lib/nestopia"]
+	path = lib/nestopia
+	url = https://github.com/libretro/nestopia
+[submodule "lib/libretro-samples"]
+	path = lib/libretro-samples
+	url = https://github.com/libretro/libretro-samples
+[submodule "lib/vba-next"]
+	path = lib/vba-next
+	url = https://github.com/libretro/vba-next
+[submodule "lib/gambatte-libretro"]
+	path = lib/gambatte-libretro
+	url = https://github.com/libretro/gambatte-libretro
+[submodule "lib/libretro-fceumm"]
+	path = lib/libretro-fceumm
+	url = https://github.com/libretro/libretro-fceumm
+[submodule "lib/libretro-common"]
+	path = lib/libretro-common
+	url = https://github.com/libretro/libretro-common
+[submodule "lib/libretro-lutro"]
+	path = lib/libretro-lutro
+	url = https://github.com/libretro/libretro-lutro
+[submodule "lib/timidity"]
+	path = lib/timidity
+	url = https://github.com/robertpelloni/timidity
+[submodule "lib/libtimidity"]
+	path = lib/libtimidity
+	url = https://github.com/sezero/libtimidity
+[submodule "lib/libmidi"]
+	path = lib/libmidi
+	url = https://github.com/opencodewin/libmidi
+[submodule "lib/defold-astar"]
+	path = lib/defold-astar
+	url = https://github.com/selimanac/defold-astar
+[submodule "resources/presets/presets-milkdrop-texture-pack"]
+	path = resources/presets/presets-milkdrop-texture-pack
+	url = https://github.com/projectM-visualizer/presets-milkdrop-texture-pack
+[submodule "resources/presets/presets-cream-of-the-crop"]
+	path = resources/presets/presets-cream-of-the-crop
+	url = https://github.com/projectM-visualizer/presets-cream-of-the-crop
+[submodule "resources/presets/presets-projectm-classic"]
+	path = resources/presets/presets-projectm-classic
+	url = https://github.com/projectM-visualizer/presets-projectm-classic
+[submodule "resources/presets/presets-milkdrop-original"]
+	path = resources/presets/presets-milkdrop-original
+	url = https://github.com/projectM-visualizer/presets-milkdrop-original
+[submodule "resources/presets/presets-en-d"]
+	path = resources/presets/presets-en-d
+	url = https://github.com/projectM-visualizer/presets-en-d
+[submodule "resources/presets/butterchurn-presets"]
+	path = resources/presets/butterchurn-presets
+	url = https://github.com/jberg/butterchurn-presets
+[submodule "resources/presets/poweramp-visualizer-presets"]
+	path = resources/presets/poweramp-visualizer-presets
+	url = https://github.com/SpasilliumNexus/poweramp-visualizer-presets
+[submodule "resources/presets/milkdrop-preset-collection"]
+	path = resources/presets/milkdrop-preset-collection
+	url = https://github.com/LeetCodes/milkdrop-preset-collection
+[submodule "resources/presets/Milkdrop3-Portal-Presets"]
+	path = resources/presets/Milkdrop3-Portal-Presets
+	url = https://github.com/Grooves1210/Milkdrop3-Portal-Presets
+[submodule "resources/presets/tens-of-thousands-milkdrop-presets-for-butterchurn"]
+	path = resources/presets/tens-of-thousands-milkdrop-presets-for-butterchurn
+	url = https://github.com/ansorre/tens-of-thousands-milkdrop-presets-for-butterchurn
+[submodule "resources/presets/Rhythmbeam-Milkdrop"]
+	path = resources/presets/Rhythmbeam-Milkdrop
+	url = https://github.com/Rhythmbeam/Rhythmbeam-Milkdrop
+[submodule "resources/presets/milkdrop-presets"]
+	path = resources/presets/milkdrop-presets
+	url = https://github.com/jtopian/milkdrop-presets
+[submodule "lib/MilkDrop3"]
+	path = lib/MilkDrop3
+	url = https://github.com/robertpelloni/MilkDrop3
+[submodule "lib/geiss"]
+	path = lib/geiss
+	url = https://github.com/robertpelloni/geiss
+[submodule "lib/projectm"]
+	path = lib/projectm
+	url = https://github.com/robertpelloni/projectm
+[submodule "lib/butterchurn"]
+	path = lib/butterchurn
+	url = https://github.com/jberg/butterchurn
+[submodule "lib/milkdrop2077"]
+	path = lib/milkdrop2077
+	url = https://github.com/milkdrop2077/milkdrop2077
+[submodule "lib/frontend-sdl-cpp"]
+	path = lib/frontend-sdl-cpp
+	url = https://github.com/robertpelloni/frontend-sdl-cpp
+[submodule "lib/milkdrop2"]
+	path = lib/milkdrop2
+	url = https://github.com/projectM-visualizer/milkdrop2
+[submodule "lib/milkdrop-preset-utils"]
+	path = lib/milkdrop-preset-utils
+	url = https://github.com/jberg/milkdrop-preset-utils
+[submodule "lib/milkdrop-preset-converter-node"]
+	path = lib/milkdrop-preset-converter-node
+	url = https://github.com/jberg/milkdrop-preset-converter-node
+[submodule "lib/MilkDrop-MusicVisualizer"]
+	path = lib/MilkDrop-MusicVisualizer
+	url = https://github.com/xlimit91/MilkDrop-MusicVisualizer
+[submodule "lib/Milkwave"]
+	path = lib/Milkwave
+	url = https://github.com/IkeC/Milkwave
+[submodule "lib/projectm-eval"]
+	path = lib/projectm-eval
+	url = https://github.com/projectM-visualizer/projectm-eval
+[submodule "lib/CLove"]
+	path = lib/CLove
+	url = https://gitlab.com/Murii/CLove

@@ -1,0 +1,154 @@
+name: Build
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  windows:
+    name: Windows (VS2022)
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+
+      - name: Cache submodules
+        uses: actions/cache@v4
+        with:
+          path: |
+            lib/
+            resources/presets/
+          key: submodules-win-${{ hashFiles('.gitmodules') }}
+          restore-keys: |
+            submodules-win-
+
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Setup Ninja
+        uses: seanmiddleditch/gha-setup-ninja@v5
+
+      - name: Cache CMake build
+        uses: actions/cache@v4
+        with:
+          path: build
+          key: build-win-${{ github.sha }}
+          restore-keys: |
+            build-win-
+
+      - name: Configure CMake
+        run: |
+          cmake -B build -G Ninja `
+            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} `
+            -DCMAKE_C_COMPILER=cl `
+            -DCMAKE_CXX_COMPILER=cl
+
+      - name: Build
+        run: cmake --build build --config ${{ env.BUILD_TYPE }} --parallel
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bobsgame-windows-${{ github.sha }}
+          path: |
+            build/bin/bobsgame.exe
+            build/bin/*.dll
+          retention-days: 7
+          if-no-files-found: warn
+
+  linux:
+    name: Linux (GCC)
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+
+      - name: Cache submodules
+        uses: actions/cache@v4
+        with:
+          path: |
+            lib/
+            resources/presets/
+          key: submodules-linux-${{ hashFiles('.gitmodules') }}
+          restore-keys: |
+            submodules-linux-
+
+      - name: Setup ccache
+        uses: hendrikmuhs/ccache-action@v1
+        with:
+          key: ccache-linux-${{ hashFiles('**/CMakeLists.txt') }}
+          restore-keys: |
+            ccache-linux-
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            ninja-build \
+            libsdl2-dev \
+            libsdl2-image-dev \
+            libsdl2-mixer-dev \
+            libsdl2-ttf-dev \
+            libsdl2-net-dev \
+            libboost-all-dev \
+            libgl1-mesa-dev \
+            libglu1-mesa-dev \
+            libglew-dev \
+            libglm-dev \
+            libpoco-dev \
+            pkg-config
+
+      - name: Cache CMake build
+        uses: actions/cache@v4
+        with:
+          path: build
+          key: build-linux-${{ github.sha }}
+          restore-keys: |
+            build-linux-
+
+      - name: Configure CMake
+        run: |
+          cmake -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} \
+            -DCMAKE_C_COMPILER_LAUNCHER=ccache \
+            -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
+
+      - name: Build
+        run: cmake --build build --config ${{ env.BUILD_TYPE }} --parallel
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bobsgame-linux-${{ github.sha }}
+          path: |
+            build/bin/bobsgame
+          retention-days: 7
+          if-no-files-found: warn
+
+  validate:
+    name: Validate
+    needs: [windows, linux]
+    runs-on: ubuntu-latest
+    steps:
+      - name: All builds passed
+        run: echo "Windows and Linux builds completed successfully"

@@ -1,0 +1,227 @@
+[build-system]
+requires = ["setuptools>=77.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "picard"
+description = "Picard is a cross-platform music tagger powered by the MusicBrainz database"
+authors = [{name = "The MusicBrainz Team"}]
+license = "GPL-2.0-or-later"
+keywords = ["musicbrainz", "tagging", "audio"]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications :: Qt",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Intended Audience :: End Users/Desktop",
+]
+dynamic = ["version", "readme", "gui-scripts"]
+dependencies = [
+    "comtypes>=1.4.14; sys_platform == 'win32'",
+    "discid~=1.0",
+    "Markdown~=3.2",
+    "mutagen~=1.45",
+    "PyJWT~=2.0",
+    "pyobjc-core>=6.2, <13; sys_platform == 'darwin'",
+    "pyobjc-framework-Cocoa>=6.2, <13; sys_platform == 'darwin'",
+    "pyobjc-framework-MediaPlayer>=6.2, <13; sys_platform == 'darwin'",
+    "PyQt6>=6.6.1",
+    "PyQt6-Qt6>=6.6.1,!=6.10.*; sys_platform == 'linux'",
+    "pywin32; sys_platform == 'win32'",
+    "PyYAML>=5.1, <7",
+    "charset-normalizer~=3.3",
+    "pygit2>=1.18.2, <1.19; python_version < '3.11'",
+    "pygit2~=1.19; python_version >= '3.11'",
+    "tomli>=2.3.0; python_version < '3.11'",
+]
+
+[project.urls]
+Homepage = "https://picard.musicbrainz.org/"
+Documentation = "https://picard-docs.musicbrainz.org/"
+Repository = "https://github.com/metabrainz/picard.git"
+Issues = "https://tickets.metabrainz.org/projects/PICARD/issues/"
+Changelog = "https://picard.musicbrainz.org/changelog/"
+Funding = "https://metabrainz.org/donate"
+
+[project.scripts]
+picard-plugins = "picard.plugin3.cli:main"
+
+[project.optional-dependencies]
+plugins = [
+    "opencc>=1.1.9",
+    "zstandard>=0.25.0",
+]
+
+[dependency-groups]
+build = [
+    "Babel>=2.10.0",
+    "PyInstaller~=6.17",
+    "pytest>=8.1",
+    "setuptools>=74.1.0",
+]
+dev = [
+    "autopep8",
+    "Babel>=2.6.0",
+    "pre-commit>=4.2.0",
+    "pycodestyle",
+    "pylint>=2.6.0",
+    "pymarkdownlnt>=0.9.33",
+    "pytest-cov>=7.0.0",
+    "pytest-randomly>=4.0.1",
+    "pytest-xdist>=3.8.0",
+    "ruff>=0.13.0",
+    "tomlkit>=0.13.3",
+    "urllib3>=2.6.0",
+    "wlc>=1.17.2",
+]
+
+[tool.setuptools]
+ext-modules = [
+    {name = "picard.util._astrcmp", sources = ["picard/util/_astrcmp.c"]},
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "picard.PICARD_VERSION_STR_SHORT"}
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[tool.setuptools.packages.find]
+include = ["picard*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.mo"]
+
+[tool.ruff]
+src=["picard"]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+    "picard/ui/forms/ui_*.py",
+    "picard/resources.py",
+    "picard/const/attributes.py",
+    "picard/const/countries.py",
+    "picard/ui/ui_.*\\.py",
+    "scripts/picard.in"
+]
+
+line-length = 120
+indent-width = 4
+
+target-version = "py310"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`), a subset of the pycodestyle (`E`) and
+# most of pyupgrade checks by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = ["E4", "E7", "E9", "E", "F", "W", "B", "I", "UP"]
+ignore = ["B023", "E501", "Q", "UP009", "UP015", "UP031", "UP032", "UP037"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+#dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.isort]
+# Custom section order matching your isort sections
+section-order = [
+    "future",
+    "standard-library",
+    "first-party",
+    "known-first-party",
+    "third-party",
+    "known-third-party",
+    "qt",
+    "test",
+    "picard",
+    "local-folder",
+    "resources",
+    "picard-ui"
+]
+default-section = "local-folder"
+
+# Match other isort settings
+force-sort-within-sections = true
+combine-as-imports = true
+lines-after-imports = 2
+order-by-type = true
+split-on-trailing-comma = true
+
+# Custom section definitions
+[tool.ruff.lint.isort.sections]
+qt = ["PyQt6"]
+test = ["test.*"]
+picard = ["picard"]
+resources = ["picard.resources"]
+picard-ui = ["picard.ui"]
+
+# Keep your existing known mappings for standard sections
+known-first-party = []
+known-third-party = ["dateutil", "fasteners", "mutagen", "yaml"]
+
+[tool.ruff.format]
+quote-style = "preserve"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "lf"
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
+
+[tool.uv]
+default-groups = ["build", "dev"]
+
+[tool.coverage.run]
+source = ["picard"]
+omit = [
+  "picard/ui/forms/ui_*.py",
+  "picard/resources.py",
+]
+
+[tool.pymarkdown]
+plugins.blanks-around-fences.enabled = false
+plugins.blanks-around-headers.enabled = false
+plugins.blanks-around-lists.enabled = false
+plugins.line-length.enabled = false
+plugins.no-emphasis-as-heading.enabled = true
+plugins.no-duplicate-header.enabled = true
+plugins.no-duplicate-header.allow_different_nesting = true
+plugins.no-multiple-blanks.enabled = false
+plugins.single-h1.enabled = true

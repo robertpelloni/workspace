@@ -1,0 +1,55 @@
+
+
+fn main() {
+    let self = love_load();
+    love_draw(self);
+    love_update(love_timer_getDelta(), self);
+}
+
+fn love_load() {
+    let self = {};
+    self.img = love_graphics_newImage("1.png");
+
+    love_window_setIcon(self.img);
+
+    return self;
+}
+
+fn love_update(dt, self) {
+
+}
+
+fn love_draw(self) {
+    love_graphics_draw(self.img, 200, 200);
+}
+
+fn love_keypressed (key) {
+
+}
+
+fn love_joystick_pressed(j) {
+}
+
+
+fn love_mousepressed(m) {
+
+}
+
+fn love_mousereleased(m) {
+}
+
+fn love_wheelmoved(y) {
+}
+
+fn love_textinput(text) {
+}
+
+fn love_keyreleased(key) {
+}
+
+fn love_quit() {
+
+}
+
+fn love_focus(focused) {
+}

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditTagDialog</class>
+ <widget class="QDialog" name="EditTagDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Edit Tag</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QComboBox" name="tag_names">
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QListWidget" name="value_list">
+       <property name="focusPolicy">
+        <enum>Qt::StrongFocus</enum>
+       </property>
+       <property name="tabKeyNavigation">
+        <bool>false</bool>
+       </property>
+       <property name="dragDropMode">
+        <enum>QAbstractItemView::InternalMove</enum>
+       </property>
+       <property name="movement">
+        <enum>QListView::Free</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="edit_value">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>100</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Edit value</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="add_value">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>100</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Add value</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="remove_value">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>120</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Remove value</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="move_value_up">
+         <property name="toolTip">
+          <string>Move selected value up</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>Move selected value up</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset theme=":/images/16x16/go-up.png">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="move_value_down">
+         <property name="toolTip">
+          <string>Move selected value down</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>Move selected value down</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset theme=":/images/16x16/go-down.png">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonbox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>150</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tag_names</tabstop>
+  <tabstop>value_list</tabstop>
+  <tabstop>edit_value</tabstop>
+  <tabstop>add_value</tabstop>
+  <tabstop>remove_value</tabstop>
+  <tabstop>buttonbox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonbox</sender>
+   <signal>accepted()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonbox</sender>
+   <signal>rejected()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>move_value_up</sender>
+   <signal>clicked()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>move_row_up()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>move_value_down</sender>
+   <signal>clicked()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>move_row_down()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>edit_value</sender>
+   <signal>clicked()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>edit_value()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_value</sender>
+   <signal>clicked()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>add_value()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>value_list</sender>
+   <signal>itemChanged(QListWidgetItem*)</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>value_edited()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>remove_value</sender>
+   <signal>clicked()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>remove_value()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>value_list</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>value_selection_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tag_names</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>tag_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tag_names</sender>
+   <signal>activated(int)</signal>
+   <receiver>EditTagDialog</receiver>
+   <slot>tag_selected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>move_row_up()</slot>
+  <slot>move_row_down()</slot>
+  <slot>edit_value()</slot>
+  <slot>add_value()</slot>
+  <slot>remove_value()</slot>
+  <slot>value_edited()</slot>
+  <slot>value_selection_changed()</slot>
+  <slot>tag_changed()</slot>
+  <slot>tag_selected()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,17 @@
+{
+    "MsgAlreadyInstalled": "„${PRODUCT_NAME}“ jau yra įdiegtas ir turi būti pašalinta prieš diegiant šį atnaujinimą į versiją ${PRODUCT_VERSION}.\n\nSpustelėkite Gerai, kad tęstumėte, arba Atšaukti, kad atšauktumėte šį atnaujinimą.",
+    "MsgApplicationRunning": "Programa „${PRODUCT_NAME}“ vykdoma. Užverkite ją ir bandykite dar kartą.",
+    "MsgRequires64Bit": "Šiai „${PRODUCT_NAME}“ versijai reikia 64 bitų „Windows“ sistemos.",
+    "MsgUninstallFailed": "Nepavyko pašalinti ankstesnės versijos.",
+    "MuiDescriptionDesktop": "Įdiegia nuorodą darbalaukyje.",
+    "MuiDescriptionLang": "Įdiegia „${PRODUCT_NAME}“ vertimus į įvairias kalbas.",
+    "MuiDescriptionRequired": "Įdiegia „${PRODUCT_NAME}“ kartu su jam paleisti būtinais failais.",
+    "MuiDescriptionShortcuts": "Įdiegia nuorodas paleisti „${PRODUCT_NAME}“.",
+    "MuiDescriptionStartMenu": "Įdiegia nuorodą Pradžios meniu.",
+    "OptionRemoveSettings": "Pašalinti nustatymų ir asmeninių duomenų",
+    "SectionDesktop": "Darbalaukis",
+    "SectionLanguages": "Kalbos",
+    "SectionRequired": "Programos failai (privalomi)",
+    "SectionShortcuts": "Nuorodos",
+    "SectionStartMenu": "Pradžios meniu"
+}

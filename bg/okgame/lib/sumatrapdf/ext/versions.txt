@@ -1,0 +1,79 @@
+Project         Version    Date
+----------------------------------
+bzip2           1.0.8      2019-07-21
+  https://www.sourceware.org/bzip2/
+
+CHMLib          0.40a      2009-07-02
+  https://github.com/jedwing/CHMLib
+
+freetype        2.13.3     2025-07-15
+  https://github.com/ArtifexSoftware/thirdparty-freetype2/tree/artifex
+
+gumbo           ???
+  https://github.com/ArtifexSoftware/thirdparty-gumbo-parser/tree/artifex
+
+harfbuzz        6.0.0 with patches
+  https://harfbuzz.org
+
+jbig2dec        0.18       2020-02-11
+  https://github.com/ArtifexSoftware/jbig2dec/commits/artifexc
+
+libjpeg-turbo   1.3.1      2014-04-20
+  https://github.com/libjpeg-turbo/libjpeg-turbo/tags
+
+libdjvu         master     2025-12-25
+  https://djvu.sourceforge.net/
+  https://github.com/barak/djvulibre
+
+libwebp         1.4.0   2024-04-12
+  https://github.com/webmproject/libwebp/releases/tag/v1.4.0
+
+lzma            9.22b      2011-04-19
+  https://www.7-zip.org/sdk.html
+
+lcms2           git        2.16
+
+MinHook         master     20201-01-1
+  https://github.com/TsudaKageyu/minhook
+
+mujs            1.0.6      Apr 4, 2019
+  https://mujs.com/
+  https://github.com/ArtifexSoftware/mujs/commit/00d4606c3baf813b7b1c176823b2729bf51002a2
+
+../mupdf        1.27.0
+  https://github.com/ArtifexSoftware/mupdf/releases/tag/1.27.0
+
+openjpeg        2.5.4
+
+synctex         1.16       2011-06-14
+  https://itexmac.sourceforge.net/SyncTeX.html
+
+UnRAR           7.1.6
+  https://www.rarlab.com/rar_add.htm
+
+unarr           trunk
+  https://github.com/zeniko/unarr
+
+zlib            1.3.1
+  https://www.zlib.net/
+
+zlib-ng         2.0.6      2021-12-24
+  https://github.com/zlib-ng/zlib-ng
+  https://github.com/zlib-ng/zlib-ng/tree/2.0.x
+
+extract         trunk
+  https://github.com/ArtifexSoftware/extract
+
+windrawlib      trunk
+  https://github.com/mity/windrawlib
+
+dav1d           trunk      2022-05-28
+  https://code.videolan.org/videolan/dav1d
+
+libheif         trunk      2026-01-16
+  https://github.com/strukturag/libheif
+  https://github.com/strukturag/libheif/commit/62f1b8c76ed4d8305071fdacbe74ef9717bacac5
+
+darkmodelib     trunk      2026-01-16
+  https://github.com/ozone10/darkmodelib
+  https://github.com/ozone10/darkmodelib/commit/57cc10c819d17c47b6afd295b424153082144193

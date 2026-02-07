@@ -1,0 +1,130 @@
+name: Package and release
+
+on:
+  push:
+    paths: &path-list
+    - '.github/workflows/package*.yml'
+    - 'installer/**'
+    - 'picard/**'
+    - 'po/**.po'
+    - 'resources/win10/**'
+    - 'scripts/package/*'
+    - 'scripts/pyinstaller/*'
+    - 'test/**'
+    - 'appxmanifest.xml.in'
+    - 'picard.icns'
+    - 'picard.ico'
+    - 'picard.spec'
+    - 'pyproject.toml'
+    - 'requirements*.txt'
+    - 'setup.py'
+    - 'tagger.py.in'
+    - 'win.version-info.txt.in'
+  pull_request:
+    paths: *path-list
+
+permissions: {}
+
+jobs:
+  package-macos:
+    uses: ./.github/workflows/package-macos.yml
+    secrets: inherit
+
+  package-windows:
+    uses: ./.github/workflows/package-windows.yml
+    secrets: inherit
+
+  package-pypi:
+    uses: ./.github/workflows/package-pypi.yml
+    secrets: inherit
+    permissions:
+      id-token: write
+
+  pypi-release:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    needs:
+      - package-pypi
+    environment:
+      name: pypi
+      url: https://pypi.org/p/picard
+    permissions:
+      id-token: write  # required for PyPI upload
+    steps:
+    - uses: actions/download-artifact@v7
+      with:
+        pattern: picard-?dist*
+        path: dist/
+        merge-multiple: true
+    - name: Prepare distributions
+      run: |
+        ls -l dist/
+        # Remove zip source distribution (only a single sdist is allowed)
+        rm dist/picard-*.zip* || true
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+
+  github-release:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    needs:
+      - package-macos
+      - package-windows
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-python@v6
+      with:
+        python-version: '3.14'
+    - uses: actions/download-artifact@v7
+      with:
+        name: macos-app-11.0-x86_64
+        path: artifacts/
+    - uses: actions/download-artifact@v7
+      with:
+        name: macos-app-11.0-arm64
+        path: artifacts/
+    - uses: actions/download-artifact@v7
+      with:
+        name: windows-store-app
+        path: artifacts/
+    - uses: actions/download-artifact@v7
+      with:
+        name: windows-installer
+        path: artifacts/
+    - uses: actions/download-artifact@v7
+      with:
+        name: windows-portable
+        path: artifacts/
+    - uses: actions/download-artifact@v7
+      with:
+        name: picard-sdist
+        path: artifacts/
+    - name: Generate checksums
+      run: |
+        cd artifacts
+        sha256sum * > SHA256SUMS
+    - name: Prepare changelog
+      id: changelog
+      continue-on-error: true
+      run: |
+        PICARD_VERSION=$(python -c "import picard; print(picard.__version__)")
+        echo "version=$PICARD_VERSION" >> $GITHUB_OUTPUT
+        if [[ "$PICARD_VERSION" =~ (a|b|rc|dev) ]]; then
+          echo "::notice::Releasing pre-release $PICARD_VERSION"
+          echo "prerelease=true" >> $GITHUB_OUTPUT
+        else
+          echo "::notice::Releasing production release $PICARD_VERSION"
+        fi
+        echo -e "*Please refer to the [download page](https://picard.musicbrainz.org/downloads/) for official download locations.*\n" > changes-$PICARD_VERSION.md
+        ./scripts/tools/changelog-for-version.py $PICARD_VERSION >> changes-$PICARD_VERSION.md
+    - name: Create release
+      uses: softprops/action-gh-release@v2
+      with:
+        name: MusicBrainz Picard ${{ steps.changelog.outputs.version }}
+        body_path: changes-${{ steps.changelog.outputs.version }}.md
+        prerelease: ${{ steps.changelog.outputs.prerelease }}
+        files: artifacts/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

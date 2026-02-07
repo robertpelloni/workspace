@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScriptingOptionsPage</class>
+ <widget class="QWidget" name="ScriptingOptionsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>605</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <property name="leftMargin">
+    <number>9</number>
+   </property>
+   <property name="topMargin">
+    <number>9</number>
+   </property>
+   <property name="rightMargin">
+    <number>9</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="enable_tagger_scripts">
+     <property name="title">
+      <string>Enable Tagger Script(s)</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Tagger scripts that have been activated below will be executed automatically for each track of a release loaded from MusicBrainz.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QSplitter" name="scripting_options_splitter">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="childrenCollapsible">
+         <bool>false</bool>
+        </property>
+        <widget class="ScriptListWidget" name="script_list">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QWidget" name="formWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="ScriptTextEdit" name="tagger_script">
+            <property name="acceptRichText">
+             <bool>false</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Enter your tagger script here.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QToolButton" name="move_up_button">
+          <property name="toolTip">
+           <string>Move tagger script up</string>
+          </property>
+          <property name="icon">
+           <iconset theme=":/images/16x16/go-up.png">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="move_down_button">
+          <property name="toolTip">
+           <string>Move tagger script down</string>
+          </property>
+          <property name="icon">
+           <iconset theme=":/images/16x16/go-down.png">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="add_button">
+          <property name="toolTip">
+           <string>Add new tagger script</string>
+          </property>
+          <property name="text">
+           <string>Add new tagger script</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="remove_button">
+          <property name="toolTip">
+           <string>Remove the selected tagger script</string>
+          </property>
+          <property name="text">
+           <string>Remove tagger script</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="import_button">
+          <property name="text">
+           <string>Import</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="export_button">
+          <property name="text">
+           <string>Export</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="scripting_documentation_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Documentation</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="script_error">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ScriptListWidget</class>
+   <extends>QListWidget</extends>
+   <header location="global">picard.ui.widgets.scriptlistwidget</header>
+   <slots>
+    <slot>remove_selected_script()</slot>
+    <slot>add_script()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>ScriptTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header location="global">picard.ui.widgets.scripttextedit</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>enable_tagger_scripts</tabstop>
+  <tabstop>script_list</tabstop>
+  <tabstop>tagger_script</tabstop>
+  <tabstop>move_up_button</tabstop>
+  <tabstop>move_down_button</tabstop>
+  <tabstop>remove_button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>add_button</sender>
+   <signal>clicked()</signal>
+   <receiver>script_list</receiver>
+   <slot>add_script()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>170</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tagger_script</sender>
+   <signal>textChanged()</signal>
+   <receiver>ScriptingOptionsPage</receiver>
+   <slot>live_update_and_check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>450</x>
+     <y>267</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>script_list</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>ScriptingOptionsPage</receiver>
+   <slot>script_selected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>remove_button</sender>
+   <signal>clicked()</signal>
+   <receiver>script_list</receiver>
+   <slot>remove_selected_script()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>170</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enable_tagger_scripts</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>ScriptingOptionsPage</receiver>
+   <slot>enable_tagger_scripts_toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>302</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>live_update_and_check()</slot>
+  <slot>script_selected()</slot>
+  <slot>move_selected_script_up()</slot>
+  <slot>move_selected_script_down()</slot>
+  <slot>enable_tagger_scripts_toggled(bool)</slot>
+ </slots>
+</ui>

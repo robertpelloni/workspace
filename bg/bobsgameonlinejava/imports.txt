@@ -1,0 +1,16 @@
+src/main/java/com/bobsgame/client/console/Console.java
+src/main/java/com/bobsgame/client/engine/Engine.java
+src/main/java/com/bobsgame/client/engine/game/ClientGameEngine.java
+src/main/java/com/bobsgame/client/engine/game/gui/GUIManager.java
+src/main/java/com/bobsgame/client/engine/game/gui/gameStore/GameItem.java
+src/main/java/com/bobsgame/client/engine/game/gui/statusbar/StatusBar.java
+src/main/java/com/bobsgame/client/engine/game/gui/statusbar/buttons/StatusBarButton.java
+src/main/java/com/bobsgame/client/engine/game/gui/statusbar/notification/Notification.java
+src/main/java/com/bobsgame/client/engine/game/gui/stuffMenu/subMenus/SettingsPanel.java
+src/main/java/com/bobsgame/client/engine/game/nd/ND.java
+src/main/java/com/bobsgame/client/engine/game/nd/bobsgame/BobsGame.java
+src/main/java/com/bobsgame/client/engine/game/stadium/BobsGameStadium.java
+src/main/java/com/bobsgame/client/engine/game/stadium/StadiumScreen.java
+src/main/java/com/bobsgame/client/engine/map/MapManager.java
+src/main/java/com/bobsgame/client/state/CreateNewAccountState.java
+src/main/java/com/bobsgame/client/state/LoginState.java

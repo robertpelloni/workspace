@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindBZip2.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindLibLZMA.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/SelectLibraryConfigurations.cmake
+C:/Users/hyper/workspace/okgame/cmake-build-debug/CMakeFiles/cmake.verify_globs
+C:/Users/hyper/workspace/okgame/lib/boost/libs/iostreams/CMakeLists.txt

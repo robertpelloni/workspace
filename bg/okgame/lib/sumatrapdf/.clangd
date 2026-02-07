@@ -1,0 +1,38 @@
+# https://clangd.llvm.org/config#files
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -I./mupdf/include # TODO: I don't know which of those work
+    - -I../mupdf/include
+    - -I${workspaceFolder}/mupdf/include
+    - -I${workspaceFolder}/src
+    - -I${workspaceFolder}/src/utils
+    - -DUNICODE
+    - -DWIN32
+    - -D_WIN32
+    - -D_CRT_SECURE_NO_WARNINGS
+    - -DWINVER=0x0a00
+    - -D_WIN32_WINNT=0x0a00
+    - -DPRE_RELEASE_VER=8.8
+---
+If:
+  PathExclude:
+    - mupdf/.*
+    - ext/.*
+
+Diagnostics:
+  Suppress:
+    - unused-parameter # example 1
+    - misc-use-internal-linkage
+    - misc-use-anonymous-namespace
+    - readability-identifier-length
+    - bugprone-switch-missing-default-case
+    - readability-avoid-unconditional-preprocessor-if
+    - bugprone-easily-swappable-parameters
+    - readability-isolate-declaration
+    - readability-function-cognitive-complexity
+    - readability-qualified-auto
+    - modernize-use-auto
+    - readability-simplify-boolean-expr
+    - readability-use-std-min-max
+    - readability-named-parameter

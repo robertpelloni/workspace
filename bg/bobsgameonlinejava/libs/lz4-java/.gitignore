@@ -1,0 +1,8 @@
+build
+dist
+bin
+lib
+!src/build
+.idea
+out
+*/*.iml

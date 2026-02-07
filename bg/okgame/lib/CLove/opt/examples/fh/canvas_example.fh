@@ -1,0 +1,85 @@
+#-
+	In this example we're batching 10000 images into one canvas and later draw it
+-# 
+
+fn love_joystick_pressed(j) {
+}
+
+fn love_mousepressed(m) {
+}
+
+fn love_mousereleased(m) {
+}
+
+fn love_wheelmoved(y) {
+}
+
+fn love_textinput(text) {
+}
+
+fn love_keypressed(key) {
+	if (key[0] == 'esc') {
+		love_event_quit();
+	}
+}
+
+fn love_keyreleased(key) {
+}
+
+fn love_quit() {
+}
+
+fn love_focus(focused) {
+}
+
+fn love_load()  {
+	let self = {};
+
+	self.img = love_graphics_newImage("1.png");
+
+	self.canvas = love_graphics_newCanvas(300, 300);
+
+	# Draw all images into one texture then render that texture, THIS IS THE PREFFERED WAY OF USING CANVASES
+	love_graphics_setCanvas(self.canvas);
+	love_graphics_setBackgroundColor(70, 120, 200);
+	love_graphics_setColor(120, 120, 11);
+	love_graphics_clear();
+	for (let i = 0; i < 10000; i = i + 1)
+		love_graphics_draw(self.img, math_random(-20, 300), math_random(-20, 300));
+	love_graphics_setColor(255, 255, 255);
+	love_graphics_setCanvas();
+
+	return self;
+}
+
+fn love_update(dt, self) {
+	# Doing this will make the images change their position, this is not the preffered way of using canvases, use it only if 
+	# you really have to
+	#-
+	love_graphics_setCanvas(self.canvas);
+	love_graphics_setBackgroundColor(70, 120, 200);
+	love_graphics_setColor(120, 120, 11);
+	love_graphics_clear();
+	for (let i = 0; i < 10000; i = i + 1)
+		love_graphics_draw(self.img, math_random(-20, 300), math_random(-20, 300));
+	love_graphics_setColor(255, 255, 255);
+	love_graphics_setCanvas();
+	-#
+}
+
+fn love_draw(self) {
+	love_graphics_setBackgroundColor(170, 120, 200);
+	love_graphics_draw(self.canvas);
+
+#   Uncomment this for having non-canvas solution (in this case the images will constantily change position)
+#-	for (let i = 0; i < 10000; i = i + 1)
+		love_graphics_draw(self.img, math_random(300, 600), math_random(300, 600));-#
+
+	love_graphics_print(""+love_timer_getFPS(), 500, 20);
+}
+
+fn main() {
+    let self = love_load();
+    love_draw(self);
+	love_update(love_timer_getDelta(), self);
+}

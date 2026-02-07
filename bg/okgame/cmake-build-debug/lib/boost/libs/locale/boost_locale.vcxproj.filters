@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\encoding\codepage.cpp">
+      <Filter>sources\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\date_time.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\format.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\formatting.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\generator.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\iconv_codecvt.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\ids.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\localization_backend.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\message.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\mo_lambda.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\codecvt_converter.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\default_locale.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\encoding.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\info.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\locale_data.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\std\codecvt.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\std\collate.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\std\converter.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\std\numeric.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\std\std_backend.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\collate.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\converter.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\numeric.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\win_backend.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\lcid.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\gregorian.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\encoding\iconv_converter.hpp">
+      <Filter>sources\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\encoding\uconv_converter.hpp">
+      <Filter>sources\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\encoding\wconv_converter.hpp">
+      <Filter>sources\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\iconv_codecvt.hpp">
+      <Filter>sources\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\shared\std_collate_adapter.hpp">
+      <Filter>sources\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\encoding.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\foreach_char.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\make_std_unique.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\numeric.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\numeric_conversion.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\timezone.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\boundary.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\boundary\boundary_point.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\boundary\facets.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\boundary\index.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\boundary\segment.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\boundary\types.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\collator.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\config.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\conversion.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\date_time.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\date_time_facet.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\detail\allocator_traits.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\detail\any_string.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\detail\encoding.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\detail\facet_id.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\detail\is_supported_char.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\encoding.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\encoding_errors.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\encoding_utf.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\format.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\formatting.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\generator.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\generic_codecvt.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\gnu_gettext.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\hold_ptr.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\info.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\localization_backend.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\message.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\time_zone.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\utf.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\utf8_codecvt.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\util.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\util\locale_data.hpp">
+      <Filter>headers\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\include\boost\locale\util\string.hpp">
+      <Filter>headers\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\std\all_generator.hpp">
+      <Filter>sources\std</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\std\std_backend.hpp">
+      <Filter>sources\std</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\all_generator.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\api.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\win_backend.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\win32\lcid.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\src\util\gregorian.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\locale\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\hyper\workspace\okgame\lib\boost\libs\assert\extra\boost_assert.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{CD70C15C-3DB3-3DE3-B06A-92835141B163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\boundary">
+      <UniqueIdentifier>{34C12EFF-5C08-3793-9B7D-A5104AB885A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\detail">
+      <UniqueIdentifier>{381BA024-AA12-3552-842D-1CB10BAABDAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\util">
+      <UniqueIdentifier>{D745A074-C726-3AFC-8DCF-487E7706DA37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{DD40EBD4-B995-3EA1-B3BF-6D8A7AE4D8F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\encoding">
+      <UniqueIdentifier>{CAF1F2F0-6F2C-316E-A557-40C362E5BC22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\shared">
+      <UniqueIdentifier>{FEA72BEC-D642-3525-AF42-ECD657E4345D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\std">
+      <UniqueIdentifier>{A953DA79-23B8-37EE-94C6-651B3227EE6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\util">
+      <UniqueIdentifier>{B21BCB9B-654C-3F59-ACB9-6832DC7B60DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\win32">
+      <UniqueIdentifier>{1A8CD4DE-66B2-3AD0-B1BA-920C069D9110}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+/*
+ * Copyright LWJGL. All rights reserved.
+ * License terms: https://www.lwjgl.org/license
+ */
+package openal.templates
+
+import org.lwjgl.generator.*
+import openal.*
+
+val AL_EXT_ALAW = "EXTAlaw".nativeClassAL("EXT_ALAW") {
+    IntConstant(
+        "FORMAT_MONO_ALAW_EXT"..0x10016,
+        "FORMAT_STEREO_ALAW_EXT"..0x10017
+    )
+}

@@ -1,0 +1,47 @@
+# Makefile for F-Zero X PC Port
+
+CC = gcc
+CFLAGS = -Wall -Wextra -g -Iinclude/pc -Iinclude -D_LANGUAGE_C
+LDFLAGS = -lSDL2 -lGL
+
+SRC_DIRS = src/pc/sdl2 src/pc
+# Add a game logic file to test linking (Math Utils + Debug Text + Audio State + Audio Util)
+GAME_SRCS = src/math_utils.c src/debug_text.c src/audio_state.c src/audio_util.c
+
+# PC Implementation of Ultra64 functions
+PC_IMPL_SRCS = src/pc/ultra_impl.c src/pc/libaudio_impl.c
+
+BUILD_DIR = build/pc
+
+SRCS = $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.c)) $(GAME_SRCS) $(PC_IMPL_SRCS)
+OBJS = $(SRCS:%.c=$(BUILD_DIR)/%.o)
+
+TARGET = $(BUILD_DIR)/fzerox_pc
+TEST_TARGET = $(BUILD_DIR)/test_runner
+
+.PHONY: all clean test
+
+all: $(TARGET)
+
+test: $(TEST_TARGET)
+	@echo "Running tests..."
+	@$(TEST_TARGET)
+
+$(TARGET): $(OBJS)
+	@mkdir -p $(dir $@)
+	$(CC) $(OBJS) -o $@ $(LDFLAGS)
+	@echo "Build successful: $(TARGET)"
+
+# Link game logic (Math) but NOT the main PC entry point or SDL/Audio stubs if not needed.
+# For this simple test, we only need game_2B20.o and the test runner.
+# But game_2B20 might have dependencies.
+$(TEST_TARGET): tests/test_math_utils.c tests/stubs.c $(BUILD_DIR)/src/math_utils.o $(BUILD_DIR)/src/pc/ultra_impl.o
+	@mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) $^ -o $@
+
+$(BUILD_DIR)/%.o: %.c
+	@mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -rf $(BUILD_DIR)

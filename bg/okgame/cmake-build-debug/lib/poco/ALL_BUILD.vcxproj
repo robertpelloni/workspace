@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4120A5B-76DA-335F-8E83-39F3602E4282}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\poco\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindODBC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\cmake\CXX1x.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\DefinePlatformSpecific.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPR.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPRUTIL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindApache2.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindMySQL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoMacros.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\cmake_uninstall.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\test_compiler.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindODBC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\cmake\CXX1x.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\DefinePlatformSpecific.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPR.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPRUTIL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindApache2.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindMySQL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoMacros.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\cmake_uninstall.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\test_compiler.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindODBC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\cmake\CXX1x.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\DefinePlatformSpecific.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPR.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPRUTIL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindApache2.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindMySQL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoMacros.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\cmake_uninstall.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\test_compiler.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hyper/workspace/okgame/lib/poco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/okgame -BC:/Users/hyper/workspace/okgame/cmake-build-debug --check-stamp-file C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/poco/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindODBC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\hyper\workspace\okgame\cmake-build-debug\CMakeFiles\cmake.verify_globs;C:\Users\hyper\workspace\okgame\lib\poco\cmake\CXX1x.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\DefinePlatformSpecific.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPR.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindAPRUTIL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindApache2.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\FindMySQL.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoConfig.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\PocoMacros.cmake;C:\Users\hyper\workspace\okgame\lib\poco\cmake\cmake_uninstall.cmake.in;C:\Users\hyper\workspace\okgame\lib\poco\cmake\test_compiler.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{D5C7E583-8983-3E41-BCA7-D51E52C8E05C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\ActiveRecord\ActiveRecord.vcxproj">
+      <Project>{2C63ABB1-A130-3066-A830-3E6F1B2A94AF}</Project>
+      <Name>ActiveRecord</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\ActiveRecord\Compiler\ActiveRecordCompiler.vcxproj">
+      <Project>{9805CE29-7097-360F-918D-573E11ADF870}</Project>
+      <Name>ActiveRecordCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Crypto\Crypto.vcxproj">
+      <Project>{E946F3EC-955D-36A7-8210-ADD7265C2D75}</Project>
+      <Name>Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Data\Data.vcxproj">
+      <Project>{ABF4BD4B-5254-3293-855C-2F42599B5A1A}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Data\ODBC\DataODBC.vcxproj">
+      <Project>{7421A4DF-A264-3A9D-AFBD-A6BE08F01061}</Project>
+      <Name>DataODBC</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Data\SQLite\DataSQLite.vcxproj">
+      <Project>{5EC601A2-1AA3-3A04-BA43-0661B18464DD}</Project>
+      <Name>DataSQLite</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Encodings\Encodings.vcxproj">
+      <Project>{C61BC1BD-DE7D-326C-A7E0-62A80E50566F}</Project>
+      <Name>Encodings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\PageCompiler\File2Page\File2Page.vcxproj">
+      <Project>{968F5FB5-B44C-3C02-8C28-83F10C6DA3D5}</Project>
+      <Name>File2Page</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Foundation\Foundation.vcxproj">
+      <Project>{2F9FB338-8BD2-34C6-9A45-0CAFFDFD608F}</Project>
+      <Name>Foundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\JSON\JSON.vcxproj">
+      <Project>{65AF8C11-349D-3865-AB37-F4D305E739F2}</Project>
+      <Name>JSON</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\JWT\JWT.vcxproj">
+      <Project>{485DE5B3-B62E-3D8A-ACF6-2C6CFA83C09E}</Project>
+      <Name>JWT</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\MongoDB\MongoDB.vcxproj">
+      <Project>{0A3DC04A-C385-306D-82DB-1814C43F692F}</Project>
+      <Name>MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Net\Net.vcxproj">
+      <Project>{3469A157-CCC8-34B0-90E3-9F5033320745}</Project>
+      <Name>Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\NetSSL_OpenSSL\NetSSL.vcxproj">
+      <Project>{26A0CB78-22AD-3A87-96B8-30E8C8017FBF}</Project>
+      <Name>NetSSL</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\PageCompiler\PageCompiler.vcxproj">
+      <Project>{AB5C67F1-C08F-3BA0-ACF0-BC8A1F367AFA}</Project>
+      <Name>PageCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Prometheus\Prometheus.vcxproj">
+      <Project>{889C84DE-AF6B-3D22-94EC-42FC626BA5D8}</Project>
+      <Name>Prometheus</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Redis\Redis.vcxproj">
+      <Project>{85E987FF-408D-35BB-B697-CB1908310DEB}</Project>
+      <Name>Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Util\Util.vcxproj">
+      <Project>{AD552CD4-E1B7-30F0-9F65-231FA3D7B992}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\XML\XML.vcxproj">
+      <Project>{CA2EB46A-6660-3821-B24F-E6A4B1898C9A}</Project>
+      <Name>XML</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\hyper\workspace\okgame\cmake-build-debug\lib\poco\Zip\Zip.vcxproj">
+      <Project>{B993E458-68DA-3E1E-A9C0-5E802891E74A}</Project>
+      <Name>Zip</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

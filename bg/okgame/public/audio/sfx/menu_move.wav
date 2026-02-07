@@ -1,0 +1,29 @@
+# Menu Sounds
+- menu_move.wav - Navigation cursor sound
+- menu_select.wav - Selection confirm sound
+- piece_move.wav - Piece movement sound
+- piece_rotate.wav - Rotation sound
+- piece_drop.wav - Hard drop sound
+- piece_lock.wav - Lock sound
+- line_clear.wav - Line clear sound
+- tetris.wav - Tetris achievement sound
+- level_up.wav - Level up sound
+- game_over.wav - Game over sound
+
+# Game Sounds
+- pause.wav - Pause sound
+- piece_move.wav - Soft drop sound
+- piece_rotate.wav - Rotation sound
+- piece_drop.wav - Hard drop sound
+- piece_lock.wav - Lock sound
+- line_clear.wav - Line clear sound
+- tetris.wav - Tetris achievement sound
+- level_up.wav - Level up sound
+- game_over.wav - Game over sound
+
+# Music
+- menu_music.mp3 - Main menu background music
+- game_music.mp3 - Gameplay music
+
+# Placeholders
+- All files above are placeholders to prevent errors (missing .wav files) until actual assets are created.

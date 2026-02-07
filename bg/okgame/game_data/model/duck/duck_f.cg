@@ -1,0 +1,31 @@
+﻿/*
+ * SIE CONFIDENTIAL
+ * PlayStation(R)4 Programmer Tool Runtime Library Release 04.508.001
+ * Copyright (C) 2016 Sony Interactive Entertainment Inc.
+ * All Rights Reserved.
+ */
+struct vertexOutput {
+	float4 HPosition	: POSITION;
+	float2 UV		: TEXCOORD0;
+	float3 LightVec	: TEXCOORD1;
+	float3 WorldNormal	: TEXCOORD2;
+	float3 WorldEyeVec	: TEXCOORD3;
+};
+
+
+float4 main(vertexOutput IN,
+	    uniform sampler2D Texture : TEXUNIT0, 
+	    uniform float3 AmbiColor,
+	    uniform float SpecExpon,
+	    uniform float Ks
+	    ) : COLOR {
+	float3 Ln = normalize(IN.LightVec);
+	float3 Vn = normalize(IN.WorldEyeVec);
+	float3 Nn = normalize(IN.WorldNormal);
+	float3 Hn = normalize(Vn + Ln);
+	float4 lv = lit(dot(Ln,Nn),dot(Hn,Nn),SpecExpon);
+	float3 DiffResult = tex2D(Texture, IN.UV).xyz * (lv.yyy + AmbiColor);
+	float3 SpecResult = Ks * lv.zzz;
+	return float4((DiffResult + SpecResult).xyz,1.0);
+}
+

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\bignum-dtoa.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\bignum.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\cached-powers.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\double-to-string.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\fast-dtoa.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\fixed-dtoa.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\string-to-double.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\strtod.cc">
+      <Filter>v8_double_conversion\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\bignum-dtoa.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\bignum.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\cached-powers.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\diy-fp.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\double-conversion.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\double-to-string.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\fast-dtoa.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\fixed-dtoa.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\ieee.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\string-to-double.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\strtod.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\src\utils.h">
+      <Filter>v8_double_conversion\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\okgame\lib\poco\dependencies\v8_double_conversion\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="v8_double_conversion">
+      <UniqueIdentifier>{E2DB8E44-43F7-3A39-915A-B8AE89C40363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="v8_double_conversion\Header Files">
+      <UniqueIdentifier>{6D46FD55-60F1-30A8-A503-A2509DF022B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="v8_double_conversion\Source Files">
+      <UniqueIdentifier>{8A8FA3DA-6E1D-3BE4-9797-A7817B6059A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
