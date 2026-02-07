@@ -5,30 +5,65 @@ import { DashboardPanel } from './ui/dashboard';
 import { config } from './utils/config';
 import { createLogger } from './utils/logger';
 import { autonomousLoop } from './core/autonomous-loop';
-import { circuitBreaker } from './core/circuit-breaker'; // Assuming singleton export or create instance
+// import { circuitBreaker } from './core/circuit-breaker'; // Removed unused import
 import { progressTracker } from './core/progress-tracker';
 import { mcpServer } from './modules/mcp/server';
 import { voiceControl } from './modules/voice/control';
 import { CDPHandler } from './services/cdp/cdp-handler';
 import { StrategyManager } from './strategies/manager';
 
+import { StatusBarManager } from './ui/status-bar';
+
 const log = createLogger('Extension');
+let statusBar: StatusBarManager;
 
 export function activate(context: vscode.ExtensionContext) {
     log.info('Antigravity Autopilot (Unified) activating...');
 
+    // Initialize UI
+    statusBar = new StatusBarManager(context);
+
     // Initialize Managers
     const strategyManager = new StrategyManager(context);
 
-    // We can initialize CDPHandler here if needed globally, but StrategyManager/CDPStrategy handles it too.
-    // However, Yoke and other modules might need access to it.
-    // For now, let's stick to the Strategy pattern for the "Driver" (Simple vs CDP).
-    // AutonomousLoop uses 'cdpClient' which uses 'CDPHandler' internally.
+    // Wire up Status Bar to Autonomous Loop
+    autonomousLoop.setStatusCallback(status => {
+        statusBar.update({
+            autonomousEnabled: status.running,
+            loopCount: status.loopCount,
+            autoAllEnabled: config.get('autoAllEnabled'),
+            multiTabEnabled: config.get('multiTabEnabled'),
+            mode: config.get('strategy')
+        });
+    });
+
+    // Update Status Bar on Config Change
+    vscode.workspace.onDidChangeConfiguration(e => {
+        if (e.affectsConfiguration('antigravity')) {
+            statusBar.update({
+                autonomousEnabled: autonomousLoop.isRunning(),
+                loopCount: 0, // We assume loop count preserves or resets? 
+                autoAllEnabled: config.get('autoAllEnabled'),
+                multiTabEnabled: config.get('multiTabEnabled'),
+                mode: config.get('strategy')
+            });
+        }
+    });
+
+    // Initial Status Update
+    statusBar.update({
+        autonomousEnabled: autonomousLoop.isRunning(),
+        loopCount: 0,
+        autoAllEnabled: config.get('autoAllEnabled'),
+        multiTabEnabled: config.get('multiTabEnabled'),
+        mode: config.get('strategy')
+    });
 
     // Register Commands
     context.subscriptions.push(
         vscode.commands.registerCommand('antigravity.toggleExtension', async () => {
             await strategyManager.toggle();
+            // Status bar update triggered by config listener or loop callback
         }),
         vscode.commands.registerCommand('antigravity.toggleAutoAccept', async () => {
             await config.update('autoAcceptEnabled', !config.get('autoAcceptEnabled'));
@@ -101,5 +136,6 @@ export function deactivate() {
     autonomousLoop.stop('Deactivating');
     mcpServer.stop();
     voiceControl.stop();
+    if (statusBar) statusBar.dispose();
     log.info('Antigravity Autopilot deactivated');
 }

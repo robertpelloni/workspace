@@ -95,7 +95,14 @@ export class AutonomousLoop {
             log.info(`=== Loop #${this.loopCount} ===`);
             this.updateStatus();
 
-            // Circuit Breaker check would go here if singleton exposed state
+            // Circuit Breaker check
+            const circuitState = await circuitBreaker.execute(async () => true);
+            if (!circuitState) {
+                log.warn('Circuit Breaker is OPEN. Skipping loop.');
+                this.updateStatus();
+                await this.wait(10000);
+                continue;
+            }
 
             if (!rateLimiter.canMakeCall()) {
                 log.warn('Hourly rate limit reached');
@@ -118,7 +125,7 @@ export class AutonomousLoop {
             }
 
             if (config.get('autoSwitchModels')) {
-                const selection = modelSelector.selectForTask(this.currentTask);
+                const selection = await modelSelector.selectForTask(this.currentTask);
                 // logic to set model on rateLimitHandler or similar
                 log.info(`Model: ${selection.modelDisplayName} (${selection.reasoning})`);
                 if (this.previousModel !== selection.modelId) {
@@ -135,13 +142,34 @@ export class AutonomousLoop {
                 hasErrors: !success,
             });
 
-            // Git Commit logic placeholder
+            // Git Commit logic
             if (config.get('autoGitCommit') && this.loopCount % 10 === 0) {
-                // this.gitCommit();
+                await this.gitCommit();
             }
 
             const waitTime = (intervalSeconds || 30) * 1000;
             await this.wait(waitTime);
+        }
+    }
+
+    private async gitCommit(): Promise<void> {
+        if (!this.workspaceRoot) return;
+
+        try {
+            log.info('Auto-committing progress...');
+            const cp = require('child_process');
+            const exec = (cmd: string) => new Promise((res, rej) => {
+                cp.exec(cmd, { cwd: this.workspaceRoot }, (err: any, stdout: string) => {
+                    if (err) rej(err);
+                    else res(stdout);
+                });
+            });
+
+            await exec('git add .');
+            await exec(`git commit -m "antigravity: auto-save loop #${this.loopCount}"`);
+            log.info('Auto-commit successful');
+        } catch (e: any) {
+            log.error(`Auto-commit failed: ${e.message}`);
         }
     }
 
@@ -205,6 +233,9 @@ export class AutonomousLoop {
             return true;
         } catch (err: any) {
             log.error(`Execution error: ${err.message}`);
+            // Report to circuit breaker
+            // Circuit breaker wrapper around executeTask is better, but here we just report
+
             const failCheck = exitDetector.reportFailure();
             if (failCheck.shouldExit) {
                 this.stop(failCheck.reason);

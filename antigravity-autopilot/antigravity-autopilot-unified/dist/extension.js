@@ -3650,7 +3650,7 @@ var require_websocket_server = __commonJS({
 var require_relauncher = __commonJS({
   "main_scripts/relauncher.js"(exports2, module2) {
     "use strict";
-    var vscode12 = require("vscode");
+    var vscode13 = require("vscode");
     var { execSync, spawn } = require("child_process");
     var os = require("os");
     var http2 = require("http");
@@ -3692,7 +3692,7 @@ var require_relauncher = __commonJS({
         });
       }
       getIDEName() {
-        const appName = vscode12.env.appName || "";
+        const appName = vscode13.env.appName || "";
         if (appName.toLowerCase().includes("cursor")) return "Cursor";
         if (appName.toLowerCase().includes("antigravity")) return "Antigravity";
         return "Code";
@@ -3987,7 +3987,7 @@ open -a "${appBundle}" --args ${CDP_FLAG} "$@"
         }
       }
       getWorkspaceFolders() {
-        const folders = vscode12.workspace.workspaceFolders;
+        const folders = vscode13.workspace.workspaceFolders;
         if (!folders || folders.length === 0) return [];
         return folders.map((f) => f.uri.fsPath);
       }
@@ -4044,7 +4044,7 @@ del "%~f0" & exit
           this.log("Explorer asked to run batch. Waiting for quit...");
           setTimeout(() => {
             this.log("Closing current window...");
-            vscode12.commands.executeCommand("workbench.action.quit");
+            vscode13.commands.executeCommand("workbench.action.quit");
           }, 1e3);
           return { success: true };
         } catch (e) {
@@ -4071,7 +4071,7 @@ ${launchCommand}
           });
           child.unref();
           setTimeout(() => {
-            vscode12.commands.executeCommand("workbench.action.quit");
+            vscode13.commands.executeCommand("workbench.action.quit");
           }, 1500);
           return { success: true };
         } catch (e) {
@@ -4126,7 +4126,7 @@ exit 1
           });
           child.unref();
           setTimeout(() => {
-            vscode12.commands.executeCommand("workbench.action.quit");
+            vscode13.commands.executeCommand("workbench.action.quit");
           }, 1500);
           return { success: true };
         } catch (e) {
@@ -4185,7 +4185,7 @@ exit 1
       }
       async showRelaunchPrompt() {
         this.log("Showing relaunch prompt");
-        const choice = await vscode12.window.showInformationMessage(
+        const choice = await vscode13.window.showInformationMessage(
           "auto-all-Antigravity requires a quick one-time setup to enable background mode. This will restart your IDE with necessary permissions.",
           { modal: false },
           "Setup & Restart",
@@ -4195,7 +4195,7 @@ exit 1
         if (choice === "Setup & Restart") {
           const result = await this.relaunchWithCDP();
           if (!result.success) {
-            vscode12.window.showErrorMessage(`Setup failed: ${result.message}`);
+            vscode13.window.showErrorMessage(`Setup failed: ${result.message}`);
           }
           return result.success ? "relaunched" : "failed";
         }
@@ -4219,7 +4219,7 @@ __export(extension_exports, {
   deactivate: () => deactivate
 });
 module.exports = __toCommonJS(extension_exports);
-var vscode11 = __toESM(require("vscode"));
+var vscode12 = __toESM(require("vscode"));
 
 // src/ui/dashboard.ts
 var vscode2 = __toESM(require("vscode"));
@@ -4657,63 +4657,6 @@ var taskAnalyzer = new TaskAnalyzer();
 
 // src/core/model-selector.ts
 var vscode5 = __toESM(require("vscode"));
-var log4 = createLogger("ModelSelector");
-var ModelSelector = class {
-  selectForTask(task) {
-    const lowerTask = task.toLowerCase();
-    let model = "gemini-2.0-flash-thinking-exp-1219";
-    let reason = "Default general purpose model";
-    if (lowerTask.includes("css") || lowerTask.includes("ui") || lowerTask.includes("frontend")) {
-      model = "gemini-3-flash";
-      reason = "Fast vision model for UI";
-    } else if (lowerTask.includes("refactor") || lowerTask.includes("architecture") || lowerTask.includes("plan")) {
-      model = "claude-3-5-sonnet-20240620";
-      reason = "Strong reasoning for architecture";
-    } else if (lowerTask.includes("test") || lowerTask.includes("debug")) {
-      model = "gpt-4o";
-      reason = "Reliable for debugging";
-    }
-    return {
-      modelId: model,
-      modelDisplayName: model,
-      reasoning: reason
-    };
-  }
-  showSwitchNotification(selection) {
-    vscode5.window.showInformationMessage(`\u{1F9E0} Switched to ${selection.modelDisplayName}: ${selection.reasoning}`);
-  }
-};
-var modelSelector = new ModelSelector();
-
-// src/core/exit-detector.ts
-var log5 = createLogger("ExitDetector");
-var ExitDetector = class {
-  constructor() {
-    this.failureCount = 0;
-    this.maxConsecutiveFailures = 5;
-  }
-  checkResponse(response) {
-    const lower = response.toLowerCase();
-    if (lower.includes("all tasks completed") || lower.includes("goal achieved")) {
-      return { shouldExit: true, reason: "AI indicated completion" };
-    }
-    return { shouldExit: false };
-  }
-  reportSuccess() {
-    this.failureCount = 0;
-  }
-  reportFailure() {
-    this.failureCount++;
-    if (this.failureCount >= this.maxConsecutiveFailures) {
-      return { shouldExit: true, reason: `Too many consecutive failures (${this.failureCount})` };
-    }
-    return { shouldExit: false };
-  }
-  reset() {
-    this.failureCount = 0;
-  }
-};
-var exitDetector = new ExitDetector();
 
 // node_modules/ws/wrapper.mjs
 var import_stream = __toESM(require_stream(), 1);
@@ -4844,7 +4787,7 @@ var CDPHandler = class extends import_events.EventEmitter {
 };
 
 // src/providers/cdp-client.ts
-var log6 = createLogger("CDPClient");
+var log4 = createLogger("CDPClient");
 var CDPClient = class {
   constructor() {
     this.isPro = true;
@@ -4891,15 +4834,199 @@ var CDPClient = class {
       }, 2e3);
     });
   }
+  async evaluate(expression) {
+    const instances = await this.handler.scanForInstances();
+    for (const instance of instances) {
+      for (const page of instance.pages) {
+        if (page.url.includes("editor") || page.title.includes("Cursor") || page.title.includes("Visual Studio Code")) {
+          const result = await this.handler.sendCommand(page.id, "Runtime.evaluate", {
+            expression,
+            returnByValue: true,
+            awaitPromise: true
+          });
+          if (result && result.result) {
+            return result.result.value;
+          }
+        }
+      }
+    }
+    return null;
+  }
   async switchModel(modelId) {
-    log6.info(`Switching to model ${modelId}`);
+    log4.info(`Switching to model ${modelId}`);
     return true;
   }
 };
 var cdpClient = new CDPClient();
 
+// src/utils/constants.ts
+var ModelId = {
+  // Gemini Models
+  GEMINI_PRO_HIGH: "gemini-3-pro-high",
+  GEMINI_PRO_LOW: "gemini-3-pro-low",
+  GEMINI_FLASH: "gemini-3-flash",
+  // Claude Models
+  CLAUDE_SONNET: "claude-sonnet-4-5",
+  CLAUDE_SONNET_THINKING: "claude-sonnet-4-5-thinking",
+  CLAUDE_OPUS_THINKING: "claude-opus-4-5-thinking",
+  // GPT Models
+  GPT_OSS: "gpt-oss-120b-medium"
+};
+var MODEL_LABELS = {
+  [ModelId.GEMINI_PRO_HIGH]: "Gemini 3 Pro (High)",
+  [ModelId.GEMINI_PRO_LOW]: "Gemini 3 Pro (Low)",
+  [ModelId.GEMINI_FLASH]: "Gemini 3 Flash",
+  [ModelId.CLAUDE_SONNET]: "Claude Sonnet 4.5",
+  [ModelId.CLAUDE_SONNET_THINKING]: "Claude Sonnet 4.5 (Thinking)",
+  [ModelId.CLAUDE_OPUS_THINKING]: "Claude Opus 4.5 (Thinking)",
+  [ModelId.GPT_OSS]: "GPT-OSS 120B (Medium)"
+};
+
+// src/core/model-scraper.ts
+var log5 = createLogger("ModelScraper");
+var cachedModels = [];
+var lastScrapeTime = 0;
+var CACHE_DURATION_MS = 6e4;
+async function getAvailableModels() {
+  if (cachedModels.length > 0 && Date.now() - lastScrapeTime < CACHE_DURATION_MS) {
+    return cachedModels;
+  }
+  try {
+    const scraped = await scrapeModelsFromUI();
+    if (scraped.length > 0) {
+      cachedModels = scraped;
+      lastScrapeTime = Date.now();
+      log5.info(`Scraped ${scraped.length} models from Antigravity`);
+      return cachedModels;
+    }
+  } catch (err) {
+    log5.warn(`Failed to scrape models: ${err.message}`);
+  }
+  return getHardcodedModels();
+}
+async function scrapeModelsFromUI() {
+  if (!cdpClient.isConnected()) {
+    const connected = await cdpClient.connect();
+    if (!connected) return [];
+  }
+  const result = await cdpClient.evaluate(`
+        (function() {
+            const models = [];
+            
+            // Try to find model selector dropdown options
+            // Method 1: Look for the model dropdown button and its options
+            const modelBtn = document.querySelector('[data-testid="model-selector"], .model-dropdown, button[aria-label*="model"], button[class*="model"]');
+            if (modelBtn) {
+                // Click to open dropdown
+                modelBtn.click();
+                
+                // Wait a bit and collect options
+                setTimeout(() => {
+                    const options = document.querySelectorAll('[role="option"], [role="menuitem"], .model-option, li[data-value], div[data-value]');
+                    options.forEach(opt => {
+                        const value = opt.getAttribute('data-value') || opt.getAttribute('data-model') || opt.textContent?.trim().toLowerCase().replace(/\\s+/g, '-');
+                        const label = opt.textContent?.trim();
+                        if (value && label) {
+                            models.push({ value, label });
+                        }
+                    });
+                    // Close dropdown
+                    document.body.click();
+                }, 300);
+            }
+            
+            // Method 2: Look for existing model name in the UI
+            const currentModel = document.querySelector('.model-name, .current-model, [data-testid="current-model"]');
+            if (currentModel) {
+                const label = currentModel.textContent?.trim();
+                if (label) {
+                    models.push({ value: label.toLowerCase().replace(/\\s+/g, '-'), label });
+                }
+            }
+            
+            return models;
+        })()
+    `);
+  return result || [];
+}
+function getHardcodedModels() {
+  return Object.entries(MODEL_LABELS).map(([value, label]) => ({
+    value,
+    label
+  }));
+}
+
+// src/core/model-selector.ts
+var log6 = createLogger("ModelSelector");
+var ModelSelector = class {
+  async selectForTask(task) {
+    const lowerTask = task.toLowerCase();
+    let model = ModelId.GEMINI_FLASH;
+    let reason = "Default general purpose model";
+    const availableModels = await getAvailableModels();
+    const availableValues = availableModels.map((m) => m.value);
+    const findBestMatch = (preferred, fallback) => {
+      for (const p of preferred) {
+        if (availableValues.includes(p)) return p;
+      }
+      return fallback;
+    };
+    if (lowerTask.includes("css") || lowerTask.includes("ui") || lowerTask.includes("frontend")) {
+      model = findBestMatch([ModelId.GEMINI_FLASH, "gpt-4o"], ModelId.GEMINI_FLASH);
+      reason = "Fast vision/UI model";
+    } else if (lowerTask.includes("refactor") || lowerTask.includes("architecture") || lowerTask.includes("plan")) {
+      model = findBestMatch([ModelId.CLAUDE_OPUS_THINKING, ModelId.CLAUDE_SONNET_THINKING, "gpt-4-turbo"], ModelId.CLAUDE_SONNET);
+      reason = "Strong reasoning for architecture";
+    } else if (lowerTask.includes("test") || lowerTask.includes("debug")) {
+      model = findBestMatch(["gpt-4o", ModelId.GEMINI_PRO_HIGH], "gpt-4o");
+      reason = "Reliable for debugging";
+    }
+    const modelObj = availableModels.find((m) => m.value === model);
+    const displayName = modelObj ? modelObj.label : model;
+    return {
+      modelId: model,
+      modelDisplayName: displayName,
+      reasoning: reason
+    };
+  }
+  showSwitchNotification(selection) {
+    vscode5.window.showInformationMessage(`\u{1F9E0} Switched to ${selection.modelDisplayName}: ${selection.reasoning}`);
+  }
+};
+var modelSelector = new ModelSelector();
+
+// src/core/exit-detector.ts
+var log7 = createLogger("ExitDetector");
+var ExitDetector = class {
+  constructor() {
+    this.failureCount = 0;
+    this.maxConsecutiveFailures = 5;
+  }
+  checkResponse(response) {
+    const lower = response.toLowerCase();
+    if (lower.includes("all tasks completed") || lower.includes("goal achieved")) {
+      return { shouldExit: true, reason: "AI indicated completion" };
+    }
+    return { shouldExit: false };
+  }
+  reportSuccess() {
+    this.failureCount = 0;
+  }
+  reportFailure() {
+    this.failureCount++;
+    if (this.failureCount >= this.maxConsecutiveFailures) {
+      return { shouldExit: true, reason: `Too many consecutive failures (${this.failureCount})` };
+    }
+    return { shouldExit: false };
+  }
+  reset() {
+    this.failureCount = 0;
+  }
+};
+var exitDetector = new ExitDetector();
+
 // src/core/autonomous-loop.ts
-var log7 = createLogger("AutonomousLoop");
+var log8 = createLogger("AutonomousLoop");
 var circuitBreaker = new CircuitBreaker();
 var AutonomousLoop = class {
   constructor() {
@@ -4921,7 +5048,7 @@ var AutonomousLoop = class {
   }
   async start(loopConfig = {}) {
     if (this.running) {
-      log7.warn("Loop already running");
+      log8.warn("Loop already running");
       return;
     }
     this.running = true;
@@ -4931,7 +5058,7 @@ var AutonomousLoop = class {
     rateLimiter.reset();
     exitDetector.reset();
     this.previousModel = null;
-    log7.info("\u{1F680} Autonomous loop starting");
+    log8.info("\u{1F680} Autonomous loop starting");
     vscode6.window.showInformationMessage("\u{1F680} Yoke AntiGravity Autonomous Mode: STARTING");
     await this.runLoop(loopConfig);
   }
@@ -4942,7 +5069,7 @@ var AutonomousLoop = class {
       clearTimeout(this.timer);
       this.timer = null;
     }
-    log7.info(`Loop stopped: ${reason}`);
+    log8.info(`Loop stopped: ${reason}`);
     this.showSummary(reason);
     this.updateStatus();
   }
@@ -4951,10 +5078,17 @@ var AutonomousLoop = class {
     const intervalSeconds = loopConfig.loopIntervalSeconds || config.get("loopInterval");
     while (this.running) {
       this.loopCount++;
-      log7.info(`=== Loop #${this.loopCount} ===`);
+      log8.info(`=== Loop #${this.loopCount} ===`);
       this.updateStatus();
+      const circuitState = await circuitBreaker.execute(async () => true);
+      if (!circuitState) {
+        log8.warn("Circuit Breaker is OPEN. Skipping loop.");
+        this.updateStatus();
+        await this.wait(1e4);
+        continue;
+      }
       if (!rateLimiter.canMakeCall()) {
-        log7.warn("Hourly rate limit reached");
+        log8.warn("Hourly rate limit reached");
         const decision = await rateLimiter.handleRateLimitReached();
         if (decision === "exit") {
           this.stop("Rate limit reached - user chose to exit");
@@ -4971,8 +5105,8 @@ var AutonomousLoop = class {
         return;
       }
       if (config.get("autoSwitchModels")) {
-        const selection = modelSelector.selectForTask(this.currentTask);
-        log7.info(`Model: ${selection.modelDisplayName} (${selection.reasoning})`);
+        const selection = await modelSelector.selectForTask(this.currentTask);
+        log8.info(`Model: ${selection.modelDisplayName} (${selection.reasoning})`);
         if (this.previousModel !== selection.modelId) {
           modelSelector.showSwitchNotification(selection);
           progressTracker.recordModelSwitch();
@@ -4985,9 +5119,28 @@ var AutonomousLoop = class {
         hasErrors: !success
       });
       if (config.get("autoGitCommit") && this.loopCount % 10 === 0) {
+        await this.gitCommit();
       }
       const waitTime = (intervalSeconds || 30) * 1e3;
       await this.wait(waitTime);
+    }
+  }
+  async gitCommit() {
+    if (!this.workspaceRoot) return;
+    try {
+      log8.info("Auto-committing progress...");
+      const cp = require("child_process");
+      const exec = (cmd) => new Promise((res, rej) => {
+        cp.exec(cmd, { cwd: this.workspaceRoot }, (err, stdout) => {
+          if (err) rej(err);
+          else res(stdout);
+        });
+      });
+      await exec("git add .");
+      await exec(`git commit -m "antigravity: auto-save loop #${this.loopCount}"`);
+      log8.info("Auto-commit successful");
+    } catch (e) {
+      log8.error(`Auto-commit failed: ${e.message}`);
     }
   }
   async getCurrentTask() {
@@ -5001,10 +5154,10 @@ var AutonomousLoop = class {
           const content = fs.readFileSync(fixPlanPath, "utf-8");
           const task = taskAnalyzer.extractCurrentTask(content);
           if (task) return task;
-          log7.info("All tasks in @fix_plan.md are complete");
+          log8.info("All tasks in @fix_plan.md are complete");
           return null;
         } catch (err) {
-          log7.warn("Could not read @fix_plan.md");
+          log8.warn("Could not read @fix_plan.md");
         }
       }
     }
@@ -5015,21 +5168,21 @@ var AutonomousLoop = class {
     if (!cdpClient.isConnected()) {
       const connected = await cdpClient.connect();
       if (!connected) {
-        log7.warn("CDP not available, waiting...");
+        log8.warn("CDP not available, waiting...");
         return true;
       }
     }
     try {
       const prompt = this.buildPrompt();
       progressTracker.recordPromptSent();
-      log7.info("Injecting prompt...");
+      log8.info("Injecting prompt...");
       const injected = await cdpClient.injectPrompt(prompt);
       if (!injected) {
-        log7.error("Failed to inject prompt");
+        log8.error("Failed to inject prompt");
         return false;
       }
       rateLimiter.recordCall();
-      log7.info("Waiting for response...");
+      log8.info("Waiting for response...");
       const timeoutMs = (config.get("executionTimeout") || 15) * 60 * 1e3;
       const response = await cdpClient.waitForResponse(timeoutMs);
       const exitCheck = exitDetector.checkResponse(response);
@@ -5040,7 +5193,7 @@ var AutonomousLoop = class {
       exitDetector.reportSuccess();
       return true;
     } catch (err) {
-      log7.error(`Execution error: ${err.message}`);
+      log8.error(`Execution error: ${err.message}`);
       const failCheck = exitDetector.reportFailure();
       if (failCheck.shouldExit) {
         this.stop(failCheck.reason);
@@ -5095,7 +5248,7 @@ var autonomousLoop = new AutonomousLoop();
 
 // src/modules/mcp/server.ts
 var vscode7 = __toESM(require("vscode"));
-var log8 = createLogger("MCPServer");
+var log9 = createLogger("MCPServer");
 var MCPServer = class {
   constructor() {
     this.isActive = false;
@@ -5104,20 +5257,20 @@ var MCPServer = class {
   async start() {
     if (this.isActive) return;
     this.isActive = true;
-    log8.info("MCP Server starting on port 3000 (simulated)...");
+    log9.info("MCP Server starting on port 3000 (simulated)...");
     setTimeout(() => {
-      log8.info("MCP Server listening. Tools available: [read_file, write_file, execute_command]");
+      log9.info("MCP Server listening. Tools available: [read_file, write_file, execute_command]");
       vscode7.window.showInformationMessage("MCP Server Is Active \u{1F680}");
     }, 1e3);
   }
   async stop() {
     if (!this.isActive) return;
     this.isActive = false;
-    log8.info("MCP Server stopped");
+    log9.info("MCP Server stopped");
   }
   // Placeholder for request handling
   handleRequest(request) {
-    log8.info(`Received request: ${request.method}`);
+    log9.info(`Received request: ${request.method}`);
     return { jsonrpc: "2.0", result: "ok", id: request.id };
   }
 };
@@ -5125,7 +5278,7 @@ var mcpServer = new MCPServer();
 
 // src/modules/voice/control.ts
 var vscode8 = __toESM(require("vscode"));
-var log9 = createLogger("VoiceControl");
+var log10 = createLogger("VoiceControl");
 var VoiceControl = class {
   constructor() {
     this.isActive = false;
@@ -5135,13 +5288,13 @@ var VoiceControl = class {
     if (this.isActive) return;
     this.isActive = true;
     const mode = config.get("voiceMode") || "push-to-talk";
-    log9.info(`Voice Control active. Mode: ${mode}`);
+    log10.info(`Voice Control active. Mode: ${mode}`);
     vscode8.window.showInformationMessage(`\u{1F3A4} Voice Control Active (${mode})`);
   }
   async stop() {
     if (!this.isActive) return;
     this.isActive = false;
-    log9.info("Voice Control stopped");
+    log10.info("Voice Control stopped");
   }
 };
 var voiceControl = new VoiceControl();
@@ -5350,20 +5503,97 @@ var StrategyManager = class {
   }
 };
 
+// src/ui/status-bar.ts
+var vscode11 = __toESM(require("vscode"));
+var log11 = createLogger("StatusBar");
+var StatusBarManager = class {
+  constructor(context) {
+    this.disposed = false;
+    this.statusMain = vscode11.window.createStatusBarItem(
+      vscode11.StatusBarAlignment.Right,
+      100
+    );
+    this.statusMain.command = "antigravity.toggleExtension";
+    context.subscriptions.push(this.statusMain);
+    this.statusSettings = vscode11.window.createStatusBarItem(
+      vscode11.StatusBarAlignment.Right,
+      99
+    );
+    this.statusSettings.command = "antigravity.openSettings";
+    this.statusSettings.text = "$(gear)";
+    this.statusSettings.tooltip = "Open Antigravity Dashboard";
+    context.subscriptions.push(this.statusSettings);
+    this.statusMain.show();
+    this.statusSettings.show();
+    log11.info("Status bar initialized");
+  }
+  update(state) {
+    if (this.disposed) return;
+    if (state.autonomousEnabled) {
+      this.statusMain.text = `$(sync~spin) Yoke: ${state.loopCount}`;
+      this.statusMain.tooltip = "Autonomous Mode Running";
+      this.statusMain.backgroundColor = new vscode11.ThemeColor("statusBarItem.prominentBackground");
+    } else if (state.autoAllEnabled) {
+      this.statusMain.text = `$(rocket) Yoke: CDP`;
+      this.statusMain.tooltip = "CDP Auto-All Enabled";
+      this.statusMain.backgroundColor = void 0;
+    } else {
+      this.statusMain.text = `$(circle-slash) Yoke: OFF`;
+      this.statusMain.tooltip = "Click to enable";
+      this.statusMain.backgroundColor = void 0;
+    }
+  }
+  dispose() {
+    this.disposed = true;
+    this.statusMain.dispose();
+    this.statusSettings.dispose();
+  }
+};
+
 // src/extension.ts
-var log10 = createLogger("Extension");
+var log12 = createLogger("Extension");
+var statusBar;
 function activate(context) {
-  log10.info("Antigravity Autopilot (Unified) activating...");
+  log12.info("Antigravity Autopilot (Unified) activating...");
+  statusBar = new StatusBarManager(context);
   const strategyManager = new StrategyManager(context);
+  autonomousLoop.setStatusCallback((status) => {
+    statusBar.update({
+      autonomousEnabled: status.running,
+      loopCount: status.loopCount,
+      autoAllEnabled: config.get("autoAllEnabled"),
+      multiTabEnabled: config.get("multiTabEnabled"),
+      mode: config.get("strategy")
+    });
+  });
+  vscode12.workspace.onDidChangeConfiguration((e) => {
+    if (e.affectsConfiguration("antigravity")) {
+      statusBar.update({
+        autonomousEnabled: autonomousLoop.isRunning(),
+        loopCount: 0,
+        // We assume loop count preserves or resets? 
+        autoAllEnabled: config.get("autoAllEnabled"),
+        multiTabEnabled: config.get("multiTabEnabled"),
+        mode: config.get("strategy")
+      });
+    }
+  });
+  statusBar.update({
+    autonomousEnabled: autonomousLoop.isRunning(),
+    loopCount: 0,
+    autoAllEnabled: config.get("autoAllEnabled"),
+    multiTabEnabled: config.get("multiTabEnabled"),
+    mode: config.get("strategy")
+  });
   context.subscriptions.push(
-    vscode11.commands.registerCommand("antigravity.toggleExtension", async () => {
+    vscode12.commands.registerCommand("antigravity.toggleExtension", async () => {
       await strategyManager.toggle();
     }),
-    vscode11.commands.registerCommand("antigravity.toggleAutoAccept", async () => {
+    vscode12.commands.registerCommand("antigravity.toggleAutoAccept", async () => {
       await config.update("autoAcceptEnabled", !config.get("autoAcceptEnabled"));
       await strategyManager.start();
     }),
-    vscode11.commands.registerCommand("antigravity.toggleAutoAll", async () => {
+    vscode12.commands.registerCommand("antigravity.toggleAutoAll", async () => {
       const current = config.get("autoAllEnabled");
       await config.update("autoAllEnabled", !current);
       if (!current) {
@@ -5371,7 +5601,7 @@ function activate(context) {
       }
       await strategyManager.start();
     }),
-    vscode11.commands.registerCommand("antigravity.toggleAutonomous", async () => {
+    vscode12.commands.registerCommand("antigravity.toggleAutonomous", async () => {
       const isRunning = autonomousLoop.isRunning();
       if (isRunning) {
         autonomousLoop.stop("User toggled off");
@@ -5381,10 +5611,10 @@ function activate(context) {
         await config.update("autonomousEnabled", true);
       }
     }),
-    vscode11.commands.registerCommand("antigravity.openSettings", () => {
+    vscode12.commands.registerCommand("antigravity.openSettings", () => {
       DashboardPanel.createOrShow(context.extensionUri);
     }),
-    vscode11.commands.registerCommand("antigravity.toggleMcp", async () => {
+    vscode12.commands.registerCommand("antigravity.toggleMcp", async () => {
       const current = config.get("mcpEnabled");
       if (current) {
         await mcpServer.stop();
@@ -5393,7 +5623,7 @@ function activate(context) {
       }
       await config.update("mcpEnabled", !current);
     }),
-    vscode11.commands.registerCommand("antigravity.toggleVoice", async () => {
+    vscode12.commands.registerCommand("antigravity.toggleVoice", async () => {
       const current = config.get("voiceControlEnabled");
       if (current) {
         await voiceControl.stop();
@@ -5404,24 +5634,25 @@ function activate(context) {
     })
   );
   if (config.get("autoAllEnabled") || config.get("autoAcceptEnabled")) {
-    strategyManager.start().catch((e) => log10.error(`Failed to start strategy: ${e.message}`));
+    strategyManager.start().catch((e) => log12.error(`Failed to start strategy: ${e.message}`));
   }
   if (config.get("autonomousEnabled")) {
-    autonomousLoop.start().catch((e) => log10.error(`Failed to start autonomous loop: ${e.message}`));
+    autonomousLoop.start().catch((e) => log12.error(`Failed to start autonomous loop: ${e.message}`));
   }
   if (config.get("mcpEnabled")) {
-    mcpServer.start().catch((e) => log10.error(`MCP start failed: ${e.message}`));
+    mcpServer.start().catch((e) => log12.error(`MCP start failed: ${e.message}`));
   }
   if (config.get("voiceControlEnabled")) {
-    voiceControl.start().catch((e) => log10.error(`Voice start failed: ${e.message}`));
+    voiceControl.start().catch((e) => log12.error(`Voice start failed: ${e.message}`));
   }
-  log10.info("Antigravity Autopilot activated!");
+  log12.info("Antigravity Autopilot activated!");
 }
 function deactivate() {
   autonomousLoop.stop("Deactivating");
   mcpServer.stop();
   voiceControl.stop();
-  log10.info("Antigravity Autopilot deactivated");
+  if (statusBar) statusBar.dispose();
+  log12.info("Antigravity Autopilot deactivated");
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

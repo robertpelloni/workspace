@@ -60,6 +60,25 @@ export class CDPClient {
         });
     }
 
+    async evaluate(expression: string): Promise<any> {
+        const instances = await this.handler.scanForInstances();
+        for (const instance of instances) {
+            for (const page of instance.pages) {
+                if (page.url.includes('editor') || page.title.includes('Cursor') || page.title.includes('Visual Studio Code')) {
+                    const result = await this.handler.sendCommand(page.id, 'Runtime.evaluate', {
+                        expression,
+                        returnByValue: true,
+                        awaitPromise: true
+                    });
+                    if (result && result.result) {
+                        return result.result.value;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
     async switchModel(modelId: string): Promise<boolean> {
         log.info(`Switching to model ${modelId}`);
         // Implement model switching logic via DOM
