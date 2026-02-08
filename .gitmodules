@@ -161,3 +161,6 @@
 [submodule "cointrade"]
 	path = cointrade
 	url = https://github.com/mnmballa2323/cointrade.git
+[submodule ".agent"]
+	path = .agent
+	url = https://github.com/sickn33/antigravity-awesome-skills.git
