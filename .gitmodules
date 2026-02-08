@@ -130,10 +130,6 @@
 [submodule "bg"]
 	path = bg
 	url = https://github.com/robertpelloni/bg.git
-[submodule "MCP_SuperAssistant"]
-	path = MCP_SuperAssistant
-	url = https://github.com/robertpelloni/mcp-superassistant
-
 [submodule "Alti.Assistant"]
 	path = Alti.Assistant
 	url = https://github.com/mnmballa2323/Alti.Assistant.git
