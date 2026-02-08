@@ -1,90 +1,174 @@
-# Project Roadmap
+# ROADMAP — Robert Pelloni Workspace Monorepo
 
-## Current Status (v1.1.1)
-- [x] **Documentation Overhaul**: Consolidated instructions into `docs/LLM_INSTRUCTIONS.md` and created model-specific guides (`CLAUDE.md`, etc.).
-- [x] **Git Repair**: Fixed recursive submodule definitions (`aios`, `bobcoin`, `filez`) and resolved merge conflicts.
-- [x] **Agent Setup**: Installed and verified `trae-agent` (local), `ii-agent` (local), and `junie` (global).
-- [x] **Inventory**: Generated comprehensive `SUBMODULE_DASHBOARD.md` listing 250+ root and nested submodules.
-- [x] **Structure Analysis**: Created `AGENTS.md` and `docs/LLM_INSTRUCTIONS.md` identifying project-specific conventions.
-- [x] **Game Submodules**: Added linthesia, hellven, sm64coopdx, f-zerox, neverball, mk64, MarbleBlast, OpenMBU game engines.
-- [x] **Music Tools**: Added ardour, audacity, picard, qBittorrent, zrythm, lmms, timidity.
-- [x] **Visualizers**: Added JWildfire, apophysis-j, electricsheep, bonsai fractal/visualization tools.
-- [x] **Video Tools**: Added topaz-ffmpeg (TopazLabs AI video enhancement fork).
-- [x] **Bobcoin Cleanup**: Removed inappropriate crypto references from non-crypto projects (ArrowVortex, raindropioapp).
-- [x] **Submodule Sync**: Recursively updated all submodules to latest upstream/local changes.
-
-## FWBER Status (Updated Jan 10, 2026)
-
-### ✅ Phase 4B: Missing Frontend UIs - COMPLETE
-All Phase 4B features have been implemented and verified:
-- [x] **Achievements System UI** - `fwber/fwber-frontend/app/achievements/page.tsx`
-- [x] **Proximity Chatrooms Discovery** - `fwber/fwber-frontend/app/proximity-chatrooms/page.tsx`
-- [x] **Paid Photo Reveals** - `fwber/fwber-frontend/app/photos/reveals/page.tsx`
-- [x] **Merchant Promotions Discovery** - `fwber/fwber-frontend/app/deals/page.tsx`
-- [x] **Share-to-Unlock System** - `fwber/fwber-frontend/app/share-unlock/page.tsx`
-- [x] **Bulletin Boards** - `fwber/fwber-frontend/app/bulletin-boards/page.tsx`
-- [x] **Profile View Tracking** - `fwber/fwber-frontend/app/profile-views/page.tsx`
-- [x] **Group-to-Group Matching** - `fwber/fwber-frontend/app/groups/matching/page.tsx`
-- [x] **Message Reactions** - Integrated in chatroom components
-- [x] **Extended Viral Content** - All wingman features (fortune, cosmic, vibe, roast, nemesis)
-- [x] **Matchmaker Bounties** - `fwber/fwber-frontend/app/bounties/page.tsx`
-
-### 🟡 Phase 4C: Technical Debt - In Progress
-- [ ] **Enable Feature Flags** - chatrooms, recommendations, ai_wingman, video_chat in `config/features.php`
-- [ ] **Enable Bulletin Board Routes** - Uncomment in `routes/api.php`
-- [ ] **Merchant Analytics Dashboard** - K-Factor tracking, retention metrics, revenue analytics
-- [ ] **Replace Mock APIs** - Real content moderation (AWS Rekognition/Google Vision)
-
-## Other Project Status
-
-### 🟢 AIOS (AI Operating System) - Phase 9 COMPLETE
-All 9 phases completed per `aios/ROADMAP.md`:
-- Phases 1-5: Core infrastructure, MCP servers, consensus mechanisms
-- Phase 6: Bobcoin mining integration
-- Phases 7-9: Advanced orchestration, self-improvement, production hardening
-
-### 🟡 Other Projects - Various States
-- **itgmania**: Rhythm game engine (StepMania fork) - active development
-- **okgame**: Cross-platform game engine - active development
-- **BobsGameOnline**: Online multiplayer puzzle game - maintenance mode
-- **beatoraja**: Rhythm game - maintenance mode
-- **filez**: Desktop file management - Tier 2 complete, Tier 3 pending
-- **JWildfire**: Fractal flame generator - integrated
-
-## Short-term Goals (v1.1.0)
-- [ ] **Standardization**:
-    - [ ] Enforce `src/` layout for new Python modules in `aios`.
-    - [ ] Consolidate Node.js projects to use `pnpm` exclusively.
-- [ ] **Build Unification**:
-    - [ ] Migrate legacy Makefiles in `ITGMania` to CMake where feasible.
-    - [ ] Standardize `vcpkg` integration across C++ projects.
-- [ ] **Agent Orchestration**:
-    - [ ] Integrate `trae-agent` into the central orchestration loop.
-    - [ ] Establish communication protocol between `ii-agent` and `aios`.
-- [ ] **Submodule Sync**:
-    - [ ] Merge upstream changes for all forked repositories.
-    - [ ] Add mk64 (Mario Kart 64 decompilation) when available.
-
-## Medium-term Goals (v1.2.0)
-- [ ] **Unified Interface**: Create a CLI or Web UI wrapper that exposes key functionalities of the underlying submodules.
-- [ ] **Performance Optimization**: Analyze and optimize the build and update process for the large number of submodules.
-- [ ] **AIOS Integration**: Complete MCP server orchestration with mcp_zen consensus and mcp_chroma vector memory.
-
-## Long-term Vision (v2.0.0+)
-- [ ] **Fully Autonomous Agent Swarm**: Enable agents to self-update, self-heal, and collaborate on complex tasks without human intervention.
-- [ ] **Marketplace Integration**: Allow dynamic addition/removal of capabilities via an extension marketplace.
-- [ ] **Global Knowledge Graph**: Implement a shared memory structure accessible by all agents.
-- [ ] **Cross-Project Feature Parity**: Integrate best features from all competing libraries into unified interfaces.
+> **Version:** 1.2.0
+> **Last Updated:** 2026-02-08
+> **Status Key:** ✅ Complete | 🔄 In Progress | 📋 Planned | 💡 Aspirational
 
 ---
 
-## Reference Documents
-- `fwber/docs/MISSING_FEATURES.md` - Detailed fwber feature gaps (updated Jan 10, 2026)
-- `fwber/docs/ROADMAP.md` - fwber Phase 4-5 plans (Phase 4B COMPLETE)
-- `aios/ROADMAP.md` - AIOS Phase 6-7 plans (All phases COMPLETE)
-- `filez/docs/VISION.md` - filez Tier 3 features
-- `docs/archive/AI_FEATURES_CONSENSUS_PLAN_2025-11-08.md` - Multi-model consensus roadmap
+## Current Version: v1.2.0
+
+### Recent Milestones
+- ✅ **v1.2.0** (2026-02-08) — Comprehensive documentation rewrite: all LLM instruction files, VISION.md, LIBRARY_REFERENCE.md, PROJECT_STRUCTURE.md
+- ✅ **v1.1.2** (2026-02-03) — Fixed okgame libs, BobsGameOnline GeoIP2, bobfilez Local-File-Organizer
+- ✅ **v1.1.0** (2026-02-02) — 250+ submodule sync, docs overhaul, dashboard automation, scripts
 
 ---
 
-**Last Updated:** January 10, 2026
+## Short-Term (v1.3.x — Next 2 Weeks)
+
+### Documentation & Governance
+- 📋 Complete docs/QUICK_START.md update to reference v1.2.0 changes
+- 📋 Audit all submodules for missing documentation entries
+- 📋 Verify all non-submodule dirs (brobocallz, makemoney, superbobbyball, musicbrainz-soulseek-downloader) — add as submodules or document as local-only
+- 📋 Remove or repurpose the `undefined/` directory
+- 📋 Deduplicate MCP_SuperAssistant vs mcp-superassistant
+
+### Build & Infrastructure
+- 📋 Enforce `src/` layout for all Python projects in workspace
+- 📋 Standardize on `pnpm` for all Node.js/TypeScript projects
+- 📋 Begin ITGmania CMake migration (from Autotools/Makefiles)
+- 📋 Fix consensus_gate.js CI workflow (currently references potentially missing state file)
+- 📋 Automate VERSION sync across package.json and pyproject.toml (build script)
+
+### Submodule Health
+- 📋 Run full `python scripts/sync_forks.py` to sync all forks with upstream
+- 📋 Merge all robertpelloni feature branches (created by Jules/AI tools) into main
+- 📋 Resolve all detached HEAD states in nested submodules
+- 📋 Update SUBMODULE_DASHBOARD.md with all 48+ submodules accurate
+
+---
+
+## Medium-Term (v1.4–v1.9 — Next 1–3 Months)
+
+### AIOS Meta-Orchestrator
+- 📋 AIOS dashboard UI polish — improve Next.js frontend
+- 📋 Universal MCP Hub — centralized registry for all MCP servers
+- 📋 Agent orchestration improvements — better multi-agent coordination
+- 📋 Progressive Disclosure UI — hide tools until needed
+- 📋 Memory consolidation — unify Chroma, mem0, Serena into single memory layer
+
+### FWBer Dating Platform
+- 🔄 **Phase 4C** — Feature flags, dynamic routes, merchant analytics, real content moderation
+- 📋 **Phase 5** — Subscriptions/Payments integration
+- 📋 **Phase 6** — Voice/Video chat
+- 📋 **Phase 7** — Community features and growth loops
+
+### Rhythm Games
+- 📋 ITGmania build system migration to CMake
+- 📋 ArrowVortex Qt 5 → Qt 6 migration
+- 📋 DDC auto-charter integration improvements
+- 📋 Simply Love SM5 theme updates for ITGmania compatibility
+- 📋 beatoraja upstream sync and improvements
+
+### Bob Ecosystem
+- 📋 bobfilez feature completion (file organization, tagging, search)
+- 📋 bobcoin testnet deployment and Proof of Play prototype
+- 📋 bobsaver core password management features
+- 📋 bobtorrent P2P protocol design and implementation
+
+### Developer Experience
+- 📋 Unified CLI tool for workspace management (`bob` command)
+- 📋 Pre-commit hooks for VERSION sync validation
+- 📋 Automated session handoff file generation
+- 📋 CI/CD pipeline for main workspace (not just subprojects)
+
+---
+
+## Long-Term (v2.0–v2.9 — 3–12 Months)
+
+### Integration Layer
+- 💡 Bobcoin Proof of Play integration with ITGmania
+- 💡 Cross-project bobcoin payment layer
+- 💡 bobtorrent + bobfilez distributed storage integration
+- 💡 bobui shared component library across all web products
+- 💡 Unified authentication across all bob products
+
+### AIOS Agent Swarm
+- 💡 Autonomous agent swarm for continuous development
+- 💡 Agent marketplace for community-contributed agents
+- 💡 Knowledge graph across all projects
+- 💡 Multi-model consensus for architectural decisions
+- 💡 Self-healing infrastructure (auto-fix failing builds/tests)
+
+### Games
+- 💡 Bob's Game (bg) modernization and Steam update
+- 💡 sm64coopdx custom levels and mods
+- 💡 superbobbyball gameplay completion
+- 💡 "Definitive StepMania" — merge ITGmania + bobmania forks
+
+---
+
+## Aspirational (v3.0+ — 1+ Years)
+
+### Bob Product Suite
+- 💡 bobium browser release (de-Googled Chromium)
+- 💡 bobzilla browser release (privacy Firefox)
+- 💡 bobeditpro code editor
+- 💡 bobzzite gaming OS (Bazzite/Fedora fork)
+
+### The Ultimate Vision (v10.0+)
+- 💡 boblang programming language
+- 💡 bobvm virtual machine
+- 💡 bobos operating system
+- 💡 Physical arcade machines as bobcoin mining oracles
+- 💡 Fully autonomous self-improving software ecosystem
+
+---
+
+## Completed Milestones
+
+### v1.2.0 (2026-02-08)
+- ✅ Comprehensive documentation rewrite (8 files)
+- ✅ Universal LLM_INSTRUCTIONS.md master protocol (13 sections)
+- ✅ VISION.md detailed vision document (14 sections)
+- ✅ LIBRARY_REFERENCE.md dependency catalog
+- ✅ PROJECT_STRUCTURE.md complete directory catalog
+- ✅ Version sync across VERSION, package.json, pyproject.toml
+- ✅ All model-specific files reference master protocol
+
+### v1.1.x (2026-02-02 – 2026-02-03)
+- ✅ 250+ submodule synchronization
+- ✅ Dashboard automation scripts
+- ✅ Recursive update scripts (PowerShell + Python)
+- ✅ Fork sync script
+- ✅ Consensus gate CI workflow
+
+### v1.0.x (2026-01-04 – 2026-01-15)
+- ✅ Monorepo structure established
+- ✅ 60+ root submodules integrated
+- ✅ AIOS meta-orchestrator initialized
+- ✅ fwber Phase 4B complete (achievements, chatrooms, photo reveals, etc.)
+- ✅ Agent orchestrator CLI
+- ✅ Submodule dashboard generation
+
+### FWBer Phase 4B (Complete)
+- ✅ Achievement system with badge types
+- ✅ Chatrooms
+- ✅ Photo reveals
+- ✅ Merchant integration
+- ✅ Share-unlock mechanics
+- ✅ Bulletin board
+- ✅ Profile view tracking
+- ✅ Group matching
+- ✅ Reactions system
+- ✅ Viral content mechanics
+- ✅ Bounty system
+
+---
+
+## Priority Matrix
+
+| Priority | Category | Next Action |
+|----------|----------|------------|
+| 🔴 HIGH | Submodule Health | Sync all forks, merge feature branches, fix detached HEADs |
+| 🔴 HIGH | Infrastructure | Fix VERSION auto-sync, CI pipeline |
+| 🟡 MEDIUM | FWBer | Phase 4C feature flags and moderation |
+| 🟡 MEDIUM | AIOS | Dashboard UI, MCP Hub |
+| 🟡 MEDIUM | Rhythm Games | ITGmania CMake migration |
+| 🟢 LOW | Bob Ecosystem | bobcoin testnet, bobtorrent design |
+| 🟢 LOW | Games | bg modernization, sm64coopdx mods |
+
+---
+
+*This roadmap is maintained as a living document. For the complete project vision, see `VISION.md`. For technical protocols, see `docs/LLM_INSTRUCTIONS.md`.*

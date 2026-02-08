@@ -1,61 +1,154 @@
-# Project Structure & Submodule Dashboard
-**Last Updated:** 2026-01-09
+# PROJECT_STRUCTURE
+**Last Updated:** 2026-02-08
 
 ## Overview
-This document tracks the top-level projects and submodules in the Robert Pelloni monorepo. This workspace acts as a centralized manager ("monorepo keeper") where projects are organized as top-level directories or submodules.
+This document catalogs the current layout of Robert Pelloni’s monorepo, covering every root-level submodule, local project, and supporting configuration file. The sections below organize the estate by domain, highlight the stack for each component, and surface how the pieces fit together so contributors can find every subproject from one central narrative.
 
-## Workspace Organization
-- **docs/**: Workspace-level documentation.
-  - **docs/archive/**: Historical plans, analyses, and dated reports.
-- **scripts/**: Management and utility scripts.
-- **logs/**: Operation logs, report exports, and session handoffs.
-- **playground/**: Temporary code and experimental scripts.
+## Visual Layout
+```
+/
+├─ docs/ (LLM instructions, references, archives)
+├─ scripts/ (automation helpers, sync/generate recipes)
+├─ logs/ (session logs + handoffs)
+├─ ai & orchestration: borg/, aios/, claude-mem/, metamcp/, mcp-superassistant/, mcpenetes/
+├─ AI agent automation: antigravity-autopilot/, antigravity-jules-orchestration/, jules-autopilot/, opencode-autopilot/
+├─ bobmani/
+│  ├─ bobmania/
+│  ├─ itgmania/
+│  ├─ beatoraja/
+│  ├─ arrowvortex/
+│  ├─ linthesia/
+│  ├─ pianogame/
+│  ├─ ddc/
+│  ├─ ddc_onset/
+│  ├─ ffr-difficulty-model/
+│  ├─ Simply-Love-SM5/
+│  ├─ hymnmania/
+│  ├─ ksm-v2/
+│  └─ leraine-studio/
+├─ bob ecosystem: bobcoin/, bobeditpro/, bobfilez/, bobium/, bobsaver/, bobtorrent/, bobtrader/, bobui/, bobzilla/
+├─ rhythm and game engines: bg/, mk64/, sm64coopdx/, superbobbyball/
+├─ web applications: fwber/, raindropioapp/, rental.home/
+├─ external/collaborative: Alti.Assistant/, Alti.Code.Studio/, Azure.Cybersecurity/, Chamber.Law/, Merk.Mobile/, Stone.Ledger/, Tickerstone/, coin.project/, cointrade/
+├─ developer tools: brobocallz/, makemoney/, musicbrainz-soulseek-downloader/, topaz-ffmpeg/
+├─ infrastructure: mk64/, cointrade/, bobmani/ (shared), rental.home/
+├─ config roots: VERSION, CHANGELOG.md, ROADMAP.md, VISION.md, BOB_ECOSYSTEM.md, AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md,
+│  package.json, pyproject.toml, playwright.config.ts, codebuff.json, workspace.code-workspace, .gitmodules, .github/copilot-instructions.md
+└─ miscellaneous: undefined/
+```
 
-## Primary Projects
-| Project | Path | Description |
-|---------|------|-------------|
-| **AIOS** | `aios/` | AI Operating System & Agent Infrastructure |
-| **bobtrax** | `bobtrax/` | Audio Production Bundle |
-| **ArrowVortex** | `ArrowVortex/` | Rhythm Game Editor |
-| **Fwber** | `fwber/` | Dating Platform (Laravel/Next.js) |
-| **ITGmania** | `itgmania/` | Rhythm Game Engine (ITG Fork) |
-| **Filez** | `filez/` | Desktop File Management |
-| **Hellven** | `hellven/` | Unity Game Project |
-| **okgame** | `okgame/` | Cross-platform game engine |
+## AI & Orchestration
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `aios/` | Meta-orchestration brain for MCP, managers, agents, and dashboards. | Fastify v5, Next.js 14, pnpm workspace, Python helpers | Active |
+| `borg/` | Multi-agent choreography bus used by AIOS to route jobs between agents. | Node.js, pnpm, custom agent framework | Experimental |
+| `claude-mem/` | Claude memory management tooling and persistence helpers. | Node.js, TypeScript, SQLite | Active |
+| `metamcp/` | Meta MCP proxy layer for bridging orchestration and external MCP servers. | TypeScript, Fastify-compatible API | Active |
+| `mcp-superassistant/` | Core MCP SuperAssistant entry point (alias `MCP_SuperAssistant/`). | TypeScript, pnpm, TRPC | Active |
+| `mcpenetes/` | MCP utilities, health checks, and supporting scripts for SuperAssistant. | TypeScript, Bash | Maintained |
 
-## Submodule Status (Root Level)
-| Path | Commit Hash | Version/Branch |
-| :--- | :--- | :--- |
-| **ArrowVortex** | 8845656afecc5a5d3a0e4d10dbb900f21e35c634 | v1.0.1-245 |
-| **bobsgameonlinejava** | 4f3015f99e379f284b42a1f6a403b6b036e14e07 | main |
-| **JWildfire** | bc2c370ecfe3ef4efac83b982a29f44dad50f49f | master |
-| **Neothesia** | 3cd211a5a9da81c91c517267df7a0154363da412 | v0.3.1-125 |
-| **Resume-Matcher** | 87800695c672adcb6d99ca80b2285c0a8f18747a | 0.1.2 |
-| **aichat** | ce3205de44005a7b7f5f9eb4814b928155c406b1 | v0.30.0 |
-| **aios** | 8d551b289ab52219b56ec143e9de222fe15edd9c | main |
-| **beatoraja** | ebfa678b83252256c41c486e583376fd9b41fbce | 0.7.6 |
-| **bobcoin** | 253e9c5a62830ec3f46d1abb6d2f6e2efe5ca463 | main |
-| **ccmanager** | e06dd9d1f32902fa218179902faae72b3126203d | v2.9.2 |
-| **changesets** | 9657b268d44645f7b55dcd6724578e0438415e95 | @changesets/apply-release-plan@7.0.13 |
-| **copyparty** | e9ab040ce8e72e299a3d8fbd109865b1e218eb57 | v0.7.3 |
-| **echogarden** | 7a60d1b4ffc648495e431f4871fc8332e838eb66 | v2.10.1 |
-| **filez** | 212ee4c5b8cfe706bfe022d9c911f6a18ea422bd | v2.1.0 |
-| **fwber** | 344eaaa7f453ad6916dba140a5d3634421ea724d | v0.3.25 |
-| **hellven** | ae5d8ee835e3d64033eaac04c4eefa8d3fa69869 | main |
-| **ii-agent** | ea807ea557cafb42c8ff48f8b247ac7d2f2deb4d | develop |
-| **itgmania** | f11362e4e1033e604366e2ed844d83e66d79129f | v0.8.0 |
-| **junie** | 3e912f2e215c69a858d1eae76367694f0b261d3a | 108.1 |
-| **libjxl** | 9174e635cd5980e96fcf50d37873cf40045ce2df | v0.11-snapshot |
-| **lootbox** | 0ddfea5905310312383919de984af7cc3b978ae1 | main |
-| **okgame** | 1d98286cc645a55333fb3e70831471eb0eca7cf2 | 69431-114 |
-| **plandex** | e2d772072efadbe41d2946d97d79be55532dbab5 | cli/v2.2.1 |
-| **raindrop-io-mcp-server** | 7d529593aca3be795ad0425296b561ffd7d7a0aa | main |
-| **raindropioapp** | 459c0ad16e6a5a171e85cb0b017c93b7eabf81ac | latest-159 |
-| **robertpelloni.com** | c92ccd5d7de90e5501201e44e14c03b91fce7c68 | main |
-| **servers** | c7c549711b1577227d0ff8ff7c67fdbf7e4a0225 | typescript-servers-0.6.2 |
-| **stepmania** | 52a1dc3e77934392c9e6b2737baff78b7275cef2 | v5.1.0-12 |
-| **trae-agent** | d9b60cdd4cf1b1242d2b62764f407fa58c952278 | main |
-| **vcpkg** | 0e39c10736341cc8135b560438229bbda3d3219a | 2022.02.02 |
+## Rhythm Games (bobmani/)
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `bobmani/` | Container for rhythm game assets and collaborative tooling. | Mixed (C++, Java, Rust, Python) | Active |
+| `bobmani/bobmania/` | Experimental StepMania 5.1+ fork with modern features. | C++, CMake, OpenGL | Active |
+| `bobmani/itgmania/` | Tournament-grade StepMania fork (SM 3.95 lineage). | C++, Autotools, Lua | Active |
+| `bobmani/beatoraja/` | BMS/IIDX simulator targeting precision play. | Java, Gradle, libGDX | Maintenance |
+| `bobmani/arrowvortex/` | Chart editor for simfiles; Qt + C++ codebase. | C++, Qt 5 | Active |
+| `bobmani/linthesia/` | Piano-learning rhythm game with Rust tooling. | Rust, Bevy | Active |
+| `bobmani/pianogame/` | Historical Synthesia-style piano training experience. | C++ | Maintenance |
+| `bobmani/ddc/` | Dance Diffusion auto-charter service. | Python, ML models | Research |
+| `bobmani/ddc_onset/` | Audio onset detection engine for DDC. | Python, Librosa | Research |
+| `bobmani/ffr-difficulty-model/` | FFR difficulty calculation engine. | Python, TensorFlow | Active |
+| `bobmani/Simply-Love-SM5/` | Popular StepMania theme maintained in the suite. | Lua, StepMania theme files | Active |
+| `bobmani/hymnmania/` | Hymnal-focused rhythm game demonstration. | C++ | Maintenance |
+| `bobmani/ksm-v2/` | K-Shoot Mania clone for fast chart play. | C++ | Active |
+| `bobmani/leraine-studio/` | Chart editor tailored to Bob's Game rhythm levels. | C++, Qt | Active |
 
----
-**Note:** Detailed recursive submodule status for `aios` and other complex projects is managed within their respective repositories.
+## Bob Ecosystem Products
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `bobcoin/` | Proof-of-health cryptocurrency (Solana + Node.js). | Solana, Node.js, TypeScript | Active |
+| `bobeditpro/` | Code editor with Bob’s Game-inspired UX. | Electron, TypeScript | Initializing |
+| `bobfilez/` | Desktop file organizer (Qt/C++ rebrand of filez). | C++, Qt 6 | Active |
+| `bobium/` | Chromium fork that strips Google services. | C++, Chromium build | Maintenance |
+| `bobsaver/` | Password manager for secure storage. | Electron/Node.js | Active |
+| `bobtorrent/` | Peer-to-peer file sharing client. | Node.js, WebTorrent | Maintained |
+| `bobtrader/` | Trading tools and dashboards. | Node.js, TypeScript | Initializing |
+| `bobui/` | UI component library for Bob projects. | React, TypeScript | Active |
+| `bobzilla/` | Privacy-focused Firefox fork. | C++, Mozilla toolchain | Maintenance |
+
+## Game Engines & Games
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `bg/` | Bob’s signature 2D MMORPG and world-building engine. | C++, Custom engine | Active |
+| `mk64/` | Mario Kart 64 decompilation project. | C, N64 toolchain | Active |
+| `sm64coopdx/` | Super Mario 64 cooperative multiplayer extension. | C, Custom N64 tooling | Active |
+| `superbobbyball/` | Super Monkey Ball-inspired physics showcase. | C++, Unity? | Prototyping |
+
+## Web Applications
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `fwber/` | Dating platform with Laravel 12 backend + Next.js frontend. | PHP 8.3, Laravel, Next.js, Tailwind | Active |
+| `raindropioapp/` | Raindrop.io bookmark manager adaptation. | Node.js, TypeScript, React | Maintained |
+
+## Developer Tools
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `brobocallz/` | Communication tool for distributed teams. | Node.js? (local) | Research |
+| `makemoney/` | Financial experimentation workspace. | Python + JS mix | Research |
+| `musicbrainz-soulseek-downloader/` | Music metadata enrichment + download helper. | Python | Maintenance |
+| `topaz-ffmpeg/` | Topaz Video AI + FFmpeg integration for enhancements. | FFmpeg, Topaz SDK | Tooling |
+
+## External/Collaborative (mnmballa2323)
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `Alti.Assistant/` | Mnmballa2323 mobile assistant submodule. | Mobile stack | Active |
+| `Alti.Code.Studio/` | Code studio for mnmballa2323 tools. | Web IDE, TypeScript | Active |
+| `Azure.Cybersecurity/` | Cybersecurity training sandbox. | .NET / Azure services | Active |
+| `Chamber.Law/` | Legal platform for collaborative law workflows. | Web stack | Active |
+| `Merk.Mobile/` | Mobile app for mnmballa2323 collaborations. | Flutter/React Native? | Active |
+| `Stone.Ledger/` | Ledger/accounting system for partners. | SQL-backed web app | Active |
+| `Tickerstone/` | Stock ticker visualization for investors. | Web dashboard | Active |
+| `coin.project/` | Cryptocurrency research initiative. | Node.js + Web UI | Research |
+| `cointrade/` | Cryptocurrency trading workspace. | Trading APIs + JS | Research |
+| `MCP_SuperAssistant/` | Duplicate reference to `mcp-superassistant/`. | TypeScript, TRPC | Active |
+
+## AI Agent Automation
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `antigravity-autopilot/` | Antigravity AI automation runtime. | Node.js, TypeScript | Active |
+| `antigravity-jules-orchestration/` | Jules + Antigravity orchestration binding. | TypeScript, orchestrator scripts | Active |
+| `jules-autopilot/` | Google Jules automation project. | Node.js, Automation APIs | Active |
+| `opencode-autopilot/` | OpenCode AI automation tooling. | Node.js, TypeScript | Active |
+
+## MCP Infrastructure
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `mcp-superassistant/` | Central MCP SuperAssistant (also `MCP_SuperAssistant/`). | TypeScript, pnpm, TRPC | Active |
+| `mcpenetes/` | MCP utilities and support scripts. | TypeScript | Active |
+| `metamcp/` | Proxy to MCP servers and cross-agent approval. | TypeScript | Active |
+
+## Support & Configuration
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `docs/` | Workspace-wide documentation hub (LLM instructions, archives, handoffs). | Markdown | Active |
+| `scripts/` | Automation helpers (`generate_dashboard.py`, `sync_forks.py`, `recursive_update_v2.ps1`). | Python, PowerShell | Active |
+| `logs/` | Session logs and handoff artifacts. | Markdown, text | Active |
+| `VERSION` | Single version source of truth. | Text | Active |
+| `CHANGELOG.md` | Changelog tracking version history. | Markdown | Active |
+| `ROADMAP.md` | Strategic progress notes. | Markdown | Active |
+| `VISION.md` | Long-term vision. | Markdown | Active |
+| `BOB_ECOSYSTEM.md` | Notes on the Bob-branded product set. | Markdown | Maintained |
+| `AGENTS.md` | Agent quick-reference guide. | Markdown | Active |
+| `CLAUDE.md` | Claude-specific instructions. | Markdown | Active |
+| `GEMINI.md` | Gemini-specific instructions. | Markdown | Active |
+| `GPT.md` | GPT-specific instructions. | Markdown | Active |
+| `package.json` | Node workspace manifest. | JSON | Active |
+| `pyproject.toml` | Python workspace manifest. | TOML | Active |
+| `playwright.config.ts` | Playwright end-to-end test config. | TypeScript | Active |
+| `codebuff.json` | Workspace generator config. | JSON | Active |
+| `workspace.code-workspace` | VS Code workspace definition. | JSON | Active |
+| `.gitmodules` | Submodule mapping. | Git config | Active |
+| `.github/copilot-instructions.md` | Copilot guidance. | Markdown | Active |
+| `undefined/` | Placeholder directory for temporary or junk content. | Unknown | Dormant |
