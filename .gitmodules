@@ -129,7 +129,7 @@
 	url = https://github.com/robertpelloni/antigravity-autopilot
 [submodule "bg"]
 	path = bg
-	url = ./bg
+	url = https://github.com/robertpelloni/bg.git
 [submodule "MCP_SuperAssistant"]
 	path = MCP_SuperAssistant
 	url = https://github.com/robertpelloni/mcp-superassistant
