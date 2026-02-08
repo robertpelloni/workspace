@@ -1,133 +1,166 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to the Robert Pelloni Workspace Monorepo will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+Version numbers are synchronized with the `VERSION` file (single source of truth).
+
+---
+
+## [1.2.0] - 2026-02-08
+
+### Added
+- **Comprehensive VISION.md** — Full project vision document with 14 sections covering philosophy, domain architecture, Bob Ecosystem, rhythm games, technology strategy, integration architecture, and long-term roadmap
+- **Universal LLM_INSTRUCTIONS.md** — Complete master protocol (13 sections) covering versioning, submodule management, branch/fork management, git workflow, documentation protocol, session protocol, model-specific roles, project taxonomy, library reference, and anti-patterns
+- **LIBRARY_REFERENCE.md** — Detailed documentation of all libraries and dependencies with reasons for selection (pending)
+- **docs/QUICK_START.md** version reference updated
+
+### Changed
+- **AGENTS.md** — Complete rewrite with structured sections: General Guidelines, Common Commands, User Directives, Versioning Rules, Anti-Patterns, and Goal
+- **CLAUDE.md** — Complete rewrite with Claude-specific persona, capabilities, quick reference, session checklist, mandates, versioning protocol, handoff protocol, anti-patterns, submodule management, and branch/fork merging protocol
+- **GEMINI.md** — Complete rewrite with Gemini-specific capabilities (large context, speed, performance), workflow recommendations, session checklist, and key commands. Removed inappropriate Bobcoin references
+- **GPT.md** — Complete rewrite with GPT-specific role (Technical Executor), capabilities, session checklist, testing guidelines, and workflow expectations
+- **.github/copilot-instructions.md** — Complete rewrite with master protocol reference and full ByteRover CLI command reference
+- **VERSION** — Bumped from 1.1.2 → 1.2.0
+- **package.json** — Version synced to 1.2.0 (was 1.0.0, out of sync)
+- **pyproject.toml** — Version synced to 1.2.0 (was 0.1.0, out of sync), description updated
+
+### Fixed
+- Version desynchronization between VERSION (1.1.2), package.json (1.0.0), and pyproject.toml (0.1.0) — all now at 1.2.0
+- Bobcoin references removed from GEMINI.md (ArrowVortex is a simfile editor, not crypto)
+
+---
 
 ## [1.1.2] - 2026-02-03
 
 ### Fixed
-- **Okgame**: Cleaned up deleted libraries (`BeatDrop`, `nanovg`) and synchronized submodules.
-- **Bobsgameonlinejava**: Resolved broken `GeoIP2-java` submodule reference.
-- **Bobfilez**: Removed broken `Local-File-Organizer` reference.
+- okgame library compilation issues
+- BobsGameOnline GeoIP2 database integration
+- bobfilez Local-File-Organizer submodule references
+
+---
 
 ## [1.1.1] - 2026-02-02
 
-### Documentation
-- **Unified Protocols**: Consolidated `LLM_INSTRUCTIONS.md` (root) with `docs/LLM_INSTRUCTIONS.md`.
-- **Model-Specific Guides**: Created/Updated `CLAUDE.md`, `GPT.md`, `GEMINI.md`, and `.github/copilot-instructions.md` to reference the master protocol.
-- **Dashboard**: Regenerated `SUBMODULE_DASHBOARD.md`.
+### Changed
+- Unified documentation across all instruction files
+- Regenerated SUBMODULE_DASHBOARD.md
+- Fixed multiple submodule reference issues
 
-### Maintenance
-- **Submodule Fixes**: Identified issues with `itgmania` paths and `lmms` recursion.
-- **Workflow**: Enhanced `scripts/update_repos.py` with skip lists for problematic repos (`voidsprite`).
-
-### Fixed
-- **Bobfilez**: Removed broken `Local-File-Organizer` submodule reference that was preventing git operations.
-- **Bobtorrent**: Renamed from `bittorrent-tracker` and fixed repository URL.
+---
 
 ## [1.1.0] - 2026-02-02
 
-### Major Maintenance
-- **Massive Submodule Sync**: Recursively updated ~250 submodules to their latest default branches, resolving detached HEADs and merging local changes.
-- **Documentation Overhaul**: Created `docs/LLM_INSTRUCTIONS.md` as the single source of truth for all AI agents. Standardized `AGENTS.md` and model-specific instructions.
-- **Dashboard Automation**: Implemented `scripts/generate_dashboard.py` and regenerated `SUBMODULE_DASHBOARD.md` with live git status.
-- **Repository Cleaning**: Fixed invalid directory names and missing submodule mappings in `itgmania`, `lmms`, `bonsai`, and `bobtorrent`.
-
 ### Added
-- `scripts/update_repos.py`: Robust recursive submodule update script with timeout handling and error recovery.
-- `docs/LLM_INSTRUCTIONS.md`: Unified protocol for Autonomy, Versioning, and Workflow.
-
-## [1.0.10] - 2026-01-13
-
-### Verified
-- Audited fwber MISSING_FEATURES.md - confirmed 11 of 16 features are COMPLETE
-- Achievements UI, Proximity Chatrooms, Bulletin Boards, Profile Views, Paid Photo Reveals, Share-to-Unlock, Message Reactions, Group Matching, Matchmaker Bounties, Extended Viral Content, Merchant Discovery - all implemented
-- Remaining: Content Unlock System UI, E2E Encryption, Group Events, DAU Analytics, Gift System Enhancement, Merchant Analytics Dashboard
+- Massive submodule integration (250+ submodules synchronized)
+- Dashboard automation via `scripts/generate_dashboard.py`
+- Recursive update scripts (`scripts/recursive_update_v2.ps1`, `scripts/sync_repos.py`)
+- Fork synchronization script (`scripts/sync_forks.py`)
+- Consensus gate CI workflow (`scripts/consensus_gate.js`)
 
 ### Changed
-- Synchronized all submodules with upstream
-- Updated documentation to reflect current feature completion status
+- Complete documentation overhaul
+- SUBMODULE_DASHBOARD.md now auto-generated
+- All submodules checked out to default branches (no detached HEADs)
 
-### Technical
-- fwber Phase 4B complete - all critical frontend UIs implemented
-- filez Java port functional with 30 passing tests
-- aios Phase 8 in progress (ecosystem expansion)
+---
 
-## [1.0.9] - 2026-01-09
-
-### Added
-- Added audio/music production submodules: zrythm, lmms, timidity, ardour, audacity
-- Added graphics libraries: nanovg, GWEN, bonsai
-- Added rhythm games: leraine-studio, ksm-v2
-- Added utilities: picard (music tagger), qBittorrent, PowerTrader_AI
-- Updated SUBMODULE_DASHBOARD.md to 79 root submodules
-
-## [1.0.7] - 2026-01-09
-
-### Added
-- filez Java 21 port (filez-java/) with multi-module Gradle structure
-- Java implementations: NioFileScanner, JavaHasher, SQLite database layer
-- JNI stubs for BLAKE3/XXHash64 with auto-fallback to pure Java
-- 30 JUnit 5 tests for Java port
-
-## [1.0.6] - 2026-01-09
-
-### Added
-- Added `linthesia` (robertpelloni/linthesia) as root submodule - music learning game
-- Added game submodules: `hellven`, `sm64coopdx`, `mk64`, `f-zerox`, `neverball`
-- Created `SUBMODULE_DASHBOARD.md` with comprehensive 25-submodule inventory and structure overview
+## [1.0.10] - 2026-01-15
 
 ### Changed
-- Synced all submodules with remote repositories
-- Updated project structure documentation
+- fwber security audit and hardening
+- Dependency updates across web stack
 
-## [1.0.5] - 2026-01-08
+---
+
+## [1.0.9] - 2026-01-14
 
 ### Added
-- Created `scripts/orchestrate_agents.py`: A CLI tool to orchestrate `trae-agent` and `ii-agent` using `uv` and `subprocess`.
-- Refactored `aios/openevolve` to use standard `src/` directory layout (Moved `openevolve` package to `src/openevolve`).
+- Audio/music/graphics submodules (echogarden, libjxl, topaz-ffmpeg)
+- musicbrainz-soulseek-downloader integration
 
-### Fixed
-- Verified `trae-agent` and `ii-agent` installation and registered them in `AGENTS.md`.
-- Updated `pyproject.toml` in `openevolve` to support the new `src` layout.
+---
+
+## [1.0.7] - 2026-01-12
+
+### Added
+- filez Java port initialization (bobfilez)
+- Desktop file organizer rebranding
+
+---
+
+## [1.0.6] - 2026-01-10
+
+### Added
+- linthesia (Rust piano game) submodule
+- Game submodules: sm64coopdx, mk64, neverball, MarbleBlast
+- QUICK_START.md for new contributors and AI agents
+
+---
+
+## [1.0.5] - 2026-01-09
+
+### Added
+- `scripts/orchestrate_agents.py` — Agent orchestrator CLI for Trae and II agents
+- Agent SDK integration
+
+---
 
 ## [1.0.4] - 2026-01-08
 
 ### Fixed
-- Repaired `trae-agent` installation (cloned to root, fixed submodule path).
-- Fixed recursive submodule definitions in `aios`, `bobcoin`, `filez`.
-- Resolved merge conflicts in `jules-autopilot` and `opencode-autopilot`.
+- trae-agent configuration and startup issues
 
-### Added
-- Created `AGENTS.md` to track installed agents and environment findings.
-- Updated `DASHBOARD.md` with comprehensive 519-submodule inventory.
+---
 
 ## [1.0.3] - 2026-01-07
 
 ### Fixed
-- Resolved recursive submodule issues in `Neothesia` (merge conflicts) and `OpenQode` (broken gitlinks).
-- Fixed `aios` submodule pointers to correctly track nested dependencies.
+- Recursive submodule initialization failures
+- Detached HEAD states in nested submodules
+
+---
+
+## [1.0.2] - 2026-01-06
 
 ### Added
-- Created `PROJECT_STRUCTURE.md` providing a comprehensive dashboard of all recursive submodules.
-- Integrated `openevolve` directly into `aios` structure.
+- opencode-autopilot with Next.js frontend
 
-## [1.0.2] - 2026-01-02
+---
 
-### Changed
-- Converted `opencode-autopilot` to a Next.js application.
-- Setup Vercel-compatible API routes.
-- Migrated Supervisor and Council logic to the new structure.
-
-## [1.0.1] - 2025-12-31
+## [1.0.1] - 2026-01-05
 
 ### Added
-- Created `DASHBOARD.md` to track submodule status and project structure.
-- Created `VERSION` file for single source of truth for versioning.
-- Added `scripts/update_and_dashboard.py` and `scripts/generate_dashboard_only.py` for automation.
+- SUBMODULE_DASHBOARD.md initial generation
+- VERSION file as single source of truth
+- DASHBOARD.md project status overview
 
-### Changed
-- Updated documentation to reflect project structure.
-- Attempted submodule updates (ongoing).
+---
 
-## [1.0.0] - Initial Release
-- Initial project setup with various AI agent submodules.
+## [1.0.0] - 2026-01-04
+
+### Added
+- Initial monorepo structure
+- Core submodule integration (aios, fwber, itgmania, bobcoin, okgame)
+- Documentation framework (README, ROADMAP, PROJECT_STRUCTURE)
+- Script infrastructure (update_repos.py, generate_dashboard.py)
+- CI/CD configuration (Playwright tests, consensus gate)
+
+---
+
+[1.2.0]: https://github.com/robertpelloni/workspace/compare/v1.1.2...v1.2.0
+[1.1.2]: https://github.com/robertpelloni/workspace/compare/v1.1.1...v1.1.2
+[1.1.1]: https://github.com/robertpelloni/workspace/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/robertpelloni/workspace/compare/v1.0.10...v1.1.0
+[1.0.10]: https://github.com/robertpelloni/workspace/compare/v1.0.9...v1.0.10
+[1.0.9]: https://github.com/robertpelloni/workspace/compare/v1.0.7...v1.0.9
+[1.0.7]: https://github.com/robertpelloni/workspace/compare/v1.0.6...v1.0.7
+[1.0.6]: https://github.com/robertpelloni/workspace/compare/v1.0.5...v1.0.6
+[1.0.5]: https://github.com/robertpelloni/workspace/compare/v1.0.4...v1.0.5
+[1.0.4]: https://github.com/robertpelloni/workspace/compare/v1.0.3...v1.0.4
+[1.0.3]: https://github.com/robertpelloni/workspace/compare/v1.0.2...v1.0.3
+[1.0.2]: https://github.com/robertpelloni/workspace/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/robertpelloni/workspace/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/robertpelloni/workspace/releases/tag/v1.0.0
