@@ -9,6 +9,15 @@ Version numbers are synchronized with the `VERSION` file (single source of truth
 
 ---
 
+## [1.2.3] - 2026-02-08
+
+### Changed
+- **VERSION** synced to 1.2.3 and mirrored in `package.json` / `pyproject.toml`
+- **SUBMODULE_DASHBOARD.md** regenerated after reinitializing `Themes/Simply-Love-SM5`
+
+### Fixed
+- **Themes/Simply-Love-SM5** now uses the canonical `https://github.com/robertpelloni/Simply-Love-SM5.git` URL and checks out a clean revision after a forced deinit/update
+
 ## [1.2.2] - 2026-02-08
 
 ### Changed
@@ -203,6 +212,7 @@ Version numbers are synchronized with the `VERSION` file (single source of truth
 
 ---
 
+[1.2.3]: https://github.com/robertpelloni/workspace/compare/v1.2.2...v1.2.3
 [1.2.0]: https://github.com/robertpelloni/workspace/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/robertpelloni/workspace/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/robertpelloni/workspace/compare/v1.1.0...v1.1.1
