@@ -133,3 +133,31 @@
 [submodule "MCP_SuperAssistant"]
 	path = MCP_SuperAssistant
 	url = https://github.com/robertpelloni/mcp-superassistant
+
+[submodule "Alti.Assistant"]
+	path = Alti.Assistant
+	url = https://github.com/mnmballa2323/Alti.Assistant.git
+
+[submodule "Alti.Code.Studio"]
+	path = Alti.Code.Studio
+	url = https://github.com/mnmballa2323/Alti.Code.Studio
+
+[submodule "Merk.Mobile"]
+	path = Merk.Mobile
+	url = https://github.com/mnmballa2323/Merk.Mobile
+
+[submodule "Stone.Ledger"]
+	path = Stone.Ledger
+	url = https://github.com/mnmballa2323/Stone.Ledger
+
+[submodule "Tickerstone"]
+	path = Tickerstone
+	url = https://github.com/mnmballa2323/Tickerstone.git
+
+[submodule "coin.project"]
+	path = coin.project
+	url = https://github.com/mnmballa2323/coin.project.git
+
+[submodule "cointrade"]
+	path = cointrade
+	url = https://github.com/mnmballa2323/cointrade.git

@@ -58,7 +58,7 @@ def generate_dashboard():
     
     # Get list of submodules
     # We use 'git submodule status --recursive' to find them
-    submodules_output = run_command("git submodule status --recursive", ROOT_DIR)
+    submodules_output = run_command("git submodule status", ROOT_DIR)
     
     if submodules_output:
         for line in submodules_output.split('\n'):
