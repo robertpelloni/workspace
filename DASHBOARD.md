@@ -93,3 +93,18 @@ This project integrates various AI agents, tools, and libraries as submodules. B
 
 - **Root**: Contains main configuration and orchestration logic.
 - **Submodules**: Located in their respective directories, containing standalone tools or agents.
+
+## Submodule Dashboard (New!)
+
+The Jules Orchestrator now features a dedicated Submodule Dashboard for managing integrated components.
+
+### Features
+1.  **Submodule Discovery**: Automatically lists all available submodules in `borg/submodules`.
+2.  **Configuration Management**:
+    - View and edit `package.json`, `Cargo.toml`, `.env`, `yaml`, and `json` config files directly in the browser.
+3.  **Action Execution**:
+    - Run `npm` scripts and other commands defined in configuration files.
+    - View execution output logs.
+
+### Access
+- Click "View Submodules" in the top-right corner of the Dashboard.
