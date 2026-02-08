@@ -9,6 +9,33 @@ Version numbers are synchronized with the `VERSION` file (single source of truth
 
 ---
 
+## [1.2.1] - 2026-02-08
+
+### Changed
+- **All 42 accessible submodules** fetched, checked out to default branches, and pushed
+- **25+ feature branches merged** across robertpelloni repos:
+  - `bobmani/bobmania`: Resolved 6 merge conflicts between economy-tournament-mvp and unified-ui-features branches, merged 3 Jules feature branches
+  - `bobmani/arrowvortex`: Merged 12 feature branches (cmake, macos-build, linux-4-mingw32, osu-load, beta, documentation, faster-rebuilds, fietsemaker-beta, optional-formatting, stdminmax, vector-tmp)
+  - `bobmani/ddc`: Merged infer-tf1 + master_v2 with conflict resolution
+  - `mcp-superassistant`: Merged 6 branches (dependabot dependency updates + feature/comprehensive-docs-and-ui-enhancements)
+  - `opencode-autopilot`: Merged enhance-dashboard-and-cli
+- **4 upstream forks synced**: raindropioapp, bobeditpro (from audacity), claude-mem, metamcp (with conflict resolution)
+- **SUBMODULE_DASHBOARD.md** regenerated with current commit hashes
+- **PROJECT_STRUCTURE.md** complete rewrite with all 51 submodules cataloged
+- **ROADMAP.md** comprehensive update with priority matrix
+- **LIBRARY_REFERENCE.md** created with full dependency catalog and selection rationale
+- **VERSION** synced across VERSION (1.2.1), package.json, pyproject.toml
+
+### Added
+- `scripts/update_all_submodules.py` — Comprehensive Python script for recursive submodule updates with feature branch merging, upstream fork sync, and conflict resolution
+- `scripts/update_remaining.py` — Batch processor for submodules not covered by primary script
+
+### Fixed
+- `bobmani/bobmania` stuck merge from prior session (6 conflicted files resolved preserving all features)
+- Multiple submodules stuck in detached HEAD states now on their default branches
+
+---
+
 ## [1.2.0] - 2026-02-08
 
 ### Added
