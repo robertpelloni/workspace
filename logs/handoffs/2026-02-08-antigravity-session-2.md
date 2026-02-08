@@ -12,5 +12,16 @@
 - Bumped the repository version to 1.2.4 to capture the outstanding submodule sync work.
 
 ## Pending Work
+- **Clean up remaining dirty submodules**: The following submodules still report modified/untracked content or pointer mismatches:
+  - `.agent`
+  - `Alti.Assistant`
+  - `antigravity-autopilot`
+  - `bg`
+  - `bobfilez`
+  - `bobmani/bobmania`
+  - `bobmani/itgmania`
+  - `bobsaver`
+  - `borg`
+  - `cointrade`
 - Verify that every submodule reports a clean working tree after the sync.
 - Continue monitoring for any detached HEADs in the nested repositories.
