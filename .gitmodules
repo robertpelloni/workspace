@@ -130,3 +130,6 @@
 [submodule "bg"]
 	path = bg
 	url = ./bg
+[submodule "MCP_SuperAssistant"]
+	path = MCP_SuperAssistant
+	url = https://github.com/robertpelloni/mcp-superassistant
