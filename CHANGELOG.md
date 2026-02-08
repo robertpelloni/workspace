@@ -9,6 +9,22 @@ Version numbers are synchronized with the `VERSION` file (single source of truth
 
 ---
 
+## [1.2.5] - 2026-02-08
+
+### Changed
+- **Cleaned up 10+ dirty submodules**: Committed local changes and updated pointers for:
+  - `Alti.Assistant` (backend/frontend schema & service updates)
+  - `Chamber.Law` (backend/frontend rate-limiting & billing updates)
+  - `Tickerstone` (backend optimizer & backtest config)
+  - `antigravity-autopilot` (CDP scripts & auto-bump features)
+  - `bg` (dashboard docs cleanup & nested lib resets)
+  - `bobfilez`, `bobsaver`, `borg`, `cointrade` (synced pointers)
+  - `.agent` (restored missing files)
+- **Regenerated SUBMODULE_DASHBOARD.md** with latest clean states
+- **VERSION** synced to 1.2.5 across all manifests
+
+---
+
 ## [1.2.4] - 2026-02-08
 
 ### Added
