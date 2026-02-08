@@ -1,4 +1,0 @@
-C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/RelWithDebInfo/info.obj
-C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/RelWithDebInfo/internal.obj
-C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/RelWithDebInfo/opusfile.obj
-C:/Users/hyper/workspace/okgame/cmake-build-debug/lib/SDL_mixer/external/opusfile/opusfile.dir/RelWithDebInfo/stream.obj

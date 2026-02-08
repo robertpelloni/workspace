@@ -121,3 +121,12 @@
 [submodule "antigravity-autopilot/antigravity-auto-accept"]
 	path = antigravity-autopilot/antigravity-auto-accept
 	url = https://github.com/robertpelloni/antigravity-auto-accept
+[submodule "antigravity-jules-orchestration"]
+	path = antigravity-jules-orchestration
+	url = https://github.com/Scarmonit/antigravity-jules-orchestration
+[submodule "antigravity-autopilot"]
+	path = antigravity-autopilot
+	url = https://github.com/robertpelloni/antigravity-autopilot
+[submodule "bg"]
+	path = bg
+	url = ./bg

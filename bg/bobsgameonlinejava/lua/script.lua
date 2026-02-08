@@ -1,4 +1,0 @@
-
-
-movePlayer(1);
-

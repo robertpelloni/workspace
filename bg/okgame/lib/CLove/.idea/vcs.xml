@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/3rdparty/FH" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/3rdparty/SDL2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/3rdparty/microui" vcs="Git" />
-  </component>
-</project>

@@ -1,9 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Program Files/CMake/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
-C:/Users/hyper/workspace/okgame/cmake-build-debug/CMakeFiles/cmake.verify_globs
-C:/Users/hyper/workspace/okgame/lib/boost/CMakeLists.txt
-C:/Users/hyper/workspace/okgame/lib/boost/tools/cmake/include/BoostInstall.cmake
-C:/Users/hyper/workspace/okgame/lib/boost/tools/cmake/include/BoostMessage.cmake
-C:/Users/hyper/workspace/okgame/lib/boost/tools/cmake/include/BoostRoot.cmake

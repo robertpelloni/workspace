@@ -1,9 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDependentOption.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/CheckSymbolExists.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
-C:/Users/hyper/workspace/okgame/cmake-build-debug/CMakeFiles/cmake.verify_globs
-C:/Users/hyper/workspace/okgame/lib/SDL_ttf/CMakeLists.txt
-C:/Users/hyper/workspace/okgame/lib/SDL_ttf/cmake/PrivateSdlFunctions.cmake

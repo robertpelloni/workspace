@@ -1,7 +1,0 @@
-id:21
-name:DiamondIconBlock
-width:64
-height:64
-frames:5
-animation:Normal:0
-animation:Panic:1
