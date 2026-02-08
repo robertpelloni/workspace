@@ -9,6 +9,18 @@ Version numbers are synchronized with the `VERSION` file (single source of truth
 
 ---
 
+## [1.2.4] - 2026-02-08
+
+### Added
+- **.agent** submodule added (pointing to `antigravity-awesome-skills`)
+- `scripts/update_remaining_v2.py` — Targeted submodule update script
+
+### Changed
+- **VERSION** synced to 1.2.4 across all manifests
+- **Submodule pointers updated**: `Chamber.Law`, `bobmani/beatoraja` synced to latest state
+
+---
+
 ## [1.2.3] - 2026-02-08
 
 ### Changed
