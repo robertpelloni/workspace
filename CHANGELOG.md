@@ -9,6 +9,32 @@ Version numbers are synchronized with the `VERSION` file (single source of truth
 
 ---
 
+## [1.2.2] - 2026-02-08
+
+### Changed
+- **17 additional submodules cleaned** — nested submodule changes committed and pushed:
+  - Alti.Assistant (backend/frontend/CopilotKit nested subs)
+  - Azure.Cybersecurity (CI and test updates)
+  - Merk.Mobile (backend/frontend/flutter/website nested subs)
+  - bg (bobsgameonlinejava/okgame nested subs)
+  - bobfilez (ai-file-sorter nested sub)
+  - bobmani/beatoraja (changelog/roadmap/version updates)
+  - bobmani/bobmania (dashboard docs)
+  - bobmani/itgmania (nested submodule sync)
+  - bobmani/linthesia (.gitmodules update)
+  - Tickerstone (build artifacts)
+  - bobtorrent (gradle artifacts)
+  - coin.project (nested bobcoin pointer)
+  - cointrade (sync changes)
+  - rental.home (nested backend plaid updates)
+- **SUBMODULE_DASHBOARD.md** regenerated with latest commit hashes
+- **VERSION** synced across VERSION (1.2.2), package.json, pyproject.toml
+
+### Added
+- `scripts/cleanup_dirty_submodules.py` — Targeted cleanup script for nested submodule dirt
+
+---
+
 ## [1.2.1] - 2026-02-08
 
 ### Changed
