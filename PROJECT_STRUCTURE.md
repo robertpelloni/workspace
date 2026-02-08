@@ -112,7 +112,6 @@ This document catalogs the current layout of Robert Pelloni’s monorepo, coveri
 | `Tickerstone/` | Stock ticker visualization for investors. | Web dashboard | Active |
 | `coin.project/` | Cryptocurrency research initiative. | Node.js + Web UI | Research |
 | `cointrade/` | Cryptocurrency trading workspace. | Trading APIs + JS | Research |
-| `MCP_SuperAssistant/` | Duplicate reference to `mcp-superassistant/`. | TypeScript, TRPC | Active |
 
 ## AI Agent Automation
 | Path | Description | Stack / Language | Status |
@@ -151,4 +150,4 @@ This document catalogs the current layout of Robert Pelloni’s monorepo, coveri
 | `workspace.code-workspace` | VS Code workspace definition. | JSON | Active |
 | `.gitmodules` | Submodule mapping. | Git config | Active |
 | `.github/copilot-instructions.md` | Copilot guidance. | Markdown | Active |
-| `undefined/` | Placeholder directory for temporary or junk content. | Unknown | Dormant |
+
