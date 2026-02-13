@@ -470,12 +470,3 @@ C:\Users\hyper\workspace\mk64\tools/torch
 C:\Users\hyper\workspace\mk64
 C:\Users\hyper\workspace\opencode-autopilot
 C:\Users\hyper\workspace\raindropioapp
-C:\Users\hyper\workspace\rental.home\rental.home.admin-website
-C:\Users\hyper\workspace\rental.home\rental.home.backend
-C:\Users\hyper\workspace\rental.home\rental.home.flutter
-C:\Users\hyper\workspace\rental.home\rental.home.frontend
-C:\Users\hyper\workspace\rental.home
-C:\Users\hyper\workspace\sm64coopdx\bobcoin
-C:\Users\hyper\workspace\sm64coopdx
-C:\Users\hyper\workspace\topaz-ffmpeg
-C:\Users\hyper\workspace
