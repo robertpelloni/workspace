@@ -57,12 +57,25 @@ def run_command(cmd, cwd, ignore_errors=False, timeout=120):
         return None
 
 def get_default_branch(cwd):
+    # Try to find the default branch from remote info
+    try:
+        remotes = run_command("git remote show origin", cwd, ignore_errors=True, timeout=5)
+        if remotes:
+            for line in remotes.split('\n'):
+                if "HEAD branch:" in line:
+                    return line.split("HEAD branch:")[1].strip()
+    except:
+        pass
+
+    # Fallback to checking local/remote branches
     branches = run_command("git branch -r", cwd, ignore_errors=True)
     if branches:
         if "origin/main" in branches:
             return "main"
         if "origin/master" in branches:
             return "master"
+    
+    # Last fallback
     return "main"
 
 def get_current_branch(cwd):
@@ -83,7 +96,7 @@ def process_repo(name, cwd, processed_set):
     if norm_path in processed_set:
         return
 
-    print(f"\n--- Processing {name} ---")
+    print(f"\n>>> Starting Processing: {name} at {cwd}")
     
     if not os.path.exists(cwd):
         print(f"Directory {cwd} does not exist. Skipping.")
@@ -100,7 +113,7 @@ def process_repo(name, cwd, processed_set):
     current_branch = get_current_branch(cwd)
     print(f"Current branch: {current_branch}")
 
-    # Check for uncommitted changes
+    # Check for uncommitted changes and commit them if present
     status = run_command("git status --porcelain", cwd, ignore_errors=True)
     if status:
         print(f"Uncommitted changes in {name}. Committing...")
@@ -110,37 +123,56 @@ def process_repo(name, cwd, processed_set):
     default_branch = get_default_branch(cwd)
     print(f"Target branch: {default_branch}")
     
-    if current_branch == "HEAD":
-        print(f"Repo is in detached HEAD state.")
-        # Try to checkout default
+    # 1. Checkout Default Branch
+    if current_branch != default_branch:
+        print(f"Checking out {default_branch}...")
         res = run_command(f"git checkout {default_branch}", cwd, ignore_errors=True)
-        if res is not None:
-            run_command(f"git pull origin {default_branch}", cwd, ignore_errors=True)
-        else:
-            print("Failed to checkout default branch. Skipping pull/push.")
-            
-    elif current_branch != default_branch:
-        print(f"Merging {current_branch} into {default_branch}...")
-        res = run_command(f"git checkout {default_branch}", cwd, ignore_errors=True)
-        if res is not None:
-            run_command(f"git pull origin {default_branch}", cwd, ignore_errors=True)
-            try:
-                run_command(f"git merge {current_branch}", cwd, timeout=60)
-            except:
-                 print("Merge failed. Aborting.")
-                 run_command("git merge --abort", cwd, ignore_errors=True)
-        else:
-             print("Failed to checkout default branch.")
+        if res is None:
+            # Maybe the default branch is not local yet?
+            print(f"Failed to checkout {default_branch} locally. Trying to track origin/{default_branch}...")
+            res = run_command(f"git checkout -b {default_branch} --track origin/{default_branch}", cwd, ignore_errors=True)
+            if res is None:
+                print(f"Failed to checkout {default_branch}. Skipping.")
+                save_processed(cwd)
+                processed_set.add(norm_path)
+                return
 
+    # 2. Pull Origin (Sync Fork)
+    print(f"Pulling origin {default_branch}...")
+    run_command(f"git pull origin {default_branch}", cwd, ignore_errors=True)
+
+    # 3. Merge Upstream (Sync Parent) if 'upstream' remote exists
+    remotes = run_command("git remote", cwd, ignore_errors=True)
+    if remotes and "upstream" in remotes.split():
+        print(f"Upstream remote detected. Fetching and merging upstream/{default_branch}...")
+        run_command("git fetch upstream", cwd)
+        try:
+            run_command(f"git merge upstream/{default_branch}", cwd, timeout=60)
+        except:
+             print("Upstream merge failed/conflict. Aborting upstream merge.")
+             run_command("git merge --abort", cwd, ignore_errors=True)
+
+    # 4. Merge Feature Branch (if applicable)
+    # If we started on a feature branch (not HEAD/detached, and not default), merge it in.
+    if current_branch != default_branch and current_branch != "HEAD":
+        print(f"Merging previous feature branch '{current_branch}' into {default_branch}...")
+        try:
+            run_command(f"git merge {current_branch}", cwd, timeout=60)
+        except:
+             print("Feature merge failed. Aborting.")
+             run_command("git merge --abort", cwd, ignore_errors=True)
+
+    # 5. Push to Origin (only if it's a robertpelloni repo or fork)
+    remotes_v = run_command("git remote -v", cwd, ignore_errors=True)
+    if remotes_v and "robertpelloni" in remotes_v.lower():
+        print(f"Pushing {default_branch} to origin...")
+        run_command(f"git push origin {default_branch}", cwd, ignore_errors=True, timeout=60)
     else:
-        # Already on default
-        run_command(f"git pull origin {default_branch}", cwd, ignore_errors=True)
-
-    print(f"Pushing {default_branch}...")
-    run_command(f"git push origin {default_branch}", cwd, ignore_errors=True, timeout=60)
+        print(f"Skipping push for non-robertpelloni repo: {name}")
     
     save_processed(cwd)
     processed_set.add(norm_path)
+    print(f"<<< Finished Processing: {name}")
 
 def process_recursive(name, cwd, visited, processed_set):
     norm_path = normalize_path(cwd)
@@ -154,9 +186,11 @@ def process_recursive(name, cwd, visited, processed_set):
     if norm_path in processed_set:
         return
 
-    if cwd in visited:
+    # Use realpath to handle symbolic links and self-referencing submodules (./././)
+    real_cwd = os.path.realpath(cwd)
+    if real_cwd in visited:
         return
-    visited.add(cwd)
+    visited.add(real_cwd)
     
     print(f"Scanning {name}...")
     

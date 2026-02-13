@@ -1,4 +1,52 @@
 {
 	"mcpServers": {
+		"borg-supervisor": {
+			"command": "cmd",
+			"args": [
+				"/c",
+				"node",
+				"C:\\Users\\hyper\\workspace\\borg\\packages\\borg-supervisor\\dist\\index.js"
+			],
+			"env": {
+				"NODE_ENV": "production"
+			},
+			"disabled": false,
+			"autoApprove": [
+			]
+		},
+		"metamcp": {
+			"type": "http",
+			"url": "http://localhost:12008/metamcp/dev/mcp"
+		},
+		"mcp-supermemory-ai": {
+			"command": "cmd",
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"mcp-remote@latest",
+				"https://mcp.supermemory.ai/mcp"
+			]
+		},
+		"filesystem": {
+			"type": "stdio",
+			"command": "cmd",
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"C:\\Users\\hyper\\workspace\\"
+			]
+		},
+		"desktop-commander": {
+			"command": "cmd",
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"@wonderwhy-er/desktop-commander"
+			]
+		}
 	}
 }
