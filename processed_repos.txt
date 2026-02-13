@@ -356,6 +356,8 @@ C:\Users\hyper\workspace\bobium
 C:\Users\hyper\workspace\bobmani/Simply-Love-SM5
 C:\Users\hyper\workspace\bobmani/arrowvortex\lib/ddc
 C:\Users\hyper\workspace\bobmani/arrowvortex
+C:\Users\hyper\workspace\bobmani/beatoraja\beatoraja-english-guide\../bobcoin
+C:\Users\hyper\workspace\bobmani/beatoraja\beatoraja-english-guide
 C:\Users\hyper\workspace\bobmani/beatoraja
 C:\Users\hyper\workspace\bobmani/bobmania\itgmania/Themes/Simply-Love-SM5
 C:\Users\hyper\workspace\bobmani/bobmania\itgmania/bobcoin
@@ -476,4 +478,3 @@ C:\Users\hyper\workspace\rental.home
 C:\Users\hyper\workspace\sm64coopdx\bobcoin
 C:\Users\hyper\workspace\sm64coopdx
 C:\Users\hyper\workspace\topaz-ffmpeg
-C:\Users\hyper\workspace
