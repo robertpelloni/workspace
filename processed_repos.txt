@@ -470,3 +470,4 @@ C:\Users\hyper\workspace\mk64\tools/torch
 C:\Users\hyper\workspace\mk64
 C:\Users\hyper\workspace\opencode-autopilot
 C:\Users\hyper\workspace\raindropioapp
+C:\Users\hyper\workspace
