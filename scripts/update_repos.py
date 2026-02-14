@@ -8,19 +8,18 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 # Constants
-# Get the directory of the script
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# Root is one level up from scripts/
 ROOT_DIR = os.path.dirname(SCRIPT_DIR)
-
 PROCESSED_FILE = os.path.join(ROOT_DIR, "processed_repos.txt")
+
 SKIPPED_REPOS = [
     "voidsprite", 
     "temp_defihacklabs",
     "vibeship-scanner", 
     "borg",
     "node_modules", 
-    ".venv"
+    ".venv",
+    "Milkwave"
 ]
 
 def normalize_path(path):
@@ -37,9 +36,17 @@ def save_processed(path):
         f.write(f"{path}\n")
         f.flush()
 
-def run_command(cmd, cwd, ignore_errors=False, timeout=300):
+def make_long_path(path):
+    if os.name == 'nt':
+        abs_path = os.path.abspath(path)
+        if not abs_path.startswith('\\\\?\\'):
+            if abs_path.startswith('\\\\'):
+                return '\\\\?\\UNC\\' + abs_path[2:]
+            return '\\\\?\\' + abs_path
+    return os.path.abspath(path)
+
+def run_command(cmd, cwd, ignore_errors=False, timeout=600):
     try:
-        # print(f"[{cwd}] Executing: {cmd}")
         result = subprocess.run(
             cmd, 
             cwd=cwd, 
@@ -57,9 +64,11 @@ def run_command(cmd, cwd, ignore_errors=False, timeout=300):
         print(f"[{cwd}] Command timed out ({timeout}s): {cmd}")
         return None
     except subprocess.CalledProcessError as e:
+        if e.stdout:
+            return e.stdout.strip()
         if not ignore_errors:
-            # print(f"[{cwd}] Error: {e}")
-            pass
+            print(f"[{cwd}] Command failed: {cmd}")
+            print(f"Stderr: {e.stderr}")
         return None
     except Exception as e:
         print(f"[{cwd}] Unexpected error: {e}")
@@ -92,7 +101,6 @@ def get_current_branch(cwd):
 def process_repo(name, cwd, processed_set):
     norm_path = normalize_path(cwd)
     
-    # Check skipped
     for skip in SKIPPED_REPOS:
         if skip in name or skip in cwd:
             return
@@ -102,18 +110,20 @@ def process_repo(name, cwd, processed_set):
 
     print(f"Processing: {name}")
     
-    if not os.path.exists(cwd):
+    long_cwd = make_long_path(cwd)
+    
+    if not os.path.exists(long_cwd):
         print(f"Directory {cwd} does not exist. Skipping.")
         save_processed(cwd)
         processed_set.add(norm_path)
         return
 
-    if not os.path.exists(os.path.join(cwd, ".git")) and not os.path.isfile(os.path.join(cwd, ".git")):
+    git_dir = os.path.join(long_cwd, ".git")
+    if not os.path.exists(git_dir) and not os.path.isfile(git_dir):
          save_processed(cwd)
          processed_set.add(norm_path)
          return
 
-    # Commit any uncommitted changes first
     status = run_command("git status --porcelain", cwd, ignore_errors=True)
     if status:
         print(f"  Uncommitted changes detected in {name}. Committing 'chore: save progress'...")
@@ -123,16 +133,13 @@ def process_repo(name, cwd, processed_set):
     current_branch = get_current_branch(cwd)
     default_branch = get_default_branch(cwd)
 
-    # 1. Checkout Default Branch
     if current_branch != default_branch:
         res = run_command(f"git checkout {default_branch}", cwd, ignore_errors=True)
         if res is None:
             run_command(f"git checkout -b {default_branch} --track origin/{default_branch}", cwd, ignore_errors=True)
 
-    # 2. Pull Origin (Sync Fork)
     run_command(f"git pull origin {default_branch}", cwd, ignore_errors=True)
 
-    # 3. Merge Upstream (Sync Parent)
     remotes = run_command("git remote", cwd, ignore_errors=True)
     if remotes and "upstream" in remotes.split():
         print(f"  Upstream detected. Fetching and merging...")
@@ -146,7 +153,6 @@ def process_repo(name, cwd, processed_set):
              print("  ! Upstream merge conflict. Aborting merge to preserve state.")
              run_command("git merge --abort", cwd, ignore_errors=True)
 
-    # 4. Merge ALL Local Feature Branches
     remotes_v = run_command("git remote -v", cwd, ignore_errors=True)
     is_my_repo = remotes_v and "robertpelloni" in remotes_v.lower()
 
@@ -157,7 +163,6 @@ def process_repo(name, cwd, processed_set):
             for branch in local_branches:
                 branch = branch.strip()
                 if not branch: continue
-                # Skip main branches and HEAD
                 if branch in [default_branch, "HEAD", "master", "main"]: continue
                 
                 print(f"  Merging local feature branch: {branch} into {default_branch}...")
@@ -171,7 +176,6 @@ def process_repo(name, cwd, processed_set):
                 except:
                     run_command("git merge --abort", cwd, ignore_errors=True)
 
-    # 5. Push to Origin
     if is_my_repo:
         print(f"  Pushing {default_branch} to origin...")
         run_command(f"git push origin {default_branch}", cwd, ignore_errors=True)
@@ -194,42 +198,37 @@ def process_recursive(name, cwd, visited, processed_set):
         return
     visited.add(real_cwd)
     
-    # Get direct submodules
     output = run_command("git submodule status", cwd, ignore_errors=True)
     
     submodules = []
     if output:
-        print(f"Found {len(output.splitlines())} submodules in {name}")
         for line in output.split('\n'):
             parts = line.strip().split()
             if len(parts) >= 2:
                 sub_path = parts[1]
                 sub_abs_path = os.path.join(cwd, sub_path)
                 submodules.append((sub_path, sub_abs_path))
-    else:
-        # print(f"No submodules found in {name}")
-        pass
     
-    # Process children FIRST (Post-Order Traversal)
     for sub_path, sub_abs_path in submodules:
         process_recursive(f"{name}/{sub_path}", sub_abs_path, visited, processed_set)
     
-    # Process self
     if name != "ROOT": 
         process_repo(name, cwd, processed_set)
 
 def main():
     print(f"Root: {ROOT_DIR}")
     
-    if os.path.exists(PROCESSED_FILE):
-        os.remove(PROCESSED_FILE)
+    processed_set = load_processed()
+    # Force recursive check for ROOT
+    root_norm = normalize_path(ROOT_DIR)
+    if root_norm in processed_set:
+        print("Removing ROOT from processed set to force recursion...")
+        processed_set.remove(root_norm)
+
+    print(f"Resuming... {len(processed_set)} repos already processed.")
     
-    processed_set = set()
     visited = set()
     
-    print("Initializing submodules...")
-    run_command("git submodule update --init --recursive", ROOT_DIR)
-
     print("Starting recursive update...")
     process_recursive("ROOT", ROOT_DIR, visited, processed_set)
     
