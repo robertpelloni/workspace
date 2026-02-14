@@ -1,6 +1,7 @@
 import subprocess
 import os
 import sys
+import time
 
 # Unbuffered output
 sys.stdout.reconfigure(encoding='utf-8')
@@ -198,12 +199,16 @@ def process_recursive(name, cwd, visited, processed_set):
     
     submodules = []
     if output:
+        print(f"Found {len(output.splitlines())} submodules in {name}")
         for line in output.split('\n'):
             parts = line.strip().split()
             if len(parts) >= 2:
                 sub_path = parts[1]
                 sub_abs_path = os.path.join(cwd, sub_path)
                 submodules.append((sub_path, sub_abs_path))
+    else:
+        # print(f"No submodules found in {name}")
+        pass
     
     # Process children FIRST (Post-Order Traversal)
     for sub_path, sub_abs_path in submodules:
@@ -216,21 +221,18 @@ def process_recursive(name, cwd, visited, processed_set):
 def main():
     print(f"Root: {ROOT_DIR}")
     
-    # Clear processed file to force full run
     if os.path.exists(PROCESSED_FILE):
         os.remove(PROCESSED_FILE)
     
     processed_set = set()
     visited = set()
     
-    # 0. Sync root submodules first to ensure directories exist
     print("Initializing submodules...")
     run_command("git submodule update --init --recursive", ROOT_DIR)
 
-    # 1. Start recursive process
+    print("Starting recursive update...")
     process_recursive("ROOT", ROOT_DIR, visited, processed_set)
     
-    # 2. Finally process root
     process_repo("ROOT", ROOT_DIR, processed_set)
     
     print("\nAll done.")
