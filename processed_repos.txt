@@ -87,8 +87,6 @@ C:\Users\hyper\workspace\bg\okgame\lib/Maelstrom
 C:\Users\hyper\workspace\bg\okgame\lib/MicroPather
 C:\Users\hyper\workspace\bg\okgame\lib/MilkDrop-MusicVisualizer
 C:\Users\hyper\workspace\bg\okgame\lib/MilkDrop3
-C:\Users\hyper\workspace
-C:\Users\hyper\workspace
 C:\Users\hyper\workspace\bg\okgame\lib/Nuklear
 C:\Users\hyper\workspace\bg\okgame\lib/RetroArch
 C:\Users\hyper\workspace\bg\okgame\lib/SDL\../SDL2_gfx\../SDL_gesture\../SDL_image\../SDL_mixer\../SDL_native_midi\../SDL_net\../SDL_rtf\../SDL_ttf\../Snippets\../UACME\../WavPack\../aom\../boost\../brotli\../butterchurn\../cppcodec\../dav1d\../defold-astar\../desmume
@@ -359,19 +357,6 @@ C:\Users\hyper\workspace\bobmani/arrowvortex
 C:\Users\hyper\workspace\bobmani/beatoraja\beatoraja-english-guide\../bobcoin
 C:\Users\hyper\workspace\bobmani/beatoraja\beatoraja-english-guide
 C:\Users\hyper\workspace\bobmani/beatoraja
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/Themes/Simply-Love-SM5
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/bobcoin
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/IXWebSocket
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/ffmpeg
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/hidapi
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/libjpeg-turbo
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/libpng
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/libtomcrypt
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/libtommath
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/libusb
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/mbedtls
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/ogg
-C:\Users\hyper\workspace\bobmani/bobmania\itgmania/extern/vorbis
 C:\Users\hyper\workspace\bobmani/bobmania
 C:\Users\hyper\workspace\bobmani/ddc\ddc_onset\../ffr-difficulty-model
 C:\Users\hyper\workspace\bobmani/ddc\ddc_onset
@@ -470,4 +455,3 @@ C:\Users\hyper\workspace\mk64\tools/torch
 C:\Users\hyper\workspace\mk64
 C:\Users\hyper\workspace\opencode-autopilot
 C:\Users\hyper\workspace\raindropioapp
-C:\Users\hyper\workspace
