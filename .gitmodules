@@ -163,3 +163,6 @@
 [submodule "bobtrax"]
 	path = bobtrax
 	url = https://github.com/robertpelloni/bobtrax
+[submodule "clear.ledger"]
+	path = clear.ledger
+	url = https://github.com/mnmballa2323/clear.ledger
