@@ -105,3 +105,6 @@ ssh_pass_clean
 /data/processed
 /data/processed
 /data/raw
+
+# Chunkhound
+.chunkhound/
