@@ -166,3 +166,10 @@
 [submodule "clear.ledger"]
 	path = clear.ledger
 	url = https://github.com/mnmballa2323/clear.ledger
+[submodule "qwen.project"]
+	path = qwen.project
+	url = https://github.com/mnmballa2323/qwen.project
+
+[submodule "redprints"]
+	path = redprints
+	url = https://github.com/robertpelloni/redprints
