@@ -19,15 +19,25 @@ SKIPPED_REPOS = [
     "borg",
     "node_modules", 
     ".venv",
-    "Milkwave"
+    "Milkwave",
+    "bg/bobsgameonlinejava"
 ]
 
 def normalize_path(path):
     return os.path.normpath(os.path.abspath(path)).lower()
 
 def load_processed():
-    # Return empty set to force reprocessing every time for this specific request
-    return set()
+    processed = set()
+    if os.path.exists(PROCESSED_FILE):
+        try:
+            with open(PROCESSED_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        processed.add(normalize_path(line))
+        except:
+            pass
+    return processed
 
 def save_processed(path):
     with open(PROCESSED_FILE, "a", encoding="utf-8") as f:
@@ -96,6 +106,37 @@ def get_current_branch(cwd):
         return branch.strip()
     return "HEAD"
 
+def get_upstream_branch(cwd, target_branch):
+    """
+    Finds the matching branch on upstream.
+    Priorities:
+    1. upstream/{target_branch}
+    2. upstream/main
+    3. upstream/master
+    """
+    try:
+        remote_branches = run_command("git branch -r", cwd, ignore_errors=True)
+        if not remote_branches:
+            return None
+        
+        branches = [b.strip() for b in remote_branches.split('\n')]
+        
+        # Check specific branch
+        if f"upstream/{target_branch}" in branches:
+            return f"upstream/{target_branch}"
+        
+        # Fallbacks
+        if "upstream/main" in branches:
+            return "upstream/main"
+        if "upstream/master" in branches:
+            return "upstream/master"
+        if "upstream/develop" in branches:
+            return "upstream/develop"
+            
+    except:
+        pass
+    return None
+
 def process_repo(name, cwd, processed_set):
     norm_path = normalize_path(cwd)
     
@@ -124,7 +165,7 @@ def process_repo(name, cwd, processed_set):
     if status:
         print(f"  Uncommitted changes detected in {name}. Committing 'chore: save progress'...")
         run_command("git add .", cwd)
-        run_command('git commit -m "chore: save progress"', cwd)
+        run_command('git commit -m "chore: save progress"', cwd, ignore_errors=True)
 
     current_branch = get_current_branch(cwd)
     default_branch = get_default_branch(cwd)
@@ -148,16 +189,26 @@ def process_repo(name, cwd, processed_set):
     # Merge Upstream
     remotes = run_command("git remote", cwd, ignore_errors=True)
     if remotes and "upstream" in remotes.split():
-        print(f"  Upstream detected. Fetching and merging...")
+        print(f"  Upstream detected. Fetching...")
         run_command("git fetch upstream", cwd)
-        try:
-            res = run_command(f"git merge upstream/{default_branch} --no-edit", cwd)
-            if res is None:
-                raise Exception("Merge failed")
-            print("  Upstream merge successful.")
-        except:
-             print("  ! Upstream merge conflict. Aborting merge to preserve state.")
-             run_command("git merge --abort", cwd, ignore_errors=True)
+        
+        upstream_ref = get_upstream_branch(cwd, default_branch)
+        if upstream_ref:
+            print(f"  Merging {upstream_ref}...")
+            try:
+                # Use --no-edit to avoid opening editor, but if conflicts occur, git will exit with error
+                res = run_command(f"git merge {upstream_ref} --no-edit", cwd)
+                if res is None:
+                     # This usually means conflict or 'not something we can merge' (handled by get_upstream_branch ideally)
+                     print("  ! Merge failed (conflict or error). Aborting to preserve state.")
+                     run_command("git merge --abort", cwd, ignore_errors=True)
+                else:
+                    print("  Upstream merge successful.")
+            except:
+                 print("  ! Exception during merge. Aborting.")
+                 run_command("git merge --abort", cwd, ignore_errors=True)
+        else:
+            print(f"  Could not find matching upstream branch for {default_branch}.")
 
     # Merge Local Feature Branches (RobertPelloni logic)
     remotes_v = run_command("git remote -v", cwd, ignore_errors=True)
@@ -170,16 +221,16 @@ def process_repo(name, cwd, processed_set):
             for branch in local_branches:
                 branch = branch.strip()
                 if not branch: continue
-                if branch in [default_branch, "HEAD", "master", "main", "develop"]: continue
+                # Skip default/special branches
+                if branch in [default_branch, "HEAD", "master", "main", "develop", "origin/HEAD"]: continue
+                if branch.startswith("origin/"): continue
                 
                 # Check if already merged
-                is_merged = run_command(f"git merge-base --is-ancestor {branch} {default_branch}", cwd, ignore_errors=True)
-                if is_merged is not None:
-                    # process returned 0 (success) or 1 (fail) - run_command returns stdout or None
-                    # Actually run_command returns stdout string. 
-                    # Let's rely on the fact that if it's already merged, git merge is a no-op safe operation.
-                    pass
-
+                is_ancestor = run_command(f"git merge-base --is-ancestor {branch} {default_branch}", cwd, ignore_errors=True)
+                if is_ancestor is not None:
+                     # Already merged
+                     continue
+                
                 print(f"  Merging local feature branch: {branch} into {default_branch}...")
                 try:
                     res = run_command(f"git merge {branch} --no-edit", cwd)
@@ -214,8 +265,8 @@ def process_recursive(name, cwd, visited, processed_set):
         return
     visited.add(real_cwd)
     
-    # Initialize submodules first to ensure we can see them
-    # run_command("git submodule update --init", cwd, ignore_errors=True)
+    # Initialize submodules so we can see them
+    run_command("git submodule update --init", cwd, ignore_errors=True)
 
     output = run_command("git submodule status", cwd, ignore_errors=True)
     
@@ -239,11 +290,13 @@ def process_recursive(name, cwd, visited, processed_set):
 def main():
     print(f"Root: {ROOT_DIR}")
     
-    # Clear processed file for this run
-    if os.path.exists(PROCESSED_FILE):
-        os.remove(PROCESSED_FILE)
+    # Don't delete PROCESSED_FILE if we want to resume
+    # But for this specific run request, maybe we should clear it?
+    # No, since we want to resume from the timeout, we should KEEP it.
     
-    processed_set = set()
+    processed_set = load_processed()
+    print(f"Loaded {len(processed_set)} processed repos.")
+    
     visited = set()
     
     print("Starting recursive update...")
