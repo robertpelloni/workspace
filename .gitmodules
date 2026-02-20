@@ -173,3 +173,9 @@
 [submodule "redprints"]
 	path = redprints
 	url = https://github.com/robertpelloni/redprints
+[submodule "qwen.project.backend"]
+	path = qwen.project.backend
+	url = https://github.com/mnmballa2323/qwen.project.backend
+[submodule "qwen.project.frontend"]
+	path = qwen.project.frontend
+	url = https://github.com/mnmballa2323/qwen.project.frontend
