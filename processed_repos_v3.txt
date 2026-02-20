@@ -520,3 +520,4 @@ C:\Users\hyper\workspace\rental.home
 C:\Users\hyper\workspace\sm64coopdx\bobcoin
 C:\Users\hyper\workspace\sm64coopdx
 C:\Users\hyper\workspace\topaz-ffmpeg
+C:\Users\hyper\workspace
