@@ -1,18 +1,16 @@
 # Omni-Workspace Handoff
 
-**Current Version:** 1.3.0
+**Current Version:** 1.3.1
 **Last Agent:** Gemini 2.5
 **Date:** 2026-02-19
 
 ## What Was Just Done
-1.  **Global Synchronization:** I successfully executed `update_repos_v3.py` across the entire workspace (100+ repos, 500+ paths). All submodules were recursively pulled, and upstream changes were intelligently merged where available.
-2.  **Conflict Management:** Local feature branches with unrelated histories were safely aborted to prevent data loss. Complex conflicts in `metamcp` (detached HEAD, API key purge), `cointrade` (nested git repos), and `Alti.Code.Studio` (stale `.borg` worktrees) were manually resolved.
-3.  **Documentation Overhaul:** I rewrote the core documentation architecture. Created `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` as the SSOT and updated `GEMINI.md`, `CLAUDE.md`, `GPT.md`, and `AGENTS.md` to reference it.
-4.  **Project Analysis:** Generated `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, and `DEPLOY.md` to outline the trajectory of this Omni-Workspace.
-5.  **Dashboard:** Regenerated `SUBMODULE_DASHBOARD.md`.
+1.  **Phase 2 Propagation:** Successfully implemented `scripts/propagate_instructions.py`. The **Universal LLM Instructions** have been pushed to **1,558** nested repository `docs/` folders. This establishes root protocol throughout the entire fleet.
+2.  **Recursive Visibility:** Upgraded `scripts/generate_dashboard.py` to recursively map all sub-submodules. `SUBMODULE_DASHBOARD.md` now provides a complete branch/commit overview of the entire tree.
+3.  **Workspace Restoration:** Fixed broken submodules in `qwen.project`, `Alti.Code.Studio`, and `Chamber.Law` by cleaning stale `.borg` and `.git` artifacts.
+4.  **Global Synchronization:** All valid submodules are pulled, merged with upstream (where applicable), and pushed.
 
 ## What Needs to Be Done Next
-1.  **Read the New Docs:** The next agent MUST read `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` before proceeding.
-2.  **Propagate Instructions (Phase 2):** Implement a Python script (`scripts/propagate_instructions.py`) to automatically push the new `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` to the `docs/` folder of all active submodules. See `TODO.md`.
-3.  **Feature Implementation:** Check the submodules for any features that are partially implemented but not wired to the UI (Claude's specialty) or require deep structural debugging (GPT's specialty).
-4.  **Dead Links:** Investigate and clean up the missing submodules logged in `TODO.md` (e.g., `rental.home.admin-website`).
+1.  **Deep Feature Polish:** The next agent should use Claude's refinement skills to check submodules for partially implemented features that aren't yet represented in their respective UIs.
+2.  **Submodule Mapping Fix:** Resolve the `AUTO-ALL-AntiGravity` mapping error in `antigravity-autopilot` that is currently blocking `git submodule status --recursive`.
+3.  **Build Validation:** Enhance `update_repos_v3.py` to run basic build checks after a merge to detect regressions early.

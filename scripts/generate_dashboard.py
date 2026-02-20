@@ -1,9 +1,9 @@
 import os
 import subprocess
 import datetime
+import sys
 
 # Unbuffered output
-import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT_DIR = os.getcwd()
@@ -25,56 +25,64 @@ def get_git_info(path):
         return None
 
     info = {}
-    
-    # Commit Hash
     info['hash'] = run_command("git rev-parse --short HEAD", path)
-    
-    # Branch
     info['branch'] = run_command("git rev-parse --abbrev-ref HEAD", path)
-    
-    # Last Commit Date
     info['date'] = run_command("git log -1 --format=%cd --date=short", path)
     
-    # Last Commit Message
     msg = run_command("git log -1 --format=%s", path)
     if msg:
-        info['message'] = msg[:50] + "..." if len(msg) > 50 else msg
+        info['message'] = (msg[:50] + "...") if len(msg) > 50 else msg
     
-    # Remote URL
     info['url'] = run_command("git config --get remote.origin.url", path)
-    
     return info
 
+def scan_submodules_recursive(current_dir, base_path=""):
+    """Recursively find all git repositories within the workspace."""
+    found = []
+    
+    # Use git submodule status --recursive to get all paths
+    output = run_command("git submodule status --recursive", current_dir)
+    if output:
+        for line in output.split('\n'):
+            line = line.strip()
+            if not line: continue
+            
+            # Format is typically: [+/-/ ]hash path (branch)
+            # We just need the path which is the second or third part
+            parts = line.split()
+            # If line starts with status prefix (+, -, U), path is parts[1]
+            # If no prefix, path is parts[1]
+            if parts[0] in ['+', '-', 'U']:
+                path = parts[1]
+            else:
+                path = parts[1]
+                
+            found.append(path)
+    return found
+
 def generate_dashboard():
-    print("Generating Dashboard...")
+    print("Generating Recursive Dashboard...")
     
     lines = []
-    lines.append("# Submodule Dashboard")
+    lines.append("# Submodule Dashboard (Recursive)")
     lines.append(f"**Last Updated:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-    lines.append("This document tracks the status of all submodules in the workspace.\n")
+    lines.append("This document tracks the status of all submodules and nested repositories in the workspace.\n")
     
     lines.append("| Path | Branch | Commit | Date | Message |")
     lines.append("| :--- | :--- | :--- | :--- | :--- |")
     
-    # Get list of submodules
-    # We use 'git submodule status --recursive' to find them
-    submodules_output = run_command("git submodule status", ROOT_DIR)
+    submodule_paths = scan_submodules_recursive(ROOT_DIR)
     
-    if submodules_output:
-        for line in submodules_output.split('\n'):
-            parts = line.strip().split()
-            if len(parts) >= 2:
-                # parts[1] is the path
-                sub_path = parts[1]
-                abs_path = os.path.join(ROOT_DIR, sub_path)
-                
-                if os.path.exists(abs_path):
-                    info = get_git_info(abs_path)
-                    if info:
-                        # Markdown table row
-                        # Path | Branch | Hash | Date | Message
-                        row = f"| `{sub_path}` | {info.get('branch', 'N/A')} | `{info.get('hash', 'N/A')}` | {info.get('date', 'N/A')} | {info.get('message', '')} |"
-                        lines.append(row)
+    # Sort paths for readability
+    submodule_paths.sort()
+    
+    for sub_path in submodule_paths:
+        abs_path = os.path.join(ROOT_DIR, sub_path)
+        if os.path.exists(abs_path):
+            info = get_git_info(abs_path)
+            if info:
+                row = f"| `{sub_path}` | {info.get('branch', 'N/A')} | `{info.get('hash', 'N/A')}` | {info.get('date', 'N/A')} | {info.get('message', '')} |"
+                lines.append(row)
     
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
