@@ -30,16 +30,6 @@ C:\Users\hyper\workspace\Tickerstone\Tickerstone.Backend\third_party/roq-api
 C:\Users\hyper\workspace\Tickerstone\Tickerstone.Backend
 C:\Users\hyper\workspace\Tickerstone\Tickerstone.Frontend
 C:\Users\hyper\workspace\Tickerstone
-C:\Users\hyper\workspace\antigravity-autopilot\AUTO-ALL-AntiGravity
-C:\Users\hyper\workspace\antigravity-autopilot\AntiBridge-Antigravity-remote
-C:\Users\hyper\workspace\antigravity-autopilot\AntigravityMobile
-C:\Users\hyper\workspace\antigravity-autopilot\Claude-Autopilot
-C:\Users\hyper\workspace\antigravity-autopilot\antigravity-auto-accept
-C:\Users\hyper\workspace\antigravity-autopilot\antigravity-multi-purpose-agent
-C:\Users\hyper\workspace\antigravity-autopilot\auto-accept-agent
-C:\Users\hyper\workspace\antigravity-autopilot\copilot-auto-continue
-C:\Users\hyper\workspace\antigravity-autopilot\free-auto-accept-antigravity
-C:\Users\hyper\workspace\antigravity-autopilot\yoke-antigravity
 C:\Users\hyper\workspace\antigravity-autopilot
 C:\Users\hyper\workspace\antigravity-jules-orchestration
 C:\Users\hyper\workspace\bg\bobsgameonlinejava\bobcoin
@@ -249,6 +239,7 @@ C:\Users\hyper\workspace\bg\okgame\lib/flac
 C:\Users\hyper\workspace\bg\okgame
 C:\Users\hyper\workspace\bg
 C:\Users\hyper\workspace\bobcoin
+C:\Users\hyper\workspace\bobeditpro\muse_framework
 C:\Users\hyper\workspace\bobeditpro
 C:\Users\hyper\workspace\bobfilez\VERT
 C:\Users\hyper\workspace\bobfilez\ai-file-sorter\app/include/external/llama.cpp
