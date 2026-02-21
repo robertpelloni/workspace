@@ -182,3 +182,9 @@
 [submodule "Calling-AI-Agent-Backend"]
 	path = Calling-AI-Agent-Backend
 	url = https://github.com/alticompany/Calling-AI-Agent-Backend
+[submodule "Snaype"]
+	path = Snaype
+	url = https://github.com/mnmballa2323/Snaype
+[submodule "vault.bfsi"]
+	path = vault.bfsi
+	url = https://github.com/mnmballa2323/vault.bfsi
