@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3] - 2026-02-22
+### Added
+- **Intelligent Submodule Synchronization:** Created `sync_and_merge.py` for massive, bidirectional feature merging. This script handles updating submodules, pulling from upstream forks, merging feature branches into main, merging main into feature branches, and resolving basic conflicts automatically using `-X ours` to prevent losing feature development progress.
+- **Directory Structure Dashboard:** Rewrote `SUBMODULE_DASHBOARD.md` to include a clear explanation of the monorepo's architectural layout and top-level submodules.
+### Fixed
+- Fixed several broken `.gitmodules` mappings (e.g., `AUTO-ALL-AntiGravity`, `Snaype.Desktop`) that were causing `git submodule status --recursive` to fail.
+
 ## [1.3.2] - 2026-02-22
 ### Added
 - **Holistic Workspace Audit:** Performed a recursive health scan across the entire monorepo, mapping the status of all 50+ submodules.
