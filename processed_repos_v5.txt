@@ -519,7 +519,6 @@ C:\Users\hyper\workspace\rental.home\rental.home.backend
 C:\Users\hyper\workspace\rental.home\rental.home.flutter
 C:\Users\hyper\workspace\rental.home\rental.home.frontend
 C:\Users\hyper\workspace\rental.home
-C:\Users\hyper\workspace\sm64coopdx\bobcoin
 C:\Users\hyper\workspace\sm64coopdx
 C:\Users\hyper\workspace\topaz-ffmpeg
 C:\Users\hyper\workspace\vault.bfsi\vault.bfsi.backend
