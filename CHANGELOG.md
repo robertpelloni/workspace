@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.5] - 2026-02-24
+### Added
+- **Dependency & Submodule Analysis:** Created `DEPENDENCIES_ANALYSIS.md` outlining the deep research and reasoning behind the selection of critical libraries (`browser-use`, `@playwright/test`, `firecrawl-mcp`, etc.) and the structure of top-level submodules (`borg`, `metamcp`, `fwber`, `bobcoin`, etc.). This adds greater transparency into the AI/MCP architectural choices and full-stack federation.
+- **Deep Submodule Synchronization:** Executed another holistic synchronization loop via `update_repos_v5.py`, checking out default branches, merging local and remote feature branches, resolving upstream differences, and avoiding data loss.
+- **Dashboard & Documentation Refresh:** Regenerated `SUBMODULE_DASHBOARD.md` to capture the latest versions and topological project architecture. Rolled `VERSION` and `CHANGELOG.md` to keep all artifacts current.
+
 ## [1.3.4] - 2026-02-24
 ### Added
 - **Deep Submodule Analysis & Synchronization:** Executed massive orchestration task across all nested submodules and linked projects. Updated, merged upstream changes (including forks), and safely integrated local feature branches created by AI developer tools (under `robertpelloni`). Resolved conflicts and committed changes to keep entire repo clean and progressive without losing features.
