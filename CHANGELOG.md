@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.6] - 2026-02-24
+### Added
+- **Unified Instruction Architecture:** Consolidated the root `LLM_INSTRUCTIONS.md` and `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` into a single high-fidelity master document. Fixed propagation gaps across 1,598 repositories/submodules using a resilient Python script.
+- **Workspace Health Audit:** Created and executed `scripts/prune_broken_submodules.py` to ensure `.gitmodules` consistency.
+- **Root Directory Organization:** Consolidated 20+ legacy scripts and log files into structured subdirectories (`scripts/`, `scripts/legacy/`, `logs/archive/`, `docs/`) to improve maintainability and visibility.
+- **Dependency Documentation Mirroring:** Moved high-fidelity project mapping and dependency analysis documents into the `docs/` directory.
+
 ## [1.3.5] - 2026-02-24
 ### Added
 - **Dependency & Submodule Analysis:** Created `DEPENDENCIES_ANALYSIS.md` outlining the deep research and reasoning behind the selection of critical libraries (`browser-use`, `@playwright/test`, `firecrawl-mcp`, etc.) and the structure of top-level submodules (`borg`, `metamcp`, `fwber`, `bobcoin`, etc.). This adds greater transparency into the AI/MCP architectural choices and full-stack federation.
