@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.8] - 2026-02-24
+### Added
+- **Live Health Monitoring System:** Developed `scripts/health_check.py` to recursively probe submodules based on their detected tech stack (Node, Python, Rust, etc.).
+- **Enhanced Mission Control Dashboard:** Updated `SUBMODULE_DASHBOARD.md` with a new "Health" column featuring visual indicators (🟢 Healthy, 🟡 Needs Init, 🔴 Broken). 
+- **Optimized Mapping:** Refined `scripts/map_workspace.py` to focus specifically on top-level submodules from `.gitmodules`, preventing context overflow while maintaining comprehensive oversight.
+
 ## [1.3.7] - 2026-02-24
 ### Added
 - **Omniscient Orchestration Foundation:** Initialized Phase 3 of the Roadmap.

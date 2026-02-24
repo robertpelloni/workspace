@@ -17,4 +17,5 @@
 *   **Workspace Search API:** Implement a local vector or full-text search API that indexes all 100+ repos.
 *   **Cross-Submodule Dependency Graph:** Map which projects depend on others. (Mapped Build Systems in v1.3.7)
 *   **Synchronization Hardening:** Capturing upstream tags and release milestones globally. (Hardened in v1.3.7)
+*   **Live Health Monitoring:** Real-time probing of project environments and dependencies. (Implemented in v1.3.8)
 *   **Automated Build Orchestration:** Using detected build systems to run workspace-wide health checks. (Next)

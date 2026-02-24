@@ -1,215 +1,317 @@
 {
     "ROOT": {
         "path": ".",
-        "build_system": "npm/node, python",
-        "is_git_repo": true,
-        "dependencies": []
+        "build_system": "node, python",
+        "is_git_repo": true
     },
-    ".agent": {
-        "path": ".agent",
-        "build_system": "npm/node",
-        "is_git_repo": true,
-        "dependencies": []
+    "bobfilez": {
+        "path": "bobfilez",
+        "build_system": "cmake",
+        "is_git_repo": true
     },
-    ".agent\\data": {
-        "path": ".agent\\data",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "fwber": {
+        "path": "fwber",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\backend": {
-        "path": ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\backend",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "bobsaver": {
+        "path": "bobsaver",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\frontend": {
-        "path": ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\frontend",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "borg": {
+        "path": "borg",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    ".agent\\skills\\notebooklm": {
-        "path": ".agent\\skills\\notebooklm",
+    "raindropioapp": {
+        "path": "raindropioapp",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "bobcoin": {
+        "path": "bobcoin",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "sm64coopdx": {
+        "path": "sm64coopdx",
+        "build_system": "make",
+        "is_git_repo": true
+    },
+    "topaz-ffmpeg": {
+        "path": "topaz-ffmpeg",
+        "build_system": "make",
+        "is_git_repo": true
+    },
+    "mk64": {
+        "path": "mk64",
+        "build_system": "make",
+        "is_git_repo": true
+    },
+    "bobeditpro": {
+        "path": "bobeditpro",
+        "build_system": "cmake",
+        "is_git_repo": true
+    },
+    "bobtrader": {
+        "path": "bobtrader",
         "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
+        "is_git_repo": true
     },
-    ".agent\\skills\\playwright-skill": {
-        "path": ".agent\\skills\\playwright-skill",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "bobtorrent": {
+        "path": "bobtorrent",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    ".agent\\skills\\shopify-development\\scripts": {
-        "path": ".agent\\skills\\shopify-development\\scripts",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
+    "bobui": {
+        "path": "bobui",
+        "build_system": "cmake",
+        "is_git_repo": true
     },
-    ".agent\\skills\\slack-gif-creator": {
-        "path": ".agent\\skills\\slack-gif-creator",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
+    "bobium": {
+        "path": "bobium",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "bobzilla": {
+        "path": "bobzilla",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "jules-autopilot": {
+        "path": "jules-autopilot",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "Chamber.Law": {
+        "path": "Chamber.Law",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "rental.home": {
+        "path": "rental.home",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "bobmani/bobmania": {
+        "path": "bobmani/bobmania",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "bobmani/itgmania": {
+        "path": "bobmani/itgmania",
+        "build_system": "cmake, make",
+        "is_git_repo": true
+    },
+    "bobmani/beatoraja": {
+        "path": "bobmani/beatoraja",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "bobmani/hymnmania": {
+        "path": "bobmani/hymnmania",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "bobmani/ksm-v2": {
+        "path": "bobmani/ksm-v2",
+        "build_system": "cmake",
+        "is_git_repo": true
+    },
+    "bobmani/linthesia": {
+        "path": "bobmani/linthesia",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "bobmani/pianogame": {
+        "path": "bobmani/pianogame",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "Azure.Cybersecurity": {
+        "path": "Azure.Cybersecurity",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "claude-mem": {
+        "path": "claude-mem",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "metamcp": {
+        "path": "metamcp",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "mcp-superassistant": {
+        "path": "mcp-superassistant",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "mcpenetes": {
+        "path": "mcpenetes",
+        "build_system": "go, make",
+        "is_git_repo": true
+    },
+    "bobmani/ffr-difficulty-model": {
+        "path": "bobmani/ffr-difficulty-model",
+        "build_system": "python, make",
+        "is_git_repo": true
+    },
+    "bobmani/leraine-studio": {
+        "path": "bobmani/leraine-studio",
+        "build_system": "cmake",
+        "is_git_repo": true
+    },
+    "bobmani/ddc": {
+        "path": "bobmani/ddc",
+        "build_system": "node, python",
+        "is_git_repo": true
+    },
+    "bobmani/arrowvortex": {
+        "path": "bobmani/arrowvortex",
+        "build_system": "cmake",
+        "is_git_repo": true
+    },
+    "opencode-autopilot": {
+        "path": "opencode-autopilot",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "bobmani/ddc_onset": {
+        "path": "bobmani/ddc_onset",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "bobmani/Simply-Love-SM5": {
+        "path": "bobmani/Simply-Love-SM5",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "antigravity-autopilot/AUTO-ALL-AntiGravity": {
+        "path": "antigravity-autopilot/AUTO-ALL-AntiGravity",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "antigravity-autopilot/yoke-antigravity": {
+        "path": "antigravity-autopilot/yoke-antigravity",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "antigravity-autopilot/auto-accept-agent": {
+        "path": "antigravity-autopilot/auto-accept-agent",
+        "build_system": "Unknown",
+        "is_git_repo": true
+    },
+    "antigravity-autopilot/antigravity-auto-accept": {
+        "path": "antigravity-autopilot/antigravity-auto-accept",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "antigravity-jules-orchestration": {
+        "path": "antigravity-jules-orchestration",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "antigravity-autopilot": {
+        "path": "antigravity-autopilot",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "bg": {
+        "path": "bg",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
     "Alti.Assistant": {
         "path": "Alti.Assistant",
-        "build_system": "npm/node, make",
-        "is_git_repo": true,
-        "dependencies": []
+        "build_system": "node, make",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\Alti.Assistant.Backend": {
-        "path": "Alti.Assistant\\Alti.Assistant.Backend",
-        "build_system": "npm/node",
-        "is_git_repo": true,
-        "dependencies": []
+    "Alti.Code.Studio": {
+        "path": "Alti.Code.Studio",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\Alti.Assistant.Frontend": {
-        "path": "Alti.Assistant\\Alti.Assistant.Frontend",
-        "build_system": "npm/node",
-        "is_git_repo": true,
-        "dependencies": []
+    "Merk.Mobile": {
+        "path": "Merk.Mobile",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\Alti.Assistant.Frontend\\.next": {
-        "path": "Alti.Assistant\\Alti.Assistant.Frontend\\.next",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "Stone.Ledger": {
+        "path": "Stone.Ledger",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\Alti.Assistant.Frontend\\.next\\types": {
-        "path": "Alti.Assistant\\Alti.Assistant.Frontend\\.next\\types",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "Tickerstone": {
+        "path": "Tickerstone",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\Alti.Assistant.Mobile": {
-        "path": "Alti.Assistant\\Alti.Assistant.Mobile",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "coin.project": {
+        "path": "coin.project",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\a2a": {
-        "path": "Alti.Assistant\\external\\a2a",
-        "build_system": "npm/node",
-        "is_git_repo": true,
-        "dependencies": []
+    "cointrade": {
+        "path": "cointrade",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui": {
-        "path": "Alti.Assistant\\external\\agui",
-        "build_system": "npm/node",
-        "is_git_repo": true,
-        "dependencies": []
+    ".agent": {
+        "path": ".agent",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\apps\\client-cli-example": {
-        "path": "Alti.Assistant\\external\\agui\\apps\\client-cli-example",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "bobtrax": {
+        "path": "bobtrax",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\apps\\dojo": {
-        "path": "Alti.Assistant\\external\\agui\\apps\\dojo",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "clear.ledger": {
+        "path": "clear.ledger",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\apps\\dojo\\e2e": {
-        "path": "Alti.Assistant\\external\\agui\\apps\\dojo\\e2e",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "qwen.project": {
+        "path": "qwen.project",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\docs": {
-        "path": "Alti.Assistant\\external\\agui\\docs",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "redprints": {
+        "path": "redprints",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\integrations\\a2a\\typescript": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\a2a\\typescript",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "qwen.project.backend": {
+        "path": "qwen.project.backend",
+        "build_system": "Unknown",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python",
+    "qwen.project.frontend": {
+        "path": "qwen.project.frontend",
+        "build_system": "node",
+        "is_git_repo": true
+    },
+    "Calling-AI-Agent-Backend": {
+        "path": "Calling-AI-Agent-Backend",
         "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python\\examples": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python\\examples",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
+    "Snaype": {
+        "path": "Snaype",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\typescript": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\typescript",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
+    "vault.bfsi": {
+        "path": "vault.bfsi",
+        "build_system": "node",
+        "is_git_repo": true
     },
-    "Alti.Assistant\\external\\agui\\integrations\\ag2\\python\\examples": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\ag2\\python\\examples",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\ag2\\typescript": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\ag2\\typescript",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python\\examples": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python\\examples",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\agno\\python\\examples": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\agno\\python\\examples",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\agno\\typescript": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\agno\\typescript",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python\\examples": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python\\examples",
-        "build_system": "python",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\typescript": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\typescript",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\community\\spring-ai\\typescript": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\community\\spring-ai\\typescript",
-        "build_system": "npm/node",
-        "is_git_repo": false,
-        "dependencies": []
-    },
-    "Alti.Assistant\\external\\agui\\integrations\\crew-ai\\python": {
-        "path": "Alti.Assistant\\external\\agui\\integrations\\crew-ai\\python",
-        "build_system": "python",
-        "is_gi
+    "audit.layer": {
+        "path": "audit.layer",
+        "build_system": "make",
+        "is_git_repo": true
+    }
+}

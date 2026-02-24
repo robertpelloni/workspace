@@ -10,6 +10,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT_DIR = os.getcwd()
 OUTPUT_FILE = "SUBMODULE_DASHBOARD.md"
 GRAPH_FILE = "workspace_graph.json"
+HEALTH_FILE = "workspace_health.json"
 
 def run_command(cmd, cwd):
     try:
@@ -38,19 +39,24 @@ def get_git_info(path):
     return info
 
 def generate_dashboard():
-    print("Generating Enhanced Recursive Dashboard...")
+    print("Generating Live Health Dashboard...")
     
     graph = {}
     if os.path.exists(GRAPH_FILE):
         with open(GRAPH_FILE, "r", encoding="utf-8") as f:
             graph = json.load(f)
 
+    health = {}
+    if os.path.exists(HEALTH_FILE):
+        with open(HEALTH_FILE, "r", encoding="utf-8") as f:
+            health = json.load(f)
+
     lines = []
     lines.append("# Submodule Dashboard & Tech Stack")
     lines.append(f"**Last Updated:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    lines.append("\nThis document tracks the status, branch, and build systems of all submodules in the workspace.\n")
+    lines.append("\nThis document tracks the **Health**, **Tech Stack**, and **Git Status** of all submodules.\n")
     
-    lines.append("| Path | Tech Stack | Branch | Commit | Date | Message |")
+    lines.append("| Health | Path | Tech Stack | Branch | Commit | Message |")
     lines.append("| :--- | :--- | :--- | :--- | :--- | :--- |")
     
     # Sort by path
@@ -65,13 +71,14 @@ def generate_dashboard():
             info = get_git_info(abs_path)
             if info:
                 stack = node.get('build_system', 'Unknown')
-                row = f"| `{rel_path}` | **{stack}** | {info.get('branch', 'N/A')} | `{info.get('hash', 'N/A')}` | {info.get('date', 'N/A')} | {info.get('message', '')} |"
+                status = health.get(name, "⚪ Unknown")
+                row = f"| {status} | `{rel_path}` | **{stack}** | {info.get('branch', 'N/A')} | `{info.get('hash', 'N/A')}` | {info.get('message', '')} |"
                 lines.append(row)
     
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     
-    print(f"Enhanced Dashboard saved to {OUTPUT_FILE}")
+    print(f"Live Dashboard saved to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     generate_dashboard()

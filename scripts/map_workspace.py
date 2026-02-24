@@ -23,35 +23,34 @@ def map_workspace():
     root = os.getcwd()
     graph = {}
     
-    print("Mapping Workspace Dependencies (Optimized)...")
+    print("Mapping Workspace (Top-Level & Submodules)...")
     
+    # Always include the root
+    root_stack = detect_build_system(root)
+    graph["ROOT"] = {
+        "path": ".",
+        "build_system": root_stack,
+        "is_git_repo": True
+    }
+
     # Get submodules from .gitmodules
-    submodules = []
     if os.path.exists(".gitmodules"):
         config = configparser.ConfigParser()
         config.read(".gitmodules")
         for section in config.sections():
             path = config.get(section, "path", fallback=None)
             if path:
-                submodules.append(path)
-
-    # Always include the root
-    project_dirs = ["."] + submodules
-    
-    for rel_path in project_dirs:
-        abs_path = os.path.normpath(os.path.join(root, rel_path))
-        if not os.path.isdir(abs_path):
-            continue
-            
-        name = rel_path if rel_path != "." else "ROOT"
-        build_system = detect_build_system(abs_path)
-        is_git_repo = os.path.exists(os.path.join(abs_path, ".git"))
-        
-        graph[name] = {
-            "path": rel_path,
-            "build_system": build_system,
-            "is_git_repo": is_git_repo
-        }
+                abs_path = os.path.normpath(os.path.join(root, path))
+                if os.path.isdir(abs_path):
+                    name = path
+                    build_system = detect_build_system(abs_path)
+                    is_git_repo = os.path.exists(os.path.join(abs_path, ".git"))
+                    
+                    graph[name] = {
+                        "path": path,
+                        "build_system": build_system,
+                        "is_git_repo": is_git_repo
+                    }
 
     with open("workspace_graph.json", "w", encoding="utf-8") as f:
         json.dump(graph, f, indent=4)
