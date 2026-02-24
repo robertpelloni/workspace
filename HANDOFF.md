@@ -1,25 +1,21 @@
 # Omni-Workspace Handoff
 
-**Current Version:** 1.3.6
+**Current Version:** 1.3.7
 **Last Agent:** Gemini CLI
 **Date:** 2026-02-24
 
 ## What Was Just Done
-1.  **Unified Instruction Consolidation:** Merged all root instructions into a single master document at `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` and updated the root `LLM_INSTRUCTIONS.md` to be a permanent redirect.
-2.  **Verified Instruction Propagation:** Ran an audit which identified 7 missing submodules. Fixed this by running `scripts/propagate_instructions.py`, which resiliently synced the master instructions to **1,598** repositories and submodules across the tree.
-3.  **Workspace Health Maintenance:** Created `scripts/prune_broken_submodules.py` to automatically detect and remove dead entries in `.gitmodules`.
-4.  **Root Cleanup & Organization:** 
-    - Moved legacy and active scripts into the `scripts/` directory structure.
-    - Archived dozens of `.txt` and `.log` files into `logs/archive/`.
-    - Moved high-fidelity documentation (`DEPENDENCIES_ANALYSIS.md`, `PROJECT_STRUCTURE.md`) into `docs/`.
-5.  **Documentation Synchronization:** Updated `VERSION`, `CHANGELOG.md`, and `ROADMAP.md` to reflect these organizational milestones.
+1.  **Phase 3 Initialization:** Officially transitioned the Roadmap to Phase 3 ("Omniscient Orchestration").
+2.  **Workspace Tech-Stack Mapping:** Developed `scripts/map_workspace.py` which optimized the scanning of 60+ top-level submodules to detect their build environments (Node, Python, Rust, etc.). This data is stored in `workspace_graph.json`.
+3.  **Synchronization Hardening:** Implemented `scripts/update_repos_v6.py`, adding `git fetch --all --tags` to the recursive update logic. This ensures that every repo in the workspace now has access to upstream version tags.
+4.  **Enhanced Dashboarding:** Upgraded `SUBMODULE_DASHBOARD.md` via `scripts/generate_enhanced_dashboard.py` to display a new **Tech Stack** column, allowing for rapid technical assessment of the fleet.
+5.  **Documentation Sync:** Updated `VERSION`, `CHANGELOG.md`, `ROADMAP.md`, and `TODO.md` to reflect these orchestration milestones.
 
 ## Key Findings & Memories
--   The monorepo's instruction propagation is now extremely robust, reaching over 1,500 locations. This ensures that any agent initialized in any submodule will have the same core mandates as the root orchestrator.
--   The root directory is now significantly cleaner, highlighting only the primary documentation and status files.
+-   The monorepo is too large for naïve `os.walk` scans (it timed out at 5 minutes). Optimized tools must rely on `.gitmodules` as a discovery manifest for sub-projects.
+-   The "Tech Stack" mapping provides the first step toward automated workspace-wide health checks (e.g., automatically running `npm build` or `cargo check` after a sync).
 
 ## What Needs to Be Done Next
-1.  **Build Validation Integration:** Enhance the synchronization scripts to run automated build checks (`npm build`, `tsc`, `cargo build`) after each successful submodule merge to immediately notify if a feature branch breaks compilation.
-2.  **Global Git Fetch & Tags:** Integrate a global `git fetch --all --tags` command into the synchronization pipeline to capture release tags across all 100+ projects.
-3.  **Integration Testing:** Set up a unified `pytest` or `jest` suite at the root to validate integration between critical projects.
-4.  **Automated Mapping Cleanup:** Continue monitoring for dead links using `prune_broken_submodules.py` as new submodules are added or old ones are archived.
+1.  **Automated Build Orchestration:** Enhance `scripts/update_repos_v6.py` to perform basic "Build Probes" using the data in `workspace_graph.json`. If a repo is marked as `node`, it should attempt to run a fast lint or build check.
+2.  **Internal Dependency Resolution:** Expand `scripts/map_workspace.py` to parse `package.json` and `Cargo.toml` for internal workspace references, creating a true topological dependency graph.
+3.  **Search API Integration:** Research and implement a local indexing service (possibly leveraging the `workspace_graph.json`) to allow cross-repo code searches without full-tree `grep` overhead.

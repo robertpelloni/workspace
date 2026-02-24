@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.7] - 2026-02-24
+### Added
+- **Omniscient Orchestration Foundation:** Initialized Phase 3 of the Roadmap.
+- **Workspace Build Mapping:** Created `scripts/map_workspace.py` to recursively detect build systems (`node`, `python`, `rust`, `go`, `cmake`, etc.) across all submodules and generate a `workspace_graph.json`.
+- **Synchronization Hardening:** Upgraded the global update pipeline to `scripts/update_repos_v6.py`, which now executes `git fetch --all --tags` across the entire tree to capture upstream release milestones.
+- **Enhanced Dashboard:** Rewrote the dashboard generator (`scripts/generate_enhanced_dashboard.py`) to include a "Tech Stack" column, providing immediate visibility into the technical requirements of every project.
+
 ## [1.3.6] - 2026-02-24
 ### Added
 - **Unified Instruction Architecture:** Consolidated the root `LLM_INSTRUCTIONS.md` and `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` into a single high-fidelity master document. Fixed propagation gaps across 1,598 repositories/submodules using a resilient Python script.

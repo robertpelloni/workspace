@@ -1,0 +1,215 @@
+{
+    "ROOT": {
+        "path": ".",
+        "build_system": "npm/node, python",
+        "is_git_repo": true,
+        "dependencies": []
+    },
+    ".agent": {
+        "path": ".agent",
+        "build_system": "npm/node",
+        "is_git_repo": true,
+        "dependencies": []
+    },
+    ".agent\\data": {
+        "path": ".agent\\data",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\backend": {
+        "path": ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\backend",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\frontend": {
+        "path": ".agent\\skills\\loki-mode\\examples\\todo-app-generated\\frontend",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    ".agent\\skills\\notebooklm": {
+        "path": ".agent\\skills\\notebooklm",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    ".agent\\skills\\playwright-skill": {
+        "path": ".agent\\skills\\playwright-skill",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    ".agent\\skills\\shopify-development\\scripts": {
+        "path": ".agent\\skills\\shopify-development\\scripts",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    ".agent\\skills\\slack-gif-creator": {
+        "path": ".agent\\skills\\slack-gif-creator",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant": {
+        "path": "Alti.Assistant",
+        "build_system": "npm/node, make",
+        "is_git_repo": true,
+        "dependencies": []
+    },
+    "Alti.Assistant\\Alti.Assistant.Backend": {
+        "path": "Alti.Assistant\\Alti.Assistant.Backend",
+        "build_system": "npm/node",
+        "is_git_repo": true,
+        "dependencies": []
+    },
+    "Alti.Assistant\\Alti.Assistant.Frontend": {
+        "path": "Alti.Assistant\\Alti.Assistant.Frontend",
+        "build_system": "npm/node",
+        "is_git_repo": true,
+        "dependencies": []
+    },
+    "Alti.Assistant\\Alti.Assistant.Frontend\\.next": {
+        "path": "Alti.Assistant\\Alti.Assistant.Frontend\\.next",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\Alti.Assistant.Frontend\\.next\\types": {
+        "path": "Alti.Assistant\\Alti.Assistant.Frontend\\.next\\types",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\Alti.Assistant.Mobile": {
+        "path": "Alti.Assistant\\Alti.Assistant.Mobile",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\a2a": {
+        "path": "Alti.Assistant\\external\\a2a",
+        "build_system": "npm/node",
+        "is_git_repo": true,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui": {
+        "path": "Alti.Assistant\\external\\agui",
+        "build_system": "npm/node",
+        "is_git_repo": true,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\apps\\client-cli-example": {
+        "path": "Alti.Assistant\\external\\agui\\apps\\client-cli-example",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\apps\\dojo": {
+        "path": "Alti.Assistant\\external\\agui\\apps\\dojo",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\apps\\dojo\\e2e": {
+        "path": "Alti.Assistant\\external\\agui\\apps\\dojo\\e2e",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\docs": {
+        "path": "Alti.Assistant\\external\\agui\\docs",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\a2a\\typescript": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\a2a\\typescript",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python\\examples": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\python\\examples",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\typescript": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\adk-middleware\\typescript",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\ag2\\python\\examples": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\ag2\\python\\examples",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\ag2\\typescript": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\ag2\\typescript",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python\\examples": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\agent-spec\\python\\examples",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\agno\\python\\examples": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\agno\\python\\examples",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\agno\\typescript": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\agno\\typescript",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python\\examples": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\python\\examples",
+        "build_system": "python",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\typescript": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\aws-strands\\typescript",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\community\\spring-ai\\typescript": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\community\\spring-ai\\typescript",
+        "build_system": "npm/node",
+        "is_git_repo": false,
+        "dependencies": []
+    },
+    "Alti.Assistant\\external\\agui\\integrations\\crew-ai\\python": {
+        "path": "Alti.Assistant\\external\\agui\\integrations\\crew-ai\\python",
+        "build_system": "python",
+        "is_gi
