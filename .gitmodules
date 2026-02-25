@@ -49,9 +49,6 @@
 [submodule "Chamber.Law"]
 	path = Chamber.Law
 	url = https://github.com/mnmballa2323/Chamber.Law
-[submodule "rental.home"]
-	path = rental.home
-	url = https://github.com/mnmballa2323/rental.home
 [submodule "bobmani/bobmania"]
 	path = bobmani/bobmania
 	url = https://github.com/robertpelloni/bobmania
@@ -73,12 +70,6 @@
 [submodule "bobmani/pianogame"]
 	path = bobmani/pianogame
 	url = https://github.com/robertpelloni/pianogame
-[submodule "Azure.Cybersecurity"]
-	path = Azure.Cybersecurity
-	url = https://github.com/mnmballa2323/Azure.Cybersecurity
-[submodule "claude-mem"]
-	path = claude-mem
-	url = https://github.com/robertpelloni/claude-mem
 [submodule "metamcp"]
 	path = metamcp
 	url = https://github.com/robertpelloni/metamcp
@@ -130,64 +121,9 @@
 [submodule "bg"]
 	path = bg
 	url = https://github.com/robertpelloni/bg.git
-[submodule "Alti.Assistant"]
-	path = Alti.Assistant
-	url = https://github.com/mnmballa2323/Alti.Assistant.git
-
-[submodule "Alti.Code.Studio"]
-	path = Alti.Code.Studio
-	url = https://github.com/mnmballa2323/Alti.Code.Studio
-
-[submodule "Merk.Mobile"]
-	path = Merk.Mobile
-	url = https://github.com/mnmballa2323/Merk.Mobile
-
-[submodule "Stone.Ledger"]
-	path = Stone.Ledger
-	url = https://github.com/mnmballa2323/Stone.Ledger
-
-[submodule "Tickerstone"]
-	path = Tickerstone
-	url = https://github.com/mnmballa2323/Tickerstone.git
-
-[submodule "coin.project"]
-	path = coin.project
-	url = https://github.com/mnmballa2323/coin.project.git
-
-[submodule "cointrade"]
-	path = cointrade
-	url = https://github.com/mnmballa2323/cointrade.git
 [submodule ".agent"]
 	path = .agent
 	url = https://github.com/sickn33/antigravity-awesome-skills.git
 [submodule "bobtrax"]
 	path = bobtrax
 	url = https://github.com/robertpelloni/bobtrax
-[submodule "clear.ledger"]
-	path = clear.ledger
-	url = https://github.com/mnmballa2323/clear.ledger
-[submodule "qwen.project"]
-	path = qwen.project
-	url = https://github.com/mnmballa2323/qwen.project
-
-[submodule "redprints"]
-	path = redprints
-	url = https://github.com/robertpelloni/redprints
-[submodule "qwen.project.backend"]
-	path = qwen.project.backend
-	url = https://github.com/mnmballa2323/qwen.project.backend
-[submodule "qwen.project.frontend"]
-	path = qwen.project.frontend
-	url = https://github.com/mnmballa2323/qwen.project.frontend
-[submodule "Calling-AI-Agent-Backend"]
-	path = Calling-AI-Agent-Backend
-	url = https://github.com/alticompany/Calling-AI-Agent-Backend
-[submodule "Snaype"]
-	path = Snaype
-	url = https://github.com/mnmballa2323/Snaype
-[submodule "vault.bfsi"]
-	path = vault.bfsi
-	url = https://github.com/mnmballa2323/vault.bfsi
-[submodule "audit.layer"]
-	path = audit.layer
-	url = https://github.com/mnmballa2323/audit.layer
