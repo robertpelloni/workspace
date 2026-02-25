@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.9] - 2026-02-25
+### Added
+- **Deep Dependency Research:** Authored `DEPENDENCY_RESEARCH.md` detailing the architectural reasoning behind top-level NPM dependencies (`mem0ai`, `task-master-ai`, `firecrawl-mcp`) and organizing the 40+ submodules into logical categories (AI Orchestration, Rhythm Games, Full-Stack Apps, Enterprise/Finance, Legacy/Modding).
+- **Submodule Dashboard Refresh:** Regenerated `SUBMODULE_DASHBOARD.md` to map the current commit hashes and branches of all submodules, providing a clear explanation of the workspace directory structure.
+- **Opposite Branch Sync Script:** Created `scripts/sync_feature_branches_opposite.py` to intelligently merge `main` into local feature branches, keeping them up to date with the latest base changes.
+- **Submodule Cleanup:** Removed broken/temporary submodules from the git index (`audit.layer_temp`, `temp_admin`, `temp_audit_layer`, `temp_backend`, `temp_test_backend`) to restore `git submodule update --init --recursive` functionality.
+
 ## [1.3.8] - 2026-02-24
 ### Added
 - **Live Health Monitoring System:** Developed `scripts/health_check.py` to recursively probe submodules based on their detected tech stack (Node, Python, Rust, etc.).

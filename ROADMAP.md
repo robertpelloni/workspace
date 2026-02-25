@@ -3,15 +3,16 @@
 ## Current State: Phase 1 — "Federated Synchronization" (Complete)
 *   **Recursive Submodule Updator (`update_repos_v3.py`):** Achieved robust synchronization across all 100+ nested repositories.
 *   **Upstream Syncing:** Implemented reliable, automated `fetch` and `merge` logic for forks tracking `upstream`.
-*   **Feature Branch Merging:** Developed intelligent detection and bidirectional merging (`sync_and_merge.py`) for local/remote feature branches into `main`, and `main` back into feature branches, resolving basic conflicts.
+*   **Feature Branch Merging:** Developed intelligent detection and bidirectional merging (`sync_and_merge.py`, `intelligent_sync_all.py`, `sync_feature_branches_opposite.py`) for local/remote feature branches into `main`, and `main` back into feature branches, resolving basic conflicts.
 *   **Documentation Architecture:** Created `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` as the single source of truth for all LLMs in the root folder, completely overhauling `GEMINI.md`, `CLAUDE.md`, etc.
-*   **Dashboarding:** `SUBMODULE_DASHBOARD.md` redesigned to include directory structure explanations alongside version tracking.
+*   **Dashboarding & Research:** `SUBMODULE_DASHBOARD.md` redesigned to include directory structure explanations alongside version tracking. Added `DEPENDENCY_RESEARCH.md` mapping architectural rationale for NPM libraries (`mem0ai`, `firecrawl-mcp`) and organizing the 40+ submodules into domain categories (AI, Rhythms, Full-Stack, Enterprise, Legacy).
 
-## Next Phase: Phase 2 — "Intelligent Propagation"
+## Next Phase: Phase 2 — "Intelligent Propagation" (Complete)
 *   **Universal Instructions Propagation Script:** A script to automatically push or synchronize `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` to all submodule `docs/` directories (where applicable). (Verified & Hardened in v1.3.6)
 *   **Global CI/CD Dashboard:** Expand `SUBMODULE_DASHBOARD.md` to track the build/test status of each major project. Detailed dashboard now covers all submodules and is mirrored globally.
 *   **Conflict Resolution Sub-Agent:** Added `intelligent_sync_all.py` for auto-resolving local and remote feature branches.
 *   **Workspace Health Monitoring:** Implemented `prune_broken_submodules.py` for automated configuration maintenance. (New in v1.3.6)
+*   **Submodule Cleanup:** Purged broken/temporary git submodules (`audit.layer_temp`, `temp_admin`, etc.) from the workspace index to restore full recursive update functionality. (Completed v1.3.9)
 
 ## Future Phase: Phase 3 — "Omniscient Orchestration" (Initialized)
 *   **Workspace Search API:** Implement a local vector or full-text search API that indexes all 100+ repos.
