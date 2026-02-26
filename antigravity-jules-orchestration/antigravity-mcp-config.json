@@ -1,0 +1,156 @@
+{
+  "mcpServers": {
+    "temporal-agent": {
+      "name": "Temporal Agent MCP Server",
+      "description": "Persistent task scheduling for AI agents - enables scheduled Jules sessions",
+      "baseUrl": "${TEMPORAL_AGENT_URL:-http://localhost:3324}",
+      "baseUrlProduction": "https://temporal-agent-mcp.onrender.com",
+      "protocol": "https",
+      "apiVersion": "1.0.0",
+      "endpoints": {
+        "health": "/health",
+        "tools": "/mcp/tools",
+        "execute": "/mcp/execute",
+        "jsonRpc": "/mcp",
+        "notifications": "/notifications"
+      },
+      "capabilities": [
+        "schedule-one-time",
+        "schedule-recurring",
+        "cron-expressions",
+        "webhook-callbacks",
+        "slack-notifications",
+        "email-notifications",
+        "hmac-signatures"
+      ],
+      "tools": [
+        "schedule_task",
+        "schedule_recurring",
+        "list_tasks",
+        "get_task",
+        "cancel_task",
+        "pause_task",
+        "resume_task"
+      ],
+      "security": {
+        "ssrfProtection": true,
+        "rateLimiting": "100 req/15 min",
+        "hmacSignatures": true,
+        "payloadSanitization": true
+      }
+    },
+    "jules-orchestration": {
+      "name": "Jules Orchestration MCP Server",
+      "description": "Autonomous AI orchestration server combining Google Antigravity with Jules API",
+      "baseUrl": "https://scarmonit.com",
+      "protocol": "https",
+      "apiVersion": "1.0.0",
+      "endpoints": {
+        "health": "/health",
+        "root": "/",
+        "julesCreate": "/api/jules/create",
+        "julesList": "/api/jules/list",
+        "julesStatus": "/api/jules/status/:sessionId"
+      },
+      "authentication": {
+        "type": "apiKey",
+        "headerName": "X-Jules-API-Key",
+        "envVariable": "JULES_API_KEY"
+      },
+      "capabilities": [
+        "health-check",
+        "service-orchestration",
+        "autonomous-execution",
+        "mcp-protocol",
+        "jules-session-management",
+        "auto-approve-workflows"
+      ],
+      "deployment": {
+        "platform": "Render",
+        "region": "us-west (Oregon)",
+        "instanceType": "free",
+        "autoScale": false,
+        "coldStartTime": "~30s"
+      },
+      "monitoring": {
+        "healthCheckInterval": 900,
+        "alerting": "github-actions",
+        "logs": "https://dashboard.render.com/web/srv-d4mlmna4d50c73ep70sg/logs"
+      },
+      "integration": {
+        "antigravity": {
+          "enabled": true,
+          "mcpProtocol": "1.0",
+          "tools": [
+            "jules_create_session",
+            "jules_list_sessions",
+            "jules_get_status",
+            "jules_approve_plan"
+          ]
+        },
+        "jules": {
+          "apiBase": "https://jules.googleapis.com/v1alpha",
+          "endpoints": {
+            "sessions": "/sessions",
+            "approve": "/sessions/:id/approve"
+          },
+          "autoApprove": false,
+          "defaultBranch": "main"
+        }
+      },
+      "workflows": {
+        "autonomous": {
+          "enabled": true,
+          "triggers": ["github-push", "api-request", "schedule"],
+          "approvalRequired": true
+        },
+        "ci-cd": {
+          "github-actions": true,
+          "autoTest": true,
+          "autoDeploy": "Scarmonit"
+        }
+      }
+    }
+  },
+  "tools": {
+    "jules_create_session": {
+      "description": "Create a new Jules coding session for autonomous development",
+      "parameters": {
+        "repository": {
+          "type": "string",
+          "required": true,
+          "description": "GitHub repository in owner/repo format"
+        },
+        "task": {
+          "type": "string",
+          "required": true,
+          "description": "Development task description"
+        },
+        "branch": {
+          "type": "string",
+          "default": "main",
+          "description": "Target branch for changes"
+        },
+        "autoApprove": {
+          "type": "boolean",
+          "default": false,
+          "description": "Auto-approve execution plans"
+        }
+      }
+    },
+    "jules_list_sessions": {
+      "description": "List all active Jules sessions",
+      "parameters": {}
+    },
+    "jules_get_status": {
+      "description": "Get status of a specific Jules session",
+      "parameters": {
+        "sessionId": {
+          "type": "string",
+          "required": true,
+          "description": "Session ID to query"
+        }
+      }
+    }
+  }
+}

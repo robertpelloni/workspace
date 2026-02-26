@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: jules-orchestrator
+    runtime: docker
+    region: oregon
+    branch: Scarmonit
+    dockerfilePath: ./orchestrator-api/Dockerfile
+    # Trigger redeploy
+    rootDir: ./orchestrator-api
+    envVars:
+      - key: JULES_API_KEY
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: orchestrator-db
+          property: connectionString
+      - key: SLACK_WEBHOOK_URL
+        sync: false
+    healthCheckPath: /api/v1/health
+
+databases:
+  - name: orchestrator-db
+    databaseName: jules_orchestrator
+    user: orchestrator

@@ -1,0 +1,74 @@
+diff --git a/package.json b/package.json
+index 65fbdc2..e350122 100644
+--- a/package.json
++++ b/package.json
+@@ -1177,11 +1177,8 @@
+           "type": "array",
+           "default": [
+             "dom-scan-click",
+-            "native-accept",
+-            "process-peek",
+             "vscode-cmd",
+-            "cdp-mouse",
+-            "bridge-click"
++            "script-force"
+           ],
+           "description": "Click method IDs used when UI profile resolves to vscode."
+         },
+@@ -1189,11 +1186,7 @@
+           "type": "array",
+           "default": [
+             "dom-scan-click",
+-            "dom-click",
+-            "bridge-click",
+-            "cdp-mouse",
+-            "script-force",
+-            "native-accept"
++            "vscode-cmd"
+           ],
+           "description": "Click method IDs used when UI profile resolves to antigravity."
+         },
+@@ -1201,10 +1194,7 @@
+           "type": "array",
+           "default": [
+             "dom-scan-click",
+-            "dom-click",
+-            "cdp-mouse",
+-            "script-force",
+-            "native-accept"
++            "vscode-cmd"
+           ],
+           "description": "Click method IDs used when UI profile resolves to cursor."
+         },
+diff --git a/src/utils/config.ts b/src/utils/config.ts
+index 817e770..c72df89 100644
+--- a/src/utils/config.ts
++++ b/src/utils/config.ts
+@@ -170,7 +170,7 @@ export class ConfigManager {
+         const blockedClickMethods = new Set(['bridge-click']);
+         const blockedSubmitMethods = new Set([]);
+ 
+-        const safeDefaultClickMethods = ['dom-scan-click', 'vscode-cmd'];
++        const safeDefaultClickMethods = ['dom-scan-click', 'vscode-cmd', 'script-force'];
+         const safeDefaultSubmitMethods = ['vscode-submit', 'script-submit'];
+ 
+         const interactionClickMethods = sanitizeMethods(
+@@ -192,14 +192,14 @@ export class ConfigManager {
+         );
+ 
+         const interactionClickMethodsAntigravity = sanitizeMethods(
+-            config.get('interactionClickMethodsAntigravity', ['dom-scan-click']),
+-            ['dom-scan-click'],
++            config.get('interactionClickMethodsAntigravity', ['dom-scan-click', 'vscode-cmd']),
++            ['dom-scan-click', 'vscode-cmd'],
+             blockedClickMethods
+         );
+ 
+         const interactionClickMethodsCursor = sanitizeMethods(
+-            config.get('interactionClickMethodsCursor', ['dom-scan-click']),
+-            ['dom-scan-click'],
++            config.get('interactionClickMethodsCursor', ['dom-scan-click', 'vscode-cmd']),
++            ['dom-scan-click', 'vscode-cmd'],
+             blockedClickMethods
+         );
+ 

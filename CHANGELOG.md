@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0] - 2026-02-26
+### Added
+- **Global Synchronization:** Executed `update_repos_v6.py`, `sync_forks.py`, and `sync_feature_branches_opposite.py` across the entire omni-workspace. Intelligently merged local feature branches into `main` and updated upstream forks to prevent drift and preserve AI-generated feature code.
+- **Enhanced Submodule Dashboard:** Regenerated `SUBMODULE_DASHBOARD.md` to map the commit hashes, branches, health status, and tech stack of all submodules, providing a clear explanation of the workspace directory structure.
+- **Documentation & Roadmap Update:** Updated `ROADMAP.md` to reflect the completion of massive cross-repo git synchronization operations.
+- **Version Bump:** Incremented workspace version to 1.4.0.
+
 ## [1.3.9] - 2026-02-25
 ### Added
 - **Deep Dependency Research:** Authored `DEPENDENCY_RESEARCH.md` detailing the architectural reasoning behind top-level NPM dependencies (`mem0ai`, `task-master-ai`, `firecrawl-mcp`) and organizing the 40+ submodules into logical categories (AI Orchestration, Rhythm Games, Full-Stack Apps, Enterprise/Finance, Legacy/Modding).

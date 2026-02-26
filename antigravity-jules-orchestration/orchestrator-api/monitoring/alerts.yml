@@ -1,0 +1,49 @@
+# monitoring/alerts.yml
+groups:
+  - name: jules_orchestrator_alerts
+    interval: 30s
+    rules:
+      - alert: HighWorkflowFailureRate
+        expr: (rate(workflow_failures_total[5m]) / rate(workflow_total[5m])) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High workflow failure rate"
+          description: "More than 10% of workflows are failing (current: {{ $value }})"
+      
+      - alert: WorkflowStuck
+        expr: workflow_duration_seconds{status="running"} > 3600
+        for: 10m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Workflow stuck for over 1 hour"
+          description: "Workflow {{ $labels.workflow_id }} has been running for {{ $value }}s"
+      
+      - alert: JulesAPIDown
+        expr: up{job="jules-orchestrator"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Jules Orchestrator API is down"
+          description: "The orchestrator API has been unreachable for 2 minutes"
+      
+      - alert: DatabaseConnectionPoolExhausted
+        expr: pg_stat_database_numbackends / pg_settings_max_connections > 0.8
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Database connection pool near capacity"
+          description: "PostgreSQL connections at {{ $value }}%"
+      
+      - alert: RedisMemoryHigh
+        expr: redis_memory_used_bytes / redis_memory_max_bytes > 0.9
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Redis memory usage high"
+          description: "Redis memory at {{ $value }}%"

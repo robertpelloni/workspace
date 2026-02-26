@@ -87,8 +87,7 @@ def process_repo(name, cwd, processed_set):
         if skip in name or skip in cwd: return
     if norm_path in processed_set: return
 
-    print(f"
->>> Starting Processing: {name} at {cwd}")
+    print(f"\n>>> Starting Processing: {name} at {cwd}")
     if not os.path.exists(cwd):
         save_processed(cwd)
         processed_set.add(norm_path)

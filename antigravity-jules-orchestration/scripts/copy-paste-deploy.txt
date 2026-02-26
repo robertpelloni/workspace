@@ -1,0 +1,75 @@
+# ============================================================ 
+# COPY-PASTE THIS ENTIRE BLOCK INTO YOUR TERMINAL 
+# ============================================================ 
+
+bash << 'ENDOFSCRIPT'
+#!/bin/bash
+set -e
+
+echo "Enter GitHub Token (from github.com/settings/tokens):"
+read -s GITHUB_TOKEN
+echo ""
+echo "Enter Jules API Key (from jules.google.com/settings):"
+read -s JULES_API_KEY
+echo ""
+
+echo "Creating repository..."
+curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" \
+  -d '{"name":"jules-orchestrator","auto_init":true}' \
+  https://api.github.com/user/repos > /dev/null
+
+# Create temp dir
+WORK_DIR="temp_deploy_$(date +%s)"
+mkdir -p "$WORK_DIR" && cd "$WORK_DIR"
+
+git clone https://github.com/Scarmonit/jules-orchestrator.git 2>&1 | grep -v "warning"
+cd jules-orchestrator
+
+cat > package.json << 'PKG'
+{"name":"jules-orchestrator","version":"1.0.0","type":"module","main":"src/index.js","scripts":{"start":"node src/index.js"},"dependencies":{"express":"^4.18.2","ws":"^8.16.0"}}
+PKG
+
+mkdir -p src && cat > src/index.js << 'SRC'
+import express from 'express';
+const app = express();
+app.use(express.json());
+app.get('/api/v1/health', (req, res) => res.json({ status: 'healthy' }));
+app.post('/api/v1/workflows/execute', (req, res) => res.json({ workflow_id: Date.now(), status: 'pending' }));
+app.post('/api/v1/webhooks/github', (req, res) => res.json({ received: true }));
+app.listen(process.env.PORT || 3000, () => console.log('Running'));
+SRC
+
+cat > Dockerfile << 'DOC'
+FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY src/ ./src/
+EXPOSE 3000
+CMD ["node", "src/index.js"]
+DOC
+
+cat > render.yaml << 'RND'
+services:
+  - type: web
+    name: jules-orchestrator
+    runtime: docker
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: JULES_API_KEY
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+RND
+
+git add . && git commit -m "Deploy Jules Orchestrator" && git push origin main
+
+echo ""
+echo "✅ Repository created and pushed!"
+echo "🔗 https://github.com/Scarmonit/jules-orchestrator"
+echo ""
+echo "Next: Render Dashboard (already open) -> New Web Service -> Scarmonit/jules-orchestrator"
+
+ENDOFSCRIPT
+
+# ============================================================ 
