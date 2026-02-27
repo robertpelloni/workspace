@@ -12,12 +12,12 @@ OUTPUT_FILE = "SUBMODULE_DASHBOARD.md"
 def run_command(cmd, cwd):
     try:
         result = subprocess.run(
-            cmd, cwd=cwd, shell=True, check=True, 
+            cmd, cwd=cwd, shell=True, 
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
             text=True, encoding='utf-8', errors='replace'
         )
         return result.stdout.strip()
-    except:
+    except Exception as e:
         return None
 
 def get_git_info(path):

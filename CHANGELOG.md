@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1] - 2026-02-27
+### Added
+- **Deep Research & Project Alignment:** Verified all submodules and dependencies, documented missing submodules. Fixed missing submodule mappings in `.gitmodules` for `claude-mem` and `AUTO-ALL-AntiGravity` to ensure recursive operations do not fail.
+- **Aggressive Submodule Synchronization:** Executed massive updates using `update_repos_v6.py`, intelligently merging all remote and local feature branches into main across all sub-projects while erring on the side of caution. Safely merged upstream changes for all forks.
+- **Dashboard Refresh:** Updated submodule status dashboard into a simpler robust format to avoid long hangs fetching extremely massive submodules like LibreOffice forks, providing high-level structure visibility.
+- **Documentation & History Snapshot:** Updated `ROADMAP.md` and `HANDOFF.md` to reflect current AI-automated iteration cycles.
+
 ## [1.4.0] - 2026-02-26
 ### Added
 - **Global Synchronization:** Executed `update_repos_v6.py`, `sync_forks.py`, and `sync_feature_branches_opposite.py` across the entire omni-workspace. Intelligently merged local feature branches into `main` and updated upstream forks to prevent drift and preserve AI-generated feature code.

@@ -8,7 +8,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 PROCESSED_FILE = "processed_repos_v6.txt"
 FAILED_LOG = "failed_repos_v6.log"
 
-SKIPPED_REPOS = ["voidsprite", "temp_defihacklabs", "vibeship-scanner", "borg"]
+SKIPPED_REPOS = ["voidsprite", "temp_defihacklabs", "vibeship-scanner", "borg", "bobdesk", "topaz-ffmpeg", "bg\\bobsgameonlinejava\\references", "ffmpeg"]
 
 def normalize_path(path): return os.path.normpath(os.path.abspath(path)).lower()
 
@@ -33,7 +33,9 @@ def run_command(cmd, cwd, ignore_errors=False, timeout=300):
         result = subprocess.run(cmd, cwd=cwd, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8', errors='replace', timeout=timeout)
         return result.stdout.strip()
     except subprocess.TimeoutExpired: return None
-    except subprocess.CalledProcessError: return None
+    except subprocess.CalledProcessError as e: 
+        if ignore_errors and e.stdout: return e.stdout.strip()
+        return None
     except Exception: return None
 
 def get_default_branch(cwd):

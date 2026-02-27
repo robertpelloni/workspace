@@ -4,7 +4,7 @@ import datetime
 
 def run(cmd, cwd=None):
     try:
-        res = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, timeout=30)
+        res = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, timeout=5)
         return res.stdout.strip()
     except Exception:
         return ""
@@ -32,7 +32,7 @@ def generate_dashboard():
     repos = []
     for dirpath, dirnames, filenames in os.walk(root):
         # Prune unwanted directories to speed up traversal
-        dirnames[:] = [d for d in dirnames if not any(skip in d for skip in ["node_modules", ".venv", "temp_", "build", "dist"])]
+        dirnames[:] = [d for d in dirnames if not any(skip in d for skip in ["node_modules", ".venv", "temp_", "build", "dist", ".git", ".cursor", "__pycache__", "bobdesk", "topaz-ffmpeg"])]
         if ".git" in dirnames or ".git" in filenames:
             rel_path = os.path.relpath(dirpath, root)
             if rel_path == ".": rel_path = "Root"
@@ -66,6 +66,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
         
     with open("SUBMODULE_DASHBOARD.md", "w", encoding="utf-8") as f:
         f.write(md)
+    print("Done")
 
 if __name__ == "__main__":
     generate_dashboard()

@@ -130,3 +130,6 @@
 [submodule "bobdesk"]
 	path = bobdesk
 	url = https://github.com/robertpelloni/bobdesk
+[submodule "claude-mem"]
+	path = claude-mem
+	url = https://github.com/robertpelloni/claude-mem
