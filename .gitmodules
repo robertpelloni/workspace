@@ -127,3 +127,6 @@
 [submodule "bobtrax"]
 	path = bobtrax
 	url = https://github.com/robertpelloni/bobtrax
+[submodule "bobdesk"]
+	path = bobdesk
+	url = https://github.com/robertpelloni/bobdesk
