@@ -1,58 +1,59 @@
-# Project Dashboard
+# Omni-Workspace Submodule Dashboard
+**Last Updated:** 2026-03-04 00:43:09
 
-**Last Updated:** 2026-03-02 19:11:06
+## Project Directory Structure Explanation
+This monorepo serves as a unified workspace and orchestrator for dozens of independent microservices, libraries, desktop applications, and AI agents.
+*   **`Root/`**: Contains the global orchestration scripts, universal documentation (`LLM_INSTRUCTIONS.md`, `ROADMAP.md`), and the workspace-level configuration.
+*   **`.gemini/`, `.claude/`, etc.**: AI agent configuration and context directories.
+*   **AI Agent Projects**: Folders like `borg`, `metamcp`, `jules-autopilot`, `antigravity-autopilot` contain specialized multi-modal and autonomous agents.
+*   **Full-Stack Apps**: Folders like `Chamber.Law`, `bobeditpro`, `bobfilez` contain entire standalone full-stack applications.
+*   **Shared Libraries**: Other directories include shared utilities and libraries nested across the ecosystem.
 
-## Project Structure & Submodules
+## Submodule Status & Versions
 
-| Name | Path | Version | Status |
-|---|---|---|---|
-| [bobfilez](https://github.com/robertpelloni/bobfilez) | `bobfilez` | `9312ffad` | ⚠️ Modified |
-| [fwber](https://github.com/robertpelloni/fwber) | `fwber` | `1865685fc` | 🟢 Clean |
-| [bobsaver](https://github.com/robertpelloni/bobsaver) | `bobsaver` | `597fb14` | 🟢 Clean |
-| [borg](https://github.com/robertpelloni/borg) | `borg` | `9731a700` | ⚠️ Modified |
-| [raindropioapp](https://github.com/robertpelloni/raindropioapp) | `raindropioapp` | `88f3ef81` | 🟢 Clean |
-| [bobcoin](https://github.com/robertpelloni/bobcoin) | `bobcoin` | `7f3c871` | ⚠️ Modified |
-| [sm64coopdx](https://github.com/robertpelloni/sm64coopdx) | `sm64coopdx` | `df492542e` | ⚠️ Modified |
-| [topaz-ffmpeg](https://github.com/TopazLabs/ffmpeg) | `topaz-ffmpeg` | `295c219d2a` | ⚠️ Modified |
-| [mk64](https://github.com/robertpelloni/mk64) | `mk64` | `09cc3f619` | 🟢 Clean |
-| [bobeditpro](https://github.com/robertpelloni/bobeditpro) | `bobeditpro` | `ccc099b70` | ⚠️ Modified |
-| [bobtrader](https://github.com/robertpelloni/bobtrader) | `bobtrader` | `49bca98` | 🟢 Clean |
-| [bobtorrent](https://github.com/robertpelloni/bobtorrent) | `bobtorrent` | `d396d38` | 🟢 Clean |
-| [bobui](https://github.com/robertpelloni/bobui) | `bobui` | `06af9492316` | 🟢 Clean |
-| [bobium](https://github.com/robertpelloni/bobium) | `bobium` | `fa67492` | 🟢 Clean |
-| [bobzilla](https://github.com/robertpelloni/bobzilla) | `bobzilla` | `e65decc` | 🟢 Clean |
-| [jules-autopilot](https://github.com/robertpelloni/jules-autopilot) | `jules-autopilot` | `ec16a5a` | 🟢 Clean |
-| Chamber.Law | `Chamber.Law` | *Not Initialized* | ❌ |
-| [bobmani/bobmania](https://github.com/robertpelloni/bobmania) | `bobmani/bobmania` | `a9f4722e62` | ⚠️ Modified |
-| [bobmani/itgmania](https://github.com/robertpelloni/itgmania) | `bobmani/itgmania` | `9f9aa85df6` | ⚠️ Modified |
-| [bobmani/beatoraja](https://github.com/robertpelloni/beatoraja) | `bobmani/beatoraja` | `a51ef0db` | 🟢 Clean |
-| [bobmani/hymnmania](https://github.com/robertpelloni/hymnmania) | `bobmani/hymnmania` | `72d2eb4` | 🟢 Clean |
-| [bobmani/ksm-v2](https://github.com/robertpelloni/ksm-v2) | `bobmani/ksm-v2` | `76ec065` | ⚠️ Modified |
-| [bobmani/linthesia](https://github.com/robertpelloni/linthesia) | `bobmani/linthesia` | `1a62e78` | 🟢 Clean |
-| [bobmani/pianogame](https://github.com/robertpelloni/pianogame) | `bobmani/pianogame` | `5860035` | 🟢 Clean |
-| [metamcp](https://github.com/robertpelloni/metamcp) | `metamcp` | `6464d1d` | 🟢 Clean |
-| [mcp-superassistant](https://github.com/robertpelloni/mcp-superassistant) | `mcp-superassistant` | `56e3ca0` | 🟢 Clean |
-| [mcpenetes](https://github.com/robertpelloni/mcpenetes) | `mcpenetes` | `ca861db` | 🟢 Clean |
-| [bobmani/ffr-difficulty-model](https://github.com/robertpelloni/ffr-difficulty-model) | `bobmani/ffr-difficulty-model` | `90ac515` | 🟢 Clean |
-| [bobmani/leraine-studio](https://github.com/robertpelloni/leraine-studio) | `bobmani/leraine-studio` | `fa58333` | 🟢 Clean |
-| [bobmani/ddc](https://github.com/robertpelloni/ddc) | `bobmani/ddc` | `89509b9` | 🟢 Clean |
-| [bobmani/arrowvortex](https://github.com/robertpelloni/arrowvortex) | `bobmani/arrowvortex` | `76466b2` | 🟢 Clean |
-| [opencode-autopilot](https://github.com/robertpelloni/opencode-autopilot) | `opencode-autopilot` | `8ee5de3` | 🟢 Clean |
-| [bobmani/ddc_onset](https://github.com/robertpelloni/ddc_onset) | `bobmani/ddc_onset` | `ffc1f53` | 🟢 Clean |
-| [bobmani/Simply-Love-SM5](https://github.com/robertpelloni/Simply-Love-SM5) | `bobmani/Simply-Love-SM5` | `5c23b0ba` | 🟢 Clean |
-| [antigravity-autopilot/AUTO-ALL-AntiGravity](https://github.com/robertpelloni/AUTO-ALL-AntiGravity) | `antigravity-autopilot/AUTO-ALL-AntiGravity` | `a64759c` | 🟢 Clean |
-| [antigravity-autopilot/yoke-antigravity](https://github.com/robertpelloni/yoke-antigravity) | `antigravity-autopilot/yoke-antigravity` | `21252c9` | 🟢 Clean |
-| [antigravity-autopilot/auto-accept-agent](https://github.com/robertpelloni/auto-accept-agent) | `antigravity-autopilot/auto-accept-agent` | `939a2c4` | ⚠️ Modified |
-| [antigravity-autopilot/antigravity-auto-accept](https://github.com/robertpelloni/antigravity-auto-accept) | `antigravity-autopilot/antigravity-auto-accept` | `6edd3a0` | 🟢 Clean |
-| [antigravity-jules-orchestration](https://github.com/Scarmonit/antigravity-jules-orchestration) | `antigravity-jules-orchestration` | `Unknown` | 🟢 Clean |
-| [antigravity-autopilot](https://github.com/robertpelloni/antigravity-autopilot) | `antigravity-autopilot` | `df1acd9` | ⚠️ Modified |
-| [bg](https://github.com/robertpelloni/bg.git) | `bg` | `33ff76f8` | ⚠️ Modified |
-| [.agent](https://github.com/sickn33/antigravity-awesome-skills.git) | `.agent` | `5ce16c6` | 🟢 Clean |
-| [bobtrax](https://github.com/robertpelloni/bobtrax) | `bobtrax` | `e8a5f9a` | 🟢 Clean |
-| [bobdesk](https://github.com/robertpelloni/bobdesk) | `bobdesk` | `952f614762bf` | ⚠️ Modified |
-| [claude-mem](https://github.com/robertpelloni/claude-mem) | `claude-mem` | `e1100be0` | 🟢 Clean |
-
-## Directory Layout Explanation
-
-- **Root**: Contains main configuration and orchestration logic.
-- **Submodules**: Located in their respective directories, containing standalone tools or agents.
+| Path | Version | Branch | Commit | Date | Message |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| bobfilez | N/A | main | '9312ffad' | '2026-03-02' | 'chore: save progress before update' |
+| fwber | 1.0.9 | main | '1865685fc' | '2026-03-01' | 'chore: save progress before update' |
+| bobsaver | N/A | main | '597fb14' | '2026-03-01' | 'chore: save progress before update' |
+| borg | 2.7.52 | main | '1a0df50c' | '2026-03-04' | 'chore: save local before merge' |
+| raindropioapp | 1.0.4 | master | '88f3ef81' | '2026-02-27' | 'Merge remote-tracking branch 'upstream/master'' |
+| bobcoin | N/A | main | '7f3c871' | '2026-02-27' | 'Merge branch 'main' of https://github.com/robertp... |
+| sm64coopdx | N/A | main | 'df492542e' | '2026-02-27' | 'chore: save progress before update' |
+| topaz-ffmpeg | N/A | topaz/develop | '295c219d2a' | '2026-02-21' | 'chore: save progress before update' |
+| mk64 | N/A | master | '09cc3f619' | '2026-03-01' | 'chore: save progress before update' |
+| bobeditpro | N/A | master | 'ccc099b70' | '2026-03-02' | 'chore: save progress before update' |
+| bobtrader | N/A | main | '49bca98' | '2026-02-27' | 'chore: save progress before update' |
+| bobtorrent | 11.2.3 | master | 'd396d38' | '2026-03-01' | 'chore: save progress before update' |
+| bobui | N/A | main | '06af9492316' | '2026-03-01' | 'chore: save progress before update' |
+| bobium | N/A | main | 'fa67492' | '2026-02-26' | 'chore: save progress before update' |
+| bobzilla | N/A | main | 'e65decc' | '2026-03-01' | 'chore: save progress before update' |
+| jules-autopilot | 1.0.0 | main | 'ec16a5a' | '2026-03-01' | 'chore: save progress before update' |
+| bobmani/bobmania | 5.7.0-Unified-Alpha | master | 'a9f4722e62' | '2026-03-01' | 'chore: save progress before update' |
+| bobmani/itgmania | N/A | release | '9f9aa85df6' | '2026-03-02' | 'chore: save progress before update' |
+| bobmani/beatoraja | 0.9.2 | master | 'a51ef0db' | '2026-03-01' | 'chore: save progress before update' |
+| bobmani/hymnmania | N/A | master | '72d2eb4' | '2026-02-27' | 'Merge remote-tracking branch 'origin/hymn-remaker... |
+| bobmani/ksm-v2 | 2.0.0-alpha23 | master | '76ec065' | '2026-03-02' | 'chore: save progress before update' |
+| bobmani/linthesia | 0.9.0 | main | '1a62e78' | '2026-02-28' | 'chore: save progress before update' |
+| bobmani/pianogame | N/A | master | '5860035' | '2026-02-27' | 'Merge branch 'master' of https://github.com/rober... |
+| metamcp | 3.7.23 | main | '6464d1d' | '2026-03-01' | 'chore: save progress before update' |
+| mcp-superassistant | 0.7.2 | main | '56e3ca0' | '2026-02-26' | 'docs: mark completed items in TODO.md (v0.7.2)' |
+| mcpenetes | N/A | main | 'ca861db' | '2026-02-27' | 'chore: save progress before update' |
+| bobmani/ffr-difficulty-model | N/A | master | '90ac515' | '2026-03-01' | 'chore: save progress before update' |
+| bobmani/leraine-studio | N/A | master | 'fa58333' | '2026-03-01' | 'chore: save progress before update' |
+| bobmani/ddc | 0.2.1 | master | '89509b9' | '2026-03-01' | 'chore: save progress before update' |
+| bobmani/arrowvortex | v1.3.2 | release | '76466b2' | '2026-03-01' | 'chore: save progress before update' |
+| opencode-autopilot | N/A | main | '8ee5de3' | '2026-02-27' | 'Merge remote-tracking branch 'origin/enhance-dash... |
+| bobmani/ddc_onset | N/A | main | 'ffc1f53' | '2026-03-01' | 'chore: save progress before update' |
+| bobmani/Simply-Love-SM5 | N/A | itgmania-release | '5c23b0ba' | '2026-02-26' | 'Merge branch 'itgmania-release' of https://github... |
+| antigravity-autopilot/AUTO-ALL-AntiGravity | N/A | master | 'a64759c' | '2026-02-28' | 'chore: save progress before update' |
+| antigravity-autopilot/yoke-antigravity | N/A | master | '21252c9' | '2026-02-28' | 'chore: save progress before update' |
+| antigravity-autopilot/auto-accept-agent | N/A | master | '939a2c4' | '2026-02-28' | 'chore: save progress before update' |
+| antigravity-autopilot/antigravity-auto-accept | N/A | master | '6edd3a0' | '2026-02-28' | 'chore: save progress before update' |
+| antigravity-jules-orchestration | N/A |  |  |  |  |
+| antigravity-autopilot | N/A | master | '1b410c3' | '2026-03-04' | 'chore: save local before merge' |
+| bg | N/A | master | '33ff76f8' | '2026-03-02' | 'chore: save progress before update' |
+| .agent | N/A | main | '866fdca' | '2026-03-04' | 'Merge branch 'main' of https://github.com/sickn33... |
+| bobtrax | N/A | master | 'e8a5f9a' | '2026-02-27' | 'chore: save progress before update' |
+| bobdesk | N/A | master | '952f614762bf' | '2026-02-26' | 'Fix submodule URLs to bypass Jules mirror and poi... |
+| claude-mem | 10.5.2 | main | 'e1100be0' | '2026-02-27' | 'chore: save progress before update' |

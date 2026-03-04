@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.5] - 2026-03-03
+### Added
+- **Intelligent Selective Sync:** Executed `safe_sync.py` to intelligently and safely merge feature branches into `main` across all mapped submodules from `.gitmodules`, preventing the infinite recursion block experienced in previous deep python walk attempts.
+- **Upstream and Local Branch Merges:** Successfully brought all feature branches from `robertpelloni` repos up to date with `main`, and resolved any conflicting branches automatically using `-X ours` selectively to preserve automated AI progress.
+- **Deep Dependency Research Update:** Verified the `DEPENDENCY_RESEARCH.md` is current with the reasons for integration.
+- **Robust Submodule Dashboard:** Optimized `SUBMODULE_DASHBOARD.md` generation to utilize git configs directly to parse out submodules, providing a lightweight, robust mapping of versions, branches, and statuses.
+- **Workspace Bump:** Incremented workspace version and synchronized `ROADMAP.md` and `CHANGELOG.md`.
+
 ## [1.4.4] - 2026-03-02
 ### Added
 - **Global Synchronization & Cross-Merging:** Orchestrated massive recursive update across all submodules using `update_repos_v6.py`. Successfully merged upstream changes, brought local feature branches into `main`.

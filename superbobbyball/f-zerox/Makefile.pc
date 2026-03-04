@@ -13,7 +13,7 @@ PC_IMPL_SRCS = src/pc/ultra_impl.c src/pc/libaudio_impl.c
 
 BUILD_DIR = build/pc
 
-SRCS = $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.c)) $(GAME_SRCS) $(PC_IMPL_SRCS)
+SRCS = $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.c)) $(GAME_SRCS)
 OBJS = $(SRCS:%.c=$(BUILD_DIR)/%.o)
 
 TARGET = $(BUILD_DIR)/fzerox_pc
