@@ -73,3 +73,4 @@ void func_8007FA64(void) {}
 void func_8007FB80(s32 x, s32 y, void* str) {
     printf("DEBUG PRINT at (%d, %d)\n", x, y);
 }
+s32 func_8006A9E0(f32 arg0) { return (s32)(arg0 >= 0.0f ? arg0 + 0.5f : arg0 - 0.5f); }

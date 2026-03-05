@@ -1,10 +1,10 @@
-# Makefile for F-Zero X PC Port
+# Makefile for F-Zero X PC Port (Windows / MinGW)
 
-CC = gcc
+CC = x86_64-w64-mingw32-gcc
 CFLAGS = -Wall -Wextra -g -Iinclude/pc -Iinclude -D_LANGUAGE_C
-LDFLAGS = -lSDL2 -lGL
+LDFLAGS = -Llibs -lSDL3 -lopengl32
 
-SRC_DIRS = src/pc/sdl2 src/pc
+SRC_DIRS = src/pc/sdl3 src/pc
 # Add a game logic file to test linking (Math Utils + Debug Text + Audio State + Audio Util)
 GAME_SRCS = src/math_utils.c src/debug_text.c src/audio_state.c src/audio_util.c
 
@@ -16,8 +16,8 @@ BUILD_DIR = build/pc
 SRCS = $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.c)) $(GAME_SRCS)
 OBJS = $(SRCS:%.c=$(BUILD_DIR)/%.o)
 
-TARGET = $(BUILD_DIR)/fzerox_pc
-TEST_TARGET = $(BUILD_DIR)/test_runner
+TARGET = $(BUILD_DIR)/fzerox_pc.exe
+TEST_TARGET = $(BUILD_DIR)/test_runner.exe
 
 .PHONY: all clean test
 
