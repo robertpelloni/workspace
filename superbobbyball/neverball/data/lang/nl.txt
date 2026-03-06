@@ -1,2 +1,0 @@
-name1 Dutch
-name2 Nederlands

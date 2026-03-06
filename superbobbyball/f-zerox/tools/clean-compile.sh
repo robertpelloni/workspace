@@ -1,1 +1,0 @@
-make distclean && make extract && make -j6

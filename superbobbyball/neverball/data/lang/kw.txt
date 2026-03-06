@@ -1,2 +1,0 @@
-name1 Cornish
-name2 Kernewek

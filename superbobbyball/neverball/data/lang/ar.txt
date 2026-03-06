@@ -1,3 +1,0 @@
-name1 Arabic
-name2 العربية
-font ttf/DejaVuSans-Bold.ttf

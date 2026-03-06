@@ -1,2 +1,0 @@
-name1 Basque
-name2 Euskara

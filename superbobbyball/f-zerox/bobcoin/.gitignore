@@ -1,8 +1,0 @@
-research/forest
-research/solana
-node_modules/
-target/
-dist/
-.env
-.DS_Store
-*.log
