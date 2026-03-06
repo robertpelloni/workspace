@@ -133,3 +133,12 @@
 [submodule "claude-mem"]
 	path = claude-mem
 	url = https://github.com/robertpelloni/claude-mem
+[submodule "bobbybookmarks"]
+	path = bobbybookmarks
+	url = https://github.com/robertpelloni/bobbybookmarks
+[submodule "neverball"]
+	path = neverball
+	url = https://github.com/robertpelloni/neverball
+[submodule "picard"]
+	path = picard
+	url = https://github.com/robertpelloni/picard
