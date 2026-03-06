@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.7] - 2026-03-05
+### Added
+- **Aggressive Submodule Synchronization:** Reran `update_repos_v6.py` and `safe_sync.py` to recursively pull, fetch, merge upstream, and reconcile feature branches securely across the entire Omni-Workspace without any loss of data or AI progress.
+- **Dashboard Regeneration:** Ran `generate_submodule_dashboard.py` to refresh `SUBMODULE_DASHBOARD.md` to reflect the latest updated commits and branches of all connected components.
+- **Documentation & History Snapshot:** Updated `ROADMAP.md`, `TODO.md`, and `HANDOFF.md` to reflect the completion of another iteration cycle and analyze the remaining tasks.
+
 ## [1.4.6] - 2026-03-05
 ### Added
 - **Aggressive Submodule Synchronization:** Reran `safe_sync.py` to pull, fetch, merge upstream, and reconcile feature branches securely across the entire Omni-Workspace without any loss of data or AI progress.
