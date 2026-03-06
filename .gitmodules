@@ -142,3 +142,15 @@
 [submodule "picard"]
 	path = picard
 	url = https://github.com/robertpelloni/picard
+[submodule "frontend-sdl-cpp"]
+	path = frontend-sdl-cpp
+	url = https://github.com/robertpelloni/frontend-sdl-cpp
+[submodule "bobzzite"]
+	path = bobzzite
+	url = https://github.com/robertpelloni/bobzzite
+[submodule "dupeguru"]
+	path = dupeguru
+	url = https://github.com/robertpelloni/dupeguru
+[submodule "superpowers"]
+	path = superpowers
+	url = https://github.com/robertpelloni/superpowers
