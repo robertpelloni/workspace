@@ -154,3 +154,6 @@
 [submodule "superpowers"]
 	path = superpowers
 	url = https://github.com/robertpelloni/superpowers
+[submodule "OmniRoute"]
+	path = OmniRoute
+	url = https://github.com/diegosouzapw/OmniRoute

@@ -108,3 +108,10 @@ ssh_pass_clean
 
 # Chunkhound
 .chunkhound/
+
+adc.json
+litellm_config.yaml
+litellm_config_simple.yaml
+metamcp.db
+data/cipher-sessions.db*
+.borg-session.json
