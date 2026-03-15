@@ -1,5 +1,5 @@
 # Omni-Workspace Submodule Dashboard
-**Last Updated:** 2026-03-12 14:42:13
+**Last Updated:** 2026-03-14 20:59:46
 
 ## Project Directory Structure Explanation
 This monorepo serves as a unified workspace and orchestrator for dozens of independent microservices, libraries, desktop applications, and AI agents.
@@ -14,9 +14,9 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | Path | Version | Branch | Commit | Date | Message |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | bobfilez | N/A | main | 'e29063d5' | '2026-03-11' | 'chore: save progress before update' |
-| fwber | N/A | main | 'c5b2e44dd' | '2026-03-05' | 'update arrowvortex with odcnn' |
+| fwber | 1.1.0 | HEAD | '28996e3f5' | '2026-03-05' | 'chore: save progress before update' |
 | bobsaver | N/A | main | '98728d9' | '2026-03-11' | 'chore: save progress before update' |
-| borg | 0.9.0-beta | main | '89ead5f4' | '2026-03-12' | 'chore: save local before merge' |
+| borg | 2.7.133 | main | 'acc08816' | '2026-03-14' | 'feat(cloud-dev): session chat history, logs pane,... |
 | raindropioapp | 1.0.4 | master | 'c9770a71' | '2026-03-05' | 'Merge remote-tracking branch 'upstream/master'' |
 | bobcoin | N/A | main | '6282695' | '2026-03-11' | 'chore: save progress before update' |
 | sm64coopdx | N/A | main | 'df492542e' | '2026-02-27' | 'chore: save progress before update' |

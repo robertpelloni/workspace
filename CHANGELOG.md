@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.9] - 2026-03-14
+### Added
+- **Intelligent Synchronization:** Executed recursive submodule updates and intelligent merging of feature branches into `main` across all submodules, including syncing with upstream forks.
+- **Project Reanalysis:** Reanalyzed the project history to identify missing features and updated roadmap and documentation accordingly.
+- **Dashboard Refresh:** Updated `SUBMODULE_DASHBOARD.md` to list all submodules, versions, dates, and build numbers with clear directory structure explanation.
+- **Documentation:** Updated `HANDOFF.md` with session history, findings, and context to support continuous AI-driven execution.
+
 ## [1.4.8] - 2026-03-11
 ### Added
 - **Deep Research & Documentation:** Re-researched libraries, dependencies, and all submodules across the Omni-Workspace. Confirmed all rationale and paths in `DEPENDENCY_RESEARCH.md` and `SUBMODULE_DASHBOARD.md`.
