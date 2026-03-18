@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2] - 2026-03-18
+### Added
+- **Re-Verification of Global Submodule Synchronization:** Reran `update_repos_v6.py` to ensure zero drift across all feature branches and upstream forks.
+- **Submodule Dashboard Refresh:** Regenerated `SUBMODULE_DASHBOARD.md` to ensure all latest submodule commits are perfectly mapped.
+- **Documentation Snapshot Updates:** Bumped version to 1.5.2 and updated `HANDOFF.md` with the latest operational state.
+- **Workspace Build & Redeploy:** Triggered redeployment of the full system.
+
 ## [1.5.1] - 2026-03-18
 ### Added
 - **Global Submodule Synchronization:** Executed `update_repos_v6.py` script to fetch, merge upstream, and auto-resolve feature branches into `main` across all submodules (including nested ones) within the Omni-Workspace. Preserved all AI-generated code features.
