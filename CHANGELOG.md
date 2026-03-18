@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.1] - 2026-03-18
+### Added
+- **Global Submodule Synchronization:** Executed `update_repos_v6.py` script to fetch, merge upstream, and auto-resolve feature branches into `main` across all submodules (including nested ones) within the Omni-Workspace. Preserved all AI-generated code features.
+- **Deep Dependency Research:** Re-analyzed all libraries, packages, and submodules, categorizing them into logical blocks in `DEPENDENCY_RESEARCH.md` and detailing the strategic reasoning behind top-level dependencies (`mem0ai`, `firecrawl-mcp`, `opencode-ai`).
+- **Dashboard Regeneration:** Generated a fresh `SUBMODULE_DASHBOARD.md` to map the topological structure and current branch/commit state of all nested sub-projects.
+- **Documentation & Snapshot Updates:** Refreshed `ROADMAP.md` and drafted a comprehensive `HANDOFF.md` detailing the state of the workspace and the newly added dependencies and modules.
+- **Version Bump:** Incremented workspace version to 1.5.1.
+
 ## [1.5.0] - 2026-03-17
 ### Added
 - **Global Synchronization:** Executed `update_repos_v6.py` and `sync_feature_branches_opposite.py` (via `update_repos_v6.py`) across the entire omni-workspace. Intelligently merged local feature branches into `main` and updated upstream forks to prevent drift and preserve AI-generated feature code.
