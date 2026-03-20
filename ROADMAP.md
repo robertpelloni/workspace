@@ -20,6 +20,8 @@
 *   **Submodule Mapping Hardening:** Repaired and fixed `.gitmodules` mappings across multi-level deep submodules.
 *   **Continuous Synchronization:** Performed latest sync using `update_repos_v6.py` to intelligently merge local feature branches across all repos, update submodules, and ensure feature branches and main remain completely identical. (Completed in v1.5.1)
 *   **Comprehensive Synchronization & Reanalysis:** Executed recursive submodule updates, bidirectional feature branch merging, upstream forks merging, and regenerated the project roadmap and submodule dashboards. (Completed in v1.5.1)
+*   **Submodule Expansion & Cleanup (v1.5.3):** Added 8 new submodules (`bobbybookmarks`, `neverball`, `picard`, `frontend-sdl-cpp`, `bobzzite`, `dupeguru`, `superpowers`, `OmniRoute`) and cleaned up deprecated modules (`claude-mem`, `mcpenetes`, `metamcp`, `jdk`). Documented all new additions in `DEPENDENCY_RESEARCH.md`.
+*   **Full Workspace Sync (v1.5.3):** Ran `safe_sync.py` across all 44 tracked submodules, merging feature branches, syncing upstream forks, and regenerating the dashboard.
 *   **Workspace Search API:** Implement a local vector or full-text search API that indexes all 100+ repos.
 *   **Cross-Submodule Dependency Graph:** Map which projects depend on others. (Mapped Build Systems in v1.3.7)
 *   **Synchronization Hardening:** Capturing upstream tags and release milestones globally. (Hardened in v1.3.7)

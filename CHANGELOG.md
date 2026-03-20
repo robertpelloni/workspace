@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.3] - 2026-03-20
+### Added
+- **Full Workspace Synchronization:** Executed `safe_sync.py` across all top-level submodules, fetching latest changes, merging local feature branches into default branches, syncing upstream forks, and pushing results.
+- **Dashboard Regeneration:** Ran `generate_submodule_dashboard.py` to refresh `SUBMODULE_DASHBOARD.md` with the latest commit hashes, branches, and version info for all 44 tracked submodules.
+- **New Submodule Documentation:** Updated `DEPENDENCY_RESEARCH.md` to document 8 newly added submodules: `bobbybookmarks`, `neverball`, `picard`, `frontend-sdl-cpp`, `bobzzite`, `dupeguru`, `superpowers`, and `OmniRoute`.
+- **Submodule Cleanup:** Confirmed removal of deprecated submodules (`claude-mem`, `mcpenetes`, `metamcp`, `jdk`) from `.gitmodules` and git index. Their functionality has been consolidated into `borg` and other active modules.
+- **Documentation & Snapshot Updates:** Bumped version to 1.5.3, refreshed `ROADMAP.md`, `DASHBOARD.md`, `HANDOFF.md`, and `DEPENDENCY_RESEARCH.md`.
+
 ## [1.5.2] - 2026-03-18
 ### Added
 - **Re-Verification of Global Submodule Synchronization:** Reran `update_repos_v6.py` to ensure zero drift across all feature branches and upstream forks.

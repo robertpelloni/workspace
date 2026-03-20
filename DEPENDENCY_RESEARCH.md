@@ -43,6 +43,16 @@ The `.gitmodules` file defines an extensive ecosystem encompassing over 40 disti
 ### E. Legacy / Modding Projects
 - **`sm64coopdx`**, **`mk64`**: Super Mario 64 Coop Deluxe and Mario Kart 64 decompilation/ports. Selected likely for ongoing modding, AI-driven refactoring experiments, or personal hobbyist development.
 - **`topaz-ffmpeg`**: A specialized fork of FFmpeg optimized by Topaz Labs for AI video upscaling and processing.
+- **`neverball`**: A fork of the open-source ball-rolling game (Neverball/Neverputt). Maintained for modding enhancements such as party-game mode integration and custom level tooling.
+- **`superpowers`**: An open-source, collaborative HTML5 game development environment. Included as a reference for browser-based game creation workflows.
+
+### F. Developer Tools & Utilities (New in v1.5.3)
+- **`bobbybookmarks`**: A bookmark management and organization tool, likely part of the "Bob ecosystem" suite providing unified personal productivity utilities.
+- **`picard`**: A fork of MusicBrainz Picard, the open-source music tagger. Selected for metadata enrichment of music libraries, complementing the rhythm game ecosystem and `bobtrax` audio tools.
+- **`frontend-sdl-cpp`**: An SDL2/C++ frontend template or framework. Provides a cross-platform rendering and input layer used as a reference or base for native desktop applications in the Bob ecosystem.
+- **`bobzzite`**: A custom gaming-focused Linux distribution project. Represents the vision of a turnkey gaming OS bundling Bob ecosystem tools, rhythm games, and emulators.
+- **`dupeguru`**: A fork of the open-source duplicate file finder. Integrated for workspace hygiene—detecting and cleaning redundant assets across the massive monorepo and its submodules.
+- **`OmniRoute`**: A routing/navigation library by Diego Souza. Integrated for network routing logic, potentially used in the AI orchestration layer for intelligent request routing between agents and services.
 
 ## 3. Architectural Synthesis
 The workspace is designed as a **self-healing, autonomous Omni-Workspace**. The dependencies (`mem0ai`, `task-master-ai`) and the deeply nested structure of `antigravity-autopilot` explicitly empower local AI models to traverse, synchronize, build, and deploy dozens of projects simultaneously. By nesting applications within a single `.gitmodules` hierarchy, the orchestration scripts (`intelligent_sync_all.py`, `generate_dashboard.py`) can treat the entire software portfolio as a single, easily manipulable state tree.

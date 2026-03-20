@@ -46,9 +46,6 @@
 [submodule "jules-autopilot"]
 	path = jules-autopilot
 	url = https://github.com/robertpelloni/jules-autopilot
-[submodule "Chamber.Law"]
-	path = Chamber.Law
-	url = https://github.com/mnmballa2323/Chamber.Law
 [submodule "bobmani/bobmania"]
 	path = bobmani/bobmania
 	url = https://github.com/robertpelloni/bobmania
@@ -76,9 +73,6 @@
 [submodule "mcp-superassistant"]
 	path = mcp-superassistant
 	url = https://github.com/robertpelloni/mcp-superassistant
-[submodule "mcpenetes"]
-	path = mcpenetes
-	url = https://github.com/robertpelloni/mcpenetes
 [submodule "bobmani/ffr-difficulty-model"]
 	path = bobmani/ffr-difficulty-model
 	url = https://github.com/robertpelloni/ffr-difficulty-model
@@ -100,21 +94,6 @@
 [submodule "bobmani/Simply-Love-SM5"]
 	path = bobmani/Simply-Love-SM5
 	url = https://github.com/robertpelloni/Simply-Love-SM5
-[submodule "antigravity-autopilot/AUTO-ALL-AntiGravity"]
-	path = antigravity-autopilot/AUTO-ALL-AntiGravity
-	url = https://github.com/robertpelloni/AUTO-ALL-AntiGravity
-[submodule "antigravity-autopilot/yoke-antigravity"]
-	path = antigravity-autopilot/yoke-antigravity
-	url = https://github.com/robertpelloni/yoke-antigravity
-[submodule "antigravity-autopilot/auto-accept-agent"]
-	path = antigravity-autopilot/auto-accept-agent
-	url = https://github.com/robertpelloni/auto-accept-agent
-[submodule "antigravity-autopilot/antigravity-auto-accept"]
-	path = antigravity-autopilot/antigravity-auto-accept
-	url = https://github.com/robertpelloni/antigravity-auto-accept
-[submodule "antigravity-jules-orchestration"]
-	path = antigravity-jules-orchestration
-	url = https://github.com/Scarmonit/antigravity-jules-orchestration
 [submodule "antigravity-autopilot"]
 	path = antigravity-autopilot
 	url = https://github.com/robertpelloni/antigravity-autopilot
@@ -130,9 +109,6 @@
 [submodule "bobdesk"]
 	path = bobdesk
 	url = https://github.com/robertpelloni/bobdesk
-[submodule "claude-mem"]
-	path = claude-mem
-	url = https://github.com/robertpelloni/claude-mem
 [submodule "bobbybookmarks"]
 	path = bobbybookmarks
 	url = https://github.com/robertpelloni/bobbybookmarks
