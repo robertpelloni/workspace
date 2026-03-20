@@ -38,6 +38,7 @@
 | [bobzzite](https://github.com/robertpelloni/bobzzite) | `bobzzite` | `fa1236f` | main | 🟢 Clean |
 | [borg](https://github.com/robertpelloni/borg) | `borg` | `fc4f8dcd` | main | ⚠️ Modified |
 | [dupeguru](https://github.com/robertpelloni/dupeguru) | `dupeguru` | `c0df9eb1` | master | 🟢 Clean |
+| [metamcp](https://github.com/robertpelloni/metamcp) | `metamcp` | — | — | ❌ Directory Missing |
 | [frontend-sdl-cpp](https://github.com/robertpelloni/frontend-sdl-cpp) | `frontend-sdl-cpp` | `bc3c0ae` | master | 🟢 Clean |
 | [fwber](https://github.com/robertpelloni/fwber) | `fwber` | `a455ea749` | main | 🟢 Clean |
 | [jules-autopilot](https://github.com/robertpelloni/jules-autopilot) | `jules-autopilot` | `4983468` | main | ⚠️ Modified |

@@ -14,7 +14,7 @@
 - **Root Version**: 1.5.3
 - **Total Tracked Submodules**: 44 (in `.gitmodules`)
 - **Submodules**: Synchronized via `safe_sync.py`. Feature branches merged into default branches. Upstream forks pulled where configured.
-- **Removed Submodules**: `claude-mem`, `mcpenetes`, `metamcp`, `jdk` (consolidated or deprecated)
+- **Removed Submodules**: `jdk` (staged removal from index). `claude-mem` and `mcpenetes` removed from `.gitmodules` (unstaged). `metamcp` directory deleted but `.gitmodules` entry remains pending cleanup.
 - **New Submodules (since v1.5.2)**: `bobbybookmarks`, `neverball`, `picard`, `frontend-sdl-cpp`, `bobzzite`, `dupeguru`, `superpowers`, `OmniRoute`
 
 ## Key Observations
