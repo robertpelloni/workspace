@@ -67,9 +67,6 @@
 [submodule "bobmani/pianogame"]
 	path = bobmani/pianogame
 	url = https://github.com/robertpelloni/pianogame
-[submodule "metamcp"]
-	path = metamcp
-	url = https://github.com/robertpelloni/metamcp
 [submodule "mcp-superassistant"]
 	path = mcp-superassistant
 	url = https://github.com/robertpelloni/mcp-superassistant
@@ -108,7 +105,7 @@
 	url = https://github.com/robertpelloni/bobtrax
 [submodule "bobdesk"]
 	path = bobdesk
-	url = https://github.com/robertpelloni/bobdesk
+	url = https://github.com/robertpelloni/bobtrax
 [submodule "bobbybookmarks"]
 	path = bobbybookmarks
 	url = https://github.com/robertpelloni/bobbybookmarks
@@ -133,3 +130,6 @@
 [submodule "OmniRoute"]
 	path = OmniRoute
 	url = https://github.com/diegosouzapw/OmniRoute
+[submodule "Maestro"]
+	path = Maestro
+	url = https://github.com/RunMaestro/Maestro
