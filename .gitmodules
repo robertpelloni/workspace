@@ -105,7 +105,7 @@
 	url = https://github.com/robertpelloni/bobtrax
 [submodule "bobdesk"]
 	path = bobdesk
-	url = https://github.com/robertpelloni/bobtrax
+	url = https://github.com/robertpelloni/bobdesk
 [submodule "bobbybookmarks"]
 	path = bobbybookmarks
 	url = https://github.com/robertpelloni/bobbybookmarks
@@ -133,3 +133,18 @@
 [submodule "Maestro"]
 	path = Maestro
 	url = https://github.com/RunMaestro/Maestro
+[submodule "f-zerox"]
+	path = f-zerox
+	url = https://github.com/robertpelloni/f-zerox
+[submodule "MarbleBlast"]
+	path = MarbleBlast
+	url = https://github.com/robertpelloni/MarbleBlast
+[submodule "npp"]
+	path = npp
+	url = https://github.com/robertpelloni/npp
+[submodule "OpenMBU"]
+	path = OpenMBU
+	url = https://github.com/robertpelloni/OpenMBU
+[submodule "supersaber"]
+	path = supersaber
+	url = https://github.com/robertpelloni/supersaber
