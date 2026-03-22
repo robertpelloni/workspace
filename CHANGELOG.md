@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.4] - 2026-03-21
+### Added
+- **Global Synchronization:** Executed global update (`update_repos_v6.py`), intelligently merging local feature branches into main across all submodules while preventing data loss, and synchronized with upstream forks.
+- **Deep Dashboard and Dependency Sync:** Regenerated `SUBMODULE_DASHBOARD.md` mapping the exact layout, directories, and current states of all 44+ submodules within the workspace.
+- **Comprehensive Dependency Documentation:** Reanalyzed the massive ecosystem of libraries and submodules to ensure `DEPENDENCY_RESEARCH.md` explains the selection and role of all tools and features.
+- **Continuous Documentation:** Incremented the project version to 1.5.4, updated the `CHANGELOG.md`, `ROADMAP.md`, and recorded all session updates in `HANDOFF.md`.
+- **Workspace Verification & Deployment:** Processed all commits across submodules to ensure a perfectly clean working tree and initiated redeployment.
+
 ## [1.5.3] - 2026-03-20
 ### Added
 - **Full Workspace Synchronization:** Executed `safe_sync.py` across all top-level submodules, fetching latest changes, merging local feature branches into default branches, syncing upstream forks, and pushing results.
