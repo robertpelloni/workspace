@@ -10,7 +10,16 @@ def run_cmd(cmd, cwd=None):
     except:
         return ""
 
-def get_submodule_info():
+def get_ai_stats():
+    if os.path.exists("AI_CONTRIBUTION_REPORT.json"):
+        try:
+            with open("AI_CONTRIBUTION_REPORT.json", "r") as f:
+                return json.load(f)
+        except:
+            return None
+    return None
+
+def get_submodule_info(ai_report):
     print("[*] Gathering high-resolution submodule data...")
     submodules = []
     
@@ -59,6 +68,15 @@ def get_submodule_info():
         commit_msg = run_cmd("git log -1 --format=%s", cwd=full_path)
         if len(commit_msg) > 40: commit_msg = commit_msg[:37] + "..."
 
+        # 4. AI Contribution
+        ai_pct = "0.0%"
+        if ai_report and "by_submodule" in ai_report:
+            sub_ai = ai_report["by_submodule"].get(name)
+            if sub_ai:
+                total = sub_ai["ai_commits"] + sub_ai["human_commits"]
+                if total > 0:
+                    ai_pct = f"{(sub_ai['ai_commits'] / total * 100):.1f}%"
+
         submodules.append({
             "name": name,
             "path": path,
@@ -66,12 +84,13 @@ def get_submodule_info():
             "status": status,
             "commit": commit_hash,
             "date": commit_date,
-            "message": commit_msg
+            "message": commit_msg,
+            "ai_pct": ai_pct
         })
     
     return submodules
 
-def generate_dashboard(submodules):
+def generate_dashboard(submodules, ai_report):
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     md = f"""# Omni-Workspace Advanced Dashboard
@@ -87,20 +106,34 @@ The workspace is organized into several functional clusters:
 - **`bobsaver/`**: Visualizer ecosystem (MilkDrop, JWildfire, projectM).
 - **`docs/`**: Unified project requirements, design, and research documentation.
 - **`scripts/`**: Automation, synchronization, and maintenance utilities.
+"""
 
+    if ai_report:
+        s = ai_report["summary"]
+        total_commits = s["ai_commits"] + s["human_commits"]
+        ai_commit_pct = (s["ai_commits"] / total_commits * 100) if total_commits > 0 else 0
+        md += f"""
+## AI Contribution Summary
+- **AI-Generated Commits:** {s['ai_commits']} ({ai_commit_pct:.1f}% of total)
+- **AI-Added Lines:** {s['ai_additions']:,}
+- **AI-Deleted Lines:** {s['ai_deletions']:,}
+"""
+
+    md += f"""
 ## Submodule Inventory ({len(submodules)} total)
 
-| Submodule | Version | Status | Path | Commit | Date | Latest Change |
+| Submodule | Version | Status | AI% | Commit | Date | Latest Change |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 """
     
     for s in sorted(submodules, key=lambda x: x['name'].lower()):
-        md += f"| **{s['name']}** | `{s['version']}` | {s['status']} | `{s['path']}` | `{s['commit']}` | {s['date']} | {s['message']} |\n"
+        md += f"| **{s['name']}** | `{s['version']}` | {s['status']} | {s['ai_pct']} | `{s['commit']}` | {s['date']} | {s['message']} |\n"
 
     with open("SUBMODULE_DASHBOARD.md", "w", encoding="utf-8") as f:
         f.write(md)
-    print("[OK] Advanced dashboard generated.")
+    print("[OK] Advanced dashboard generated with AI metrics.")
 
 if __name__ == "__main__":
-    subs = get_submodule_info()
-    generate_dashboard(subs)
+    ai_report = get_ai_stats()
+    subs = get_submodule_info(ai_report)
+    generate_dashboard(subs, ai_report)
