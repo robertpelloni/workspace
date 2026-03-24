@@ -84,16 +84,6 @@
         "build_system": "node",
         "is_git_repo": true
     },
-    "Chamber.Law": {
-        "path": "Chamber.Law",
-        "build_system": "node",
-        "is_git_repo": true
-    },
-    "rental.home": {
-        "path": "rental.home",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
     "bobmani/bobmania": {
         "path": "bobmani/bobmania",
         "build_system": "Unknown",
@@ -129,29 +119,9 @@
         "build_system": "Unknown",
         "is_git_repo": true
     },
-    "Azure.Cybersecurity": {
-        "path": "Azure.Cybersecurity",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "claude-mem": {
-        "path": "claude-mem",
-        "build_system": "node",
-        "is_git_repo": true
-    },
-    "metamcp": {
-        "path": "metamcp",
-        "build_system": "node",
-        "is_git_repo": true
-    },
     "mcp-superassistant": {
         "path": "mcp-superassistant",
         "build_system": "node",
-        "is_git_repo": true
-    },
-    "mcpenetes": {
-        "path": "mcpenetes",
-        "build_system": "go, make",
         "is_git_repo": true
     },
     "bobmani/ffr-difficulty-model": {
@@ -224,41 +194,6 @@
         "build_system": "Unknown",
         "is_git_repo": true
     },
-    "Alti.Assistant": {
-        "path": "Alti.Assistant",
-        "build_system": "node, make",
-        "is_git_repo": true
-    },
-    "Alti.Code.Studio": {
-        "path": "Alti.Code.Studio",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "Merk.Mobile": {
-        "path": "Merk.Mobile",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "Stone.Ledger": {
-        "path": "Stone.Ledger",
-        "build_system": "node",
-        "is_git_repo": true
-    },
-    "Tickerstone": {
-        "path": "Tickerstone",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "coin.project": {
-        "path": "coin.project",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "cointrade": {
-        "path": "cointrade",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
     ".agent": {
         "path": ".agent",
         "build_system": "node",
@@ -267,51 +202,6 @@
     "bobtrax": {
         "path": "bobtrax",
         "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "clear.ledger": {
-        "path": "clear.ledger",
-        "build_system": "node",
-        "is_git_repo": true
-    },
-    "qwen.project": {
-        "path": "qwen.project",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "redprints": {
-        "path": "redprints",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "qwen.project.backend": {
-        "path": "qwen.project.backend",
-        "build_system": "Unknown",
-        "is_git_repo": true
-    },
-    "qwen.project.frontend": {
-        "path": "qwen.project.frontend",
-        "build_system": "node",
-        "is_git_repo": true
-    },
-    "Calling-AI-Agent-Backend": {
-        "path": "Calling-AI-Agent-Backend",
-        "build_system": "python",
-        "is_git_repo": true
-    },
-    "Snaype": {
-        "path": "Snaype",
-        "build_system": "node",
-        "is_git_repo": true
-    },
-    "vault.bfsi": {
-        "path": "vault.bfsi",
-        "build_system": "node",
-        "is_git_repo": true
-    },
-    "audit.layer": {
-        "path": "audit.layer",
-        "build_system": "make",
         "is_git_repo": true
     }
 }

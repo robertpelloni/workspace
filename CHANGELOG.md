@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.6.1] - 2026-03-23
+### Changed
+- **Maestro Remote Migration:** Completely updated the `Maestro` submodule remote to `https://github.com/robertpelloni/Maestro`, replacing the previous `RunMaestro` source and synchronizing all local configurations.
+### Fixed
+- **Submodule Stabilization Pass:** Resolved widespread checkout conflicts and "no submodule mapping found" errors across the entire workspace through a multi-pass recursive pruning and stashing strategy. 
+- **Recursive Sync Unblocking:** Identified and bypassed broken revisions in deep-nested submodules (like `SteamworksSDK`, `brotli`, `desmume`, and `libretro-database`) to allow the core workspace to reach a synchronized state.
+- **Top-Level Consolidation:** Standardized all root-level submodules, ensuring projects like `antigravity-autopilot`, `bobcoin`, and `bobmani` are correctly checked out and healthy.
+
+## [1.6.0] - 2026-03-23
+### Added
+- **Workspace-Wide Search Indexer**: Implemented `scripts/workspace_indexer.py` using SQLite FTS5 for native, dependency-free full-text search across all submodules. Paired with `scripts/search_workspace.py`.
+- **Legacy Modernization Pass**: Created a modern `CMakeLists.txt` for the `f-zerox` port to provide modern IDE compatibility and better tooling support.
+- **Unified Integration Testing**: Added a root-level `pytest` integration test suite (`tests/test_workspace.py`) to validate cross-project dependencies and critical submodule health.
+
+## [1.5.5] - 2026-03-21
+### Added
+- **Submodule Discovery and Addition:** Scraped the `robertpelloni` GitHub profile to cross-reference repositories against the local workspace, identifying missing projects. Cloned and integrated `f-zerox`, `MarbleBlast`, `npp`, `OpenMBU`, and `supersaber` into the root `.gitmodules`.
+- **Submodule Mapping Fixes:** Updated `bobsaver` to properly point to `robertpelloni` forks (`JWildfire`, `apophysis-j`, `electricsheep`, `geiss`, `MilkDrop3`, `projectm`, `BeatDrop`). Fixed root `.gitmodules` mispointing for `bobdesk`.
+- **Continuous Documentation:** Regenerated the `SUBMODULE_DASHBOARD.md` to reflect all newly added submodules, updated the `CHANGELOG.md`, `ROADMAP.md`, `VERSION`, and prepared `HANDOFF.md`.
+- **Preserved Binaries:** Reconfigured build instructions to preserve compiled binaries and cached assets, improving build pipeline performance.
+
 ## [1.5.4] - 2026-03-21
 ### Added
 - **Global Synchronization:** Executed global update (`update_repos_v6.py`), intelligently merging local feature branches into main across all submodules while preventing data loss, and synchronized with upstream forks.

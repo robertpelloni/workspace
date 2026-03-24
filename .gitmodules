@@ -132,7 +132,7 @@
 	url = https://github.com/diegosouzapw/OmniRoute
 [submodule "Maestro"]
 	path = Maestro
-	url = https://github.com/RunMaestro/Maestro
+	url = https://github.com/robertpelloni/Maestro
 [submodule "f-zerox"]
 	path = f-zerox
 	url = https://github.com/robertpelloni/f-zerox

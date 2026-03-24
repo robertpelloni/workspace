@@ -35,18 +35,20 @@ The `.gitmodules` file defines an extensive ecosystem encompassing over 40 disti
 
 ### D. Finance, Real Estate & Enterprise (`mnmballa2323` and `alticompany`)
 - **`Chamber.Law`**: A law/legal tech full-stack app featuring automated form requests and democking tools.
-- **`rental.home`**: Real estate management platform.
 - **`cointrade`**, **`coin.project`**, **`Tickerstone`**, **`Stone.Ledger`**, **`clear.ledger`**: A robust autonomous cryptocurrency trading ecosystem. `cointrade` handles the bot logic, while the `ledger` modules manage local cryptographic wallets and TOTP security.
 - **`vault.bfsi`**, **`audit.layer`**, **`Azure.Cybersecurity`**: Enterprise-grade security, logging, and financial service tools ensuring compliance and threat mitigation across the network.
 - **`Alti.Assistant`**, **`Alti.Code.Studio`**, **`Merk.Mobile`**, **`Calling-AI-Agent-Backend`**: Corporate-level AI assistants and mobile clients developed for "Alti" / "Merk".
 
 ### E. Legacy / Modding Projects
 - **`sm64coopdx`**, **`mk64`**: Super Mario 64 Coop Deluxe and Mario Kart 64 decompilation/ports. Selected likely for ongoing modding, AI-driven refactoring experiments, or personal hobbyist development.
+- **`f-zerox`**, **`MarbleBlast`**, **`OpenMBU`**: Open-source ports, decompilations, or engine reimplementations of classic games (F-Zero X, Marble Blast Gold, Marble Blast Ultra).
 - **`topaz-ffmpeg`**: A specialized fork of FFmpeg optimized by Topaz Labs for AI video upscaling and processing.
 - **`neverball`**: A fork of the open-source ball-rolling game (Neverball/Neverputt). Maintained for modding enhancements such as party-game mode integration and custom level tooling.
+- **`supersaber`**: A Beat Saber open-source clone. Expands the rhythm gaming footprint into VR/3D rhythm gameplay.
 - **`superpowers`**: An open-source, collaborative HTML5 game development environment. Included as a reference for browser-based game creation workflows.
 
-### F. Developer Tools & Utilities (New in v1.5.3)
+### F. Developer Tools & Utilities (New in v1.5.3 - v1.5.5)
+- **`npp`**: A fork of Notepad++. Integrated for text editor modding or utilizing it as a base for AI-driven code editor extensions within the Bob ecosystem.
 - **`bobbybookmarks`**: A bookmark management and organization tool, likely part of the "Bob ecosystem" suite providing unified personal productivity utilities.
 - **`picard`**: A fork of MusicBrainz Picard, the open-source music tagger. Selected for metadata enrichment of music libraries, complementing the rhythm game ecosystem and `bobtrax` audio tools.
 - **`frontend-sdl-cpp`**: An SDL2/C++ frontend template or framework. Provides a cross-platform rendering and input layer used as a reference or base for native desktop applications in the Bob ecosystem.

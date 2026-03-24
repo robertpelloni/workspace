@@ -1,0 +1,420 @@
+{
+    "summary": {
+        "ai_commits": 2589,
+        "human_commits": 705939,
+        "ai_additions": 24141322,
+        "human_additions": 173998501,
+        "ai_deletions": 22534144,
+        "human_deletions": 128624985
+    },
+    "by_submodule": {
+        "ROOT": {
+            "ai_commits": 313,
+            "human_commits": 35,
+            "ai_additions": 22997182,
+            "human_additions": 15750363,
+            "ai_deletions": 21721349,
+            "human_deletions": 15358080
+        },
+        "bobfilez": {
+            "ai_commits": 30,
+            "human_commits": 208,
+            "ai_additions": 13035,
+            "human_additions": 10939689,
+            "ai_deletions": 23812,
+            "human_deletions": 10819621
+        },
+        "fwber": {
+            "ai_commits": 158,
+            "human_commits": 1577,
+            "ai_additions": 227700,
+            "human_additions": 5207288,
+            "ai_deletions": 65620,
+            "human_deletions": 4125700
+        },
+        "bobsaver": {
+            "ai_commits": 0,
+            "human_commits": 19,
+            "ai_additions": 0,
+            "human_additions": 170,
+            "ai_deletions": 0,
+            "human_deletions": 65
+        },
+        "borg": {
+            "ai_commits": 234,
+            "human_commits": 984,
+            "ai_additions": 131812,
+            "human_additions": 7530734,
+            "ai_deletions": 45456,
+            "human_deletions": 6925042
+        },
+        "raindropioapp": {
+            "ai_commits": 131,
+            "human_commits": 1311,
+            "ai_additions": 78393,
+            "human_additions": 214821,
+            "ai_deletions": 16475,
+            "human_deletions": 148454
+        },
+        "bobcoin": {
+            "ai_commits": 16,
+            "human_commits": 65,
+            "ai_additions": 23458,
+            "human_additions": 348586,
+            "ai_deletions": 5602,
+            "human_deletions": 91056
+        },
+        "sm64coopdx": {
+            "ai_commits": 40,
+            "human_commits": 4622,
+            "ai_additions": 6085,
+            "human_additions": 2802025,
+            "ai_deletions": 966,
+            "human_deletions": 1880426
+        },
+        "topaz-ffmpeg": {
+            "ai_commits": 0,
+            "human_commits": 2,
+            "ai_additions": 0,
+            "human_additions": 2124729,
+            "ai_deletions": 0,
+            "human_deletions": 0
+        },
+        "mk64": {
+            "ai_commits": 0,
+            "human_commits": 22,
+            "ai_additions": 0,
+            "human_additions": 537521,
+            "ai_deletions": 0,
+            "human_deletions": 107
+        },
+        "bobeditpro": {
+            "ai_commits": 23,
+            "human_commits": 318,
+            "ai_additions": 2114,
+            "human_additions": 3257042,
+            "ai_deletions": 402,
+            "human_deletions": 443747
+        },
+        "bobtrader": {
+            "ai_commits": 1,
+            "human_commits": 58,
+            "ai_additions": 7496,
+            "human_additions": 38068,
+            "ai_deletions": 7532,
+            "human_deletions": 4310
+        },
+        "bobtorrent": {
+            "ai_commits": 231,
+            "human_commits": 1003,
+            "ai_additions": 23663,
+            "human_additions": 103403,
+            "ai_deletions": 9299,
+            "human_deletions": 37314
+        },
+        "bobui": {
+            "ai_commits": 25,
+            "human_commits": 75693,
+            "ai_additions": 3048,
+            "human_additions": 19771587,
+            "ai_deletions": 232,
+            "human_deletions": 10484729
+        },
+        "bobium": {
+            "ai_commits": 0,
+            "human_commits": 3,
+            "ai_additions": 0,
+            "human_additions": 598,
+            "ai_deletions": 0,
+            "human_deletions": 17
+        },
+        "bobzilla": {
+            "ai_commits": 0,
+            "human_commits": 4,
+            "ai_additions": 0,
+            "human_additions": 1267,
+            "ai_deletions": 0,
+            "human_deletions": 17
+        },
+        "jules-autopilot": {
+            "ai_commits": 125,
+            "human_commits": 442,
+            "ai_additions": 84362,
+            "human_additions": 127872,
+            "ai_deletions": 29640,
+            "human_deletions": 94293
+        },
+        "bobmani/bobmania": {
+            "ai_commits": 86,
+            "human_commits": 36793,
+            "ai_additions": 33452,
+            "human_additions": 10630616,
+            "ai_deletions": 15676,
+            "human_deletions": 8969955
+        },
+        "bobmani/itgmania": {
+            "ai_commits": 8,
+            "human_commits": 36252,
+            "ai_additions": 14910,
+            "human_additions": 8742475,
+            "ai_deletions": 99,
+            "human_deletions": 7670043
+        },
+        "bobmani/beatoraja": {
+            "ai_commits": 49,
+            "human_commits": 2594,
+            "ai_additions": 8448,
+            "human_additions": 385131,
+            "ai_deletions": 1629,
+            "human_deletions": 136163
+        },
+        "bobmani/hymnmania": {
+            "ai_commits": 11,
+            "human_commits": 3,
+            "ai_additions": 1616,
+            "human_additions": 71,
+            "ai_deletions": 185,
+            "human_deletions": 17
+        },
+        "bobmani/ksm-v2": {
+            "ai_commits": 19,
+            "human_commits": 932,
+            "ai_additions": 11875,
+            "human_additions": 358641,
+            "ai_deletions": 9135,
+            "human_deletions": 183466
+        },
+        "bobmani/linthesia": {
+            "ai_commits": 4,
+            "human_commits": 215,
+            "ai_additions": 1107,
+            "human_additions": 63878,
+            "ai_deletions": 155,
+            "human_deletions": 50252
+        },
+        "bobmani/pianogame": {
+            "ai_commits": 0,
+            "human_commits": 144,
+            "ai_additions": 0,
+            "human_additions": 36507,
+            "ai_deletions": 0,
+            "human_deletions": 18760
+        },
+        "mcp-superassistant": {
+            "ai_commits": 21,
+            "human_commits": 199,
+            "ai_additions": 19336,
+            "human_additions": 127793,
+            "ai_deletions": 12438,
+            "human_deletions": 38163
+        },
+        "bobmani/ffr-difficulty-model": {
+            "ai_commits": 15,
+            "human_commits": 5,
+            "ai_additions": 6535,
+            "human_additions": 1610,
+            "ai_deletions": 1684,
+            "human_deletions": 292
+        },
+        "bobmani/leraine-studio": {
+            "ai_commits": 43,
+            "human_commits": 126,
+            "ai_additions": 68780,
+            "human_additions": 53051,
+            "ai_deletions": 5361,
+            "human_deletions": 25500
+        },
+        "bobmani/ddc": {
+            "ai_commits": 152,
+            "human_commits": 66,
+            "ai_additions": 9897,
+            "human_additions": 28672,
+            "ai_deletions": 1872,
+            "human_deletions": 8291
+        },
+        "bobmani/arrowvortex": {
+            "ai_commits": 119,
+            "human_commits": 350,
+            "ai_additions": 126193,
+            "human_additions": 589262,
+            "ai_deletions": 25191,
+            "human_deletions": 1609394
+        },
+        "opencode-autopilot": {
+            "ai_commits": 20,
+            "human_commits": 73,
+            "ai_additions": 19138,
+            "human_additions": 634023,
+            "ai_deletions": 513663,
+            "human_deletions": 43220
+        },
+        "bobmani/ddc_onset": {
+            "ai_commits": 0,
+            "human_commits": 18,
+            "ai_additions": 0,
+            "human_additions": 938,
+            "ai_deletions": 0,
+            "human_deletions": 152
+        },
+        "bobmani/Simply-Love-SM5": {
+            "ai_commits": 2,
+            "human_commits": 2893,
+            "ai_additions": 172,
+            "human_additions": 207182,
+            "ai_deletions": 9,
+            "human_deletions": 140213
+        },
+        "antigravity-autopilot": {
+            "ai_commits": 1,
+            "human_commits": 658,
+            "ai_additions": 16,
+            "human_additions": 118994,
+            "ai_deletions": 21,
+            "human_deletions": 83490
+        },
+        "bg": {
+            "ai_commits": 0,
+            "human_commits": 51,
+            "ai_additions": 0,
+            "human_additions": 12969766,
+            "ai_deletions": 0,
+            "human_deletions": 12825019
+        },
+        ".agent": {
+            "ai_commits": 229,
+            "human_commits": 824,
+            "ai_additions": 10876,
+            "human_additions": 2372979,
+            "ai_deletions": 2110,
+            "human_deletions": 1337498
+        },
+        "bobtrax": {
+            "ai_commits": 0,
+            "human_commits": 11,
+            "ai_additions": 0,
+            "human_additions": 142,
+            "ai_deletions": 0,
+            "human_deletions": 32
+        },
+        "bobdesk": {
+            "ai_commits": 107,
+            "human_commits": 505936,
+            "ai_additions": 4898,
+            "human_additions": 47992062,
+            "ai_deletions": 4940,
+            "human_deletions": 34729973
+        },
+        "bobbybookmarks": {
+            "ai_commits": 3,
+            "human_commits": 15,
+            "ai_additions": 3942,
+            "human_additions": 234985,
+            "ai_deletions": 802,
+            "human_deletions": 15930
+        },
+        "neverball": {
+            "ai_commits": 178,
+            "human_commits": 3848,
+            "ai_additions": 23941,
+            "human_additions": 5333402,
+            "ai_deletions": 6062,
+            "human_deletions": 3023677
+        },
+        "picard": {
+            "ai_commits": 90,
+            "human_commits": 12379,
+            "ai_additions": 5101,
+            "human_additions": 5702340,
+            "ai_deletions": 1628,
+            "human_deletions": 4188688
+        },
+        "frontend-sdl-cpp": {
+            "ai_commits": 0,
+            "human_commits": 130,
+            "ai_additions": 0,
+            "human_additions": 11592,
+            "ai_deletions": 0,
+            "human_deletions": 11560
+        },
+        "bobzzite": {
+            "ai_commits": 0,
+            "human_commits": 1,
+            "ai_additions": 0,
+            "human_additions": 614,
+            "ai_deletions": 0,
+            "human_deletions": 0
+        },
+        "dupeguru": {
+            "ai_commits": 0,
+            "human_commits": 1974,
+            "ai_additions": 0,
+            "human_additions": 351990,
+            "ai_deletions": 0,
+            "human_deletions": 286764
+        },
+        "superpowers": {
+            "ai_commits": 2,
+            "human_commits": 205,
+            "ai_additions": 86,
+            "human_additions": 33754,
+            "ai_deletions": 45,
+            "human_deletions": 17952
+        },
+        "OmniRoute": {
+            "ai_commits": 31,
+            "human_commits": 646,
+            "ai_additions": 2052,
+            "human_additions": 522022,
+            "ai_deletions": 1982,
+            "human_deletions": 82826
+        },
+        "Maestro": {
+            "ai_commits": 23,
+            "human_commits": 3138,
+            "ai_additions": 2946,
+            "human_additions": 1653572,
+            "ai_deletions": 2446,
+            "human_deletions": 733226
+        },
+        "f-zerox": {
+            "ai_commits": 45,
+            "human_commits": 48,
+            "ai_additions": 166215,
+            "human_additions": 18870,
+            "ai_deletions": 605,
+            "human_deletions": 1923
+        },
+        "MarbleBlast": {
+            "ai_commits": 0,
+            "human_commits": 527,
+            "ai_additions": 0,
+            "human_additions": 650518,
+            "ai_deletions": 0,
+            "human_deletions": 135314
+        },
+        "npp": {
+            "ai_commits": 4,
+            "human_commits": 6675,
+            "ai_additions": 1442,
+            "human_additions": 2051537,
+            "ai_deletions": 21,
+            "human_deletions": 1109759
+        },
+        "OpenMBU": {
+            "ai_commits": 0,
+            "human_commits": 1082,
+            "ai_additions": 0,
+            "human_additions": 3033570,
+            "ai_deletions": 0,
+            "human_deletions": 513044
+        },
+        "supersaber": {
+            "ai_commits": 0,
+            "human_commits": 762,
+            "ai_additions": 0,
+            "human_additions": 330179,
+            "ai_deletions": 0,
+            "human_deletions": 221451
+        }
+    }
+}

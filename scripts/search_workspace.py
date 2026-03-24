@@ -12,15 +12,15 @@ def search(query):
     cursor = conn.cursor()
     
     try:
-        # FTS5 syntax allows matching prefixes with *
-        # We can just do a basic match
+        # Wrap query in quotes to handle special characters for FTS5
+        formatted_query = f'"{query}"'
         cursor.execute('''
             SELECT path, snippet(files_fts, -1, '\x1b[31;1m', '\x1b[0m', '...', 10) 
             FROM files_fts 
             WHERE files_fts MATCH ? 
             ORDER BY rank 
             LIMIT 20
-        ''', (query,))
+        ''', (formatted_query,))
         
         results = cursor.fetchall()
         if not results:

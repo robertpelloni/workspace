@@ -28,10 +28,10 @@ This document catalogs the current layout of Robert Pelloni’s monorepo, coveri
 │  └─ leraine-studio/
 ├─ bob ecosystem: bobcoin/, bobeditpro/, bobfilez/, bobium/, bobsaver/, bobtorrent/, bobtrader/, bobui/, bobzilla/
 ├─ rhythm and game engines: bg/, mk64/, sm64coopdx/, superbobbyball/
-├─ web applications: fwber/, raindropioapp/, rental.home/
+├─ web applications: fwber/, raindropioapp/
 ├─ external/collaborative: Alti.Assistant/, Alti.Code.Studio/, Azure.Cybersecurity/, Chamber.Law/, Merk.Mobile/, Stone.Ledger/, Tickerstone/, coin.project/, cointrade/
 ├─ developer tools: brobocallz/, makemoney/, musicbrainz-soulseek-downloader/, topaz-ffmpeg/
-├─ infrastructure: mk64/, cointrade/, bobmani/ (shared), rental.home/
+├─ infrastructure: mk64/, cointrade/, bobmani/ (shared)
 ├─ config roots: VERSION, CHANGELOG.md, ROADMAP.md, VISION.md, BOB_ECOSYSTEM.md, AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md,
 │  package.json, pyproject.toml, playwright.config.ts, codebuff.json, workspace.code-workspace, .gitmodules, .github/copilot-instructions.md
 └─ miscellaneous: undefined/
