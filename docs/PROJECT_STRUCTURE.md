@@ -30,7 +30,8 @@ This document catalogs the current layout of Robert Pelloni’s monorepo, coveri
 ├─ rhythm and game engines: bg/, mk64/, sm64coopdx/, superbobbyball/
 ├─ web applications: fwber/, raindropioapp/
 ├─ external/collaborative: Alti.Assistant/, Alti.Code.Studio/, Azure.Cybersecurity/, Chamber.Law/, Merk.Mobile/, Stone.Ledger/, Tickerstone/, coin.project/, cointrade/
-├─ developer tools: brobocallz/, makemoney/, musicbrainz-soulseek-downloader/, topaz-ffmpeg/
+├─ developer tools: musicbrainz-soulseek-downloader/, topaz-ffmpeg/
+├─ research & experiments: research/ (brobocallz, context_portal, makemoney, workspace-orchestrator)
 ├─ infrastructure: mk64/, cointrade/, bobmani/ (shared)
 ├─ config roots: VERSION, CHANGELOG.md, ROADMAP.md, VISION.md, BOB_ECOSYSTEM.md, AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md,
 │  package.json, pyproject.toml, playwright.config.ts, codebuff.json, workspace.code-workspace, .gitmodules, .github/copilot-instructions.md
@@ -95,10 +96,16 @@ This document catalogs the current layout of Robert Pelloni’s monorepo, coveri
 ## Developer Tools
 | Path | Description | Stack / Language | Status |
 | --- | --- | --- | --- |
-| `brobocallz/` | Communication tool for distributed teams. | Node.js? (local) | Research |
-| `makemoney/` | Financial experimentation workspace. | Python + JS mix | Research |
 | `musicbrainz-soulseek-downloader/` | Music metadata enrichment + download helper. | Python | Maintenance |
 | `topaz-ffmpeg/` | Topaz Video AI + FFmpeg integration for enhancements. | FFmpeg, Topaz SDK | Tooling |
+
+## Research & Experiments (research/)
+| Path | Description | Stack / Language | Status |
+| --- | --- | --- | --- |
+| `brobocallz/` | Communication tool for distributed teams. | Node.js? (local) | Research |
+| `makemoney/` | Financial experimentation workspace. | Python + JS mix | Research |
+| `context_portal/` | Context management and persistent storage research. | Python, SQLite | Research |
+| `workspace-orchestrator/` | Client-server orchestration prototype. | Node.js, Next.js | Research |
 
 ## External/Collaborative (mnmballa2323)
 | Path | Description | Stack / Language | Status |

@@ -34,4 +34,5 @@
 ## Recommended Next Steps for the Next Model
 - **Build Pass:** Monitor the ongoing `build_all.py` (processing thousands of sub-targets in `bobui` and `bg`).
 - **Submodule Consolidation:** Review and merge AI-created feature branches (e.g., `bobbybookmarks/feature/reorg-and-integrate`) now that the workspace structure is stable.
+- **Upstream Sync:** Now that `topaz-ffmpeg` has a common ancestor (`e1094ac45d`), attempt a merge of `upstream/master` into `topaz/develop`.
 - **Root Cleanup:** Finalize the removal of untracked "ghost" directories if they are confirmed legacy.
