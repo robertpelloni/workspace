@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.6.3] - 2026-03-25
+### Added
+- **Universal LLM Instructions**: Created `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` as the unified source of truth for all AI agents.
+- **Recursive Submodule Sync Script**: New `scripts/sync_all_submodules.py` for automated intelligent merging of feature branches.
+- **Conflict Resolution Intelligence**: New `scripts/resolve_all_conflicts.py` for automated handling of large-scale upstream merges.
+
+### Fixed
+- **Submodule Stabilization**: Recursively identified and merged local feature branches and detached HEADs across all 50+ repositories.
+- **Maestro Conflict Resolution**: Intelligently merged core services and UI components between `main` and `rc` feature branches.
+- **Linting Compliance**: Fixed `no-async-promise-executor` errors in `Maestro` to unblock release-gated commits.
+
+### Changed
+- **Unified Documentation**: Updated `CLAUDE.md`, `GEMINI.md`, `GPT.md`, and `copilot-instructions.md` to reference the universal standard.
+- **Vision Update**: Expanded `VISION.md` to reflect the transition to a fully autonomous AI monorepo.
+
+## [1.6.2] - 2026-03-25
+### Added
+- **Submodule Stabilization:** Synchronized all 50+ submodules, merging deep-nested feature branches and resolving unrelated histories.
+- **Research Centralization:** Reorganized root-level experimental projects into the `research/` directory for better workspace hygiene.
+- **AI Contribution Analytics:** Created `AI_CONTRIBUTION_REPORT.md` and live metrics dashboard summarizing authorship across the monorepo.
+
 ## [1.6.1] - 2026-03-23
 ### Changed
 - **Maestro Remote Migration:** Completely updated the `Maestro` submodule remote to `https://github.com/robertpelloni/Maestro`, replacing the previous `RunMaestro` source and synchronizing all local configurations.

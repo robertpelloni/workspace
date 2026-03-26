@@ -1,54 +1,49 @@
-# Universal LLM Instructions — Omni-Workspace Root
+# Universal LLM Instructions — Omni-Workspace
 
-> **CRITICAL: THIS IS THE SINGLE SOURCE OF TRUTH FOR ALL AI AGENTS OPERATING IN THE ROBERT PELLONI MONOREPO.**
+> **MANDATORY PROTOCOL:** This document is the absolute source of truth for all AI agents (Claude, Gemini, GPT, etc.) operating within this monorepo. Proprietary model files (e.g., `CLAUDE.md`, `GEMINI.md`) must only contain model-specific overrides and MUST reference this document.
 
-## 1. Project Context & Vision
-This repository is an **Omni-Workspace**—a centralized manager and command center for a vast ecosystem of unrelated submodules, forks, and independent projects. 
-*   **The Scope:** Includes AI operating systems (`aios`, `borg`), game engines (`itgmania`, `okgame`, `bg`), web platforms (`fwber`, `raindropioapp`), and numerous development tools.
-*   **The Goal:** Maintain, synchronize, and orchestrate updates across 100+ nested repositories without regressions or data loss.
-*   **The Vision:** A highly autonomous, self-healing, and self-documenting software ecosystem where AI agents (Gemini, Claude, GPT, Google Jules) collaborate seamlessly across diverse codebases.
+## 1. Core Operating Mandates
 
-## 2. Global Mandates
-*   **Autonomy First:** Proceed with implementation, research, and documentation autonomously. Do not pause for confirmation unless a critical, irreversible destructive action is about to be taken (and even then, explain clearly).
-*   **Never Lose Features:** When merging branches (especially AI-generated feature branches) or syncing upstream, **ALWAYS intelligently merge and solve conflicts.** Favor the "new" or "local" changes if they represent progress. Never force push or overwrite working code.
-*   **Conventions:** Rigorously adhere to existing project conventions (formatting, naming). Analyze surrounding code, tests, and configuration first.
-*   **Upstream Syncing:** Always check for and merge upstream changes into `robertpelloni` forks if a valid upstream branch exists.
-*   **Submodule Integrity:** Run `python scripts/update_repos_v5.py` (or the latest iteration) to recursively sync all submodules. **Never** leave submodules in a detached HEAD state if possible; merge changes into the default branch (`main` or `master`) and push.
+### 1.1 Process Preservation (CRITICAL)
+- **NEVER** kill or terminate active background processes unless explicitly instructed. 
+- Always audit the process list (`Get-WmiObject Win32_Process`) before performing operations that might conflict.
+- Priority PIDs: Deep Research workers, Build Orchestrators, Azure Log Tailers.
 
-## 3. Documentation & Versioning Protocol
-*   **Single Source of Truth:** The `VERSION` file in the root directory contains the current version number.
-*   **Increment on Build:** Every significant set of changes (a "build" or "session") MUST result in a version increment.
-*   **Changelog:** Record the rationale, date, and changes in `CHANGELOG.md` with every version bump.
-*   **Commit Message:** The version bump commit message must reference the new version (e.g., `chore: bump version to 1.3.0`).
-*   **Dashboards:** Update `ROADMAP.md`, `PROJECT_STRUCTURE.md`, and `SUBMODULE_DASHBOARD.md` (via `python scripts/generate_dashboard.py`) regularly to reflect the latest state.
-*   **Model-Specific Files:** `GEMINI.md`, `CLAUDE.md`, and `GPT.md` must *only* contain model-specific overrides and strengths, and must explicitly reference this universal document first.
-*   **Handoff:** End sessions by documenting your findings, roadblocks, and next steps in `HANDOFF.md` and archive a detailed version in `logs/handoffs/` to ensure continuity across the model cycle (Gemini -> Claude -> GPT).
+### 1.2 Zero-Loss Integration
+- **Feature Parity:** No code is left behind. All feature branches (especially those prefixed with `feature/`, `fix/`, or created by `Jules`) must be intelligently merged into the primary branch.
+- **Intelligent Conflict Resolution:** Solve conflicts by merging functionalities rather than blindly picking one side. Er on the side of caution.
+- **Binary Integrity:** Never delete or overwrite successfully compiled binaries or `.build_success` markers.
 
-## 4. Workflow Protocols
+### 1.3 Atomic Documentation
+- **Versioning:** Every significant build pass or synchronization MUST increment the `VERSION` file.
+- **Changelog:** Maintain a detailed history in `CHANGELOG.md`. Reference the version bump in commit messages.
+- **Handoffs:** Every session MUST conclude with a detailed `HANDOFF.md` documenting findings, changes, and memories for the next model cycle.
 
-### A. Feature Implementation
-1.  **Analyze:** Read `ROADMAP.md`, `TODO.md`, and `LLM_INSTRUCTIONS.md`. Search the codebase to understand context.
-2.  **Plan:** Select a feature. Break it down into atomic steps.
-3.  **Execute:** Implement using available tools. *Self-Correction:* If an error occurs, fix it immediately without stopping.
-4.  **Verify:** Write and run tests for new features. Ensure code compiles/runs and has no regressions.
-5.  **Commit:** Stage changes, commit with descriptive messages, and push.
-6.  **Loop:** Proceed to the next feature without pausing.
+## 2. Workspace Architecture
 
-### B. Repo Maintenance
-1.  **Update:** Run scripts in `scripts/` to sync submodules and fetch/merge upstream changes.
-2.  **Merge:** Intelligently merge feature branches (local and remote) into `main`.
-3.  **Fix:** Resolve conflicts prioritizing feature retention.
-4.  **Prune:** Use `scripts/prune_broken_submodules.py` to keep `.gitmodules` clean.
+### 2.1 Directory Structure
+- `Maestro/`: TechLead orchestrator and multi-agent service core.
+- `borg/`: The autonomous IDE infrastructure and "Council of Supervisors."
+- `research/`: Centralized cluster for untracked experimental projects and scratchpads.
+- `bg/`: Game engine and backend services (OkGame, BobCoin).
+- `antigravity-autopilot/`: Mobile and web UI bridge.
+- `topaz-ffmpeg/`: High-performance video processing core.
 
-## 5. Model-Specific Roles
-*   **Claude:** Architect, Planner, Documentation Lead. Specialized in large-scale refactoring and holistic system understanding.
-*   **Gemini:** Speed, Performance Analysis, Large Context Operations (full-repo scans), and complex Scripting.
-*   **GPT:** Code Generation, Unit Testing, and specific algorithm implementation.
+### 2.2 Submodule Management
+- All referenced projects and packages must be added as git submodules where appropriate.
+- Maintain `SUBMODULE_DASHBOARD.md` with versions, commit dates, and build status.
+- Every submodule must have an `IDEAS.md` for high-intelligence future goals.
 
-## 6. Directory Structure
-*   `docs/`: Workspace-level documentation and universal instructions.
-*   `scripts/`: Automation and maintenance scripts.
-*   `logs/`: Operation logs and handoff archives.
-*   `aios/`, `borg/`, `metamcp/`: AI Orchestration layers.
-*   `bobmani/`: Rhythm game engine suite.
-*   `fwber/`, `bobcoin/`: Full-stack applications.
+## 3. Engineering Standards
+
+### 3.1 Code Quality
+- **Self-Documenting:** Use comprehensive comments explaining the *why* behind logic, findings, side effects, and non-working alternate methods.
+- **Validation:** Every change requires empirical evidence. Run integration tests (`tests/test_workspace.py`) and verify build status in `build_all.log`.
+- **Linting:** Respect local `.eslintrc`, `.prettierrc`, and `tsconfig.json` settings. Fix style issues before pushing.
+
+### 3.2 Automation First
+- Prefer scripts (`python build_all.py`, `scripts/sync_all_submodules.py`) over manual repetitive tasks.
+- If a pattern is discovered (e.g., repeating conflict types), automate the resolution.
+
+## 4. Vision Alignment
+Refer to `VISION.md` for the ultimate project direction. We are building a **Self-Healing, Federated AI Monorepo**—a true end-to-end autonomous development pipeline.
