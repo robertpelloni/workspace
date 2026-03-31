@@ -148,3 +148,12 @@
 [submodule "supersaber"]
 	path = supersaber
 	url = https://github.com/robertpelloni/supersaber
+[submodule "computer-use-preview"]
+	path = computer-use-preview
+	url = https://github.com/google-gemini/computer-use-preview
+[submodule "superai"]
+	path = superai
+	url = https://github.com/robertpelloni/superai
+[submodule "agentirc"]
+	path = agentirc
+	url = ./agentirc
