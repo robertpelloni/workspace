@@ -1,33 +1,34 @@
 # Omni-Workspace Handoff Document
-**Date:** 2026-03-24
-**Model:** Gemini CLI Agent (Maestro)
-**Current Version:** 1.6.2
+**Date:** 2026-04-01
+**Model:** Gemini CLI Agent
+**Current Version:** 1.6.4
 
 ## Summary of Operations Performed
-1. **Ghost Directory Reorganization & Purge**:
-    - Centralized untracked root projects (`brobocallz`, `context_portal`, `makemoney`, `workspace-orchestrator`) into **`research/`**.
-    - Purged empty legacy containers: `opencode-autopilot_bak`, `Auto Run Docs`, `prometheus.yml`, and `submodules`.
-    - Updated `docs/PROJECT_STRUCTURE.md` to reflect the clean root architecture.
-2. **Submodule Consolidation & Pushes**:
-    - **Bobbybookmarks**: Fully merged `feature/reorg-and-integrate` into `main`, resolved `bookmarks.txt` conflicts, ran a deduplication pass (removed 731 links), and **pushed** to remote.
-    - **Maestro**: Updated root and internal (`borg/apps/maestro`) instances to latest `main`, fixed linting blockers, and ensured remote parity.
-    - **Antigravity-autopilot**: Re-aligned with official `master` branch, stabilized pointers, and **pushed** to remote.
-    - **Fwber**: Secured 25 local feature commits into the `main` branch and verified remote mirroring.
-3. **Upstream Resolution & Merge**:
-    - Successfully resolved "unrelated histories" for **`topaz-ffmpeg`** by deepening history to common ancestor `e1094ac45d`.
-    - **Fully merged** `upstream/master` (FFmpeg 8.0.git) into `topaz/develop`, integrating Topaz Video AI enhancements with latest official features.
-4. **Advanced Dashboard & Analytics**:
-    - Enhanced `scripts/generate_advanced_dashboard.py` with **live AI contribution metrics**.
-    - `SUBMODULE_DASHBOARD.md` now tracks real-time "AI Commit %" across 50 submodules.
-5. **Verified Integrity**:
-    - Verified all background processes (Search Indexer, Build Orchestration, Deep Research) remained undisturbed.
-    - Confirmed all 6 core integration tests pass in `tests/test_workspace.py`.
+1. **Low-Level Game Infrastructure Research**:
+    - Performed an exhaustive audit of `bg/okgame/lib` and its deep dependency tree.
+    - Documented the integration of the **Boost Ecosystem** (Beast, Asio, Geometry, Filesystem) and **Poco Project** for high-performance networking.
+    - Mapped the **SDL2 Stack** and comprehensive audio/graphics processing pipelines (`flac`, `vorbis`, `imgui`, `raylib`, etc.).
+    - Identified and documented the inclusion of multiple **Emulation Cores** (FBNeo, Genesis-Plus-GX, snes9x) within the `okgame` platform.
+    - Updated `DEPENDENCY_RESEARCH.md` with these architectural insights.
+2. **Memory Consolidation & Architectural Refinement**:
+    - Unified the `MEMORY.md` file to reflect the current state of the Omni-Workspace.
+    - Formalized recurring observations regarding submodule sensitivity, build bottlenecks (Boost), and gitlink mapping errors.
+    - Documented critical architectural decisions, including bridge ports (3001), standard research locations, and dashboarding protocols.
+3. **Environment Hardening & Workspace Management**:
+    - Enhanced `RESET_WORKSPACE.bat` to include termination of modern shell hosts and terminal emulators (`pwsh.exe`, `OpenConsole.exe`, `Tabby.exe`).
+    - Updated `.borg_startup_marker` to reflect the latest session initialization.
+4. **Core Dependency Integration**:
+    - Successfully integrated **Supabase** (`supabase@2.84.4`) into the root `package.json` and `package-lock.json` to support upcoming cloud-native orchestration features.
+5. **Dashboard & Version Advancement**:
+    - Bumped the global workspace version to **1.6.4**.
+    - Refreshed `SUBMODULE_DASHBOARD.md` with updated timestamps, versioning, and status indicators.
 
 ## Status of Repository
-- **Stable:** All primary submodules are synchronized and pushed to their remotes.
-- **Optimized:** Root workspace is clean of legacy ghosts and redundant directories.
-- **Active:** Build orchestration is currently processing heavy Boost dependencies.
+- **Stable:** Root configuration and documentation are fully aligned with the latest architectural standards.
+- **Ready:** Environment is hardened for clean resets; core dependencies for cloud integration are staged.
+- **Active:** Submodule pointers for `jules-autopilot` and `superai` have been advanced to their latest verified states.
 
 ## Recommended Next Steps for the Next Model
-- **Build Monitoring:** Continue to monitor `build_all.log` for compilation completion.
-- **Feature Convergence:** Now that submodules are stable and synced, resume high-level feature orchestration across `borg` and `antigravity-autopilot`.
+- **Submodule Stabilization**: Review and resolve the `-dirty` states in several submodules (Maestro, bg, bobbybookmarks, etc.) to ensure a clean monorepo state.
+- **Supabase Orchestration**: Begin implementing the Supabase-backed orchestration layer as defined in the latest architectural decisions.
+- **Build Verification**: Re-verify the full build pipeline after the `supabase` integration and environment hardening changes.
