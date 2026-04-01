@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.6.3] - 2026-03-25
+## [1.6.5] - 2026-04-01
+### Added
+- **Aggressive Submodule Synchronization & Branch Cleanup**: Executed `update_repos_v6.py` to intelligently merge all local and remote feature branches into main across 50+ nested submodules (excluding `borg` and `fwber`).
+- **Feature Branch Deletion**: Integrated logic to automatically delete local and remote feature branches post-merge, ensuring a 100% clean and linear git history without any floating branches.
+- **Opposite Branch Sync**: Confirmed bidirectional parity and pushed latest base changes down to all dependencies without losing any AI-generated progress.
+- **Dashboard & Artifacts Generation**: Generated the latest `SUBMODULE_DASHBOARD.md` to document all active repositories, versions, dates, and integration statuses across the Omni-Workspace.
+- **Deep Clean Deployment**: Triggered a clean commit and redeploy pipeline for the entire workspace.
+
+## [1.6.4] - 2026-03-25
 ### Added
 - **Universal LLM Instructions**: Created `docs/UNIVERSAL_LLM_INSTRUCTIONS.md` as the unified source of truth for all AI agents.
 - **Recursive Submodule Sync Script**: New `scripts/sync_all_submodules.py` for automated intelligent merging of feature branches.

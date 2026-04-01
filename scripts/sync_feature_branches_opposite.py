@@ -66,7 +66,7 @@ def sync_opposite(cwd):
 def get_all_git_repos(root):
     repos = []
     for dirpath, dirnames, filenames in os.walk(root):
-        if any(skip in dirpath for skip in ["node_modules", "temp_", "build", "dist", ".venv", ".cursor", ".git\\modules"]):
+        if any(skip in dirpath for skip in ["node_modules", "temp_", "build", "dist", ".venv", ".cursor", ".git\\modules", "borg", "fwber"]):
             continue
         if ".git" in dirnames or ".git" in filenames:
             repos.append(dirpath)

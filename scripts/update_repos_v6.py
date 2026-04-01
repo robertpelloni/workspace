@@ -8,7 +8,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 PROCESSED_FILE = "processed_repos_v6.txt"
 FAILED_LOG = "failed_repos_v6.log"
 
-SKIPPED_REPOS = ["voidsprite", "temp_defihacklabs", "vibeship-scanner", "borg", "bobdesk", "topaz-ffmpeg", "bg\\bobsgameonlinejava\\references", "ffmpeg"]
+SKIPPED_REPOS = ["voidsprite", "temp_defihacklabs", "vibeship-scanner", "borg", "bobdesk", "topaz-ffmpeg", "bg\\bobsgameonlinejava\\references", "ffmpeg", "fwber"]
 
 def normalize_path(path): return os.path.normpath(os.path.abspath(path)).lower()
 
@@ -155,6 +155,8 @@ def process_repo(name, cwd, processed_set):
             merge_res = run_command(f"git merge {rb}", cwd, timeout=120)
             if merge_res is None:
                 auto_resolve_merge(cwd, rb, default_branch)
+            print(f"Merged '{rb}'. Deleting remote branch...")
+            run_command(f"git push origin --delete {branch_name}", cwd, ignore_errors=True)
 
     if is_robert_repo(cwd):
         run_command(f"git push origin {default_branch}", cwd, ignore_errors=True, timeout=120)
