@@ -1,4 +1,4 @@
-# Changelog
+﻿## [1.6.6] - 2026-04-01`r`n### Added`r`n- **AgentIRC Multi-Model Broadcast Network**: Developed a high-performance IRC-style chat client using AutoGen 0.4 and Chainlit.`r`n- **Python 3.14 Hardening**: Implemented low-level patches for asyncio and anyio to stabilize the experimental runtime.`r`n- **Broadcast & DM Logic**: Engineered sequential round-robin responses and targeted agent pings.`r`n`r`n# Changelog
 
 ## [1.6.5] - 2026-04-01
 ### Added
@@ -170,7 +170,7 @@
 ## [1.3.8] - 2026-02-24
 ### Added
 - **Live Health Monitoring System:** Developed `scripts/health_check.py` to recursively probe submodules based on their detected tech stack (Node, Python, Rust, etc.).
-- **Enhanced Mission Control Dashboard:** Updated `SUBMODULE_DASHBOARD.md` with a new "Health" column featuring visual indicators (🟢 Healthy, 🟡 Needs Init, 🔴 Broken). 
+- **Enhanced Mission Control Dashboard:** Updated `SUBMODULE_DASHBOARD.md` with a new "Health" column featuring visual indicators (ðŸŸ¢ Healthy, ðŸŸ¡ Needs Init, ðŸ”´ Broken). 
 - **Optimized Mapping:** Refined `scripts/map_workspace.py` to focus specifically on top-level submodules from `.gitmodules`, preventing context overflow while maintaining comprehensive oversight.
 
 ## [1.3.7] - 2026-02-24
