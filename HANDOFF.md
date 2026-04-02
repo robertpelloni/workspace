@@ -1,24 +1,25 @@
 # Omni-Workspace Handoff Document
 **Date:** 2026-04-01
 **Model:** Gemini CLI Agent
-**Current Version:** 1.6.6
+**Current Version:** 1.6.7
 
 ## Summary of Operations Performed
-1. **AgentIRC Project Development**:
-    - Built a standalone multi-agent IRC room using **AutoGen 0.4** and **Chainlit**.
-    - Hardened the codebase for **Python 3.14.3** by implementing a custom task-identity synchronization patch in `run.py`.
-    - Integrated the 7-model ultra-next-gen lineup: Claude 4.6, GPT-5.4, Gemini 3.1, Grok 4.1, Qwen 3.6, Kimi 2.5, and DeepSeek 3.2 (DeepSeek later removed per user request).
-    - Implemented **Broadcast Mode** (sequential responses) and **Direct Messaging** (@AgentName).
+1. **AgentIRC Advanced Feature Set**:
+    - Upgraded **AgentIRC** with dynamic mode switching (`/mode broadcast` vs `/mode discuss`).
+    - Implemented **Topic Control** (`/topic`) that re-injects context into model system messages.
+    - Added **Direct Messaging** (`@AgentName`) for targeted model interaction.
+    - Enabled **Persistent Logging** (`irc_session.log`) for research archival.
+    - Solidified the **Python 3.14 Hardening** with comprehensive `run.py` patches.
 2. **Workspace Synchronization**:
-    - Added `agentirc` as a submodule to the parent Omni-Workspace.
-    - Synced all local changes to GitHub repositories.
-    - Bumped workspace version to `1.6.6` and updated `CHANGELOG.md`.
+    - Pushed all local updates to the **robertpelloni/agentirc** remote.
+    - Updated the parent workspace version to **1.6.7** and documented the functional leap in `CHANGELOG.md`.
 
 ## Status of Repository
-- **Stable**: AgentIRC is fully operational on Python 3.14.
-- **Connected**: Linked to OpenRouter with a valid sk-or-v1-6... key.
+- **Stable**: All low-level AnyIO/AsyncIO crashes on Python 3.14 are fully mitigated.
+- **Operational**: Mode and Topic switching are fully functional.
+- **Synced**: Parent workspace and submodule references are in parity.
 
 ## Recommended Next Steps
-- Utilize AgentIRC for multi-model architectural debates.
-- Monitor the Python 3.14 patches as newer anyio/asyncio releases may resolve the underlying bugs.
-- Expand the model lineup as more ultra-next-gen models become available on OpenRouter.
+- Use `/mode discuss` for autonomous AI architectural brainstorming.
+- Review `irc_session.log` to feed high-quality debate transcripts back into the Omni-Workspace training/knowledge pipeline.
+- Continue expanding IRC command support (e.g., `/kick`, `/temp`).
