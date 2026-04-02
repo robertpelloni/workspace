@@ -157,3 +157,6 @@
 [submodule "agentirc"]
 	path = agentirc
 	url = ./agentirc
+[submodule "antigravity-cli"]
+	path = antigravity-cli
+	url = https://github.com/krmslmz/antigravity-cli.git
