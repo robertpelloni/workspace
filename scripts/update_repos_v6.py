@@ -8,7 +8,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 PROCESSED_FILE = "processed_repos_v6.txt"
 FAILED_LOG = "failed_repos_v6.log"
 
-SKIPPED_REPOS = ["voidsprite", "temp_defihacklabs", "vibeship-scanner", "borg", "bobdesk", "topaz-ffmpeg", "bg\\bobsgameonlinejava\\references", "ffmpeg", "fwber"]
+SKIPPED_REPOS = ["voidsprite", "temp_defihacklabs", "vibeship-scanner", "borg", "bobdesk", "topaz-ffmpeg", "bg", "ffmpeg", "fwber"]
 
 def normalize_path(path): return os.path.normpath(os.path.abspath(path)).lower()
 

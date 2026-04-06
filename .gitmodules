@@ -160,3 +160,18 @@
 [submodule "antigravity-cli"]
 	path = antigravity-cli
 	url = https://github.com/krmslmz/antigravity-cli.git
+[submodule "hypercode"]
+	path = hypercode
+	url = https://github.com/bobsgame/hypercode
+[submodule "geany"]
+	path = geany
+	url = https://github.com/robertpelloni/geany
+[submodule "bobgui"]
+	path = bobgui
+	url = https://github.com/robertpelloni/bobgui
+[submodule "btk"]
+	path = btk
+	url = https://github.com/robertpelloni/btk
+[submodule "hyperharness"]
+	path = hyperharness
+	url = https://github.com/robertpelloni/hyperharness
