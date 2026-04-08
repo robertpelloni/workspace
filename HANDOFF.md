@@ -910,3 +910,46 @@
       - `build/geany-btk-package3/geany-btk-search-studio-runtime-20260406-095410.zip`
   - launched the newest BTK top-level bundle helper and confirmed responsive running processes from multiple staged bundles simultaneously
 - Main GTK build remains blocked in this environment by missing Meson/native GTK build plumbing, so the dedicated GTK Find in Projects page could not be fully compiled here yet.
+
+## Additional Work Completed (2026-04-07, NPP search parity + toolkit-variant updates)
+- Continued the Notepad++ parity effort by closing most remaining gaps in the Search Studio dialog.
+- Submodules updated and synced:
+  - `subprojects/btk`
+  - `subprojects/bobui`
+  - `subprojects/bobgui`
+- Updated GTK Search Studio (main tree) to match NPP dialog features exactly:
+  - added `In hidden folders` checkbox to Find in Files/Projects
+  - added `Project Panel 1/2/3` checkboxes (placeholders)
+  - added **Transparency** frame with Enable toggle, Loss-focus/Always modes, and opacity slider
+  - added **Swap** button in Replace to exchange Find and Replace text
+  - renamed button labels to match NPP exactly (`Find All in current document`, `Find All in all opened documents`, `Replace All in All Opened Documents`)
+- Updated BTK experimental variant (`variants/geany-btk`) to mirror the matured Search Studio:
+  - added `Find in Projects` tab
+  - added **Transparency** frame
+  - added **Swap** button in Replace
+  - added `In hidden folders` checkbox
+  - added `Focus Results`, `Next Result`, `Previous Result` navigation buttons
+- Validation completed:
+  - BTK variant rebuilt and packaged successfully:
+    - latest bundle: `build/geany-btk-package3/runtime-bundle-20260407-135158/`
+  - smoke launch of the BTK variant confirmed the new UI additions and responsive navigator behavior.
+- Updated docs:
+  - `docs/ai/design/2026-04-05-geany-search-studio-vs-notepad-plus-plus-search-dialog.md` (matrix improved)
+  - `docs/ai/implementation/2026-04-04-geany-gtk-search-studio.md`
+  - `docs/ai/testing/2026-04-04-geany-gtk-search-studio.md`
+
+## Additional Work Completed (2026-04-07, NPP Transform parity Wave 1)
+- Continued the Notepad++ parity effort by introducing Wave 1 of systematic text transformations.
+- Added a new **"Transform"** page to Search Studio in both GTK (main tree) and BTK variants.
+- Implemented first-wave high-value transforms in `src/search.c`:
+  - `Delete Blank Lines` (removes lines that are empty or contain only whitespace)
+  - `Delete Surplus Blank Lines` (collapses consecutive blanks into a single blank)
+  - `Zap Non-Printable` (replaces characters outside ASCII 32-126 with '#')
+  - `Invert Case` (toggles case for all characters in the document)
+  - `Redact Selection` (replaces current selection with 'X' characters)
+- Added a new parity matrix document:
+  - `docs/ai/design/2026-04-06-geany-npp-text-transform-parity.md`
+- Search Studio in both toolkits now acts as a unified cockpit for Find, Replace, Find in Files, Find in Projects, Mark, and Transform workflows.
+- Validation:
+  - BTK variant rebuilt successfully: `build/geany-btk-package3/runtime-bundle-20260407-135158/`
+  - Smoke launch confirmed the new "Transform" tab and UI responsiveness.

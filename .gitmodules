@@ -175,3 +175,9 @@
 [submodule "hyperharness"]
 	path = hyperharness
 	url = https://github.com/robertpelloni/hyperharness
+[submodule "tabby"]
+	path = tabby
+	url = https://github.com/robertpelloni/tabby
+[submodule "pi-mono"]
+	path = pi-mono
+	url = https://github.com/robertpelloni/pi-mono
