@@ -181,3 +181,6 @@
 [submodule "pi-mono"]
 	path = pi-mono
 	url = https://github.com/robertpelloni/pi-mono
+[submodule "CLIProxyAPI"]
+	path = CLIProxyAPI
+	url = https://github.com/robertpelloni/CLIProxyAPI
