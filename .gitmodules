@@ -184,3 +184,6 @@
 [submodule "CLIProxyAPI"]
 	path = CLIProxyAPI
 	url = https://github.com/robertpelloni/CLIProxyAPI
+[submodule "Cli-Proxy-API-Management-Center"]
+	path = Cli-Proxy-API-Management-Center
+	url = https://github.com/router-for-me/Cli-Proxy-API-Management-Center
