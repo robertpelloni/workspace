@@ -86,9 +86,9 @@ robertpelloni/workspace/
 ## New Submodules Added
 n| Submodule | URL | Date |
 |-----------|-----|------|
-| CLIProxyAPI | github.com/robertpelloni/CLIProxyAPI | 2026-04-08 |
 
 | Submodule | URL | Date |
 |-----------|-----|------|
 | tabby | github.com/robertpelloni/tabby | 2026-04-08 |
+| CLIProxyAPIPlus | github.com/robertpelloni/CLIProxyAPIPlus | 2026-04-09 |
 | pi-mono | github.com/robertpelloni/pi-mono | 2026-04-08 |
