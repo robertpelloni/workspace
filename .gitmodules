@@ -181,9 +181,6 @@
 [submodule "pi-mono"]
 	path = pi-mono
 	url = https://github.com/robertpelloni/pi-mono
-[submodule "Cli-Proxy-API-Management-Center"]
-	path = Cli-Proxy-API-Management-Center
-	url = https://github.com/router-for-me/Cli-Proxy-API-Management-Center
 [submodule "CLIProxyAPIPlus"]
 	path = CLIProxyAPIPlus
 	url = https://github.com/robertpelloni/CLIProxyAPIPlus
