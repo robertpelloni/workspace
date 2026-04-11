@@ -1,5 +1,5 @@
 {
-  "nextId": 5,
+  "nextId": 7,
   "tasks": [
     {
       "id": "1",
@@ -48,6 +48,30 @@
       "blockedBy": [],
       "createdAt": 1775872212786,
       "updatedAt": 1775872214364
+    },
+    {
+      "id": "5",
+      "subject": "Fix Recursive Sync & Submodule Errors",
+      "description": "1. Fix 'bad revision HEAD' errors in submodules by checking out default branches.\n2. Resolve 'embedded git repository' warnings by converting them to proper submodules or ignoring build-generated .git dirs.\n3. Fix 'No such file or directory' errors for missing submodule paths.\n4. Finalize the recursive sync protocol across all detected git repositories.\n5. Generate a comprehensive handoff file.",
+      "status": "in_progress",
+      "activeForm": "Fixing recursive sync errors and broken submodules",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775923953065,
+      "updatedAt": 1775923955446
+    },
+    {
+      "id": "6",
+      "subject": "Global Workspace Sync & Maintenance Protocol (Task #2)",
+      "description": "1. Synchronize all repositories and submodules: Fetch, pull, merge upstream changes, and merge local feature branches (especially AI-generated ones) into main/master.\n2. Catch up feature branches: Merge main/master back into feature branches to keep them current.\n3. Recursive Submodule Update: Update all submodules to their latest remote tracking branches and commit/push the updated pointers.\n4. Conflict Resolution: Intelligently solve all merge conflicts to ensure no features or progress are lost.\n5. Project Analysis: Reanalyze the workspace to identify missing features and update the roadmap/documentation.\n6. Documentation: Generate/update a submodule dashboard and project structure guide.\n7. Versioning: Update changelog and increment version numbers.\n8. Final Sync: Commit and push all changes, then execute a global build.",
+      "status": "in_progress",
+      "activeForm": "Executing Global Workspace Sync & Maintenance Protocol",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775932442312,
+      "updatedAt": 1775932443534
     }
   ]
 }

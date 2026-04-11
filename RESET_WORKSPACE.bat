@@ -21,6 +21,8 @@ taskkill /F /IM WindowsTerminal.exe /T 2>nul
 taskkill /F /IM cmd.exe /T 2>nul
 taskkill /F /IM pwsh.exe /T 2>nul
 taskkill /F /IM Tabby.exe /T 2>nul
+taskkill /F /IM bash.exe /T 2>nul
+taskkill /F /IM git.exe /T 2>nul
 
 echo [OK] Workspace reset attempted.
 pause

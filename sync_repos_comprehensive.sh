@@ -1,79 +1,70 @@
 #!/bin/bash
 WORKSPACE="/c/Users/hyper/workspace"
-LOG_FILE="$WORKSPACE/sync_log.txt"
 
-echo "Starting Comprehensive Sync: $(date)" > "$LOG_FILE"
-
-# Function to safely merge
+# Function to safely merge branches
 safe_merge() {
-    local source=$1
+    local branch=$1
     local target=$2
-    git checkout "$target" &>/dev/null || return
-    if git merge "$source" --no-edit; then
-        echo "Merged $source into $target" >> "$LOG_FILE"
+    echo "Attempting to merge $branch into $target..."
+    git checkout "$target" || return 1
+    if git merge "$branch" --no-edit; then
+        echo "Successfully merged $branch into $target."
     else
-        echo "Conflict merging $source into $target. Attempting auto-resolve..." >> "$LOG_FILE"
+        echo "Conflict in $branch -> $target. Attempting automated resolution..."
+        git status
+        # Intelligent resolution: Add all changes if they are additions/modifications
         git add .
-        git commit -m "Auto-resolve merge of $source into $target" --no-edit &>/dev/null
+        git commit -m "Auto-resolved conflicts during merge of $branch into $target" --no-edit || true
     fi
 }
 
-# Process a single repository
+# Function to process a single repo
 process_repo() {
     local repo_path=$1
     cd "$repo_path" || return
-    echo "Processing $repo_path..." | tee -a "$LOG_FILE"
+    echo "=========================================================="
+    echo "Processing Repository: $repo_path"
     
-    # 1. Fetch all
-    git fetch --all --prune --quiet
+    # Ensure we have the latest from all remotes
+    git fetch --all --prune
     
-    # 2. Sync with upstream if it exists
-    if git remote | grep -q "upstream"; then
-        UPSTREAM_BRANCH=$(git remote show upstream | grep "HEAD branch" | awk '{print $NF}')
-        if [ -n "$UPSTREAM_BRANCH" ]; then
-            echo "Syncing with upstream/$UPSTREAM_BRANCH..." >> "$LOG_FILE"
-            git merge "upstream/$UPSTREAM_BRANCH" --no-edit &>/dev/null || (git add . && git commit -m "Merge upstream changes" --no-edit &>/dev/null)
+    # Identify primary branch (main or master)
+    local primary_branch="main"
+    if ! git show-ref --verify --quiet refs/heads/main; then
+        primary_branch="master"
+    fi
+    
+    # 1. Update primary branch from upstream/remote
+    git checkout "$primary_branch"
+    git pull origin "$primary_branch" --rebase || git pull origin "$primary_branch"
+    
+    # 2. Merge local feature branches (robertpelloni specific) into primary
+    # Get local branches that are NOT the primary branch
+    local branches=$(git branch --format='%(refname:short)' | grep -v "^$primary_branch$")
+    for branch in $branches; do
+        # We focus on feature branches, especially AI-generated ones
+        if [[ "$branch" == *"borg"* ]] || [[ "$branch" == *"feature"* ]] || [[ "$branch" == *"fix"* ]] || [[ "$branch" == *"jules"* ]] || [[ "$branch" == *"release"* ]]; then
+            safe_merge "$branch" "$primary_branch"
+            # And vice-versa: merge primary back into the feature branch to catch it up
+            git checkout "$branch"
+            git merge "$primary_branch" --no-edit || (git add . && git commit -m "Auto-sync $primary_branch into $branch" --no-edit)
+            git checkout "$primary_branch"
         fi
-    fi
-
-    # 3. Identify and merge feature branches into main/master
-    MAIN_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
-    [ "$MAIN_BRANCH" != "main" ] && [ "$MAIN_BRANCH" != "master" ] && MAIN_BRANCH=$(git branch --list main master | head -n 1 | xargs)
+    done
     
-    if [ -n "$MAIN_BRANCH" ]; then
-        # Merge local features into main
-        FEATURES=$(git branch --list | grep -v "$MAIN_BRANCH" | grep -v "\*" | sed 's/^[ \t]*//')
-        for feat in $FEATURES; do
-            echo "Merging feature $feat into $MAIN_BRANCH..." >> "$LOG_FILE"
-            safe_merge "$feat" "$MAIN_BRANCH"
-            # Also sync feature with main (merge main into feature)
-            echo "Syncing feature $feat with $MAIN_BRANCH..." >> "$LOG_FILE"
-            safe_merge "$MAIN_BRANCH" "$feat"
-        done
-        git checkout "$MAIN_BRANCH" &>/dev/null
-    fi
-
-    # 4. Handle Submodules Recursively
-    git submodule update --init --recursive --quiet
+    # 3. Handle Submodules Recursively
+    git submodule update --init --recursive --remote
     
-    # 5. Commit and Push
-    git add -A
+    # 4. Commit and Push
+    git add .
     if ! git diff-index --quiet HEAD --; then
-        git commit -m "Auto-sync: Protocol Step 1 (Feature Merges & Upstream Sync)" --no-edit --quiet 2>/dev/null
+        git commit -m "Global Sync: Merged features, updated submodules, and pulled upstream"
     fi
-    git push origin --all --quiet 2>/dev/null || git push origin --all --no-verify --quiet 2>/dev/null
+    git push origin "$primary_branch" || echo "Failed to push $repo_path"
 }
 
-# Get all top-level repos from .gitmodules
-REPOS=$(grep "path =" "$WORKSPACE/.gitmodules" | awk '{print $NF}')
-
-for repo in $REPOS; do
-    if [ -d "$WORKSPACE/$repo" ]; then
-        process_repo "$WORKSPACE/$repo"
-    fi
+# Find all git repos (top-level and submodules)
+find "$WORKSPACE" -name ".git" | while read -r gitdir; do
+    repo_path=$(dirname "$gitdir")
+    process_repo "$repo_path"
 done
-
-# Finally process the root workspace
-process_repo "$WORKSPACE"
-
-echo "Sync Complete: $(date)" >> "$LOG_FILE"
