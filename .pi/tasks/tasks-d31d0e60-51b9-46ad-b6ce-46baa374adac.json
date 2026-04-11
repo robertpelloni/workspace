@@ -1,5 +1,5 @@
 {
-  "nextId": 2,
+  "nextId": 3,
   "tasks": [
     {
       "id": "1",
@@ -12,6 +12,18 @@
       "blockedBy": [],
       "createdAt": 1775852156121,
       "updatedAt": 1775852157830
+    },
+    {
+      "id": "2",
+      "subject": "Global Workspace Sync & Maintenance Protocol",
+      "description": "1. Selective merge of feature branches into main across all repos and submodules.\n2. Update submodules recursively and merge upstream changes (incorporating fork updates).\n3. Conflict resolution without losing features/progress.\n4. Sync feature branches with main (merge main into features).\n5. Document all changes in HANDOFF.md and SUBMODULE_DASHBOARD.md.\n6. Build all artifacts and push all changes.",
+      "status": "in_progress",
+      "activeForm": "Executing global workspace synchronization protocol",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775864403369,
+      "updatedAt": 1775864404783
     }
   ]
 }

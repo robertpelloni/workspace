@@ -1,0 +1,28 @@
+{
+  "nextId": 3,
+  "tasks": [
+    {
+      "id": "1",
+      "subject": "Fix bobmani/bobmania repository structure by removing itgmania submodule",
+      "description": "1. Identify how `itgmania` was incorrectly added as a submodule to `bobmani/bobmania`.\n2. Remove the `itgmania` submodule from `bobmani/bobmania`.\n3. Ensure `itgmania` and `bobmania` exist as siblings or separate repositories in the workspace as intended.\n4. Clean up the `.gitmodules` and `.git/config` in `bobmani/bobmania`.\n5. Verify that both projects can be built or synced independently.",
+      "status": "completed",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775864669239,
+      "updatedAt": 1775864862840
+    },
+    {
+      "id": "2",
+      "subject": "Repair bobfilez submodule links (VERT)",
+      "description": "Identify and fix the broken submodule reference 'VERT' in the 'bobfilez' repository. This involves locating the submodule configuration, finding the correct commit or updating it to the latest main/master branch, and ensuring all other submodules in the 'libs/' directory are correctly initialized.",
+      "status": "completed",
+      "activeForm": "Repairing bobfilez submodule links",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775865951500,
+      "updatedAt": 1775866129795
+    }
+  ]
+}
