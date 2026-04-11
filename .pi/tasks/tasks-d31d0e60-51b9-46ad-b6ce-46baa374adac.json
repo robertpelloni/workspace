@@ -1,5 +1,5 @@
 {
-  "nextId": 3,
+  "nextId": 4,
   "tasks": [
     {
       "id": "1",
@@ -17,13 +17,25 @@
       "id": "2",
       "subject": "Global Workspace Sync & Maintenance Protocol",
       "description": "1. Selective merge of feature branches into main across all repos and submodules.\n2. Update submodules recursively and merge upstream changes (incorporating fork updates).\n3. Conflict resolution without losing features/progress.\n4. Sync feature branches with main (merge main into features).\n5. Document all changes in HANDOFF.md and SUBMODULE_DASHBOARD.md.\n6. Build all artifacts and push all changes.",
-      "status": "in_progress",
+      "status": "completed",
       "activeForm": "Executing global workspace synchronization protocol",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1775864403369,
-      "updatedAt": 1775864404783
+      "updatedAt": 1775866746213
+    },
+    {
+      "id": "3",
+      "subject": "Fix Persistent Workspace Errors",
+      "description": "1. Fix .gitmodules syntax error in bobmani/beatoraja.\n2. Resolve 'Filename too long' by breaking infinite recursion in tests/.\n3. Fix Prettier formatting errors in Maestro.\n4. Clean up stale git index.lock files.\n5. Finalize submodule states for ksm-v2.",
+      "status": "in_progress",
+      "activeForm": "Fixing persistent workspace errors",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775867563698,
+      "updatedAt": 1775867565129
     }
   ]
 }

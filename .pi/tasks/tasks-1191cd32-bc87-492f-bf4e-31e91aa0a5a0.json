@@ -1,5 +1,5 @@
 {
-  "nextId": 3,
+  "nextId": 10,
   "tasks": [
     {
       "id": "1",
@@ -23,6 +23,90 @@
       "blockedBy": [],
       "createdAt": 1775865951500,
       "updatedAt": 1775866129795
+    },
+    {
+      "id": "3",
+      "subject": "Repair okgame submodule link (CLove)",
+      "description": "Fix the broken submodule reference 'lib/CLove' in the 'okgame' repository. The clone is failing due to an incorrect URL (redirecting to a local IP) or credential issue. I need to update the submodule URL to the correct public GitHub address and ensure it initializes correctly.",
+      "status": "completed",
+      "activeForm": "Repairing okgame/lib/CLove submodule link",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775866351923,
+      "updatedAt": 1775866987473
+    },
+    {
+      "id": "4",
+      "subject": "Repair hypercode submodule link (OmniRoute)",
+      "description": "Fix the broken submodule reference 'archive/OmniRoute' in the 'hypercode' repository. The clone is failing because the submodule points to a commit (7bdffd2) that does not exist in the upstream repository. I need to update the submodule pointer to a valid commit on its main branch and ensure it synchronizes correctly.",
+      "status": "completed",
+      "activeForm": "Repairing hypercode/archive/OmniRoute submodule link",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775867111963,
+      "updatedAt": 1775867159844
+    },
+    {
+      "id": "5",
+      "subject": "Repair beatoraja submodule link (bobcoin/research/forest)",
+      "description": "Fix the broken submodule reference in 'beatoraja'. The clone fails because 'bobcoin' contains a submodule 'research/forest' with no URL in '.gitmodules', which causes a recursion failure. I need to find the correct URL for 'research/forest' or remove the broken reference if it's no longer needed.",
+      "status": "completed",
+      "activeForm": "Repairing beatoraja/bobcoin submodule link",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775867310200,
+      "updatedAt": 1775867459790
+    },
+    {
+      "id": "6",
+      "subject": "Repair hypercode submodule link (OmniRoute) - Take 2",
+      "description": "Re-fix the broken submodule reference 'archive/OmniRoute' in the 'hypercode' repository. Although a fix was previously attempted, the remote still reports missing ref 7bdffd2. I need to ensure the local pointer is updated AND the remote state matches, or find why Jules is still seeing the old ref.",
+      "status": "completed",
+      "activeForm": "Repairing hypercode/archive/OmniRoute (re-verification)",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775867640620,
+      "updatedAt": 1775867813756
+    },
+    {
+      "id": "7",
+      "subject": "Repair bobfilez submodule link (VERT)",
+      "description": "Fix the broken submodule reference 'VERT' in the 'bobfilez' repository. The clone is failing because the submodule points to a commit (990f3f5) that does not exist in the upstream repository. I need to update the submodule pointer to a valid commit on its main branch and ensure it synchronizes correctly. I also need to verify other submodules in this large repository.",
+      "status": "completed",
+      "activeForm": "Repairing bobfilez/VERT submodule link",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775867896119,
+      "updatedAt": 1775867961106
+    },
+    {
+      "id": "8",
+      "subject": "Fix bobbybookmarks deployment errors (SQLite3 & Gunicorn)",
+      "description": "Investigate and fix deployment errors for 'bobbybookmarks'. \n1. Node.js error: 'Could not locate the bindings file' for sqlite3 in 'bobbybookmarks-ui/server'. This usually indicates a missing native build or incorrect platform binary.\n2. Python error: 'AttributeError: module app has no attribute application' in gunicorn. This indicates a mismatch between the gunicorn command and the actual Flask/Django app instance name.\nI need to check the project structure, build scripts, and entry point files.",
+      "status": "completed",
+      "activeForm": "Diagnosing bobbybookmarks deployment failures",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775868086550,
+      "updatedAt": 1775868122106
+    },
+    {
+      "id": "9",
+      "subject": "Repair hypercode submodule sync (OmniRoute) - Take 3",
+      "description": "Fix the 'not our ref' error in the hypercode repository for the 'archive/OmniRoute' submodule. The current pointer (7bdffd2) is invalid upstream. I need to update it to a valid commit (likely v3.6.1 or similar) and perform a force push to synchronize the remote state. I will also verify the entire submodule tree to ensure no other pointers are broken.",
+      "status": "pending",
+      "activeForm": "Resolving hypercode/OmniRoute submodule mismatch",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775868230150,
+      "updatedAt": 1775868230150
     }
   ]
 }
