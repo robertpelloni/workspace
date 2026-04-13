@@ -184,3 +184,6 @@
 [submodule "CLIProxyAPIPlus"]
 	path = CLIProxyAPIPlus
 	url = https://github.com/robertpelloni/CLIProxyAPIPlus
+[submodule "onetool"]
+	path = onetool
+	url = https://github.com/robertpelloni/onetool-mcp

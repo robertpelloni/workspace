@@ -1,62 +1,85 @@
 #!/bin/bash
 WORKSPACE="/c/Users/hyper/workspace"
-LOG_FILE="$WORKSPACE/recursive_sync_log.txt"
 
-echo "Recursive Sync Protocol Start: $(date)" > "$LOG_FILE"
+# Function to get default branch
+get_default_branch() {
+    git remote show origin | grep 'HEAD branch' | cut -d' ' -f5 || echo "main"
+}
 
-process_git_repo() {
+# Function to process a single repo
+process_repo() {
     local repo_path=$1
     cd "$repo_path" || return
-    echo "Processing $repo_path..." | tee -a "$LOG_FILE"
+    echo "=========================================================="
+    echo "Syncing: $repo_path"
+
+    # 1. Clean environment
+    rm -f .git/index.lock
     
-    # 1. Fetch all remotes
-    git fetch --all --prune --quiet 2>/dev/null
-    
-    # 2. Sync with upstream if configured
-    if git remote | grep -q "upstream"; then
-        UPSTREAM_BRANCH=$(git remote show upstream | grep "HEAD branch" | awk '{print $NF}')
-        if [ -n "$UPSTREAM_BRANCH" ]; then
-            echo "Merging upstream/$UPSTREAM_BRANCH into current branch..." >> "$LOG_FILE"
-            git merge "upstream/$UPSTREAM_BRANCH" --no-edit &>/dev/null || (git add . && git commit -m "Auto-merge upstream changes" --no-edit &>/dev/null)
+    # 2. Fetch all remotes
+    git fetch --all --prune
+
+    # 3. Determine main branch
+    local main_branch=$(get_default_branch)
+    if ! git show-ref --verify --quiet refs/heads/"$main_branch"; then
+        if git show-ref --verify --quiet refs/heads/master; then
+            main_branch="master"
+        else
+            main_branch="main"
         fi
     fi
 
-    # 3. Determine main/master branch
-    MAIN_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
-    [ "$MAIN_BRANCH" != "main" ] && [ "$MAIN_BRANCH" != "master" ] && MAIN_BRANCH=$(git branch --list main master | head -n 1 | xargs)
-    
-    if [ -n "$MAIN_BRANCH" ]; then
-        # 4. Merge local feature branches into main
-        # (Exclude main/master and remote-tracking branches)
-        LOCAL_FEATURES=$(git branch --list | grep -v "$MAIN_BRANCH" | grep -v "\*" | sed 's/^[ \t]*//')
-        for feat in $LOCAL_FEATURES; do
-            echo "Merging feature $feat into $MAIN_BRANCH..." >> "$LOG_FILE"
-            git checkout "$MAIN_BRANCH" &>/dev/null
-            git merge "$feat" --no-edit &>/dev/null || (git add . && git commit -m "Auto-resolve merge of $feat into $MAIN_BRANCH" --no-edit &>/dev/null)
-            
-            # 5. Reverse Merge: Merge main into feature to keep it updated
-            echo "Updating feature $feat with changes from $MAIN_BRANCH..." >> "$LOG_FILE"
-            git checkout "$feat" &>/dev/null
-            git merge "$MAIN_BRANCH" --no-edit &>/dev/null || (git add . && git commit -m "Auto-update feature with latest main changes" --no-edit &>/dev/null)
-        done
-        git checkout "$MAIN_BRANCH" &>/dev/null
-    fi
+    # 4. Update main from remote
+    git checkout "$main_branch" || git checkout -b "$main_branch" "origin/$main_branch"
+    git pull origin "$main_branch" --rebase || git pull origin "$main_branch"
 
-    # 6. Commit any remaining changes
-    git add -A
+    # 5. Merge local feature branches into main
+    # Focus on robertpelloni (local) branches and AI generated ones
+    local branches=$(git branch --format='%(refname:short)' | grep -v "^$main_branch$")
+    for branch in $branches; do
+        if [[ "$branch" == *"jules"* ]] || [[ "$branch" == *"borg"* ]] || [[ "$branch" == *"feature"* ]] || [[ "$branch" == *"fix"* ]] || [[ "$branch" == *"release"* ]]; then
+            echo "Merging $branch into $main_branch..."
+            if git merge "$branch" --no-edit; then
+                # After successful merge into main, merge main back into feature branch to catch it up
+                git checkout "$branch"
+                git merge "$main_branch" --no-edit || (git add . && git commit -m "Sync main into $branch" --no-edit)
+                git checkout "$main_branch"
+            else
+                echo "Conflict merging $branch. Attempting auto-resolution (favoring merge progress)..."
+                git add .
+                git commit -m "Auto-resolved conflicts: Merging $branch into $main_branch" --no-edit || true
+                
+                # Try to catch up the feature branch anyway
+                git checkout "$branch"
+                git merge "$main_branch" --no-edit || (git add . && git commit -m "Sync main into $branch (with conflicts)" --no-edit)
+                git checkout "$main_branch"
+            fi
+        fi
+    done
+
+    # 6. Recursive Submodule Sync
+    # We use a robust approach for submodules to avoid "bad revision" errors
+    git submodule sync --recursive
+    git submodule update --init --recursive --remote --merge || git submodule update --init --recursive --remote --rebase || echo "Submodule update failed for some modules in $repo_path, moving on..."
+
+    # 7. Final Add/Commit/Push
+    git add .
     if ! git diff-index --quiet HEAD --; then
-        git commit -m "Auto-sync: Protocol Update $(date +%Y-%m-%d)" --no-edit --quiet 2>/dev/null
+        git commit -m "Global Sync: Consolidated feature branches and updated submodules"
     fi
     
-    # 7. Push all local branches
-    git push origin --all --quiet 2>/dev/null || git push origin --all --no-verify --quiet 2>/dev/null
+    # Try pushing if it's a robertpelloni repo or we have permission
+    local remote_url=$(git remote get-url origin)
+    if [[ "$remote_url" == *"robertpelloni"* ]]; then
+        git push origin "$main_branch"
+        # Push submodules pointers too
+        git submodule foreach --recursive "git push origin \$(git rev-parse --abbrev-ref HEAD) || true"
+    fi
 }
 
-# Recursively find all git repositories and submodules
-find "$WORKSPACE" -name ".git" | while read -r gitdir; do
+# Find all git repos
+# We use a depth-first approach by sorting by path length (deepest first)
+find "$WORKSPACE" -name ".git" | awk '{ print length, $0 }' | sort -rn | cut -d" " -f2- | while read -r gitdir; do
     repo_path=$(dirname "$gitdir")
-    process_git_repo "$repo_path"
+    process_repo "$repo_path"
 done
-
-cd "$WORKSPACE"
-echo "Recursive Sync Protocol End: $(date)" >> "$LOG_FILE"
