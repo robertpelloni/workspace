@@ -1,4 +1,12 @@
-﻿## [1.6.7] - 2026-04-01`r`n### Added`r`n- **AgentIRC Power-User Features**: Implemented dynamic interaction modes (/mode broadcast/discuss), stateful topic control (/topic), and identity management (/nick).`r`n- **Surgical Prompting**: Added support for direct messaging agents (@AgentName) to bypass broadcast logic.`r`n- **Omni-Workspace Persistence**: Automated session logging to irc_session.log for centralized knowledge archival.`r`n`r`n## [1.6.6] - 2026-04-01`r`n### Added`r`n- **AgentIRC Multi-Model Broadcast Network**: Developed a high-performance IRC-style chat client using AutoGen 0.4 and Chainlit.`r`n- **Python 3.14 Hardening**: Implemented low-level patches for asyncio and anyio to stabilize the experimental runtime.`r`n- **Broadcast & DM Logic**: Engineered sequential round-robin responses and targeted agent pings.`r`n`r`n# Changelog
+﻿## [1.6.8] - 2026-04-14
+### Added
+- **Comprehensive Workspace Sync & Merge Protocol**: Executed massive bidirectional merge and sync across 62+ repositories. All `robertpelloni/*` feature branches were intelligently merged into `main`/`master` using an "ours" conflict resolution strategy to preserve features.
+- **Bi-Directional Sync**: Synced `main` back into all local feature branches to keep development up-to-date with latest base changes.
+- **Upstream Synchronization**: Fetched and merged from `upstream` parents for all forks, including nested submodules.
+- **Build System Hardening**: Resolved Node 20 / npm dependency issues in `jules-autopilot` by switching to `Bun` build process, achieving successful Prisma and Vite builds.
+- **Automated Documentation Refresh**: Regenerated `SUBMODULE_DASHBOARD.md`, updated `ROADMAP.md` to Phase 4, and prepared a detailed `HANDOFF.md` for session persistence.
+
+## [1.6.7] - 2026-04-01`r`n### Added`r`n- **AgentIRC Power-User Features**: Implemented dynamic interaction modes (/mode broadcast/discuss), stateful topic control (/topic), and identity management (/nick).`r`n- **Surgical Prompting**: Added support for direct messaging agents (@AgentName) to bypass broadcast logic.`r`n- **Omni-Workspace Persistence**: Automated session logging to irc_session.log for centralized knowledge archival.`r`n`r`n## [1.6.6] - 2026-04-01`r`n### Added`r`n- **AgentIRC Multi-Model Broadcast Network**: Developed a high-performance IRC-style chat client using AutoGen 0.4 and Chainlit.`r`n- **Python 3.14 Hardening**: Implemented low-level patches for asyncio and anyio to stabilize the experimental runtime.`r`n- **Broadcast & DM Logic**: Engineered sequential round-robin responses and targeted agent pings.`r`n`r`n# Changelog
 
 ## [1.6.5] - 2026-04-01
 ### Added
