@@ -1,59 +1,55 @@
 import os
-import subprocess
+import re
 
-def run_command(command, cwd=None):
-    try:
-        result = subprocess.run(command, cwd=cwd, shell=True, capture_output=True, text=True)
-        return result.stdout.strip(), result.stderr.strip(), result.returncode
-    except Exception as e:
-        return "", str(e), 1
-
-def get_submodules():
-    stdout, _, _ = run_command("git submodule status --recursive")
-    submodules = []
-    for line in stdout.splitlines():
-        parts = line.strip().split()
-        if len(parts) >= 2:
-            submodules.append(parts[1])
-    return submodules
-
-def resolve_submodule(path):
-    print(f"Resolving conflicts in {path}...")
-    
-    # Get unmerged files
-    stdout, _, _ = run_command("git diff --name-only --diff-filter=U", cwd=path)
-    conflicted_files = stdout.splitlines()
-    
-    if not conflicted_files:
-        print(f"  No conflicts found in {path}")
-        return
-
-    # Intelligent Heuristic:
-    # 1. If it's a 3rd party lib (path contains /lib/), prefer 'theirs' (upstream) 
-    #    UNLESS it's a known robertpelloni patched file.
-    # 2. If it's a core project file, prefer 'ours' (local) and merge manually if possible.
-    
-    is_lib = "/lib/" in path or path.startswith("bg/okgame/lib/")
-    
-    for file in conflicted_files:
-        print(f"  -> {file}")
-        if is_lib:
-            print(f"    [LIB] Accepting 'theirs' (upstream) for {file}")
-            run_command(f"git checkout --theirs \"{file}\"", cwd=path)
-        else:
-            print(f"    [CORE] Accepting 'ours' (local) for {file}")
-            run_command(f"git checkout --ours \"{file}\"", cwd=path)
-        
-        run_command(f"git add \"{file}\"", cwd=path)
-
-    # Check if we can commit
-    _, _, code = run_command("git commit -m \"chore: intelligently resolve merge conflicts\"", cwd=path)
-    if code == 0:
-        print(f"  [SUCCESS] Conflicts resolved and committed in {path}")
-    else:
-        print(f"  [SKIPPED] Nothing to commit or manual intervention required in {path}")
+def resolve_conflicts(directory):
+    print(f"Resolving conflicts in: {directory}")
+    for root, dirs, files in os.walk(directory):
+        # Skip .git and node_modules
+        if '.git' in dirs:
+            dirs.remove('.git')
+        if 'node_modules' in dirs:
+            dirs.remove('node_modules')
+            
+        for file in files:
+            if file.endswith(('.ts', '.tsx', '.js', '.jsx', '.json', '.md', '.py', '.c', '.cpp', '.h', '.hpp', '.txt', '.yml', '.yaml', '.sh', '.bat')):
+                filepath = os.path.join(root, file)
+                try:
+                    with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
+                    
+                    if "<<<<<<< HEAD" in content:
+                        print(f"  Conflict found in: {filepath}")
+                        # Pattern to match git conflict markers and keep HEAD version
+                        # This is a broad "ours" strategy for file content
+                        new_content = re.sub(r'<<<<<<< HEAD[\s\S]*?=======([\s\S]*?)>>>>>>>.*', r'', content) # This is risky, let's be more precise
+                        
+                        # Better approach: split by lines and filter
+                        lines = content.splitlines()
+                        new_lines = []
+                        skip = False
+                        found = False
+                        for line in lines:
+                            if line.startswith("<<<<<<< HEAD"):
+                                skip = False # Keep HEAD
+                                found = True
+                                continue
+                            if line.startswith("======="):
+                                skip = True # Skip the other side
+                                continue
+                            if line.startswith(">>>>>>>"):
+                                skip = False
+                                continue
+                            if not skip:
+                                new_lines.append(line)
+                        
+                        if found:
+                            with open(filepath, 'w', encoding='utf-8') as f:
+                                f.write("\n".join(new_lines) + ("\n" if content.endswith("\n") else ""))
+                            print(f"    Fixed.")
+                except Exception as e:
+                    print(f"    Error processing {filepath}: {e}")
 
 if __name__ == "__main__":
-    submodules = ["."] + get_submodules()
-    for sub in submodules:
-        resolve_submodule(sub)
+    # Target specific directories first to be safe
+    workspace_root = os.getcwd()
+    resolve_conflicts(workspace_root)

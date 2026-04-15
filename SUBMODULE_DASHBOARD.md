@@ -43,15 +43,9 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | hyperharness | 0.3.0 | main | '5752c73' | '2026-04-14' | 'Merge branch 'main' of https://github.com/robertp... |
 | mcp-superassistant | <<<<<<< HEAD
 0.7.2
-=======
-1.9.0
->>>>>>> origin/feature/comprehensive-docs-and-ui-enhancements-174708394239680803 | main | '6236b01' | '2026-04-10' | 'Auto-sync: update files and submodules' |
 | mk64 | N/A | master | 'f60d29954' | '2026-04-14' | 'Merge upstream changes' |
 | neverball | <<<<<<< HEAD
 1.6.2-dev
-=======
-1.6.13-dev
->>>>>>> origin/party-games-ui-docs-8101435436098214570 | master | '25d613ae' | '2026-04-02' | 'chore: save progress before update' |
 | npp | 1.1.0 | master | '3260d84d5' | '2026-04-14' | 'chore: save local progress before sync' |
 | onetool-mcp | N/A | main | 'eac44ae' | '2026-04-03' | 'Release 2.2.2' |
 | opencode-autopilot | N/A | main | '30b8cf7' | '2026-04-14' | 'Merge feature origin/jules-4657769983160951050-bc... |
@@ -59,9 +53,6 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | picard | N/A | master | '7a2df93e9' | '2026-04-14' | 'Merge feature origin/jules-12364719424079951847-3... |
 | raindropioapp | <<<<<<< HEAD
 1.0.4
-=======
-2.1.0-alpha
->>>>>>> origin/feature/raindrop-ai-sorter-userscript-ui-polish-15513218340786339081 | master | '3a02a8c4' | '2026-04-14' | 'chore: save local progress before sync' |
 | sm64coopdx | N/A | main | '1a4e1e12c' | '2026-03-23' | 'chore: save progress before update' |
 | superai | N/A | main | '643a6a73' | '2026-04-10' | 'Auto-sync: update files and submodules' |
 | superpowers | N/A | main | '8123184' | '2026-03-21' | 'Merge remote-tracking branch 'origin/wip-gemini-c... |
@@ -86,14 +77,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobmani\arrowvortex | v1.3.2 | main | '26bea86' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobmani\beatoraja | 0.9.2 | master | '7cb31e07' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobmani\bobmania | <<<<<<< HEAD
-<<<<<<< HEAD
 5.7.0-Unified-Alpha
-=======
-5.7.11-Unified-Beta-Matchmaker
->>>>>>> origin/unified-ui-features-13937230807013224518
-=======
-5.7.13-Unified-Beta-GhostEngine
->>>>>>> origin/unified-ui-features-13937230807013224518 | master | 'cdeaa36746' | '2026-04-14' | 'Merge feature origin/feat/unified-merge-conflict-... |
 | bobmani\ddc | 0.2.32 | master | '61714ecf' | '2026-04-11' | 'Global Sync: Consolidated feature branches and up... |
 | bobmani\ddc_onset | N/A | main | '53044b5' | '2026-04-11' | 'Global Sync: Merged features, updated submodules,... |
 | bobmani\ffr-difficulty-model | N/A | master | '8d21998' | '2026-04-11' | 'Auto-sync: update files and submodules' |
@@ -201,9 +185,6 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\Dependencies | N/A | main | '340b46b' | '2026-04-11' | 'chore: save progress before update' |
 | bobfilez\libs\FFmpeg | <<<<<<< HEAD
 0.7.8
-=======
-0.10.16
->>>>>>> origin/release/0.10 | master | 'f29adda433' | '2026-04-14' | 'Merge branch 'master' of https://github.com/FFmpe... |
 | bobfilez\libs\ImageMagick | N/A | main | 'e1eaef1ed' | '2026-04-13' | 'Merge branch 'main' of https://github.com/ImageMa... |
 | bobfilez\libs\Imath | N/A | main | 'ec0b4e8' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\JUCE | N/A | master | 'e302722055' | '2026-04-14' | 'Merge feature origin/develop into master' |
@@ -415,9 +396,6 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobui\submodules\ultimatepp | N/A | master | '70657d292' | '2026-04-09' | 'Draw: In Win32, DrawImage with Color now using Ca... |
 | borg\apps\cloud-orchestrator | <<<<<<< HEAD
 3.6.0
-=======
-3.5.4
->>>>>>> origin/jules-17764958747146694232-3d7c3856 | main | 'cd02fc9' | '2026-04-14' | 'chore: save local progress before sync' |
 | borg\apps\maestro | 0.15.7 | main | '13d4f4b8' | '2026-04-14' | 'Merge feature origin/jules-2575151016458646249-2d... |
 | borg\archive\OmniRoute | N/A | main | 'eaec3279' | '2026-04-13' | 'Merge pull request #1192 from diegosouzapw/releas... |
 | borg\archive\claude-mem | N/A | main | '0d507feb' | '2026-04-14' | 'chore: save local progress before sync' |
@@ -438,9 +416,6 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | geany\subprojects\btk | 0.2.0 | master | '19be40254' | '2026-04-14' | 'chore: save local progress before sync' |
 | hypercode-push\apps\cloud-orchestrator | <<<<<<< HEAD
 3.6.0
-=======
-3.5.4
->>>>>>> origin/jules-17764958747146694232-3d7c3856 | main | 'dd09cb9' | '2026-04-14' | 'chore: save local progress before sync' |
 | hypercode-push\apps\maestro | 0.15.7 | main | '3718339f' | '2026-04-14' | 'Merge feature origin/jules-2575151016458646249-2d... |
 | hypercode-push\archive\OmniRoute | N/A | main | '04dfcf13' | '2026-04-14' | 'chore: save local progress before sync' |
 | hypercode-push\archive\claude-mem | N/A | main | '1f0ed064' | '2026-04-14' | 'Merge branch 'main' of https://github.com/robertp... |
@@ -555,9 +530,6 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bg\okgame\lib\libretro-super | N/A | master | 'de9b276a' | '2026-04-07' | 'Merge pull request #1973 from cscd98/mupen-gles' |
 | bg\okgame\lib\libtiff | <<<<<<< HEAD
 4.7.1
-=======
-3.9.7
->>>>>>> origin/branch-3.9 | master | '2733bad9' | '2026-04-14' | 'chore: save local progress before sync' |
 | bg\okgame\lib\libtimidity | N/A | master | 'be69669' | '2026-04-12' | 'Merge feature origin/soundfont into master' |
 | bg\okgame\lib\libusb | N/A | HEAD | 'ccc1c53a' | '2026-04-10' | 'Misc: Update README file to add current developer... |
 | bg\okgame\lib\libwebp | N/A | main | '20dd8706' | '2026-04-14' | 'chore: save local progress before sync' |
@@ -582,9 +554,6 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bg\okgame\lib\plutovg | N/A | main | '3f46f9d' | '2026-04-12' | 'Merge feature origin/v1.1.0-SDL into main' |
 | bg\okgame\lib\poco | <<<<<<< HEAD
 1.15.1
-=======
-1.12.4
->>>>>>> origin/3990-reactor-performance | main | 'cdd69392c' | '2026-04-14' | 'chore: save local progress before sync' |
 | bg\okgame\lib\projectm | N/A | HEAD | 'fc45c2af5' | '2026-04-13' | 'Fix projectm-eval submodule sync' |
 | bg\okgame\lib\raylib | N/A | master | '019cc889' | '2026-04-13' | 'Updated Notepad++ scripts and autocomplete' |
 | bg\okgame\lib\retroarch-assets | N/A | master | 'cd17f64c' | '2026-04-11' | 'Merge pull request #493 from comfysage/feat/asset... |
@@ -865,9 +834,6 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bg\okgame\lib\SDL_image\external\libpng | N/A | master | '2ed42dd86' | '2026-04-14' | 'chore: save local progress before sync' |
 | bg\okgame\lib\SDL_image\external\libtiff | <<<<<<< HEAD
 4.7.1
-=======
-3.9.7
->>>>>>> origin/branch-3.9 | master | 'f5693964' | '2026-04-14' | 'chore: save local progress before sync' |
 | bg\okgame\lib\SDL_image\external\libwebp | N/A | main | '4b3fe04c' | '2026-04-14' | 'chore: save local progress before sync' |
 | bg\okgame\lib\SDL_image\external\zlib | N/A | master | 'fe3fab1' | '2026-04-14' | 'chore: save local progress before sync' |
 | bg\okgame\lib\SDL_mixer\external\flac | N/A | master | 'eb40e8b4' | '2026-04-14' | 'chore: save local progress before sync' |
