@@ -187,3 +187,9 @@
 [submodule "onetool-mcp"]
 	path = onetool-mcp-mcp
 	url = https://github.com/robertpelloni/onetool-mcp
+[submodule "openclaw-dashboard"]
+	path = openclaw-dashboard
+	url = https://github.com/tugcantopaloglu/openclaw-dashboard.git
+[submodule "openclaw-config"]
+	path = openclaw-config
+	url = https://github.com/TechNickAI/openclaw-config.git
