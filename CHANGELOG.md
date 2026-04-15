@@ -1,4 +1,12 @@
-﻿## [1.6.8] - 2026-04-14
+﻿## [1.6.9] - 2026-04-15
+### Added
+- **Massive Conflict Resolution Pass**: Resolved 1,265+ git merge conflict markers across the entire workspace tree using automated ours-strategy resolution (libwebp, llamafile, opencode, pi-cli, smithery-cli, llm-cli, ollama, litellm, gemini-cli, tabby, rowboat, picard, raindropioapp, sm64coopdx, bobui-reference, ultimatepp, juce, and more).
+- **jules-autopilot Build Fix**: Cherry-picked conflict resolutions from detached HEAD back to main. Clean Bun + Vite production build (2,975 modules, 12.5s).
+- **openclaw-config Integration**: Added as submodule — AI memory, 20 skills, 10 autonomous workflows, DevOps health checks.
+- **Git Credential Persistence**: Configured `credential.helper store` with GitHub token for push-free authentication across all repos.
+- **Targeted Submodule Sync**: Fast-synced all top-level robertpelloni-owned repos and pushed local commits.
+
+## [1.6.8] - 2026-04-14
 ### Added
 - **Comprehensive Workspace Sync & Merge Protocol**: Executed massive bidirectional merge and sync across 62+ repositories. All `robertpelloni/*` feature branches were intelligently merged into `main`/`master` using an "ours" conflict resolution strategy to preserve features.
 - **Bi-Directional Sync**: Synced `main` back into all local feature branches to keep development up-to-date with latest base changes.

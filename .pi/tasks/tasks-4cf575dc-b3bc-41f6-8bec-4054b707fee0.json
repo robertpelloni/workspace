@@ -1,5 +1,5 @@
 {
-  "nextId": 27,
+  "nextId": 28,
   "tasks": [
     {
       "id": "1",
@@ -302,6 +302,17 @@
       "blockedBy": [],
       "createdAt": 1776095078147,
       "updatedAt": 1776095083437
+    },
+    {
+      "id": "27",
+      "subject": "Fix three Jules clone failures: image-hash, zlib, lz4-java",
+      "description": "Three repos failing Jules shallow-submodule clone:\n1. bobfilez: libs/image-hash at a9dc7a96b - not our ref\n2. itgmania: extern/zlib at f42980c3 - STILL failing (our previous fix didn't stick)\n3. bg: bobsgameonlinejava/libs/lz4-java at 646fb464d - not our ref",
+      "status": "completed",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1776273104436,
+      "updatedAt": 1776273435838
     }
   ]
 }
