@@ -1,4 +1,11 @@
-﻿## [1.6.9] - 2026-04-15
+﻿## [1.7.0] - 2026-04-16
+### Changed
+- **Server Migration**: robertpelloni.com moved from DreamHost to Hetzner (`5.161.250.43`). WordPress DB imported (75MB), SSL via Let's Encrypt, PHP 8.4 FPM.
+- **Unified Site Structure**: All domains consolidated under `/srv/www/` — `bobsgame.com`, `fwber.me` (symlink), `robertpelloni.com`.
+- **Submodule Sync**: jules-autopilot, antigravity-autopilot, picard, sm64coopdx, raindropioapp, agentirc all synced and pushed.
+- **Conflict Resolution**: Fixed 3 remaining package.json conflicts in hypercode/cloud-orchestrator and hypermem/claude-mem.
+
+## [1.6.9] - 2026-04-15
 ### Added
 - **Massive Conflict Resolution Pass**: Resolved 1,265+ git merge conflict markers across the entire workspace tree using automated ours-strategy resolution (libwebp, llamafile, opencode, pi-cli, smithery-cli, llm-cli, ollama, litellm, gemini-cli, tabby, rowboat, picard, raindropioapp, sm64coopdx, bobui-reference, ultimatepp, juce, and more).
 - **jules-autopilot Build Fix**: Cherry-picked conflict resolutions from detached HEAD back to main. Clean Bun + Vite production build (2,975 modules, 12.5s).
