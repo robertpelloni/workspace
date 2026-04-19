@@ -1,4 +1,23 @@
-﻿## [1.7.0] - 2026-04-16
+﻿## [1.8.0] - 2026-04-17
+### Changed
+- **Feature Branch Merges**: Merged all local feature branches into main across workspace repos:
+  - agentirc: merged `jules-agentirc-features-*` and `feature/agentirc-configuration-and-tools-*` (resolved content conflicts, kept full agent specs + tool implementations)
+  - bobbybookmarks: merged `jules-bobbybookmarks-ingestion-*`, `feature/reorg-and-integrate`, dependabot branch
+  - bobui: merged `dev` → `main`, resolved TODO.md/VERSION.md conflicts
+  - Maestro: merged `borg-assimilation` into `main`
+  - pi-mono: merged `badlogic-main` into `main`
+  - antigravity-autopilot: merged `release/5.1.1` into `master`
+- **Reverse Feature Sync**: Caught up all feature branches (`borg-assimilation`, `dev`, `badlogic-main`, bobbybookmarks branches) with latest main.
+- **Upstream Syncs**: Merged upstream parent changes into forks:
+  - bobeditpro ← audacity/audacity (resolved 12 C++ conflicts)
+  - mk64 ← n64decomp/mk64 (9 files updated)
+  - raindropioapp ← raindropio/app (package.json update)
+  - bobtrader, bobtorrent, mcp-superassistant: resolved stale upstream conflicts
+  - jules-autopilot ← sbhavani/jules-app (already up to date)
+  - sm64coopdx ← coop-deluxe/sm64coopdx (already up to date)
+  - tabby ← Eugeny/tabby (already up to date)
+
+## [1.7.0] - 2026-04-16
 ### Changed
 - **Server Migration**: robertpelloni.com moved from DreamHost to Hetzner (`5.161.250.43`). WordPress DB imported (75MB), SSL via Let's Encrypt, PHP 8.4 FPM.
 - **Unified Site Structure**: All domains consolidated under `/srv/www/` — `bobsgame.com`, `fwber.me` (symlink), `robertpelloni.com`.
