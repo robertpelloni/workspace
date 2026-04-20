@@ -1,4 +1,25 @@
-﻿## [1.8.0] - 2026-04-17
+﻿## [1.9.0] - 2026-04-17
+### Changed
+- **Deep Feature Branch Merges**: Comprehensive bidirectional merge of ALL local feature branches across workspace:
+  - agentirc: merged new commits from `feature/agentirc-configuration-and-tools` (dynamic model management)
+  - bobmania: merged `5_1-new` → `main` + resolved doc conflicts; also merged `unified-ui-features` jules branch
+  - bobbybookmarks: caught up 3 feature branches with latest main
+  - bobui: merged `dev` → `main`, reverse-merged main → `dev`
+  - Maestro: merged `borg-assimilation` bidirectionally
+  - pi-mono: merged `badlogic-main` bidirectionally
+  - antigravity-autopilot: merged `release/5.1.1` bidirectionally
+- **Upstream Syncs (expanded)**:
+  - bobeditpro ← audacity/audacity: resolved 396 C++ conflicts (keeping local customizations)
+  - bobtrader ← PowerTrader_AI: resolved `pt_hub.py` conflict
+  - bobtorrent ← bittorrent-tracker: resolved `package.json` conflict
+  - raindropioapp ← raindropio/app: merged upstream view.js change
+  - itgmania ← itgmania/itgmania: merged upstream `release` branch, resolved 396 source file conflicts
+  - jules-autopilot ← sbhavani/jules-app: already up to date
+  - sm64coopdx, tabby, mk64, mcp-superassistant, fwber: already up to date
+- **Build**: jules-autopilot clean build (2,976 modules, 11.51s)
+- **Pushed**: bobmania (40 commits), itgmania (204 commits), bobtrader, bobtorrent, raindropioapp
+
+## [1.8.0] - 2026-04-17
 ### Changed
 - **Feature Branch Merges**: Merged all local feature branches into main across workspace repos:
   - agentirc: merged `jules-agentirc-features-*` and `feature/agentirc-configuration-and-tools-*` (resolved content conflicts, kept full agent specs + tool implementations)
