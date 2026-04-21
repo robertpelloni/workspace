@@ -1,4 +1,33 @@
-﻿## [1.9.0] - 2026-04-17
+﻿## [2.0.0] - 2026-04-17
+### Changed
+- **Full Protocol Execution**: Complete 7-step sync across all 62+ repos and submodules
+- **Feature Branch Merges (new)**:
+  - bobbybookmarks: merged `feature/reorg-and-integrate` + `jules-bobbybookmarks-ingestion` into main
+  - bobcoin: merged `feat/governance-delays-and-zk-port` + `feature/comprehensive-ui-spec` (both versions) into main
+  - bobtrader: merged `jules-14860020853292969090` into main
+  - bobtorrent: merged `megatorrent-reference-client-ui` into master
+  - bobtrax: merged `jules-13814763330234479585` into master
+  - bobui: merged `jules-11090863842246041945` + `feature/omni-ui-framework` into main
+  - bobmania: merged `feat/unified-merge-conflict-resolution-v5.7.1` into main
+  - ksm-v2: merged `jules/feature/configurable-songs-dir` into master
+  - f-zerox: merged `pc-port-ui-implementation` into main
+  - geany: merged `jules-3128865207300374222` into master
+  - hyperharness: merged `feat/deep-wire-mcp-memory` into main
+  - jules-autopilot: merged `jules-17764958747146694232` into main
+  - Maestro: merged `jules-2575151016458646249` into main
+  - npp: merged `jules-3646841170776745183` into master
+  - picard: merged `jules-12364719424079951847` into master
+  - raindropioapp: merged `jules-6129730999740698158` into master
+  - CLIProxyAPIPlus: merged `jules-9238706904812453426` + `pr-59-resolve-conflicts`
+- **Reverse Sync (main → feature branches)**: Updated feature branches in bobbybookmarks, bobui, bobcoin, bobtrader, bobtorrent, antigravity-autopilot
+- **Upstream Syncs (new)**:
+  - bobeditpro ← audacity/audacity: new upstream commits merged, 43 C++ conflicts resolved
+  - bobbybookmarks ← upstream: fetched new changes
+- **Detached HEAD Fixes**: agentirc, bobcoin, bobeditpro, bobfilez restored to proper branches
+- **Build**: jules-autopilot clean (2,976 modules, 37.18s)
+- **Pushed**: 20+ repos pushed to GitHub
+
+## [1.9.0] - 2026-04-17
 ### Changed
 - **Deep Feature Branch Merges**: Comprehensive bidirectional merge of ALL local feature branches across workspace:
   - agentirc: merged new commits from `feature/agentirc-configuration-and-tools` (dynamic model management)
