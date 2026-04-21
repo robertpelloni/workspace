@@ -1,4 +1,26 @@
-﻿## [2.1.0] - 2026-04-17
+﻿## [2.2.0] - 2026-04-17
+### Changed
+- **New Feature Branches Merged**:
+  - openclaw-config: `feat/hubspot-skill` (NEW, from TechNickAI collaborator)
+  - openclaw-config: `fix/apple-photos-bot-feedback` (NEW)
+  - openclaw-config: `review-sweep/pr-92-cursor-fixes` (NEW)
+  - bobsaver: `jules-7169901332660125491-9d436882` (attempted, timeout due to repo size)
+  - bobgui: `jules-10024490872005189356-cc0865de` (re-merged with new content)
+  - jules-autopilot: `jules-17764958747146694232-3d7c3856` (re-merged, conflicts resolved)
+  - Maestro: `jules-2575151016458646249-2d58a6b7` (re-merged)
+  - npp: `jules-3646841170776745183-946186db` (re-merged)
+  - pi-mono: `jules-14458798274183669513-1411ab77` (re-merged)
+  - raindropioapp: `jules-6129730999740698158-ff7847c7` (conflicts resolved)
+  - superai: `jules-hypercode-porting-p1` (re-merged)
+  - linthesia: `jules-13365660602124490195-9eb6f99b` (re-merged)
+- **Upstream Sync with New Changes**:
+  - tabby: Merged 3 new commits from upstream (ssh session improvements)
+  - ksm-v2: Merged 13 commits from upstream/develop (UI updates, song select improvements, conflict resolution)
+- **Full Reverse Sync**: Updated 34 feature branches across 20+ repos with latest default branch
+- **Commits & Pushes**: agentirc, bobgui, geany, jules-autopilot, Maestro, npp, pi-mono, raindropioapp, superai, tabby, ksm-v2, linthesia + all feature branches
+- **Build**: jules-autopilot clean (Vite v6.4.2)
+
+## [2.1.0] - 2026-04-17
 ### Changed
 - **Comprehensive Feature Branch Merge (Round 2)**:
   - bobeditpro: merged `feature/audition-parity-roadmap` + `feature/bus-tracks-and-docs` (NEW)
