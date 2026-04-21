@@ -1,4 +1,32 @@
-﻿## [2.0.0] - 2026-04-17
+﻿## [2.1.0] - 2026-04-17
+### Changed
+- **Comprehensive Feature Branch Merge (Round 2)**:
+  - bobeditpro: merged `feature/audition-parity-roadmap` + `feature/bus-tracks-and-docs` (NEW)
+  - bobgui: merged `jules-10024490872005189356` (NEW)
+  - openclaw-config: merged ALL 8 feature branches (NEW):
+    - `feat/embeddings-guide`, `feat/forward-motion-dcos`, `feat/security-hardening`
+    - `feature/agentmail-skill`, `feature/apple-mail-skill`, `feature/followupboss-skill`
+    - `feature/learning-loop`, `feature/vapi-calls-and-naming-fix`
+  - tabby: merged `feat/real-pty-serial` (NEW)
+  - superai: merged `feat/top-features` + `jules-hypercode-porting-p1` (NEW)
+  - geany: re-merged `jules-3128865207300374222` with submodule updates
+  - npp: re-merged `jules-3646841170776745183` with submodule updates
+  - ksm-v2: re-merged `jules/feature/configurable-songs-dir`
+- **Full Reverse Sync (main → all feature branches)**: Updated 30+ feature branches across 20+ repos with latest main
+- **Upstream Sync**: All forks checked against upstream parents (bobeditpro, bobbybookmarks, etc.)
+- **Commit & Push**: All dirty repos committed and pushed including superai, bobgui, bobeditpro, bobsgameonlinejava
+- **Build**: jules-autopilot clean (Vite v6.4.2, 2976 modules)
+- **Pushed**: 35+ repos + 30+ feature branches to GitHub
+
+### Known Issues (Unchanged)
+- bobsaver: Detached HEAD, checkout timeout (huge repo)
+- borg: Detached HEAD, worktree conflict
+- bobdesk: 13,207 dirty files (LibreOffice fork, intentionally not merged)
+- openclaw-config: Push 403 (third-party repo, permission denied)
+- antigravity-cli: Push 403 (third-party repo)
+- Maestro: Requires `--no-verify` for push (CI hooks)
+
+## [2.0.0] - 2026-04-17
 ### Changed
 - **Full Protocol Execution**: Complete 7-step sync across all 62+ repos and submodules
 - **Feature Branch Merges (new)**:
