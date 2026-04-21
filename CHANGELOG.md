@@ -1,4 +1,14 @@
-﻿## [2.2.0] - 2026-04-17
+﻿## [2.3.0] - 2026-04-17
+### Changed
+- **Dependabot Merges**:
+  - bobbybookmarks: `dependabot/npm_and_yarn` dependency updates
+  - bobcoin: `dependabot/npm_and_yarn` frontend + `dependabot/cargo` research updates
+- **Upstream GTK Branches Merged** into bobgui (2479 commits from upstream GTK fork)
+- **Reverse Sync**: tabby/feat/real-pty-serial, ksm-v2/configurable-songs-dir updated
+- **Build**: jules-autopilot clean (Vite v6.4.2, 10.84s)
+- All repos up-to-date with remote
+
+## [2.2.0] - 2026-04-17
 ### Changed
 - **New Feature Branches Merged**:
   - openclaw-config: `feat/hubspot-skill` (NEW, from TechNickAI collaborator)
