@@ -1,4 +1,22 @@
-﻿## [2.3.0] - 2026-04-17
+﻿## [2.4.0] - 2026-04-17
+### Changed
+- **New Branches Merged**:
+  - bg: `jules-1394303886104622315-aa648523` (NEW, netty regex fix)
+  - openclaw-config: `bump-version-post-101`, `fix/apple-photos-review-sweep`, `fix/apple-photos-review-sweep-91`, `review-sweep/health-check-measurable-hang-signal`, `review-sweep/pr-100`, `review-sweep/pr-96` (6 NEW branches from TechNickAI)
+  - agentirc: `feature/agentirc-configuration-and-tools` merged
+  - bobcoin: `dependabot/npm_and_yarn`, `feat/governance-delays-and-zk-port` merged
+  - jules-autopilot: `jules-17764958747146694232-3d7c3856` re-merged
+  - Maestro: `jules-2575151016458646249-2d58a6b7`, `jules-add-new-agents` re-merged
+  - pi-mono: `jules-14458798274183669513-1411ab77` re-merged
+  - superai: dependabot cargo + zed-extension merges
+  - bobbybookmarks: `jules-bobbybookmarks-ingestion` merged
+- **Upstream Sync**:
+  - bobeditpro: 9 upstream Audacity commits merged
+  - ksm-v2: 2 upstream develop commits merged
+- **Reverse Sync**: 28 feature branches updated with latest main
+- **Build**: jules-autopilot clean (Vite v6.4.2, 12.81s, index chunk 674KB)
+
+## [2.3.0] - 2026-04-17
 ### Changed
 - **Dependabot Merges**:
   - bobbybookmarks: `dependabot/npm_and_yarn` dependency updates
