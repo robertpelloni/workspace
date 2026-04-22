@@ -1,4 +1,26 @@
-﻿## [2.5.0] - 2026-04-17
+﻿## [2.6.0] - 2026-04-17
+### Changed
+- **New Branches Merged**:
+  - openclaw-config: 101 commits ahead — merged ~25 feature branches including `feat/claude-code-skill`, `fix/cron-healthcheck-semantic-detection`, `chore/agents-completion-hardening`, `docs/migration-analysis`, `add-claude-github-actions`, review-sweep branches, scrub-pii, fix/embeddings-guide, fix/librarian, fix/contact-steward
+  - bobsaver: `jules-7169901332660125491` merged (linuxdeploy, projectm updates)
+  - MarbleBlast: `jules-15180076805006571318` merged
+  - neverball: `party-games-ui-docs` merged (31-file party games UI)
+  - bobmania: `feat/unified-merge-conflict-resolution-v5.7.1` (ArchHooks VR)
+  - beatoraja: `feature/launcher-enhancement-docs` merged
+  - itgmania: `jules-13842864760264873486` merged (plan.txt)
+  - hymnmania: upstream rebase + push
+  - geany: `jules-3128865207300374222` (go filetypes)
+  - btk: `pi/geany-variant-build-fix`, `pi/msvc-focus-fixes`
+- **Upstream Sync**:
+  - topaz-ffmpeg: 125 upstream FFmpeg commits merged (JXL image, style updates)
+- **Submodule Updates**:
+  - bobeditpro/muse_framework: upstream update merged
+  - bobui/ultimatepp: upstream update merged (ideidebar.cpp modify/delete resolved)
+  - hyperharness/adrenaline: upstream update
+- **Reverse Sync**: 34+ feature branches updated with latest default
+- **Build**: jules-autopilot clean (Vite v6.4.2, 11.77s, 485KB index chunk)
+
+## [2.5.0] - 2026-04-17
 ### Changed
 - **New Branches Merged**:
   - superai: `jules-hypercode-porting-p1` (413-file merge, 121K+ insertions)
