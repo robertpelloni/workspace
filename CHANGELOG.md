@@ -1,4 +1,20 @@
-﻿## [2.7.0] - 2026-04-17
+﻿## [2.8.0] - 2026-04-17
+### Changed
+- **Feature Branch Merges**:
+  - jules-autopilot: `jules-17764958747146694232-3d7c3856` re-merged (3 commits)
+  - bobeditpro: `feature/bus-tracks-and-docs-8870936135855758930` (3 commits, fast-forward)
+  - bobmani/hymnmania: `feat/comprehensive-docs-and-tts-params` merged with conflict resolution (VERSION, CHANGELOG, docs, video_uploader.py)
+  - bobmani/ksm-v2: `jules/feature/configurable-songs-dir` merged into develop
+- **Upstream Syncs** (NEW upstream changes!):
+  - bobeditpro: 2 upstream audacity commits (conflict in au3importer.cpp auto-resolved)
+  - tabby: 4 upstream commits (xterm frontend additions)
+  - topaz-ffmpeg: 1 upstream commit (ffv1_common.glsl update)
+- **Reverse Syncs**: 34+ feature branches updated
+  - bobsaver, geany, beatoraja all got main/master merged back into their jules branches
+- **Submodule Updates**: pi-mono third_party/v8 updated, hyperharness tools synced
+- **Build**: jules-autopilot clean (12.85s)
+
+## [2.7.0] - 2026-04-17
 ### Changed
 - **New Branches Merged**:
   - jules-autopilot: `jules-17764958747146694232-3d7c3856` (6 commits, vercel.json)
