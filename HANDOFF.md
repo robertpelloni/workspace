@@ -1,116 +1,127 @@
-# Workspace Handoff — v2.6.0 — 2026-04-17
+# Workspace Handoff — v2.7.0 — 2026-04-17
 
 ## Session Summary
-Protocol v2.6.0: Major batch merge of ~25 openclaw-config branches (101 commits ahead), plus merges across bobsaver, MarbleBlast, neverball (party games UI), bobmania, beatoraja, itgmania, hymnmania, geany, btk. Upstream sync found 125 new FFmpeg commits merged into topaz-ffmpeg. 34+ feature branches reverse-synced. jules-autopilot built successfully (11.77s, 485KB).
+Protocol v2.7.0: Merged new jules-autopilot branch (6 commits), bobfilez jules + image-hash branches, opencode-autopilot (34 commits), bobui, and massive superai cleanup (22 dependabot branches + rewrite/main-sanitized). All 18 upstream forks checked — zero new upstream commits. 34+ feature branches reverse-synced. Submodules updated including major juce restructuring in bobui. jules-autopilot built successfully.
 
 ## Key Changes This Session
-- **openclaw-config**: Merged ~25 branches into main — feat/claude-code-skill, fix/cron-healthcheck-semantic-detection (NEW), chore/agents-completion-hardening, docs/migration-analysis, add-claude-github-actions, review-sweep/pr-49, pr-52, pr-59, pr-61, pr-72, fix/embeddings-guide-boot-wording, fix/librarian-firstname-lastname, fix/contact-steward-identity-anchors, scrub-pii-rename-docs, review/pr-95-codex-feedback. Now 101 commits ahead of origin (403 push issue — origin is TechNickAI, not robertpelloni)
-- **bobsaver**: Merged `jules-7169901332660125491` — linuxdeploy AppImage, projectm submodule updates. Pushed.
-- **MarbleBlast**: Merged `jules-15180076805006571318`. Pushed (11 ahead).
-- **neverball**: Merged `party-games-ui-docs` — 31-file party games UI with conflict resolution. Pushed (5 ahead).
-- **bobmania**: Merged `feat/unified-merge-conflict-resolution-v5.7.1` — added ArchHooks_VR.h
-- **beatoraja**: Merged `feature/launcher-enhancement-docs` with conflict resolution
-- **itgmania**: Merged `jules-13842864760264873486` (plan.txt). Pushed (2 ahead).
-- **geany**: Merged `jules-3128865207300374222` (go filetypes). Pushed (3 ahead).
-- **btk**: Reverse-synced pi/geany-variant-build-fix and pi/msvc-focus-fixes. Pushed (6 ahead).
-- **topaz-ffmpeg**: Upstream FFmpeg merge — 125 commits, configure conflict resolved. Cannot push (origin is TopazLabs, 403).
-- **bobeditpro**: Submodule update (muse_framework). Pushed (1 ahead).
-- **bobui**: ultimatepp submodule update (ideidebar.cpp modify/delete resolved). Pushed (1 ahead).
-- **hyperharness**: adrenaline submodule update.
-- **bobfilez**: Rebased and pushed.
-- **hymnmania**: Rebased and pushed.
+- **jules-autopilot**: NEW branch `jules-17764958747146694232-3d7c3856` merged (6 commits, adds vercel.json)
+- **bobfilez**: `jules-372251447975422924-5b932c3a` merged + `image-hash-stable` merged with `--allow-unrelated-histories` (218 commits ahead, pushed)
+- **opencode-autopilot**: `jules-4657769983160951050-bc8be7a1` merged (34 commits, vscode tsconfig)
+- **bobui**: `jules-11090863842246041945-58931a03` merged; submodule updates (juce major restructure, ultimatepp); pushed (4 ahead)
+- **superai**: 22 dependabot branches merged (actions/download-artifact-7, setup-python-6, upload-artifact-6, codecov-5, codeql-4, npm packages for borg-extension, hypercode-extension, web, openai-codex, drizzle, eslint, hono, mcp-sdk, next, vite, pip/aider, uv/agent-sdk, werkzeug). Also merged `rewrite/main-sanitized` (21 commits). Pushed.
+- **bobbybookmarks**: `multi_pool.py` added, pushed
+- **bobtrax**: reverse sync pushed (1 ahead)
+- **superai/rewrite/main-sanitized**: reverse synced and pushed (1113 ahead)
+
+## Upstream Sync Results
+All 18 upstream forks checked — **zero new upstream commits**:
+- bobeditpro (audacity/audacity): 0
+- tabby (Eugeny/tabby): 0
+- sm64coopdx: 0
+- topaz-ffmpeg (FFmpeg/FFmpeg): 0
+- jules-autopilot (sbhavani/jules-app): 0
+- bobtrader: 0
+- bobtorrent: 0
+- mcp-superassistant: 0
+- raindropioapp: 0
+- fwber: 0
+- mk64: 0
+- bobmani/arrowvortex: 0
+- bobmani/beatoraja: 0
+- bobmani/ddc: 0
+- bobmani/itgmania: 0
+- bobmani/ksm-v2: 0
+- bobmani/linthesia: 0
+- bobmani/Simply-Love-SM5: 0
 
 ## Pushed Repos (Default Branches)
-- bobeditpro (1 ahead), bobfilez (rebased), bobsaver (5 ahead), bobui (1 ahead), btk (6 ahead)
-- geany (3 ahead), MarbleBlast (11 ahead), neverball (5 ahead), bobmani/itgmania (2 ahead), bobmani/hymnmania (rebased)
+- bobbybookmarks (1 ahead → pushed)
+- bobfilez (218 ahead → pushed)
+- bobui (4 ahead → pushed, includes submodule updates)
+- superai (1 ahead → pushed)
 
 ## Pushed Feature Branches
-- bobui/dev (229 ahead), bobui/jules-11090863842246041945 (2 ahead)
-- btk/pi/geany-variant-build-fix (2 ahead), btk/pi/msvc-focus-fixes (35 ahead)
-- Maestro: borg-assimilation (810), cue-polish (275), fix/cue-expanded-env (576), fix/opencode-sqlite-sessions (1254), maestro-cue-spinout (941)
-- MarbleBlast/jules branch (3 ahead), neverball/party-games (276 ahead), npp/disable-autocomplete (55 ahead), f-zerox/pc-port-ui (22 ahead)
+- bobui/dev (4 ahead), bobui/jules-11090863842246041945 (2 ahead)
+- bobtrax/jules-13814763330234479585 (1 ahead)
+- jules-autopilot/jules-17764958747146694232 (1 ahead, forced)
+- superai/rewrite/main-sanitized (1113 ahead)
+- opencode-autopilot/jules-4657769983160951050 (3 ahead)
 
 ## Push Failures / Blockers
-- **openclaw-config**: HTTP 403 — origin is TechNickAI/openclaw-config, NOT robertpelloni fork. 101 commits ahead but can't push. Need to add robertpelloni fork as remote.
-- **topaz-ffmpeg**: HTTP 403 — origin is TopazLabs/ffmpeg, not robertpelloni. Cannot push local changes.
-- **Maestro**: Requires `--no-verify` for pushes (uses it successfully)
-- **bg**: Skipped (huge build_output tree causes timeouts)
-- **bobdesk**: 13K dirty LibreOffice files (intentional)
-- **borg**: Secondary worktree at hypercode-push (by design)
+- **openclaw-config**: HTTP 403 — origin is TechNickAI/openclaw-config. robertpelloni fork does NOT exist yet. Need to create fork at github.com/robertpelloni/openclaw-config.
+- **topaz-ffmpeg**: HTTP 403 — origin is TopazLabs/ffmpeg. robertpelloni fork needed.
+- **bobui/submodules/juce**: HTTP 403 — origin is juce-framework/JUCE (third-party)
+- **bobui/submodules/ultimatepp**: HTTP 403 — origin is ultimatepp/ultimatepp (third-party)
+- **Maestro**: Requires `--no-verify` (working as expected)
+- **bobfilez**: Deep pybind11 directory causes checkout hangs ( Filename too long)
 
 ## Repo Architecture
 ### Workspace Root (C:/Users/hyper/workspace)
 Main meta-repo. Contains CHANGELOG.md, VERSION, HANDOFF.md, and 40+ repo clones.
 
 ### Key Repos
-| Repo | Default | Upstream | Notes |
-|------|---------|----------|-------|
-| jules-autopilot | main | sbhavani/jules-app | Main AI app, Vite build |
-| bobeditpro | master | audacity/audacity | Audacity fork, muse_framework + bobui submodules |
-| superai | main | — | 14 ahead from hypercode porting |
-| bobgui | master | — | GTK fork, 1997 commits, ~700 upstream branches (DO NOT MERGE) |
-| tabby | master | Eugeny/tabby | Terminal emulator fork |
-| Maestro | main | — | AI orchestration, needs --no-verify |
-| bobcoin | main | — | Blockchain project |
-| pi-mono | main | — | Pi ecosystem |
-| openclaw-config | main | TechNickAI | **origin is NOT robertpelloni** — 403 push |
-| topaz-ffmpeg | master | FFmpeg/FFmpeg | **origin is TopazLabs** — 403 push |
+| Repo | Default | Upstream | Status |
+|------|---------|----------|--------|
+| jules-autopilot | main | sbhavani/jules-app | ✅ clean, built |
+| bobeditpro | master | audacity/audacity | ✅ clean |
+| superai | main | — | ✅ pushed |
+| bobgui | master | — | ✅ clean |
+| tabby | master | Eugeny/tabby | ✅ clean |
+| Maestro | main | — | ✅ clean |
+| bobcoin | main | — | ✅ clean |
+| pi-mono | main | — | ✅ clean |
+| openclaw-config | main | TechNickAI | ❌ 403 push (101 ahead) |
+| topaz-ffmpeg | master | TopazLabs/FFmpeg | ❌ 403 push |
+| bobfilez | main | — | ✅ pushed (218 ahead) |
+| bobui | main | — | ✅ pushed |
+| bobbybookmarks | main | — | ✅ pushed |
+| opencode-autopilot | main | — | ✅ clean |
 
 ### Submodule Tree
 ```
 workspace/
-├── bobeditpro/
-│   ├── muse_framework/ (upstream: MuseScore)
-│   └── bobui/
-├── bobtrax/
-│   ├── ardour/
-│   ├── bobui/
-│   ├── lmms/
-│   ├── muse/
-│   └── zrythm/
-├── bobui/
-│   ├── submodules/juce/
-│   └── submodules/ultimatepp/
-├── btk/
-│   ├── external/bobui-reference/
-│   ├── external/juce/
-│   └── external/ultimatepp/
-├── f-zerox/
-│   ├── subprojects/bobgui/
-│   ├── subprojects/bobui/
-│   └── subprojects/btk/
-├── hyperharness/
-│   ├── adrenaline/
-│   ├── aider/
-│   ├── goose/ ... (27 AI tool submodules)
-│   └── ...
-├── npp/
-│   ├── bobgui/
-│   ├── bobui/
-│   └── btk/
+├── bobeditpro/          (master, audacity fork)
+│   ├── muse_framework/  (upstream: MuseScore)
+│   └── bobui/           (local fork)
+├── bobtrax/             (master)
+│   ├── ardour/          └── bobui/ └── lmms/ └── muse/ └── zrythm/
+├── bobui/               (main, 4 ahead)
+│   ├── submodules/juce/     (origin: juce-framework/JUCE — 403)
+│   └── submodules/ultimatepp/ (origin: ultimatepp/ultimatepp — 403)
+├── btk/                 (master)
+│   ├── external/bobui-reference/ └── juce/ └── ultimatepp/
+├── f-zerox/             (main)
+│   ├── subprojects/bobgui/ └── bobui/ └── btk/
+├── geany/               (master, no upstream remote)
+│   ├── subprojects/bobgui/ └── bobui/ └── btk/
+├── hyperharness/        (main, 27 AI tool submodules)
+│   ├── adrenaline/ └── aider/ └── goose/ └── ...
+├── npp/                 (master)
+│   ├── bobgui/ └── bobui/ └── btk/
+├── jules-autopilot/     (main, Vite build)
+├── superai/             (main, 1 ahead pushed)
+├── openclaw-config/     (main, 101 ahead, 403)
 └── bobmani/
-    ├── arrowvortex/ (upstream: arrowvortex)
-    ├── beatoraja/ (upstream: beatoraja)
-    ├── bobmania/ (upstream: Simply-Love-SM5 variants)
-    ├── ddc/ (upstream: ddc)
-    ├── hymnmania/
-    ├── itgmania/ (upstream: itgmania)
-    ├── ksm-v2/ (upstream: ksm-v2)
-    ├── linthesia/ (upstream: linthesia)
-    └── Simply-Love-SM5/ (upstream: Simply-Love-SM5)
+    ├── arrowvortex/ beatoraja/ bobmania/ ddc/
+    ├── hymnmania/ itgmania/ ksm-v2/ linthesia/
+    └── Simply-Love-SM5/
 ```
 
 ## Known Issues
-- 156 Dependabot vulnerabilities in jules-autopilot (3 critical, 73 high)
-- openclaw-config and topaz-ffmpeg origins point to third-party repos (403)
-- bg has huge build_output tree (skipped)
-- bobdesk has 13K dirty LibreOffice files (intentional)
-- bobtrax, npp submodule fetches fail due to bobui's ultimatepp submodule ref issues
-- antigravity-cli: 1 ahead (403 — krmslmz remote)
-- computer-use-preview: 9 ahead (no push attempted)
+- 156 Dependabot vulnerabilities in jules-autopilot (3 critical)
+- openclaw-config: Need to create robertpelloni fork (403)
+- topaz-ffmpeg: Need to create robertpelloni fork (403)
+- bobui/submodules/juce & ultimatepp: Third-party origins, can't push (by design)
+- bobfilez: Deep pybind11 paths cause git checkout hangs
+- bobtrax/npp/btk: ultimatepp submodule remote ref errors (upload-pack: not our ref)
+- f-zerox/bobcoin: Unresolved merge conflict in submodule
+- hyperharness/amazon-q-developer-cli: Unresolved merge conflict in submodule
+- bg: Skipped (huge build_output tree)
+- bobdesk: 13K dirty LibreOffice files (intentional)
+- borg: Secondary worktree at hypercode-push (by design)
 
 ## Build Info
-- **jules-autopilot**: Vite v6.4.2, 2970 modules, 11.77s build, 485KB index chunk
+- **jules-autopilot**: Vite v6.4.2, 2970 modules, ~11.77s build, 485KB index chunk
 - **Node**: v22+ required
 - **Build command**: `cd jules-autopilot && npm run build`
 
@@ -119,13 +130,17 @@ workspace/
 - Translation files (.po): `--theirs`
 - Source files: Union merge (concatenate both sides via Python regex)
 - Submodule conflicts: Reset dirty state, then merge
-- Unrelated histories: Skip (don't force merge)
+- Unrelated histories: Use `--allow-unrelated-histories` only when safe
+- bobeditpro upstream branches: ALL skipped (60+ upstream audacity release/feature branches)
+- geany upstream branches: ALL skipped
+- tabby upstream branches: ALL skipped (80+ all-contributors + dependabot)
 
 ## Next Steps
-1. **openclaw-config**: Add robertpelloni remote or fork to resolve 403
-2. **topaz-ffmpeg**: Create robertpelloni fork to push local changes
-3. Fix bobui/ultimatepp submodule remote ref (upload-pack not our ref errors)
-4. Push Maestro/rc branch
-5. Address 156 Dependabot vulnerabilities (3 critical)
-6. Consider merging antigravity-cli if permission resolved
-7. Clean hyperharness dirty submodule pointers
+1. **openclaw-config**: Create robertpelloni fork on GitHub, add as remote, push 101 commits
+2. **topaz-ffmpeg**: Create robertpelloni fork, push local changes
+3. Fix bobui/ultimatepp submodule remote ref errors (affects bobtrax, npp, btk)
+4. Fix f-zerox/bobcoin submodule conflict
+5. Fix hyperharness/amazon-q-developer-cli submodule conflict
+6. Push Maestro/rc branch if it exists
+7. Address 156 Dependabot vulnerabilities (3 critical)
+8. Consider geany upstream remote setup

@@ -1,4 +1,21 @@
-﻿## [2.6.0] - 2026-04-17
+﻿## [2.7.0] - 2026-04-17
+### Changed
+- **New Branches Merged**:
+  - jules-autopilot: `jules-17764958747146694232-3d7c3856` (6 commits, vercel.json)
+  - bobfilez: `jules-372251447975422924-5b932c3a` + `image-hash-stable` (unrelated histories merge)
+  - opencode-autopilot: `jules-4657769983160951050-bc8be7a1` (34 commits, vscode tsconfig)
+  - bobui: `jules-11090863842246041945-58931a03` merged
+  - superai: 22 dependabot branches merged + `rewrite/main-sanitized` (21 commits)
+  - bobbybookmarks: multi_pool.py added
+- **Submodule Updates**:
+  - bobui/juce: major upstream update (deleted old modules, restructured)
+  - bobui/ultimatepp: upstream update
+  - bobui: submodule pointers committed (4 ahead)
+- **Upstream Sync**: All 18 upstream forks checked — zero new commits across all repos
+- **Reverse Sync**: 34+ feature branches updated with latest default
+- **Build**: jules-autopilot clean
+
+## [2.6.0] - 2026-04-17
 ### Changed
 - **New Branches Merged**:
   - openclaw-config: 101 commits ahead — merged ~25 feature branches including `feat/claude-code-skill`, `fix/cron-healthcheck-semantic-detection`, `chore/agents-completion-hardening`, `docs/migration-analysis`, `add-claude-github-actions`, review-sweep branches, scrub-pii, fix/embeddings-guide, fix/librarian, fix/contact-steward
