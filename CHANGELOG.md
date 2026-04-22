@@ -1,4 +1,25 @@
-﻿## [2.4.0] - 2026-04-17
+﻿## [2.5.0] - 2026-04-17
+### Changed
+- **New Branches Merged**:
+  - superai: `jules-hypercode-porting-p1` (413-file merge, 121K+ insertions)
+  - bobgui: `jules-10024490872005189356` (1997 ahead, GTK emoji fixes)
+  - supersaber: `jules-13860999388841438430` (docs + editor templates)
+  - picard: `jules-12364719424079951847` (log cleanup)
+  - linthesia: `jules-13365660602124490195` (midi driver cleanup)
+- **Submodule Updates**:
+  - bobeditpro/muse_framework: upstream autobot→testflow rename merged
+  - bobtrax/ardour: upstream zita-resampler modify/delete resolved
+  - npp/bobgui: upstream GTK prebuild + vs9 project updates merged
+  - bobeditpro/bobui: pointer updated
+- **Reverse Sync**: 23 feature branches updated with latest default
+  - bobeditpro: 2 feature branches synced
+  - Maestro: borg-assimilation + 2 jules branches
+  - pi-mono: badlogic-main (27 commits ahead)
+  - ksm-v2, linthesia, bobtrax feature branches synced
+- **Upstream Sync**: All forked repos checked — no new upstream changes
+- **Build**: jules-autopilot clean (Vite v6.4.2, 10.62s, index chunk 485KB — under 500KB warning!)
+
+## [2.4.0] - 2026-04-17
 ### Changed
 - **New Branches Merged**:
   - bg: `jules-1394303886104622315-aa648523` (NEW, netty regex fix)
