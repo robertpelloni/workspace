@@ -1,4 +1,43 @@
-﻿## [3.2.0] - 2026-04-17
+﻿## [3.3.0] - 2026-04-17
+### Forward Merges (Feature → Default)
+- **agentirc**: `feature/agentirc-configuration-and-tools-1585...` → master (2 new commits)
+- **bobbybookmarks**: `feature/reorg-and-integrate` → main (FF, 2 ahead)
+- **bobbybookmarks**: `jules-bobbybookmarks-ingestion-1069...` → main (merged with data resolution)
+- **CLIProxyAPIPlus**: `jules-9238...` → main (1 new commit, translator plugin.go)
+- **jules-autopilot**: `jules-1776...` → main (4 ahead, prisma DB resolved)
+- **opencode-autopilot**: `jules-4657...` → main (1 commit, analytics + index.html)
+- **supersaber**: `jules-13860...` → master (FF, menu template)
+- **openclaw-config**: 17 feature branches verified already merged (all "Already up to date")
+
+### Reverse Syncs (Default → Feature)
+- **agentirc/jules-agentirc-features-1289...**: 6 ahead (caught up to master)
+- **bobcoin/feature/comprehensive-ui-spec** (×2): 1 ahead each
+- **bobtrax/jules-138...**: 2 ahead (submodule pointer updates)
+- **geany/jules-3128...**: 1 ahead (bobgui submodule update)
+- **Maestro/jules-2575**: 2 ahead (absorbed main changes)
+- **jules-autopilot/jules-1776**: 6 ahead (prisma binary resolved)
+- **tabby/feat/real-pty-serial**: 11 ahead (master merged, command catalog + block frontend + warp analysis)
+- **MarbleBlast/main**: 51 ahead (merged master into main — TODO.md, VISION.md, copilot-instructions.md)
+- **bobbybookmarks/jules-ingestion**: 12 ahead (bookmarks.db + deep_research_status resolved)
+- **openclaw-config**: All 17 feature branches caught up to main (403 push blocker)
+
+### Upstream Sync
+- All 18+ upstream repos: **0 new changes** (fully synced)
+
+### Submodule Updates
+- bobeditpro/bobui: updated to latest main
+- bobsgameonlinejava/libs: micromod, commons-lang updated
+- bobsgameonlinejava/references: aseprite, sprite-studio-64, Pixelorama, PixiEditor, **tiled** (new!)
+- btk/external/bobui-reference: reset to origin
+- geany/subprojects/btk + bobui: pointer updates
+- npp/bobui + btk: pointer updates
+- bobui/submodules/ultimatepp: reset to origin
+- f-zerox/bobcoin: reset to origin
+
+### Build
+- jules-autopilot: **29.41s**, 674KB index, 2970+ modules ✅
+
+## [3.2.0] - 2026-04-17
 ### Changed
 - **Feature Branch Merges (7 branches)**:
   - bobcoin: `feat/governance-delays-and-zk-port-9005` → main (1 commit, already merged, re-confirmed)
