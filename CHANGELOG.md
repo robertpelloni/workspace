@@ -1,4 +1,29 @@
-﻿## [2.9.0] - 2026-04-17
+﻿## [3.0.0] - 2026-04-17
+### Changed
+- **Feature Branch Merges (10 branches across 10 repos!)**:
+  - bobcoin: `feat/governance-delays-and-zk-port` → main (3 commits, fast-forward)
+  - Maestro: `jules-2575...` → main (5 commits, fast-forward)
+  - opencode-autopilot: `jules-465...` → main (1 commit, fast-forward)
+  - CLIProxyAPIPlus: `jules-923...` → main (2 commits, fast-forward)
+  - pi-mono: `jules-1445...` → main (4 ahead, 1 behind, merged with 13 files)
+  - bobbybookmarks: `jules-bobbybookmarks-ingestion` → main (1 ahead, 3 behind, merged)
+  - agentirc: `feature/agentirc-config` → master (3 ahead, 98 behind, merged)
+  - bobmani/itgmania: `jules-1384...` → release (1 ahead, 2 behind, merged)
+  - bobmani/beatoraja: `fix-sync-and-docs` → master (25 ahead, 16 conflicts resolved)
+  - openclaw-config: `feat/claude-code-skill` → main (4 ahead, local only, 403 push)
+- **Upstream Sync**:
+  - bobeditpro: 2 new upstream audacity commits (translation workflow)
+- **Reverse Syncs** (15 feature branches caught up with default):
+  - bobui: dev, omni-ui-framework, jules-110 (all fast-forwarded, juce submodule update)
+  - hyperharness: deep-wire-mcp-memory (fast-forward)
+  - npp: jules-364 branch
+  - pi-mono: badlogic-main (6 commits synced)
+  - Maestro/rc: 196 commits caught up (201 ahead after sync)
+  - bobmani/hymnmania: 2 branches (54 and 79 commits synced)
+  - openclaw-config: drive-to-done, fleet-update-safeguards, review-sweep-40
+- **Build**: jules-autopilot clean (12.41s, 485KB, 2970 modules)
+
+## [2.9.0] - 2026-04-17
 ### Changed
 - **Feature Branch Merges**:
   - jules-autopilot: `jules-17764958747146694232-3d7c3856` merged via ref-update (RAG graph feature, massive archive restructure)
