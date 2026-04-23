@@ -1,4 +1,31 @@
-﻿## [3.1.0] - 2026-04-17
+﻿## [3.2.0] - 2026-04-17
+### Changed
+- **Feature Branch Merges (7 branches)**:
+  - bobcoin: `feat/governance-delays-and-zk-port-9005` → main (1 commit, already merged, re-confirmed)
+  - picard: `jules-1236...` → master (1 new commit, project status update)
+  - Maestro: `jules-2575...` → main (1 commit, non-FF merge, 0 conflicts)
+  - jules-autopilot: `jules-1776...` → main (3 commits, prisma DB conflicts resolved via --theirs)
+  - tabby: `feat/real-pty-serial-1713...` → master (2 commits, 11 README conflicts resolved via --theirs)
+  - bobmani/linthesia: `jules-1336...` → main (3 commits, FF, GTKmm Phase 1 Pango Text Abstraction)
+  - agentirc: `feature/agentirc-configuration-and-tools-1585...` → master (1 commit, non-FF)
+- **Reverse Syncs (15 feature branches caught up)**:
+  - Maestro: borg-assimilation, fix/cue-expanded-env, fix/opencode-sqlite-sessions, jules-add-new-agents, maestro-cue-spinout — all 5 **unblocked** and synced (8 ahead each) ✅
+  - jules-autopilot/hypercode-sync: 82 commits ahead (prisma DB resolved by committing + merging)
+  - bobbybookmarks/feature/reorg-and-integrate: 13 ahead (data conflicts resolved)
+  - bobtrax/jules-138...: 1 ahead
+  - geany/jules-3128...: 1 ahead (attempted)
+  - npp/jules-364...: 1 ahead
+  - bobmani/bobmania feature: 0 ahead (already same commit as master)
+- **Upstream Sync**: 2 repos with new changes!
+  - bobeditpro: 2 new upstream commits (locale files: Armenian, Japanese, Korean, Polish, Russian)
+  - topaz-ffmpeg: 4 new upstream commits (webp/APNG decoder optimizations)
+- **Submodule Updates**: bobtrax/bobui, bobsgameonlinejava/libs (micromod, commons-lang, Pixelorama, PixiEditor), bobeditpro/bobui
+- **Build**: jules-autopilot clean (11.59s, 674KB index, chunk size warning)
+
+### Key Achievement
+Maestro's borg-assimilation branch — **previously blocked since v2.9.0** — successfully reverse-synced along with 4 other Maestro branches that were cascading from it.
+
+## [3.1.0] - 2026-04-17
 ### Changed
 - **Feature Branch Merges (4 branches)**:
   - bobcoin: `feat/governance-delays-and-zk-port` → main (1 new commit, ZK/FHE to Go)
