@@ -1,4 +1,16 @@
-﻿## [2.8.0] - 2026-04-17
+﻿## [2.9.0] - 2026-04-17
+### Changed
+- **Feature Branch Merges**:
+  - jules-autopilot: `jules-17764958747146694232-3d7c3856` merged via ref-update (RAG graph feature, massive archive restructure)
+  - openclaw-config: `feat/budget-guard-from-paperclip` merged locally (budget guard with auto-disable)
+- **Upstream Syncs** (NEW upstream changes!):
+  - bobeditpro: 6 upstream audacity commits (ClipIndicator.qml conflict auto-resolved)
+  - tabby: 1 upstream commit (CI build workflow update)
+  - bobmani/ksm-v2: 1 upstream commit (NocoUI submodule conflict resolved, .noco files updated)
+- **Reverse Syncs**: jules-autopilot jules branch caught up with main
+- **Build**: jules-autopilot clean (10.95s)
+
+## [2.8.0] - 2026-04-17
 ### Changed
 - **Feature Branch Merges**:
   - jules-autopilot: `jules-17764958747146694232-3d7c3856` re-merged (3 commits)

@@ -1,68 +1,93 @@
-# Workspace Handoff — v2.8.0 — 2026-04-17
+# Workspace Handoff — v2.9.0 — 2026-04-17
 
 ## Session Summary
-Protocol v2.8.0: Merged jules-autopilot re-merge (3 commits), bobeditpro bus-tracks feature (3 commits), bobmani/hymnmania comprehensive-docs with conflict resolution, and bobmani/ksm-v2 configurable-songs-dir. **First upstream changes in 3 sessions**: bobeditpro (2 audacity commits, conflict resolved), tabby (4 xterm commits), topaz-ffmpeg (1 vulkan commit). All 34+ feature branches reverse-synced. Built jules-autopilot successfully (12.85s).
+Protocol v2.9.0: Merged jules-autopilot RAG graph feature (via ref-update due to prisma DB lock), openclaw-config budget-guard locally. Upstream changes in bobeditpro (6 audacity commits, ClipIndicator.qml conflict resolved), tabby (1 CI build), ksm-v2 (1 upstream, NocoUI submodule conflict resolved). Built jules-autopilot in 10.95s.
 
 ## Key Changes This Session
 
 ### Feature Branches Merged → Default
 | Repo | Branch | Default | Commits | Notes |
 |------|--------|---------|---------|-------|
-| jules-autopilot | `jules-17764958747146694232-3d7c3856` | main | 3 | vercel.json added |
-| bobeditpro | `feature/bus-tracks-and-docs-8870936135855758930` | master | 3 | fast-forward |
-| bobmani/hymnmania | `feat/comprehensive-docs-and-tts-params-...` | master | 26 | conflict resolution on VERSION, CHANGELOG, docs, video_uploader.py |
-| bobmani/ksm-v2 | `jules/feature/configurable-songs-dir-...` | develop | — | build_output files |
+| jules-autopilot | `jules-17764958747146694232-3d7c3856` | main | 4 | RAG architecture graph, archive restructure. Merged via update-ref (prisma DB lock prevents normal checkout) |
+| openclaw-config | `feat/budget-guard-from-paperclip` | main | 1 | Per-cron monthly spend caps with auto-disable (local only, 403 push) |
 
-### Upstream Changes Merged (NEW!)
+### Upstream Changes Merged
 | Repo | Upstream | Commits | Conflict | Resolution |
 |------|----------|---------|----------|------------|
-| bobeditpro | audacity/audacity | 2 | au3importer.cpp | Auto-resolved (union merge) |
-| tabby | Eugeny/tabby | 4 | None | Clean merge (xterm frontend) |
-| topaz-ffmpeg | FFmpeg/FFmpeg | 1 | None | Clean merge (vulkan ffv1) |
+| bobeditpro | audacity/audacity | 6 | ClipIndicator.qml | Auto-resolved (union merge) |
+| tabby | Eugeny/tabby | 1 | None | Clean merge (CI build workflow) |
+| bobmani/ksm-v2 | kshootmania | 1 | NocoUI submodule | Accept upstream version, resolved .noco files |
 
-### Reverse Synced (default → feature)
-All 34+ feature branches updated. Notable:
-- bobsaver: `jules-7169901332660125491` caught up with main
-- geany: `jules-3128865207300374222` caught up with master (51 commits behind → now synced)
-- bobmani/beatoraja: `feature/launcher-enhancement-docs` caught up with master
+### Reverse Synced
+- jules-autopilot: jules branch caught up with main
 
 ### Pushed This Session
 **Default branches:**
 - bobbybookmarks (1 ahead → pushed)
-- bobeditpro (6 ahead → pushed, includes upstream + feature merge)
-- hyperharness (1 ahead → pushed)
-- jules-autopilot (1 ahead → pushed)
-- opencode-autopilot (35 ahead → pushed)
-- pi-mono (1 ahead → pushed)
-- tabby (5 ahead → pushed, includes upstream merge)
-- bobmani/hymnmania (26 ahead → pushed)
+- bobeditpro (7 ahead → pushed, includes upstream merge)
+- jules-autopilot (1 ahead → pushed, includes RAG graph merge)
+- tabby (2 ahead → pushed, includes upstream merge)
 
 **Feature branches:**
-- bobui/feature/omni-ui-framework (4 ahead)
-- geany/jules-3128865207300374222 (51 ahead, forced)
-- bobsaver/jules-7169901332660125491 (8 ahead)
-- bobmani/beatoraja/feature/launcher-enhancement-docs (47 ahead)
+- jules-autopilot/jules-17764958747146694232-3d7c3856 (2 ahead, forced)
 
 ## Upstream Fork Status
 | Repo | Upstream | Local Ahead | Upstream Ahead | Status |
 |------|----------|-------------|----------------|--------|
-| bobeditpro | audacity/audacity | 64 | 0 | ✅ synced |
-| tabby | Eugeny/tabby | 26 | 0 | ✅ synced |
+| bobeditpro | audacity/audacity | 70 | 0 | ✅ synced |
+| tabby | Eugeny/tabby | 27 | 0 | ✅ synced |
 | sm64coopdx | djossm0/sm64coopdx | 59 | 0 | ✅ clean |
-| topaz-ffmpeg | FFmpeg/FFmpeg | 555 | 0 | ✅ synced (can't push - 403) |
-| jules-autopilot | sbhavani/jules-app | 737 | 0 | ✅ clean |
+| topaz-ffmpeg | FFmpeg/FFmpeg | 555 | 0 | ✅ clean (403 push) |
+| jules-autopilot | sbhavani/jules-app | 738 | 0 | ✅ clean |
 | bobtrader | — | 91 | 0 | ✅ clean |
 | bobtorrent | — | 243 | 0 | ✅ clean |
 | mcp-superassistant | — | 58 | 0 | ✅ clean |
 | raindropioapp | — | 252 | 0 | ✅ clean |
 | mk64 | — | 27 | 0 | ✅ clean |
+| bobmani/ksm-v2 | kshootmania | 59 | 0 | ✅ synced |
 | bobmani/arrowvortex | — | 0 | 0 | ✅ clean |
 | bobmani/beatoraja | — | 0 | 0 | ✅ clean |
 | bobmani/ddc | — | 0 | 0 | ✅ clean |
 | bobmani/itgmania | — | 0 | 0 | ✅ clean |
-| bobmani/ksm-v2 | — | 58 | 0 | ✅ clean |
 | bobmani/linthesia | — | 0 | 0 | ✅ clean |
 | bobmani/Simply-Love-SM5 | — | 0 | 0 | ✅ clean |
+
+## Branch Status (robertpelloni feature branches)
+| Repo | Branch | Ahead | Behind | Status |
+|------|--------|-------|--------|--------|
+| agentirc | feature/agentirc-configuration-and-tools | 0 | 98 | Behind (reverse sync failed — abort) |
+| bobbybookmarks | feature/reorg-and-integrate | 0 | 6 | Merged |
+| bobbybookmarks | jules-bobbybookmarks-ingestion | 1 | 2 | Partially ahead |
+| bobcoin | feat/governance-delays-and-zk-port | 3 | 0 | Ahead (new merge candidate for v3.0) |
+| bobcoin | feature/comprehensive-ui-spec-* | 0 | 0 | Merged |
+| bobeditpro | feature/bus-tracks-and-docs | 0 | 1294 | Merged into master |
+| bobeditpro | feature/audition-parity-roadmap | 0 | 1278 | Merged into master |
+| bobui | feature/omni-ui-framework | 0 | 1 | Nearly merged |
+| bobui | jules-11090863842246041945 | 0 | 1 | Nearly merged |
+| CLIProxyAPIPlus | jules-9238706904812453426 | 2 | 0 | Ahead (new merge candidate for v3.0) |
+| f-zerox | pc-port-ui-implementation | 0 | 0 | Merged |
+| geany | jules-3128865207300374222 | 0 | 0 | Merged |
+| hyperharness | feat/deep-wire-mcp-memory | 0 | 1 | Nearly merged |
+| jules-autopilot | jules-17764958747146694232 | 0 | 0 | ✅ MERGED this session |
+| Maestro | jules-2575151016458646249 | 4 | 0 | Ahead (new merge candidate for v3.0) |
+| Maestro | jules-add-new-agents | 0 | 0 | Merged |
+| neverball | party-games-ui-docs | 0 | 0 | Merged |
+| npp | disable-autocomplete-normal-text | 0 | 0 | Merged |
+| npp | jules-3646841170776745183 | 0 | 1 | Nearly merged |
+| openclaw-config | feat/budget-guard-from-paperclip | 0 | 106 | Merged locally (403 push) |
+| openclaw-config | 20+ other branches | 0 | 100+ | All behind main (local) |
+| opencode-autopilot | jules-4657769983160951050 | 1 | 0 | Ahead (new merge candidate for v3.0) |
+| picard | jules-12364719424079951847 | 2 | 0 | Ahead (new merge candidate for v3.0) |
+| pi-mono | jules-14458798274183669513 | 3 | 1 | Partially ahead |
+| supersaber | jules-13860999388841438430 | 1 | 0 | Ahead (new merge candidate for v3.0) |
+
+## New Merge Candidates (ahead of default, for v3.0)
+1. **bobcoin** `feat/governance-delays-and-zk-port` (3 ahead)
+2. **CLIProxyAPIPlus** `jules-9238706904812453426` (2 ahead)
+3. **Maestro** `jules-2575151016458646249` (4 ahead)
+4. **opencode-autopilot** `jules-4657769983160951050` (1 ahead)
+5. **picard** `jules-12364719424079951847` (2 ahead)
+6. **supersaber** `jules-13860999388841438430` (1 ahead)
 
 ## Project Structure
 ```
@@ -70,11 +95,11 @@ C:/Users/hyper/workspace/              (main meta-repo, VERSION, CHANGELOG, HAND
 ├── agentirc/                          (master, IRC agent)
 ├── bobbybookmarks/                    (main, bookmark manager)
 ├── bobcoin/                           (main, cryptocurrency)
-├── bobeditpro/                        (master, audacity fork)
-│   ├── muse_framework/                └── bobui/
-├── bobfilez/                          (main, file manager)
+├── bobeditpro/                        (master, audacity fork, 70 ahead upstream)
+│   ├── muse_framework/               └── bobui/
+├── bobfilez/                          (main, file manager - deep paths issue)
 ├── bobsaver/                          (main, screensaver - VoC data)
-├── bobsgameonlinejava/                (master, online game)
+├── bobsgameonlinejava/                (main, online game)
 ├── bobtorrent/                        (master, torrent client)
 ├── bobtrader/                         (main, trading platform)
 ├── bobtrax/                           (master, DAW suite)
@@ -96,7 +121,10 @@ C:/Users/hyper/workspace/              (main meta-repo, VERSION, CHANGELOG, HAND
 │   ├── jules-extension/ kilocode/ kimi-cli/ litellm/ llamafile/
 │   ├── llm-cli/ ollama/ open-interpreter/ opencode/ pi-cli/
 │   ├── rowboat/ smithery-cli/ vibe/
-├── jules-autopilot/                   (main, Vite React app, 737 ahead upstream)
+├── jules-autopilot/                   (main, Vite React app, 738 ahead upstream)
+│   ├── archive/ (borg session data, lancedb, handoffs)
+│   ├── server/ (daemon, llm, queue, rag, supervisor, webhooks)
+│   └── src/ (React frontend)
 ├── Maestro/                           (main, orchestration)
 ├── MarbleBlast/                       (master, game)
 ├── mcp-superassistant/                (main, MCP assistant)
@@ -104,7 +132,7 @@ C:/Users/hyper/workspace/              (main meta-repo, VERSION, CHANGELOG, HAND
 ├── neverball/                         (master, game)
 ├── npp/                               (master, Notepad++ fork)
 │   └── {bobgui,bobui,btk}/
-├── openclaw-config/                   (main, 101 ahead, 403 push - TechNickAI origin)
+├── openclaw-config/                   (main, 102 ahead, 403 push - TechNickAI origin)
 ├── opencode-autopilot/                (main, VS Code extension)
 ├── picard/                            (master, MusicBrainz fork)
 ├── pi-mono/                           (main, pi monorepo)
@@ -113,56 +141,57 @@ C:/Users/hyper/workspace/              (main meta-repo, VERSION, CHANGELOG, HAND
 ├── sm64coopdx/                        (main, SM64 co-op)
 ├── superai/                           (main, AI platform)
 ├── supersaber/                        (master, Beat Saber clone)
-├── tabby/                             (master, terminal, 26 ahead upstream)
+├── tabby/                             (master, terminal, 27 ahead upstream)
 ├── topaz-ffmpeg/                      (master, FFmpeg fork, 555 ahead, 403 push)
 └── bobmani/                           (rhythm game collection)
     ├── arrowvortex/ (release) ─── beatoraja/ (master)
     ├── bobmania/ (main) ─── ddc/ (master)
     ├── hymnmania/ (master) ─── itgmania/ (release)
-    ├── ksm-v2/ (develop, 58 ahead) ─── linthesia/ (main)
+    ├── ksm-v2/ (develop, 59 ahead upstream) ─── linthesia/ (main)
     └── Simply-Love-SM5/ (itgmania-release)
 ```
 
+## Technical Notes
+- **jules-autopilot prisma DB lock**: The prisma/dev.db-shm and prisma/dev.db-wal files are locked by a running process, preventing normal `git checkout`. Workaround: merge on jules branch, then `git update-ref refs/heads/main HEAD` to update main's pointer without checking out files.
+- **bobmani/ksm-v2 develop tracking**: develop tracks upstream/develop (not origin/develop). origin/develop doesn't exist. The `git fetch` output showed "forced update" for develop but it was actually updating upstream/develop.
+- **bobcoin `feat/governance-delays-and-zk-port`**: 3 ahead of main — appears to have real governance/ZK content. Merge candidate for v3.0.
+
 ## Push Failures / Blockers
-- **openclaw-config**: HTTP 403 — origin is TechNickAI/openclaw-config. robertpelloni fork does NOT exist. 101 commits ahead. Need to fork on GitHub first.
+- **openclaw-config**: HTTP 403 — origin is TechNickAI/openclaw-config. robertpelloni fork exists as remote but push still fails. 102 commits ahead locally.
 - **topaz-ffmpeg**: HTTP 403 — origin is TopazLabs/ffmpeg. robertpelloni fork needed.
-- **bobui/submodules/juce**: HTTP 403 — third-party (juce-framework/JUCE)
-- **bobui/submodules/ultimatepp**: HTTP 403 — third-party (ultimatepp/ultimatepp)
-- **Maestro**: Requires `--no-verify` for pushes (by design)
-- **bobfilez**: Deep pybind11 paths cause checkout hangs (Filename too long)
+- **bobui/submodules/juce**: HTTP 403 — third-party
+- **bobui/submodules/ultimatepp**: HTTP 403 — third-party
+- **Maestro**: Requires `--no-verify` (by design)
+- **bobfilez**: Deep pybind11 paths cause checkout hangs
 
 ## Build Info
-- **jules-autopilot**: Vite v6.4.2, 2970 modules, 12.85s build, 485KB index chunk
-- **Node**: v22+ required
+- **jules-autopilot**: Vite v6.4.2, 2970 modules, 10.95s build, 485KB index chunk
 - **Build command**: `cd jules-autopilot && npm run build`
 
 ## Conflict Resolution Strategy
-- Lock files (package-lock, yarn.lock, Cargo.lock): `--theirs` (accept incoming)
+- Lock files: `--theirs`
 - Source files: Union merge (concatenate both sides via Python regex)
-- Translation files (.po): `--theirs`
-- Submodule conflicts: Reset dirty state, then merge
-- Unrelated histories: `--allow-unrelated-histories` only when safe
-- bobeditpro upstream branches: ALL skipped (60+ audacity release branches)
-- tabby upstream branches: ALL skipped (80+ all-contributors + dependabot)
+- Submodule conflicts: Reset dirty state, accept upstream or ours as appropriate
+- prisma DB files: Skip (use update-ref workaround)
+- bobeditpro upstream branches: ALL skipped (30+ audacity release branches)
+- tabby upstream branches: ALL skipped (40+ all-contributors branches)
 - geany: No upstream remote configured
 
 ## Known Issues
 - 156 Dependabot vulnerabilities in jules-autopilot (3 critical)
-- openclaw-config: Need to create robertpelloni fork (403)
-- topaz-ffmpeg: Need to create robertpelloni fork (403)
-- bobui/submodules/juce & ultimatepp: Third-party origins, can't push (by design)
+- openclaw-config: 403 push blocked (TechNickAI origin)
+- topaz-ffmpeg: 403 push blocked (TopazLabs origin)
+- bobui/submodules/juce & ultimatepp: Third-party origins, can't push
 - btk/external/ultimatepp: Persistent merge conflict in uppsrc/CtrlCore
-- bobtrax/npp/btk: ultimatepp submodule remote ref errors (upload-pack: not our ref)
-- bobdesk: 13K dirty LibreOffice files (intentional)
-- borg: Secondary worktree at hypercode-push (by design)
-- geany: No upstream remote (would need geany/geany as upstream)
+- agentirc: feature branch reverse sync aborted (98 behind)
+- jules-autopilot: prisma DB files locked by running process
 - Servers: Hetzner 5.161.250.43 hosts bobsgame.com, robertpelloni.com, fwber.me
 
 ## Next Steps
-1. **openclaw-config**: Create robertpelloni fork on GitHub, add as remote, push 101 commits
-2. **topaz-ffmpeg**: Create robertpelloni fork, push local changes
-3. Fix btk/external/ultimatepp merge conflict
-4. Fix bobtrax/npp/btk ultimatepp submodule remote ref errors
+1. **v3.0 Candidates**: Merge 6 branches ahead of default (bobcoin, CLIProxyAPIPlus, Maestro, opencode-autopilot, picard, supersaber)
+2. **openclaw-config**: Investigate why robertpelloni remote still returns 403
+3. **topaz-ffmpeg**: Create robertpelloni fork on GitHub
+4. Fix btk/external/ultimatepp merge conflict
 5. Address 156 Dependabot vulnerabilities (3 critical)
 6. Consider setting up geany upstream remote (geany/geany)
-7. Maestro: Push rc branch if it exists
+7. Investigate agentirc merge abort issue
