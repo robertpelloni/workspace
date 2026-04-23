@@ -1,4 +1,27 @@
-﻿## [3.0.0] - 2026-04-17
+﻿## [3.1.0] - 2026-04-17
+### Changed
+- **Feature Branch Merges (4 branches)**:
+  - bobcoin: `feat/governance-delays-and-zk-port` → main (1 new commit, ZK/FHE to Go)
+  - picard: `jules-1236...` → master (3 commits, Immutable Library Proof v0.17.0, Rust P2P bridge)
+  - supersaber: `jules-1386...` → master (1 commit, v1.3.9 deployment pipeline)
+  - bobmani/bobmania: `feat/unified-merge-conflict-resolution` — discovered behind master, moved to reverse sync
+- **Reverse Syncs (25 feature branches caught up)**:
+  - bobcoin: 2 UI spec branches (3 behind → caught up)
+  - bobsgameonlinejava: 2 branches (7 behind → caught up)
+  - bobtrax: jules branch (1 behind → caught up)
+  - CLIProxyAPIPlus: jules branch (2 behind → caught up)
+  - agentirc: jules-agentirc-features (4 behind → caught up)
+  - pi-mono: jules branch (2 behind → caught up)
+  - sm64coopdx: mmorpg-ui-overhaul (13 behind → caught up)
+  - bobmani/beatoraja: launcher-enhancement-docs (26 behind → caught up)
+  - bobmani/itgmania: jules branch (3 behind → caught up, 80+ source conflicts resolved)
+  - Maestro: borg-assimilation (6 behind, conflicts in ARCHITECTURE.md/BorgLiveProvider.ts — deferred)
+  - jules-autopilot: hypercode-sync, jules branch (prisma DB conflicts — deferred)
+- **Upstream Sync**: No new upstream changes across 18+ forks
+- **Submodule Updates**: bobeditpro/bobui, bobtrax/bobui+lmms+zrythm, npp/bobui+btk, geany/btk+bobgui+bobui, btk/ultimatepp, bobsgameonlinejava/libs+refs
+- **Build**: jules-autopilot clean (12.71s, 485KB, 2970 modules)
+
+## [3.0.0] - 2026-04-17
 ### Changed
 - **Feature Branch Merges (10 branches across 10 repos!)**:
   - bobcoin: `feat/governance-delays-and-zk-port` → main (3 commits, fast-forward)
