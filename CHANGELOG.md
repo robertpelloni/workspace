@@ -1,4 +1,36 @@
-﻿## [3.3.0] - 2026-04-17
+﻿## [3.4.0] - 2026-04-17
+### Forward Merges (Feature → Default)
+- **bobcoin**: `dependabot/npm_and_yarn/frontend/multi-6cb4a7dc76` → main (esbuild+vite bump)
+- **bobcoin**: `dependabot/npm_and_yarn/frontend/npm_and_yarn-0b827c8a6a` → main (npm group bump)
+- **jules-autopilot**: `jules-17764958747146694232-3d7c3856` → main (+2 commits, clean merge)
+- **Maestro**: `jules-2575151016458646249-2d58a6b7` → main (FF, removed dead code — process-manager, context-groomer, web-server-factory)
+- **pi-mono**: `pr-1724` → main (tree branch folding/unfold navigation feature + keybindings)
+- **tabby**: `feat/real-pty-serial-17133914354864152103` → master (FF, +2 commits)
+
+### Reverse Syncs (Default → Feature)
+- **bobcoin/feat/governance-delays-and-zk-port**: caught up to main (removed 13K-line Cargo.lock, deps sync)
+- **jules-autopilot/jules-1776**: FF to catch up (+2)
+
+### Upstream Sync
+- All upstream forks: **0 new changes** (fully synced)
+
+### Submodule Updates
+- bobfilez: 10 submodule pointers updated (ai-file-sorter, OpenRV, OpenTimelineIO, SysmonForLinux, bobgui, etc.)
+- bobui/submodules/ultimatepp: 156 insertions, 85 deletions
+- btk/external/ultimatepp: same ultimatepp update
+- btk/external/bobui-reference: pointer update
+- bobsgameonlinejava/libs: micromod, commons-lang updated
+- bobsgameonlinejava/references: aseprite, sprite-studio-64, Pixelorama, PixiEditor, tiled updated
+
+### Build
+- jules-autopilot: **11.94s** (warm cache), 674KB index, 2970+ modules ✅
+
+### Pushes
+- 9 default branches pushed: bobbybookmarks, bobcoin, bobfilez, bobui, btk, jules-autopilot, Maestro, pi-mono, tabby
+- 2 feature branches pushed: bobcoin/feat/governance, jules-autopilot/jules-1776
+- topaz-ffmpeg: still 403 (TopazLabs origin)
+
+## [3.3.0] - 2026-04-17
 ### Forward Merges (Feature → Default)
 - **agentirc**: `feature/agentirc-configuration-and-tools-1585...` → master (2 new commits)
 - **bobbybookmarks**: `feature/reorg-and-integrate` → main (FF, 2 ahead)
