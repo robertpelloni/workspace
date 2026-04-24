@@ -1,4 +1,57 @@
-﻿## [3.6.0] - 2026-04-17
+﻿## [3.7.0] - 2026-04-24
+
+### Forward Merges (Feature → Default)
+- **jules-autopilot**: Merged `hypercode-sync` (+2 commits: prisma DB sync, merge commit) into `main`
+- **topaz-ffmpeg**: Merged `master` (+470 upstream FFmpeg commits) into `topaz/develop` 
+- **bobmani/itgmania**: Merged `main` (+5 submodule fix commits) into `release`, resolved libtommath submodule conflict
+
+### Upstream Syncs
+- **topaz-ffmpeg**: 4 new upstream commits from FFmpeg master merged into topaz/develop
+
+### Reverse Syncs (Default → Feature)
+- **30 feature branches** reverse-synced across 18 repos:
+  - bobsgameonlinejava: fix-build (+1), modernize-codebase (+1)
+  - bobtorrent: go-supernode (+1), go-migration (+1)
+  - bobui: dev (+4)
+  - btk: geany-variant (+5), msvc-focus (+5)
+  - f-zerox: pc-port-ui (+4)
+  - hyperharness: deep-wire (+1)
+  - Maestro: cue-polish (+10), maestro-cue-spinout (+2), rc (+5)
+  - neverball: party-games-ui (+1)
+  - npp: disable-autocomplete (+3)
+  - pi-mono: jules-14458 (+1)
+  - sm64coopdx: mmorpg-ui (+1)
+  - bobmani/bobmania: 5_1-new (+27), main (+1)
+  - bobmani/itgmania: jules-1384 (+7)
+  - bobmani/ksm-v2: configurable-songs (+2), master (+2)
+  - geany, agentirc, bobui, Maestro (4 branches), bobmani/bobmania/unified — all confirmed synced
+- All merges clean — zero conflicts
+
+### Submodule Updates
+- bobfilez: 32 submodule pointers updated (FFmpeg, ImageMagick, opencv, and many more)
+- bobsgameonlinejava: 8 submodule pointers updated (bobcoin, aseprite, Pixelorama, etc.)
+- hyperharness: 9 submodule pointers updated (adrenaline, aider, etc.)
+- hypercode: 302 files changed (major update)
+- npp: 1 submodule (textfx)
+- All other repos: 0 new submodule changes since v3.6.0
+
+### Build Verification
+- jules-autopilot: ✅ 390KB index (code-split), **11.92s build** (5s faster than v3.6.0!)
+  - 3016 modules, 73 deps, all chunks identical
+
+### Pushes
+- **12 default branches** pushed: bg, bobbybookmarks, bobfilez, bobsgameonlinejava, hypercode, hyperharness, jules-autopilot, npp, topaz-ffmpeg, bobmani/itgmania
+- **21 feature branches** pushed across 15 repos
+- Blockers (unchanged): antigravity-cli (403), computer-use-preview (403), superai (too large for HTTPS)
+
+### New in v3.7.0
+- First sync where **forward merges** were needed (3 repos had feature branches ahead of default)
+- topaz-ffmpeg received a major upstream merge (470 FFmpeg commits)
+- Build time improved from 16.99s to 11.92s
+
+---
+
+## [3.6.0] - 2026-04-17
 
 ### Forward Merges (Feature → Default)
 - All 47 feature branches across 35+ repos confirmed already merged (0 ahead of default)
