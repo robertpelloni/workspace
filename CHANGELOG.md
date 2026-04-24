@@ -1,4 +1,41 @@
-﻿## [3.5.0] - 2026-04-17
+﻿## [3.6.0] - 2026-04-17
+
+### Forward Merges (Feature → Default)
+- All 47 feature branches across 35+ repos confirmed already merged (0 ahead of default)
+- No new forward merges needed
+
+### Upstream Syncs
+- All 20+ forked repos checked: **0 new upstream changes** (fully synced from v3.5.0)
+
+### Reverse Syncs (Default → Feature)
+- **32 feature branches** reverse-synced with default branch across 20 repos
+- Repos: agentirc, bobcoin (3), bobgui, bobsaver, bobtorrent (2), bobtrader (2), bobtrax, bobui (2), CLIProxyAPIPlus (2), geany, hyperharness, jules-autopilot, Maestro (4), MarbleBlast, mcp-superassistant, npp, pi-mono, raindropioapp (2), superai (2), tabby, bobmani/bobmania, bobmani/linthesia
+- All merges clean — zero conflicts
+
+### Submodule Updates
+- bobdesk: 2 submodule pointers updated (dictionaries, translations)
+- bobeditpro: 1 submodule (muse_framework)
+- bobfilez: 15 submodule pointers updated (ai-file-sorter, FFmpeg, ImageMagick, opencv, and more)
+- bobtorrent: 1 submodule (bobcoin)
+- f-zerox: 1 submodule (tools/splat)
+- hyperharness: 18 submodule pointers updated
+- mk64: 2 submodules (bobcoin, tools/torch)
+- pi-mono: 1 submodule (submodules/aider)
+- bobmani/itgmania: 4 submodules (ffmpeg, hidapi, libtomcrypt, libtommath)
+- bobmani/ksm-v2: 2 submodules (CoTaskLib, ksmaxis)
+- superai: 5 submodule pointers updated
+
+### Build Verification
+- jules-autopilot: ✅ 390KB index (code-split), 16.99s build, 73 deps (45+28)
+
+### Pushes
+- **12 default branches** pushed: bobbybookmarks, bobdesk, bobeditpro, bobfilez, bobtorrent, f-zerox, hyperharness, mk64, pi-mono, bobmani/itgmania
+- **29 feature branches** pushed across 20 repos
+- Blockers (unchanged): antigravity-cli (403), computer-use-preview (403), OmniRoute (403), superai (too large for HTTPS)
+
+---
+
+## [3.5.0] - 2026-04-17
 
 ### Forward Merges (Feature → Default)
 - **bobbybookmarks**: merged jules-bobbybookmarks-ingestion (+3 commits, resolved bookmarks.db binary conflict)
