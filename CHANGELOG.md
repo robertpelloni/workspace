@@ -1,4 +1,30 @@
-﻿## [3.4.0] - 2026-04-17
+﻿## [3.5.0] - 2026-04-17
+
+### Forward Merges (Feature → Default)
+- **bobbybookmarks**: merged jules-bobbybookmarks-ingestion (+3 commits, resolved bookmarks.db binary conflict)
+- All other 30+ feature branches across 30 repos already merged in prior versions
+
+### Upstream Syncs
+- **bobeditpro** (Audacity): merged upstream/master (+15 commits — Qt6 migration, shortcut cleanup, about dialog refresh)
+- **tabby**: merged upstream/master (+1 commit, Windows signing fix)
+- All other upstream forks: 0 new changes
+
+### Reverse Syncs (Default → Feature)
+- CLIProxyAPIPlus/jules-9238, Maestro/jules-2575, opencode-autopilot/jules-4657, picard/jules-12364, supersaber/jules-13860
+
+### Submodule Updates
+- antigravity-autopilot, bobeditpro, bobui, btk, bobsaver, mcp-superassistant, bobtrax, f-zerox, mk64, bobmani/bobmania
+
+### Build Verification
+- jules-autopilot: 390KB index chunk (code-split), 15.76s build, 0 vulnerabilities
+
+### Pushes
+- 17 default branches + 4 feature branches pushed
+- Blockers: antigravity-cli (403), computer-use-preview (403), OmniRoute (403), superai (too large)
+
+---
+
+## [3.4.0] - 2026-04-17
 ### Forward Merges (Feature → Default)
 - **bobcoin**: `dependabot/npm_and_yarn/frontend/multi-6cb4a7dc76` → main (esbuild+vite bump)
 - **bobcoin**: `dependabot/npm_and_yarn/frontend/npm_and_yarn-0b827c8a6a` → main (npm group bump)
