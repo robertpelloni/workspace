@@ -1,4 +1,50 @@
-﻿## [3.7.0] - 2026-04-24
+﻿## [3.8.0] - 2026-04-26
+
+### Forward Merges (Feature → Default)
+- **bobsgameonlinejava**: Merged `jules-8356211922684761209` (+12 Jules AI commits: project analysis, docs, new submodule refs) into `main`
+- **bobsgameonlinejava**: Merged `fix-build-and-backport-gametype` (reverse sync cleanup) into `main`
+- **bobsgameonlinejava**: Merged `modernize-codebase-final-final` (reverse sync cleanup) into `main`
+- **bg**: Merged `jules-1394303886104622315` (+5 Jules AI memory commits) into `master`
+- **bobmani/bobmania**: Reverse-synced `main→release` in itgmania (+240 commits, massive upstream StepMania codebase modernization)
+- **bobmani/ksm-v2**: Fast-forwarded `jules/configurable-songs` and `master` branches (+5 each)
+
+### Upstream Syncs
+- **topaz-ffmpeg**: 6 new upstream FFmpeg commits merged (LCEVC tests, mpdecimate fix, atrac9tab correction)
+- **bobmani/ksm-v2**: 2 new upstream commits from kshootmania (NocoUI Int params, highspeed text fix) — resolved ResultScene.cpp and NocoUI submodule conflicts
+- **bobmani/arrowvortex**: 1 new upstream commit (nightly builds README) — resolved README.md conflict keeping both Linux build docs and nightly section
+- **fwber**: Pulled +47 new commits (auto-save, PhotoEditor, LocationMatcher, profile fixes)
+
+### Reverse Syncs (Default → Feature)
+- **bobmani/ksm-v2/jules/configurable-songs**: FF +5 (upstream merge propagated)
+- **bobmani/ksm-v2/master**: FF +5 (upstream merge propagated)
+- **bobmani/itgmania**: All branches fully synced with release
+- All other feature branches: already at 0 behind default
+
+### Submodule Updates
+- bobtrax: 1 submodule updated (ardour)
+- bobmani/bobmania: 1 submodule updated (Simply-Love-SM5)
+- bobmani/ksm-v2: 1 submodule updated (ksmaxis)
+- All other repos: 0 new submodule changes since v3.7.0
+
+### Build Verification
+- jules-autopilot: ✅ 390KB index (code-split), **11.82s build** (0.1s faster than v3.7.0)
+  - 3016 modules, all chunks identical
+
+### Pushes
+- **12 default branches** pushed: bg (+6), bobbybookmarks (+1), bobsgameonlinejava (+16), bobtrax (+1), topaz-ffmpeg (+7), bobmani/arrowvortex (+2), bobmani/beatoraja (+1), bobmani/ksm-v2 develop (new)
+- **16 feature branches** pushed: antigravity-autopilot/release (+2), bobgui/master (+2479), bobsgameonlinejava/fix-build (+16), bobsgameonlinejava/modernize (+16), hyperharness/deep-wire (+1), jules-autopilot/hypercode-sync (+10), jules-autopilot/jules-17764958 (+3), MarbleBlast/main (+1), npp/disable-autocomplete (+1), npp/jules-36468 (+1), OpenMBU/master (+1), topaz-ffmpeg/master (+14), bobmani/arrowvortex/main (+1), bobmani/itgmania/main (+240), bobmani/ksm-v2/configurable-songs (+5)
+- Blockers (unchanged): antigravity-cli (403), computer-use-preview (403), superai (too large for HTTPS)
+
+### New in v3.8.0
+- **New remote branches discovered and merged**: bg/jules-1394303886104622315, bobsgameonlinejava/jules-8356211922684761209, borg/cloud-orchestrator-sync
+- **3 upstream conflicts resolved**: ksm-v2 ResultScene.cpp (took upstream for NocoUI compat), ksm-v2 NocoUI submodule, arrowvortex README.md (kept both sections)
+- **fwber received major update**: +47 commits with auto-save, PhotoEditor, and profile improvements
+- **bobmani/ksm-v2 develop branch pushed for first time** (previously only had master tracking)
+- **bobgui/master finally pushed**: +2479 commits (was blocked since v2.x)
+
+---
+
+## [3.7.0] - 2026-04-24
 
 ### Forward Merges (Feature → Default)
 - **jules-autopilot**: Merged `hypercode-sync` (+2 commits: prisma DB sync, merge commit) into `main`
