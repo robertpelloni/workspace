@@ -1,4 +1,43 @@
-﻿## [3.8.0] - 2026-04-26
+﻿## [3.9.0] - 2026-04-27
+
+### Forward Merges (Feature → Default)
+- **jules-autopilot**: Merged `hypercode-sync` into `main` (+22 commits: orchestration package with debate/providers/supervisor, websocket event types, App.tsx expanded view state, archive file restoration, server cleanup). Both `hypercode-sync` and `jules-17764958747146694232-3d7c3856` branches pointed to same commit — merged cleanly with zero conflicts.
+- **bg**: Reset `jules-1394303886104622315-aa648523` to master (was already merged, remote was diverged)
+
+### Upstream Syncs
+- **bobeditpro** (audacity/audacity): 7 new upstream commits merged (factory reset refactor with cloud DB close, plugin scan dialog title, unused -R CLI option removal, build cleanup + framework bump, factory-reset action controller tests). Resolved 5 merge conflicts:
+  - CMakeLists.txt: Added upstream WORKSPACE_TESTS, VST, VST_QML settings
+  - commandlineparser.cpp: Kept local -M/-P/-f CLI options, accepted upstream removal of -R, added upstream import-media-file + factory-settings handling
+  - appshell/CMakeLists.txt: Kept Qt::Svg link + added upstream QML/tests subdirectories
+  - applicationactioncontroller.cpp: Took upstream refactored restart() with multiwindowsProvider
+  - applicationactioncontroller.h: Merged old Inject<> + new ContextInject<> patterns, kept application/configuration injections
+
+### Reverse Syncs (Default → Feature)
+- **bobtrax/jules-13814763330234479585-ae34059c**: FF +1 (muse submodule pointer)
+- **bobmani/ksm-v2/jules/feature/configurable-songs-dir**: Merged develop (+3: NocoUI + ksmaxis submodule updates)
+- **bobmani/ksm-v2/master**: Merged develop (+3: NocoUI + ksmaxis submodule updates)
+- **bobmani/arrowvortex/main**: FF +2 (README nightly builds, submodule pointer)
+- **bobbybookmarks**: Reset all 3 behind branches to main (dependabot, feature/reorg, jules/ingestion — all 0 unique commits)
+- **superai**: Reset dependabot + jules/hypercode-porting branches to main (0 unique commits)
+- **bobmani/beatoraja**: Reset feature/launcher-enhancement to master (0 unique commits)
+
+### Submodule Updates
+- All repos: 0 new submodule changes since v3.8.0
+- All submodules reset and lock files cleaned across workspace
+
+### Build Verification
+- jules-autopilot: ✅ 390KB index (code-split), **9.85s build** (1.97s faster than v3.8.0! 17% improvement)
+  - 3016 modules, all chunks identical
+  - Warning: empty vendor-react chunk (cosmetic, from v3.4.0 code-split)
+
+### Pushes
+- **6 default branches** pushed: bobeditpro (+8), jules-autopilot (+23), bobmani/bobmania (+1), bobmani/ksm-v2 (+1)
+- **7 feature branches** pushed: bobtrax/jules (+1), jules-autopilot/hypercode-sync (+1), jules-autopilot/jules-1776 (+1), bobmani/arrowvortex/main (+2), bobmani/beatoraja/feature (+1), bobmani/ksm-v2/configurable-songs (+1), bg/jules (force push to match master)
+- Blockers (unchanged): antigravity-cli (403), computer-use-preview (403), superai (too large for HTTPS)
+
+---
+
+## [3.8.0] - 2026-04-26
 
 ### Forward Merges (Feature → Default)
 - **bobsgameonlinejava**: Merged `jules-8356211922684761209` (+12 Jules AI commits: project analysis, docs, new submodule refs) into `main`
