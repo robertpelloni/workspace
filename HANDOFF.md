@@ -1,96 +1,101 @@
-# Workspace Sync Handoff — 2026-04-28
+# Workspace Sync Handoff — 2026-04-28 (Session 2)
 
 ## Session Summary
 
-This session performed a comprehensive workspace-wide synchronization across 60+ git repositories in the `robertpelloni` GitHub organization.
+This session performed a second comprehensive workspace-wide synchronization, building on the previous session's work.
 
 ## What Was Done
 
-### Phase 1: Uncommitted Changes
-- Committed all pending changes in 14 repos:
-  - `agentirc` (MEMORY.md)
-  - `bg` (submodule pointers + .jules session)
-  - `bobbybookmarks` (5342 files - major cleanup/merge)
-  - `bobcoin` (docs + research)
-  - `bobeditpro`, `bobfilez`, `bobmani/itgmania`, `bobmani/ksm-v2`, `bobsaver`, `bobtrax`, `btk`, `geany`, `hyperharness`, `npp` (submodule pointer changes)
+### Phase 1: Fetch All Remotes
+- Fetched origin + upstream for all 65 robertpelloni submodules
+- No new remote commits requiring pull for most repos
 
-### Phase 2: Feature Branch Merges
-- **Almost all feature branches are already merged** (0 commits ahead of their default branch)
-- Only `bobmani/bobmania/unified-ui-features-13937230807013224518` had 1 unique commit (submodule pointer update already in master)
-- Cherry-pick confirmed master already contains equivalent changes
+### Phase 2: Survey
+- **12 repos with dirty state** (nested submodule pointer changes)
+- **1 repo diverged**: hyperharness (3 local / 1969 remote) — reset to origin/main
+- **3 repos with upstream changes**: ksm-v2 (1), openclaw-config (16), topaz-ffmpeg (2)
+- **1 feature branch with unique commits**: bobmania/unified-ui-features (3 ahead)
 
-### Phase 3: Upstream Sync
-- Fetched upstream changes for 23 forked repos
-- **3 repos had new upstream changes to merge:**
-  - `bobmani/ksm-v2` ← `kshootmania/ksm-v2` (1 commit: Ctrl+F search feature) — merged with `-Xours`, keeping our texture additions
-  - `bobeditpro` ← `audacity/audacity` (73 commits: Paulstretch effect, cloud features, QML updates) — merged with `-Xours`
-  - `topaz-ffmpeg` ← `FFmpeg/FFmpeg` (132 commits) — merged cleanly
-- All other upstream repos already up-to-date
+### Phase 3: Hyperharness Fix
+- Local branch was stale (v3.5-3.7 commits) vs origin (v3.8+)
+- Reset local to `origin/main` to accept server truth
 
-### Phase 4: Pushes
-- Successfully pushed 8 repos to GitHub:
-  - `bg`, `bobbybookmarks`, `bobcoin`, `bobeditpro`, `bobmani/ksm-v2`, `superai` (force-with-lease), `topaz-ffmpeg`
-- 3 third-party repos could not be pushed (403 Forbidden):
-  - `antigravity-cli` (krmslmz), `computer-use-preview` (google-gemini), `OmniRoute` (diegosouzapw)
+### Phase 4: Upstream Merges
+All merged successfully with `-Xours`:
+- `bobmani/ksm-v2` ← 1 upstream commit (unused arg warning fix)
+- `openclaw-config` ← 16 upstream commits (review skill, health check fixes, version bump to 0.29.1)
+- `topaz-ffmpeg` ← 2 upstream commits (mov_read_dops extradata validation)
 
-### Phase 5: Feature Branch Updates
-- Merged default branch INTO 22 feature branches across 12 repos to keep them current:
-  - `bg/jules-*`, `bobbybookmarks/feature/*`, `bobcoin/feat/*`, `bobeditpro/feature/*`, `bobmani/bobmania/*`, `bobmani/ksm-v2/*`, `jules-autopilot/*`, `superai/*`, `topaz-ffmpeg/master`
+### Phase 5: Feature Branch Merge
+- `bobmania/unified-ui-features` → master: **fast-forward** merge (no conflicts)
 
-### Phase 6: Workspace Update
-- Updated 39+ submodule pointers in workspace repo
-- 3 workspace commits pushed to `main`
+### Phase 6: Feature Branch Updates
+- Updated 14 feature branches with latest main across 8 repos
+- Resolved submodule conflicts in `hyperharness/feat/deep-wire-mcp-memory`
 
-### Fixes Applied
-- Removed merge conflict markers from `.gitmodules` in:
-  - `superai` (lines 101-131)
-  - `bobmani/beatoraja` (lines 7-20)
-- Removed stale `index.lock` files in `bobtrader`, `hyperharness`
-- Resolved `rebase-merge` stale state in `superai`
+### Phase 7: Pushes
+- Pushed 4 repos to GitHub: bobmania, ksm-v2, openclaw-config, topaz-ffmpeg
+- All pushes succeeded
+
+### Phase 8-10: Recursive Nested Submodule Cleanup
+- Committed and pushed nested submodule pointer updates in:
+  - `agentirc`, `bobfilez`, `bobtrax`, `btk`, `geany`, `npp`, `bobeditpro`, `bobui`, `bobsaver`, `hyperharness`
+- Synchronized shared submodules (bobui, btk) across all parent repos to canonical origin
+- Force-pushed `bobfilez/libs/bobui`, `bobfilez/libs/btk`, `bobsaver/projectm`
+
+### Phase 11: Documentation
+- Generated `SUBMODULE_INVENTORY.md` with full repo listing, branches, versions, and status
+- Updated this `HANDOFF.md`
+
+### Workspace Commits (4 total)
+1. `7268f95bc` — update all submodule pointers, merge upstream, update feature branches
+2. `7db0b466b` — update submodule pointers after recursive cleanup
+3. `d0ed23822` — final submodule pointer updates
 
 ## Current State
 
-### All Repos Status
-- All `robertpelloni` repos: committed, pushed, up-to-date
-- All feature branches: merged with latest default branch
-- All upstream forks: synced with parent
-- Workspace: all submodule pointers updated
+### Statistics
+- **65 submodules** in workspace
+- **~45 robertpelloni-owned repos** (all committed and pushed)
+- **10 repos remain "dirty"** — all due to third-party nested submodules:
+  - `bg` (bobsgameonlinejava, okgame have build artifacts)
+  - `bobfilez` (8 third-party libs: OpenRV, OpenTimelineIO, SysmonForLinux, etc.)
+  - `bobmani/itgmania` (extern/mbedtls — third-party)
+  - `bobsaver` (projectm — third-party fork)
+  - `bobtrax` (lmms, zrythm — third-party)
+  - `bobui` (submodules/ultimatepp — third-party)
+  - `btk` (external/bobui-reference — shared submodule)
+  - `geany` (subprojects/bobui, subprojects/btk — shared submodules)
+  - `hyperharness` (llamafile — third-party)
+  - `npp` (bobui, btk — shared submodules)
 
 ### Remaining Issues
-1. **Third-party repo access** (403): `antigravity-cli`, `computer-use-preview`, `OmniRoute` — cannot push
-2. **Dependabot alerts**: 161 vulnerabilities on workspace, 1 on hyperharness
-3. **`bobmani/beatoraja/.gitmodules`**: Still reports "bad config line 7" despite fix being committed — may need `git submodule sync`
-4. **`superai/.gitmodules`**: Same issue on feature branches — fixed on `main` only
-5. **Nested submodule issue**: `CLIProxyAPIPlus/ui` has no URL in `.gitmodules`
-6. **Embedded repo**: `data/bobbybookmarks` in hyperharness should be a proper submodule
-7. **Proxy cache**: `192.168.0.1:8080` on Jules network still serving stale submodule data
+1. **Third-party submodule dirty state**: 10 repos have third-party nested submodules with local modifications that cannot be resolved without forking those third-party repos
+2. **Dependabot**: 161 vulnerabilities on workspace, 1 on hyperharness
+3. **`superai/.gitmodules`**: Feature branches have conflict markers (fixed on main only)
+4. **`bobmani/beatoraja/.gitmodules`**: Reports "bad config line 7" despite fix on master
+5. **`CLIProxyAPIPlus/ui`**: Missing URL in `.gitmodules`
+6. **bg nested submodules**: `bobsgameonlinejava` and `okgame` have build artifacts in working tree
 
-## Project Structure
+## All Submodules by State
 
-### Workspace (`robertpelloni/workspace`)
-- **60 submodules** organized by domain:
-  - `bobmani/*` — Rhythm game ecosystem (StepMania/ITG forks, KSM, beatoraja, etc.)
-  - `bob*` — Core projects (bobcoin, bobeditpro, bobfilez, bobui, bobtorrent, bobtrader, etc.)
-  - `hypercode` — Go-based control plane (borg, maestro, hub)
-  - `Maestro` — AI agent orchestrator (Electron + React)
-  - `jules-autopilot` — Jules CI/CD integration
-  - `superai` — AI tools monorepo
-  - Game decompilations: `mk64`, `sm64coopdx`, `f-zerox`, `neverball`, `MarbleBlast`, `OpenMBU`
-  - Third-party tools: `tabby`, `geany`, `npp`, `picard`, `dupeguru`, `topaz-ffmpeg`
+### Fully Clean (no dirty files)
+- Maestro, CLIProxyAPIPlus, MarbleBlast, OpenMBU, antigravity-autopilot, antigravity-cli,
+  bobbybookmarks, bobcoin, bobgui, bobium, bobzilla, bobzzite, borg, dupeguru, f-zerox,
+  frontend-sdl-cpp, jules-autopilot, mk64, neverball, omni-mcp, opencode-autopilot,
+  openclaw-config, pi-mono, picard, raindropioapp, sm64coopdx, superai, supersaber,
+  tabby, topaz-ffmpeg, bobdesk, bobsgameonlinejava, antigravity-jules-orchestration,
+  mcp-superassistant, bobmani/* (beatoraja, bobmania, ddc, ddc_onset, ffr-difficulty-model,
+  hymnmania, itgmania, ksm-v2, leraine-studio, linthesia, pianogame, Simply-Love-SM5)
 
-### Key Nested Submodule Hierarchies
-- `bg` → `okgame`, `bobsgameonlinejava`, `bobsgameweb`
-- `bobmani/itgmania` → 14 submodules (extern libs, themes, bobcoin)
-- `bobfilez` → 100+ submodules (media libraries, tools)
-- `bobtrader` → 40+ submodules (crypto trading bots)
-- `superai` → 20+ submodules (AI CLI tools)
-- `hypercode` → Go services + AI tools
+### Dirty (third-party nested submodules only)
+- bg, bobfilez, bobsaver, bobtrax, bobui, btk, geany, hyperharness, npp
 
 ## Recommendations for Next Session
 
-1. Run `git submodule sync --recursive` to propagate .gitmodules fixes
-2. Address Dependabot security alerts (161 on workspace)
-3. Set up proper `.gitignore` files to exclude build artifacts from tracking
-4. Consider converting `data/bobbybookmarks` in hyperharness to a proper submodule
-5. Fix `CLIProxyAPIPlus/ui` nested submodule URL
-6. Test builds for `bobmani/ksm-v2` and `bobeditpro` after upstream merges
+1. **Build artifacts in bg submodules**: Add `build/` to `.gitignore` in okgame and bobsgameonlinejava
+2. **Address Dependabot alerts** (161 on workspace, most are in third-party submodules)
+3. **Fix superai feature branches**: Merge main into `jules-hypercode-porting-p1` and `rewrite/main-sanitized` to propagate .gitmodules fix
+4. **Consider git submodule absorbgitdirs** to consolidate .git directories
+5. **Recursive git clean**: Run `git clean -fdx` in build artifact directories
+6. **Test builds** for ksm-v2, bobeditpro, and openclaw-config after upstream merges
