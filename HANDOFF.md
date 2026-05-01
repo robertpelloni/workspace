@@ -16,3 +16,8 @@
 - Continue development on `borg` dashboard and MCP integration.
 - Monitor `topaz-ffmpeg` for further upstream FFmpeg merges.
 - Build projects using `build.bat` if required.
+
+## Session 7 Update
+- **borg**: Merged `cloud-orchestrator-sync` and `copilot/merge` features into `main`.
+- **Dirty Repos**: Synchronized `itgmania`, `ksm-v2`, `bobtrax`, `borg`, `btk`, `geany`, `hyperharness`, and `npp` with origin.
+- **Inventory**: All 59 robertpelloni repositories are clean and pushed to GitHub. Submodule pointers are locked to latest SHAs.
