@@ -21,3 +21,9 @@
 - **borg**: Merged `cloud-orchestrator-sync` and `copilot/merge` features into `main`.
 - **Dirty Repos**: Synchronized `itgmania`, `ksm-v2`, `bobtrax`, `borg`, `btk`, `geany`, `hyperharness`, and `npp` with origin.
 - **Inventory**: All 59 robertpelloni repositories are clean and pushed to GitHub. Submodule pointers are locked to latest SHAs.
+
+## Session 8 Update
+- **topaz-ffmpeg**: Merged 1 new commit from `upstream/master`.
+- **borg**: Synchronized latest orchestration changes and pushed to origin.
+- **fwber**: Synchronized core project updates.
+- **Workspace**: All 59 core repos clean and pointers updated.
