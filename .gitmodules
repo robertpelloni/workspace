@@ -156,7 +156,7 @@
 	url = https://github.com/robertpelloni/superai
 [submodule "agentirc"]
 	path = agentirc
-	url = ./agentirc
+	url = https://github.com/robertpelloni/agentirc.git
 [submodule "antigravity-cli"]
 	path = antigravity-cli
 	url = https://github.com/krmslmz/antigravity-cli.git
