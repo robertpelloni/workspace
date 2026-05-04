@@ -193,3 +193,6 @@
 [submodule "openclaw-config"]
 	path = openclaw-config
 	url = https://github.com/TechNickAI/openclaw-config.git
+[submodule "bobsgameonlinejava"]
+	path = bobsgameonlinejava
+	url = https://github.com/robertpelloni/bobsgameonlinejava.git
