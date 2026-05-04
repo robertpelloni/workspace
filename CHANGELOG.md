@@ -1,3 +1,31 @@
+## [3.10.0] - 2025-05-04
+
+### Critical Fixes
+- **.agent submodule pointer**: Updated from dead commit `c7b372b4e` to valid `72a09b579` (sickn33/antigravity-awesome-skills main HEAD). This resolves the persistent `upload-pack: not our ref` fatal error that was blocking ALL submodule initialization on fresh clones.
+- **bobsgameonlinejava**: Added missing `.gitmodules` entry. This submodule was tracked in git but had no URL configured, causing `fatal: No url found for submodule path 'bobsgameonlinejava'` errors.
+- **agentirc URL**: Fixed from relative `./agentirc` to absolute `https://github.com/robertpelloni/agentirc.git` (carried from session 16).
+
+### Feature Branch Merges (into main/master)
+- **hymnmania**: Merged `feat/comprehensive-docs-and-tts-params-16556208438382467677` into `master` (+7 files: worker.py, docker-compose.yml, app.py updates, VERSION, CHANGELOG, video_uploader.py, requirements.txt)
+- **bobsgameonlinejava**: Merged `jules-8356211922684761209-62b8e1c9` into `main` (+3 files: .gitignore, .gitmodules, CHANGELOG.md)
+- All other Jules/AI feature branches across 17 submodules were already merged (no-op).
+
+### Reverse Merges (main → feature branches)
+- **Maestro**: Updated 5 branches (borg-assimilation, cue-polish, fix/cue-expanded-env, fix/opencode-sqlite-sessions, rc) with latest main
+- **bobmania**: Updated 3 branches (5_1-new, feat/unified-merge-conflict, unified-ui-features)
+- **hymnmania**: Updated 2 branches with latest master
+- **bobsgameonlinejava**: Updated 2 branches with latest main
+- **bobbybookmarks**: Updated feature/reorg-and-integrate with latest main
+
+### Submodule Dirty State Committed
+- **bobbybookmarks**: 5 files committed (bookmarks.db, deep_research_status.json, etc.)
+
+### Skipped Merges
+- **bobeditpro copilot branches**: `copilot/fix-wavpack-encoding-issue`, `copilot/implement-spectrogram-selection`, `copilot/parallelize-spectrogram-calculations` refused to merge (unrelated histories) - likely from a different repository fork
+
+### Upstream Sync
+- **bobfilez**: Already up to date with upstream/master
+
 ﻿## [3.9.0] - 2026-04-27
 
 ### Forward Merges (Feature → Default)
@@ -829,4 +857,3 @@ Maestro's borg-assimilation branch — **previously blocked since v2.9.0** — s
 - **Repo Repair:** Re-initialized and fixed broken submodules (`qwen.project`, `cointrade`, `metamcp`, `bobeditpro`).
 - **Conflict Resolution:** Manually resolved complex "detached HEAD" states and purged API keys from `metamcp` history.
 - **Cleanup:** Removed large binary files (`antigravity-autopilot.7z`) and stale worktrees (`.borg` folders) that were blocking pushes.
-
