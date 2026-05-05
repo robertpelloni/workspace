@@ -1,3 +1,23 @@
+## [3.11.0] - 2025-05-04
+
+### Critical Fixes for Jules Clone Failures
+- **CLIProxyAPIPlus/ui**: Added missing `.gitmodules` entry pointing to `https://github.com/robertpelloni/Cli-Proxy-API-Management-Center` and updated gitlink from dead commit `743471f9e` to valid `7747c95a` (main HEAD). This was the direct cause of `fatal: No url found for submodule path 'CLIProxyAPIPlus/ui'` errors.
+- **hyperharness/amazon-q-developer-cli**: Added missing `.gitmodules` entry pointing to `https://github.com/aws/amazon-q-developer-cli` and updated gitlink from dead `c181fba2` to valid `15cc8f3c` (main HEAD).
+- **onetool-mcp**: Fixed path mismatch in workspace `.gitmodules` (was `onetool-mcp-mcp`, corrected to `onetool-mcp`).
+- **hypercode**: Removed orphaned `.gitmodules` entry (not a gitlink in tree, just regular files).
+
+### Feature Branch Merges
+- **borg**: Merged `copilot/merge-close-delete-prs-branches` into main (resolved 30+ package.json/lockfile conflicts by accepting copilot additions)
+- **bobbybookmarks**: Committed dirty state (5 files including bookmarks.db, deep_research_status.json)
+- **picard**: Committed .pi/caps-context-state.json
+- **hyperharness**: Committed 28 updated submodule refs
+
+### Submodule Pointer Updates
+- CLIProxyAPIPlus, borg, fwber, hyperharness, picard: Updated to latest pushed HEADs
+
+### Still Unresolvable (upstream repo issues)
+- **bobeditpro copilot branches**: 3 branches refuse to merge (unrelated histories) - likely from a completely different repository origin
+
 ## [3.10.0] - 2025-05-04
 
 ### Critical Fixes
