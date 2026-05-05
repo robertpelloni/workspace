@@ -160,9 +160,6 @@
 [submodule "antigravity-cli"]
 	path = antigravity-cli
 	url = https://github.com/krmslmz/antigravity-cli.git
-[submodule "hypercode"]
-	path = hypercode
-	url = https://github.com/bobsgame/hypercode
 [submodule "geany"]
 	path = geany
 	url = https://github.com/robertpelloni/geany
@@ -185,7 +182,7 @@
 	path = CLIProxyAPIPlus
 	url = https://github.com/robertpelloni/CLIProxyAPIPlus
 [submodule "onetool-mcp"]
-	path = onetool-mcp-mcp
+	path = onetool-mcp
 	url = https://github.com/robertpelloni/onetool-mcp
 [submodule "openclaw-dashboard"]
 	path = openclaw-dashboard
