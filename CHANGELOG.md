@@ -1,3 +1,69 @@
+## [3.12.0] - 2026-05-06
+
+### Forward Merges (Feature → Default)
+- **hyperharness**: Merged `feat/deep-wire-mcp-memory` into main (+18969 lines, Jules memory/architecture docs)
+- **picard**: Merged Jules branch changes (+2288 insertions, .borg_startup_marker, metamcp.db)
+
+### Upstream Syncs
+- **bobeditpro** ← audacity/audacity: Merged upstream master (+40 files, 384 insertions — track edit interaction, test mocks, framework bump)
+- **tabby** ← Eugeny/tabby: Merged upstream master (+8 files, 68 insertions — SSH typings, platform fixes)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: Merged upstream (+50 files, 388 insertions — swscale ops, x86 fixes, release tags n4.4.7, n5.1.9)
+- **sm64coopdx** ← coop-deluxe/sm64coopdx: Fetched upstream dev updates (already up to date)
+- **bobfilez** ← upstream: Already up to date
+- **fwber** ← upstream: Already up to date
+- **raindropioapp** ← raindropio/app: Already up to date
+
+### Reverse Syncs (Default → Feature Branches)
+- **bobbybookmarks**: Updated dependabot, feature/reorg, jules-ingestion branches with main
+- **bobeditpro**: Updated feature/audition-parity-roadmap, feature/bus-tracks-and-docs with master (+2 new files each)
+- **bobgui**: Updated jules-10024490872005189356 branch with main
+- **bobmani/beatoraja**: Updated feature/launcher-enhancement-docs with master
+- **bobmani/itgmania**: Updated jules-13842864760264873486 with release
+- **bobmani/ksm-v2**: Updated jules/feature/configurable-songs-dir with master
+- **bobmani/linthesia**: Updated jules-13365660602124490195 with main
+- **bobsaver**: Updated jules-7169901332660125491 with main
+- **bobtorrent**: Updated feature/go-supernode-webui, jules-bobtorrent-go-migration with master
+- **bobtrader**: Updated feat/go-trading-modules, jules-14860020853292969090 with main
+- **bobui**: Updated dev, feature/omni-ui-framework, jules-11090863842246041945 with main
+- **btk**: Updated pi/geany-variant-build-fix, pi/msvc-focus-fixes with master
+- **f-zerox**: Updated pc-port-ui-implementation with main
+- **geany**: Updated jules-3128865207300374222 with master
+- **hyperharness**: Updated feat/deep-wire-mcp-memory with main
+- **jules-autopilot**: Updated hypercode-sync, jules-17764958747146694232 with main
+- **neverball**: Updated party-games-ui-docs with master
+- **npp**: Updated disable-autocomplete-normal-text, jules-3646841170776745183 with master
+- **opencode-autopilot**: Updated jules-4657769983160951050 with main
+- **pi-mono**: Updated badlogic-main with main
+- **raindropioapp**: Updated feature/raindrop-ai-sorter, jules-6129730999740698158 with master
+- **sm64coopdx**: Updated mmorpg-ui-overhaul with main
+- **supersaber**: Updated jules-13860999388841438430 with master
+
+### Gitlink Fixes (Jules Clone Compatibility)
+- **OmniRoute**: Changed .gitmodules URL from diegosouzapw/OmniRoute to robertpelloni/OmniRoute (fork), pushed merged content, updated gitlink to d4f40c29
+- **antigravity-cli**: Reset to upstream origin/main (457a655) — local-only commits don't exist on krmslmz remote
+- **computer-use-preview**: Reset to upstream origin/main (ecec041) — third-party repo, no push access
+- **openclaw-dashboard**: Reset to upstream origin/main (d6198d0) — no robertpelloni fork exists
+- **.agent**: Updated to sickn33/antigravity-awesome-skills main HEAD (a59b0916)
+
+### Commits & Pushes
+- **Default branches pushed**: antigravity-autopilot, bobdesk, bobeditpro (+2), borg, fwber (+2), hyperharness, picard (+2), tabby, topaz-ffmpeg
+- **Feature branches pushed**: 30+ branches across 20 repos (all reverse-synced with latest default)
+- **Workspace root**: 2 commits pushed (gitlink fixes + submodule pointer updates)
+
+### Build Verification
+- All 67 submodule gitlinks verified pointing to remote branch tips ✅
+- Zero orphaned gitlinks in workspace tree ✅
+- Full `git submodule foreach` verification passed ✅
+
+### Skipped / Unresolvable
+- **CLIProxyAPIPlus**: 2 Jules branches refuse merge (unrelated histories) — same as v3.11.0
+- **bobeditpro/copilot branches**: 3 branches unmergeable (unrelated histories) — permanently skipped
+- **bobfilez**: pybind11 infinite symlink loops still present in tests/
+- **bg/okgame**: 3125+ uncommitted build artifacts (needs .gitignore)
+- **Maestro**: Some feature branches non-fast-forward on remote (diverged)
+- **superai**: Push blocked (repo too large for HTTPS)
+- **antigravity-cli**, **computer-use-preview**, **openclaw-dashboard**: Third-party repos reset to upstream (no push access)
+
 ## [3.11.0] - 2025-05-04
 
 ### Critical Fixes for Jules Clone Failures
