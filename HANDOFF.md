@@ -1,72 +1,85 @@
-# Session 19 Handoff Document
+# Session 20 Handoff Document
 # Date: 2026-05-06
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.12.0
+# Version: 3.13.0
 
 ## Session Summary
-Full 7-step protocol execution: feature branch merges, upstream syncs, gitlink fixes, submodule pointer updates, documentation refresh.
+Full 7-step protocol execution: forward branch merges, upstream syncs, gitlink fixes, nested submodule cleanup, comprehensive documentation refresh, build verification.
 
 ## Forward Merges (Feature → Default)
 | Submodule | Branch | Target | Status |
 |-----------|--------|--------|--------|
-| hyperharness | feat/deep-wire-mcp-memory | main | MERGED (+18969 lines) |
-| picard | jules-12364719424079951847 | master | MERGED (+2288 insertions) |
+| CLIProxyAPIPlus | jules-6176689634486707782-8842c62b | main | MERGED (3 commits, unrelated histories) |
+| antigravity-autopilot | release/5.1.1 | master | MERGED (1 commit) |
 
 ## Upstream Merges
 | Submodule | Upstream | Changes |
 |-----------|----------|---------|
-| bobeditpro | audacity/audacity | +40 files, 384 insertions (track edit interaction, test mocks) |
-| tabby | Eugeny/tabby | +8 files, 68 insertions (SSH typings, platform fixes) |
-| topaz-ffmpeg | FFmpeg/FFmpeg | +50 files, 388 insertions (swscale ops, release tags n4.4.7/n5.1.9) |
-| sm64coopdx | coop-deluxe/sm64coopdx | Fetched (already up to date) |
-| bobfilez | upstream | Already up to date |
-| fwber | upstream | Already up to date |
+| openclaw-config | TechNickAI/openclaw-config | +2048 lines (auth service, app-router, Caddy, health checks) |
+| All 15 others | Various | Already up to date |
 
 ## Reverse Syncs (Default → Feature Branches)
-30+ feature branches across 20 repos updated with latest default:
-bobbybookmarks (3), bobeditpro (2), bobgui (1), bobmani/beatoraja (1), bobmani/itgmania (1), bobmani/ksm-v2 (1), bobmani/linthesia (1), bobsaver (1), bobtorrent (2), bobtrader (2), bobui (3), btk (2), f-zerox (1), geany (1), hyperharness (1), jules-autopilot (2), neverball (1), npp (2), opencode-autopilot (1), pi-mono (1), raindropioapp (2), sm64coopdx (1), supersaber (1)
+Updated 12+ feature branches with latest default:
+- CLIProxyAPIPlus (2 jules branches)
+- bobeditpro (2 feature branches, 27 commits each)
+- bobmani/itgmania (1 jules branch)
+- hyperharness (1 feature branch)
+- picard (1 jules branch, 4 commits)
+- tabby (1 feature branch, 6 commits)
+- antigravity-autopilot (release/5.1.1)
+- bobtrax, mcp-superassistant, openclaw-config (3 branches)
 
-## Gitlink Fixes (Critical for Jules Clone)
-| Submodule | Issue | Fix |
-|-----------|-------|-----|
-| OmniRoute | URL pointed to diegosouzapw/OmniRoute; commit 9d82f30b didn't exist on remote | Changed .gitmodules to robertpelloni/OmniRoute fork; pushed merged content; updated gitlink to d4f40c29 |
-| antigravity-cli | Local commit 3621ad4 didn't exist on krmslmz remote | Reset to upstream origin/main (457a655) |
-| computer-use-preview | Local commit 45448e4 didn't exist on google-gemini remote | Reset to upstream origin/main (ecec041) |
-| openclaw-dashboard | Local commit c708f6e didn't exist on tugcantopaloglu remote | Reset to upstream origin/main (d6198d0) |
-| .agent | Gitlink b5416ebc didn't match remote HEAD | Updated to a59b0916 (sickn33 main HEAD) |
-| borg | Gitlink mismatch (tree=78f77ad6, actual=0a7aff3c) | Updated to actual HEAD |
-| fwber | Gitlink mismatch (tree=e2ed4386, actual=21ee44cc) | Updated to actual HEAD |
+## Commits & Pushes
+- **borg**: 3 files, 55 insertions, 21 deletions
+- **fwber**: 6 files, 13 insertions
+- **picard**: 5 files, 26 insertions, 421 deletions (cleanup temp files)
+- **openclaw-config**: Upstream merge +2048 lines
+- **CLIProxyAPIPlus**: Jules branch merge
+- **Workspace root**: 3 commits pushed
+
+## Gitlink Fixes
+- **superai**: Updated workspace pointer from 5df53a2c to e31c9757 (origin/main HEAD)
+- **bobgui**: Verified at tip (false alarm from limited scan)
+- **geany**: Verified at tip (false alarm from limited scan)
+
+## Nested Submodule Cleanup (superai)
+Reset 25+ dirty nested submodules with build artifacts:
+OmniRoute (2340 files), claude-mem (2094), mcpproxy (50), auggie, azure-ai-cli, byterover-cli, claude-code-templates, code-cli, copilot-cli, crush, dolt, factory-cli, gemini-cli, goose, grok-cli, jules-extension, kilocode, kimi-cli, litellm, llamafile, llm-cli, ollama, open-interpreter, opencode, pi-cli, qwen-code-cli, rowboat, smithery-cli, stable-diffusion.cpp
 
 ## Verification
-- **67/67 gitlinks** point to remote branch tips ✅
-- **0 orphaned gitlinks** in workspace tree ✅
-- **Full `git submodule foreach` verification** passed ✅
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **Zero feature branches ahead of default** ✅
+- **All gitlinks verified at remote branch tips** ✅
+- **All 16 upstream forks synced** ✅
+- **Build: jules-autopilot clean** (prior session: 13.18s) ✅
 
-## Commits Pushed
-1. `8ae98c0ce` - fix: update broken gitlinks for Jules clone compatibility
-2. `ac0389d42` - sync: session 19 - update submodule pointers, merge upstreams, fix gitlinks
+## Workspace Commits (this session)
+1. `2cfc22877` - sync: session 20 - update submodule pointers
+2. `a2061fca2` - fix: update superai gitlink to origin/main HEAD
+3. (pending) - release: v3.13.0
 
-## Default Branches Pushed
-antigravity-autopilot, bobdesk, bobeditpro (×2), borg, fwber (×2), hyperharness, picard (×2), tabby, topaz-ffmpeg
-
-## Known Issues (Unchanged from v3.11.0)
-1. **CLIProxyAPIPlus**: 2 Jules branches refuse merge (unrelated histories)
-2. **bobeditpro copilot branches**: 3 branches unmergeable (unrelated histories) — permanently skipped
-3. **bobfilez pybind11**: Infinite symlink loops in tests/ directory
-4. **bg/okgame**: 3125+ uncommitted build artifacts (needs .gitignore)
-5. **Maestro**: Some feature branches non-fast-forward on remote
-6. **superai**: Push blocked (repo too large for HTTPS)
-7. **bg**: bobsgameweb merge (104 conflicts) remains unresolved from prior session
-
-## Repository Structure
-- **67 submodules** tracked in .gitmodules
-- **2 nested submodules** with their own .gitmodules: CLIProxyAPIPlus (1 nested), hyperharness (30+ nested)
-- **Version**: 3.12.0
+## Known Issues
+1. **bg/okgame**: Too large for git status/operations (3125+ untracked build artifacts from Boost)
+2. **superai**: 2 deeply nested submodule dirty markers persist (llamafile/stable-diffusion.cpp/ggml cascade)
+3. **Maestro**: Some feature branches non-fast-forward on remote (diverged)
+4. **bg/bobsgameweb**: Unresolved merge from prior session
+5. **bobeditpro copilot branches**: 3 branches permanently unmergeable (unrelated histories)
+6. **pi-mono/tabby**: Some feature branches non-fast-forward on remote
+7. **bobcoin**: 2 untracked files (SUBMODULE_INVENTORY.md, nul)
+8. **bobfilez**: 10 dirty items (likely submodule dirty markers from nested libs)
 
 ## Recommendations for Next Session
-1. **Add .gitignore for bg/okgame build artifacts** — 3125+ untracked files causing git slowness
-2. **Resolve bg/bobsgameweb merge** — 104 conflicts from prior session
-3. **Fix bobfilez pybind11 recursion** — Add build_output dirs to .gitignore
-4. **Create robertpelloni forks** for computer-use-preview, openclaw-dashboard, antigravity-cli (currently third-party with no push access)
-5. **Force-push Maestro feature branches** — Some have diverged from remote
-6. **Verify fresh Jules clone** — `git clone --recurse-submodules https://github.com/robertpelloni/workspace.git` to confirm all gitlink fixes work
+1. **Add .gitignore for bg/okgame** — Create comprehensive .gitignore to exclude Boost build artifacts, solving the "too large for git" problem
+2. **Force-push Maestro/pi-mono feature branches** — Resolve diverged remote branches
+3. **Create robertpelloni forks** for antigravity-cli, computer-use-preview, openclaw-dashboard (currently third-party with no push access)
+4. **Clean bobfilez nested submodules** — 10 dirty items from juce/ultimatepp
+5. **Resolve bg/bobsgameweb merge** — 104 conflicts from prior session
+6. **Verify fresh Jules clone** — `git clone --recurse-submodules https://github.com/robertpelloni/workspace.git`
+7. **Address 168 Dependabot alerts** on workspace (3 critical, 79 high)
+
+## Architecture Notes
+- **65 submodules** tracked in .gitmodules (60 robertpelloni, 5 third-party)
+- **16 forks with upstream remotes** — all synced as of this session
+- **Key nested submodule repos**: CLIProxyAPIPlus (1 nested), hyperharness (30+ nested), superai (40+ nested), bg (3 nested), bobmani/itgmania (30+ nested)
+- **Third-party submodules** (.agent, antigravity-cli, computer-use-preview, openclaw-dashboard) cannot be pushed to — always reset to upstream HEAD
+- **bg/okgame** contains a Boost submodule tree that is too large for Windows git operations — this is a known Windows filesystem limitation

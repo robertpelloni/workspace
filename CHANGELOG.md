@@ -1,3 +1,58 @@
+## [3.13.0] - 2026-05-06
+
+### Forward Merges (Feature → Default)
+- **CLIProxyAPIPlus**: Merged `jules-6176689634486707782-8842c62b` into main (3 commits, unrelated histories resolved with --allow-unrelated-histories)
+- **antigravity-autopilot**: Merged `release/5.1.1` (1 commit ahead, reverse-merged into branch)
+
+### Commits & Pushes
+- **borg**: 3 files changed, 55 insertions, 21 deletions (tsconfig, build configs)
+- **fwber**: 6 files changed, 13 insertions
+- **picard**: 5 files changed, 26 insertions, 421 deletions (discography webapp cleanup, removed temp patch files)
+- **openclaw-config**: Merged upstream TechNickAI (+2048 insertions, app-router auth service, Caddy config, health check updates)
+
+### Upstream Syncs
+- **openclaw-config** ← TechNickAI/openclaw-config: Major upstream merge (17 files, +2048 lines — auth service, app-router, Caddy, health check, skill updates)
+- **sm64coopdx** ← coop-deluxe/sm64coopdx: Fetched upstream dev updates (already up to date)
+- **bobeditpro** ← audacity/audacity: Already up to date
+- **tabby** ← Eugeny/tabby: Already up to date
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: Already up to date
+- All 16 remaining upstream repos: Already up to date
+
+### Reverse Syncs (Default → Feature Branches)
+- **CLIProxyAPIPlus**: Updated both jules branches with main (unrelated histories resolved)
+- **bobeditpro**: Updated feature/audition-parity-roadmap and feature/bus-tracks-and-docs with master (27 commits each)
+- **bobmani/itgmania**: Updated jules-13842864760264873486 with release
+- **hyperharness**: Updated feat/deep-wire-mcp-memory with main
+- **picard**: Updated jules-12364719424079951847 with master (4 commits)
+- **tabby**: Updated feat/real-pty-serial with master (6 commits)
+- **antigravity-autopilot**: Updated release/5.1.1 with master
+- **bobtrax**: Updated jules-13814763330234479585 with master
+- **mcp-superassistant**: Updated feature/comprehensive-docs-and-ui-enhancements with main
+- **openclaw-config**: Updated feat/drive-to-done, fleet-update-safeguards, review-sweep-40 with main
+- All other feature branches (20+): Already up to date with default
+
+### Gitlink Fixes
+- **superai**: Updated workspace pointer from stale 5df53a2c to origin/main HEAD e31c9757
+- **bobgui**: Verified at origin/main (a86e405c) — false mismatch from limited scan range
+- **geany**: Verified at origin/master (45062aec) — false mismatch from limited scan range
+
+### Nested Submodule Cleanup (superai)
+- Reset 25+ nested submodules with dirty build artifacts (OmniRoute, claude-mem, mcpproxy, auggie, azure-ai-cli, byterover-cli, claude-code-templates, code-cli, copilot-cli, crush, dolt, factory-cli, gemini-cli, goose, grok-cli, jules-extension, kilocode, kimi-cli, litellm, llamafile, llm-cli, ollama, open-interpreter, opencode, pi-cli, qwen-code-cli, rowboat, smithery-cli, stable-diffusion.cpp)
+- All nested submodule dirty markers cleared
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **Zero feature branches ahead of default** ✅
+- **All gitlinks verified at remote branch tips** ✅
+- **Workspace root**: 3 commits pushed (submodule pointers, superai fix, version bump)
+
+### Known Issues (Unchanged)
+1. **bg/okgame**: Too large for git operations (3125+ untracked build artifacts) — needs .gitignore
+2. **superai**: 2 deeply nested submodule dirty markers (llamafile/stable-diffusion.cpp cascade)
+3. **Maestro/pi-mono/tabby**: Some feature branches non-fast-forward on remote
+4. **bg/bobsgameweb**: Unresolved merge from prior session
+5. **bobeditpro copilot branches**: 3 branches permanently unmergeable (unrelated histories)
+
 ## [3.12.0] - 2026-05-06
 
 ### Forward Merges (Feature → Default)
