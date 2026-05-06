@@ -129,7 +129,7 @@
 	url = https://github.com/robertpelloni/superpowers
 [submodule "OmniRoute"]
 	path = OmniRoute
-	url = https://github.com/diegosouzapw/OmniRoute
+	url = https://github.com/robertpelloni/OmniRoute.git
 [submodule "Maestro"]
 	path = Maestro
 	url = https://github.com/robertpelloni/Maestro
