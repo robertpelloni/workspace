@@ -1,3 +1,26 @@
+## [3.19.0] - 2026-05-07
+
+### Commits & Pushes
+- **bobbybookmarks**: Major deep research upgrade (+415 lines)
+  - Garbage filter for rejecting known boilerplate patterns
+  - Flight recorder logging (logs/flight_recorder/)
+  - BeautifulSoup Comment import, hashlib integration
+  - Bookmarks DB updated, reprocess queue added
+  - v1 backup preserved as deep_research_v1_backup.py
+- **bobeditpro**: Added muse_framework/ to .gitignore (renamed to muse by upstream)
+
+### Reverse Syncs
+- **bobbybookmarks**: 3 branches caught up to main (dependabot, feature/reorg, jules-ingestion)
+- **bobeditpro**: 2 feature branches caught up to master (audition-parity, bus-tracks)
+
+### Upstream Forks
+- All 16 upstream forks checked — 0 new changes (all up to date)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **All feature branches**: reverse-synced where behind ✅
+
 ## [3.18.0] - 2026-05-07
 
 ### Upstream Merges (2 new)

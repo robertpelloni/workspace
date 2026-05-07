@@ -1,33 +1,34 @@
-# Session 26 Handoff Document
+# Session 27 Handoff Document
 # Date: 2026-05-07
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.18.0
+# Version: 3.19.0
 
 ## Session Summary
-Full 7-step protocol: 2 upstream merges (bobeditpro +3 commits, topaz-ffmpeg +3 commits), 1 dirty repo commit (bobbybookmarks +192 URLs), 5 feature branch reverse-syncs, gitlink verification, documentation refresh.
-
-## Upstream Merges (2 new)
-| Submodule | Upstream | Changes |
-|-----------|----------|---------|
-| bobeditpro | audacity/audacity | +3 commits: Move muse_framework→muse directory (#10891), fix menus/toolbars disabled in new window (#10886), uicontextresolver cleanup (-27 lines) |
-| topaz-ffmpeg | FFmpeg/FFmpeg | +3 commits: id3v2 frame debugging (FF_FDEBUG_ID3V2), raw ID3v2 test program, new tests for comm/lyrics/txx/wma comments (20 files, +224/-3) |
+Full 7-step protocol: 2 dirty repo commits (bobbybookmarks major upgrade, bobeditpro .gitignore), 5 feature branch reverse-syncs, all upstreams verified up to date, gitlink verification, documentation refresh.
 
 ## Commits & Pushes
-- bobbybookmarks: 192 new incoming resource URLs (incoming_resources.txt)
+- **bobbybookmarks**: Major deep research upgrade
+  - +415 lines in deep_research.py (garbage filter, flight recorder, hashlib)
+  - bookmarks.db binary update
+  - reprocess_queue.txt (new)
+  - deep_research_v1_backup.py (v1 backup)
+  - logs/flight_recorder/flight_2026-05-07.jsonl (new)
+- **bobeditpro**: Added muse_framework/ to .gitignore (orphaned dir from upstream rename)
 
 ## Reverse Syncs
-- bobeditpro: feature/audition-parity-roadmap +4, feature/bus-tracks-and-docs +4
-- bobbybookmarks: dependabot/npm_and_yarn +1, feature/reorg-and-integrate +1, jules-bobbybookmarks-ingestion +1
+- bobbybookmarks: 3 branches (dependabot, feature/reorg-and-integrate, jules-ingestion)
+- bobeditpro: 2 branches (feature/audition-parity-roadmap, feature/bus-tracks-and-docs)
+
+## Upstream Forks
+- All 16 upstream forks checked — **0 new changes** (all up to date)
 
 ## Verification
 - Zero unpushed commits ✅
 - All gitlinks at remote tips ✅
-- 16 upstream forks: 2 new merges, 14 up to date ✅
-- Nested submodules: hyperharness clean, bobtrax clean ✅
-- superai/amazon-q-developer-cli: not initialized (third-party, no action needed) ✅
+- All feature branches reverse-synced ✅
 
 ## Workspace Commits
-1. `3ad54d1c4` - sync: session 26 - update submodule pointers (3 submodules)
+1. `9e3389cbd` - sync: session 27 - update submodule pointers (2 submodules)
 
 ## Known Issues (Unchanged)
 1. **bg/okgame**: Too large for git operations (Boost build artifacts) — NEEDS .gitignore
@@ -36,13 +37,13 @@ Full 7-step protocol: 2 upstream merges (bobeditpro +3 commits, topaz-ffmpeg +3 
 4. **bg/bobsgameweb**: Unresolved merge from prior session
 5. **raindropioapp upstream**: Fetch fails (HTTP error)
 6. **Maestro/pi-mono**: Some feature branches non-fast-forward on remote
-7. **tabby upstream**: Tag conflict (`latest` and `v1.0.231` clobber existing) — use `git fetch upstream --force` if needed
+7. **tabby upstream**: Tag conflict (latest, v1.0.231 clobber existing)
 
 ## Recommendations for Next Session
 1. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
 2. **Force-push Maestro/pi-mono feature branches** — Resolve diverged remote branches
-3. **Tabby upstream tag conflict** — May need `git fetch upstream --force` to get new tags
-4. **Verify fresh Jules clone** — `git clone --recurse-submodules`
-5. **Address Dependabot alerts** on workspace
-6. **bg/bobsgameweb**: Complete the unresolved 104-conflict merge
-7. **bobeditpro**: muse_framework renamed to `muse` — build system may need adjustment
+3. **Verify fresh Jules clone** — `git clone --recurse-submodules`
+4. **Address Dependabot alerts** on workspace
+5. **bg/bobsgameweb**: Complete the unresolved 104-conflict merge
+6. **bobeditpro**: muse_framework renamed to `muse` — verify build system works with new name
+7. **bobbybookmarks**: Monitor the deep research flight recorder for quality
