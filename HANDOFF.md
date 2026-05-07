@@ -1,47 +1,43 @@
-# Session 22 Handoff Document
+# Session 24 Handoff Document
 # Date: 2026-05-07
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.15.0
+# Version: 3.16.0
 
 ## Session Summary
-Full 7-step protocol: upstream merge (tabby), nested submodule cleanup (bobfilez 130+, bobtrax lmms+zrythm, hyperharness/llamafile), dirty repo commits (6 repos), reverse-sync of 9 feature branches across 6 repos, gitlink verification.
+Full 7-step protocol: upstream merge (topaz-ffmpeg), dirty repo commits (fwber, bobcoin), reverse-sync of 4 bobcoin feature branches, nested submodule cleanup (bobtrax/lmms, hyperharness 27 subs), gitlink verification, documentation refresh.
 
 ## Upstream Merges
 | Submodule | Upstream | Changes |
 |-----------|----------|---------|
-| tabby | Eugeny/tabby | +5 files, 23+/7- (CLI, pathDrop, keyboard auth, CI) |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +1 file (cbs_h266: fix chroma MTT depth in PH) |
 
 ## Commits & Pushes
-- bobcoin (1 file), bobfilez (4 submodule pointers), bobsgameonlinejava (lz4-java pointer)
-- bobtrax (lmms 14 subs + zrythm), fwber (4 insertions), hyperharness (llamafile pointer)
+- fwber: photos.ts + dashboard.ts (7 insertions)
+- bobcoin: .gitignore for Windows nul file
+- bobcoin: dependabot npm security update (642+/262-)
 
-## Nested Submodule Cleanup (Significant)
-- **bobfilez**: 130+ nested submodules — reset all, cleaned bobgui/JUCE (accidental deletion restored)
-- **bobtrax**: lmms (14 nested: doc/wiki, carla, game-music-emu, veal, cmt...) + zrythm (doxygen-awesome-css)
-- **hyperharness/llamafile**: Fixed stuck merge in llama.cpp (aborted → reset to origin/master), updated 3 submodule pointers
+## Nested Submodule Cleanup
+- bobtrax/lmms: qt5-x11embed → ECM pointer chain
+- hyperharness: 27 submodule pointers updated
 
 ## Reverse Syncs
-- bobmani/beatoraja (18 behind), bobtrax (1), tabby (9, force-pushed), bobsgameonlinejava (2 branches, 1 each)
-- superai (3 branches, 1 each), hyperharness (3), bobcoin (3 branches, 1 each)
+- bobcoin: 4 feature branches (dependabot, feat/governance, feature/comprehensive-ui-spec ×2)
 
 ## Verification
 - Zero unpushed commits ✅
 - All gitlinks at remote tips ✅
-- bobgui confirmed (false alarm) ✅
-- 16 upstream forks: 1 new merge, 15 up to date ✅
+- bobgui confirmed at origin/main ✅
 
 ## Workspace Commits
-1. `b28e50e1b` - sync: session 22 - update submodule pointers (7 submodules)
+1. `64e8336f0` - sync: session 24 - update submodule pointers (5 files)
 
 ## Known Issues (Unchanged)
 1. **bg/okgame**: Too large for git operations (Boost build artifacts) — NEEDS .gitignore
-2. **superai**: llamafile/stable-diffusion.cpp deep nested dirty markers persist
-3. **bobfilez**: wkhtmltopdf nested submodule (qt) still dirty — can't push to third-party
-4. **lz4-java**: Repository archived (403 on push) — can't push nested pointer updates
-5. **bobeditpro copilot branches**: 3 permanently unmergeable (unrelated histories)
-6. **bg/bobsgameweb**: Unresolved merge from prior session
-7. **raindropioapp upstream**: Fetch fails (HTTP error)
-8. **Maestro/pi-mono**: Some feature branches non-fast-forward on remote
+2. **bobfilez/wkhtmltopdf**: pybind11 infinite recursion makes git add/diff timeout — cosmetic only
+3. **bobeditpro copilot branches**: 3 permanently unmergeable (unrelated histories)
+4. **bg/bobsgameweb**: Unresolved merge from prior session
+5. **raindropioapp upstream**: Fetch fails (HTTP error)
+6. **Maestro/pi-mono**: Some feature branches non-fast-forward on remote
 
 ## Recommendations for Next Session
 1. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
@@ -49,5 +45,6 @@ Full 7-step protocol: upstream merge (tabby), nested submodule cleanup (bobfilez
 3. **Create robertpelloni forks** for antigravity-cli, computer-use-preview, openclaw-dashboard
 4. **Fix superai/archive/claude-mem/target-repo** — Missing .gitmodules entry
 5. **Verify fresh Jules clone** — `git clone --recurse-submodules`
-6. **Address 168+ Dependabot alerts** on workspace
+6. **Address Dependabot alerts** on workspace
 7. **bg/bobsgameweb**: Complete the unresolved 104-conflict merge
+8. **bobfilez**: The wkhtmltopdf/qt/pybind11 recursion is a known Windows filesystem issue — cannot be resolved without removing the pybind11 symlink loop from the qt submodule

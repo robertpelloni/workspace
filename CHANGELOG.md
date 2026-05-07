@@ -1,3 +1,26 @@
+## [3.16.0] - 2026-05-07
+
+### Upstream Merges
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: Merged upstream master (cbs_h266: fix chroma MTT depth condition in PH, 1 file)
+
+### Commits & Pushes
+- **fwber**: Committed local changes (photos.ts + dashboard.ts, 7 insertions)
+- **bobcoin**: Added .gitignore for Windows `nul` device file
+- **bobcoin**: Merged dependabot/npm_and_yarn security update (642+/262- in package-lock files)
+
+### Reverse Syncs
+- **bobcoin**: 4 feature branches caught up to main (dependabot, feat/governance, feature/comprehensive-ui-spec ×2)
+
+### Nested Submodule Cleanup
+- **bobtrax/lmms**: Updated qt5-x11embed → ECM nested pointer chain
+- **hyperharness**: Updated 27 nested submodule pointers (aider, auggie, azure-ai-cli, byterover-cli, claude-code, claude-code-templates, code-cli, copilot-cli, crush, dolt, factory-cli, gemini-cli, goose, grok-cli, jules-extension, kilocode, kimi-cli, litellm, llm-cli, mistral-vibe, ollama, open-interpreter, opencode, pi-cli, qwen-code-cli, rowboat, smithery-cli)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **bobgui**: Confirmed at origin/main ✅
+- **16 upstream forks**: 1 new merge (topaz-ffmpeg), 15 already up to date ✅
+
 ## [3.15.0] - 2026-05-07
 
 ### Upstream Merges
