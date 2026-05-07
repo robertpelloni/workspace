@@ -1,3 +1,23 @@
+## [3.18.0] - 2026-05-07
+
+### Upstream Merges (2 new)
+- **bobeditpro** ← audacity/audacity: +3 commits — Move muse_framework to muse directory (#10891), move muse_framework to muse, fix menus and toolbars disabled when opening blank project in new window (#10886)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +3 commits — id3v2: wire FF_FDEBUG_ID3V2 frame debugging, add test program for raw ID3v2 frame debugging, add new tests for comm/lyrics/txx and wma comments (20 files, +224/-3)
+
+### Commits & Pushes
+- **bobbybookmarks**: Committed 192 new incoming resource URLs
+
+### Reverse Syncs
+- **bobeditpro**: 2 feature branches caught up to master (+4 each from upstream merge)
+- **bobbybookmarks**: 3 branches caught up to main (dependabot, feature/reorg-and-integrate, jules-ingestion)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **16 upstream forks**: 2 new merges, 14 already up to date ✅
+- **All feature branches**: reverse-synced where behind ✅
+- **Nested submodules**: hyperharness clean (0 dirty), bobtrax clean (0 dirty), superai amazon-q uninitialized (third-party, no action) ✅
+
 ## [3.17.0] - 2026-05-07
 
 ### Upstream Merges (2 new)
