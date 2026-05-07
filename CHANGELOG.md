@@ -1,3 +1,38 @@
+## [3.14.0] - 2026-05-06
+
+### Upstream Merges (Critical)
+- **tabby** ← Eugeny/tabby: Merged upstream master (+9 files, 99 insertions, 119 deletions — xterm frontend, zmodem, OSC processing, profile modal)
+- **bobmani/beatoraja** ← exch-bms2/beatoraja: Merged upstream master (+22 files, 625 insertions, 263 deletions — audio driver overhaul, TimeStretchProcessor, skin JSON loader, resource config, tarsosdsp jar)
+
+### Forward Merges (Feature → Default)
+- **bobbybookmarks**: All 3 feature branches (dependabot, feature/reorg, jules-ingestion) already at main after session 20 merge — committed webapp cleanup
+- **openclaw-config**: All 3 feature branches (feat/drive-to-done, fleet-update-safeguards, review-sweep-40) already at main after session 20 upstream merge
+- **superai**: Merged dependabot/actions, jules-hypercode-porting, rewrite/main-sanitized branches (28 submodule pointer updates)
+
+### Commits & Pushes
+- **agentirc**: 2 files (startup marker + metamcp.db)
+- **bobbybookmarks**: 5 files (298 insertions, 781 deletions — webapp cleanup)
+- **borg**: 1 file (56 insertions, 36 deletions — config update)
+- **superai**: 28 submodule pointer updates pushed
+- **tabby**: Upstream merge pushed
+- **bobmani/beatoraja**: Upstream merge pushed
+
+### Reverse Syncs
+- **bobbybookmarks**: Reverse-merged main into all 3 feature branches
+- **openclaw-config**: Reverse-merged main into all 3 feature branches
+- **superai**: Reverse-merged main into all 3 feature branches
+- All other repos: Already up to date
+
+### Nested Submodule Cleanup
+- **superai**: Reset all dirty nested submodules (top-level only to avoid .gitmodules errors)
+- **bg**: Skipped (okgame too large for git operations — known issue)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **bobgui**: Verified at origin/main (false alarm from limited scan) ✅
+- **16 upstream forks**: 2 new merges, 14 already up to date ✅
+
 ## [3.13.0] - 2026-05-06
 
 ### Forward Merges (Feature → Default)
