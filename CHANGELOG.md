@@ -1,3 +1,49 @@
+## [3.20.0] - 2026-05-07
+
+### Upstream Merges (3 new)
+- **bobeditpro** ← audacity/audacity: +1 commit — Remove Ctrl+O shortcuts from File > Open recent menu (#10806)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +1 commit — Add missing include `libavutil/mem.h` for `fftools/graph/graphprint.c`
+- **tabby** ← Eugeny/tabby: +19 commits — Major update!
+  - OSC 11 background color reporting (#11074)
+  - 256 palette generation (#11043)
+  - Agent authentication error handling + socket path validation (#11034)
+  - Visual C++ Redistributable in Windows NSIS installer (#11060)
+  - Frosted glass persistence fix (#11083)
+  - Plugin search switchMap fix (#11089)
+  - SFTP refresh button (#11047)
+  - Unsafe exec() removal in UAC.cpp (#11195)
+  - SSH hotkey for SFTP panel (#11106)
+  - Hide blacklisted profiles from OS dock/taskbar (#11108)
+  - Disable spellchecker to prevent auto dictionary downloads (#11107)
+  - UI degradation fix with large SSH config files (#11094)
+  - Zmodem write queue (#11155)
+  - Replace line breaks with spaces on paste (#11218)
+  - Themed backgrounds for side tabs/title bar (#11219)
+  - configSync HTTPS requirement to prevent MITM RCE (#11228)
+  - User warning for tabby:// paste commands
+  - Group selector fix in profile editing modal
+  - Total: 42 files changed, +473/-79
+
+### Commits & Pushes
+- **bobbybookmarks**: Phase 2 Borg Intelligence — +1154 lines across 4 new files
+  - `borg_memory.py` (514 lines): L1/L2/L3 tiered memory with heat-based promotion/demotion
+  - `borg_selfhealing.py` (373 lines): Planner-Checker-Revise verification engine with 3-model cross-validation
+  - `borg_skills.py` (267 lines): Skill evolution engine with auto-promotion of successful strategies
+  - `ROADMAP.py` (159 lines): Definitive feature roadmap from 13,503 bookmark analysis
+  - `deep_research.py`: Integrated Phase 2 systems (skill-enhanced extraction, self-healing validation)
+  - `bookmarks.db`: Updated with latest extraction data
+- **borg**: Jules session artifacts — architecture.md summary, session 15418908931855006676
+
+### Reverse Syncs
+- **tabby**: feat/real-pty-serial (+20 from upstream merge)
+- **bobbybookmarks**: 3 branches caught up to main (dependabot, feature/reorg, jules-ingestion)
+- **bobeditpro**: 2 feature branches caught up to master (audition-parity, bus-tracks)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **All upstream forks**: 3 new merges, 13 up to date ✅
+
 ## [3.19.0] - 2026-05-07
 
 ### Commits & Pushes
