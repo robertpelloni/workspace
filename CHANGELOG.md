@@ -1,3 +1,36 @@
+## [3.15.0] - 2026-05-07
+
+### Upstream Merges
+- **tabby** ← Eugeny/tabby: Merged upstream master (+5 files, 23 insertions, 7 deletions — CLI improvements, pathDrop, keyboard auth panel, CI updates)
+
+### Commits & Pushes
+- **bobcoin**: Added SUBMODULE_INVENTORY.md
+- **bobfilez**: Updated nested submodule pointers (dokany, pcre2, pngquant, rapidjson, wkhtmltopdf)
+- **bobsgameonlinejava**: Updated lz4-java nested submodule pointer (lz4-java repo archived — 403 on push)
+- **bobtrax**: Updated lmms (14 nested submodules) + zrythm nested pointers, pushed
+- **fwber**: Committed config update (4 insertions)
+- **hyperharness**: Updated llamafile pointer, resolved diverged remote merge conflict
+
+### Nested Submodule Cleanup
+- **bobfilez**: Reset 130+ nested submodules, cleaned bobgui/submodules/juce (accidental deletion + restore)
+- **bobtrax**: Reset lmms and zrythm deeply nested submodules (doc/wiki, carla, game-music-emu, veal, cmt, doxygen-awesome-css)
+- **hyperharness/llamafile**: Fixed broken merge in llama.cpp (aborted stuck merge, reset to origin/master), updated llama.cpp, stable-diffusion.cpp, whisper.cpp pointers
+
+### Reverse Syncs
+- **bobmani/beatoraja**: feature/launcher-enhancement-docs (18 commits behind → caught up)
+- **bobtrax**: jules-13814763 (1 behind → caught up)
+- **tabby**: feat/real-pty-serial (9 behind → caught up, force-pushed)
+- **bobsgameonlinejava**: fix-build-and-backport-gametype + modernize-codebase-final-final (1 behind → caught up)
+- **superai**: dependabot/actions, jules-hypercode-porting, rewrite/main-sanitized (1 behind → caught up)
+- **hyperharness**: feat/deep-wire-mcp-memory (3 behind → caught up)
+- **bobcoin**: feat/governance, feature/comprehensive-ui-spec (×2) (1 behind → caught up)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **bobgui**: Confirmed at origin/main (false alarm from limited branch scan) ✅
+- **All 16 upstream forks**: 1 new merge (tabby), 15 already up to date ✅
+
 ## [3.14.0] - 2026-05-06
 
 ### Upstream Merges (Critical)
