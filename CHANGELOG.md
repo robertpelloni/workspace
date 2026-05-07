@@ -1,3 +1,19 @@
+## [3.17.0] - 2026-05-07
+
+### Upstream Merges (2 new)
+- **bobeditpro** ← audacity/audacity: Merged upstream master (+4 commits — Switch to muse framework, fix submodule checker, update codestyle scripts, switch framework_tmp to muse_framework). Conflict in `muse_framework` submodule resolved with --ours.
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: Merged upstream master (+3 commits — cbs_h266: tighten sh_num_tiles_in_slice_minus1 upper bound, hevc: scope missing-ref loop counters locally, hevc: limit missing-ref fill to coded planes)
+
+### Reverse Syncs
+- **bobeditpro**: 2 feature branches caught up to master (+5 commits each from upstream merge)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **bobgui**: Confirmed at origin/main (false alarm from limited scan) ✅
+- **16 upstream forks**: 2 new merges, 14 already up to date ✅
+- **All feature branches**: 0 ahead of default, reverse-synced where behind ✅
+
 ## [3.16.0] - 2026-05-07
 
 ### Upstream Merges
