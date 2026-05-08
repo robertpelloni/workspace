@@ -1,3 +1,37 @@
+## [3.21.0] - 2026-05-07
+
+### Upstream Merges (2 new)
+- **tabby** ← Eugeny/tabby: +3 commits — keytar password load error handling, macOS build fail on code signing failure (#11255), merge from upstream master
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +9 commits
+  - avcodec/vc1dsp: Consistently use ptrdiff_t for stride
+  - avcodec/cbs: Move ff_cbs_all_codec_ids to cbs_bsf
+  - configure: Add missing apv_metadata->cbs_apv dependency
+  - configure: Redo enabling cbs in lavf
+  - avcodec/sanm: Extend codec37 mv table to 3x512 entries
+  - avcodec/sanm: fobj: Apply x/y offsets after size determination
+  - avcodec/sanm: Accept fixed dimensions for ANIM at decode_init
+  - avcodec/sanm: fobj codec37+: Reject too large frames
+  - 13 files changed, +96/-82
+
+### Commits & Pushes
+- **bobbybookmarks**: BORG_SPEC.py — ecosystem saturation analysis from 13,503 bookmark intelligence reports (153 lines)
+- **borg**: v1.0.0-alpha.53 — major update (33 files, +345/-148)
+  - ClaudeAgent/GeminiAgent: added id/name/role identity fields, stop() method
+  - SquadService: WorktreeServerProxy now proxies handleRequest, name, version, getStatus, getTools, start, stop
+  - tools/index.ts: +140 lines expanded tool registry
+  - search/index.ts, adk, agents, memory, mcp-client, mcp-registry: improvements
+  - All package.json version bumps for alpha.53
+  - start.bat, next.config.js updates, borg.exe binary update
+- **fwber**: Public GET /api/public/roast endpoint for landing page preview (no auth, is_preview flag, CTA)
+
+### Reverse Syncs
+- **tabby**: feat/real-pty-serial (+4 from upstream merge)
+- **bobbybookmarks**: 3 branches caught up to main (dependabot, feature/reorg, jules-ingestion)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+
 ## [3.20.0] - 2026-05-07
 
 ### Upstream Merges (3 new)

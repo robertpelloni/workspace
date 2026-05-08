@@ -1,39 +1,37 @@
-# Session 28 Handoff Document
+# Session 29 Handoff Document
 # Date: 2026-05-07
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.20.0
+# Version: 3.21.0
 
 ## Session Summary
-Full 7-step protocol: 3 upstream merges (bobeditpro +1, topaz-ffmpeg +1, tabby +19), 2 dirty repo commits (bobbybookmarks Phase 2 borg, borg Jules artifacts), 6 feature branch reverse-syncs, gitlink verification, documentation refresh.
+Full 7-step protocol: 2 upstream merges (tabby +3, topaz-ffmpeg +9), 3 dirty repo commits (bobbybookmarks BORG_SPEC, borg alpha.53, fwber roast endpoint), 4 feature branch reverse-syncs, gitlink verification, documentation refresh.
 
-## Upstream Merges (3 new)
+## Upstream Merges (2 new)
 | Submodule | Upstream | Changes |
 |-----------|----------|---------|
-| bobeditpro | audacity/audacity | +1 commit: Remove Ctrl+O from File > Open recent (#10806) |
-| topaz-ffmpeg | FFmpeg/FFmpeg | +1 commit: Add missing `libavutil/mem.h` include for graphprint.c |
-| tabby | Eugeny/tabby | +19 commits: Major update! OSC 11 color, 256 palette, agent auth, SFTP refresh, Zmodem write queue, paste line-breaks, themed backgrounds, configSync HTTPS, +473/-79 lines |
+| tabby | Eugeny/tabby | +3 commits: keytar password load error handling, macOS code signing failure enforcement (#11255) |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +9 commits: vc1dsp ptrdiff_t stride, cbs_bsf refactor, sanm codec37 mv table 3x512, fobj offset/size/reject fixes, configure cbs dependencies. 13 files, +96/-82 |
 
 ## Commits & Pushes
-- **bobbybookmarks**: Phase 2 Borg Intelligence (+1154 lines)
-  - `borg_memory.py`: Tiered L1/L2/L3 memory (LangMem/MemoryOS/Letta patterns)
-  - `borg_selfhealing.py`: Planner-Checker-Revise verification (3-model cross-validation)
-  - `borg_skills.py`: Skill evolution engine (Agno/VoltAgent patterns)
-  - `ROADMAP.py`: Feature roadmap from 13,503 bookmark analysis
-  - `deep_research.py`: Integrated Phase 2 systems
-- **borg**: Jules session artifacts (.jules/memory, .jules/sessions)
+- **bobbybookmarks**: BORG_SPEC.py — ecosystem saturation analysis from 13,503 bookmark reports
+- **borg**: v1.0.0-alpha.53 — 33 files, +345/-148 lines
+  - Agent identity fields (id/name/role), stop() methods
+  - SquadService WorktreeServerProxy full interface proxy
+  - +140 lines expanded tool registry
+  - Package version bumps across all packages
+- **fwber**: Public GET /api/public/roast endpoint (landing page preview, no auth)
 
 ## Reverse Syncs
-- tabby: feat/real-pty-serial (+20)
+- tabby: feat/real-pty-serial (+4)
 - bobbybookmarks: 3 branches (+1 each)
-- bobeditpro: 2 branches (+2 each)
 
 ## Verification
 - Zero unpushed commits ✅
 - All gitlinks at remote tips ✅
-- 3 new upstream merges, 13 up to date ✅
+- 2 new upstream merges, 14 up to date ✅
 
 ## Workspace Commits
-1. `f48ef318a` - sync: session 28 - update submodule pointers (5 submodules)
+1. `0456b2456` - sync: session 29 - update submodule pointers (5 submodules)
 
 ## Known Issues (Unchanged)
 1. **bg/okgame**: Too large for git operations (Boost build artifacts) — NEEDS .gitignore
@@ -49,6 +47,6 @@ Full 7-step protocol: 3 upstream merges (bobeditpro +1, topaz-ffmpeg +1, tabby +
 2. **Force-push Maestro/pi-mono feature branches** — Resolve diverged remote branches
 3. **Verify fresh Jules clone** — `git clone --recurse-submodules`
 4. **bg/bobsgameweb**: Complete the unresolved 104-conflict merge
-5. **bobbybookmarks**: Monitor Phase 2 borg systems for quality in production
-6. **tabby**: New upstream tag v1.0.233 fetched — verify local tags are current
+5. **borg**: Monitor alpha.53 stability — agent identity fields are a breaking change if any consumer relied on class shape
+6. **bobbybookmarks**: BORG_SPEC.py should inform borg's roadmap — cross-reference with borg's actual features
 7. **Address Dependabot alerts** on workspace
