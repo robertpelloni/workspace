@@ -1,3 +1,11 @@
+## [3.23.0] - 2026-05-07
+
+### Removed Submodules
+- **superai**: Removed as outdated. Dead code cleanup in prior session had already pruned 6,959 lines of stale content.
+- **hypercode**: Removed orphaned metadata. Repo had been previously removed from working tree but .git/config and .git/modules entries remained.
+- Also removed: `.hypercode_startup_marker`, `hypercode_submodules.txt`, `.hypercode/` directory
+- Workspace now has 64 submodules (down from 66)
+
 ## [3.22.0] - 2026-05-07
 
 ### Upstream Merges (2 new)
