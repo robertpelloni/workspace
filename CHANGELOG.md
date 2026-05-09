@@ -1,3 +1,42 @@
+## [3.22.0] - 2026-05-07
+
+### Upstream Merges (2 new)
+- **tabby** ← Eugeny/tabby: +1 commit — Fix CLI crashes on Wayland due to unhandled X11 error in Glasstron (#11264). Added glasstron+0.1.1.patch.
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +2 commits — avformat/tee: clean up local resources on program copy failure; avformat/matroskaenc: write additional mappings for webm. 6 files, +28/-31.
+
+### Commits & Pushes
+- **borg**: v1.0.0-alpha.55 — major Go lane update (+775/-63 across 16 files)
+  - New `/api/system/overview` endpoint (system_overview_handler.go)
+  - Session bridge for cross-session persistence (sessionbridge.go)
+  - Upstream cache for Go interop (upstream_cache.go)
+  - A2A broker refinements
+  - verify_dev_readiness.mjs script
+  - BORG_FEATURE_ASSESSMENT.md new document
+  - start.bat, package.json, borg.exe binary updates
+- **fwber**: Wallet enhancements (+131/-5)
+  - Referral system with referral_code, referral_count, referral_rewards
+  - Expanded transaction history with wallet_address
+  - Real-time chat improvements (RealTimeChat.tsx)
+  - UI fixes for achievements, dashboard, messages pages
+- **superai**: Major dead code cleanup (53 files, -6,959 lines)
+  - Removed stale AGENTS.md, CHANGELOG.md, DEPLOY.md, HANDOFF.md, README.md, ROADMAP.md, TODO.md, VERSION, VERSION.md, VISION.md
+  - Removed orphaned borg-extension pages, apps/web dashboard pages
+  - Cleaned archive package-lock.json files, cloud-orchestrator remnants
+- **bobmani/hymnmania**: Hymn remaker refactor (+423/-497)
+  - app.py restructured, main.py refactored entry point
+  - API endpoint cleanup, settings improvements
+  - Added MV30_SC-55.sf2 soundfont (65MB)
+  - New __init__.py packages
+
+### Reverse Syncs
+- **bobmani/hymnmania**: 2 branches caught up to master (feat/comprehensive-docs, feature/web-ui)
+- **tabby**: feat/real-pty-serial (+2)
+- **superai**: 3 branches caught up to main (dependabot, jules-hypercode-porting, rewrite/main-sanitized)
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+
 ## [3.21.0] - 2026-05-07
 
 ### Upstream Merges (2 new)

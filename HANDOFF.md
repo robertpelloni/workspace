@@ -1,29 +1,31 @@
-# Session 29 Handoff Document
+# Session 30 Handoff Document
 # Date: 2026-05-07
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.21.0
+# Version: 3.22.0
 
 ## Session Summary
-Full 7-step protocol: 2 upstream merges (tabby +3, topaz-ffmpeg +9), 3 dirty repo commits (bobbybookmarks BORG_SPEC, borg alpha.53, fwber roast endpoint), 4 feature branch reverse-syncs, gitlink verification, documentation refresh.
+Full 7-step protocol: 2 upstream merges (tabby +1, topaz-ffmpeg +2), 4 dirty repo commits (borg alpha.55, fwber wallet/referral, superai -6959 line cleanup, hymnmania refactor+soundfont), 6 feature branch reverse-syncs, gitlink verification, documentation refresh.
 
 ## Upstream Merges (2 new)
 | Submodule | Upstream | Changes |
 |-----------|----------|---------|
-| tabby | Eugeny/tabby | +3 commits: keytar password load error handling, macOS code signing failure enforcement (#11255) |
-| topaz-ffmpeg | FFmpeg/FFmpeg | +9 commits: vc1dsp ptrdiff_t stride, cbs_bsf refactor, sanm codec37 mv table 3x512, fobj offset/size/reject fixes, configure cbs dependencies. 13 files, +96/-82 |
+| tabby | Eugeny/tabby | +1 commit: Fix CLI crashes on Wayland due to unhandled X11 error in Glasstron (#11264) |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +2 commits: tee cleanup on program copy failure, matroskaenc additional webm mappings. 6 files, +28/-31 |
 
 ## Commits & Pushes
-- **bobbybookmarks**: BORG_SPEC.py — ecosystem saturation analysis from 13,503 bookmark reports
-- **borg**: v1.0.0-alpha.53 — 33 files, +345/-148 lines
-  - Agent identity fields (id/name/role), stop() methods
-  - SquadService WorktreeServerProxy full interface proxy
-  - +140 lines expanded tool registry
-  - Package version bumps across all packages
-- **fwber**: Public GET /api/public/roast endpoint (landing page preview, no auth)
+- **borg**: v1.0.0-alpha.55 — 16 files, +775/-63
+  - New /api/system/overview endpoint
+  - Session bridge, upstream cache for Go interop
+  - A2A broker refinements, verify_dev_readiness script
+  - BORG_FEATURE_ASSESSMENT.md, borg.exe binary update
+- **fwber**: +131/-5 — wallet referral system, expanded transactions, real-time chat
+- **superai**: 53 files, -6,959 lines — major dead code cleanup (stale docs, orphaned packages)
+- **bobmani/hymnmania**: +423/-497 — hymn remaker refactor, 65MB SF2 soundfont
 
 ## Reverse Syncs
-- tabby: feat/real-pty-serial (+4)
-- bobbybookmarks: 3 branches (+1 each)
+- bobmani/hymnmania: 2 branches (+1 each)
+- tabby: feat/real-pty-serial (+2)
+- superai: 3 branches (+4 each — dependabot, jules-porting, rewrite/main-sanitized)
 
 ## Verification
 - Zero unpushed commits ✅
@@ -31,7 +33,7 @@ Full 7-step protocol: 2 upstream merges (tabby +3, topaz-ffmpeg +9), 3 dirty rep
 - 2 new upstream merges, 14 up to date ✅
 
 ## Workspace Commits
-1. `0456b2456` - sync: session 29 - update submodule pointers (5 submodules)
+1. `652b23d27` - sync: session 30 - update submodule pointers (6 submodules)
 
 ## Known Issues (Unchanged)
 1. **bg/okgame**: Too large for git operations (Boost build artifacts) — NEEDS .gitignore
@@ -41,12 +43,14 @@ Full 7-step protocol: 2 upstream merges (tabby +3, topaz-ffmpeg +9), 3 dirty rep
 5. **raindropioapp upstream**: Fetch fails (HTTP error)
 6. **Maestro/pi-mono**: Some feature branches non-fast-forward on remote
 7. **tabby upstream**: Tag conflict (latest, v1.0.231/233 clobber existing)
+8. **hymnmania**: 65MB SF2 soundfont exceeds GitHub's 50MB recommendation — consider Git LFS
 
 ## Recommendations for Next Session
 1. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
-2. **Force-push Maestro/pi-mono feature branches** — Resolve diverged remote branches
-3. **Verify fresh Jules clone** — `git clone --recurse-submodules`
-4. **bg/bobsgameweb**: Complete the unresolved 104-conflict merge
-5. **borg**: Monitor alpha.53 stability — agent identity fields are a breaking change if any consumer relied on class shape
-6. **bobbybookmarks**: BORG_SPEC.py should inform borg's roadmap — cross-reference with borg's actual features
-7. **Address Dependabot alerts** on workspace
+2. **hymnmania SF2**: Consider Git LFS for the 65MB soundfont file
+3. **Force-push Maestro/pi-mono feature branches** — Resolve diverged remote branches
+4. **Verify fresh Jules clone** — `git clone --recurse-submodules`
+5. **bg/bobsgameweb**: Complete the unresolved 104-conflict merge
+6. **superai**: Verify the cleanup didn't break any active features
+7. **borg**: alpha.55 has new Go API endpoints — verify they compile and work
+8. **Address Dependabot alerts** on workspace
