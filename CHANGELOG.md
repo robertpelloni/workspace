@@ -1,3 +1,21 @@
+## [3.24.0] - 2026-05-07
+
+### Commits & Pushes
+- **fwber**: Frontend improvements — API layer (merchant, moderation, photos, proximity, verification, video), AR inventory, avatar flow, websocket hooks (+52/-49 across 15 files)
+- **bobmani/hymnmania**: Hymn remaker app fix, midi_renderer improvements (+32/-11)
+- **picard**: Added discography_webapp start.bat
+
+### Upstream Merges (1 new)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +3 commits — VVC parser: properly split PUs on Prefix SEI NUT; nal: account for removed zero bytes in buffer size; movenc: fix dynamic buffer leaks on error paths. 4 files, +13/-10.
+
+### Reverse Syncs
+- **bobbybookmarks**: 3 branches caught up to main (dependabot, feature/reorg, jules-ingestion)
+- **bobmani/hymnmania**: 2 branches caught up to master
+- **picard**: jules branch caught up to master
+
+### Fixes
+- **borg**: Fixed corrupted .git file pointing to deleted hypercode worktree path. Updated gitlink to origin/main.
+
 ## [3.23.0] - 2026-05-07
 
 ### Removed Submodules
