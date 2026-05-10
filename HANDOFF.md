@@ -1,30 +1,32 @@
-# Session 31 Handoff Document
+# Session 32 Handoff Document
 # Date: 2026-05-07
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.24.0
+# Version: 3.25.0
 
 ## Session Summary
-Committed 3 dirty repos (fwber, hymnmania, picard), merged 1 upstream (topaz-ffmpeg +3), reverse-synced 6 feature branches, fixed borg .git file corruption from hypercode removal, updated gitlink.
-
-## Commits & Pushes
-- **fwber**: +52/-49 across 15 files — API layer improvements, AR inventory, avatar flow, websocket hooks
-- **bobmani/hymnmania**: +32/-11 — hymn remaker app fix, midi_renderer improvements
-- **picard**: Added discography_webapp start.bat
+Fixed borg corrupted index (from session 31 interrupted reset), committed borg startup scripts, merged 1 upstream (topaz-ffmpeg +2), verified all gitlinks, documentation refresh.
 
 ## Upstream Merges (1 new)
 | Submodule | Upstream | Changes |
 |-----------|----------|---------|
-| topaz-ffmpeg | FFmpeg/FFmpeg | +3 commits: VVC parser PU split on Prefix SEI NUT, nal buffer size fix, movenc dynamic buffer leak fix. 4 files, +13/-10 |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +2 commits: Wave unaligned metadata chunk fix, mpegts priv_data assumption fix. 2 files, +18/-11 |
 
-## Reverse Syncs
-- bobbybookmarks: 3 branches (+1 each)
-- bobmani/hymnmania: 2 branches (+1 each)
-- picard: jules branch (+1)
+## Commits & Pushes
+- **borg**: Added start-go.bat, start-ts.bat startup scripts + backup binary
 
 ## Fixes
-- **borg**: Fixed corrupted `.git` file that pointed to deleted `hypercode/worktrees/hypercode-push` path. Updated to correct `.git/modules/borg`. Also updated workspace gitlink to match origin/main (05b342259).
+- **borg**: Fixed corrupted index from session 31's interrupted `git reset --hard`. Deleted stale `.git/modules/borg/index`, rebuilt with `git read-tree HEAD`. Local checkout now clean and matches origin/main.
 
-## Known Issues (Updated)
+## Verification
+- Zero unpushed commits ✅
+- All gitlinks at remote tips ✅
+- 1 new upstream merge, 15 up to date ✅
+- All feature branches up to date ✅
+
+## Workspace Commits
+1. `2e3abe4d0` - sync: session 32 - update submodule pointers (2 submodules)
+
+## Known Issues (Updated — borg fixed!)
 1. **bg/okgame**: Too large for git operations (Boost build artifacts) — NEEDS .gitignore
 2. **bobfilez/wkhtmltopdf**: pybind11 infinite recursion makes git add/diff timeout
 3. **bobeditpro copilot branches**: 3 permanently unmergeable (unrelated histories)
@@ -33,11 +35,11 @@ Committed 3 dirty repos (fwber, hymnmania, picard), merged 1 upstream (topaz-ffm
 6. **Maestro/pi-mono**: Some feature branches non-fast-forward on remote
 7. **tabby upstream**: Tag conflict (latest, v1.0.231/233 clobber existing)
 8. **hymnmania**: 65MB SF2 soundfont exceeds GitHub's 50MB recommendation — consider Git LFS
-9. **borg**: Local checkout is stale (HEAD=2a5ca41, origin/main=05b3422). `git checkout --force main` times out due to 9,922 files. Workspace gitlink updated to match remote.
+9. **borg stale branches**: Several old branches (cloud-orchestrator-sync, main-clean, merge-main-clean, rewrite/main-sanitized*, rewrite/main-squashed-sanitized) with massive divergence (265-999 commits). Should be deleted or force-pushed.
 
 ## Recommendations for Next Session
-1. **CRITICAL: Fix borg local checkout** — Run `git checkout --force main` with longer timeout or fresh clone
-2. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
+1. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
+2. **borg stale branches**: Delete the 6 stale branches (cloud-orchestrator-sync, main-clean, merge-main-clean, rewrite/main-sanitized, rewrite/main-sanitized2, rewrite/main-squashed-sanitized)
 3. **hymnmania SF2**: Consider Git LFS for the 65MB soundfont file
 4. **Force-push Maestro/pi-mono feature branches** — Resolve diverged remote branches
 5. **Verify fresh Jules clone** — `git clone --recurse-submodules`

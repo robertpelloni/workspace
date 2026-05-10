@@ -1,3 +1,20 @@
+## [3.25.0] - 2026-05-07
+
+### Upstream Merges (1 new)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +2 commits — [Wave] Fix issues with unaligned metadata chunks; avformat/mpegts: Don't assume fc->priv_data is a MpegTSContext. 2 files, +18/-11.
+
+### Commits & Pushes
+- **borg**: Added start-go.bat (Go-native startup) and start-ts.bat (TypeScript startup) scripts, backup binary
+
+### Fixes
+- **borg**: Fixed corrupted index from interrupted `git reset --hard` in session 31. Deleted stale index, rebuilt with `git read-tree HEAD`. Local checkout now matches origin/main.
+
+### Verification
+- **Zero unpushed commits** across all robertpelloni repos ✅
+- **All gitlinks verified** at remote branch tips ✅
+- **All upstream forks**: 1 new merge, 15 up to date ✅
+- **All feature branches**: up to date ✅
+
 ## [3.24.0] - 2026-05-07
 
 ### Commits & Pushes
