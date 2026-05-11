@@ -1,3 +1,28 @@
+## [3.31.0] - 2026-05-11
+
+### Upstream Merges (1 new)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +1 — `avcodec/libvpxenc`: Copy Smpte2094App5 metadata. 3 files, +24/-2.
+
+### Commits & Pushes (5 repos)
+- **bobtorrent**: Major update — new API handlers (assets, blobs, identity, lattice, publish, subscriptions, verify), identity module, streaming readahead with tests, storage registry, DHT updates, web UI, supernode, consensus lattice, wallet, build scripts (+58 files)
+- **bobmani/beatoraja**: Major update — Config, MainController, MainState, OsuDecoder, gradle build, documentation suite (+99 files)
+- **bobmani/hymnmania**: Expanded .gitignore with Python and project patterns (+41/-2)
+- **bobbybookmarks**: Bookmarks db, deep research status, flight logs updated (+397/-228)
+- **hyperharness**: Major update — agent context, tools (refactor, registry, powershell_parity, todo_store), TUI (chat, slash, dashboard), docs, merge conflict resolution (+51 files)
+
+### Reverse Syncs (11 branches across 6 repos)
+- topaz-ffmpeg: master synced (+2 from develop)
+- bobtorrent: 2 branches synced (+1 each)
+- bobmani/beatoraja: 2 branches synced (+1 each)
+- bobmani/hymnmania: 2 branches synced (+1 each)
+- bobbybookmarks: 3 branches synced (+1 each)
+- hyperharness: feat/deep-wire-mcp-memory synced (+3)
+
+### Verification
+- Zero unpushed commits ✅
+- No feature branches ahead of default ✅
+- 6 submodule pointers updated ✅
+
 ## [3.30.0] - 2026-05-10
 
 ### Upstream Merges (1 new)

@@ -1,44 +1,47 @@
-# Session 36 Handoff Document
-# Date: 2026-05-10
+# Session 37 Handoff Document
+# Date: 2026-05-11
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.30.0
+# Version: 3.31.0
 
 ## Session Summary
-Merged 1 upstream (topaz-ffmpeg +1 from FFmpeg), committed 4 dirty repos, merged tabby jules branch, reverse-synced 9 feature branches across 5 repos. All submodule pointers updated.
+Merged 1 upstream (topaz-ffmpeg +1 from FFmpeg), committed 5 dirty repos with significant development, reverse-synced 11 feature branches across 6 repos, updated 6 submodule pointers.
 
 ## Upstream Merges (1 new)
 | Submodule | Upstream | Changes |
 |-----------|----------|---------|
-| topaz-ffmpeg | FFmpeg/FFmpeg | +1: swscale/filters hard-code radius for trivial kernels. +20/-2 |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +1: avcodec/libvpxenc Copy Smpte2094App5 metadata. +24/-2 |
 
-## Commits & Pushes (4 repos)
-- **bobmani/hymnmania**: Added .gitignore for suno test artifacts. Cleaned up repo.
-- **bobbybookmarks**: incoming resources + pi agent config (supervisor.md, taskplane.json)
-- **pi-mono**: New extensions (acp_adapter, babysitter, plannotator, react_fallback, worktrees), version bump, models update
-- **tabby**: Jules branch merged into master (fast-forward — handoff.md case fix commits)
+## Commits & Pushes (5 repos — heavy development)
+- **bobtorrent** (+58 files): New API handlers (assets, blobs, identity, lattice, publish, subscriptions, verify), identity module, streaming readahead with tests, storage registry/erasure/storage, DHT engine/mapping, web UI updates, supernode (ingest/key/publish/subscriptions), consensus lattice, wallet, build scripts
+- **bobmani/beatoraja** (+99 files): Config, MainController, MainState, OsuDecoder updates, gradle build system, comprehensive documentation (AGENTS, CHANGELOG, CLAUDE, GEMINI, GPT, HANDOFF, ROADMAP, VERSION), LLM/copilot instructions
+- **bobmani/hymnmania**: Expanded .gitignore with Python and project patterns
+- **bobbybookmarks**: Bookmarks db, deep research status, flight logs
+- **hyperharness** (+51 files): Agent context, tools (refactor, registry, powershell_parity, todo_store), TUI (chat, slash, dashboard), docs, resolved merge conflict (TODO.md, VERSION)
 
-## Reverse Syncs (9 branches across 5 repos)
-- topaz-ffmpeg: master synced (+98 from develop)
+## Reverse Syncs (11 branches across 6 repos)
+- topaz-ffmpeg: master synced (+2 from develop)
+- bobtorrent: 2 branches (+1 each)
+- bobmani/beatoraja: 2 branches (+1 each)
 - bobmani/hymnmania: 2 branches (+1 each)
 - bobbybookmarks: 3 branches (+1 each)
-- tabby: feat/real-pty-serial (+2)
-- pi-mono: 2 branches (+1 each, 1 force-pushed for diverged ref)
+- hyperharness: feat/deep-wire-mcp-memory (+3)
 
-## Workspace Submodule Pointer Updates (5)
-- topaz-ffmpeg: b26cd16bc → 6c906999
-- bobmani/hymnmania: f118ec2b → ad9517f4
-- bobbybookmarks: 2c585749 → ba94cf3d
-- tabby: 160358a5 → d7ce936a
-- pi-mono: 9cbe802c → 9d03790e
+## Workspace Submodule Pointer Updates (6)
+- topaz-ffmpeg: 6c906999 → 4cd8c700
+- bobtorrent: 5e8e1efb → a4d5b673
+- bobmani/beatoraja: 604331c2 → d2243a07
+- bobmani/hymnmania: ad9517f4 → 311bb861
+- bobbybookmarks: ba94cf3d → b56da317
+- hyperharness: dc483dc3 → b696fd8a
 
 ## Verification
 - Zero unpushed commits ✅
 - No feature branches ahead of default ✅
-- All upstreams checked (only topaz-ffmpeg had new commits) ✅
+- All upstreams checked ✅
 
 ## Known Issues (Unchanged)
 1. **bg/okgame**: Boost build artifacts bloat repo — NEEDS .gitignore
-2. **bobfilez/wkhtmltopdf**: pybind11 infinite recursion makes git add/diff timeout
+2. **bobfilez/wkhtmltopdf**: pybind11 infinite recursion makes git add/diff timeout (DIRTY=32)
 3. **bobeditpro copilot branches**: 3 permanently unmergeable
 4. **bg/bobsgameweb**: Unresolved merge from prior session
 5. **raindropioapp upstream**: Fetch fails (HTTP error)
@@ -53,4 +56,4 @@ Merged 1 upstream (topaz-ffmpeg +1 from FFmpeg), committed 4 dirty repos, merged
 2. **hymnmania SF2**: Consider Git LFS for 65MB soundfont
 3. **Force-push Maestro/pi-mono feature branches** that diverged
 4. **bg/bobsgameweb**: Complete the unresolved merge
-5. **Jules clone test**: Verify `git clone --recurse-submodules https://github.com/robertpelloni/bobfilez` works after session 34 fixes
+5. **Jules clone test**: Verify bobfilez `git clone --recurse-submodules` works
