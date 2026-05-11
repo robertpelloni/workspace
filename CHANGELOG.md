@@ -1,3 +1,30 @@
+## [3.26.0] - 2026-05-07
+
+### Upstream Merges (2 new)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +3 commits — vulkan_ffv1: support decoding 32-bit float video; avutil/hwcontext_vulkan: fix resource leak on alloc_mem failure; avcodec/h264_cavlc: Fix indentation. 7 files, +140/-85.
+- **openclaw-config** ← TechNickAI/openclaw-config: +3 commits — devops/app-router: harden path handling in Caddyfile and install.sh; serve real catch-all index, rename registry dir. 5 files, +138/-19.
+
+### Commits & Pushes
+- **borg**: Updated caps-context-state, refreshed borg.exe binary (+1/-14)
+- **bobmani/hymnmania**: Hymn remaker improvements + 147 new MIDI input hymns (+347/-160)
+- **tabby**: PTY/serial improvements, go backend updates (+388/-140, new pty.go)
+
+### Reverse Syncs (6 repos)
+- **bobmani/itgmania**: main → main (+1)
+- **bobmani/beatoraja**: master → main (+18)
+- **bobmani/hymnmania**: master → 2 feature branches (+1 each)
+- **bobbybookmarks**: main → 3 branches (+1 each)
+- **tabby**: master → feat/real-pty-serial (+1)
+- **openclaw-config**: main → 3 branches (+4 each)
+
+### Fixes
+- **hymnmania**: Excluded 492MB BandMidi-G-J.zip from tracking (exceeds GitHub's 100MB limit). Added .gitignore for archives/.
+
+### Verification
+- Zero unpushed commits ✅
+- All feature branches at same commit as default ✅
+- 6 submodule pointers updated ✅
+
 ## [3.25.0] - 2026-05-07
 
 ### Upstream Merges (1 new)
