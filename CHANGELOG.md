@@ -1,3 +1,20 @@
+## [3.29.0] - 2026-05-10
+
+### Upstream Merges (1 new)
+- **bobeditpro** ← audacity/audacity: +5 commits — fix avatar refresh (#10903); Return saved project location from open cloud function (#10898); enforce account notification and ensure image reload; remove cloud test; return project name from openCloudProject. 13 files, +29/-99.
+
+### Commits & Pushes
+- **bobmani/hymnmania**: Hymn remaker updates + new suno_remaker.py module (Suno AI music remaker). +667/-4.
+
+### Reverse Syncs (5 branches across 3 repos)
+- **bobeditpro**: master → 2 feature branches (+6 each)
+- **bobmani/hymnmania**: master → 2 branches (+1 each)
+- **tabby**: master → feat/real-pty-serial (+8), jules branch (+1, forced)
+
+### Verification
+- Zero unpushed commits ✅
+- No feature branches ahead of default ✅
+
 ## [3.28.0] - 2026-05-10
 
 ### Critical Fix: Jules Clone Failure

@@ -1,44 +1,32 @@
-# Session 34 Handoff Document
+# Session 35 Handoff Document
 # Date: 2026-05-10
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.28.0
+# Version: 3.29.0
 
-## Session Summary — CRITICAL JULES FIX
-Fixed 8 broken submodule gitlinks in bobfilez that caused Jules CI `git clone --recurse-submodules` to fail with "not our ref" errors. Also merged 2 upstreams, committed 6 dirty repos, merged tabby Jules branch, reverse-synced 8 feature branches.
+## Session Summary
+Merged 1 upstream (bobeditpro +5), committed hymnmania (suno_remaker.py), reverse-synced 5 feature branches across 3 repos.
 
-## Critical Fix: Jules Clone Failure
-The Jules CI agent failed to clone `robertpelloni/bobfilez` because submodule `ai-file-sorter` pointed to commit `1a30763e` which was 34 local-only commits ahead of the remote (the remote is third-party `hyperfield/ai-file-sorter` which we can't push to).
+## Upstream Merges (1 new)
+| Submodule | Upstream | Changes |
+|-----------|----------|---------|
+| bobeditpro | audacity/audacity | +5: avatar refresh fix, cloud project location/name return, account notification enforcement, cloud test removal. 13 files, +29/-99 |
 
-**Root cause:** Many bobfilez submodule pointers were stale — pointing to commits that existed locally but were never pushed or were on diverged branches.
+## Commits & Pushes
+- **bobmani/hymnmania**: Hymn remaker updates + new suno_remaker.py (Suno AI music remaker module). +667/-4.
 
-**Additional broken gitlinks found and fixed:**
-| Submodule | Old SHA | New SHA | Remote |
-|-----------|---------|---------|--------|
-| ai-file-sorter | 1a30763e | 03a9009a | origin/main |
-| libs/bobgui | ad214b29 | 8a0cfa58 | ancestor of main |
-| libs/bobui | 08d839d7 | 677b0f35 | ancestor of main |
-| libs/btk | a6b1e97b | d21bfdfb | origin/master |
-| libs/dokany | ae68a926 | 767da4ba | ancestor of master |
-| libs/pcre2 | 97fbcae5 | ac0eb712 | ancestor of main |
-| libs/pngquant | 71dfd4cc | 5b4e91f5 | ancestor of main |
-| libs/rapidjson | d4c6f26c | 24b5e7a8 | ancestor of master |
-
-All 8 new SHAs verified as fetchable from their remotes via `git fetch origin <sha>`.
-
-**Comprehensive scan method:** Used `git ls-tree -r HEAD` to enumerate all 172 gitlinks in bobfilez, then checked each against remote refs and `git merge-base --is-ancestor`. Also used GitHub API as cross-check (but API returned 403 for many repos due to rate limiting — this is NOT a reliability issue, just API throttling).
-
-## Upstream Merges (2 new)
-- bobeditpro: Audacity +4 (Turkish translation, Transifex, lupdate)
-- topaz-ffmpeg: FFmpeg +3 (DTLS handshake, HLS io_open)
+## Reverse Syncs (5 branches across 3 repos)
+- bobeditpro: 2 feature branches (+6 each)
+- bobmani/hymnmania: 2 branches (+1 each)
+- tabby: feat/real-pty-serial (+8), jules branch (+1, force-pushed due to HANDOFF.md case conflict)
 
 ## Verification
-- All bobfilez gitlinks now point to reachable commits ✅
-- Zero unpushed commits on robertpelloni repos ✅
-- jules-autopilot build clean (12.00s) ✅
+- Zero unpushed commits ✅
+- No feature branches ahead of default ✅
+- All upstreams checked (only bobeditpro had new commits) ✅
 
 ## Known Issues (Updated)
 1. **bg/okgame**: Too large for git operations (Boost build artifacts) — NEEDS .gitignore
-2. **bobfilez/wkhtmltopdf**: pybind11 infinite recursion makes git add/diff timeout
+2. **bobfilez/wkhtmltopdf**: pybind11 infinite recursion makes git add/diff timeout. bobfilez shows DIRTY=32 but these are known cosmetic issues.
 3. **bobeditpro copilot branches**: 3 permanently unmergeable (unrelated histories)
 4. **bg/bobsgameweb**: Unresolved merge from prior session
 5. **raindropioapp upstream**: Fetch fails (HTTP error)
@@ -46,11 +34,12 @@ All 8 new SHAs verified as fetchable from their remotes via `git fetch origin <s
 7. **tabby upstream**: Tag conflict (v1.0.231/233)
 8. **hymnmania**: 65MB SF2 exceeds GitHub's 50MB recommendation
 9. **.agent**: Third-party repo, local mods can't be pushed
-10. **bobfilez nested submodules**: 172 total gitlinks. The scan confirmed all are reachable but many third-party repos return 403 from API (rate limiting). A fresh `git clone --recurse-submodules` should now succeed since all first-level pointers are valid and JUCE/ultimatepp nested SHAs were also confirmed via GitHub API.
+10. **tabby HANDOFF.md**: Recurring case-sensitivity conflict on Windows (HANDOFF.md vs handoff.md tracked as separate files)
 
 ## Recommendations for Next Session
-1. **TEST: Fresh Jules clone** — `git clone --depth 1 --shallow-submodules --no-single-branch --recursive https://github.com/robertpelloni/bobfilez -b main /tmp/test-clone`
-2. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
-3. **hymnmania SF2**: Consider Git LFS
-4. **Force-push Maestro/pi-mono feature branches**
-5. **bg/bobsgameweb**: Complete the unresolved merge
+1. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
+2. **hymnmania SF2**: Consider Git LFS
+3. **Force-push Maestro/pi-mono feature branches**
+4. **bg/bobsgameweb**: Complete the unresolved merge
+5. **tabby**: Permanently fix HANDOFF.md case conflict by renaming one file in the upstream
+6. **Jules clone test**: Verify bobfilez `git clone --recurse-submodules` now works after session 34 fixes
