@@ -1,3 +1,32 @@
+## [3.27.0] - 2026-05-10
+
+### Upstream Merges (2 new)
+- **bobeditpro** ← audacity/audacity: +4 commits — Update in-repo translations from Transifex (en, fi, fr, ja, ko); add Turkish translation (audacity_tr.ts, +8458 lines); run `lupdate` with `-no-obsolete`. 6 files, +9569/-919.
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +3 commits — avformat/tls_mbedtls: fix DTLS handshake failure with non-DTLS packets; move DTLS packet detection into ff_is_dtls_packet(); avformat/hls: disable http_persistent/http_multiple with custom io_open. 5 files, +57/-39.
+
+### Commits & Pushes
+- **fwber**: caps-context-state update
+- **jules-autopilot**: caps-context-state
+- **bobmani/hymnmania**: video_uploader_old backup, temp art asset
+- **neverball**: .jules config files
+- **picard**: caps-context-state update
+- **tabby**: HANDOFF.md/handoff.md case conflict resolved; merged Jules branch jules-15161538455472121726 (+5 commits: rich image/iframe widgets, AI mock, copy actions, Monaco IDE input, markdown widget blocks)
+
+### Reverse Syncs (8 branches across 5 repos)
+- **bobeditpro**: master → 2 feature branches (+5 each)
+- **jules-autopilot**: main → 2 branches (+2 each)
+- **bobmani/hymnmania**: master → 2 branches (+1 each)
+- **neverball**: master → party-games-ui-docs (+1)
+- **tabby**: master → feat/real-pty-serial (+7), jules branch (+3)
+
+### Fixes
+- **.agent**: Reset to origin/main (was 1602 commits ahead of remote; origin is third-party repo we can't push to)
+- **tabby**: Resolved Windows case-insensitive filesystem conflict (HANDOFF.md vs handoff.md) by removing duplicate lowercase file from tracking
+
+### Verification
+- Zero unpushed commits ✅
+- 8 submodule pointers updated ✅
+
 ## [3.26.0] - 2026-05-07
 
 ### Upstream Merges (2 new)

@@ -1,37 +1,42 @@
-# Session 33 Handoff Document
-# Date: 2026-05-07
+# Session 34 Handoff Document
+# Date: 2026-05-10
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.26.0
+# Version: 3.27.0
 
 ## Session Summary
-Committed 3 dirty repos (hymnmania, borg, tabby), merged 2 upstreams (topaz-ffmpeg +3, openclaw-config +3), reverse-synced 11 feature branches across 6 repos, fixed hymnmania 492MB zip rejection.
+Merged 2 upstreams (bobeditpro +4, topaz-ffmpeg +3), committed 6 dirty repos, merged tabby Jules branch (+5), reverse-synced 8 feature branches across 5 repos, fixed .agent gitlink, resolved tabby HANDOFF.md case conflict.
 
 ## Upstream Merges (2 new)
 | Submodule | Upstream | Changes |
 |-----------|----------|---------|
-| topaz-ffmpeg | FFmpeg/FFmpeg | +3: vulkan_ffv1 32-bit float decode, hwcontext_vulkan alloc_mem leak fix, h264_cavlc indentation fix. 7 files, +140/-85 |
-| openclaw-config | TechNickAI/openclaw-config | +3: app-router path handling, catch-all index.html, registry dir rename. 5 files, +138/-19 |
+| bobeditpro | audacity/audacity | +4: Transifex translations (en/fi/fr/ja/ko), Turkish translation (+8458 lines), lupdate -no-obsolete. 6 files, +9569/-919 |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +3: DTLS handshake fix, ff_is_dtls_packet() extraction, HLS http_persistent disable. 5 files, +57/-39 |
 
 ## Commits & Pushes
-- **borg**: caps-context-state update, borg.exe binary refresh
-- **bobmani/hymnmania**: Hymn remaker improvements + 147 new MIDI hymns (+347/-160)
-- **tabby**: PTY/serial improvements, go backend, new pty.go (+388/-140)
+- fwber: caps-context-state
+- jules-autopilot: caps-context-state
+- bobmani/hymnmania: video_uploader_old, temp art
+- neverball: .jules config
+- picard: caps-context-state
+- tabby: HANDOFF.md case fix + Jules branch merge (+5 commits)
 
-## Reverse Syncs
-- bobmani/itgmania: main → main (+1)
-- bobmani/beatoraja: master → main (+18)
+## Feature Branch Merges
+- **tabby**: Merged jules-15161538455472121726-f7446b36 into master (+5 commits: rich image/iframe widgets, AI mock, copy actions, Monaco IDE input, markdown widget blocks)
+
+## Reverse Syncs (8 branches across 5 repos)
+- bobeditpro: 2 branches (+5 each)
+- jules-autopilot: 2 branches (+2 each)
 - bobmani/hymnmania: 2 branches (+1 each)
-- bobbybookmarks: 3 branches (+1 each)
-- tabby: feat/real-pty-serial (+1)
-- openclaw-config: 3 branches (+4 each)
+- neverball: 1 branch (+1)
+- tabby: 2 branches (+7 and +3)
 
 ## Fixes
-- **hymnmania**: 492MB BandMidi-G-J.zip rejected by GitHub (100MB limit). Added .gitignore for archives/, amended commit to exclude zip.
+- **.agent**: Reset to origin/main. Was 1602 commits ahead but origin is third-party (sickn33/antigravity-awesome-skills) — we can't push. Local-only commits discarded in favor of upstream.
+- **tabby**: HANDOFF.md/handoff.md case conflict on Windows — removed duplicate lowercase file from tracking.
 
 ## Verification
 - Zero unpushed commits ✅
-- All feature branches at same commit as default ✅
-- 6 submodule pointers updated ✅
+- 8 submodule pointers updated ✅
 
 ## Known Issues (Updated)
 1. **bg/okgame**: Too large for git operations (Boost build artifacts) — NEEDS .gitignore
@@ -41,8 +46,8 @@ Committed 3 dirty repos (hymnmania, borg, tabby), merged 2 upstreams (topaz-ffmp
 5. **raindropioapp upstream**: Fetch fails (HTTP error)
 6. **Maestro/pi-mono**: Some feature branches non-fast-forward on remote
 7. **tabby upstream**: Tag conflict (latest, v1.0.231/233 clobber existing)
-8. **hymnmania**: 65MB SF2 soundfont exceeds GitHub's 50MB recommendation — consider Git LFS. 492MB archives/ excluded via .gitignore.
-9. **hymnmania**: 148+ MIDI input files may bloat repo over time
+8. **hymnmania**: 65MB SF2 soundfont exceeds GitHub's 50MB recommendation — consider Git LFS
+9. **.agent**: Third-party repo (sickn33/antigravity-awesome-skills), not a robertpelloni fork. Local modifications can't be pushed.
 
 ## Recommendations for Next Session
 1. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts make entire bg repo unusable
@@ -51,4 +56,4 @@ Committed 3 dirty repos (hymnmania, borg, tabby), merged 2 upstreams (topaz-ffmp
 4. **Verify fresh Jules clone** — `git clone --recurse-submodules`
 5. **bg/bobsgameweb**: Complete the unresolved merge
 6. **Address Dependabot alerts** on workspace
-7. **hymnmania archives**: Consider Git LFS or external storage for the 492MB BandMidi zip
+7. **.agent**: Consider creating a robertpelloni fork if we need to push local modifications
