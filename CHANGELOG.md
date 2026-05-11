@@ -1,3 +1,25 @@
+## [3.30.0] - 2026-05-10
+
+### Upstream Merges (1 new)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +1 — `swscale/filters`: hard-code radius for trivial kernels. 1 file, +20/-2.
+
+### Commits & Pushes (4 repos)
+- **bobmani/hymnmania**: .gitignore for suno test artifacts (+6/-36). Cleaned up repo.
+- **bobbybookmarks**: incoming resources + pi agent config (supervisor.md, taskplane.json).
+- **pi-mono**: New extensions (acp_adapter, babysitter, plannotator, react_fallback, worktrees), version bump, updated models.
+- **tabby**: Jules branch merged (handoff.md case fix, fast-forward).
+
+### Reverse Syncs (9 branches across 5 repos)
+- topaz-ffmpeg: master branch synced (+98)
+- bobmani/hymnmania: 2 branches (+1 each)
+- bobbybookmarks: 3 branches (+1 each)
+- tabby: feat/real-pty-serial (+2)
+- pi-mono: 2 branches (+1 each, 1 force-pushed)
+
+### Verification
+- Zero unpushed commits ✅
+- All submodule pointers updated ✅
+
 ## [3.29.0] - 2026-05-10
 
 ### Upstream Merges (1 new)
