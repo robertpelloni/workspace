@@ -1,3 +1,39 @@
+## [3.28.0] - 2026-05-10
+
+### Critical Fix: Jules Clone Failure
+- **bobfilez**: Fixed 8 broken submodule gitlinks that caused `git clone --recurse-submodules` to fail with "not our ref" errors.
+  - `ai-file-sorter`: 1a30763e → 03a9009a (origin/main) — was 34 unpushed commits ahead of remote (third-party repo)
+  - `libs/bobgui`: ad214b29 → 8a0cfa58 (ancestor of origin/main)
+  - `libs/bobui`: 08d839d7 → 677b0f35 (ancestor of origin/main)
+  - `libs/btk`: a6b1e97b → d21bfdfb (origin/master)
+  - `libs/dokany`: ae68a926 → 767da4ba (ancestor of origin/master)
+  - `libs/pcre2`: 97fbcae5 → ac0eb712 (ancestor of origin/main)
+  - `libs/pngquant`: 71dfd4cc → 5b4e91f5 (ancestor of origin/main)
+  - `libs/rapidjson`: d4c6f26c → 24b5e7a8 (ancestor of origin/master)
+- All 8 new SHAs verified as fetchable from their remotes ✅
+
+### Upstream Merges (2 new)
+- **bobeditpro** ← audacity/audacity: +4 — Transifex translations, Turkish, lupdate -no-obsolete
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +3 — DTLS handshake fix, HLS io_open fix
+
+### Commits & Pushes
+- **bobfilez**: 8 broken submodule gitlinks fixed
+- **fwber, jules-autopilot, picard**: caps-context-state updates
+- **bobmani/hymnmania**: video_uploader_old, temp art
+- **neverball**: .jules config
+- **tabby**: Jules branch merged (+5: widgets, AI mock, Monaco IDE)
+
+### Feature Branch Merged
+- **tabby**: `jules-15161538455472121726` merged into master
+
+### Reverse Syncs (8 branches across 5 repos)
+- bobeditpro: 2 branches, jules-autopilot: 2, hymnmania: 2, neverball: 1, tabby: 2
+
+### Fixes
+- **.agent**: Reset to origin/main (third-party, can't push 1602 local commits)
+- **tabby**: HANDOFF.md/handoff.md case conflict resolved
+- **hymnmania**: 492MB zip excluded via .gitignore (from session 33)
+
 ## [3.27.0] - 2026-05-10
 
 ### Upstream Merges (2 new)
