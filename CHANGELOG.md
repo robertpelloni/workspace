@@ -1,3 +1,30 @@
+## [3.32.0] - 2026-05-12
+
+### New Submodule
+- **litellm**: Added `github.com/robertpelloni/litellm` as submodule (branch: `litellm_internal_staging`, SHA: `7bb5eb5b`).
+
+### Upstream Merges (2 new, +39 commits total)
+- **bobeditpro** ← audacity/audacity: +32 — Missing plugin handling (dialog, greyed-out effects, effect path extraction), hasAudioContent channel, share audio button disable, crash fix after factory reset, label editing keys fix, Format/Rate menu disable during recording, improved legibility of invalid effects, CI/nightly build on muse_framework PRs. 49 files, +941/-127.
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +7 — id3v2 indentation/logcontext/temp buffer fixes, rtpdec_av1 buffer overflow fix, vulkan encode caps fix, matroskaenc smpte2094_app5 buffer fix. 5 files, +50/-49.
+
+### Commits & Pushes (4 repos)
+- **borg**: Jules session + architecture memory updates (+9256 lines in architecture doc)
+- **bobmani/hymnmania**: New suno_browser_gen.py module (+781/-232), suno_remaker updates, .gitignore expansion
+- **neverball**: Jules session + architecture memory updates
+- **bobbybookmarks**: New process_incoming.py, pi-lens config, bookmarks/db updates
+
+### Reverse Syncs (9 branches across 5 repos)
+- topaz-ffmpeg: master synced (+8 from develop)
+- bobeditpro: 2 feature branches synced (+33 each)
+- bobmani/hymnmania: 2 branches synced (+1 each)
+- bobbybookmarks: 3 branches synced (+3 each)
+- neverball: party-games-ui-docs synced (+1)
+
+### Verification
+- Zero unpushed commits ✅
+- No feature branches ahead of default ✅
+- 7 submodule pointers updated (6 changed + 1 new) ✅
+
 ## [3.31.0] - 2026-05-11
 
 ### Upstream Merges (1 new)

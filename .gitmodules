@@ -190,3 +190,8 @@
 [submodule "bobsgameonlinejava"]
 	path = bobsgameonlinejava
 	url = https://github.com/robertpelloni/bobsgameonlinejava.git
+
+[submodule "litellm"]
+	path = litellm
+	url = https://github.com/robertpelloni/litellm.git
+	branch = litellm_internal_staging
