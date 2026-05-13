@@ -1,3 +1,21 @@
+## [3.34.0] - 2026-05-13
+
+### Upstream Merges (1 new, +4 commits total)
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +4 — fftools/ffmpeg_filter: fix frame reference leak, ffprobe: implement IAMF frame side data printing, avcodec: map IAMF packet side data, avutil: add IAMF frame side data types. 7 files, +64/-7.
+
+### Commits & Pushes (2 repos)
+- **borg**: next-env update
+- **bobmani/hymnmania**: chore: update files
+
+### Reverse Syncs (3 branches across 2 repos)
+- topaz-ffmpeg: master synced (+5 from develop)
+- bobmani/hymnmania: 2 branches synced (+1 each)
+
+### Verification
+- Zero unpushed commits ✅
+- No feature branches ahead of default ✅
+- 3 submodule pointers updated ✅
+
 ## [3.33.0] - 2026-05-12
 
 ### Upstream Merges (2 new, +39 commits total)

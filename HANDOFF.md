@@ -1,38 +1,28 @@
-# Session 39 Handoff Document
-# Date: 2026-05-12
+# Session 40 Handoff Document
+# Date: 2026-05-13
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.33.0
+# Version: 3.34.0
 
 ## Session Summary
-Merged 2 major upstreams (bobeditpro +35, topaz-ffmpeg +4), committed 3 dirty repos, resolved merge conflicts in bobeditpro (Toast QML + muse submodule), reverse-synced 8 feature branches across 5 repos, updated 5 submodule pointers.
+Merged 1 major upstream (topaz-ffmpeg +4), committed 2 dirty repos, reverse-synced 3 feature branches across 2 repos, updated 3 submodule pointers.
 
-## Upstream Merges (2 new, +39 commits total)
+## Upstream Merges (1 new, +4 commits total)
 | Submodule | Upstream | Commits | Key Changes |
 |-----------|----------|---------|-------------|
-| bobeditpro | audacity/audacity | +35 | Custom plugin locations with scanner/validator, plugin discovery progress, Track view→visualization rename, cloud sync improvements (stop dialog, status, project close), toast UI, muse bump. Conflict: Toast QML (deleted locally, improved upstream → kept upstream), muse pointer (accepted upstream). 49+ files, +941/-127 |
-| topaz-ffmpeg | FFmpeg/FFmpeg | +4 | avfilter memory leak, hdr_dynamic_metadata alloc failure, libvorbisenc conditional padding. 3 files, +6/-3 |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +4 | fftools/ffmpeg_filter: fix frame reference leak in fg_output_step, ffprobe: implement printing IAMF frame side data, avcodec: map IAMF packet side data to frame side data, avutil: add IAMF frame side data types. 7 files, +64/-7 |
 
-## Commits & Pushes (3 repos)
-- **borg**: next-env update, remove metamcp.db-shm
-- **bobmani/hymnmania**: Refactored suno generation — suno_browser_gen.py → suno_fresh_gen.py + suno_gen_audio.py, requirements update
-- **litellm**: pi agent config (supervisor.md, taskplane.json)
+## Commits & Pushes (2 repos)
+- **borg**: next-env update
+- **bobmani/hymnmania**: chore: update files
 
-## Conflict Resolution Details
-- **bobeditpro Toast QML**: `src/toast/qml/Audacity/Toast/ToastItem.qml` and `ToastProvider.qml` were deleted in our branch but modified in upstream. Kept upstream's versions since they contain improvements.
-- **bobeditpro muse**: Submodule pointer conflict. Accepted upstream's updated pointer (0affaffd).
-
-## Reverse Syncs (8 branches across 5 repos)
+## Reverse Syncs (3 branches across 2 repos)
 - topaz-ffmpeg: master synced (+5)
-- bobeditpro: 2 feature branches synced (+36 each)
 - bobmani/hymnmania: 2 branches synced (+1 each)
-- bobbybookmarks: 3 branches synced (+2 each)
 
-## Workspace Submodule Pointer Updates (5)
-- borg: 0af343d6 → 16cfe950
-- topaz-ffmpeg: 616f762c → e3667a1d
-- bobeditpro: 1574c552 → 910dee36
-- bobmani/hymnmania: 28badcf7 → 12431d12
-- litellm: 7bb5eb5b → 7fb1e628
+## Workspace Submodule Pointer Updates (3)
+- borg: 16cfe950 → ce28b157
+- topaz-ffmpeg: e3667a1d → 0af23f66
+- bobmani/hymnmania: 12431d12 → 9a71dc6
 
 ## Verification
 - Zero unpushed commits ✅
@@ -57,4 +47,4 @@ Merged 2 major upstreams (bobeditpro +35, topaz-ffmpeg +4), committed 3 dirty re
 2. **hymnmania SF2**: Consider Git LFS
 3. **Force-push Maestro/pi-mono feature branches** that diverged
 4. **bg/bobsgameweb**: Complete the unresolved merge
-5. **Jules clone test**: Verify `git clone --recurse-submodules` works with litellm submodule
+5. **Jules clone test**: Verify `git clone --recurse-submodules` works with current state
