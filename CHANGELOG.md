@@ -1,3 +1,25 @@
+## [3.33.0] - 2026-05-12
+
+### Upstream Merges (2 new, +39 commits total)
+- **bobeditpro** ← audacity/audacity: +35 — Custom plugin locations (#10859) with scanner/validator pipeline, plugin discovery progress dialog, Track view → Track visualization rename (#10408/#10414), cloud sync improvements (stop sync dialog, status notifications, project close handling, UTF-8 project name on save #10904), toast UI improvements, muse submodule bump. 49+ files, +941/-127. **Conflict resolution**: Reinstated upstream's Toast QML files (deleted locally but improved upstream), accepted upstream's muse pointer.
+- **topaz-ffmpeg** ← FFmpeg/FFmpeg: +4 — avfilter memory leak fix in ff_filter_alloc, hdr_dynamic_metadata allocation failure handling and error code fix, libvorbisenc conditional initial_padding. 3 files, +6/-3.
+
+### Commits & Pushes (3 repos)
+- **borg**: next-env update, remove metamcp.db-shm
+- **bobmani/hymnmania**: Refactor suno generation — suno_browser_gen.py → suno_fresh_gen.py + suno_gen_audio.py, updated requirements.txt
+- **litellm**: Add pi agent config (supervisor.md, taskplane.json)
+
+### Reverse Syncs (8 branches across 5 repos)
+- topaz-ffmpeg: master synced (+5 from develop)
+- bobeditpro: 2 feature branches synced (+36 each)
+- bobmani/hymnmania: 2 branches synced (+1 each)
+- bobbybookmarks: 3 branches synced (+2 each)
+
+### Verification
+- Zero unpushed commits ✅
+- No feature branches ahead of default ✅
+- 5 submodule pointers updated ✅
+
 ## [3.32.0] - 2026-05-12
 
 ### New Submodule

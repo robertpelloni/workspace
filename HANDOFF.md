@@ -1,47 +1,43 @@
-# Session 38 Handoff Document
+# Session 39 Handoff Document
 # Date: 2026-05-12
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.32.0
+# Version: 3.33.0
 
 ## Session Summary
-Added litellm submodule, merged 2 major upstreams (bobeditpro +32, topaz-ffmpeg +7), committed 4 dirty repos, reverse-synced 9 feature branches across 5 repos, updated 7 submodule pointers.
-
-## New Submodule Added
-- **litellm** (`github.com/robertpelloni/litellm`): Branch `litellm_internal_staging`, SHA `7bb5eb5b`. Registered as submodule with manual `.git/modules/litellm` setup due to repo size causing clone timeouts. Shallow fetch of default branch tip only.
+Merged 2 major upstreams (bobeditpro +35, topaz-ffmpeg +4), committed 3 dirty repos, resolved merge conflicts in bobeditpro (Toast QML + muse submodule), reverse-synced 8 feature branches across 5 repos, updated 5 submodule pointers.
 
 ## Upstream Merges (2 new, +39 commits total)
-| Submodule | Upstream | Commits | Changes |
-|-----------|----------|---------|---------|
-| bobeditpro | audacity/audacity | +32 | Missing plugin handling (dialog, greyed-out effects, effect path), hasAudioContent, share audio disable, crash fix, label editing, CI updates. 49 files, +941/-127 |
-| topaz-ffmpeg | FFmpeg/FFmpeg | +7 | id3v2 fixes, rtpdec_av1 buffer overflow, vulkan encode caps, matroskaenc smpte2094 buffer. 5 files, +50/-49 |
+| Submodule | Upstream | Commits | Key Changes |
+|-----------|----------|---------|-------------|
+| bobeditpro | audacity/audacity | +35 | Custom plugin locations with scanner/validator, plugin discovery progress, Track view→visualization rename, cloud sync improvements (stop dialog, status, project close), toast UI, muse bump. Conflict: Toast QML (deleted locally, improved upstream → kept upstream), muse pointer (accepted upstream). 49+ files, +941/-127 |
+| topaz-ffmpeg | FFmpeg/FFmpeg | +4 | avfilter memory leak, hdr_dynamic_metadata alloc failure, libvorbisenc conditional padding. 3 files, +6/-3 |
 
-## Commits & Pushes (4 repos)
-- **borg**: Jules session + architecture memory updates (+9256 lines)
-- **bobmani/hymnmania**: suno_browser_gen.py (+781/-232), suno_remaker updates, .gitignore
-- **neverball**: Jules session + architecture memory updates
-- **bobbybookmarks**: process_incoming.py, pi-lens config, data updates
+## Commits & Pushes (3 repos)
+- **borg**: next-env update, remove metamcp.db-shm
+- **bobmani/hymnmania**: Refactored suno generation — suno_browser_gen.py → suno_fresh_gen.py + suno_gen_audio.py, requirements update
+- **litellm**: pi agent config (supervisor.md, taskplane.json)
 
-## Reverse Syncs (9 branches across 5 repos)
-- topaz-ffmpeg: master synced (+8)
-- bobeditpro: 2 feature branches synced (+33 each)
+## Conflict Resolution Details
+- **bobeditpro Toast QML**: `src/toast/qml/Audacity/Toast/ToastItem.qml` and `ToastProvider.qml` were deleted in our branch but modified in upstream. Kept upstream's versions since they contain improvements.
+- **bobeditpro muse**: Submodule pointer conflict. Accepted upstream's updated pointer (0affaffd).
+
+## Reverse Syncs (8 branches across 5 repos)
+- topaz-ffmpeg: master synced (+5)
+- bobeditpro: 2 feature branches synced (+36 each)
 - bobmani/hymnmania: 2 branches synced (+1 each)
-- bobbybookmarks: 3 branches synced (+3 each)
-- neverball: party-games-ui-docs synced (+1)
+- bobbybookmarks: 3 branches synced (+2 each)
 
-## Workspace Submodule Pointer Updates (7)
-- borg: d458584a → 0af343d6
-- topaz-ffmpeg: 4cd8c700 → 616f762c
-- bobeditpro: a3a8032c → 1574c552
-- bobmani/hymnmania: 311bb861 → 28badcf7
-- bobbybookmarks: b56da317 → 2672717b
-- neverball: 7090fc15 → ecf82062
-- litellm: NEW (7bb5eb5b)
+## Workspace Submodule Pointer Updates (5)
+- borg: 0af343d6 → 16cfe950
+- topaz-ffmpeg: 616f762c → e3667a1d
+- bobeditpro: 1574c552 → 910dee36
+- bobmani/hymnmania: 28badcf7 → 12431d12
+- litellm: 7bb5eb5b → 7fb1e628
 
 ## Verification
 - Zero unpushed commits ✅
 - No feature branches ahead of default ✅
 - All upstreams checked ✅
-- litellm submodule properly registered in .gitmodules, .git/config, and .git/modules ✅
 
 ## Known Issues (Updated)
 1. **bg/okgame**: Boost build artifacts bloat repo — NEEDS .gitignore
@@ -54,11 +50,11 @@ Added litellm submodule, merged 2 major upstreams (bobeditpro +32, topaz-ffmpeg 
 8. **hymnmania**: 65MB SF2 exceeds GitHub's 50MB recommendation
 9. **.agent**: Third-party repo, local mods can't be pushed
 10. **tabby HANDOFF.md**: Recurring case-sensitivity conflict on Windows
-11. **litellm**: Shallow clone only — full content checkout not performed due to repo size. May need `git submodule update --init` on fresh clones.
+11. **litellm**: Shallow clone only — may need `git submodule update --init` on fresh clones
 
 ## Recommendations for Next Session
 1. **CRITICAL: Add .gitignore for bg/okgame** — Boost artifacts
 2. **hymnmania SF2**: Consider Git LFS
 3. **Force-push Maestro/pi-mono feature branches** that diverged
 4. **bg/bobsgameweb**: Complete the unresolved merge
-5. **litellm**: Verify full `git clone --recurse-submodules` works with the new submodule
+5. **Jules clone test**: Verify `git clone --recurse-submodules` works with litellm submodule
