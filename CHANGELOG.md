@@ -1,3 +1,16 @@
+## [3.35.0] - 2026-05-13
+
+### Upstream Merges (1 new, +3 commits total)
+- **bobeditpro** ← audacity/audacity: +3 — Create and apply effects should trigger clip notifications (#10914), notify when tracks are imported. 2 files, +27/-0.
+
+### Commits & Pushes (1 repo)
+- **bobeditpro**: upstream merge (clip notifications, track import notifications)
+
+### Verification
+- Zero unpushed commits ✅
+- No feature branches ahead of default ✅
+- 1 submodule pointer updated ✅
+
 ## [3.34.0] - 2026-05-13
 
 ### Upstream Merges (1 new, +4 commits total)

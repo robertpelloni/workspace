@@ -1,33 +1,29 @@
-# Session 40 Handoff Document
+# Session 41 Handoff Document
 # Date: 2026-05-13
 # Workspace: https://github.com/robertpelloni/workspace.git
-# Version: 3.34.0
+# Version: 3.35.0
 
 ## Session Summary
-Merged 1 major upstream (topaz-ffmpeg +4), committed 2 dirty repos, reverse-synced 3 feature branches across 2 repos, updated 3 submodule pointers.
+Merged 1 upstream (bobeditpro +3), updated 1 submodule pointer.
 
-## Upstream Merges (1 new, +4 commits total)
+## Upstream Merges (1 new, +3 commits total)
 | Submodule | Upstream | Commits | Key Changes |
 |-----------|----------|---------|-------------|
-| topaz-ffmpeg | FFmpeg/FFmpeg | +4 | fftools/ffmpeg_filter: fix frame reference leak in fg_output_step, ffprobe: implement printing IAMF frame side data, avcodec: map IAMF packet side data to frame side data, avutil: add IAMF frame side data types. 7 files, +64/-7 |
+| bobeditpro | audacity/audacity | +3 | Create and apply effects should trigger clip notifications (#10914), notify when tracks are imported. 2 files, +27/-0 |
 
-## Commits & Pushes (2 repos)
-- **borg**: next-env update
-- **bobmani/hymnmania**: chore: update files
+## Commits & Pushes (1 repo)
+- **bobeditpro**: upstream merge (clip notifications, track import notifications)
 
-## Reverse Syncs (3 branches across 2 repos)
-- topaz-ffmpeg: master synced (+5)
-- bobmani/hymnmania: 2 branches synced (+1 each)
+## Reverse Syncs (0 branches)
+- No feature branches behind default requiring reverse-sync
 
-## Workspace Submodule Pointer Updates (3)
-- borg: 16cfe950 → ce28b157
-- topaz-ffmpeg: e3667a1d → 0af23f66
-- bobmani/hymnmania: 12431d12 → 9a71dc6
+## Workspace Submodule Pointer Updates (1)
+- bobeditpro: 910dee36 → 7fe5fe4a
 
 ## Verification
 - Zero unpushed commits ✅
 - No feature branches ahead of default ✅
-- All upstreams checked ✅
+- 1 submodule pointer updated ✅
 
 ## Known Issues (Updated)
 1. **bg/okgame**: Boost build artifacts bloat repo — NEEDS .gitignore
