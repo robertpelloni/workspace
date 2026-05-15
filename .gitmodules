@@ -198,3 +198,6 @@
 [submodule "realestatecrm"]
 	path = realestatecrm
 	url = https://github.com/robertpelloni/realestatecrm
+[submodule "skillzhub"]
+	path = skillzhub
+	url = https://github.com/robertpelloni/skillzhub
