@@ -1583,3 +1583,12 @@ Maestro's borg-assimilation branch — **previously blocked since v2.9.0** — s
 - No local feature branches ahead of default (after merge)
 - Zero unpushed commits (after push)
 
+
+## [3.35.2] - 2026-05-13
+
+### Additional Fix
+- **hyperharness**: Updated goose and litellm to latest upstream HEAD (slipped during initial audit)
+
+### Verification
+- All 32 submodule pointers in hyperharness now match upstream HEAD ✅
+- Jules shallow-submodule clone should now succeed ✅
