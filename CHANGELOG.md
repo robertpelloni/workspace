@@ -1,3 +1,10 @@
+## [3.38.0] - 2026-05-13
+
+### New Submodule
+- **realestatecrm**: Added as submodule (github.com/robertpelloni/realestatecrm)
+  - Merged feature branch jules-5799108513520500871-6779eaf6 into main (+112 lines)
+  - Adds MultiSelectFilter component and workflow improvements
+
 ## [3.37.0] - 2026-05-13
 
 ### Full Workspace Synchronization
