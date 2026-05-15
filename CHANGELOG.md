@@ -1,3 +1,26 @@
+## [3.35.1] - 2026-05-13
+
+### Critical Fix - Jules Clone Error
+- **hyperharness**: Updated 24 submodule pointers to upstream HEAD for Jules shallow-submodule clone compatibility. The previous pointers were stale (pinned to old commits) causing `--shallow-submodules` clones to fail with "fatal: Fetched in submodule path 'llamafile', but it did not contain e47bb816... Direct fetching of that commit failed." All 32 submodules in hyperharness now point to reachable commits on their respective remote default branches.
+
+- **hyperharness**: Added missing `.gitmodules` entry for `archive/OmniRoute` submodule, resolving "fatal: No url found for submodule path 'archive/OmniRoute' in .gitmodules" error.
+
+### Updated Submodule Pointers (24 in hyperharness)
+- auggie, aider, code-cli, dolt, goose, llm-cli, litellm, ollama
+- open-interpreter, pi-cli, rowboat, mistral-vibe, smithery-cli
+- opencode, kilocode, byterover-cli, claude-code-templates
+- copilot-cli, crush, factory-cli, gemini-cli, grok-cli, kimi-cli
+- archive/OmniRoute
+
+### Feature Branch Reverse Syncs
+- **jules-autopilot**: hypercode-sync, jules-17764958747146694232-3d7c3856 synced with main (+10 files each)
+- **bobbybookmarks**: feature/reorg-and-integrate, jules-bobbybookmarks-ingestion synced with main (+8634 lines each)
+- **bobeditpro**: feature/audition-parity-roadmap, feature/bus-tracks-and-docs synced with master
+
+### Verification
+- Zero unpushed commits ✅
+- All hyperharness submodule pointers reachable via shallow clone ✅
+- Feature branches caught up with main ✅
 ## [3.35.0] - 2026-05-13
 
 ### Upstream Merges (1 new, +3 commits total)
