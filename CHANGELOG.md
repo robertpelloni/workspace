@@ -1,3 +1,38 @@
+## [3.37.0] - 2026-05-13
+
+### Full Workspace Synchronization
+- Resolved 3 successive Jules clone failures caused by stale submodule pointers
+- Tree-wide audit and update of 200+ submodule pointers across 30+ repositories
+- Reverse-synced 35+ feature branches (merged main into branches so they stay current)
+
+### Jules Clone Failures Fixed
+1. **hyperharness/llamafile**: Local-only commit e47bb816 not on remote → updated to upstream HEAD
+2. **antigravity-autopilot/AUTO-ALL-AntiGravity**: 11 nested submodule pointers stale → all updated
+3. **Systemic**: 200+ stale pointers across bg/okgame (45), bobfilez (78), and 20+ other repos
+
+### Feature Branch Reverse-Syncs (35+ branches)
+All robertpelloni feature branches now caught up with their default branches.
+
+### Submodule Pointer Updates
+- Workspace root: 3 updated (bobmani/bobmania, OpenMBU, bobsgameonlinejava)
+- hyperharness: 26 updated
+- antigravity-autopilot: 11 updated
+- bg/okgame: 45 updated | bobfilez: 78 updated
+- Plus 20+ other repos
+
+### Build Verification
+- jules-autopilot: ✓ Built (~9.6s, 343 kB)
+
+## [3.36.1] - 2026-05-13
+### Fixes
+- Final sweep of 6 stale workspace root submodule pointers after tree-wide fix
+
+## [3.36.0] - 2026-05-13
+### Fixes
+- Tree-wide submodule pointer update across 30+ repos for Jules compatibility
+- antigravity-autopilot: 11 nested submodule pointers updated
+- bg/okgame: 45, bobfilez: 78, bg/bobsgameonlinejava: 25 submodule pointers updated
+
 ## [3.35.1] - 2026-05-13
 
 ### Critical Fix - Jules Clone Error
