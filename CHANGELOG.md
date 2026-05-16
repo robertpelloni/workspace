@@ -1,3 +1,12 @@
+## [3.42.0] - 2026-05-13
+
+### Workspace Sync
+- Updated 4 stale submodule pointers: borg, bobbybookmarks, hyperharness, pi-mono
+- All feature branches already in sync (no additional merges needed)
+- Build verification: jules-autopilot ✓ (~14s)
+- Unpushed commits: 0
+
+
 ## [3.38.0] - 2026-05-13
 
 ### New Submodule
