@@ -1,3 +1,31 @@
+## [3.44.0] - 2026-05-15
+
+### Comprehensive Workspace Sync
+
+#### Feature Branches Merged Into Main
+- **Maestro**: 2 Jules branches (new agents, configuration)
+- **MarbleBlast**: 1 Jules branch
+- **OmniRoute**: 2 feature branches (go-port-and-ui-improvements: 14 commits, lkgp-strategy: 655 commits)
+- **bg**: 1 Jules branch (4 commits)
+- **bobdesk**: 100+ feature branches (LibreOffice fork) merged into master
+- **bobgui**: 2 feature branches (css-font-features, media-features)
+- **fwber**: 1 Jules branch (24 commits)
+- **borg**: nexus-active-memory-v56 feature branch
+- **neverball**: jules_recovery_001 branch (project inventory)
+- **realestatecrm**: global-search-and-docs-overhaul feature branch
+- **skillzhub**: creator-trust-tiers-v0.1.13 feature branch
+- **pi-mono**: jules-11703580741552424024 branch (8 commits)
+
+#### Upstream Merges
+- **bobeditpro**: 93 new upstream commits (Audacity fork)
+- **bobmani/ksm-v2**: 22 new upstream commits
+
+#### Submodule Pointer Updates (28 modules)
+.agent, antigravity-autopilot, bobbybookmarks, bobdesk, bobgui, bobmani/ddc, bobmani/itgmania, bobsaver, bobsgameonlinejava, bobtorrent, bobtrader, bobtrax, bobui, borg, btk, f-zerox, fwber, jules-autopilot, mcp-superassistant, mk64, neverball, npp, OmniRoute, pi-mono, realestatecrm, skillzhub, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced (15+ modules)
+antigravity-autopilot, bobbybookmarks, bobmani/bobmania, bobmani/ddc, bobmani/itgmania, bobsaver, bobsgameonlinejava, bobtorrent, bobtrader, bobtrax, bobui, btk, f-zerox, jules-autopilot, mcp-superassistant, mk64, neverball, npp, pi-mono, tabby
+
 ## [3.42.0] - 2026-05-13
 
 ### Workspace Sync

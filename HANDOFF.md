@@ -1,75 +1,49 @@
-# Workspace Synchronization Handoff
-**Date:** $(date '+%Y-%m-%d %H:%M:%S')
-**Version:** $(cat VERSION)
-**Commit:** $(git log --oneline -1)
+# Workspace Handoff — v3.44.0
 
-## Summary of Actions Performed
+**Date**: 2026-05-15
+**Version**: 3.44.0
+**Commit**: f3b731c98
 
-This session completed a full synchronization protocol for the robertpelloni/workspace monorepo and all its submodules.
+## Session Summary
 
-### 1. Feature Branch Management
-- Intelligently merged all local feature branches (from robertpelloni) into main branches where applicable
-- Used conflict resolution strategies that preserve features and avoid regressions
-- Ensured no loss of progress from Google Jules or other AI dev tool generated branches
+### What Was Done
+1. **Full workspace synchronization** across 61 submodules
+2. **100+ feature branches merged** into main (primarily bobdesk/LibreOffice fork)
+3. **12+ feature branches merged** from Jules/AI dev tools across multiple repos
+4. **2 upstream merges**: bobeditpro (93 commits), ksm-v2 (22 commits)
+5. **28 submodule pointers updated** to latest remote HEADs
+6. **15+ submodules** with uncommitted changes synced and pushed
+7. **4 new submodules** added in v3.43.0: auto_dj_script, slsk_discography_downloader_script, native-fy, planet_fitness_stepmaniax_agent
+8. **skillzhub** submodule re-added and feature branch merged in v3.39.0
 
-### 2. Submodule Updates
-- Updated all submodules and their nested submodules to latest default branches
-- Fetched and merged upstream changes where applicable (for forked repositories)
-- Updated workspace index to reflect current submodule commits
+### Key Architecture Notes
+- **bobdesk** is a LibreOffice fork with 100+ feature branches — all have been merged into master
+- **bobeditpro** is an Audacity fork — upstream changes are continuously merged
+- **topaz-ffmpeg** is a custom FFmpeg build — unpushed commits may accumulate
+- **bobfilez** has pybind11 recursion issues causing git operations to hang
+- **bg/okgame** has build artifacts bloating the repository
+- **borg** is a massive monorepo with its own submodules
+- **pi-mono** is actively developed with Jules — feature branches appear regularly
 
-### 3. Repository Maintenance
-- Added all new/modified files across all repositories
-- Committed all changes with descriptive messages
-- Pushed all changes to remote repositories where access permitted
+### Known Issues
+1. **bobfilez**: Directory recursion with pybind11 causes `git status` to hang
+2. **bg/okgame**: Build artifacts not properly gitignored
+3. **Large binary assets**: Soundfont files pushing GitHub size limits (need Git LFS)
+4. **bobdesk**: 100+ feature branches merged — some may have conflicting changes resolved with `-X ours`
+5. **Dependabot branches**: Left unmerged (not feature branches, just dependency updates)
 
-### 4. Versioning and Documentation
-- Incremented version number from 3.33.0 to 3.34.0
-- Updated CHANGELOG.md with session summary
-- This HANDOFF.md document created for session continuity
+### Submodule Count: 61
 
-### 5. Build Verification
-- Verified successful build of jules-autopilot (primary validation target)
-- Confirmed no regressions introduced
+### Protocol for Future Syncs
+1. Fetch all remotes for each robertpelloni submodule
+2. Merge any Jules/feature branches into main with `-X ours`
+3. Reverse-sync: merge main into feature branches that are behind
+4. Check upstream remotes and merge new changes
+5. Add/commit/push any uncommitted changes in submodules
+6. Update all workspace submodule pointers to remote HEADs
+7. Bump VERSION, update CHANGELOG, commit and push workspace
 
-## Current Workspace State
-- **Workspace Commit:** $(git log --oneline -1)
-- **Workspace Version:** $(cat VERSION)
-- **Unpushed Commits (workspace):** 0
-- **Feature Branches Ahead of Default (workspace):** 0
-
-## Submodule Status (Key Repositories)
-- bobeditpro: clean
-- topaz-ffmpeg: clean relative to fork (7331 commits ahead of upstream FFmpeg/FFmpeg - expected)
-- borg: clean
-- jules-autopilot: clean
-- bobfilez: clean
-- bg: clean
-- fwber: clean
-
-## Build Status
-- jules-autopilot: ✓ Built successfully (~9.9s, 341.45 kB)
-
-## Known Issues (Non-Blocking)
-1. bg/okgame: Boost build artifacts need .gitignore
-2. bobfilez/wkhtmltopdf: pybind11 infinite recursion (cosmetic)
-3. bobeditpro copilot branches: 3 permanently unmergeable (unrelated histories)
-4. bg/bobsgameweb: Unresolved merge from prior session
-5. raindropioapp upstream: Fetch fails (HTTP error)
-6. Maestro/pi-mono: Some feature branches non-fast-forward on remote
-7. tabby upstream: Tag conflict (v1.0.231/233)
-8. hymnmania: 65MB SF2 exceeds GitHub's 50MB recommendation
-9. .agent: Third-party repo, local mods can't be pushed
-10. tabby HANDOFF.md: Recurring case-sensitivity conflict on Windows
-11. litellm: Shallow clone only
-
-## Next Session Recommendations
-1. Add .gitignore for bg/okgame to exclude Boost build artifacts
-2. Consider Git LFS for hymnmania's 65MB SF2 file
-3. Force-push Maestro/pi-mono feature branches that have diverged
-4. Complete unresolved merge in bg/bobsgameweb
-5. Verify Jules clone capability with current state
-
-## Session Completion
-All requested synchronization protocol steps have been completed successfully.
-The workspace is clean, synchronized, and ready for development.
-
+### Reverse-Sync Status
+- All feature branches that are behind main have been offered a merge
+- Some branches (pi-mono/jules-*) have merge conflicts that abort — these need manual resolution
+- Dependabot branches are intentionally left unmerged
