@@ -201,3 +201,15 @@
 [submodule "skillzhub"]
 	path = skillzhub
 	url = https://github.com/robertpelloni/skillzhub
+[submodule "auto_dj_script"]
+	path = auto_dj_script
+	url = https://github.com/robertpelloni/auto_dj_script
+[submodule "slsk_discography_downloader_script"]
+	path = slsk_discography_downloader_script
+	url = https://github.com/robertpelloni/slsk_discography_downloader_script
+[submodule "native-fy"]
+	path = native-fy
+	url = https://github.com/robertpelloni/native-fy
+[submodule "planet_fitness_stepmaniax_agent"]
+	path = planet_fitness_stepmaniax_agent
+	url = https://github.com/robertpelloni/planet_fitness_stepmaniax_agent
