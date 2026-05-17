@@ -1,3 +1,21 @@
+## [3.47.0] - 2026-05-16
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 33 new upstream commits
+
+#### Submodule Pointer Updates (7 modules)
+.agent, bobbybookmarks, fwber, hyperharness, pi-mono, picard, tabby
+
+#### Uncommitted Changes Synced
+- **fwber**: caps-context-state.json updated
+- **hyperharness**: controlplane detector + TUI refinements (+655/-931 lines, new detector.go + tests)
+- **pi-mono**: pi-go binary removed, cmd/pi/main.go updated (+19/-21)
+- **picard**: discography_webapp removed (-5027 lines, cleaned up Python/Rust webapp)
+- **tabby**: wails app features (+550 lines, new patch_features.py)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
 ## [3.46.0] - 2026-05-16
 
 ### Workspace Sync
