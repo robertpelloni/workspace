@@ -1,3 +1,40 @@
+## [3.45.0] - 2026-05-15
+
+### Comprehensive Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 22 new upstream commits
+- **tabby**: 3 new upstream commits  
+- **topaz-ffmpeg**: 65 new upstream commits
+
+#### Feature Branches Reverse-Synced (33 branches caught up to main)
+- antigravity-autopilot/release/5.1.1
+- bobbybookmarks: dependabot, feature/reorg-and-integrate, jules-ingestion
+- bobeditpro: 2 feature branches (audition-parity, bus-tracks)
+- bobgui: jules-10024490872005189356, master
+- bobmani/bobmania: 4 branches (unified-merge, main, master, unified-ui)
+- bobmani/itgmania: jules-13842864760264873486, main
+- bobsaver: jules-7169901332660125491
+- bobsgameonlinejava: 2 branches (fix-build, modernize)
+- bobtorrent: 2 branches (go-supernode, jules-bobtorrent-go)
+- bobtrader: 2 branches (go-trading, jules-14860020853292969090)
+- bobtrax: jules-13814763330234479585
+- bobui: 4 branches (dev, omni-ui, jules-11090863842246041945, master)
+- btk: 2 branches (geany-variant, msvc-focus)
+- f-zerox: pc-port-ui-implementation
+- jules-autopilot: 2 branches (hypercode-sync, jules-17764958747146694232)
+- mcp-superassistant: comprehensive-docs-and-ui
+- neverball: party-games-ui-docs
+- npp: 2 branches (disable-autocomplete, jules-3646841170776745183)
+- pi-mono: jules-14458798274183669513
+- tabby: 2 branches (feat/real-pty-serial, jules-15161538455472121726)
+
+#### Submodule Pointer Updates (7 modules)
+borg, bobmani/bobmania, bobbybookmarks, hyperharness, pi-mono, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+bobbybookmarks, borg, hyperharness, tabby (+ borg lancedb data, tabby wails app)
+
 ## [3.44.0] - 2026-05-15
 
 ### Comprehensive Workspace Sync
