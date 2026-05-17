@@ -1,52 +1,50 @@
-# Workspace Handoff — v3.47.0
+# Workspace Handoff — v3.48.0
 
 **Date**: 2026-05-16
-**Version**: 3.47.0
-**Commit**: a4985e8f2
+**Version**: 3.48.0
+**Commit**: 5287a22d7
 
 ## Session Summary
 
 ### Step 1: Sync
 - **0 new feature branches** merged into main
-- **1 upstream merge**: ksm-v2 (33 commits)
-- **0 reverse-syncs** needed this session
-- **6 submodules committed**: ksm-v2, fwber, hyperharness, pi-mono, picard, tabby
+- **2 upstream merges**: ksm-v2 (33), topaz-ffmpeg (3)
+- **0 reverse-syncs** needed
+- **4 submodules committed**: bobbybookmarks, ksm-v2, hyperharness, tabby
 
 ### Step 2: Analysis
-- **hyperharness** actively developing control plane (detector.go) and TUI (dashboard, slash, tree browser)
-- **pi-mono** removed pi-go binary, refactored cmd/pi/main.go
-- **picard** cleaned up discography_webapp (removed -5027 lines of Python/Rust code)
-- **tabby** wails app frontend expanding with patch_features.py
-- **ksm-v2** upstream remains very active (33 more commits)
+- Workspace is stable — most submodules are clean and synced
+- ksm-v2 keeps getting 33 upstream commits each session (very active upstream)
+- hyperharness continuing incremental TUI development
+- tabby wails frontend had large refactor (+1507/-1729)
 
 ### Step 3-4: Documentation
-- CHANGELOG.md updated for v3.47.0
-- SUBMODULES.md from v3.45.0 still current (71 submodules)
+- CHANGELOG.md updated for v3.48.0
+- SUBMODULES.md from v3.45.0 still current
 
 ### Step 5: Version
-- 3.46.0 → 3.47.0
+- 3.47.0 → 3.48.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
 
 ### Step 7: Build Verification
-- Pending (recommended: jules-autopilot vite build)
+- Pending
 
 ## Key Observations
-1. **picard** removed discography_webapp — likely moved to standalone or different service
-2. **hyperharness** added controlplane/detector.go — new monitoring capability
-3. **pi-mono** cleaned up pi-go binary (was tracked in git, now removed)
-4. **ksm-v2** kson upstream_develop keeps needing merge — upstream is very active
-5. **bobbybookmarks** feature branches still 4 ahead of main (reverse-sync already done)
+1. **ksm-v2** consistently gets 33 upstream commits per session — very active upstream
+2. **topaz-ffmpeg** upstream tracking: 3 commits this session, now 7409 ahead
+3. **slsk_discography_downloader_script** caused git timeout — may have lock file issues
+4. **bobbybookmarks** atlas.db binary keeps getting committed — should be gitignored
 
 ## Known Issues (Unchanged)
 1. **bobfilez**: pybind11 directory recursion causes git operations to hang
 2. **bg/okgame**: Build artifacts not properly gitignored
 3. **borg**: Committing lancedb binary data — should be gitignored
-4. **topaz-ffmpeg**: master branch diverged from upstream
+4. **bobbybookmarks**: atlas.db binary committed — should be gitignored
+5. **slsk_discography_downloader_script**: git operations timeout
 
 ## Recommendations
-1. Add `.gitignore` in borg for: `data/lancedb/`, `metamcp.db-shm`, `bin/borg.exe~`
-2. Consider whether picard discography_webapp was intentionally removed or should be restored
-3. ksm-v2 upstream merge needs to be done each session — consider automating
-4. pi-mono pi-go binary should not have been tracked — verify .gitignore covers it
+1. Add `.gitignore` entries for binary databases: atlas.db, metamcp.db, metamcp.db-shm
+2. Add `.gitignore` in borg for: `data/lancedb/`, `bin/borg.exe~`
+3. Investigate slsk_discography_downloader_script timeout issues

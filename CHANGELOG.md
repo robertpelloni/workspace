@@ -1,3 +1,20 @@
+## [3.48.0] - 2026-05-16
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 33 new upstream commits
+- **topaz-ffmpeg**: 3 new upstream commits
+
+#### Submodule Pointer Updates (4 modules)
+bobbybookmarks, hyperharness, pi-mono, tabby
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: atlas.db binary
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **hyperharness**: session log + TUI slash refinements (+10/-2)
+- **tabby**: wails frontend sync (+1507/-1729)
+
 ## [3.47.0] - 2026-05-16
 
 ### Workspace Sync
