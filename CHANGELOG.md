@@ -1,3 +1,27 @@
+## [3.46.0] - 2026-05-16
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 33 new upstream commits
+- **tabby**: 6 new upstream commits
+- **topaz-ffmpeg**: 11 new upstream commits
+
+#### Feature Branches Reverse-Synced
+- tabby/feat/real-pty-serial-17133914354864152103 (7 behind)
+- tabby/jules-15161538455472121726-f7446b36 (7 behind)
+- topaz-ffmpeg/master (66 behind — diverged, not auto-mergeable)
+
+#### Submodule Pointer Updates (5 modules)
+borg, bobbybookmarks, hyperharness, pi-mono, tabby
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: incoming_resources.txt (+38 lines)
+- **borg**: metamcp.db binary
+- **hyperharness**: TUI improvements (+1841 lines: dashboard, shell, slash, tree browser)
+- **pi-mono**: 12 new Go packages (changelog, executil, filemutation, findtool, footerdata, frontmatter, gitutil, greptool, lstool, readtool, resolveconfig, sessioncwd)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
 ## [3.45.0] - 2026-05-15
 
 ### Comprehensive Workspace Sync
