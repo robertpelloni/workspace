@@ -1,3 +1,28 @@
+## [3.51.0] - 2026-05-16
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 33 new upstream commits
+- **tabby**: 3 new upstream commits
+- **topaz-ffmpeg**: 2 new upstream commits
+
+#### Feature Branches Reverse-Synced (8)
+- bobbybookmarks: dependabot, feature/reorg-and-integrate, jules-ingestion
+- pi-mono: badlogic-main, jules-14458798274183669513
+- tabby: feat/real-pty-serial, jules-15161538455472121726
+- topaz-ffmpeg: master
+
+#### Submodule Pointer Updates (6 modules)
+bobbybookmarks, borg, hyperharness, pi-mono, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: _ingest.py, _research_worker.py (+612 lines)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: next-env.d.ts, metamcp.db
+- **hyperharness**: agents/session.go (+571), registry.go update
+- **pi-mono**: massive expansion +3845/-762 — 17 new Go files with tests (auth_test, configselector, export_test, fileprocessor+test, footerdata_test, jsonl+test, listmodels+test, migrations+test, modelresolver+test, printmode, prompttemplates_test, rpctypes)
+
 ## [3.50.0] - 2026-05-16
 
 ### Workspace Sync — Milestone v3.50.0
