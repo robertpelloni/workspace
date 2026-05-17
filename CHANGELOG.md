@@ -1,3 +1,25 @@
+## [3.50.0] - 2026-05-16
+
+### Workspace Sync — Milestone v3.50.0
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 33 new upstream commits
+- **topaz-ffmpeg**: 1 new upstream commit
+
+#### Feature Branches Reverse-Synced (3)
+- hyperharness/feat/deep-wire-mcp-memory (5 behind)
+- pi-mono/badlogic-main (1 behind)
+- pi-mono/jules-14458798274183669513-1411ab77 (1 behind)
+
+#### Submodule Pointer Updates (4 modules)
+bobbybookmarks, pi-mono, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: new resource processing file (+1308 lines)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **pi-mono**: cli/args_test.go, tools_test.go update (+125)
+- **tabby**: wails frontend refactor + reconnect patch (+3516/-1503)
+
 ## [3.49.0] - 2026-05-16
 
 ### Workspace Sync
