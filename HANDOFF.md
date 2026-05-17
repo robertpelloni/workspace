@@ -1,50 +1,49 @@
-# Workspace Handoff — v3.48.0
+# Workspace Handoff — v3.49.0
 
 **Date**: 2026-05-16
-**Version**: 3.48.0
-**Commit**: 5287a22d7
+**Version**: 3.49.0
+**Commit**: 33fbce7bd
 
 ## Session Summary
 
 ### Step 1: Sync
 - **0 new feature branches** merged into main
-- **2 upstream merges**: ksm-v2 (33), topaz-ffmpeg (3)
-- **0 reverse-syncs** needed
-- **4 submodules committed**: bobbybookmarks, ksm-v2, hyperharness, tabby
+- **1 upstream merge**: ksm-v2 (33 commits — consistent daily upstream activity)
+- **6 reverse-syncs**: bobbybookmarks (3), tabby (2), topaz-ffmpeg (1)
+- **3 submodules committed**: ksm-v2, hyperharness, pi-mono
 
 ### Step 2: Analysis
-- Workspace is stable — most submodules are clean and synced
-- ksm-v2 keeps getting 33 upstream commits each session (very active upstream)
-- hyperharness continuing incremental TUI development
-- tabby wails frontend had large refactor (+1507/-1729)
+- **hyperharness** rapidly expanding TUI: new commands.go, entries.go, renderer.go, theme.go modules (+943/-678 lines)
+- **pi-mono** very active: 8 new Go packages in one session (+1351 lines) — bashexecutor, childprocess, cli/args, imageresize, mime, pathsutil, sdk, sleeputil
+- **ksm-v2** consistently gets 33 upstream commits every session — upstream is very active
+- **tabby** jules branch diverged (17 vs 25 commits) — may need manual resolution
 
 ### Step 3-4: Documentation
-- CHANGELOG.md updated for v3.48.0
-- SUBMODULES.md from v3.45.0 still current
+- CHANGELOG.md updated for v3.49.0
 
 ### Step 5: Version
-- 3.47.0 → 3.48.0
+- 3.48.0 → 3.49.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
 
-### Step 7: Build Verification
+### Step 7: Build
 - Pending
 
 ## Key Observations
-1. **ksm-v2** consistently gets 33 upstream commits per session — very active upstream
-2. **topaz-ffmpeg** upstream tracking: 3 commits this session, now 7409 ahead
-3. **slsk_discography_downloader_script** caused git timeout — may have lock file issues
-4. **bobbybookmarks** atlas.db binary keeps getting committed — should be gitignored
+1. **pi-mono** is the most actively developed submodule — averaging 8-12 new Go packages per session
+2. **hyperharness** TUI is being refactored into modular components (commands, entries, renderer, theme)
+3. **ksm-v2** gets 33 upstream commits every session — consider if this is a permanent pattern
+4. **tabby/jules** branch has diverged (17 vs 25) — will need manual resolution eventually
+5. **topaz-ffmpeg/master** continues to diverge from upstream (594 vs 14)
 
 ## Known Issues (Unchanged)
 1. **bobfilez**: pybind11 directory recursion causes git operations to hang
 2. **bg/okgame**: Build artifacts not properly gitignored
 3. **borg**: Committing lancedb binary data — should be gitignored
-4. **bobbybookmarks**: atlas.db binary committed — should be gitignored
-5. **slsk_discography_downloader_script**: git operations timeout
+4. **tabby/jules**: Branch diverged from origin
 
 ## Recommendations
-1. Add `.gitignore` entries for binary databases: atlas.db, metamcp.db, metamcp.db-shm
-2. Add `.gitignore` in borg for: `data/lancedb/`, `bin/borg.exe~`
-3. Investigate slsk_discography_downloader_script timeout issues
+1. Add `.gitignore` entries across repos for binary files (atlas.db, metamcp.db, lancedb/)
+2. Consider automating ksm-v2 upstream merge since it happens every session
+3. Tabby jules branch needs manual conflict resolution

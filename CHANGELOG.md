@@ -1,3 +1,23 @@
+## [3.49.0] - 2026-05-16
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 33 new upstream commits
+
+#### Feature Branches Reverse-Synced (6)
+- bobbybookmarks: dependabot, feature/reorg-and-integrate, jules-ingestion (x3)
+- tabby: feat/real-pty-serial, jules-15161538455472121726 (x2)
+- topaz-ffmpeg: master (16 behind — diverged)
+
+#### Submodule Pointer Updates (5 modules)
+bobbybookmarks, hyperharness, pi-mono, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+- **hyperharness**: new TUI modules (+943/-678) — commands.go, entries.go, renderer.go, theme.go
+- **pi-mono**: 8 new Go packages (+1351) — bashexecutor, childprocess, cli/args, imageresize, mime, pathsutil, sdk, sleeputil
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
 ## [3.48.0] - 2026-05-16
 
 ### Workspace Sync
