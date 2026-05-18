@@ -1,3 +1,27 @@
+## [3.52.0] - 2026-05-17
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobeditpro**: 5 new upstream commits (Audacity fork)
+- **bobmani/ksm-v2**: 33 new upstream commits
+- **topaz-ffmpeg**: 1 new upstream commit
+
+#### Feature Branches Reverse-Synced (2)
+- hyperharness/feat/deep-wire-mcp-memory (2 behind)
+- topaz-ffmpeg/master (3 behind)
+
+#### Submodule Pointer Updates (7 modules)
+bobbybookmarks, borg, fwber, hyperharness, pi-mono, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: AI pipeline expansion (+2643) — _ingest2.py, _research_worker v2-v5, _debug_llm.py, _test_parser.py, parse_failures.jsonl
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: metamcp.db, metamcp.db-shm binary updates
+- **fwber**: Jules session memory + architecture docs (+11040) — .jules/memory/architecture.md, .jules/sessions/
+- **pi-mono**: major refactor (+3790/-841) — session_manager.go→sessionruntime.go, 10 new packages (ansitohtml+test, cleanroomschemas+test, cleanroomtools+test, initialmessage+test, renderutils+test, sessionruntime, toolrenderer)
+- **tabby**: wails frontend main.js update (+53)
+
 ## [3.51.0] - 2026-05-16
 
 ### Workspace Sync

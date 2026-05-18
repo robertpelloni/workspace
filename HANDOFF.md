@@ -1,27 +1,27 @@
-# Workspace Handoff — v3.51.0
+# Workspace Handoff — v3.52.0
 
-**Date**: 2026-05-16
-**Version**: 3.51.0
-**Commit**: 99547833b
+**Date**: 2026-05-17
+**Version**: 3.52.0
+**Commit**: de4655acc
 
 ## Session Summary
 
 ### Step 1: Sync
-- **0 new feature branches** merged into main
-- **3 upstream merges**: ksm-v2 (33), tabby (3), topaz-ffmpeg (2)
-- **8 reverse-syncs**: bobbybookmarks (3), pi-mono (2), tabby (2), topaz-ffmpeg (1)
-- **5 submodules committed**: bobbybookmarks, ksm-v2, borg, hyperharness, pi-mono
+- **0 feature branches merged into main** (no ahead-of-main feature branches found)
+- **3 upstream merges**: bobeditpro (5), ksm-v2 (33), topaz-ffmpeg (1)
+- **2 reverse-syncs**: hyperharness feat/deep-wire, topaz-ffmpeg master
+- **6 submodules committed**: bobbybookmarks, ksm-v2, borg, fwber, pi-mono, tabby
 
 ### Step 2: Analysis
-- **pi-mono** had its largest session yet: +3845/-762 lines, 17 new Go files — this is a major expansion with comprehensive test coverage
-- **hyperharness** adding agent session management (agents/session.go)
-- **bobbybookmarks** building out AI ingestion pipeline (_ingest.py, _research_worker.py)
-- **borg** committing next-env.d.ts and metamcp.db — the latter should be gitignored
-- **tabby/jules** branch divergence growing (20 vs 25) — needs attention
+- **bobeditpro** got 5 upstream commits — first upstream activity in a while (Audacity fork)
+- **bobbybookmarks** AI pipeline is iterating rapidly — research_worker now at v5
+- **fwber** had a massive Jules session dump (+11040 lines) — .jules/memory and .jules/sessions directories
+- **pi-mono** continues massive expansion (+3790/-841) — session_manager.go was refactored into sessionruntime.go, 10 new packages with tests
+- **tabby/jules** branch divergence still present but not growing
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.51.0
-- Version: 3.50.0 → 3.51.0
+- CHANGELOG.md updated for v3.52.0
+- Version: 3.51.0 → 3.52.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -29,14 +29,23 @@
 ### Step 7: Build
 - Pending
 
-## Known Issues (Unchanged)
-1. **bobfilez**: pybind11 directory recursion
-2. **bg/okgame**: Build artifacts not gitignored
-3. **borg**: Committing metamcp.db binary — should be gitignored
-4. **tabby/jules**: Branch diverged (20 vs 25)
+## Key Observations
+1. **pi-mono** is the most rapidly expanding project — consistently 3K+ lines per session
+2. **fwber** Jules session files are very large (+11K) — consider .gitignore for .jules/sessions/
+3. **bobbybookmarks** AI pipeline iterating through many versions (research_worker v1→v5)
+4. **bobeditpro** upstream had 5 new commits — first activity in several sessions
+5. **borg** still committing metamcp.db binary — known issue, should be gitignored
+
+## Known Issues
+1. **bobfilez**: pybind11 directory recursion causes git operations to hang
+2. **bg/okgame**: Build artifacts not properly gitignored
+3. **borg**: Committing metamcp.db + metamcp.db-shm binary — should be gitignored
+4. **tabby/jules**: Branch diverged from origin (20 vs 25)
+5. **fwber**: .jules/sessions/ files are very large — consider gitignore
+6. **topaz-ffmpeg/master**: Diverged from upstream (597 vs 3)
 
 ## Recommendations
-1. **pi-mono** is expanding rapidly with good test coverage — continue prioritizing
-2. Add `.gitignore` for borg: `metamcp.db`, `metamcp.db-shm`, `next-env.d.ts`
-3. Resolve tabby/jules branch divergence before it grows further
-4. bobbybookmarks AI pipeline files should be tracked properly
+1. Add `.gitignore` for borg: `metamcp.db`, `metamcp.db-shm`, `metamcp.db-wal`
+2. Consider `.gitignore` for fwber: `.jules/sessions/` (very large session logs)
+3. pi-mono continues to be the priority — extensive refactoring with good test coverage
+4. bobbybookmarks AI pipeline files should be organized (too many _v2, _v3, _v4, _v5 files)
