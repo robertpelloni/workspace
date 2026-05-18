@@ -1,27 +1,27 @@
-# Workspace Handoff — v3.52.0
+# Workspace Handoff — v3.53.0
 
 **Date**: 2026-05-17
-**Version**: 3.52.0
-**Commit**: de4655acc
+**Version**: 3.53.0
+**Commit**: dd1920153
 
 ## Session Summary
 
 ### Step 1: Sync
-- **0 feature branches merged into main** (no ahead-of-main feature branches found)
-- **3 upstream merges**: bobeditpro (5), ksm-v2 (33), topaz-ffmpeg (1)
-- **2 reverse-syncs**: hyperharness feat/deep-wire, topaz-ffmpeg master
-- **6 submodules committed**: bobbybookmarks, ksm-v2, borg, fwber, pi-mono, tabby
+- **0 feature branches merged into main** (no ahead-of-main branches)
+- **1 upstream merge**: ksm-v2 (33)
+- **4 reverse-syncs**: bobeditpro (2), hyperharness (1), topaz-ffmpeg (1)
+- **6 submodules committed**: bobbybookmarks, ksm-v2, borg, hyperharness, pi-mono, tabby
 
 ### Step 2: Analysis
-- **bobeditpro** got 5 upstream commits — first upstream activity in a while (Audacity fork)
-- **bobbybookmarks** AI pipeline is iterating rapidly — research_worker now at v5
-- **fwber** had a massive Jules session dump (+11040 lines) — .jules/memory and .jules/sessions directories
-- **pi-mono** continues massive expansion (+3790/-841) — session_manager.go was refactored into sessionruntime.go, 10 new packages with tests
-- **tabby/jules** branch divergence still present but not growing
+- **bobbybookmarks** cleaned up AI pipeline — v2-v5 removed, consolidated to _research_worker_pass2.py (good cleanup)
+- **bobeditpro** has 2 feature branches (audition-parity-roadmap, bus-tracks-and-docs) now reverse-synced — these are Jules branches
+- **hyperharness** now has a borg/core.go file — cross-repo integration between hyperharness and borg
+- **pi-mono** continues heavy development (+2831/-371) — agent system with default tools, AI utils with tests
+- **borg** added sync-versions.mjs — version synchronization script across packages
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.52.0
-- Version: 3.51.0 → 3.52.0
+- CHANGELOG.md updated for v3.53.0
+- Version: 3.52.0 → 3.53.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -30,22 +30,21 @@
 - Pending
 
 ## Key Observations
-1. **pi-mono** is the most rapidly expanding project — consistently 3K+ lines per session
-2. **fwber** Jules session files are very large (+11K) — consider .gitignore for .jules/sessions/
-3. **bobbybookmarks** AI pipeline iterating through many versions (research_worker v1→v5)
-4. **bobeditpro** upstream had 5 new commits — first activity in several sessions
-5. **borg** still committing metamcp.db binary — known issue, should be gitignored
+1. **pi-mono** continues to be the most actively developed — agent framework expanding rapidly
+2. **bobbybookmarks** AI pipeline was cleaned up (v2-v5→pass2) — Jules is iterating and cleaning
+3. **hyperharness↔borg** cross-repo integration beginning (borg/core.go in hyperharness)
+4. **bobeditpro** Jules feature branches are being maintained (reverse-synced) but not merged — audition-parity and bus-tracks
+5. **ksm-v2** consistently 33 upstream commits every session — automated pattern
 
 ## Known Issues
-1. **bobfilez**: pybind11 directory recursion causes git operations to hang
-2. **bg/okgame**: Build artifacts not properly gitignored
-3. **borg**: Committing metamcp.db + metamcp.db-shm binary — should be gitignored
-4. **tabby/jules**: Branch diverged from origin (20 vs 25)
-5. **fwber**: .jules/sessions/ files are very large — consider gitignore
-6. **topaz-ffmpeg/master**: Diverged from upstream (597 vs 3)
+1. **bobfilez**: pybind11 directory recursion
+2. **bg/okgame**: Build artifacts not gitignored
+3. **borg**: Committing metamcp.db binary — should be gitignored
+4. **tabby/jules**: Branch diverged from origin
+5. **topaz-ffmpeg/master**: Diverged from upstream (598 vs 1)
 
 ## Recommendations
-1. Add `.gitignore` for borg: `metamcp.db`, `metamcp.db-shm`, `metamcp.db-wal`
-2. Consider `.gitignore` for fwber: `.jules/sessions/` (very large session logs)
-3. pi-mono continues to be the priority — extensive refactoring with good test coverage
-4. bobbybookmarks AI pipeline files should be organized (too many _v2, _v3, _v4, _v5 files)
+1. Consider merging bobeditpro feature branches into main when they're ready
+2. Add `.gitignore` for borg: `metamcp.db`, `metamcp.db-shm`, `metamcp.db-wal`
+3. Monitor hyperharness↔borg cross-repo integration for circular dependency issues
+4. pi-mono agent framework is maturing — ensure defaulttools are well-documented

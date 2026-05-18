@@ -1,3 +1,27 @@
+## [3.53.0] - 2026-05-17
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 33 new upstream commits
+
+#### Feature Branches Reverse-Synced (4)
+- bobeditpro/feature/audition-parity-roadmap (6 behind)
+- bobeditpro/feature/bus-tracks-and-docs (6 behind)
+- hyperharness/feat/deep-wire-mcp-memory (2 behind)
+- topaz-ffmpeg/master (2 behind)
+
+#### Submodule Pointer Updates (5 modules)
+bobbybookmarks, borg, hyperharness, pi-mono, tabby
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: AI pipeline cleanup (-1722) — removed _debug_llm.py, _ingest.py, v2-v5 variants; renamed _research_worker_v5→_research_worker_pass2.py
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: package.json updates across 5 packages, sync-versions.mjs (+499/-418)
+- **hyperharness**: borg/core.go (+411) — cross-repo borg integration layer
+- **pi-mono**: +2831/-371 — agent/defaulttools.go, agentsession+test, ai/utils+test, sessionruntime+test, settings, bubbletea TUI
+- **tabby**: wails frontend main.js refinements (+11/-5)
+
 ## [3.52.0] - 2026-05-17
 
 ### Workspace Sync
