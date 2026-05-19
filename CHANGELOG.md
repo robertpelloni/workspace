@@ -1,3 +1,26 @@
+## [3.60.0] - 2026-05-19 (milestone)
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (5)
+- bobbybookmarks/dependabot/npm_and_yarn (1)
+- bobbybookmarks/feature/reorg-and-integrate (1)
+- bobbybookmarks/jules-bobbybookmarks-ingestion (1)
+- jules-autopilot/hypercode-sync (2)
+- jules-autopilot/jules-17764958747146694232 (2)
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+#### Skipped Repos (no changes or timeout issues)
+- bobfilez (pybind11 recursion — needs manual .gitignore fix)
+- topaz-ffmpeg (clean)
+- bg (clean)
+- slsk_discography_downloader_script (clean)
+
 ## [3.59.0] - 2026-05-19
 
 ### Workspace Sync
