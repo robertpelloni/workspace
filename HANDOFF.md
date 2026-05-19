@@ -1,29 +1,28 @@
-# Workspace Handoff — v3.55.0
+# Workspace Handoff — v3.56.0
 
-**Date**: 2026-05-17
-**Version**: 3.55.0
-**Commit**: e88e216de
+**Date**: 2026-05-18
+**Version**: 3.56.0
+**Commit**: 203bbb5de
 
 ## Session Summary
 
 ### Step 1: Sync
 - **0 feature branches merged into main**
-- **3 upstream merges**: bobeditpro (10), ksm-v2 (34), topaz-ffmpeg (9)
-- **4 reverse-syncs**: bobbybookmarks (3), topaz-ffmpeg (1)
-- **4 submodules committed**: bobbybookmarks, ksm-v2, pi-mono, tabby
+- **1 upstream merge**: ksm-v2 (34)
+- **8 reverse-syncs**: bobbybookmarks (3), bobeditpro (2), tabby (2), topaz-ffmpeg (1)
+- **3 submodules committed**: ksm-v2, borg, pi-mono
 
 ### Step 2: Analysis
-- **bobeditpro** received 10 upstream commits — significant Audacity upstream activity this session
-- **topaz-ffmpeg** had 9 upstream commits — continued high activity
-- **pi-mono** adding slashcommands with tests — feature development continuing after test coverage milestone
-- **tabby** wails frontend undergoing ongoing refactoring (+143/-56 in main.js)
-- **bobbybookmarks** now has .pi/caps-context-state.json — Jules context tracking
-- **hyperharness** was clean this session — no uncommitted changes
-- **borg** was clean — no binary database commits this time
+- **Lighter session** — most repos were already clean
+- **bobeditpro** Jules feature branches (audition-parity, bus-tracks) each 11 behind — these are actively maintained
+- **tabby/jules** divergence growing: now 59 vs 25 commits — this is becoming significant
+- **borg** had NativeSidecarDaemon.ts refactor — agents architecture being restructured
+- **pi-mono** only minor changes (+7/-1) — likely between major development cycles
+- **bobbybookmarks** was clean — no new AI pipeline files this session
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.55.0
-- Version: 3.54.0 → 3.55.0
+- CHANGELOG.md updated for v3.56.0
+- Version: 3.55.0 → 3.56.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -32,22 +31,20 @@
 - Pending
 
 ## Key Observations
-1. **bobeditpro** upstream is very active — 10 commits (vs 5 last session)
-2. **pi-mono** shifting from test coverage to feature development (slashcommands)
-3. **tabby** wails frontend continues to be iteratively refactored
-4. **bobbybookmarks** has Jules context state tracking (.pi/ directory)
-5. **ksm-v2** at 34 upstream commits (slight increase from 33)
+1. **tabby/jules** divergence has grown to 59 vs 25 — was 26 vs 25 last session — needs urgent attention
+2. **bobeditpro** Jules branches are 11 behind main each — getting close to merge-ready
+3. **pi-mono** had a quiet session — between major development cycles
+4. **borg** agents architecture being restructured (NativeSidecarDaemon)
+5. **ksm-v2** consistent at 34 upstream commits
 
 ## Known Issues
 1. **bobfilez**: pybind11 directory recursion
 2. **bg/okgame**: Build artifacts not gitignored
 3. **borg**: Still committing metamcp.db binary periodically
-4. **tabby/jules**: Branch diverged from origin (26 vs 25)
-5. **topaz-ffmpeg/master**: Diverged from upstream (599 vs 17)
-6. **bobbybookmarks**: Multiple stale Jules branches (3 reverse-synced but not merged)
+4. **tabby/jules**: ⚠️ Branch divergence CRITICAL — 59 vs 25 commits (growing rapidly)
+5. **topaz-ffmpeg/master**: Diverged from upstream (600 vs 9)
 
 ## Recommendations
-1. Monitor bobeditpro upstream — Audacity may be accelerating development
-2. Consider merging bobbybookmarks feature branches when they stabilize
-3. pi-mono slashcommands feature is new — watch for further development
-4. topaz-ffmpeg upstream divergence growing (599 vs 17)
+1. **URGENT**: Resolve tabby/jules branch divergence before it becomes unmergeable (59 vs 25 and growing)
+2. Consider merging bobeditpro feature branches — they're being actively maintained
+3. pi-mono likely preparing for next major feature cycle

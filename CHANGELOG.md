@@ -1,3 +1,28 @@
+## [3.56.0] - 2026-05-18
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (8)
+- bobbybookmarks/dependabot/npm_and_yarn (1)
+- bobbybookmarks/feature/reorg-and-integrate (1)
+- bobbybookmarks/jules-bobbybookmarks-ingestion (1)
+- bobeditpro/feature/audition-parity-roadmap (11)
+- bobeditpro/feature/bus-tracks-and-docs (11)
+- tabby/feat/real-pty-serial (2)
+- tabby/jules-15161538455472121726 (2)
+- topaz-ffmpeg/master (10)
+
+#### Submodule Pointer Updates (2 modules)
+borg, pi-mono
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: agents/index.ts, NativeSidecarDaemon.ts refactor (+213/-210)
+- **pi-mono**: AI provider types update, modelresolver/resolver.go (+7/-1)
+
 ## [3.55.0] - 2026-05-17
 
 ### Workspace Sync
