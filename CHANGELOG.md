@@ -1,3 +1,27 @@
+## [3.57.0] - 2026-05-18
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+- **topaz-ffmpeg**: 1 new upstream commit
+
+#### Submodule Pointer Updates (3 modules)
+borg, pi-mono, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: web app tRPC route refactor + next-env.d.ts (+301/-269)
+- **pi-mono**: agent framework expansion, AI env/openai/types, auth, modelregistry (+230/-4)
+
+#### Notable: bg/autodj — Major New Feature (8 commits, +1456 lines)
+- Full AutoDJ application: autodj package (core, analysis, dsp, gui, cli, utils)
+- Comprehensive documentation suite: 14 docs in Documentation/ (AGENTS, CHANGELOG, DEPLOY, DESIGN, GLOBAL_LLM_DIRECTIVE, HANDOFF, IDEAS, LIB_VERSIONS, MANUAL, MEMORY, ROADMAP, STRUCTURE, TODO, VISION)
+- Model Instructions for AI assistants: AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md, copilot-instructions.md
+- Test suite: test_analysis.py, test_dsp.py
+- Configuration: pyproject.toml, requirements.txt, config.py
+- Web UI: templates/index.html
+
 ## [3.56.0] - 2026-05-18
 
 ### Workspace Sync
