@@ -1,3 +1,24 @@
+## [3.58.0] - 2026-05-18
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobeditpro**: 3 new upstream commits (Audacity fork)
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (3)
+- pi-mono/badlogic-main (8 behind)
+- pi-mono/jules-14458798274183669513-1411ab77 (8 behind)
+- topaz-ffmpeg/master (2 behind)
+
+#### Submodule Pointer Updates (2 modules)
+bobfilez, borg
+
+#### Uncommitted Changes Synced
+- **bobfilez**: -1411 lines — cleanup of C++ interfaces (fileops, search, shadow_dedup_worker), database.cpp, test updates, nested submodule pointer resets
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: +1618/-283 — new dashboard pages (blocks, claude-chrome, claude-cloud, copilot, openai-codex), nav-config.ts, DEPLOY.md, GEMINI.md
+
 ## [3.57.0] - 2026-05-18
 
 ### Workspace Sync

@@ -1,27 +1,28 @@
-# Workspace Handoff — v3.57.0
+# Workspace Handoff — v3.58.0
 
 **Date**: 2026-05-18
-**Version**: 3.57.0
-**Commit**: f8693ba1c
+**Version**: 3.58.0
+**Commit**: 952c76237
 
 ## Session Summary
 
 ### Step 1: Sync
 - **0 feature branches merged into main**
-- **2 upstream merges**: ksm-v2 (34), topaz-ffmpeg (1)
-- **0 reverse-syncs** (all branches already up to date)
-- **3 submodules committed**: ksm-v2, borg, pi-mono
+- **2 upstream merges**: bobeditpro (3), ksm-v2 (34)
+- **3 reverse-syncs**: pi-mono (2), topaz-ffmpeg (1)
+- **3 submodules committed**: bobfilez, ksm-v2, borg
 
 ### Step 2: Analysis
-- **bg/autodj** had a MASSIVE new feature: 8 commits with a full AutoDJ application (+1,456 lines). This includes a complete Python package (autodj/core, analysis, dsp, gui, cli, utils), comprehensive documentation suite (14 docs), Model Instructions for 5 AI assistants, test suite, and web UI template. This is the most significant new feature in this session.
-- **pi-mono** continuing AI provider expansion: env.go, openai.go, types.go, auth, modelregistry (+230)
-- **borg** web app tRPC route being refactored (+301/-269)
-- **tabby** was clean this session — no changes
-- **bobbybookmarks** was clean this session
+- **bobfilez** cleaned up significantly (-1,411 lines) — C++ interface cleanup, test restructuring
+- **borg** expanding dashboard UI with AI provider-specific pages (Claude, Copilot, OpenAI Codex, etc.)
+- **bobeditpro** continues getting upstream Audacity commits (3 this session)
+- **pi-mono** had no new main-branch changes but 2 Jules branches were reverse-synced (8 behind each)
+- **tabby** was clean — no changes this session
+- **hyperharness** was clean — no changes this session
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.57.0
-- Version: 3.56.0 → 3.57.0
+- CHANGELOG.md updated for v3.58.0
+- Version: 3.57.0 → 3.58.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -30,20 +31,21 @@
 - Pending
 
 ## Key Observations
-1. **bg/autodj** is a major new feature — fully functional AutoDJ with DSP analysis, GUI, CLI, and AI assistant instructions
-2. **pi-mono** expanding AI provider support (env.go, modelregistry) — preparing for multi-model support
-3. **borg** web app undergoing tRPC route refactoring
-4. **tabby/jules** divergence still present but not growing this session (59 vs 25)
-5. No reverse-syncs needed — all feature branches already up to date
+1. **borg** is building an AI dashboard — pages for Claude, Copilot, OpenAI Codex, Claude Chrome, Claude Cloud, Blocks
+2. **bobfilez** had a significant cleanup — removing -1,411 lines of stale C++ interfaces and test code
+3. **pi-mono** Jules branches (badlogic-main, jules-14458798274183669513) are 8 behind — worth monitoring
+4. **tabby/jules** divergence unchanged (59 vs 25)
+5. **bobeditpro** consistently receiving upstream Audacity commits
 
 ## Known Issues
-1. **bobfilez**: pybind11 directory recursion
+1. **bobfilez**: pybind11 directory recursion (mitigated with .gitignore)
 2. **bg/okgame**: Build artifacts not gitignored
 3. **borg**: Still committing metamcp.db binary periodically
-4. **tabby/jules**: Branch diverged (59 vs 25) — not growing but still unresolved
-5. **topaz-ffmpeg/master**: Diverged from upstream
+4. **tabby/jules**: Branch diverged (59 vs 25)
+5. **topaz-ffmpeg/master**: Diverged from upstream (601 vs 1)
+6. **pi-mono**: 2 Jules branches 8 behind main
 
 ## Recommendations
-1. **bg/autodj** should be monitored — it may need dependency management (pyproject.toml, requirements.txt)
-2. pi-mono modelregistry suggests multi-model routing is coming — watch for new AI providers
-3. Resolve tabby/jules divergence when possible
+1. borg AI dashboard is maturing — watch for integration testing needs
+2. Consider merging pi-mono Jules branches when features are complete
+3. bobfilez cleanup suggests it's being actively refactored — monitor for breaking changes
