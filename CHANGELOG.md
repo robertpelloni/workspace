@@ -1,3 +1,38 @@
+## [3.54.0] - 2026-05-17
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+- **topaz-ffmpeg**: 8 new upstream commits
+
+#### Feature Branches Reverse-Synced (5)
+- bobmani/hymnmania/feat/comprehensive-docs-and-tts-params (1)
+- bobmani/hymnmania/feature/web-ui-and-parallelization (1)
+- hyperharness/feat/deep-wire-mcp-memory (3)
+- tabby/feat/real-pty-serial (33)
+- tabby/jules-15161538455472121726 (33)
+
+#### Submodule Pointer Updates (7 modules)
+bobbybookmarks, bobmani/hymnmania, borg, hyperharness, pi-mono, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: _ingest3.py (+269), atlas.db + parse_failures.jsonl updates
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **bobmani/hymnmania**: video_uploader.py upstream fast-forward (+12/-9)
+- **borg**: build.bat, start-go.bat updates (+109/-68)
+- **pi-mono**: MASSIVE +7103/-374 — 41 new test files achieving comprehensive coverage:
+  - bashexecutor_test, bashtool_test, branchsummarization+test, changelog_test, childprocess_test,
+    config_test, configselector_test, diagnostics_test, edittool_test, executil_test,
+    extensions_test, filemutation_test, findtool_test, frontends/bubbletea/tui_test,
+    frontends/cli/cli_test, frontends/doc.go, frontmatter_test, gitutil_test, greptool_test,
+    imageresize_test, interactive+test, keybindings_test, lstool_test, messages_test,
+    mime_test, pathsutil_test, pathutils_test, printmode_test, readtool_test,
+    resolveconfig_test, resourceloader_test, rpctypes_test, sdk_test, sessioncwd_test,
+    sleeputil_test, sourceinfo_test, timings_test, toolrenderer_test, writetool_test
+  - Also: compaction+test, AI providers (anthropic, google, openai), agent session, branchsummarization
+- **tabby/jules**: divergence now 26 vs 25 commits
+
 ## [3.53.0] - 2026-05-17
 
 ### Workspace Sync
