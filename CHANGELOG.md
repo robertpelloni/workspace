@@ -1,3 +1,27 @@
+## [3.55.0] - 2026-05-17
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobeditpro**: 10 new upstream commits (Audacity fork — significant upstream activity)
+- **bobmani/ksm-v2**: 34 new upstream commits
+- **topaz-ffmpeg**: 9 new upstream commits
+
+#### Feature Branches Reverse-Synced (4)
+- bobbybookmarks/dependabot/npm_and_yarn (4 behind)
+- bobbybookmarks/feature/reorg-and-integrate (4 behind)
+- bobbybookmarks/jules-bobbybookmarks-ingestion (4 behind)
+- topaz-ffmpeg/master (9 behind)
+
+#### Submodule Pointer Updates (4 modules)
+bobbybookmarks, pi-mono, tabby, topaz-ffmpeg
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: .pi/caps-context-state.json updates
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **pi-mono**: +885 — slashcommands+test, agentsession+test, compaction_test, settings_test, export_test, TUI
+- **tabby**: wails frontend main.js refactor (+143/-56)
+
 ## [3.54.0] - 2026-05-17
 
 ### Workspace Sync
