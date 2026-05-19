@@ -1,3 +1,23 @@
+## [3.59.0] - 2026-05-19
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Submodule Pointer Updates (3 modules)
+bobbybookmarks, jules-autopilot, onetool-mcp
+
+#### Uncommitted Changes Synced
+- **bobbybookmarks**: _harness_report.py, _list_harness_tools.py, incoming_resources.txt (+659)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **jules-autopilot**: .exe~ added to .gitignore (stops binary tracking)
+- **onetool-mcp**: Jules session files (+506) — .jules/memory/architecture.md, .jules/sessions/
+
+#### Note
+- Full sync script timed out during topaz-ffmpeg upstream fetch (large repo)
+- Remaining repos (pi-mono, tabby, topaz-ffmpeg) were clean
+
 ## [3.58.0] - 2026-05-18
 
 ### Workspace Sync
