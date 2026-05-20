@@ -1,3 +1,43 @@
+## [3.68.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Submodule Pointer Updates (3 modules)
+auto_dj_script, bobmani/hymnmania, borg
+
+#### Uncommitted Changes Synced
+- **auto_dj_script**: core.py DSP improvements (+36/-20)
+- **bobmani/hymnmania**: Major refactor (+1165/-1406) — suno_api.py, suno_browser.py, deleted video_uploader_old.py, temp art PNG
+- **borg**: 1 unpushed commit pushed
+
+## [3.69.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (4)
+- bobmani/hymnmania/feat/comprehensive-docs-and-tts-params (1)
+- bobmani/hymnmania/feature/web-ui-and-parallelization (1)
+- jules-autopilot/hypercode-sync (1)
+- jules-autopilot/jules-17764958747146694232 (1)
+
+#### Submodule Pointer Updates (2 modules)
+jules-autopilot, slsk_discography_downloader_script
+
+#### Significant New Features
+- **jules-autopilot**: 3 new feature commits:
+  - feat: reactivate COMPLETED sessions + full-pool rotation
+  - feat: session rotation with cooldown-based round-robin scheduling
+  - fix: add max_tokens to OpenRouter requests, add error logging for recovery send failures
+- **slsk_discography_downloader_script**: 2 new commits:
+  - Overhaul duplicate detection and search strategy
+  - Fix DB connection handling in config and queue services
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
 ## [3.67.0] - 2026-05-21
 
 ### Workspace Sync
