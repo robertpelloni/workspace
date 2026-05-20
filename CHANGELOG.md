@@ -1,3 +1,80 @@
+## [3.65.0] - 2026-05-20
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (5)
+- openclaw-config/feat/drive-to-done (4)
+- openclaw-config/fleet-update-safeguards (4)
+- openclaw-config/review-sweep-40 (4)
+- tabby/feat/real-pty-serial (3)
+- tabby/jules-15161538455472121726 (3, diverged 63 vs 25)
+
+#### Submodule Pointer Updates (5 modules)
+bobtorrent, borg, jules-autopilot, planet_fitness_stepmaniax_agent, tabby
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **bobtorrent**: .jules/memory/architecture.md (+22/-34)
+- **borg**: sessionRouter.ts (+103/-1) + 3 unpushed commits pushed
+- **jules-autopilot**: .exe~ binary deleted from tracking
+- **planet_fitness_stepmaniax_agent**: 5 new Jules commits (pipeline.sh, README overhaul)
+
+## [3.66.0] - 2026-05-20
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+- **openclaw-config**: 1 new upstream commit
+
+#### Feature Branches Reverse-Synced (4)
+- bobtorrent/feature/go-supernode-webui (1)
+- bobtorrent/jules-bobtorrent-go-migration (1)
+- jules-autopilot/hypercode-sync (3)
+- jules-autopilot/jules-17764958747146694232 (3)
+
+#### Submodule Pointer Updates (7 modules)
+auto_dj_script, bobmani/hymnmania, borg, jules-autopilot, openclaw-config, planet_fitness_stepmaniax_agent, slsk
+
+#### Uncommitted Changes Synced
+- **auto_dj_script**: 3 new Jules commits + .pi/ AI framework (supervisor.md, memory-blocks, taskplane.json) + autodj/dsp.py improvements
+- **bobmani/hymnmania**: .pi/ AI framework files (supervisor.md, memory-blocks, taskplane.json)
+- **borg**: Major update (+3455/-2252) — dashboard refactoring, toon.go module, Sidebar component updates, TODO.md, next-env.d.ts
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **planet_fitness_stepmaniax_agent**: session file cleanup (re-removed .jules/sessions/)
+- **slsk_discography_downloader_script**: config.py + queue.py (+18/-22)
+
+#### New Pattern Detected
+- **.pi/ directories** appearing in auto_dj_script and hymnmania — new AI agent framework
+  similar to .jules/ but from a different tool. Contains agents/, memory-blocks/, taskplane.json
+
+## [3.65.0] - 2026-05-20
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (5)
+- openclaw-config/feat/drive-to-done (4)
+- openclaw-config/fleet-update-safeguards (4)
+- openclaw-config/review-sweep-40 (4)
+- tabby/feat/real-pty-serial (3)
+- tabby/jules-15161538455472121726 (3, diverged 63 vs 25)
+
+#### Submodule Pointer Updates (5 modules)
+bobtorrent, borg, jules-autopilot, planet_fitness_stepmaniax_agent, tabby
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **bobtorrent**: .jules/memory/architecture.md updated (+22/-34)
+- **borg**: sessionRouter.ts major update (+103/-1) + 3 unpushed commits pushed
+- **jules-autopilot**: .exe~ binary finally deleted from tracking
+- **planet_fitness_stepmaniax_agent**: 5 new Jules commits (pipeline.sh, README overhaul, .gitignore changes)
+
 ## [3.64.0] - 2026-05-20
 
 ### Workspace Sync
