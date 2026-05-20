@@ -1,3 +1,31 @@
+## [3.67.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (7)
+- bobmani/hymnmania/feat/comprehensive-docs-and-tts-params (4)
+- bobmani/hymnmania/feature/web-ui-and-parallelization (4)
+- jules-autopilot/hypercode-sync (1)
+- jules-autopilot/jules-17764958747146694232 (1)
+- openclaw-config/feat/drive-to-done (2)
+- openclaw-config/fleet-update-safeguards (2)
+- openclaw-config/review-sweep-40 (2)
+
+#### Submodule Pointer Updates (6 modules)
+auto_dj_script, bobmani/hymnmania, borg, jules-autopilot, planet_fitness_stepmaniax_agent, slsk
+
+#### Uncommitted Changes Synced
+- **auto_dj_script**: GUI/DSP refactoring (+272/-155) — core.py, gui.py, templates/index.html
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: +3,030/-16 — new Go packages (gossip, marketplace, mesh discovery), nexus-kernel-button.ts, app.go, go.mod updates
+- **planet_fitness_stepmaniax_agent**: .gitignore permanently fixed for .jules/sessions/ (was missing!)
+
+#### Fixes Applied
+- **planet_fitness_stepmaniax_agent**: .gitignore was missing .jules/sessions/ entry — permanently added
+
 ## [3.65.0] - 2026-05-20
 
 ### Workspace Sync
