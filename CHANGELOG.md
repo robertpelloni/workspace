@@ -1,3 +1,24 @@
+## [3.61.0] - 2026-05-19
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Submodule Pointer Updates (4 modules)
+bobbybookmarks, bobgui, native-fy, planet_fitness_stepmaniax_agent
+
+#### Uncommitted Changes Synced
+- **bobeditpro**: Jules session docs (+654/-66) — .jules/memory/architecture.md, .jules/sessions/
+- **bobgui**: Jules session docs (+1257/-55) — .jules/memory/architecture.md, .jules/sessions/
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **native-fy**: Jules session docs (+1014) — .jules/memory/architecture.md, .jules/sessions/
+- **planet_fitness_stepmaniax_agent**: Jules session docs (+505) — .jules/memory/architecture.md, .jules/sessions/
+- **bobbybookmarks**: 1 commit pushed (was ahead of origin)
+
+#### New Feature Branches Detected
+- **bg/jules-1394303886104622315**: Diverged 2 vs 4 commits — new Jules branch
+
 ## [3.60.0] - 2026-05-19 (milestone)
 
 ### Workspace Sync

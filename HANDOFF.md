@@ -1,29 +1,30 @@
-# Workspace Handoff — v3.60.0
+# Workspace Handoff — v3.61.0
 
 **Date**: 2026-05-19
-**Version**: 3.60.0 (milestone)
-**Commit**: c3ccca255
+**Version**: 3.61.0
+**Commit**: 220d24f8a
 
 ## Session Summary
 
 ### Step 1: Sync
-- **0 feature branches merged into main** (no ahead-of-main branches)
+- **0 feature branches merged into main**
 - **1 upstream merge**: ksm-v2 (34)
-- **5 reverse-syncs**: bobbybookmarks (3), jules-autopilot (2)
-- **1 submodule committed**: ksm-v2
-- **Skipped repos**: bobfilez (pybind11 recursion), topaz-ffmpeg (clean), bg (clean), slsk (clean)
+- **0 reverse-syncs**
+- **5 submodules committed**: bobeditpro, bobgui, ksm-v2, native-fy, planet_fitness_stepmaniax_agent
 
 ### Step 2: Analysis
-- **Very quiet session** — most repos are clean and stable
-- **jules-autopilot** has 2 feature branches (hypercode-sync, jules-17764958747146694232) being reverse-synced
-- **bobfilez** still has pybind11 recursion causing timeouts on `git add -A` — needs the `tests/test_cmake_build/` exclusion to actually work
-- **topaz-ffmpeg** is clean locally but upstream fetch is slow
-- No new features from pi-mono, hyperharness, or tabby this session
-- **v3.60.0 milestone** — 17 consecutive stable sync sessions (v3.43→v3.60)
+- **Jules session explosion** — 4 repos got new .jules/memory/ and .jules/sessions/ files this session:
+  - bobeditpro (+654/-66), bobgui (+1257/-55), native-fy (+1014), planet_fitness_stepmaniax_agent (+505)
+  - Total: +3,430 lines of Jules session documentation across 4 repos
+- **bobbybookmarks** had 1 unpushed commit — now pushed
+- **bg** has a new Jules branch (jules-1394303886104622315) that diverged (2 vs 4) — may need attention
+- **tabby** was clean — no changes
+- **pi-mono** was clean — no changes
+- **hyperharness** was clean — no changes
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.60.0
-- Version: 3.59.0 → 3.60.0
+- CHANGELOG.md updated for v3.61.0
+- Version: 3.60.0 → 3.61.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -32,22 +33,22 @@
 - Pending
 
 ## Key Observations
-1. **17 consecutive stable syncs** (v3.43→v3.60) — zero broken builds
-2. Most repos are clean between sessions — workspace stabilization is working
-3. ksm-v2 consistently 34 upstream commits per session
-4. jules-autopilot has new feature branches from Jules (hypercode-sync)
-5. bobfilez pybind11 recursion still prevents `git add -A` — needs targeted approach
+1. **Jules is very active** — 4 repos got session files this session, totaling +3,430 lines
+2. **.jules/sessions/** files are very large — consider gitignoring them to reduce repo bloat
+3. **bg** has a new diverged Jules branch (2 vs 4) — minor divergence, likely auto-created
+4. **bobgui** had the largest session dump (+1,257 lines)
+5. **pi-mono, hyperharness, tabby** all quiet — between development cycles
 
 ## Known Issues
-1. **bobfilez**: pybind11 directory recursion — `git add -A` times out; need to use targeted `git add` for specific files only
+1. **bobfilez**: pybind11 directory recursion
 2. **bg/okgame**: Build artifacts not gitignored
 3. **borg**: Still committing metamcp.db binary periodically
 4. **tabby/jules**: Branch diverged (59 vs 25)
-5. **topaz-ffmpeg/master**: Diverged from upstream (602 vs ?)
-6. **jules-autopilot**: 2 Jules feature branches exist (hypercode-sync, jules-17764958747146694232)
+5. **topaz-ffmpeg/master**: Diverged from upstream
+6. **bg/jules-1394303886104622315**: New diverged branch (2 vs 4)
+7. **.jules/sessions/** files causing repo bloat across multiple repos
 
 ## Recommendations
-1. Monitor jules-autopilot feature branches for merge readiness
-2. bobfilez needs permanent fix for pybind11 recursion (add to .gitattributes or deeper .gitignore)
-3. Consider cleaning up topaz-ffmpeg upstream divergence
-4. Workspace is very stable — could shift focus to feature development/testing
+1. Add `.jules/sessions/` to .gitignore across repos — these are large and auto-generated
+2. Monitor bg/jules branch for merge readiness
+3. Consider cleaning up accumulated .jules/ files in repos where they're not needed
