@@ -1,30 +1,32 @@
-# Workspace Handoff — v3.63.0
+# Workspace Handoff — v3.64.0
 
 **Date**: 2026-05-20
-**Version**: 3.63.0
-**Commit**: 02c9448cd
+**Version**: 3.64.0
+**Commit**: 95295b7f6
 
 ## Session Summary
 
 ### Step 1: Sync
-- **1 feature branch merged into main**: MarbleBlast/jules (with --allow-unrelated-histories)
-- **2 upstream merges**: bobeditpro (26 Audacity upstream), ksm-v2 (34)
-- **16 reverse-syncs**: across bobgui, bobtorrent, bobtrader, bobtrax, geany, hyperharness, neverball, npp, pi-mono, tabby
-- **3 submodules committed**: bobsaver, native-fy, planet_fitness_stepmaniax_agent
-- **5 submodule pointers updated**
+- **0 feature branches merged into main** (no ahead-of-main branches)
+- **2 upstream merges**: ksm-v2 (34), openclaw-config (3)
+- **7 reverse-syncs**: MarbleBlast (2), bobeditpro (2), bobsaver (1), tabby (2)
+- **1 submodule committed**: ksm-v2
+- **3 submodule pointers updated**
 
 ### Step 2: Analysis
-- **bobeditpro** got a big upstream merge (26 commits) — significant Audacity changes
-- **Many feature branches were reverse-synced** — 16 branches caught up to main
-- **MarbleBlast** jules branch had unrelated histories — resolved with --allow-unrelated-histories
-- **bg** jules branch merge failed due to nested submodule conflicts — left on master
-- **tabby/jules** still significantly diverged (61 vs 25) — reverse-sync only partially helps
-- **bobsaver** got .gitignore and projectm pointer update committed
-- **native-fy and planet_fitness_stepmaniax_agent** got Jules architecture.md updates
+- **planet_fitness_stepmaniax_agent** got 13 new commits from Jules — massive expansion:
+  - Business development: outreach-script.py, scrape_leads.py, pitch-deck.md, pilot-mou.md
+  - AI agent configs: AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md
+  - Project management: DEPLOY.md, ROADMAP.md, kpi-tracker.md, TODO.md
+  - VISION.md, .env.example, requirements.txt
+- **openclaw-config** got 3 upstream commits — first upstream sync in a while
+- **bobeditpro** 2 feature branches (audition-parity-roadmap, bus-tracks-and-docs) reverse-synced with 27 commits each
+- **tabby/jules** divergence growing (62 vs 25) — reverse-sync barely helping
+- **MarbleBlast** still has diverged jules branch (2 vs 1)
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.63.0
-- Version: 3.62.0 → 3.63.0
+- CHANGELOG.md updated for v3.64.0
+- Version: 3.63.0 → 3.64.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -33,22 +35,22 @@
 - Pending
 
 ## Key Observations
-1. **bobeditpro upstream merge (26)** — largest Audacity upstream sync in recent sessions
-2. **16 reverse-syncs** — many feature branches are being kept up to date with main
-3. **bg** is too complex for auto-merge due to nested submodules (okgame, bobsgameweb, bobsgameonlinejava)
-4. **tabby/jules** divergence is severe (61 vs 25) — may need manual resolution eventually
-5. **MarbleBlast** jules branch had unrelated histories — resolved by allowing, then cleaning up
+1. **planet_fitness_stepmaniax_agent** is the most active repo — Jules has been building business dev tooling
+2. **openclaw-config** upstream divergence resolved (112 vs 3 → now merged 3 upstream)
+3. **bobeditpro** has 2 feature branches with 27 commits each — significant feature work
+4. **tabby/jules** divergence is worsening (now 62 vs 25) — needs intervention
+5. Most repos are clean — stable state continuing
 
 ## Known Issues
-1. **bobfilez**: pybind11 directory recursion — still needs targeted git add approach
+1. **bobfilez**: pybind11 directory recursion
 2. **bg/okgame**: Build artifacts not gitignored
-3. **bg/jules-1394303886104622315**: Merge failed (nested submodule conflicts) — needs manual resolution
-4. **tabby/jules-15161538455472121726**: Severely diverged (61 vs 25) — needs manual intervention
+3. **bg/jules**: Merge failed (nested submodule conflicts) — unresolved
+4. **tabby/jules-15161538455472121726**: Diverged 62 vs 25 — worsening
 5. **topaz-ffmpeg/master**: Diverged from upstream
-6. **npp** has bobui and btk as uncommitted submodule pointer changes (recursive submodule issue)
+6. **MarbleBlast/jules-15180076805006571318**: Still diverged (2 vs 1)
 
 ## Recommendations
-1. bg jules branch needs manual submodule resolution — this is a known complex case
-2. tabby jules divergence is growing — consider force-resetting the branch to master + reapplying
-3. bobeditpro upstream sync is healthy — keep monitoring for breaking changes
-4. npp's bobui/btk submodule pointers are changing frequently — this is a nested submodule pattern
+1. planet_fitness_stepmaniax_agent is evolving rapidly — monitor for breaking changes
+2. bobeditpro feature branches (27 commits each) should be reviewed for merge readiness
+3. tabby/jules divergence needs manual resolution — consider recreating the branch
+4. openclaw-config upstream sync successful — keep monitoring

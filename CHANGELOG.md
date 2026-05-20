@@ -1,3 +1,34 @@
+## [3.64.0] - 2026-05-20
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+- **openclaw-config**: 3 new upstream commits
+
+#### Feature Branches Reverse-Synced (7)
+- MarbleBlast/jules-15180076805006571318 (3)
+- MarbleBlast/main (3)
+- bobeditpro/feature/audition-parity-roadmap (27)
+- bobeditpro/feature/bus-tracks-and-docs (27)
+- bobsaver/jules-7169901332660125491 (1)
+- tabby/feat/real-pty-serial (1)
+- tabby/jules-15161538455472121726 (1, still diverged 62 vs 25)
+
+#### Submodule Pointer Updates (3 modules)
+openclaw-config, planet_fitness_stepmaniax_agent, tabby
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+#### Significant Updates
+- **planet_fitness_stepmaniax_agent**: 13 new commits from Jules — major expansion including:
+  - outreach-script.py, scrape_leads.py (sales/lead generation tooling)
+  - pitch-deck.md, pilot-mou.md, VISION.md (business development)
+  - AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md (AI agent configs)
+  - DEPLOY.md, ROADMAP.md, kpi-tracker.md (project management)
+  - .env.example, requirements.txt, .gitignore improvements
+
 ## [3.63.0] - 2026-05-20
 
 ### Workspace Sync
