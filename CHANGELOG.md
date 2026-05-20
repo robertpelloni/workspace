@@ -1,3 +1,45 @@
+## [3.63.0] - 2026-05-20
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobeditpro**: 26 new upstream commits (Audacity upstream)
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (14 total)
+- bobgui/jules-10024490872005189356 (2)
+- bobgui/master (2) — unusual branch name
+- bobtorrent/feature/go-supernode-webui (1)
+- bobtorrent/jules-bobtorrent-go-migration (1)
+- bobtrader/feat/go-trading-modules (1)
+- bobtrader/jules-14860020853292969090 (1)
+- bobtrax/jules-13814763330234479585 (1)
+- geany/jules-3128865207300374222 (1)
+- hyperharness/feat/deep-wire-mcp-memory (1)
+- neverball/party-games-ui-docs (1)
+- npp/disable-autocomplete-normal-text (1)
+- npp/jules-3646841170776745183 (1)
+- pi-mono/badlogic-main (1)
+- pi-mono/jules-14458798274183669513 (1)
+- tabby/feat/real-pty-serial (1)
+- tabby/jules-15161538455472121726 (1, diverged 61 vs 25)
+
+#### Feature Branches Merged into Main
+- MarbleBlast/jules-15180076805006571318 — merged with --allow-unrelated-histories, then cleaned up re-introduced session file
+
+#### Submodule Pointer Updates (5 modules)
+MarbleBlast, bobeditpro, bobsaver, native-fy, planet_fitness_stepmaniax_agent
+
+#### Uncommitted Changes Synced
+- **bobsaver**: .gitignore + projectm pointer update
+- **native-fy**: .jules/memory/architecture.md (+3/-44)
+- **planet_fitness_stepmaniax_agent**: .jules/memory/architecture.md (+19/-18)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+#### Notes
+- **bg/jules-1394303886104622315**: Merge attempted but aborted due to submodule conflicts (okgame, bobsgameweb, bobsgameonlinejava) — too complex to auto-resolve; left on master
+- **tabby/jules-15161538455472121726**: Still diverged (61 vs 25) — reverse-synced but significant divergence remains
+
 ## [3.62.0] - 2026-05-19
 
 ### Major Cleanup: .jules/sessions/ Gitignored Across 20 Repos

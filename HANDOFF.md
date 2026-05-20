@@ -1,33 +1,30 @@
-# Workspace Handoff — v3.62.0
+# Workspace Handoff — v3.63.0
 
-**Date**: 2026-05-19
-**Version**: 3.62.0
-**Commit**: 3456659e0
+**Date**: 2026-05-20
+**Version**: 3.63.0
+**Commit**: 02c9448cd
 
 ## Session Summary
 
-### Major Cleanup Performed
-Added `.jules/sessions/` to `.gitignore` across **20 robertpelloni repos** and removed
-all tracked session files from git index. Total: **~107,000 lines** of auto-generated
-Jules AI session logs removed from tracking.
-
 ### Step 1: Sync
-- **0 feature branches merged into main**
-- **0 upstream merges** (ksm-v2 already synced in v3.61.0)
-- **0 reverse-syncs**
-- **20 submodules committed**: all repos with .jules/sessions/ cleanup
-- **21 submodule pointers updated**
+- **1 feature branch merged into main**: MarbleBlast/jules (with --allow-unrelated-histories)
+- **2 upstream merges**: bobeditpro (26 Audacity upstream), ksm-v2 (34)
+- **16 reverse-syncs**: across bobgui, bobtorrent, bobtrader, bobtrax, geany, hyperharness, neverball, npp, pi-mono, tabby
+- **3 submodules committed**: bobsaver, native-fy, planet_fitness_stepmaniax_agent
+- **5 submodule pointers updated**
 
 ### Step 2: Analysis
-- **Major bloat reduction**: ~107,000 lines of session logs no longer tracked
-- **.jules/memory/ architecture docs preserved** — these are valuable and stay tracked
-- **Session logs remain on disk** — just not in git anymore
-- **pi-mono** had the largest reduction (-25,055 lines)
-- **borg** second largest (-21,141 lines)
+- **bobeditpro** got a big upstream merge (26 commits) — significant Audacity changes
+- **Many feature branches were reverse-synced** — 16 branches caught up to main
+- **MarbleBlast** jules branch had unrelated histories — resolved with --allow-unrelated-histories
+- **bg** jules branch merge failed due to nested submodule conflicts — left on master
+- **tabby/jules** still significantly diverged (61 vs 25) — reverse-sync only partially helps
+- **bobsaver** got .gitignore and projectm pointer update committed
+- **native-fy and planet_fitness_stepmaniax_agent** got Jules architecture.md updates
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.62.0
-- Version: 3.61.0 → 3.62.0
+- CHANGELOG.md updated for v3.63.0
+- Version: 3.62.0 → 3.63.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -36,21 +33,22 @@ Jules AI session logs removed from tracking.
 - Pending
 
 ## Key Observations
-1. **Huge bloat reduction** — ~107K lines of session logs untracked
-2. **Future sessions will not be tracked** — .gitignore prevents it
-3. **Jules will continue to create sessions on disk** but they won't pollute the repo
-4. All 20 repos now have consistent .gitignore patterns for .jules/sessions/
-5. Some repos (bobtrader, geany) needed index.lock cleanup before committing
+1. **bobeditpro upstream merge (26)** — largest Audacity upstream sync in recent sessions
+2. **16 reverse-syncs** — many feature branches are being kept up to date with main
+3. **bg** is too complex for auto-merge due to nested submodules (okgame, bobsgameweb, bobsgameonlinejava)
+4. **tabby/jules** divergence is severe (61 vs 25) — may need manual resolution eventually
+5. **MarbleBlast** jules branch had unrelated histories — resolved by allowing, then cleaning up
 
 ## Known Issues
 1. **bobfilez**: pybind11 directory recursion — still needs targeted git add approach
 2. **bg/okgame**: Build artifacts not gitignored
-3. **borg**: Still committing metamcp.db binary periodically
-4. **tabby/jules**: Branch diverged (59 vs 25)
+3. **bg/jules-1394303886104622315**: Merge failed (nested submodule conflicts) — needs manual resolution
+4. **tabby/jules-15161538455472121726**: Severely diverged (61 vs 25) — needs manual intervention
 5. **topaz-ffmpeg/master**: Diverged from upstream
+6. **npp** has bobui and btk as uncommitted submodule pointer changes (recursive submodule issue)
 
 ## Recommendations
-1. ✅ DONE: .jules/sessions/ gitignored across all repos
-2. Consider similar cleanup for other auto-generated files (build artifacts in bg/okgame)
-3. bobfilez pybind11 needs permanent fix — add to .gitattributes as skip-worktree
-4. Workspace is now much leaner — future syncs will be faster without session bloat
+1. bg jules branch needs manual submodule resolution — this is a known complex case
+2. tabby jules divergence is growing — consider force-resetting the branch to master + reapplying
+3. bobeditpro upstream sync is healthy — keep monitoring for breaking changes
+4. npp's bobui/btk submodule pointers are changing frequently — this is a nested submodule pattern
