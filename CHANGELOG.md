@@ -1,3 +1,45 @@
+## [3.62.0] - 2026-05-19
+
+### Major Cleanup: .jules/sessions/ Gitignored Across 20 Repos
+
+Added `.jules/sessions/` to `.gitignore` in 20 robertpelloni-owned repos and removed
+all tracked session files from git index. This removes ~107,000 lines of auto-generated
+Jules AI session logs from repository tracking going forward.
+
+Files remain on disk for local reference but will no longer bloat the repos.
+`.jules/memory/` files (architecture docs) remain tracked as they contain valuable
+project documentation.
+
+#### Repos Cleaned (20)
+MarbleBlast, bg, bobeditpro, bobgui, bobtorrent, bobtrader, bobtrax, borg,
+fwber, geany, hyperharness, native-fy, neverball, npp, onetool-mcp,
+pi-mono, planet_fitness_stepmaniax_agent, slsk_discography_downloader_script, tabby
+
+#### Submodule Pointer Updates (21 modules)
+All cleaned repos + auto_dj_config had pointers updated to reflect new commits
+
+#### Lines Removed from Tracking
+- MarbleBlast: -3,147
+- bg: -6,515
+- bobeditpro: -661
+- bobgui: -1,242
+- bobtorrent: -7
+- bobtrader: -8,947
+- bobtrax: -3,370
+- borg: -21,141
+- fwber: -11,005
+- geany: -7,017
+- hyperharness: -18,939
+- native-fy: -968
+- neverball: -7
+- npp: -6,181
+- onetool-mcp: -472
+- pi-mono: -25,055
+- planet_fitness_stepmaniax_agent: -479
+- slsk: -268
+- tabby: -33
+- **Total: ~107,000 lines**
+
 ## [3.61.0] - 2026-05-19
 
 ### Workspace Sync
