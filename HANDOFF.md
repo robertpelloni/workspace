@@ -1,29 +1,32 @@
-# Workspace Handoff — v3.70.0
+# Workspace Handoff — v3.71.0
 
 **Date**: 2026-05-21
-**Version**: 3.70.0 (milestone)
-**Commit**: 5db62ec81
+**Version**: 3.71.0
+**Commit**: f9f854e2b
 
 ## Session Summary
 
 ### Step 1: Sync
-- **0 feature branches merged into main**
-- **3 upstream merges**: ksm-v2 (34), openclaw-config (4), tabby (1)
-- **0 reverse-syncs** — all branches already caught up
-- **2 submodules committed**: auto_dj_script, ksm-v2
-- **3 submodule pointers updated**
+- **0 feature branches merged into main** (no ahead-of-main branches)
+- **1 upstream merge**: ksm-v2 (34)
+- **5 reverse-syncs**: openclaw-config (3), tabby (2)
+- **2 Pull Requests merged**: hymnmania #9 and #10
+- **1 submodule committed**: ksm-v2
+- **1 submodule pointer updated**
 
 ### Step 2: Analysis
-- **openclaw-config** got 4 upstream commits — significant (had diverged 114 vs 4)
-- **tabby** got 1 upstream commit — first tabby upstream in a while
-- **auto_dj_script** continues active DSP development
-- **jules-autopilot** has `.pi/caps-context-state.json` — new CAPS AI context file
-- **Very quiet session** — most repos clean, only 2 submodules needed committing
-- **Milestone: v3.70.0** — 20+ consecutive stable sync sessions
+- **hymnmania** had 2 open PRs — both successfully merged:
+  - **PR #9** (candlestixxx fork): Fix midi renderer test and warnings (+65/-21) — significant test improvements
+  - **PR #10** (dependabot): pip dependency bumps — python-dotenv and pillow updated
+- PR #9 had merge conflicts — resolved with `-X ours` strategy
+- Added candlestixxx fork as remote, fetched, merged, then cleaned up
+- **openclaw-config** 3 feature branches reverse-synced (5 commits each)
+- **tabby** 2 feature branches reverse-synced — jules divergence now 66 vs 25
+- Very quiet session otherwise — most repos clean
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.70.0
-- Version: 3.69.0 → 3.70.0
+- CHANGELOG.md updated for v3.71.0
+- Version: 3.70.0 → 3.71.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -32,21 +35,21 @@
 - Pending
 
 ## Key Observations
-1. **Milestone v3.70.0** — 20+ consecutive stable sync sessions with zero broken builds
-2. **openclaw-config** upstream resolved — was diverged 114 vs 4, now merged
-3. **tabby** upstream merge — first in recent sessions, upstream is active
-4. **Very quiet sync** — most repos completely clean
-5. **jules-autopilot** has new `.pi/caps-context-state.json` — CAPS AI tool context
+1. **hymnmania PR #9** from candlestixxx fork — first external contributor PR merged
+2. **hymnmania PR #10** — dependabot keeping deps current (python-dotenv + pillow)
+3. **tabby/jules divergence** worsening (66 vs 25) — needs manual intervention
+4. **openclaw-config** feature branches are consistently being reverse-synced (5 commits each)
+5. **ksm-v2** 34 upstream commits is a recurring pattern — likely automated
 
 ## Known Issues
 1. **bobfilez**: pybind11 directory recursion — skipped
 2. **bg**: Skipped due to submodule merge complexity
-3. **tabby/jules-15161538455472121726**: Diverged 63 vs 25 — still unresolved
+3. **tabby/jules-15161538455472121726**: Diverged 66 vs 25 — worsening
 4. **topaz-ffmpeg/master**: Diverged from upstream
-5. **openclaw-config**: Still 114 commits ahead of upstream after merge
+5. **openclaw-config**: 115 commits ahead of upstream main
 
 ## Recommendations
-1. Workspace is very stable — consider shifting to feature development/testing
-2. tabby upstream is active — keep monitoring for breaking changes
-3. openclaw-config divergence (114 ahead) should be evaluated for push-back to upstream
-4. .pi/ directories (CAPS AI) appearing in more repos — may need gitignore policy like .jules/sessions/
+1. Monitor hymnmania for more external PRs — the repo is getting contributions
+2. Consider enabling auto-merge for dependabot PRs in hymnmania
+3. tabby/jules divergence needs a decision — reset branch or manually resolve
+4. Workspace continues to be very stable

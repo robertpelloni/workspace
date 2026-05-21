@@ -1,3 +1,34 @@
+## [3.71.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+
+#### Feature Branches Reverse-Synced (5)
+- openclaw-config/feat/drive-to-done (5)
+- openclaw-config/fleet-update-safeguards (5)
+- openclaw-config/review-sweep-40 (5)
+- tabby/feat/real-pty-serial (2)
+- tabby/jules-15161538455472121726 (2)
+
+#### Pull Requests Merged (2)
+- **hymnmania PR #9**: Fix midi renderer test and warnings (+65/-21) — from candlestixxx fork
+  - test_midi_renderer.py: 33 new test assertions
+  - tts_generator.py: improved TTS handling
+  - webhook_notifier.py: fixes
+  - main.py: improvements
+  - VERSION, CHANGELOG, DEPLOY, HANDOFF, ROADMAP, TODO, VISION updates
+- **hymnmania PR #10**: Dependabot pip deps bump (+2/-2)
+  - python-dotenv: 1.1.1 → 1.2.2
+  - pillow: 11.3.0 → 12.2.0
+
+#### Submodule Pointer Updates (1 module)
+bobmani/hymnmania
+
+#### Uncommitted Changes Synced
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
 ## [3.70.0] - 2026-05-21 (milestone)
 
 ### Workspace Sync
