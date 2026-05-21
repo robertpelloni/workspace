@@ -40,3 +40,8 @@
 - [ ] hymnmania: udio_browser_automation.py needs live Udio validation
 - [ ] hymnmania: test suite (test_udio_remix, test_udio_automation) should be run
 - [ ] auto_dj_script: analysis.py continues expansion — validate with real audio
+
+## v3.80.0 Updates
+- [ ] borg: SessionImportService.ts and ImportedSessionStore.ts need integration testing
+- [ ] borg: LanceDBStore.ts changes need vector DB validation
+- [ ] hymnmania: scratch/inspect_*.py scripts need cleanup or documentation

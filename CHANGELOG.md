@@ -1,3 +1,30 @@
+## [3.80.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Submodule Pointer Updates (3 modules)
+auto_dj_script, bobmani/hymnmania, borg
+
+#### Uncommitted Changes Synced (4 submodules)
+- **auto_dj_script**: analysis.py + dsp.py (+21/-13) — 9th consecutive active session
+- **bobmani/hymnmania**: midi_renderer.py + udio automation + remaker (+398/-10)
+  - NEW: `scratch/inspect_ranges.py` — MIDI range inspection
+  - NEW: `scratch/inspect_remix_mode.py` — Remix mode inspection
+  - NEW: `scratch/inspect_variance.py` — Variance inspection
+  - Modified: midi_renderer.py, udio_browser_automation.py, udio_remaker.py
+- **borg**: Session import services + LanceDB store (+106/-22)
+  - Modified: ImportedSessionStore.ts, SessionImportService.ts, LanceDBStore.ts
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+### 🎯 v3.80.0 Milestone
+- Version crosses 3.80 — significant stability milestone
+- auto_dj_script: 9 consecutive sessions of active development
+- hymnmania: Udio integration reaching maturity (browser automation + testing)
+- borg: Active session management improvements
+
 ## [3.79.0] - 2026-05-21
 
 ### Workspace Sync

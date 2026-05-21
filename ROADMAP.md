@@ -54,3 +54,8 @@
 - [x] hymnmania: Udio browser automation (+770/-38) — largest single-session change
 - [x] hymnmania: Full test suite for Udio remix/automation/API
 - [x] auto_dj_script: DSP analysis module expansion (+63/-19)
+
+## v3.80.0 Additions
+- [x] hymnmania: MIDI renderer + Udio automation refinements (+398/-10)
+- [x] borg: Session import services + LanceDB store improvements (+106/-22)
+- [x] auto_dj_script: DSP analysis expansion (+21/-13) — 9th consecutive session
