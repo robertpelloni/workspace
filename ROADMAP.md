@@ -39,3 +39,9 @@
 - [ ] Git LFS migration for large binary assets (soundfonts, etc.)
 - [ ] Security audit for accidentally committed credentials across all repos
 - [ ] CI/CD pipeline standardization across robertpelloni repos
+
+## v3.77.0 Additions
+- [x] auto_dj_script: NEW analysis.py module for DSP analysis
+- [x] hymnmania: NEW manual_extract.py + udio_direct_test.py for direct Udio API testing
+- [x] slsk: musicbrainz + orchestrator service improvements
+- [x] borg: 5 dependabot PRs merged (uv, go-git, pip, npm_and_yarn)

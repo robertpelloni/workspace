@@ -1,3 +1,31 @@
+## [3.77.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Reverse Merges (2)
+- **bobui/feature/omni-ui-framework**: main→feature (1)
+- **bobui/jules-11090863842246041945**: main→feature (1)
+
+#### Borg Dependabot Merges (5 PRs)
+- **#170**: uv group bump (6 updates across 2 dirs)
+- **#169**: go-git v5.19.0→v5.19.1
+- **#168**: pip group bump (6 updates across 2 dirs)
+- **#167**: npm_and_yarn group bump (10 updates across 7 dirs)
+- **#166**: npm_and_yarn group bump (10 updates across 8 dirs)
+
+#### Submodule Pointer Updates (4 modules)
+auto_dj_script, bobmani/hymnmania, borg, slsk_discography_downloader_script
+
+#### Uncommitted Changes Synced (5 submodules)
+- **auto_dj_script**: analysis.py NEW (+75/-29) — DSP analysis module, core + dsp refinements
+- **bobmani/hymnmania**: manual_extract.py + udio_direct_test.py NEW (+105/-45) — Udio direct API testing, extract improvements
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: next-env.d.ts (+1/-1)
+- **slsk_discography_downloader_script**: musicbrainz + orchestrator improvements (+42/-14)
+
 ## [3.76.0] - 2026-05-21
 
 ### 🔒 Security Fix

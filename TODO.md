@@ -25,3 +25,9 @@
 - [ ] **235 GitHub security vulnerabilities** across workspace
 - [ ] **.gitignore standardization** across all repos for AI artifacts
 - [ ] **Git LFS migration** for large binary assets
+
+## v3.77.0 Updates
+- [x] Merged 5 borg dependabot PRs (165 remaining of 170)
+- [ ] auto_dj_script: analysis.py needs integration testing with DSP pipeline
+- [ ] hymnmania: manual_extract.py and udio_direct_test.py need validation with live API
+- [ ] slsk: musicbrainz service changes need testing with real queries
