@@ -1,3 +1,52 @@
+## [3.73.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Pull Requests Merged (2)
+- **bobcoin #22**: Dependabot npm_and_yarn bump across 3 directories
+- **bobui #12**: Dependabot uv bump (idna 3.11→3.15)
+
+#### Feature Branches Reverse-Synced (19)
+- MarbleBlast/jules-15180076805006571318 (7)
+- agentirc/jules-agentirc-features (1)
+- bobbybookmarks/feature/reorg-and-integrate (2)
+- bobbybookmarks/jules-bobbybookmarks-ingestion (2)
+- bobcoin/feat/governance-delays-and-zk-port (12)
+- bobcoin/feature/comprehensive-ui-spec (12)
+- bobcoin/feature/comprehensive-ui-spec-1767 (12)
+- bobeditpro/feature/audition-parity-roadmap (70)
+- bobeditpro/feature/bus-tracks-and-docs (70)
+- bobgui/jules-10024490872005189356 (10)
+- bobtorrent/feature/go-supernode-webui (8)
+- bobtorrent/jules-bobtorrent-go-migration (8)
+- bobui/feature/omni-ui-framework (10)
+- bobui/jules-11090863842246041945 (10)
+- hyperharness/feat/deep-wire-mcp-memory (2)
+- pi-mono/jules-14458798274183669513 (13)
+- supersaber/jules-13860999388841438430 (16)
+- tabby/feat/real-pty-serial (2)
+- tabby/jules-15161538455472121726 (2)
+
+#### .gitignore Cleanup (3 repos)
+- auto_dj_script: removed metamcp.db, .borg_startup_marker, .pi/ from tracking
+- bobmani/hymnmania: removed metamcp.db, .borg_startup_marker, .pi/ from tracking
+- slsk_discography_downloader_script: removed .borg_startup_marker from tracking
+
+#### Submodule Pointer Updates (8 modules)
+auto_dj_script, bobcoin, bobmani/hymnmania, bobui, jules-autopilot, mk64, realestatecrm, slsk_discography_downloader_script
+
+#### Uncommitted Changes Synced (7 submodules)
+- **auto_dj_script**: core.py + dsp.py improvements, final_dj_master_test_tracklist.txt (+91/-109)
+- **bobmani/hymnmania**: Udio API integration — udio_api.py, udio_remaker.py, extract_token.py (+382/-6)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **jules-autopilot**: cost_optimizer, daemon, llm, queue refactoring (+77/-280)
+- **mk64**: .gitignore + architecture docs (+23)
+- **realestatecrm**: rag-sync merge fix
+- **slsk_discography_downloader_script**: orchestrator.py improvements (+129/-57)
+
 ## [3.72.0] - 2026-05-21 (massive PR merge wave)
 
 ### Workspace Sync — Largest PR Merge Session Ever

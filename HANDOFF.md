@@ -1,34 +1,37 @@
-# Workspace Handoff — v3.72.0
+# Workspace Handoff — v3.73.0
 
 **Date**: 2026-05-21
-**Version**: 3.72.0 (massive PR merge wave)
-**Commit**: f0cf6f988
+**Version**: 3.73.0
+**Commit**: d0b4b0278
 
 ## Session Summary
 
-### Step 1: Sync — LARGEST PR MERGE SESSION EVER
-- **28+ Pull Requests merged** across 25+ repos
-- **2 upstream merges**: bobeditpro (2), ksm-v2 (34)
-- **2 reverse-syncs**: hymnmania feature branches (6 each)
-- **3 submodules committed**: auto_dj_script, jules-autopilot, ksm-v2
-- **27 submodule pointers updated** — a new record
+### Step 1: Sync
+- **0 feature branches merged into main** (all ahead-of-main branches already merged in v3.72.0)
+- **1 upstream merge**: ksm-v2 (34)
+- **19 reverse-syncs** — largest reverse-sync session ever (main into feature branches)
+- **2 dependabot PRs merged**: bobcoin #22, bobui #12
+- **7 submodules committed**: auto_dj_script, hymnmania, ksm-v2, jules-autopilot, mk64, realestatecrm, slsk
+- **8 submodule pointers updated**
+- **3 .gitignore cleanups** — removed metamcp.db, .borg, .pi from tracking
 
-### Step 2: Analysis — Major Feature Highlights
-- **auto_dj_script #3**: Interactive Tempo Ramping + BPM fix (+1025/-289) — significant feature
-- **bobeditpro #3**: Comprehensive Documentation & DSP Scaffolding (+3967/-17) — massive
-- **bobeditpro #4**: Track panel width constant extraction + documentation (+112/-3)
-- **fwber #33**: ActivityPub models and endpoints — new fediverse support
-- **litellm #1**: Prometheus Budget Metrics — important monitoring
-- **pi-mono #5**: Plannotator Implementation — new tool
-- **tabby #3**: AI Chat + Go backend bugfixes
-- **sm64coopdx #3**: Guild Bank and Storage — new game feature
-- **supersaber #3**: Audio Waveform Extractor — new visualization feature
-- **jules-autopilot**: daemon.go + queue.go refactoring (+63/-6)
-- **auto_dj_script**: final_dj_master_tracklist.txt (86 lines)
+### Step 2: Analysis — Major New Features
+- **hymnmania**: Udio API integration (+382/-6) — new AI music generation capability
+  - udio_api.py, udio_remaker.py: full Udio API client
+  - extract_token.py: authentication helper
+  - test_udio.py: test suite
+  - api.py, main.py, settings.py: web endpoint + settings integration
+- **jules-autopilot**: Significant refactoring (+77/-280)
+  - cost_optimizer.go: new cost optimization service
+  - daemon.go, queue.go: daemon refactoring
+  - llm.go: LLM service improvements
+- **auto_dj_script**: DSP improvements, final_dj_master_test_tracklist.txt
+- **slsk**: orchestrator.py major refactor (+129/-57)
+- **realestatecrm**: rag-sync merge resolution
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.72.0
-- Version: 3.71.0 → 3.72.0
+- CHANGELOG.md updated for v3.73.0
+- Version: 3.72.0 → 3.73.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -37,26 +40,23 @@
 - Pending
 
 ## Key Observations
-1. **Largest PR merge session ever** — 28+ PRs across the workspace
-2. **27 submodule pointers updated** — a new record for a single session
-3. **Many Jules AI-generated PRs** — Google Jules is actively developing across the workspace
-4. **bobeditpro** got 2 significant PRs merged (#3: +3967/-17, #4: +112/-3)
-5. **fwber** adding ActivityPub support — significant new fediverse capability
-6. **OmniRoute PRs failed** — Windows EPERM issues with husky pre-push hooks (tests require Linux)
+1. **19 reverse-syncs** — all feature branches are now caught up to latest main
+2. **hymnmania Udio integration** is a major new feature — AI music generation alongside existing Suno support
+3. **jules-autopilot -280 lines** — significant code cleanup/refactoring
+4. **.gitignore cleanup** — metamcp.db, .borg, .pi files should no longer be tracked
+5. **tabby/jules divergence** worsened to 68 vs 25 — still unresolved
 
 ## Known Issues
-1. **OmniRoute**: 2 PRs (#1, #2) failed to push — Windows EPERM/symlink issues
-2. **bobfilez**: pybind11 directory recursion — skipped
-3. **bg**: Skipped due to submodule merge complexity
-4. **tabby/jules-15161538455472121726**: Still diverged (66 vs 25)
-5. **topaz-ffmpeg/master**: Diverged from upstream
-6. **openclaw-config**: 115 commits ahead of upstream
-7. **borg**: 170 open dependabot PRs — deferred (too many, low priority)
-8. **Many dependabot PRs** still open in borg and other repos
+1. **bobfilez**: pybind11 directory recursion — skipped
+2. **bg**: Skipped due to submodule merge complexity
+3. **tabby/jules-15161538455472121726**: Diverged 68 vs 25 — worsening
+4. **topaz-ffmpeg/master**: Diverged from upstream
+5. **openclaw-config**: 115 commits ahead of upstream
+6. **borg**: 170 open dependabot PRs — deferred
+7. **OmniRoute**: 2 DRAFT PRs for Go port — deferred (need Linux CI)
 
 ## Recommendations
-1. OmniRoute needs a Linux CI environment for proper push — current Windows environment can't run tests
-2. Consider bulk-merging dependabot PRs in non-critical repos (borg, etc.)
-3. fwber ActivityPub is significant — worth testing the fediverse integration
-4. bobeditpro DSP scaffolding is ready for next-phase implementation
-5. auto_dj_script Tempo Ramping should be tested with real DJ sets
+1. hymnmania Udio integration should be tested — it's a major new capability
+2. jules-autopilot refactoring needs validation — -280 lines is a lot
+3. Consider bulk-adding .gitignore entries for .borg_startup_marker, .pi/, .jules/, metamcp.db across ALL repos
+4. Workspace is very stable after the massive v3.72.0 PR merge wave
