@@ -1,3 +1,22 @@
+## [3.82.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Submodule Pointer Updates (1 module)
+auto_dj_script
+
+#### Uncommitted Changes Synced (2 submodules)
+- **auto_dj_script**: analysis.py + core.py (+37/-21) — 11th consecutive active session 🔥
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+### Development Velocity
+- auto_dj_script: 11 consecutive sessions of active development
+- hymnmania: 2nd quiet session (branches synced, awaiting next development cycle)
+- borg: 2nd quiet session
+
 ## [3.81.0] - 2026-05-21
 
 ### Workspace Sync
