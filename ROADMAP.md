@@ -66,3 +66,7 @@
 
 ## v3.82.0 Additions
 - [x] auto_dj_script: 11th consecutive active session — analysis.py + core.py refinements
+
+## v3.83.0 Additions
+- [x] hymnmania: NEW cdp_extract.py + extract_fresh.py extraction tools
+- [x] auto_dj_script: First quiet session after 11-session streak (may be stabilizing)

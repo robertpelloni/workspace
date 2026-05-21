@@ -52,3 +52,7 @@
 
 ## v3.82.0 Updates
 - [ ] auto_dj_script: 11 sessions and counting — evaluate if approaching v1.0
+
+## v3.83.0 Updates
+- [ ] hymnmania: cdp_extract.py and extract_fresh.py need documentation and testing
+- [ ] auto_dj_script: Monitor if 11-session streak has stabilized — potential release candidate

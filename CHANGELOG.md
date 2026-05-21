@@ -1,3 +1,23 @@
+## [3.83.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Submodule Pointer Updates (1 module)
+bobmani/hymnmania
+
+#### Uncommitted Changes Synced (2 submodules)
+- **bobmani/hymnmania**: NEW extraction tools (+39)
+  - NEW: `cdp_extract.py` — CDP (Chord/Discography/Performer) extraction utility
+  - NEW: `extract_fresh.py` — Fresh extraction utility
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+### Notable
+- **auto_dj_script**: First quiet session after 11 consecutive active sessions 🏁
+- **hymnmania**: Resumes activity with new extraction tools
+
 ## [3.82.0] - 2026-05-21
 
 ### Workspace Sync
