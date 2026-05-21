@@ -1,3 +1,33 @@
+## [3.76.0] - 2026-05-21
+
+### 🔒 Security Fix
+- **bobmani/hymnmania**: Removed accidentally committed SSR auth tokens from git tracking
+  - Deleted: `__hssrc.bin`, `sb-ssr-production-auth-token.*.bin`, `ssr_bucket.bin`, `decrypt_files.py`
+  - Added `*.bin`, `sb-ssr-*`, `ssr_bucket.*` to `.gitignore`
+  - **ACTION REQUIRED**: Rotate any SSR production auth tokens that were exposed
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Pull Requests Merged (1)
+- **bobui #13**: Dependabot npm_and_yarn bump (postcss 8.5.6→8.5.15)
+
+#### Submodule Pointer Updates (5 modules)
+auto_dj_script, bobmani/hymnmania, bobui, borg, slsk_discography_downloader_script
+
+#### Uncommitted Changes Synced (4 submodules)
+- **auto_dj_script**: core.py refinements (+5/-5)
+- **bobmani/hymnmania**: extract_token.py improvements (+59/-3), SECURITY cleanup
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **slsk_discography_downloader_script**: .borg_startup_marker removed from tracking (+1/-1)
+
+### Documentation
+- **NEW**: `SUBMODULE_MAP.md` — Structural map of all 71 submodules with source/branch info
+- **Updated**: `ROADMAP.md` — Complete feature tracking (completed/in-progress/planned)
+- **Updated**: `TODO.md` — Prioritized action items (critical/high/medium/low)
+
 ## [3.75.0] - 2026-05-21
 
 ### Workspace Sync

@@ -1,53 +1,64 @@
-# Workspace Handoff — v3.75.0
+# Workspace Handoff — v3.76.0
 
 **Date**: 2026-05-21
-**Version**: 3.75.0
-**Commit**: 4c896eda4
+**Version**: 3.76.0
+**Commit**: 2d3ec0c28
 
 ## Session Summary
 
-### Step 1: Sync
-- **0 feature branches merged into main** (all already merged)
+### STEP 1: Upstream Tracking & Submodule Sanitization
+- **67 repos fetched** (all tags included)
 - **1 upstream merge**: ksm-v2 (34)
-- **2 reverse-syncs**: bobeditpro feature branches (3 each)
 - **4 submodules committed**: auto_dj_script, hymnmania, ksm-v2, slsk
-- **3 submodule pointers updated**
-- **4 stale PRs closed** on GitHub
+- All working directories clean across 71 submodules
 
-### Step 2: Analysis
-- **hymnmania**: NEW edge_extractor.py (+93/-4) — audio feature extraction pipeline
-- **auto_dj_script**: Continued DSP refinement — core.py + dsp.py (+83/-25)
-- **hymnmania Udio API**: Still being actively refined
-- **slsk**: Minor fix (+1)
-- **Stale PR cleanup**: 4 PRs that were manually merged now properly closed on GitHub
+### STEP 2: Dual-Direction Intelligent Merge Engine
+- **0 forward merges** — no feature branches ahead of main with unique content
+- **0 reverse merges** — all feature branches already caught up
+- **1 dependabot PR merged**: bobui #13 (postcss bump)
+- **Remaining open PRs**: OmniRoute (2 DRAFT), borg (170 dependabot), mk64 (2 old DRAFT)
 
-### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.75.0
-- Version: 3.74.0 → 3.75.0
+### STEP 3: Workspace Cleanup, Documentation & Build Finalization
 
-### Step 6: Commit & Push
-- ✅ Pushed to origin/main
+#### 🔒 Security Incident
+- **hymnmania committed SSR auth tokens** — detected and removed:
+  - `__hssrc.bin`, `sb-ssr-production-auth-token.0.bin`, `sb-ssr-production-auth-token.1.bin`
+  - `ssr_bucket.bin`, `decrypt_files.py`
+  - Added to `.gitignore`: `*.bin`, `sb-ssr-*`, `ssr_bucket.*`
+  - **⚠️ ACTION REQUIRED**: Rotate any exposed SSR production auth tokens
+  - These were committed during Jules AI development sessions
 
-### Step 7: Build
-- Pending
+#### Batch Script Validation
+- `build_all.bat`, `RESET_WORKSPACE.bat`, shell scripts — all paths verified correct
 
-## Key Observations
-1. **hymnmania edge_extractor.py** — new audio feature extraction, likely for music analysis
-2. **auto_dj_script** continues very active DSP development — 4th consecutive session with changes
-3. **ksm-v2** 34 upstream commits is a consistent recurring pattern
-4. **Stale PR cleanup** — good hygiene, prevents confusion about what's merged
-5. **Very quiet session** — most repos clean and stable
+#### Version Governance
+- VERSION: 3.75.0 → 3.76.0
+- CHANGELOG.md updated with security fix documentation
+
+#### Documentation Sync
+- **NEW**: `SUBMODULE_MAP.md` — structural map of all 71 submodules with tree layout
+- **Updated**: `ROADMAP.md` — comprehensive feature tracking (v3.68→v3.76)
+- **Updated**: `TODO.md` — prioritized action items (critical→low)
+
+#### Key Changes This Session
+- auto_dj_script: core.py (+5/-5) — 5th consecutive session with active changes
+- hymnmania: extract_token.py (+59/-3), security cleanup
+- slsk: .borg_startup_marker removed from tracking
+- borg: next-env.d.ts committed (+1/-1) — rare borg activity
 
 ## Known Issues
-1. **bobfilez**: pybind11 directory recursion — skipped
-2. **bg**: Skipped due to submodule merge complexity
-3. **tabby/jules-15161538455472121726**: Diverged 68 vs 25 — still unresolved
-4. **topaz-ffmpeg/master**: Diverged from upstream
-5. **openclaw-config**: 115 commits ahead of upstream
-6. **borg**: 170 open dependabot PRs — deferred
+1. **🔒 Security**: hymnmania SSR auth tokens were committed — need token rotation
+2. **bobfilez**: pybind11 directory recursion — skipped
+3. **bg**: Submodule merge complexity — skipped
+4. **tabby/jules**: Diverged 68 vs 25 — still unresolved
+5. **topaz-ffmpeg**: Diverged from upstream
+6. **openclaw-config**: 115 commits ahead of upstream
+7. **borg**: 170 open dependabot PRs
+8. **235 GitHub security vulnerabilities** across workspace
 
 ## Recommendations
-1. hymnmania edge_extractor.py should be tested with real audio
-2. auto_dj_script DSP changes need validation with real DJ sets
-3. Consider closing more stale PRs across the workspace
-4. Workspace is very stable — can focus on feature testing
+1. **URGENT**: Audit all repos for accidentally committed credentials (not just hymnmania)
+2. **URGENT**: Rotate any SSR production auth tokens that were in hymnmania
+3. Consider adding a pre-commit hook to detect .bin/.key/.pem files
+4. Standardize .gitignore across all repos for AI artifacts
+5. Workspace is otherwise very stable — focus on security and testing
