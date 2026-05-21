@@ -31,3 +31,7 @@
 - [ ] auto_dj_script: analysis.py needs integration testing with DSP pipeline
 - [ ] hymnmania: manual_extract.py and udio_direct_test.py need validation with live API
 - [ ] slsk: musicbrainz service changes need testing with real queries
+
+## v3.78.0 Updates
+- [x] borg: All 170 dependabot PRs resolved
+- [ ] Only 4 PRs remain in entire workspace (2 OmniRoute DRAFT + 2 mk64 old DRAFT)

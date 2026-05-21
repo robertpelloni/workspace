@@ -1,3 +1,23 @@
+## [3.78.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Submodule Pointer Updates (3 modules)
+auto_dj_script, bobmani/hymnmania, borg
+
+#### Uncommitted Changes Synced (4 submodules)
+- **auto_dj_script**: core.py refinements (+15/-8) — 7th consecutive active session
+- **bobmani/hymnmania**: udio_api.py improvements (+7/-4) — Udio integration ongoing
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **borg**: dependabot merge cleanup (package-lock.json)
+
+### Milestone
+- **borg dependabot PRs: 170 → 0** — All dependabot PRs resolved after batch merges in v3.77.0
+- **Total open PRs across workspace: 4** — Only OmniRoute (2 DRAFT) + mk64 (2 old DRAFT) remain
+
 ## [3.77.0] - 2026-05-21
 
 ### Workspace Sync

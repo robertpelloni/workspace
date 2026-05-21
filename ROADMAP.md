@@ -45,3 +45,7 @@
 - [x] hymnmania: NEW manual_extract.py + udio_direct_test.py for direct Udio API testing
 - [x] slsk: musicbrainz + orchestrator service improvements
 - [x] borg: 5 dependabot PRs merged (uv, go-git, pip, npm_and_yarn)
+
+## v3.78.0 Additions
+- [x] borg dependabot PRs fully resolved (170→0)
+- [x] Total open PRs across workspace reduced to 4 (OmniRoute DRAFTs + mk64 old DRAFTs)

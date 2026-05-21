@@ -1,44 +1,36 @@
-# Workspace Handoff — v3.77.0
+# Workspace Handoff — v3.78.0
 
 **Date**: 2026-05-21
-**Version**: 3.77.0
-**Commit**: b3caf1178
+**Version**: 3.78.0
+**Commit**: pending
 
 ## Session Summary
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 - **67 repos fetched** with tags
 - **1 upstream merge**: ksm-v2 (34)
-- **5 submodules committed**: auto_dj_script, hymnmania, ksm-v2, borg, slsk
+- **4 submodules committed**: auto_dj_script, hymnmania, ksm-v2, borg
 - All working directories clean
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 - **0 forward merges** — no feature branches ahead of main with unique content
-- **2 reverse merges**: bobui feature branches synced with main (1 commit each)
-- **5 borg dependabot PRs merged** (#170-#166): uv, go-git, pip, npm_and_yarn bumps
+- **0 reverse merges** — all feature branches already caught up
+- **borg dependabot PRs: 170→0** — All resolved after v3.77.0 batch merges auto-closed remaining
 
 ### STEP 3: Workspace Cleanup, Documentation & Build
+- Batch scripts validated (16 scripts, all OK)
+- VERSION: 3.77.0 → 3.78.0
+- CHANGELOG, ROADMAP, TODO, SUBMODULE_MAP updated
 
-#### Batch Script Validation
-- `build_all.bat`, `RESET_WORKSPACE.bat`, shell scripts — all paths verified
+### Key Changes
+- **auto_dj_script**: core.py (+15/-8) — 7th consecutive active session
+- **hymnmania**: udio_api.py (+7/-4) — Udio integration ongoing
+- **borg**: dependabot cleanup (all PRs resolved)
+- **ksm-v2**: kson upstream_develop (34, recurring)
 
-#### Version Governance
-- VERSION: 3.76.0 → 3.77.0
-- CHANGELOG.md, ROADMAP.md, TODO.md, SUBMODULE_MAP.md updated
-
-#### Key Changes This Session
-- **auto_dj_script**: NEW `analysis.py` DSP analysis module (+75/-29) — 6th consecutive active session
-- **hymnmania**: NEW `manual_extract.py` + `udio_direct_test.py` (+105/-45) — direct Udio API testing tools
-- **slsk**: musicbrainz + orchestrator service improvements (+42/-14)
-- **borg**: 5 dependabot PRs merged (165 of 170 remaining)
-- **bobui**: 2 feature branches reverse-synced with main
-
-## Notable Code Additions
-1. `auto_dj_script/autodj/analysis.py` — New DSP analysis module for audio feature extraction
-2. `hymnmania/manual_extract.py` — Manual token extraction utility
-3. `hymnmania/udio_direct_test.py` — Direct Udio API testing script
-4. `slsk/discography_webapp/services/musicbrainz.py` — MusicBrainz service improvements
-5. `slsk/discography_webapp/services/orchestrator.py` — Orchestrator service refinements
+## Milestone
+- 🎉 **borg dependabot PRs fully resolved**: 170→0
+- **Total open PRs across workspace: 4** (down from hundreds)
 
 ## Known Issues
 1. **bobfilez**: pybind11 directory recursion — skipped
@@ -46,13 +38,13 @@
 3. **tabby/jules**: Diverged 68 vs 25 — unresolved
 4. **topaz-ffmpeg**: Diverged from upstream
 5. **openclaw-config**: 115 commits ahead of upstream
-6. **borg**: 165 remaining dependabot PRs (5 merged this session)
-7. **235 GitHub security vulnerabilities** across workspace
-8. **hymnmania**: Auth tokens still in git history (removed from tracking in v3.76.0)
+6. **235 GitHub security vulnerabilities** across workspace
+7. **hymnmania**: Auth tokens in git history (removed from tracking v3.76.0)
+8. **OmniRoute**: 2 DRAFT PRs (Go port, old)
+9. **mk64**: 2 old DRAFT PRs (60FPS/Widescreen)
 
 ## Recommendations
-1. Continue merging borg dependabot PRs in batches of 5-10 per session
-2. Test auto_dj_script analysis.py with real audio files
-3. Validate hymnmania udio_direct_test.py against live Udio API
-4. Test slsk musicbrainz service with real artist queries
-5. Consider `git filter-branch` or BFG to purge hymnmania auth tokens from history
+1. auto_dj_script is on a 7-session streak — core.py likely approaching stable
+2. hymnmania Udio integration needs end-to-end validation
+3. Consider closing stale OmniRoute + mk64 DRAFT PRs
+4. Focus next session on security vulnerability remediation
