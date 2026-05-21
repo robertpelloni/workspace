@@ -35,3 +35,8 @@
 ## v3.78.0 Updates
 - [x] borg: All 170 dependabot PRs resolved
 - [ ] Only 4 PRs remain in entire workspace (2 OmniRoute DRAFT + 2 mk64 old DRAFT)
+
+## v3.79.0 Updates
+- [ ] hymnmania: udio_browser_automation.py needs live Udio validation
+- [ ] hymnmania: test suite (test_udio_remix, test_udio_automation) should be run
+- [ ] auto_dj_script: analysis.py continues expansion — validate with real audio

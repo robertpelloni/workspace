@@ -49,3 +49,8 @@
 ## v3.78.0 Additions
 - [x] borg dependabot PRs fully resolved (170→0)
 - [x] Total open PRs across workspace reduced to 4 (OmniRoute DRAFTs + mk64 old DRAFTs)
+
+## v3.79.0 Additions
+- [x] hymnmania: Udio browser automation (+770/-38) — largest single-session change
+- [x] hymnmania: Full test suite for Udio remix/automation/API
+- [x] auto_dj_script: DSP analysis module expansion (+63/-19)

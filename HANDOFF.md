@@ -1,7 +1,7 @@
-# Workspace Handoff — v3.78.0
+# Workspace Handoff — v3.79.0
 
 **Date**: 2026-05-21
-**Version**: 3.78.0
+**Version**: 3.79.0
 **Commit**: pending
 
 ## Session Summary
@@ -9,28 +9,39 @@
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 - **67 repos fetched** with tags
 - **1 upstream merge**: ksm-v2 (34)
-- **4 submodules committed**: auto_dj_script, hymnmania, ksm-v2, borg
+- **3 submodules committed**: auto_dj_script, hymnmania, ksm-v2
 - All working directories clean
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
-- **0 forward merges** — no feature branches ahead of main with unique content
-- **0 reverse merges** — all feature branches already caught up
-- **borg dependabot PRs: 170→0** — All resolved after v3.77.0 batch merges auto-closed remaining
+- **0 forward merges** — no feature branches ahead of main
+- **0 reverse merges** — all feature branches current
+- **0 new PRs** across all repos
 
 ### STEP 3: Workspace Cleanup, Documentation & Build
-- Batch scripts validated (16 scripts, all OK)
-- VERSION: 3.77.0 → 3.78.0
+- VERSION: 3.78.0 → 3.79.0
 - CHANGELOG, ROADMAP, TODO, SUBMODULE_MAP updated
 
-### Key Changes
-- **auto_dj_script**: core.py (+15/-8) — 7th consecutive active session
-- **hymnmania**: udio_api.py (+7/-4) — Udio integration ongoing
-- **borg**: dependabot cleanup (all PRs resolved)
-- **ksm-v2**: kson upstream_develop (34, recurring)
+### 🔥 Key Changes This Session
 
-## Milestone
-- 🎉 **borg dependabot PRs fully resolved**: 170→0
-- **Total open PRs across workspace: 4** (down from hundreds)
+#### hymnmania — Largest Update (+770/-38, 11 files, 5 NEW)
+| File | Status | Description |
+|------|--------|-------------|
+| `hymn_remaker/src/udio_browser_automation.py` | **NEW** | Browser automation for Udio API interaction |
+| `hymn_remaker/tests/test_udio_remix.py` | **NEW** | Remix testing suite |
+| `hymn_remaker/tests/test_udio_automation.py` | **NEW** | Automation testing suite |
+| `scratch/test_udio_api.py` | **NEW** | API scratch testing |
+| `hymn_remaker/test_input/Emmanuel.mid` | **NEW** | MIDI test fixture |
+| `hymn_remaker/main.py` | Modified | Main app updates |
+| `hymn_remaker/settings.py` | Modified | Settings updates |
+| `hymn_remaker/src/midi_analyzer.py` | Modified | MIDI analysis improvements |
+| `hymn_remaker/src/udio_api.py` | Modified | Udio API refinements |
+| `hymn_remaker/src/udio_remaker.py` | Modified | Remix engine updates |
+| `hymn_remaker/src/utils.py` | Modified | Utility improvements |
+
+#### auto_dj_script — 8th Consecutive Active Session (+63/-19)
+- analysis.py + core.py — DSP analysis module expansion
+
+#### ksm-v2 — Recurring upstream (34)
 
 ## Known Issues
 1. **bobfilez**: pybind11 directory recursion — skipped
@@ -40,11 +51,12 @@
 5. **openclaw-config**: 115 commits ahead of upstream
 6. **235 GitHub security vulnerabilities** across workspace
 7. **hymnmania**: Auth tokens in git history (removed from tracking v3.76.0)
-8. **OmniRoute**: 2 DRAFT PRs (Go port, old)
+8. **OmniRoute**: 2 DRAFT PRs (old Go port)
 9. **mk64**: 2 old DRAFT PRs (60FPS/Widescreen)
 
 ## Recommendations
-1. auto_dj_script is on a 7-session streak — core.py likely approaching stable
-2. hymnmania Udio integration needs end-to-end validation
-3. Consider closing stale OmniRoute + mk64 DRAFT PRs
-4. Focus next session on security vulnerability remediation
+1. **hymnmania udio_browser_automation.py** — significant new feature, needs live validation
+2. **hymnmania test suite** — run `pytest hymn_remaker/tests/` to validate
+3. **auto_dj_script** approaching stability after 8 sessions of continuous refinement
+4. Consider adding Selenium/Playwright for udio_browser_automation testing
+5. Workspace is extremely clean — only 4 open PRs total, all stale DRAFTs

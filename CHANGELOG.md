@@ -1,3 +1,24 @@
+## [3.79.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Submodule Pointer Updates (2 modules)
+auto_dj_script, bobmani/hymnmania
+
+#### Uncommitted Changes Synced (3 submodules)
+- **auto_dj_script**: analysis.py + core.py (+63/-19) — 8th consecutive active session, DSP analysis expansion
+- **bobmani/hymnmania**: MASSIVE Udio integration update (+770/-38)
+  - NEW: `udio_browser_automation.py` — Browser automation for Udio API
+  - NEW: `test_udio_remix.py` — Remix testing suite
+  - NEW: `test_udio_automation.py` — Automation testing suite
+  - NEW: `test_udio_api.py` (scratch/) — API scratch testing
+  - NEW: `Emmanuel.mid` (test_input/) — MIDI test fixture
+  - Modified: main.py, settings.py, midi_analyzer.py, udio_api.py, udio_remaker.py, utils.py
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
 ## [3.78.0] - 2026-05-21
 
 ### Workspace Sync
