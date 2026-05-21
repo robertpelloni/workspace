@@ -1,3 +1,35 @@
+## [3.74.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobeditpro**: 2 new upstream commits — labels considered stable (#10986), no longer disabled in release
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Pull Requests Merged (1)
+- **bobmani/hymnmania #12**: UI Feedback, Docker Optimization, and v1.27.0 Release (+15/-33)
+  - Added st.spinner and detailed progress callbacks
+  - Comprehensive .dockerignore for optimized builds
+  - Removed redundant docs/VERSION.md
+
+#### Feature Branches Reverse-Synced (6)
+- bobcoin/feat/governance-delays-and-zk-port (1)
+- bobcoin/feature/comprehensive-ui-spec (1)
+- bobcoin/feature/comprehensive-ui-spec-1767 (1)
+- bobui/feature/omni-ui-framework (2)
+- bobui/jules-11090863842246041945 (2)
+- jules-autopilot/jules-17764958747146694232 (3) — new branch
+
+#### Submodule Pointer Updates (5 modules)
+auto_dj_script, bobeditpro, bobmani/hymnmania, jules-autopilot, slsk_discography_downloader_script
+
+#### Uncommitted Changes Synced (5 submodules)
+- **auto_dj_script**: analysis.py + core.py + utils.py improvements (+97/-65)
+- **bobeditpro**: labels stability upstream merge
+- **bobmani/hymnmania**: Udio API refinements (+46/-48) — continued Udio integration work
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **slsk_discography_downloader_script**: scan_artists.py new script (+514/-10), orchestrator + queue + web UI
+
 ## [3.73.0] - 2026-05-21
 
 ### Workspace Sync
