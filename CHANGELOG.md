@@ -1,3 +1,63 @@
+## [3.72.0] - 2026-05-21 (massive PR merge wave)
+
+### Workspace Sync — Largest PR Merge Session Ever
+
+#### Pull Requests Merged (28+ PRs across 25 repos)
+- **MarbleBlast #2**: Gamepad bug fix + TypeScript strict typing + project documentation
+- **agentirc #5**: Audit project + /add-model integration tests
+- **auto_dj_script #3**: Interactive Tempo Ramping + BPM Analysis fix (+1025/-289)
+- **bobcoin #21**: Fix CalculateHash + **#20** dependabot npm bump
+- **bobeditpro #3**: Comprehensive Documentation & DSP Scaffolding (+3967/-17)
+- **bobeditpro #4**: Track panel width constant + bootstrap documentation (+112/-3)
+- **bobgui #2**: Initialize bobtk Go port + 6-pillar framework
+- **bobmani/ksm-v2 #2**: Filter sort backend
+- **bobmani/pianogame #1**: Audit project + refactor playing state
+- **bobtorrent #8**: Pub/Sub tracking with WebUI Dashboard (v11.60.22)
+- **bobui #11**: Port OmniSynthesizer to pure Go + full project audit
+- **bobbybookmarks #5**: Dependabot go_modules bump (fiber v2.52.13)
+- **dupeguru #1**: Project audit, docs, hscommon type hints
+- **f-zerox #7**: Basic directional lighting (v0.1.17)
+- **fwber #33**: ActivityPub models and endpoints (v2.0.11)
+- **hyperharness #7**: Dependabot go_modules bump
+- **litellm #1**: Comprehensive Project Audit + Prometheus Budget Metrics
+- **mk64 #3**: Update bobcoin submodule + audit updates
+- **native-fy #1**: Initial Project Audit and Scaffolding (v0.1.0)
+- **onetool-mcp #1**: Linux clipboard support for ot_image
+- **pi-mono #5**: Plannotator Implementation (v0.70.0)
+- **planet_fitness_stepmaniax_agent #2**: Dependabot requests 2.31→2.33
+- **realestatecrm #8**: Activity type selector + Next.js 15 fix (v0.39.0)
+- **realestatecrm #9**: Consolidate RAG logic into unified module (v0.39.0)
+- **skillzhub #7**: Reputation Score Loop and Lint Fixes
+- **slsk_discography_downloader_script #1**: Dynamic version in UI + dotenv support (v0.2.0)
+- **sm64coopdx #3**: Implement Guild Bank and Storage
+- **supersaber #3**: Audio Waveform Extractor + Audit Cleanups (v1.4.0)
+- **tabby #3**: AI Chat functionality + Go backend bugfixes
+
+#### Upstream Merges
+- **bobeditpro**: 2 new upstream commits (keyboard navigation + custom URL open)
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Feature Branches Reverse-Synced (2)
+- **hymnmania**: feat/comprehensive-docs-and-tts-params (6)
+- **hymnmania**: feature/web-ui-and-parallelization (6)
+
+#### Submodule Pointer Updates (27 modules)
+MarbleBlast, agentirc, auto_dj_script, bobbybookmarks, bobcoin, bobeditpro, bobgui,
+bobmani/pianogame, bobtorrent, bobui, dupeguru, f-zerox, fwber, hyperharness,
+jules-autopilot, litellm, mk64, native-fy, onetool-mcp, pi-mono,
+planet_fitness_stepmaniax_agent, realestatecrm, skillzhub,
+slsk_discography_downloader_script, sm64coopdx, supersaber, tabby
+
+#### Uncommitted Changes Synced
+- **auto_dj_script**: final_dj_master_tracklist.txt (+86 lines)
+- **jules-autopilot**: daemon.go + queue.go refactoring (+63/-6)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+#### Skipped (Known Issues)
+- **OmniRoute**: 2 PRs failed to push due to Windows EPERM/husky pre-push hook
+- **borg**: 170 open dependabot PRs (deferred)
+- **bobfilez/bg**: Skipped per protocol
+
 ## [3.71.0] - 2026-05-21
 
 ### Workspace Sync
