@@ -1,3 +1,22 @@
+## [3.70.0] - 2026-05-21 (milestone)
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits
+- **openclaw-config**: 4 new upstream commits (diverged 114 vs 4, resolved with -X ours)
+- **tabby**: 1 new upstream commit — first tabby upstream sync in recent sessions
+
+#### Submodule Pointer Updates (3 modules)
+auto_dj_script, openclaw-config, tabby
+
+#### Uncommitted Changes Synced
+- **auto_dj_script**: core.py improvements (+17/-13)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+#### Milestone
+v3.70.0 — 20+ consecutive stable sync sessions (v3.43→v3.70) with zero broken builds
+
 ## [3.68.0] - 2026-05-21
 
 ### Workspace Sync
