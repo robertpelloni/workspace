@@ -45,3 +45,7 @@
 - [ ] borg: SessionImportService.ts and ImportedSessionStore.ts need integration testing
 - [ ] borg: LanceDBStore.ts changes need vector DB validation
 - [ ] hymnmania: scratch/inspect_*.py scripts need cleanup or documentation
+
+## v3.81.0 Updates
+- [ ] hymnmania: feat/ui-feedback branch can be deleted (redundant 1.27.0 bump commit)
+- [ ] auto_dj_script: approaching stability after 10 sessions of continuous refinement

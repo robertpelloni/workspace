@@ -1,3 +1,27 @@
+## [3.81.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Reverse Merges (2)
+- **bobmani/hymnmania/feat/comprehensive-docs-and-tts-params**: main→feature (15)
+- **bobmani/hymnmania/feature/web-ui-and-parallelization**: main→feature (15)
+
+#### Submodule Pointer Updates (1 module)
+auto_dj_script
+
+#### Uncommitted Changes Synced (2 submodules)
+- **auto_dj_script**: core.py + tracklist (+26/-21) — 10th consecutive active session 🔥
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+### Notes
+- hymnmania: 2 feature branches reverse-synced (both now fully caught up at 0 ahead/0 behind)
+- hymnmania `feat/ui-feedback` branch has 1 redundant commit (already in master) — can be deleted
+- hymnmania no new code changes this session (first quiet session after 5 active ones)
+- borg: no changes (first quiet session after recent activity)
+
 ## [3.80.0] - 2026-05-21
 
 ### Workspace Sync

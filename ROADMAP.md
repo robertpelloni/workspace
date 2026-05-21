@@ -59,3 +59,7 @@
 - [x] hymnmania: MIDI renderer + Udio automation refinements (+398/-10)
 - [x] borg: Session import services + LanceDB store improvements (+106/-22)
 - [x] auto_dj_script: DSP analysis expansion (+21/-13) — 9th consecutive session
+
+## v3.81.0 Additions
+- [x] auto_dj_script: 10th consecutive active session — core.py refinements
+- [x] hymnmania: 2 feature branches reverse-synced (comprehensive-docs, web-ui-and-parallelization)
