@@ -1,30 +1,29 @@
-# Workspace Handoff — v3.74.0
+# Workspace Handoff — v3.75.0
 
 **Date**: 2026-05-21
-**Version**: 3.74.0
-**Commit**: c261989fd
+**Version**: 3.75.0
+**Commit**: 4c896eda4
 
 ## Session Summary
 
 ### Step 1: Sync
-- **0 feature branches merged into main** (all ahead-of-main already merged)
-- **2 upstream merges**: bobeditpro (2), ksm-v2 (34)
-- **1 PR merged**: hymnmania #12 (UI Feedback + Docker Optimization)
-- **6 reverse-syncs**: bobcoin (3), bobui (2), jules-autopilot (1)
-- **5 submodules committed**: auto_dj_script, bobeditpro, hymnmania, ksm-v2, slsk
-- **5 submodule pointers updated**
+- **0 feature branches merged into main** (all already merged)
+- **1 upstream merge**: ksm-v2 (34)
+- **2 reverse-syncs**: bobeditpro feature branches (3 each)
+- **4 submodules committed**: auto_dj_script, hymnmania, ksm-v2, slsk
+- **3 submodule pointers updated**
+- **4 stale PRs closed** on GitHub
 
-### Step 2: Analysis — Active Development Across Multiple Repos
-- **auto_dj_script**: Continued DSP refinement — analysis.py, core.py, utils.py (+97/-65)
-- **hymnmania**: Udio integration being actively refined (+46/-48) — new Jules PR #12 merged
-- **slsk**: Major new feature — scan_artists.py (+514/-10), orchestrator + queue + web UI
-- **bobeditpro**: Upstream labels stability — labels now considered stable in release builds
-- **jules-autopilot**: New feature branch jules-17764958747146694232-3d7c3856 reverse-synced (3 commits)
-- **hymnmania PR #12**: UI spinner feedback + Docker optimization + v1.27.0 release
+### Step 2: Analysis
+- **hymnmania**: NEW edge_extractor.py (+93/-4) — audio feature extraction pipeline
+- **auto_dj_script**: Continued DSP refinement — core.py + dsp.py (+83/-25)
+- **hymnmania Udio API**: Still being actively refined
+- **slsk**: Minor fix (+1)
+- **Stale PR cleanup**: 4 PRs that were manually merged now properly closed on GitHub
 
 ### Steps 3-5: Documentation & Version
-- CHANGELOG.md updated for v3.74.0
-- Version: 3.73.0 → 3.74.0
+- CHANGELOG.md updated for v3.75.0
+- Version: 3.74.0 → 3.75.0
 
 ### Step 6: Commit & Push
 - ✅ Pushed to origin/main
@@ -33,12 +32,11 @@
 - Pending
 
 ## Key Observations
-1. **Very active development** — 5 submodules committed in one session
-2. **slsk scan_artists.py** is a major new feature (+514 lines) — artist scanning pipeline
-3. **hymnmania Udio integration** actively being refined post-merge
-4. **hymnmania PR #12** — new Jules PR appeared and was merged within the same session
-5. **bobeditpro upstream** — labels are now stable in release, significant for the project
-6. **jules-autopilot** has a new feature branch (jules-1776) — likely new session work
+1. **hymnmania edge_extractor.py** — new audio feature extraction, likely for music analysis
+2. **auto_dj_script** continues very active DSP development — 4th consecutive session with changes
+3. **ksm-v2** 34 upstream commits is a consistent recurring pattern
+4. **Stale PR cleanup** — good hygiene, prevents confusion about what's merged
+5. **Very quiet session** — most repos clean and stable
 
 ## Known Issues
 1. **bobfilez**: pybind11 directory recursion — skipped
@@ -49,7 +47,7 @@
 6. **borg**: 170 open dependabot PRs — deferred
 
 ## Recommendations
-1. slsk scan_artists.py needs testing — it's a major new scanning pipeline
-2. hymnmania Udio integration needs validation — verify API calls work
-3. bobeditpro labels stability is significant for release readiness
-4. Consider creating a .gitignore template for AI artifacts to apply across all repos
+1. hymnmania edge_extractor.py should be tested with real audio
+2. auto_dj_script DSP changes need validation with real DJ sets
+3. Consider closing more stale PRs across the workspace
+4. Workspace is very stable — can focus on feature testing

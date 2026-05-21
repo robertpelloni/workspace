@@ -1,3 +1,29 @@
+## [3.75.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Feature Branches Reverse-Synced (2)
+- bobeditpro/feature/audition-parity-roadmap (3)
+- bobeditpro/feature/bus-tracks-and-docs (3)
+
+#### Stale PRs Closed (4)
+- hymnmania #12 (merged in v3.74.0, PR now closed)
+- bobeditpro #3 (merged in v3.72.0, PR now closed)
+- bobeditpro #4 (merged in v3.72.0, PR now closed)
+- ksm-v2 #2 (merged in v3.72.0, PR now closed)
+
+#### Submodule Pointer Updates (3 modules)
+auto_dj_script, bobmani/hymnmania, slsk_discography_downloader_script
+
+#### Uncommitted Changes Synced (4 submodules)
+- **auto_dj_script**: core.py + dsp.py improvements (+83/-25) — continued DSP refinement
+- **bobmani/hymnmania**: edge_extractor.py NEW feature (+93/-4), Udio API refinements
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+- **slsk_discography_downloader_script**: main.py fix (+1)
+
 ## [3.74.0] - 2026-05-21
 
 ### Workspace Sync
