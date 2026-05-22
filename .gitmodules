@@ -213,3 +213,79 @@
 [submodule "planet_fitness_stepmaniax_agent"]
 	path = planet_fitness_stepmaniax_agent
 	url = https://github.com/robertpelloni/planet_fitness_stepmaniax_agent
+[submodule "apophysis-j"]
+	path = apophysis-j
+	url = https://github.com/robertpelloni/apophysis-j.git
+	branch = master
+[submodule "bobsgameweb"]
+	path = bobsgameweb
+	url = https://github.com/robertpelloni/bobsgameweb.git
+	branch = master
+[submodule "crowdsourced_dance_club"]
+	path = crowdsourced_dance_club
+	url = https://github.com/robertpelloni/crowdsourced_dance_club.git
+	branch = main
+[submodule "dao"]
+	path = dao
+	url = https://github.com/robertpelloni/dao.git
+	branch = main
+[submodule "electricsheep"]
+	path = electricsheep
+	url = https://github.com/robertpelloni/electricsheep.git
+	branch = master
+[submodule "geiss"]
+	path = geiss
+	url = https://github.com/robertpelloni/geiss.git
+	branch = main
+[submodule "GWEN"]
+	path = GWEN
+	url = https://github.com/robertpelloni/GWEN.git
+	branch = main
+[submodule "claude-mem"]
+	path = claude-mem
+	url = https://github.com/robertpelloni/claude-mem.git
+	branch = main
+[submodule "element-web"]
+	path = element-web
+	url = https://github.com/robertpelloni/element-web.git
+	branch = develop
+[submodule "hermes-agent"]
+	path = hermes-agent
+	url = https://github.com/robertpelloni/hermes-agent.git
+	branch = main
+[submodule "mcpenetes"]
+	path = mcpenetes
+	url = https://github.com/robertpelloni/mcpenetes.git
+	branch = main
+[submodule "metamcp"]
+	path = metamcp
+	url = https://github.com/robertpelloni/metamcp.git
+	branch = main
+[submodule "MilkDrop3"]
+	path = MilkDrop3
+	url = https://github.com/robertpelloni/MilkDrop3.git
+	branch = main
+[submodule "multimousergy"]
+	path = multimousergy
+	url = https://github.com/robertpelloni/multimousergy.git
+	branch = netmux-initial-architecture-10413382364036026152
+[submodule "odcnn"]
+	path = odcnn
+	url = https://github.com/robertpelloni/odcnn.git
+	branch = master
+[submodule "superdawmcp"]
+	path = superdawmcp
+	url = https://github.com/robertpelloni/superdawmcp.git
+	branch = jules-5372408556252106821-172735fe
+[submodule "timidity"]
+	path = timidity
+	url = https://github.com/robertpelloni/timidity.git
+	branch = cvs
+[submodule "JWildfire"]
+	path = JWildfire
+	url = https://github.com/robertpelloni/JWildfire.git
+	branch = master
+[submodule "warp"]
+	path = warp
+	url = https://github.com/robertpelloni/warp.git
+	branch = master

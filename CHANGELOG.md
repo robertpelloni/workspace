@@ -1,3 +1,81 @@
+## [3.91.0] - 2026-05-23
+
+### 🆕 New Submodules Added (20 repos from github.com/robertpelloni)
+
+Comprehensive scan of `github.com/robertpelloni/` identified 22 repos not yet in workspace.
+20 were successfully added as submodules (2 skipped: `private_gemini_storage` (1.4GB, clone fails),
+`stonerock` (empty repo, no branches)).
+
+**New submodules:**
+- `apophysis-j` (fractal flame editor, Java)
+- `bobsgameweb` (web game client)
+- `claude-mem` (Claude memory system)
+- `crowdsourced_dance_club` (crowdsourced music project)
+- `dao` (DAO project)
+- `electricsheep` (distributed fractal rendering)
+- `element-web` (Matrix client fork)
+- `geiss` (visualization plugin)
+- `GWEN` (GUI framework)
+- `hermes-agent` (AI agent framework)
+- `hyper` (hypervisor project, canary branch)
+- `JWildfire` (fractal flame editor, Java - large)
+- `mcpenetes` (Kubernetes/netes project)
+- `metamcp` (MCP meta-project)
+- `MilkDrop3` (visualization engine)
+- `multimousergy` (multi-mouse energy project)
+- `odcnn` (CNN project)
+- `superdawmcp` (MCP super assistant)
+- `timidity` (MIDI synthesizer)
+- `warp` (warp project)
+
+**Skipped repos:**
+- `private_gemini_storage` — 1.4GB, index-pack overflow on clone
+- `stonerock` — empty repository (no branches)
+
+**Already accounted for (not re-added):**
+- `ArrowVortex` → `bobmani/arrowvortex`
+- `bobmani` → org folder (hymnmania, ksm-v2 already submodules)
+- `FFmpeg` → `topaz-ffmpeg`
+- `MCP-SuperAssistant` → `mcp-superassistant`
+- `okgame` → `bg/okgame`
+- `openclaw-config` → already tracked
+- `projectm` → already tracked
+- `workspace` → root repo (self)
+- `Cli-Proxy-API-Management-Center` → `CLIProxyAPIPlus`
+
+### Module Updates
+
+#### borg/hypercode (+18/-33)
+- Code cleanup and refactoring
+
+#### auto_dj_script (+46/-35)
+- `autodj/analysis.py` and `autodj/core.py` refactoring
+- Tracklist updates
+
+#### bobmani/hymnmania
+- Merge resolution on hymn_remaker files (app.py, main.py, midi_renderer, udio remaker)
+- `video_uploader.py` fix
+
+#### slsk_discography_downloader_script (+72/-13)
+- `discography_webapp/main.py` and `orchestrator.py` updates
+- `templates/index.html` changes
+
+#### JWildfire — Committed
+- Large file cleanup commit
+
+#### ksm-v2 — 34 upstream commits merged (recurring)
+
+### Submodule Pointer Updates (6)
+- `auto_dj_script`: `dd16635` -> `6dd24de`
+- `bobmani/hymnmania`: `4337b20` -> `50c852f`
+- `borg`: `a0be1fd` -> `add9214`
+- `claude-mem`: `08b45ff` -> `9b8f1a3`
+- `slsk`: `e4bff1a` -> `df71e2b`
+- `warp`: `ea7384a` -> `01243df`
+
+### Workspace Scale
+- **Submodules: 71 -> 90** (+19 net; 20 added, 1 stonerock attempted but failed)
+
 ## [3.90.0] - 2026-05-22
 
 ### Module Updates

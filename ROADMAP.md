@@ -111,3 +111,11 @@
 - [x] auto_dj_script: Core refactoring continued
 - [x] jules-autopilot: Feature branch reverse-merged (caught up to main)
 - [x] hymnmania: 2 feature branches current
+
+## v3.91.0 Additions
+- [x] GitHub scan: 20 missing repos added as submodules
+- [x] borg/hypercode: Code cleanup
+- [x] auto_dj_script: Analysis + core refactoring
+- [x] slsk: Webapp main + orchestrator + template updates
+- [x] hymnmania: Merge resolution on hymn_remaker files
+- [x] JWildfire: Large file cleanup

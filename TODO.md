@@ -95,3 +95,11 @@
 - [ ] borg/hypercode: LanceDBStore expanding rapidly — needs test coverage
 - [ ] auto_dj_script: Core still refactoring — not yet stable
 - [ ] jules-autopilot: jules-17764958747146694232 branch ready for forward merge evaluation
+
+## v3.91.0 Updates
+- [ ] private_gemini_storage: 1.4GB repo — needs Git LFS or shallow clone strategy
+- [ ] stonerock: Empty repo — add when content is pushed
+- [ ] New submodules (20): Need upstream remote configuration where applicable
+- [ ] JWildfire: Large Java repo — may need .gitignore for build artifacts
+- [ ] element-web: Large Matrix client fork — check for upstream remote
+- [ ] Verify all 20 new submodules have proper .gitmodules configuration
