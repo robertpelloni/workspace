@@ -83,3 +83,9 @@
 - [ ] auto_dj_script: Test convert_to_mp3.py integration
 - [ ] planet_fitness_stepmaniax_agent: Review CRM pipeline for production readiness
 - [ ] hymnmania: 2 feature branches current — evaluate for forward merge next session
+
+## v3.89.0 Updates
+- [ ] borg: memoryRouter.hypercode→borg rename suggests incomplete migration — audit remaining
+- [ ] auto_dj_script: 132MB binary removed — verify tests still pass
+- [ ] jules-autopilot: Queue service expanded — load testing needed
+- [ ] hymnmania: clear_udio_popup.py — integrate into main pipeline

@@ -1,3 +1,43 @@
+## [3.89.0] - 2026-05-22
+
+### Module Updates
+
+#### borg/hypercode (+116/-83)
+- Partial reversion: `memoryRouter.hypercode.ts` → `memoryRouter.borg.ts` (rename)
+- LanceDBStore improvements (+47/-5)
+- Log store service refactoring
+- Hypercode session working set test updates
+- HANDOFF.md, package.json, env updates
+
+#### jules-autopilot (+37/-6)
+- `backend-go/services/queue.go`: Major queue service expansion (+34/-3)
+- `backend-go/services/llm.go`: LLM service updates
+
+#### bobmani/hymnmania (+60)
+- New `clear_udio_popup.py` utility (Udio popup automation)
+
+#### auto_dj_script (+27/-21)
+- `autodj/core.py` refactoring
+- Removed `final_dj_master_test.m4a` binary (132MB freed)
+- Tracklist updates
+
+#### slsk_discography_downloader_script (+37/-20)
+- `discography_webapp/services/orchestrator.py` refactoring
+
+#### bobmani/ksm-v2
+- 34 upstream commits merged (recurring)
+
+### Reverse Merges
+- `bobmani/hymnmania/feat/comprehensive-docs-and-tts-params` (1 commit caught up)
+- `bobmani/hymnmania/feature/web-ui-and-parallelization` (1 commit caught up)
+
+### Submodule Pointer Updates (5)
+- `auto_dj_script`: `66f8474` → `aae84db`
+- `bobmani/hymnmania`: `d03d8eb` → `014dd16`
+- `borg`: `12a6b58` → `64aeb33`
+- `jules-autopilot`: `ba0b34b` → `d5ca77e`
+- `slsk_discography_downloader_script`: `9d0937b` → `e4bff1a`
+
 ## [3.88.0] - 2026-05-22
 
 ### 🚀 Major Module Updates

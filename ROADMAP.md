@@ -98,3 +98,10 @@
 - [x] auto_dj_script: New convert_to_mp3.py utility, core refactoring
 - [x] hymnmania: 2 feature branches reverse-merged (caught up to main)
 - [x] ksm-v2: 34 upstream commits merged
+
+## v3.89.0 Additions
+- [x] borg: LanceDBStore improvements, partial hypercode→borg router rename
+- [x] jules-autopilot: Queue service expansion, LLM service updates
+- [x] hymnmania: New clear_udio_popup.py utility
+- [x] auto_dj_script: Core refactoring, 132MB binary removed
+- [x] slsk: Orchestrator refactoring
