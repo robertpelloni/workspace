@@ -1,3 +1,21 @@
+## [3.86.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Submodule Pointer Updates
+None — maintenance session
+
+#### Notable
+- **auto_dj_script**: 4th consecutive quiet session — deeply stable 🏁
+- **hymnmania**: 2nd consecutive quiet session — consolidating v3.84.0
+- **borg**: Quiet
+- **slsk**: Quiet
+- **Maestro**: git operations timeout — added to watch list
+- All 67 repos fetched, working directories clean
+
 ## [3.85.0] - 2026-05-21
 
 ### Workspace Sync

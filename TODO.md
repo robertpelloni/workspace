@@ -67,3 +67,7 @@
 ## v3.85.0 Updates
 - [ ] auto_dj_script: ready for release tag — 3 quiet sessions confirms stability
 - [ ] hymnmania: validate v3.84.0 AI integration (gemini, ai_video, udio_oauth)
+
+## v3.86.0 Updates
+- [ ] Maestro: git operations timeout — needs investigation
+- [ ] auto_dj_script: 4 quiet sessions — overdue for release tag
