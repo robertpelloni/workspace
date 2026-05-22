@@ -63,3 +63,7 @@
 - [ ] hymnmania: udio_oauth_remaker.py needs OAuth flow testing
 - [ ] hymnmania: requirements.txt has new dependencies — needs pip install
 - [ ] auto_dj_script: confirmed stable — evaluate for release tag
+
+## v3.85.0 Updates
+- [ ] auto_dj_script: ready for release tag — 3 quiet sessions confirms stability
+- [ ] hymnmania: validate v3.84.0 AI integration (gemini, ai_video, udio_oauth)

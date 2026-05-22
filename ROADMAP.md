@@ -80,3 +80,7 @@
   - Curated quotes dataset (quotes.json)
 - [x] slsk: orchestrator service improvements (+35/-12)
 - [x] auto_dj_script: confirmed stabilizing (2nd quiet session)
+
+## v3.85.0 Additions
+- [x] Maintenance session — all repos synced, branches current
+- [x] auto_dj_script: confirmed fully stabilized (3 quiet sessions)

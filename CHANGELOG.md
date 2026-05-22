@@ -1,3 +1,25 @@
+## [3.85.0] - 2026-05-21
+
+### Workspace Sync
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Reverse Merges (2)
+- **bobmani/hymnmania/feat/comprehensive-docs-and-tts-params**: main→feature (1)
+- **bobmani/hymnmania/feature/web-ui-and-parallelization**: main→feature (1)
+
+#### Submodule Pointer Updates
+None — maintenance session
+
+### Notable
+- **auto_dj_script**: 3rd consecutive quiet session — fully stabilized 🏁
+- **hymnmania**: Quiet session after massive v3.84.0 AI integration
+- **borg**: Remains quiet
+- **slsk**: Quiet after v3.84.0 orchestrator update
+- All 67 repos fetched, all working directories clean
+- **Workspace-wide development pause** — post-major-update consolidation
+
 ## [3.84.0] - 2026-05-21
 
 ### 🔥 MAJOR: hymnmania Massive AI Integration Update (+1377/-569)
