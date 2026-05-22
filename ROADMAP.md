@@ -105,3 +105,9 @@
 - [x] hymnmania: New clear_udio_popup.py utility
 - [x] auto_dj_script: Core refactoring, 132MB binary removed
 - [x] slsk: Orchestrator refactoring
+
+## v3.90.0 Additions
+- [x] borg/hypercode: SessionImportService refactoring, LanceDBStore expansion
+- [x] auto_dj_script: Core refactoring continued
+- [x] jules-autopilot: Feature branch reverse-merged (caught up to main)
+- [x] hymnmania: 2 feature branches current

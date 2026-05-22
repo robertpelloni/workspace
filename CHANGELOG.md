@@ -1,3 +1,30 @@
+## [3.90.0] - 2026-05-22
+
+### Module Updates
+
+#### borg/hypercode (+55/-20)
+- `SessionImportService.ts`: Refactoring (+28/-14)
+- `LanceDBStore.ts`: Expansion (+47/-5) — continuing memory store improvements
+
+#### auto_dj_script (+14/-19)
+- `autodj/core.py`: Continued refactoring
+
+#### jules-autopilot — Reverse Merge
+- `jules-17764958747146694232-3d7c3856` feature branch reverse-merged (2 commits behind → current)
+
+#### bobmani/hymnmania — Reverse Merges
+- `feat/comprehensive-docs-and-tts-params` (2 commits behind → current)
+- `feature/web-ui-and-parallelization` (2 commits behind → current)
+
+#### bobmani/ksm-v2
+- 34 upstream commits merged (recurring)
+
+### Submodule Pointer Updates (4)
+- `auto_dj_script`: `aae84db` → `dd16635`
+- `bobmani/hymnmania`: `014dd16` → `4337b20`
+- `borg`: `64aeb33` → `a0be1fd`
+- `jules-autopilot`: `d5ca77e` → `9e6f9bc`
+
 ## [3.89.0] - 2026-05-22
 
 ### Module Updates

@@ -89,3 +89,9 @@
 - [ ] auto_dj_script: 132MB binary removed — verify tests still pass
 - [ ] jules-autopilot: Queue service expanded — load testing needed
 - [ ] hymnmania: clear_udio_popup.py — integrate into main pipeline
+
+## v3.90.0 Updates
+- [ ] borg/hypercode: Borg→hypercode migration still in progress (some files still reference borg)
+- [ ] borg/hypercode: LanceDBStore expanding rapidly — needs test coverage
+- [ ] auto_dj_script: Core still refactoring — not yet stable
+- [ ] jules-autopilot: jules-17764958747146694232 branch ready for forward merge evaluation
