@@ -76,3 +76,10 @@
 - [x] bobfilez: ai-file-sorter pointer fixed (d5bbce4a→cd9a024)
 - [ ] bobfilez: 130+ nested libs — spot-check more submodule pointers for remote existence
 - [ ] bobfilez: pybind11 infinite directory recursion still blocks git operations
+
+## v3.88.0 Updates
+- [ ] borg/hypercode: Verify build after massive rename (1249 files)
+- [ ] borg/hypercode: Update any external references to "borg" in workspace scripts
+- [ ] auto_dj_script: Test convert_to_mp3.py integration
+- [ ] planet_fitness_stepmaniax_agent: Review CRM pipeline for production readiness
+- [ ] hymnmania: 2 feature branches current — evaluate for forward merge next session

@@ -1,3 +1,44 @@
+## [3.88.0] - 2026-05-22
+
+### 🚀 Major Module Updates
+
+#### borg → hypercode Branding Migration (+1249/-7332)
+- Full rename: `borg` → `hypercode` across all packages, binaries, configs
+- `borg-extension` → `hypercode-extension` (Chrome extension)
+- `borg-mcp-server` → `hypercode-mcp-server`
+- `BorgConfig` → `HypercodeConfig`, `borg-orchestrator` → `hypercode-orchestrator`
+- `metamcp` types → `hypercode` types namespace
+- `borg-supervisor` → `hypercode-supervisor`
+- JetBrains plugin: `BorgService` → `HypercodeService`
+- New Chrome extension assets (Cover images, icon-128.png)
+- Removed `submodules/metamcp-ai` submodule reference
+- Added `hypercode/adapter.go`
+
+#### planet_fitness_stepmaniax_agent (+2427/-80) — 9 new commits
+- CRM features: `crm.json`, `franchise_leads.csv`, `scrape_leads.py` improvements
+- New outreach docs: epic-fitness, ohana-growth, pf-michigan
+- New business docs: commercial-proposal-template, discovery-call-script, pilot-faq, pilot-performance-report
+- Added `LEADS.md`, `IDEAS.md`, `MEMORY.md`, `maintenance-slas.md`
+- Fast-forwarded 9 commits from remote PRs
+
+#### auto_dj_script (+79/-45)
+- New `convert_to_mp3.py` utility
+- `autodj/core.py` refactoring (48 changes)
+- New test binary + tracklist update
+
+#### bobmani/hymnmania — Reverse Merges
+- `feat/comprehensive-docs-and-tts-params` reverse-merged (6 commits behind → caught up)
+- `feature/web-ui-and-parallelization` reverse-merged (6 commits behind → caught up)
+
+#### bobmani/ksm-v2 — Upstream
+- 34 new upstream commits merged
+
+### Submodule Pointer Updates (4)
+- `auto_dj_script`: `240d605` → `66f8474`
+- `bobmani/hymnmania`: `76f6253` → `d03d8eb`
+- `borg`: `3e309d9` → `12a6b58`
+- `planet_fitness_stepmaniax_agent`: `b365d19` → `692ce2d`
+
 ## [3.87.0] - 2026-05-21
 
 ### 🔧 Critical Fix: Jules Clone Blocker Resolved

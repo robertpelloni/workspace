@@ -91,3 +91,10 @@
 
 ## v3.87.0 Additions
 - [x] FIXED: bobfilez ai-file-sorter broken submodule pointer (Jules clone blocker)
+
+## v3.88.0 Additions
+- [x] borg→hypercode: Full branding migration across all packages and binaries
+- [x] planet_fitness_stepmaniax_agent: CRM pipeline, outreach docs, business templates
+- [x] auto_dj_script: New convert_to_mp3.py utility, core refactoring
+- [x] hymnmania: 2 feature branches reverse-merged (caught up to main)
+- [x] ksm-v2: 34 upstream commits merged
