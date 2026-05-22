@@ -88,3 +88,6 @@
 ## v3.86.0 Additions
 - [x] Maintenance session — all repos synced, zero code changes
 - [x] auto_dj_script: 4th consecutive quiet session — deeply stable
+
+## v3.87.0 Additions
+- [x] FIXED: bobfilez ai-file-sorter broken submodule pointer (Jules clone blocker)

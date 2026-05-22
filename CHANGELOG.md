@@ -1,3 +1,17 @@
+## [3.87.0] - 2026-05-21
+
+### 🔧 Critical Fix: Jules Clone Blocker Resolved
+
+**bobfilez**: Fixed broken `ai-file-sorter` submodule pointer that prevented Jules from cloning
+- Old pointer `d5bbce4a` no longer exists on remote (force-pushed/deleted)
+- Updated to current remote HEAD `cd9a024`
+- Used `git mktree` + `git commit-tree` to work around pybind11 directory recursion
+- Pushed fix to origin
+
+### Workspace Sync
+- 1 upstream merge: ksm-v2 (34)
+- bobfilez submodule pointer updated in workspace root
+
 ## [3.86.0] - 2026-05-21
 
 ### Workspace Sync

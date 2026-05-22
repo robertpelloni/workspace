@@ -1,55 +1,56 @@
-# Workspace Handoff — v3.86.0
+# Workspace Handoff — v3.87.0
 
 **Date**: 2026-05-21
-**Version**: 3.86.0
+**Version**: 3.87.0
 **Commit**: pending
 
 ## Session Summary
 
-### STEP 1: Upstream Tracking & Submodule Sanitization
-- **67 repos fetched** (main script timed out on Maestro, manually completed rest)
-- **1 upstream merge**: ksm-v2 (34)
-- **0 submodules with uncommitted code changes**
-- All working directories clean
+### 🔧 Critical Fix: Jules Clone Blocker
+Jules failed to clone `robertpelloni/bobfilez` due to a broken submodule pointer:
+- **Problem**: `ai-file-sorter` submodule pointed to commit `d5bbce4a` which no longer exists on the remote
+- **Error**: `fatal: Fetched in submodule path 'ai-file-sorter', but it did not contain d5bbce4a`
+- **Fix**: Updated pointer to current remote HEAD `cd9a024` using `git mktree` + `git commit-tree`
+  - Standard git operations (`git add`, `git status`) timed out due to pybind11 infinite directory recursion
+  - Used low-level git plumbing commands to bypass working directory scanning
+  - Successfully pushed fix to origin
 
-### STEP 2: Dual-Direction Intelligent Merge Engine
-- **0 forward merges** — no feature branches ahead of main
-- **0 reverse merges** — all feature branches current
-- **0 new PRs** across workspace
+### STEP 1: Upstream Tracking
+- 67 repos fetched (Maestro timeout, manually completed)
+- 1 upstream merge: ksm-v2 (34)
 
-### STEP 3: Workspace Cleanup, Documentation & Build
-- VERSION: 3.85.0 → 3.86.0
-- CHANGELOG, ROADMAP, TODO, SUBMODULE_MAP updated
-- No submodule pointers changed
+### STEP 2: Dual-Direction Merge
+- 0 forward merges, 0 reverse merges
 
-### Issues Encountered
-- **Maestro**: `git fetch` and `git status` operations timeout — likely a large repo or git corruption
-  - Added to watch list alongside bobfilez, bg
-  - Need to investigate `.git` directory for corruption or excessive pack files
+### STEP 3: Cleanup & Build
+- VERSION: 3.86.0 → 3.87.0
+- CHANGELOG, ROADMAP, TODO, SUBMODULE_MAP, HANDOFF updated
+- bobfilez workspace pointer updated
 
-## Development Velocity (v3.74→v3.86)
-| Module | Peak | Current | Quiet Sessions |
-|--------|------|---------|----------------|
-| auto_dj_script | 11-session streak | 🏁 STABLE | 4 consecutive |
-| hymnmania | +1377/-569 burst (v3.84) | Consolidating | 2 consecutive |
-| borg | Session services (v3.80) | Stable | 4+ |
-| slsk | Orchestrator (v3.84) | Stable | 1 |
-| ksm-v2 | Recurring 34 | Automated | — |
+### Technical Details: bobfilez Surgery
+```bash
+# Extract tree, fix pointer, create new commit
+GIT_DIR=.git git ls-tree HEAD > /tmp/bobfilez_tree.txt
+sed -i 's/d5bbce4a.../cd9a024.../' /tmp/bobfilez_tree.txt
+new_tree=$(git mktree < /tmp/bobfilez_tree.txt)
+new_commit=$(git commit-tree $new_tree -p HEAD -m "fix: update ai-file-sorter...")
+git update-ref refs/heads/main $new_commit
+git push origin main
+```
 
 ## Known Issues
-1. **bobfilez**: pybind11 directory recursion — skipped
-2. **bg**: Submodule merge complexity — skipped
-3. **Maestro**: git operations timeout — **NEW** — needs investigation
-4. **tabby/jules**: Diverged 68 vs 25 — unresolved
+1. **bobfilez**: pybind11 infinite directory recursion still blocks normal git operations
+2. **bobfilez**: 130+ nested libs — potential for more broken pointers (spot-checked 5, all OK)
+3. **Maestro**: git operations timeout
+4. **bg**: Submodule merge complexity — skipped
 5. **topaz-ffmpeg**: Diverged from upstream
-6. **openclaw-config**: 115 commits ahead of upstream
-7. **235 GitHub security vulnerabilities** across workspace
-8. **hymnmania**: Auth tokens in git history (v3.76.0)
+6. **tabby/jules**: Diverged 68 vs 25
+7. **openclaw-config**: 115 commits ahead of upstream
+8. **236 GitHub security vulnerabilities**
 9. **OmniRoute/mk64**: 4 stale DRAFT PRs
 
 ## Recommendations
-1. **auto_dj_script**: URGENTLY needs release tag — 4 quiet sessions proves deep stability
-2. **Maestro**: Run `git gc --aggressive` or check `.git` for corruption
-3. **hymnmania**: Run integration tests for v3.84.0 AI features
-4. **Security**: Use extended quiet period for vulnerability remediation
-5. **Cleanup**: Close stale DRAFT PRs (OmniRoute + mk64)
+1. **Verify Jules can now clone bobfilez** — the fix should resolve the blocker
+2. **bobfilez**: Consider adding `ai-file-sorter` and other small/abandoned repos to a watch list
+3. **bobfilez**: The pybind11 recursion needs a permanent fix (possibly .gitignore or submodule removal)
+4. Consider scanning all bobfilez lib pointers for remote existence

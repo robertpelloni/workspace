@@ -71,3 +71,8 @@
 ## v3.86.0 Updates
 - [ ] Maestro: git operations timeout — needs investigation
 - [ ] auto_dj_script: 4 quiet sessions — overdue for release tag
+
+## v3.87.0 Updates
+- [x] bobfilez: ai-file-sorter pointer fixed (d5bbce4a→cd9a024)
+- [ ] bobfilez: 130+ nested libs — spot-check more submodule pointers for remote existence
+- [ ] bobfilez: pybind11 infinite directory recursion still blocks git operations
