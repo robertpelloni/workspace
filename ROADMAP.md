@@ -119,3 +119,12 @@
 - [x] slsk: Webapp main + orchestrator + template updates
 - [x] hymnmania: Merge resolution on hymn_remaker files
 - [x] JWildfire: Large file cleanup
+
+## v3.92.0 Changes
+- [x] CRITICAL FIX: bobfilez stale submodule pointers (bobgui, bobui, btk) — Jules clone error resolved
+- [x] bobdesk: 25 Copilot feature branches forward-merged into master
+- [x] 10 repos with forward merges (25 total branches)
+- [x] 5 repos with reverse merges
+- [x] 4 repos auto-committed
+- [x] 17 submodule pointers updated
+- [x] superdawmcp: Major rewrite — Ableton Python OSC removed, Bitwig Java MCP extension added

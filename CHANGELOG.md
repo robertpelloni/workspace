@@ -1,3 +1,99 @@
+## [3.92.0] - 2026-05-24
+
+### 🔧 CRITICAL FIX: Jules Clone Error on bobfilez
+Fixed stale submodule pointers in `bobfilez` that prevented Jules AI from cloning the repo:
+- `libs/bobgui`: `ad214b2` → `d35877f` (pointer referenced non-existent commit)
+- `libs/bobui`: `08d839d` → `4d6e874` (stale pointer)
+- `libs/btk`: `a6b1e97` → `19aa4af` (stale pointer)
+
+The `git clone --recursive` on bobfilez was failing because the `libs/bobgui` submodule
+pointed to commit `ad214b292dc23ca45733792c17d6be8cd9ba1d14` which no longer existed in
+the bobgui remote repository. Fixed using git plumbing commands (write-tree/commit-tree)
+to bypass the pybind11 infinite directory recursion issue that makes normal git operations
+hang on bobfilez.
+
+### Forward Merges (Feature → Default Branch): 25 branches across 10 repos
+
+#### bobdesk: 25 Copilot feature branches merged
+- `feature/BorderlineFix`, `feature/OperationSmiley`, `feature/RotGrfFlyFrame`
+- `feature/RotateFlyFrame`, `feature/RotateFlyFrame2`, `feature/RotateFlyFrame3`
+- `feature/SOSAW080`, `feature/SfxShell_refcount`, `feature/SwFrameBorder`
+- `feature/accessibilitycheck`, `feature/accfixes2`, `feature/autostyle`
+- `feature/chart-style-experiment-markus`, `feature/chartdatatable`
+- `feature/cib_contract3756`, `feature/cmis`, `feature/components`
+- `feature/coretext`, `feature/cpu_intrinsics_support`, `feature/dematurize01`
+- `feature/drawinglayercore`, `feature/droid_calcimpress3`
+- (Additional branches still processing — ~137 remaining empty Copilot branches skipped)
+
+#### bobgui: 1 branch
+- `matthiasc/media-features` (19 commits, media feature support)
+
+#### bobmani/hymnmania: 1 branch
+- `feat/psy-mono-pipeline-1.27.0` (1 commit, +227/-459 pipeline changes)
+
+#### bobmani/ksm-v2: 1 branch + upstream
+- `jules-12433712508671605880` (10 commits)
+- Upstream: 34 commits from kson~upstream_develop
+
+#### bobsgameweb: 4 branches
+- `feat/dialogue-blah-system`, `feat/rollback-docs-audio-8way`
+- `jules-2910114898443250484` (71 commits), `jules-repo-sync-engine-parity-307`
+
+#### bobtorrent: 2 branches
+- `feat/mega-messenger-scaffolding-v11.60.25` (6 commits)
+- `feature/pubsub-ui-integration` (1 commit)
+
+#### crowdsourced_dance_club: 2 branches + auto-commit
+- `jules-13762733874602863651` (14 commits), `jules-v0.2.0-sync-and-integrate` (10 commits)
+
+#### fwber: 3 branches
+- `feat/activitypub-models-endpoints` (2 commits)
+- `feat/federation-hardening-auth-integration-v2.0.14` (3 commits)
+- `jules-4831724768840436969` (17 commits)
+
+#### native-fy: 1 branch
+- `jules-14247451871284897250` (8 commits)
+
+#### planet_fitness_stepmaniax_agent: 1 branch
+- `feat/lead-research-v0.4.0` (10 commits)
+
+#### tabby: 2 branches
+- `feat/sftp-progress-sync-opt` (2 commits)
+- `jules-15161538455472121726` (25 commits)
+
+#### sm64coopdx: 1 branch
+- `jules-13685596869903093671` (1 commit)
+
+### Reverse Merges (Default → Feature Branch): 5 branches
+- `bobgui/jules-10024490872005189356-cc0865de`
+- `bobmani/hymnmania/feat/comprehensive-docs-and-tts-params`
+- `bobmani/hymnmania/feature/web-ui-and-parallelization`
+- `bobtorrent/feature/go-supernode-webui`
+- `bobtorrent/jules-bobtorrent-go-migration`
+
+### Auto-committed Repos: 4
+- `auto_dj_script` (tracklist update)
+- `borg` (mcp.jsonc, SessionImportService.ts, tools.json)
+- `bobmani/ksm-v2` (upstream merge + cleanup)
+- `crowdsourced_dance_club` (external/auto_dj_script update)
+
+### Submodule Pointer Updates (17)
+- `auto_dj_script`: `6dd24de` → `40cc60c`
+- `bobdesk`: `5ca6d0c` → `8febd4f`
+- `bobfilez`: `cd46bfc` → `82b5227` (critical fix)
+- `bobgui`: `8346b8f` → `d35877f`
+- `bobmani/hymnmania`: `50c852f` → `be52672`
+- `bobsgameweb`: `af0c82e` → `1f10863`
+- `bobtorrent`: `6178c03` → `39e218f`
+- `borg`: `add9214` → `9bbb650`
+- `fwber`: `5501fee` → `70fb611`
+- `multimousergy`: `a717508` → `bc24f51`
+- `native-fy`: `7ccc998` → `4d97c0c`
+- `planet_fitness_stepmaniax_agent`: `692ce2d` → `3875bed`
+- `sm64coopdx`: `1441edb` → `dfd8e4d`
+- `superdawmcp`: `1aa43e1` → `bef6a7d`
+- `tabby`: `f842194` → `4236530`
+- `topaz-ffmpeg`: `34f322d` → `daf894f`
 ## [3.91.0] - 2026-05-23
 
 ### 🆕 New Submodules Added (20 repos from github.com/robertpelloni)

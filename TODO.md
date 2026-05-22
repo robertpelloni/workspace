@@ -103,3 +103,11 @@
 - [ ] JWildfire: Large Java repo — may need .gitignore for build artifacts
 - [ ] element-web: Large Matrix client fork — check for upstream remote
 - [ ] Verify all 20 new submodules have proper .gitmodules configuration
+
+## v3.92.0 Follow-ups
+- [ ] bobdesk: ~112 remaining Copilot feature branches (mostly empty AI-generated, low priority)
+- [ ] bobfilez: Add .gitignore for pybind11 directory to prevent infinite recursion
+- [ ] bobfilez: Protect submodule pointer updates from being overwritten by `git add -A`
+- [ ] superdawmcp: Validate Bitwig MCP extension builds correctly
+- [ ] fwber: Verify ActivityPub federation hardening changes
+- [ ] tabby: Verify SFTP progress sync changes
