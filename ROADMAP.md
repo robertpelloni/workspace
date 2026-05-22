@@ -70,3 +70,13 @@
 ## v3.83.0 Additions
 - [x] hymnmania: NEW cdp_extract.py + extract_fresh.py extraction tools
 - [x] auto_dj_script: First quiet session after 11-session streak (may be stabilizing)
+
+## v3.84.0 Additions
+- [x] hymnmania: MASSIVE AI integration (+1377/-569)
+  - AI video generation pipeline (ai_video.py, local_video_generator.py)
+  - Google Gemini AI content generation (gemini_generator.py)
+  - Udio OAuth remix engine (udio_oauth_remaker.py)
+  - Video uploader improvements (+200/-)
+  - Curated quotes dataset (quotes.json)
+- [x] slsk: orchestrator service improvements (+35/-12)
+- [x] auto_dj_script: confirmed stabilizing (2nd quiet session)

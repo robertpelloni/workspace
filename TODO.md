@@ -56,3 +56,10 @@
 ## v3.83.0 Updates
 - [ ] hymnmania: cdp_extract.py and extract_fresh.py need documentation and testing
 - [ ] auto_dj_script: Monitor if 11-session streak has stabilized — potential release candidate
+
+## v3.84.0 Updates
+- [ ] hymnmania: ai_video.py needs validation with real video generation
+- [ ] hymnmania: gemini_generator.py needs Gemini API key configuration
+- [ ] hymnmania: udio_oauth_remaker.py needs OAuth flow testing
+- [ ] hymnmania: requirements.txt has new dependencies — needs pip install
+- [ ] auto_dj_script: confirmed stable — evaluate for release tag

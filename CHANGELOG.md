@@ -1,3 +1,35 @@
+## [3.84.0] - 2026-05-21
+
+### 🔥 MAJOR: hymnmania Massive AI Integration Update (+1377/-569)
+
+#### Upstream Merges
+- **bobmani/ksm-v2**: 34 new upstream commits (recurring)
+
+#### Reverse Merges (2)
+- **bobmani/hymnmania/feat/comprehensive-docs-and-tts-params**: main→feature (2)
+- **bobmani/hymnmania/feature/web-ui-and-parallelization**: main→feature (2)
+
+#### Submodule Pointer Updates (2 modules)
+bobmani/hymnmania, slsk_discography_downloader_script
+
+#### Uncommitted Changes Synced (3 submodules)
+- **bobmani/hymnmania**: 🔥 MASSIVE AI video/music integration (+1377/-569, 14 files, 5 NEW)
+  - NEW: `ai_video.py` — AI video generation pipeline (+136)
+  - NEW: `gemini_generator.py` — Google Gemini AI content generation (+230)
+  - NEW: `local_video_generator.py` — Local video generation (+147)
+  - NEW: `quotes.json` — Curated quotes dataset (+23)
+  - NEW: `udio_oauth_remaker.py` — Udio OAuth-based remix engine (+162)
+  - NEW: `refresh_udio_token.py` — Token refresh utility (+76)
+  - Modified: main.py (major refactor +419/-?), app.py, api.py, settings.py
+  - Modified: suno_remaker.py (significant -205), udio_remaker.py (+308/-), video_uploader.py (+200/-)
+  - Modified: requirements.txt (+46/-) — new dependencies
+- **slsk_discography_downloader_script**: orchestrator service (+35/-12)
+- **bobmani/ksm-v2**: kson upstream_develop merge fix
+
+### Notable
+- **auto_dj_script**: 2nd consecutive quiet session — confirmed stabilizing
+- **hymnmania**: Largest update ever — AI video generation, Gemini integration, OAuth remix
+
 ## [3.83.0] - 2026-05-21
 
 ### Workspace Sync
