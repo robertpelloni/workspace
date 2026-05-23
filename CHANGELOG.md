@@ -1,3 +1,35 @@
+## [3.93.0] - 2026-05-25
+
+### 🔒 Security Remediation: Committed Secrets Removed
+- **fwber**: Removed `.env` file containing AWS Access Key, AWS Secret Key, and OpenAI API Key from git history using `git-filter-repo`. Added `.gitignore` for `.env` files.
+- **auto_dj_script**: Removed `final_dj_master_test.m4a` (126MB) from git history using `git-filter-repo`. This file exceeded GitHub's 100MB push limit. Added `.gitignore` for large media files.
+
+### Forward Merges: 5 branches across 5 repos
+- **OmniRoute**: `feat/go-port-and-ui-improvements` (14 commits)
+- **auto_dj_script**: `feature/v5-5-0-ultimate-console-evolution` (1 commit, +63/-36)
+- **auto_dj_script**: `jules-v6.7.0-parallel-engine-evolution` (11 commits)
+- **bobmani/ksm-v2**: `jules-12433712508671605880` (10 commits) + upstream (34 commits)
+- **crowdsourced_dance_club**: `jules-13762733874602863651` (14 commits)
+- **crowdsourced_dance_club**: `jules-v0.2.0-sync-and-integrate` (13 commits)
+- **tabby**: `feat/sftp-progress-sync-opt` (1 commit, 19 files)
+
+### Auto-committed Repos: 2
+- **bobmani/ksm-v2**: Upstream merge + cleanup
+- **crowdsourced_dance_club**: external/auto_dj_script submodule update
+
+### Submodule Pointer Updates (8)
+- `auto_dj_script`: `40cc60c` → `d760a58` (secret removal + .gitignore)
+- `bobmani/hymnmania`: `be52672` → `e67344d`
+- `fwber`: `70fb611` → `2609b91` (secret removal + .gitignore)
+- `multimousergy`: `bc24f51` → `2d31615`
+- `native-fy`: `4d97c0c` → `3349a3a`
+- `planet_fitness_stepmaniax_agent`: `3875bed` → `2639ee8`
+- `superdawmcp`: `bef6a7d` → `d5f3eae`
+- `topaz-ffmpeg`: `daf894f` → `704c4fa`
+
+### Known Issues
+- **fwber**: Force push pending — repo too large for current connection speed. Local history cleaned of secrets but remote still contains old commits with AWS/OpenAI keys.
+- **bobfilez**: Jules clone error for `libs/bobgui` — fix IS deployed to remote (verified via GitHub API). User may need to clear Jules cache or retry.
 ## [3.92.0] - 2026-05-24
 
 ### 🔧 CRITICAL FIX: Jules Clone Error on bobfilez

@@ -111,3 +111,10 @@
 - [ ] superdawmcp: Validate Bitwig MCP extension builds correctly
 - [ ] fwber: Verify ActivityPub federation hardening changes
 - [ ] tabby: Verify SFTP progress sync changes
+
+## v3.93.0 Follow-ups
+- [ ] fwber: Force push pending — need to complete push of rewritten history (secrets removed)
+- [ ] fwber: Rotate AWS and OpenAI API keys (already exposed in git history)
+- [ ] auto_dj_script: Verify all test tracks are excluded via .gitignore
+- [ ] Scan ALL repos for committed secrets (AWS keys, API tokens, etc.)
+- [ ] bobfilez: Verify Jules clone works with fixed submodule pointers

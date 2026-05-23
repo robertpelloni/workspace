@@ -1,105 +1,74 @@
-# Workspace Handoff — v3.92.0
+# Workspace Handoff — v3.93.0
 
-**Date**: 2026-05-24
-**Version**: 3.92.0
+**Date**: 2026-05-25
+**Version**: 3.93.0
 **Commit**: pending
 
 ## Session Summary
 
-### CRITICAL FIX: Jules Clone Error on bobfilez
-Jules AI could not clone `robertpelloni/bobfilez` due to stale submodule pointer for `libs/bobgui`
-referencing commit `ad214b292dc23ca45733792c17d6be8cd9ba1d14` which no longer exists in the remote.
+### 🔒 CRITICAL: Security Remediation — Committed Secrets Removed
 
-**Root Cause**: bobfilez's `.gitmodules` pointed `libs/bobgui` at a commit that was likely
-force-pushed or rebased away in the bobgui repo. The `--recursive` clone attempted to fetch
-this non-existent commit and failed.
+#### fwber — AWS + OpenAI Keys in .env
+GitHub push protection blocked fwber push due to committed secrets:
+- Amazon AWS Access Key ID (in `.env:2`)
+- Amazon AWS Secret Access Key (in `.env:3`)
+- OpenAI API Key (in `.env:7`)
 
-**Fix Applied**: Used git plumbing commands (write-tree, commit-tree, update-ref) to update
-all three stale robertpelloni submodule pointers in bobfilez:
-| Submodule | Old SHA | New SHA | Reason |
-|-----------|---------|---------|--------|
-| libs/bobgui | `ad214b2` | `d35877f` | Stale/missing commit (Jules error) |
-| libs/bobui | `08d839d` | `4d6e874` | Stale pointer |
-| libs/btk | `a6b1e97` | `19aa4af` | Stale pointer |
+**Fix**: Used `git-filter-repo --path .env --invert-paths` to remove all `.env` files from history. Added `.gitignore` for `.env*` patterns.
 
-**Important Note**: A subsequent `git add -A` in the auto-commit script overwrote our fix
-on the first attempt. The second fix was committed using plumbing commands only, bypassing
-the working directory entirely.
+**⚠️ PENDING**: Force push to remote has not completed — repo is too large (2679 commits, 4908 files) for the current connection speed. The local history is clean but the remote still contains the old commits with secrets. **KEYS MUST BE ROTATED** regardless.
 
-### STEP 1: Upstream Tracking & Submodule Sanitization
-- **Fetched**: 90 submodules across 4 batches (excluding topaz-ffmpeg, bobfilez, bg, Maestro)
-  - bobfilez was processed manually via plumbing commands
-- **1 upstream merge**: ksm-v2 (34 commits from kson~upstream_develop)
+#### auto_dj_script — 126MB .m4a File
+GitHub rejected push due to `final_dj_master_test.m4a` (126.13 MB) exceeding 100MB limit.
 
-### STEP 2: Dual-Direction Intelligent Merge Engine
+**Fix**: Used `git-filter-repo --path final_dj_master_test.m4a --invert-paths` to remove from history. Added `.gitignore` for large media files (`.m4a`, `.wav`, `.mp3`, `.flac`, `.ogg`, `.aiff`). Force push completed successfully.
 
-#### Forward Merges (25 branches across 10 repos)
-| Repo | Branches Merged | Key Changes |
-|------|----------------|-------------|
-| bobdesk | 25 | Copilot features (accessibility, calc, chart, cmis, components, coretext, etc.) |
-| bobgui | 1 | matthiasc/media-features (19 commits) |
-| bobmani/hymnmania | 1 | psy-mono-pipeline (+227/-459) |
-| bobmani/ksm-v2 | 1 | jules branch (10 commits) |
-| bobsgameweb | 4 | dialogue system, rollback docs, jules branches |
-| bobtorrent | 2 | mega-messenger, pubsub-ui |
-| crowdsourced_dance_club | 2 | jules branches (14+10 commits) |
-| fwber | 3 | ActivityPub models, federation hardening, jules branch |
-| native-fy | 1 | jules branch (8 commits) |
-| planet_fitness_stepmaniax_agent | 1 | lead-research-v0.4.0 (10 commits) |
-| tabby | 2 | sftp-progress-sync, jules branch (25 commits) |
-| sm64coopdx | 1 | jules branch |
+### bobfilez Submodule Pointer Fix (from v3.92.0)
+The fix for `libs/bobgui` stale pointer IS deployed to the remote (verified via GitHub API):
+```
+libs/bobgui: d35877f856ea110c521ad5d4a0e2acf3cd08d42c ✅
+libs/bobui: 4d6e874fcfdfbdf9a5783424d44f0d70fb65e8d4 ✅
+libs/btk: 19aa4af7b67e4062b70d4b199126543c162eaf83 ✅
+```
+If Jules still shows the old error, it may be caching the previous clone attempt.
 
-#### Reverse Merges (5 branches across 3 repos)
-| Repo | Branch |
-|------|--------|
-| bobgui | jules-10024490872005189356-cc0865de |
-| bobmani/hymnmania | feat/comprehensive-docs-and-tts-params |
-| bobmani/hymnmania | feature/web-ui-and-parallelization |
-| bobtorrent | feature/go-supernode-webui |
-| bobtorrent | jules-bobtorrent-go-migration |
+### STEP 1: Upstream Tracking
+- Fetched 90 submodules (excluded: topaz-ffmpeg, bobfilez, bg, Maestro)
+- 1 upstream merge: ksm-v2 (34 commits from kson~upstream_develop)
 
-#### Auto-committed Repos (4)
-- auto_dj_script (tracklist update)
-- borg (mcp.jsonc, SessionImportService.ts, tools.json)
-- bobmani/ksm-v2 (upstream merge + cleanup)
-- crowdsourced_dance_club (external/auto_dj_script update)
+### STEP 2: Forward Merges (5 branches, 5 repos)
+| Repo | Branch | Commits |
+|------|--------|---------|
+| OmniRoute | feat/go-port-and-ui-improvements | 14 |
+| auto_dj_script | feature/v5-5-0-ultimate-console-evolution | 1 |
+| auto_dj_script | jules-v6.7.0-parallel-engine-evolution | 11 |
+| bobmani/ksm-v2 | jules-12433712508671605880 | 10 |
+| crowdsourced_dance_club | jules-13762733874602863651 | 14 |
+| crowdsourced_dance_club | jules-v0.2.0-sync-and-integrate | 13 |
+| tabby | feat/sftp-progress-sync-opt | 1 |
 
-### STEP 3: Submodule Pointer Updates (17)
-| Submodule | Old → New |
-|-----------|-----------|
-| auto_dj_script | `6dd24de` → `40cc60c` |
-| bobdesk | `5ca6d0c` → `8febd4f` |
-| bobfilez | `cd46bfc` → `82b5227` ⚠️ critical fix |
-| bobgui | `8346b8f` → `d35877f` |
-| bobmani/hymnmania | `50c852f` → `be52672` |
-| bobsgameweb | `af0c82e` → `1f10863` |
-| bobtorrent | `6178c03` → `39e218f` |
-| borg | `add9214` → `9bbb650` |
-| fwber | `5501fee` → `70fb611` |
-| multimousergy | `a717508` → `bc24f51` |
-| native-fy | `7ccc998` → `4d97c0c` |
-| planet_fitness_stepmaniax_agent | `692ce2d` → `3875bed` |
-| sm64coopdx | `1441edb` → `dfd8e4d` |
-| superdawmcp | `1aa43e1` → `bef6a7d` |
-| tabby | `f842194` → `4236530` |
-| topaz-ffmpeg | `34f322d` → `daf894f` |
-
-### Notable Module Changes
-- **superdawmcp**: Major architecture rewrite — removed Ableton Python OSC bridge,
-  added Bitwig Java MCP extension, Go client/server refactored, DAW driver cleanup
-  (+2100/-4888 lines across 86 files)
+### Submodule Pointer Updates (8)
+| Submodule | Old → New | Reason |
+|-----------|-----------|--------|
+| auto_dj_script | `40cc60c` → `d760a58` | Secret/large file removal |
+| bobmani/hymnmania | `be52672` → `e67344d` | Sync |
+| fwber | `70fb611` → `2609b91` | Secret removal |
+| multimousergy | `bc24f51` → `2d31615` | Sync |
+| native-fy | `4d97c0c` → `3349a3a` | Sync |
+| planet_fitness_stepmaniax_agent | `3875bed` → `2639ee8` | Sync |
+| superdawmcp | `bef6a7d` → `d5f3eae` | Sync |
+| topaz-ffmpeg | `daf894f` → `704c4fa` | Drift |
 
 ## Known Issues & Blockers
-1. **bobdesk**: ~112 remaining Copilot feature branches (mostly empty, low priority)
-2. **bobfilez**: `git add -A` overwrites submodule pointer fixes — must use plumbing commands
-3. **bobfilez**: pybind11 infinite directory recursion — normal git operations hang
-4. **bg**: Submodule merge complexity — still excluded
-5. **Maestro**: git operations timeout — still excluded
-6. **topaz-ffmpeg**: Diverged from upstream — still excluded from sync
-7. **236 GitHub security vulnerabilities** (unchanged)
+1. **fwber**: Force push pending — secrets removed from local history but remote unchanged
+2. **fwber**: AWS and OpenAI API keys MUST be rotated (exposed in git history on remote)
+3. **bobfilez**: Jules clone error may persist due to caching (fix is deployed)
+4. **bobdesk**: ~112 remaining Copilot feature branches (low priority)
+5. **bg, Maestro**: Still excluded from sync
+6. **236 GitHub security vulnerabilities**
 
-## Recommendations
-1. **bobfilez**: Add `.gitignore` for pybind11 nested directories to prevent recursion
-2. **bobfilez**: Pin submodule pointers in a pre-commit hook to prevent `git add -A` overwrites
-3. **bobdesk**: Consider bulk-deleting empty Copilot branches to reduce sync time
-4. **New submodules**: Verify upstream remotes are configured for all 20 repos added in v3.91.0
+## URGENT: Key Rotation Required
+The following keys were found committed in fwber's `.env` file and must be rotated:
+1. Amazon AWS Access Key ID
+2. Amazon AWS Secret Access Key
+3. OpenAI API Key

@@ -128,3 +128,9 @@
 - [x] 4 repos auto-committed
 - [x] 17 submodule pointers updated
 - [x] superdawmcp: Major rewrite — Ableton Python OSC removed, Bitwig Java MCP extension added
+
+## v3.93.0 Changes
+- [x] Security fix: Removed committed AWS/OpenAI secrets from fwber history
+- [x] Security fix: Removed 126MB .m4a file from auto_dj_script history
+- [x] 5 forward merges across 5 repos
+- [x] 2 auto-committed repos
