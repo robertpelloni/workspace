@@ -1,3 +1,56 @@
+## [3.94.0] - 2026-05-25
+
+### 🐛 Critical Fix: Jules Clone Compatibility for bobfilez
+- **ai-file-sorter**: Updated stale pointer `d5bbce4` → `cd9a024` (old SHA no longer exists on remote, was blocking Jules `--shallow-submodules` clone)
+- **libs/dokany**: Updated stale pointer `ae68a92` → `c7a59fc` (remote master HEAD)
+- **libs/pngquant**: Updated stale pointer `71dfd4c` → `5b4e91f` (remote main HEAD)
+- **libs/bobgui**: Updated pointer `d35877f` → `ad214b2` (latest pushed, matches remote)
+- Performed comprehensive stale-pointer audit across all 140+ bobfilez submodules using GitHub API `/git/commits/{sha}` endpoint — no additional stale pointers found
+
+### Forward Merges: 10 branches across 7 repos
+- **OmniRoute**: `feat/go-port-and-ui-improvements` (14 commits, 2910 files)
+- **auto_dj_script**: `feature/v5-5-0-ultimate-console-evolution` (3 commits)
+- **auto_dj_script**: `jules-v6.7.0-parallel-engine-evolution` (56 commits)
+- **bobmani/hymnmania**: `feat/psy-mono-pipeline-1.27.0` (1 commit, 36 files)
+- **bobmani/ksm-v2**: `jules-12433712508671605880` (10 commits, 63 files)
+- **crowdsourced_dance_club**: `jules-13762733874602863651` (14 commits, 37 files)
+- **crowdsourced_dance_club**: `jules-v0.2.0-sync-and-integrate` (18 commits, 45 files)
+- **native-fy**: `jules-14247451871284897250` (8 commits, 20 files)
+- **planet_fitness_stepmaniax_agent**: `feat/lead-research-v0.4.0` (7 commits, 40 files)
+- **tabby**: `feat/sftp-progress-sync-opt` (1 commit, 19 files)
+
+### Reverse Merges: 10 branches across 5 repos
+- **auto_dj_script**: 3 branches (feature/multiband-compression-audit, feature/v5-5-0, jules-v6.7.0)
+- **bobgui**: jules-10024490872005189356-cc0865de
+- **bobmani/hymnmania**: 2 branches (comprehensive-docs-and-tts, web-ui-and-parallelization)
+- **bobmani/ksm-v2**: jules/feature/configurable-songs-dir
+- **fwber**: 3 branches (activitypub, federation-hardening, jules-4831724768840436969)
+
+### Upstream Merges: 2 repos
+- **bobmani/ksm-v2**: upstream/develop (34 commits) — resolved conflicts in `ksmaudio~upstream_develop` and `kson~upstream_develop` submodules
+- **topaz-ffmpeg**: upstream/master (11 commits)
+
+### Auto-committed: 1 repo
+- **crowdsourced_dance_club**: external/auto_dj_script submodule update
+
+### Submodule Pointer Updates (9)
+- `bobfilez`: `82b5227` → `03b7fa4` (stale pointer fix for Jules)
+- `bobgui`: `d35877f` → `188bfa1`
+- `bobmani/hymnmania`: `e67344d` → `6cfb6cb`
+- `bobmani/ksm-v2`: `e1f49c4` → `79ac9f3`
+- `multimousergy`: `2d31615` → `b071c79`
+- `native-fy`: `3349a3a` → `27c4034`
+- `planet_fitness_stepmaniax_agent`: `2639ee8` → `1339230`
+- `superdawmcp`: `d5f3eae` → `b878ab6`
+- `topaz-ffmpeg`: `704c4fa` → `b974937`
+
+### Script Fixes
+- **start.bat**: Fixed `hypercode\hyperharness\research\hyperharness` → `hyperharness` (broken path from branding migration)
+
+### Known Issues
+- **fwber**: Force push of secrets-purged history still pending (repo too large for current connection)
+- **fwber**: AWS and OpenAI API keys MUST be rotated (still exposed on remote)
+- **236+ GitHub security vulnerabilities** (3 critical, 106 high)
 ## [3.93.0] - 2026-05-25
 
 ### 🔒 Security Remediation: Committed Secrets Removed

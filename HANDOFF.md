@@ -1,74 +1,80 @@
-# Workspace Handoff — v3.93.0
+# Workspace Handoff — v3.94.0
 
 **Date**: 2026-05-25
-**Version**: 3.93.0
+**Version**: 3.94.0
 **Commit**: pending
 
 ## Session Summary
 
-### 🔒 CRITICAL: Security Remediation — Committed Secrets Removed
+### 🐛 Critical Fix: Jules Clone Error Resolved
 
-#### fwber — AWS + OpenAI Keys in .env
-GitHub push protection blocked fwber push due to committed secrets:
-- Amazon AWS Access Key ID (in `.env:2`)
-- Amazon AWS Secret Access Key (in `.env:3`)
-- OpenAI API Key (in `.env:7`)
-
-**Fix**: Used `git-filter-repo --path .env --invert-paths` to remove all `.env` files from history. Added `.gitignore` for `.env*` patterns.
-
-**⚠️ PENDING**: Force push to remote has not completed — repo is too large (2679 commits, 4908 files) for the current connection speed. The local history is clean but the remote still contains the old commits with secrets. **KEYS MUST BE ROTATED** regardless.
-
-#### auto_dj_script — 126MB .m4a File
-GitHub rejected push due to `final_dj_master_test.m4a` (126.13 MB) exceeding 100MB limit.
-
-**Fix**: Used `git-filter-repo --path final_dj_master_test.m4a --invert-paths` to remove from history. Added `.gitignore` for large media files (`.m4a`, `.wav`, `.mp3`, `.flac`, `.ogg`, `.aiff`). Force push completed successfully.
-
-### bobfilez Submodule Pointer Fix (from v3.92.0)
-The fix for `libs/bobgui` stale pointer IS deployed to the remote (verified via GitHub API):
+The Jules clone failure for `bobfilez` was caused by stale submodule pointer for `ai-file-sorter`:
 ```
-libs/bobgui: d35877f856ea110c521ad5d4a0e2acf3cd08d42c ✅
-libs/bobui: 4d6e874fcfdfbdf9a5783424d44f0d70fb65e8d4 ✅
-libs/btk: 19aa4af7b67e4062b70d4b199126543c162eaf83 ✅
+fatal: Fetched in submodule path 'ai-file-sorter', but it did not contain d5bbce4a3c3694b1b74c22822aaf114523f5c9f2.
+Direct fetching of that commit failed.
 ```
-If Jules still shows the old error, it may be caching the previous clone attempt.
+
+**Root Cause**: The remote `hyperfield/ai-file-sorter` repo had been force-pushed or rebased, making the old SHA `d5bbce4` no longer exist on the remote. Jules uses `--shallow-submodules` which requires fetching the exact recorded commit SHA.
+
+**Fix**: Updated the pointer to the current remote HEAD `cd9a024`. Also fixed `libs/dokany` and `libs/pngquant` which had similar stale pointers.
+
+**Verification**: Comprehensive audit of all 140+ bobfilez submodules using GitHub API `/git/commits/{sha}` endpoint confirmed no additional stale pointers.
 
 ### STEP 1: Upstream Tracking
-- Fetched 90 submodules (excluded: topaz-ffmpeg, bobfilez, bg, Maestro)
-- 1 upstream merge: ksm-v2 (34 commits from kson~upstream_develop)
+- 2 upstream merges: ksm-v2 (34 commits from upstream/develop), topaz-ffmpeg (11 commits from upstream/master)
+- ksm-v2 merge required conflict resolution for `ksmaudio~upstream_develop` and `kson~upstream_develop` submodule path conflicts
 
-### STEP 2: Forward Merges (5 branches, 5 repos)
-| Repo | Branch | Commits |
-|------|--------|---------|
-| OmniRoute | feat/go-port-and-ui-improvements | 14 |
-| auto_dj_script | feature/v5-5-0-ultimate-console-evolution | 1 |
-| auto_dj_script | jules-v6.7.0-parallel-engine-evolution | 11 |
-| bobmani/ksm-v2 | jules-12433712508671605880 | 10 |
-| crowdsourced_dance_club | jules-13762733874602863651 | 14 |
-| crowdsourced_dance_club | jules-v0.2.0-sync-and-integrate | 13 |
-| tabby | feat/sftp-progress-sync-opt | 1 |
+### STEP 2: Dual-Direction Merge Engine
 
-### Submodule Pointer Updates (8)
+**Forward Merges (10 branches, 7 repos)**:
+| Repo | Branch | Commits | Files |
+|------|--------|---------|-------|
+| OmniRoute | feat/go-port-and-ui-improvements | 14 | 2910 |
+| auto_dj_script | feature/v5-5-0-ultimate-console-evolution | 3 | 48 |
+| auto_dj_script | jules-v6.7.0-parallel-engine-evolution | 56 | 20 |
+| bobmani/hymnmania | feat/psy-mono-pipeline-1.27.0 | 1 | 36 |
+| bobmani/ksm-v2 | jules-12433712508671605880 | 10 | 63 |
+| crowdsourced_dance_club | jules-13762733874602863651 | 14 | 37 |
+| crowdsourced_dance_club | jules-v0.2.0-sync-and-integrate | 18 | 45 |
+| native-fy | jules-14247451871284897250 | 8 | 20 |
+| planet_fitness_stepmaniax_agent | feat/lead-research-v0.4.0 | 7 | 40 |
+| tabby | feat/sftp-progress-sync-opt | 1 | 19 |
+
+**Reverse Merges (10 branches, 5 repos)**:
+- auto_dj_script: 3 branches
+- bobgui: 1 branch
+- bobmani/hymnmania: 2 branches
+- bobmani/ksm-v2: 1 branch
+- fwber: 3 branches
+
+### STEP 3: Cleanup & Build
+- Fixed start.bat broken path (`hypercode\hyperharness\research\hyperharness` → `hyperharness`)
+- 9 submodule pointer updates
+- Build: pending
+
+### Submodule Pointer Updates (9)
 | Submodule | Old → New | Reason |
 |-----------|-----------|--------|
-| auto_dj_script | `40cc60c` → `d760a58` | Secret/large file removal |
-| bobmani/hymnmania | `be52672` → `e67344d` | Sync |
-| fwber | `70fb611` → `2609b91` | Secret removal |
-| multimousergy | `bc24f51` → `2d31615` | Sync |
-| native-fy | `4d97c0c` → `3349a3a` | Sync |
-| planet_fitness_stepmaniax_agent | `3875bed` → `2639ee8` | Sync |
-| superdawmcp | `bef6a7d` → `d5f3eae` | Sync |
-| topaz-ffmpeg | `daf894f` → `704c4fa` | Drift |
+| bobfilez | `82b5227` → `03b7fa4` | Stale pointer fix |
+| bobgui | `d35877f` → `188bfa1` | Forward merge |
+| bobmani/hymnmania | `e67344d` → `6cfb6cb` | Forward merge |
+| bobmani/ksm-v2 | `e1f49c4` → `79ac9f3` | Upstream merge |
+| multimousergy | `2d31615` → `b071c79` | Jules branch fast-forward |
+| native-fy | `3349a3a` → `27c4034` | Forward merge |
+| planet_fitness_stepmaniax_agent | `2639ee8` → `1339230` | Forward merge |
+| superdawmcp | `d5f3eae` → `b878ab6` | Jules branch fast-forward |
+| topaz-ffmpeg | `704c4fa` → `b974937` | Upstream merge |
 
 ## Known Issues & Blockers
-1. **fwber**: Force push pending — secrets removed from local history but remote unchanged
-2. **fwber**: AWS and OpenAI API keys MUST be rotated (exposed in git history on remote)
-3. **bobfilez**: Jules clone error may persist due to caching (fix is deployed)
-4. **bobdesk**: ~112 remaining Copilot feature branches (low priority)
-5. **bg, Maestro**: Still excluded from sync
-6. **236 GitHub security vulnerabilities**
+1. **fwber**: Force push of secrets-purged history still pending — repo too large (2679 commits, 4908 files)
+2. **fwber**: AWS and OpenAI API keys MUST be rotated (still exposed in remote git history)
+3. **bobfilez**: 3 submodule pointers fixed for Jules clone; monitor for future staleness as upstream repos evolve
+4. **236+ GitHub security vulnerabilities** (3 critical, 106 high, 105 moderate, 21 low)
+5. **bobdesk**: ~112 remaining Copilot feature branches (low priority)
+6. **bg, Maestro**: Still excluded from sync
 
 ## URGENT: Key Rotation Required
-The following keys were found committed in fwber's `.env` file and must be rotated:
+The following keys were found committed in fwber's `.env` file (from v3.93.0):
 1. Amazon AWS Access Key ID
 2. Amazon AWS Secret Access Key
 3. OpenAI API Key

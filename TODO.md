@@ -118,3 +118,11 @@
 - [ ] auto_dj_script: Verify all test tracks are excluded via .gitignore
 - [ ] Scan ALL repos for committed secrets (AWS keys, API tokens, etc.)
 - [ ] bobfilez: Verify Jules clone works with fixed submodule pointers
+
+## v3.94.0 Follow-ups
+- [ ] fwber: Complete force push of secrets-purged history
+- [ ] fwber: Rotate AWS and OpenAI API keys (URGENT)
+- [ ] Scan all repos for committed secrets proactively
+- [ ] Verify Jules can successfully clone bobfilez after stale pointer fixes
+- [ ] Consider adding pre-push hook to prevent committing .env files
+- [ ] Consider Git LFS migration for large binary assets

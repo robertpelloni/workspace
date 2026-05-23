@@ -134,3 +134,12 @@
 - [x] Security fix: Removed 126MB .m4a file from auto_dj_script history
 - [x] 5 forward merges across 5 repos
 - [x] 2 auto-committed repos
+
+## v3.94.0 Changes
+- [x] Fix Jules clone error: ai-file-sorter stale pointer in bobfilez
+- [x] Fix additional stale pointers: dokany, pngquant in bobfilez
+- [x] Comprehensive stale-pointer audit across all 140+ bobfilez submodules
+- [x] 10 forward merges across 7 repos
+- [x] 10 reverse merges across 5 repos
+- [x] 2 upstream merges (ksm-v2, topaz-ffmpeg)
+- [x] Fix start.bat broken path from branding migration

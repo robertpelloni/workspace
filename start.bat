@@ -1,7 +1,7 @@
 @echo off
 echo ============================================
-echo  Starting Workspace Tools
-echo  Tabby + Pi + HyperHarness
+echo Starting Workspace Tools
+echo Tabby + Pi + HyperHarness
 echo ============================================
 echo.
 
@@ -15,10 +15,10 @@ start "" cmd /k "pi"
 
 :: --- HyperHarness (Go backend) ---
 echo [3/3] Starting HyperHarness...
-cd /d "%~dp0hypercode\hyperharness\research\hyperharness"
+cd /d "%~dp0hyperharness"
 where go >nul 2>nul
 if errorlevel 1 (
-    echo   WARNING: Go not found. Skipping HyperHarness.
+    echo WARNING: Go not found. Skipping HyperHarness.
 ) else (
     start "" cmd /k "go run . serve"
 )
