@@ -1,77 +1,55 @@
-# Workspace Handoff — v3.94.0
+# Workspace Handoff — v3.96.0
 
 **Date**: 2026-05-25
-**Version**: 3.94.0
+**Version**: 3.96.0
 **Commit**: pending
 
 ## Session Summary
 
-### 🐛 Critical Fix: Jules Clone Error Resolved
-
-The Jules clone failure for `bobfilez` was caused by stale submodule pointer for `ai-file-sorter`:
-```
-fatal: Fetched in submodule path 'ai-file-sorter', but it did not contain d5bbce4a3c3694b1b74c22822aaf114523f5c9f2.
-Direct fetching of that commit failed.
-```
-
-**Root Cause**: The remote `hyperfield/ai-file-sorter` repo had been force-pushed or rebased, making the old SHA `d5bbce4` no longer exist on the remote. Jules uses `--shallow-submodules` which requires fetching the exact recorded commit SHA.
-
-**Fix**: Updated the pointer to the current remote HEAD `cd9a024`. Also fixed `libs/dokany` and `libs/pngquant` which had similar stale pointers.
-
-**Verification**: Comprehensive audit of all 140+ bobfilez submodules using GitHub API `/git/commits/{sha}` endpoint confirmed no additional stale pointers.
-
 ### STEP 1: Upstream Tracking
-- 2 upstream merges: ksm-v2 (34 commits from upstream/develop), topaz-ffmpeg (11 commits from upstream/master)
-- ksm-v2 merge required conflict resolution for `ksmaudio~upstream_develop` and `kson~upstream_develop` submodule path conflicts
+- 84/90 submodules fetched successfully
+- 3 upstream merges: bobeditpro (2), bobtorrent (3), topaz-ffmpeg (28)
+- element-web and fwber fetches consistently timeout (>60s)
 
 ### STEP 2: Dual-Direction Merge Engine
 
-**Forward Merges (10 branches, 7 repos)**:
+**Forward Merges (7 branches, 5 repos)**:
 | Repo | Branch | Commits | Files |
 |------|--------|---------|-------|
 | OmniRoute | feat/go-port-and-ui-improvements | 14 | 2910 |
-| auto_dj_script | feature/v5-5-0-ultimate-console-evolution | 3 | 48 |
-| auto_dj_script | jules-v6.7.0-parallel-engine-evolution | 56 | 20 |
-| bobmani/hymnmania | feat/psy-mono-pipeline-1.27.0 | 1 | 36 |
-| bobmani/ksm-v2 | jules-12433712508671605880 | 10 | 63 |
+| bobtorrent | feat/mega-messenger-scaffolding | 1 | 10 |
 | crowdsourced_dance_club | jules-13762733874602863651 | 14 | 37 |
-| crowdsourced_dance_club | jules-v0.2.0-sync-and-integrate | 18 | 45 |
-| native-fy | jules-14247451871284897250 | 8 | 20 |
-| planet_fitness_stepmaniax_agent | feat/lead-research-v0.4.0 | 7 | 40 |
-| tabby | feat/sftp-progress-sync-opt | 1 | 19 |
+| crowdsourced_dance_club | jules-v0.2.0-sync-and-integrate | 12 | 68 |
+| native-fy | jules-14247451871284897250 | 14 | 31 |
+| planet_fitness_stepmaniax_agent | feat/lead-research-v0.4.0 | 14 | 44 |
+| tabby | feat/sftp-progress-sync-opt | 18 | 145 |
 
-**Reverse Merges (10 branches, 5 repos)**:
-- auto_dj_script: 3 branches
-- bobgui: 1 branch
-- bobmani/hymnmania: 2 branches
-- bobmani/ksm-v2: 1 branch
-- fwber: 3 branches
+**Reverse Merges (13 branches, 7 repos)**:
+- auto_dj_script: 3 | bobeditpro: 2 | bobtorrent: 2 | borg: 1
+- fwber: 3 | tabby: 2
 
-### STEP 3: Cleanup & Build
-- Fixed start.bat broken path (`hypercode\hyperharness\research\hyperharness` → `hyperharness`)
-- 9 submodule pointer updates
-- Build: pending
+**Skipped (too large)**:
+- bobdesk: 3 feature branches (1200-1386 commits each)
+- bobeditpro: 3 copilot branches (20K+ commits each)
+- litellm: 12+ feature branches (up to 38K commits each)
 
-### Submodule Pointer Updates (9)
-| Submodule | Old → New | Reason |
-|-----------|-----------|--------|
-| bobfilez | `82b5227` → `03b7fa4` | Stale pointer fix |
-| bobgui | `d35877f` → `188bfa1` | Forward merge |
-| bobmani/hymnmania | `e67344d` → `6cfb6cb` | Forward merge |
-| bobmani/ksm-v2 | `e1f49c4` → `79ac9f3` | Upstream merge |
-| multimousergy | `2d31615` → `b071c79` | Jules branch fast-forward |
-| native-fy | `3349a3a` → `27c4034` | Forward merge |
-| planet_fitness_stepmaniax_agent | `2639ee8` → `1339230` | Forward merge |
-| superdawmcp | `d5f3eae` → `b878ab6` | Jules branch fast-forward |
-| topaz-ffmpeg | `704c4fa` → `b974937` | Upstream merge |
+### Security & Large File Remediation
+- **bobmani/ddc**: `DDC_FULL_RELEASE.zip` (1GB) + model files removed from git history via `git-filter-repo`. Force push completed. `.gitignore` added for `.pth`, `.p`, `DDC_FULL_RELEASE/`.
+
+### Auto-committed: 10 repos
+- bobdesk, bobfilez, bobmani/arrowvortex, bobmani/ddc, bobmani/hymnmania
+- borg, crowdsourced_dance_club, litellm (1279 files, 93K+ insertions), multimousergy, slsk_discography_downloader_script
+
+### Submodule Pointer Updates: 22
 
 ## Known Issues & Blockers
-1. **fwber**: Force push of secrets-purged history still pending — repo too large (2679 commits, 4908 files)
-2. **fwber**: AWS and OpenAI API keys MUST be rotated (still exposed in remote git history)
-3. **bobfilez**: 3 submodule pointers fixed for Jules clone; monitor for future staleness as upstream repos evolve
-4. **236+ GitHub security vulnerabilities** (3 critical, 106 high, 105 moderate, 21 low)
-5. **bobdesk**: ~112 remaining Copilot feature branches (low priority)
-6. **bg, Maestro**: Still excluded from sync
+1. **fwber**: Force push of secrets-purged history still pending — persistent timeout (repo too large, 2679 commits, 4908 files)
+2. **fwber**: ⚠️ AWS and OpenAI API keys MUST be rotated (exposed in remote git history)
+3. **element-web**: Fetch consistently times out (>60s) — massive repo
+4. **litellm**: 12+ large feature branches (up to 38K commits) — too large to merge
+5. **bobdesk**: 3 feature branches (1.2K-1.4K commits) — skipped
+6. **bobeditpro**: 3 copilot branches (20K+ commits) — permanently unmergeable
+7. **236+ GitHub security vulnerabilities** (3 critical)
 
 ## URGENT: Key Rotation Required
 The following keys were found committed in fwber's `.env` file (from v3.93.0):

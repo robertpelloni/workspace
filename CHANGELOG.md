@@ -1,3 +1,66 @@
+## [3.96.0] - 2026-05-25
+
+### Upstream Merges: 3 repos
+- **bobeditpro**: upstream/master (2 commits)
+- **bobtorrent**: upstream/master (3 commits)
+- **topaz-ffmpeg**: upstream/master (28 commits)
+
+### Forward Merges: 7 branches across 5 repos
+- **OmniRoute**: `feat/go-port-and-ui-improvements` (14 commits, 2910 files)
+- **bobtorrent**: `feat/mega-messenger-scaffolding` (1 commit, 10 files)
+- **crowdsourced_dance_club**: `jules-13762733874602863651` (14 commits, 37 files)
+- **crowdsourced_dance_club**: `jules-v0.2.0-sync-and-integrate` (12 commits, 68 files)
+- **native-fy**: `jules-14247451871284897250` (14 commits, 31 files)
+- **planet_fitness_stepmaniax_agent**: `feat/lead-research-v0.4.0` (14 commits, 44 files)
+- **tabby**: `feat/sftp-progress-sync-opt` (18 commits, 145 files)
+
+### Reverse Merges: 13 branches across 7 repos
+- **auto_dj_script**: 3 branches (multiband-compression-audit, v5-5-0, jules-v6.7.0)
+- **bobeditpro**: 2 branches (audition-parity-roadmap, bus-tracks-and-docs)
+- **bobtorrent**: 2 branches (go-supernode-webui, jules-bobtorrent-go-migration)
+- **borg**: jules-11468118918326359250
+- **fwber**: 3 branches (activitypub, federation-hardening, jules-4831724768840436969)
+- **tabby**: 2 branches (feat/real-pty-serial, jules-15161538455472121726)
+
+### Security & Large File Remediation: ddc
+- **bobmani/ddc**: Removed `DDC_FULL_RELEASE.zip` (1GB) and model files from git history using `git-filter-repo`. Added `.gitignore` for `.pth`, `.p`, and `DDC_FULL_RELEASE/`.
+
+### Auto-committed: 10 repos
+- bobdesk, bobfilez, bobmani/arrowvortex, bobmani/ddc, bobmani/hymnmania
+- borg, crowdsourced_dance_club, litellm (1279 files), multimousergy, slsk_discography_downloader_script
+
+### Submodule Pointer Updates (22)
+- OmniRoute, auto_dj_script, bobdesk, bobeditpro, bobfilez
+- bobmani/arrowvortex, bobmani/ddc, bobmani/hymnmania, bobsgameweb
+- bobtorrent, borg, dao, fwber (reverted to remote), jules-autopilot
+- litellm, multimousergy, native-fy, planet_fitness_stepmaniax_agent
+- slsk_discography_downloader_script, superdawmcp, tabby, topaz-ffmpeg
+
+### Known Issues
+- **fwber**: Force push of secrets-purged history still pending (repo too large)
+- **fwber**: AWS and OpenAI API keys MUST be rotated (exposed in remote history)
+- **element-web**: Fetch consistently times out (>60s)
+- **litellm**: 12+ feature branches skipped (>200 commits each, up to 38K)
+- **236+ GitHub security vulnerabilities**
+# Changelog
+
+## [3.95.0] — 2026-05-23
+
+### ✨ Highlights
+- **Comprehensive Workspace Sync**: Completed dual-direction intelligent merge protocol across high-priority submodules.
+- **Submodule Optimizations**:
+  - `auto_dj_script`: Integrated `soundfile` for faster loading and memory-safe sequential analysis.
+  - `OmniRoute`: Resolved redundant schema declarations and fixed circuit breaker initialization.
+  - `tabby`: Fixed case-sensitivity issue in handoff documentation.
+- **Branch Reconciliation**:
+  - `borg`: Merged `jules-features` and `nexus-active-memory` into `main`.
+  - `hymnmania`: Forward-merged 4 active feature branches and synchronized local optimizations.
+  - `slsk_discography_downloader_script`: Integrated `modular-refactor` and `dynamic-version-env` features.
+
+### 🔧 Maintenance
+- **Security Audit**: Audited `fwber` for secrets and removed legacy PHP artifacts.
+- **Version Governance**: Centralized build version incremented to 3.95.0.
+
 ## [3.94.0] - 2026-05-25
 
 ### 🐛 Critical Fix: Jules Clone Compatibility for bobfilez

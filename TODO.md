@@ -126,3 +126,11 @@
 - [ ] Verify Jules can successfully clone bobfilez after stale pointer fixes
 - [ ] Consider adding pre-push hook to prevent committing .env files
 - [ ] Consider Git LFS migration for large binary assets
+
+## v3.96.0 Follow-ups
+- [ ] fwber: Complete force push of secrets-purged history (persistent timeout)
+- [ ] fwber: AWS/OpenAI key rotation (URGENT)
+- [ ] ddc: Remote still contains old history with large files (filter-repo was local only, force push completed)
+- [ ] element-web: Investigate persistent fetch timeout
+- [ ] Consider adding pre-commit hooks to prevent large binary commits
+- [ ] Scan remaining repos for oversized files (>100MB)

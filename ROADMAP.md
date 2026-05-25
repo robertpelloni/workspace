@@ -143,3 +143,11 @@
 - [x] 10 reverse merges across 5 repos
 - [x] 2 upstream merges (ksm-v2, topaz-ffmpeg)
 - [x] Fix start.bat broken path from branding migration
+
+## v3.96.0 Changes
+- [x] 3 upstream merges (bobeditpro, bobtorrent, topaz-ffmpeg)
+- [x] 7 forward merges across 5 repos
+- [x] 13 reverse merges across 7 repos
+- [x] ddc: Removed 1GB zip + model files from git history
+- [x] 22 submodule pointer updates
+- [x] 10 auto-committed repos
