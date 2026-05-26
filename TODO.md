@@ -155,3 +155,12 @@
 - [ ] borg: Remove stale upstream remote (OhMyOpenCode/aios deleted)
 - [ ] fwber: Strategy for orphan repo sync (51 behind upstream)
 - [ ] bobfilez: Deep pybind11 recursion fix for git operations
+
+## v4.0.0 Follow-ups
+- [ ] CRITICAL: Fix auto-commit recovery protocol — `git reset --hard` after auto-commit destroys work. Need to push auto-commits BEFORE reset, or use `git stash` approach.
+- [ ] OmniRoute: 5 release branches need strategic decision (merge or archive)
+- [ ] openclaw-dashboard: Create robertpelloni fork for push access
+- [ ] bobsgameweb: Fix remote pack corruption (invalid index-pack)
+- [ ] borg: Remove stale upstream remote (OhMyOpenCode/aios 404)
+- [ ] fwber: Strategy for orphan repo sync (51 behind upstream)
+- [ ] bobfilez: Deep pybind11 recursion fix for git operations

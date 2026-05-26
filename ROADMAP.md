@@ -172,3 +172,11 @@
 - [x] .gitignore audit: 5 repos checked, opencode-autopilot fixed
 - [x] 90 submodule pointers fully refreshed
 - [x] 10 auto-committed dirty repos
+
+## v4.0.0 Changes
+- [x] 5 forward merges (2 bobgui + 3 borg dependabot)
+- [x] 31 remote + 1 local branches deleted
+- [x] 7 auto-commits recovered from reflog (critical data-loss prevention)
+- [x] .gitignore audit: openclaw-dashboard fixed
+- [x] 14 submodule pointers updated
+- [x] Version milestone: v4.0.0

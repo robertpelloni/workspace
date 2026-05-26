@@ -1,3 +1,43 @@
+## [4.0.0] - 2026-05-25
+
+### Major Milestone: Workspace v4.0.0
+
+This release marks the transition to v4.0.0, reflecting the maturity and stability of the workspace after 99 minor releases. The automated synchronization protocol has been refined over 100+ sessions.
+
+### Upstream Merges: 0
+- All upstream repos at latest (topaz-ffmpeg: 0 behind; fwber: 51 behind but orphan)
+
+### Forward Merges: 5 branches across 2 repos
+- **bobgui**: BUG_tooltip_position_CLEAN (1 commit, 1 file) + 665-entry-textview-deselect-text-on-focus-out-4 (1 commit, 2 files — **recovered from v3.99.0 failure**)
+- **borg**: 3 dependabot branches with manual conflict resolution (modify/delete conflicts where files deleted in main were being updated by dependabot):
+  - dependabot/go_modules/apps/maestro-go/go_modules-dfc5a1b899
+  - dependabot/npm_and_yarn/apps/borg-extension/npm_and_yarn-2c1d5278f8
+  - dependabot/npm_and_yarn/apps/borg-extension/npm_and_yarn-baa0c179e2
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 32 branches deleted
+- **31 remote branches** deleted (contained in default or redundant)
+- **1 local branch** deleted (topaz-ffmpeg/master)
+
+### Auto-Commit Recovery: 7 repos
+Critical fix: The `git reset --hard origin/HEAD` step in the submodule update was overwriting auto-committed changes. 7 repos had their auto-commits recovered via cherry-pick from reflog:
+- bobtorrent, bobtrader, bobui, btk, opencode-autopilot, pi-mono, slsk_discography_downloader_script
+
+### .gitignore Audit: 1 fix applied
+- **openclaw-dashboard**: Changed blanket `memory/` ignore to specific patterns (`memory/*.json`, `memory/*.db`, `memory/*.log`). Fix is local-only (no push access to upstream fork).
+
+### Submodule Pointer Updates: 14 (full refresh)
+
+### Known Issues (Carried)
+- **bobfilez**: git operations hang (pybind11 nested submodule recursion)
+- **bobsgameweb**: `git fetch` fails (invalid index-pack); HEAD matches origin/master
+- **element-web**: Only `git fetch origin develop` works
+- **fwber**: Orphan repo, 51 behind upstream
+- **borg**: upstream OhMyOpenCode/aios deleted (404)
+- **OmniRoute**: 5+ release branches (v3.4.9–v3.5.3) too diverged to merge
+- **openclaw-dashboard**: No push access to upstream fork
+- **242 GitHub security vulnerabilities** (3 critical)
 ## [3.99.0] - 2026-05-25
 
 ### Upstream Merges: 0
