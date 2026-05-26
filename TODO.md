@@ -134,3 +134,11 @@
 - [ ] element-web: Investigate persistent fetch timeout
 - [ ] Consider adding pre-commit hooks to prevent large binary commits
 - [ ] Scan remaining repos for oversized files (>100MB)
+
+## v3.97.0 Follow-ups
+- [ ] borg: 3 dependabot branches with conflicts need manual resolution
+- [ ] bobfilez: Investigate pybind11 recursion causing git hang
+- [ ] bobsgameweb: Fix nested submodule status hanging
+- [ ] element-web: Configure fetch to target develop branch only
+- [ ] openclaw-dashboard/computer-use-preview: Consider forking to robertpelloni for push access
+- [ ] topaz-ffmpeg: Push master branch changes (currently only topaz/develop pushed)

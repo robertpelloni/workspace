@@ -151,3 +151,11 @@
 - [x] ddc: Removed 1GB zip + model files from git history
 - [x] 22 submodule pointer updates
 - [x] 10 auto-committed repos
+
+## v3.97.0 Changes
+- [x] topaz-ffmpeg: 90 upstream security commits merged
+- [x] 22 forward merges across 17 repos
+- [x] 58 local + 20+ remote contained branches deleted
+- [x] 90 submodule pointers fully refreshed
+- [x] 6 auto-committed dirty repos
+- [x] crowdsourced_dance_club: resolved merge conflicts (submodule + index.html)

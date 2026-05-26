@@ -1,3 +1,43 @@
+## [3.97.0] - 2026-05-25
+
+### Upstream Merges: 1 repo
+- **topaz-ffmpeg**: upstream/master (90 commits, security fixes including use-after-free, APV validation)
+
+### Forward Merges: 22 branches across 17 repos
+- **apophysis-j**: fix/audit-and-documentation-improvements (1 commit, 17 files)
+- **auto_dj_script**: jules-v6.7.0-parallel-engine-evolution (2 commits, 27 files, ours)
+- **bobcoin**: 2 dependabot branches (1 commit each, npm deps)
+- **bobui**: dev (3 commits, 1 file)
+- **borg**: 2 dependabot branches (npm deps, openapi-ts + mcp sdk)
+- **computer-use-preview**: 4 branches (block-reason, fix-model-reference, model-change, mquirosbloch-patch-1)
+- **crowdsourced_dance_club**: jules-v0.2.0-sync-and-integrate (12 commits, 69 files, ours)
+- **dupeguru**: docs-and-type-hints-audit (2 commits, 8 files)
+- **electricsheep**: fix-build-and-docs (1 commit, 24 files)
+- **hyperharness**: dependabot/go_modules (1 commit, 4 files)
+- **native-fy**: jules branch (2 commits, 8 files)
+- **planet_fitness_stepmaniax_agent**: 2 branches (dependabot + feat/lead-research)
+- **realestatecrm**: rag-consolidation-cleanup (4 commits, 19 files, ours)
+- **topaz-ffmpeg**: master (7 commits, 58 files) + 8.0/linux-encoder + develop
+
+### Reverse Mergges: 0 (all contained branches deleted)
+
+### Branch Cleanup: 58 local branches + 20+ remote branches deleted
+- Removed fully-contained Jules feature branches across 30+ repos
+- Deleted stale remote branches on robertpelloni/* repos
+
+### Auto-committed: 6 repos
+- auto_dj_script, bobtorrent, crowdsourced_dance_club, neverball, raindropioapp, bg
+
+### Submodule Pointer Updates: 90 (full refresh)
+
+### Known Issues
+- **bobfilez**: git operations hang due to deep pybind11 recursion
+- **bobsgameweb**: submodule status hangs on nested libs
+- **element-web**: fetch requires branch-specific targeting (develop only)
+- **borg**: 3 dependabot branches could not merge (conflict)
+- **openclaw-dashboard**: 403 on push (not our repo)
+- **computer-use-preview**: 403 on push (not our repo)
+- **242 GitHub security vulnerabilities** (3 critical)
 ## [3.96.0] - 2026-05-25
 
 ### Upstream Merges: 3 repos
