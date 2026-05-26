@@ -1,3 +1,34 @@
+## [4.2.0] - 2026-05-25
+
+### Upstream Merges: 0
+- All upstream repos at latest (fwber: 51 behind but orphan)
+
+### Forward Merges: 4 branches across 2 repos
+- **bobgui**: 3 upstream branches:
+  - adjustment-animation-fixes (5 commits, 4 files) — manual ours
+  - ai-contribution-policy (4 commits, 1 file)
+  - alatiera/ccache-foo (1 commit, 1 file)
+- **topaz-ffmpeg**: 1 upstream branch:
+  - nipun/motion_blur (1 commit, 2 files)
+
+### Failed Forward Merges: 2
+- bobgui/adwaita (9 ahead, 151 files — upstream theme branch, too many conflicts)
+- topaz-ffmpeg/nipun/fi (1 ahead, 1 file — conflict)
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 10 branches deleted
+- **10 remote branches** deleted (contained in default or merged)
+- **0 local branches** deleted
+
+### Auto-Commit Protocol: Working as designed
+- 9 auto-commits detected, 8 pushed before reset, **0 data loss**
+- bobbybookmarks: new gc/repack timeout issue; fixed with `gc.auto=0` and shallow fetch
+
+### .gitignore Audit: 1 recurring issue
+- **openclaw-dashboard**: `memory/` blanket ignore re-appeared (reset reverted v4.1.0 fix). Re-applied for this cycle. **Persistent solution requires creating robertpelloni fork.**
+
+### Submodule Pointer Updates: 7 (full refresh)
 ## [4.1.0] - 2026-05-25
 
 ### Upstream Merges: 0

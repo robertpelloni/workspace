@@ -172,3 +172,12 @@
 - [ ] borg: Remove defunct upstream remote (OhMyOpenCode/aios 404)
 - [ ] bobgui/AUTO_DENATTIFYING: 865 files — evaluate for merge or skip
 - [ ] fwber: Long-term strategy for orphan repo (51 behind upstream)
+
+## v4.2.0 Follow-ups
+- [ ] openclaw-dashboard: Create robertpelloni fork to persist .gitignore fix (3rd cycle recurring)
+- [ ] bobgui/adwaita: 151 files — evaluate for strategic merge or skip
+- [ ] topaz-ffmpeg/nipun/fi: Investigate merge conflict
+- [ ] bobbybookmarks: Investigate gc/repack timeout (corrupt objects?)
+- [ ] OmniRoute: 5+ release branches — decide archive vs. merge
+- [ ] borg: Remove defunct upstream remote
+- [ ] fwber: Strategy for orphan repo (51 behind upstream)

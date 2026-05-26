@@ -187,3 +187,10 @@
 - [x] 6 remote branches deleted
 - [x] .gitignore audit: openclaw-dashboard re-applied
 - [x] 8 submodule pointers updated
+
+## v4.2.0 Changes
+- [x] 4 forward merges (3 bobgui + 1 topaz-ffmpeg)
+- [x] 10 remote branches deleted
+- [x] Auto-commit protocol: 0 data loss (v4.1.0 fix verified again)
+- [x] bobbybookmarks: gc timeout workaround (gc.auto=0, shallow fetch)
+- [x] 7 submodule pointers updated
