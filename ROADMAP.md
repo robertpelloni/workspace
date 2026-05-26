@@ -180,3 +180,10 @@
 - [x] .gitignore audit: openclaw-dashboard fixed
 - [x] 14 submodule pointers updated
 - [x] Version milestone: v4.0.0
+
+## v4.1.0 Changes
+- [x] 7 forward merges across 3 repos (native-fy, planet_fitness, bobgui)
+- [x] Auto-commit protocol improved: push before reset (0 data loss)
+- [x] 6 remote branches deleted
+- [x] .gitignore audit: openclaw-dashboard re-applied
+- [x] 8 submodule pointers updated

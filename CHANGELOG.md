@@ -1,3 +1,42 @@
+## [4.1.0] - 2026-05-25
+
+### Upstream Merges: 0
+- All upstream repos at latest (fwber: 51 behind but orphan)
+
+### Forward Merges: 7 branches across 3 repos
+- **native-fy**: jules-14247451871284897250 (5 commits, 12 files — Rust/JS performance, compiler agent, web scraper, runtime)
+- **planet_fitness_stepmaniax_agent**: dependabot/pip/pip-2de5e268e0 (1 commit, 1 file)
+- **bobgui**: 5 upstream GTK bugfix branches:
+  - a11y/stackswitcher-tabs (9 commits, 16 files) — manual ours
+  - activatable-infobar (2 commits, 4 files)
+  - activatable-infobar-3 (3 commits, 5 files)
+  - active-media-controls (3 commits, 3 files) — manual ours
+  - add-mutter-to-image (1 commit, 1 file)
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 6 branches deleted
+- **6 remote branches** deleted (contained in default)
+
+### Auto-Commit Protocol Improvement
+- **CRITICAL FIX**: Auto-commits are now PUSHED before `git reset --hard origin/HEAD` to prevent data loss.
+- Previous cycle (v4.0.0) lost 7 auto-commits during reset; this cycle: **0 lost**.
+- 7 auto-commits detected and pushed before reset.
+
+### .gitignore Audit: 1 recurring issue
+- **openclaw-dashboard**: `memory/` blanket ignore re-appeared (reset reverted v4.0.0 fix). Re-applied: `memory/*.json`, `*.db`, `*.log`. No push access to upstream (tugcantopaloglu). This fix will need re-application each cycle.
+
+### Submodule Pointer Updates: 8 (full refresh)
+
+### Known Issues (Carried)
+- **bobfilez**: git operations hang (pybind11 nested submodule recursion)
+- **bobsgameweb**: `git fetch` fails (invalid index-pack); HEAD matches origin/master
+- **element-web**: Only `git fetch origin develop` works
+- **fwber**: Orphan repo, 51 behind upstream
+- **borg**: upstream OhMyOpenCode/aios deleted (404); `--all` fetch fails
+- **OmniRoute**: 5+ release branches too diverged to merge
+- **openclaw-dashboard**: No push access to upstream fork; .gitignore fix is ephemeral
+- **242 GitHub security vulnerabilities** (3 critical)
 ## [4.0.0] - 2026-05-25
 
 ### Major Milestone: Workspace v4.0.0

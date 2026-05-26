@@ -164,3 +164,11 @@
 - [ ] borg: Remove stale upstream remote (OhMyOpenCode/aios 404)
 - [ ] fwber: Strategy for orphan repo sync (51 behind upstream)
 - [ ] bobfilez: Deep pybind11 recursion fix for git operations
+
+## v4.1.0 Follow-ups
+- [ ] openclaw-dashboard: Create robertpelloni fork to persist .gitignore fix
+- [ ] OmniRoute: Decide fate of 5+ release branches (archive or strategic merge)
+- [ ] bobsgameweb: Fix remote pack corruption (invalid index-pack)
+- [ ] borg: Remove defunct upstream remote (OhMyOpenCode/aios 404)
+- [ ] bobgui/AUTO_DENATTIFYING: 865 files — evaluate for merge or skip
+- [ ] fwber: Long-term strategy for orphan repo (51 behind upstream)
