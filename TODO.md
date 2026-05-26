@@ -148,3 +148,10 @@
 - [ ] borg: upstream repo (OhMyOpenCode/aios) deleted — remove upstream remote
 - [ ] topaz-ffmpeg: master branch recreated and merged — clean up after push
 - [ ] Consider running `git gc` on repos with many deleted branches
+
+## v3.99.0 Follow-ups
+- [ ] OmniRoute: release/v3.4.9 and v3.5.0 failed merge — needs manual resolution
+- [ ] bobgui: 665-entry-textview branch needs manual conflict resolution
+- [ ] borg: Remove stale upstream remote (OhMyOpenCode/aios deleted)
+- [ ] fwber: Strategy for orphan repo sync (51 behind upstream)
+- [ ] bobfilez: Deep pybind11 recursion fix for git operations

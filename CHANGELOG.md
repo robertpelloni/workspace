@@ -1,3 +1,44 @@
+## [3.99.0] - 2026-05-25
+
+### Upstream Merges: 0
+- All upstream repos already at latest
+
+### Forward Merges: 17 branches across 8 repos
+- **borg**: 4 dependabot branches (pg-8.19.0, trpc/react-query-11.11.0, viem-2.46.3, yaml-2.8.3)
+- **crowdsourced_dance_club**: jules-v0.2.0-sync-and-integrate (3 commits, 16 files)
+- **dao**: main-3018297279350206122 (6 commits, 56 files) + main-4377559777785382276 (6 commits, 100 files)
+- **planet_fitness_stepmaniax_agent**: feat/lead-research-v0.4.0 (3 commits, 29 files)
+- **bobui**: feature/omni-ui-framework (7 commits, 42 files)
+- **topaz-ffmpeg**: fix/jbig + fix/tvai_timeout_longer (2 commits)
+- **bobgui**: 6 upstream GTK bugfix branches (78-textview, BUG_filechooser_recent_location, BUG_modelbutton_focus_on_click_GTK3, BUG_popover_focus_from_another_window_GTK4, BUG_reveal_after_sort_GTK3, BUG_scale_button_propagated_state)
+
+### Reverse Merges: 0
+- No active feature branches with unique content requiring reverse merge
+
+### Branch Cleanup: 60+ branches deleted
+- **32 remote branches** deleted (contained in default)
+- **28 local branches** deleted (contained in default, carried from v3.98.0)
+
+### .gitignore Audit: 5 repos checked, 1 fix applied
+- **opencode-autopilot**: Fixed — `memory/` was blanket-ignoring important docs. Changed to `memory/*.json`, `memory/*.db`, `memory/*.log` while tracking `memory/README.md` and `memory/resources/`
+- borg: Correct (runtime agent data ignored)
+- litellm: Harmless (STABILIZATION_TODO.md doesn't exist)
+- openclaw-dashboard: Harmless (memory/ dir doesn't exist)
+- bobui: False positive
+
+### Submodule Pointer Updates: 90 (full refresh)
+
+### Auto-committed: 10 repos
+
+### Known Issues
+- **bobfilez**: git operations hang due to pybind11 nested submodule recursion
+- **bobsgameweb**: `git status` hangs on nested libs/lwjgl3 submodule
+- **element-web**: Full fetch fails; only `git fetch origin develop` works
+- **fwber**: Orphan repo (history lost in v3.96.0), 51 behind upstream
+- **borg**: upstream OhMyOpenCode/aios no longer exists (404)
+- **OmniRoute**: 2 release branches (v3.4.9, v3.5.0) failed merge
+- **bobgui**: 1 branch (665-entry-textview) failed merge
+- **242 GitHub security vulnerabilities** (3 critical)
 ## [3.98.0] - 2026-05-25
 
 ### Upstream Merges: 1 repo

@@ -165,3 +165,10 @@
 - [x] 142 total branches deleted (28 local + 114 remote)
 - [x] 90 submodule pointers fully refreshed
 - [x] Major remote branch cleanup across 25+ repos
+
+## v3.99.0 Changes
+- [x] 17 forward merges across 8 repos
+- [x] 60+ branches deleted (32 remote + 28 local)
+- [x] .gitignore audit: 5 repos checked, opencode-autopilot fixed
+- [x] 90 submodule pointers fully refreshed
+- [x] 10 auto-committed dirty repos
