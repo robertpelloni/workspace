@@ -142,3 +142,9 @@
 - [ ] element-web: Configure fetch to target develop branch only
 - [ ] openclaw-dashboard/computer-use-preview: Consider forking to robertpelloni for push access
 - [ ] topaz-ffmpeg: Push master branch changes (currently only topaz/develop pushed)
+
+## v3.98.0 Follow-ups
+- [ ] fwber: 51 commits behind upstream — need strategy for orphan sync
+- [ ] borg: upstream repo (OhMyOpenCode/aios) deleted — remove upstream remote
+- [ ] topaz-ffmpeg: master branch recreated and merged — clean up after push
+- [ ] Consider running `git gc` on repos with many deleted branches

@@ -159,3 +159,9 @@
 - [x] 90 submodule pointers fully refreshed
 - [x] 6 auto-committed dirty repos
 - [x] crowdsourced_dance_club: resolved merge conflicts (submodule + index.html)
+
+## v3.98.0 Changes
+- [x] topaz-ffmpeg: 13 upstream security/vulkan commits merged
+- [x] 142 total branches deleted (28 local + 114 remote)
+- [x] 90 submodule pointers fully refreshed
+- [x] Major remote branch cleanup across 25+ repos

@@ -1,71 +1,52 @@
-# Workspace Handoff — v3.97.0
+# Workspace Handoff — v3.98.0
 
 **Date**: 2026-05-25
-**Version**: 3.97.0
+**Version**: 3.98.0
 **Commit**: pending
 
 ## Session Summary
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 - **Root fetch**: ✅ Completed
-- **Submodule fetch**: 83/90 success (6 needed --force for tag clobber; element-web targeted fetch)
-- **Upstream merges**: 1 — topaz-ffmpeg (90 upstream/master commits including security fixes)
-  - avformat/dashdec: bound manifest reloads and fragment-open retries
-  - avfilter/af_join: fix wrong loop bound in buffer dedup (use-after-free)
-  - avformat/mov: validate APV access unit length
-- **Submodule pointers**: All 90 updated to current HEAD
+- **Submodule fetch**: 84/90 direct; bobui + borg (tag force); element-web (targeted develop); fwber (main only); bobfilez + bobsgameweb (separate)
+- **Upstream merges**: 1 — topaz-ffmpeg (13 upstream/master commits)
+  - Vulkan FFV1 rangecoder encoding fix
+  - mjpegdec bayer width handling simplification
+  - vorbisdsp inverse coupling fix (cmpleps → cmpltps)
+  - swscale packed30togbra10/gbr16ptopacked30 fix for GBRP 10/12 bit MSB
+  - liboapvenc APV profile derivation and validation
+- **Submodule updates**: All 90 reset to origin/HEAD (clean working directories)
+- **Note**: Step 1.3's `git reset --hard origin/$db` undid the initial upstream merge.
+  The merge was re-applied in Step 2 and pushed successfully.
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
+- **Forward merges**: 0 (all branches fully contained)
+- **Reverse merges**: 0 (no active branches with unique content)
+- **Local branches deleted**: 28 (across 17 repos)
+- **Remote branches deleted**: 114 (across 25+ repos)
+- **Total branch cleanup**: 142 branches
 
-**Forward Merges (22 branches, 17 repos)**:
-| Repo | Branch | Commits | Files | Strategy |
-|------|--------|---------|-------|----------|
-| apophysis-j | fix/audit-and-documentation | 1 | 17 | auto |
-| auto_dj_script | jules-v6.7.0-parallel-engine | 2 | 27 | ours |
-| bobcoin | dependabot/bobcoin-consensus x2 | 1+1 | 3+5 | auto |
-| bobui | dev | 3 | 1 | auto |
-| borg | dependabot/openapi-ts + mcp | 1+1 | 4+7 | auto/ours |
-| computer-use-preview | 4 branches | 1-4 each | 1 | auto |
-| crowdsourced_dance_club | jules-v0.2.0-sync | 12 | 69 | ours |
-| dupeguru | docs-and-type-hints-audit | 2 | 8 | auto |
-| electricsheep | fix-build-and-docs | 1 | 24 | auto |
-| hyperharness | dependabot/go_modules | 1 | 4 | auto |
-| native-fy | jules branch | 2 | 8 | auto |
-| planet_fitness | dependabot + feat/lead-research | 1+14 | 1+8 | auto/ours |
-| realestatecrm | rag-consolidation-cleanup | 4 | 19 | ours |
-| topaz-ffmpeg | master + 8.0/linux-encoder + develop | 7+5+1 | 58+2+3 | auto/ours |
-
-**Failed Forward Merges (5)**:
-- borg/dependabot/go_modules/maestro-go — conflict
-- borg/dependabot/npm_and_yarn/borg-extension x2 — conflict
-- tabby/all-contributors/* (6 branches) — upstream contributor list conflicts, skipped
-
-**Reverse Merges**: 0 (all feature branches were 0-ahead = fully contained)
-
-**Branch Cleanup**:
-- 58 local branches deleted (fully contained in default)
-- 20+ remote branches deleted (fully contained, on robertpelloni/* repos)
-- Key repos cleaned: Maestro, CLIProxyAPIPlus, MarbleBlast, auto_dj_script, bobbybookmarks, bobcoin, bobeditpro, bobgui, bobtorrent, crowdsourced_dance_club, dupeguru, tabby
-
-**Auto-committed Dirty Repos (6)**:
-- auto_dj_script (2 files), bg (3 files), bobtorrent (2 files), crowdsourced_dance_club (12 files), neverball (1 file), raindropioapp (1 file)
+**Key remote branch cleanups**:
+- Maestro: 5 branches (borg-assimilation, cue-polish, 2 fix branches, rc)
+- bobgui: 8 branches (GTK bugfix branches from upstream)
+- bobmani/*: 10 branches (arrowvortex, beatoraja, bobmania, hymnmania, itgmania, ksm-v2, linthesia, pianogame)
+- openclaw-config: 8 branches (feat branches, budget-guard, claude-code-skill)
+- topaz-ffmpeg: 8 branches (8.0/linux-*, feature/astra, feature/oiio3, feature/ort)
+- pi-mono: 4 branches (badlogic-main, feat/plannotator, 2 jules branches)
 
 ### STEP 3: Workspace Cleanup & Build
-- Scripts validated: start.bat ✅, build_all.bat ✅
-- Version: 3.96.0 → 3.97.0
-- Build: Pending
+- Scripts: start.bat ✅, build_all.bat ✅
+- Version: 3.97.0 → 3.98.0
+- Submodule pointers: 90 updated
+- Pushed: topaz-ffmpeg (topaz/develop + master)
 
-## Pushed Repos (23)
-auto_dj_script, bg, bobcoin, bobgui, bobmani/bobmania, bobmani/ddc, bobmani/ksm-v2,
-bobmani/linthesia, bobsaver, bobui, borg, crowdsourced_dance_club, dupeguru,
-electricsheep, hyperharness, native-fy, neverball, planet_fitness_stepmaniax_agent,
-raindropioapp, realestatecrm, topaz-ffmpeg
+## Pushed Repos
+- topaz-ffmpeg (topaz/develop: e0f798e → 56c881a, master: 34f322d → fc1a89d)
 
 ## Known Issues
-1. **bobfilez**: git operations hang due to pybind11 nested submodule recursion
-2. **bobsgameweb**: `git status` hangs on nested libs/lwjgl3 submodule
-3. **element-web**: Full fetch fails; only `git fetch origin develop` works
-4. **borg**: 3 dependabot branches unmergeable (go_modules + npm conflicts)
-5. **openclaw-dashboard, computer-use-preview**: 403 on push (not owned repos)
-6. **tabby**: 6 all-contributors branches have upstream contributor list conflicts
-7. **242 GitHub security vulnerabilities** (3 critical)
+1. **bobfilez**: git operations hang (pybind11 nested recursion)
+2. **bobsgameweb**: `git status` hangs on nested libs/lwjgl3
+3. **element-web**: Only `git fetch origin develop` works
+4. **fwber**: Orphan repo, 51 behind upstream — cannot merge upstream (would re-introduce secrets)
+5. **borg**: upstream OhMyOpenCode/aios deleted (404)
+6. **242 GitHub security vulnerabilities** (3 critical)

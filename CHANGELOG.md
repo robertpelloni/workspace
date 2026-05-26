@@ -1,3 +1,32 @@
+## [3.98.0] - 2026-05-25
+
+### Upstream Merges: 1 repo
+- **topaz-ffmpeg**: upstream/master (13 commits — Vulkan FFV1 rangecoder fix, mjpegdec bayer handling, vorbisdsp inverse coupling fix, swscale packed30togbra10 fix, APV profile validation)
+
+### Forward Merges: 0
+- All feature branches were fully contained (0 ahead of default)
+
+### Reverse Merges: 0
+- No active feature branches with unique content requiring reverse merge
+
+### Branch Cleanup: 142 total branches deleted
+- **28 local branches** deleted (fully contained in default)
+- **114 remote branches** deleted (fully contained, on robertpelloni/* repos)
+- Major repos cleaned: Maestro (5), bobgui (8), bobmani/* (10), bobtorrent (4), bobtrader (2), bobui (3), btk (3), crowdsourced_dance_club (1), dupeguru (1), electricsheep (1), f-zerox (2), geany (4), hyperharness (3), openclaw-config (8), pi-mono (4), picard (2), raindropioapp (2), realestatecrm (3), skillzhub (3), slsk_discography_downloader_script (2), sm64coopdx (2), supersaber (2), tabby (2), topaz-ffmpeg (8)
+
+### Submodule Pointer Updates: 90 (full refresh)
+- All 90 submodule pointers updated to current remote HEAD
+- topaz-ffmpeg: e0f798e -> 56c881a (upstream merge)
+- bobsgameweb: 4743fcb -> fa32032 (new remote commits)
+- bobfilez: fff6dd8 -> c48bea4
+
+### Known Issues
+- **bobfilez**: git operations hang due to pybind11 nested submodule recursion
+- **bobsgameweb**: `git status` hangs on nested libs/lwjgl3 submodule
+- **element-web**: Full fetch fails; only `git fetch origin develop` works
+- **fwber**: Orphan repo (history lost in v3.96.0 secrets purge), 51 behind upstream
+- **borg**: upstream OhMyOpenCode/aios no longer exists (404)
+- **242 GitHub security vulnerabilities** (3 critical)
 ## [3.97.0] - 2026-05-25
 
 ### Upstream Merges: 1 repo
