@@ -191,3 +191,9 @@
 - [ ] OmniRoute: 5+ release branches — decide archive vs. merge
 - [ ] borg: Remove defunct upstream remote
 - [ ] fwber: Strategy for orphan repo (51 behind upstream)
+
+## v4.3.1 Follow-ups
+- [ ] CRITICAL: Verify jules-autopilot is not losing in-progress work between cycles
+- [ ] bobfilez: 12 superseded submodule pointer commits in reflog (safe to ignore)
+- [ ] Consider adding `git stash` before reset as additional safety net
+- [ ] Consider periodic reflog garbage collection prevention for recovery window

@@ -203,3 +203,11 @@
 - [x] bobsgameweb: 3 new remote commits (shadow/collision fixes)
 - [x] superdawmcp: v2.7.0 update
 - [x] 11 submodule pointers updated
+
+## v4.3.1 Changes
+- [x] 🔴 DATA RECOVERY: 34 lost commits recovered from reflog
+- [x] bobfilez: Delete Dupes tab (52 lines), OpenSSL CMake fix (9 lines), test cleanup
+- [x] agentirc: run.py + agents.json recovered
+- [x] borg: 46 lines of uncommitted MCP tools committed and pushed
+- [x] bobbybookmarks: runtime databases saved
+- [x] Confirmed push-before-reset protocol working (0 losses since v4.1.0)

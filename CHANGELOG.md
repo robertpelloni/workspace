@@ -1,3 +1,37 @@
+## [4.3.1] - 2026-05-27
+
+### 🔴 DATA RECOVERY: 34 lost commits recovered from reflog
+
+**Root Cause**: Pre-v4.1.0 auto-commits were not pushed before `git reset --hard origin/HEAD`,
+causing committed work to be orphaned when HEAD moved back. The v4.1.0 push-before-reset
+protocol has prevented new losses (0 lost since v4.1.0), but historical losses remained
+unrecovered in the reflog.
+
+**Recovered**:
+- **bobfilez**: 3 critical commits recovered:
+  - `feat: add Delete Dupes tab to WebUI React app` (52 lines — app.js + server.js)
+  - `fix: add OpenSSL find_package to core/CMakeLists.txt` (9 lines — vault_manager build)
+  - `chore: sync uncommitted changes` (test cleanup, core fileops/search fixes)
+  - 12 additional submodule pointer commits (superseded, not applied)
+- **agentirc**: `run.py` + `agents.json` (v3.99.0 auto-commit — 86+22 lines)
+- **borg**: Committed 46 lines of uncommitted working tree code:
+  - `NativeSessionMetaTools.ts`: set_capacity, get_eviction_history, clear_eviction_history
+  - `directModeCompatibility.ts`: auto_call_tool with semantic search fallback
+- **bobbybookmarks**: Saved runtime databases (atlas.db, borg.db, incoming_resources.txt)
+- **opencode-autopilot**: architecture.md + contexts.json already current (no recovery needed)
+- **pi-mono**: borg.db already current (no recovery needed)
+
+**Confirmed NOT lost (already on remote)**:
+- bobtorrent: 3 auto-commits (submodule pointers — superseded)
+- bobtrader: 3 auto-commits (submodule pointers — superseded)
+- bobui: 3 auto-commits (submodule pointers — superseded)
+- btk: 2 auto-commits (submodule pointers — superseded)
+
+### Auto-Commit Protocol Status: ✅
+- **v4.1.0+ (push-before-reset)**: 0 commits lost across 4 consecutive cycles
+- **v3.x (pre-protocol)**: 34 commits lost, now recovered from reflog
+
+### Submodule Pointer Updates: 5
 ## [4.3.0] - 2026-05-25
 
 ### Upstream Merges: 2

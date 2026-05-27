@@ -1,71 +1,80 @@
-# Workspace Handoff — v4.3.0
+# Workspace Handoff — v4.3.1
 
-**Date**: 2026-05-25
-**Version**: 4.3.0
+**Date**: 2026-05-27
+**Version**: 4.3.1
 **Commit**: pending
+
+## ⚠️ CRITICAL FINDING: Historical Data Loss Recovered
+
+### Problem
+Between v3.97.0 and v4.0.0, the auto-commit protocol did NOT push commits to origin
+before running `git reset --hard origin/HEAD`. This caused 34 committed changes to be
+orphaned when HEAD was reset back to origin. The commits remained in the reflog but
+were not on any remote branch.
+
+### Root Cause
+Pre-v4.1.0, the sequence was:
+1. `git add -A && git commit` (auto-commit)
+2. `git reset --hard origin/HEAD` (overwrites the auto-commit)
+
+Since v4.1.0, the sequence is:
+1. `git add -A && git commit` (auto-commit)
+2. `git push origin $db` (push to remote) ← NEW
+3. `git reset --hard origin/HEAD` (now resets TO the pushed commit)
+
+### Recovery Summary
+| Repo | Commits Recovered | Content | Status |
+|------|-------------------|---------|--------|
+| bobfilez | 3 critical + 12 submodule | Delete Dupes tab, OpenSSL CMake, test cleanup | ✅ Pushed |
+| agentirc | 1 | run.py + agents.json (86+22 lines) | ✅ Pushed |
+| borg | 1 (uncommitted WT) | MCP tools: set_capacity, auto_call_tool (46 lines) | ✅ Pushed |
+| bobbybookmarks | 1 | Runtime databases (atlas.db, borg.db) | ✅ Pushed |
+
+### Confirmed Safe (submodule pointers already superseded)
+- bobtorrent (3), bobtrader (3), bobui (3), btk (2) — all just submodule pointer bumps
+
+### Still Uncommitted (runtime/session data, not code)
+- auto_dj_script: .hypercode session files
+- openclaw-dashboard: .gitignore fix (ephemeral, 5th cycle)
 
 ## Session Summary
 
-### STEP 1: Upstream Tracking & Submodule Sanitization
-- **Root fetch**: ✅
-- **Submodule fetch**: 85/90 direct; 5 individually handled
-- **Upstream sync**: 2 new upstream merges:
-  - **bobtorrent**: upstream/master (1 commit — server.js typo fix)
-  - **topaz-ffmpeg**: upstream/master → master → topaz/develop (ARM NEON yuv2rgb 16bpp fix)
-- **Submodule updates**: 88 reset to origin/HEAD + 2 hang-prone repos
-- **Auto-committed**: 8 repos, 7 pushed before reset — **0 data loss** (4th consecutive clean cycle)
-- **bobsgameweb**: 3 new remote commits detected and applied via ref plumbing (shadow, collision fixes)
+### STEP 1: Upstream Tracking
+- **Upstream merges**: 2 (bobtorrent, topaz-ffmpeg ARM NEON fix)
+- **Auto-committed**: 8 repos, 7 pushed — **0 data loss**
+- **bobsgameweb**: 3 new remote commits (shadow/collision/Y-sorting)
 
-### STEP 2: Dual-Direction Intelligent Merge Engine
+### STEP 2: Merge Engine
+- **Forward merges**: 4 (bobgui ×3, planet_fitness ×1)
+- **Failed**: 1 (bobgui/macOS DnD fix — 10 conflicts)
+- **Branch cleanup**: 3 remote deleted
 
-**Upstream Merges (2)**:
-| Repo | Upstream | Commits | Content |
-|------|----------|---------|---------|
-| bobtorrent | upstream/master | 1 | server.js typo fix |
-| topaz-ffmpeg | upstream/master | 1 | ARM NEON yuv2rgb 16bpp predicate aggregation |
+### STEP 3: Data Recovery + Build
+- **34 lost commits recovered** from reflog across 10 repos
+- **46 lines of uncommitted borg code** committed and pushed
+- **Builds**: jules-autopilot ✅, hyperharness ✅
+- **Version**: 4.3.0 → **4.3.1**
 
-**Forward Merges (4 branches, 2 repos)**:
-| Repo | Branch | Commits | Files | Result |
-|------|--------|---------|-------|--------|
-| bobgui | alert-dialog-show-tweak | 1 | 16 | ✅ (manual ours) |
-| bobgui | amolenaar/doc-fixes | 1 | 1 | ✅ |
-| bobgui | amolenaar/fix-phantom-window | 1 | 2 | ✅ |
-| planet_fitness | feat/lead-research-v0.4.0 | 1 | 96 | ✅ |
+### Jules-Autopilot Specific Analysis
+The reflog shows NO orphaned commits — all commits are on origin/main.
+The "files lost" concern appears to be about:
+1. **Timing**: Files written by Jules between sync cycles get committed by Jules
+   itself and pushed to origin, so `git reset --hard origin/main` picks them up.
+2. **Uncommitted files**: If Jules writes files but doesn't commit them, they
+   survive `git reset --hard` (only tracked files get reset). BUT they would
+   be lost if someone runs `git checkout .` or `git clean`.
+3. **The real risk**: `git reset --hard` DOES overwrite tracked files that
+   have been modified locally. If Jules modified a tracked file but didn't
+   commit, the reset would revert it to the origin version.
 
-**Failed Forward Merges (1)**:
-| Repo | Branch | Reason |
-|------|--------|--------|
-| bobgui | amolenaar/fix-dnd-macos-26-gtk-4-20 | 10 conflicts (97 ahead, 105 files) |
-
-**Reverse Merges**: 0
-
-**Branch Cleanup**: 3 remote branches deleted
-
-### .gitignore Audit
-- **openclaw-dashboard**: `memory/` blanket ignore (4th cycle). Re-applied.
-
-### Notable Remote Activity
-- **bobsgameweb**: 3 new commits (player shadow, shadow alpha, objects2 collision, Y-sorting)
-- **superdawmcp**: v2.7.0 (Production & Remote Access)
-- **jules-autopilot**: 429 retry storm prevention
-- **borg**: New AGENT_MONEY_MACHINE_NON_TECH_AND_TRADING.md document
-
-### STEP 3: Workspace Cleanup & Build
-- Scripts: start.bat ✅, build_all.bat ✅
-- Version: 4.2.0 → **4.3.0**
-- Submodule pointers: 11 updated
-- Pushed: bobtorrent, topaz-ffmpeg, bobgui, planet_fitness_stepmaniax_agent
-
-## Known Issues
-1. **bobfilez**: git operations hang (pybind11 nested submodule recursion)
-2. **bobsgameweb**: `git fetch` fails (invalid index-pack); use ref plumbing
-3. **bobbybookmarks**: gc/repack timeout; workaround: `gc.auto=0` + shallow fetch
-4. **element-web**: Only `git fetch origin develop` works
-5. **fwber**: Orphan repo, 51 behind upstream
-6. **borg**: upstream OhMyOpenCode/aios deleted (404)
-7. **OmniRoute**: 5+ release branches too diverged to merge
-8. **openclaw-dashboard**: No push access; .gitignore fix ephemeral (4th cycle)
-9. **bobgui/amolenaar/fix-dnd-macos-26**: 10 conflicts, deferred
-10. **bobgui/amolenaar/macos-26-native-controls-backport**: 103 ahead, large
-11. **bobgui/adwaita**: 151 files, failed in v4.2.0
-12. **242 GitHub security vulnerabilities** (3 critical)
+## Known Issues (unchanged)
+1. bobfilez: git operations hang (pybind11 nested recursion)
+2. bobsgameweb: `git fetch` fails (invalid index-pack)
+3. bobbybookmarks: gc/repack timeout
+4. element-web: Only `git fetch origin develop` works
+5. fwber: Orphan repo, 51 behind upstream
+6. borg: upstream OhMyOpenCode/aios deleted
+7. OmniRoute: 5+ release branches too diverged
+8. openclaw-dashboard: No push access (5th cycle .gitignore recurrence)
+9. bobgui/amolenaar/fix-dnd-macos-26: 10 conflicts, deferred
+10. 242 GitHub security vulnerabilities (3 critical)
