@@ -194,3 +194,12 @@
 - [x] Auto-commit protocol: 0 data loss (v4.1.0 fix verified again)
 - [x] bobbybookmarks: gc timeout workaround (gc.auto=0, shallow fetch)
 - [x] 7 submodule pointers updated
+
+## v4.3.0 Changes
+- [x] 2 upstream merges (bobtorrent, topaz-ffmpeg)
+- [x] 4 forward merges (3 bobgui + 1 planet_fitness)
+- [x] 3 remote branches deleted
+- [x] Auto-commit protocol: 0 data loss (4th cycle clean)
+- [x] bobsgameweb: 3 new remote commits (shadow/collision fixes)
+- [x] superdawmcp: v2.7.0 update
+- [x] 11 submodule pointers updated

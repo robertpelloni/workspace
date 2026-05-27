@@ -1,3 +1,38 @@
+## [4.3.0] - 2026-05-25
+
+### Upstream Merges: 2
+- **bobtorrent**: upstream/master (1 commit — typo fix in server.js)
+- **topaz-ffmpeg**: upstream/master (1 commit — ARM NEON yuv2rgb 16bpp predicate aggregation, swscale/aarch64/yuv2rgb_neon)
+
+### Forward Merges: 4 branches across 2 repos
+- **bobgui**: 3 upstream branches:
+  - alert-dialog-show-tweak (1 commit, 16 files) — manual ours
+  - amolenaar/doc-fixes (1 commit, 1 file)
+  - amolenaar/fix-phantom-window (1 commit, 2 files)
+- **planet_fitness_stepmaniax_agent**: feat/lead-research-v0.4.0 (1 commit, 96 files)
+
+### Failed Forward Merges: 1
+- bobgui/amolenaar/fix-dnd-macos-26-gtk-4-20 (97 ahead, 10 conflicts — macOS DnD/GTK4.20 fix, deferred)
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 3 branches deleted
+- **3 remote branches** deleted (v4.2.0 merged branches cleaned up)
+
+### Auto-Commit Protocol: Working as designed
+- 8 auto-commits detected, 7 pushed before reset, **0 data loss**
+
+### New Remote Activity
+- **bobsgameweb**: 3 new remote commits (player shadow, shadow alpha, object Y-sorting, collision fixes)
+- **superdawmcp**: v2.7.0 (Production & Remote Access) — was v2.6.0
+- **jules-autopilot**: 429 retry storm prevention fix
+- **borg**: AGENT_MONEY_MACHINE_NON_TECH_AND_TRADING.md
+- **slsk_discography_downloader_script**: new commit
+
+### .gitignore Audit: 1 recurring issue
+- **openclaw-dashboard**: `memory/` blanket ignore (4th cycle recurrence). Re-applied. Needs robertpelloni fork.
+
+### Submodule Pointer Updates: 11 (full refresh)
 ## [4.2.0] - 2026-05-25
 
 ### Upstream Merges: 0

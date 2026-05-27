@@ -181,3 +181,13 @@
 - [ ] OmniRoute: 5+ release branches — decide archive vs. merge
 - [ ] borg: Remove defunct upstream remote
 - [ ] fwber: Strategy for orphan repo (51 behind upstream)
+
+## v4.3.0 Follow-ups
+- [ ] bobgui/amolenaar/fix-dnd-macos-26-gtk-4-20: 10 conflicts — needs manual resolution
+- [ ] bobgui/amolenaar/macos-26-native-controls-backport: 103 ahead — evaluate
+- [ ] openclaw-dashboard: Create robertpelloni fork (4th cycle recurring)
+- [ ] bobgui/adwaita: 151 files — evaluate for merge or skip
+- [ ] bobbybookmarks: gc/repack timeout persists — investigate corrupt objects
+- [ ] OmniRoute: 5+ release branches — decide archive vs. merge
+- [ ] borg: Remove defunct upstream remote
+- [ ] fwber: Strategy for orphan repo (51 behind upstream)
