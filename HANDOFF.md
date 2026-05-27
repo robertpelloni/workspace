@@ -78,3 +78,23 @@ The "files lost" concern appears to be about:
 8. openclaw-dashboard: No push access (5th cycle .gitignore recurrence)
 9. bobgui/amolenaar/fix-dnd-macos-26: 10 conflicts, deferred
 10. 242 GitHub security vulnerabilities (3 critical)
+
+## Updated Auto-Commit Protocol (v4.3.1+)
+
+### Previous Protocol (v4.1.0–v4.3.0)
+```
+1. git add -A && git commit  (auto-commit)
+2. git push origin $db       (push to remote)
+3. git reset --hard origin/$db (reset)
+```
+**Gap**: If push fails, or if new changes arrive between step 1 and step 3, `git reset --hard` destroys them.
+
+### New Protocol (v4.3.1+)
+```
+1. git add -A && git commit  (auto-commit)
+2. git push origin $db       (push to remote)
+3. git stash --include-untracked  (SAFETY NET: stash any remaining working tree changes)
+4. git reset --hard origin/$db    (reset)
+5. git stash pop             (restore stashed changes — may fail safely if stash is empty)
+```
+**Recovery**: If anything goes wrong, `git stash list` shows the backup. `git stash pop` restores it.
