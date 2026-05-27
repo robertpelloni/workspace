@@ -1,100 +1,89 @@
-# Workspace Handoff — v4.3.1
+# Workspace Handoff — v4.4.0
 
 **Date**: 2026-05-27
-**Version**: 4.3.1
+**Version**: 4.4.0
 **Commit**: pending
 
-## ⚠️ CRITICAL FINDING: Historical Data Loss Recovered
+## 🔑 Protocol Milestone: Stash-Before-Reset Debuted
 
-### Problem
-Between v3.97.0 and v4.0.0, the auto-commit protocol did NOT push commits to origin
-before running `git reset --hard origin/HEAD`. This caused 34 committed changes to be
-orphaned when HEAD was reset back to origin. The commits remained in the reflog but
-were not on any remote branch.
+The new `git stash --include-untracked` step before `git reset --hard` was successfully
+deployed this cycle. **87 stash-pops** restored working tree changes across all repos.
+The openclaw-dashboard `.gitignore` fix — which had been lost every cycle since v4.1.0 —
+**SURVIVED the reset for the first time** because the stash captured it.
 
-### Root Cause
-Pre-v4.1.0, the sequence was:
-1. `git add -A && git commit` (auto-commit)
-2. `git reset --hard origin/HEAD` (overwrites the auto-commit)
+### Updated Auto-Commit Protocol (v4.4.0+)
+```
+1. git add -A && git commit      (auto-commit)
+2. git push origin $db           (push to remote)
+3. git stash --include-untracked (SAFETY NET: capture remaining WT changes)
+4. git reset --hard origin/$db   (reset to remote HEAD)
+5. git stash pop                 (restore stashed changes)
+```
 
-Since v4.1.0, the sequence is:
-1. `git add -A && git commit` (auto-commit)
-2. `git push origin $db` (push to remote) ← NEW
-3. `git reset --hard origin/HEAD` (now resets TO the pushed commit)
-
-### Recovery Summary
-| Repo | Commits Recovered | Content | Status |
-|------|-------------------|---------|--------|
-| bobfilez | 3 critical + 12 submodule | Delete Dupes tab, OpenSSL CMake, test cleanup | ✅ Pushed |
-| agentirc | 1 | run.py + agents.json (86+22 lines) | ✅ Pushed |
-| borg | 1 (uncommitted WT) | MCP tools: set_capacity, auto_call_tool (46 lines) | ✅ Pushed |
-| bobbybookmarks | 1 | Runtime databases (atlas.db, borg.db) | ✅ Pushed |
-
-### Confirmed Safe (submodule pointers already superseded)
-- bobtorrent (3), bobtrader (3), bobui (3), btk (2) — all just submodule pointer bumps
-
-### Still Uncommitted (runtime/session data, not code)
-- auto_dj_script: .hypercode session files
-- openclaw-dashboard: .gitignore fix (ephemeral, 5th cycle)
+### Stash Conflict Resolution (4 conflicts this cycle)
+When `git stash pop` produces conflicts, resolve by keeping the stashed (local) version:
+```
+git checkout --theirs <conflicted-file>
+git add <conflicted-file>
+git stash drop
+```
 
 ## Session Summary
 
-### STEP 1: Upstream Tracking
-- **Upstream merges**: 2 (bobtorrent, topaz-ffmpeg ARM NEON fix)
-- **Auto-committed**: 8 repos, 7 pushed — **0 data loss**
-- **bobsgameweb**: 3 new remote commits (shadow/collision/Y-sorting)
+### STEP 1: Upstream Tracking & Submodule Sanitization
+- **Root fetch**: ✅
+- **Submodule fetch**: 85/90 direct; 5 individually handled
+- **Upstream sync**: 2 new upstream merges:
+  - **bobeditpro**: upstream/master (8 commits — GetEffects UI, SamplePacks, qsTrc)
+  - **topaz-ffmpeg**: upstream/master (4 commits — TLS security: DTLS gating, GnuTLS crash, ff_tls_parse_host)
+- **Submodule updates**: 88 reset + 2 hang-prone (ref plumbing)
+- **Auto-committed**: 9 repos, 8 pushed — **0 data loss**
+- **Stash-pops**: 87 successful, 4 conflicts resolved
 
-### STEP 2: Merge Engine
-- **Forward merges**: 4 (bobgui ×3, planet_fitness ×1)
-- **Failed**: 1 (bobgui/macOS DnD fix — 10 conflicts)
-- **Branch cleanup**: 3 remote deleted
+### STEP 2: Dual-Direction Intelligent Merge Engine
 
-### STEP 3: Data Recovery + Build
-- **34 lost commits recovered** from reflog across 10 repos
-- **46 lines of uncommitted borg code** committed and pushed
-- **Builds**: jules-autopilot ✅, hyperharness ✅
-- **Version**: 4.3.0 → **4.3.1**
+**Upstream Merges (2)**:
+| Repo | Upstream | Commits | Content |
+|------|----------|---------|---------|
+| bobeditpro | upstream/master | 8 | GetEffects dialog, SamplePacks, qsTrc plural forms |
+| topaz-ffmpeg | upstream/master | 4 | TLS: DTLS gating, GnuTLS crash, host URI parsing |
 
-### Jules-Autopilot Specific Analysis
-The reflog shows NO orphaned commits — all commits are on origin/main.
-The "files lost" concern appears to be about:
-1. **Timing**: Files written by Jules between sync cycles get committed by Jules
-   itself and pushed to origin, so `git reset --hard origin/main` picks them up.
-2. **Uncommitted files**: If Jules writes files but doesn't commit them, they
-   survive `git reset --hard` (only tracked files get reset). BUT they would
-   be lost if someone runs `git checkout .` or `git clean`.
-3. **The real risk**: `git reset --hard` DOES overwrite tracked files that
-   have been modified locally. If Jules modified a tracked file but didn't
-   commit, the reset would revert it to the origin version.
+**Forward Merges (3 branches, 2 repos)**:
+| Repo | Branch | Commits | Files | Result |
+|------|--------|---------|-------|--------|
+| bobgui | amolenaar/macos-fix-shortcuts | 1 | 3 | ✅ |
+| bobgui | amolenaar/macos-fullscreen-crash-backport | 71 | 62 | ✅ (4 conflicts, resolved ours) |
+| borg | dependabot/npm_and_yarn | 1 | 4 | ✅ |
 
-## Known Issues (unchanged)
-1. bobfilez: git operations hang (pybind11 nested recursion)
-2. bobsgameweb: `git fetch` fails (invalid index-pack)
-3. bobbybookmarks: gc/repack timeout
-4. element-web: Only `git fetch origin develop` works
-5. fwber: Orphan repo, 51 behind upstream
-6. borg: upstream OhMyOpenCode/aios deleted
-7. OmniRoute: 5+ release branches too diverged
-8. openclaw-dashboard: No push access (5th cycle .gitignore recurrence)
-9. bobgui/amolenaar/fix-dnd-macos-26: 10 conflicts, deferred
-10. 242 GitHub security vulnerabilities (3 critical)
+**Reverse Merges**: 0
 
-## Updated Auto-Commit Protocol (v4.3.1+)
+**Branch Cleanup**: 9+ remote branches deleted
 
-### Previous Protocol (v4.1.0–v4.3.0)
-```
-1. git add -A && git commit  (auto-commit)
-2. git push origin $db       (push to remote)
-3. git reset --hard origin/$db (reset)
-```
-**Gap**: If push fails, or if new changes arrive between step 1 and step 3, `git reset --hard` destroys them.
+### .gitignore Audit: ✅ 0 ISSUES
+- **openclaw-dashboard**: `memory/` fix SURVIVED the reset (stash-before-reset preserved it!)
+- Previous cycles: 4 consecutive recurrences. **First cycle it survived.**
 
-### New Protocol (v4.3.1+)
-```
-1. git add -A && git commit  (auto-commit)
-2. git push origin $db       (push to remote)
-3. git stash --include-untracked  (SAFETY NET: stash any remaining working tree changes)
-4. git reset --hard origin/$db    (reset)
-5. git stash pop             (restore stashed changes — may fail safely if stash is empty)
-```
-**Recovery**: If anything goes wrong, `git stash list` shows the backup. `git stash pop` restores it.
+### Notable Remote Activity
+- **jules-autopilot**: Session priority overhaul (FAILED > PAUSED/IDLE/COMPLETE > IN_PROGRESS, 1hr cooldown)
+- **superdawmcp**: v2.8.0 (SDK Specialization & Logic Pro Feedback)
+- **.agent**: v11.8.0 release
+
+### STEP 3: Workspace Cleanup & Build
+- Scripts: start.bat ✅, build_all.bat ✅
+- Version: 4.3.1 → **4.4.0**
+- Submodule pointers: 8 updated
+- Pushed: bobeditpro, topaz-ffmpeg, bobgui, borg
+
+## Known Issues
+1. **bobfilez**: git operations hang (pybind11 nested submodule recursion)
+2. **bobsgameweb**: `git fetch` fails (invalid index-pack); use ref plumbing
+3. **bobbybookmarks**: gc/repack timeout; workaround: `gc.auto=0` + shallow fetch
+4. **element-web**: Only `git fetch origin develop` works
+5. **fwber**: Orphan repo, 51 behind upstream
+6. **borg**: upstream OhMyOpenCode/aios deleted (404)
+7. **OmniRoute**: 5+ release branches too diverged to merge
+8. **openclaw-dashboard**: No push access; .gitignore fix survived via stash but needs fork for permanence
+9. **bobgui/amolenaar/fix-dnd-macos-26**: 10 conflicts, deferred (97 ahead)
+10. **bobgui/amolenaar/macos-26-native-controls-backport**: 103 ahead, large
+11. **bobgui/adwaita**: 151 files, failed in v4.2.0
+12. **242 GitHub security vulnerabilities** (3 critical)

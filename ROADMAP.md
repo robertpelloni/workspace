@@ -211,3 +211,12 @@
 - [x] borg: 46 lines of uncommitted MCP tools committed and pushed
 - [x] bobbybookmarks: runtime databases saved
 - [x] Confirmed push-before-reset protocol working (0 losses since v4.1.0)
+
+## v4.4.0 Changes
+- [x] 2 upstream merges (bobeditpro 8, topaz-ffmpeg 4 TLS fixes)
+- [x] 3 forward merges (bobgui macos-fix-shortcuts, macos-fullscreen-crash, borg dependabot)
+- [x] 9+ remote branches deleted
+- [x] 🔑 STASH-BEFORE-RESET protocol debut: 87 stash-pops, 0 data loss
+- [x] 🔑 openclaw-dashboard .gitignore FIX SURVIVED reset (stash preserved it!)
+- [x] jules-autopilot: session priority overhaul
+- [x] superdawmcp: v2.8.0

@@ -197,3 +197,13 @@
 - [ ] bobfilez: 12 superseded submodule pointer commits in reflog (safe to ignore)
 - [ ] Consider adding `git stash` before reset as additional safety net
 - [ ] Consider periodic reflog garbage collection prevention for recovery window
+
+## v4.4.0 Follow-ups
+- [ ] bobgui/adwaita: 9 ahead, 151 files — evaluate
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files — evaluate
+- [ ] bobgui/amolenaar/fix-dnd-macos-26: 97 ahead, 105 files (10 conflicts last cycle)
+- [ ] bobgui/amolenaar/macos-26-native-controls-backport: 103 ahead, 109 files
+- [ ] OmniRoute: 5+ release branches — decide archive vs. merge
+- [ ] borg: Remove defunct upstream remote (OhMyOpenCode/aios 404)
+- [ ] fwber: Strategy for orphan repo (51 behind upstream)
+- [ ] openclaw-dashboard: Create robertpelloni fork (stash workaround is temporary)

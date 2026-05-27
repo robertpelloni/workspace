@@ -1,3 +1,41 @@
+## [4.4.0] - 2026-05-27
+
+### Upstream Merges: 2
+- **bobeditpro**: upstream/master (8 commits — GetEffects dialog wrapping, SamplePacks/Bundles support, qsTrc plural forms for ToastProgressBar)
+- **topaz-ffmpeg**: upstream/master (4 commits — TLS security fixes: DTLS UDP protocol gating, GnuTLS crash fix, ff_tls_parse_host() refactored)
+
+### Forward Merges: 3 branches across 2 repos
+- **bobgui**: 2 upstream branches:
+  - amolenaar/macos-fix-shortcuts (1 commit, 3 files) — GTK label/text/textview shortcut fix
+  - amolenaar/macos-fullscreen-crash-backport (71 commits, 62 files) — macOS fullscreen crash fix (4 conflicts, resolved ours)
+- **borg**: dependabot/npm_and_yarn/npm_and_yarn-58fd7c5d68 (1 commit, 4 files) — hypercode-extension deps update
+
+### Failed Forward Merges: 0 (all attempted merges succeeded this cycle)
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 9+ branches deleted
+- **6 remote branches** deleted directly (bobgui ×3, planet_fitness ×2, topaz-ffmpeg/master)
+- **3+ remote branches** deleted (bobeditpro ×2, bobmani/beatoraja, bobmani/hymnmania)
+
+### Auto-Commit Protocol: v4.4.0 — STASH-BEFORE-RESET DEBUT
+- **New step**: `git stash --include-untracked` BEFORE `git reset --hard`
+- **9 auto-commits** detected, **8 pushed** before reset — **0 data loss**
+- **87 stash-pops** successfully restored working tree changes
+- **4 stash conflicts** resolved (bobbybookmarks, openclaw-dashboard, borg, onetool-mcp)
+- **.gitignore fix for openclaw-dashboard SURVIVED the reset** (stash preserved it!)
+
+### Notable Remote Activity
+- **jules-autopilot**: Session priority overhaul (FAILED > PAUSED > IN_PROGRESS with 1hr cooldown)
+- **superdawmcp**: v2.8.0 (SDK Specialization & Logic Pro Feedback)
+- **.agent**: v11.8.0 release
+- **auto_dj_script**: New auto-commit
+
+### .gitignore Audit: 0 issues
+- **openclaw-dashboard**: `memory/` fix SURVIVED this cycle (stash-before-reset preserved it!)
+- Previous cycles: 4 consecutive recurrences. This is the first cycle it survived.
+
+### Submodule Pointer Updates: 8
 ## [4.3.1] - 2026-05-27
 
 ### 🔴 DATA RECOVERY: 34 lost commits recovered from reflog
