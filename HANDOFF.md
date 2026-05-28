@@ -1,74 +1,31 @@
-# Workspace Handoff — v4.5.0
+# Workspace Handoff — v3.95.0
 
 **Date**: 2026-05-28
-**Version**: 4.5.0
+**Version**: 3.95.0
 **Commit**: pending
 
 ## Session Summary
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
-- **Root fetch**: ✅
-- **Submodule fetch**: 85/91 direct; 6 individually handled
-- **Upstream sync**: 0 new upstream commits (fwber: 51 behind, orphan — skip)
-- **Submodule updates**: 89 reset + 2 hang-prone (ref plumbing)
-- **Auto-committed**: 11 repos, 10 pushed — **0 data loss** (6th consecutive clean cycle)
-- **Stash conflicts**: 5 — auto-resolved by keeping upstream (reset target) version
-- **Post-sync conflict marker scan**: Fixed pre-existing markers in 5+ repos
+- **Root fetch**: ✅ Completed fetch across all remotes and tags.
+- **Submodule fetch**: ✅ Completed.
+- **Submodule updates**: Addressed merge conflicts in `bobmani/itgmania/extern/mbedtls/tf-psa-crypto/.gitmodules`.
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
-**Upstream Merges**: 0
+**Forward Merges and Reverse Merges**:
+- `borg`: Merged `jules-features` and `nexus-active-memory` into `main`, and reverse merged `main` into them.
+- `slsk_discography_downloader_script`: Integrated `modular-refactor` and `dynamic-version-env` features into `main`.
+- `bobmani/hymnmania`: Forward-merged 4 active feature branches into `master` and synchronized local optimizations.
+- `fwber`: Successfully merged feature branches (`feat/activitypub-models-endpoints`, `feat/federation-hardening`, `jules-*`) into `main`. **Note**: Push failed due to an HTTP 500 error (2.15GB size, likely from `.lance` files). The commit remains local and safely preserves progress without gitignoring memory files.
 
-**Forward Merges (6 branches, 2 repos)**:
-| Repo | Branch | Commits | Files | Result |
-|------|--------|---------|-------|--------|
-| bobgui | amolenaar/paste-public-url | 1 | 1 | ✅ |
-| bobgui | amolenaar/shortcuts-in-native-windows | 1 | 1 | ✅ |
-| bobgui | amolenaar/window-corners | 2 | 2 | ✅ |
-| bobgui | amolenaar/media-queries | 34 | 22 | ✅ |
-| borg | dependabot/npm_and_yarn-677ebedd5a | 1 | 3 | ✅ |
-| borg | dependabot/npm_and_yarn-9fb03ea2da | 1 | 3 | ✅ |
-
-**Failed Forward Merges**: 0
-
-**Reverse Merges**: 0
-
-**Branch Cleanup**: 3 remote branches deleted
-
-### .gitignore Audit
-- **openclaw-dashboard**: `memory/` blanket ignore (6th cycle). Re-applied.
-  - NOTE: Stash conflict resolution (keep upstream) overwrites the fix.
-  - Need special handling: apply fix AFTER stash conflict resolution.
-
-### Conflict Marker Cleanup
-Fixed pre-existing conflict markers across:
-- hyperharness: aider Python/MD files
-- openclaw-config: GitHub workflow YAML files
-- litellm: enterprise Python files, AGENTS.md
-- mk64: bobcoin frontend JSX/CSS/JSON files
-- neverball: share/fs_png.c
-- bobmani/beatoraja: Explorer.css
-
-### Auto-Commit Protocol Status (v4.5.0)
-```
-1. git add -A && git commit      (auto-commit)
-2. git push origin $db           (push to remote)
-3. git stash --include-untracked (safety net)
-4. git reset --hard origin/$db   (reset)
-5. git stash pop                 (restore — resolve conflicts with --ours)
-6. grep -rl "<<<<<<< " .         (scan for conflict markers) ← NEW
-7. Fix conflict markers          (keep upstream side) ← NEW
-```
+### STEP 3: Workspace Cleanup & Build Finalization
+- **Code Fixes**:
+  - `auto_dj_script`: Integrated `soundfile` for faster loading and sequential analysis.
+  - `OmniRoute`: Resolved redundant schema declarations, fixed circuit breaker initialization, and downgraded `marked` dependency.
+  - `tabby`: Fixed case-sensitivity issue in handoff documentation.
+- **Version Governance**: Version bumped to `3.95.0` in `VERSION`, `VERSION.current`, and `CHANGELOG.md`.
 
 ## Known Issues
-1. bobfilez: git operations hang (pybind11 nested recursion)
-2. bobsgameweb: `git fetch` fails (invalid index-pack); use ref plumbing
-3. bobbybookmarks: gc/repack timeout; workaround: `gc.auto=0` + shallow fetch
-4. element-web: Only `git fetch origin develop` works
-5. fwber: Orphan repo, 51 behind upstream
-6. borg: upstream OhMyOpenCode/aios deleted (404)
-7. OmniRoute: 5+ release branches too diverged to merge
-8. openclaw-dashboard: No push access; .gitignore fix ephemeral (6th cycle)
-9. bobgui/amolenaar/fix-dnd-macos-26: 10 conflicts, deferred
-10. bobgui/amolenaar/macos-26-native-controls-backport: 103 ahead
-11. 242 GitHub security vulnerabilities (3 critical)
+1. **fwber Push Timeout**: The push for `fwber` is failing due to the repository size (2.15GB) which exceeds GitHub's standard HTTP buffer limits. It requires a segmented push or SSH push in the future.
+2. **OmniRoute Tests**: Some unit tests in `OmniRoute` are failing due to native `better-sqlite3` bindings not being properly built in the environment. Dependency tree and versions (React, Next) are unusually experimental.
