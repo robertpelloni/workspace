@@ -220,3 +220,11 @@
 - [x] 🔑 openclaw-dashboard .gitignore FIX SURVIVED reset (stash preserved it!)
 - [x] jules-autopilot: session priority overhaul
 - [x] superdawmcp: v2.8.0
+
+## v4.5.0 Changes
+- [x] 6 forward merges (bobgui ×4, borg ×2)
+- [x] 3 remote branches deleted
+- [x] Auto-commit: 0 data loss (6th consecutive clean cycle)
+- [x] 5 stash conflicts auto-resolved
+- [x] Post-sync conflict marker scan: fixed pre-existing markers in 5+ repos
+- [x] 9 submodule pointers updated

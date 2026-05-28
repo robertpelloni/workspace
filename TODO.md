@@ -207,3 +207,15 @@
 - [ ] borg: Remove defunct upstream remote (OhMyOpenCode/aios 404)
 - [ ] fwber: Strategy for orphan repo (51 behind upstream)
 - [ ] openclaw-dashboard: Create robertpelloni fork (stash workaround is temporary)
+
+## v4.5.0 Follow-ups
+- [ ] openclaw-dashboard: Create robertpelloni fork to persist .gitignore fix (6th cycle recurring)
+- [ ] openclaw-dashboard: Stash conflict resolution overwrites .gitignore fix — need special handling
+- [ ] bobgui/adwaita: 9 ahead, 151 files — evaluate
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files — evaluate
+- [ ] bobgui/amolenaar/fix-dnd-macos-26: 97 ahead, 105 files (10 conflicts)
+- [ ] bobgui/amolenaar/macos-26-native-controls-backport: 103 ahead, 109 files
+- [ ] OmniRoute: 5+ release branches — decide archive vs. merge
+- [ ] borg: Remove defunct upstream remote
+- [ ] fwber: Strategy for orphan repo (51 behind)
+- [ ] Pre-existing conflict markers in mk64, neverball (third-party, local fix only)

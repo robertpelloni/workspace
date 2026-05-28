@@ -1,3 +1,36 @@
+## [4.5.0] - 2026-05-28
+
+### Upstream Merges: 0
+- All upstream repos at latest (fwber: 51 behind, orphan — skip)
+
+### Forward Merges: 6 branches across 2 repos
+- **bobgui**: 4 upstream branches:
+  - amolenaar/paste-public-url (1 commit, 1 file)
+  - amolenaar/shortcuts-in-native-windows (1 commit, 1 file)
+  - amolenaar/window-corners (2 commits, 2 files)
+  - amolenaar/media-queries (34 commits, 22 files) — CSS media query support
+- **borg**: 2 dependabot branches:
+  - dependabot/npm_and_yarn/npm_and_yarn-677ebedd5a (1 commit, 3 files)
+  - dependabot/npm_and_yarn/npm_and_yarn-9fb03ea2da (1 commit, 3 files)
+
+### Failed Forward Merges: 0 (all attempted merges succeeded)
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 3 branches deleted
+- bobgui/amolenaar/macos-fix-shortcuts (merged v4.4.0)
+- bobgui/amolenaar/macos-fullscreen-crash-backport (merged v4.4.0)
+- topaz-ffmpeg/nipun/motion_blur (merged v4.2.0)
+
+### Auto-Commit Protocol: v4.5.0 — stash-before-reset + conflict marker scan
+- **11 auto-commits** detected, **10 pushed** before reset — **0 data loss**
+- **5 stash conflicts** auto-resolved (keep upstream/reset target)
+- **Post-sync conflict marker scan**: Found and fixed pre-existing markers in
+  hyperharness (aider files), openclaw-config (workflows), litellm (enterprise py),
+  mk64 (frontend JSX), neverball (fs_png.c), bobmani/beatoraja
+- **openclaw-dashboard .gitignore**: Re-applied (stash conflict resolution overwrote it)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — recurring, re-applied)
 ## [4.4.0] - 2026-05-27
 
 ### Upstream Merges: 2

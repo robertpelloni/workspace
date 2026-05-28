@@ -289,3 +289,6 @@
 	path = warp
 	url = https://github.com/robertpelloni/warp.git
 	branch = master
+[submodule "litellm_control_panel"]
+	path = litellm_control_panel
+	url = https://github.com/robertpelloni/litellm_control_panel
