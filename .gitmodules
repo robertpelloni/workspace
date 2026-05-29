@@ -292,3 +292,6 @@
 [submodule "litellm_control_panel"]
 	path = litellm_control_panel
 	url = https://github.com/robertpelloni/litellm_control_panel
+[submodule "fully_automated_gay_luxury_space_communism"]
+	path = fully_automated_gay_luxury_space_communism
+	url = https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git
