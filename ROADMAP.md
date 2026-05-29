@@ -228,3 +228,13 @@
 - [x] 5 stash conflicts auto-resolved
 - [x] Post-sync conflict marker scan: fixed pre-existing markers in 5+ repos
 - [x] 9 submodule pointers updated
+
+## v4.6.0 Changes
+- [x] 2 upstream merges (sm64coopdx 178 commits, topaz-ffmpeg 18 commits)
+- [x] 5 forward merges (bobgui ×2, litellm_control_panel ×2, hymnmania ×1)
+- [x] 4 remote branches deleted (v4.5.0 merges cleaned up)
+- [x] Auto-commit: 0 data loss (7th consecutive clean cycle)
+- [x] 3 stash conflicts auto-resolved
+- [x] Post-sync conflict marker scan: fixed litellm (120 files), neverball
+- [x] 15 submodule pointers updated
+- [x] multimousergy default branch fixed (netmux→main)

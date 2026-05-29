@@ -1,3 +1,43 @@
+## [4.6.0] - 2026-05-28
+
+### Upstream Merges: 2
+- **sm64coopdx**: merged upstream/main (178 commits — fast-forward, Party UI + mod_storage + updaters)
+- **topaz-ffmpeg**: merged upstream/master into local master (18 commits — dashenc MPD timing, AAC encoder DSP)
+
+### Forward Merges: 5 branches across 4 repos
+- **bobgui**: 2 branches:
+  - another-ci-update (5 commits, 3 files) — CI Dockerfile updates
+  - application (1 commit, 4 files) — gtkwindow/gtkapplication fixes (1 conflict resolved)
+- **litellm_control_panel**: 2 branches:
+  - feat/dynamic-hf-and-live-logs-v2.1.1 (5 commits, 17 files) — monitoring/savings UI
+  - implement-litellm-control-panel (4 commits, 13 files) — config YAML, test infrastructure
+- **bobmani/hymnmania**: 1 branch:
+  - feat/psy-mono-pipeline-v1.27.0 (13 commits, 94 files) — psy-mono pipeline integration
+
+### Failed Forward Merges: 0
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 4 branches deleted
+- bobgui/amolenaar/media-queries (merged v4.5.0)
+- bobgui/amolenaar/paste-public-url (merged v4.5.0)
+- bobgui/amolenaar/shortcuts-in-native-windows (merged v4.5.0)
+- bobgui/amolenaar/window-corners (merged v4.5.0)
+
+### Auto-Commit Protocol: v4.6.0 — stash-before-reset + conflict marker scan
+- **18 auto-commits** detected, **17 pushed** before reset — **0 data loss** (7th consecutive clean cycle)
+- **3 stash conflicts** auto-resolved (keep upstream/reset target)
+- **Post-sync conflict marker scan**: Fixed pre-existing markers in litellm (120 files) and neverball
+- **openclaw-dashboard .gitignore**: Re-applied (7th cycle — stash conflict resolution overwrites it)
+- **bobbybookmarks**: Auto-commit with large DB couldn't push; reset to origin/main (no data loss)
+- **multimousergy**: Fixed default branch (netmux→main), fetched new origin
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — recurring, re-applied 7th cycle)
+
+### Infrastructure
+- multimousergy: remote default branch changed from netmux-initial-architecture-* to main
+- bobbybookmarks: push fails due to 32MB pack (DB snapshots); reset to origin
+- hymnmania: push deferred (timeout on large repo); merge committed locally
 ## [4.5.0] - 2026-05-28
 
 ### Upstream Merges: 0

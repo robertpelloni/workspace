@@ -219,3 +219,16 @@
 - [ ] borg: Remove defunct upstream remote
 - [ ] fwber: Strategy for orphan repo (51 behind)
 - [ ] Pre-existing conflict markers in mk64, neverball (third-party, local fix only)
+
+## v4.6.0 Follow-ups
+- [ ] hymnmania: push deferred — large repo timeout; retry with gc/repack
+- [ ] bobbybookmarks: push fails (32MB DB in commits); add DB to .gitignore
+- [ ] openclaw-dashboard: Create robertpelloni fork to persist .gitignore fix (7th cycle recurring)
+- [ ] bobgui/adwaita: 9 ahead, 151 files — evaluate
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files — evaluate
+- [ ] bobgui/amolenaar/fix-dnd-macos-26: 97 ahead, 105 files (10+ conflicts)
+- [ ] bobgui/amolenaar/macos-26-native-controls-backport: 103 ahead, 109 files
+- [ ] OmniRoute: 5+ release branches — decide archive vs. merge
+- [ ] borg: Remove defunct upstream remote (OhMyOpenCode/aios deleted)
+- [ ] fwber: Strategy for orphan repo (51 behind)
+- [ ] litellm: Recurring conflict markers (120 files this cycle) — investigate root cause
