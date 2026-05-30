@@ -1,3 +1,56 @@
+## [4.13.0] - 2026-05-30
+
+### Upstream Merges: 1
+- **topaz-ffmpeg**: merged upstream/master (9 commits — Dolby Vision hvcE preservation, Vulkan swscale type fix, fate test, legacy path check)
+
+### Forward Merges: 10 branches across 5 repos
+- **topaz-ffmpeg**: 2 branches:
+  - nipun/fi (1 commit, 1 file) ✅ — frame interpolation fix
+  - regression/7.1.0.8-linux+2 (6 commits, 3 files) ✅ — Linux regression tests (resolved vf_veai_fi.c conflict)
+- **pi-mono**: 1 branch:
+  - total-assimilation-cleanup (2 commits, 5 files) ✅ — cleanup
+- **bobmani/hymnmania**: 1 branch:
+  - feat/psy-mono-pipeline-1.27.0 (2 commits, 4 files) ✅ — pipeline update
+- **fully_automated_gay_luxury_space_communism**: 1 branch:
+  - jules-17563276564479654527 (17 commits, 44 files) ✅ — AI-generated feature
+- **bobgui**: 5 branches:
+  - avovk/state-saving-portal (9 commits, 24 files) ✅ — resolved gtkapplicationimpl.c conflict
+  - avovk/state-saving-fixups (9 commits, 21 files) ✅ — resolved gtkapplicationwindow.h modify/delete
+  - avovk/async-state-saving (11 commits, 32 files) ✅ — resolved gdkglobals-win32.c conflict
+  - async-dialog-api (4 commits, 9 files) ✅ — resolved 3 conflicts (colorchooser, filechooser)
+
+### Failed Forward Merges: 4 (topaz-ffmpeg)
+- mike/deps/videoai, mike/fix/destruct-crash, mike/fix/stb-cloud, mike/refactor/grain — 1 conflict each
+
+### Branch Cleanup: 24 branches deleted
+- bobgui: 2 (avoid-label-resizes, back-to-gl — already merged)
+- fwber: 1 (feat/federation-hardening-auth — already merged)
+- litellm: 1 (audit-and-metrics-implementation — already merged)
+- tabby: 20 (all-contributors branches — already merged)
+
+### Conflict Marker Remediation: 14 repos — LARGEST CLEANUP EVER
+- **jules-autopilot**: 1 file (2,858 insertions, 10,362 deletions)
+- **mcp-superassistant**: 1 file (39 deletions)
+- **bobfilez**: 1 file
+- **fwber**: 4 files
+- **borg**: 4 files (15,656 deletions)
+- **opencode-autopilot**: 3 files (262 deletions)
+- **bobui**: 13 files (node_modules typescript)
+- **bobcoin**: 6 files (3,767 deletions)
+- **bobmani/bobmania**: 18 files (1,319 deletions — docs + economy + gym)
+- **bobeditpro**: 43 files (474 deletions — C++ headers + appshell)
+- **bobmani/itgmania**: 89 files (27,665 deletions)
+- **bobdesk**: 397 files (19,905 deletions — LibreOffice C/C++ headers)
+- **OmniRoute**: 649 files (605,731 deletions!)
+- **hyperharness**: 640 files (88,042 deletions!)
+- **Total**: ~1,965 conflict markers resolved, ~763,000+ deletions
+
+### Auto-Commit Protocol: v4.13.0
+- **11 auto-commits**, **8 pushed** — **0 data loss** (14th consecutive clean cycle)
+- **1 stash conflict** (OmniRoute — force resolved)
+- **openclaw-dashboard .gitignore**: Re-applied (14th cycle)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 14th cycle)
 ## [4.12.0] - 2026-05-30
 
 ### Upstream Merges: 1

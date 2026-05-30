@@ -303,3 +303,19 @@
 - [ ] hymnmania: push still fails
 - [ ] bobbybookmarks: push still fails
 - [ ] openclaw-dashboard: Create fork (13th cycle)
+
+## v4.13.0 Follow-ups
+- [ ] bobeditpro: git index corrupted — needs reset/rebuild
+- [ ] topaz-ffmpeg: 4 mike/* branches with conflicts (mike/deps/videoai, mike/fix/destruct-crash, mike/fix/stb-cloud, mike/refactor/grain)
+- [ ] bobgui/avif-support: 20 ahead, 81 files — new candidate
+- [ ] bobgui/backport-4406-4.6: 147 ahead, 117 files — large
+- [ ] bobgui/arraystore-perf: 39 ahead, 37 files, 11 conflicts (deferred since v4.9.0)
+- [ ] geany: 6+ local branches remaining
+- [ ] hymnmania: push fails (pack timeout)
+- [ ] bobbybookmarks: push fails (large DB)
+- [ ] bobfilez: git operations hang; 62 commits behind upstream
+- [ ] fwber: orphan repo, push fails
+- [ ] borg: upstream 404
+- [ ] openclaw-dashboard: Create fork (14th cycle)
+- [ ] element-web: fetch fails (index-pack error)
+- [ ] 259+ GitHub security vulnerabilities

@@ -293,3 +293,13 @@
 - [x] 0 stash conflicts — 5th consecutive clean cycle
 - [x] 0 repos with conflict markers (2nd consecutive clean scan)
 - [x] 8 submodule pointers updated
+
+## v4.13.0 Changes
+- [x] 1 upstream merge (topaz-ffmpeg: 9 commits — Dolby Vision hvcE + Vulkan fixes)
+- [x] 10 forward merges (topaz-ffmpeg×2, pi-mono×1, hymnmania×1, FAGLSC×1, bobgui×5)
+- [x] 4 failed forward merges (topaz-ffmpeg mike/* branches)
+- [x] 24 remote branches deleted
+- [x] Conflict marker remediation: 14 repos, ~1,965 markers, ~763K deletions
+- [x] Auto-commit: 0 data loss (14th consecutive clean cycle)
+- [x] 23 submodule pointers updated
+- [x] openclaw-dashboard .gitignore fix (14th cycle)
