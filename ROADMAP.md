@@ -255,3 +255,13 @@
 - [x] 0 stash conflicts — 2nd consecutive clean cycle
 - [x] Conflict markers fixed: bobgui (35 files), neverball (1 file)
 - [x] 10 submodule pointers updated
+
+## v4.9.0 Changes
+- [x] 1 upstream merge (topaz-ffmpeg: 3 Vulkan commits)
+- [x] 8 forward merges (bobgui ×1, geany ×7)
+- [x] 1 merge aborted (bobgui/arraystore-perf — 11 conflicts)
+- [x] 3 remote branches deleted
+- [x] Auto-commit: 0 data loss (10th consecutive clean cycle)
+- [x] 0 stash conflicts — 3rd consecutive clean cycle
+- [x] Conflict markers fixed: bobtrader (3 files), neverball (1 file)
+- [x] 10 submodule pointers updated

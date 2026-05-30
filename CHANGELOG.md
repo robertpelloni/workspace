@@ -1,3 +1,36 @@
+## [4.9.0] - 2026-05-29
+
+### Upstream Merges: 1
+- **topaz-ffmpeg**: merged upstream/master (3 new commits — Vulkan ffv1 32-bit float RGB encoding, swscale Vulkan interlaced filtering + SPIRV filtered reads)
+
+### Forward Merges: 8 branches across 2 repos
+- **bobgui**: 1 branch:
+  - async-color-api (5 commits, 9 files) — GTK color chooser async API
+  - arraystore-perf: **ABORTED** (11 modify/delete conflicts — deferred)
+- **geany**: 7 branches:
+  - 1.27 (1 commit) — version tag
+  - Update-doxygen-configuration (1 commit, 1 file) — doxygen config
+  - b4n/c/backslashes (1 commit, 4 files) — C backslash handling
+  - elextr-patch-1 (2 commits, 2 files) — small fixes
+  - elextr-patch-2 (3 commits, 1 file) — small fixes
+  - dependabot/actions/cache-5 (1 commit, 2 files) — GitHub Actions cache v5
+  - dependabot/actions/upload-artifact-7 (1 commit, 2 files) — GitHub Actions artifact v7
+
+### Failed Forward Merges: 1
+- bobgui/arraystore-perf — 11 modify/delete conflicts, aborted
+
+### Branch Cleanup: 3 branches deleted
+- bobgui/arnaudb/css-invalidation-failure (merged v4.8.0)
+- bobgui/arnaudb/menubutton-active (merged v4.8.0)
+- bobgui/arnaudb/requires (contained, cleaned up)
+
+### Auto-Commit Protocol: v4.9.0
+- **15 auto-commits** detected, **14 pushed** — **0 data loss** (10th consecutive clean cycle)
+- **0 stash conflicts** — 3rd consecutive clean cycle
+- **Post-sync conflict marker scan**: Fixed bobtrader (3 files, 18K lines) + neverball (1 file)
+- **openclaw-dashboard .gitignore**: Re-applied (10th cycle)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 10th cycle)
 ## [4.8.0] - 2026-05-29
 
 ### Upstream Merges: 0

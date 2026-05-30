@@ -1,7 +1,7 @@
-# Workspace Handoff — v4.8.0
+# Workspace Handoff — v4.9.0
 
 **Date**: 2026-05-29
-**Version**: 4.8.0
+**Version**: 4.9.0
 **Commit**: pending
 
 ## Session Summary
@@ -9,42 +9,45 @@
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 - **Root fetch**: ✅
 - **Submodule fetch**: 86/92 direct; 6 individually handled
-- **Upstream merges**: 0 (all current)
+- **Upstream merge**: 1 (topaz-ffmpeg: 3 commits — Vulkan ffv1 + swscale interlaced)
 - **Submodule updates**: 89 reset + 3 ref-plumbed
-- **Auto-committed**: 15 repos, 14 pushed — **0 data loss** (9th consecutive clean cycle)
-- **Stash conflicts**: 0 — 2nd consecutive clean cycle
-- **Post-sync conflict marker scan**: Fixed bobgui (35 files) + neverball (1 file)
+- **Auto-committed**: 15 repos, 14 pushed — **0 data loss** (10th consecutive clean cycle)
+- **Stash conflicts**: 0 — 3rd consecutive clean cycle
+- **Post-sync conflict marker scan**: Fixed bobtrader (3 files), neverball (1 file)
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
-**Upstream Merges**: 0
+**Upstream Merges (1 repo)**:
+| Repo | Commits | Key Changes | Result |
+|------|---------|-------------|--------|
+| topaz-ffmpeg | 3 | Vulkan ffv1 RGB float, swscale interlaced | ✅ Pushed |
 
-**Forward Merges (2 branches, 1 repo)**:
+**Forward Merges (8 branches, 2 repos)**:
 | Repo | Branch | Commits | Files | Result |
 |------|--------|---------|-------|--------|
-| bobgui | arnaudb/css-invalidation-failure | 1 | 6 | ✅ Pushed |
-| bobgui | arnaudb/menubutton-active | 1 | 2 | ✅ (modify/delete conflict resolved) |
-
-**Failed Forward Merges**: 0
-
-**Branch Cleanup**: 4 remote branches deleted
+| bobgui | async-color-api | 5 | 9 | ✅ Pushed |
+| bobgui | arraystore-perf | 39 | 37 | ❌ 11 conflicts, aborted |
+| geany | 1.27 | 1 | 1 | ✅ Pushed |
+| geany | Update-doxygen-configuration | 1 | 1 | ✅ Pushed |
+| geany | b4n/c/backslashes | 1 | 4 | ✅ Pushed |
+| geany | elextr-patch-1 | 2 | 2 | ✅ Pushed |
+| geany | elextr-patch-2 | 3 | 1 | ✅ Pushed |
+| geany | dependabot/cache-5 | 1 | 2 | ✅ Pushed |
+| geany | dependabot/upload-artifact-7 | 1 | 2 | ✅ Pushed |
 
 ### .gitignore Audit
-- **openclaw-dashboard**: `memory/` blanket ignore (9th cycle). Re-applied.
+- **openclaw-dashboard**: `memory/` blanket ignore (10th cycle). Re-applied.
 
-### Notable
-- **bobgui conflict markers**: 35 files had pre-existing `<<<<<<<` markers from upstream merges.
-  Root cause: upstream GTK branches merge with conflicts that get committed as markers.
-  Fixed by batch-resolving (keep first side / ours).
-- **bobsgameweb**: origin/master advanced (0825693 → 5b998dca) — new commits detected
+### Milestone: 10th consecutive clean cycle with 0 data loss!
 
 ## Known Issues
 1. bobfilez: git operations hang
-2. bobsgameweb: `git fetch` fails; ref plumbing only
-3. bobbybookmarks: push fails (large DB); reset to origin
-4. hymnmania: push fails (pack-objects timeout)
-5. fwber: orphan repo, fetch timeout
+2. bobsgameweb: ref plumbing only
+3. bobbybookmarks: push fails (large DB)
+4. hymnmania: push fails (pack timeout)
+5. fwber: orphan repo
 6. borg: upstream 404
-7. openclaw-dashboard: .gitignore fix ephemeral (9th cycle)
-8. bobgui: recurring upstream conflict markers (35 files)
-9. 259 GitHub security vulnerabilities (3 critical)
+7. openclaw-dashboard: .gitignore fix ephemeral (10th cycle)
+8. bobgui/arraystore-perf: 11 modify/delete conflicts, deferred
+9. geany: version branches remaining (0.18, 0.19, 0.20, 1.23, build-exec)
+10. 259+ GitHub security vulnerabilities

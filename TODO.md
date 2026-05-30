@@ -255,3 +255,13 @@
 - [ ] bobgui/amolenaar/fix-dnd-macos-26: 97 ahead, 105 files
 - [ ] OmniRoute: release branches too diverged
 - [ ] bobgui recurring conflict markers (35 files this cycle) — root cause?
+
+## v4.9.0 Follow-ups
+- [ ] bobgui/arraystore-perf: 39 ahead, 37 files, 11 modify/delete conflicts — needs manual resolution
+- [ ] geany: many version branches remaining (0.18, 0.19, 0.20, 1.23, build-exec)
+- [ ] hymnmania: push still fails
+- [ ] bobbybookmarks: push still fails
+- [ ] openclaw-dashboard: Create fork (10th cycle)
+- [ ] bobgui/adwaita: 9 ahead, 151 files
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files
+- [ ] bobgui/amolenaar/fix-dnd-macos-26: 97 ahead
