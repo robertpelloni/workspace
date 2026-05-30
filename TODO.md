@@ -232,3 +232,16 @@
 - [ ] borg: Remove defunct upstream remote (OhMyOpenCode/aios deleted)
 - [ ] fwber: Strategy for orphan repo (51 behind)
 - [ ] litellm: Recurring conflict markers (120 files this cycle) — investigate root cause
+
+## v4.7.0 Follow-ups
+- [ ] hymnmania: push deferred — large repo timeout; retry with gc/repack
+- [ ] bobbybookmarks: push fails (large DB in commits); add DB to .gitignore
+- [ ] openclaw-dashboard: Create robertpelloni fork to persist .gitignore fix (8th cycle)
+- [ ] bobgui/adwaita: 9 ahead, 151 files — evaluate
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files — evaluate
+- [ ] bobgui/amolenaar/fix-dnd-macos-26: 97 ahead, 105 files
+- [ ] bobgui/amolenaar/macos-26-native-controls-backport: 103 ahead, 109 files
+- [ ] OmniRoute: 5+ release branches — decide archive vs. merge
+- [ ] borg: Remove defunct upstream remote (404)
+- [ ] fwber: Strategy for orphan repo
+- [ ] fully_automated_gay_luxury_space_communism: First Jules branch merged; monitor for more

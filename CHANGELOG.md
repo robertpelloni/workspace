@@ -1,3 +1,39 @@
+## [4.7.0] - 2026-05-29
+
+### Upstream Merges: 1
+- **topaz-ffmpeg**: merged upstream/master (2 new commits — apv_decode CBC fix, mxfdec cleanup)
+
+### Forward Merges: 5 branches across 3 repos
+- **bobgui**: 3 branches:
+  - application-list (2 commits, 8 files) — GTK application list API
+  - arabic-offscreen (1 commit, 3 files) — Arabic offscreen rendering fix
+  - arithmetic-fixup (1 commit, 2 files) — Arithmetic expression fixup
+- **litellm_control_panel**: 1 branch:
+  - feat/dynamic-hf-and-live-logs-v2.1.1 (7 commits, 29 files) — execution dashboard, protocol UI
+- **fully_automated_gay_luxury_space_communism**: 1 branch:
+  - jules-17563276564479654527 (2 commits, 16 files) — side hustle expansion by Jules
+
+### Failed Forward Merges: 0
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 3 branches deleted
+- bobgui/another-ci-update (merged v4.6.0)
+- bobgui/application (merged v4.6.0)
+- litellm_control_panel/implement-litellm-control-panel (merged v4.6.0)
+
+### Auto-Commit Protocol: v4.7.0 — stash-before-reset + conflict marker scan
+- **17 auto-commits** detected, **16 pushed** before reset — **0 data loss** (8th consecutive clean cycle)
+- **0 stash conflicts** — cleanest cycle yet
+- **Post-sync conflict marker scan**: only neverball (1 file, fixed)
+- **openclaw-dashboard .gitignore**: Re-applied (8th cycle)
+- **bobbybookmarks**: Reset to origin/main (push fails — large DB)
+- **hymnmania**: Push deferred (timeout — large repo)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — recurring, re-applied 8th cycle)
+
+### New Submodule
+- fully_automated_gay_luxury_space_communism: Jules AI already created first feature branch!
 ## [4.6.0] - 2026-05-28
 
 ### Upstream Merges: 2

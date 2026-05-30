@@ -238,3 +238,12 @@
 - [x] Post-sync conflict marker scan: fixed litellm (120 files), neverball
 - [x] 15 submodule pointers updated
 - [x] multimousergy default branch fixed (netmux→main)
+
+## v4.7.0 Changes
+- [x] 1 upstream merge (topaz-ffmpeg: 2 commits — apv_decode, mxfdec)
+- [x] 5 forward merges (bobgui ×3, litellm_control_panel ×1, fully_automated ×1)
+- [x] 3 remote branches deleted
+- [x] Auto-commit: 0 data loss (8th consecutive clean cycle)
+- [x] 0 stash conflicts — cleanest cycle yet
+- [x] Post-sync: only neverball had 1 conflict marker
+- [x] 10 submodule pointers updated
