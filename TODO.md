@@ -245,3 +245,13 @@
 - [ ] borg: Remove defunct upstream remote (404)
 - [ ] fwber: Strategy for orphan repo
 - [ ] fully_automated_gay_luxury_space_communism: First Jules branch merged; monitor for more
+
+## v4.8.0 Follow-ups
+- [ ] hymnmania: push still fails (pack-objects signal 15) — needs repack/cleanup
+- [ ] bobbybookmarks: push fails (large DB) — add DB to .gitignore
+- [ ] openclaw-dashboard: Create fork to persist .gitignore fix (9th cycle)
+- [ ] bobgui/adwaita: 9 ahead, 151 files
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files
+- [ ] bobgui/amolenaar/fix-dnd-macos-26: 97 ahead, 105 files
+- [ ] OmniRoute: release branches too diverged
+- [ ] bobgui recurring conflict markers (35 files this cycle) — root cause?

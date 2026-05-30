@@ -247,3 +247,11 @@
 - [x] 0 stash conflicts — cleanest cycle yet
 - [x] Post-sync: only neverball had 1 conflict marker
 - [x] 10 submodule pointers updated
+
+## v4.8.0 Changes
+- [x] 2 forward merges (bobgui ×2 — arnaudb CSS + menubutton)
+- [x] 4 remote branches deleted
+- [x] Auto-commit: 0 data loss (9th consecutive clean cycle)
+- [x] 0 stash conflicts — 2nd consecutive clean cycle
+- [x] Conflict markers fixed: bobgui (35 files), neverball (1 file)
+- [x] 10 submodule pointers updated

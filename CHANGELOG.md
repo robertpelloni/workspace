@@ -1,3 +1,32 @@
+## [4.8.0] - 2026-05-29
+
+### Upstream Merges: 0
+- All upstreams current (topaz-ffmpeg master already at upstream/master)
+
+### Forward Merges: 2 branches across 1 repo
+- **bobgui**: 2 branches:
+  - arnaudb/css-invalidation-failure (1 commit, 6 files) — CSS invalidation test + SVG flags
+  - arnaudb/menubutton-active (1 commit, 2 files) — menubutton active state fix (1 modify/delete conflict resolved)
+
+### Failed Forward Merges: 0
+
+### Reverse Merges: 0
+
+### Branch Cleanup: 4 branches deleted
+- bobgui/application-list (merged v4.7.0)
+- bobgui/arabic-offscreen (merged v4.7.0)
+- bobgui/arithmetic-fixup (merged v4.7.0)
+- litellm_control_panel/feat/dynamic-hf-and-live-logs (merged v4.7.0)
+
+### Auto-Commit Protocol: v4.8.0
+- **15 auto-commits** detected, **14 pushed** — **0 data loss** (9th consecutive clean cycle)
+- **0 stash conflicts** — 2nd consecutive clean cycle
+- **Post-sync conflict marker scan**: Fixed bobgui (35 files) + neverball (1 file)
+- **openclaw-dashboard .gitignore**: Re-applied (9th cycle)
+- **bobbybookmarks**: Reset to origin/main (push fails — large DB)
+- **hymnmania**: Push still fails (pack-objects timeout)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 9th cycle)
 ## [4.7.0] - 2026-05-29
 
 ### Upstream Merges: 1
