@@ -7,9 +7,9 @@
 [submodule "bobsaver"]
 	path = bobsaver
 	url = https://github.com/robertpelloni/bobsaver
-[submodule "borg"]
-	path = borg
-	url = https://github.com/robertpelloni/borg
+[submodule "TormentNexus"]
+	path = TormentNexus
+	url = https://github.com/robertpelloni/TormentNexus
 [submodule "raindropioapp"]
 	path = raindropioapp
 	url = https://github.com/robertpelloni/raindropioapp
