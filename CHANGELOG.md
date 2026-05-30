@@ -1,3 +1,39 @@
+## [4.11.0] - 2026-05-29
+
+### Upstream Merges: 0
+- All upstreams current (topaz-ffmpeg master = upstream/master, arrowvortex up-to-date)
+
+### Forward Merges: 11 branches across 2 repos
+- **bobgui**: 1 branch:
+  - attribute-parsing (2 commits, 4 files) ✅ — attribute parsing improvements
+- **tabby**: 10 branches:
+  - all-contributors/add-0x07E5 ✅
+  - all-contributors/add-BenjaminBrandmeier ✅
+  - all-contributors/add-EvinRWatson ✅
+  - all-contributors/add-Gelix ✅
+  - all-contributors/add-GeminiLn ✅
+  - all-contributors/add-LacazeThomas ✅
+  - all-contributors/add-MagicLike ✅
+  - all-contributors/add-Mxmilu666 ✅
+  - all-contributors/add-OpaqueGlass ✅
+  - all-contributors/add-Ranhiru ✅
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 5 branches deleted
+- bobgui/async-color-api2 (merged v4.10.0)
+- bobgui/async-dialog-api2 (merged v4.10.0)
+- geany/libreapay-funding (merged v4.10.0)
+- geany/startup-speed (contained)
+- geany/windows-signing-release (contained)
+
+### Auto-Commit Protocol: v4.11.0
+- **14 auto-commits** detected, **13 pushed** — **0 data loss** (12th consecutive clean cycle)
+- **0 stash conflicts** — 4th consecutive clean cycle
+- **Post-sync conflict marker scan**: 0 repos with markers ✅
+- **openclaw-dashboard .gitignore**: Re-applied (12th cycle)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 12th cycle)
 ## [4.10.0] - 2026-05-29
 
 ### Upstream Merges: 2

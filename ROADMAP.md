@@ -275,3 +275,12 @@
 - [x] 1 stash conflict resolved
 - [x] Neverball CRLF conflict markers fixed
 - [x] 13 submodule pointers updated
+
+## v4.11.0 Changes
+- [x] 0 upstream merges (all current)
+- [x] 11 forward merges (bobgui ×1, tabby ×10)
+- [x] 5 remote branches deleted
+- [x] Auto-commit: 0 data loss (12th consecutive clean cycle)
+- [x] 0 stash conflicts — 4th consecutive clean cycle
+- [x] 0 repos with conflict markers post-sync
+- [x] 9 submodule pointers updated

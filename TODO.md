@@ -277,3 +277,15 @@
 - [ ] hymnmania: push still fails
 - [ ] bobbybookmarks: push still fails
 - [ ] openclaw-dashboard: Create fork (11th cycle)
+
+## v4.11.0 Follow-ups
+- [ ] tabby: more all-contributors branches remaining (check for additional)
+- [ ] bobgui/arraystore-perf: 39 ahead, 37 files, 11 conflicts (deferred since v4.9.0)
+- [ ] bobgui/async-dialog-api: 4 ahead, 9 files, 3 conflicts (deferred since v4.10.0)
+- [ ] bobgui/adwaita: 9 ahead, 151 files
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files
+- [ ] geany/sm: 1 ahead, 20 files, 2 conflicts
+- [ ] geany: version branches remaining (0.18, 0.19, 0.20, 1.23, build-exec)
+- [ ] hymnmania: push still fails
+- [ ] bobbybookmarks: push still fails
+- [ ] openclaw-dashboard: Create fork (12th cycle)
