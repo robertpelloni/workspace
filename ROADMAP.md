@@ -265,3 +265,13 @@
 - [x] 0 stash conflicts — 3rd consecutive clean cycle
 - [x] Conflict markers fixed: bobtrader (3 files), neverball (1 file)
 - [x] 10 submodule pointers updated
+
+## v4.10.0 Changes
+- [x] 2 upstream merges (topaz-ffmpeg: vorbis parser, arrowvortex: CREDITS fix)
+- [x] 4 forward merges (bobgui ×2, geany ×1, pi-mono ×1)
+- [x] 2 merges aborted (bobgui/async-dialog-api, geany/sm)
+- [x] 8 remote branches deleted
+- [x] Auto-commit: 0 data loss (11th consecutive clean cycle)
+- [x] 1 stash conflict resolved
+- [x] Neverball CRLF conflict markers fixed
+- [x] 13 submodule pointers updated

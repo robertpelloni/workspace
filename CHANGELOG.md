@@ -1,3 +1,36 @@
+## [4.10.0] - 2026-05-29
+
+### Upstream Merges: 2
+- **topaz-ffmpeg**: merged upstream/master (1 new commit — vorbis_parser error code improvements)
+- **bobmani/arrowvortex**: merged upstream/release (1 commit — CREDITS typo fix)
+
+### Forward Merges: 4 branches across 3 repos
+- **bobgui**: 2 branches:
+  - async-dialog-api2 (18 commits, 18 files) ✅
+  - async-color-api2 (8 commits, 18 files) ✅
+  - async-dialog-api: **ABORTED** (3 conflicts)
+- **geany**: 1 branch:
+  - libreapay-funding (1 commit, 1 file) ✅
+  - sm: **ABORTED** (2 conflicts)
+- **pi-mono**: 1 branch:
+  - total-assimilation-cleanup (6 commits, 10 files) ✅
+
+### Failed Forward Merges: 2
+- bobgui/async-dialog-api — 3 conflicts, aborted
+- geany/sm — 2 conflicts, aborted
+
+### Branch Cleanup: 8 branches deleted
+- bobgui/async-color-api (merged v4.9.0)
+- geany/1.27, Update-doxygen-configuration, b4n/c/backslashes (merged v4.9.0)
+- geany/dependabot/cache-5, upload-artifact-7, elextr-patch-1, elextr-patch-2 (merged v4.9.0)
+
+### Auto-Commit Protocol: v4.10.0
+- **11 auto-commits** detected, **10 pushed** — **0 data loss** (11th consecutive clean cycle)
+- **1 stash conflict** resolved (ours strategy)
+- **Post-sync conflict marker scan**: Fixed neverball (1 file — CRLF orphaned markers in fs_png.c)
+- **openclaw-dashboard .gitignore**: Re-applied (11th cycle)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 11th cycle)
 ## [4.9.0] - 2026-05-29
 
 ### Upstream Merges: 1
