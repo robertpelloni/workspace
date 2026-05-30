@@ -289,3 +289,17 @@
 - [ ] hymnmania: push still fails
 - [ ] bobbybookmarks: push still fails
 - [ ] openclaw-dashboard: Create fork (12th cycle)
+
+## v4.12.0 Follow-ups
+- [ ] tabby: more all-contributors branches likely remaining
+- [ ] bobgui/avif-support: 20 ahead, 81 files — new candidate
+- [ ] bobgui/avovk/async-state-saving: 11 ahead, 32 files — new candidate
+- [ ] bobgui/avovk/state-saving-fixups: 9 ahead, 21 files — new candidate
+- [ ] bobgui/avovk/state-saving-portal: 9 ahead, 24 files — new candidate
+- [ ] bobgui/backport-4406-4.6: 147 ahead, 117 files — large
+- [ ] bobgui/arraystore-perf: 39 ahead, 37 files, 11 conflicts (deferred since v4.9.0)
+- [ ] bobgui/async-dialog-api: 4 ahead, 9 files, 3 conflicts
+- [ ] geany/sm: 1 ahead, 20 files, 2 conflicts
+- [ ] hymnmania: push still fails
+- [ ] bobbybookmarks: push still fails
+- [ ] openclaw-dashboard: Create fork (13th cycle)

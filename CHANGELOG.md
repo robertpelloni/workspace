@@ -1,3 +1,31 @@
+## [4.12.0] - 2026-05-30
+
+### Upstream Merges: 1
+- **topaz-ffmpeg**: merged upstream/master (2 commits — fate generic-tags fix + cook codec bounds check)
+
+### Forward Merges: 24 branches across 3 repos
+- **bobgui**: 2 branches:
+  - avoid-label-resizes (1 commit, 2 files) ✅ — label resize avoidance
+  - back-to-gl (1 commit, 1 file) ✅ — GL fallback
+- **litellm**: 1 branch:
+  - audit-and-metrics-implementation (3 commits, 16 files) ✅ — audit & metrics
+- **tabby**: 21 branches:
+  - 20 all-contributors additions (add-RiccardoManzan, add-SergeBakharev, add-TheBlindM, add-ajkrj, add-aminelch, add-andya1lan, add-botprzemek, add-cfs4819, add-eltociear, add-et304383, add-geodic, add-gh-log, add-giejqf, add-hisamafahri, add-ianaflous, add-joerg, add-kairlec, add-karaketir16, +2 duplicates already contained)
+  - 1 contained (duplicate) skipped
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 13 branches deleted
+- bobgui/attribute-parsing (merged v4.11.0)
+- tabby: 12 all-contributors branches (merged v4.11.0)
+
+### Auto-Commit Protocol: v4.12.0
+- **10 auto-commits** detected, **9 pushed** — **0 data loss** (13th consecutive clean cycle)
+- **0 stash conflicts** — 5th consecutive clean cycle
+- **Post-sync conflict marker scan**: 0 repos with markers ✅ (2nd consecutive clean scan)
+- **openclaw-dashboard .gitignore**: Re-applied (13th cycle)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 13th cycle)
 ## [4.11.0] - 2026-05-29
 
 ### Upstream Merges: 0

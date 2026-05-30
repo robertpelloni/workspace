@@ -284,3 +284,12 @@
 - [x] 0 stash conflicts — 4th consecutive clean cycle
 - [x] 0 repos with conflict markers post-sync
 - [x] 9 submodule pointers updated
+
+## v4.12.0 Changes
+- [x] 1 upstream merge (topaz-ffmpeg: 2 commits — fate test fix + cook codec bounds)
+- [x] 24 forward merges (bobgui ×2, litellm ×1, tabby ×21)
+- [x] 13 remote branches deleted
+- [x] Auto-commit: 0 data loss (13th consecutive clean cycle)
+- [x] 0 stash conflicts — 5th consecutive clean cycle
+- [x] 0 repos with conflict markers (2nd consecutive clean scan)
+- [x] 8 submodule pointers updated
