@@ -1,3 +1,53 @@
+## [4.18.0] - 2026-06-01
+
+### Upstream Merges: 1
+- **topaz-ffmpeg**: FFmpeg upstream/master (21 commits — Dolby Vision stream groups, ffv1enc Bayer pixel format, drawtext leak fixes, aresample downmix fixes)
+
+### Forward Merges: 30 branches across 5 repos
+- **bobgui**: 7 branches:
+  - bilelmoussaoui/since-gi (1 commit) ✅ — clean
+  - bilelmoussaoui/toplevel-tag (2 commits, 7 files) ✅ — clean
+  - blue-rose-fix (1 commit) ✅ — resolved 1 conflict
+  - box-layout-child-expand (3 commits, 5 files) ✅ — resolved 2 conflicts
+  - bring-back-app-menu (1 commit) ✅ — clean
+  - builder-cscope-add (1 commit) ✅ — clean
+  - builder-details (9 commits, 8 files) ✅ — resolved 1 conflict
+- **tabby**: 19 dependabot branches ✅ — all clean
+  - tabby-core: mixpanel, readable-stream, uuid
+  - tabby-electron: which, winston
+  - tabby-plugin-manager: semver
+  - tabby-settings: marked
+  - tabby-ssh: types/node, types/ssh2
+  - tabby-terminal: ngx-colors, patch-package, semver, xterm-addon-image
+  - tabby-web: copy-text-to-clipboard, vaadin-context-menu
+  - shared: typedoc, webpack-env, eslint-plugin, browserify-sign
+- **fully_automated_gay_luxury_space_communism**: 2 branches:
+  - jules-17563276564479654527-0ed8f4ab (9 commits, 68 files) ✅ — clean
+  - dependabot/go_modules/hustle/curation/go_modules-bbb8b02913 (1 commit) ✅ — clean
+- **pi-mono**: 1 branch:
+  - total-assimilation-cleanup-3547318931196986384 (4 commits, 22 files) ✅ — clean
+- **workspace (root)**: 1 dependabot/uv branch — skipped (root monorepo timeout)
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 27 branches deleted
+- bobgui: 8 (bilelmoussaoui: g-i2, gdk-pango-length, gi-docs, gi-fix, gsk, gsk-docs, macos_gi, missing-out-annotations — v4.17.0 merges)
+- tabby: 10 (dependabot: lru-cache, npmlog, patch-package, postcss, pug-lint, sass-loader, sentry/electron, slugify, bootstrap, deepmerge — v4.17.0 merges)
+- topaz-ffmpeg: 9 (intel/icx, intel/icx-with-8.1, intel/ov20261, josh/* — v4.17.0 merges)
+
+### Auto-Commit Protocol: v4.18.0
+- **10 auto-committed**, **10 auto-pushed** — **0 data loss** (19th consecutive clean cycle!)
+- **0 stash conflicts** — 10th consecutive clean cycle
+- **.gitignore audit: CLEAN** (3rd consecutive!)
+
+### Notable
+- topaz-ffmpeg upstream: 21 FFmpeg core commits merged (Dolby Vision AVStreamGroup, ffv1enc Bayer encoding, drawtext double-free fixes)
+- element-web: removed defunct upstream remote (404), fetch now succeeds
+- raindropioapp: upstream tag conflict resolved via --force
+- bobgui: 7th consecutive batch of GTK developer branches merged
+- FAGLSC: Jules AI feature branch + dependabot Go module update merged
+- pi-mono: total assimilation cleanup branch merged
+- Nested submodule pointer drift fixed in beatoraja, ksm-v2, npp
 ## [4.17.0] - 2026-06-01
 
 ### Upstream Merges: 0

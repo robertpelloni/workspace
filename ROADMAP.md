@@ -347,3 +347,18 @@
 - [x] 0 stash conflicts — 9th consecutive clean cycle
 - [x] .gitignore audit: CLEAN (2nd consecutive!)
 - [x] 9 submodule pointers updated
+
+## v4.18.0 Changes
+- [x] 1 upstream merge (topaz-ffmpeg: 21 FFmpeg commits)
+- [x] 30 forward merges (bobgui×7, tabby×19, FAGLSC×2, pi-mono×1, root×1 skipped)
+- [x] 0 failed merges
+- [x] 27 remote branches deleted
+- [x] topaz-ffmpeg upstream: Dolby Vision, ffv1enc Bayer, drawtext fixes
+- [x] element-web: removed 404 upstream remote
+- [x] bobgui: bilelmoussaoui since-gi + toplevel-tag + 5 GTK branches
+- [x] FAGLSC: Jules AI branch + dependabot Go module
+- [x] pi-mono: total-assimilation-cleanup merged
+- [x] Auto-commit: 0 data loss (19th consecutive clean cycle)
+- [x] 0 stash conflicts — 10th consecutive clean cycle
+- [x] .gitignore audit: CLEAN (3rd consecutive!)
+- [x] 12 submodule pointers updated
