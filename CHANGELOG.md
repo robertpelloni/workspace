@@ -1,3 +1,44 @@
+## [4.19.0] - 2026-06-01
+
+### Upstream Merges: 1
+- **topaz-ffmpeg**: FFmpeg upstream/master (5 commits — dovi_split BSF, dts2pts binary tree fix, vf_scale rational multiply, Vulkan/GLSL build fix)
+
+### Forward Merges: 13 branches across 4 repos
+- **bobgui**: 5 branches:
+  - builder-precompile (2 commits, 35 files) ✅ — resolved 2 conflicts
+  - buttons (5 commits, 10 files) ✅ — resolved 4 conflicts
+  - cairo-borders-breakage (1 commit) ✅ — clean
+  - calendar-docs-image (3 commits, 43 files) ✅ — resolved 39 conflicts
+  - cancelation-changes (11 commits, 16 files) ✅ — resolved 7 conflicts
+- **tabby**: 6 branches:
+  - dependabot/web/minimatch (1 commit) ✅ — clean
+  - dependabot/web/semver (1 commit) ✅ — clean
+  - dependabot/webpack-bundle-analyzer (1 commit) ✅ — clean
+  - dependabot/webpack-cli (1 commit) ✅ — clean
+  - dependabot/yaml (1 commit) ✅ — clean
+  - ivy (1 commit, 34 files) ✅ — resolved
+- **fully_automated_gay_luxury_space_communism**: 1 Jules branch (5 new commits, 17 files) ✅ — clean
+- **pi-mono**: 1 branch — total-assimilation-cleanup (2 new commits, 15 files) ✅ — clean
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 30 branches deleted
+- bobgui: 8 (bilelmoussaoui/since-gi, toplevel-tag, blue-rose-fix, box-layout-child-expand, bring-back-app-menu, builder-cscope-add, builder-details, builder-warning-backport — v4.18.0 merges)
+- tabby: 22 (19 dependabot from v4.18.0 + electron-upgrade, feat/real-pty-serial, feat/sftp-progress)
+
+### Auto-Commit Protocol: v4.19.0
+- **2 auto-committed + 5 nested submodule pointer commits**, all pushed — **0 data loss** (20th consecutive clean cycle!)
+- **0 stash conflicts** — 11th consecutive clean cycle
+- **.gitignore audit: CLEAN** (4th consecutive!)
+
+### Notable
+- topaz-ffmpeg upstream: dovi_split BSF for Dolby Vision metadata extraction, dts2pts binary tree invariant fix
+- bobgui: largest conflict resolution batch (52 total conflicts across 5 branches)
+- tabby: ivy branch merged (34 files, terminal UI updates)
+- FAGLSC: Jules AI branch accumulated 5 new commits since v4.18.0
+- pi-mono: total-assimilation-cleanup accumulated 2 new commits since v4.18.0
+- Nested submodule pointer drift fixed in 6 parent repos (beatoraja, itgmania, ksm-v2, bobtrax, hyperharness, npp)
+- bobbybookmarks: atlas.db reset (large binary, known push issue)
 ## [4.18.0] - 2026-06-01
 
 ### Upstream Merges: 1
