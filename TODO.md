@@ -354,3 +354,24 @@
 - [ ] element-web: fetch fails (index-pack error)
 - [ ] openclaw-dashboard: .gitignore fix ephemeral (16th cycle)
 - [ ] 259+ GitHub security vulnerabilities
+
+## v4.16.0 Follow-ups
+- [ ] bobgui/backport-4406-4.6: 147 ahead, 117 files
+- [ ] bobgui/backports-for-4-10: 142 ahead, 142 files
+- [ ] bobgui/backports-for-4-6: 257 ahead, 183 files
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files
+- [ ] bobgui/adwaita: 9 ahead, 151 files
+- [ ] bobgui/amolenaar/*: 97-103 ahead — macos branches
+- [ ] tabby/bs5: 26 ahead, 215 files — Bootstrap 5 migration
+- [ ] geany: 3 version branches (0.18, 0.19, 0.20)
+- [ ] tormentnexus/dependabot/uv: merge push timeout
+- [ ] FAGLSC/dependabot/go_modules: merge push timeout
+- [ ] pi-mono/total-assimilation-cleanup: merge push timeout
+- [ ] bobeditpro: git index corrupted — needs full reset
+- [ ] bobfilez: 62 commits behind upstream (hang issue)
+- [ ] hymnmania: push fails (pack timeout)
+- [ ] bobbybookmarks: push fails (large DB)
+- [ ] fwber: orphan repo
+- [ ] borg: upstream 404
+- [ ] element-web: fetch fails (index-pack error)
+- [ ] 259+ GitHub security vulnerabilities

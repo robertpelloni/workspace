@@ -1,3 +1,36 @@
+## [4.16.0] - 2026-06-01
+
+### Upstream Merges: 0
+- All upstreams current (28 checked, 0 new commits).
+
+### Forward Merges: 17 branches across 3 repos
+- **bobgui**: 3 branches:
+  - bilelmoussaoui/docs (2 commits, 1 file) ✅ — clean
+  - bilelmoussaoui/editable-text (1 commit, 1 file) ✅ — clean
+  - bilelmoussaoui/g-i-2 (5 commits, 6 files) ✅ — clean
+- **tabby**: 14 dependabot branches ✅ — all clean merges
+  - app/serialport-12.0.0, app/types/mz-2.7.6, app/types/node-20.8.10
+  - app/v8-compile-cache-2.4.0, app/windows-native-registry-3.2.2
+  - babel/traverse-7.23.2, browserify-sign-4.2.2, compare-versions-6.1.0
+  - core-js-pure-3.33.2, css-loader-6.8.1, electron-27.0.2
+  - electron-builder-24.6.4, electron-installer-snap-5.2.0, electron/notarize-2.1.0
+
+### Failed Forward Merges: 0 (3 repos skipped due to push timeouts: tormentnexus, FAGLSC, pi-mono)
+
+### Branch Cleanup: 26 branches deleted
+- topaz-ffmpeg: 7 (master + 6 feature/fix branches — already merged in v4.15.0)
+- bobgui: 8 (arraystore-perf + 7 small patches — already merged)
+- tabby: 10 (bump-electron, commands, 8 dependabot — already merged)
+- FAGLSC: 1 (jules-* — already merged)
+
+### Auto-Commit Protocol: v4.16.0
+- **4 auto-committed**, **2 auto-pushed** — **0 data loss** (17th consecutive clean cycle)
+- **0 stash conflicts** — 8th consecutive clean cycle
+- **.gitignore audit: CLEAN** (first zero-issue cycle since tracking began!)
+
+### Notable
+- First .gitignore audit with zero issues (openclaw-dashboard fix held from v4.15.0)
+- Largest branch cleanup cycle: 26 contained branches deleted
 ## [4.15.0] - 2026-05-31
 
 ### Upstream Merges: 1
