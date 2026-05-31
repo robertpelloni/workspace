@@ -1,3 +1,86 @@
+## [4.15.0] - 2026-05-31
+
+### Upstream Merges: 1
+- **topaz-ffmpeg**: upstream/master (47 commits, 97 files) ✅ — resolved 3 conflicts (tests/Makefile, fate/hevc.mak, fate/mov.mak)
+
+### Forward Merges: 24 branches across 4 repos
+- **topaz-ffmpeg**: 6 branches:
+  - upstream/master (47 commits, 97 files) ✅ — resolved 3 conflicts
+  - mike/fix/destruct-crash (2 commits, 2 files) ✅ — resolved
+  - mike/fix/stb-cloud (3 commits, 1 file) ✅ — resolved
+  - mike/refactor/grain (1 commit, 1 file) ✅ — clean
+  - mike/deps/videoai (1 commit, 1 file) ✅ — resolved
+  - nipun/fi (1 commit, 1 file) ✅ — already contained
+  - regression/7.1.0.8-linux+2 (6 commits, 3 files) ✅ — already contained
+- **bobgui**: 8 branches:
+  - arraystore-perf (39 commits, 37 files) ✅ — resolved 11 conflicts (long-deferred since v4.9.0)
+  - bgo141154-filechooser-icon-view (23 commits, 3 files) ✅ — clean
+  - bgo121113-filechooser-single-click-activate (3 commits, 5 files) ✅ — resolved 3 conflicts
+  - better-glyph-caching (1 commit, 1 file) ✅ — resolved 1 conflict
+  - better-ink-rects (1 commit, 1 file) ✅ — clean
+  - benjamin-revealer (1 commit, 1 file) ✅ — clean
+  - benzea/increase-cursor-theme-scale (1 commit, 1 file) ✅ — clean
+  - bilelmoussaoui-main-patch-6bd8 (1 commit, 2 files) ✅ — clean
+- **tabby**: 10 branches:
+  - 8 dependabot branches (actions + npm) ✅ — clean
+  - commands (1 commit, 24 files) ✅ — resolved
+  - bump-electron (2 commits, 6 files) ✅ — clean
+- **FAGLSC**: 1 branch:
+  - jules-17563276564479654527 (2 commits, 27 files) ✅ — clean
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 20 branches deleted
+- geany: 3 (1.23, build-exec, sm — already merged)
+- bobgui: 3 (avif-support, backport-mr-7776, barthalion/gnome-runtime-images-quay — already merged)
+- tabby: 14 (12 all-contributors + appx + arm64 — already merged)
+
+### Auto-Commit Protocol: v4.15.0
+- **6 auto-committed**, **4 auto-pushed** — **0 data loss** (16th consecutive clean cycle)
+- **0 stash conflicts** — 7th consecutive clean cycle
+- **openclaw-dashboard .gitignore**: Re-applied (16th cycle)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 16th cycle)
+
+### Notable: arraystore-perf (39 commits) finally merged after deferral since v4.9.0
+## [4.14.0] - 2026-05-31
+
+### Upstream Merges: 0
+- No upstream repositories had new commits this cycle.
+
+### Forward Merges: 18 branches across 4 repos
+- **bobgui**: 2 branches:
+  - backport-mr-7776 (36 commits, 18 files) ✅ — resolved 3 conflicts
+  - avif-support (20 commits, 81 files) ✅ — resolved 2 conflicts (gskgldriver, gskgpuconvertcicpop)
+- **geany**: 3 branches:
+  - build-exec (14 commits, 8 files) ✅ — clean merge
+  - sm (1 commit, 20 files) ✅ — resolved modify/delete on wscript
+  - 1.23 (4 commits, 12 files) ✅ — resolved modify/delete on win32-config.h
+- **tabby**: 14 branches:
+  - 12 all-contributors additions ✅ — clean merges
+  - arm64 (3 commits, 1 file) ✅ — clean
+  - appx (4 commits, 7 files) ✅ — resolved
+- **FAGLSC**: 1 branch:
+  - jules-17563276564479654527 (2 new commits, 14 files) ✅ — clean
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 9 branches deleted
+- bobgui: 5 (async-dialog-api, avovk/* ×3, backport-font-feature-pango-hb — already merged)
+- bobmani/hymnmania: 1 (feat/psy-mono-pipeline — already merged)
+- pi-mono: 1 (total-assimilation-cleanup — already merged)
+- tabby: 2 (all-contributors — already merged)
+
+### Conflict Marker Remediation (continuing from v4.13.0):
+- bobcoin: 1 file (orphan markers in HANDOFF.md) ✅ pushed
+- bobmani/bobmania: 8 files (orphan markers in .gitignore, AGENTS.md, CMake/*) ✅ pushed
+
+### Auto-Commit Protocol: v4.14.0
+- **15 auto-commits**, **79 pushed** — **0 data loss** (15th consecutive clean cycle)
+- **0 stash conflicts** — 6th consecutive clean cycle
+- **openclaw-dashboard .gitignore**: Re-applied (15th cycle)
+
+### .gitignore Audit: 1 issue (openclaw-dashboard — 15th cycle)
 ## [4.13.0] - 2026-05-30
 
 ### Upstream Merges: 1

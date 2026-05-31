@@ -319,3 +319,38 @@
 - [ ] openclaw-dashboard: Create fork (14th cycle)
 - [ ] element-web: fetch fails (index-pack error)
 - [ ] 259+ GitHub security vulnerabilities
+
+## v4.14.0 Follow-ups
+- [ ] bobeditpro: git index corrupted — needs full reset
+- [ ] bobgui/arraystore-perf: 39 ahead, 37 files (deferred since v4.9.0)
+- [ ] bobgui/backport-4406-4.6: 147 ahead, 117 files — large
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files — very large
+- [ ] bobgui/amolenaar/*: 97-103 ahead — large GTK macos branches
+- [ ] geany: 3 version branches remaining (0.18, 0.19, 0.20)
+- [ ] bobfilez: 62 commits behind upstream (hang issue)
+- [ ] hymnmania/bobbybookmarks: push fails
+- [ ] fwber: orphan repo
+- [ ] borg: upstream 404
+- [ ] element-web: fetch fails
+- [ ] openclaw-dashboard: Create fork (15th cycle)
+- [ ] 259+ GitHub security vulnerabilities
+
+## v4.15.0 Follow-ups
+- [ ] bobgui/backport-4406-4.6: 147 ahead, 117 files
+- [ ] bobgui/backports-for-4-10: 142 ahead, 142 files
+- [ ] bobgui/backports-for-4-6: 257 ahead, 183 files
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files — very large
+- [ ] bobgui/adwaita: 9 ahead, 151 files
+- [ ] bobgui/amolenaar/*: 97-103 ahead — large GTK macos branches
+- [ ] tabby/bs5: 26 ahead, 215 files — Bootstrap 5 migration
+- [ ] geany: 3 version branches remaining (0.18, 0.19, 0.20)
+- [ ] bobmani/hymnmania/main: 1 ahead, 162 files — stale
+- [ ] bobeditpro: git index corrupted — needs full reset
+- [ ] bobfilez: 62 commits behind upstream (hang issue)
+- [ ] hymnmania: push fails (pack timeout)
+- [ ] bobbybookmarks: push fails (large DB)
+- [ ] fwber: orphan repo
+- [ ] borg: upstream 404
+- [ ] element-web: fetch fails (index-pack error)
+- [ ] openclaw-dashboard: .gitignore fix ephemeral (16th cycle)
+- [ ] 259+ GitHub security vulnerabilities

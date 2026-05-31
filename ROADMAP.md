@@ -303,3 +303,25 @@
 - [x] Auto-commit: 0 data loss (14th consecutive clean cycle)
 - [x] 23 submodule pointers updated
 - [x] openclaw-dashboard .gitignore fix (14th cycle)
+
+## v4.14.0 Changes
+- [x] 0 upstream merges (all upstreams current)
+- [x] 18 forward merges (bobgui×2, geany×3, tabby×14, FAGLSC×1)
+- [x] 0 failed merges
+- [x] 9 remote branches deleted
+- [x] Conflict markers: bobcoin + bobmania (orphan marker cleanup)
+- [x] Auto-commit: 0 data loss (15th consecutive clean cycle)
+- [x] 0 stash conflicts — 6th consecutive clean cycle
+- [x] 17 submodule pointers updated
+- [x] openclaw-dashboard .gitignore fix (15th cycle)
+
+## v4.15.0 Changes
+- [x] 1 upstream merge (topaz-ffmpeg — 47 commits from upstream/master)
+- [x] 24 forward merges (topaz-ffmpeg×6, bobgui×8, tabby×10, FAGLSC×1)
+- [x] 0 failed merges
+- [x] 20 remote branches deleted
+- [x] arraystore-perf (39 commits) finally merged after deferral since v4.9.0
+- [x] Auto-commit: 0 data loss (16th consecutive clean cycle)
+- [x] 0 stash conflicts — 7th consecutive clean cycle
+- [x] 10 submodule pointers updated
+- [x] openclaw-dashboard .gitignore fix (16th cycle)
