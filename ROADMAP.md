@@ -377,3 +377,16 @@
 - [x] 0 stash conflicts — 11th consecutive clean cycle
 - [x] .gitignore audit: CLEAN (4th consecutive!)
 - [x] 13 submodule pointers updated
+
+## v4.20.0 Changes
+- [x] 0 upstream merges (all upstreams current)
+- [x] 7 forward merges (bobgui×2, tabby×4, FAGLSC×1)
+- [x] 0 failed merges
+- [x] 17 remote branches deleted
+- [x] bobgui: cellarea-style-transitions + center-box
+- [x] tabby: localization, mica2, snap, tmp
+- [x] FAGLSC: Jules AI branch (1 new commit)
+- [x] Auto-commit: 0 data loss (21st consecutive clean cycle!)
+- [x] 0 stash conflicts — 12th consecutive clean cycle
+- [x] .gitignore audit: CLEAN (5th consecutive!)
+- [x] 7 submodule pointers updated

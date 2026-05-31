@@ -1,3 +1,36 @@
+## [4.20.0] - 2026-06-01
+
+### Upstream Merges: 0
+- All upstreams current (topaz-ffmpeg: no new commits since v4.19.0)
+
+### Forward Merges: 7 branches across 3 repos
+- **bobgui**: 2 branches:
+  - cellarea-style-transitions (10 commits, 13 files) ✅ — resolved 5 conflicts
+  - center-box (12 commits, 10 files) ✅ — resolved 1 conflict
+- **tabby**: 4 branches:
+  - localization (1 commit, 10 files) ✅ — resolved
+  - mica2 (2 commits, 16 files) ✅ — clean
+  - snap (1 commit, 3 files) ✅ — resolved
+  - tmp (7 commits, 2 files) ✅ — clean
+- **fully_automated_gay_luxury_space_communism**: 1 Jules branch (1 new commit, 9 files) ✅ — clean
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 17 branches deleted
+- bobgui: 7 (builder-precompile, buttons, cairo-borders-breakage, calendar-docs-image, cancelation-changes, cherry-pick-06f08ea8 — v4.19.0 merges)
+- tabby: 9 (5 dependabot v4.19.0 + ivy, 2 jules, keygen, test — contained)
+- pi-mono: 1 (total-assimilation-cleanup — v4.18.0 merge)
+
+### Auto-Commit Protocol: v4.20.0
+- **3 auto-committed**, **3 auto-pushed** — **0 data loss** (21st consecutive clean cycle!)
+- **0 stash conflicts** — 12th consecutive clean cycle
+- **.gitignore audit: CLEAN** (5th consecutive!)
+
+### Notable
+- bobgui: cellarea-style-transitions brings GtkCellArea CSS transition support
+- tabby: mica2 branch adds Windows Mica backdrop material; localization adds i18n updates
+- tabby: 2 Jules AI branches + keygen + test branches were long-merged but never cleaned up
+- FAGLSC: Jules AI branch accumulated 1 more commit since v4.19.0
 ## [4.19.0] - 2026-06-01
 
 ### Upstream Merges: 1
