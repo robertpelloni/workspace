@@ -1,3 +1,45 @@
+## [4.17.0] - 2026-06-01
+
+### Upstream Merges: 0
+- All upstreams current (27 checked; hymnmania fetch failed).
+
+### Forward Merges: 27 branches across 3 repos
+- **topaz-ffmpeg**: 9 branches:
+  - intel/icx (3 commits, 5 files) ✅ — resolved
+  - intel/icx-with-8.1 (15 commits, 9 files) ✅ — resolved
+  - intel/ov20261 (1 commit, 2 files) ✅ — clean
+  - josh/7.1.0.6 (1 commit, 1 file) ✅ — clean
+  - josh/7.1.0.8 (2 commits, 2 files) ✅ — clean
+  - josh/conan-tc (4 commits, 2 files) ✅ — clean
+  - josh/new-ffmpeg-win2022 (7 commits, 7 files) ✅ — resolved
+  - josh/openvino2025.0.0 (3 commits, 2 files) ✅ — clean
+  - josh/openvino2025.1.0 (5 commits, 2 files) ✅ — clean
+- **bobgui**: 8 bilelmoussaoui branches:
+  - g-i2 (1 commit, 1 file) ✅ — clean
+  - gdk-pango-length (1 commit, 1 file) ✅ — clean
+  - gi-docs (1 commit, 1 file) ✅ — clean
+  - gi-fix (1 commit, 2 files) ✅ — clean
+  - gsk (1 commit, 1 file) ✅ — clean
+  - gsk-docs (1 commit, 1 file) ✅ — resolved 1 conflict
+  - macos_gi (2 commits, 3 files) ✅ — clean
+  - missing-out-annotations (1 commit, 7 files) ✅ — resolved 1 conflict
+- **tabby**: 10 dependabot branches ✅ — all clean
+  - lru-cache, npmlog, patch-package, postcss, pug-lint, sass-loader, sentry/electron, slugify, bootstrap, deepmerge
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 17 branches deleted
+- bobgui: 3 (bilelmoussaoui/docs, editable-text, g-i-2 — already merged)
+- tabby: 14 (dependabot — already merged)
+
+### Auto-Commit Protocol: v4.17.0
+- **4 auto-committed**, **3 auto-pushed** — **0 data loss** (18th consecutive clean cycle)
+- **0 stash conflicts** — 9th consecutive clean cycle
+- **.gitignore audit: CLEAN** (2nd consecutive zero-issue cycle!)
+
+### Notable
+- topaz-ffmpeg intel/josh branches: 9 build configuration branches merged (ICX compiler, OpenVINO, Conan, Windows build)
+- bobgui bilelmoussaoui sweep: 8 GTK developer branches merged (GObject introspection, GDK/Pango, GSK docs)
 ## [4.16.0] - 2026-06-01
 
 ### Upstream Merges: 0

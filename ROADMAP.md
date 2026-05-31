@@ -335,3 +335,15 @@
 - [x] 0 stash conflicts — 8th consecutive clean cycle
 - [x] .gitignore audit: CLEAN (first zero-issue cycle!)
 - [x] 8 submodule pointers updated
+
+## v4.17.0 Changes
+- [x] 0 upstream merges (all upstreams current)
+- [x] 27 forward merges (topaz-ffmpeg×9, bobgui×8, tabby×10)
+- [x] 0 failed merges
+- [x] 17 remote branches deleted
+- [x] topaz-ffmpeg intel/josh build config branches merged
+- [x] bobgui bilelmoussaoui developer branches merged
+- [x] Auto-commit: 0 data loss (18th consecutive clean cycle)
+- [x] 0 stash conflicts — 9th consecutive clean cycle
+- [x] .gitignore audit: CLEAN (2nd consecutive!)
+- [x] 9 submodule pointers updated
