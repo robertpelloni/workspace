@@ -1,3 +1,29 @@
+## [4.22.0] - 2026-06-01
+
+### Upstream Merges: 2
+- **topaz-ffmpeg**: 1 new FFmpeg upstream commit (cbs_h266 pps_exp_slice_height_in_ctus_minus1 range fix)
+- **sm64coopdx**: 79 upstream commits synced from coop-deluxe/sm64coopdx (clean merge, -X ours)
+
+### Forward Merges: 2 branches across 2 repos
+- **fully_automated_gay_luxury_space_communism**: 1 Jules branch (5 new commits, 17 files) ✅ — clean
+- **pi-mono**: 1 branch — total-assimilation-cleanup (5 new commits, 21 files) ✅ — resolved 1 conflict
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 1 branch deleted
+- bobgui: 1 (cherry-pick-1f225d77 — v4.21.0 merge)
+
+### Auto-Commit Protocol: v4.22.0
+- **3 auto-committed**, **3 auto-pushed** — **0 data loss** (23rd consecutive clean cycle!)
+- **0 stash conflicts** — 14th consecutive clean cycle
+- **.gitignore audit: CLEAN** (7th consecutive!)
+
+### Notable
+- topaz-ffmpeg: cbs_h266 syntax template fix for pps_exp_slice_height_in_ctus_minus1 range
+- sm64coopdx: 79 upstream commits synced — first sm64coopdx upstream merge in workspace history
+- FAGLSC: Jules AI branch accumulated 5 more commits since v4.21.0 (17 files)
+- pi-mono: total-assimilation-cleanup accumulated 5 more commits (21 files)
+- hyperharness: aider + llamafile nested submodule pointers reset
 ## [4.21.0] - 2026-06-01
 
 ### Upstream Merges: 0

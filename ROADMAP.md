@@ -403,3 +403,17 @@
 - [x] 0 stash conflicts — 13th consecutive clean cycle
 - [x] .gitignore audit: CLEAN (6th consecutive!)
 - [x] 8 submodule pointers updated
+
+## v4.22.0 Changes
+- [x] 2 upstream merges (topaz-ffmpeg: 1 commit; sm64coopdx: 79 commits)
+- [x] 2 forward merges (FAGLSC×1, pi-mono×1)
+- [x] 0 failed merges
+- [x] 1 remote branch deleted
+- [x] topaz-ffmpeg: cbs_h266 pps_exp_slice_height range fix
+- [x] sm64coopdx: 79 upstream commits synced (first sm64coopdx upstream merge!)
+- [x] FAGLSC: Jules AI branch (5 new commits)
+- [x] pi-mono: total-assimilation-cleanup (5 new commits, 1 conflict resolved)
+- [x] Auto-commit: 0 data loss (23rd consecutive clean cycle!)
+- [x] 0 stash conflicts — 14th consecutive clean cycle
+- [x] .gitignore audit: CLEAN (7th consecutive!)
+- [x] 8 submodule pointers updated

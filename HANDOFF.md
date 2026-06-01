@@ -1,7 +1,7 @@
-# Workspace Handoff — v4.21.0
+# Workspace Handoff — v4.22.0
 
 **Date**: 2026-06-01
-**Version**: 4.21.0
+**Version**: 4.22.0
 **Commit**: pending
 
 ## Session Summary
@@ -9,33 +9,37 @@
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 - **Root fetch**: ✅
 - **Submodule fetch**: 89/92 (bobfilez/bobsgameweb/fwber skipped; element-web + raindropioapp recovered)
-- **Upstream merges**: 0 (all upstreams current)
-- **Dirty repos cleaned**: 8 total
+- **Upstream merges**: 2
+  - topaz-ffmpeg: 1 new FFmpeg commit (cbs_h266 pps_exp_slice_height range fix) — clean merge
+  - sm64coopdx: 79 upstream commits from coop-deluxe/sm64coopdx — clean merge, -X ours
+- **Skipped upstreams**: bobfilez (hang), raindropioapp (unrelated histories)
+- **Dirty repos cleaned**: 7 total
   - 3 auto-committed (bobbybookmarks, litellm_control_panel, slsk_discography_downloader_script)
-  - 4 nested submodule pointer resets (itgmania, ksm-v2, bobtrax, npp)
-  - 1 nested pointer commit pushed (bobmani/ksm-v2: kson + ksmaudio)
-  - hyperharness: clean
-- **Auto-committed**: 3 + 1 nested, all pushed — **0 data loss** (22nd consecutive!)
-- **Stash conflicts**: 0 — 13th consecutive clean cycle
+  - hyperharness: aider + llamafile nested submodule pointers reset
+  - 3 nested submodule pointer resets (itgmania, bobtrax, npp) — persistent sub-submodule content
+- **Auto-committed**: 3, all pushed — **0 data loss** (23rd consecutive!)
+- **Stash conflicts**: 0 — 14th consecutive clean cycle
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
-**Upstream Merges**: 0
+**Upstream Merges (2 repos)**:
+| Repo | Upstream | Commits | Result |
+|------|----------|---------|--------|
+| topaz-ffmpeg | FFmpeg upstream/master | 1 | ✅ clean |
+| sm64coopdx | coop-deluxe upstream/main | 79 | ✅ clean |
 
-**Forward Merges (3 branches, 3 repos)**:
+**Forward Merges (2 branches, 2 repos)**:
 | Repo | Branch | Commits | Files | Conflicts | Result |
 |------|--------|---------|-------|-----------|--------|
-| bobgui | cherry-pick-1f225d77 | 42 | 41 | 1 | ✅ resolved |
-| FAGLSC | jules AI | 1 | 8 | 0 | ✅ clean |
-| pi-mono | total-assimilation-cleanup | 1 | 40 | 0 | ✅ clean |
+| FAGLSC | jules AI | 5 | 17 | 0 | ✅ clean |
+| pi-mono | total-assimilation-cleanup | 5 | 21 | 1 | ✅ resolved |
 
 **Failed Forward Merges**: 0
 
-### Branch Cleanup: 6 branches deleted
-- bobgui: 2 (cellarea-style-transitions, center-box — v4.20.0 merges)
-- tabby: 4 (localization, mica2, snap, tmp — v4.20.0 merges)
+### Branch Cleanup: 1 branch deleted
+- bobgui: 1 (cherry-pick-1f225d77 — v4.21.0 merge)
 
-### .gitignore Audit: **CLEAN** — 6th consecutive zero-issue cycle!
+### .gitignore Audit: **CLEAN** — 7th consecutive zero-issue cycle!
 
 ## Known Issues
 1. bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files

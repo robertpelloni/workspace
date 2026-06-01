@@ -466,3 +466,22 @@
 - [ ] borg: upstream 404
 - [ ] raindropioapp: unrelated histories with upstream
 - [ ] 259+ GitHub security vulnerabilities
+
+## v4.22.0 Follow-ups
+- [ ] bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files
+- [ ] bobgui/adwaita: 9 ahead, 151 files
+- [ ] bobgui/backport-4406-4.6: 147 ahead, 117 files
+- [ ] bobgui/backports-for-4-10: 142 ahead, 142 files
+- [ ] bobgui/backports-for-4-6: 257 ahead, 183 files
+- [ ] bobgui/amolenaar/*: 97-103 ahead — macos branches
+- [ ] tabby/bs5: 26 ahead, 215 files
+- [ ] tabby/russh: 48 ahead, 33 files
+- [ ] tabby/signingtest: 29 ahead, 6 files
+- [ ] geany: 2 version branches (0.19, 0.20)
+- [ ] root dependabot/uv: causes timeout on monorepo cherry-pick
+- [ ] bobfilez: 62 commits behind upstream (hang issue)
+- [ ] bobbybookmarks: atlas.db push fails (large binary)
+- [ ] fwber: orphan repo
+- [ ] borg: upstream 404
+- [ ] raindropioapp: unrelated histories with upstream
+- [ ] 259+ GitHub security vulnerabilities
