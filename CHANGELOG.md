@@ -1,3 +1,31 @@
+## [4.21.0] - 2026-06-01
+
+### Upstream Merges: 0
+- All upstreams current (topaz-ffmpeg: no new commits; bobfilez/raindropioapp: permanent skip)
+
+### Forward Merges: 3 branches across 3 repos
+- **bobgui**: 1 branch:
+  - cherry-pick-1f225d77 (42 commits, 41 files) ✅ — resolved 1 conflict (GTK backport)
+- **fully_automated_gay_luxury_space_communism**: 1 Jules branch (1 new commit, 8 files) ✅ — clean
+- **pi-mono**: 1 branch — total-assimilation-cleanup (1 new commit, 40 files) ✅ — clean
+
+### Failed Forward Merges: 0
+
+### Branch Cleanup: 6 branches deleted
+- bobgui: 2 (cellarea-style-transitions, center-box — v4.20.0 merges)
+- tabby: 4 (localization, mica2, snap, tmp — v4.20.0 merges)
+
+### Auto-Commit Protocol: v4.21.0
+- **3 auto-committed**, **3 auto-pushed** — **0 data loss** (22nd consecutive clean cycle!)
+- **1 nested submodule pointer commit** (bobmani/ksm-v2: kson + ksmaudio pointer update)
+- **0 stash conflicts** — 13th consecutive clean cycle
+- **.gitignore audit: CLEAN** (6th consecutive!)
+
+### Notable
+- bobgui: cherry-pick-1f225d77 brings 42 GTK backport commits
+- FAGLSC: Jules AI branch accumulated 1 more commit since v4.20.0
+- pi-mono: total-assimilation-cleanup accumulated 1 more commit (40 files) since v4.20.0
+- ksm-v2: kson and ksmaudio submodule pointers updated (includes nlohmann/json.hpp + Tilt.cpp additions)
 ## [4.20.0] - 2026-06-01
 
 ### Upstream Merges: 0

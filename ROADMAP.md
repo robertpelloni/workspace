@@ -390,3 +390,16 @@
 - [x] 0 stash conflicts — 12th consecutive clean cycle
 - [x] .gitignore audit: CLEAN (5th consecutive!)
 - [x] 7 submodule pointers updated
+
+## v4.21.0 Changes
+- [x] 0 upstream merges (all upstreams current)
+- [x] 3 forward merges (bobgui×1, FAGLSC×1, pi-mono×1)
+- [x] 0 failed merges
+- [x] 6 remote branches deleted
+- [x] bobgui: cherry-pick-1f225d77 (42 GTK backport commits)
+- [x] FAGLSC: Jules AI branch (1 new commit)
+- [x] pi-mono: total-assimilation-cleanup (1 new commit, 40 files)
+- [x] Auto-commit: 0 data loss (22nd consecutive clean cycle!)
+- [x] 0 stash conflicts — 13th consecutive clean cycle
+- [x] .gitignore audit: CLEAN (6th consecutive!)
+- [x] 8 submodule pointers updated

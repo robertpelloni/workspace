@@ -1,7 +1,7 @@
-# Workspace Handoff — v4.20.0
+# Workspace Handoff — v4.21.0
 
 **Date**: 2026-06-01
-**Version**: 4.20.0
+**Version**: 4.21.0
 **Commit**: pending
 
 ## Session Summary
@@ -9,37 +9,33 @@
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 - **Root fetch**: ✅
 - **Submodule fetch**: 89/92 (bobfilez/bobsgameweb/fwber skipped; element-web + raindropioapp recovered)
-- **Upstream merges**: 0 (all upstreams current — topaz-ffmpeg has no new commits)
+- **Upstream merges**: 0 (all upstreams current)
 - **Dirty repos cleaned**: 8 total
   - 3 auto-committed (bobbybookmarks, litellm_control_panel, slsk_discography_downloader_script)
-  - 4 nested submodule pointer commits (itgmania, ksm-v2, bobtrax, npp)
-  - hyperharness: clean (no changes)
-- **Auto-committed**: 3 + 4 nested pointer commits, all pushed — **0 data loss** (21st consecutive!)
-- **Stash conflicts**: 0 — 12th consecutive clean cycle
+  - 4 nested submodule pointer resets (itgmania, ksm-v2, bobtrax, npp)
+  - 1 nested pointer commit pushed (bobmani/ksm-v2: kson + ksmaudio)
+  - hyperharness: clean
+- **Auto-committed**: 3 + 1 nested, all pushed — **0 data loss** (22nd consecutive!)
+- **Stash conflicts**: 0 — 13th consecutive clean cycle
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
-**Upstream Merges**: 0 (all upstreams current)
+**Upstream Merges**: 0
 
-**Forward Merges (7 branches, 3 repos)**:
+**Forward Merges (3 branches, 3 repos)**:
 | Repo | Branch | Commits | Files | Conflicts | Result |
 |------|--------|---------|-------|-----------|--------|
-| bobgui | cellarea-style-transitions | 10 | 13 | 5 | ✅ resolved |
-| bobgui | center-box | 12 | 10 | 1 | ✅ resolved |
-| tabby | localization | 1 | 10 | minor | ✅ resolved |
-| tabby | mica2 | 2 | 16 | 0 | ✅ clean |
-| tabby | snap | 1 | 3 | minor | ✅ resolved |
-| tabby | tmp | 7 | 2 | 0 | ✅ clean |
-| FAGLSC | jules AI | 1 | 9 | 0 | ✅ clean |
+| bobgui | cherry-pick-1f225d77 | 42 | 41 | 1 | ✅ resolved |
+| FAGLSC | jules AI | 1 | 8 | 0 | ✅ clean |
+| pi-mono | total-assimilation-cleanup | 1 | 40 | 0 | ✅ clean |
 
 **Failed Forward Merges**: 0
 
-### Branch Cleanup: 17 branches deleted
-- bobgui: 7 (v4.19.0 merges + cherry-pick)
-- tabby: 9 (5 dependabot v4.19.0 + ivy, 2 jules, keygen, test)
-- pi-mono: 1 (v4.18.0 merge)
+### Branch Cleanup: 6 branches deleted
+- bobgui: 2 (cellarea-style-transitions, center-box — v4.20.0 merges)
+- tabby: 4 (localization, mica2, snap, tmp — v4.20.0 merges)
 
-### .gitignore Audit: **CLEAN** — 5th consecutive zero-issue cycle!
+### .gitignore Audit: **CLEAN** — 6th consecutive zero-issue cycle!
 
 ## Known Issues
 1. bobgui/AUTO_DENATTIFYING: 4 ahead, 865 files
