@@ -1,4 +1,4 @@
-# Workspace TODO — v4.23.0
+# Workspace TODO — v4.24.0
 
 ## Critical
 - [ ] **Security**: Audit all repos for accidentally committed auth tokens/keys
@@ -501,3 +501,8 @@
 - [ ] **computer-use-preview**: Read-only upstream fork, no push access
 - [ ] **openclaw-dashboard**: Read-only upstream fork, no push access
 - [ ] **antigravity-cli**: Points to third-party fork (krmslmz), robertpelloni fork doesn't exist
+
+## New Issues Discovered (v4.24.0)
+- [ ] **OmniRoute**: husky pre-push hook failing — needs --no-verify or hook fix
+- [ ] **bobeditpro**: local tracking ref for origin/main gets stale after force-push scenarios
+- [ ] **bobmani/hymnmania**: tormentnexus handoff files cause merge conflicts on every sync cycle

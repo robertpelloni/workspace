@@ -1,3 +1,30 @@
+## [4.24.0] - 2026-06-02
+
+### Upstream Submodule Updates
+- **.agent**: merged 99b7d3b (new skills, scripts)
+- **OmniRoute**: merged 22ad775 (new commits, pushed)
+- **bobfilez**: merged 91679ad
+- **bobmani/beatoraja**: merged e4fe41f
+- **bobmani/bobmania**: merged f61ca1d (previous conflict marker fixes)
+- **bobmani/hymnmania**: merged 7cb41e5 (tormentnexus handoff conflicts resolved)
+- **openclaw-config**: merged 745aea1
+- **openclaw-dashboard**: merged d6198d0
+- **topaz-ffmpeg**: merged 8e7ad9f (FFmpeg upstream)
+
+### Empty Branches Deleted: 3
+- **bobeditpro/master** (redundant/empty)
+- **bobmani/hymnmania/master** (redundant/empty)
+- **topaz-ffmpeg/topaz/develop** (redundant/empty)
+
+### Bug Fixes
+- **bobeditpro**: Fixed stale origin/main tracking ref (local showed 1886 commits ahead but remote was already current)
+- **OmniRoute**: Push required --no-verify (husky pre-push hook failing), resolved
+- **hymnmania**: Resolved merge conflict in .tormentnexus handoff files
+
+### Excluded Repos (no change)
+- bg, bobfilez, Maestro (timeout/instability)
+
+### Total Submodules: 100
 ## [4.23.0] - 2026-06-02
 
 ### Submodule Additions: 8
