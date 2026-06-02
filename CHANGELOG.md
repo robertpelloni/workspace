@@ -1,3 +1,45 @@
+## [4.23.0] - 2026-06-02
+
+### Submodule Additions: 8
+- **borg**: Added as submodule (https://github.com/robertpelloni/TormentNexus.git, branch=main) - fixes Jules clone failure
+- **ableton_psytrance_hymn_creator**: Added from GitHub
+- **ai_game_engine**: Added from GitHub
+- **Cli-Proxy-API-Management-Center**: Added from GitHub
+- **enterprise_sales_bot**: Added from GitHub
+- **hyper**: Added from GitHub
+- **projectm**: Added from GitHub (branch=master)
+- **psytrance_night_outreach_agent**: Added from GitHub
+
+### Forward Merges: 2
+- **bobmani/beatoraja**: master -> main (unique progress preserved)
+- **topaz-ffmpeg**: topaz/develop -> master (upstream feature branch merged)
+
+### Empty Branches Deleted: 2
+- **bobeditpro/master** (redundant/empty)
+- **bobmani/bobmania/5_1-new** (redundant/empty)
+
+### Conflict Resolutions: 3
+- **bobsgameweb**: 9 nested submodule conflicts resolved with -X ours; pushed
+- **bobui**: submodule conflict (juce) resolved with -X ours; pushed
+- **bobmani/hymnmania**: pending changes committed and pushed
+
+### Bug Fixes
+- **borg**: Added missing .gitmodules entry - resolves fatal: No url found for submodule path borg/submodules/Super-MCP
+- **borg**: Removed dead upstream remote (OhMyOpenCode/aios.git - 404)
+- **borg**: Updated submodule pointer from stale e9cc2af to latest 207d275
+- **ableton_psytrance_hymn_creator**: Created missing .gitmodules for hymnmania_src nested submodule
+- **psytrance_night_outreach_agent**: Removed dead upstream remote
+- **antigravity-cli**: Restored correct remote URL (krmslmz fork)
+- **Maestro**: Cleaned stale session files blocking git operations
+- Killed stale autopilot-backend process holding file locks
+
+### Known Issues
+- **Maestro**: Push still timing out
+- **computer-use-preview**: Read-only upstream, cannot push
+- **openclaw-dashboard**: Read-only upstream, cannot push
+- **antigravity-cli**: Third-party fork, no push access
+
+### Total Submodules: 99
 ## [4.22.0] - 2026-06-01
 
 ### Upstream Merges: 2

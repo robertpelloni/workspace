@@ -295,3 +295,28 @@
 [submodule "fully_automated_gay_luxury_space_communism"]
 	path = fully_automated_gay_luxury_space_communism
 	url = https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git
+[submodule "borg"]
+	path = borg
+	url = https://github.com/robertpelloni/TormentNexus.git
+	branch = main
+[submodule "ableton_psytrance_hymn_creator"]
+	path = ableton_psytrance_hymn_creator
+	url = https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git
+[submodule "ai_game_engine"]
+	path = ai_game_engine
+	url = https://github.com/robertpelloni/ai_game_engine.git
+[submodule "Cli-Proxy-API-Management-Center"]
+	path = Cli-Proxy-API-Management-Center
+	url = https://github.com/robertpelloni/Cli-Proxy-API-Management-Center.git
+[submodule "enterprise_sales_bot"]
+	path = enterprise_sales_bot
+	url = https://github.com/robertpelloni/enterprise_sales_bot.git
+[submodule "hyper"]
+	path = hyper
+	url = https://github.com/robertpelloni/hyper.git
+[submodule "projectm"]
+	path = projectm
+	url = https://github.com/robertpelloni/projectm.git
+[submodule "psytrance_night_outreach_agent"]
+	path = psytrance_night_outreach_agent
+	url = https://github.com/robertpelloni/psytrance_night_outreach_agent.git

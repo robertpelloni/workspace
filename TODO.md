@@ -1,4 +1,4 @@
-# Workspace TODO — v3.76.0
+# Workspace TODO — v4.23.0
 
 ## Critical
 - [ ] **Security**: Audit all repos for accidentally committed auth tokens/keys
@@ -7,7 +7,9 @@
 - [ ] **tabby**: Resolve jules-15161538455472121726 divergence (68 vs 25)
 
 ## High Priority
-- [ ] **borg**: Bulk-merge or close 170 dependabot PRs
+- [x] **borg**: Added .gitmodules entry (was blocking Jules clone)
+- [ ] **borg**: Bulk-merge or close dependabot PRs
+- [x] **borg**: Removed dead upstream remote (OhMyOpenCode/aios.git)
 - [ ] **auto_dj_script**: Validate Tempo Ramping with real DJ sets
 - [ ] **hymnmania**: Test Udio API integration end-to-end
 - [ ] **jules-autopilot**: Validate -280 line refactoring, cost optimizer
@@ -485,3 +487,17 @@
 - [ ] borg: upstream 404
 - [ ] raindropioapp: unrelated histories with upstream
 - [ ] 259+ GitHub security vulnerabilities
+
+## Completed This Session (v4.23.0)
+- [x] Fixed borg/.gitmodules missing entry (Jules clone fatal error)
+- [x] Added 8 missing GitHub repos as submodules
+- [x] Forward merged feature branches (bobmani/beatoraja, topaz-ffmpeg)
+- [x] Resolved submodule conflicts in bobsgameweb, bobui, hymnmania
+- [x] Removed dead upstream remotes
+- [x] Created .gitmodules for ableton_psytrance_hymn_creator nested submodule
+
+## New Issues Discovered
+- [ ] **Maestro**: Git push times out (possible proxy/network issue or file lock)
+- [ ] **computer-use-preview**: Read-only upstream fork, no push access
+- [ ] **openclaw-dashboard**: Read-only upstream fork, no push access
+- [ ] **antigravity-cli**: Points to third-party fork (krmslmz), robertpelloni fork doesn't exist

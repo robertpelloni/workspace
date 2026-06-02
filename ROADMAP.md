@@ -1,4 +1,4 @@
-# Workspace Roadmap — v3.76.0
+# Workspace Roadmap — v4.23.0
 
 ## Completed (v3.68–v3.76)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
@@ -17,6 +17,17 @@
 - [x] bobeditpro labels stability in release — v3.74.0
 - [x] jules-autopilot session rotation + cost optimizer — v3.73.0
 - [x] Security: removed committed auth tokens from hymnmania — v3.76.0
+
+## Completed (v4.22–v4.23)
+- [x] Fixed borg submodule missing .gitmodules entry (Jules clone blocker)
+- [x] Added 8 missing GitHub repos as submodules (borg, ableton_psytrance_hymn_creator, ai_game_engine, Cli-Proxy-API-Management-Center, enterprise_sales_bot, hyper, projectm, psytrance_night_outreach_agent)
+- [x] Forward merged bobmani/beatoraja master->main and topaz-ffmpeg topaz/develop->master
+- [x] Resolved 3 submodule conflicts (bobsgameweb, bobui, bobmani/hymnmania)
+- [x] Deleted 2 empty/redundant branches (bobeditpro/master, bobmani/bobmania/5_1-new)
+- [x] Removed dead upstream remotes (borg/upstream, psytrance_night_outreach_agent/upstream)
+- [x] Created .gitmodules for ableton_psytrance_hymn_creator/hymnmania_src nested submodule
+- [x] Total submodule count: 99
+
 
 ## In Progress
 - [ ] hymnmania Udio integration — actively being refined
