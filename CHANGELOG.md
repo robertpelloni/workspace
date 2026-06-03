@@ -1,3 +1,14 @@
+## [4.28.0] - 2026-06-03
+
+### Version Bump Only
+- Updated VERSION and VERSION.current to 4.28.0
+- No submodule updates due to corruption in ai_game_engine/third_party/ebiten (to be fixed in next session)
+- No Jules feature branches found in checked repositories (dao, enterprise_sales_bot)
+- No upstream sync attempted due to submodule issues
+
+### Notes
+- The ai_game_engine submodule has a corrupted ebiten submodule (missing commit). 
+- This will be resolved by removing and re-adding the submodule in the next maintenance cycle.
 ## [4.27.0] - 2026-06-03
 
 ### Upstream Submodule Updates
