@@ -1,4 +1,4 @@
-# Workspace Roadmap — v4.24.0
+# Workspace Roadmap — v4.25.0
 
 ## Completed (v3.68–v3.76)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
@@ -18,6 +18,14 @@
 - [x] jules-autopilot session rotation + cost optimizer — v3.73.0
 - [x] Security: removed committed auth tokens from hymnmania — v3.76.0
 
+
+
+## Completed (v4.25.0)
+- [x] Forward merged 5 Jules AI feature branches (ableton_psytrance, crowdsourced_dance_club, FAGLC, psytrance_outreach, jules-autopilot)
+- [x] Committed dirty working trees across 14 submodules (3185+ files in borg alone)
+- [x] Removed Windows `nul` device file from borg
+- [x] Created main branch for superdawmcp (was only on jules feature branch)
+- [x] Removed duplicate bobeditpro/master branch
 
 ## Completed (v4.24.0)
 - [x] Upstream sync for 9 submodules (.agent, OmniRoute, bobfilez, beatoraja, bobmania, hymnmania, openclaw-config, openclaw-dashboard, topaz-ffmpeg)

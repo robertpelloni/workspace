@@ -1,3 +1,38 @@
+## [4.25.0] - 2026-06-03
+
+### Jules Feature Branch Forward Merges: 5
+- **ableton_psytrance_hymn_creator**: merged origin/jules-6626364804574846888 (40 commits — Hymnmania Pipeline v1.6-1.8, Neural Mastering, REST API, Vault Sync)
+- **crowdsourced_dance_club**: merged origin/jules-v0.2.0-sync-and-integrate (v2.2 Cybernetic Intelligence, v2.3 Personalization) — resolved tracks.db modify/delete conflict (kept ours)
+- **fully_automated_gay_luxury_space_communism**: merged origin/jules-17563276564479654527 (alpha.37-40, Service Layer, Chain Discovery, Mesh Orchestration)
+- **psytrance_night_outreach_agent**: merged origin/jules-psytrance-outreach-agent-init (core architecture v0.2.0)
+- **jules-autopilot**: merged upstream/jules-15384936799262554491 (Clear button on session search input)
+
+### Dirty Working Tree Commits: 10
+- **borg**: 3185 files synced, removed Windows `nul` device file, added to .gitignore
+- **auto_dj_script**: 1313 files (tormentnexus imported sessions)
+- **bobbybookmarks**: 28 files (tormentnexus handoffs)
+- **bobcoin**: 2 files (tormentnexus handoffs)
+- **bobmani/hymnmania**: 32 files (tormentnexus handoffs)
+- **fwber**: 13 files (tormentnexus imported sessions)
+- **jules-autopilot**: 206 files (fix_llm.py)
+- **litellm_control_panel**: 101 files (tormentnexus imported sessions)
+- **opencode-autopilot**: 22 files (tormentnexus memory contexts)
+- **pi-mono**: 5 files (tormentnexus imported sessions)
+- **slsk_discography_downloader_script**: 2246 files (tormentnexus imported sessions)
+- **tabby**: 11 files (tormentnexus handoffs)
+- **multimousergy**: 486 files (tormentnexus imported sessions)
+- **superdawmcp**: 4450 files (tormentnexus.db, created main branch from jules branch)
+
+### Branch Cleanup
+- **bobeditpro/master**: Deleted (identical to main, worktree ref lock bypassed)
+- **superdawmcp**: Created `main` branch from jules feature branch (was only branch), force-pushed
+
+### Bug Fixes
+- **bobeditpro**: Removed stale `master` branch ref via manual packed-refs deletion (git worktree lock prevented normal deletion)
+- **superdawmcp**: Had no `main` branch (default was jules-5372408556252106821-172735fe); created main from current HEAD
+- **borg**: Removed Windows `nul` device file that blocked `git add -A` (added to .gitignore)
+
+### Total Submodules: 100
 ## [4.24.0] - 2026-06-02
 
 ### Upstream Submodule Updates

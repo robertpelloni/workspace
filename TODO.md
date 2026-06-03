@@ -1,4 +1,4 @@
-# Workspace TODO — v4.24.0
+# Workspace TODO — v4.25.0
 
 ## Critical
 - [ ] **Security**: Audit all repos for accidentally committed auth tokens/keys
@@ -506,3 +506,9 @@
 - [ ] **OmniRoute**: husky pre-push hook failing — needs --no-verify or hook fix
 - [ ] **bobeditpro**: local tracking ref for origin/main gets stale after force-push scenarios
 - [ ] **bobmani/hymnmania**: tormentnexus handoff files cause merge conflicts on every sync cycle
+
+## New Issues Discovered (v4.25.0)
+- [ ] **superdawmcp**: Default branch was a Jules feature branch, not main — fixed but may need .gitmodules branch=main update
+- [ ] **borg**: Windows `nul` device file keeps getting created by some tool — added to .gitignore but root cause unknown
+- [ ] **bobeditpro**: packed-refs file locks can prevent branch deletion — need manual rm of packed-refs
+- [ ] **crowdsourced_dance_club**: tracks.db modify/delete conflict pattern on Jules branch merge
