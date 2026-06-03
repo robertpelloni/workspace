@@ -1,73 +1,57 @@
-# HANDOFF — Session v4.25.0
+# HANDOFF — Session v4.26.0
 
-**Date:** 2026-06-02
+**Date:** 2026-06-03
 **Operator:** AI Sync Engine
-**Previous Version:** 4.24.0 → **4.25.0**
+**Previous Version:** 4.25.0 → **4.26.0**
 
 ---
 
 ## Summary
 
-Major session focused on **Jules feature branch reconciliation** — 5 AI-generated branches with real development work were forward-merged into their respective main branches. Additionally, 14 submodules had dirty working trees that were committed and pushed. The borg submodule had a Windows `nul` device file blocking git operations.
+Routine sync cycle with 3 new Jules feature branches merged (ai_game_engine, dao, enterprise_sales_bot) and 7 upstream submodule updates. Ten dirty working trees committed and pushed. No critical blockers.
 
-## Jules Feature Branch Merges (5 forward merges)
+## Completed Operations
 
-| Repo | Branch | Unique Commits | Key Features | Conflict? |
-|------|--------|---------------|--------------|-----------|
-| ableton_psytrance_hymn_creator | jules-6626364804574846888 | 40 | Hymnmania Pipeline v1.6-1.8, Neural Mastering, REST API, Vault Sync | No |
-| crowdsourced_dance_club | jules-v0.2.0-sync-and-integrate | ~20 | v2.2 Cybernetic Intelligence, v2.3 Personalization | Yes (tracks.db) |
-| fully_automated_gay_luxury_space_communism | jules-17563276564479654527 | ~4 | alpha.37-40, Service Layer, Chain Discovery, Mesh Orchestration | No |
-| psytrance_night_outreach_agent | jules-psytrance-outreach-agent-init | 1 | Core architecture v0.2.0 | No |
-| jules-autopilot | upstream/jules-15384936799262554491 | 1 | Clear button on session search | No |
+### Upstream Submodule Merges (7 updated)
+1. **.agent** → merged 4eb0aa7
+2. **bobmani/beatoraja** → merged e4fe41f
+3. **bobmani/bobmania** → merged f61ca1d
+4. **bobmani/hymnmania** → merged 7cb41e5
+5. **openclaw-config** → merged 745aea1
+6. **openclaw-dashboard** → merged d6198d0
+7. **topaz-ffmpeg** → merged 8e7ad9f
 
-### Conflict Details
-- **crowdsourced_dance_club**: `tracks.db` was deleted in Jules branch but modified in main. Resolved by keeping main's version (`--ours`). Auto-merge handled all other files.
+### Jules Feature Branch Forward Merges (3)
 
-## Dirty Working Tree Commits (14 submodules)
+| Repo | Branch | Unique Commits | Key Features | Notes |
+|------|--------|---------------|--------------|-------|
+| **ai_game_engine** | origin/initial-engine-implementation | 6 | v0.0.4-0.0.8: ECS, Physics, Scenes, Collision, Raycasting | `--allow-unrelated-histories` |
+| **dao** | origin/main-4377559777785382276 | 7 | v0.9.2-0.9.8: Executive Protocol, Watchdog, CI | `--allow-unrelated-histories` |
+| **enterprise_sales_bot** | origin/main-4215924055125686102 | 53 | Sales pipeline, Stripe billing, CRM, CI/CD | `--allow-unrelated-histories` |
 
-| Repo | Files | Key Changes |
-|------|-------|-------------|
-| borg | 3185 | Session state, removed `nul` device file |
-| auto_dj_script | 1313 | TormentNexus imported sessions |
-| slsk_discography_downloader_script | 2246 | TormentNexus imported sessions |
-| superdawmcp | 4450 | TormentNexus.db, created main branch |
-| litellm_control_panel | 101 | TormentNexus imported sessions |
-| multimousergy | 486 | TormentNexus imported sessions |
-| bobbybookmarks | 28 | TormentNexus handoffs |
-| bobmani/hymnmania | 32 | TormentNexus handoffs |
-| fwber | 13 | TormentNexus imported sessions |
-| jules-autopilot | 206 | fix_llm.py |
-| opencode-autopilot | 22 | TormentNexus memory contexts |
-| pi-mono | 5 | TormentNexus imported sessions |
-| tabby | 11 | TormentNexus handoffs |
-| bobcoin | 2 | TormentNexus handoffs |
+### Dirty Working Tree Commits (10 submodules)
+- bobbybookmarks, bobmani/hymnmania, borg, litellm_control_panel, slsk_discography_downloader_script, superdawmcp, bobcoin, fwber, opencode-autopilot, pi-mono, tabby
 
-## Branch Cleanup
-- **bobeditpro/master**: Removed via manual `rm packed-refs` (worktree ref lock prevented `git branch -d`)
-- **superdawmcp**: Had no `main` branch — default was `jules-5372408556252106821-172735fe`. Created `main` from HEAD and force-pushed.
-
-## Bug Fixes
-- **borg**: Windows `nul` device file (105 bytes) blocked `git add -A` with "short read while indexing nul" error. Removed file, added `nul` to `.gitignore`.
+### Skipped Branches
+- **OmniRoute** (4 branches, 5-71 commits above main): Aborted due to hundreds of i18n/doc conflicts from unrelated histories
+- **computer-use-preview** (4 branches): Read-only upstream
+- **openclaw-dashboard** (add-dockerfile): Read-only upstream
+- **bobgui/AUTO_DENATTIFYING**: Already ancestor of main
+- **geany** (0.18, 0.19, 0.20): Upstream version branches
+- **Cli-Proxy-API-Management-Center** (origin/old): Stagnant
 
 ## Excluded Repos
-- **bg**: Timeout-prone, excluded per protocol
-- **bobfilez**: Excluded from merge engine (but submodule update succeeded)
-- **Maestro**: Git operations timeout
-
-## Skipped Jules Branches (already merged into main)
-- **bobgui**: jules-10024490872005189356, jules-bobtk-go-port-init (both ancestors of main)
-- **borg**: jules-11468118918326359250 (ancestor of main)
-- **litellm_control_panel**: go-transition-v3.0.0-jules (ancestor of main)
+- **bg**, **bobfilez** (timeout-prone, excluded per protocol)
+- **Maestro** (git operations timeout)
 
 ## Known Issues for Next Session
-1. **superdawmcp**: .gitmodules may still reference the old jules branch name — verify branch tracking
-2. **borg nul file**: Root cause unknown — some tool creates a file named `nul` on Windows
-3. **bobeditpro packed-refs**: Deleting branches requires manual packed-refs removal when git worktree is involved
-4. **271 GitHub security vulnerabilities** remain on workspace default branch
-5. **Maestro**: Push still timing out across all sessions
+1. **OmniRoute AI branches** — 52+71+54+6 unique commits but merge conflicts with i18n/docs make them impractical. Consider reverse-merge main into those branches instead.
+2. **Maestro push timeout** — persists across all sessions
+3. **271 GitHub security vulnerabilities** remain on default branch
+4. **borg nul file** — keeps reappearing sporadically (added to .gitignore)
+5. **All 3 new merges required --allow-unrelated-histories** — Jules branches share no common ancestry with main
 
 ## Version Bump
-- VERSION: `4.24.0` → `4.25.0`
-- VERSION.current: `4.24.0` → `4.25.0`
+- VERSION: `4.25.0` → `4.26.0`
 
 ## Total Submodules: 100
