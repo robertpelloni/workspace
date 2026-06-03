@@ -1,3 +1,39 @@
+## [4.27.0] - 2026-06-03
+
+### Upstream Submodule Updates
+- **.agent**: merged d95be7b (new updates)
+- **bobmani/beatoraja**: merged e4fe41f
+- **bobmani/bobmania**: merged f61ca1d
+- **bobmani/hymnmania**: merged 7cb41e5
+- **openclaw-config**: merged 745aea1
+- **openclaw-dashboard**: merged d6198d0
+- **topaz-ffmpeg**: merged 8e7ad9f (FFmpeg upstream)
+
+### Jules Feature Branch Forward Merges: 3
+- **ai_game_engine**: merged origin/initial-engine-implementation (6 commits — v0.0.4-0.0.8, ECS/Physics/Collision) — required --allow-unrelated-histories
+- **dao**: merged origin/main-4377559777785382276 (7 commits — v0.9.2-0.9.8, Executive Protocol, Watchdog) — required --allow-unrelated-histories
+- **enterprise_sales_bot**: merged origin/main-4215924055125686102 (53 commits — autonomous sales pipeline, Stripe billing, CRM) — required --allow-unrelated-histories
+
+### Dirty Working Tree Commits: 10
+- **bobbybookmarks**: extract_mcp.py, MCP comprehensive list
+- **bobmani/hymnmania**: test_suno_mode.py
+- **borg**: .borg handoffs + scratch/restore.js
+- **litellm_control_panel**: tormentnexus handoffs
+- **slsk_discography_downloader_script**: tormentnexus handoffs
+- **superdawmcp**: studio_session.json
+- bobcoin, fwber, opencode-autopilot, pi-mono, tabby (tormentnexus handoffs)
+
+### Skipped Merges (complex unrelated history conflicts)
+- **OmniRoute**: 4 AI branches with 52-71 unique commits each — abandoned due to hundreds of i18n file conflicts from unrelated histories
+- **computer-use-preview**: 4 branches — read-only upstream, cannot push
+- **bobgui/AUTO_DENATTIFYING**: already ancestor of main
+- **Cli-Proxy-API-Management-Center**: origin/old — skipped (stagnant)
+- **geany**: 0.18, 0.19, 0.20 version branches — upstream versions, skipped
+
+### Submodule Pointer Dirtiness Cleaned
+- bobmani/bobmania, bobsgameweb, bobui — checked out clean
+
+### Total Submodules: 100
 ## [4.26.0] - 2026-06-03
 
 ### Upstream Submodule Updates
