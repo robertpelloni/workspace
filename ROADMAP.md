@@ -1,4 +1,4 @@
-# Workspace Roadmap — v4.27.0
+# Workspace Roadmap — v4.29.0
 
 ## Completed (v3.68–v3.76)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
@@ -58,6 +58,16 @@
 - [x] Created .gitmodules for ableton_psytrance_hymn_creator/hymnmania_src nested submodule
 - [x] Total submodule count: 99
 
+
+## Completed (v4.29.0)
+- [x] Forward merged 4 Jules/AI feature branches (pi-mono, neverball, fwber, psytrance_night_outreach_agent)
+- [x] Fixed enterprise_sales_bot Jules clone blocker (borg submodule pointer updated, removed Super-MCP gitlink)
+- [x] Added fitness_center_dance_machine submodule
+- [x] psytrance_night_outreach_agent: massive 96-commit forward merge (v1.1.38→v1.1.43)
+- [x] pi-mono: Go monorepo transition merge (v0.92→v0.96)
+- [x] fwber: autonomous high-performance engine merge (v2.0.14→v2.1.4)
+- [x] neverball: tile placement logic and version bump (1.7.0-alpha.4)
+- [x] Stale Jules branches identified and skipped (borg 2, bobgui 2, crowdsourced_dance_club 1, FAGLC 1)
 
 ## In Progress
 - [ ] hymnmania Udio integration — actively being refined

@@ -1,10 +1,11 @@
-# Workspace TODO — v4.25.0
+# Workspace TODO — v4.29.0
 
 ## Critical
 - [ ] **Security**: Audit all repos for accidentally committed auth tokens/keys
   - hymnmania had SSR auth tokens committed — fixed in v3.76.0
   - Need to check: bobbybookmarks, realestatecrm, OmniRoute, litellm
 - [ ] **tabby**: Resolve jules-15161538455472121726 divergence (68 vs 25)
+- [x] **enterprise_sales_bot/borg**: Fixed stale submodule pointer blocking Jules clone (v4.29.0)
 
 ## High Priority
 - [x] **borg**: Added .gitmodules entry (was blocking Jules clone)

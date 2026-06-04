@@ -1,3 +1,51 @@
+## [4.29.0] - 2026-06-04
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root repository: fetched all tags
+- bobeditpro: 43 new upstream commits available (merge deferred due to conflicts)
+- All other upstream-synced repos: already up-to-date (no new upstream changes)
+- fitness_center_dance_machine: added as new submodule (commit 85ad291d)
+- enterprise_sales_bot/borg: submodule pointer updated from stale 09148f619 → 9fb1bc2b1 (removes orphaned Super-MCP gitlink)
+
+### Step 2: Dual-Direction Intelligent Merge Engine — Forward Merges: 4
+- **pi-mono**: merged origin/total-assimilation-cleanup (4 unique commits — v0.92→v0.96, Go monorepo transition)
+- **neverball**: merged origin/master-15755243498234228842 (3 unique commits — tile placement, version bump to 1.7.0-alpha.4)
+- **fwber**: merged origin/feat/federation-hardening-auth-integration-v2.0.14 (1 unique commit — autonomous high-performance engine v2.1.4)
+- **psytrance_night_outreach_agent**: merged origin/feature/psytrance-outreach-v0.2.1 (96 unique commits — v1.1.38→v1.1.43, A/B testing, sentiment-driven variants, geocoding, E2E pipeline hardening)
+
+### Step 2: Stale/Already-Merged Branches (no action needed)
+- **ableton_psytrance_hymn_creator**: Jules branch already in main
+- **crowdsourced_dance_club**: Jules branch already merged in prior session
+- **fully_automated_gay_luxury_space_communism**: Jules branch already merged in prior session
+- **superdawmcp**: Jules branch already up-to-date
+- **borg**: 2 Jules branches are stale (main 121-124 commits ahead)
+- **bobgui**: 2 Jules branches are stale (main 558-584 commits ahead)
+- **Maestro**: Jules branches have unrelated histories (skipped)
+- **OmniRoute**: 7 AI feature branches have unrelated histories (reverse-merge deferred)
+
+### Step 2: Upstream Sync Status (ahead/behind)
+- tabby: 682 ahead, 0 behind
+- bobmania: 2224 ahead, 0 behind
+- ksm-v2: 165 ahead, 0 behind
+- mk64: 43 ahead, 0 behind
+- sm64coopdx: 80 ahead, 0 behind
+- jules-autopilot: 826 ahead, 0 behind
+- bobtrader: 99 ahead, 0 behind
+- bobtorrent: 274 ahead, 0 behind
+- ddc: 261 ahead, 0 behind
+- beatoraja: 215 ahead, 0 behind
+
+### Step 3: Workspace Cleanup
+- Version bumped: 4.28.0 → 4.29.0
+- Submodule pointers updated: pi-mono, neverball, fwber, psytrance_night_outreach_agent, enterprise_sales_bot, fitness_center_dance_machine
+- CHANGELOG.md, ROADMAP.md, TODO.md, SUBMODULE_MAP.md, HANDOFF.md updated
+- Build phase executed
+
+### Known Blockers
+- **bobeditpro**: 43 upstream commits — merge conflicts in tracknavigation (deferred)
+- **OmniRoute**: 7 AI feature branches — unrelated histories, reverse-merge deferred
+- **Maestro**: Jules branches — unrelated histories (deferred)
+- **ai_game_engine/third_party/ebiten**: Corrupted submodule (removed from .gitmodules, to be re-added)
 ## [4.28.0] - 2026-06-03
 
 ### Version Bump Only

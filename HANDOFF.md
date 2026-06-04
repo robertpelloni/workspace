@@ -1,57 +1,82 @@
-# HANDOFF — Session v4.27.0
+# HANDOFF — Session v4.29.0
 
 **Date:** 2026-06-04
 **Operator:** AI Sync Engine
-**Previous Version:** 4.26.0 → **4.27.0**
+**Previous Version:** 4.28.0 → **4.29.0**
 
 ---
 
 ## Summary
 
-Routine sync cycle with 3 new Jules feature branches merged (ai_game_engine, dao, enterprise_sales_bot) and 7 upstream submodule updates. Ten dirty working trees committed and pushed. No critical blockers.
+Full Executive Protocol executed. Four Jules/AI feature branches forward-merged, one critical Jules clone blocker fixed (enterprise_sales_bot/borg stale submodule), one new submodule added (fitness_center_dance_machine). Multiple stale branches identified and correctly skipped.
 
-## Completed Operations
+## STEP 1: Upstream Tracking & Submodule Sanitization
 
-### Upstream Submodule Merges (7 updated)
-1. **.agent** → merged d95be7b
-2. **bobmani/beatoraja** → merged e4fe41f
-3. **bobmani/bobmania** → merged f61ca1d
-4. **bobmani/hymnmania** → merged 7cb41e5
-5. **openclaw-config** → merged 745aea1
-6. **openclaw-dashboard** → merged d6198d0
-7. **topaz-ffmpeg** → merged 8e7ad9f
+- Root `git fetch --all --tags` completed
+- 25 submodules fetched individually (targeted approach to avoid recursive timeout)
+- **bobeditpro**: 43 new upstream commits available but merge deferred due to tracknavigation conflicts
+- All other upstream-synced repos: 0 new upstream changes (all ahead-only with custom divergences)
+- **enterprise_sales_bot/borg**: Submodule pointer updated from stale `09148f619` → `9fb1bc2b1` (HEAD of borg main), which removes the orphaned `submodules/Super-MCP` gitlink that was blocking Jules cloning
+- **fitness_center_dance_machine**: Added as new submodule (commit `85ad291d`, branch `fitness-machine-foundation-*`)
 
-### Jules Feature Branch Forward Merges (3)
+## STEP 2: Dual-Direction Intelligent Merge Engine
 
-| Repo | Branch | Unique Commits | Key Features | Notes |
-|------|--------|---------------|--------------|-------|
-| **ai_game_engine** | origin/initial-engine-implementation | 6 | v0.0.4-0.0.8: ECS, Physics, Scenes, Collision, Raycasting | `--allow-unrelated-histories` |
-| **dao** | origin/main-4377559777785382276 | 7 | v0.9.2-0.9.8: Executive Protocol, Watchdog, CI | `--allow-unrelated-histories` |
-| **enterprise_sales_bot** | origin/main-4215924055125686102 | 53 | Sales pipeline, Stripe billing, CRM, CI/CD | `--allow-unrelated-histories` |
+### Forward Merges: 4
 
-### Dirty Working Tree Commits (10 submodules)
-- bobbybookmarks, bobmani/hymnmania, borg, litellm_control_panel, slsk_discography_downloader_script, superdawmcp, bobcoin, fwber, opencode-autopilot, pi-mono, tabby
+| Submodule | Branch | Unique Commits | Strategy | Result |
+|-----------|--------|---------------|----------|--------|
+| **pi-mono** | `origin/total-assimilation-cleanup-*` | 4 | `-X theirs` | ✅ Merged (v0.92→v0.96 Go monorepo transition) |
+| **neverball** | `origin/master-15755243498234228842` | 3 | `-X theirs` | ✅ Merged (tile placement, v1.7.0-alpha.4) |
+| **fwber** | `origin/feat/federation-hardening-auth-integration-v2.0.14-*` | 1 | `-X theirs` | ✅ Merged (autonomous engine v2.1.4) |
+| **psytrance_night_outreach_agent** | `origin/feature/psytrance-outreach-v0.2.1-*` | 96 | `-X theirs` | ✅ Merged (v1.1.38→v1.1.43, A/B testing, sentiment variants, geocoding, E2E hardening) |
 
-### Skipped Branches
-- **OmniRoute** (4 branches, 52-71 commits above main): Aborted due to hundreds of i18n/doc conflicts from unrelated histories
-- **computer-use-preview** (4 branches): Read-only upstream
-- **openclaw-dashboard** (add-dockerfile): Read-only upstream
-- **bobgui/AUTO_DENATTIFYING**: Already ancestor of main
-- **geany** (0.18, 0.19, 0.20): Upstream version branches
-- **Cli-Proxy-API-Management-Center** (origin/old): Stagnant
+### Stale/Already-Merged Branches (no action)
 
-## Excluded Repos
-- **bg**, **bobfilez** (timeout-prone, excluded per protocol)
-- **Maestro** (git operations timeout)
+| Submodule | Branches | Status |
+|-----------|----------|--------|
+| **ableton_psytrance_hymn_creator** | 1 Jules branch | Already in main |
+| **crowdsourced_dance_club** | 1 Jules branch | Already merged in prior session |
+| **fully_automated_gay_luxury_space_communism** | 1 Jules branch | Already merged in prior session |
+| **superdawmcp** | 1 Jules branch | Already up-to-date |
+| **borg** | 2 Jules branches | Stale (main 121-124 commits ahead) |
+| **bobgui** | 2 Jules branches | Stale (main 558-584 commits ahead) |
+| **Maestro** | 3 Jules branches | Unrelated histories (deferred) |
+| **OmniRoute** | 7 AI feature branches | Unrelated histories, i18n conflicts (deferred) |
 
-## Known Issues for Next Session
-1. **OmniRoute AI branches** — 52+71+54+6 unique commits but merge conflicts with i18n/docs make them impractical. Consider reverse-merge main into those branches instead.
-2. **Maestro push timeout** — persists across all sessions
-3. **271 GitHub security vulnerabilities** remain on default branch
-4. **borg nul file** — keeps reappearing sporadically (added to .gitignore)
-5. **All 3 new merges required --allow-unrelated-histories** — Jules branches share no common ancestry with main
+### Reverse Merges
 
-## Version Bump
-- VERSION: `4.26.0` → `4.27.0`
+- **OmniRoute**: Attempted reverse-merge of main into 7 AI branches — failed due to unrelated histories + conflicts. Reset to clean state.
+- All other feature branches either already merged or stale (no reverse-merge needed).
 
-## Total Submodules: 100
+## STEP 3: Workspace Cleanup & Documentation
+
+- **VERSION**: 4.28.0 → 4.29.0
+- **VERSION.current**: 4.28.0 → 4.29.0
+- **CHANGELOG.md**: Updated with v4.29.0 entry
+- **ROADMAP.md**: Updated with v4.29.0 completed items
+- **TODO.md**: Updated with enterprise_sales_bot fix
+- **SUBMODULE_MAP.md**: Regenerated (100 entries)
+
+## Build Phase
+
+- **borg (TormentNexus)**: Go sidecar built ✅
+- **hyperharness**: Not built (skipped this session)
+
+## Known Blockers (carried forward)
+
+1. **bobeditpro**: 43 upstream commits — merge conflicts in `tracknavigationcontroller.cpp/.h`, `tracknavigationmodel.cpp/.h`
+2. **OmniRoute**: 7 AI feature branches with unrelated histories — need dedicated conflict resolution session
+3. **Maestro**: Jules branches have unrelated histories
+4. **ai_game_engine/third_party/ebiten**: Corrupted submodule (removed from .gitmodules, needs re-add)
+5. **Maestro push**: Persistent timeout (network/proxy or file lock)
+6. **Security**: 273 GitHub vulnerabilities on default branch
+
+## Next Session Priorities
+
+1. Resolve bobeditpro upstream merge conflicts (tracknavigation)
+2. Fix ai_game_engine/third_party/ebiten submodule re-add
+3. Attempt OmniRoute reverse-merge with cherry-pick strategy
+4. Build hyperharness
+5. Address security vulnerabilities
+
+## Submodule Count: 100
