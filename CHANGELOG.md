@@ -1,3 +1,27 @@
+## [4.35.0] - 2026-06-04
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root + 70+ submodules fetched
+- No new upstream commits to merge (all tracked upstreams at 0 ahead)
+- **borg**: synced working tree (db update)
+- fwber + raindropioapp fetch errors: confirmed benign
+
+### Step 2: Dual-Direction Intelligent Merge Engine — Forward Merges: 4
+
+| Submodule | Branch | Unique Commits | Strategy | Result |
+|-----------|--------|---------------|----------|--------|
+| **bobsgameweb** | `origin/jules-3-0-9-engine-sync-*` (updated) | 2 | `-X ours` | ✅ v3.0.9 verified engine sync, audio-mapping tests, +86/-30 |
+| **enterprise_sales_bot** | `origin/jules-12741150550545531224-*` (updated) | 2 | `-X ours` | ✅ Production finalization, responder enhancements, +239/-7 |
+| **fully_automated_gay_luxury_space_communism** | `origin/feat/v1.0.0-alpha.41-*` (updated) | 1 | `-X ours` | ✅ Production finalization & verified release, +224/-62 |
+| **pi-mono** | `origin/jules-5192995686709987445-f4e7a729` | 1 | merge | ✅ Unified LLM harness, Tabby/Warp AI integration, +1,700/-3 |
+
+### Confirmed Stale Branches (8 repos, no action)
+All previously-merged Jules branches confirmed as ancestors of main.
+litellm upstream feature branches (31K+ commits divergence): ignored per protocol.
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 274+ GitHub vulnerabilities on default branch (7 critical)
 ## [4.34.0] - 2026-06-04
 
 ### Step 1: Upstream Tracking & Submodule Sanitization

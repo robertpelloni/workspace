@@ -1,4 +1,10 @@
-# Workspace Roadmap — v4.34.0
+# Workspace Roadmap — v4.35.0
+
+## Completed (v4.35.0)
+- [x] Forward merged bobsgameweb v3.0.9 verified engine sync (audio-mapping tests)
+- [x] Forward merged enterprise_sales_bot production finalization (responder, test logs)
+- [x] Forward merged FAGLC production finalization & verified release
+- [x] **Forward merged pi-mono Jules branch — unified LLM harness, Tabby/Warp AI integration (+1,700 lines)**
 
 ## Completed (v4.34.0)
 - [x] Forward merged bobsgameweb Jules v3.0.9 (AudioManager, DemoWorld RPG engine)
