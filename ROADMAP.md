@@ -1,4 +1,4 @@
-# Workspace Roadmap — v4.31.0
+# Workspace Roadmap — v4.32.0
 
 ## Completed (v3.68–v3.76)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
@@ -58,6 +58,12 @@
 - [x] Created .gitmodules for ableton_psytrance_hymn_creator/hymnmania_src nested submodule
 - [x] Total submodule count: 99
 
+
+## Completed (v4.32.0)
+- [x] Diagnosed fwber + raindropioapp fetch errors (both benign)
+- [x] Removed broken MilkDrop3/aios submodule
+- [x] Committed dirty working trees (hymnmania +390 files, bobmania, MilkDrop3)
+- [x] All 9 Jules branches confirmed stale (no new feature branches this session)
 
 ## Completed (v4.31.0)
 - [x] MERGED bobeditpro upstream/master (43 commits, 12 conflicts resolved) — BLOCKER CLEARED since v4.28.0

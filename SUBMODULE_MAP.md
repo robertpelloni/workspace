@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.31.0
+# Submodule Structural Map — v4.32.0
 
 | # | Path | URL | Branch | Commit |
 |---|------|-----|--------|--------|
@@ -8,10 +8,10 @@
 | 4 | `JWildfire` | `https://github.com/robertpelloni/JWildfire.git` | `master` | `6d851b5` |
 | 5 | `Maestro` | `https://github.com/robertpelloni/Maestro` | `-` | `2cdc7a8f` |
 | 6 | `MarbleBlast` | `https://github.com/robertpelloni/MarbleBlast` | `-` | `9d64d67` |
-| 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `f2f7267` |
+| 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `f333c24` |
 | 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `e773c656` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `-` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `7826a7eb1` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `c3f6ddc5c` |
 | 11 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `-` | `4983cc6` |
 | 12 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `-` | `5162988` |
 | 13 | `ai_game_engine` | `https://github.com/robertpelloni/ai_game_engine.git` | `-` | `c5195df` |
@@ -30,11 +30,11 @@
 | 26 | `bobmani/Simply-Love-SM5` | `https://github.com/robertpelloni/Simply-Love-SM5` | `-` | `a98e08dc` |
 | 27 | `bobmani/arrowvortex` | `https://github.com/robertpelloni/arrowvortex` | `-` | `eee0267` |
 | 28 | `bobmani/beatoraja` | `https://github.com/robertpelloni/beatoraja` | `-` | `80cd4722` |
-| 29 | `bobmani/bobmania` | `https://github.com/robertpelloni/bobmania` | `-` | `d7d532fe35` |
+| 29 | `bobmani/bobmania` | `https://github.com/robertpelloni/bobmania` | `-` | `23259cf770` |
 | 30 | `bobmani/ddc` | `https://github.com/robertpelloni/ddc` | `-` | `84bd10e` |
 | 31 | `bobmani/ddc_onset` | `https://github.com/robertpelloni/ddc_onset` | `-` | `5d7572a` |
 | 32 | `bobmani/ffr-difficulty-model` | `https://github.com/robertpelloni/ffr-difficulty-model` | `-` | `b13fe4f` |
-| 33 | `bobmani/hymnmania` | `https://github.com/robertpelloni/hymnmania` | `-` | `56ae97c` |
+| 33 | `bobmani/hymnmania` | `https://github.com/robertpelloni/hymnmania` | `-` | `26e8898` |
 | 34 | `bobmani/itgmania` | `https://github.com/robertpelloni/itgmania` | `-` | `0be55fbc4d` |
 | 35 | `bobmani/ksm-v2` | `https://github.com/robertpelloni/ksm-v2` | `-` | `3988a7a` |
 | 36 | `bobmani/leraine-studio` | `https://github.com/robertpelloni/leraine-studio` | `-` | `d1b5e24` |
