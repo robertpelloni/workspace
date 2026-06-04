@@ -1,4 +1,4 @@
-# Workspace Roadmap — v4.30.0
+# Workspace Roadmap — v4.31.0
 
 ## Completed (v3.68–v3.76)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
@@ -58,6 +58,13 @@
 - [x] Created .gitmodules for ableton_psytrance_hymn_creator/hymnmania_src nested submodule
 - [x] Total submodule count: 99
 
+
+## Completed (v4.31.0)
+- [x] MERGED bobeditpro upstream/master (43 commits, 12 conflicts resolved) — BLOCKER CLEARED since v4.28.0
+- [x] Forward merged bg Jules branch (4 commits — editor subsystems, submodule sync, archive cleanup)
+- [x] Forward merged Maestro Jules branch (1 commit — start.bat) — BLOCKER CLEARED since v4.29.0
+- [x] Committed dirty working trees (borg, hymnmania, MilkDrop3)
+- [x] All 7 previously-merged Jules branches confirmed stale (no re-merge needed)
 
 ## Completed (v4.30.0)
 - [x] Forward merged enterprise_sales_bot Phase 5 Jules branch (+1397/-540, 37 files)

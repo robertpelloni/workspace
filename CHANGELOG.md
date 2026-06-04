@@ -1,3 +1,41 @@
+## [4.31.0] - 2026-06-04
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root + 70+ submodules fetched
+- **bobeditpro**: MERGED upstream/master (43 commits, 12 conflicts resolved with -X ours) — **BLOCKER CLEARED since v4.28.0**
+- **enterprise_sales_bot**: updated borg submodule pointer to latest
+- All other upstream-synced repos: 0 new upstream changes
+
+### Step 2: Dual-Direction Intelligent Merge Engine — Forward Merges: 2
+- **bg**: merged origin/jules-1394303886104622315-aa648523 (4 unique commits — editor subsystems, submodule sync, archive cleanup) — required --allow-unrelated-histories
+- **Maestro**: merged origin/jules-add-new-agents-535743983477155742 (1 unique commit — add start.bat) — required --allow-unrelated-histories
+
+### Step 2: Stale/Already-Merged Branches (confirmed, no action)
+- All 7 previously-merged Jules branches confirmed as ancestors of main
+- .agent copilot branches: upstream project branches, massively diverged (skip)
+- borg, bobgui: stale branches from prior sessions
+
+### Step 2: Dirty Working Tree Commits: 3
+- **borg**: pi-lens cache, scratch scripts
+- **bobmani/hymnmania**: agent memory, handoffs
+- **MilkDrop3**: submodule pointer updates
+
+### Step 3: Workspace Cleanup
+- Version bumped: 4.30.0 → 4.31.0
+- Submodule pointers updated: bobeditpro, enterprise_sales_bot, bg, Maestro, borg, bobmani/hymnmania, MilkDrop3
+- Batch scripts validated (no changes needed)
+- CHANGELOG.md, ROADMAP.md, TODO.md, SUBMODULE_MAP.md, HANDOFF.md updated
+
+### Blockers Cleared
+- ✅ **bobeditpro upstream merge**: Resolved 12 conflicts with -X ours (deferred since v4.28.0)
+- ✅ **Maestro Jules branch merge**: Completed with --allow-unrelated-histories (deferred since v4.29.0)
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **fwber**: fetch error on origin (remote may have been renamed/deleted)
+- **raindropioapp**: fetch error on upstream
+- **.agent**: push denied (origin owned by sickn33)
+- **Security**: 273 GitHub vulnerabilities on default branch
 ## [4.30.0] - 2026-06-04
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
