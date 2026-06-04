@@ -1,4 +1,4 @@
-# Workspace Roadmap — v4.32.0
+# Workspace Roadmap — v4.33.0
 
 ## Completed (v3.68–v3.76)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
@@ -58,6 +58,14 @@
 - [x] Created .gitmodules for ableton_psytrance_hymn_creator/hymnmania_src nested submodule
 - [x] Total submodule count: 99
 
+
+## Completed (v4.33.0)
+- [x] MAJOR REFACTORING: Merged all .borg + .hypercode into .tormentnexus across 24 repos (~8,000+ files consolidated)
+- [x] Forward merged enterprise_sales_bot Jules branch (3 commits — v0.4.1-dev, prompt optimization)
+- [x] Forward merged FAGLC feature branch (2 commits — market data, vector search)
+- [x] Merged bobeditpro upstream (2 commits — testing build fixes)
+- [x] Proactively fixed 3 bobsgameweb stale submodule pointers (LibreSprite, Pixelorama, PixiEditor)
+- [x] Added .borg and .hypercode to root .gitignore
 
 ## Completed (v4.32.0)
 - [x] Diagnosed fwber + raindropioapp fetch errors (both benign)

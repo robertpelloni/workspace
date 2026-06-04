@@ -1,3 +1,35 @@
+## [4.33.0] - 2026-06-04
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root + 70+ submodules fetched
+- **bobeditpro**: merged upstream/master (2 new commits — testing build fixes, clean merge)
+- **bobsgameweb**: proactively updated 3 stale submodule pointers (LibreSprite, Pixelorama, PixiEditor) to prevent Jules clone failures
+- **MilkDrop3**: updated bg submodule pointer, removed broken aios submodule
+- fwber + raindropioapp fetch errors: confirmed benign (same as v4.32.0)
+
+### Step 2: Dual-Direction Intelligent Merge Engine — Forward Merges: 2
+- **enterprise_sales_bot**: merged origin/jules-12741150550545531224-863b86a9 (3 unique commits — v0.4.1-dev, prompt optimization, linting fixes, gosec action, +226/-58)
+- **fully_automated_gay_luxury_space_communism**: merged origin/feat/v1.0.0-alpha.41-market-and-vectors-* (2 unique commits — real-world market data, native vector search, +757/-187)
+
+### Step 2: Stale/Already-Merged Branches (confirmed, no action)
+- All 7 previously-merged Jules branches confirmed as ancestors of main
+
+### MAJOR REFACTORING: .borg + .hypercode → .tormentnexus Consolidation
+- Merged all `.borg` and `.hypercode` directories into `.tormentnexus` across 24 repos
+- Added `.borg` and `.hypercode` to root `.gitignore` to prevent re-creation
+- Total files consolidated: ~8,000+ across workspace
+
+**Repos affected:**
+- Root workspace (2,686 files), auto_dj_script (1,313), bobbybookmarks (1,123), fwber (1,904), borg (5,469+), bg/bobsgameweb (1,661), enterprise_sales_bot/borg (2,501), slsk_discography_downloader_script (2,639), jules-autopilot (202), multimousergy (495), litellm_control_panel (64), litellm_control_panel_new (64), pi-mono (4), tabby (10), bobcoin (1), opencode-autopilot (21), Maestro (12), hymnmania (2), bobmani/hymnmania (10), bobfilez, bobsgameonlinejava/bobcoin (1), bobtorrent/bobcoin (1), f-zerox/bobcoin (1), mk64/bobcoin (1), litellm_merge/litellm_control_panel, fwber/ARCHIVE_v1_8_php_legacy
+
+### Step 3: Workspace Cleanup
+- Version bumped: 4.32.0 → 4.33.0
+- All submodule pointers updated for changed repos
+- CHANGELOG.md, ROADMAP.md, TODO.md, SUBMODULE_MAP.md, HANDOFF.md updated
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 273 GitHub vulnerabilities on default branch
 ## [4.32.0] - 2026-06-04
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
