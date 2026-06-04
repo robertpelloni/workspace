@@ -1,6 +1,18 @@
-# Workspace Roadmap — v4.33.0
+# Workspace Roadmap — v4.34.0
 
-## Completed (v3.68–v3.76)
+## Completed (v4.34.0)
+- [x] Forward merged bobsgameweb Jules v3.0.9 (AudioManager, DemoWorld RPG engine)
+- [x] Forward merged hyperharness AI Go harness ports (Tabby, Warp, Wave, Hermes, Antigravity, Codex)
+- [x] Forward merged enterprise_sales_bot Jules updates (integration tests, autodev, staging prep)
+- [x] Forward merged FAGLC production release (hardened sync, live market data)
+- [x] Merged bobeditpro upstream (bug report template for Audacity 4.0 beta)
+- [x] Merged sm64coopdx upstream (SOC index, signing, linux crash fix)
+- [x] Committed borg .borg/.hypercode → .tormentnexus consolidation (7,982 files)
+- [x] Fixed 4 bobsgameweb stale submodule pointers (PixiEditor, aseprite, retro-game-editor, grafx2)
+- [x] Fixed bobmania orphaned itgmania gitlinks (13 .gitmodules entries added)
+- [x] Fixed fitness_center_dance_machine bobmania pointer
+
+## Completed (v4.33.0)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
 - [x] 27 submodule pointer updates (record) — v3.72.0
 - [x] 19 feature branch reverse-syncs (record) — v3.73.0
