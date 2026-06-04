@@ -1,4 +1,4 @@
-# Workspace Roadmap — v4.29.0
+# Workspace Roadmap — v4.30.0
 
 ## Completed (v3.68–v3.76)
 - [x] Massive PR merge wave (28+ PRs across 25 repos) — v3.72.0
@@ -58,6 +58,14 @@
 - [x] Created .gitmodules for ableton_psytrance_hymn_creator/hymnmania_src nested submodule
 - [x] Total submodule count: 99
 
+
+## Completed (v4.30.0)
+- [x] Forward merged enterprise_sales_bot Phase 5 Jules branch (+1397/-540, 37 files)
+- [x] .agent fast-forward merged (star history chart)
+- [x] Committed dirty working trees (borg, hymnmania)
+- [x] Removed broken ai_game_engine/third_party/godot submodule (unreachable commit)
+- [x] Confirmed all v4.29.0 merged branches are stale ancestors (7 repos verified)
+- [x] OmniRoute dashboard-ui-resilience branch evaluated but deferred (unrelated histories)
 
 ## Completed (v4.29.0)
 - [x] Forward merged 4 Jules/AI feature branches (pi-mono, neverball, fwber, psytrance_night_outreach_agent)

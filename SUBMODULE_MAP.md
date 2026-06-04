@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.29.0
+# Submodule Structural Map — v4.30.0
 
 | # | Path | URL | Branch | Commit |
 |---|------|-----|--------|--------|
@@ -9,12 +9,12 @@
 | 5 | `Maestro` | `https://github.com/robertpelloni/Maestro` | `-` | `a5b1ea75` |
 | 6 | `MarbleBlast` | `https://github.com/robertpelloni/MarbleBlast` | `-` | `9d64d67` |
 | 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `1205d1d` |
-| 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `0e97f3de` |
+| 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `e773c656` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `-` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `52bd4782c` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `46faeae8a` |
 | 11 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `-` | `4983cc6` |
 | 12 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `-` | `5162988` |
-| 13 | `ai_game_engine` | `https://github.com/robertpelloni/ai_game_engine.git` | `-` | `85257fd` |
+| 13 | `ai_game_engine` | `https://github.com/robertpelloni/ai_game_engine.git` | `-` | `c5195df` |
 | 14 | `antigravity-autopilot` | `https://github.com/robertpelloni/antigravity-autopilot` | `-` | `7521af6f` |
 | 15 | `antigravity-cli` | `https://github.com/krmslmz/antigravity-cli.git` | `-` | `457a655` |
 | 16 | `apophysis-j` | `https://github.com/robertpelloni/apophysis-j.git` | `master` | `8e84307` |
@@ -34,7 +34,7 @@
 | 30 | `bobmani/ddc` | `https://github.com/robertpelloni/ddc` | `-` | `84bd10e` |
 | 31 | `bobmani/ddc_onset` | `https://github.com/robertpelloni/ddc_onset` | `-` | `5d7572a` |
 | 32 | `bobmani/ffr-difficulty-model` | `https://github.com/robertpelloni/ffr-difficulty-model` | `-` | `b13fe4f` |
-| 33 | `bobmani/hymnmania` | `https://github.com/robertpelloni/hymnmania` | `-` | `b33310a` |
+| 33 | `bobmani/hymnmania` | `https://github.com/robertpelloni/hymnmania` | `-` | `eaad87b` |
 | 34 | `bobmani/itgmania` | `https://github.com/robertpelloni/itgmania` | `-` | `0be55fbc4d` |
 | 35 | `bobmani/ksm-v2` | `https://github.com/robertpelloni/ksm-v2` | `-` | `3988a7a` |
 | 36 | `bobmani/leraine-studio` | `https://github.com/robertpelloni/leraine-studio` | `-` | `d1b5e24` |
@@ -49,7 +49,7 @@
 | 45 | `bobui` | `https://github.com/robertpelloni/bobui` | `-` | `72dffe979d6` |
 | 46 | `bobzilla` | `https://github.com/robertpelloni/bobzilla` | `-` | `abe47ee` |
 | 47 | `bobzzite` | `https://github.com/robertpelloni/bobzzite` | `-` | `058c18b` |
-| 48 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `9fb1bc2b1` |
+| 48 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `30f85091c` |
 | 49 | `btk` | `https://github.com/robertpelloni/btk` | `-` | `b7921adf8` |
 | 50 | `claude-mem` | `https://github.com/robertpelloni/claude-mem.git` | `main` | `e66603c` |
 | 51 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `-` | `ecec041` |
@@ -58,7 +58,7 @@
 | 54 | `dupeguru` | `https://github.com/robertpelloni/dupeguru` | `-` | `03f4d214` |
 | 55 | `electricsheep` | `https://github.com/robertpelloni/electricsheep.git` | `master` | `d07f18e` |
 | 56 | `element-web` | `https://github.com/robertpelloni/element-web.git` | `develop` | `2f4e2d235e` |
-| 57 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `-` | `589e26f` |
+| 57 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `-` | `2ea19b6` |
 | 58 | `f-zerox` | `https://github.com/robertpelloni/f-zerox` | `-` | `562fbd7` |
 | 59 | `fitness_center_dance_machine` | `https://github.com/robertpelloni/fitness_center_dance_machine.git` | `-` | `85ad291` |
 | 60 | `frontend-sdl-cpp` | `https://github.com/robertpelloni/frontend-sdl-cpp` | `-` | `1ee402b` |
@@ -71,7 +71,7 @@
 | 67 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `-` | `841bb276` |
 | 68 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `-` | `71d6c9c` |
 | 69 | `litellm` | `https://github.com/robertpelloni/litellm.git` | `litellm_internal_staging` | `a58b45bddd` |
-| 70 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel` | `-` | `f59e2c0` |
+| 70 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel` | `-` | `8a10981` |
 | 71 | `mcp-superassistant` | `https://github.com/robertpelloni/mcp-superassistant` | `-` | `d67edac` |
 | 72 | `mcpenetes` | `https://github.com/robertpelloni/mcpenetes.git` | `main` | `97ea581` |
 | 73 | `metamcp` | `https://github.com/robertpelloni/metamcp.git` | `main` | `b847c92` |

@@ -1,3 +1,44 @@
+## [4.30.0] - 2026-06-04
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root `git fetch --all --tags` completed
+- 70+ submodules fetched individually (batched to avoid recursive timeout)
+- **.agent**: fast-forward merged 1 new commit (b806b97 — star history chart update)
+- **ai_game_engine**: removed broken third_party/godot submodule (unreachable commit 417cd33)
+- No new upstream changes on any tracked upstream repos (all ahead-only)
+
+### Step 2: Dual-Direction Intelligent Merge Engine — Forward Merges: 1
+- **enterprise_sales_bot**: merged origin/jules-autodev-phase5-integration (1 unique commit — Phase 5 autonomous sales pipeline, +1397/-540, 37 files changed)
+
+### Step 2: Stale/Already-Merged Branches (confirmed, no action)
+- **ableton_psytrance_hymn_creator**: Jules branch is ancestor of main (already merged)
+- **superdawmcp**: Jules branch is ancestor of main (already merged)
+- **pi-mono**: Jules branch is ancestor of main (already merged)
+- **neverball**: Jules branch is ancestor of main (already merged)
+- **ai_game_engine**: Jules branch is ancestor of main (already merged)
+- **borg**: 2 Jules branches are ancestors of main (stale, skip)
+- **bobgui**: GTK-related branches, not ours (upstream project branches)
+- **litellm**: External contributor branches, massively behind (skip)
+- **OmniRoute**: mine/fix/dashboard-ui-resilience-bugfixes has 3 useful commits but unrelated histories prevent merge (deferred)
+
+### Step 2: Dirty Working Tree Commits: 2
+- **borg**: committed (metrics history, db, mcp-stdio bat, scratch scripts)
+- **bobmani/hymnmania**: committed (agent memory, lancedb data, handoffs, suno browser automation)
+
+### Step 3: Workspace Cleanup
+- Version bumped: 4.29.0 → 4.30.0
+- Submodule pointers updated: .agent, enterprise_sales_bot, ai_game_engine, borg, bobmani/hymnmania
+- Batch scripts validated (no changes needed)
+- CHANGELOG.md, ROADMAP.md, TODO.md, SUBMODULE_MAP.md, HANDOFF.md updated
+
+### Known Blockers (carried forward)
+- **bobeditpro**: 43 upstream commits — merge conflicts in tracknavigation (deferred)
+- **OmniRoute**: AI feature branches have unrelated histories (deferred — cherry-pick strategy needed)
+- **Maestro**: Jules branches have unrelated histories (deferred)
+- **ai_game_engine/third_party/godot**: Removed (unreachable commit)
+- **fwber**: fetch error on origin
+- **raindropioapp**: fetch error on upstream
+- **Security**: 273 GitHub vulnerabilities on default branch
 ## [4.29.0] - 2026-06-04
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
