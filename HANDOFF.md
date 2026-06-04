@@ -1,20 +1,19 @@
-# HANDOFF — Session v4.35.0
+# HANDOFF — Session v4.36.0
 
 **Date:** 2026-06-04
 **Operator:** AI Sync Engine
-**Previous Version:** 4.34.0 → **4.35.0**
+**Previous Version:** 4.35.0 → **4.36.0**
 
 ---
 
 ## Summary
 
-Four forward merges including a major pi-mono Jules branch (unified LLM harness, +1,700 lines). No upstream syncs needed. All stale branches confirmed.
+Four forward merges of iteratively-updated Jules branches. No upstream syncs needed. All stale branches confirmed. Pi-mono removed 5 obsolete AI submodules.
 
 ## STEP 1: Upstream Tracking & Submodule Sanitization
 
 - Root + 70+ submodules fetched
 - No new upstream commits to merge (all tracked upstreams at 0 ahead)
-- **borg**: synced working tree (db update)
 - fwber + raindropioapp fetch errors: confirmed benign
 
 ## STEP 2: Dual-Direction Intelligent Merge Engine
@@ -23,24 +22,13 @@ Four forward merges including a major pi-mono Jules branch (unified LLM harness,
 
 | Submodule | Branch | Unique Commits | Strategy | Result |
 |-----------|--------|---------------|----------|--------|
-| **bobsgameweb** | `origin/jules-3-0-9-engine-sync-*` (updated) | 2 | `-X ours` | ✅ v3.0.9 verified engine sync, audio-mapping tests, +86/-30 |
-| **enterprise_sales_bot** | `origin/jules-12741150550545531224-*` (updated) | 2 | `-X ours` | ✅ Production finalization, responder enhancements, +239/-7 |
-| **fully_automated_gay_luxury_space_communism** | `origin/feat/v1.0.0-alpha.41-*` (updated) | 1 | `-X ours` | ✅ Production finalization & verified release, +224/-62 |
-| **pi-mono** | `origin/jules-5192995686709987445-f4e7a729` | 1 | merge | ✅ **Unified LLM harness, Tabby/Warp AI integration, +1,700/-3** |
+| **bobsgameweb** | `origin/jules-3-0-9-engine-sync-*` | 1 | fast-forward | ✅ v3.0.9 verified integration |
+| **enterprise_sales_bot** | `origin/jules-12741150550545531224-*` | 1 | `-X ours` | ✅ Performance metrics, DB/repository, server enhancements (+281/-3) |
+| **fully_automated_gay_luxury_space_communism** | `origin/feat/v1.0.0-alpha.41-*` | 1 | `-X ours` | ✅ Production v2, repro.go, sync hardening (+146/-22) |
+| **pi-mono** | `origin/jules-5192995686709987445-f4e7a729` | 1 | merge | ✅ CI fixes, removed 5 obsolete AI submodules (ollama, open-interpreter, opencode-cli, vscode-copilot, mistral-vibe) |
 
-### Key Feature: pi-mono Unified LLM Harness
-- `pkg/ai/harness.go` — core harness abstraction
-- `pkg/ai/tabby.go` — Tabby AI integration (146 lines)
-- `pkg/ai/warp.go` — Warp AI integration (74 lines)
-- `pkg/ai/clean_room_tools.go` — clean room tooling (35 lines)
-- `pkg/ai/registry_ext.go` — registry extensions (37 lines)
-- `pkg/ai/harness_test.go` — harness tests (54 lines)
-- `pkg/server/integration_test.go` — server integration tests (51 lines)
-- Plus 21 other files across TypeScript/Go packages
-
-### Confirmed Stale Branches (8 repos)
+### Confirmed Stale Branches (7 repos)
 All previously-merged Jules branches confirmed as ancestors of main.
-litellm upstream feature branches (31K+ commits divergence): ignored per protocol.
 
 ## Known Blockers Remaining
 

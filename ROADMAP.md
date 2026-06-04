@@ -1,4 +1,10 @@
-# Workspace Roadmap — v4.35.0
+# Workspace Roadmap — v4.36.0
+
+## Completed (v4.36.0)
+- [x] Forward merged bobsgameweb v3.0.9 verified integration (fast-forward)
+- [x] Forward merged enterprise_sales_bot performance metrics (+281 lines)
+- [x] Forward merged FAGLC production v2 with repro.go (+146 lines)
+- [x] Forward merged pi-mono CI fixes, removed 5 obsolete AI submodules
 
 ## Completed (v4.35.0)
 - [x] Forward merged bobsgameweb v3.0.9 verified engine sync (audio-mapping tests)
