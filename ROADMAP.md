@@ -1,4 +1,9 @@
-# Workspace Roadmap — v4.43.0
+# Workspace Roadmap — v4.44.0
+
+## Completed (v4.44.0)
+- [x] Fixed npp Jules clone error — stale JUCE pointer in bobui cascade
+- [x] Updated npp/bobui, bobgui, btk to latest HEAD
+- [x] Updated bobeditpro/bobui, bobtrax/bobui, btk/bobui-reference to latest
 
 ## Completed (v4.43.0)
 - [x] Resolved persistent fitness_center_dance_machine Jules clone error (updated bobmania + itgmania to latest HEAD)

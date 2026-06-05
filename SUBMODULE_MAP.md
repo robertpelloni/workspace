@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.43.0
+# Submodule Structural Map — v4.44.0
 
 | # | Path | URL | Branch | Commit |
 |---|------|-----|--------|--------|
@@ -11,7 +11,7 @@
 | 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `f56e611` |
 | 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `e773c656` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `-` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `9614c4ff3` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `bd263a4e1` |
 | 11 | `WebAI-to-API` | `https://github.com/robertpelloni/WebAI-to-API` | `-` | `68027d1` |
 | 12 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `-` | `a28d92c` |
 | 13 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `-` | `5162988` |
@@ -24,7 +24,7 @@
 | 20 | `bobbybookmarks` | `https://github.com/robertpelloni/bobbybookmarks` | `-` | `84c5fae` |
 | 21 | `bobcoin` | `https://github.com/robertpelloni/bobcoin` | `-` | `d406bb7d` |
 | 22 | `bobdesk` | `https://github.com/robertpelloni/bobdesk` | `-` | `ea2e0a4143f0` |
-| 23 | `bobeditpro` | `https://github.com/robertpelloni/bobeditpro` | `-` | `e3b5faace` |
+| 23 | `bobeditpro` | `https://github.com/robertpelloni/bobeditpro` | `-` | `070d4d437` |
 | 24 | `bobfilez` | `https://github.com/robertpelloni/bobfilez` | `-` | `c30b4e39e` |
 | 25 | `bobgui` | `https://github.com/robertpelloni/bobgui` | `-` | `b0a4a45271` |
 | 26 | `bobium` | `https://github.com/robertpelloni/bobium` | `-` | `bdfca80` |
@@ -46,11 +46,11 @@
 | 42 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `master` | `36ef7de0` |
 | 43 | `bobtorrent` | `https://github.com/robertpelloni/bobtorrent` | `-` | `1ba0974` |
 | 44 | `bobtrader` | `https://github.com/robertpelloni/bobtrader` | `-` | `c069896` |
-| 45 | `bobtrax` | `https://github.com/robertpelloni/bobtrax` | `-` | `0d830ea` |
+| 45 | `bobtrax` | `https://github.com/robertpelloni/bobtrax` | `-` | `3c96f6b` |
 | 46 | `bobui` | `https://github.com/robertpelloni/bobui` | `-` | `1c589f87cb1` |
 | 47 | `bobzilla` | `https://github.com/robertpelloni/bobzilla` | `-` | `abe47ee` |
 | 48 | `bobzzite` | `https://github.com/robertpelloni/bobzzite` | `-` | `058c18b` |
-| 49 | `btk` | `https://github.com/robertpelloni/btk` | `-` | `df943e171` |
+| 49 | `btk` | `https://github.com/robertpelloni/btk` | `-` | `532b12f02` |
 | 50 | `claude-mem` | `https://github.com/robertpelloni/claude-mem.git` | `main` | `e66603c` |
 | 51 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `-` | `ecec041` |
 | 52 | `crowdsourced_dance_club` | `https://github.com/robertpelloni/crowdsourced_dance_club.git` | `main` | `f1c3ce0` |
@@ -79,7 +79,7 @@
 | 75 | `multimousergy` | `https://github.com/robertpelloni/multimousergy.git` | `netmux-initial-architecture-10413382364036026152` | `2e90e73` |
 | 76 | `native-fy` | `https://github.com/robertpelloni/native-fy` | `-` | `5a6268e` |
 | 77 | `neverball` | `https://github.com/robertpelloni/neverball` | `-` | `55403258` |
-| 78 | `npp` | `https://github.com/robertpelloni/npp` | `-` | `26d270f4b` |
+| 78 | `npp` | `https://github.com/robertpelloni/npp` | `-` | `3ca9bed08` |
 | 79 | `odcnn` | `https://github.com/robertpelloni/odcnn.git` | `master` | `454f4c7` |
 | 80 | `onetool-mcp` | `https://github.com/robertpelloni/onetool-mcp` | `-` | `0f5fd03` |
 | 81 | `openclaw-config` | `https://github.com/TechNickAI/openclaw-config.git` | `-` | `d9571ef` |
@@ -101,7 +101,7 @@
 | 97 | `tabby` | `https://github.com/robertpelloni/tabby` | `-` | `954bae78` |
 | 98 | `timidity` | `https://github.com/robertpelloni/timidity.git` | `cvs` | `f726f8f` |
 | 99 | `topaz-ffmpeg` | `https://github.com/TopazLabs/ffmpeg` | `-` | `fc13895eb7` |
-| 100 | `tormentnexus` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `9614c4ff3` |
+| 100 | `tormentnexus` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `bd263a4e1` |
 | 101 | `tormentnexus/submodules/serena` | `https://github.com/oraios/serena.git` | `-` | `?` |
 | 102 | `warp` | `https://github.com/robertpelloni/warp.git` | `master` | `01243df` |
 

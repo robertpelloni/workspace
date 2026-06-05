@@ -1,3 +1,29 @@
+## [4.44.0] - 2026-06-05
+
+### Jules Clone Error Fix (Critical) — npp/bobui JUCE stale pointer
+- Root cause: npp referenced bobui at commit `72dffe97` which had stale JUCE submodule pointer `0729f131`
+- JUCE force-pushed their history making `0729f131` unreachable
+- Fix: Updated npp/bobui to latest HEAD `1c589f8` (JUCE at `3ba67d45`, current)
+- Also updated npp/bobgui to `b0a4a452` and npp/btk to `532b12f0`
+- Updated bobeditpro/bobui and bobtrax/bobui to latest HEAD
+- Updated btk/external/bobui-reference to latest HEAD
+
+### Cascading Submodule Pointer Architecture Issue Identified
+- The v4.42.0 mass fix updated TOP-LEVEL pointers but not NESTED submodule-of-submodule references
+- When a dependency repo (e.g. bobui) updates ITS nested pointers (e.g. JUCE), all parent repos
+  that reference bobui must ALSO update their bobui pointer to get the fix
+- This is a recurring pattern requiring a deeper fix strategy
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- No upstream syncs needed
+
+### Step 2: Dual-Direction Intelligent Merge Engine
+- No new branch activity
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 278 GitHub vulnerabilities on default branch (7 critical)
+- **Cascading stale pointers**: Updating a dependency repo's nested pointers requires updating ALL parent repos that reference it — needs automation
 ## [4.43.0] - 2026-06-05
 
 ### Jules Clone Error Fix (Critical) — fitness_center_dance_machine
