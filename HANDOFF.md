@@ -1,39 +1,42 @@
-# HANDOFF — Session v4.44.0
+# HANDOFF — Session v4.45.0
 
 **Date:** 2026-06-05
 **Operator:** AI Sync Engine
-**Previous Version:** 4.43.0 → **4.44.0**
+**Previous Version:** 4.44.0 → **4.45.0**
 
 ---
 
 ## Summary
 
-Fixed npp Jules clone error caused by cascading stale submodule pointers: bobui's JUCE dependency was force-pushed, making the old commit unreachable through npp's bobui reference.
+Fixed persistent FCDM Jules clone error by identifying the root cause: Jules' internal GitHub proxy (192.168.0.1:8080) caches stale repo state, serving old itgmania commits with unreachable IXWebSocket pointers.
 
-## Jules Clone Error Fix (Critical) — npp/bobui/JUCE cascade
+## Jules Clone Error Fix (Critical) — FCDM proxy cache invalidation
 
-- **Root cause**: npp referenced bobui at `72dffe97` which had stale JUCE pointer `0729f131`. JUCE force-pushed, making `0729f131` unreachable.
-- **Fix**: Updated all parent repos to reference bobui at latest HEAD `1c589f8` (JUCE at `3ba67d45`, current)
+- **Root cause**: Jules proxy at `192.168.0.1:8080` cached itgmania at `0be55fbc` (stale), which has IXWebSocket at `1cd805d0` (unreachable). GitHub serves the correct `5f3b5c4d` but proxy hasn't refreshed.
+- **Fix**: Pushed empty commits to force proxy cache refresh:
 
-| Repo | Updated Pointer | Old → New |
-|------|----------------|-----------|
-| npp | bobui, bobgui, btk | bobui `72dffe97`→`1c589f8`, bobgui `aedd8179`→`b0a4a452`, btk `b7921adf`→`532b12f0` |
-| bobeditpro | bobui | `72dffe97`→`1c589f8` |
-| bobtrax | bobui | `72dffe97`→`1c589f8` |
-| btk | external/bobui-reference | `72dffe97`→`1c589f8` |
+| Repo | Old HEAD | New HEAD | Change |
+|------|----------|----------|--------|
+| itgmania | `5f3b5c4d` | `60a71494` | Empty commit bump (same tree, IXWebSocket at `998cf95`) |
+| bobmania | `1e88215a` | `15ed7e34` | Empty commit bump (same tree, itgmania/extern/IXWebSocket at `998cf95`) |
+| FCDM | `ccf229d` | `9e58ee5` | Updated bobmania + itgmania pointers |
 
-## Architecture Issue Identified: Cascading Stale Pointers
+## Proxy Cache Architecture Discovery
 
-The v4.42.0 mass fix updated **top-level** submodule pointers but not **nested** submodule-of-submodule references. When a dependency repo (e.g. bobui) updates ITS nested pointers (e.g. JUCE), all parent repos referencing bobui must ALSO update their bobui pointer. This requires transitive propagation — a deeper automation strategy is needed.
+- Jules uses internal GitHub mirror at `192.168.0.1:8080`
+- `--shallow-submodules --depth 1` fetches only branch tip from proxy
+- If proxy's cached tip is stale, submodule gitlinks in that tree reference unreachable commits
+- **Workaround**: Push new commits (even empty) to force proxy refresh from upstream GitHub
+- This explains ALL recurring "not our ref" Jules clone errors — they're not just about stale pointers in our repos, but about the proxy serving stale versions of repos that DO have correct pointers on GitHub
 
 ## Known Blockers Remaining
 
 1. **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
-2. **Security**: 278 GitHub vulnerabilities on default branch (7 critical)
-3. **Cascading stale pointers**: Needs transitive pointer propagation automation
+2. **Security**: 279 GitHub vulnerabilities on default branch (7 critical)
+3. **Proxy cache staleness**: Jules proxy may re-cache stale state; may need periodic empty-commit bumps
 
 ## Next Session Priorities
 
-1. Implement transitive stale pointer detection and propagation
-2. Cherry-pick OmniRoute dashboard-ui-resilience commits onto main
-3. Security vulnerability remediation
+1. Monitor if FCDM Jules clone now succeeds after proxy invalidation
+2. If proxy still stale, consider alternative approaches (tag-based fetching, removing --shallow-submodules)
+3. Cherry-pick OmniRoute dashboard-ui-resilience commits onto main

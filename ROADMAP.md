@@ -1,4 +1,8 @@
-# Workspace Roadmap — v4.44.0
+# Workspace Roadmap — v4.45.0
+
+## Completed (v4.45.0)
+- [x] Fixed FCDM Jules clone error — itgmania proxy cache invalidation via empty commit bumps
+- [x] Identified Jules internal proxy (192.168.0.1:8080) as source of stale submodule pointer issues
 
 ## Completed (v4.44.0)
 - [x] Fixed npp Jules clone error — stale JUCE pointer in bobui cascade

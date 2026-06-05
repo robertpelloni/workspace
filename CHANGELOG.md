@@ -1,3 +1,31 @@
+## [4.45.0] - 2026-06-05
+
+### Jules Clone Error Fix (Critical) — FCDM itgmania stale proxy cache
+- Root cause: Jules internal proxy (192.168.0.1:8080) cached stale itgmania at commit `0be55fbc` 
+  which had IXWebSocket at `1cd805d0` (unreachable after upstream force-push)
+- GitHub serves correct itgmania HEAD (`5f3b5c4d`) but proxy hasn't refreshed
+- Fix: Added empty commits to itgmania and bobmania to force proxy cache invalidation
+  - itgmania: `5f3b5c4d` -> `60a71494` (empty commit bump, same tree with IXWebSocket at `998cf95`)
+  - bobmania: `1e88215a` -> `15ed7e34` (empty commit bump, same tree with itgmania/extern/IXWebSocket at `998cf95`)
+- Updated FCDM pointers to new bobmania + itgmania HEADs
+
+### Proxy Cache Architecture Issue Identified
+- Jules uses an internal GitHub mirror/proxy at `192.168.0.1:8080`
+- This proxy caches repo state and can serve stale branch tips
+- `--shallow-submodules --depth 1` fetches only the tip, so if the proxy's tip is stale,
+  submodule pointers in the stale tree may reference unreachable commits
+- Workaround: push new commits (even empty) to force proxy refresh
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- No upstream syncs needed
+
+### Step 2: Dual-Direction Intelligent Merge Engine
+- No new branch activity
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 279 GitHub vulnerabilities on default branch (7 critical)
+- **Proxy cache staleness**: Jules internal proxy can serve stale repo state
 ## [4.44.0] - 2026-06-05
 
 ### Jules Clone Error Fix (Critical) — npp/bobui JUCE stale pointer
