@@ -1,4 +1,9 @@
-# Workspace Roadmap — v4.36.0
+# Workspace Roadmap — v4.37.0
+
+## Completed (v4.37.0)
+- [x] Forward merged bobsgameweb v3.0.9 verified integration (iterative ff)
+- [x] Forward merged enterprise_sales_bot production readiness finalization (-365 lines cleanup)
+- [x] Resolved fitness_center_dance_machine Jules clone error (9 stale itgmania extern deps)
 
 ## Completed (v4.36.0)
 - [x] Forward merged bobsgameweb v3.0.9 verified integration (fast-forward)

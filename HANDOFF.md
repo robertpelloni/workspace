@@ -1,33 +1,38 @@
-# HANDOFF — Session v4.36.0
+# HANDOFF — Session v4.37.0
 
 **Date:** 2026-06-04
 **Operator:** AI Sync Engine
-**Previous Version:** 4.35.0 → **4.36.0**
+**Previous Version:** 4.36.0 → **4.37.0**
 
 ---
 
 ## Summary
 
-Four forward merges of iteratively-updated Jules branches. No upstream syncs needed. All stale branches confirmed. Pi-mono removed 5 obsolete AI submodules.
+Two forward merges of iteratively-updated Jules branches. No upstream syncs needed. Jules clone error fix carried from inter-session (9 stale itgmania extern deps). All stale branches confirmed.
 
 ## STEP 1: Upstream Tracking & Submodule Sanitization
 
 - Root + 70+ submodules fetched
 - No new upstream commits to merge (all tracked upstreams at 0 ahead)
+- borg synced (db + pi-lens cache + scratch scripts)
 - fwber + raindropioapp fetch errors: confirmed benign
 
 ## STEP 2: Dual-Direction Intelligent Merge Engine
 
-### Forward Merges: 4
+### Forward Merges: 2
 
 | Submodule | Branch | Unique Commits | Strategy | Result |
 |-----------|--------|---------------|----------|--------|
-| **bobsgameweb** | `origin/jules-3-0-9-engine-sync-*` | 1 | fast-forward | ✅ v3.0.9 verified integration |
-| **enterprise_sales_bot** | `origin/jules-12741150550545531224-*` | 1 | `-X ours` | ✅ Performance metrics, DB/repository, server enhancements (+281/-3) |
-| **fully_automated_gay_luxury_space_communism** | `origin/feat/v1.0.0-alpha.41-*` | 1 | `-X ours` | ✅ Production v2, repro.go, sync hardening (+146/-22) |
-| **pi-mono** | `origin/jules-5192995686709987445-f4e7a729` | 1 | merge | ✅ CI fixes, removed 5 obsolete AI submodules (ollama, open-interpreter, opencode-cli, vscode-copilot, mistral-vibe) |
+| **bobsgameweb** | `origin/jules-3-0-9-engine-sync-*` | 2 | fast-forward | ✅ v3.0.9 verified integration (iterative update) |
+| **enterprise_sales_bot** | `origin/jules-12741150550545531224-*` | 2 | `-X ours` | ✅ Production readiness finalization, test cleanup (-365 lines) |
 
-### Confirmed Stale Branches (7 repos)
+### Jules Clone Error Fix (carried from inter-session)
+- **fitness_center_dance_machine**: Updated bobmania pointer → resolved stale bobcoin + itgmania extern submodule pointers
+  - Updated 9 extern deps in itgmania: ffmpeg, hidapi, libjpeg-turbo, libpng, libusb, mbedtls, ogg, vorbis, zlib
+  - Updated bobcoin gitlink in bobmania: `7708946` → `64575ee3`
+  - Replaced entire itgmania tree in bobmania with current commit's tree
+
+### Confirmed Stale Branches (8 repos)
 All previously-merged Jules branches confirmed as ancestors of main.
 
 ## Known Blockers Remaining
@@ -39,4 +44,4 @@ All previously-merged Jules branches confirmed as ancestors of main.
 
 1. Cherry-pick OmniRoute dashboard-ui-resilience commits onto main
 2. Security vulnerability remediation (especially 7 critical)
-3. Proactive stale submodule pointer audit on repos with deep nesting
+3. Proactive stale submodule pointer audit on repos with deep nesting (bobmania/itgmania pattern)
