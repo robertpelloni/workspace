@@ -1,3 +1,24 @@
+## [4.43.0] - 2026-06-05
+
+### Jules Clone Error Fix (Critical) — fitness_center_dance_machine
+- Updated FCDM bobmania pointer to latest HEAD (1e88215a) — includes updated itgmania tree
+- Updated FCDM itgmania pointer to latest release (5f3b5c4d) — includes updated extern pointers
+- Both bobmania embedded tree and direct itgmania submodule now have current IXWebSocket (998cf95), ffmpeg (b355200), libtomcrypt (a68fa19), libtommath (ae40a87), Simply-Love-SM5 (e9ac235)
+- Resolves persistent Jules clone error 'not our ref 1cd805d0' for IXWebSocket
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root + 70+ submodules fetched
+- No new upstream commits to merge
+- tormentnexus (formerly borg) clean
+- fwber + raindropioapp fetch errors: confirmed benign
+
+### Step 2: Dual-Direction Intelligent Merge Engine
+- No new Jules/feature branch activity since v4.42.0
+- All previously-merged branches confirmed stale
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 278 GitHub vulnerabilities on default branch (7 critical)
 ## [4.42.0] - 2026-06-05
 
 ### Major: borg submodule renamed to tormentnexus

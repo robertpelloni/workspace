@@ -1,4 +1,7 @@
-# Workspace Roadmap — v4.42.0
+# Workspace Roadmap — v4.43.0
+
+## Completed (v4.43.0)
+- [x] Resolved persistent fitness_center_dance_machine Jules clone error (updated bobmania + itgmania to latest HEAD)
 
 ## Completed (v4.42.0)
 - [x] Renamed borg submodule to tormentnexus across workspace
