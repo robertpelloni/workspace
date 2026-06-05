@@ -1,4 +1,4 @@
-# Workspace TODO — v4.41.0
+# Workspace TODO — v4.42.0
 
 ## Critical
 - [ ] **Security**: Audit all repos for accidentally committed auth tokens/keys

@@ -1,3 +1,34 @@
+## [4.42.0] - 2026-06-05
+
+### Major: borg submodule renamed to tormentnexus
+- Renamed `borg/` to `tormentnexus/` across workspace
+- Updated .gitmodules, git config, index, and filesystem
+- Build path updated: `borg/go` -> `tormentnexus/go`
+
+### Mass Stale Submodule Pointer Fix: 178 pointers across 34 repos
+- Ran comprehensive audit of ALL nested submodule pointers across entire workspace
+- Updated stale pointers in 33 repos to HEAD of their upstream remotes
+- Resolves Jules clone errors for `npp` (bobgui, bobui, btk) and prevents future `not our ref` failures
+- Key repos with most fixes: bobfilez (48), hyperharness (25), bobsgameonlinejava (15), antigravity-autopilot (11), bg (8)
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root + 70+ submodules fetched
+- No new upstream commits to merge
+- tormentnexus (formerly borg) synced: clean
+- fwber + raindropioapp fetch errors: confirmed benign
+
+### Step 2: Dual-Direction Intelligent Merge Engine — Forward Merges: 4
+
+| Submodule | Branch | Strategy | Result |
+|-----------|--------|----------|--------|
+| **enterprise_sales_bot** | jules-12741150550545531224 | `-X ours` | v0.4.1 production ready, Phase 5 reconciliation (+53/-33) |
+| **bobsgameweb** | jules-3-0-9-engine-sync | `-X ours` | v3.0.9 Engine Sync & Feature Parity (+10/-11) |
+| **hyperharness** | feat/port-ai-harnesses-to-go | `-X ours` | v0.4.4 final, ingest pipeline, subagent manager tests |
+| **pi-mono** | jules-5192995686709987445 | `-X ours` | v0.97.0 unified LLM harness, Wave assimilation (+384/-6) |
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 275+ GitHub vulnerabilities on default branch (7 critical)
 ## [4.41.0] - 2026-06-04
 
 ### Jules Clone Error Fix

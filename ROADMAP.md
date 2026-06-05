@@ -1,4 +1,12 @@
-# Workspace Roadmap — v4.41.0
+# Workspace Roadmap — v4.42.0
+
+## Completed (v4.42.0)
+- [x] Renamed borg submodule to tormentnexus across workspace
+- [x] Mass stale submodule pointer fix: 178 pointers across 34 repos
+- [x] Forward merged enterprise_sales_bot v0.4.1 production ready
+- [x] Forward merged bobsgameweb v3.0.9 Engine Sync & Feature Parity
+- [x] Forward merged hyperharness v0.4.4 final with ingest pipeline
+- [x] Forward merged pi-mono v0.97.0 unified LLM harness + Wave assimilation (+384 lines)
 
 ## Completed (v4.41.0)
 - [x] Resolved fitness_center_dance_machine Jules clone error (5 stale itgmania extern submodule pointers: IXWebSocket, ffmpeg, libtomcrypt, libtommath, Simply-Love-SM5)

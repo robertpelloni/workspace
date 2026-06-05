@@ -1,45 +1,46 @@
-# HANDOFF — Session v4.41.0
+# HANDOFF — Session v4.42.0
 
-**Date:** 2026-06-04
+**Date:** 2026-06-05
 **Operator:** AI Sync Engine
-**Previous Version:** 4.40.0 → **4.41.0**
+**Previous Version:** 4.41.0 → **4.42.0**
 
 ---
 
 ## Summary
 
-Jules clone error fix — 5 stale itgmania extern submodule pointers updated. No upstream syncs or forward merges needed this cycle.
+Major session: renamed `borg` to `tormentnexus`, fixed 178 stale submodule pointers across 34 repos, and forward-merged 4 Jules branches.
 
-## Jules Clone Error Fix (Critical)
+## Major Changes
 
-- **fitness_center_dance_machine**: Updated bobmania pointer → resolved 5 stale itgmania extern submodule pointers
-  - IXWebSocket: `1cd805d` → `998cf95` (mbedTLS 4.x compatibility)
-  - ffmpeg: `a16e674` → `56124f1` (avcodec/exif cleanup)
-  - libtomcrypt: `3adfe4d` → `a68fa19` (SM3 hash merge)
-  - libtommath: `73c180c` → `ae40a87` (subin_check PR)
-  - Simply-Love-SM5: `a98e08d` → `e9ac235` (beta removal)
-- Three-layer fix: itgmania repo → bobmania tree (via read-tree) → fitness_center_dance_machine pointer
+### 1. borg → tormentnexus Rename
+- Renamed submodule `borg/` to `tormentnexus/` across workspace
+- Updated `.gitmodules`, git config, index, and filesystem
+- Build path updated: `borg/go` → `tormentnexus/go`
 
-## STEP 1: Upstream Tracking & Submodule Sanitization
+### 2. Mass Stale Submodule Pointer Fix: 178 pointers / 34 repos
+- Ran comprehensive audit of ALL nested submodule pointers across entire workspace
+- Updated stale pointers in 33 repos to HEAD of their upstream remotes
+- **npp** fix resolved Jules clone error (`not our ref 19c7d755` for bobgui)
+- Key repos by volume: bobfilez (48), hyperharness (25), bobsgameonlinejava (15), antigravity-autopilot (11), bg (8)
 
-- Root + 70+ submodules fetched
-- No new upstream commits to merge
-- borg synced (db)
-- fwber + raindropioapp fetch errors: confirmed benign
+### 3. Forward Merges: 4
 
-## STEP 2: Dual-Direction Intelligent Merge Engine
-
-- No new Jules/feature branch activity detected since v4.40.0
-- All previously-merged branches confirmed stale
+| Submodule | Strategy | Summary |
+|-----------|----------|---------|
+| **enterprise_sales_bot** | `-X ours` | v0.4.1 production ready, Phase 5 reconciliation (+53/-33) |
+| **bobsgameweb** | `-X ours` | v3.0.9 Engine Sync & Feature Parity (+10/-11) |
+| **hyperharness** | `-X ours` | v0.4.4 final, ingest pipeline, subagent manager tests |
+| **pi-mono** | `-X ours` | v0.97.0 unified LLM harness, Wave assimilation (+384/-6) |
 
 ## Known Blockers Remaining
 
 1. **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
 2. **Security**: 275+ GitHub vulnerabilities on default branch (7 critical)
-3. **Recurring stale submodule pointers**: Upstream C/C++ projects (IXWebSocket, ffmpeg, libtomcrypt, etc.) force-push/rebase, making old commit hashes unreachable. This pattern will continue recurring.
+3. **beatoraja/metamcp**: Some submodule pointer updates failed due to gitlink expansion — need careful manual fix
 
 ## Next Session Priorities
 
 1. Cherry-pick OmniRoute dashboard-ui-resilience commits onto main
 2. Security vulnerability remediation (especially 7 critical)
-3. Consider automating stale submodule pointer detection for itgmania extern deps
+3. Verify all 178 pointer fixes survive next upstream force-push cycle
+4. Fix remaining beatoraja/metamcp submodule pointer issues

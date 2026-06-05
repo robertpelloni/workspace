@@ -295,8 +295,8 @@
 [submodule "fully_automated_gay_luxury_space_communism"]
 	path = fully_automated_gay_luxury_space_communism
 	url = https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git
-[submodule "borg"]
-	path = borg
+[submodule "tormentnexus"]
+	path = tormentnexus
 	url = https://github.com/robertpelloni/TormentNexus.git
 	branch = main
 [submodule "ableton_psytrance_hymn_creator"]
@@ -326,3 +326,6 @@
 [submodule "WebAI-to-API"]
 	path = WebAI-to-API
 	url = https://github.com/robertpelloni/WebAI-to-API
+[submodule "tormentnexus/submodules/serena"]
+	path = tormentnexus/submodules/serena
+	url = https://github.com/oraios/serena.git
