@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.37.0
+# Submodule Structural Map — v4.38.0
 
 | # | Path | URL | Branch | Commit |
 |---|------|-----|--------|--------|
@@ -11,7 +11,7 @@
 | 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `789fdd3` |
 | 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `e773c656` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `-` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `4003e898d` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `1deb392c7` |
 | 11 | `WebAI-to-API` | `https://github.com/robertpelloni/WebAI-to-API` | `-` | `68027d1` |
 | 12 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `-` | `4983cc6` |
 | 13 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `-` | `5162988` |
@@ -19,7 +19,7 @@
 | 15 | `antigravity-autopilot` | `https://github.com/robertpelloni/antigravity-autopilot` | `-` | `7521af6f` |
 | 16 | `antigravity-cli` | `https://github.com/krmslmz/antigravity-cli.git` | `-` | `457a655` |
 | 17 | `apophysis-j` | `https://github.com/robertpelloni/apophysis-j.git` | `master` | `8e84307` |
-| 18 | `auto_dj_script` | `https://github.com/robertpelloni/auto_dj_script` | `-` | `058737b3` |
+| 18 | `auto_dj_script` | `https://github.com/robertpelloni/auto_dj_script` | `-` | `acd2f45c` |
 | 19 | `bg` | `https://github.com/robertpelloni/bg.git` | `-` | `27934aad` |
 | 20 | `bobbybookmarks` | `https://github.com/robertpelloni/bobbybookmarks` | `-` | `84c5fae` |
 | 21 | `bobcoin` | `https://github.com/robertpelloni/bobcoin` | `-` | `d406bb7d` |
@@ -31,7 +31,7 @@
 | 27 | `bobmani/Simply-Love-SM5` | `https://github.com/robertpelloni/Simply-Love-SM5` | `-` | `a98e08dc` |
 | 28 | `bobmani/arrowvortex` | `https://github.com/robertpelloni/arrowvortex` | `-` | `eee0267` |
 | 29 | `bobmani/beatoraja` | `https://github.com/robertpelloni/beatoraja` | `-` | `80cd4722` |
-| 30 | `bobmani/bobmania` | `https://github.com/robertpelloni/bobmania` | `-` | `fb3230c5a5` |
+| 30 | `bobmani/bobmania` | `https://github.com/robertpelloni/bobmania` | `-` | `fd9741dac3` |
 | 31 | `bobmani/ddc` | `https://github.com/robertpelloni/ddc` | `-` | `84bd10e` |
 | 32 | `bobmani/ddc_onset` | `https://github.com/robertpelloni/ddc_onset` | `-` | `5d7572a` |
 | 33 | `bobmani/ffr-difficulty-model` | `https://github.com/robertpelloni/ffr-difficulty-model` | `-` | `b13fe4f` |
@@ -43,14 +43,14 @@
 | 39 | `bobmani/pianogame` | `https://github.com/robertpelloni/pianogame` | `-` | `1ece599` |
 | 40 | `bobsaver` | `https://github.com/robertpelloni/bobsaver` | `-` | `1f1c3206` |
 | 41 | `bobsgameonlinejava` | `https://github.com/robertpelloni/bobsgameonlinejava.git` | `-` | `93165f2` |
-| 42 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `master` | `cd94a16c` |
+| 42 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `master` | `9857daf5` |
 | 43 | `bobtorrent` | `https://github.com/robertpelloni/bobtorrent` | `-` | `81b0190` |
 | 44 | `bobtrader` | `https://github.com/robertpelloni/bobtrader` | `-` | `7105e8d` |
 | 45 | `bobtrax` | `https://github.com/robertpelloni/bobtrax` | `-` | `5e10f05` |
 | 46 | `bobui` | `https://github.com/robertpelloni/bobui` | `-` | `72dffe979d6` |
 | 47 | `bobzilla` | `https://github.com/robertpelloni/bobzilla` | `-` | `abe47ee` |
 | 48 | `bobzzite` | `https://github.com/robertpelloni/bobzzite` | `-` | `058c18b` |
-| 49 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `976628fc8` |
+| 49 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `3e4137a8f` |
 | 50 | `btk` | `https://github.com/robertpelloni/btk` | `-` | `b7921adf8` |
 | 51 | `claude-mem` | `https://github.com/robertpelloni/claude-mem.git` | `main` | `e66603c` |
 | 52 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `-` | `ecec041` |
@@ -59,9 +59,9 @@
 | 55 | `dupeguru` | `https://github.com/robertpelloni/dupeguru` | `-` | `03f4d214` |
 | 56 | `electricsheep` | `https://github.com/robertpelloni/electricsheep.git` | `master` | `d07f18e` |
 | 57 | `element-web` | `https://github.com/robertpelloni/element-web.git` | `develop` | `2f4e2d235e` |
-| 58 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `-` | `2e63844` |
+| 58 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `-` | `61edb29` |
 | 59 | `f-zerox` | `https://github.com/robertpelloni/f-zerox` | `-` | `562fbd7` |
-| 60 | `fitness_center_dance_machine` | `https://github.com/robertpelloni/fitness_center_dance_machine.git` | `-` | `c60622c` |
+| 60 | `fitness_center_dance_machine` | `https://github.com/robertpelloni/fitness_center_dance_machine.git` | `-` | `2655230` |
 | 61 | `frontend-sdl-cpp` | `https://github.com/robertpelloni/frontend-sdl-cpp` | `-` | `1ee402b` |
 | 62 | `fully_automated_gay_luxury_space_communism` | `https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git` | `-` | `bbd98f4` |
 | 63 | `fwber` | `https://github.com/robertpelloni/fwber` | `-` | `c9aafd85b` |
@@ -69,7 +69,7 @@
 | 65 | `geiss` | `https://github.com/robertpelloni/geiss.git` | `main` | `816b527` |
 | 66 | `hermes-agent` | `https://github.com/robertpelloni/hermes-agent.git` | `main` | `cd64bed5` |
 | 67 | `hyper` | `https://github.com/robertpelloni/hyper.git` | `-` | `2a7bb182` |
-| 68 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `-` | `b639b03e` |
+| 68 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `-` | `8b3cec44` |
 | 69 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `-` | `8e841b7` |
 | 70 | `litellm` | `https://github.com/robertpelloni/litellm.git` | `litellm_internal_staging` | `a58b45bddd` |
 | 71 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel` | `-` | `8a10981` |
@@ -86,7 +86,7 @@
 | 82 | `openclaw-config` | `https://github.com/TechNickAI/openclaw-config.git` | `-` | `d9571ef` |
 | 83 | `openclaw-dashboard` | `https://github.com/tugcantopaloglu/openclaw-dashboard.git` | `-` | `e0dac0e` |
 | 84 | `opencode-autopilot` | `https://github.com/robertpelloni/opencode-autopilot` | `-` | `f22bb5c` |
-| 85 | `pi-mono` | `https://github.com/robertpelloni/pi-mono` | `-` | `8539c0cd` |
+| 85 | `pi-mono` | `https://github.com/robertpelloni/pi-mono` | `-` | `c6bdbf6f` |
 | 86 | `picard` | `https://github.com/robertpelloni/picard` | `-` | `0f71386a4` |
 | 87 | `planet_fitness_stepmaniax_agent` | `https://github.com/robertpelloni/planet_fitness_stepmaniax_agent` | `-` | `f2d036e` |
 | 88 | `projectm` | `https://github.com/robertpelloni/projectm.git` | `-` | `4f125a5b1` |

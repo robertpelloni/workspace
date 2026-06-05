@@ -1,4 +1,10 @@
-# Workspace Roadmap — v4.37.0
+# Workspace Roadmap — v4.38.0
+
+## Completed (v4.38.0)
+- [x] Forward merged bobsgameweb v3.0.9 verified build (iterative ff)
+- [x] Forward merged enterprise_sales_bot production-ready v0.4.1-dev
+- [x] Forward merged pi-mono AI type expansions (+297 lines, Cloudflare/OpenRouter image providers)
+- [x] Forward merged hyperharness AI harnesses v0.4.4 (.gitignore + pnpm-lock refresh, -9438 lines)
 
 ## Completed (v4.37.0)
 - [x] Forward merged bobsgameweb v3.0.9 verified integration (iterative ff)
