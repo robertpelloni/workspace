@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.39.0
+# Submodule Structural Map — v4.40.0
 
 | # | Path | URL | Branch | Commit |
 |---|------|-----|--------|--------|
@@ -11,7 +11,7 @@
 | 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `789fdd3` |
 | 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `e773c656` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `-` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `eb7e41b37` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `e0f70ed8f` |
 | 11 | `WebAI-to-API` | `https://github.com/robertpelloni/WebAI-to-API` | `-` | `68027d1` |
 | 12 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `-` | `4983cc6` |
 | 13 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `-` | `5162988` |
@@ -43,14 +43,14 @@
 | 39 | `bobmani/pianogame` | `https://github.com/robertpelloni/pianogame` | `-` | `1ece599` |
 | 40 | `bobsaver` | `https://github.com/robertpelloni/bobsaver` | `-` | `1f1c3206` |
 | 41 | `bobsgameonlinejava` | `https://github.com/robertpelloni/bobsgameonlinejava.git` | `-` | `93165f2` |
-| 42 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `master` | `9857daf5` |
+| 42 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `master` | `e50a8022` |
 | 43 | `bobtorrent` | `https://github.com/robertpelloni/bobtorrent` | `-` | `81b0190` |
 | 44 | `bobtrader` | `https://github.com/robertpelloni/bobtrader` | `-` | `7105e8d` |
 | 45 | `bobtrax` | `https://github.com/robertpelloni/bobtrax` | `-` | `5e10f05` |
 | 46 | `bobui` | `https://github.com/robertpelloni/bobui` | `-` | `72dffe979d6` |
 | 47 | `bobzilla` | `https://github.com/robertpelloni/bobzilla` | `-` | `abe47ee` |
 | 48 | `bobzzite` | `https://github.com/robertpelloni/bobzzite` | `-` | `058c18b` |
-| 49 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `d738baa42` |
+| 49 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `9614c4ff3` |
 | 50 | `btk` | `https://github.com/robertpelloni/btk` | `-` | `b7921adf8` |
 | 51 | `claude-mem` | `https://github.com/robertpelloni/claude-mem.git` | `main` | `e66603c` |
 | 52 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `-` | `ecec041` |
@@ -59,7 +59,7 @@
 | 55 | `dupeguru` | `https://github.com/robertpelloni/dupeguru` | `-` | `03f4d214` |
 | 56 | `electricsheep` | `https://github.com/robertpelloni/electricsheep.git` | `master` | `d07f18e` |
 | 57 | `element-web` | `https://github.com/robertpelloni/element-web.git` | `develop` | `2f4e2d235e` |
-| 58 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `-` | `61edb29` |
+| 58 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `-` | `a49b522` |
 | 59 | `f-zerox` | `https://github.com/robertpelloni/f-zerox` | `-` | `562fbd7` |
 | 60 | `fitness_center_dance_machine` | `https://github.com/robertpelloni/fitness_center_dance_machine.git` | `-` | `2655230` |
 | 61 | `frontend-sdl-cpp` | `https://github.com/robertpelloni/frontend-sdl-cpp` | `-` | `1ee402b` |

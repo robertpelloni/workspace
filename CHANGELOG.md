@@ -1,3 +1,24 @@
+## [4.40.0] - 2026-06-04
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root + 70+ submodules fetched
+- No new upstream commits to merge (all tracked upstreams at 0 ahead)
+- borg synced (db)
+- fwber + raindropioapp fetch errors: confirmed benign
+
+### Step 2: Dual-Direction Intelligent Merge Engine — Forward Merges: 2
+
+| Submodule | Branch | Unique Commits | Strategy | Result |
+|-----------|--------|---------------|----------|--------|
+| **bobsgameweb** | `origin/jules-3-0-9-engine-sync-*` | 1 | fast-forward | ✅ v3.0.9 Final Verified Engine Sync & Integration |
+| **enterprise_sales_bot** | `origin/jules-12741150550545531224-*` | 1 | `-X ours` | ✅ CRM integration tests, mock client enhancements (+39/-5) |
+
+### Confirmed Stale Branches (8 repos, no action)
+All previously-merged Jules branches confirmed as ancestors of main.
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 275+ GitHub vulnerabilities on default branch (7 critical)
 ## [4.39.0] - 2026-06-04
 
 ### Step 1: Upstream Tracking & Submodule Sanitization

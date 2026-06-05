@@ -1,4 +1,8 @@
-# Workspace Roadmap — v4.39.0
+# Workspace Roadmap — v4.40.0
+
+## Completed (v4.40.0)
+- [x] Forward merged bobsgameweb v3.0.9 Final Verified Engine Sync (ff)
+- [x] Forward merged enterprise_sales_bot CRM integration tests (+39 lines)
 
 ## Completed (v4.39.0)
 - [x] Forward merged hyperharness v0.4.4 RC (CHANGELOG + MEMORY.md + binary)

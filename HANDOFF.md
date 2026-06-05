@@ -1,31 +1,32 @@
-# HANDOFF — Session v4.39.0
+# HANDOFF — Session v4.40.0
 
 **Date:** 2026-06-04
 **Operator:** AI Sync Engine
-**Previous Version:** 4.38.0 → **4.39.0**
+**Previous Version:** 4.39.0 → **4.40.0**
 
 ---
 
 ## Summary
 
-One forward merge — hyperharness v0.4.4 RC with CHANGELOG, MEMORY.md, and binary blob. No upstream syncs needed. All stale branches confirmed.
+Two forward merges. No upstream syncs needed. All stale branches confirmed. Milestone: v4.40.0.
 
 ## STEP 1: Upstream Tracking & Submodule Sanitization
 
 - Root + 70+ submodules fetched
 - No new upstream commits to merge (all tracked upstreams at 0 ahead)
-- borg synced (db + pi-lens + scratch scripts + enterprise UI components)
+- borg synced (db)
 - fwber + raindropioapp fetch errors: confirmed benign
 
 ## STEP 2: Dual-Direction Intelligent Merge Engine
 
-### Forward Merges: 1
+### Forward Merges: 2
 
 | Submodule | Branch | Unique Commits | Strategy | Result |
 |-----------|--------|---------------|----------|--------|
-| **hyperharness** | `origin/feat/port-ai-harnesses-to-go-v0.4.4-*` | 1 | `-X ours` | ✅ v0.4.4 RC, CHANGELOG + MEMORY.md, binary blob (+17 lines) |
+| **bobsgameweb** | `origin/jules-3-0-9-engine-sync-*` | 1 | fast-forward | ✅ v3.0.9 Final Verified Engine Sync & Integration |
+| **enterprise_sales_bot** | `origin/jules-12741150550545531224-*` | 1 | `-X ours` | ✅ CRM integration tests, mock client enhancements (+39/-5) |
 
-### Confirmed Stale Branches (7 repos)
+### Confirmed Stale Branches (8 repos)
 All previously-merged Jules branches confirmed as ancestors of main.
 
 ## Known Blockers Remaining
