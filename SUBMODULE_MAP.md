@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.40.0
+# Submodule Structural Map — v4.41.0
 
 | # | Path | URL | Branch | Commit |
 |---|------|-----|--------|--------|
@@ -11,7 +11,7 @@
 | 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `789fdd3` |
 | 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `e773c656` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `-` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `e0f70ed8f` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `c4d4df0f0` |
 | 11 | `WebAI-to-API` | `https://github.com/robertpelloni/WebAI-to-API` | `-` | `68027d1` |
 | 12 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `-` | `4983cc6` |
 | 13 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `-` | `5162988` |
@@ -31,12 +31,12 @@
 | 27 | `bobmani/Simply-Love-SM5` | `https://github.com/robertpelloni/Simply-Love-SM5` | `-` | `a98e08dc` |
 | 28 | `bobmani/arrowvortex` | `https://github.com/robertpelloni/arrowvortex` | `-` | `eee0267` |
 | 29 | `bobmani/beatoraja` | `https://github.com/robertpelloni/beatoraja` | `-` | `80cd4722` |
-| 30 | `bobmani/bobmania` | `https://github.com/robertpelloni/bobmania` | `-` | `fd9741dac3` |
+| 30 | `bobmani/bobmania` | `https://github.com/robertpelloni/bobmania` | `-` | `da02d31e96` |
 | 31 | `bobmani/ddc` | `https://github.com/robertpelloni/ddc` | `-` | `84bd10e` |
 | 32 | `bobmani/ddc_onset` | `https://github.com/robertpelloni/ddc_onset` | `-` | `5d7572a` |
 | 33 | `bobmani/ffr-difficulty-model` | `https://github.com/robertpelloni/ffr-difficulty-model` | `-` | `b13fe4f` |
 | 34 | `bobmani/hymnmania` | `https://github.com/robertpelloni/hymnmania` | `-` | `d8418da` |
-| 35 | `bobmani/itgmania` | `https://github.com/robertpelloni/itgmania` | `-` | `ecfd8bec0c` |
+| 35 | `bobmani/itgmania` | `https://github.com/robertpelloni/itgmania` | `-` | `485d87b67e` |
 | 36 | `bobmani/ksm-v2` | `https://github.com/robertpelloni/ksm-v2` | `-` | `3988a7a` |
 | 37 | `bobmani/leraine-studio` | `https://github.com/robertpelloni/leraine-studio` | `-` | `d1b5e24` |
 | 38 | `bobmani/linthesia` | `https://github.com/robertpelloni/linthesia` | `-` | `e88f1fd` |
@@ -61,7 +61,7 @@
 | 57 | `element-web` | `https://github.com/robertpelloni/element-web.git` | `develop` | `2f4e2d235e` |
 | 58 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `-` | `a49b522` |
 | 59 | `f-zerox` | `https://github.com/robertpelloni/f-zerox` | `-` | `562fbd7` |
-| 60 | `fitness_center_dance_machine` | `https://github.com/robertpelloni/fitness_center_dance_machine.git` | `-` | `2655230` |
+| 60 | `fitness_center_dance_machine` | `https://github.com/robertpelloni/fitness_center_dance_machine.git` | `-` | `1961fc2` |
 | 61 | `frontend-sdl-cpp` | `https://github.com/robertpelloni/frontend-sdl-cpp` | `-` | `1ee402b` |
 | 62 | `fully_automated_gay_luxury_space_communism` | `https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git` | `-` | `bbd98f4` |
 | 63 | `fwber` | `https://github.com/robertpelloni/fwber` | `-` | `c9aafd85b` |

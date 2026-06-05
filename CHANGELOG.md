@@ -1,3 +1,26 @@
+## [4.41.0] - 2026-06-04
+
+### Jules Clone Error Fix
+- **fitness_center_dance_machine**: Updated 5 stale itgmania extern submodule pointers in bobmania
+  - IXWebSocket: `1cd805d` → `998cf95` (mbedTLS 4.x compatibility fix)
+  - ffmpeg: `a16e674` → `56124f1` (avcodec/exif cleanup)
+  - libtomcrypt: `3adfe4d` → `a68fa19` (SM3 hash merge)
+  - libtommath: `73c180c` → `ae40a87` (subin_check PR)
+  - Simply-Love-SM5: `a98e08d` → `e9ac235` (beta removal)
+
+### Step 1: Upstream Tracking & Submodule Sanitization
+- Root + 70+ submodules fetched
+- No new upstream commits to merge
+- borg synced (db)
+- fwber + raindropioapp fetch errors: confirmed benign
+
+### Step 2: Dual-Direction Intelligent Merge Engine
+- No new Jules/feature branch activity detected since v4.40.0
+- All previously-merged branches confirmed stale
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 275+ GitHub vulnerabilities on default branch (7 critical)
 ## [4.40.0] - 2026-06-04
 
 ### Step 1: Upstream Tracking & Submodule Sanitization

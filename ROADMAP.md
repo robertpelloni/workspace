@@ -1,4 +1,7 @@
-# Workspace Roadmap — v4.40.0
+# Workspace Roadmap — v4.41.0
+
+## Completed (v4.41.0)
+- [x] Resolved fitness_center_dance_machine Jules clone error (5 stale itgmania extern submodule pointers: IXWebSocket, ffmpeg, libtomcrypt, libtommath, Simply-Love-SM5)
 
 ## Completed (v4.40.0)
 - [x] Forward merged bobsgameweb v3.0.9 Final Verified Engine Sync (ff)
