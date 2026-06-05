@@ -1,4 +1,8 @@
-# Workspace Roadmap — v4.48.0
+# Workspace Roadmap — v4.49.0
+
+## Completed (v4.49.0)
+- [x] Deleted and recreated FCDM GitHub repo to force proxy cache invalidation
+- [x] Direct GitHub clone verified working
 
 ## Completed (v4.48.0)
 - [x] Recreated FCDM Jules branch pointing to main HEAD with fix

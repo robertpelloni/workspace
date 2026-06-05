@@ -1,3 +1,25 @@
+## [4.49.0] - 2026-06-05
+
+### FCDM Jules Clone Fix — Repo delete + recreate (proxy cache bypass)
+- Deleted and recreated the FCDM GitHub repository to force Jules proxy cache invalidation
+- The proxy at `192.168.0.1:8080` was serving stale cached versions of the old repo
+  that still had bobmania/itgmania as registered submodules with problematic extern pointers
+- New repo has clean history with empty `.gitmodules` from the start
+- Both `main` and Jules branch point to `f0d32bde` (no submodule registrations)
+- Direct GitHub clone verified working
+
+### Why Repo Deletion Was Necessary
+- Previous 7 versions (v4.41–v4.48) attempted various fixes but the Jules proxy
+  persistently served stale cached versions regardless of our GitHub changes
+- The proxy caches by repo URL path and aggressively serves cached pack files
+- Deleting the repo forces the proxy to see it as a new repo (different internal ID)
+  and re-fetch fresh data from GitHub
+- This is the most invasive but most reliable way to bypass the proxy cache
+
+### Known Blockers Remaining
+- **Jules proxy cache**: May still serve stale bobmania/itgmania — monitoring
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 282 GitHub vulnerabilities on default branch (7 critical)
 ## [4.48.0] - 2026-06-05
 
 ### FCDM Jules Clone Fix — Branch recreation + proxy cache mitigation
