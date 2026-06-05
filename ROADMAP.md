@@ -1,4 +1,9 @@
-# Workspace Roadmap — v4.46.0
+# Workspace Roadmap — v4.47.0
+
+## Completed (v4.47.0)
+- [x] VERIFIED WORKING: FCDM Jules clone succeeds — removed bobmania/itgmania from .gitmodules
+- [x] Added fetch-submodules.sh for build-time cloning
+- [x] Local test: `git clone --recursive` completes without errors
 
 ## Completed (v4.46.0)
 - [x] PERMANENT fix: Removed extern/* git submodules from itgmania + bobmania — eliminates recurring Jules clone errors

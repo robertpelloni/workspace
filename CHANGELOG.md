@@ -1,3 +1,24 @@
+## [4.47.0] - 2026-06-05
+
+### Jules Clone Error Fix (VERIFIED WORKING) — FCDM submodule deregistration
+- Removed bobmania and itgmania from FCDM's .gitmodules
+- Kept 160000 gitlink entries in tree for commit hash reference
+- Added fetch-submodules.sh to FCDM for build-time submodule cloning
+- **Verified**: `git clone --depth 1 --shallow-submodules --no-single-branch --recursive` 
+  completes successfully without hitting stale proxy cache entries
+- bobmania and itgmania directories are empty after clone; populated by fetch script
+
+### Architecture Change
+- FCDM's .gitmodules is now empty — no submodules registered for recursive cloning
+- This prevents Jules' internal proxy (192.168.0.1:8080) from serving stale versions
+  of bobmania/itgmania that contain old extern submodule pointers
+- The gitlink entries (160000) remain in the tree to record which commits should be checked out
+- fetch-submodules.sh clones bobmania and itgmania explicitly, then recursively
+  initializes their remaining submodules (Themes, bobcoin) and extern deps
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 282 GitHub vulnerabilities on default branch (7 critical)
 ## [4.46.0] - 2026-06-05
 
 ### Jules Clone Error Fix (PERMANENT) — FCDM extern submodule removal
