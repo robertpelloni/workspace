@@ -1,4 +1,7 @@
-# Workspace Roadmap — v4.38.0
+# Workspace Roadmap — v4.39.0
+
+## Completed (v4.39.0)
+- [x] Forward merged hyperharness v0.4.4 RC (CHANGELOG + MEMORY.md + binary)
 
 ## Completed (v4.38.0)
 - [x] Forward merged bobsgameweb v3.0.9 verified build (iterative ff)

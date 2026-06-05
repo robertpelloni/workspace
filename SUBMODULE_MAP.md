@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.38.0
+# Submodule Structural Map — v4.39.0
 
 | # | Path | URL | Branch | Commit |
 |---|------|-----|--------|--------|
@@ -11,7 +11,7 @@
 | 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `main` | `789fdd3` |
 | 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `-` | `e773c656` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `-` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `1deb392c7` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus` | `-` | `eb7e41b37` |
 | 11 | `WebAI-to-API` | `https://github.com/robertpelloni/WebAI-to-API` | `-` | `68027d1` |
 | 12 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `-` | `4983cc6` |
 | 13 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `-` | `5162988` |
@@ -50,7 +50,7 @@
 | 46 | `bobui` | `https://github.com/robertpelloni/bobui` | `-` | `72dffe979d6` |
 | 47 | `bobzilla` | `https://github.com/robertpelloni/bobzilla` | `-` | `abe47ee` |
 | 48 | `bobzzite` | `https://github.com/robertpelloni/bobzzite` | `-` | `058c18b` |
-| 49 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `3e4137a8f` |
+| 49 | `borg` | `https://github.com/robertpelloni/TormentNexus.git` | `main` | `d738baa42` |
 | 50 | `btk` | `https://github.com/robertpelloni/btk` | `-` | `b7921adf8` |
 | 51 | `claude-mem` | `https://github.com/robertpelloni/claude-mem.git` | `main` | `e66603c` |
 | 52 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `-` | `ecec041` |
@@ -69,7 +69,7 @@
 | 65 | `geiss` | `https://github.com/robertpelloni/geiss.git` | `main` | `816b527` |
 | 66 | `hermes-agent` | `https://github.com/robertpelloni/hermes-agent.git` | `main` | `cd64bed5` |
 | 67 | `hyper` | `https://github.com/robertpelloni/hyper.git` | `-` | `2a7bb182` |
-| 68 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `-` | `8b3cec44` |
+| 68 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `-` | `e436e59d` |
 | 69 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `-` | `8e841b7` |
 | 70 | `litellm` | `https://github.com/robertpelloni/litellm.git` | `litellm_internal_staging` | `a58b45bddd` |
 | 71 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel` | `-` | `8a10981` |
