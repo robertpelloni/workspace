@@ -1,3 +1,24 @@
+## [4.48.0] - 2026-06-05
+
+### FCDM Jules Clone Fix — Branch recreation + proxy cache mitigation
+- Discovered FCDM Jules branch (`fitness-machine-foundation-15646876857894738390`) was
+  merged and deleted via GitHub PR #1, but Jules was still trying to clone it
+- The Jules proxy (`192.168.0.1:8080`) was serving a CACHED version of the old branch
+  which still had bobmania/itgmania as registered submodules with stale extern pointers
+- Recreated the branch pointing to `f0d32bde` (main HEAD with our v4.47.0 fix)
+- Both `main` and the Jules branch now point to the same commit with empty `.gitmodules`
+
+### Proxy Cache Status
+- GitHub is correct: FCDM, bobmania, and itgmania all have fixes pushed
+- FCDM `.gitmodules` is empty (no recursive submodule cloning)
+- bobmania `itgmania/extern/` has zero 160000 gitlink entries
+- itgmania `extern/` has zero 160000 gitlink entries
+- **Proxy cache is the sole remaining blocker** — it may take time to refresh
+
+### Known Blockers Remaining
+- **Jules proxy cache**: Internal mirror at `192.168.0.1:8080` serves stale repo state
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 282 GitHub vulnerabilities on default branch (7 critical)
 ## [4.47.0] - 2026-06-05
 
 ### Jules Clone Error Fix (VERIFIED WORKING) — FCDM submodule deregistration
