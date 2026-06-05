@@ -1,4 +1,9 @@
-# Workspace Roadmap — v4.45.0
+# Workspace Roadmap — v4.46.0
+
+## Completed (v4.46.0)
+- [x] PERMANENT fix: Removed extern/* git submodules from itgmania + bobmania — eliminates recurring Jules clone errors
+- [x] Added fetch-extern-deps.sh for build-time dependency fetching
+- [x] Root cause identified: Jules proxy cache + third-party force-pushes
 
 ## Completed (v4.45.0)
 - [x] Fixed FCDM Jules clone error — itgmania proxy cache invalidation via empty commit bumps

@@ -1,3 +1,32 @@
+## [4.46.0] - 2026-06-05
+
+### Jules Clone Error Fix (PERMANENT) — FCDM extern submodule removal
+- **Architectural fix**: Removed all 11 extern/* git submodule entries from itgmania and bobmania
+- Removed gitlinks (160000) for: IXWebSocket, ffmpeg, mbedtls, zlib, ogg, vorbis, libtomcrypt, libtommath, libpng, libjpeg-turbo, hidapi, libusb
+- Removed corresponding .gitmodules sections from both repos
+- Added `fetch-extern-deps.sh` to itgmania that fetches these dependencies before building
+- Added extern dirs to .gitignore so they remain untracked
+- CMake build files (CMakeLists.txt, CMakeProject-*.cmake) are unchanged — they still expect source in extern/
+- **This permanently eliminates** the recurring "not our ref" Jules clone errors caused by third-party repos force-pushing their history
+
+### Root Cause Analysis (Final)
+- Jules uses `--shallow-submodules --depth 1 --recursive` clone
+- The internal proxy at `192.168.0.1:8080` caches GitHub repo state and can serve stale data
+- Third-party repos (especially IXWebSocket, ffmpeg) force-push/rebase their history
+- When the proxy serves a stale branch tip, the embedded tree references submodule commits
+  that no longer exist at the third-party remote, causing "not our ref" failures
+- Previous attempts to fix by updating submodule pointers failed because the proxy cache
+  persisted stale state even after pushing new commits
+- **The permanent solution**: remove third-party extern deps from git submodule tracking entirely
+
+### Updated repos
+- itgmania: removed 11 extern gitlinks, added fetch-extern-deps.sh
+- bobmania: removed 11 itgmania/extern gitlinks, updated embedded itgmania tree
+- FCDM: updated bobmania + itgmania pointers to new HEADs
+
+### Known Blockers Remaining
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 282 GitHub vulnerabilities on default branch (7 critical)
 ## [4.45.0] - 2026-06-05
 
 ### Jules Clone Error Fix (Critical) — FCDM itgmania stale proxy cache
