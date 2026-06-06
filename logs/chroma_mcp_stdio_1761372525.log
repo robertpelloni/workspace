@@ -1,0 +1,223 @@
+2025-10-25 02:08:45,575 - root - INFO - STDIO MODE: Logging configured - all logs redirected to C:\Users\hyper\logs\chroma_mcp_stdio_1761372525.log
+2025-10-25 02:08:45,576 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:45,576 - root - INFO - Log retention policy set to 7 days
+2025-10-25 02:08:45,578 - root - INFO - STDIO MODE: Logging configured - all logs redirected to C:\Users\hyper\logs\chroma_mcp_stdio_1761372525.log
+2025-10-25 02:08:45,578 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-25 02:08:45,578 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:45,578 - root - INFO - Log retention policy set to 7 days
+2025-10-25 02:08:45,580 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-25 02:08:45,593 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:45,593 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:45,593 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:45,593 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:45,593 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:45,593 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:47,345 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/auth/identity "HTTP/1.1 200 OK"
+2025-10-25 02:08:47,572 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/auth/identity "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,555 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,557 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,631 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/codebase_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,635 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/chat_history_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,638 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,642 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/thinking_sessions_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,645 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/validation_evidence_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,651 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/test_results_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,653 - root - INFO - Entering stdio mode - all logs are going to file only
+2025-10-25 02:08:48,663 - root - INFO - Successfully imported tool modules inside main_stdio.
+2025-10-25 02:08:48,663 - root - INFO - Explicitly imported chroma_mcp.server.
+2025-10-25 02:08:48,663 - root - INFO - Creating initialization options...
+2025-10-25 02:08:48,669 - root - INFO - Initialization options created. Calling server.run...
+2025-10-25 02:08:48,847 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,850 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,931 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:48,931 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:48,974 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/codebase_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,978 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/chat_history_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,982 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,987 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/thinking_sessions_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,992 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/validation_evidence_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:48,998 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/test_results_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:08:49,000 - root - INFO - Entering stdio mode - all logs are going to file only
+2025-10-25 02:08:49,013 - root - INFO - Successfully imported tool modules inside main_stdio.
+2025-10-25 02:08:49,013 - root - INFO - Explicitly imported chroma_mcp.server.
+2025-10-25 02:08:49,013 - root - INFO - Creating initialization options...
+2025-10-25 02:08:49,018 - root - INFO - Initialization options created. Calling server.run...
+2025-10-25 02:08:49,163 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:49,163 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:49,998 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:49,999 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:50,023 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:50,024 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:50,597 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:50,598 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:50,623 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:50,623 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:50,963 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:50,963 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:51,125 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:51,125 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:57,012 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:57,012 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:57,033 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:57,033 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:59,150 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:59,150 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:08:59,171 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:08:59,171 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,187 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:09:00,187 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,207 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:09:00,207 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,523 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:09:00,524 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,544 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:09:00,546 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:09:00,567 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:09:00,567 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:01,513 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:10:01,517 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:01,518 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:01,518 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:01,551 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:10:02,055 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/pre-flight-checks "HTTP/1.1 200 OK"
+2025-10-25 02:10:02,230 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/14a8fc37-c71b-473a-9d00-6484bfc9e462/add "HTTP/1.1 201 Created"
+2025-10-25 02:10:46,143 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:10:46,148 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:46,148 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:46,148 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:46,171 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/fwber_project_analysis "HTTP/1.1 200 OK"
+2025-10-25 02:10:46,763 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/4addbaec-0dd5-4212-b64c-1815331d13b0/add "HTTP/1.1 201 Created"
+2025-10-25 02:10:50,048 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:10:50,054 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:50,055 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:10:50,058 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:10:50,473 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/14a8fc37-c71b-473a-9d00-6484bfc9e462/query "HTTP/1.1 200 OK"
+2025-10-25 02:10:50,475 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:10:50,919 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/14a8fc37-c71b-473a-9d00-6484bfc9e462/query "HTTP/1.1 200 OK"
+2025-10-25 02:17:46,207 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:17:46,211 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:46,212 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:46,212 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:46,273 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:17:46,748 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/14a8fc37-c71b-473a-9d00-6484bfc9e462/add "HTTP/1.1 201 Created"
+2025-10-25 02:29:18,879 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:18,880 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:18,915 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:18,915 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:19,442 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:19,443 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,314 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,314 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,332 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,333 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,351 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,351 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,367 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,367 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,384 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,384 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,401 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,401 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,420 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,420 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,438 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,438 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:29:20,454 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:29:20,454 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:43,871 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:43,872 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:43,921 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:43,922 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:43,968 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:43,969 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:44,015 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:44,015 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:45,312 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:45,313 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:45,340 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:45,341 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:45,367 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:45,368 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:45,426 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:45,426 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:45,645 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:45,645 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:45,939 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:45,940 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:45,985 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:45,986 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:46,009 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:46,010 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:46,059 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:46,060 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:46,094 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:46,094 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:46,130 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:46,130 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:46,157 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:46,157 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,103 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,103 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,243 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,244 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,268 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,269 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,297 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,297 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,345 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,346 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,385 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,386 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,427 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,428 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:30:47,469 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:30:47,469 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:42,602 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:42,602 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:42,632 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:42,633 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:42,658 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:42,659 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:42,688 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:42,688 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:43,789 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:43,789 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:43,810 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:43,812 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:43,845 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:43,845 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:43,890 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:43,890 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:45,667 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:45,667 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:45,690 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:45,690 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:45,713 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:45,713 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:38:45,741 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:38:45,744 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:15,199 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:15,199 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:15,220 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:15,220 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:15,237 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:15,238 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:15,256 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:15,256 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,002 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,003 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,024 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,024 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,044 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,045 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,063 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,063 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,083 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,083 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,434 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,434 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,454 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,454 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:48:16,474 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:48:16,474 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:50:24,250 - root - INFO - server.run completed successfully.

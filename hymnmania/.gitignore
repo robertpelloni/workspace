@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache/
+.pytest_cache/
+.hypotheses/
+
+# Local configuration
+.env
+client_secrets.json
+token.json
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+*.so
+tests/run_tests
+
+# Generated files
+hymn_remaker/output/
+temp_art*.png
+
+# Suno test artifacts
+suno_test*.png
+suno_test*.jpg
+suno_page.html
+
+# Jules session folders
+jules_session_*/
+
+# Node.js
+node_modules/
+package-lock.json
+dist/
+tsconfig.tsbuildinfo
+
+# Experiments & Logs
+*.txt
+pipeline/output/
+suno_create_*.png
+suno_error.png
+suno_fail.png
+suno_stealth_*.png
+suno_payload_capture.json
+# AI tool artifacts
+.borg_startup_marker
+.pi/
+.jules/
+metamcp.db
+*.db
+# Security: auth tokens and decryption artifacts
+*.bin
+__hssrc.bin
+decrypt_files.py
+sb-ssr-production-auth-token.*
+ssr_bucket.*
+hymn_remaker/bin/ffmpeg.exe
+hymn_remaker/bin/ffprobe.exe
+token_gemini.json

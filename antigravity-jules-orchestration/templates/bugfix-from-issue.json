@@ -1,0 +1,23 @@
+{
+  "id": "bugfix-from-issue",
+  "name": "Automated Bugfix",
+  "description": "Triggered when GitHub issues get labeled `bug-auto`, requires plan approval before execution",
+  "trigger": {
+    "type": "github_webhook",
+    "event": "issue_labeled",
+    "label": "bug-auto"
+  },
+  "task": {
+    "repo": "{{repo_name}}",
+    "title": "Fix: {{issue_title}}",
+    "description": "{{issue_body}}\n\nReproduce the issue, identify root cause, implement fix, add regression test.",
+    "labels": ["bugfix", "automated"],
+    "approval_required": true,
+    "max_files_changed": 5,
+    "safety_checks": ["tests_pass", "no_new_warnings"]
+  },
+  "post_actions": [
+    {"type": "github_comment", "message": "Jules has created a fix PR. Plan: {{plan_summary}}"},
+    {"type": "link_issue", "issue_number": "{{trigger_issue_number}}"}
+  ]
+}

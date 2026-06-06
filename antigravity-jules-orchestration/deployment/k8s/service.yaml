@@ -1,0 +1,17 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: antigravity-jules-svc
+  labels:
+    app: antigravity-jules
+spec:
+  type: ClusterIP
+  selector:
+    app: antigravity-jules
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+      protocol: TCP
+  sessionAffinity: ClientIP
+

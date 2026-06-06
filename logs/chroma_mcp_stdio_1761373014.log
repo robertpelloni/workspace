@@ -1,0 +1,41 @@
+2025-10-25 02:16:54,162 - root - INFO - STDIO MODE: Logging configured - all logs redirected to c:\Users\hyper\workspace\logs\chroma_mcp_stdio_1761373014.log
+2025-10-25 02:16:54,162 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:54,162 - root - INFO - Log retention policy set to 7 days
+2025-10-25 02:16:54,164 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-25 02:16:54,192 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:54,192 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:54,192 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:55,279 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/auth/identity "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,006 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,009 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,056 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/codebase_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,057 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/chat_history_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,060 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/derived_learnings_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,063 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/thinking_sessions_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,065 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/validation_evidence_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,068 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/test_results_v1 "HTTP/1.1 200 OK"
+2025-10-25 02:16:56,071 - root - INFO - Entering stdio mode - all logs are going to file only
+2025-10-25 02:16:56,077 - root - INFO - Successfully imported tool modules inside main_stdio.
+2025-10-25 02:16:56,077 - root - INFO - Explicitly imported chroma_mcp.server.
+2025-10-25 02:16:56,077 - root - INFO - Creating initialization options...
+2025-10-25 02:16:56,081 - root - INFO - Initialization options created. Calling server.run...
+2025-10-25 02:16:56,087 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:16:56,087 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:16:56,106 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-10-25 02:16:56,108 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-10-25 02:17:01,962 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:17:01,967 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:01,967 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:01,967 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:01,972 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/workspace_insights "HTTP/1.1 200 OK"
+2025-10-25 02:17:02,405 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/pre-flight-checks "HTTP/1.1 200 OK"
+2025-10-25 02:17:02,508 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/1027957e-b1b2-4d53-b68c-b34d9aec9e3b/add "HTTP/1.1 201 Created"
+2025-10-25 02:17:20,290 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-25 02:17:20,292 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:20,468 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-10-25 02:17:20,473 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:20,473 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:20,473 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-25 02:17:20,476 - httpx - INFO - HTTP Request: GET http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/workspace_insights "HTTP/1.1 200 OK"
+2025-10-25 02:17:20,528 - httpx - INFO - HTTP Request: POST http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/1027957e-b1b2-4d53-b68c-b34d9aec9e3b/get "HTTP/1.1 200 OK"
+2025-10-25 02:17:21,070 - root - INFO - server.run completed successfully.

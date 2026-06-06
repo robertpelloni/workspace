@@ -1,0 +1,90 @@
+2025-10-19 23:42:02,749 - root - INFO - STDIO MODE: Logging configured - all logs redirected to C:\Users\hyper\logs\chroma_mcp_stdio_1760931722.log
+2025-10-19 23:42:02,749 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:02,749 - root - INFO - Log retention policy set to 7 days
+2025-10-19 23:42:02,749 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-19 23:42:02,764 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:02,764 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:02,764 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-19 23:42:03,635 - chromamcp.unconfigured - CRITICAL - Failed to initialize Chroma client: Could not connect to a Chroma server. Are you sure it is running?
+Traceback (most recent call last):
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\client.py", line 122, in get_user_identity
+    return self._server.get_user_identity()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 150, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\fastapi.py", line 209, in get_user_identity
+    return UserIdentity(**self._make_request("get", "/auth/identity"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\fastapi.py", line 114, in _make_request
+    response = self._session.request(method, url, **cast(Any, kwargs))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chroma_mcp\server.py", line 219, in _initialize_chroma_client
+    _chroma_client_instance = chromadb.HttpClient(
+                              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\__init__.py", line 265, in HttpClient
+    return ClientCreator(tenant=tenant, database=database, settings=settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\client.py", line 75, in __init__
+    user_identity = self.get_user_identity()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hyper\chroma-env-312\Lib\site-packages\chromadb\api\client.py", line 124, in get_user_identity
+    raise ValueError(
+ValueError: Could not connect to a Chroma server. Are you sure it is running?

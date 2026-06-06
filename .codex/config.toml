@@ -1,0 +1,14 @@
+filesystem_roots = [
+"C:\\Users\\hyper\\workspace\\"
+]
+
+#Project trust (required by Codex for workspace operations)
+[projects.'\?\C:\\Users\\hyper\\workspace\\']
+trust_level = "trusted"
+
+[projects.'\?\C:\Users\hyper\workspace\']
+trust_level = "trusted"
+
+[projects.'\\?\C:\Users\hyper\workspace\']
+trust_level = "trusted"
+

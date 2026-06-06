@@ -1,0 +1,33 @@
+2025-10-24 00:58:22,038 - root - INFO - STDIO MODE: Logging configured - all logs redirected to C:\Users\hyper\logs\chroma_mcp_stdio_1761281902.log
+2025-10-24 00:58:22,039 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-24 00:58:22,039 - root - INFO - Log retention policy set to 7 days
+2025-10-24 00:58:22,041 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-24 00:58:22,062 - chromamcp.utils.set_server_config - INFO - Global server config set: ChromaClientConfig(client_type='ephemeral', embedding_function_name='default', data_dir=None, host=None, port=8000, ssl=True, tenant=None, database=None, api_key=None, use_cpu_provider=None)
+2025-10-24 00:58:22,063 - chromamcp - INFO - Chroma client configuration set: ephemeral
+2025-10-24 00:58:22,063 - chromamcp.utils.chroma_client - INFO - Instantiating embedding function: 'default'
+2025-10-24 00:58:22,119 - chromamcp.utils.chroma_client - INFO - Successfully instantiated embedding function: 'default'
+2025-10-24 00:58:22,119 - chromamcp - INFO - Initializing ephemeral ChromaDB client (in-memory)
+2025-10-24 00:58:22,524 - chromamcp - INFO - Ensuring essential ChromaDB collections exist...
+2025-10-24 00:58:22,531 - chromamcp - INFO - Essential collection 'codebase_v1' not found (error: NotFoundError), attempting to create...
+2025-10-24 00:58:22,558 - chromamcp - INFO - Successfully created essential collection 'codebase_v1'.
+2025-10-24 00:58:22,558 - chromamcp - INFO - Essential collection 'chat_history_v1' not found (error: NotFoundError), attempting to create...
+2025-10-24 00:58:22,576 - chromamcp - INFO - Successfully created essential collection 'chat_history_v1'.
+2025-10-24 00:58:22,576 - chromamcp - INFO - Essential collection 'derived_learnings_v1' not found (error: NotFoundError), attempting to create...
+2025-10-24 00:58:22,594 - chromamcp - INFO - Successfully created essential collection 'derived_learnings_v1'.
+2025-10-24 00:58:22,595 - chromamcp - INFO - Essential collection 'thinking_sessions_v1' not found (error: NotFoundError), attempting to create...
+2025-10-24 00:58:22,612 - chromamcp - INFO - Successfully created essential collection 'thinking_sessions_v1'.
+2025-10-24 00:58:22,613 - chromamcp - INFO - Essential collection 'validation_evidence_v1' not found (error: NotFoundError), attempting to create...
+2025-10-24 00:58:22,630 - chromamcp - INFO - Successfully created essential collection 'validation_evidence_v1'.
+2025-10-24 00:58:22,630 - chromamcp - INFO - Essential collection 'test_results_v1' not found (error: NotFoundError), attempting to create...
+2025-10-24 00:58:22,647 - chromamcp - INFO - Successfully created essential collection 'test_results_v1'.
+2025-10-24 00:58:22,648 - chromamcp - INFO - Created 6 essential collections on server startup.
+2025-10-24 00:58:22,648 - chromamcp - INFO - ChromaDB client (ephemeral) initialized successfully.
+2025-10-24 00:58:22,648 - chromamcp - INFO - Server configured (CPU provider: auto-detected)
+2025-10-24 00:58:22,648 - chromamcp - INFO - Logs will be saved to: C:\Users\hyper\logs
+2025-10-24 00:58:22,649 - chromamcp - INFO - Chroma MCP server v0.2.28 started. Using stdio transport.
+2025-10-24 00:58:22,677 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-24 00:58:23,519 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-24 00:58:27,388 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-24 00:58:29,042 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-24 00:58:29,907 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-10-24 00:58:34,847 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest

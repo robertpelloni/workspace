@@ -1,0 +1,23 @@
+{
+  "id": "dependency-update",
+  "name": "Dependency Update",
+  "description": "Weekly automated dependency maintenance with no approval gate for low-risk updates",
+  "trigger": {
+    "type": "scheduled",
+    "cron": "0 2 * * 1",
+    "condition": "outdated_dependencies_detected"
+  },
+  "task": {
+    "repo": "{{repo_name}}",
+    "title": "Weekly dependency update",
+    "description": "Update all non-breaking dependencies. Run full test suite. Update CHANGELOG.md with changes.",
+    "labels": ["dependencies", "automated"],
+    "approval_required": false,
+    "scope": ["package.json", "requirements.txt", "go.mod", "Cargo.toml"],
+    "safety_checks": ["tests_pass", "no_breaking_changes", "security_audit_clean"]
+  },
+  "post_actions": [
+    {"type": "notify", "target": "slack", "channel": "#deployments"},
+    {"type": "github_review_request", "reviewers": ["@scarmonit-bot"]}
+  ]
+}

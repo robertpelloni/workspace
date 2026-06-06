@@ -1,0 +1,79 @@
+/* Rate Limiter Metrics Styles */
+.rate-limiter-metrics {
+  margin-bottom: 2rem;
+}
+
+.rate-limiter-metrics h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rate-limiter-metrics h2::before {
+  content: '\26A1';
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.metric-card {
+  background: var(--bg-card, #1e2339);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #a1a1aa);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary, #e4e4e7);
+}
+
+.metric-value.allowed {
+  color: var(--success, #10b981);
+}
+
+.metric-value.blocked {
+  color: var(--error, #ef4444);
+}
+
+.metric-value.status {
+  font-size: 1.25rem;
+}
+
+.metric-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-secondary, #a1a1aa);
+}
+
+.status-card.connected {
+  border-color: var(--success, #10b981);
+  background: linear-gradient(135deg, var(--bg-card, #1e2339) 0%, rgba(16, 185, 129, 0.1) 100%);
+}
+
+.status-card.disconnected {
+  border-color: var(--warning, #f59e0b);
+  background: linear-gradient(135deg, var(--bg-card, #1e2339) 0%, rgba(245, 158, 11, 0.1) 100%);
+}

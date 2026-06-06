@@ -1,0 +1,35 @@
+# render.yaml
+services:
+  - type: web
+    name: jules-orchestrator
+    runtime: docker
+    repo: https://github.com/scarmonit/jules-orchestrator
+    region: oregon
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: JULES_API_KEY
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: orchestrator-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: orchestrator-redis
+          property: connectionString
+      - key: SLACK_WEBHOOK_URL
+        sync: false
+    healthCheckPath: /api/v1/health
+
+databases:
+  - name: orchestrator-db
+    databaseName: jules_orchestrator
+    user: orchestrator
+
+  - name: orchestrator-redis
+    plan: starter
+    maxmemoryPolicy: allkeys-lru

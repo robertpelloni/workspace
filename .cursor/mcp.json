@@ -1,0 +1,11 @@
+{
+	"$schema": "https://raw.githubusercontent.com/modelcontextprotocol/client-typescript/main/schemas/mcp-config.schema.json",
+	"mcpServers": {
+	},
+	"security": {
+		"allowedPaths": [
+			"C:\\Users\\hyper\\workspace\\"
+		],
+		"redactLogs": false
+	}
+}

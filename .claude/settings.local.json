@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-Object Name, Source)",
+      "Bash(npm create @gram-ai/function@latest)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

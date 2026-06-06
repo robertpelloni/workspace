@@ -1,0 +1,25 @@
+{
+  "id": "security-patch",
+  "name": "Security Patch",
+  "description": "High-priority auto-fix triggered by external security scanners",
+  "trigger": {
+    "type": "webhook",
+    "source": "security_scanner",
+    "severity": ["high", "critical"]
+  },
+  "task": {
+    "repo": "{{repo_name}}",
+    "title": "Security: {{vulnerability_id}}",
+    "description": "Patch vulnerability: {{vulnerability_description}}\n\nCVE: {{cve_id}}\nAffected: {{affected_package}}@{{version}}\n\nUpgrade to safe version and verify no breaking changes.",
+    "labels": ["security", "automated", "priority-high"],
+    "approval_required": false,
+    "priority": "high",
+    "timeout_minutes": 30,
+    "safety_checks": ["tests_pass", "vulnerability_resolved", "no_new_vulns"]
+  },
+  "post_actions": [
+    {"type": "notify", "target": "pagerduty", "severity": "warning"},
+    {"type": "github_auto_merge", "conditions": ["all_checks_pass", "no_conflicts"]},
+    {"type": "deploy", "target": "production", "strategy": "canary"}
+  ]
+}

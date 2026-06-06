@@ -1,0 +1,7 @@
+2025-10-22 08:37:24,414 - root - INFO - STDIO MODE: Logging configured - all logs redirected to C:\Users\hyper\logs\chroma_mcp_stdio_1761136644.log
+2025-10-22 08:37:24,415 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-22 08:37:24,415 - root - INFO - Log retention policy set to 7 days
+2025-10-22 08:37:24,418 - root - INFO - Monkey patched logging.getLogger to ensure all future loggers use file output only
+2025-10-22 08:37:24,457 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-22 08:37:24,458 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.
+2025-10-22 08:37:24,458 - chromamcp.unconfigured - WARNING - Logger requested before main configuration.

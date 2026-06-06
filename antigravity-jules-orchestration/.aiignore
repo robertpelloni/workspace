@@ -1,0 +1,243 @@
+# JetBrains AI Assistant Ignore File
+# Files and folders listed here will NOT be processed by AI Assistant
+# Uses the same syntax as .gitignore
+
+# ==========================================
+# SECURITY - NEVER SHARE WITH AI
+# ==========================================
+
+# Environment and secrets
+.env
+.env.*
+*.env
+.env.local
+.env.production
+.env.development
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.secret
+api_keys.json
+service-account*.json
+jules-service-account-key.json
+
+# AWS credentials
+.aws/credentials
+.aws/config
+
+# SSH keys
+.ssh/
+
+# GPG keys
+.gnupg/
+
+# ==========================================
+# BUILD & COMPILED OUTPUT
+# ==========================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+npm-cache/
+
+# Java/Kotlin
+target/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Go
+vendor/
+
+# Rust
+target/
+
+# ==========================================
+# IDE & EDITOR FILES
+# ==========================================
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Other editors
+.cursor/
+.windsurf/
+.continue/
+.codeium/
+.copilot/
+
+# ==========================================
+# VERSION CONTROL
+# ==========================================
+
+.git/
+.svn/
+.hg/
+.gitconfig
+.git-credentials
+
+# ==========================================
+# LOGS & TEMPORARY FILES
+# ==========================================
+
+logs/
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+.local/
+
+# ==========================================
+# SYSTEM FILES
+# ==========================================
+
+# Windows
+NTUSER.DAT*
+ntuser.dat*
+ntuser.ini
+Thumbs.db
+desktop.ini
+AppData/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.Trash-*/
+
+# ==========================================
+# DATA & DATABASES
+# ==========================================
+
+*.db
+*.sqlite
+*.sqlite3
+sqlite.db
+*.sql
+data/
+*.csv
+*.xlsx
+*.xls
+
+# ==========================================
+# MEDIA & LARGE FILES
+# ==========================================
+
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+*.mp4
+*.mp3
+*.wav
+*.pdf
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# ==========================================
+# TEST & COVERAGE
+# ==========================================
+
+test-results/
+coverage/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+*.cover
+.hypothesis/
+allure-results/
+
+# ==========================================
+# DOCUMENTATION (Generated)
+# ==========================================
+
+docs/_build/
+site/
+.docusaurus/
+
+# ==========================================
+# PROJECT-SPECIFIC EXCLUSIONS
+# ==========================================
+
+# Add your project-specific exclusions below
+# Example: proprietary-algorithm/
+# Example: internal-docs/
+
+# Backup folders
+Backups/
+GPO-Backups/
+
+# Personal folders
+Documents/
+Pictures/
+Videos/
+Music/
+Desktop/
+OneDrive/
+iCloudDrive/
+Favorites/
+
+# MCP data (may contain sensitive context)
+mcp_data/
+.claude-bridge/
