@@ -1,4 +1,10 @@
-# Workspace Roadmap — v4.50.0
+# Workspace Roadmap — v4.51.0
+
+## Completed (v4.51.0)
+- [x] Created clean FCDM repo at robertpelloni/fcdm to bypass proxy cache
+- [x] Workspace submodule URL updated to new clean repo
+- [x] Old repo marked DEPRECATED
+- [x] **USER ACTION: Reconfigure Jules to use robertpelloni/fcdm**
 
 ## Completed (v4.50.0)
 - [x] Removed ALL bobmania/itgmania gitlinks from FCDM — definitive Jules fix

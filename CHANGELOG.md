@@ -1,3 +1,20 @@
+## [4.51.0] - 2026-06-05
+
+### FCDM Jules Clone Fix — New clean repo at robertpelloni/fcdm (v11)
+- Created new GitHub repo `robertpelloni/fcdm` to bypass Jules proxy cache
+- The proxy at `192.168.0.1:8080` caches pack files by URL path
+- After 10 versions of fixes, the proxy persistently serves stale data for
+  the old URL `robertpelloni/fitness_center_dance_machine`
+- The new URL `robertpelloni/fcdm` has no cached data in the proxy
+- Both `main` and Jules branch pushed at `e468b8c` (no gitlinks, no .gitmodules)
+- Workspace submodule URL updated from `fitness_center_dance_machine` to `fcdm`
+- Old repo marked as DEPRECATED in GitHub description
+- Direct GitHub clone verified working with `--recursive`
+
+### User Action Required
+**Jules must be reconfigured to use `https://github.com/robertpelloni/fcdm` instead of
+`https://github.com/robertpelloni/fitness_center_dance_machine`.** The old URL is
+blocked by the proxy's stale cache. The new URL bypasses this entirely.
 ## [4.50.0] - 2026-06-05
 
 ### FCDM Jules Clone Fix — Remove gitlinks entirely (v10)
