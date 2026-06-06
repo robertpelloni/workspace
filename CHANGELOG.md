@@ -1,3 +1,28 @@
+## [4.52.0] - 2026-06-06
+
+### Nuclear Fix: Delete+Recreate bobmania/itgmania repos with clean .gitmodules (v12)
+- **bobmania**: Deleted+recreated on GitHub. Removed all itgmania/* entries from .gitmodules.
+  Only bobcoin and Themes/Simply-Love-SM5 remain as submodule entries.
+- **itgmania**: Deleted+recreated on GitHub. Removed ALL extern/* entries from .gitmodules.
+  Added `fetch-extern-deps.sh` for build-time dependency cloning.
+  Only Themes and bobcoin remain as submodule entries.
+- Both repos were recreated to force the Jules proxy (192.168.0.1:8080) to fetch fresh data.
+  The old proxy-cached versions had stale .gitmodules with extern/ submodule entries
+  referencing commit 1cd805d0 (IXWebSocket) which no longer exists upstream.
+- With these repos recreated, even if the proxy serves stale FCDM data,
+  the fresh bobmania/itgmania repos have no extern/ submodule chain to recurse into.
+
+### tormentnexus: 10 dependabot branches merged into main
+
+### veilid_reddit_facebook: Added as submodule, all branches merged
+
+### Cumulative FCDM Fix Stack (v4.41.0 -> v4.52.0)
+| Version | Fix | Result |
+|---------|-----|--------|
+| v4.41-v4.49 | Various (pointers, empty .gitmodules, branch recreate, repo deletion) | Proxy served stale data |
+| v4.50 | Removed gitlinks from FCDM tree | Proxy never served new commit |
+| v4.51 | New clean repo at robertpelloni/fcdm | Bypasses proxy cache for FCDM |
+| **v4.52** | **Delete+recreate bobmania/itgmania with clean .gitmodules** | **Even stale FCDM can't recurse** |
 ## [4.51.0] - 2026-06-05
 
 ### FCDM Jules Clone Fix — New clean repo at robertpelloni/fcdm (v11)
