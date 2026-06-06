@@ -1,45 +1,47 @@
-# HANDOFF — Session v4.53.0
+# HANDOFF — Session v4.55.0
 
-**Date:** 2026-06-05
+**Date:** 2026-06-06
 **Operator:** AI Sync Engine
-**Previous Version:** 4.52.0 → **4.53.0**
+**Previous Version:** 4.54.0 → **4.55.0**
 
 ---
 
-## Summary
+## Critical Fix: Corrupted Tree Filenames
 
-**DEFINITIVE FIX** for Jules clone failures: Deleted and recreated `robertpelloni/fitness_center_dance_machine` on GitHub, AND removed ALL gitlink (160000 mode) entries from the FCDM tree. This is a two-layer fix that addresses the proxy cache at both the repository level AND the tree level.
+All 212 tree entries in the workspace had "tt" appended to filenames (e.g. `.agenttt` instead of `.agent`, `CHANGELOG.mdtt` instead of `CHANGELOG.md`). This was caused by using `printf "%s\t%s\t%s\t%s\n"` in a bash while-loop that was piped to `git mktree`. On Windows/Git Bash, the trailing `\t\t` from the IFS splitting was rendered as literal "tt" characters in the stored filenames.
 
-## Root Cause Analysis (FINAL - v13)
+**Fix**: Rebuilt the entire tree from the last known-good commit (a6b0bc9b4) using `git update-index --cacheinfo` instead of the broken printf/mktree pipeline. All 212 entries now have clean filenames. Verified zero "tt" suffixes.
 
-The Jules proxy at `192.168.0.1:8080` caches pack files by URL path. Previous fixes (v4.41-v4.52) all failed because:
+**LESSON LEARNED**: NEVER use `printf` with `\t` to format git tree entries for `git mktree` on Windows. Use `git ls-tree | sed` (which preserves the original tab formatting) or `git update-index --cacheinfo` instead.
 
-1. **v4.50-v4.51**: We emptied `.gitmodules` in FCDM but left 160000 gitlink entries in the tree. When `git clone --recursive` encounters a gitlink, it checks `.gitmodules` for the URL. With empty `.gitmodules`, git SHOULD skip it, but the **proxy was serving the OLD FCDM pack** which had the OLD `.gitmodules` with bobmania/itgmania URLs.
+## FCDM Proxy Issue (UNRESOLVED — 14 attempts across v4.41-v4.55)
 
-2. **v4.52**: We deleted and recreated bobmania/itgmania repos, but the proxy STILL served the stale FCDM pack (which contained the OLD gitlinks and OLD `.gitmodules`).
+The proxy at `192.168.0.1:8080` continues to serve stale packfiles for `robertpelloni/fitness_center_dance_machine`. Every fix on GitHub is correct but invisible through the proxy.
 
-3. **v4.53 (THIS FIX)**: We deleted and recreated the FCDM repo ITSELF on GitHub. This gives it a **new internal GitHub repository ID**, which means the proxy's cached pack files (keyed by the OLD repo's internal ID) are orphaned. The proxy MUST fetch fresh data from GitHub. Additionally, we removed ALL 160000 gitlink entries from the tree, so even if the proxy somehow serves stale data, there are **zero submodule pointers** to recurse into.
+**Solution**: Change the Jules task clone URL from `robertpelloni/fitness_center_dance_machine` to `robertpelloni/fcdm`. The proxy has never cached this URL. Both branches exist on fcdm with zero submodules.
 
-## What Was Done
-1. **Deleted `robertpelloni/fitness_center_dance_machine`** on GitHub via `gh repo delete`
-2. **Recreated it** as a fresh private repo
-3. Pushed clean content with **zero gitlink entries** and **empty .gitmodules**
-4. Set the Jules branch (`fitness-machine-foundation-15646876857894738390`) as default
-5. Updated workspace submodule pointer to new FCDM commit (`359d61e`)
+## ArrowVortex Fix (v4.54.0)
+- Removed broken `libddc/libddc` submodule (repo 404)
+- Jules can now clone ArrowVortex with `--recursive`
 
-## The Fix Chain (All Layers)
-| Layer | Fix | Status |
-|-------|-----|--------|
-| FCDM `.gitmodules` | Empty (no submodule URLs) | ✅ Since v4.50 |
-| FCDM tree gitlinks | Removed all 160000 entries | ✅ v4.53 (this version) |
-| FCDM repo ID | Deleted+recreated on GitHub | ✅ v4.53 (this version) |
-| bobmania repo ID | Deleted+recreated (clean .gitmodules) | ✅ v4.52 |
-| itgmania repo ID | Deleted+recreated (clean .gitmodules) | ✅ v4.52 |
-| Backup repo `fcdm` | Available if proxy still stale | ✅ Since v4.51 |
+## tormentnexus
+- Already registered as workspace submodule
+- URL: `https://github.com/robertpelloni/TormentNexus.git`
+- Nested submodule: `tormentnexus/submodules/serena` → `oraios/serena`
 
-## Known Blockers Remaining
-1. **Proxy verification needed**: Need Jules to attempt clone again to confirm fix
-2. **Security**: 286 workspace + 1188 TormentNexus vulnerabilities
-3. **OmniRoute**: AI feature branches have unrelated histories
-4. **bobeditpro**: git index corrupted
-5. **bobbybookmarks**: atlas.db push fails (large binary)
+## Branch Merges Completed
+| Repo | Branches Merged | Count |
+|------|----------------|-------|
+| jules-autopilot | upstream palette/UX branches | 18 |
+| FAGLSC | dependabot/go_modules | 1 |
+| enterprise_sales_bot | dependabot/go_modules | 1 |
+| planet_fitness_stepmaniax_agent | feat/* branches | 2 |
+| workspace root | dependabot/npm_and_yarn | 1 |
+
+## Known Blockers
+1. **FCDM proxy**: Only fixable by changing Jules clone URL
+2. **Tree corruption prevention**: Never use printf+\t for mktree on Windows
+3. **Security**: 279+ GitHub vulnerabilities
+4. **OmniRoute**: 36 unmerged branches (unrelated histories, needs cherry-pick)
+5. **bobeditpro**: git index corrupted
+6. **bobbybookmarks**: atlas.db push fails
