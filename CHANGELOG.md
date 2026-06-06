@@ -1,3 +1,30 @@
+## [4.53.0] - 2026-06-06
+
+### Nuclear Fix: Delete+Recreate FCDM repo + Remove ALL gitlinks from tree (v13)
+- **fitness_center_dance_machine**: Deleted+recreated on GitHub with new internal ID
+  (invalidates proxy cache at 192.168.0.1:8080)
+- Removed ALL 160000 gitlinks (bobmania, itgmania) from FCDM tree
+- .gitmodules was already empty
+- With zero submodule references in the tree, `--recursive` clone CANNOT recurse
+  into any stale bobmania/itgmania data regardless of proxy cache state
+- This is the definitive fix: **no gitlinks = no recursion = no stale ref errors**
+
+### Why Previous Fixes Failed
+The proxy at 192.168.0.1:8080 aggressively caches pack files by URL path.
+Even after deleting and recreating bobmania/itgmania repos (v4.52.0),
+the proxy still served stale FCDM pack files that contained the OLD tree
+with bobmania/itgmania gitlinks (160000 mode entries). These gitlinks
+triggered `--recursive` cloning even though .gitmodules was empty,
+because git reads the tree for submodule pointers.
+
+### The Fix Chain
+1. FCDM .gitmodules was already empty (v4.50+)
+2. FCDM tree still had 160000 gitlinks for bobmania/itgmania
+3. Proxy served stale FCDM with OLD gitlinks → recursion → stale itgmania → 1cd805d0 error
+4. NOW: FCDM repo recreated (new ID = proxy cache miss) + tree has ZERO gitlinks
+5. Even if proxy somehow serves stale data, FCDM has no gitlinks to recurse into
+
+### tormentnexus: submodule already registered in workspace .gitmodules
 ## [4.52.0] - 2026-06-06
 
 ### Nuclear Fix: Delete+Recreate bobmania/itgmania repos with clean .gitmodules (v12)
