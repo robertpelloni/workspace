@@ -320,8 +320,8 @@
 [submodule "psytrance_night_outreach_agent"]
 	path = psytrance_night_outreach_agent
 	url = https://github.com/robertpelloni/psytrance_night_outreach_agent.git
-[submodule "fitness_center_dance_machine"]
-	path = fitness_center_dance_machine
+[submodule "fcdm"]
+	path = fcdm
 	url = https://github.com/robertpelloni/fcdm.git
 [submodule "WebAI-to-API"]
 	path = WebAI-to-API
