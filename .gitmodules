@@ -329,3 +329,6 @@
 [submodule "tormentnexus/submodules/serena"]
 	path = tormentnexus/submodules/serena
 	url = https://github.com/oraios/serena.git
+[submodule "veilid_reddit_facebook"]
+	path = veilid_reddit_facebook
+	url = https://github.com/robertpelloni/veilid_reddit_facebook
