@@ -1,3 +1,17 @@
+## [4.56.0] - 2026-06-06
+
+### Nuclear Fix: Delete Poisoned FCDM Repo
+- Deleted `robertpelloni/fitness_center_dance_machine` entirely (proxy at 192.168.0.1:8080 caches stale packfiles)
+- Renamed directory + submodule to `fcdm` (path, name, URL all consistent)
+- Updated .git/modules/fcdm config: worktree and origin URL
+- Removed stale `.borg_startup_marker` and `.tormentnexus` tree from root
+- **ACTION REQUIRED**: Update Jules task config to clone `robertpelloni/fcdm` branch `fitness-machine-foundation-15646876857894738390`
+
+### tormentnexus Submodule
+- Already registered in .gitmodules with URL `https://github.com/robertpelloni/TormentNexus.git`
+- borg→tormentnexus rename was completed in prior session
+- Directory `borg/` no longer exists
+
 ## [4.55.0] - 2026-06-06
 
 ### CRITICAL: Fix Corrupted Tree Filenames
