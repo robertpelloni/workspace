@@ -1,3 +1,19 @@
+## [4.54.0] - 2026-06-06
+
+### ArrowVortex: Remove broken libddc/libddc submodule (repo 404)
+- The `https://github.com/libddc/libddc` repository no longer exists on GitHub (returns 404)
+- Removed the submodule entry from ArrowVortex `.gitmodules` and the gitlink from the tree
+- This fixes Jules clone failures when cloning ArrowVortex with `--recursive`
+- Only `odcnn` submodule remains in ArrowVortex (pointing to robertpelloni/odcnn, which exists)
+
+### FCDM Proxy Status
+- The proxy at 192.168.0.1:8080 continues to serve stale FCDM data regardless of repo deletion/recreation
+- Jules has moved on to other repos (ArrowVortex), suggesting the FCDM task may have been reconfigured
+- The `robertpelloni/fcdm` backup repo remains available as a clean alternative URL
+
+### tormentnexus
+- Already registered as submodule in workspace .gitmodules
+- 10 dependabot branches previously merged (v4.52.0)
 ## [4.53.0] - 2026-06-06
 
 ### Nuclear Fix: Delete+Recreate FCDM repo + Remove ALL gitlinks from tree (v13)
