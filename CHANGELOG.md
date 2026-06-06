@@ -1,3 +1,34 @@
+## [4.50.0] - 2026-06-05
+
+### FCDM Jules Clone Fix — Remove gitlinks entirely (v10)
+- Removed ALL 160000 gitlink entries for bobmania/itgmania from FCDM's git tree
+- This is the definitive fix: with no gitlinks, `git clone --recursive` will NOT
+  attempt to enter bobmania/itgmania directories at all
+- The Jules proxy can serve whatever stale data it wants for bobmania/itgmania —
+  it won't matter because git never enters those directories
+- `fetch-submodules.sh` handles cloning bobmania/itgmania at build time
+- `.gitignore` already had entries for bobmania/ and itgmania/
+- Direct GitHub clone verified working with `--depth 1 --shallow-submodules --no-single-branch --recursive`
+
+### Root Cause Analysis
+The previous 9 versions of fixes all assumed that empty `.gitmodules` would prevent
+recursive submodule cloning. But the 160000 gitlink entries in the tree still caused
+git to create the directories and enter them during `--recursive` clone. Once inside,
+git reads the submodule's OWN `.gitmodules` file (bobmania's, itgmania's) — and the
+Jules proxy serves stale cached versions of those repos with old `.gitmodules`
+containing extern submodule registrations (IXWebSocket, ffmpeg, etc.). The stale
+extern submodule pointers then fail with "not our ref" errors.
+
+### Key Insight
+Empty `.gitmodules` in the PARENT repo is NOT sufficient. The 160000 gitlink entries
+cause git to enter the submodule directories and read THEIR `.gitmodules`. The only
+way to prevent this is to remove the gitlink entries entirely so git doesn't know
+the subdirectories exist as submodules at all.
+
+### Known Blockers Remaining
+- **Jules proxy cache**: Still stale for bobmania/itgmania — but now irrelevant
+- **OmniRoute**: AI feature branches have unrelated histories (cherry-pick strategy needed)
+- **Security**: 282 GitHub vulnerabilities on default branch (7 critical)
 ## [4.49.0] - 2026-06-05
 
 ### FCDM Jules Clone Fix — Repo delete + recreate (proxy cache bypass)

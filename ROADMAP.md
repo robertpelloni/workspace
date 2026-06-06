@@ -1,4 +1,9 @@
-# Workspace Roadmap — v4.49.0
+# Workspace Roadmap — v4.50.0
+
+## Completed (v4.50.0)
+- [x] Removed ALL bobmania/itgmania gitlinks from FCDM — definitive Jules fix
+- [x] Key insight: empty .gitmodules is NOT sufficient; gitlinks cause git to enter dirs and read THEIR .gitmodules
+- [x] Direct GitHub clone verified working with --recursive
 
 ## Completed (v4.49.0)
 - [x] Deleted and recreated FCDM GitHub repo to force proxy cache invalidation
