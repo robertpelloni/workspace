@@ -38,11 +38,11 @@ def reconcile_repo(path):
             if branch != main_branch:
                 run_command(f"git checkout {main_branch}", cwd=path)
             
-            code_merge, _, err_merge = run_command(f"git merge {remote_main} --no-edit", cwd=path)
+            code_merge, _, err_merge = run_command(f"git merge {remote_main} --no-edit --allow-unrelated-histories", cwd=path)
             if code_merge != 0:
                 print(f"    CONFLICT during merge of {remote_main}. Attempting auto-resolution (preferring current)...")
                 run_command("git merge --abort", cwd=path)
-                run_command(f"git merge {remote_main} -X ours --no-edit", cwd=path)
+                run_command(f"git merge {remote_main} -X ours --no-edit --allow-unrelated-histories", cwd=path)
             
             if branch != main_branch:
                 run_command(f"git checkout {branch}", cwd=path)
@@ -51,19 +51,19 @@ def reconcile_repo(path):
     if branch != main_branch and branch != "HEAD":
         print(f"  Forward merge: {branch} -> {main_branch}")
         run_command(f"git checkout {main_branch}", cwd=path)
-        code_fm, _, _ = run_command(f"git merge {branch} --no-edit", cwd=path)
+        code_fm, _, _ = run_command(f"git merge {branch} --no-edit --allow-unrelated-histories", cwd=path)
         if code_fm != 0:
             print("    CONFLICT in forward merge. Preferring feature branch.")
             run_command("git merge --abort", cwd=path)
-            run_command(f"git merge {branch} -X theirs --no-edit", cwd=path)
+            run_command(f"git merge {branch} -X theirs --no-edit --allow-unrelated-histories", cwd=path)
         
         print(f"  Reverse merge: {main_branch} -> {branch}")
         run_command(f"git checkout {branch}", cwd=path)
-        code_rm, _, _ = run_command(f"git merge {main_branch} --no-edit", cwd=path)
+        code_rm, _, _ = run_command(f"git merge {main_branch} --no-edit --allow-unrelated-histories", cwd=path)
         if code_rm != 0:
             print("    CONFLICT in reverse merge. Preferring main.")
             run_command("git merge --abort", cwd=path)
-            run_command(f"git merge {main_branch} -X theirs --no-edit", cwd=path)
+            run_command(f"git merge {main_branch} -X theirs --no-edit --allow-unrelated-histories", cwd=path)
 
 def main():
     # Reconcile root first
