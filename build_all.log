@@ -1,0 +1,81 @@
+Starting comprehensive recursive build script...
+--> Skipping . (already built).
+--> Skipping antigravity-jules-orchestration (already built).
+--> Skipping antigravity-jules-orchestration\dashboard (already built).
+--> Skipping antigravity-jules-orchestration\orchestrator-api (already built).
+--> Skipping ArrowVortex (already built).
+--> Skipping ArrowVortex\lib\ddc (already built).
+--> Building ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\numpy\_core\tests\examples\cython...
+    Building Python project...
+      Executing: python -m build in .\ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\numpy\_core\tests\examples\cython
+C:\Users\jakeg\AppData\Local\Programs\Python\Python314\python.exe: No module named build
+--> Building ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\numpy\_core\tests\examples\limited_api...
+    Building Python project...
+      Executing: python -m build in .\ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\numpy\_core\tests\examples\limited_api
+C:\Users\jakeg\AppData\Local\Programs\Python\Python314\python.exe: No module named build
+--> Building ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\pandas...
+    Building Python project...
+      Executing: python -m build in .\ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\pandas
+C:\Users\jakeg\AppData\Local\Programs\Python\Python314\python.exe: No module named build
+--> Building ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\pkg_resources\tests\data\my-test-package-source...
+    Building Python project...
+      Executing: python -m build in .\ArrowVortex\lib\ddc\ddc_env\Lib\site-packages\pkg_resources\tests\data\my-test-package-source
+C:\Users\jakeg\AppData\Local\Programs\Python\Python314\python.exe: No module named build
+--> Skipping ArrowVortex\lib\ddc\ddc_onset (already built).
+--> Skipping ArrowVortex\lib\ddc\ffr-difficulty-model (already built).
+--> Skipping ArrowVortex\src\Audio (already built).
+--> Skipping ArrowVortex\src\Core (already built).
+--> Skipping ArrowVortex\src\Dialogs (already built).
+--> Skipping ArrowVortex\src\Editor (already built).
+--> Skipping ArrowVortex\src\Managers (already built).
+--> Skipping ArrowVortex\src\Simfile (already built).
+--> Skipping ArrowVortex\src\System (already built).
+--> Building auto_dj_script...
+    Building Python project...
+      Executing: python -m build in .\auto_dj_script
+C:\Users\jakeg\AppData\Local\Programs\Python\Python314\python.exe: No module named build
+--> Building borg...
+    Found custom build script: build.bat
+      Executing: build.bat in .\borg
+Building HyperNexus HYPERCODE...
+[1/2] Building Go sidecar...
+OK - bin\hypernexus.exe built
+[2/2] Building TypeScript core...
+OK - packages\core built
+
+Build complete.
+    Building Node project...
+      Executing: npm install --no-fund --no-audit --loglevel=error in .\borg
+npm error Cannot read properties of null (reading 'matches')
+npm error A complete log of this run can be found in: C:\Users\jakeg\AppData\Local\npm-cache\_logs\2026-06-06T23_28_36_022Z-debug-0.log
+    Building Makefile project...
+      Executing: make -j4 in .\borg
+'make' is not recognized as an internal or external command,
+operable program or batch file.
+    Building Go project...
+      Executing: go build ./... in .\borg
+foundation\adapters\hypercode.go:10:2: github.com/go-git/go-git/v5@v5.19.0: missing go.sum entry for go.mod file; to add it:
+	go mod download github.com/go-git/go-git/v5
+apps\native-ui\main.go:6:2: github.com/go-git/go-git/v5@v5.19.0: missing go.sum entry for go.mod file; to add it:
+	go mod download github.com/go-git/go-git/v5
+apps\native-ui\main.go:7:2: github.com/go-git/go-git/v5@v5.19.0: missing go.sum entry for go.mod file; to add it:
+	go mod download github.com/go-git/go-git/v5
+apps\native-ui\main.go:8:2: github.com/go-git/go-git/v5@v5.19.0: missing go.sum entry for go.mod file; to add it:
+	go mod download github.com/go-git/go-git/v5
+apps\native-ui\main.go:11:12: pattern all:frontend/dist: no matching files found
+git\commit.go:4:2: missing go.sum entry for module providing package github.com/go-git/go-git/v5 (imported by github.com/robertpelloni/hypernexus/git); to add:
+	go get github.com/robertpelloni/hypernexus/git
+git\commit.go:5:2: missing go.sum entry for module providing package github.com/go-git/go-git/v5/plumbing/object (imported by github.com/robertpelloni/hypernexus/git); to add:
+	go get github.com/robertpelloni/hypernexus/git
+--> Building borg\agents\maestro...
+    Building Node project...
+      Executing: npm install --no-fund --no-audit --loglevel=error in .\borg\agents\maestro
+
+> maestro@1.0.0-alpha.33 postinstall
+> electron-rebuild -f -w node-pty,better-sqlite3
+
+- Searching dependency tree
+(node:105096) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:105096) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(node:105096) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
