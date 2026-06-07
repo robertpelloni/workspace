@@ -1,8 +1,26 @@
+## [4.71.0] - 2026-06-07
+
+### Added — Forward Merges (Features → Main/Default)
+- **pi-mono**: Merged new jules-5192995686709987445 patch (5 files, +46/-17) — v0.97.0 Ultimate LLM Harness: ai/registry_ext.go, server/e2e_test.go, server/server.go refactor
+- **bobmani/arrowvortex**: Merged new jules-ddc-integration-v133 patch (28 files, +3952/-1028) — DDC AI training data, models, and binaries for dance-double/dance-single patterns. Resolved lib/ddc submodule conflict (took ours).
+
+### Maintenance
+- Fetched all remotes on root + 100 submodules
+- Verified all 6 key upstreams current (bobmania, itgmania, bobeditpro, tabby, mk64, sm64coopdx)
+- 5 dead submodule pointers still unresolved (candlestixxx repos inaccessible, robertpelloni versions don't exist)
+
+### Skipped
+- dependabot branches on 5 new submodules (repos not accessible)
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
 
 ## [4.70.0] - 2026-06-07
 
-### Added — Forward Merges (Features → Main)
-- **fully_automated_gay_luxury_space_communism**: Merged feat/v1.0.0-alpha.41-market-and-vectors (3 patches, 64 files, +2861/-391) — Fully Automated Luxury Protocol v1.0.0-alpha.63→alpha.65. Clean merge with auto-resolution on ROADMAP.md, STATUS.json, TODO.md, VERSION.md, chains.json, ledger.json, orchestrator main.go, scheduler.go, tasks.json.
+### Added — Urgent Repository Syncs
+- **bobmani/hymnmania**: Full working tree committed and pushed (hymn database, scraper, browser automation, audit upload, docs). Master synced forward to main.
+- **bobtrader**: Full working tree committed and pushed — ultratrader Go strategies (bollinger_tick_reversion, ema_tick_crossover, portfolio_sizer, rsi_reversion, trailing_take_profit), smart dispatcher, portfolio tracker, binance ws feed, autonomous-paper config, repo-analysis
+- **enterprise_sales_bot**: Working tree committed and pushed (autodev version, borg pointer). 4 branches scanned — all already merged.
+- **psytrance_night_outreach_agent**: .pi/ agent config committed, Jules branch merged to main, pushed.
+- **fully_automated_gay_luxury_space_communism**: Confirmed current (v1.0.0-alpha.63). Feature branch already merged.
 
 ### Maintenance
 - Fetched all remotes on root + 100 submodules
@@ -11,13 +29,14 @@
 
 ### Issue Found — 5 New Submodules Not Initialized
 - `realestateleadcaller`, `realestateprototype`, `socialmediacontentplanner`, `techno_platform_detroit`, `theta-data-api`
-- Empty directories with no `.git` — pointers reference commits that don't exist on remotes (`candlestixxx` org)
-- `git submodule update --init` fails with "not our ref" (dead pointer fff48c6d)
+- Empty directories with no `.git` — pointers reference commits that don't exist on remotes
 - Dependabot rollup-4.61.1 branches exist on GitHub but can't be merged locally
 - **Needs**: Pointer fix to valid HEAD or re-initialization of these submodules
 
 ### Skipped
 - dependabot branches on 5 new submodules (can't access locally)
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
+
 - bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
 
 ## [4.69.0] - 2026-06-07
