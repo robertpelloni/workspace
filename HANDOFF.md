@@ -1,49 +1,51 @@
-# HANDOFF — Session v4.65.0
+# HANDOFF — Session v4.66.0
 **Date:** 2026-06-07
-**Operator:** Gemini CLI (YOLO Mode)
-**Previous Version:** 4.63.0 → **4.65.0**
+**Operator:** AI Sync Engine
+**Previous Version:** 4.65.0 → **4.66.0**
 
 ---
 
 ## Session Summary
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
-- **Fetch All**: Performed recursive fetch across root and 89 submodules.
-- **Upstream Sync**: Merged `origin/main` into local `main`.
-- **Submodule Fix**: Restored `.gitmodules` from historical commit `3c44e3fcd` to recover 60+ entries purged by a prior bot. Updated URLs to point back to `robertpelloni` where `candlestixxx` targets were 404.
-- **Initialization**: Recursively initialized and updated submodules. Handled Windows case-sensitivity collision for `tormentnexus` (filesystem `tormentnexus` vs gitlink `TormentNexus`).
+- Fetched all remotes on root + 100 submodules
+- Root: pulled 3 new commits from another agent (new submodules: realestateleadcaller, realestateprototype, socialmediacontentplanner, techno_platform_detroit, theta-data-api)
+- Active submodule count: 89 → 105
+- **bobmani/bobmania**: Merged upstream/5_1-new (4 new StepMania commits)
+- bobfilez, raindropioapp, topaz-ffmpeg: skipped per rationale
 
-### STEP 2: Dual-Direction Intelligent Merge
+### STEP 2: Dual-Direction Intelligent Merge — 5 Forward Merges
 
-#### Forward Merges (Features → Main)
-| Repository | Branch/Source | Unique Progress | Status |
-|------------|---------------|-----------------|--------|
-| **workspace** | dependabot/... | npm/yarn updates | ✅ Merged |
-| **realestatecrm** | recovery_... | **~6000 insertions** (UI, API, Campaign Editor) | ✅ Merged & Pushed |
-| **jules-autopilot** | recovery_... | 210 insertions (backend-go, services) | ✅ Merged & Pushed |
-| **auto_dj_script** | recovery_... | Build success sentinel | ✅ Merged & Pushed |
+| Submodule | Branch | Key Content | Status |
+|-----------|--------|-------------|--------|
+| **bobmani/arrowvortex** | jules-ddc-integration-v133 | DDC integration + 5 docs (IDEAS, MEMORY, ROADMAP, TODO, VISION) | ✅ Merged & Pushed |
+| **npp** | jules-go-port-ui-integration | 4 files: DEPLOY.md, HANDOFF.md, TODO.md, package bump | ✅ Merged & Pushed |
+| **pi-mono** | jules-5192995686709987445 | CHANGELOG.md (7+/2-) | ✅ Merged & Pushed |
+| **dao** | main-7859985137269711018 | 6 files: package.json, run-protocol.ts refactored, test artifacts deleted | ✅ Merged & Pushed |
+| **hyper** | tormentnexus-v0.0.1-8135786255242808305 | 7 files: menus/tools.ts, lib/index.tsx, test/index.ts (+88/-36) | ✅ Merged & Pushed |
 
-#### Reverse Merges (Main → Feature Branches)
-- Merged updated `main` into active feature branches in `realestatecrm` and `jules-autopilot` to prevent drift.
+### Upstream Merge
+- **bobmani/bobmania**: upstream/5_1-new → master (4 commits: ffmpeg crash fix, build without git, track held misses, remove unsafe package). 3 modify/delete conflicts resolved by keeping upstream versions.
 
-#### Recovery Actions
-- Utilized automated recovery branches (`recovery_YYYYMMDD_HHMMSS`) to preserve local uncommitted progress in submodules before sync operations.
+### Skipped
+- computer-use-preview: 4 branches (third-party google-gemini)
+- WebAI-to-API/sourcery/master: third-party bot (0 files changed)
+- hyper/hyper-2: upstream Hyper v2.x (not our development)
+- FAGLSGC/feat/v1.0.0-alpha.41-market-and-vectors: empty
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
 
 ### STEP 3: Workspace Cleanup & Build
-- **Script Validation**: Updated `build.bat` paths to lowercase (e.g., `TormentNexus` → `tormentnexus`) for filesystem consistency.
-- **Version Governance**: Bumped global version to **v4.65.0** across `VERSION`, `VERSION.current`, and `VERSION.md`.
-- **Documentation**: Updated `ROADMAP.md` and `TODO.md`.
-- **Full Build**: Executed `build.bat`. Successfully built 5 core Go binaries:
-  - `tormentnexus.exe`
-  - `hyperharness.exe`
-  - `pi-mono.exe`
-  - `tabby-backend.exe`
-  - `tabby-native.exe`
+- Updated build.bat / start.bat → v4.66.0
+- Bumped VERSION → 4.66.0
+- Updated CHANGELOG.md, TODO.md, SUBMODULE_MAP.md (105 entries)
 
-## Known Blockers & Next Steps
-1. **Large Fetch**: `bobdesk` fetch was skipped/interrupted due to massive size (6.5M objects). Needs dedicated background fetch.
-2. **Submodule Parity**: Some submodules in `.gitmodules` are still 404 on `candlestixxx` and were kept on `robertpelloni`.
-3. **Embedded Git Warning**: `git add .` triggered embedded repo warnings for some submodules. These should be re-added via `git submodule add` if they are intended to be permanently restored.
+## Known Blockers
+1. **Jules task config**: Must update to `robertpelloni/fcdm` URL
+2. **Security**: 293+ GitHub Dependabot vulnerabilities
+3. **bobfilez pybind11**: Recursive directory loop blocks git operations
+4. **hyper module path**: go.mod still has `module tormentnexus` — needs rebranding
+5. **raindropioapp**: 1323 commits behind upstream (unrelated histories)
+6. **Stale .gitmodules**: Needs reconciliation with actual gitlinks
 
 ## CRITICAL LESSON
-**Submodule recovery**: When a bot purges `.gitmodules`, use `git show <historical_commit>:.gitmodules` to recover URLs. Always check for filesystem case collisions (`TormentNexus` vs `tormentnexus`) on Windows.
+**NEVER use `printf` with `\t` for `git mktree` on Windows/Git Bash.**

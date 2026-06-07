@@ -1,93 +1,109 @@
-# Submodule Structural Map — v4.65.0
+# Submodule Structural Map — v4.66.0
 
-| # | Path | URL | Commit |
-|---|------|-----|--------|
-| 1 | `CLIProxyAPIPlus` | `https://github.com/robertpelloni/CLIProxyAPIPlus` | `d8e38f93` |
-| 2 | `Cli-Proxy-API-Management-Center` | `https://github.com/robertpelloni/Cli-Proxy-API-Management-Center.git` | `db864fb` |
-| 3 | `GWEN` | `https://github.com/robertpelloni/GWEN.git` | `5a4fab4` |
-| 4 | `JWildfire` | `https://github.com/robertpelloni/JWildfire.git` | `6d851b5` |
-| 5 | `Maestro` | `https://github.com/robertpelloni/Maestro` | `c1fbaca6` |
-| 6 | `MarbleBlast` | `https://github.com/robertpelloni/MarbleBlast` | `9d64d67` |
-| 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `f56e611` |
-| 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `a53b8099` |
-| 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus.git` | `b09696b13` |
-| 11 | `WebAI-to-API` | `https://github.com/robertpelloni/WebAI-to-API` | `b01c64d` |
-| 12 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `a28d92c` |
-| 13 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `5162988` |
-| 14 | `ai_game_engine` | `https://github.com/robertpelloni/ai_game_engine.git` | `a064ca3` |
-| 15 | `antigravity-autopilot` | `https://github.com/robertpelloni/antigravity-autopilot` | `141571aa` |
-| 16 | `antigravity-cli` | `https://github.com/krmslmz/antigravity-cli.git` | `457a655` |
-| 17 | `apophysis-j` | `https://github.com/robertpelloni/apophysis-j.git` | `8e84307` |
-| 18 | `auto_dj_script` | `https://github.com/robertpelloni/auto_dj_script` | `4bddc669` |
-| 19 | `bg` | `https://github.com/robertpelloni/bg.git` | `07f61442` |
-| 20 | `bobbybookmarks` | `https://github.com/robertpelloni/bobbybookmarks` | `84c5fae` |
-| 21 | `bobcoin` | `https://github.com/robertpelloni/bobcoin` | `d406bb7d` |
-| 22 | `bobdesk` | `https://github.com/robertpelloni/bobdesk` | `ea2e0a4143f0` |
-| 23 | `bobeditpro` | `https://github.com/robertpelloni/bobeditpro` | `283fb38a2` |
-| 24 | `bobfilez` | `https://github.com/robertpelloni/bobfilez` | `c30b4e39e` |
-| 25 | `bobgui` | `https://github.com/robertpelloni/bobgui` | `b0a4a45271` |
-| 26 | `bobium` | `https://github.com/robertpelloni/bobium` | `bdfca80` |
-| 27 | `bobsaver` | `https://github.com/robertpelloni/bobsaver` | `ee94f526` |
-| 28 | `bobsgameonlinejava` | `https://github.com/robertpelloni/bobsgameonlinejava.git` | `73cc979` |
-| 29 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `1314057c` |
-| 30 | `bobtorrent` | `https://github.com/robertpelloni/bobtorrent` | `1ba0974` |
-| 31 | `bobtrader` | `https://github.com/robertpelloni/bobtrader` | `c069896` |
-| 32 | `bobtrax` | `https://github.com/robertpelloni/bobtrax` | `55cb4e6` |
-| 33 | `bobui` | `https://github.com/robertpelloni/bobui` | `1c589f87cb1` |
-| 34 | `bobzilla` | `https://github.com/robertpelloni/bobzilla` | `abe47ee` |
-| 35 | `bobzzite` | `https://github.com/robertpelloni/bobzzite` | `058c18b` |
-| 36 | `btk` | `https://github.com/robertpelloni/btk` | `532b12f02` |
-| 37 | `claude-mem` | `https://github.com/robertpelloni/claude-mem.git` | `e66603c` |
-| 38 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `56c5f74` |
-| 39 | `crowdsourced_dance_club` | `https://github.com/robertpelloni/crowdsourced_dance_club.git` | `f1c3ce0` |
-| 40 | `dao` | `https://github.com/robertpelloni/dao.git` | `b43da4f` |
-| 41 | `dupeguru` | `https://github.com/robertpelloni/dupeguru` | `03f4d214` |
-| 42 | `electricsheep` | `https://github.com/robertpelloni/electricsheep.git` | `d07f18e` |
-| 43 | `element-web` | `https://github.com/robertpelloni/element-web.git` | `2f4e2d235e` |
-| 44 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `c3ae1d5` |
-| 45 | `f-zerox` | `https://github.com/robertpelloni/f-zerox` | `407e20e` |
-| 46 | `fcdm` | `https://github.com/robertpelloni/fcdm.git` | `ae852b5` |
-| 47 | `frontend-sdl-cpp` | `https://github.com/robertpelloni/frontend-sdl-cpp` | `1ee402b` |
-| 48 | `fully_automated_gay_luxury_space_communism` | `https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git` | `6799b29` |
-| 49 | `fwber` | `https://github.com/robertpelloni/fwber` | `ba690366e` |
-| 50 | `geany` | `https://github.com/robertpelloni/geany` | `6d0dae3a2` |
-| 51 | `geiss` | `https://github.com/robertpelloni/geiss.git` | `816b527` |
-| 52 | `hermes-agent` | `https://github.com/robertpelloni/hermes-agent.git` | `a4b3713d` |
-| 53 | `hyper` | `https://github.com/robertpelloni/hyper.git` | `d584a66f` |
-| 54 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `e545598e` |
-| 55 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `bc14119` |
-| 56 | `litellm` | `https://github.com/robertpelloni/litellm.git` | `a58b45bddd` |
-| 57 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel.git` | `8c90e7c` |
-| 58 | `mcp-superassistant` | `https://github.com/robertpelloni/mcp-superassistant` | `986c53a` |
-| 59 | `mcpenetes` | `https://github.com/robertpelloni/mcpenetes.git` | `97ea581` |
-| 60 | `metamcp` | `https://github.com/robertpelloni/metamcp.git` | `3c98ca8` |
-| 61 | `mk64` | `https://github.com/robertpelloni/mk64` | `b82436cd2` |
-| 62 | `multimousergy` | `https://github.com/robertpelloni/multimousergy.git` | `a03cfd5` |
-| 63 | `native-fy` | `https://github.com/robertpelloni/native-fy` | `5a6268e` |
-| 64 | `neverball` | `https://github.com/robertpelloni/neverball` | `55403258` |
-| 65 | `npp` | `https://github.com/robertpelloni/npp` | `d09ca97ea` |
-| 66 | `odcnn` | `https://github.com/robertpelloni/odcnn.git` | `454f4c7` |
-| 67 | `onetool-mcp` | `https://github.com/robertpelloni/onetool-mcp` | `0f5fd03` |
-| 68 | `openclaw-config` | `https://github.com/robertpelloni/openclaw-config.git` | `d9571ef` |
-| 69 | `openclaw-dashboard` | `https://github.com/tugcantopaloglu/openclaw-dashboard.git` | `14794e6` |
-| 70 | `opencode-autopilot` | `https://github.com/robertpelloni/opencode-autopilot` | `f22bb5c` |
-| 71 | `pi-mono` | `https://github.com/robertpelloni/pi-mono` | `454e7e2a` |
-| 72 | `picard` | `https://github.com/robertpelloni/picard` | `0f71386a4` |
-| 73 | `planet_fitness_stepmaniax_agent` | `https://github.com/robertpelloni/planet_fitness_stepmaniax_agent` | `67b31f8` |
-| 74 | `projectm` | `https://github.com/robertpelloni/projectm.git` | `23757a21e` |
-| 75 | `psytrance_night_outreach_agent` | `https://github.com/robertpelloni/psytrance_night_outreach_agent.git` | `e0a9c94` |
-| 76 | `raindropioapp` | `https://github.com/robertpelloni/raindropioapp` | `67830358` |
-| 77 | `realestatecrm` | `https://github.com/robertpelloni/realestatecrm` | `49327d9` |
-| 78 | `skillzhub` | `https://github.com/robertpelloni/skillzhub` | `bd9e062` |
-| 79 | `slsk_discography_downloader_script` | `https://github.com/robertpelloni/slsk_discography_downloader_script` | `8a6ffdb` |
-| 80 | `sm64coopdx` | `https://github.com/robertpelloni/sm64coopdx` | `59b416eb4` |
-| 81 | `superdawmcp` | `https://github.com/robertpelloni/superdawmcp.git` | `10836da` |
-| 82 | `superpowers` | `https://github.com/robertpelloni/superpowers` | `8e2e6b6` |
-| 83 | `supersaber` | `https://github.com/robertpelloni/supersaber` | `6d7243c` |
-| 84 | `tabby` | `https://github.com/robertpelloni/tabby` | `35c4eb10` |
-| 85 | `timidity` | `https://github.com/robertpelloni/timidity.git` | `f726f8f` |
-| 86 | `topaz-ffmpeg` | `https://github.com/robertpelloni/FFmpeg.git` | `fc13895eb7` |
-| 87 | `tormentnexus` | `https://github.com/robertpelloni/TormentNexus.git` | `b09696b13` |
-| 88 | `veilid_reddit_facebook` | `https://github.com/robertpelloni/veilid_reddit_facebook` | `9c089fd` |
-| 89 | `warp` | `https://github.com/robertpelloni/warp.git` | `01243df` |
+| # | Path | Commit |
+|---|------|--------|
+| 1 | `CLIProxyAPIPlus` | `d8e38f93` |
+| 2 | `Cli-Proxy-API-Management-Center` | `db864fb` |
+| 3 | `GWEN` | `5a4fab4` |
+| 4 | `JWildfire` | `6d851b5` |
+| 5 | `Maestro` | `c1fbaca6` |
+| 6 | `MarbleBlast` | `9d64d67` |
+| 7 | `MilkDrop3` | `f56e611` |
+| 8 | `OmniRoute` | `a53b8099` |
+| 9 | `OpenMBU` | `3b139ae9` |
+| 10 | `TormentNexus` | `b09696b13` |
+| 11 | `WebAI-to-API` | `b01c64d` |
+| 12 | `ableton_psytrance_hymn_creator` | `a28d92c` |
+| 13 | `agentirc` | `5162988` |
+| 14 | `ai_game_engine` | `a064ca3` |
+| 15 | `antigravity-autopilot` | `141571aa` |
+| 16 | `antigravity-cli` | `457a655` |
+| 17 | `apophysis-j` | `8e84307` |
+| 18 | `auto_dj_script` | `4bddc669` |
+| 19 | `bg` | `07f61442` |
+| 20 | `bobbybookmarks` | `84c5fae` |
+| 21 | `bobcoin` | `d406bb7d` |
+| 22 | `bobdesk` | `ea2e0a4143f0` |
+| 23 | `bobeditpro` | `283fb38a2` |
+| 24 | `bobfilez` | `c30b4e39e` |
+| 25 | `bobgui` | `b0a4a45271` |
+| 26 | `bobium` | `bdfca80` |
+| 27 | `bobmani/Simply-Love-SM5` | `06a56f5f` |
+| 28 | `bobmani/arrowvortex` | `535abc2` |
+| 29 | `bobmani/beatoraja` | `aec8f35c` |
+| 30 | `bobmani/bobmania` | `beace63a39` |
+| 31 | `bobmani/ddc` | `84bd10e` |
+| 32 | `bobmani/ddc_onset` | `5d7572a` |
+| 33 | `bobmani/ffr-difficulty-model` | `b13fe4f` |
+| 34 | `bobmani/hymnmania` | `d8418da` |
+| 35 | `bobmani/itgmania` | `767e9ced07` |
+| 36 | `bobmani/ksm-v2` | `d72474f` |
+| 37 | `bobmani/leraine-studio` | `d1b5e24` |
+| 38 | `bobmani/linthesia` | `e88f1fd` |
+| 39 | `bobmani/pianogame` | `1ece599` |
+| 40 | `bobsaver` | `ee94f526` |
+| 41 | `bobsgameonlinejava` | `73cc979` |
+| 42 | `bobsgameweb` | `1314057c` |
+| 43 | `bobtorrent` | `1ba0974` |
+| 44 | `bobtrader` | `b7df711` |
+| 45 | `bobtrax` | `55cb4e6` |
+| 46 | `bobui` | `1c589f87cb1` |
+| 47 | `bobzilla` | `abe47ee` |
+| 48 | `bobzzite` | `058c18b` |
+| 49 | `btk` | `532b12f02` |
+| 50 | `claude-mem` | `e66603c` |
+| 51 | `computer-use-preview` | `56c5f74` |
+| 52 | `crowdsourced_dance_club` | `f1c3ce0` |
+| 53 | `dao` | `aec4aac` |
+| 54 | `dupeguru` | `03f4d214` |
+| 55 | `electricsheep` | `d07f18e` |
+| 56 | `element-web` | `2f4e2d235e` |
+| 57 | `enterprise_sales_bot` | `c3ae1d5` |
+| 58 | `f-zerox` | `407e20e` |
+| 59 | `frontend-sdl-cpp` | `1ee402b` |
+| 60 | `fully_automated_gay_luxury_space_communism` | `6799b29` |
+| 61 | `fwber` | `ba690366e` |
+| 62 | `geany` | `6d0dae3a2` |
+| 63 | `geiss` | `816b527` |
+| 64 | `hermes-agent` | `a4b3713d` |
+| 65 | `hyper` | `6a63ea20` |
+| 66 | `hyperharness` | `e545598e` |
+| 67 | `jules-autopilot` | `bc14119` |
+| 68 | `litellm` | `a58b45bddd` |
+| 69 | `litellm_control_panel` | `8c90e7c` |
+| 70 | `mcp-superassistant` | `986c53a` |
+| 71 | `mcpenetes` | `97ea581` |
+| 72 | `metamcp` | `3c98ca8` |
+| 73 | `mk64` | `b82436cd2` |
+| 74 | `multimousergy` | `a03cfd5` |
+| 75 | `native-fy` | `5a6268e` |
+| 76 | `neverball` | `55403258` |
+| 77 | `npp` | `f0952c606` |
+| 78 | `odcnn` | `454f4c7` |
+| 79 | `onetool-mcp` | `0f5fd03` |
+| 80 | `openclaw-config` | `d9571ef` |
+| 81 | `openclaw-dashboard` | `14794e6` |
+| 82 | `opencode-autopilot` | `f22bb5c` |
+| 83 | `pi-mono` | `395b9fe6` |
+| 84 | `picard` | `0f71386a4` |
+| 85 | `planet_fitness_stepmaniax_agent` | `67b31f8` |
+| 86 | `projectm` | `23757a21e` |
+| 87 | `psytrance_night_outreach_agent` | `e0a9c94` |
+| 88 | `raindropioapp` | `67830358` |
+| 89 | `realestatecrm` | `49327d9` |
+| 90 | `realestateleadcaller` | `492edfffa` |
+| 91 | `realestateprototype` | `492edfffa` |
+| 92 | `skillzhub` | `bd9e062` |
+| 93 | `slsk_discography_downloader_script` | `8a6ffdb` |
+| 94 | `sm64coopdx` | `59b416eb4` |
+| 95 | `socialmediacontentplanner` | `492edfffa` |
+| 96 | `superdawmcp` | `10836da` |
+| 97 | `superpowers` | `8e2e6b6` |
+| 98 | `supersaber` | `6d7243c` |
+| 99 | `tabby` | `35c4eb10` |
+| 100 | `techno_platform_detroit` | `492edfffa` |
+| 101 | `theta-data-api` | `492edfffa` |
+| 102 | `timidity` | `f726f8f` |
+| 103 | `topaz-ffmpeg` | `fc13895eb7` |
+| 104 | `tormentnexus` | `b09696b13` |
+| 105 | `warp` | `01243df` |

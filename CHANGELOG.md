@@ -1,4 +1,23 @@
 
+## [4.66.0] - 2026-06-07
+
+### Added — Upstream Merge
+- **bobmani/bobmania**: Merged upstream/5_1-new (4 StepMania commits: crash fix on animated previews with ffmpeg, allow builds without git, track held misses gameplay feature, remove unsafe package library security fix). Resolved 3 modify/delete conflicts (LuaManager.cpp, NoteTypes.cpp/h) by keeping upstream versions.
+
+### Added — Forward Merges (Features → Main/Default)
+- **bobmani/arrowvortex**: Merged `jules-ddc-integration-v133` (DDC integration, 5 new docs: IDEAS.md, MEMORY.md, ROADMAP.md, TODO.md, VISION.md)
+- **npp**: Merged new jules-go-port-ui-integration commits (4 files: DEPLOY.md, HANDOFF.md, TODO.md, package bump)
+- **pi-mono**: Merged new jules commit (CHANGELOG.md, 7+/2-)
+- **dao**: Merged new jules content (6 files: package.json, run-protocol.ts refactored, test artifacts deleted)
+- **hyper**: Merged new tormentnexus-v0.0.1 variant (7 files: menus/tools.ts, lib/index.tsx, test/index.ts, typings, +88/-36)
+
+### Skipped
+- computer-use-preview: 4 branches (third-party google-gemini)
+- WebAI-to-API/sourcery/master: third-party Sourcery AI bot (0 files changed)
+- hyper/hyper-2: upstream Hyper v2.x (not our development)
+- FAGLSGC/feat/v1.0.0-alpha.41-market-and-vectors: empty (0 files changed)
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
+
 ## [4.65.0] - 2026-06-07
 
 ### Added — Forward Merges (Features → Main)

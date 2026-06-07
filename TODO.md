@@ -15,6 +15,7 @@
 - [x] Executive Protocol v4.63.0 Completed (2026-06-07) — 9 branches merged across 6 repos (hyper, FAGLSGC, WebAI-to-API, dao, OmniRoute, Cli-Proxy-API)
 - [x] Executive Protocol v4.64.0 Completed (2026-06-07) — 4 Jules branches merged (npp, pi-mono, tabby, veilid_reddit_facebook), 4 repos pulled current
 - [x] Executive Protocol v4.65.0 Completed (2026-06-07) — 2 forward merges (hyperharness Go port, hyper docs), 4 reverse merges (dao, Maestro, OmniRoute ×2)
+- [x] Executive Protocol v4.66.0 Completed (2026-06-07) — bobmania upstream merged (4 StepMania fixes), 5 forward merges (arrowvortex DDC, npp, pi-mono, dao, hyper)
 
 ## Open
 - [ ] Fix pybind11 recursive directory loop in bobfilez (blocks git operations)
