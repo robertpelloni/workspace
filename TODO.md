@@ -17,6 +17,7 @@
 - [x] Executive Protocol v4.65.0 Completed (2026-06-07) — 2 forward merges (hyperharness Go port, hyper docs), 4 reverse merges (dao, Maestro, OmniRoute ×2)
 - [x] Executive Protocol v4.66.0 Completed (2026-06-07) — bobmania upstream merged (4 StepMania fixes), 5 forward merges (arrowvortex DDC, npp, pi-mono, dao, hyper)
 - [x] Executive Protocol v4.67.0 Completed (2026-06-07) — full sync verification, all upstreams current, all Jules branches confirmed merged
+- [x] Executive Protocol v4.68.0 Completed (2026-06-07) — sync verification, 3 false-positive branches confirmed already merged, all upstreams current
 
 ## Open
 - [ ] Fix pybind11 recursive directory loop in bobfilez (blocks git operations)
