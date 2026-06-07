@@ -1,20 +1,20 @@
 @echo off
-echo Starting global build sequence (v4.57.0)...
-
-echo [1/3] Building BORG...
-cd borg
-call build.bat
+echo Starting global build sequence (v4.60.0)...
+echo [1/4] Building TormentNexus...
+cd TormentNexus
+go build -buildvcs=false -o tormentnexus.exe -ldflags "-s -w" .
 cd ..
-
-echo [2/3] Building REAL ESTATE CRM...
-cd realestatecrm
-call npm run build
+echo [2/4] Building HyperHarness...
+cd hyperharness
+go build -buildvcs=false -o hyperharness.exe -ldflags "-s -w" .
 cd ..
-
-echo [3/3] Building BROKER AGENT WORKFLOW...
-cd brokeragentworkflow
-:: No specific build script seen, but let's assume standard python/npm if applicable
-:: For now, we verified requirements.txt earlier.
+echo [3/4] Building Pi-Mono...
+cd pi-mono
+go build -buildvcs=false -o pi-mono.exe -ldflags "-s -w" ./cmd/pi/
 cd ..
-
+echo [4/4] Building Tabby Go...
+cd tabby\tabby-go
+go build -buildvcs=false -o tabby-backend.exe -ldflags "-s -w" ./cmd/tabby-backend/
+go build -buildvcs=false -o tabby-native.exe -ldflags "-s -w" ./cmd/tabby-native/
+cd ..\..
 echo Build sequence finished.

@@ -10,3 +10,12 @@
 - [ ] Transition remaining HTTP submodule origins to SSH for consistent authentication.
 - [ ] Automate ROADMAP/TODO updates via post-merge hooks.
 - [x] Dual-Direction Sync v4.59.0 Completed (2026-06-06)
+- [x] Dual-Direction Sync v4.59.2 Completed (2026-06-06) — 11 more branches merged
+- [x] Executive Protocol v4.60.0 Completed (2026-06-06) — all 89 submodules scanned, 3 more branches merged
+- [ ] Fix pybind11 recursive directory loop in bobfilez (blocks git operations)
+- [ ] Migrate large binary assets to Git LFS
+- [ ] Resolve 293 GitHub Dependabot vulnerabilities
+- [ ] Update Jules task clone URL from fitness_center_dance_machine to fcdm
+- [ ] Implement robust error handling for missing remote repositories in global sync scripts.
+- [ ] Transition remaining HTTP submodule origins to SSH for consistent authentication.
+- [ ] Automate ROADMAP/TODO updates via post-merge hooks.

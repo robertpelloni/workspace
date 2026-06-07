@@ -1,4 +1,28 @@
 
+## [4.60.0] - 2026-06-06
+
+### Added
+- Comprehensive Executive Protocol execution: fetched all 89 submodules, merged remaining branches
+- Merged OmniRoute fix/dashboard-ui-resilience-bugfixes (1 commit: ResilienceTab bugfix)
+- Merged OmniRoute hotfix/v3.5.7 (1 commit: package.json + prepublish fix)
+- Merged openclaw-dashboard add-dockerfile (1 commit: Dockerfile + README update)
+- Updated build.bat to v4.60.0 (now builds TormentNexus, HyperHarness, Pi-Mono, Tabby Go)
+- Updated start.bat to v4.60.0
+
+### Changed
+- Full upstream sync verified: sm64coopdx, tabby, bobeditpro, mk64, topaz-ffmpeg all at upstream HEAD
+- All 89 submodules fetched and scanned for unmerged branches
+- OmniRoute: 8 branches merged total (coder/fix-combo-test, chore/go-port-setup, codex/macos-desktop-layout, claude/objective-golick, coder/provider-custom-user-agent, fix/cline-oauth-null-state, fix/dashboard-ui-resilience-bugfixes, hotfix/v3.5.7)
+
+### Verified Up-to-Date (0 commits ahead)
+- TormentNexus: feat/assimilation-pipeline, jules branch, nexus-active-memory-v56
+- Maestro: jules branches, maestro-cue-spinout
+- FAGLSGC: all feature branches
+- pi-mono: total-assimilation-cleanup
+- litellm_control_panel: go-transition branches
+- planet_fitness_stepmaniax_agent: all feature branches
+- crowdsourced_dance_club, ableton_psytrance_hymn_creator: all branches merged
+
 ## [4.59.2] - 2026-06-06
 
 ### Added
