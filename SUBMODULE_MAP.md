@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.61.0
+# Submodule Structural Map — v4.62.0
 
 | # | Path | URL | Commit |
 |---|------|-----|--------|
@@ -24,7 +24,7 @@
 | 20 | `bobbybookmarks` | `https://github.com/robertpelloni/bobbybookmarks` | `84c5fae` |
 | 21 | `bobcoin` | `https://github.com/robertpelloni/bobcoin` | `d406bb7d` |
 | 22 | `bobdesk` | `https://github.com/robertpelloni/bobdesk` | `ea2e0a4143f0` |
-| 23 | `bobeditpro` | `https://github.com/robertpelloni/bobeditpro` | `070d4d437` |
+| 23 | `bobeditpro` | `https://github.com/robertpelloni/bobeditpro` | `283fb38a2` |
 | 24 | `bobfilez` | `https://github.com/robertpelloni/bobfilez` | `c30b4e39e` |
 | 25 | `bobgui` | `https://github.com/robertpelloni/bobgui` | `b0a4a45271` |
 | 26 | `bobium` | `https://github.com/robertpelloni/bobium` | `bdfca80` |

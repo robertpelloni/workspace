@@ -1,4 +1,20 @@
 
+## [4.62.0] - 2026-06-07
+
+### Added
+- Merged upstream Audacity into bobeditpro (50 commits from audacity/audacity upstream)
+- Upstream sync verified: sm64coopdx, tabby, mk64 — all at upstream HEAD
+
+### Skipped Upstream Merges
+- topaz-ffmpeg: 148 commits from FFmpeg upstream (high risk to custom Topaz video upscaling patches)
+- bobfilez: 62 commits from upstream (unrelated histories, divergent roots)
+- raindropioapp: 1323 commits from upstream (unrelated histories)
+
+### Verified All Jules/AI Branches Already Merged
+- 19 Jules branches across 14 repos confirmed merged (merge-base = branch HEAD)
+- superdawmcp, fcdm, dao, Maestro non-Jules branches also confirmed merged
+- No new feature branches found requiring merge
+
 ## [4.61.0] - 2026-06-06
 
 ### Added
