@@ -1,4 +1,34 @@
 
+## [4.59.2] - 2026-06-06
+
+### Added
+- Merged pi-mono jules-5192995686709987445-f4e7a729 (1 commit: patch_multiedit.go, repomap.go)
+- Merged npp jules-go-port-ui-integration-16050282834878643804 (3 commits: changelog updates)
+- Merged OmniRoute coder/fix-combo-test-empty-content (71 commits, unrelated histories)
+- Merged OmniRoute chore/go-port-setup (39 commits: Go port with mcp-server-go)
+- Merged OmniRoute codex/macos-desktop-layout (54 commits: desktop layout improvements)
+- Merged OmniRoute claude/objective-golick (6 commits)
+- Merged OmniRoute coder/provider-custom-user-agent (5 commits)
+- Merged OmniRoute fix/cline-oauth-null-state (3 commits: OAuth null state fix)
+- Rebuilt pi-mono.exe and bobui-go.exe
+
+### Fixed
+- Resolved OmniRoute merge conflicts in .husky/pre-commit, bin/omniroute.mjs, vitest configs
+
+## [4.59.1] - 2026-06-06
+
+### Added
+- Built and launched 7 Go binaries: tabby-backend, tabby-native, tabby-wails, hyperharness, pi-mono, bobgui, bobui-go
+- Full Wails v2 native GUI build for tabby-go
+- hyperharness.exe serve command operational on :8080
+- pi-mono.exe BubbleTea TUI agent verified
+
+### Changed
+- Forward merged 11 feature branches across submodules
+- Reverse merged tormentnexus main → feat/assimilation-pipeline
+- Purged 23 stale gitlinks from root index
+- Fixed bobtrax/lmms/zynaddsubfx/.gitmodules conflict markers
+
 ## [4.59.0] - 2026-06-06
 ### Changed
 - Executed comprehensive Dual-Direction Intelligent Merge Engine via Python script across root and all submodules.
