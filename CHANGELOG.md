@@ -1,4 +1,23 @@
 
+## [4.64.0] - 2026-06-07
+
+### Added — Jules Branch Merges
+- **npp**: Merged `jules-go-port-ui-integration` (5 files: VERSION, ROADMAP, go.mod, defaults.go with new flag)
+- **pi-mono**: Merged `jules-5192995686709987445` (10 files: pkg/ai/tabby.go AI integration, pkg/repomap/repomap_test.go, pkg/server/server.go enhancements)
+- **tabby**: Merged `jules-1407546259735951285` (8 files: tabContextMenu.ts cleanup, tabby-electron/index.ts, yarn.lock removed)
+- **veilid_reddit_facebook**: Merged `jules-scaffold-0.1.0` update (7 files: main.go, tauri.conf.json, main.tsx, updated sidecar binary)
+
+### Updated — Repos Pulled Current
+- bobsgameweb: 5 commits pulled (RealTileset.ts, tileset_atlas_black_ids.json)
+- enterprise_sales_bot: 1 commit pulled (README.md rewrite)
+- FAGLSGC: 2 commits pulled (STATUS.json, VERSION.md updates)
+- computer-use-preview: reset to upstream main
+
+### Skipped
+- hyper/hyper-2: upstream Hyper v2.x branch (not our development)
+- computer-use-preview: 4 branches (third-party google-gemini repo)
+- WebAI-to-API/sourcery/master: third-party Sourcery AI bot branch
+
 ## [4.63.0] - 2026-06-07
 
 ### Added — Major Branch Merges

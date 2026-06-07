@@ -13,6 +13,7 @@
 - [x] Executive Protocol v4.61.0 Completed (2026-06-06) — all Jules branches verified, veilid_reddit_facebook merged, TormentNexus conflicts resolved
 - [x] Executive Protocol v4.62.0 Completed (2026-06-07) — bobeditpro upstream merged (50 Audacity commits), all branches verified
 - [x] Executive Protocol v4.63.0 Completed (2026-06-07) — 9 branches merged across 6 repos (hyper, FAGLSGC, WebAI-to-API, dao, OmniRoute, Cli-Proxy-API)
+- [x] Executive Protocol v4.64.0 Completed (2026-06-07) — 4 Jules branches merged (npp, pi-mono, tabby, veilid_reddit_facebook), 4 repos pulled current
 
 ## Open
 - [ ] Fix pybind11 recursive directory loop in bobfilez (blocks git operations)

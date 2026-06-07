@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.63.0
+# Submodule Structural Map — v4.64.0
 
 | # | Path | URL | Commit |
 |---|------|-----|--------|
@@ -30,7 +30,7 @@
 | 26 | `bobium` | `https://github.com/robertpelloni/bobium` | `bdfca80` |
 | 27 | `bobsaver` | `https://github.com/robertpelloni/bobsaver` | `ee94f526` |
 | 28 | `bobsgameonlinejava` | `https://github.com/robertpelloni/bobsgameonlinejava.git` | `73cc979` |
-| 29 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `cf0c17b9` |
+| 29 | `bobsgameweb` | `https://github.com/robertpelloni/bobsgameweb.git` | `1314057c` |
 | 30 | `bobtorrent` | `https://github.com/robertpelloni/bobtorrent` | `1ba0974` |
 | 31 | `bobtrader` | `https://github.com/robertpelloni/bobtrader` | `c069896` |
 | 32 | `bobtrax` | `https://github.com/robertpelloni/bobtrax` | `55cb4e6` |
@@ -39,17 +39,17 @@
 | 35 | `bobzzite` | `https://github.com/robertpelloni/bobzzite` | `058c18b` |
 | 36 | `btk` | `https://github.com/robertpelloni/btk` | `532b12f02` |
 | 37 | `claude-mem` | `https://github.com/robertpelloni/claude-mem.git` | `e66603c` |
-| 38 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `ecec041` |
+| 38 | `computer-use-preview` | `https://github.com/google-gemini/computer-use-preview` | `56c5f74` |
 | 39 | `crowdsourced_dance_club` | `https://github.com/robertpelloni/crowdsourced_dance_club.git` | `f1c3ce0` |
 | 40 | `dao` | `https://github.com/robertpelloni/dao.git` | `b43da4f` |
 | 41 | `dupeguru` | `https://github.com/robertpelloni/dupeguru` | `03f4d214` |
 | 42 | `electricsheep` | `https://github.com/robertpelloni/electricsheep.git` | `d07f18e` |
 | 43 | `element-web` | `https://github.com/robertpelloni/element-web.git` | `2f4e2d235e` |
-| 44 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `a3e8edc` |
+| 44 | `enterprise_sales_bot` | `https://github.com/robertpelloni/enterprise_sales_bot.git` | `c3ae1d5` |
 | 45 | `f-zerox` | `https://github.com/robertpelloni/f-zerox` | `407e20e` |
 | 46 | `fcdm` | `https://github.com/robertpelloni/fcdm.git` | `ae852b5` |
 | 47 | `frontend-sdl-cpp` | `https://github.com/robertpelloni/frontend-sdl-cpp` | `1ee402b` |
-| 48 | `fully_automated_gay_luxury_space_communism` | `https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git` | `cbbb583` |
+| 48 | `fully_automated_gay_luxury_space_communism` | `https://github.com/robertpelloni/fully_automated_gay_luxury_space_communism.git` | `6799b29` |
 | 49 | `fwber` | `https://github.com/robertpelloni/fwber` | `ba690366e` |
 | 50 | `geany` | `https://github.com/robertpelloni/geany` | `6d0dae3a2` |
 | 51 | `geiss` | `https://github.com/robertpelloni/geiss.git` | `816b527` |
@@ -58,7 +58,7 @@
 | 54 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `e6cb0e40` |
 | 55 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `bc14119` |
 | 56 | `litellm` | `https://github.com/robertpelloni/litellm.git` | `a58b45bddd` |
-| 57 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel.git` | `8a10981` |
+| 57 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel.git` | `769aec8` |
 | 58 | `mcp-superassistant` | `https://github.com/robertpelloni/mcp-superassistant` | `986c53a` |
 | 59 | `mcpenetes` | `https://github.com/robertpelloni/mcpenetes.git` | `97ea581` |
 | 60 | `metamcp` | `https://github.com/robertpelloni/metamcp.git` | `3c98ca8` |
@@ -66,13 +66,13 @@
 | 62 | `multimousergy` | `https://github.com/robertpelloni/multimousergy.git` | `a03cfd5` |
 | 63 | `native-fy` | `https://github.com/robertpelloni/native-fy` | `5a6268e` |
 | 64 | `neverball` | `https://github.com/robertpelloni/neverball` | `55403258` |
-| 65 | `npp` | `https://github.com/robertpelloni/npp` | `e9de15ee5` |
+| 65 | `npp` | `https://github.com/robertpelloni/npp` | `d09ca97ea` |
 | 66 | `odcnn` | `https://github.com/robertpelloni/odcnn.git` | `454f4c7` |
 | 67 | `onetool-mcp` | `https://github.com/robertpelloni/onetool-mcp` | `0f5fd03` |
 | 68 | `openclaw-config` | `https://github.com/robertpelloni/openclaw-config.git` | `d9571ef` |
 | 69 | `openclaw-dashboard` | `https://github.com/tugcantopaloglu/openclaw-dashboard.git` | `14794e6` |
 | 70 | `opencode-autopilot` | `https://github.com/robertpelloni/opencode-autopilot` | `f22bb5c` |
-| 71 | `pi-mono` | `https://github.com/robertpelloni/pi-mono` | `24274d94` |
+| 71 | `pi-mono` | `https://github.com/robertpelloni/pi-mono` | `454e7e2a` |
 | 72 | `picard` | `https://github.com/robertpelloni/picard` | `0f71386a4` |
 | 73 | `planet_fitness_stepmaniax_agent` | `https://github.com/robertpelloni/planet_fitness_stepmaniax_agent` | `67b31f8` |
 | 74 | `projectm` | `https://github.com/robertpelloni/projectm.git` | `23757a21e` |
@@ -85,9 +85,9 @@
 | 81 | `superdawmcp` | `https://github.com/robertpelloni/superdawmcp.git` | `10836da` |
 | 82 | `superpowers` | `https://github.com/robertpelloni/superpowers` | `8e2e6b6` |
 | 83 | `supersaber` | `https://github.com/robertpelloni/supersaber` | `6d7243c` |
-| 84 | `tabby` | `https://github.com/robertpelloni/tabby` | `7e87ac83` |
+| 84 | `tabby` | `https://github.com/robertpelloni/tabby` | `35c4eb10` |
 | 85 | `timidity` | `https://github.com/robertpelloni/timidity.git` | `f726f8f` |
 | 86 | `topaz-ffmpeg` | `https://github.com/robertpelloni/FFmpeg.git` | `fc13895eb7` |
 | 87 | `tormentnexus` | `https://github.com/robertpelloni/TormentNexus.git` | `b09696b13` |
-| 88 | `veilid_reddit_facebook` | `https://github.com/robertpelloni/veilid_reddit_facebook` | `f591f11` |
+| 88 | `veilid_reddit_facebook` | `https://github.com/robertpelloni/veilid_reddit_facebook` | `9c089fd` |
 | 89 | `warp` | `https://github.com/robertpelloni/warp.git` | `01243df` |
