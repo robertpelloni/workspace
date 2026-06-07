@@ -1,4 +1,17 @@
 
+## [4.67.0] - 2026-06-07
+
+### Maintenance — Full Sync Verification
+- Fetched all remotes on root + 100 submodules
+- Verified all 6 key upstream repos current (bobmania, itgmania, bobeditpro, tabby, mk64, sm64coopdx)
+- Scanned all Jules/AI branches on 20+ key repos — all previously merged
+- Confirmed 5 new submodules from other agent are present and current
+
+### Skipped
+- computer-use-preview: 4 branches (third-party google-gemini)
+- WebAI-to-API/sourcery/master: third-party bot
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
+
 ## [4.66.0] - 2026-06-07
 
 ### Added — Upstream Merge
