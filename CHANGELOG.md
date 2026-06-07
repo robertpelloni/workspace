@@ -1,3 +1,19 @@
+## [4.72.0] - 2026-06-07
+
+### Added — Forward Merges (Features → Main)
+- **TormentNexus**: Merged feature/assimilation-final (13 files, +851/-834) — Assimilation pipeline, system hardening, enterprise strategy v1.0.0-alpha.127. New tools: anyquery, codemod, puppeteer, ripgrep. Stashed local changes, resolved registry.go conflict.
+- **pi-mono**: Merged jules-5192995686709987445 (6 files, +212/-17) — CI Pipeline + Unit Testing Enhancement: harness_test.go, opencode_test.go, TESTING.md
+- **bobmani/hymnmania**: Merged feat/v137-studio-reversal (15 files, +506/-266) — Studio Reversal + Suno Matrix implementation + test suite (matrix_preprocessing, sonic_vacuum_variants). Added ableton_psytrance_hymn_creator as nested submodule.
+- **FAGLSGC**: Merged feat/alpha.66-intelligent-luxury (3 patches, 28 files, +414/-511) — Intelligent Luxury Integration v1.0.0-alpha.66: healer_test.go, content_test.go, scheduler/llm updates, UNIVERSAL_LLM_INSTRUCTIONS.md
+
+### Maintenance
+- Fetched all remotes on root + 100 submodules
+- Verified all 6 key upstreams current (bobmania, itgmania, bobeditpro, tabby, mk64, sm64coopdx)
+
+### Skipped
+- dependabot branches on 5 new submodules (repos not accessible)
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
+
 ## [4.71.0] - 2026-06-07
 
 ### Added — Forward Merges (Features → Main/Default)
