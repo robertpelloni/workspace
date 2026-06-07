@@ -1,3 +1,14 @@
+## [4.73.0] - 2026-06-07
+
+### Added — Forward Merges (Features → Main)
+- **bobmani/hymnmania**: Merged 2 new patches on feat/v137-studio-reversal (+171/-43) — Deployment finalization, quality verification, demo outputs (Bach bourrée, Leyenda psy MIDI), packaging scripts
+- **enterprise_sales_bot**: Merged jules-phase6-production-hardening (4 patches, +174/-132) — v0.4.2 production hardening: discovery agent, e2e workflow tests, sales_bot binary
+- **FAGLSGC**: Merged alpha.66 stable patch (+39/-28) — scheduler ROI test, ledger/tasks updates, Intelligent Luxury Integration finalized
+
+### Maintenance
+- Fetched all remotes on root + 100 submodules
+- Verified all 6 key upstreams current (bobmania, itgmania, bobeditpro, tabby, mk64, sm64coopdx)
+
 ## [4.72.0] - 2026-06-07
 
 ### Added — Forward Merges (Features → Main)
