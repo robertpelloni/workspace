@@ -1,4 +1,29 @@
 
+## [4.63.0] - 2026-06-07
+
+### Added — Major Branch Merges
+- **hyper**: Merged 4 branches into canary:
+  - `tormentnexus-init` (12 Go files: harness, config, indexer, MCP aggregator/server, session manager, terminal emulator)
+  - `tormentnexus-v0.0.1` (8 Go files: agent harness, tabby_compat, MCP aggregator, session remote, terminal pty)
+  - `screenshot` (local plugins env var feature)
+  - `send-process-to-config` (process in config feature)
+- **FAGLSGC**: Merged `feat/v1.0.0-alpha.41` (ledger.json, tasks.json, memory_swarm.go updates)
+- **WebAI-to-API**: Merged `docs/readme` (5 README improvements, dashboard image, onboarding UX)
+- **dao**: Merged `main-7859985137269711018` (5 protocol files: deployer, governance, merger, synchronizer, validator)
+- **OmniRoute**: Merged release/v3.5.1 through v3.5.6 (OAuth fixes, security: hardcoded gemini secret removal, perf: selective column fetching, build fixes)
+- **Cli-Proxy-API-Management-Center**: Merged `old` branch (OAuth, sidebar, favicon, AI provider features; respected TS migration deletions)
+
+### Skipped
+- WebAI-to-API/sourcery/master: third-party Sourcery AI bot branch
+- computer-use-preview: 4 branches from google-gemini third-party repo
+- topaz-ffmpeg: 148 FFmpeg upstream commits (risk to custom Topaz patches)
+- bobfilez: 62 upstream commits (unrelated histories)
+- raindropioapp: 1323 upstream commits (unrelated histories)
+
+### Upstream Verified
+- bobeditpro: upstream/master is ancestor of main (already merged in v4.62.0)
+- sm64coopdx, tabby, mk64: all at upstream HEAD
+
 ## [4.62.0] - 2026-06-07
 
 ### Added
