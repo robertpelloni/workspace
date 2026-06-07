@@ -1,4 +1,38 @@
 
+## [4.61.0] - 2026-06-06
+
+### Added
+- Merged veilid_reddit_facebook jules-scaffold-0.1.0-18345075036601368068 (8 files: veilid_client.go, main.go, identity.ts, verify_testnet_ui.js, staging_sidecar_bin, icon.icns, main.tsx)
+- Resolved TormentNexus merge conflicts (pi-lens cache files, swarm.py, swarm_v2.py, registry.go, tavily.go)
+- Pushed TormentNexus conflict resolution commit b09696b13
+
+### Verified Already Merged (no new content)
+- Maestro: jules-2575151016458646249-2d58a6b7, jules-add-new-agents, maestro-cue-spinout
+- TormentNexus: jules-11468118918326359250-8f2d9620
+- ableton_psytrance_hymn_creator: jules-6626364804574846888
+- bg: jules-1394303886104622315
+- bobgui: jules-10024490872005189356, jules-bobtk-go-port-init
+- bobsgameweb: jules-3-0-9-engine-sync
+- crowdsourced_dance_club: jules-v0.2.0-sync-and-integrate
+- enterprise_sales_bot: jules-12741150550545531224, autodev-phase5-integration
+- fully_automated_gay_luxury_space_communism: jules-17563276564479654527
+- litellm_control_panel: go-transition-v3.0.0-jules
+- pi-mono: jules-5192995686709987445
+- psytrance_night_outreach_agent: jules-psytrance-outreach-agent-init
+- tabby: jules-1407546259735951285
+- ai_game_engine: initial-engine-implementation
+
+### Skipped (Unrelated Histories / Upstream Branches)
+- fwber: feat/federation-hardening-auth, feat/okcupid-matching-engine (unrelated histories)
+- jules-autopilot: upstream/* branches (upstream fork branches)
+- mk64: upstream/* branches (upstream n64decomp branches)
+- openclaw-config: upstream/* branches (upstream TechNickAI branches)
+- computer-use-preview: origin/* branches (third-party google-gemini repo)
+- bobdesk: 737 branches (LibreOffice fork upstream branches)
+- litellm: 1542 branches (upstream fork branches)
+- bobgui: 1524 branches (GTK fork upstream branches)
+- geany: 0.18/0.19/0.20 release tags
+
 ## [4.60.0] - 2026-06-06
 
 ### Added

@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.60.0
+# Submodule Structural Map — v4.61.0
 
 | # | Path | URL | Commit |
 |---|------|-----|--------|
@@ -11,7 +11,7 @@
 | 7 | `MilkDrop3` | `https://github.com/robertpelloni/MilkDrop3.git` | `f56e611` |
 | 8 | `OmniRoute` | `https://github.com/robertpelloni/OmniRoute.git` | `459ca15e` |
 | 9 | `OpenMBU` | `https://github.com/robertpelloni/OpenMBU` | `3b139ae9` |
-| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus.git` | `728410f77` |
+| 10 | `TormentNexus` | `https://github.com/robertpelloni/TormentNexus.git` | `b09696b13` |
 | 11 | `WebAI-to-API` | `https://github.com/robertpelloni/WebAI-to-API` | `68027d1` |
 | 12 | `ableton_psytrance_hymn_creator` | `https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git` | `a28d92c` |
 | 13 | `agentirc` | `https://github.com/robertpelloni/agentirc.git` | `5162988` |
@@ -56,7 +56,7 @@
 | 52 | `hermes-agent` | `https://github.com/robertpelloni/hermes-agent.git` | `a4b3713d` |
 | 53 | `hyper` | `https://github.com/robertpelloni/hyper.git` | `2a7bb182` |
 | 54 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `e6cb0e40` |
-| 55 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `be5275f` |
+| 55 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `bc14119` |
 | 56 | `litellm` | `https://github.com/robertpelloni/litellm.git` | `a58b45bddd` |
 | 57 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel.git` | `8a10981` |
 | 58 | `mcp-superassistant` | `https://github.com/robertpelloni/mcp-superassistant` | `986c53a` |
@@ -88,6 +88,6 @@
 | 84 | `tabby` | `https://github.com/robertpelloni/tabby` | `7e87ac83` |
 | 85 | `timidity` | `https://github.com/robertpelloni/timidity.git` | `f726f8f` |
 | 86 | `topaz-ffmpeg` | `https://github.com/robertpelloni/FFmpeg.git` | `fc13895eb7` |
-| 87 | `tormentnexus` | `https://github.com/robertpelloni/TormentNexus.git` | `728410f77` |
-| 88 | `veilid_reddit_facebook` | `https://github.com/robertpelloni/veilid_reddit_facebook` | `7fef401` |
+| 87 | `tormentnexus` | `https://github.com/robertpelloni/TormentNexus.git` | `b09696b13` |
+| 88 | `veilid_reddit_facebook` | `https://github.com/robertpelloni/veilid_reddit_facebook` | `f591f11` |
 | 89 | `warp` | `https://github.com/robertpelloni/warp.git` | `01243df` |
