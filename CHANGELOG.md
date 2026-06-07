@@ -1,4 +1,22 @@
 
+## [4.65.0] - 2026-06-07
+
+### Added — Forward Merges (Features → Main)
+- **hyperharness**: Merged `feat/port-ai-harnesses-to-go-v0.4.4` (20 files: autopilot.go, council.go, council_test.go, INTEGRATION_TESTING.md, USER_GUIDE.md, analysis docs for claude/codex/hermes/pi, RELEASE_NOTES.md, VERSION, CHANGELOG, ROADMAP, TODO, DEPLOY.md, hypercode binary)
+- **hyper**: Merged `tormentnexus-v0.0.1` doc variant (3 files: HANDOFF.md, MEMORY.md, SUMMARY.md)
+
+### Added — Reverse Merges (Main → Feature Branches)
+- **dao**: Reverse merged main into `main-4377559777785382276` (new: synchronizer.ts, validator.ts, security.ts, treasury.ts, tests)
+- **Maestro**: Reverse merged main into `maestro-cue-spinout` (fast-forward, SUBMODULE_INVENTORY.md)
+- **OmniRoute**: Reverse merged main into `feat/go-port-and-ui-improvements` (5 new unit tests)
+- **OmniRoute**: Reverse merged main into `hotfix/v3.5.7` (5 new unit tests)
+
+### Skipped
+- computer-use-preview: 4 branches (third-party google-gemini)
+- WebAI-to-API/sourcery/master: third-party Sourcery AI bot
+- hyper/hyper-2: upstream Hyper v2.x (not our development)
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
+
 ## [4.64.0] - 2026-06-07
 
 ### Added — Jules Branch Merges

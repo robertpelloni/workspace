@@ -1,4 +1,4 @@
-# Submodule Structural Map — v4.64.0
+# Submodule Structural Map — v4.65.0
 
 | # | Path | URL | Commit |
 |---|------|-----|--------|
@@ -54,11 +54,11 @@
 | 50 | `geany` | `https://github.com/robertpelloni/geany` | `6d0dae3a2` |
 | 51 | `geiss` | `https://github.com/robertpelloni/geiss.git` | `816b527` |
 | 52 | `hermes-agent` | `https://github.com/robertpelloni/hermes-agent.git` | `a4b3713d` |
-| 53 | `hyper` | `https://github.com/robertpelloni/hyper.git` | `39b7b73b` |
-| 54 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `e6cb0e40` |
+| 53 | `hyper` | `https://github.com/robertpelloni/hyper.git` | `d584a66f` |
+| 54 | `hyperharness` | `https://github.com/robertpelloni/hyperharness` | `e545598e` |
 | 55 | `jules-autopilot` | `https://github.com/robertpelloni/jules-autopilot` | `bc14119` |
 | 56 | `litellm` | `https://github.com/robertpelloni/litellm.git` | `a58b45bddd` |
-| 57 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel.git` | `769aec8` |
+| 57 | `litellm_control_panel` | `https://github.com/robertpelloni/litellm_control_panel.git` | `8c90e7c` |
 | 58 | `mcp-superassistant` | `https://github.com/robertpelloni/mcp-superassistant` | `986c53a` |
 | 59 | `mcpenetes` | `https://github.com/robertpelloni/mcpenetes.git` | `97ea581` |
 | 60 | `metamcp` | `https://github.com/robertpelloni/metamcp.git` | `3c98ca8` |
