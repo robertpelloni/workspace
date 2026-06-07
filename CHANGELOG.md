@@ -1,4 +1,20 @@
 
+## [4.69.0] - 2026-06-07
+
+### Added — Forward Merges (Features → Main/Default)
+- **npp**: Merged new jules-go-port-ui-integration patch (version bump: CHANGELOG.md, DEPLOY.md)
+- **bobmani/arrowvortex**: Merged new jules-ddc-integration-v133 patch (25 files, +1268/-1072) — DDC AI integration refinement, CI fixes, CMake updates, BatchDDC rework, TimingData refactoring, full documentation suite. Resolved lib/ddc submodule conflict (took ours).
+
+### Maintenance
+- Fetched all remotes on root + 100 submodules
+- Verified all 6 key upstreams current (bobmania, itgmania, bobeditpro, tabby, mk64, sm64coopdx)
+- Used `git cherry` for branch scanning instead of `merge-base --is-ancestor` to avoid false positives from branch tip divergence
+- bobeditpro: confirmed up-to-date despite misleading `rev-list --count` (unrelated histories make count inaccurate; `merge-base --is-ancestor` correctly shows upstream is ancestor of HEAD)
+
+### Skipped
+- dependabot branches on 5 new submodules (automated dependency bumps)
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
+
 ## [4.68.0] - 2026-06-07
 
 ### Maintenance — Full Sync Verification
