@@ -19,6 +19,8 @@
 - [x] Executive Protocol v4.67.0 Completed (2026-06-07) — full sync verification, all upstreams current, all Jules branches confirmed merged
 - [x] Executive Protocol v4.68.0 Completed (2026-06-07) — sync verification, 3 false-positive branches confirmed already merged, all upstreams current
 - [x] Executive Protocol v4.69.0 Completed (2026-06-07) — 2 forward merges (npp version bump, arrowvortex DDC AI integration +1268/-1072), all upstreams current
+- [x] Executive Protocol v4.70.0 Completed (2026-06-07) — FAGLSGC protocol merge (3 patches, +2861/-391), found 5 new submodules with dead pointers (candlestixxx), all upstreams current
+- [ ] Fix 5 new submodule pointers (realestateleadcaller, realestateprototype, socialmediacontentplanner, techno_platform_detroit, theta-data-api) — commit fff48c6d doesn't exist on remotes
 
 ## Open
 - [ ] Fix pybind11 recursive directory loop in bobfilez (blocks git operations)

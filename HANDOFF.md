@@ -1,7 +1,7 @@
-# HANDOFF — Session v4.69.0
+# HANDOFF — Session v4.70.0
 **Date:** 2026-06-07
 **Operator:** AI Sync Engine
-**Previous Version:** 4.68.0 → **4.69.0**
+**Previous Version:** 4.69.0 → **4.70.0**
 
 ---
 
@@ -10,33 +10,42 @@
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 - Fetched all remotes on root + 100 submodules
 - Root: 0 commits behind origin/main (current)
-- All 6 key upstreams verified current via `merge-base --is-ancestor`:
-  - bobmania ✓, itgmania ✓, bobeditpro ✓, tabby ✓, mk64 ✓, sm64coopdx ✓
-- **bobeditpro**: `rev-list --count` showed 50 "ahead" but `merge-base --is-ancestor` confirmed upstream/master IS ancestor of HEAD. The misleading count is due to unrelated histories making `rev-list` count divergent commits, not new upstream content.
+- All 6 key upstreams verified current: bobmania ✓, itgmania ✓, bobeditpro ✓, tabby ✓, mk64 ✓, sm64coopdx ✓
 
-### STEP 2: Branch Scan — 2 Forward Merges
+### STEP 2: Branch Scan — 1 Forward Merge
 
-| Submodule | Branch | Key Content | Status |
-|-----------|--------|-------------|--------|
-| **npp** | jules-go-port-ui-integration | Version bump: CHANGELOG.md + DEPLOY.md (2+/2-) | ✅ Merged & Pushed |
-| **bobmani/arrowvortex** | jules-ddc-integration-v133 | 25 files, +1268/-1072: DDC AI integration refinement, CI fixes, CMake updates, BatchDDC/TimingData rework, docs | ✅ Merged & Pushed |
+| Submodule | Branch | Content | Status |
+|-----------|--------|---------|--------|
+| **FAGLSGC** | feat/v1.0.0-alpha.41-market-and-vectors | 3 patches, 64 files, +2861/-391 | ✅ Merged & Pushed |
 
-- **arrowvortex conflict**: lib/ddc submodule merge conflict resolved by taking ours (stage 2 pointer)
-- Used `git cherry` for branch scanning to avoid false positives from `merge-base --is-ancestor`
-- dependabot branches on 5 new submodules: skipped (automated bumps)
+- FAGLSGC: Fully Automated Luxury Protocol v1.0.0-alpha.63→alpha.65
+- Clean merge with auto-resolution on 9 files (ROADMAP.md, STATUS.json, TODO.md, VERSION.md, chains.json, ledger.json, orchestrator/main.go, scheduler.go, tasks.json)
 
-### STEP 3: Workspace Cleanup & Build
-- Updated build.bat / start.bat → v4.69.0
-- Bumped VERSION → 4.69.0
-- Updated CHANGELOG.md, TODO.md, HANDOFF.md
+### Critical Issue Found — 5 New Submodules Have Dead Pointers
 
-## Technique Improvement
-Switched from `merge-base --is-ancestor` to `git cherry` for branch scanning. The former produces false positives when branch tips diverge after content merges (especially with `--allow-unrelated-histories`). `git cherry` correctly identifies commits whose *changes* are already present, even if the commit SHAs differ.
+The other agent added 5 submodules in v4.65.0 but they were never properly initialized:
+- `realestateleadcaller` — `candlestixxx/realestateleadcaller`
+- `realestateprototype` — `realestateprototype`
+- `socialmediacontentplanner` — `socialmediacontentplanner`
+- `techno_platform_detroit` — `techno_platform_detroit`
+- `theta-data-api` — `theta-data-api`
 
-## Known Blockers (unchanged)
+**Problem**: These directories are empty (no `.git`). The gitlink pointer `fff48c6d` does not exist on the `candlestixxx` remote. `git submodule update --init` fails with "not our ref".
+
+**Fix needed**: Either update pointers to valid HEADs on the remotes, or re-initialize these submodules properly. The `candlestixxx` org repos may not exist or may be private.
+
+### Skipped
+- dependabot branches on 5 new submodules (can't access locally)
+- bobfilez, raindropioapp, topaz-ffmpeg: upstream skipped per rationale
+
+### STEP 3: Build
+- All 7 Go binaries rebuilt successfully
+
+## Known Blockers (updated)
 1. **Jules task config**: Must update to `robertpelloni/fcdm` URL
 2. **Security**: 293+ GitHub Dependabot vulnerabilities
 3. **bobfilez pybind11**: Recursive directory loop blocks git operations
-4. **hyper module path**: go.mod still has `module tormentnexus` — needs rebranding
+4. **hyper module path**: go.mod still has `module tormentnexus`
 5. **raindropioapp**: 1323 commits behind upstream (unrelated histories)
 6. **Stale .gitmodules**: Needs reconciliation with actual gitlinks
+7. **5 new submodule dead pointers**: candlestixxx repos need re-initialization
