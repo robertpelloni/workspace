@@ -1,37 +1,41 @@
-# HANDOFF — Session v4.76.0
+# HANDOFF — Session v4.77.0
 **Date:** 2026-06-07
 **Operator:** AI Sync Engine
-**Previous Version:** 4.75.0 → **4.76.0**
+**Previous Version:** 4.76.0 → **4.77.0**
 
 ---
 
 ## Session Summary
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
-- Fetched all remotes on root + 71 submodules (0 failures — raindropioapp now OK)
+- Fetched all remotes on root + 70 submodules (arrowvortex fetch timed out)
 - Root: 0 commits behind origin/main (current)
+- **Upstream sync — tabby**: Merged 2 upstream bug fixes
+  - `#11330` fix: Plugins search
+  - `#11275` fix: Restore terminal redraw after tab reactivation
+  - 6 files changed, +74/-16, clean merge
 - Upstream status:
-  - ✅ tabby, fwber, sm64coopdx, ksm-v2: current
-  - ⚠️ bobeditpro: 11 commits behind upstream (deferred — C++ Audacity fork)
-  - ⚠️ topaz-ffmpeg, bobfilez: behind (deferred — large syncs)
+  - ✅ fwber, sm64coopdx: current
+  - ⚠️ bobeditpro: 16 commits behind (was 11, deferred)
+  - ⚠️ topaz-ffmpeg, bobfilez: behind (deferred)
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
-- Scanned 75+ feature branches across 45+ submodules
-- **0 new forward merges needed** — all branches already reconciled in v4.75.0
-- **0 new reverse merges needed** — feature branches caught up
-- Confirmed git cherry false positive on TormentNexus `feature/assimilation-final` (merged via unrelated histories in v4.75.0, cherry still reports 2 "unique" commits — this is a known artifact)
-- Workspace in fully reconciled/clean state
+- Scanned all feature branches across 45+ submodules
+- **3 cherry false positives** detected (TormentNexus/assimilation-final, enterprise_sales_bot/phase6, arrowvortex/ddc-v133) — all confirmed already merged via unrelated histories in v4.75.0
+- **0 new forward merges** needed
+- **0 new reverse merges** needed
+- Workspace remains fully reconciled
 
 ### STEP 3: Documentation & Build
-- Version: 4.75.0 → 4.76.0
+- Version: 4.76.0 → 4.77.0
 - CHANGELOG.md, TODO.md, HANDOFF.md updated
-- build.bat, start.bat updated to v4.76.0
+- Tabby pushed to origin/master
 
 ## Known Blockers (unchanged, 7 total)
 1. **Jules task config**: Must update to `robertpelloni/fcdm` URL
 2. **Security**: 293+ GitHub Dependabot vulnerabilities
 3. **bobfilez pybind11**: Recursive directory loop blocks git operations
 4. **hyper module path**: go.mod still has `module tormentnexus`
-5. **raindropioapp**: 1323 commits behind upstream (unrelated histories)
-6. **bobeditpro**: 11 commits behind upstream (C++ build env required)
+5. **raindropioapp**: fetch fails consistently
+6. **bobeditpro**: 16 commits behind upstream (C++ build env required)
 7. **5 candlestixxx submodule dead pointers**: Repos inaccessible

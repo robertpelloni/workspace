@@ -480,3 +480,9 @@ path = warp
 url = https://github.com/robertpelloni/warp.git
 branch = master
 
+[submodule "vst_monster"]
+	path = vst_monster
+	url = https://github.com/robertpelloni/vst_monster
+[submodule "xrnet"]
+	path = xrnet
+	url = https://github.com/robertpelloni/xrnet

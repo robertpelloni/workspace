@@ -1,3 +1,16 @@
+## [4.77.0] - 2026-06-07
+
+### Upstream Sync
+- **tabby**: Merged 2 upstream fixes (#11330 plugin search, #11275 terminal redraw) — 6 files, +74/-16
+- bobeditpro now 16 commits behind upstream (was 11)
+
+### Maintenance
+- Fetched all remotes on root + 70 submodules (arrowvortex fetch timeout)
+- Verified upstreams: tabby synced, fwber/smk64coopdx current
+- Scanned all feature branches: 3 cherry false positives (known artifact from unrelated-history merges)
+- 0 new forward merges, 0 new reverse merges needed
+- Workspace remains fully reconciled
+
 ## [4.76.0] - 2026-06-07
 
 ### Maintenance — Clean Sweep
