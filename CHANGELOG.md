@@ -1,3 +1,14 @@
+## [4.81.0] - 2026-06-07
+
+### Upstream Sync
+- **tabby**: Merged 1 upstream fix (#11324 — Add mouse wheel support for hotkeys) — 8 files, +125/-36
+
+### Maintenance
+- Fetched root + 71 submodules (0 failures)
+- Upstreams: tabby synced, fwber/smk64coopdx current; bobeditpro 16 behind (deferred)
+- 6 cherry false positives confirmed, 0 new merges
+- Workspace fully reconciled
+
 ## [4.80.0] - 2026-06-07
 
 ### Maintenance — Stable Sweep
