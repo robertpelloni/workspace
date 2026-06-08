@@ -1,3 +1,22 @@
+## [4.75.0] - 2026-06-07
+
+### Merged — Forward Merges (6)
+- **TormentNexus**: `feature/assimilation-final` → main (15 files, +27375/-19301, resolved registry.go conflict)
+- **pi-mono**: `jules-5192995686709987445` → main (+5 new test files, maintenance docs, verify-parity script)
+- **enterprise_sales_bot**: `jules-phase6-production-hardening` → main (+auth/config modules, CRM verification, smoke test rename)
+- **bobmani/arrowvortex**: `jules-ddc-integration-v133` → release (cleaned build artifacts, DDC AI training data)
+- **bobmani/hymnmania**: `feat/v137-studio-reversal` → master (+e2e tests, matrix preprocessing, sonic vacuum variants, ableton submodule)
+- **jules-autopilot**: `upstream/fix/security-nextjs-upgrade-16.1.6` → main (Next.js security upgrade, resolved modify/delete conflicts)
+
+### Merged — Reverse Merges (2)
+- **enterprise_sales_bot**: main → `jules-autodev-phase5` (synced with phase6 hardening)
+- **Maestro**: main → `jules-add-new-agents` (synced .tormentnexus rebrand)
+
+### Maintenance
+- Fetched all remotes on root + 70 submodules
+- Verified all 6 key upstreams (bobeditpro: 11 behind, topaz-ffmpeg: 152 behind, bobfilez: 62 behind)
+- 69/75 feature branches confirmed already merged
+
 ## [4.74.0] - 2026-06-07
 
 ### Added — A2A Swarm Harness

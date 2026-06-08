@@ -1,56 +1,49 @@
-# HANDOFF — Session v4.74.0
+# HANDOFF — Session v4.75.0
 **Date:** 2026-06-07
 **Operator:** AI Sync Engine
-**Previous Version:** 4.73.0 → **4.74.0**
+**Previous Version:** 4.74.0 → **4.75.0**
 
 ---
 
 ## Session Summary
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
-- Fetched all remotes on root + 100 submodules
+- Fetched all remotes on root + 70 submodules
 - Root: 0 commits behind origin/main (current)
-- All 6 key upstreams verified current
+- 6 key upstreams verified:
+  - bobeditpro: 11 commits behind upstream (deferred — complex C++ build)
+  - topaz-ffmpeg: 152 commits behind upstream (deferred — large FFmpeg sync)
+  - bobfilez: 62 commits behind upstream (deferred — pybind11 recursion issue)
+  - tabby, fwber, bobmania, ksm-v2, sm64coopdx: all current ✅
 
-### STEP 2: No New Feature Branches
-- No new Jules/AI feature branches with unique content detected via `git cherry`
+### STEP 2: Dual-Direction Intelligent Merge Engine
+- Scanned 75 feature branches across 45+ submodules
+- 69/75 branches confirmed already merged (0 unique commits via git cherry)
 
-### STEP 3: A2A Swarm Harness — NEW FEATURE
+#### Forward Merges (6)
+| Submodule | Branch | Target | Result |
+|-----------|--------|--------|--------|
+| TormentNexus | feature/assimilation-final | main | ✅ 15 files, +27375/-19301, resolved registry.go conflict |
+| pi-mono | jules-5192995686709987445 | main | ✅ +5 test files, maintenance docs, verify-parity |
+| enterprise_sales_bot | jules-phase6-production-hardening | main | ✅ +auth/config, CRM verify, smoke rename |
+| bobmani/arrowvortex | jules-ddc-integration-v133 | release | ✅ Cleaned build artifacts, DDC data |
+| bobmani/hymnmania | feat/v137-studio-reversal | master | ✅ +e2e tests, matrix preprocessing, ableton submodule |
+| jules-autopilot | upstream/fix/security-nextjs-upgrade-16.1.6 | main | ✅ Next.js security fix, resolved modify/delete |
 
-Built and tested `scripts/a2a_swarm.py` — Giant swarms of LLM-powered A2A harness subagents.
+#### Reverse Merges (2)
+| Submodule | Source | Target | Result |
+|-----------|--------|--------|--------|
+| enterprise_sales_bot | main | jules-autodev-phase5 | ✅ Synced with phase6 |
+| Maestro | main | jules-add-new-agents | ✅ Synced .tormentnexus rebrand |
 
-**Architecture:**
-- **FreeLLM/LiteLLM proxy** (localhost:4000) as LLM backend with 300+ models across 16+ providers
-- **A2A message broker** for inter-agent communication (query/command/response/event/broadcast)
-- **Coordinator** dispatches tasks, aggregates results, synthesizes outputs
+#### Conflicts Resolved
+- **TormentNexus**: `go/internal/tools/registry.go` — resolved with `--ours` (main branch Go native)
+- **jules-autopilot**: `eslint.config.mjs` and `next.config.ts` modify/delete — resolved by respecting main's deletion (TypeScript migration)
 
-**6 Swarm Patterns:**
-| Pattern | Description |
-|---------|-------------|
-| parallel | All agents work same task, synthesizer combines |
-| chain | Sequential: each builds on previous output |
-| debate | Propose → critique → refine cycles |
-| map_reduce | Decompose → distribute → reduce |
-| council | Propose → vote → select best |
-| pipeline | plan → code → test → review → doc |
-
-**13 Agent Types:** code, research, review, plan, doc, build, test, debug, security, devops, coordinator, synthesizer, critic
-
-**Resilience Features:**
-- Concurrency limiter (semaphore=3) prevents proxy overload
-- Model fallback chain: glm-5.1 → deepseek-v4-flash → gpt-4.1-mini → minimax-m2.7 → qwen3.5
-- Retry with exponential backoff on 429/5xx errors
-- Timeout handling with model switching
-
-**Test Results:**
-- ✅ 3-agent chain swarm: 88.1s completion, all agents produced real LLM output
-- ✅ 5-agent parallel swarm: 57.0s, proxy healthy
-- ✅ FreeLLM proxy confirmed healthy throughout testing
-
-**Known Issues:**
-- Chain pattern context passing needs improvement (agents don't fully utilize previous step output)
-- Some models produce excessive "thinking" tokens instead of direct answers
-- Large parallel swarms (>5 agents) may timeout due to proxy concurrency limits
+### STEP 3: Documentation & Build
+- Version: 4.74.0 → 4.75.0
+- CHANGELOG.md, TODO.md, HANDOFF.md updated
+- All 6 merged submodules pushed to origin
 
 ## Known Blockers (unchanged, 7 total)
 1. **Jules task config**: Must update to `robertpelloni/fcdm` URL
