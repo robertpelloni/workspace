@@ -1,3 +1,13 @@
+## [4.76.0] - 2026-06-07
+
+### Maintenance — Clean Sweep
+- Fetched all remotes on root + 71 submodules (0 failures)
+- Verified all upstreams: tabby, fwber, sm64coopdx, ksm-v2 current; bobeditpro 11 behind (deferred)
+- Scanned 75+ feature branches across 45+ submodules: all already merged
+- 0 new forward merges, 0 new reverse merges needed
+- Workspace in fully reconciled state
+- Confirmed: git cherry false positives for unrelated-history merges documented
+
 ## [4.75.0] - 2026-06-07
 
 ### Merged — Forward Merges (6)
