@@ -1,3 +1,12 @@
+## [4.78.0] - 2026-06-07
+
+### Maintenance — Stable Sweep
+- Fetched all remotes on root + 71 submodules (0 failures)
+- Upstreams verified: tabby, fwber, sm64coopdx current; bobeditpro 16 behind (deferred)
+- Scanned all feature branches: 4 cherry false positives confirmed (known unrelated-history artifact)
+- 0 new forward merges, 0 new reverse merges
+- Workspace fully reconciled and stable
+
 ## [4.77.0] - 2026-06-07
 
 ### Upstream Sync
