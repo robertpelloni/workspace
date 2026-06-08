@@ -1,3 +1,24 @@
+## [4.74.0] - 2026-06-07
+
+### Added — A2A Swarm Harness
+- **scripts/a2a_swarm.py**: Giant swarms of LLM-powered A2A harness subagents via FreeLLM/LiteLLM proxy
+  - 6 swarm patterns: parallel, chain, debate, map_reduce, council, pipeline
+  - 13 agent types: code, research, review, plan, doc, build, test, debug, security, devops, coordinator, synthesizer, critic
+  - FreeLLM proxy integration (localhost:4000) with 300+ models across 16+ providers
+  - A2A message broker for inter-agent communication (query/command/event/broadcast)
+  - Concurrency limiting (semaphore=3) to prevent proxy overload
+  - Model fallback chain (glm-5.1 → deepseek-v4-flash → gpt-4.1-mini → minimax-m2.7 → qwen3.5)
+  - Retry with exponential backoff on 429/5xx errors
+  - Automatic task decomposition for map_reduce pattern
+  - JSON result output with timestamps
+  - CLI interface with --dry-run support
+  - **Tested successfully**: 3-agent chain swarm completed in 88s, 5-agent parallel swarm in 57s
+
+### Maintenance
+- Fetched all remotes on root + 100 submodules
+- Verified all 6 key upstreams current
+- FreeLLM proxy confirmed healthy on localhost:4000
+
 ## [4.73.0] - 2026-06-07
 
 ### Added — Forward Merges (Features → Main)
