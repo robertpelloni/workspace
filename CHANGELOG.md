@@ -1,3 +1,12 @@
+## [4.80.0] - 2026-06-07
+
+### Maintenance — Stable Sweep
+- Fetched all remotes on root + 71 submodules (0 failures)
+- Upstreams: tabby, fwber, sm64coopdx current; bobeditpro 16 behind (deferred)
+- 6 cherry false positives confirmed (5 known artifacts + 1 hymnmania v4.75.0 artifact)
+- 0 new forward merges, 0 new reverse merges
+- Workspace fully reconciled and stable
+
 ## [4.79.0] - 2026-06-07
 
 ### Maintenance — Stable Sweep
