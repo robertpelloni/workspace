@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: ═══════════════════════════════════════════════════════════════
-:: Omni-Workspace Master Start Script - v4.81.0
+:: Omni-Workspace Master Start Script - v4.82.0
 :: Builds and launches all Go binary services
 :: 7 projects, 10 binaries
 :: ═══════════════════════════════════════════════════════════════
@@ -212,7 +212,7 @@ goto :end
 :: ═══════════════════════════════════════════════════════════════
 :help
 echo.
-echo  Omni-Workspace Master Start Script - v4.81.0
+echo  Omni-Workspace Master Start Script - v4.82.0
 echo.
 echo  Usage: start.bat [command]
 echo.

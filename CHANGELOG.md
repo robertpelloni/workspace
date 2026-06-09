@@ -1,3 +1,14 @@
+## [4.82.0] - 2026-06-07
+
+### Upstream Sync
+- **tabby**: Merged #10788 — Group nesting "folders" & Profile tree view — 16 files, +850/-135
+
+### Maintenance
+- Fetched root + 71 submodules (0 failures)
+- Upstreams: tabby synced, fwber/sm64coopdx current; bobeditpro 16 behind (deferred)
+- 6 cherry false positives confirmed, 0 new merges
+- Workspace fully reconciled
+
 ## [4.81.0] - 2026-06-07
 
 ### Upstream Sync
