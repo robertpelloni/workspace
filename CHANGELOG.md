@@ -1,3 +1,18 @@
+## [4.84.0] - 2026-06-07
+
+### Upstream Sync
+- **tabby**: Merged 4 upstream fixes (#11336 contributor, #11326 transparent bg vibrancy, #11327 clickable auth URLs, fixup) — 15 files, +59/-4
+- bobeditpro now 39 behind upstream (was 16 — 23 new upstream Audacity commits)
+
+### Forward Merge
+- **fwber**: `feat/okcupid-matching-engine-v2.1.5` → main — sanitize monorepo, consolidate geospatial logic, matching questions seed, schema updates
+
+### Maintenance
+- Fetched root + 71 submodules (0 failures)
+- 6 cherry false positives confirmed (known unrelated-history artifacts)
+- 1 real forward merge (fwber matching engine)
+- Workspace fully reconciled
+
 ## [4.83.0] - 2026-06-07
 
 ### Maintenance — Stable Sweep
