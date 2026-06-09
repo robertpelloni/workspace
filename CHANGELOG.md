@@ -1,3 +1,11 @@
+## [4.85.0] - 2026-06-09
+
+### Maintenance — Stable Sweep
+- Fetched root + 71 submodules (0 failures)
+- All upstreams current (tabby, fwber, sm64coopdx); bobeditpro 67 behind (was 39 — 28 new upstream Audacity commits, deferred)
+- 6 cherry false positives confirmed, 0 new merges
+- Workspace fully reconciled
+
 ## [4.84.0] - 2026-06-07
 
 ### Upstream Sync
