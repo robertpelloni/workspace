@@ -1,12 +1,12 @@
-# HANDOFF — Session v4.86.0
-**Date:** 2026-06-09
+# HANDOFF — Session v4.87.0
+**Date:** 2026-06-10
 **Operator:** AI Sync Engine
-**Previous Version:** 4.85.0 → **4.86.0**
+**Previous Version:** 4.86.0 → **4.87.0**
 
 ## Session Summary
 - Fetched root + 71 submodules (0 failures)
 - All upstreams current (tabby, fwber, sm64coopdx); bobeditpro 67 behind (deferred)
-- 7 cherry FP confirmed (incl. fwber already-merged from v4.84.0), 0 new merges
+- 7 cherry FP confirmed, 0 new merges
 - Workspace fully reconciled
 
 ## Known Blockers (7, unchanged)

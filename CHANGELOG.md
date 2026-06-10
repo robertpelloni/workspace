@@ -1,3 +1,11 @@
+## [4.87.0] - 2026-06-10
+
+### Maintenance — Stable Sweep
+- Fetched root + 71 submodules (0 failures)
+- All upstreams current (tabby, fwber, sm64coopdx); bobeditpro 67 behind (deferred)
+- 7 cherry false positives confirmed, 0 new merges
+- Workspace fully reconciled
+
 ## [4.86.0] - 2026-06-09
 
 ### Maintenance — Stable Sweep
