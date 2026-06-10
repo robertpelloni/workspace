@@ -1,3 +1,14 @@
+## [4.91.0] - 2026-06-10
+
+### Forward Merge
+- **jules-autopilot**: `jules-4852916069977232082` → main — fix(ci) script name, feat(ui) live submodule tracking in settings dashboard, test fixes, dependency updates (+2003/-581)
+
+### Maintenance
+- Fetched root + 71 submodules (0 failures)
+- All upstreams current (tabby, fwber, sm64coopdx); bobeditpro 88 behind (deferred)
+- 8 cherry hits (7 FP + 1 real forward merge)
+- Workspace fully reconciled
+
 ## [4.90.0] - 2026-06-10
 
 ### Maintenance — Stable Sweep

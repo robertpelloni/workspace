@@ -1,12 +1,13 @@
-# HANDOFF — Session v4.90.0
+# HANDOFF — Session v4.91.0
 **Date:** 2026-06-10
 **Operator:** AI Sync Engine
-**Previous Version:** 4.89.0 → **4.90.0**
+**Previous Version:** 4.90.0 → **4.91.0**
 
 ## Session Summary
 - Fetched root + 71 submodules (0 failures)
-- All upstreams current; bobeditpro 88 behind (unchanged, deferred)
-- 7 cherry FP confirmed, 0 new merges
+- **jules-autopilot forward merge**: `jules-4852916069977232082` → main — fix(ci) script name, feat(ui) live submodule tracking, test fixes, dependency updates (+2003/-581)
+- All upstreams current; bobeditpro 88 behind (deferred)
+- 8 cherry hits (7 FP + 1 real merge)
 - Workspace fully reconciled
 
 ## Known Blockers (7, unchanged)
