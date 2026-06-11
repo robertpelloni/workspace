@@ -1,3 +1,14 @@
+## [5.00.0] - 2026-06-10 🎉
+
+### Milestone Release
+- Reached version 5.00.0 — continuous synchronization from v4.24.0 through v5.00.0
+
+### Maintenance — Stable Sweep
+- Fetched root + 71 submodules (0 failures)
+- All upstreams current (tabby, fwber, sm64coopdx); bobeditpro 94 behind (deferred)
+- 8 cherry hits (all known FP), 0 new merges
+- Workspace fully reconciled
+
 ## [4.99.0] - 2026-06-10
 
 ### Upstream Sync
