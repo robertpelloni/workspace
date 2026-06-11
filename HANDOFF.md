@@ -1,7 +1,7 @@
-# HANDOFF — Session v4.96.0
+# HANDOFF — Session v4.97.0
 **Date:** 2026-06-10
 **Operator:** AI Sync Engine
-**Previous Version:** 4.95.0 → **4.96.0**
+**Previous Version:** 4.96.0 → **4.97.0**
 
 ## Session Summary
 - Fetched root + 71 submodules (0 failures)
