@@ -1,3 +1,14 @@
+## [4.99.0] - 2026-06-10
+
+### Upstream Sync
+- **tabby**: Reverted terminal redraw fix (#11275 revert) — 4 files, +15/-71
+- bobeditpro now 94 behind (was 88, 6 new Audacity commits)
+
+### Maintenance
+- Fetched root + 71 submodules (0 failures)
+- 8 cherry hits (all known FP), 0 new merges
+- Workspace fully reconciled
+
 ## [4.98.0] - 2026-06-10
 
 ### Maintenance — Stable Sweep
