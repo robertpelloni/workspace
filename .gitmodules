@@ -1,90 +1,50 @@
 [submodule "auto_dj_script"]
 path = auto_dj_script
-url = https://github.com/candlestixxx/auto_dj_script
+url = https://github.com/robertpelloni/auto_dj_script
 
 [submodule "borg"]
 path = borg
-url = https://github.com/candlestixxx/borg
-
-[submodule "brokeragentworkflow"]
-path = brokeragentworkflow
-url = https://github.com/candlestixxx/brokeragentworkflow
+url = https://github.com/robertpelloni/borg
 
 [submodule "fwber"]
 path = fwber
-url = https://github.com/candlestixxx/fwber.git
+url = https://github.com/robertpelloni/fwber.git
 
 [submodule "hymnmania"]
 path = hymnmania
-url = https://github.com/candlestixxx/hymnmania
+url = https://github.com/robertpelloni/hymnmania
 
 [submodule "hypercode"]
 path = hypercode
-url = https://github.com/candlestixxx/hypercode
+url = https://github.com/robertpelloni/hypercode
 
 [submodule "jules-autopilot"]
 path = jules-autopilot
-url = https://github.com/candlestixxx/jules-autopilot
-
-[submodule "re-agent-workflow-media-1"]
-path = re-agent-workflow-media-1
-url = https://github.com/candlestixxx/re-agent-workflow-media-1
+url = https://github.com/robertpelloni/jules-autopilot
 
 [submodule "realestatecrm"]
 path = realestatecrm
-url = git@github.com:candlestixxx/realestatecrm.git
-
-[submodule "realestateprototype"]
-path = realestateprototype
-url = https://github.com/candlestixxx/realestateprototype.git
-
-[submodule "p2p_service_marketplace"]
-path = p2p_service_marketplace
-url = https://github.com/candlestixxx/p2p_service_marketplace
-
-[submodule "socialmediacontentplanner"]
-path = socialmediacontentplanner
-url = https://github.com/candlestixxx/socialmediacontentplanner
+url = https://github.com/robertpelloni/realestatecrm.git
 
 [submodule "skillzhub"]
 path = skillzhub
-url = https://github.com/candlestixxx/skillzhub
-
-[submodule "explorerexedecompiled"]
-path = explorerexedecompiled
-url = https://github.com/candlestixxx/explorerexedecompiled
+url = https://github.com/robertpelloni/skillzhub
 
 [submodule "hermes-agent"]
 path = hermes-agent
-url = https://github.com/candlestixxx/hermes-agent
-
-[submodule "theta-data-api"]
-path = theta-data-api
-url = https://github.com/candlestixxx/theta-data-api
-
-[submodule "forclosureworkflow"]
-path = forclosureworkflow
-url = https://github.com/candlestixxx/forclosureworkflow
-
-[submodule "realestateleadcaller"]
-path = realestateleadcaller
-url = https://github.com/candlestixxx/realestateleadcaller
+url = https://github.com/robertpelloni/hermes-agent
 
 [submodule "multimousergy"]
 path = multimousergy
-url = https://github.com/candlestixxx/multimousergy.git
-
-[submodule "techno_platform_detroit"]
-path = techno_platform_detroit
-url = https://github.com/candlestixxx/techno_platform_detroit
+url = https://github.com/robertpelloni/multimousergy.git
 
 [submodule "ArrowVortex"]
 path = ArrowVortex
-url = https://github.com/candlestixxx/ArrowVortex
+url = https://github.com/robertpelloni/ArrowVortex
 
 [submodule "superdawmcp"]
 path = superdawmcp
-url = https://github.com/candlestixxx/superdawmcp
+url = https://github.com/robertpelloni/superdawmcp
 
 [submodule "CLIProxyAPIPlus"]
 path = CLIProxyAPIPlus
@@ -358,9 +318,9 @@ path = litellm
 url = https://github.com/robertpelloni/litellm.git
 branch = litellm_internal_staging
 
-[submodule "litellm_control_panel"]
-path = litellm_control_panel
-url = https://github.com/robertpelloni/litellm_control_panel
+[submodule "freellm"]
+path = freellm
+url = https://github.com/robertpelloni/freellm
 
 [submodule "mcp-superassistant"]
 path = mcp-superassistant
