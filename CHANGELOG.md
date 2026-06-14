@@ -6,6 +6,17 @@
 
 ---
 
+## [5.13.2] - 2026-06-14
+
+### Changed
+- Updated submodule pointers for `hermes-agent` and `mk64` to reflect upstream merges.
+- Bumped global version to **5.13.2**.
+- Updated `build.bat` header to `v5.13.2`.
+- Regenerated structural map (submodule paths, commits, URLs).
+
+### Fixed
+- Resolved submodule pointer drift at the root level.
+
 ## [5.13.1] - 2026-06-14
 
 ### Executive Protocol v5.13.1 — Full Repository Synchronization & Intelligent Merge

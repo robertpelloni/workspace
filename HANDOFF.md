@@ -1,3 +1,18 @@
+# HANDOFF — Session v5.13.2
+**Date:** 2026-06-14
+**Operator:** AI Sync Engine
+**Previous Version:** 5.13.1 → **5.13.2**
+
+## Session Summary
+- Updated submodule pointers for `hermes-agent` and `mk64` to include upstream merges.
+- Bumped the global version to **5.13.2** and synchronized it across `VERSION.md`, `CHANGELOG.md`, and script headers.
+- Updated `build.bat` header to reflect version v5.13.2.
+- Regenerated the structural map of submodules.
+- Verified the workspace builds successfully (`./build.bat`).
+- Documented all actions in this handoff.
+
+---
+
 # HANDOFF — Session v5.13.1
 **Date:** 2026-06-14
 **Operator:** AI Sync Engine
