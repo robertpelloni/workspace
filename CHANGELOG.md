@@ -6,7 +6,29 @@
 
 ---
 
+## [5.13.1] - 2026-06-14
+
+### Executive Protocol v5.13.1 — Full Repository Synchronization & Intelligent Merge
+
+- Ran `git fetch --all --tags` on the root repository and recursively on **all submodules** (including nested ones).
+- Identified and added missing upstream remotes for forked submodules (e.g., `jules-autopilot`, `fwber`).
+- Merged upstream `main`/`master` branches into local `main` for each repository that had an upstream parent (jules‑autopilot, fwber, etc.).
+- Updated all submodules to the latest tracking commits; ensured working trees are clean.
+- Forward‑merged every active feature branch that contained unique development into `main` (including fwber’s `v2.1.9‑intelligent‑match‑refinement` and other AI‑generated branches).
+- Performed reverse merges of the refreshed `main` back into those feature branches to keep them up‑to‑date.
+- Updated `VERSION.md` to **5.13.1**, synchronized the version across `CHANGELOG.md` and internal references.
+- Verified and refreshed batch scripts (`build.bat`, `start.bat`) – paths and submodule targets are correct.
+- Regenerated structural map entries (submodule paths, commits, URLs) via `scripts/generate_dashboard.py`.
+- Executed a full workspace build (`./build.bat`) – all four core components built successfully.
+- Produced a detailed `HANDOFF.md` documenting merges, conflict resolutions, and next‑step recommendations.
+
+All changes have been committed and pushed to `origin/main` for every affected repository.
+
+---
+
 ## [5.13.0] - 2026-06-14
+
+... (existing content)
 
 ### Executive Protocol v5.13.0 — Production Hardening: Security & Hygiene
 
