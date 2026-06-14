@@ -24,9 +24,9 @@
     "supertest": "^7.2.2"
   },
   "dependencies": {
-    "firecrawl-mcp": "^3.6.2",
-    "mem0ai": "^2.1.38",
+    "firecrawl-mcp": "^3.6.0",
+    "mem0ai": "^3.0.8",
     "opencode-ai": "^1.1.18",
-    "task-master-ai": "^0.35.0"
+    "task-master-ai": "^0.43.1"
   }
 }
