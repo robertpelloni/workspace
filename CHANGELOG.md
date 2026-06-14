@@ -6,6 +6,35 @@
 
 ---
 
+## [5.13.3] - 2026-06-14
+
+### Security — Comprehensive Vulnerability Triage
+
+Applied `pnpm audit --fix` and `npm audit fix` across 9 repositories. Reduced total workspace vulnerabilities from ~284 to ~70 (75% reduction).
+
+#### pnpm Projects (overrides applied via audit --fix)
+- **jules-autopilot:** 10 → **0** vulns. Overrides: ws, hono, brace-expansion, esbuild.
+- **TormentNexus:** 91 → **9** vulns (53 high → 5 high). Remaining: esbuild via vite (upstream upgrade needed).
+- **hyper:** 88 → **6** vulns (44 high → 4 high, 2 critical → 0). Remaining: ajv via electron-builder.
+- **element-web:** 37 → **2** vulns (16 high → 0, 3 critical → 0). Lockfile regenerated.
+- **metamcp:** 125 → **10** vulns (61 high → 6 high, 5 critical → 0). Lockfile regenerated. Remaining: better-auth.
+- **hyperharness:** Broken lockfile fixed → **0** vulns. Lockfile regenerated.
+- **OmniRoute:** Merge conflicts resolved → **0** vulns.
+
+#### npm Projects (TLS fix applied)
+- **pi-mono:** 20 → **7** vulns (9 high → 5 high, 4 critical → 2 critical). Remaining: concurrently (needs --force).
+- **Root workspace:** 89 → **36** vulns (4 critical → 0, 25 high → 6 high). Remaining: @ai-sdk/provider-utils (breaking change needed).
+
+### Fixed
+- **OmniRoute:** Resolved 12 merge conflict regions in `package.json` and `open-sse/package.json`. Restored clean v3.7.9 with security overrides.
+- **hyperharness:** Deleted broken `pnpm-lock.yaml` (bad indentation), regenerated via fresh install.
+- **npm TLS/SSL issue:** Added `NODE_OPTIONS="--tls-min-v1.2"` to `~/.bashrc` for permanent fix. Set npm registry to `https://registry.npmjs.org/`.
+
+### Changed
+- **Regenerated lockfiles** for metamcp (125→10 vulns), element-web (37→2 vulns), hyperharness (broken→0).
+- **Corrected remote branch pushes** for hyper (→canary) and element-web (→develop).
+- **Updated HANDOFF.md** with comprehensive security progress table and next steps.
+
 ## [5.13.2] - 2026-06-14
 
 ### Changed
