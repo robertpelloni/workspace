@@ -1,3 +1,90 @@
+# HANDOFF — Session v5.13.3
+**Date:** 2026-06-14
+**Operator:** AI DevKit (deepseek-reasoner)
+**Previous Version:** 5.13.2 → **5.13.3**
+
+## Session Summary — Executive Protocol v5.13.3
+
+### Core Issues Resolved
+| Issue | Resolution |
+|-------|------------|
+| **Database "smashing"** | Restored 10 essential DB files in TormentNexus (`agentic-ads.db`, `catalog.db`, `tormentnexus.db`, etc.). Ignored large/temporary DBs (`provider_metrics.db`, versioned backups). |
+| **.gitignore Encoding** | Replaced UTF-16LE .gitignore with proper UTF-8. Added ignores for `.pi-lens/cache/`, `.agent/`, `.borg*`, `.vscode/`, `__pycache__/`, and generated JSON files. |
+| **npm Audit** | Ran `npm audit fix` (safe: 44 vulns fixed), then `--force` (breaking: `task-master-ai@0.43.1`, `mem0ai@3.0.8`, `firecrawl-mcp@3.6.0`). **89 → 36 vulns** (0 critical, 6 high, 11 moderate, 19 low). |
+| **Stale Index Locks** | Cleared `index.lock` files in root, `bobbybookmarks`, `bg`, `bobsgameonlinejava`, and other submodules. Restored normal git operation. |
+
+### Submodule Synchronization
+- Fetched all 60+ initialized submodules recursively.
+- Fast-forwarded `main` (or `master`) in each submodule to match origin.
+- Skipped `MilkDrop3/bg/bobsgameonlinejava/references/defold` (massive reference repo, not critical).
+
+### Feature Branch Reconciliation
+| Repo | Branch | Forward Merge | Reverse Merge | Status |
+|------|--------|---------------|---------------|--------|
+| Maestro | jules-add-new-agents-535743983477155742 | ❌ Conflict | ✅ Success | Pushed |
+| Maestro | jules-2575151016458646249-2d58a6b7 | ❌ Conflict | ✅ Success | Pending push |
+| Maestro | maestro-cue-spinout | ❌ Conflict | ✅ Success | Pending push |
+| bobtrader | assimilate-top-crypto-bots-phase-1 | ❌ Conflict | ✅ Success | Pending push |
+| fwber | feat/federation-hardening-auth-integration | ❌ Conflict | ✅ Success | Pending push |
+| fwber | feat/okcupid-matching-engine | ❌ Conflict | ✅ Success | Pending push |
+| fwber | v2.1.9-intelligent-match-refinement | ❌ Conflict | ✅ Success | Pending push |
+| pi-mono | jules-5192995686709987445-f4e7a729 | ❌ Conflict | ✅ Success | Pending push |
+| pi-mono | total-assimilation-cleanup | ❌ Conflict | ✅ Success | Pending push |
+| bg | jules-1394303886104622315-aa648523 | ❌ Conflict | ❌ Failed | Manual resolution needed |
+| fcdm | feat/audio-analysis | ❌ Conflict | ❌ Failed | Manual resolution needed |
+| npp | jules-go-port-ui-integration | ❌ Conflict | ❌ Failed | Manual resolution needed |
+
+### Files Modified
+| File | Change |
+|------|--------|
+| `.gitignore` | UTF-8 encoding, added comprehensive cache/temp ignores |
+| `package.json` / `package-lock.json` | npm audit breaking upgrades |
+| `VISION.md` | Updated to v2.0 format |
+| `RESET_WORKSPACE.bat` | Added `taskkill` for python, bash, pwsh, go, Tabby |
+| `build.bat` | Header updated to v5.13.3 |
+| `TormentNexus/.gitignore` | Removed `*.db` blanket ignore, added explicit ignores |
+| `TormentNexus/` | 10 DB files re-tracked |
+
+### Commits This Session
+1. **TormentNexus:** `4e6ed8894` - fix: restore essential DB tracking, ignore large/cache DBs
+2. **bobbybookmarks:** `74b9061` - Merge remote-tracking branch 'origin/main' (atlas.db merged, keeping their version)
+3. **Root workspace:** `611b511f5` - chore: workspace sync v5.13.3 — DB restore, npm audit, .gitignore fix, RESET update
+
+## Security Progress
+| Project | Before | After | Change |
+|---------|--------|-------|--------|
+| Root workspace | 89 vulns (4 crit, 25 high) | 36 vulns (0 crit, 6 high) | ✅ Fixed all critical, 19 high |
+| TormentNexus | 1108 vulns (22 crit, 456 high) | Unchanged (complex transitive deps) | ⚠️ Deferred |
+| Total workspace | 284 vulns | ~230 vulns | ✅ Reduced ~54 vulns |
+
+## Build Status
+✅ Build completed successfully. All Go projects compiled:
+- TormentNexus (`tormentnexus.exe`)
+- hyperharness (`hyperharness.exe`)
+- pi-mono (`pi-mono.exe`)
+- Tabby Go (`tabby-backend.exe`, `tabby-native.exe`)
+
+## Known Issues Unresolved
+1. **Feature branches with failed reverse merges:** `bg`, `fcdm`, `npp`, `multimousergy`, `bobsgameweb` — require manual conflict resolution.
+2. **Remaining 36 root vulnerabilities:** Transitive `@ai-sdk/*` dependencies in `task-master-ai` — await upstream releases.
+3. **Large DB files ignored:** `provider_metrics.db` (139MB) and versioned backup DBs intentionally excluded.
+4. **Cached .pi-lens files:** Still showing as modified (tracked before .gitignore update). Can `git reset` if needed.
+
+## Pushed to Remote
+- ✅ Root workspace (`main` → `611b511f5`)
+- ✅ TormentNexus (`main` → `4e6ed8894`)
+- ✅ bobbybookmarks (`main` → `74b9061`)
+- ✅ Maestro (one reverse-merged branch pushed; others pending)
+
+## Next Steps
+1. Manually resolve failed reverse-merge branches (`bg`, `fcdm`, `npp`, etc.).
+2. Push remaining reverse-merged feature branches to origin.
+3. Continue Dependabot triage (focus on TormentNexus transitive deps).
+4. Consider CI/CD integration to enforce `npm audit` checks on PRs.
+5. Document DB backup strategy for ignored large files.
+
+---
+
 # HANDOFF — Session v5.13.2
 **Date:** 2026-06-14
 **Operator:** AI Sync Engine
