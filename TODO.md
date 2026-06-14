@@ -1,42 +1,194 @@
-# TODO
+# TODO — Omni-Workspace v5.13.0
 
-## Completed
-- [x] Investigate and resolve manual merge conflicts in `borg/CHANGELOG.md` and `borg/mcp.jsonc`.
-- [x] Investigate and resolve manual merge conflicts in `jules-autopilot/server/index.ts` and related package manifests.
-- [x] Resolve massive conflicts in `hymnmania` and `realestatecrm` branches.
-- [x] Hook up submodule scripts to the global `build.bat` executor.
-- [x] Determine how to handle detached HEADs for `fwber` and `p2p_service_marketplace`.
-- [x] Verify 100% clean build after merges.
-- [x] Dual-Direction Sync v4.59.0 Completed (2026-06-06)
-- [x] Dual-Direction Sync v4.59.2 Completed (2026-06-06) — 11 more branches merged
-- [x] Executive Protocol v4.60.0 Completed (2026-06-06) — all 89 submodules scanned, 3 more branches merged
-- [x] Executive Protocol v4.61.0 Completed (2026-06-06) — all Jules branches verified, veilid_reddit_facebook merged, TormentNexus conflicts resolved
-- [x] Executive Protocol v4.62.0 Completed (2026-06-07) — bobeditpro upstream merged (50 Audacity commits), all branches verified
-- [x] Executive Protocol v4.63.0 Completed (2026-06-07) — 9 branches merged across 6 repos (hyper, FAGLSGC, WebAI-to-API, dao, OmniRoute, Cli-Proxy-API)
-- [x] Executive Protocol v4.64.0 Completed (2026-06-07) — 4 Jules branches merged (npp, pi-mono, tabby, veilid_reddit_facebook), 4 repos pulled current
-- [x] Executive Protocol v4.65.0 Completed (2026-06-07) — 2 forward merges (hyperharness Go port, hyper docs), 4 reverse merges (dao, Maestro, OmniRoute ×2)
-- [x] Executive Protocol v4.66.0 Completed (2026-06-07) — bobmania upstream merged (4 StepMania fixes), 5 forward merges (arrowvortex DDC, npp, pi-mono, dao, hyper)
-- [x] Executive Protocol v4.67.0 Completed (2026-06-07) — full sync verification, all upstreams current, all Jules branches confirmed merged
-- [x] Executive Protocol v4.68.0 Completed (2026-06-07) — sync verification, 3 false-positive branches confirmed already merged, all upstreams current
-- [x] Executive Protocol v4.69.0 Completed (2026-06-07) — 2 forward merges (npp version bump, arrowvortex DDC AI integration +1268/-1072), all upstreams current
-- [x] Executive Protocol v4.70.0 Completed (2026-06-07) — urgent syncs: hymnmania, bobtrader, enterprise_sales_bot, psytrance_night_outreach_agent, FAGLSGC
-- [x] Executive Protocol v4.70.0 Completed (2026-06-07) — FAGLSGC protocol merge (3 patches, +2861/-391), found 5 new submodules with dead pointers (candlestixxx), all upstreams current
-- [x] Executive Protocol v4.71.0 Completed (2026-06-07) — 2 forward merges (pi-mono v0.97.0 LLM Harness +46/-17, arrowvortex DDC AI models +3952/-1028), all upstreams current
-- [x] Executive Protocol v4.72.0 Completed (2026-06-07) — 4 forward merges: TormentNexus assimilation pipeline (+851/-834), pi-mono CI/testing (+212/-17), hymnmania Studio Reversal (+506/-266), FAGLSGC alpha.66 (+414/-511)
-- [x] Executive Protocol v4.73.0 Completed (2026-06-07) — 3 forward merges: hymnmania v137 deployment (+171/-43), enterprise_sales_bot v0.4.2 hardening (+174/-132), FAGLSGC alpha.66 stable (+39/-28)
-- [x] Executive Protocol v4.74.0 Completed (2026-06-07) — A2A Swarm Harness built and tested (6 patterns, 13 agent types, FreeLLM proxy integration, concurrency control, model fallbacks)
-- [x] Executive Protocol v4.75.0 Completed (2026-06-07) — 6 forward merges: TormentNexus assimilation-final, pi-mono jules-tests, enterprise_sales_bot phase6-hardening, arrowvortex ddc-v133, hymnmania v137-studio-reversal, jules-autopilot security-fix; 2 reverse merges
-- [x] Executive Protocol v4.76.0 Completed (2026-06-07) — Clean sweep: 71 submodules fetched, 75+ branches scanned, all already merged, workspace fully reconciled
-- [x] Executive Protocol v4.77.0 Completed (2026-06-07) — Tabby upstream sync (2 fixes: plugin search, terminal redraw), 70 subs fetched, all branches reconciled
-- [x] Executive Protocol v4.78.0 Completed (2026-06-07) — Stable sweep: 71 subs fetched (0 failures), all upstreams current, all branches reconciled
-- [x] Executive Protocol v4.79.0 Completed (2026-06-07) — Stable sweep: 71 subs fetched 0 failures, all upstreams current, 5 cherry FP confirmed, workspace stable
-- [ ] Fix 5 new submodule pointers (realestateleadcaller, realestateprototype, socialmediacontentplanner, techno_platform_detroit, theta-data-api) — commit fff48c6d doesn't exist on remotes
+**Current:** v5.12.0 • 125 repos / 65 submodules • 2026-06-13
 
-## Open
-- [ ] Fix pybind11 recursive directory loop in bobfilez (blocks git operations)
-- [ ] Migrate large binary assets to Git LFS
-- [ ] Resolve 293 GitHub Dependabot vulnerabilities
-- [ ] Update Jules task clone URL from fitness_center_dance_machine to fcdm
-- [ ] Implement robust error handling for missing remote repositories in global sync scripts
-- [ ] Transition remaining HTTP submodule origins to SSH for consistent authentication
-- [ ] Automate ROADMAP/TODO updates via post-merge hooks
+## 🎯 v5.13.0 Milestone: Production Hardening
+
+The ROADMAP calls for **Phase 4: Production Hardening** — this is the next frontier. With all upstreams synced and all feature branches merged, the workspace must now shift from consolidation to stability, security, and observability.
+
+### Top Priority
+- [ ] **Resolve 283 GitHub Dependabot vulnerabilities** — Critical security debt across workspace
+- [ ] **Clean massive dirty state in tormentnexus (3,929 files)** — `.pi-lens/cache` artifacts, temp scripts, uncommitted MCP config changes
+- [ ] **Clean ArrowVortex dirty state (980 files)** — Submodule conflict in lib/ddc, pending merge resolution
+- [ ] **Finalize TormentNexus MCP protocol** — Cross-module communication, MCP aggregator stability, alwaysOn servers
+- [ ] **Revisit bobeditpro upstream** — 94 commits behind Audacity, 25+ conflicts in core audio/UI files (deferred x3)
+- [ ] **Revisit topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg (deferred x3)
+
+---
+
+## 🔐 Security (Critical)
+
+- [ ] **Dependabot vulnerability triage** — Categorize 283 vulns by severity (critical, high, medium, low)
+- [ ] **Fix critical/high vulns** — Focus on: jules-autopilot (vite, axios), borg (express, lodash), web apps
+- [ ] **npm audit pass** — Run `npm audit fix` across all Node.js projects
+- [ ] **pip audit pass** — Run `pip audit` or `safety check` across Python projects
+- [ ] **Docker image scanning** — Audit container images for known CVEs
+- [ ] **Establish Dependabot alert response SLA** — 48h for critical, 7d for high
+
+---
+
+## 🧹 Workspace Hygiene
+
+### Dirty Repo Cleanup
+
+| Project | Dirty Files | Action Required |
+|---------|-------------|-----------------|
+| tormentnexus | 3,929 | Add `.pi-lens/cache/`, `*.tmp`, `akb*`, `_llm_*` to `.gitignore`, then commit |
+| ArrowVortex | 0 | ✅ Clean - untracked build artifacts only (odcnn/, src/) |
+| WebAI-to-API | 30 | Review, commit or discard changes |
+| fwber | 0 | ✅ Clean - feature branch merged and pushed |
+| jules-autopilot | 0 | ✅ Clean - axios upgraded and pushed |
+
+- [ ] **Update global `.gitignore`** — Add patterns for pi-lens cache, temp scripts, database files, `$null`
+- [ ] **Commit critical uncommitted work** — Review dirty files in each repo for genuine changes vs. artifacts
+- [ ] **Remove orphaned directories** — `metamcp/`, `tormentnexus2/`, `tormentnexus_temp/`, `.tmp-adb-mysql/` if no longer needed
+- [ ] **Rebuild workspace index** — `workspace_index.db` may be stale
+
+### Upstream Sync
+
+- [ ] **bobeditpro upstream merge (Audacity)** — Blocked by 25+ conflicts. Dedicated session needed with manual conflict resolution in core audio/UI files
+- [ ] **topaz-ffmpeg upstream merge (FFmpeg)** — 15+ conflicts in libswscale. Dedicated session needed
+- [ ] **bobfilez history reconciliation** — Unrelated history with robertpel83/FileOrganizer. Consider replacing with fresh fork
+- [ ] **raindropioapp history reconciliation** — Unrelated history with raindropio/app. Consider replacing with fresh fork
+- [ ] **bobmani/arrowvortex lib/ddc conflict** — Submodule vs embedded files in lib/ddc. Determine canonical source
+- [ ] **Transition remaining HTTP origins to SSH** — The 5 remaining HTTP submodule URLs for consistent auth
+
+---
+
+## 🏗️ Infrastructure & Monitoring
+
+### Phase 4 Deliverables (from ROADMAP)
+
+- [ ] **Global health checks** — Implement `/health` endpoints for all web services, aggregate into workspace dashboard
+- [ ] **Containerization** — Dockerize key services: TormentNexus, fwber, jules-autopilot, bobbybookmarks
+- [ ] **Service orchestration** — Move from `start.bat` to docker-compose with health dependencies
+- [ ] **Log aggregation** — Centralize logs from all running services (Loki / ELK / simple flat files)
+- [ ] **Alerting** — Set up uptime monitors for production services (fwber.com, bobsgame.com)
+- [ ] **Backup automation** — Automated DB snapshots for tormentnexus, fwber, bobbybookmarks
+
+### Tooling
+
+- [ ] **Fix pybind11 recursive directory loop** in bobfilez — Blocks all git operations on that repo
+- [ ] **Automate ROADMAP/TODO updates** via post-merge hooks in workspace root
+- [ ] **Improve error handling** in global sync scripts for missing remote repos
+- [ ] **Add git pre-push hooks** — Prevent pushing with unresolved SECURITY.md issues
+- [ ] **Add submodule health checks** — Auto-detect dead gitlinks before they accumulate
+
+---
+
+## 🚀 Active Development Priorities
+
+### 1. TormentNexus — MCP Protocol & Aggregator
+
+- [ ] **Stabilize MCP aggregator** — alwaysOn servers auto-connect on restart (filesystem, ripgrep, desktop-commander, fetch)
+- [ ] **Persist `connectTimeoutMs` fix** — Change from 30s→60s is in `dist/` only; needs source change in MCPAggregator.ts
+- [ ] **Connect remaining servers** — anyquery, tormentnexus-supervisor, and 52 other catalog servers
+- [ ] **Expand tool coverage** — Currently 46 tools from 4 servers; target 63+ with all key servers
+- [ ] **Document MCP architecture** — Flow diagram for config sources (.jsonc → db → aggregator)
+- [ ] **Add MCP server health dashboard** — Web UI showing connected servers, tool counts, last error
+
+### 2. fwber — Dating Platform
+
+- [ ] **Set upstream tracking** — `fwber-code/fwber` needs proper remote setup (currently no upstream tracking)
+- [ ] **Review 30 dirty files** — Commit pending feature work or MVP milestones
+- [ ] **Dockerize for deployment** — Laravel/Next.js/PostgreSQL stack needs containerization
+
+### 3. jules-autopilot — AI Dashboard
+
+- [ ] **Review 27 dirty files** — Pending changes from previous session
+- [ ] **Dependabot fixes** — Known vulns in vite, axios, and other deps
+- [ ] **Sync with sbhavani upstream** — Currently up to date, monitor for new commits
+
+### 4. Maestro — AI Agent Orchestration
+
+- [ ] **Push 1 ahead commit** — Unpushed changes on main
+- [ ] **Expand agent types** — Current: 13 agent types. Target: 20+ with specialized roles
+- [ ] **Integrate with TormentNexus MCP** — Cross-module agent-to-agent communication
+
+### 5. Bobmani — Rhythm Game Suite
+
+- [ ] **ArrowVortex lib/ddc conflict resolution** — Submodule vs embedded files in lib/ddc
+- [ ] **Clean 980 dirty files** — Mostly build artifacts and submodule state
+- [ ] **Sync with upstreams** — StepMania, itgmania, ksm-v2, arrowvortex, linthesia
+
+---
+
+## 📚 Documentation & Knowledge
+
+- [ ] **Update ROADMAP.md** — Move Completed items to history, update Phase 4 with current status
+- [ ] **Update SUBMODULE_INVENTORY.md** — Current as of v5.12.0, but needs verification pass
+- [ ] **Update DASHBOARD.md** — Last updated 2026-03-20 (90+ days stale). Re-scan all repos
+- [ ] **Create per-project READMEs** — 40+ repos lack a README; critical for onboarding
+- [ ] **Document sync protocol** — executive_sync.py, fetch_all.py, sync_main.ps1 — purpose and usage
+- [ ] **Update handoff templates** — HANDOFF.md needs modernization for v5.x processes
+- [ ] **Centralize IDEAS_STAGING.md** — Merge MASTER_IDEAS.md, IDEAS_STAGING.md into docs/ideas/
+
+---
+
+## ♻️ Disk & Resource Management
+
+- [ ] **Remove stale build artifacts** — Large binaries (ultratrader.exe removed, check for others)
+- [ ] **Compress/archive old logs** — `logs/` directory may contain GBs of debug output
+- [ ] **Review workspace disk usage** — 125 repos × avg 500MB = significant footprint. Identify candidates for LFS
+- [ ] **Migrate game assets to Git LFS** — MarbleBlast, supersaber, sm64coopdx binaries
+- [ ] **Clean unused Docker images** — `docker system prune -a` after containerization pass
+
+---
+
+## 📊 Metrics Dashboard
+
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| Submodules Synced | 65/65 | 65/65 | ✅ Current |
+| Upstreams Current | 12/16 | 16/16 | ⚠️ 4 deferred |
+| Feature Branches Merged | 100% | 100% | ✅ Current |
+| Dependabot Vulnerabilities (Root) | 283 | 0 | 🔴 Critical |
+| TormentNexus Vulnerabilities | 1,114 | 0 | 🔴 Critical (22 critical, 456 high) |
+| jules-autopilot axios vulns | ✅ Fixed | 0 | ✅ 4+ high vulns fixed |
+| TormentNexus security patches | ✅ 42+ pkgs updated | N/A | ✅ vite, mcp-sdk, lodash, axios, undici, path-to-regexp |
+| connectTimeoutMs source fix | ✅ 30s→60s | N/A | ✅ MCPAggregator.ts aligned with dist |
+| Dirty Repos | 2 | 0 | ⚠️ WebAI-to-API (30 files) |
+| Dirty Files Total | ~30 | 0 | ⚠️ Needs cleanup |
+| Port 4100 (TormentNexus) | ✅ Up | ✅ Up | ✅ |
+| MCP Servers Connected | 4/56 | 6+ | ⚠️ Improving |
+| Tools Available | 46 | 63+ | ⚠️ Improving |
+| Documentation Staleness | 90+ days | < 30 days | ⚠️ Needs update |
+
+---
+
+## 🏁 Sprint Plan: v5.13.0 (2026-06-13 → 2026-06-20)
+
+### Sprint Theme: Production Hardening
+
+**Week 1 Goals:**
+
+**Completed:**
+- [x] Fix TormentNexus MCP aggregator source fix (dist→source persist, connectTimeoutMs 30s→60s)
+- [x] Clean TormentNexus dirty state (add gitignore, commit Go MCP tools)
+- [x] Resolve jules-autopilot axios vulnerabilities (4+ high vulns fixed)
+- [x] Patch 42+ vulnerable packages in TormentNexus (vite, mcp-sdk, lodash, axios, undici, path-to-regexp)
+- [x] Push fwber feature branch (v2.1.9-intelligent-match-refinement)
+- [x] Update DASHBOARD.md/CHANGELOG.md with current repo states
+- [x] Build completed successfully
+
+**Remaining:**
+- [ ] Resolve top 50 Dependabot vulnerabilities (npm audit broken - SSL/TLS issue on this machine)
+- [ ] WebAI-to-API remaining dirty state (~30 files)
+- [ ] Dockerize TormentNexus + fwber
+- [ ] Resolve bobeditpro upstream sync (dedicated conflict resolution session)
+- [ ] Connect anyquery + tormentnexus-supervisor MCP servers
+- [ ] Establish Dependabot response SLA
+- [ ] Update all stale documentation
+
+**Week 2 Goals:**
+- [ ] Dockerize TormentNexus + fwber
+- [ ] Resolve bobeditpro upstream sync (dedicated conflict resolution session)
+- [ ] Connect anyquery + tormentnexus-supervisor MCP servers
+- [ ] Establish Dependabot response SLA
+- [ ] Update all stale documentation
+
+---
+
+*Last updated: 2026-06-13*
+*Previous: v5.12.0 — Upstream Sync & Feature Branch Reconciliation*
+*Next: v5.13.0 — Production Hardening*
