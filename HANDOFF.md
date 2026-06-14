@@ -1,70 +1,48 @@
-# HANDOFF — Session v5.12.0
-**Date:** 2026-06-13
+# HANDOFF — Session v5.13.0
+**Date:** 2026-06-14
 **Operator:** AI Sync Engine
-**Previous Version:** 5.11.0 → **5.12.0**
+**Previous Version:** 5.12.0 → **5.13.0**
 
 ## Session Summary
-- Fetched all remotes and tags across workspace
-- Upstream sync attempted on 15 forks: 11 current, 1 merged, 3 deferred
-- 1 forward merge completed (TormentNexus feature/assimilation-final)
-- All other feature branches already merged/current
-- Submodule pointers updated
-- Version bumped to 5.12.0
+- **TormentNexus Cleanup:** Cleaned 3,896 dirty files, updated .gitignore, committed Go MCP tools (+171,498/-54,365), pushed
+- **Security Fixes:** jules-autopilot axios ^1.7.9 → ^1.17.0 (fixes 4+ high vulns), tsx updated, pushed
+- **Feature Branch:** fwber forward-merged v2.1.9-intelligent-match-refinement (3 commits, conflicts resolved)
+- **Version Bump:** 5.12.0 → 5.13.0
 
-## Upstream Synchronization Results
+## Security Updates
+| Project | Package | Old Version | New Version | Vulnerabilities Fixed |
+|---------|---------|-------------|-------------|----------------------|
+| jules-autopilot | axios | ^1.7.9 | ^1.17.0 | 4 high (NO_PROXY bypass, ReDoS, resource exhaustion, credential leak) |
+| jules-autopilot | tsx | ^4.19.3 | ^4.22.4 | - |
 
-| Submodule | Upstream | Status | Notes |
-|-----------|----------|--------|-------|
-| bobeditpro | audacity/audacity | ⚠️ Deferred | 94 commits behind, 25+ conflicts |
-| bobfilez | robertpel83/FileOrganizer | ⚠️ Deferred | Unrelated histories |
-| bobtorrent | webtorrent/bittorrent-tracker | ✅ Merged | package.json: semantic-release 25.0.5, tape 5.10.1 |
-| bobtrader | garagesteve1155/PowerTrader_AI | ✅ Current | |
-| fwber | fwber-code/fwber | ✅ Current | |
-| jules-autopilot | sbhavani/jules-app | ✅ Current | |
-| mcp-superassistant | srbhptl39/MCP-SuperAssistant | ✅ Current | |
-| raindropioapp | raindropio/app | ⚠️ Deferred | Unrelated histories |
-| sm64coopdx | coop-deluxe/sm64coopdx | ✅ Current | |
-| mk64 | n64decomp/mk64 | ✅ Current | |
-| tabby | Eugeny/tabby | ✅ Current | |
-| openclaw-config | TechNickAI/openclaw-config | ✅ Current | |
-| topaz-ffmpeg | FFmpeg/FFmpeg | ⚠️ Deferred | 15+ libswscale conflicts |
-| bobmani/bobmania | stepmania/stepmania | ✅ Current | |
-| bobmani/itgmania | itgmania/itgmania | ✅ Current | |
-| bobmani/ksm-v2 | kshootmania/ksm-v2 | ✅ Current | |
+## TormentNexus Cleanup Details
+- **Removed from tracking:** `.pi-lens/cache/*`, temp repos (`.tmp-adb-mysql`, `akb`, `akb_repo`, `appwrite_utils_temp`, `temp_*`, `tmp_*`), shell artifacts (`$null`, `^`, `"path here"`), test scripts
+- **Committed:** 3,852 Go MCP tool integrations in `go/internal/tools/`, Python utility scripts, landing pages
+- **Remaining:** 1,108 Dependabot vulnerabilities (22 critical, 450 high)
 
-## Forward Merges Completed
-
-| Submodule | Branch | Impact |
-|-----------|--------|--------|
-| TormentNexus | origin/feature/assimilation-final-2628672827964086366 | Resolved conflicts in go/internal/tools/* (anyquery.go, codemod.go, registry.go, ripgrep.go) |
-
-## Already Current (No Action Needed)
-Maestro (jules-add-new-agents), enterprise_sales_bot (jules-autodev-phase5), psytrance_night_outreach_agent (feature/psytrance-outreach), superdawmcp (jules-5372408556252106821), bobsgameweb (jules-3-0-9-engine-sync), bobdesk (all 10 feature branches), fully_automated_gay_luxury_space_communism (feat/v1.0.0-alpha.66), fwber (2 feature branches), xrnet (feature/everything-app-mesh), hyperharness, jules-autopilot, npp, tabby, bobmani/hymnmania, vst_monster, and 40+ other repos.
+## Known Issues Unresolved
+1. **bobeditpro:** 94 commits behind upstream Audacity (25+ conflicts)
+2. **topaz-ffmpeg:** 15+ libswscale conflicts with FFmpeg upstream
+3. **bobfilez:** Unrelated upstream history + pybind11 recursive directory loop
+4. **raindropioapp:** Unrelated upstream history
+5. **bobmani/arrowvortex:** lib/ddc merge conflict (submodule vs embedded files)
+6. **esbuild@0.25.12:** Vulnerable transitive dep through vite/tsx (needs upstream fix)
+7. **283 Dependabot vulnerabilities** across workspace (1108 in TormentNexus alone)
 
 ## Submodule Pointer Updates
-- TormentNexus → d71f0b5cc (removed tormentnexus.db tracking, merged assimilation-final)
-- superdawmcp → 10836da5df (fixed stale gitlinks)
-- bobtrader → a284d2fe (removed ultratrader.exe from tracking)
-- bobtorrent → merged upstream/master (package.json resolved)
-
-## Known Issues for Next Session
-1. **bobeditpro**: 94 commits behind upstream — needs dedicated merge session (2-3 hours)
-2. **topaz-ffmpeg**: 15+ conflicts in libswscale with FFmpeg upstream
-3. **bobmani/arrowvortex**: lib/ddc merge conflict (jules branch added as submodule, but main has files embedded)
-4. **bobfilez**: pybind11 recursive directory loop; upstream unrelated
-5. **raindropioapp**: Unrelated upstream history
-6. **283 Dependabot vulnerabilities** (7 critical, 136 high)
-7. **bobtrader**: 1 commit ahead (ultratrader.exe removal)
-8. **bobcoin**: 1 commit ahead
-9. **hyperharness**: 12 commits ahead
+- TormentNexus → ee890c2e0 (v0.9.0-beta-1686)
+- jules-autopilot → 98ff884 (v0.2.5-712)
+- fwber → cfe6e1263
 
 ## Commits This Session
-- Pending: chore: release v5.12.0 — Executive Protocol upstream sync completion & feature branch reconciliation
+1. **TormentNexus:** `ee890c2e0` - chore: clean up artifacts, add gitignore patterns, commit Go MCP tool integrations
+2. **jules-autopilot:** `98ff884` - fix: upgrade axios to ^1.17.0 (fixes 4+ high-severity vulnerabilities) and update tsx
+3. **fwber:** `cfe6e1263` - Merge remote-tracking branch 'remotes/origin/v2.1.9-intelligent-match-refinement'
+4. **Root workspace:** Pending - chore: release v5.13.0
 
 ## Next Steps
-1. Dedicated bobeditpro upstream merge session (plan 2-3 hours)
-2. Resolve topaz-ffmpeg libswscale conflicts with FFmpeg upstream
-3. Fix bobmani/arrowvortex lib/ddc (decide: submodule vs embedded files)
-4. Triage Dependabot vulnerabilities (start with critical 7)
-5. Push pending ahead commits (bobtrader, bobcoin, hyperharness)
-6. Commit and push v5.12.0 release
+1. Commit and push root workspace (submodule pointers + version bump)
+2. Run build.bat
+3. Address critical/high Dependabot vulnerabilities (prioritize TormentNexus critical 22)
+4. Investigate esbuild vulnerability mitigation (pnpm overrides?)
+5. Dedicated bobeditpro upstream merge session (plan 2-3 hours)
