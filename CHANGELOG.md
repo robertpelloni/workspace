@@ -1,3 +1,21 @@
+## [5.13.4] - 2026-06-15
+
+### Added
+- Full workspace sync executed via full_sync.sh.
+- All submodule pointers validated and updated.
+
+### Fixed
+- Resolved any remaining merge conflicts.
+
+## [5.13.4] - 2026-06-15
+
+### Added
+- Full workspace sync executed via full_sync.sh.
+- All submodule pointers validated and updated.
+
+### Fixed
+- Resolved any remaining merge conflicts.
+
 # Workspace Changelog
 
 > **Project:** Robert Pelloni's Omni-Workspace (robertpelloni/workspace)
