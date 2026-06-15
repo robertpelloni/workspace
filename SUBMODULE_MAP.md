@@ -1,109 +1,104 @@
-# Submodule Structural Map — v4.66.0
-
-| # | Path | Commit |
-|---|------|--------|
-| 1 | `CLIProxyAPIPlus` | `d8e38f93` |
-| 2 | `Cli-Proxy-API-Management-Center` | `db864fb` |
-| 3 | `GWEN` | `5a4fab4` |
-| 4 | `JWildfire` | `6d851b5` |
-| 5 | `Maestro` | `c1fbaca6` |
-| 6 | `MarbleBlast` | `9d64d67` |
-| 7 | `MilkDrop3` | `f56e611` |
-| 8 | `OmniRoute` | `a53b8099` |
-| 9 | `OpenMBU` | `3b139ae9` |
-| 10 | `TormentNexus` | `b09696b13` |
-| 11 | `WebAI-to-API` | `b01c64d` |
-| 12 | `ableton_psytrance_hymn_creator` | `a28d92c` |
-| 13 | `agentirc` | `5162988` |
-| 14 | `ai_game_engine` | `a064ca3` |
-| 15 | `antigravity-autopilot` | `141571aa` |
-| 16 | `antigravity-cli` | `457a655` |
-| 17 | `apophysis-j` | `8e84307` |
-| 18 | `auto_dj_script` | `4bddc669` |
-| 19 | `bg` | `07f61442` |
-| 20 | `bobbybookmarks` | `84c5fae` |
-| 21 | `bobcoin` | `d406bb7d` |
-| 22 | `bobdesk` | `ea2e0a4143f0` |
-| 23 | `bobeditpro` | `283fb38a2` |
-| 24 | `bobfilez` | `c30b4e39e` |
-| 25 | `bobgui` | `b0a4a45271` |
-| 26 | `bobium` | `bdfca80` |
-| 27 | `bobmani/Simply-Love-SM5` | `06a56f5f` |
-| 28 | `bobmani/arrowvortex` | `535abc2` |
-| 29 | `bobmani/beatoraja` | `aec8f35c` |
-| 30 | `bobmani/bobmania` | `beace63a39` |
-| 31 | `bobmani/ddc` | `84bd10e` |
-| 32 | `bobmani/ddc_onset` | `5d7572a` |
-| 33 | `bobmani/ffr-difficulty-model` | `b13fe4f` |
-| 34 | `bobmani/hymnmania` | `d8418da` |
-| 35 | `bobmani/itgmania` | `767e9ced07` |
-| 36 | `bobmani/ksm-v2` | `d72474f` |
-| 37 | `bobmani/leraine-studio` | `d1b5e24` |
-| 38 | `bobmani/linthesia` | `e88f1fd` |
-| 39 | `bobmani/pianogame` | `1ece599` |
-| 40 | `bobsaver` | `ee94f526` |
-| 41 | `bobsgameonlinejava` | `73cc979` |
-| 42 | `bobsgameweb` | `1314057c` |
-| 43 | `bobtorrent` | `1ba0974` |
-| 44 | `bobtrader` | `b7df711` |
-| 45 | `bobtrax` | `55cb4e6` |
-| 46 | `bobui` | `1c589f87cb1` |
-| 47 | `bobzilla` | `abe47ee` |
-| 48 | `bobzzite` | `058c18b` |
-| 49 | `btk` | `532b12f02` |
-| 50 | `claude-mem` | `e66603c` |
-| 51 | `computer-use-preview` | `56c5f74` |
-| 52 | `crowdsourced_dance_club` | `f1c3ce0` |
-| 53 | `dao` | `aec4aac` |
-| 54 | `dupeguru` | `03f4d214` |
-| 55 | `electricsheep` | `d07f18e` |
-| 56 | `element-web` | `2f4e2d235e` |
-| 57 | `enterprise_sales_bot` | `c3ae1d5` |
-| 58 | `f-zerox` | `407e20e` |
-| 59 | `frontend-sdl-cpp` | `1ee402b` |
-| 60 | `fully_automated_gay_luxury_space_communism` | `6799b29` |
-| 61 | `fwber` | `ba690366e` |
-| 62 | `geany` | `6d0dae3a2` |
-| 63 | `geiss` | `816b527` |
-| 64 | `hermes-agent` | `a4b3713d` |
-| 65 | `hyper` | `6a63ea20` |
-| 66 | `hyperharness` | `e545598e` |
-| 67 | `jules-autopilot` | `bc14119` |
-| 68 | `litellm` | `a58b45bddd` |
-| 69 | `litellm_control_panel` | `8c90e7c` |
-| 70 | `mcp-superassistant` | `986c53a` |
-| 71 | `mcpenetes` | `97ea581` |
-| 72 | `metamcp` | `3c98ca8` |
-| 73 | `mk64` | `b82436cd2` |
-| 74 | `multimousergy` | `a03cfd5` |
-| 75 | `native-fy` | `5a6268e` |
-| 76 | `neverball` | `55403258` |
-| 77 | `npp` | `f0952c606` |
-| 78 | `odcnn` | `454f4c7` |
-| 79 | `onetool-mcp` | `0f5fd03` |
-| 80 | `openclaw-config` | `d9571ef` |
-| 81 | `openclaw-dashboard` | `14794e6` |
-| 82 | `opencode-autopilot` | `f22bb5c` |
-| 83 | `pi-mono` | `395b9fe6` |
-| 84 | `picard` | `0f71386a4` |
-| 85 | `planet_fitness_stepmaniax_agent` | `67b31f8` |
-| 86 | `projectm` | `23757a21e` |
-| 87 | `psytrance_night_outreach_agent` | `e0a9c94` |
-| 88 | `raindropioapp` | `67830358` |
-| 89 | `realestatecrm` | `49327d9` |
-| 90 | `realestateleadcaller` | `492edfffa` |
-| 91 | `realestateprototype` | `492edfffa` |
-| 92 | `skillzhub` | `bd9e062` |
-| 93 | `slsk_discography_downloader_script` | `8a6ffdb` |
-| 94 | `sm64coopdx` | `59b416eb4` |
-| 95 | `socialmediacontentplanner` | `492edfffa` |
-| 96 | `superdawmcp` | `10836da` |
-| 97 | `superpowers` | `8e2e6b6` |
-| 98 | `supersaber` | `6d7243c` |
-| 99 | `tabby` | `35c4eb10` |
-| 100 | `techno_platform_detroit` | `492edfffa` |
-| 101 | `theta-data-api` | `492edfffa` |
-| 102 | `timidity` | `f726f8f` |
-| 103 | `topaz-ffmpeg` | `fc13895eb7` |
-| 104 | `tormentnexus` | `b09696b13` |
-| 105 | `warp` | `01243df` |
+ a6f24d0e4c9a76ee053d11778cd0b1f28e4dee33 ArrowVortex (v1.0.1-415-ga6f24d0)
+ d8e38f939234975c71807d0e362dbd004914f9e6 CLIProxyAPIPlus (v6.9.19-0-47-gd8e38f93)
+ db864fb8631cddd1ba739b5c564fa2aecaac1654 Cli-Proxy-API-Management-Center (v0.1.8-654-gdb864fb)
+ 5a4fab42ae8a734c8bb0bc435a5bb734d1ba6ea9 GWEN (heads/main)
+ 6d851b50a00291ec82d9132d9098c3ffa6938841 JWildfire (heads/master)
+ 2cdc7a8f823ba0560e68b97f035d365280e5d89e Maestro (v0.16.2-RC-226-g2cdc7a8f)
+ 9d64d67cad19103333c7dff84157d72ccd637491 MarbleBlast (heads/master)
++578b4c1465a2ff3f8ed2c3087816129c7b1c3cc8 MilkDrop3 (MilkDrop3-107-g578b4c1)
++2081f96eded5916fa3f0b246ce3133ad687d4252 OmniRoute (v3.5.9-839-g2081f96e)
+ 3b139ae9fff1037b06e148f204707ee46d12f1a9 OpenMBU (Beta-1.17.4-65-g3b139ae9)
++82a896d4f405a3005e497116fbaa3191ce8a218d TormentNexus (v0.9.0-beta-1698-g82a896d4f)
++1b0017ea07dbc03d2ebabed516138c568936af0a WebAI-to-API (v0.5.0-33-g1b0017e)
+ a28d92cf492cde352cdb6ffde70c556a6ad004d5 ableton_psytrance_hymn_creator (heads/main)
+ 51629884d135a207c4f8859292706c44f5648490 agentirc (heads/master)
+ a064ca3f74754c5faabd6721d2cbda02d23f1a26 ai_game_engine (heads/main)
++5e2571d7c60da60b048828063b996dab6847b2c9 antigravity-autopilot (v6.2.13-70-g5e2571d)
+ 457a65563b90f9d6fbf6aa80991c5731528d2e62 antigravity-cli (heads/main)
+ 8e84307a881d61303bd025341cb39503a354b3b9 apophysis-j (heads/master)
++4bddc669cce091e00bf3c2d1a6e6ff95e85f9760 auto_dj_script (heads/main)
++c905abfe0395d2cffd21a6b435bfbd00a7ace59a bg (heads/master)
++39fbb580cfbee4a4225b8e55e6f0cd6b8c100f12 bobbybookmarks (heads/main)
+ d406bb7da1e4b270f56e13decec2e713e8229d5b bobcoin (heads/main)
++ea2e0a4143f0fde85336cc167c07ce570413cf21 bobdesk (libreoffice-26-2-branch-point-490954-gea2e0a4143f0)
+ 283fb38a2d44fada15882c05487a7e38dfa0a92b bobeditpro (Audacity-2.4.1-12516-g283fb38a2)
++66001bacedbcea453635591c458448f6b5379d5d bobfilez (heads/main)
++b0a4a452716d4a93ee507a24b1f07439387e3089 bobgui (4.22.0-5706-gb0a4a45271)
+ bdfca80e373617343d8bfdb87ddd247b0a882bbc bobium (heads/main)
+ 06a56f5f58816485720487734b5e0021e206816b bobmani/Simply-Love-SM5 (5.4.0-ITGm-438-g06a56f5f)
+ abee60cf37825ebe95cdc3bbf462dd8440fa7d28 bobmani/arrowvortex ()
+ 80cd472220675b789d11e2f5c68fa382c514f4b1 bobmani/beatoraja (0.7.6-971-g80cd4722)
+ beace63a39cc63513d8d72c1704b10f2b92d4260 bobmani/bobmania (heads/master)
+ 84bd10ea51da9530227734a044f070ab4a0482b6 bobmani/ddc ()
+ 5d7572a12b73276528513c2bb95c9303466992b7 bobmani/ddc_onset (heads/main)
+ b13fe4f16ffd8571edf79ba3655aec68900aa3f2 bobmani/ffr-difficulty-model (heads/master)
+ 77e376be0b50632b05f73ac6474da34a729149ab bobmani/hymnmania ()
+ 767e9ced079814f53a488809631a976a161b3d0d bobmani/itgmania ()
+ d72474f5824cec69b9a740a86412f8c26f21dbed bobmani/ksm-v2 (v2.0.0-alpha5-272-gd72474f)
+ d1b5e24497857d49eef8228a617284d432746b7c bobmani/leraine-studio (v1.0.1-96-gd1b5e24)
+ e88f1fd6b1c9073b71cd99a6b22592e348b6e38d bobmani/linthesia (0.8.0-243-ge88f1fd)
+ 1ece599f98dfbb0dd922a1be9b392dbcd5679b1c bobmani/pianogame (heads/master)
+ ee94f526fe83acc1c6dec6bc3b90efc102b5c465 bobsaver ()
++08727521f7133a792b6a65c7974b67392d9cdcad bobsgameonlinejava (heads/main)
++181d897918f3e6fd8e2721bb563ee1a9fecad684 bobsgameweb (heads/master)
++001710ad93a9119817bcff622581dcae14fe9276 bobtorrent (v9.17.0-488-g001710a)
++fd49712e0dd403e1a59578d1e67fa4c02e3c4f9e bobtrader (heads/main)
++e224cd96c3eebdf934284ccd22021b6948dc135e bobtrax (heads/master)
+ 1c589f87cb10b9acb5937f6d70cbc8545757ca30 bobui ()
+ abe47ee2d598d4ba8fdddc44108f08721f1a7157 bobzilla (heads/main)
+ 058c18b1311906af3feb90f4f8b99d8f34aa0870 bobzzite (heads/main)
+ 532b12f02beb985a1baa7f2317b958a60c967779 btk ()
+ e66603c151ae7176a5b34f5c9d4863369ed05146 claude-mem ()
+ 56c5f746ff3186ef3cbcf4067aab212130a6d0ed computer-use-preview (heads/main)
+ f1c3ce0b2ab2d9f53b36a93b836d06be97d4cc70 crowdsourced_dance_club (heads/main)
+ aec4aacfbe5062f1f0a7d1696e67af882acc2e18 dao (heads/main)
+ 03f4d2147d38c1f5f9e01caee9513ccec724ad8f dupeguru ()
+ d07f18ed067abd052ccd8fad19eb33f84a23c8ce electricsheep ()
+-2f4e2d235efa0aff873da6e42be496584bb887a9 element-web
+-9ccf6c3eafbd410c59bc57fc99248eef8717b3af enterprise_sales_bot
+-407e20ebe298141597ca3a1fc1b0120081b96d82 f-zerox
+-e468b8c57ae09a5068f1d7c2a64c35a7e9c14399 fcdm
+-1ee402b2fd8042d1189c9f3efaaed481eae818cb frontend-sdl-cpp
+-6b9b3d10927374d922b51225fd91196994bccb40 fully_automated_gay_luxury_space_communism
+-cfe6e12637bdac7603e95cce7a91af4297366f1d fwber
+-6d0dae3a2df3236acf4eb6d107c5c33d300e73f8 geany
+-816b527739b219b6b60fc8b503e3adbcf894bd1b geiss
+-38c7564b5a3c0236e9ef71386d4085a263d80553 hermes-agent
+-6a63ea20379332104eae7211b606d7e89112cbc9 hyper
+-c7a90796bb528e0a133af15021de2011485eaea9 hyperharness
+-98ff8847684c6bc157636791a1e56edd177c7fce jules-autopilot
+-a58b45bddd1f406b8a9223c7fe5ad225a33d472d litellm
+-986c53a4e416092b5d1e3fdff9da65ac4a6e73b4 mcp-superassistant
+-97ea5819079c1ba3813d160f674f048089dc3a66 mcpenetes
+-3c98ca85707dd9e38b0331a35db17fbd7215889b metamcp
+-ab743f3360a3720ca7b7846430284f12bcd1318d mk64
+-9ec11d9d78577a318412f05ef293a7d41330f8bb multimousergy
+-5a6268ecbb8e10c1cc1a3a74991449fe818af7c8 native-fy
+-5540325848df8056f8731012e89dbde46d560951 neverball
+-c9e8a0cf12ed5756ae105686b244d39d8fcd22be npp
+-454f4c72ccd50a3c67d5edb50da78c0b6f8b9b71 odcnn
+-0f5fd039c335eaf5fecba942a94b5b0a753e10af onetool-mcp
+-745aea1725734d04be71b267e16ff9ca1d043531 openclaw-config
+-d6198d021886712bf9c508f1799893994bf9dfa4 openclaw-dashboard
+-c702534ee2e518718afbad94bfdb1ef6a7a87524 opencode-autopilot
+-a515d2dceb8ed940ac3c6728623403edc2cef4c0 pi-mono
+-0f71386a401d3a530bbceb41c5a003a2ad89df0e picard
+-67b31f8e34dbd98e55d1bb895c1d7de6362feb7d planet_fitness_stepmaniax_agent
+-23757a21e6c278050c10f5619509cf6442c9cdd1 projectm
+-b167076b5b26d0d0b8a430ae66fdd9d0bac366d3 psytrance_night_outreach_agent
+-67830358076e6092c7df72b2d812879228cc3762 raindropioapp
+-d16bdc58a33a4f2750a2e031623d46dfa91b5ed5 realestatecrm
+-bd9e06212d17a60b9a321e22c1a85dd6d1b83aed skillzhub
+-55936b9d2b758b1786e06d934501e7fbaaa41b15 slsk_discography_downloader_script
+-59b416eb46f80b7b9fe5c5b58ca9c5ff5b012b1f sm64coopdx
+-10836da5dfb5b6be439cf6371d84ee80f11a7882 superdawmcp
+-8e2e6b6b65889119c9f84594b688f91bc6c60ca1 superpowers
+-6d7243c3a24bd2b6ea38f6db572dd41159fc4107 supersaber
+-910293dc2d23e0f5577af00e1067191227c1ea85 tabby
+-f726f8f75b022afd31d80f61b296fd40a2ab2316 timidity
+-8e7ad9f2432149c0c5387eefbaa4a262bc0cbe79 topaz-ffmpeg
++82a896d4f405a3005e497116fbaa3191ce8a218d tormentnexus (v0.9.0-beta-1698-g82a896d4f)
+-9c089fdff3b695182361ebaff7da529628c0f08c veilid_reddit_facebook
+-a3e1b795769acbc98dd76e2ab912ed17b853a147 vst_monster
+-01243dfd9ae9cee9a7c4df7da953109a8cc22c94 warp
+-7334eaaa971bf28637908954d3bc270cf5d8c931 xrnet

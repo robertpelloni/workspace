@@ -1,3 +1,32 @@
+## [5.13.6] - 2026-06-15
+
+### Added
+- Full workspace synchronization re-executed (Executive Protocol #3).
+- All repositories and submodules fetched from upstream.
+
+### Updated
+- Version governance: global version incremented to 5.13.6
+- Documentation: ROADMAP.md, TODO.md updated with sync notes
+- SUBMODULE_MAP.md regenerated with current states
+
+## [5.13.4] - 2026-06-15
+
+### Added
+- Full workspace sync executed via full_sync.sh.
+- All submodule pointers validated and updated.
+
+### Fixed
+- Resolved any remaining merge conflicts.
+
+## [5.13.4] - 2026-06-15
+
+### Added
+- Full workspace sync executed via full_sync.sh.
+- All submodule pointers validated and updated.
+
+### Fixed
+- Resolved any remaining merge conflicts.
+
 # Workspace Changelog
 
 > **Project:** Robert Pelloni's Omni-Workspace (robertpelloni/workspace)
