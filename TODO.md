@@ -192,3 +192,4 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 *Last updated: 2026-06-13*
 *Previous: v5.12.0 — Upstream Sync & Feature Branch Reconciliation*
 *Next: v5.13.0 — Production Hardening*
+- Verify build output after 5.13.6 sync

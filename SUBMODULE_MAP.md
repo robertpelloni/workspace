@@ -1,59 +1,59 @@
--a6f24d0e4c9a76ee053d11778cd0b1f28e4dee33 ArrowVortex
--d8e38f939234975c71807d0e362dbd004914f9e6 CLIProxyAPIPlus
--db864fb8631cddd1ba739b5c564fa2aecaac1654 Cli-Proxy-API-Management-Center
--5a4fab42ae8a734c8bb0bc435a5bb734d1ba6ea9 GWEN
--6d851b50a00291ec82d9132d9098c3ffa6938841 JWildfire
--2cdc7a8f823ba0560e68b97f035d365280e5d89e Maestro
--9d64d67cad19103333c7dff84157d72ccd637491 MarbleBlast
--789fdd349caef7f8be853adf12c6451dc8c378fa MilkDrop3
--a53b809923baa50d29f61f3a945a7e615f1e9bd5 OmniRoute
--3b139ae9fff1037b06e148f204707ee46d12f1a9 OpenMBU
--a30ff688516b93624ff1127ad95e7d883ff02775 TormentNexus
--b01c64dcd89e80361f044390e2c7d97b830cbe43 WebAI-to-API
--a28d92cf492cde352cdb6ffde70c556a6ad004d5 ableton_psytrance_hymn_creator
--51629884d135a207c4f8859292706c44f5648490 agentirc
--a064ca3f74754c5faabd6721d2cbda02d23f1a26 ai_game_engine
--141571aaed6f57c95c3a3cfb51ea317fed777e13 antigravity-autopilot
--457a65563b90f9d6fbf6aa80991c5731528d2e62 antigravity-cli
--8e84307a881d61303bd025341cb39503a354b3b9 apophysis-j
--b1bfe7a16258c56c94b91b82d72beec795b820f4 auto_dj_script
--07f6144216da166a7c9a2d8650531b4e363392c7 bg
--1d63ae13dd59d843c6f9cbafba44a8c4e2da9d3f bobbybookmarks
--d406bb7da1e4b270f56e13decec2e713e8229d5b bobcoin
--4e4e10ee694ee387a6fe6ebf5e885bf15e1948b1 bobdesk
--283fb38a2d44fada15882c05487a7e38dfa0a92b bobeditpro
--91679adcedfeab0fea6ea992caa461b74ead78dc bobfilez
--aedd8179b333ff3c2c9167a10032d7b56d4844fb bobgui
--bdfca80e373617343d8bfdb87ddd247b0a882bbc bobium
--06a56f5f58816485720487734b5e0021e206816b bobmani/Simply-Love-SM5
--abee60cf37825ebe95cdc3bbf462dd8440fa7d28 bobmani/arrowvortex
--80cd472220675b789d11e2f5c68fa382c514f4b1 bobmani/beatoraja
--beace63a39cc63513d8d72c1704b10f2b92d4260 bobmani/bobmania
--84bd10ea51da9530227734a044f070ab4a0482b6 bobmani/ddc
--5d7572a12b73276528513c2bb95c9303466992b7 bobmani/ddc_onset
--b13fe4f16ffd8571edf79ba3655aec68900aa3f2 bobmani/ffr-difficulty-model
--77e376be0b50632b05f73ac6474da34a729149ab bobmani/hymnmania
--767e9ced079814f53a488809631a976a161b3d0d bobmani/itgmania
--d72474f5824cec69b9a740a86412f8c26f21dbed bobmani/ksm-v2
--d1b5e24497857d49eef8228a617284d432746b7c bobmani/leraine-studio
--e88f1fd6b1c9073b71cd99a6b22592e348b6e38d bobmani/linthesia
--1ece599f98dfbb0dd922a1be9b392dbcd5679b1c bobmani/pianogame
--ee94f526fe83acc1c6dec6bc3b90efc102b5c465 bobsaver
--73cc979497fe998e45ee0ba01fcd933bff4c0067 bobsgameonlinejava
--5bdf3bcdf7485aec2496f1d2cda2b57cf307ad20 bobsgameweb
--2631c7d63eefc7001c981776aaf7489a4198465d bobtorrent
--0a314aee3d1efda6081a70562179205a8130882d bobtrader
--55cb4e6fcd02c3f928091c3392dff8430e4c6a29 bobtrax
--1c589f87cb10b9acb5937f6d70cbc8545757ca30 bobui
--abe47ee2d598d4ba8fdddc44108f08721f1a7157 bobzilla
--058c18b1311906af3feb90f4f8b99d8f34aa0870 bobzzite
--532b12f02beb985a1baa7f2317b958a60c967779 btk
--e66603c151ae7176a5b34f5c9d4863369ed05146 claude-mem
--56c5f746ff3186ef3cbcf4067aab212130a6d0ed computer-use-preview
--f1c3ce0b2ab2d9f53b36a93b836d06be97d4cc70 crowdsourced_dance_club
--aec4aacfbe5062f1f0a7d1696e67af882acc2e18 dao
--03f4d2147d38c1f5f9e01caee9513ccec724ad8f dupeguru
--d07f18ed067abd052ccd8fad19eb33f84a23c8ce electricsheep
+ a6f24d0e4c9a76ee053d11778cd0b1f28e4dee33 ArrowVortex (v1.0.1-415-ga6f24d0)
+ d8e38f939234975c71807d0e362dbd004914f9e6 CLIProxyAPIPlus (v6.9.19-0-47-gd8e38f93)
+ db864fb8631cddd1ba739b5c564fa2aecaac1654 Cli-Proxy-API-Management-Center (v0.1.8-654-gdb864fb)
+ 5a4fab42ae8a734c8bb0bc435a5bb734d1ba6ea9 GWEN (heads/main)
+ 6d851b50a00291ec82d9132d9098c3ffa6938841 JWildfire (heads/master)
+ 2cdc7a8f823ba0560e68b97f035d365280e5d89e Maestro (v0.16.2-RC-226-g2cdc7a8f)
+ 9d64d67cad19103333c7dff84157d72ccd637491 MarbleBlast (heads/master)
++578b4c1465a2ff3f8ed2c3087816129c7b1c3cc8 MilkDrop3 (MilkDrop3-107-g578b4c1)
++2081f96eded5916fa3f0b246ce3133ad687d4252 OmniRoute (v3.5.9-839-g2081f96e)
+ 3b139ae9fff1037b06e148f204707ee46d12f1a9 OpenMBU (Beta-1.17.4-65-g3b139ae9)
++82a896d4f405a3005e497116fbaa3191ce8a218d TormentNexus (v0.9.0-beta-1698-g82a896d4f)
++1b0017ea07dbc03d2ebabed516138c568936af0a WebAI-to-API (v0.5.0-33-g1b0017e)
+ a28d92cf492cde352cdb6ffde70c556a6ad004d5 ableton_psytrance_hymn_creator (heads/main)
+ 51629884d135a207c4f8859292706c44f5648490 agentirc (heads/master)
+ a064ca3f74754c5faabd6721d2cbda02d23f1a26 ai_game_engine (heads/main)
++5e2571d7c60da60b048828063b996dab6847b2c9 antigravity-autopilot (v6.2.13-70-g5e2571d)
+ 457a65563b90f9d6fbf6aa80991c5731528d2e62 antigravity-cli (heads/main)
+ 8e84307a881d61303bd025341cb39503a354b3b9 apophysis-j (heads/master)
++4bddc669cce091e00bf3c2d1a6e6ff95e85f9760 auto_dj_script (heads/main)
++c905abfe0395d2cffd21a6b435bfbd00a7ace59a bg (heads/master)
++39fbb580cfbee4a4225b8e55e6f0cd6b8c100f12 bobbybookmarks (heads/main)
+ d406bb7da1e4b270f56e13decec2e713e8229d5b bobcoin (heads/main)
++ea2e0a4143f0fde85336cc167c07ce570413cf21 bobdesk (libreoffice-26-2-branch-point-490954-gea2e0a4143f0)
+ 283fb38a2d44fada15882c05487a7e38dfa0a92b bobeditpro (Audacity-2.4.1-12516-g283fb38a2)
++66001bacedbcea453635591c458448f6b5379d5d bobfilez (heads/main)
++b0a4a452716d4a93ee507a24b1f07439387e3089 bobgui (4.22.0-5706-gb0a4a45271)
+ bdfca80e373617343d8bfdb87ddd247b0a882bbc bobium (heads/main)
+ 06a56f5f58816485720487734b5e0021e206816b bobmani/Simply-Love-SM5 (5.4.0-ITGm-438-g06a56f5f)
+ abee60cf37825ebe95cdc3bbf462dd8440fa7d28 bobmani/arrowvortex ()
+ 80cd472220675b789d11e2f5c68fa382c514f4b1 bobmani/beatoraja (0.7.6-971-g80cd4722)
+ beace63a39cc63513d8d72c1704b10f2b92d4260 bobmani/bobmania (heads/master)
+ 84bd10ea51da9530227734a044f070ab4a0482b6 bobmani/ddc ()
+ 5d7572a12b73276528513c2bb95c9303466992b7 bobmani/ddc_onset (heads/main)
+ b13fe4f16ffd8571edf79ba3655aec68900aa3f2 bobmani/ffr-difficulty-model (heads/master)
+ 77e376be0b50632b05f73ac6474da34a729149ab bobmani/hymnmania ()
+ 767e9ced079814f53a488809631a976a161b3d0d bobmani/itgmania ()
+ d72474f5824cec69b9a740a86412f8c26f21dbed bobmani/ksm-v2 (v2.0.0-alpha5-272-gd72474f)
+ d1b5e24497857d49eef8228a617284d432746b7c bobmani/leraine-studio (v1.0.1-96-gd1b5e24)
+ e88f1fd6b1c9073b71cd99a6b22592e348b6e38d bobmani/linthesia (0.8.0-243-ge88f1fd)
+ 1ece599f98dfbb0dd922a1be9b392dbcd5679b1c bobmani/pianogame (heads/master)
+ ee94f526fe83acc1c6dec6bc3b90efc102b5c465 bobsaver ()
++08727521f7133a792b6a65c7974b67392d9cdcad bobsgameonlinejava (heads/main)
++181d897918f3e6fd8e2721bb563ee1a9fecad684 bobsgameweb (heads/master)
++001710ad93a9119817bcff622581dcae14fe9276 bobtorrent (v9.17.0-488-g001710a)
++fd49712e0dd403e1a59578d1e67fa4c02e3c4f9e bobtrader (heads/main)
++e224cd96c3eebdf934284ccd22021b6948dc135e bobtrax (heads/master)
+ 1c589f87cb10b9acb5937f6d70cbc8545757ca30 bobui ()
+ abe47ee2d598d4ba8fdddc44108f08721f1a7157 bobzilla (heads/main)
+ 058c18b1311906af3feb90f4f8b99d8f34aa0870 bobzzite (heads/main)
+ 532b12f02beb985a1baa7f2317b958a60c967779 btk ()
+ e66603c151ae7176a5b34f5c9d4863369ed05146 claude-mem ()
+ 56c5f746ff3186ef3cbcf4067aab212130a6d0ed computer-use-preview (heads/main)
+ f1c3ce0b2ab2d9f53b36a93b836d06be97d4cc70 crowdsourced_dance_club (heads/main)
+ aec4aacfbe5062f1f0a7d1696e67af882acc2e18 dao (heads/main)
+ 03f4d2147d38c1f5f9e01caee9513ccec724ad8f dupeguru ()
+ d07f18ed067abd052ccd8fad19eb33f84a23c8ce electricsheep ()
 -2f4e2d235efa0aff873da6e42be496584bb887a9 element-web
 -9ccf6c3eafbd410c59bc57fc99248eef8717b3af enterprise_sales_bot
 -407e20ebe298141597ca3a1fc1b0120081b96d82 f-zerox
@@ -97,7 +97,7 @@
 -910293dc2d23e0f5577af00e1067191227c1ea85 tabby
 -f726f8f75b022afd31d80f61b296fd40a2ab2316 timidity
 -8e7ad9f2432149c0c5387eefbaa4a262bc0cbe79 topaz-ffmpeg
--336c0907478d6f1da18b50b45698f27abe25a46c tormentnexus
++82a896d4f405a3005e497116fbaa3191ce8a218d tormentnexus (v0.9.0-beta-1698-g82a896d4f)
 -9c089fdff3b695182361ebaff7da529628c0f08c veilid_reddit_facebook
 -a3e1b795769acbc98dd76e2ab912ed17b853a147 vst_monster
 -01243dfd9ae9cee9a7c4df7da953109a8cc22c94 warp
