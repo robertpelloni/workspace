@@ -1,3 +1,10 @@
+## [5.13.7] - 2026-06-15
+
+### Added
+- Dual-Direction Merge Engine: forward-merged fwber (federation-hardening), bobtrader (crypto-assimilate), bg (jules-autopilot).
+- Reverse-merged main into fwber federation-hardening and bobtrader crypto-assimilate branches.
+- TormentNexus assimilation-pipeline already contained in main.
+
 ## [5.13.6] - 2026-06-15
 
 ### Added
