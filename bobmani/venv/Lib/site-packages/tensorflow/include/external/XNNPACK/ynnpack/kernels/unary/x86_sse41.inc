@@ -1,0 +1,5 @@
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse41, ceil_fp32_1x8_x86_sse41, ceil, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse41, cosine_fp32_1x8_x86_sse41, cosine, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse41, floor_fp32_1x8_x86_sse41, floor, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse41, round_fp32_1x8_x86_sse41, round, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse41, sine_fp32_1x8_x86_sse41, sine, nullptr, float32x1_t, float32x1_t)

@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Rakenduse arvustuse lisamise nupu silt",
+      "message": "Lisa arvustus"
+   },
+   "appUpdated": {
+      "description": "Silt rakenduse uuendamise teate jaoks",
+      "message": "Rakendus uuendatud"
+   },
+   "connect": {
+      "description": "Nupp silt ühendamiseks",
+      "message": "Ühenda"
+   },
+   "connectFromThisTab": {
+      "description": "Praeguse vahekaardi ühendamise nuppu silt",
+      "message": "Ühenda sellest vahekaardist"
+   },
+   "disconnect": {
+      "description": "Nupp lahutamiseks",
+      "message": "Lahuta"
+   },
+   "dismiss": {
+      "description": "Hoiatuse tühistamise tegevus",
+      "message": "Loobu"
+   },
+   "error": {
+      "description": "Märgis vea kuvamiseks",
+      "message": "Viga"
+   },
+   "focusConnectedTab": {
+      "description": "Nupp sildiga ühendatud vahekaardile fokusseerimiseks",
+      "message": "Fokusseeri ühendatud vahekaardile"
+   },
+   "invalidTab": {
+      "description": "Tõrketeade kehtetu vahekaardi jaoks",
+      "message": "Seda lehte ei saa automatiseerida. Palun proovige teist lehte."
+   },
+   "reviewDescription": {
+      "description": "Paluge kasutajal rakenduse kohta arvustust jätta",
+      "message": "Tere, mina olen $NAME$. Ma lõin $APP_NAME$, et aidata inimestel aega säästa ja oma ülesandeid automatiseerida. Kui teile meeldib seda kasutada, oleksin tänulik 5-tärni hinnangu eest, et aidata teistel $APP_NAME$ avastada. Suur tänu!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Täname kasutajat rakenduse kasutamise eest",
+      "message": "Tänan, et kasutad $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Kirjeldus seda vaatamiseks, mis on uus",
+      "message": "Vaata, mis on uut"
+   },
+   "signIn": {
+      "description": "Nupp sisselogimiseks",
+      "message": "Logi sisse"
+   },
+   "view": {
+      "description": "Nupp kiri uuenduse vaatamiseks",
+      "message": "Vaade"
+   }
+}

@@ -1,0 +1,30 @@
+id: watcher.monitorHealth
+meta:
+  name: HEALTH
+  icon: =func(watcher.icon)
+  title: =func(watcher.title)
+templates:
+  build: =func(watcher.buildHealthTemplates)
+  update: =func(watcher.updateHealthTemplate)
+inputs:
+  - page
+  - watcher.trigger
+  - trigger
+  - actions
+  - schedule
+steps:
+  - watcher.page
+  - watcher.navigate
+  - watcher.health
+  - watcher.compare
+  - type: watcher.screenshot
+    idle: true
+  - watcher.preview
+  - watcher.actions
+  - watcher.prune
+widgets:
+  value: value
+  graph: graph
+storage:
+  last: null
+  first: null

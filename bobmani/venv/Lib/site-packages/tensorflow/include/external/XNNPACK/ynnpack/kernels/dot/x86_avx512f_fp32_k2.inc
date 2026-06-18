@@ -1,0 +1,8 @@
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_1x32x2_1x8x2_avx512f, 1, 32, 2, 1, 8, 2, /*flags=*/0, float, float, float)
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_2x32x2_1x8x2_avx512f, 2, 32, 2, 1, 8, 2, /*flags=*/0, float, float, float)
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_3x32x2_1x8x2_avx512f, 3, 32, 2, 1, 8, 2, /*flags=*/0, float, float, float)
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_4x32x2_1x8x2_avx512f, 4, 32, 2, 1, 8, 2, /*flags=*/0, float, float, float)
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_5x32x2_1x8x2_avx512f, 5, 32, 2, 1, 8, 2, /*flags=*/0, float, float, float)
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_4x16x2_1x8x2_avx512f, 4, 16, 2, 1, 8, 2, /*flags=*/0, float, float, float)
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_4x8x2_1x8x2_avx512f, 4, 8, 2, 1, 8, 2, /*flags=*/0, float, float, float)
+YNN_DOT_KERNEL(arch_flag::avx512f, dot_fp32_8x8x2_1x8x2_avx512f, 8, 8, 2, 1, 8, 2, /*flags=*/0, float, float, float)

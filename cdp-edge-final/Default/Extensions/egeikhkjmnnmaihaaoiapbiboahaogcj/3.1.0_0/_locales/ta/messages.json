@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "அனைத்து நகல் தாவல்களையும் மூடு"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "நகல் தாவல்களை மூடு"
+   }
+}

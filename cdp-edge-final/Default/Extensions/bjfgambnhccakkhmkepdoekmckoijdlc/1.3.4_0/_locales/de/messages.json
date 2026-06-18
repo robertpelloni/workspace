@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Beschriftung für die Schaltfläche, um eine Bewertung für die Anwendung hinzuzufügen",
+      "message": "Eine Bewertung hinzufügen"
+   },
+   "appUpdated": {
+      "description": "Beschriftung für den Hinweis auf die Aktualisierung der App",
+      "message": "App aktualisiert"
+   },
+   "connect": {
+      "description": "Beschriftung für Schaltfläche zum Verbinden",
+      "message": "Verbinden"
+   },
+   "connectFromThisTab": {
+      "description": "Beschriftung für die Schaltfläche, um von der aktuellen Registerkarte zu verbinden",
+      "message": "Verbindung von diesem Tab herstellen"
+   },
+   "disconnect": {
+      "description": "Beschriftung für Schaltfläche zum Trennen",
+      "message": "Trennen"
+   },
+   "dismiss": {
+      "description": "Aktion zum Schließen des Hinweises",
+      "message": "Schließen"
+   },
+   "error": {
+      "description": "Bezeichnung zur Anzeige eines Fehlers",
+      "message": "Fehler"
+   },
+   "focusConnectedTab": {
+      "description": "Beschriftung für die Schaltfläche, um den verbundenen Tab zu fokussieren",
+      "message": "Fokus auf verbundenen Tab"
+   },
+   "invalidTab": {
+      "description": "Fehlermeldung für ungültigen Tab",
+      "message": "Diese Seite kann nicht automatisiert werden. Bitte versuchen Sie es mit einer anderen Seite."
+   },
+   "reviewDescription": {
+      "description": "Bitten Sie den Benutzer, eine Bewertung für die Anwendung abzugeben",
+      "message": "Hallo, ich bin $NAME$. Ich habe $APP_NAME$ erstellt, um Menschen zu helfen, Zeit zu sparen und ihre Aufgaben zu automatisieren. Wenn Sie es gerne verwenden, würde ich mich über eine 5-Sterne-Bewertung freuen, um anderen zu helfen, $APP_NAME$ zu entdecken. Vielen Dank!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Dankt dem Benutzer für die Nutzung der Anwendung",
+      "message": "Danke, dass Sie $APP_NAME$ verwenden",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Beschriftung für die Beschreibung, um zu sehen, was neu ist",
+      "message": "Sieh dir an, was neu ist"
+   },
+   "signIn": {
+      "description": "Beschriftung für die Schaltfläche zur Anmeldung",
+      "message": "Anmelden"
+   },
+   "view": {
+      "description": "Bezeichnung für die Schaltfläche zur Anzeige des Updates",
+      "message": "Ansehen"
+   }
+}

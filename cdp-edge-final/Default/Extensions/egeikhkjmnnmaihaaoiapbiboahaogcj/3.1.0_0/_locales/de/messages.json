@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Alle doppelten Tabs schließen"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Doppelte Tabs schließen"
+   }
+}

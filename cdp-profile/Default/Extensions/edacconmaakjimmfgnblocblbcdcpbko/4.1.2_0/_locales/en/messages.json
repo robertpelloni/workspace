@@ -1,0 +1,191 @@
+{
+   "actionTimeframe_actionNUnitOfTimeAgo": {
+      "message": "$ACTION$ $AMOUNT_OF_TIME$ $UNIT_OF_TIME$ ago",
+      "placeholders": {
+         "AMOUNT_OF_TIME": {
+            "content": "$2",
+            "example": "5"
+         },
+         "UNIT_OF_TIME": {
+            "content": "$3",
+            "example": "minutes"
+         },
+         "action": {
+            "content": "$1",
+            "example": "updated"
+         }
+      }
+   },
+   "actionTimeframe_momentsAgo": {
+      "message": "$ACTION$ moments ago",
+      "placeholders": {
+         "action": {
+            "content": "$1",
+            "example": "updated"
+         }
+      }
+   },
+   "actionTimeframe_moreThanAYearAgo": {
+      "message": "$ACTION$ more than a year ago",
+      "placeholders": {
+         "action": {
+            "content": "$1",
+            "example": "updated"
+         }
+      }
+   },
+   "action_recorded": {
+      "message": "Recorded"
+   },
+   "action_refreshed": {
+      "message": "Refreshed"
+   },
+   "action_saved": {
+      "message": "Saved"
+   },
+   "action_updated": {
+      "message": "Updated"
+   },
+   "date_day": {
+      "message": "Day"
+   },
+   "date_dayname": {
+      "message": "Day Name"
+   },
+   "date_month": {
+      "message": "Month"
+   },
+   "date_time": {
+      "message": "Time"
+   },
+   "date_year": {
+      "message": "Year"
+   },
+   "linkset": {
+      "message": "Session"
+   },
+   "linkset_type_currentSession": {
+      "message": "Current Session"
+   },
+   "linkset_type_currentSessions": {
+      "message": "Current Sessions"
+   },
+   "linkset_type_previousSession": {
+      "message": "Previous Session"
+   },
+   "linkset_type_previousSessions": {
+      "message": "Previous Sessions"
+   },
+   "linkset_type_savedLinkset": {
+      "message": "Saved Session"
+   },
+   "linkset_type_savedLinksets": {
+      "message": "Saved Sessions"
+   },
+   "linksets": {
+      "message": "$COUNT$ Sessions",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "7"
+         }
+      }
+   },
+   "misc_completed": {
+      "message": "Completed"
+   },
+   "misc_loading": {
+      "description": "4 periods are relevant here",
+      "message": "Loading . . . ."
+   },
+   "misc_mostRecent": {
+      "message": "most recent"
+   },
+   "misc_oldSessions": {
+      "message": "Old Sessions"
+   },
+   "misc_session": {
+      "message": "Session"
+   },
+   "misc_sessions": {
+      "message": "Sessions"
+   },
+   "misc_unknown": {
+      "message": "Unknown"
+   },
+   "timeframe_inTheFuture": {
+      "message": "In the Future"
+   },
+   "timeframe_lastMonth": {
+      "message": "Last Month"
+   },
+   "timeframe_lastWeek": {
+      "message": "Last Week"
+   },
+   "timeframe_lastYear": {
+      "message": "Last Year"
+   },
+   "timeframe_older": {
+      "message": "Older"
+   },
+   "timeframe_thisWeek": {
+      "message": "This Week"
+   },
+   "timeframe_thisYear": {
+      "message": "This Year"
+   },
+   "timeframe_threeWeeksAgo": {
+      "message": "Three Weeks Ago"
+   },
+   "timeframe_today": {
+      "message": "Today"
+   },
+   "timeframe_twoWeeksAgo": {
+      "message": "Two Weeks Ago"
+   },
+   "timeframe_yesterday": {
+      "message": "Yesterday"
+   },
+   "unitOfTime_day": {
+      "message": "day"
+   },
+   "unitOfTime_days": {
+      "message": "days"
+   },
+   "unitOfTime_hour": {
+      "message": "hour"
+   },
+   "unitOfTime_hours": {
+      "message": "hours"
+   },
+   "unitOfTime_minute": {
+      "message": "minute"
+   },
+   "unitOfTime_minutes": {
+      "message": "minutes"
+   },
+   "unitOfTime_month": {
+      "message": "month"
+   },
+   "unitOfTime_months": {
+      "message": "months"
+   },
+   "unitOfTime_second": {
+      "message": "second"
+   },
+   "unitOfTime_seconds": {
+      "message": "seconds"
+   },
+   "unitOfTime_week": {
+      "message": "week"
+   },
+   "unitOfTime_weeks": {
+      "message": "weeks"
+   },
+   "unitOfTime_year": {
+      "message": "year"
+   },
+   "unitOfTime_years": {
+      "message": "years"
+   }
+}

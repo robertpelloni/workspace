@@ -1,0 +1,7 @@
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx, add_fp32_1x16_x86_avx, add, nullptr, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx, subtract_fp32_1x16_x86_avx, subtract, nullptr, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx, multiply_fp32_1x16_x86_avx, multiply, nullptr, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx, divide_fp32_1x16_x86_avx, divide, nullptr, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx, copysign_fp32_1x16_x86_avx, copysign, nullptr, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx, max_fp32_1x16_x86_avx, max, nullptr, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx, min_fp32_1x16_x86_avx, min, nullptr, float32x1_t, float32x1_t, float32x1_t)

@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Oznaka za gumb za dodajanje mnenja o aplikaciji",
+      "message": "Dodaj mnenje"
+   },
+   "appUpdated": {
+      "description": "Oznaka za opozorilo o posodobitvi aplikacije",
+      "message": "Aplikacija posodobljena"
+   },
+   "connect": {
+      "description": "Oznaka za gumb za povezavo",
+      "message": "Poveži"
+   },
+   "connectFromThisTab": {
+      "description": "Oznaka za gumb za povezavo iz trenutnega zavihka",
+      "message": "Poveži se iz tega zavihka"
+   },
+   "disconnect": {
+      "description": "Oznaka za gumb za odklop",
+      "message": "Odklopi"
+   },
+   "dismiss": {
+      "description": "Dejanje za opustitev opozorila",
+      "message": "Opusti"
+   },
+   "error": {
+      "description": "Oznaka za prikaz napake",
+      "message": "Napaka"
+   },
+   "focusConnectedTab": {
+      "description": "Oznaka za gumb za osredotočenje na povezan zavihek",
+      "message": "Osredotoči se na povezan zavihek"
+   },
+   "invalidTab": {
+      "description": "Sporočilo o napaki za neveljaven zavihek",
+      "message": "Te strani ni mogoče avtomatizirati. Prosimo, poskusite drugo stran."
+   },
+   "reviewDescription": {
+      "description": "Uporabnika prosite, da pusti mnenje za aplikacijo",
+      "message": "Živjo, jaz sem $NAME$. Ustvaril sem $APP_NAME$, da bi ljudem pomagal prihraniti čas in avtomatizirati njihove naloge. Če vam je všeč uporaba, bi bil hvaležen za oceno s 5 zvezdicami, da lahko tudi drugi odkrijejo $APP_NAME$. Najlepša hvala!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Zahvalite se uporabniku za uporabo aplikacije",
+      "message": "Hvala za uporabo $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Oznaka za opis, da vidite, kaj je novega",
+      "message": "Poglejte, kaj je novega"
+   },
+   "signIn": {
+      "description": "Oznaka za gumb za prijavo",
+      "message": "Prijava"
+   },
+   "view": {
+      "description": "Oznaka za gumb za ogled posodobitve",
+      "message": "Poglej"
+   }
+}

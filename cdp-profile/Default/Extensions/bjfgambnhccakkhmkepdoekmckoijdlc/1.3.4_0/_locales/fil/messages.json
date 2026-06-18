@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Label para sa button na magdagdag ng review para sa aplikasyon",
+      "message": "Magdagdag ng Review"
+   },
+   "appUpdated": {
+      "description": "Label para sa alerto ng pag-update ng app",
+      "message": "Na-update ang app"
+   },
+   "connect": {
+      "description": "Label para sa pindutan upang kumonekta",
+      "message": "Ikonekta"
+   },
+   "connectFromThisTab": {
+      "description": "Label para sa button upang kumonekta mula sa kasalukuyang tab",
+      "message": "Kumonekta mula sa tab na ito"
+   },
+   "disconnect": {
+      "description": "Label para sa pindutan na idiskonekta",
+      "message": "Idiskonekta"
+   },
+   "dismiss": {
+      "description": "Aksyon upang i-dismiss ang alerto",
+      "message": "I-dismiss"
+   },
+   "error": {
+      "description": "Label para sa pagpapakita ng error",
+      "message": "Error"
+   },
+   "focusConnectedTab": {
+      "description": "Label para sa button upang tumutok sa konektadong tab",
+      "message": "Tumutok sa konektadong tab"
+   },
+   "invalidTab": {
+      "description": "Mensahe ng error para sa hindi wastong tab",
+      "message": "Ang page na ito ay hindi maaring i-automate. Mangyaring subukan ang ibang page."
+   },
+   "reviewDescription": {
+      "description": "Hingin ang user na mag-iwan ng review para sa application",
+      "message": "Hi, ako si $NAME$. Nilikha ko ang $APP_NAME$ upang makatulong sa mga tao na makatipid ng oras at i-automate ang kanilang mga gawain. Kung nag-eenjoy ka sa paggamit nito, ikagagalak ko ang 5-star na rating upang matulungan ang iba na matuklasan ang $APP_NAME$. Maraming salamat!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Pasalamatan ang gumagamit sa paggamit ng aplikasyon",
+      "message": "Salamat sa paggamit ng $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Label para sa deskripsyon na makita kung ano ang bago",
+      "message": "Tingnan kung ano ang bago"
+   },
+   "signIn": {
+      "description": "Label para sa pindutan ng pag-sign in",
+      "message": "Mag-sign in"
+   },
+   "view": {
+      "description": "Label para sa button upang tingnan ang update",
+      "message": "Tingnan"
+   }
+}

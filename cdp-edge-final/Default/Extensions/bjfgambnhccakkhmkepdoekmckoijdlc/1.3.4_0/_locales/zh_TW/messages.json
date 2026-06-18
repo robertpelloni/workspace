@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "用於為應用程式新增評論的按鈕標籤",
+      "message": "新增評論"
+   },
+   "appUpdated": {
+      "description": "應用程式更新警示的標籤",
+      "message": "應用程式已更新"
+   },
+   "connect": {
+      "description": "連接的按鈕標籤",
+      "message": "連接"
+   },
+   "connectFromThisTab": {
+      "description": "按鈕標籤，用於從當前標籤頁連接",
+      "message": "從此標籤頁連接"
+   },
+   "disconnect": {
+      "description": "用於斷開連接按鈕的標籤",
+      "message": "斷開連接"
+   },
+   "dismiss": {
+      "description": "動作以關閉警報",
+      "message": "關閉"
+   },
+   "error": {
+      "description": "用於顯示錯誤的標籤",
+      "message": "錯誤"
+   },
+   "focusConnectedTab": {
+      "description": "專注於已連接標籤的按鈕標籤",
+      "message": "專注於已連接的標籤"
+   },
+   "invalidTab": {
+      "description": "無效標籤頁的錯誤訊息",
+      "message": "此頁面無法自動化。請嘗試不同的頁面。"
+   },
+   "reviewDescription": {
+      "description": "請用戶為應用留下評論",
+      "message": "嗨，我是$NAME$。我創建了$APP_NAME$來幫助人們節省時間和自動化他們的任務。如果你喜歡使用它，請給予5星評分來幫助其他人發現$APP_NAME$。非常感謝！",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "感謝用戶使用本應用程式",
+      "message": "感謝使用$APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "描述查看新內容的標籤",
+      "message": "查看新內容"
+   },
+   "signIn": {
+      "description": "用於登入按鈕的標籤",
+      "message": "登入"
+   },
+   "view": {
+      "description": "查看更新按鈕的標籤",
+      "message": "查看"
+   }
+}

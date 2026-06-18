@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Összes duplikált lap bezárása"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Duplikált lapok bezárása"
+   }
+}

@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Cerrar todas las pestañas duplicadas"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Cerrar pestañas duplicadas"
+   }
+}

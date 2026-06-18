@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Options | CopyAllURLs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Copy All URLs for Google Chrome - preferences panel">
+<meta name="author" content="Vincent Paré">
+
+<link href="vendor/twitter-bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body{background:#F0F0F0;}
+.hero-unit{background-color:#E9E9E9;}
+
+.container{width:700px;}
+.well{background-color:#DFDFDF;}
+.well .well{background-color:#e5e5e5; margin:0;}
+.storytitle{padding-left:2px; margin-top:40px;}
+.storytitle.first{font-size:26px; margin-bottom:5px; margin-top:0px;}
+
+#format_html_advanced span{display:inline-block; width:64px;}
+
+.settings h3{margin-top:30px;}
+.settings h3:first-child{margin-top:0;}
+
+#misc>div {margin-top:10px;}
+#misc .help {color:grey; font-size:9pt; margin:-5px 0 0 18px;}
+#misc>div.select {margin-top:16px;}
+#misc>div.select label {display:inline-block; position:relative; top:-3px; margin:0 0 0 18px;}
+
+#donate {margin-top:14px;}
+#donate>.container {position:relative; height:300px;}
+#donate>.container>.well {position:absolute;}
+#donate>.container>.well>.label {position:absolute; top:-4px; left:-4px;}
+#donate-paypal  {top:38px;  left:52px;}
+#donate-flattr  {top:148px; left:27px;}
+#donate-bitcoin {top:10px;  left:240px;}
+.paypal-donate form, #donate-paypal form {margin:0;}
+
+#recently-updated h3 {font-size:14px; margin:0;}
+#recently-updated a {color:#DF0000;}
+</style>
+
+<script type="text/javascript" src="vendor/jquery-1.7.2_min.js"></script>
+<script type="text/javascript" src="options.js"></script>
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+	<div class="container">
+
+		<!-- Main hero unit for a primary marketing message or call to action -->
+		<div class="hero-unit" style="position:relative;">
+			<img src="img/umbrella_128.png" style="float:left; margin:-20px 20px 0 0;">
+			<h1 style="font-size:24pt; margin-bottom:5px;">Copy All URLs <small>for Google Chrome</small></h1>
+			<p>Options panel</p>
+			<div><span class="badge badge-inverse" id="cpau_version_label">Version 2.0</span></div>
+			
+			<div class="paypal-donate" style="position:absolute; bottom:53px; left:469px;">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+				">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</div>
+		</div>
+		
+		<div class="alert alert-info" id="recently-updated" style="display:none;"></div>
+		
+		<h2 class="storytitle first" style="float:left;">Settings</h2>
+		<a id="reset_settings" class="btn btn-danger" style="position:relative; top:4px; margin-left:10px;">Reset settings</a>
+		<div class="well settings" style="clear:left;">
+			<h3>Format</h3>
+			<div id="formats">
+				<label class="radio"><input type="radio" name="format" id="format_text" value="text"> Text</label>
+				<label class="radio"><input type="radio" name="format" id="format_html" value="html"> HTML</label>
+				<label class="radio"><input type="radio" name="format" id="format_json" value="json"> JSON</label>
+				<label class="radio"><input type="radio" name="format" id="format_custom" value="custom"> Custom</label>
+			</div>
+			<div class="well" id="format_html_advanced" style="display:none;">
+				<h4 style="margin-bottom:5px;">Anchor</h4>
+				<label class="radio">
+					<input type="radio" name="format_html_anchor" id="format_html_anchor_url" value="url">
+					<span>Page <b>URL</b></span>
+					, ex: <code>&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;</code>
+				</label>
+				<label class="radio">
+					<input type="radio" name="format_html_anchor" id="format_html_anchor_title" value="title">
+					<span>Page <b>title</b></span>
+					, ex: <code>&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;</code>
+				</label>
+			</div>
+			<div class="well" id="format_custom_advanced" style="display:none;">
+				<h4 style="margin-bottom:5px;">Custom format</h4>
+				<p>Set your own row format by writing the template in this textarea.<br>
+				Use <code>$title</code> and <code>$url</code> variables.<br>
+				Don't forget to add a new line at the end, instead you'll get all copied data into a single line !</p>
+				<textarea style="width:500px; height:100px;"></textarea>
+				<div>Example : <code style="display:table-cell; padding:5px 8px;">&lt;a href=&quot;$url&quot;&gt;$url&lt;/a&gt; - $title&lt;br/&gt;<br><br></code></div>
+			</div>
+			
+			<h3>Miscellaneous</h3>
+			<div id="misc">
+				<div>
+					<label class="checkbox"><input type="checkbox" name="intelligent_paste" id="intelligent_paste" value="on"> Intelligent paste</label>
+					<div class="help">Extract URLs from raw text when using paste feature (instead of processing pasted text line by line, with 1 line = 1 url). The only pitfall using this feature is that it doesn't get &quot;special urls&quot; like ones beginning with <code>file:///</code> or <code>chrome://</code>...</div>
+				</div>
+				<div>
+					<label class="checkbox"><input type="checkbox" name="highlighted_tab_only" id="highlighted_tab_only" value="on"> 
+					Copy highlighted tabs only</label>
+					<div class="help">Copy only selected tabs (you can select multiple tabs by holding the <kbd>Ctrl</kbd> key when clicking a tab).</div>
+				</div>
+				<div>
+					<label class="checkbox"><input type="checkbox" name="walk_all_windows" id="walk_all_windows" value="on"> 
+					Copy tabs from all windows</label>
+					<div class="help">Grab tabs URL from all chrome windows, not only the current one.</div>
+				</div>
+				<div class="select">
+					<label>Default action : </label>
+					<select name="default_action" id="default_action">
+						<option value="menu">Let me choose (show menu)</option>
+						<option value="copy">Copy</option>
+						<option value="paste">Paste</option>
+					</select>
+					<div class="help">Choose what to do when clicking the umbrella icon. Specially designed for lazy people who use only one feature (copy or paste) and want to fire this feature directly with one click, without showing the drop down menu...</div>
+				</div>
+				<div class="select">
+					<label>MIME type (copy) : </label>
+					<select name="mime" id="mime">
+						<option value="plaintext">Plain text</option>
+						<option value="html">HTML</option>
+					</select>
+					<div class="help">Use HTML MIME type to copy data as HTML rather than plain text, allowing to embed url into clickable links when pasting on word or an email client. This only affects HTML and Custom formats.</div>
+				</div>
+			</div>
+		</div>
+		
+		<h2 class="storytitle">How to use ?</h2>
+		<div class="well">
+			Simply click the umbrella icon, and choose <b>Copy</b> or <b>Paste</b> !<br>
+			<br>
+			You can also define keyboard shorcut for copy and paste feature on chrome extensions page (<a href="chrome://extensions/" class="open-link-via-chrome-api on-new-tab" data-galinkid="extensions howtouse">chrome://extensions/</a>).
+		</div>
+		
+		<h2 class="storytitle">About</h2>
+		<div class="well">
+			<p>If you have any suggestion about this plugin, you can mail me at <a id="contact-link" class="btn btn-info" style="margin-top:-5px;" href="mailto:sp@mb.ot"><i class="icon-envelope icon-white"></i> <span>{loading}</span></a></p>
+			
+			<div id="donate">
+				<p>If you like this extension and want to support its developement and maintenance, you can give some money ^^ :</p>
+				
+				<div class="container">
+					<div class="well" id="donate-paypal">
+						<span class="label">Paypal</span>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+						">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+					
+					<div class="well" id="donate-flattr">
+						<span class="label">Flattr</span>
+						<a href="https://flattr.com/submit/auto?user_id=finalclap&url=https%3A%2F%2Fgithub.com%2Fvincepare%2FCopyAllUrl_Chrome&title=Copy+All+Urls&description=Copy+All+Urls+extension+for+Google+Chrome&tags=chrome,extension,frenchtech&category=software">
+							<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr our API Documentation">
+						</a>
+					</div>
+					
+					<div class="well" id="donate-bitcoin">
+						<span class="label">Bitcoin</span>
+						<p>Bitcoin address : <code>3G5uTti2JPAT738uDeQXjrN7tUj2NZjt6M</code></p>
+						<img src="https://vincepare.github.io/img/qrcode-bitcoin-3G5uTti2JPAT738uDeQXjrN7tUj2NZjt6M.png" alt="qrcode for bitcoin address 3G5uTti2JPAT738uDeQXjrN7tUj2NZjt6M">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<h2 class="storytitle" style="font-size:22px;">FAQ</h2>
+		<div style="padding-left:3px;">
+			<h6>Can CopyAllURLs copy tab history ?</h6>
+			<p>Unfortunatly, since people at Google Chrome &amp; Chromium projects don't want to give access to tab history via Chrome API, it is not possible to do this -_-'.</p>
+			<p>You can read this topic for more information : <a href="http://code.google.com/p/chromium/issues/detail?id=41321" data-galinkid="issue 41321 history faq">http://code.google.com/p/chromium/issues/detail?id=41321</a>.</p>
+			<br>
+			
+			<h6>Can I use keyboard shortcuts (hotkeys) ?</h6>
+			<p>Yes you can, go to chrome extensions management (<a href="chrome://extensions/" class="open-link-via-chrome-api on-new-tab" data-galinkid="extensions faq">chrome://extensions/</a>), click &quot;Configure commands&quot; at the bottom right to show a popin where you can customize shortcuts for extensions that handles it (including Copy All Urls). More <a href="http://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121" data-galinkid="lifehacker command faq">here</a> and <a href="http://www.howtogeek.com/127162/how-to-create-custom-keyboard-shortcuts-for-browser-actions-and-extensions-in-google-chrome/" data-galinkid="howtogeek command faq">there</a>.</p>
+			<br>
+			
+			<h6>Why the hell is the icon an umbrella ?</h6>
+			<p>I don't really know, I was hanging around at <a href="http://iconspedia.com/" data-galinkid="iconspedia icon faq">iconspedia.com</a> and I found this umbrella icon.<br>
+			It was looking good so I used it for CopyAllURLs chrome extension !</p>
+		</div>
+		<hr>
+
+		<footer>
+			<p>&copy; <span id="copyright-year-footer">2021</span> Vincent Paré - Made in France - <a href="https://vincepare.github.io/CopyAllUrl_Chrome/" data-galinkid="changelog footer">Changelog</a></p>
+		</footer>
+
+	</div><!-- /container -->
+</body>
+</html>

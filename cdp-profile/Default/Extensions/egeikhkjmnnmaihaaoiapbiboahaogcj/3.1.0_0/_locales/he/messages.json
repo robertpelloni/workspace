@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "סגור את כל הכרטיסיות הכפולות"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "סגור כרטיסיות כפולות"
+   }
+}

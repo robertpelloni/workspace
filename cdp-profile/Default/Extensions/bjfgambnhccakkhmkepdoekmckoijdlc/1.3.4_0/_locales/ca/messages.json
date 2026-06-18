@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Etiqueta per al botó per afegir una ressenya per a l'aplicació",
+      "message": "Afegeix una ressenya"
+   },
+   "appUpdated": {
+      "description": "Etiqueta per a l'alerta d'aplicació actualitzada",
+      "message": "Aplicació actualitzada"
+   },
+   "connect": {
+      "description": "Etiqueta per al botó de connectar",
+      "message": "Connecta"
+   },
+   "connectFromThisTab": {
+      "description": "Etiqueta per al botó per connectar des de la pestanya actual",
+      "message": "Connecta des d'aquesta pestanya"
+   },
+   "disconnect": {
+      "description": "Etiqueta per al botó per desconnectar",
+      "message": "Desconnectar"
+   },
+   "dismiss": {
+      "description": "Acció per descartar l'alerta",
+      "message": "Descartar"
+   },
+   "error": {
+      "description": "Etiqueta per mostrar un error",
+      "message": "Error"
+   },
+   "focusConnectedTab": {
+      "description": "Etiqueta per al botó per centrar la pestanya connectada",
+      "message": "Centra la pestanya connectada"
+   },
+   "invalidTab": {
+      "description": "Missatge d'error per a pestanya no vàlida",
+      "message": "Aquesta pàgina no es pot automatitzar. Si us plau, prova amb una altra pàgina."
+   },
+   "reviewDescription": {
+      "description": "Demanar a l'usuari que deixi una ressenya per a l'aplicació",
+      "message": "Hola, soc $NAME$. Vaig crear $APP_NAME$ per ajudar a la gent a estalviar temps i automatitzar les seves tasques. Si gaudeixes utilitzant-la, agrairia una valoració de 5 estrelles per ajudar altres a descobrir $APP_NAME$. Moltes gràcies!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Agraïment a l'usuari per utilitzar l'aplicació",
+      "message": "Gràcies per utilitzar $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Etiqueta per a la descripció per veure les novetats",
+      "message": "Descobreix les novetats"
+   },
+   "signIn": {
+      "description": "Etiqueta per al botó d'iniciar sessió",
+      "message": "Inicia sessió"
+   },
+   "view": {
+      "description": "Etiqueta per al botó per veure l'actualització",
+      "message": "Veure"
+   }
+}

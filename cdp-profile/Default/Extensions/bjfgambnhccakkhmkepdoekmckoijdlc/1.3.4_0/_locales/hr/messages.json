@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Oznaka za gumb za dodavanje recenzije za aplikaciju",
+      "message": "Dodaj recenziju"
+   },
+   "appUpdated": {
+      "description": "Oznaka za upozorenje o ažuriranju aplikacije",
+      "message": "Ažuriranje aplikacije"
+   },
+   "connect": {
+      "description": "Oznaka za gumb za povezivanje",
+      "message": "Poveži"
+   },
+   "connectFromThisTab": {
+      "description": "Oznaka za gumb za povezivanje iz trenutne kartice",
+      "message": "Poveži iz ove kartice"
+   },
+   "disconnect": {
+      "description": "Oznaka za gumb za prekid veze",
+      "message": "Prekini vezu"
+   },
+   "dismiss": {
+      "description": "Radnja za odbacivanje upozorenja",
+      "message": "Odbaci"
+   },
+   "error": {
+      "description": "Oznaka za prikazivanje pogreške",
+      "message": "Pogreška"
+   },
+   "focusConnectedTab": {
+      "description": "Oznaka za gumb za fokusiranje na povezanu karticu",
+      "message": "Fokusiraj povezanu karticu"
+   },
+   "invalidTab": {
+      "description": "Poruka o pogrešci za nevažeći tab",
+      "message": "Ova stranica ne može biti automatizirana. Molimo pokušajte s drugom stranicom."
+   },
+   "reviewDescription": {
+      "description": "Traži od korisnika da ostavi recenziju za aplikaciju",
+      "message": "Pozdrav, ja sam $NAME$. Kreirao sam $APP_NAME$ kako bih pomogao ljudima uštedjeti vrijeme i automatizirati njihove zadatke. Ako uživaš u korištenju, bio bih zahvalan na ocjeni od 5 zvjezdica kako bi i drugi mogli otkriti $APP_NAME$. Puno hvala!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Zahvalite korisniku što koristi aplikaciju",
+      "message": "Hvala što koristite $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Oznaka za opis da vidite što je novo",
+      "message": "Pogledajte što je novo"
+   },
+   "signIn": {
+      "description": "Oznaka za gumb za prijavu",
+      "message": "Prijavi se"
+   },
+   "view": {
+      "description": "Oznaka za tipku za prikaz ažuriranja",
+      "message": "Prikaži"
+   }
+}

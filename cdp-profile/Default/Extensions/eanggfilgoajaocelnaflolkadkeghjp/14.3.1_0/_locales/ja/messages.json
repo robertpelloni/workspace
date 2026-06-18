@@ -1,0 +1,8 @@
+{
+   "ext_description": {
+      "message": "Chrome用のAIエージェント。どのウェブサイトでもChatGPT / Claudeのコパイロット。AIで自動化、検索、要約、翻訳、執筆。"
+   },
+   "ext_name": {
+      "message": "HARPA AI | ChatGPT, Claude, Gemini, DeepSeek & Perplexity 自動化エージェント"
+   }
+}

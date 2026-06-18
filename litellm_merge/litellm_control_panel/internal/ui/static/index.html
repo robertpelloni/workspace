@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LiteLLM Control Panel</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>LiteLLM Control Panel</h1>
+    <div id="status">Loading...</div>
+
+    <div style="margin-top: 20px;">
+        <button class="tab-btn active" onclick="showTab('rankings-tab')">Rankings</button>
+        <button class="tab-btn" onclick="showTab('metrics-tab')">Metrics</button>
+        <button class="tab-btn" onclick="showTab('logs-tab')">Logs</button>
+        <button class="tab-btn" onclick="showTab('savings-tab')">Savings</button>
+        <button class="tab-btn" onclick="showTab('query-tab')">Quick Query</button>
+        <button class="tab-btn" onclick="showTab('comparison-tab')">Comparison</button>
+        <button class="tab-btn" onclick="showTab('config-tab')">Configuration</button>
+        <button class="tab-btn" onclick="showTab('maintenance-tab')">Maintenance</button>
+    </div>
+
+    <div id="rankings-tab" class="tab-content active">
+        <h2>Model Rankings</h2>
+        <input type="text" id="ranking-search" style="width: 100%; margin-bottom: 10px; background: #222; color: #eee; border: 1px solid #444; padding: 10px; border-radius: 4px;" placeholder="Search models..." onkeyup="filterRankings()">
+        <table id="rankings">
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Provider</th>
+                <th>Score</th>
+                <th>Latency (TTFT)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="metrics-tab" class="tab-content">
+        <h2>Stability Metrics</h2>
+        <div style="height: 300px; margin-bottom: 20px;">
+            <canvas id="stabilityChart"></canvas>
+        </div>
+        <table id="metrics">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Queries/Min (QPM)</th>
+                <th>Tokens/Sec (TPS)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="logs-tab" class="tab-content">
+        <h2>Engine Logs</h2>
+        <input type="text" id="log-search" style="width: 100%; margin-bottom: 10px; background: #222; color: #eee; border: 1px solid #444; padding: 10px; border-radius: 4px;" placeholder="Filter logs..." onkeyup="filterLogs()">
+        <div id="logs"></div>
+    </div>
+
+    <div id="query-tab" class="tab-content">
+        <h2>Quick Query</h2>
+        <div style="background: #333; padding: 20px; border-radius: 8px;">
+            <div id="chat-output" style="height: 300px; overflow-y: scroll; background: #000; color: #eee; padding: 15px; margin-bottom: 10px; border-radius: 4px; font-family: serif; white-space: pre-wrap;"></div>
+            <div style="display: flex;">
+                <input type="text" id="chat-input" style="flex-grow: 1; background: #222; color: #eee; border: 1px solid #444; padding: 10px; border-radius: 4px;" placeholder="Ask anything to the primary model...">
+                <button class="action" style="background: #4caf50; margin-left: 10px;" onclick="sendQuickQuery()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="providers-tab" class="tab-content">
+        <h2>Provider Health (24h)</h2>
+        <div style="height: 300px; margin-bottom: 20px;">
+            <canvas id="providerChart"></canvas>
+        </div>
+        <table id="providers">
+            <thead>
+                <tr>
+                    <th>Provider</th>
+                    <th>Avg Latency</th>
+                    <th>Success Rate</th>
+                    <th>Enabled</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="savings-tab" class="tab-content">
+        <h2>USD Cost Savings</h2>
+        <div style="background: #333; padding: 40px; border-radius: 8px; text-align: center;">
+            <div style="font-size: 24px; color: #aaa;">Total Estimated Savings</div>
+            <div id="total-savings" style="font-size: 64px; color: #4caf50; font-weight: bold; margin-top: 10px;">$0.00</div>
+        </div>
+    </div>
+
+    <div id="config-tab" class="tab-content">
+        <h2>LiteLLM Configuration</h2>
+        <textarea id="config-editor" style="width: 100%; height: 500px; background: #222; color: #eee; font-family: monospace; padding: 10px; border: 1px solid #444; border-radius: 4px;"></textarea>
+        <button class="action" style="background: #4caf50; margin-top: 10px;" onclick="saveConfig()">Save Configuration</button>
+    </div>
+
+    <div id="comparison-tab" class="tab-content">
+        <h2>Model Comparison</h2>
+        <div style="margin-bottom: 20px;">
+            <textarea id="prompt" style="width: 100%; height: 100px; background: #222; color: #eee; border: 1px solid #444; padding: 10px; border-radius: 4px;" placeholder="Enter prompt to compare top models..."></textarea>
+            <button class="action" style="background: #2196f3; margin-top: 10px;" onclick="compareModels()">Send Prompt</button>
+        </div>
+        <div id="comparison-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+            <div class="model-box">
+                <h3 id="m1-name">Model 1</h3>
+                <div id="m1-output" style="white-space: pre-wrap; font-family: serif;"></div>
+            </div>
+            <div class="model-box">
+                <h3 id="m2-name">Model 2</h3>
+                <div id="m2-output" style="white-space: pre-wrap; font-family: serif;"></div>
+            </div>
+            <div class="model-box">
+                <h3 id="m3-name">Model 3</h3>
+                <div id="m3-output" style="white-space: pre-wrap; font-family: serif;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="maintenance-tab" class="tab-content">
+        <h2>System Maintenance</h2>
+        <div style="background: #333; padding: 20px; border-radius: 8px;">
+            <p>Clear manual model skips (24h duration):</p>
+            <button class="action" onclick="doAction('/api/maintenance/clear-skips')">Clear Skip List</button>
+
+            <p style="margin-top: 20px;">Reset all model and provider statistics (latency history, failure counts):</p>
+            <button class="action" onclick="doAction('/api/maintenance/reset-stats')">Reset All Stats</button>
+
+            <p style="margin-top: 20px;">Clear model blacklist:</p>
+            <button class="action" onclick="doAction('/api/maintenance/clear-blacklist')">Clear Blacklist</button>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

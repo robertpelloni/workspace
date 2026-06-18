@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Затваряне на всички дублирани раздели"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Затваряне на дублирани раздели"
+   }
+}

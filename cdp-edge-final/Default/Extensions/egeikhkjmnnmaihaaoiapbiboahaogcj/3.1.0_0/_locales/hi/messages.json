@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "सभी डुप्लिकेट टैब बंद करें"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "डुप्लिकेट टैब बंद करें"
+   }
+}

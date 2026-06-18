@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Chiudi tutte le schede duplicate"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Chiudi schede duplicate"
+   }
+}

@@ -1,0 +1,16 @@
+{
+   "content_scripts": [ {
+      "css": [ "styles.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "https://claude.ai/*", "https://chatgpt.com/*", "https://chat.openai.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Adds a navigable table of contents sidebar to Claude.ai and ChatGPT chat threads",
+   "host_permissions": [ "https://claude.ai/*", "https://chatgpt.com/*", "https://chat.openai.com/*" ],
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnsgJ9wN8TxKBBbhsr5edEq8HLA9W5IIRXMADKO3wXPYwvWxqREEFxYpToucJgptx+2zRh+1DPpYILisOAiU1xboW9UEOHkxeCkHfkyXsK27jiixYake8r0gUCPU+2if6A+HNRELDfj5lbIRoIQ4Rv15HiFMfGY74qQCZhHwV/gKYegwcIIbQcKbzt2qpybxp2em+b5Ey9x3NgTb3jZMS809yHKybuIINgMhGC2Iaje04zvbflZ8Aj+Yh951VnUuimqoa7L+WJB7Od7STNs6SlJnWFWqiB1LbltuQptl3/FJalzA9Fu5cNhp1ClnVU//cBU2SSdIBrmUh3C1b3PZDPQIDAQAB",
+   "manifest_version": 3,
+   "name": "Threadline",
+   "permissions": [  ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.0"
+}

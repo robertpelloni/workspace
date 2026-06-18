@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "アプリケーションのレビューを追加するボタンのラベル",
+      "message": "レビューを追加"
+   },
+   "appUpdated": {
+      "description": "アプリ更新アラートのラベル",
+      "message": "アプリが更新されました"
+   },
+   "connect": {
+      "description": "接続ボタンのラベル",
+      "message": "接続"
+   },
+   "connectFromThisTab": {
+      "description": "現在のタブから接続するためのボタンのラベル",
+      "message": "このタブから接続"
+   },
+   "disconnect": {
+      "description": "切断するボタンのラベル",
+      "message": "切断"
+   },
+   "dismiss": {
+      "description": "アラートを閉じるための操作",
+      "message": "閉じる"
+   },
+   "error": {
+      "description": "エラーを表示するためのラベル",
+      "message": "エラー"
+   },
+   "focusConnectedTab": {
+      "description": "接続されたタブにフォーカスするボタンのラベル",
+      "message": "接続されたタブにフォーカス"
+   },
+   "invalidTab": {
+      "description": "無効なタブのエラーメッセージ",
+      "message": "このページは自動化できません。別のページを試してください。"
+   },
+   "reviewDescription": {
+      "description": "アプリケーションのレビューを残すようにユーザーに依頼する",
+      "message": "こんにちは、私は$NAME$です。時間を節約し、タスクを自動化するために$APP_NAME$を作りました。もし楽しんで使っていただけているなら、他の人に$APP_NAME$を見つけてもらえるように5つ星の評価をいただけると嬉しいです。どうもありがとうございます！",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "アプリケーションを使用しているユーザーに感謝の意を示す",
+      "message": "$APP_NAME$ をご利用いただきありがとうございます",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "新機能を見るための説明用ラベル",
+      "message": "新機能を見る"
+   },
+   "signIn": {
+      "description": "サインインボタンのラベル",
+      "message": "サインイン"
+   },
+   "view": {
+      "description": "更新を表示するボタンのラベル",
+      "message": "表示"
+   }
+}

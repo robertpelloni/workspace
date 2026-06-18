@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>All in one web searcher - Options</title>
+    <link rel="stylesheet" href="resources/css/style-options.css" />
+    <script src="resources/js/jquery.js" type="text/javascript"></script>
+    <script src="resources/js/jquery-ui.js" type="text/javascript"></script>
+    <script src="resources/js/search-engines.js" type="text/javascript"></script>
+    <script src="resources/js/script-options.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+        <img src="icons/48.png" align="left"/>
+        <h2><a href="https://www.aakashweb.com/browsers/all-in-one-web-searcher/" target="_blank">All in one web searcher</a> <sup>5.0</sup></h2>
+        <div class="social">
+            <span>Follow me on</span><a href="https://twitter.com/aakashweb" target="_blank" title="X/Twitter"><img src="resources/images/x.svg" alt="X icon" /></a><a href="https://fb.com/aakashweb" target="_blank" title="Facebook"><img src="resources/images/facebook.svg" alt="Facebook icon" /></a>
+        </div>
+    </div>
+    
+    <div class="donate"><a href="https://www.paypal.me/vaakash/">Like this extension? A coffee would make my day! 😊 <strong>Buy me a coffee</strong> ☕ ➡</a></div>
+    
+    <div class="note">
+        <b>Do you know ?</b> 
+        <ul>
+            <li>You can press <code>tab</code> to cycle through the main tabs, <code>alt</code> to cycle through the sub-tabs and <code>enter</code> to open search results.</li>
+            <li>You can set your own shortcut to launch the extension from <i>Extensions &gt; Manage Extensions &gt; Keyboard shortcuts</i></li>
+        </ul>
+    </div>
+
+    <h3>General</h3>
+    <div class="section">
+      <table width="100%" height="96" border="0">
+        <tr>
+          <td width="35%" height="44">Save last search term </td>
+          <td width="65%">
+            <select id="ainows_saveSearchTerm">
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td height="42">Tab selection method </td>
+          <td><select name="select" id="ainows_tabSelection">
+            <option value="mouseover">Hover method</option>
+            <option value="click">Click method</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td height="42">Popup Theme</td>
+          <td><select name="select" id="ainows_theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td height="42">Open results in</td>
+          <td><select name="select" id="ainows_openIn">
+              <option value="new">New tab</option>
+              <option value="same">Current open tab</option>
+            </select></td>
+        </tr>
+      </table>
+    </div>
+    
+    <h3>Edit search engines</h3>
+    <div class="section">
+        
+        <p>Add custom search engines and sub search engines to the list. Use <strong style="color: red;">%s</strong> in search URLs replacing the search term. For your native language, please rename the search engine names to your locale. <a href="https://www.aakashweb.com/browsers/all-in-one-web-searcher/" target="_blank">[Help]</a></p>
+        
+        <ul class="seList">
+        </ul>
+        
+        <p><input type="button" class="mAddBt mAddGrpBt" value="Add"/></p>
+    </div>
+    
+    <div class="exptBox" style="display: none;">
+    <h3>Export settings</h3>
+    <p>Copy the text below and save it anywhere to import the settings in future.</p>
+    <textarea id="exptCnt" rows="7" style="width:100%"></textarea>
+    </div>
+    
+    <div id="footer">
+        <input type="button" id="save" value="Save Settings" />
+        
+        <div style="float:right">
+            <input type="button" id="export" value="Export Settings" />  
+            <input type="button" id="import" value="Import Settings" /> 
+            <input type="button" id="reset" value="Reset" /> 
+        </div>
+        
+        <span class="saveInfo">Settings Saved !</span>
+    </div>
+</div>
+
+<p class="credits">an extension from <a href="https://www.aakashweb.com/?src=aiows" target="_blank">Aakash Web</a><br/>
+<a href="https://www.aakashweb.com/browsers/all-in-one-web-searcher/#privacy-policy" target="_blank">Privacy policy</a>
+</p>
+
+</body>
+</html>

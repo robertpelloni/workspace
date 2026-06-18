@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "Extension description",
+      "message": "Turn your browser into a self-driving AI Agent. Automate scraping, form filling and monitoring with simple prompting."
+   },
+   "extensionName": {
+      "description": "Extension name",
+      "message": "Retriever: AI Web Agent"
+   }
+}

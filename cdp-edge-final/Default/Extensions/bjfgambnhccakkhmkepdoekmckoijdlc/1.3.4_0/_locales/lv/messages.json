@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Poga, lai pievienotu atsauksmi par lietojumprogrammu",
+      "message": "Pievienot atsauksmi"
+   },
+   "appUpdated": {
+      "description": "Etiķete paziņojumam par lietotnes atjauninājumu",
+      "message": "Lietotne atjaunināta"
+   },
+   "connect": {
+      "description": "Pogas nosaukums, lai savienotu",
+      "message": "Savienot"
+   },
+   "connectFromThisTab": {
+      "description": "Poga, lai pievienotos no pašreizējās cilnes",
+      "message": "Pievienoties no šīs cilnes"
+   },
+   "disconnect": {
+      "description": "Poga, lai atvienotos",
+      "message": "Atvienoties"
+   },
+   "dismiss": {
+      "description": "Darbība, lai aizvērtu brīdinājumu",
+      "message": "Aizvērt"
+   },
+   "error": {
+      "description": "Etiķete kļūdas attēlošanai",
+      "message": "Kļūda"
+   },
+   "focusConnectedTab": {
+      "description": "Poga, lai fokusētu savienoto cilni",
+      "message": "Fokusēt savienoto cilni"
+   },
+   "invalidTab": {
+      "description": "Kļūdas ziņojums par nederīgu cilni",
+      "message": "Šo lapu nevar automatizēt. Lūdzu, mēģiniet citu lapu."
+   },
+   "reviewDescription": {
+      "description": "Palūdziet lietotājam atstāt atsauksmi par lietotni",
+      "message": "Sveiki, es esmu $NAME$. Es izveidoju $APP_NAME$, lai palīdzētu cilvēkiem ietaupīt laiku un automatizēt viņu uzdevumus. Ja jums patīk to lietot, es būtu pateicīgs par 5 zvaigžņu vērtējumu, lai palīdzētu citiem atklāt $APP_NAME$. Liels paldies!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Pateicieties lietotājam par lietojumprogrammas izmantošanu",
+      "message": "Paldies, ka izmantojat $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Apraksta etiķete, lai skatītu, kas jauns",
+      "message": "Skatīt, kas jauns"
+   },
+   "signIn": {
+      "description": "Pogas nosaukums, lai pierakstītos",
+      "message": "Pierakstīties"
+   },
+   "view": {
+      "description": "Poga, lai skatītu atjauninājumu",
+      "message": "Skatīt"
+   }
+}

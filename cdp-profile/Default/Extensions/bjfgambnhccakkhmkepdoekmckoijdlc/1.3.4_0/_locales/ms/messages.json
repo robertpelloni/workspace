@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Label untuk butang untuk menambah ulasan bagi aplikasi",
+      "message": "Tambah Ulasan"
+   },
+   "appUpdated": {
+      "description": "Label untuk pemberitahuan aplikasi dikemas kini",
+      "message": "Apl telah dikemas kini"
+   },
+   "connect": {
+      "description": "Label untuk butang untuk sambung",
+      "message": "Sambung"
+   },
+   "connectFromThisTab": {
+      "description": "Label untuk butang untuk sambung dari tab semasa",
+      "message": "Sambung dari tab ini"
+   },
+   "disconnect": {
+      "description": "Label untuk butang memutuskan sambungan",
+      "message": "Putuskan"
+   },
+   "dismiss": {
+      "description": "Tindakan untuk menutup amaran",
+      "message": "Tutup"
+   },
+   "error": {
+      "description": "Label untuk memaparkan ralat",
+      "message": "Ralat"
+   },
+   "focusConnectedTab": {
+      "description": "Label untuk butang untuk memfokuskan tab yang bersambung",
+      "message": "Fokuskan tab yang bersambung"
+   },
+   "invalidTab": {
+      "description": "Mesej ralat untuk tab tidak sah",
+      "message": "Halaman ini tidak boleh diautomasikan. Sila cuba halaman yang berbeza."
+   },
+   "reviewDescription": {
+      "description": "Meminta pengguna untuk meninggalkan ulasan untuk aplikasi",
+      "message": "Hai, saya $NAME$. Saya mencipta $APP_NAME$ untuk membantu orang menjimatkan masa dan mengautomasi tugas mereka. Jika anda suka menggunakannya, saya menghargai penilaian 5 bintang untuk membantu orang lain menemui $APP_NAME$. Terima kasih banyak!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Terima kasih kepada pengguna kerana menggunakan aplikasi ini",
+      "message": "Terima kasih kerana menggunakan $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Label untuk penerangan melihat apa yang baharu",
+      "message": "Lihat apa yang baharu"
+   },
+   "signIn": {
+      "description": "Label untuk butang log masuk",
+      "message": "Log masuk"
+   },
+   "view": {
+      "description": "Label untuk butang melihat kemas kini",
+      "message": "Papar"
+   }
+}

@@ -1,0 +1,50 @@
+model_list:
+  # --- Antigravity Models (Using Vertex AI / Google Auth) ---
+  - model_name: antigravity
+    litellm_params:
+      model: vertex_ai/gemini-1.5-pro
+      vertex_project: 'trans-boulder-m8xjk'
+      vertex_location: 'us-central1'
+
+  - model_name: antigravity/gemini-3-pro
+    litellm_params:
+      model: vertex_ai/gemini-1.5-pro
+      vertex_project: 'trans-boulder-m8xjk'
+      vertex_location: 'us-central1'
+
+  - model_name: antigravity/gemini-3-flash
+    litellm_params:
+      model: vertex_ai/gemini-1.5-flash
+      vertex_project: 'trans-boulder-m8xjk'
+      vertex_location: 'us-central1'
+
+  # --- Copilot Models (Using GitHub Token) ---
+  - model_name: copilot
+    litellm_params:
+      model: github_copilot/gpt-4
+      api_key: os.environ/GITHUB_TOKEN
+
+  - model_name: copilot/gpt-4
+    litellm_params:
+      model: github_copilot/gpt-4
+      api_key: os.environ/GITHUB_TOKEN
+
+  - model_name: copilot/claude-3.5-sonnet
+    litellm_params:
+      model: github_copilot/claude-3.5-sonnet
+      api_key: os.environ/GITHUB_TOKEN
+
+  # Generic mapping
+  - model_name: gpt-4
+    litellm_params:
+      model: github_copilot/gpt-4
+      api_key: os.environ/GITHUB_TOKEN
+
+  - model_name: claude-3-5-sonnet
+    litellm_params:
+      model: github_copilot/claude-3.5-sonnet
+      api_key: os.environ/GITHUB_TOKEN
+
+general_settings:
+  master_key: sk-1234
+

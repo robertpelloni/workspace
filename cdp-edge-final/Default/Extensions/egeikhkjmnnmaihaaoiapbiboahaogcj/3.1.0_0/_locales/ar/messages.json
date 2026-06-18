@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "إغلاق جميع علامات التبويب المكررة"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "إغلاق علامات التبويب المكررة"
+   }
+}

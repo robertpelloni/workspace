@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Rótulo para o botão para adicionar uma avaliação para o aplicativo",
+      "message": "Adicionar uma Avaliação"
+   },
+   "appUpdated": {
+      "description": "Etiqueta para o alerta de aplicativo atualizado",
+      "message": "Aplicativo atualizado"
+   },
+   "connect": {
+      "description": "Rótulo para o botão de conectar",
+      "message": "Conectar"
+   },
+   "connectFromThisTab": {
+      "description": "Rótulo para botão para conectar a partir da aba atual",
+      "message": "Conectar a partir desta aba"
+   },
+   "disconnect": {
+      "description": "Rótulo para botão de desconectar",
+      "message": "Desconectar"
+   },
+   "dismiss": {
+      "description": "Ação para dispensar o alerta",
+      "message": "Dispensar"
+   },
+   "error": {
+      "description": "Rótulo para exibir um erro",
+      "message": "Erro"
+   },
+   "focusConnectedTab": {
+      "description": "Rótulo do botão para focar na guia conectada",
+      "message": "Focar na guia conectada"
+   },
+   "invalidTab": {
+      "description": "Mensagem de erro para aba inválida",
+      "message": "Esta página não pode ser automatizada. Por favor, tente uma página diferente."
+   },
+   "reviewDescription": {
+      "description": "Peça ao usuário para deixar uma avaliação para o aplicativo",
+      "message": "Oi, eu sou $NAME$. Eu criei o $APP_NAME$ para ajudar as pessoas a economizar tempo e automatizar suas tarefas. Se você gosta de usá-lo, eu agradeceria uma avaliação de 5 estrelas para ajudar outras pessoas a descobrirem o $APP_NAME$. Muito obrigado!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Agradeça ao usuário por usar o aplicativo",
+      "message": "Obrigado por usar o $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Rótulo para a descrição para ver o que há de novo",
+      "message": "Veja o que há de novo"
+   },
+   "signIn": {
+      "description": "Rótulo para o botão de entrar",
+      "message": "Entrar"
+   },
+   "view": {
+      "description": "Etiqueta para o botão para visualizar a atualização",
+      "message": "Visualizar"
+   }
+}

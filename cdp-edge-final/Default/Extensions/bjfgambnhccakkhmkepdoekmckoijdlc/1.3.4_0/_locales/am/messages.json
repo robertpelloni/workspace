@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "ለመተግበሪያው ግምገማ ለመጨመር የተሰጠ ፍቃድ",
+      "message": "ተመልስ ያክሉ"
+   },
+   "appUpdated": {
+      "description": "ለመተግበሪያ ዘምኗ ማስጠንቀቂያ መሳሪያ",
+      "message": "መተግበሪያው አዘምኗል"
+   },
+   "connect": {
+      "description": "ታይተር በተቋሚ ላይ ገንኝ",
+      "message": "አገናኝ"
+   },
+   "connectFromThisTab": {
+      "description": "ከአሁኑ ትር ጋር የምትገናኙ ቁልፍ ላይ መለያ",
+      "message": "ከዚህ ትር ጋር ይገናኙ"
+   },
+   "disconnect": {
+      "description": "በተካፌ የሚለው ምልክት",
+      "message": "​እንቆቅልሽ"
+   },
+   "dismiss": {
+      "description": "ማስጠንቀቂያውን ለማሰናበት ድርጊት",
+      "message": "አሰናብት"
+   },
+   "error": {
+      "description": "ስህተት ለማሳየት ለድርጊት የሚሰጠው መለያ",
+      "message": "ስህተት"
+   },
+   "focusConnectedTab": {
+      "description": "ጠቋሚ ገፅ ማሰብ እንዲቻል ለዚች ተንበልላ የተጠረጠረ መልእክት",
+      "message": "ጠቋሚ ገፅ ማሰብ"
+   },
+   "invalidTab": {
+      "description": "ስህተት መልዕክት ለማልለ ትምህርተ ዋሻ",
+      "message": "ይህ ገፅ ሊተሠሩ አይችልም። እባኮትን ሌላ ገፅ ይምረጡ።"
+   },
+   "reviewDescription": {
+      "description": "ለአፕሊኬሽኑ ማረጋገጥ ፈልገው ያሉት ይጠይቁ",
+      "message": "ሰላም, እኔ $NAME$ ነኝ። $APP_NAME$ ሰዎችን ጊዜ ለማሳካት እና ነገሮቻቸውን ለማስተካል የሚረዳ ለመፍጠር ፈጸምሁት። የሆነ ወደ $APP_NAME$ መጠቀም ከተደሰትህ አንተን ለሌሎች ለማውጡ 5-ኮንታ ክብደት መስጠት እንጠራለን። እገኝህ።",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "አመልካች ስለሆኑ ደንበኞቹን አመስግኑ",
+      "message": "$APP_NAME$ አመልካች ስለሆኑ እናመሰግናለን",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "አዳዲስ የተጨመሩትን ለማየት ምልክት",
+      "message": "አዳዲስ የተጨመሩትን እዩ"
+   },
+   "signIn": {
+      "description": "ወደ መለያ የመግቢያ አዝራር",
+      "message": "ይግቡ"
+   },
+   "view": {
+      "description": "ዝማኔውን ለማየት የተዘጋጀ አዝራር",
+      "message": "እይታ"
+   }
+}

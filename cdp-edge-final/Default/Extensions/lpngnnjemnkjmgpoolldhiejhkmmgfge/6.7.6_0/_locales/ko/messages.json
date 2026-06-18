@@ -1,0 +1,54 @@
+{
+   "appDesc": {
+      "description": "",
+      "message": "올인원 북마크 매니저"
+   },
+   "in": {
+      "description": "",
+      "message": "Raindrop.io에서"
+   },
+   "openApp": {
+      "description": "",
+      "message": "앱 열기"
+   },
+   "openRaindrop": {
+      "description": "",
+      "message": "Raindrop.io 웹사이트 열기"
+   },
+   "openSidePanel": {
+      "description": "",
+      "message": "사이드바 열기"
+   },
+   "saveHighlight": {
+      "description": "",
+      "message": "하이라이트 추가"
+   },
+   "saveImage": {
+      "description": "",
+      "message": "이미지 저장"
+   },
+   "saveLink": {
+      "description": "",
+      "message": "링크 저장"
+   },
+   "savePage": {
+      "description": "",
+      "message": "페이지 저장"
+   },
+   "savePageOrHighlight": {
+      "description": "",
+      "message": "북마크 / 하이라이트 저장"
+   },
+   "saveTabs": {
+      "description": "",
+      "message": "탭 저장"
+   },
+   "saveVideo": {
+      "description": "",
+      "message": "동영상 저장"
+   },
+   "settings": {
+      "description": "",
+      "message": "설정"
+   }
+}

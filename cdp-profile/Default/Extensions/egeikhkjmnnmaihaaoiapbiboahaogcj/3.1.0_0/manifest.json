@@ -1,0 +1,28 @@
+{
+   "$schema": "https://json.schemastore.org/chrome-manifest",
+   "action": {
+      "default_icon": {
+         "128": "/images/icon-128.png",
+         "16": "/images/icon-16.png",
+         "32": "/images/icon-32.png",
+         "48": "/images/icon-48.png"
+      }
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extensionDescription__",
+   "icons": {
+      "128": "/images/icon-128.png",
+      "16": "/images/icon-16.png",
+      "32": "/images/icon-32.png",
+      "48": "/images/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgqc9gNoWX1b3KxG6ewY6wUoLFZzPDqMNGGiWu88/MSWLSh0+imZC7mkJL4gspqFEwn6q3cafaoscloFy9xd26pJrXK+TQNK/iOMDT8AxOcOka7hwD/WYaAcQ6iQzK8PakX+wqezTPRDoiO6wtYg1Tdk6BwYBw7dbvn/bZs0drC7DR/UZ+lH6+kUdRtqvZg/lpFiLHpvDukOvgZPv1OKSFTibEbBapW0FzLhvI23dJnXZokhGPW7SHc4PbSHFwYKguyJzL5ZscJOIWp1sE3yOTmx38GSD/YNydnIyhm+1yRmwetKX01CKjjpirU9dFNFDWZydUC/otRtHxK7HdDlTAQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extensionName__",
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.1.0"
+}

@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Lebo kwa kitufe cha kuongeza mapitio kwa matumizi",
+      "message": "Ongeza Mapitio"
+   },
+   "appUpdated": {
+      "description": "Lebo ya tahadhari ya programu imesasishwa",
+      "message": "App imesasishwa"
+   },
+   "connect": {
+      "description": "Lebo ya kitufe cha kuunganisha",
+      "message": "Unganisha"
+   },
+   "connectFromThisTab": {
+      "description": "Lebo kwa kitufe cha kuunganisha kutoka kwenye kichupo cha sasa",
+      "message": "Unganisha kutoka kwenye kichupo hiki"
+   },
+   "disconnect": {
+      "description": "Lebo ya kitufe cha kukatisha",
+      "message": "Katisha"
+   },
+   "dismiss": {
+      "description": "Hatua ya kuondoa tahadhari",
+      "message": "Ondoa"
+   },
+   "error": {
+      "description": "Lebo ya kuonyesha hitilafu",
+      "message": "Hitilafu"
+   },
+   "focusConnectedTab": {
+      "description": "Lebo ya kitufe cha kulenga kichupo kilichounganishwa",
+      "message": "Lenga kichupo kilichounganishwa"
+   },
+   "invalidTab": {
+      "description": "Ujumbe wa kosa kwa kichupo kisicho sahihi",
+      "message": "Ukurasa huu hauwezi kuendeshwa kiotomatiki. Tafadhali jaribu ukurasa tofauti."
+   },
+   "reviewDescription": {
+      "description": "Muombe mtumiaji kuacha tathmini kwa ajili ya programu",
+      "message": "Habari, mimi ni $NAME$. Niliunda $APP_NAME$ kusaidia watu kuokoa muda na kugeuza kazi zao kuwa za moja kwa moja. Ikiwa unafurahia kuitumia, ningefurahi kupata tathmini ya nyota 5 ili kusaidia wengine kugundua $APP_NAME$. Asante sana!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Jina"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Mshukuru mtumiaji kwa kutumia programu",
+      "message": "Asante kwa kutumia $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Lebo kwa maelezo ya kuona kile kipya",
+      "message": "Tazama kile kipya"
+   },
+   "signIn": {
+      "description": "Lebo ya kitufe cha kuingia",
+      "message": "Ingia"
+   },
+   "view": {
+      "description": "Lebo ya kitufe cha kuona sasisho",
+      "message": "Onyesha"
+   }
+}

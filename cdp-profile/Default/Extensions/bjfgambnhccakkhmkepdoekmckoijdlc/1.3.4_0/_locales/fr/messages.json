@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Libellé pour le bouton pour ajouter un avis pour l'application",
+      "message": "Ajouter un avis"
+   },
+   "appUpdated": {
+      "description": "Étiquette pour l'alerte de mise à jour de l'application",
+      "message": "Application mise à jour"
+   },
+   "connect": {
+      "description": "Étiquette pour le bouton de connexion",
+      "message": "Connecter"
+   },
+   "connectFromThisTab": {
+      "description": "Label du bouton pour se connecter depuis l'onglet actuel",
+      "message": "Se connecter depuis cet onglet"
+   },
+   "disconnect": {
+      "description": "Libellé du bouton pour se déconnecter",
+      "message": "Déconnecter"
+   },
+   "dismiss": {
+      "description": "Action pour ignorer l'alerte",
+      "message": "Ignorer"
+   },
+   "error": {
+      "description": "Étiquette pour afficher une erreur",
+      "message": "Erreur"
+   },
+   "focusConnectedTab": {
+      "description": "Libellé pour le bouton permettant de mettre l'onglet connecté au premier plan",
+      "message": "Mettre l'onglet connecté au premier plan"
+   },
+   "invalidTab": {
+      "description": "Message d'erreur pour l'onglet invalide",
+      "message": "Cette page ne peut pas être automatisée. Veuillez essayer une autre page."
+   },
+   "reviewDescription": {
+      "description": "Demander à l'utilisateur de laisser un avis pour l'application",
+      "message": "Bonjour, je suis $NAME$. J'ai créé $APP_NAME$ pour aider les gens à gagner du temps et à automatiser leurs tâches. Si vous aimez l'utiliser, j'apprécierais une note de 5 étoiles pour aider les autres à découvrir $APP_NAME$. Merci beaucoup !",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Remerciez l'utilisateur d'utiliser l'application",
+      "message": "Merci d'utiliser $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Libellé pour la description des nouveautés",
+      "message": "Voir les nouveautés"
+   },
+   "signIn": {
+      "description": "Étiquette pour le bouton de connexion",
+      "message": "Se connecter"
+   },
+   "view": {
+      "description": "Libellé pour le bouton pour voir la mise à jour",
+      "message": "Voir"
+   }
+}

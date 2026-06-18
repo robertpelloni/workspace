@@ -1,0 +1,8 @@
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, abs_fp32_1x8_x86_sse2, abs, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, erf_fp32_1x8_x86_sse2, erf, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, exp_fp32_1x8_x86_sse2, exp, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, negate_fp32_1x8_x86_sse2, negate, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, reciprocal_square_root_fp32_1x8_x86_sse2, reciprocal_square_root, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, square_root_fp32_1x8_x86_sse2, square_root, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, sigmoid_fp32_1x8_x86_sse2, sigmoid, nullptr, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, tanh_fp32_1x8_x86_sse2, tanh, nullptr, float32x1_t, float32x1_t)

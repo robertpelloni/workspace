@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.png",
+         "16": "icon16.png",
+         "32": "icon32.png",
+         "48": "icon48.png"
+      },
+      "default_popup": "index.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "contentScript.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Bring AnythingLLM directly into your browser to curate and collect content on the web directly into your AnythingLLM workspaces.",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiwKKH0afuE0H4NYKLb0WvYMml/yn+42Rj9qcxjO+t5fb0h++hnBHqi5UNF3LgRFyJyIn+TcCvqAWVjtbD5H1EETkL/fZ2J5lvw3jiYylX0ko4vV98FDrTZWU7HPKJZK/nyHHwfNzSLU0yZtcfEWzsoNJ6GlftK+pZ+n2rNNdknw4VoOdSxvUccckQG0CiVFUqu1IaXnRZMDZ3InKgm2udC4DfURdkwFMMR6LX1kzL2gOr7pxNabi/bXkmr20qG5zDyfe7mMyPrn1J+g3ux9WZb25w9sGb+f/7xTiO4xa6MHfgAW+JlQALq9DdZZvAD6xdWm5Cmtq++QNMKvBxhZbqQIDAQAB",
+   "manifest_version": 3,
+   "name": "AnythingLLM Browser Companion",
+   "permissions": [ "contextMenus", "activeTab", "storage", "notifications", "alarms" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

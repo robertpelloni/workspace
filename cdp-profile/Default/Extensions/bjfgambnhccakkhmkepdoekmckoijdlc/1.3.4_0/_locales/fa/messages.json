@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "برچسب برای دکمه‌ای جهت افزودن نقد و بررسی برای برنامه",
+      "message": "افزودن نقد و بررسی"
+   },
+   "appUpdated": {
+      "description": "برچسب برای اعلان به‌روزرسانی برنامه",
+      "message": "برنامه به‌روز شد"
+   },
+   "connect": {
+      "description": "برچسب برای دکمه اتصال",
+      "message": "اتصال"
+   },
+   "connectFromThisTab": {
+      "description": "برچسب برای دکمه اتصال از زبانه جاری",
+      "message": "اتصال از این زبانه"
+   },
+   "disconnect": {
+      "description": "برچسب برای دکمه قطع ارتباط",
+      "message": "قطع ارتباط"
+   },
+   "dismiss": {
+      "description": "اقدامی برای رد کردن هشدار",
+      "message": "رد کردن"
+   },
+   "error": {
+      "description": "برچسب برای نمایش یک خطا",
+      "message": "خطا"
+   },
+   "focusConnectedTab": {
+      "description": "برچسب دکمه برای تمرکز بر روی زبانه متصل",
+      "message": "تمرکز بر روی زبانه متصل"
+   },
+   "invalidTab": {
+      "description": "پیام خطا برای برگه نامعتبر",
+      "message": "امکان اتوماسیون این صفحه وجود ندارد. لطفاً صفحه دیگری را امتحان کنید."
+   },
+   "reviewDescription": {
+      "description": "از کاربر بخواهید برای برنامه یک نظر بگذارد",
+      "message": "سلام، من $NAME$ هستم. من $APP_NAME$ را برای کمک به افراد در صرفه‌جویی در زمان و خودکارسازی وظایفشان ایجاد کردم. اگر از استفاده از آن لذت می‌برید، من از یک امتیاز ۵ ستاره برای معرفی $APP_NAME$ به دیگران قدردانی می‌کنم. خیلی متشکرم!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "از کاربر برای استفاده از برنامه تشکر کنید",
+      "message": "از استفاده شما از $APP_NAME$ متشکریم",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "برچسب برای توضیح درباره‌ی موارد جدید",
+      "message": "ببینید چه خبر است"
+   },
+   "signIn": {
+      "description": "برچسب برای دکمه ورود به سیستم",
+      "message": "ورود به سیستم"
+   },
+   "view": {
+      "description": "برچسب برای دکمه مشاهده بروزرسانی",
+      "message": "مشاهده"
+   }
+}

@@ -1,0 +1,69 @@
+{
+   "addReview": {
+      "description": "Label for the button to add a review for the application",
+      "message": "Add a Review"
+   },
+   "appUpdated": {
+      "description": "Label for the app updated alert",
+      "message": "App updated"
+   },
+   "connect": {
+      "description": "Label for button to connect",
+      "message": "Connect"
+   },
+   "connectFromThisTab": {
+      "description": "Label for button to connect from the current tab",
+      "message": "Connect from this tab"
+   },
+   "disconnect": {
+      "description": "Label for button to disconnect",
+      "message": "Disconnect"
+   },
+   "error": {
+      "description": "Label for displaying an error",
+      "message": "Error"
+   },
+   "focusConnectedTab": {
+      "description": "Label for button to focus the connected tab",
+      "message": "Focus connected tab"
+   },
+   "invalidTab": {
+      "description": "Error message for invalid tab",
+      "message": "This page cannot be automated. Please try a different page."
+   },
+   "reviewDescription": {
+      "description": "Ask the user to leave a review for the application",
+      "message": "Hi, I'm $NAME$. I created $APP_NAME$ to help people save time and automate their tasks. If you enjoy using it, I'd appreciate a 5-star rating to help others discover $APP_NAME$. Thanks so much!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "Browser MCP"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Thank the user for using the application",
+      "message": "Thanks for using $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "Extension Stack"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Label for the description to see what's new",
+      "message": "See what's new"
+   },
+   "signIn": {
+      "description": "Label for the button to sign in",
+      "message": "Sign in"
+   },
+   "view": {
+      "description": "Label for the button to view the update",
+      "message": "View"
+   }
+}

@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Label untuk tombol menambah ulasan untuk aplikasi",
+      "message": "Tambah Ulasan"
+   },
+   "appUpdated": {
+      "description": "Label untuk peringatan aplikasi diperbarui",
+      "message": "Aplikasi diperbarui"
+   },
+   "connect": {
+      "description": "Label untuk tombol menghubungkan",
+      "message": "Hubungkan"
+   },
+   "connectFromThisTab": {
+      "description": "Label untuk tombol untuk menghubungkan dari tab saat ini",
+      "message": "Hubungkan dari tab ini"
+   },
+   "disconnect": {
+      "description": "Label untuk tombol memutuskan sambungan",
+      "message": "Putuskan"
+   },
+   "dismiss": {
+      "description": "Aksi untuk menutup peringatan",
+      "message": "Tutup"
+   },
+   "error": {
+      "description": "Label untuk menampilkan kesalahan",
+      "message": "Kesalahan"
+   },
+   "focusConnectedTab": {
+      "description": "Label untuk tombol untuk memfokuskan tab yang terhubung",
+      "message": "Fokus tab yang terhubung"
+   },
+   "invalidTab": {
+      "description": "Pesan kesalahan untuk tab yang tidak valid",
+      "message": "Halaman ini tidak dapat diotomatisasi. Silakan coba halaman lain."
+   },
+   "reviewDescription": {
+      "description": "Meminta pengguna untuk meninggalkan ulasan untuk aplikasi",
+      "message": "Hai, saya $NAME$. Saya membuat $APP_NAME$ untuk membantu orang menghemat waktu dan mengotomatisasi tugas mereka. Jika Anda menikmati menggunakannya, saya menghargai penilaian 5 bintang untuk membantu orang lain menemukan $APP_NAME$. Terima kasih banyak!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Berterima kasih kepada pengguna karena telah menggunakan aplikasi",
+      "message": "Terima kasih telah menggunakan $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Label untuk deskripsi melihat apa yang baru",
+      "message": "Lihat apa yang baru"
+   },
+   "signIn": {
+      "description": "Label untuk tombol masuk",
+      "message": "Masuk"
+   },
+   "view": {
+      "description": "Label untuk tombol agar melihat pembaruan",
+      "message": "Lihat"
+   }
+}

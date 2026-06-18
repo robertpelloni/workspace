@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Označenie tlačidla na pridanie recenzie pre aplikáciu",
+      "message": "Pridať recenziu"
+   },
+   "appUpdated": {
+      "description": "Označenie pre upozornenie o aktualizácii aplikácie",
+      "message": "Aplikácia bola aktualizovaná"
+   },
+   "connect": {
+      "description": "Označenie pre tlačidlo na pripojenie",
+      "message": "Pripojiť"
+   },
+   "connectFromThisTab": {
+      "description": "Označenie pre tlačidlo na pripojenie z aktuálnej karty",
+      "message": "Pripojiť z tejto karty"
+   },
+   "disconnect": {
+      "description": "Označenie tlačidla na odpojenie",
+      "message": "Odpojiť"
+   },
+   "dismiss": {
+      "description": "Akcia na zrušenie upozornenia",
+      "message": "Zrušiť"
+   },
+   "error": {
+      "description": "Označenie pre zobrazenie chyby",
+      "message": "Chyba"
+   },
+   "focusConnectedTab": {
+      "description": "Označenie pre tlačidlo na zameranie sa na pripojenú kartu",
+      "message": "Zamerať sa na pripojenú kartu"
+   },
+   "invalidTab": {
+      "description": "Chybová správa pre neplatnú kartu",
+      "message": "Túto stránku nie je možné automatizovať. Skúste inú stránku."
+   },
+   "reviewDescription": {
+      "description": "Požiadajte používateľa, aby nechal recenziu pre aplikáciu",
+      "message": "Ahoj, ja som $NAME$. Vytvoril som $APP_NAME$, aby som ľuďom pomohol ušetriť čas a zautomatizovať ich úlohy. Ak sa vám to páči, ocenil by som 5-hviezdičkové hodnotenie, aby mohli $APP_NAME$ objaviť aj iní. Ďakujem veľmi pekne!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Poďakovanie používateľovi za používanie aplikácie",
+      "message": "Ďakujeme za používanie $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Označenie pre popis, aby ste zistili, čo je nové",
+      "message": "Zistite, čo je nové"
+   },
+   "signIn": {
+      "description": "Označenie pre tlačidlo na prihlásenie",
+      "message": "Prihlásiť sa"
+   },
+   "view": {
+      "description": "Označenie pre tlačidlo na zobrazenie aktualizácie",
+      "message": "Zobraziť"
+   }
+}

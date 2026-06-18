@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "应用程序添加评论按钮的标签",
+      "message": "添加评论"
+   },
+   "appUpdated": {
+      "description": "应用更新提醒的标签",
+      "message": "应用已更新"
+   },
+   "connect": {
+      "description": "用于连接按钮的标签",
+      "message": "连接"
+   },
+   "connectFromThisTab": {
+      "description": "按钮标签，用于从当前标签页连接",
+      "message": "从此标签页连接"
+   },
+   "disconnect": {
+      "description": "用于断开连接按钮的标签",
+      "message": "断开连接"
+   },
+   "dismiss": {
+      "description": "关闭警报的操作",
+      "message": "关闭"
+   },
+   "error": {
+      "description": "用于显示错误的标签",
+      "message": "错误"
+   },
+   "focusConnectedTab": {
+      "description": "用于聚焦已连接选项卡的按钮标签",
+      "message": "聚焦已连接的选项卡"
+   },
+   "invalidTab": {
+      "description": "无效标签页的错误信息",
+      "message": "此页面无法自动化。请尝试其他页面。"
+   },
+   "reviewDescription": {
+      "description": "请用户为应用程序留下评价",
+      "message": "你好，我是$NAME$。我创建了$APP_NAME$来帮助人们节省时间并自动化他们的任务。如果你喜欢使用它，我会很感激你留下5星好评，以帮助其他人发现$APP_NAME$。非常感谢！",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "感谢用户使用应用程序",
+      "message": "感谢使用$APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "查看新内容的说明标签",
+      "message": "查看新内容"
+   },
+   "signIn": {
+      "description": "登录按钮的标签",
+      "message": "登录"
+   },
+   "view": {
+      "description": "查看更新按钮的标签",
+      "message": "查看"
+   }
+}

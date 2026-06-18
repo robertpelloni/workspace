@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_icon": "/images/link_go_19.png",
+      "default_title": "Extract the links on this page"
+   },
+   "background": {
+      "service_worker": "/js/service_worker.js"
+   },
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "linkgrabber@7fffffff.com"
+      }
+   },
+   "description": "An easy to use extractor or grabber for hyperlinks on an HTML page",
+   "icons": {
+      "128": "/images/link_go_128.png",
+      "16": "/images/link_go_16.png",
+      "32": "/images/link_go_32.png",
+      "48": "/images/link_go_48.png"
+   },
+   "incognito": "split",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDdw66hcuWsYsh8opQkBbe5eEbgVxqjznMT8EnktX4F65Tp4b4XCEtLw9wW7EZv8hU2nWNORVgnVtGF0AklrSWV0rf5UL4osg2KHXoEzaMwzch6VgYyUSMDCJN+YRFbZZc8ClzaVOazv8AZFJmZ9UOO6SavePyb3Es+yKcaf2QDVQIDAQAB",
+   "manifest_version": 3,
+   "name": "Link Grabber",
+   "options_ui": {
+      "browser_style": false,
+      "page": "/html/options.html"
+   },
+   "permissions": [ "activeTab", "clipboardWrite", "contextMenus", "scripting", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.6.1"
+}

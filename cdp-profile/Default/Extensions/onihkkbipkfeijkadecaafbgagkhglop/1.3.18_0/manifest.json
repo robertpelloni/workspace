@@ -1,0 +1,59 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "48": "icons/icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "claude/content.js" ],
+      "matches": [ "https://claude.ai/*" ]
+   }, {
+      "js": [ "chatgpt/content.js" ],
+      "matches": [ "https://chat.openai.com/*", "https://chatgpt.com/*" ]
+   }, {
+      "js": [ "perplexity/content.js" ],
+      "matches": [ "https://www.perplexity.ai/*" ]
+   }, {
+      "js": [ "mem0/content.js" ],
+      "matches": [ "https://app.mem0.ai/*" ]
+   }, {
+      "js": [ "grok/content.js" ],
+      "matches": [ "https://grok.com/*", "https://x.com/i/grok*" ]
+   }, {
+      "js": [ "deepseek/content.js" ],
+      "matches": [ "https://chat.deepseek.com/*" ]
+   }, {
+      "js": [ "gemini/content.js" ],
+      "matches": [ "https://gemini.google.com/*" ]
+   }, {
+      "js": [ "replit/content.js" ],
+      "matches": [ "https://replit.com/*" ]
+   }, {
+      "js": [ "sidebar.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "description": "🧠 OpenMemory keeps your conversations in sync. 🔄 No more repeating yourself—just seamless AI collaboration! ✨",
+   "host_permissions": [ "https://api.mem0.ai/*", "https://app.mem0.ai/*" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnGWZj886Zf2bkvICxlUfwDkubZ38AFzjGQMaxHMQ2mKaOtNe1ABCPpo7ost1mki6QSTTHN3qqptjffV9v5OIPtczpn08vYgWVye31GPSsw5WNsOzxGGqcAeEkqPhs3alZXBwXIdftLqn95n7IwjX39Mf8nUxkMgHXfkDd6fv+gxCfwvyHaDk1R8Pb0yU7O/VcM1cNscaGXQK0dsrtJAiIepJ3TNYho8jhOVQIc74JlXDqpc7VZyEjCJii1+8ZA+Gwl+GN4hrXRGmPkN7zGMMcmsx6cjT/Xt9efbyhOGdQrcM80rJA7IVyBs0RibZLykmhYarjZzT12ao6TdaREl6gwIDAQAB",
+   "manifest_version": 3,
+   "name": "OpenMemory",
+   "permissions": [ "storage", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.18",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "icons/*" ]
+   } ]
+}

@@ -1,0 +1,26 @@
+{
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "config.js", "safe-storage.js", "analytics-v2.js", "lib/html-to-pdfmake.min.js", "lib/pdfmake.min.js", "lib/vfs_fonts.js", "gemini-storage.js", "api-client.js", "prompt_library.js", "word_counter.js", "enhance_prompt.js", "content_gemini.js", "pinned_messages.js", "injector.js" ],
+      "matches": [ "*://gemini.google.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Organize Gemini with Folders, Bulk Delete & Export (PDF). Includes Prompt Library & Word Counter.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4pMZTQvDOw34QRtdQT/VFWS9UZyD8AJBKTONhCxkYCj83WoNs1wqFMiNbg6hnHma3HaQj2IlBkNzrZdl2RpH/4aEfzmEtG0dJS8rpX06TpVq/HJrvEBYrmibkQyudy+5jxVNmmOtyqMJix711WOe9y/xIsHQl00c/+Gohtdz7uZX7xXWCMB0OqJSwStzB29Nu7KGQ8/FsYPI96i8kk4es1Y9dbCRC99MqKVEOLDsECwKTteZ0rXKhg9pOHv2P7lBFx0pjERMBjSsyN2oadqJ4lfQS3lLhfvOKQa1sKlS6lvR5dmbdpAeUoFUI4SrEG+k09ZYDZsxsUvyR1uYJfIy+wIDAQAB",
+   "manifest_version": 3,
+   "name": "Toolbox for Gemini | Folders, Export, Bulk Delete",
+   "permissions": [ "storage", "downloads", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.2",
+   "web_accessible_resources": [ {
+      "matches": [ "*://gemini.google.com/*" ],
+      "resources": [ "api-bridge.js", "prompt_library.html", "prompt_library.css" ]
+   } ]
+}

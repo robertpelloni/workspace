@@ -1,0 +1,806 @@
+{
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "කවුළු සහ ටැබ් වල තත්වය සුරකින්න සහ ප්‍රතිසාධනය කරන්න. එය ස්වයංක්‍රීය ඉතිරිකිරීම් සඳහාද සහාය වේ."
+  },
+  "donateWithPaypalLabel": {
+    "message": "PayPal සමඟ පරිත්‍යාග කරන්න"
+  },
+  "donateLabel": {
+    "message": "පරිත්‍යාග කරන්න"
+  },
+  "openSessionListInTabLabel": {
+    "message": "ටැබය තුළ සැසි ලැයිස්තුව විවෘත කරන්න"
+  },
+  "saveLabel": {
+    "message": "සුරකින්න"
+  },
+  "initialNameValue": {
+    "message": "වත්මන් සැසිය සුරකින්න"
+  },
+  "inputSessionNameLabel": {
+    "message": "ආදාන සැසියේ නම"
+  },
+  "saveSessionLabel": {
+    "message": "සැසියක් සුරකින්න"
+  },
+  "saveAllWindowsLabel": {
+    "message": "සියලුම කවුළු සුරකින්න"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "වත්මන් කවුළුව පමණක් සුරකින්න"
+  },
+  "categoryFilterLabel": {
+    "message": "ප්රවර්ග පෙරහන"
+  },
+  "sortLabel": {
+    "message": "වර්ග කරන්න"
+  },
+  "displayAllLabel": {
+    "message": "සියල්ල"
+  },
+  "displayUserLabel": {
+    "message": "පරිශීලක සුරැකීම"
+  },
+  "displayAutoLabel": {
+    "message": "ස්වයංක්‍රීයව සුරැකීම"
+  },
+  "newestLabel": {
+    "message": "අලුත්ම"
+  },
+  "oldestLabel": {
+    "message": "පැරණිම"
+  },
+  "aToZLabel": {
+    "message": "AZ"
+  },
+  "zToALabel": {
+    "message": "ZA"
+  },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
+  "searchBarPlaceholder": {
+    "message": "සැසිය හෝ ටැබ් නම අනුව සොයන්න"
+  },
+  "search": {
+    "message": "සොයන්න"
+  },
+  "clearSearch": {
+    "message": "සෙවීම පැහැදිලි කරන්න"
+  },
+  "open": {
+    "message": "විවෘත කරන්න"
+  },
+  "remove": {
+    "message": "මකන්න"
+  },
+  "removeConfirmLabel": {
+    "message": "මෙම සැසිය මකන්නද?"
+  },
+  "sessionDeletedLabel": {
+    "message": "සැසිය මකන ලදී."
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "සැසි කවුළුව මකා ඇත."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "සැසි ටැබය මකා ඇත."
+  },
+  "restoreSessionLabel": {
+    "message": "ප්‍රතිෂ්ඨාපනය කරන්න"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "සැසිය මැකීමට අසමත් විය."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "සැසි කවුළුව මැකීමට අසමත් විය."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "සැසි පටිත්ත මැකීමට අසමත් විය."
+  },
+  "sessionSavedLabel": {
+    "message": "සැසිය සුරකින ලදී."
+  },
+  "failedSaveSessionLabel": {
+    "message": "සැසිය සුරැකීමට අසමත් විය."
+  },
+  "cancelLabel": {
+    "message": "සිදු කරන්න"
+  },
+  "undoLabel": {
+    "message": "පෙරසේ"
+  },
+  "redoLabel": {
+    "message": "පසුසේ"
+  },
+  "addTagLabel": {
+    "message": "ටැගය එක් කරන්න"
+  },
+  "removeTagLabel": {
+    "message": "ටැගය ඉවත් කරන්න"
+  },
+  "inputTagLabel": {
+    "message": "ටැග් නම ඇතුළත් කරන්න"
+  },
+  "detailLabel": {
+    "message": "විස්තරය"
+  },
+  "windowLabel": {
+    "message": "කවුළුව"
+  },
+  "windowsLabel": {
+    "message": "වින්ඩෝස්"
+  },
+  "tabLabel": {
+    "message": "ටැබ්"
+  },
+  "tabsLabel": {
+    "message": "ටැබ්"
+  },
+  "noSessionLabel": {
+    "message": "සැසියක් නැත."
+  },
+  "letsSaveLabel": {
+    "message": "පහළ දකුණු බොත්තම ක්ලික් කිරීමෙන් සැසිය සුරකිමු."
+  },
+  "noResultLabel": {
+    "message": "ගැළපෙන ප්‍රතිඵල නැත."
+  },
+  "noSessionSelectedLabel": {
+    "message": "සැසියක් තෝරා නැත."
+  },
+  "menuLabel": {
+    "message": "මෙනු"
+  },
+  "closeMenuLabel": {
+    "message": "මෙනුව වසන්න"
+  },
+  "closeLabel": {
+    "message": "වසන්න"
+  },
+  "renameLabel": {
+    "message": "නැවත නම් කරන්න"
+  },
+  "renameSessionLabel": {
+    "message": "සැසිය නැවත නම් කරන්න"
+  },
+  "OpenSessionLabel": {
+    "message": "සැසියක් විවෘත කරන්න"
+  },
+  "openInNewWindowLabel": {
+    "message": "නව කවුළුවකින් විවෘත කරන්න"
+  },
+  "openInNewWindowCaptionLabel": {
+    "message": "නව කවුළුව තුළ සැසිය විවෘත කරන්න."
+  },
+  "openInCurrentWindowLabel": {
+    "message": "වත්මන් කවුළුව තුළ විවෘත කරන්න"
+  },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "වත්මන් කවුළුව තුළ සැසිය විවෘත කරන්න. අක්‍රිය කවුළු සහ සියලුම ටැබ් වසා ඇත."
+  },
+  "addToCurrentWindowLabel": {
+    "message": "වත්මන් කවුළුව වෙත එක් කරන්න"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "වත්මන් කවුළුව වෙත ටැබ් එක් කරන්න. සැසියේ කවුළු කිහිපයක් තිබේ නම්, එය නව කවුළුවකින් විවෘත කරන්න."
+  },
+  "EditSessionLabel": {
+    "message": "සැසියක් සංස්කරණය කරන්න"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "වත්මන් සැසිය සමඟ ප්‍රතිස්ථාපනය කරන්න"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "වත්මන් කවුළුව සමඟ ප්රතිස්ථාපනය කරන්න"
+  },
+  "addCurrentWindowLabel": {
+    "message": "වත්මන් කවුළුව එක් කරන්න"
+  },
+  "makeCopySessionLabel": {
+    "message": "සැසියේ පිටපතක් සාදන්න"
+  },
+  "registerTrackingLabel": {
+    "message": "කවුළු වෙනස්කම් නිරීක්ෂණය කරන්න"
+  },
+  "removeTrackingLabel": {
+    "message": "ලුහුබැඳීම මකන්න"
+  },
+  "registerStartupLabel": {
+    "message": "ආරම්භය සඳහා ලියාපදිංචි වන්න"
+  },
+  "removeStartupLabel": {
+    "message": "ආරම්භයෙන් ඉවත් කරන්න"
+  },
+  "editWindowLabel": {
+    "message": "කවුළුවක් සංස්කරණය කරන්න"
+  },
+  "addCurrentTabLabel": {
+    "message": "වත්මන් ටැබය එක් කරන්න"
+  },
+  "errorLabel": {
+    "message": "දෝෂය"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB ඔබගේ බ්‍රවුසරයේ නොමැත."
+  },
+  "reloadExtensionLabel": {
+    "message": "දිගුව නැවත පූරණය කරන්න"
+  },
+  "howToSolveLabel": {
+    "message": "මෙම ගැටළුව විසඳන්නේ කෙසේද"
+  },
+  "winCloseSessionName": {
+    "message": "ස්වයංක්‍රීය සුරැකීම - කවුළුව වසා ඇත"
+  },
+  "browserExitSessionName": {
+    "message": "ස්වයංක්‍රීය සුරකින්න - බ්‍රවුසරය ඉවත් විය"
+  },
+  "regularSaveSessionName": {
+    "message": "ස්වයංක්‍රීයව සුරැකීම - නිතිපතා"
+  },
+  "winCloseSessionNameShort": {
+    "message": "කවුළුව වසා ඇත"
+  },
+  "browserExitSessionNameShort": {
+    "message": "බ්‍රවුසරය ඉවත් විය"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "නිතිපතා"
+  },
+  "settingsLabel": {
+    "message": "සැකසුම්"
+  },
+  "sessionsLabel": {
+    "message": "සැසිවාර"
+  },
+  "shortcutsLabel": {
+    "message": "කෙටිමං"
+  },
+  "informationLabel": {
+    "message": "තොරතුරු"
+  },
+  "generalLabel": {
+    "message": "ජනරාල්"
+  },
+  "autoSaveLabel": {
+    "message": "ස්වයංක්‍රීයව සුරැකීම"
+  },
+  "styleLabel": {
+    "message": "ශෛලිය"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "නව කවුළුවක සැසිය විවෘත කරන්න"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "සලකුණු නොකළහොත්, සැසිය වත්මන් කවුළුව උඩින් ලියයි."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "ටැබ් කම්මැලි පැටවීම"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "සැසියක් විවෘත කරන විට, ඔබ ටැබ් එක තෝරන තෙක් එක් එක් පිටුවේ අන්තර්ගතය පූරණය නොවේ.<br>පරීක්ෂා නොකළහොත්, සැසිය ප්‍රතිසාධනය කරන විට මතක භාවිතය බෙහෙවින් වැඩි වේ."
+  },
+  "isUseDiscardedLabel": {
+    "message": "කම්මැලි පැටවීම සඳහා \"ඉවතලන\" දේපල භාවිතා කරන්න"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "මෙම විකල්පය සක්‍රීය කිරීම ටැබ් විවෘත කිරීමේදී කාර්ය සාධනය වැඩි දියුණු කරයි."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "කම්මැලි පැටවීමේ පටිත්තෙහි ෆේවිකෝනය දර්ශනය නොවේ."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Restore window's position"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Restore window's position and size when opening session."
+  },
+  "startupLabel": {
+    "message": "පණ ගන්වන්න"
+  },
+  "startupBehaviorLabel": {
+    "message": "බ්රවුසරය ආරම්භ කිරීමේදී හැසිරීම"
+  },
+  "openPreviousSessionLabel": {
+    "message": "පෙර සැසිය විවෘත කරන්න"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "අවසන් වරට වසා දැමූ සැසිය විවෘත කරන්න."
+  },
+  "openStartupSessionLabel": {
+    "message": "ආරම්භක සැසිය විවෘත කරන්න"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "ආරම්භය සඳහා ලියාපදිංචි වූ සැසි විවෘත කරන්න. සැසි ලැයිස්තුවේ ඇති මෙනුවෙන් ඔබට ආරම්භය සඳහා ලියාපදිංචි විය හැක."
+  },
+  "DoNothingLabel": {
+    "message": "කිසිවක් නොකරන්න"
+  },
+  "trackingSessionLabel": {
+    "message": "ලුහුබැඳීමේ සැසිය"
+  },
+  "trackingLabel": {
+    "message": "ලුහුබැඳීම"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "අලුතින් විවෘත කරන ලද කවුළු නිරීක්ෂණය කරන්න"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "ලුහුබැඳීමේ සැසියක් තුළ නව කවුළුවක් විවෘත කළ විට, එය ලුහුබැඳීම තුළ ඇතුළත් කරන්න."
+  },
+  "ifAutoSaveLabel": {
+    "message": "සැසිය නිතිපතා සුරකින්න"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "සෑම X මිනිත්තුවකම සැසිය සුරකින්න."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "විරාමය (විනාඩි)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Minimum value 0.5"
+  },
+  "autoSaveLimitLabel": {
+    "message": "උපරිම අංකය සුරකින ලදි"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "සුරැකි සැසි උපරිම ගණන (මේ ආකාරයෙන්)."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "කවුළුව වසා ඇති විට සැසිය සුරකින්න"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "එක් සංවෘත කවුළුවක් පමණක් ඇතුළත් වන සැසිය සුරකින්න."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "උපරිම අංකය සුරකින ලදි"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "සුරැකි සැසි උපරිම ගණන (මේ ආකාරයෙන්)."
+  },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "බ්‍රවුසරයෙන් පිටවන විට සැසිය සුරකින්න"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "පේළියක වසා ඇති බහු කවුළු ඇතුළත් සැසිය සුරකින්න."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "උපරිම අංකය සුරකින ලදි"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "සුරැකි සැසි උපරිම ගණන (මේ ආකාරයෙන්)."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "ස්වයං සුරැකීමේ සැසි නාමය සඳහා පිටු මාතෘකාව භාවිතා කරන්න"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "සැසියක් ස්වයංක්‍රීයව සුරකින විට, විවෘත කරන ලද පිටුවේ මාතෘකාව සැසියේ නම ලෙස භාවිතා කරන්න."
+  },
+  "backupLabel": {
+    "message": "උපස්ථ"
+  },
+  "ifBackupLabel": {
+    "message": "උපස්ථය සුරකින්න"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "බ්‍රවුසරය ආරම්භ වන විට, සැසිවල උපස්ථ ගොනුවක් සාදා එය බාගැනීම් ෆෝල්ඩරයේ සුරකින්න."
+  },
+  "individualBackupLabel": {
+    "message": "තනි පුද්ගල උපස්ථය"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "සෑම සැසියක්ම තනි ගොනුවක සුරකිනු ලැබේ.<br>සලකුණු නොකළහොත්, සියලුම සැසි තනි ගොනුවක් ලෙස සුරකිනු ඇත, එය ඔබගේ ගබඩා ඉඩ ප්‍රමාණය ඉක්මවා යා හැක."
+  },
+  "backupFolderLabel": {
+    "message": "ස්ථානය සුරකින්න"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "උපස්ථ ගොනුව සුරැකීමට ෆෝල්ඩරය සඳහන් කරන්න. සුරැකීමේ ස්ථානය බ්‍රව්සර් බාගැනීම් ෆෝල්ඩරය යටතේ ඇති ෆෝල්ඩරයට සීමා වේ."
+  },
+  "downloadFolderLabel": {
+    "message": "ෆෝල්ඩරය බාගන්න"
+  },
+  "backupFilesLimitLabel": {
+    "message": "සුරැකි උපස්ථ උපරිම ගණන"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "උපස්ථ ගොනු සංඛ්‍යාව මෙම අගය ඉක්මවා ගිය විට, ඒවා පැරණිතම ආරෝහණ අනුපිළිවෙලින් මකා දමනු ලැබේ."
+  },
+  "dateFormatLabel": {
+    "message": "දින ආකෘතිය"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "උදාහරණය: YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "පුද්ගලික කවුළුව සුරකින්න"
+  },
+  "ignoreUrlListLabel": {
+    "message": "සැසිය සුරැකීමේදී නොසලකා හැරීමට URL ලැයිස්තුව"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "ටැබ් URL ලැයිස්තුවට ගැළපේ නම්, එය සැසිය තුළ සටහන් නොවනු ඇත. ලැයිස්තුව \"*\" වයිල්ඩ්කාඩ් වලට ඉඩ දෙයි."
+  },
+  "shouldSaveDeviceNameLabel": {
+    "message": "උපාංගයේ නම සැසියට සුරකින්න"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "සැසියක් සුරැකීමේදී උපාංගයේ නම ටැගයක් ලෙස එක් කරන්න. වලාකුළු සමමුහුර්තකරණය භාවිතා කරන විට, ඔබට එය වෙනත් උපාංගවල සැසි වලින් වෙන්කර හඳුනාගත හැක."
+  },
+  "deviceNameLabel": {
+    "message": "ඇතුලත්වේ නම"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "මෙම උපාංගයේ නම සඳහන් කරන්න."
+  },
+  "applyDeviceNameLabel": {
+    "message": "පවතින සැසි සඳහා උපාංගයේ නම යොදන්න"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "සියලුම සුරකින ලද සැසි වෙත උපාංගයේ නම එක් කරන්න."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "උපාංගයේ නම යොදන්න"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "සියලුම සැසි සඳහා උපාංගයේ නම යොදන්නද?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Favicons සම්පීඩනය කරන්න"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "සැසියක් සුරැකීමේදී ෆේවිකොන් සම්පීඩනය කරන්න."
+  },
+  "compressAllSessionsLabel": {
+    "message": "සියලුම සැසි සම්පීඩනය කරන්න"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "දැනට සුරකින ලද සියලුම සැසිවල favicons සම්පීඩනය කරන්න. මෙමගින් මතක භාවිතය සුරකින අතර සැසි පැටවීම වේගවත් කරයි."
+  },
+  "compressLabel": {
+    "message": "සම්පීඩනය කරන්න"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "සියලුම සැසි සම්පීඩනය කරන්නද?"
+  },
+  "compressingLabel": {
+    "message": "සම්පීඩනය කරමින්..."
+  },
+  "compressionCompleteLabel": {
+    "message": "සම්පීඩනය අවසන්."
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "සලකුණු නොකළහොත්, සැසිය සුරැකීමේදී පුද්ගලික කවුළුව නොසලකා හරියි."
+  },
+  "ifSupportTstLabel": {
+    "message": "Tree Style Tab සඳහා සහය දක්වයි"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Tree Style Tab හි ගස් තත්ත්වය ප්‍රතිසාධනය කරන්න.<br>මෙම විකල්පය සක්‍රීය කළ විට, සැසිය ප්‍රතිසාධනය කිරීමට කාලය ගතවේ."
+  },
+  "tstDelayLabel": {
+    "message": "ගස ප්‍රතිසංස්කරණය කිරීමේදී ප්‍රමාදය (මිලි තත්පර)"
+  },
+  "saveTabGroupsLabel": {
+    "message": "ටැබ් කණ්ඩායම් සුරකින්න"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Save and restore the state of tab groups."
+  },
+  "tstDelayCaptionLabel": {
+    "message": "ගසේ තත්වය යථා තත්ත්වයට පත් කිරීම සඳහා, ටැබ් එක විවෘත කිරීමට රැඳී සිටීමට කාලය අවශ්ය වේ. ගස නිවැරදිව ප්රතිෂ්ඨාපනය නොකළහොත් මෙම අගය වැඩි කරන්න."
+  },
+  "truncateTitleLabel": {
+    "message": "එක් පේළියක් තුළ සැසියේ නම පෙන්වන්න"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "සැසි ලැයිස්තුවේ සැසියේ නම පේළි එකකට වඩා වැඩි නම්, එය එක් පේළියක කප්පාදු කර දර්ශනය වේ."
+  },
+  "cloudSyncLabel": {
+    "message": "වලාකුළු සමමුහුර්තකරණය"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "වලාකුළු සමමුහුර්තකරණය සබල කරන්න (බීටා)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "සැසි Google Drive™ වෙත සුරකින්න සහ අනෙකුත් පරිගණක සමඟ සමමුහුර්ත කරන්න."
+  },
+  "syncingLabel": {
+    "message": "සමමුහුර්ත කිරීම"
+  },
+  "downloadingLabel": {
+    "message": "බාගත කිරීමේ"
+  },
+  "uploadingLabel": {
+    "message": "උඩුගත කිරීම"
+  },
+  "deletingLabel": {
+    "message": "මකා දැමීම"
+  },
+  "syncCompletedLabel": {
+    "message": "සමමුහුර්ත කිරීම සම්පූර්ණයි."
+  },
+  "signInRequiredLabel": {
+    "message": "වලාකුළු සමමුහුර්ත කිරීම සඳහා පුරනය වීම අවශ්‍ය වේ."
+  },
+  "signInLabel": {
+    "message": "පිවිසෙන්න"
+  },
+  "signOutLabel": {
+    "message": "නික්මෙන්න"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "ස්වයංක්‍රීයව සමමුහුර්ත කරන්න"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "බ්‍රවුසරය දියත් කරන විට සහ සැසිය සුරකින විට වලාකුළු සමමුහුර්තකරණය ක්‍රියාත්මක කරන්න."
+  },
+  "includesAutoSaveToSyncLabel": {
+    "message": "ස්වයංක්‍රීය සුරැකුම් සැසි සමමුහුර්ත කරන්න"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "වලාකුළු සමමුහුර්තකරණය තුළ ස්වයංක්‍රීය සුරැකීමේ සැසි උඩුගත කරන්න / බාගන්න."
+  },
+  "popupLabel": {
+    "message": "මතුවන"
+  },
+  "openButtonBehaviorLabel": {
+    "message": "විවෘත බොත්තම හැසිරීම"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "විවෘත බොත්තමෙහි පෙරනිමි හැසිරීම තෝරන්න."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "බොත්තම හැසිරීම සුරකින්න"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "සුරකින්න බොත්තමෙහි පෙරනිමි හැසිරීම තෝරන්න."
+  },
+  "isShowOpenButtonsLabel": {
+    "message": "සැසි ලැයිස්තුවේ විවෘත / මකන්න බොත්තම් පෙන්වන්න"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "කර්සරය සැසි ලැයිස්තුවට ඉහළින් ඇති විට විවෘත / මකන්න බොත්තම් පෙන්වන්න."
+  },
+  "sizeLabel": {
+    "message": "ප්‍රමාණය"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "උත්පතන ප්රමාණය සඳහන් කරන්න."
+  },
+  "widthLabel": {
+    "message": "පළල"
+  },
+  "heightLabel": {
+    "message": "උස"
+  },
+  "sidebarWidthLabel": {
+    "message": "පැති තීරු පළල"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "ටැබය තුළ සැසි ලැයිස්තුව විවෘත කරන්න"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "මෙවලම් තීරුවේ බොත්තම ක්ලික් කළ විට පටිත්තෙහි සැසි ලැයිස්තුව විවෘත කරන්න."
+  },
+  "themeLabel": {
+    "message": "තේමාව"
+  },
+  "themeCaptionLabel": {
+    "message": "වර්ණ පටිපාටිය සඳහන් කරන්න."
+  },
+  "lightLabel": {
+    "message": "ආලෝකය"
+  },
+  "darkLabel": {
+    "message": "අඳුරු"
+  },
+  "otherLabel": {
+    "message": "වෙනත්"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "යාවත්කාලීන කිරීමේදී විකල්ප පිටුව පෙන්වන්න"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Tab Session Manager යාවත්කාලීන වූ විට විකල්ප පිටුව පෙන්වන්න. යාවත්කාලීන අන්තර්ගතයන් ඔබට ඉක්මනින් දැනගත හැකිය."
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Manager යාවත්කාලීන කර ඇත!"
+  },
+  "seeMoreLabel": {
+    "message": "තව බලන්න"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "යාවත්කාලීන තොරතුරු බැලීමට ක්ලික් කරන්න."
+  },
+  "isDebugModeLabel": {
+    "message": "නිදොස් කිරීමේ මාදිලිය සබල කරන්න"
+  },
+  "isDebugModeCaptionLabel": {
+    "message": "නිදොස් කිරීමේ මාදිලිය සක්‍රීය කර ඇති විට, ලොගය නිදොස්කරණයට ප්‍රතිදානය වේ."
+  },
+  "exportSettingsLabel": {
+    "message": "අපනයන සැකසුම්"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "පරිගණකයේ ඇති සැකසුම් json ගොනුවක් ලෙස සුරකින්න."
+  },
+  "importSettingsLabel": {
+    "message": "ආයාත සැකසුම්"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "පරිගණකයේ සුරකින ලද සැකසුම් ගොනුව පූරණය කරන්න."
+  },
+  "resetSettingsLabel": {
+    "message": "සැකසුම් නැවත සකස්"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "සියලු සැකසුම් පෙරනිමියට ප්‍රතිසාධනය කරන්න."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "යළි පිහිටුවන්න"
+  },
+  "importLabel": {
+    "message": "ආයාත සැසි"
+  },
+  "importCaptionLabel": {
+    "message": "පරිගණකයේ සුරකින ලද සැසි පූරණය කර ඒවා සැසි ලැයිස්තුවට එක් කරන්න."
+  },
+  "importCaptionLabel2": {
+    "message": "සහාය දක්වන ගොනු:"
+  },
+  "importCaptionLabel3": {
+    "message": "වෙනත් දිගු වලින් සැසි ආයාත කරන්නේ කෙසේද"
+  },
+  "importButtonLabel": {
+    "message": "බ්‍රවුස් කරන්න..."
+  },
+  "importSaveButtonLabel": {
+    "message": "ආනයන"
+  },
+  "importClearButtonLabel": {
+    "message": "පැහැදිලිව"
+  },
+  "urlImportLabel": {
+    "message": "URL ලැයිස්තුව ආයාත කරන්න"
+  },
+  "urlImportCaptionLabel": {
+    "message": "URL ලැයිස්තුවෙන් සැසියක් සාදා එය සැසි ලැයිස්තුවට එක් කරන්න.<br>ආකෘතිය: &lt;URL&gt; &lt;page title (optionally)&gt;"
+  },
+  "exportLabel": {
+    "message": "අපනයන සැසි"
+  },
+  "exportCaptionLabel": {
+    "message": "සියලුම සැසි පරිගණකයට සුරකින්න."
+  },
+  "exportButtonLabel": {
+    "message": "අපනයන"
+  },
+  "removeSessionsLabel": {
+    "message": "සැසි මකන්න"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "සියලුම සැසි මකන්න."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "මකන්න"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "යතුරුපුවරු කෙටිමං"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "යතුරුපුවරු කෙටිමං සකසන්න."
+  },
+  "typeShortcutMessage": {
+    "message": "කෙටිමඟක් ටයිප් කරන්න"
+  },
+  "typeLetterMessage": {
+    "message": "ලිපියක් ටයිප් කරන්න"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Ctrl හෝ Alt ඇතුළත් කරන්න"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Command, Ctrl හෝ Alt ඇතුළත් කරන්න"
+  },
+  "invalidLetterMessage": {
+    "message": "ලිපිය භාවිතා කළ නොහැක"
+  },
+  "invalidShortcutMessage": {
+    "message": "කෙටිමඟ භාවිතා කළ නොහැක"
+  },
+  "openPopupDescription": {
+    "message": "මෙවලම් තීරු උත්පතනය විවෘත කරන්න"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "සැසිය සුරකින්න (වත්මන් කවුළුව පමණක්)"
+  },
+  "saveAllWindowDescription": {
+    "message": "සැසිය සුරකින්න (සියලු කවුළු)"
+  },
+  "exportSessionsDescription": {
+    "message": "සියලුම සැසි අපනයනය කරන්න"
+  },
+  "clear": {
+    "message": "පැහැදිලිව"
+  },
+  "reset": {
+    "message": "යළි පිහිටුවන්න"
+  },
+  "backersLabel": {
+    "message": "ආධාරකරුවන්"
+  },
+  "LicenseLabel": {
+    "message": "බලපත්රය"
+  },
+  "donationLabel": {
+    "message": "කරුණාකර පරිත්‍යාගයක් කරන්න"
+  },
+  "donationCaptionLabel": {
+    "message": "Tab Session Manager භාවිතා කිරීම ගැන ඔබට ස්තුතියි.<br>මම add-on එක දිගටම දියුණු කරන නිසා ඔබේ සහයෝගය විශාල දිරිගැන්වීමක් වේවි.<br>ඔබ ටැබ් සැසි කළමනාකරුට කැමති නම්, ඔබට පරිත්‍යාග කිරීම ගැන සලකා බැලිය හැකි නම් මම සතුටු වෙමි."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGift කාඩ්පත්"
+  },
+  "sponsorsLabel": {
+    "message": "අනුග්‍රාහකයන්"
+  },
+  "addonPageLabel": {
+    "message": "ඇඩෝන පිටුව"
+  },
+  "extensionPageLabel": {
+    "message": "දිගු පිටුව"
+  },
+  "firefoxLabel": {
+    "message": "ෆයර්ෆොක්ස් ඇඩෝන"
+  },
+  "chromeLabel": {
+    "message": "Chrome Web Store"
+  },
+  "edgeLabel": {
+    "message": "Edge add-ons"
+  },
+  "privacyPolicyLabel": {
+    "message": "රහස්යතා ප්රතිපත්තිය"
+  },
+  "importMessage": {
+    "message": "සැසි ආනයනය කරන ලදී."
+  },
+  "readFailedMessage": {
+    "message": "කියවීම අසාර්ථක විය"
+  },
+  "warningRemoveAllMessage": {
+    "message": "සියලුම සැසි මකන්න. ඔබට විශ්වාසද?"
+  },
+  "sessionLabel": {
+    "message": "වාරය"
+  },
+  "amazonUrl": {
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "මෙම පිටුව Tab Session Manager විසින් විවෘත කළ නොහැක."
+  },
+  "copyUrlLabel": {
+    "message": "URL පිටපත් කරන්න"
+  },
+  "copiedLabel": {
+    "message": "පිටපත් කර ඇත."
+  }
+}

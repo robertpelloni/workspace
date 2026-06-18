@@ -1,0 +1,806 @@
+{
+   "DoNothingLabel": {
+      "message": "Hiç bir şey yapılmasın"
+   },
+   "EditSessionLabel": {
+      "message": "Oturumu düzenle"
+   },
+   "LicenseLabel": {
+      "message": "Lisans"
+   },
+   "NotificationOnUpdateCaptionLabel": {
+      "message": "Güncelleme bilgilerini görüntülemek için tıklayın."
+   },
+   "NotificationOnUpdateLabel": {
+      "message": "Tab Session Manager güncellendi!"
+   },
+   "OpenSessionLabel": {
+      "message": "Oturum aç"
+   },
+   "aToZLabel": {
+      "message": "A-Z"
+   },
+   "addCurrentTabLabel": {
+      "message": "Geçerli sekmeyi ekle"
+   },
+   "addCurrentWindowLabel": {
+      "message": "Geçerli pencereye ekle"
+   },
+   "addTagLabel": {
+      "message": "Etiket ekle"
+   },
+   "addToCurrentWindowCaptionLabel": {
+      "message": "Geçerli pencereye sekmeler eklenir. Oturumda birden fazla pencere varsa yeni pencerede açılır."
+   },
+   "addToCurrentWindowLabel": {
+      "message": "Geçerli pencereye eklensin"
+   },
+   "addonPageLabel": {
+      "message": "Eklenti sayfası"
+   },
+   "addonUrl": {
+      "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+   },
+   "amazonTitleLabel": {
+      "message": "amazon.co.jp hediye kartları"
+   },
+   "amazonUrl": {
+      "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+   },
+   "applyDeviceNameButtonLabel": {
+      "message": "Aygıt adını ekle"
+   },
+   "applyDeviceNameCaptionLabel": {
+      "message": "Aygıtın adı tüm kayıtlı oturumlara eklenir."
+   },
+   "applyDeviceNameConfirmLabel": {
+      "message": "Aygıt adı tüm oturumlara uygulansın mı?"
+   },
+   "applyDeviceNameLabel": {
+      "message": "Aygıt adı geçerli oturumlara eklensin"
+   },
+   "autoSaveIntervalCaptionLabel": {
+      "message": "En küçük değer 0.5 olabilir"
+   },
+   "autoSaveIntervalLabel": {
+      "message": "Aralık (dakika)"
+   },
+   "autoSaveLabel": {
+      "message": "Otomatik kayıt"
+   },
+   "autoSaveLimitCaptionLabel": {
+      "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
+   },
+   "autoSaveLimitLabel": {
+      "message": "Kaydedilecek en fazla oturum sayısı"
+   },
+   "autoSaveWhenCloseCaptionLabel": {
+      "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
+   },
+   "autoSaveWhenCloseLimitLabel": {
+      "message": "Kaydedilecek en fazla oturum sayısı"
+   },
+   "autoSaveWhenCloseMinTabsCaptionLabel": {
+      "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+   },
+   "autoSaveWhenCloseMinTabsLabel": {
+      "message": "Minimum number of tabs"
+   },
+   "autoSaveWhenExitBrowserCaptionLabel": {
+      "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
+   },
+   "autoSaveWhenExitBrowserLimitLabel": {
+      "message": "Kaydedilecek en fazla oturum sayısı"
+   },
+   "backersLabel": {
+      "message": "Destekleyenler"
+   },
+   "backupFilesLimitCaptionLabel": {
+      "message": "Yedek sayısı bu değeri aştığında, en eskiden başlayarak silinir."
+   },
+   "backupFilesLimitLabel": {
+      "message": "Kaydedilebilecek en fazla yedek sayısını yazın"
+   },
+   "backupFolderCaptionLabel": {
+      "message": "Yedekleme dosyasının kaydedileceği klasörü belirtin. Kayıt konumu, tarayıcı indirme klasörünün altındaki klasörle sınırlıdır."
+   },
+   "backupFolderLabel": {
+      "message": "Kayıt konumu"
+   },
+   "backupLabel": {
+      "message": "Yedek"
+   },
+   "browserExitSessionName": {
+      "message": "Otomatik kayıt - Tarayıcı kapatılmış"
+   },
+   "browserExitSessionNameShort": {
+      "message": "Tarayıcıdan çıkıldığında"
+   },
+   "cancelLabel": {
+      "message": "Vazgeç"
+   },
+   "categoryFilterLabel": {
+      "message": "Kategori süzgeci"
+   },
+   "chromeLabel": {
+      "message": "Chrome web mağazası"
+   },
+   "clear": {
+      "message": "Temizle"
+   },
+   "clearSearch": {
+      "message": "Aramayı temizle"
+   },
+   "closeLabel": {
+      "message": "Kapat"
+   },
+   "closeMenuLabel": {
+      "message": "Menüyü kapat"
+   },
+   "cloudSyncLabel": {
+      "message": "Bulut eşitlemesi"
+   },
+   "compressAllSessionsCaptionLabel": {
+      "message": "Şu anda kayıtlı tüm oturumların site simgeleri sıkıştırılır. Bellek kullanımından kazanç sağlayarak oturumun yüklemesini hızlandırır."
+   },
+   "compressAllSessionsConfirmLabel": {
+      "message": "Tüm oturumlar sıkıştırılsın mı?"
+   },
+   "compressAllSessionsLabel": {
+      "message": "Tüm oturumlar sıkıştırılsın"
+   },
+   "compressFaviconUrlCaptionLabel": {
+      "message": "Oturum kaydedilirken site simgeleri sıkıştırılır."
+   },
+   "compressFaviconUrlLabel": {
+      "message": "Site simgeleri sıkıştırılsın"
+   },
+   "compressLabel": {
+      "message": "Sıkıştır"
+   },
+   "compressingLabel": {
+      "message": "Sıkıştırılıyor..."
+   },
+   "compressionCompleteLabel": {
+      "message": "Sıkıştırma tamamlandı."
+   },
+   "copiedLabel": {
+      "message": "Kopyalandı."
+   },
+   "copyUrlLabel": {
+      "message": "Adresi kopyala"
+   },
+   "darkLabel": {
+      "message": "Koyu"
+   },
+   "dateFormatCaptionLabel": {
+      "message": "Örnek: YYYY.MM.DD HH:mm:ss"
+   },
+   "dateFormatLabel": {
+      "message": "Tarih biçimi"
+   },
+   "deletingLabel": {
+      "message": "Siliniyor"
+   },
+   "detailLabel": {
+      "message": "Ayrıntılar"
+   },
+   "deviceNameCaptionLabel": {
+      "message": "Bu aygıt için bir ad yazın."
+   },
+   "deviceNameLabel": {
+      "message": "Aygıt adı"
+   },
+   "displayAllLabel": {
+      "message": "Tümü"
+   },
+   "displayAutoLabel": {
+      "message": "Otomatik kayıt"
+   },
+   "displayUserLabel": {
+      "message": "Kullanıcı kaydı"
+   },
+   "donateLabel": {
+      "message": "Bağış yap"
+   },
+   "donateWithPaypalLabel": {
+      "message": "Paypal ile bağış yap"
+   },
+   "donationCaptionLabel": {
+      "message": "Tab Session Manager eklentisini kullandığınız için teşekkürler.\u003Cbr>Desteğiniz eklentiyi geliştirmem için büyük bir teşvik olacak.\u003Cbr>Tab Session Manager eklentisini beğendiyseniz, bağış yapmayı değerlendirin."
+   },
+   "donationLabel": {
+      "message": "Lütfen bağış yapın"
+   },
+   "downloadFolderLabel": {
+      "message": "İndirme klasörü"
+   },
+   "downloadingLabel": {
+      "message": "İndiriliyor"
+   },
+   "edgeLabel": {
+      "message": "Edge eklentileri"
+   },
+   "editWindowLabel": {
+      "message": "Pencereyi düzenle"
+   },
+   "enabledAutoSyncCaptionLabel": {
+      "message": "Tarayıcı başlatıldığında ve oturum kaydedildiğinde bulut eşitlemesi yapılır."
+   },
+   "enabledAutoSyncLabel": {
+      "message": "Otomatik olarak eşitlensin"
+   },
+   "enabledCloudSyncCaptionLabel": {
+      "message": "Oturumlar Google Drive™ üzerine kaydedilir ve diğer bilgisayarlarla eşitlenir."
+   },
+   "enabledCloudSyncLabel": {
+      "message": "Bulut eşitlemesi kullanılsın (Beta)"
+   },
+   "errorLabel": {
+      "message": "Hata"
+   },
+   "exportButtonLabel": {
+      "message": "Dışa aktar"
+   },
+   "exportCaptionLabel": {
+      "message": "Tüm oturumlar bilgisayara kaydedilir."
+   },
+   "exportLabel": {
+      "message": "Oturumları dışa aktarma"
+   },
+   "exportSessionsDescription": {
+      "message": "Tüm oturumları dışa aktar"
+   },
+   "exportSettingsCaptionLabel": {
+      "message": "Ayarlar JSON dosyası olarak bilgisayar üzerine kaydedilir."
+   },
+   "exportSettingsLabel": {
+      "message": "Ayarları dışa aktarma"
+   },
+   "extDescription": {
+      "message": "Pencerelerin ve sekmelerin durumunu kaydeder ve geri yükler. Otomatik kaydetmeyi de destekler."
+   },
+   "extName": {
+      "message": "Tab Session Manager"
+   },
+   "extensionPageLabel": {
+      "message": "Eklenti sayfası"
+   },
+   "failedDeleteSessionLabel": {
+      "message": "Oturum silinemedi."
+   },
+   "failedDeleteSessionTabLabel": {
+      "message": "Oturum sekmesi silinemedi."
+   },
+   "failedDeleteSessionWindowLabel": {
+      "message": "Oturum penceresi silinemedi."
+   },
+   "failedSaveSessionLabel": {
+      "message": "Oturum kaydedilemedi."
+   },
+   "firefoxLabel": {
+      "message": "Firefox eklentileri"
+   },
+   "generalLabel": {
+      "message": "Genel"
+   },
+   "heightLabel": {
+      "message": "Yükseklik"
+   },
+   "howToSolveLabel": {
+      "message": "Bu sorun nasıl çözülür"
+   },
+   "ifAutoSaveCaptionLabel": {
+      "message": "Oturum her X dakikada bir kaydedilir."
+   },
+   "ifAutoSaveLabel": {
+      "message": "Oturum düzenli olarak kaydedilsin"
+   },
+   "ifAutoSaveWhenCloseCaptionLabel": {
+      "message": "Yalnızca bir kapatılmış pencere bulunan oturum kaydedilir."
+   },
+   "ifAutoSaveWhenCloseLabel": {
+      "message": "Pencere kapatıldığında oturum kaydedilsin"
+   },
+   "ifAutoSaveWhenExitBrowserCaptionLabel": {
+      "message": "Arka arkaya birkaç pencerenin kapatıldığı oturum kaydedilir."
+   },
+   "ifAutoSaveWhenExitBrowserLabel": {
+      "message": "Tarayıcıdan çıkılırken oturum kaydedilsin"
+   },
+   "ifBackupCaptionLabel": {
+      "message": "Tarayıcı başlatıldığında, oturumların bulunduğu bir yedek dosyası oluşturulur ve bu dosya indirmeler klasörüne kaydedilir."
+   },
+   "ifBackupLabel": {
+      "message": "Yedek kaydedilsin"
+   },
+   "ifLazyLoadingCaptionLabel": {
+      "message": "Bir oturum açıldığında, sayfaların içeriği siz sekmeleri seçene kadar yüklenmez.\u003Cbr>İşaretlenmediğinde, oturum geri yüklendiğinde bellek kullanımı büyük ölçüde artar."
+   },
+   "ifLazyLoadingLabel": {
+      "message": "Sekme yavaş yüklensin"
+   },
+   "ifOpenNewWindowCaptionLabel": {
+      "message": "İşaretlenmediğinde oturum geçerli pencerenin üzerine yazılır."
+   },
+   "ifOpenNewWindowLabel": {
+      "message": "Oturum yeni pencerede açılsın"
+   },
+   "ifSavePrivateWindowCaptionLabel": {
+      "message": "İşaretlenmediğinde, oturum kaydedilirken gizli pencere yok sayılır."
+   },
+   "ifSavePrivateWindowLabel": {
+      "message": "Gizli pencere kaydedilsin"
+   },
+   "ifSupportTstCaptionLabel": {
+      "message": "Ağaç biçimi sekmesinin ağaç durumunu geri yükler.\u003Cbr>Bu seçenek etkinleştirildiğinde, oturumu geri yüklemek zaman alır."
+   },
+   "ifSupportTstLabel": {
+      "message": "Ağaç biçiminde sekmeyi destekler"
+   },
+   "ignoreUrlListCaptionLabel": {
+      "message": "Sekme adresi listeyle eşleşirse, oturuma kaydedilmez. Listede \"*\" genel arama karakteri kullanılabilir."
+   },
+   "ignoreUrlListLabel": {
+      "message": "Oturumu kaydederken yok sayılacak adres listesi"
+   },
+   "importButtonLabel": {
+      "message": "Göz at..."
+   },
+   "importCaptionLabel": {
+      "message": "Bilgisayarda kayıtlı oturumlar yüklenir ve oturum listesine eklenir."
+   },
+   "importCaptionLabel2": {
+      "message": "Desteklenen dosyalar:"
+   },
+   "importCaptionLabel3": {
+      "message": "Diğer eklentilerdeki oturumlar nasıl içe aktarılır"
+   },
+   "importClearButtonLabel": {
+      "message": "Temizle"
+   },
+   "importLabel": {
+      "message": "Oturumları içe aktarma"
+   },
+   "importMessage": {
+      "message": "Oturumlar içe aktarıldı."
+   },
+   "importSaveButtonLabel": {
+      "message": "İçe aktar"
+   },
+   "importSettingsCaptionLabel": {
+      "message": "Bilgisayara kaydedilmiş ayarlar dosyası içe aktarılır."
+   },
+   "importSettingsLabel": {
+      "message": "Ayarları içe aktarma"
+   },
+   "includeMacModifierKeysMessage": {
+      "message": "Command, Ctrl veya Alt ekleyin"
+   },
+   "includeModifierKeysMessage": {
+      "message": "Ctrl veya Alt ekleyin"
+   },
+   "includesAutoSaveToSyncCaptionLabel": {
+      "message": "Bulut eşitlemesinde otomatik olarak kaydedilmiş oturumlar yüklenir ya da indirilir."
+   },
+   "includesAutoSaveToSyncLabel": {
+      "message": "Otomatik kaydedilen oturumlar eşitlensin"
+   },
+   "indexedDBErrorLabel": {
+      "message": "IndexedDB tarayıcınızda kullanılamıyor."
+   },
+   "individualBackupCaptionLabel": {
+      "message": "Her oturum ayrı bir dosyaya kaydedilir.\u003Cbr>İşaretlenmezse, tüm oturumlar tek bir dosya olarak kaydedilir ve bu da depolama alanınızı doldurabilir."
+   },
+   "individualBackupLabel": {
+      "message": "Bireysel yedekleme"
+   },
+   "informationLabel": {
+      "message": "Bilgiler"
+   },
+   "initialNameValue": {
+      "message": "Geçerli oturumu kaydet"
+   },
+   "inputSessionNameLabel": {
+      "message": "Oturum adını yazın"
+   },
+   "inputTagLabel": {
+      "message": "Etiket adını yazın"
+   },
+   "invalidLetterMessage": {
+      "message": "Harf kullanılamaz"
+   },
+   "invalidShortcutMessage": {
+      "message": "Bu kısayol kullanılamaz"
+   },
+   "isDebugModeCaptionLabel": {
+      "message": "Hata ayıklama kipi açıldığında, günlük kayıtları hata ayıklayıcıya gönderilir."
+   },
+   "isDebugModeLabel": {
+      "message": "Hata ayıklama kipi açılsın"
+   },
+   "isRestoreWindowPositionCaptionLabel": {
+      "message": "Oturum açılırken pencerenin konumu ve boyutu geri yüklenir."
+   },
+   "isRestoreWindowPositionLabel": {
+      "message": "Pencere konumu geri yüklensin"
+   },
+   "isSessionListOpenInTabCaptionLabel": {
+      "message": "Araç çubuğundaki düğmeye tıklandığında oturum listesi sekmede açılır."
+   },
+   "isSessionListOpenInTabLabel": {
+      "message": "Oturum listesi sekmede açılsın"
+   },
+   "isShowOpenButtonsCaptionLabel": {
+      "message": "İmleç oturum listesinin üzerindeyken aç / sil düğmeleri görüntülenir."
+   },
+   "isShowOpenButtonsLabel": {
+      "message": "Oturum listesinde aç / sil düğmeleri görüntülensin"
+   },
+   "isShowOptionsPageWhenUpdatedCaptionLabel": {
+      "message": "Tab Session Manager güncellendiğinde seçenekler sayfası görüntülenir. Güncelleme içeriğini hızlıca öğrenebilirsiniz."
+   },
+   "isShowOptionsPageWhenUpdatedLabel": {
+      "message": "Güncelleme sırasında seçenek sayfası görüntülensin"
+   },
+   "isUseDiscardedCaption2Label": {
+      "message": "Yavaş yüklenen sekmede site simgesi görüntülenmez."
+   },
+   "isUseDiscardedCaptionLabel": {
+      "message": "Sekmelerin açılma başarımını artırır."
+   },
+   "isUseDiscardedLabel": {
+      "message": "Yavaş yükleme için \"discarded\" özelliği kullanılsın"
+   },
+   "keyboardShortcutsLabel": {
+      "message": "Klavye kısayolları"
+   },
+   "letsSaveLabel": {
+      "message": "Sağ alttaki düğmeye tıklayarak oturumu kaydedelim."
+   },
+   "lightLabel": {
+      "message": "Açık"
+   },
+   "makeCopySessionLabel": {
+      "message": "Oturumun kopyasını oluştur"
+   },
+   "menuLabel": {
+      "message": "Menü"
+   },
+   "newestLabel": {
+      "message": "Yeni-eski"
+   },
+   "noResultLabel": {
+      "message": "Eşleşen bir sonuç yok."
+   },
+   "noSessionLabel": {
+      "message": "Herhangi bir oturum kaydı yok."
+   },
+   "noSessionSelectedLabel": {
+      "message": "Herhangi bir oturum seçilmedi."
+   },
+   "oldestLabel": {
+      "message": "Eski-yeni"
+   },
+   "open": {
+      "message": "Aç"
+   },
+   "openButtonBehaviorCaptionLabel": {
+      "message": "Aç düğmesinin varsayılan davranışını seçin."
+   },
+   "openButtonBehaviorLabel": {
+      "message": "Aç düğmesinin davranışı"
+   },
+   "openInCurrentWindowCaptionLabel": {
+      "message": "Oturum geçerli pencerede açılır. Etkin olmayan pencereler ve tüm sekmeler kapatılır."
+   },
+   "openInCurrentWindowLabel": {
+      "message": "Geçerli pencerede açılsın"
+   },
+   "openInNewWindowCaptionLabel": {
+      "message": "Oturum yeni pencerede açılır."
+   },
+   "openInNewWindowLabel": {
+      "message": "Yeni pencerede açılsın"
+   },
+   "openPopupDescription": {
+      "message": "Araç çubuğu açılır penceresini aç"
+   },
+   "openPreviousSessionCaptionLabel": {
+      "message": "Son kapatılan oturum açılır."
+   },
+   "openPreviousSessionLabel": {
+      "message": "Önceki oturum açılsın"
+   },
+   "openSessionListInTabLabel": {
+      "message": "Oturum listesi sekmede açılsın"
+   },
+   "openStartupSessionCaptionLabel": {
+      "message": "Başlangıca kaydedilmiş oturumlar açılır. Oturum listesindeki menüden başlangıçta açılacakları belirleyebilirsiniz."
+   },
+   "openStartupSessionLabel": {
+      "message": "Başlangıç oturumu açılsın"
+   },
+   "otherLabel": {
+      "message": "Diğer"
+   },
+   "popupLabel": {
+      "message": "Açılan pencere"
+   },
+   "popupSizeCaptionLabel": {
+      "message": "Açılan pencere boyutunu belirtin."
+   },
+   "privacyPolicyLabel": {
+      "message": "Gizlilik ilkesi"
+   },
+   "readFailedMessage": {
+      "message": "Okunamadı"
+   },
+   "redoLabel": {
+      "message": "Yinele"
+   },
+   "registerStartupLabel": {
+      "message": "Başlangıca ekle"
+   },
+   "registerTrackingLabel": {
+      "message": "Pencere değişikliklerini izle"
+   },
+   "regularSaveSessionName": {
+      "message": "Otomatik kayıt - Düzenli kayıt"
+   },
+   "regularSaveSessionNameShort": {
+      "message": "Düzenli olarak"
+   },
+   "reloadExtensionLabel": {
+      "message": "Eklentiyi yeniden yükle"
+   },
+   "remove": {
+      "message": "Sil"
+   },
+   "removeConfirmLabel": {
+      "message": "Bu oturum silinsin mi?"
+   },
+   "removeSessionsButtonLabel": {
+      "message": "Sil"
+   },
+   "removeSessionsCaptionLabel": {
+      "message": "Tüm oturumlar silinir."
+   },
+   "removeSessionsLabel": {
+      "message": "Oturumları sil"
+   },
+   "removeStartupLabel": {
+      "message": "Başlangıçtan kaldır"
+   },
+   "removeTagLabel": {
+      "message": "Etiketi kaldır"
+   },
+   "removeTrackingLabel": {
+      "message": "İzlemeyi sil"
+   },
+   "renameLabel": {
+      "message": "Yeniden adlandır"
+   },
+   "renameSessionLabel": {
+      "message": "Oturumu yeniden adlandır"
+   },
+   "replaceCurrentSessionLabel": {
+      "message": "Geçerli oturumla değiştir"
+   },
+   "replaceCurrentWindowLabel": {
+      "message": "Geçerli pencereyle değiştir"
+   },
+   "replacedPageMessage": {
+      "message": "Bu sayfa Tab Session Manager tarafından açılamaz."
+   },
+   "reset": {
+      "message": "Sıfırla"
+   },
+   "resetSettingsButtonLabel": {
+      "message": "Sıfırla"
+   },
+   "resetSettingsCaptionLabel": {
+      "message": "Tüm ayarlar varsayılan değerlerine sıfırlanır."
+   },
+   "resetSettingsLabel": {
+      "message": "Ayarları sıfırlama"
+   },
+   "restoreSessionLabel": {
+      "message": "Geri yükle"
+   },
+   "saveAllWindowDescription": {
+      "message": "Oturumu kaydet (tüm pencereler)"
+   },
+   "saveAllWindowsLabel": {
+      "message": "Tüm pencereler kaydedilsin"
+   },
+   "saveButtonBehaviorCaptionLabel": {
+      "message": "Kaydet düğmesinin varsayılan davranışını seçin."
+   },
+   "saveButtonBehaviorLabel": {
+      "message": "Kaydet düğmesinin davranışı"
+   },
+   "saveCurrentWindowDescription": {
+      "message": "Oturumu kaydet (yalnızca geçerli pencere)"
+   },
+   "saveLabel": {
+      "message": "Kayıt"
+   },
+   "saveOnlyCurrentWindowLabel": {
+      "message": "Geçerli pencere kaydedilsin"
+   },
+   "saveSessionLabel": {
+      "message": "Oturumu kaydet"
+   },
+   "saveTabGroupsCaptionLabel": {
+      "message": "Sekme gruplarının durumunu kaydeder ve geri yükler."
+   },
+   "saveTabGroupsLabel": {
+      "message": "Sekme gruplarını kaydet"
+   },
+   "search": {
+      "message": "Ara"
+   },
+   "searchBarPlaceholder": {
+      "message": "Oturum veya sekme adına göre ara"
+   },
+   "seeMoreLabel": {
+      "message": "Daha fazlasını gör"
+   },
+   "sessionDeletedLabel": {
+      "message": "Oturum silindi."
+   },
+   "sessionLabel": {
+      "message": "Oturum"
+   },
+   "sessionSavedLabel": {
+      "message": "Oturum kaydedildi."
+   },
+   "sessionTabDeletedLabel": {
+      "message": "Oturum sekmesi silindi."
+   },
+   "sessionWindowDeletedLabel": {
+      "message": "Oturum penceresi silindi."
+   },
+   "sessionsLabel": {
+      "message": "Oturumlar"
+   },
+   "setKeyboardShortCutsMessage": {
+      "message": "Klavye kısayollarını ayarlar."
+   },
+   "settingsLabel": {
+      "message": "Ayarlar"
+   },
+   "shortcutsLabel": {
+      "message": "Kısayollar"
+   },
+   "shouldSaveDeviceNameCaptionLabel": {
+      "message": "Bir oturumu kaydedilirken aygıt adı etiket olarak eklenir. Bulut eşitlemesi kullanılırken, aygıtların ayırt edilebilmesini sağlar."
+   },
+   "shouldSaveDeviceNameLabel": {
+      "message": "Aygıt adı oturuma kaydedilsin"
+   },
+   "shouldTrackNewWindowCaptionLabel": {
+      "message": "Bir izleme oturumunda yeni bir pencere açıldığında, o da izlemeye katılır."
+   },
+   "shouldTrackNewWindowLabel": {
+      "message": "Yeni açılan pencereler izlensin"
+   },
+   "sidebarWidthLabel": {
+      "message": "Yan çubuk genişliği"
+   },
+   "signInLabel": {
+      "message": "Oturum aç"
+   },
+   "signInRequiredLabel": {
+      "message": "Bulut eşitlemesi için oturum açmalısınız."
+   },
+   "signOutLabel": {
+      "message": "Oturumu kapat"
+   },
+   "sizeLabel": {
+      "message": "Boyut"
+   },
+   "sortLabel": {
+      "message": "Sırala"
+   },
+   "sponsorsLabel": {
+      "message": "Destekleyenler"
+   },
+   "startupBehaviorLabel": {
+      "message": "Tarayıcıyı başlatma davranışı"
+   },
+   "startupLabel": {
+      "message": "Başlangıç"
+   },
+   "styleLabel": {
+      "message": "Biçem"
+   },
+   "syncCompletedLabel": {
+      "message": "Eşitleme tamamlandı."
+   },
+   "syncingLabel": {
+      "message": "Eşitleniyor"
+   },
+   "tabLabel": {
+      "message": "Sekme"
+   },
+   "tabsAscLabel": {
+      "message": "En az sekme"
+   },
+   "tabsDesLabel": {
+      "message": "En çok sekme"
+   },
+   "tabsLabel": {
+      "message": "Sekme"
+   },
+   "themeCaptionLabel": {
+      "message": "Renk temasını belirtin."
+   },
+   "themeLabel": {
+      "message": "Tema"
+   },
+   "trackingLabel": {
+      "message": "İzleme"
+   },
+   "trackingSessionLabel": {
+      "message": "Oturum izleme"
+   },
+   "truncateTitleCaptionLabel": {
+      "message": "Oturum listesindeki oturum adı tek bir satırdan uzunsa, tek satır olarak kısaltılır ve görüntülenir."
+   },
+   "truncateTitleLabel": {
+      "message": "Oturum adı tek satırda görüntülensin"
+   },
+   "tstDelayCaptionLabel": {
+      "message": "Ağacın durumunu geri yüklemek için sekmeyi açarken bekleme süresi gereklidir. Ağaç düzgün şekilde geri yüklenmezse bu değeri artırın."
+   },
+   "tstDelayLabel": {
+      "message": "Ağaç geri yükleme gecikmesi (milisaniye)"
+   },
+   "typeLetterMessage": {
+      "message": "Bir harf yazın"
+   },
+   "typeShortcutMessage": {
+      "message": "Bir kısayol yazın"
+   },
+   "undoLabel": {
+      "message": "Geri al"
+   },
+   "uploadingLabel": {
+      "message": "Yükleniyor"
+   },
+   "urlImportCaptionLabel": {
+      "message": "Adres listesinden bir oturum oluşturulur ve oturum listesine eklenir.\u003Cbr>Biçim: &lt;Adres&gt; &lt;sayfa başlığı (isteğe bağlı)&gt;"
+   },
+   "urlImportLabel": {
+      "message": "Adres listesini içe aktarma"
+   },
+   "useTabTitleforAutoSaveCaptionLabel": {
+      "message": "Bir oturum otomatik olarak kaydedildiğinde oturum adı olarak açılmış sayfanın başlığı kullanılır."
+   },
+   "useTabTitleforAutoSaveLabel": {
+      "message": "Otomatik kaydedilen oturum adı için sayfa başlığı kullanılsın"
+   },
+   "warningRemoveAllMessage": {
+      "message": "Tüm oturumlar silinecek. Emin misiniz?"
+   },
+   "widthLabel": {
+      "message": "Genişlik"
+   },
+   "winCloseSessionName": {
+      "message": "Otomatik kayıt - Pencere kapatılmış"
+   },
+   "winCloseSessionNameShort": {
+      "message": "Pencere kapatıldığında"
+   },
+   "windowLabel": {
+      "message": "Pencere"
+   },
+   "windowsLabel": {
+      "message": "Pencere"
+   },
+   "zToALabel": {
+      "message": "Z-A"
+   }
+}

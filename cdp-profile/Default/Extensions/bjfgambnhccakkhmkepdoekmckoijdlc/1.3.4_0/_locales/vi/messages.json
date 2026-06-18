@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Nhãn cho nút để thêm đánh giá cho ứng dụng",
+      "message": "Thêm đánh giá"
+   },
+   "appUpdated": {
+      "description": "Nhãn cho cảnh báo ứng dụng đã được cập nhật",
+      "message": "Ứng dụng đã được cập nhật"
+   },
+   "connect": {
+      "description": "Nhãn cho nút kết nối",
+      "message": "Kết nối"
+   },
+   "connectFromThisTab": {
+      "description": "Nhãn cho nút để kết nối từ tab hiện tại",
+      "message": "Kết nối từ tab này"
+   },
+   "disconnect": {
+      "description": "Nhãn cho nút để ngắt kết nối",
+      "message": "Ngắt kết nối"
+   },
+   "dismiss": {
+      "description": "Hành động để bỏ qua cảnh báo",
+      "message": "Bỏ qua"
+   },
+   "error": {
+      "description": "Nhãn để hiển thị lỗi",
+      "message": "Lỗi"
+   },
+   "focusConnectedTab": {
+      "description": "Nhãn cho nút để tập trung vào tab đã kết nối",
+      "message": "Tập trung vào tab đã kết nối"
+   },
+   "invalidTab": {
+      "description": "Thông báo lỗi cho tab không hợp lệ",
+      "message": "Trang này không thể tự động hóa. Vui lòng thử một trang khác."
+   },
+   "reviewDescription": {
+      "description": "Yêu cầu người dùng để lại đánh giá cho ứng dụng",
+      "message": "Chào bạn, tôi là $NAME$. Tôi đã tạo ra $APP_NAME$ để giúp mọi người tiết kiệm thời gian và tự động hóa công việc của họ. Nếu bạn thích sử dụng nó, tôi sẽ rất biết ơn nếu bạn có thể để lại đánh giá 5 sao để giúp người khác khám phá $APP_NAME$. Cảm ơn rất nhiều!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Cảm ơn người dùng vì đã sử dụng ứng dụng",
+      "message": "Cảm ơn bạn đã sử dụng $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Nhãn cho mô tả để xem có gì mới",
+      "message": "Xem có gì mới"
+   },
+   "signIn": {
+      "description": "Nhãn cho nút để đăng nhập",
+      "message": "Đăng nhập"
+   },
+   "view": {
+      "description": "Nhãn cho nút để xem bản cập nhật",
+      "message": "Xem"
+   }
+}

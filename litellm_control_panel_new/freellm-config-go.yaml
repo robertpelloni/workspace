@@ -1,0 +1,3 @@
+port: 5000
+router_settings:
+  routing_strategy: simple-shuffle

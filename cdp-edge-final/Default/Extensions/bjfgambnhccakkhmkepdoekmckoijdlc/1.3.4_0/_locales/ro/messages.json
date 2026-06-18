@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Etichetă pentru butonul de a adăuga o recenzie pentru aplicație",
+      "message": "Adaugă o recenzie"
+   },
+   "appUpdated": {
+      "description": "Etichetă pentru alerta de actualizare a aplicației",
+      "message": "Aplicația a fost actualizată"
+   },
+   "connect": {
+      "description": "Etichetă pentru butonul de conectare",
+      "message": "Conectați-vă"
+   },
+   "connectFromThisTab": {
+      "description": "Eticheta pentru butonul de conectare din tab-ul curent",
+      "message": "Conectare din acest tab"
+   },
+   "disconnect": {
+      "description": "Etichetă pentru butonul de deconectare",
+      "message": "Deconectare"
+   },
+   "dismiss": {
+      "description": "Acțiune de respingere a alertei",
+      "message": "Respinge"
+   },
+   "error": {
+      "description": "Etichetă pentru afișarea unei erori",
+      "message": "Eroare"
+   },
+   "focusConnectedTab": {
+      "description": "Etichetă pentru butonul de focalizare a filei conectate",
+      "message": "Focalizează fila conectată"
+   },
+   "invalidTab": {
+      "description": "Mesaj de eroare pentru filă invalidă",
+      "message": "Această pagină nu poate fi automatizată. Vă rugăm să încercați o altă pagină."
+   },
+   "reviewDescription": {
+      "description": "Solicită utilizatorului să lase o recenzie pentru aplicație",
+      "message": "Bună, sunt $NAME$. Am creat $APP_NAME$ pentru a ajuta oamenii să economisească timp și să-și automatizeze sarcinile. Dacă îți place să-l folosești, aș aprecia o evaluare de 5 stele pentru a ajuta și alți utilizatori să descopere $APP_NAME$. Îți mulțumesc mult!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Mulțumește utilizatorului că folosește aplicația",
+      "message": "Mulțumim că folosiți $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Etichetă pentru descrierea de a vedea noutăţile",
+      "message": "Vezi noutăţile"
+   },
+   "signIn": {
+      "description": "Etichetă pentru butonul de autentificare",
+      "message": "Autentifică-te"
+   },
+   "view": {
+      "description": "Etichetă pentru butonul de vizualizare a actualizării",
+      "message": "Vizualizare"
+   }
+}

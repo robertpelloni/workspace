@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Închide toate filele duplicate"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Închide filele duplicate"
+   }
+}

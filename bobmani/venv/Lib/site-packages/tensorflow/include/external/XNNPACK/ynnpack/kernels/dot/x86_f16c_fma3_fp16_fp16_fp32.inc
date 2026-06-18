@@ -1,0 +1,8 @@
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_1x32x1_1x8x1_fma3, 1, 32, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_2x32x1_1x8x1_fma3, 2, 32, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_1x16x1_1x8x1_fma3, 1, 16, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_2x16x1_1x8x1_fma3, 2, 16, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_4x16x1_1x8x1_fma3, 4, 16, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_2x8x1_1x8x1_fma3, 2, 8, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_4x8x1_1x8x1_fma3, 4, 8, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)
+YNN_DOT_KERNEL(arch_flag::fma3, dot_fp16_fp16_fp32_8x8x1_1x8x1_fma3, 8, 8, 1, 1, 8, 1, /*flags=*/dot_flag::consistent_arithmetic, half, half, float)

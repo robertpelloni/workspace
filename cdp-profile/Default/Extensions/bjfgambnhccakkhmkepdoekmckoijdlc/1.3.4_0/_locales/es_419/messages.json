@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Etiqueta para el botón para añadir una reseña de la aplicación",
+      "message": "Agregar una reseña"
+   },
+   "appUpdated": {
+      "description": "Etiqueta para la alerta de aplicación actualizada",
+      "message": "Aplicación actualizada"
+   },
+   "connect": {
+      "description": "Etiqueta para el botón de conectar",
+      "message": "Conectar"
+   },
+   "connectFromThisTab": {
+      "description": "Etiqueta para el botón para conectar desde la pestaña actual",
+      "message": "Conectar desde esta pestaña"
+   },
+   "disconnect": {
+      "description": "Etiqueta para el botón de desconectar",
+      "message": "Desconectar"
+   },
+   "dismiss": {
+      "description": "Acción para descartar la alerta",
+      "message": "Descartar"
+   },
+   "error": {
+      "description": "Etiqueta para mostrar un error",
+      "message": "Error"
+   },
+   "focusConnectedTab": {
+      "description": "Etiqueta para el botón para enfocar la pestaña conectada",
+      "message": "Enfocar la pestaña conectada"
+   },
+   "invalidTab": {
+      "description": "Mensaje de error para pestaña no válida",
+      "message": "Esta página no se puede automatizar. Por favor, intenta con una página diferente."
+   },
+   "reviewDescription": {
+      "description": "Pide al usuario que deje una reseña para la aplicación",
+      "message": "Hola, soy $NAME$. Creé $APP_NAME$ para ayudar a las personas a ahorrar tiempo y automatizar sus tareas. Si te gusta usarla, agradecería una calificación de 5 estrellas para ayudar a otros a descubrir $APP_NAME$. ¡Muchas gracias!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Agradece al usuario por usar la aplicación",
+      "message": "Gracias por usar $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Etiqueta para la descripción para ver qué hay de nuevo",
+      "message": "Ver qué hay de nuevo"
+   },
+   "signIn": {
+      "description": "Etiqueta para el botón para iniciar sesión",
+      "message": "Iniciar sesión"
+   },
+   "view": {
+      "description": "Etiqueta para el botón de ver la actualización",
+      "message": "Ver"
+   }
+}

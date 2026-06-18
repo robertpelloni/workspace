@@ -1,0 +1,20 @@
+{
+   "action": {
+      "default_icon": "icons/48.png",
+      "default_popup": "form.html",
+      "default_title": "All in one Web Searcher"
+   },
+   "author": "aakash.19493@gmail.com",
+   "description": "Search anything on the internet easily by typing into ONE unified search box",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/48.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuyJuDV/7Lza9GFn5gCRuj09kVPcGiSqld+PXwtWUYWJVvHz6lgBlYe7tCwfryrDYyj9qQJNZ9iUDU9seCf7PphwR1A9Gclb2dgq4yYVq0frj/pV/gAXS9ABR3i3w4SRi/Af3kOkjIbrIkg0MFNSnqtjSxq9xp0Fw00WTYPkqKhVgenKRSMeDEhYyHOCRqvpyKFfHLo7kIXlnxxJGeUgLDwZxnPsyZKyv+Cnby6QHngOh8Gix8OrihVWa88k0JSd0h5wnzMVlds+onfeQoT3rIayszCMMJysXO6YAkqzCoAwH2iCPS1KEr1I42tNgAZXz+d92SfavlW8rMvxKeBnMKwIDAQAB",
+   "manifest_version": 3,
+   "name": "All in one web searcher",
+   "options_page": "options.html",
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "5.0"
+}

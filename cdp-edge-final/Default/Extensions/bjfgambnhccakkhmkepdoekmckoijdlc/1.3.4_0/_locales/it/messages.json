@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Etichetta per il pulsante per aggiungere una recensione per l'applicazione",
+      "message": "Aggiungi una recensione"
+   },
+   "appUpdated": {
+      "description": "Etichetta per l'avviso di aggiornamento dell'app",
+      "message": "App aggiornata"
+   },
+   "connect": {
+      "description": "Etiqueta para el botón para conectar",
+      "message": "Conectar"
+   },
+   "connectFromThisTab": {
+      "description": "Etichetta per il pulsante per connettersi dalla scheda corrente",
+      "message": "Connetti da questa scheda"
+   },
+   "disconnect": {
+      "description": "Etichetta per il pulsante per disconnettersi",
+      "message": "Disconnetti"
+   },
+   "dismiss": {
+      "description": "Azione per ignorare l'avviso",
+      "message": "Ignora"
+   },
+   "error": {
+      "description": "Etichetta per visualizzare un errore",
+      "message": "Errore"
+   },
+   "focusConnectedTab": {
+      "description": "Etichetta per il pulsante per focalizzare la scheda connessa",
+      "message": "Focalizza la scheda connessa"
+   },
+   "invalidTab": {
+      "description": "Messaggio di errore per scheda non valida",
+      "message": "Questa pagina non può essere automatizzata. Per favore, prova un'altra pagina."
+   },
+   "reviewDescription": {
+      "description": "Chiedi all'utente di lasciare una recensione per l'applicazione",
+      "message": "Ciao, mi chiamo $NAME$. Ho creato $APP_NAME$ per aiutare le persone a risparmiare tempo e automatizzare le loro attività. Se ti piace usarlo, ti sarei grato di una valutazione a 5 stelle per aiutare gli altri a scoprire $APP_NAME$. Grazie mille!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Ringrazia l'utente per aver utilizzato l'applicazione",
+      "message": "Grazie per aver utilizzato $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Etichetta per la descrizione per vedere le novità",
+      "message": "Scopri le novità"
+   },
+   "signIn": {
+      "description": "Etichetta per il pulsante di accesso",
+      "message": "Accedi"
+   },
+   "view": {
+      "description": "Etichetta per il pulsante per visualizzare l'aggiornamento",
+      "message": "Visualizza"
+   }
+}

@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Etikett för knappen för att lägga till en recension för applikationen",
+      "message": "Lägg till en recension"
+   },
+   "appUpdated": {
+      "description": "Etikett för uppdateringsvarning för appen",
+      "message": "Appen har uppdaterats"
+   },
+   "connect": {
+      "description": "Etikett för knapp för att ansluta",
+      "message": "Anslut"
+   },
+   "connectFromThisTab": {
+      "description": "Etikett för knapp för att ansluta från den aktuella fliken",
+      "message": "Anslut från den här fliken"
+   },
+   "disconnect": {
+      "description": "Etikett för knapp för att koppla från",
+      "message": "Koppla från"
+   },
+   "dismiss": {
+      "description": "Åtgärd för att avfärda varningen",
+      "message": "Avfärda"
+   },
+   "error": {
+      "description": "Etikett för att visa ett fel",
+      "message": "Fel"
+   },
+   "focusConnectedTab": {
+      "description": "Etikett för knapp för att fokusera på den anslutna fliken",
+      "message": "Fokusera på ansluten flik"
+   },
+   "invalidTab": {
+      "description": "Felmeddelande för ogiltig flik",
+      "message": "Den här sidan kan inte automatiseras. Försök med en annan sida."
+   },
+   "reviewDescription": {
+      "description": "Be användaren att lämna en recension för applikationen",
+      "message": "Hej, jag är $NAME$. Jag skapade $APP_NAME$ för att hjälpa människor att spara tid och automatisera sina uppgifter. Om du tycker om att använda den, skulle jag uppskatta ett 5-stjärnigt omdöme för att hjälpa andra att upptäcka $APP_NAME$. Tack så mycket!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Tacka användaren för att använda applikationen",
+      "message": "Tack för att du använder $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Etikett för beskrivningen för att se vad som är nytt",
+      "message": "Se vad som är nytt"
+   },
+   "signIn": {
+      "description": "Etikett för knappen för att logga in",
+      "message": "Logga in"
+   },
+   "view": {
+      "description": "Etikett för knappen för att visa uppdateringen",
+      "message": "Visa"
+   }
+}

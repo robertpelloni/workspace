@@ -1,0 +1,711 @@
+# FreeLLM Config - Updated 2026-06-03
+# Three groups: free-llm (top 10) + free-llm-fallback (tool-compatible) + free-llm-plain (non-tool)
+# Routing: simple-shuffle (picks smart models, not fast small ones)
+# Fallback: free-llm -> free-llm-fallback (plain group free-llm-plain for direct use only)
+
+# PROBE RESULTS:
+#   opencode_zen/deepseek-v4-flash-free  0.5s score=2.5 (65536 ctx)
+#   cerebras/gpt-oss-120b  0.3s score=1.1 (131072 ctx)
+#   mistral/mistral-large-latest  0.5s score=1.0 (128000 ctx)
+#   groq/llama-3.3-70b-versatile  0.2s score=0.8 (128000 ctx)
+#   opencode_zen/big-pickle  0.5s score=0.6 (4096 ctx)
+#   nvidia/stockmark/stockmark-2-100b-instruct  0.4s score=0.5 (0 ctx)
+#   codestral/codestral-latest  0.3s score=0.5 (256000 ctx)
+#   groq/llama-3.1-8b-instant  0.2s score=0.4 (131072 ctx)
+#   nvidia/nvidia/nemotron-3-super-120b-a12b  2.4s score=0.2 (4096 ctx)
+#   opencode_zen/mimo-v2.5-free  8.0s score=0.2 (4096 ctx)
+#   cerebras/zai-glm-4.7  0.2s score=-0.0 (0 ctx)
+#   nvidia/sarvamai/sarvam-m  0.3s score=-0.1 (0 ctx)
+#   mistral/mistral-code-latest  0.3s score=-0.1 (0 ctx)
+#   mistral/mistral-small-2506  0.3s score=-0.1 (0 ctx)
+#   mistral/mistral-code-fim-latest  0.3s score=-0.1 (0 ctx)
+#   mistral/mistral-medium  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-small-2603  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-medium-3-5  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-medium-2604  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-medium-c21211-r0-75  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-medium-3.5  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-medium-2508  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-large-2512  0.4s score=-0.1 (0 ctx)
+#   mistral/mistral-code-agent-latest  0.5s score=-0.1 (0 ctx)
+#   mistral/mistral-medium-3  0.6s score=-0.1 (0 ctx)
+#   opencode_zen/nemotron-3-super-free  7.9s score=-0.3 (4096 ctx)
+#   mistral/mistral-medium-2505  3.3s score=-0.7 (0 ctx)
+#   opencode_zen/minimax-m3-free  7.9s score=-1.0 (0 ctx)
+#   openrouter/poolside/laguna-xs.2:free  99.0s score=-10.0 (262144 ctx)
+#   openrouter/poolside/laguna-m.1:free  99.0s score=-10.0 (262144 ctx)
+#   openrouter/nvidia/nemotron-3-super-120b-a12b:free  99.0s score=-10.0 (1000000 ctx)
+#   nvidia/mistralai/mistral-small-4-119b-2603  99.0s score=-10.0 (128000 ctx)
+#   nvidia/moonshotai/kimi-k2.6  99.0s score=-10.0 (131072 ctx)
+#   sambanova/gpt-oss-120b  99.0s score=-10.0 (131072 ctx)
+#   cloudflare/@cf/moonshotai/kimi-k2.6  99.0s score=-10.0 (131072 ctx)
+#   cloudflare/@cf/nvidia/nemotron-3-120b-a12b  99.0s score=-10.0 (4096 ctx)
+#   cloudflare/@cf/meta/llama-4-scout-17b-16e-instruct  99.0s score=-10.0 (4096 ctx)
+#   github/Meta-Llama-3.1-8B-Instruct  99.0s score=-10.0 (131072 ctx)
+#   github/gpt-4o  99.0s score=-10.0 (128000 ctx)
+#   github/gpt-4o-mini  99.0s score=-10.0 (128000 ctx)
+#   cohere/command-a-03-2025  99.0s score=-10.0 (288000 ctx)
+#   cohere/command-a-plus-05-2026  99.0s score=-10.0 (128000 ctx)
+#   cohere/command-a-reasoning-08-2025  99.0s score=-10.0 (128000 ctx)
+#   cohere/command-a-translate-08-2025  99.0s score=-10.0 (8992 ctx)
+#   cohere/command-r-plus-08-2024  99.0s score=-10.0 (128000 ctx)
+#   cohere/command-r-08-2024  99.0s score=-10.0 (128000 ctx)
+#   cohere/c4ai-aya-expanse-32b  99.0s score=-10.0 (128000 ctx)
+#   (filtered 19 dead/high-latency models)
+model_list:
+  - # Rank 1: deepseek-v4-flash-free via opencode_zen - 65K ctx, 0.5s, 671B, score=3
+    model_name: free-llm
+    freellm_params:
+      model: openai/deepseek-v4-flash-free
+      timeout: 30
+      api_base: https://opencode.ai/zen/v1
+      max_tokens: 16384
+    model_info:
+      score: 2.54
+      latency: 0.453
+      context: 65536
+      params: 671
+  - # Rank 2: mistral-large-latest via mistral - 128K ctx, 0.5s, 123B, score=1
+    model_name: free-llm
+    freellm_params:
+      model: mistral/mistral-large-latest
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 1.05
+      latency: 0.452
+      context: 128000
+      params: 123
+  - # Rank 3: llama-3.3-70b-versatile via groq - 128K ctx, 0.2s, 70B, score=1
+    model_name: free-llm
+    freellm_params:
+      model: groq/llama-3.3-70b-versatile
+      timeout: 30
+      api_key: os.environ/GROQ_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 0.79
+      latency: 0.165
+      context: 128000
+      params: 70
+  - # Rank 4: big-pickle via opencode_zen - 4K ctx, 0.5s, 120B, score=1
+    model_name: free-llm
+    freellm_params:
+      model: openai/big-pickle
+      timeout: 30
+      api_base: https://opencode.ai/zen/v1
+      max_tokens: 3840
+    model_info:
+      score: 0.63
+      latency: 0.493
+      context: 4096
+      params: 120
+  - # Rank 5: codestral-latest via codestral - 256K ctx, 0.3s, 22B, score=0
+    model_name: free-llm
+    freellm_params:
+      model: codestral/codestral-latest
+      timeout: 30
+      api_key: os.environ/CODESTRAL_API_KEY
+      api_base: https://codestral.mistral.ai/v1
+      max_tokens: 16384
+    model_info:
+      score: 0.47
+      latency: 0.289
+      context: 256000
+      params: 22
+  - # Rank 6: llama-3.1-8b-instant via groq - 131K ctx, 0.2s, 8B, score=0
+    model_name: free-llm
+    freellm_params:
+      model: groq/llama-3.1-8b-instant
+      timeout: 30
+      api_key: os.environ/GROQ_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 0.4
+      latency: 0.215
+      context: 131072
+      params: 8
+  - # Rank 7: mistral-code-latest via mistral - 4K ctx, 0.3s, 0B, score=-0
+    model_name: free-llm
+    freellm_params:
+      model: mistral/mistral-code-latest
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.06
+      latency: 0.309
+      context: 4096
+      params: 0
+  - # mimo-v2.5-free via opencode_zen - 4K ctx, 8.0s, 200B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: openai/mimo-v2.5-free
+      timeout: 60
+      stream_timeout: 300
+      api_base: https://opencode.ai/zen/v1
+      max_tokens: 3840
+    model_info:
+      score: 0.21
+      latency: 7.993
+      context: 4096
+      params: 200
+  - # mistral-small-2506 via mistral - 4K ctx, 0.3s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-small-2506
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.06
+      latency: 0.313
+      context: 4096
+      params: 0
+  - # mistral-code-fim-latest via mistral - 4K ctx, 0.3s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-code-fim-latest
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.07
+      latency: 0.329
+      context: 4096
+      params: 0
+  - # mistral-medium via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.07
+      latency: 0.364
+      context: 4096
+      params: 0
+  - # mistral-small-2603 via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-small-2603
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.07
+      latency: 0.364
+      context: 4096
+      params: 0
+  - # mistral-medium-3-5 via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium-3-5
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.07
+      latency: 0.369
+      context: 4096
+      params: 0
+  - # mistral-medium-2604 via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium-2604
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.07
+      latency: 0.37
+      context: 4096
+      params: 0
+  - # mistral-medium-c21211-r0-75 via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium-c21211-r0-75
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.08
+      latency: 0.38
+      context: 4096
+      params: 0
+  - # mistral-medium-3.5 via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium-3.5
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.08
+      latency: 0.396
+      context: 4096
+      params: 0
+  - # mistral-medium-2508 via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium-2508
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.08
+      latency: 0.42
+      context: 4096
+      params: 0
+  - # mistral-large-2512 via mistral - 4K ctx, 0.4s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-large-2512
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.09
+      latency: 0.449
+      context: 4096
+      params: 0
+  - # mistral-code-agent-latest via mistral - 4K ctx, 0.5s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-code-agent-latest
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.1
+      latency: 0.479
+      context: 4096
+      params: 0
+  - # mistral-medium-3 via mistral - 4K ctx, 0.6s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium-3
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.11
+      latency: 0.572
+      context: 4096
+      params: 0
+  - # nemotron-3-super-free via opencode_zen - 4K ctx, 7.9s, 120B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: openai/nemotron-3-super-free
+      timeout: 60
+      stream_timeout: 300
+      api_base: https://opencode.ai/zen/v1
+      max_tokens: 3840
+    model_info:
+      score: -0.27
+      latency: 7.92
+      context: 4096
+      params: 120
+  - # mistral-medium-2505 via mistral - 4K ctx, 3.3s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: mistral/mistral-medium-2505
+      timeout: 30
+      api_key: os.environ/MISTRAL_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.66
+      latency: 3.306
+      context: 4096
+      params: 0
+  - # minimax-m3-free via opencode_zen - 4K ctx, 7.9s, 0B
+    model_name: free-llm-fallback
+    freellm_params:
+      model: openai/minimax-m3-free
+      timeout: 60
+      stream_timeout: 300
+      api_base: https://opencode.ai/zen/v1
+      max_tokens: 3840
+    model_info:
+      score: -1.0
+      latency: 7.944
+      context: 4096
+      params: 0
+  - # gpt-oss-120b via cerebras (no-tool) - 0.3s, score=1
+    model_name: free-llm-plain
+    freellm_params:
+      model: cerebras/gpt-oss-120b
+      timeout: 30
+      api_key: os.environ/CEREBRAS_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 1.07
+      latency: 0.263
+      context: 131072
+      supports_function_calling: false
+      params: 120
+  - # stockmark/stockmark-2-100b-instruct via nvidia (no-tool) - 0.4s, score=1
+    model_name: free-llm-plain
+    freellm_params:
+      model: nvidia_nim/stockmark/stockmark-2-100b-instruct
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+      supported_params:
+        - max_tokens
+        - temperature
+        - top_p
+        - frequency_penalty
+        - presence_penalty
+        - stop
+        - n
+        - stream
+        - response_format
+        - seed
+        - logprobs
+        - top_logprobs
+    model_info:
+      score: 0.52
+      latency: 0.392
+      context: 4096
+      supports_function_calling: false
+      params: 100
+  - # nvidia/nemotron-3-super-120b-a12b via nvidia (no-tool) - 2.4s, score=0
+    model_name: free-llm-plain
+    freellm_params:
+      model: nvidia_nim/nvidia/nemotron-3-super-120b-a12b
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+      supported_params:
+        - max_tokens
+        - temperature
+        - top_p
+        - frequency_penalty
+        - presence_penalty
+        - stop
+        - n
+        - stream
+        - response_format
+        - seed
+        - logprobs
+        - top_logprobs
+    model_info:
+      score: 0.25
+      latency: 2.43
+      context: 4096
+      supports_function_calling: false
+      params: 120
+  - # zai-glm-4.7 via cerebras (no-tool) - 0.2s, score=-0
+    model_name: free-llm-plain
+    freellm_params:
+      model: cerebras/zai-glm-4.7
+      timeout: 30
+      api_key: os.environ/CEREBRAS_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.04
+      latency: 0.181
+      context: 4096
+      supports_function_calling: false
+      params: 0
+  - # sarvamai/sarvam-m via nvidia (no-tool) - 0.3s, score=-0
+    model_name: free-llm-plain
+    freellm_params:
+      model: nvidia_nim/sarvamai/sarvam-m
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+      supported_params:
+        - max_tokens
+        - temperature
+        - top_p
+        - frequency_penalty
+        - presence_penalty
+        - stop
+        - n
+        - stream
+        - response_format
+        - seed
+        - logprobs
+        - top_logprobs
+    model_info:
+      score: -0.05
+      latency: 0.266
+      context: 4096
+      supports_function_calling: false
+      params: 0
+  - # gpt-oss-120b via cerebras (no-tool) - 0.3s, score=1
+    model_name: free-llm-plain
+    freellm_params:
+      model: cerebras/gpt-oss-120b
+      timeout: 30
+      api_key: os.environ/CEREBRAS_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 1.07
+      latency: 0.263
+      context: 131072
+      supports_function_calling: false
+      params: 120
+  - # stockmark/stockmark-2-100b-instruct via nvidia (no-tool) - 0.4s, score=1
+    model_name: free-llm-plain
+    freellm_params:
+      model: nvidia_nim/stockmark/stockmark-2-100b-instruct
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+      supported_params:
+        - max_tokens
+        - temperature
+        - top_p
+        - frequency_penalty
+        - presence_penalty
+        - stop
+        - n
+        - stream
+        - response_format
+        - seed
+        - logprobs
+        - top_logprobs
+    model_info:
+      score: 0.52
+      latency: 0.392
+      context: 4096
+      supports_function_calling: false
+      params: 100
+  - # nvidia/nemotron-3-super-120b-a12b via nvidia (no-tool) - 2.4s, score=0
+    model_name: free-llm-plain
+    freellm_params:
+      model: nvidia_nim/nvidia/nemotron-3-super-120b-a12b
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+      supported_params:
+        - max_tokens
+        - temperature
+        - top_p
+        - frequency_penalty
+        - presence_penalty
+        - stop
+        - n
+        - stream
+        - response_format
+        - seed
+        - logprobs
+        - top_logprobs
+    model_info:
+      score: 0.25
+      latency: 2.43
+      context: 4096
+      supports_function_calling: false
+      params: 120
+  - # zai-glm-4.7 via cerebras (no-tool) - 0.2s, score=-0
+    model_name: free-llm-plain
+    freellm_params:
+      model: cerebras/zai-glm-4.7
+      timeout: 30
+      api_key: os.environ/CEREBRAS_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.04
+      latency: 0.181
+      context: 4096
+      supports_function_calling: false
+      params: 0
+  - # sarvamai/sarvam-m via nvidia (no-tool) - 0.3s, score=-0
+    model_name: free-llm-plain
+    freellm_params:
+      model: nvidia_nim/sarvamai/sarvam-m
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+      supported_params:
+        - max_tokens
+        - temperature
+        - top_p
+        - frequency_penalty
+        - presence_penalty
+        - stop
+        - n
+        - stream
+        - response_format
+        - seed
+        - logprobs
+        - top_logprobs
+    model_info:
+      score: -0.05
+      latency: 0.266
+      context: 4096
+      supports_function_calling: false
+      params: 0
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: nvidia_nim/stepfun-ai/step-3.5-flash
+      timeout: 30
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.1
+      latency: 0.51
+      context: 4096
+      params: 0
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: nvidia_nim/stepfun-ai/step-3.7-flash
+      timeout: 30
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: -0.73
+      latency: 3.63
+      context: 4096
+      params: 0
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openrouter/openai/gpt-oss-20b:free
+      timeout: 30
+      api_key: os.environ/OPENROUTER_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 0.38
+      latency: 0.7
+      context: 131072
+      params: 20
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openai/Meta-Llama-3.1-405B-Instruct
+      timeout: 30
+      api_key: os.environ/GITHUB_TOKEN
+      api_base: https://models.inference.ai.azure.com
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 128000
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openai/Meta-Llama-3.1-8B-Instruct
+      timeout: 30
+      api_key: os.environ/GITHUB_TOKEN
+      api_base: https://models.inference.ai.azure.com
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 131072
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openai/gpt-4o
+      timeout: 30
+      api_key: os.environ/GITHUB_TOKEN
+      api_base: https://models.inference.ai.azure.com
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 128000
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openai/gpt-4o-mini
+      timeout: 30
+      api_key: os.environ/GITHUB_TOKEN
+      api_base: https://models.inference.ai.azure.com
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 128000
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openrouter/google/gemma-4-31b-it:free
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/OPENROUTER_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 131072
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openrouter/google/gemma-4-26b-a4b-it:free
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/OPENROUTER_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 131072
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openrouter/nvidia/nemotron-3-super-120b-a12b:free
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/OPENROUTER_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: 0
+      latency: 0
+      context: 4096
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openrouter/nvidia/nemotron-3-nano-30b-a3b:free
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/OPENROUTER_API_KEY
+      max_tokens: 3840
+    model_info:
+      score: 0
+      latency: 0
+      context: 4096
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openrouter/openai/gpt-oss-120b:free
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/OPENROUTER_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 131072
+  - model_name: free-llm-fallback
+    freellm_params:
+      model: openrouter/z-ai/glm-4.5-air:free
+      timeout: 30
+      stream_timeout: 300
+      api_key: os.environ/OPENROUTER_API_KEY
+      max_tokens: 16384
+    model_info:
+      score: 0
+      latency: 0
+      context: 131072
+router_settings:
+  routing_strategy: simple-shuffle
+  cooldown_time: 30
+  allowed_fails: 2
+  num_retries: 2
+  timeout: 30
+  enable_pre_call_checks: false
+  ignore_cooldown_on_fallbacks: true
+freellm_settings:
+  drop_params: true
+  num_retries: 2
+  request_timeout: 60
+  allowed_fails: 2
+  cooldown_time: 30
+  fallbacks:
+    - free-llm:
+        - free-llm-fallback
+  stream_timeout: 300
+port: 4000

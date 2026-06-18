@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Mygtuko etiketė, skirta pridėti programos apžvalgą",
+      "message": "Pridėti apžvalgą"
+   },
+   "appUpdated": {
+      "description": "Žyma apie programos atnaujinimo įspėjimą",
+      "message": "Programa atnaujinta"
+   },
+   "connect": {
+      "description": "Etiketė mygtukui prisijungti",
+      "message": "Prisijungti"
+   },
+   "connectFromThisTab": {
+      "description": "Mygtuko etiketė, skirta prisijungti iš dabartinio skirtuko",
+      "message": "Prisijungti iš šio skirtuko"
+   },
+   "disconnect": {
+      "description": "Mygtuko, skirto atsijungti, etiketė",
+      "message": "Atsijungti"
+   },
+   "dismiss": {
+      "description": "Veiksmas atmesti įspėjimą",
+      "message": "Atmesti"
+   },
+   "error": {
+      "description": "Žyma klaidos rodymui",
+      "message": "Klaida"
+   },
+   "focusConnectedTab": {
+      "description": "Mygtuko, skirto sutelkti prijungtą skirtuką, etiketė",
+      "message": "Sutelktas prijungtas skirtukas"
+   },
+   "invalidTab": {
+      "description": "Klaidos pranešimas netinkamam skirtukui",
+      "message": "Šis puslapis negali būti automatizuotas. Prašome išbandyti kitą puslapį."
+   },
+   "reviewDescription": {
+      "description": "Prašyti vartotojo palikti atsiliepimą apie programą",
+      "message": "Sveiki, aš esu $NAME$. Sukūriau $APP_NAME$, kad padėčiau žmonėms taupyti laiką ir automatizuoti jų užduotis. Jei jums patinka ja naudotis, būčiau dėkingas už 5 žvaigždučių įvertinimą, kad kiti galėtų atrasti $APP_NAME$. Labai ačiū!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Padėkoti vartotojui už programėlės naudojimą",
+      "message": "Dėkojame, kad naudojate $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Etiketė aprašymui, norint pamatyti, kas naujo",
+      "message": "Žiūrėkite, kas naujo"
+   },
+   "signIn": {
+      "description": "Mygtuko prisijungti žyma",
+      "message": "Prisijungti"
+   },
+   "view": {
+      "description": "Mygtuko, skirto peržiūrėti naujinį, etiketė",
+      "message": "Peržiūrėti"
+   }
+}

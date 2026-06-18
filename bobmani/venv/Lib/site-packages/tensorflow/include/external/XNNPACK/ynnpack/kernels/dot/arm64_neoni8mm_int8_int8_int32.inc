@@ -1,0 +1,7 @@
+YNN_DOT_KERNEL(arch_flag::neoni8mm, dot_int8_int8_int32_2x32x8_2x4x8_neoni8mm, 2, 32, 8, 2, 4, 8, /*flags=*/dot_flag::consistent_arithmetic | dot_flag::transpose_a, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::neoni8mm, dot_int8_int8_int32_4x16x8_2x4x8_neoni8mm, 4, 16, 8, 2, 4, 8, /*flags=*/dot_flag::consistent_arithmetic | dot_flag::transpose_a, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::neoni8mm, dot_int8_int8_int32_6x16x8_2x4x8_neoni8mm, 6, 16, 8, 2, 4, 8, /*flags=*/dot_flag::consistent_arithmetic | dot_flag::transpose_a, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::neoni8mm, dot_int8_int8_int32_6x8x8_2x4x8_neoni8mm, 6, 8, 8, 2, 4, 8, /*flags=*/dot_flag::consistent_arithmetic | dot_flag::transpose_a, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::neoni8mm, dot_int8_int8_int32_8x8x8_2x4x8_neoni8mm, 8, 8, 8, 2, 4, 8, /*flags=*/dot_flag::consistent_arithmetic | dot_flag::transpose_a, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::neoni8mm, dot_int8_int8_int32_10x8x8_2x4x8_neoni8mm, 10, 8, 8, 2, 4, 8, /*flags=*/dot_flag::consistent_arithmetic | dot_flag::transpose_a, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::neoni8mm, dot_int8_int8_int32_16x4x8_2x4x8_neoni8mm, 16, 4, 8, 2, 4, 8, /*flags=*/dot_flag::consistent_arithmetic | dot_flag::transpose_a, int8_t, int8_t, int32_t)

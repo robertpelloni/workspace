@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Label voor de knop om een beoordeling aan de applicatie toe te voegen",
+      "message": "Voeg een Beoordeling toe"
+   },
+   "appUpdated": {
+      "description": "Label voor de melding dat de app is bijgewerkt",
+      "message": "App bijgewerkt"
+   },
+   "connect": {
+      "description": "Label voor knop om verbinding te maken",
+      "message": "Verbind"
+   },
+   "connectFromThisTab": {
+      "description": "Label voor knop om vanaf het huidige tabblad verbinding te maken",
+      "message": "Verbinden vanaf dit tabblad"
+   },
+   "disconnect": {
+      "description": "Label voor knop om verbinding te verbreken",
+      "message": "Verbreek verbinding"
+   },
+   "dismiss": {
+      "description": "Actie om de waarschuwing te sluiten",
+      "message": "Sluiten"
+   },
+   "error": {
+      "description": "Label voor het weergeven van een fout",
+      "message": "Fout"
+   },
+   "focusConnectedTab": {
+      "description": "Label voor knop om het verbonden tabblad te focussen",
+      "message": "Focus verbonden tabblad"
+   },
+   "invalidTab": {
+      "description": "Foutmelding voor ongeldige tab",
+      "message": "Deze pagina kan niet geautomatiseerd worden. Probeer een andere pagina."
+   },
+   "reviewDescription": {
+      "description": "Vraag de gebruiker om een recensie achter te laten voor de applicatie",
+      "message": "Hallo, ik ben $NAME$. Ik heb $APP_NAME$ gemaakt om mensen te helpen tijd te besparen en hun taken te automatiseren. Als je er plezier in hebt om het te gebruiken, zou ik een 5-sterrenbeoordeling waarderen om anderen te helpen $APP_NAME$ te ontdekken. Heel erg bedankt!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Bedank de gebruiker voor het gebruiken van de applicatie",
+      "message": "Bedankt voor het gebruiken van $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Label voor de beschrijving om te zien wat er nieuw is",
+      "message": "Zie wat er nieuw is"
+   },
+   "signIn": {
+      "description": "Label voor de knop om in te loggen",
+      "message": "Inloggen"
+   },
+   "view": {
+      "description": "Label voor de knop om de update te bekijken",
+      "message": "Bekijk"
+   }
+}

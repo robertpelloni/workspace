@@ -1,0 +1,1481 @@
+{
+   "addSitePreferenceButtonTitle": {
+      "description": "Add button title text on Site Preferences tab.",
+      "message": "この URL にサイト設定を追加します。"
+   },
+   "allowIframeButtonTitle": {
+      "description": "Allow Cross-Origin iframes button title text.",
+      "message": "現在のページにクロスオリジン iframe を許可する。"
+   },
+   "autocompleteSubmitMessage": {
+      "description": "Message shown at the bottom of autocomplete menu.",
+      "message": "選択したものを自動送信します"
+   },
+   "connectButtonTitle": {
+      "description": "Connect button title text.",
+      "message": "現在アクティブなデータベースをKeePassXC-Browser に接続します。"
+   },
+   "contextMenuFillAttribute": {
+      "description": "Context menu parent item for filling a custom attribute.",
+      "message": "属性を入力…"
+   },
+   "contextMenuFillPassword": {
+      "description": "Context menu item for filling password.",
+      "message": "パスワードのみ入力"
+   },
+   "contextMenuFillTOTP": {
+      "description": "Context menu item for filling Time-based One Time Password.",
+      "message": "TOTP を入力"
+   },
+   "contextMenuFillUsernameAndPassword": {
+      "description": "Context menu item for filling both username and password.",
+      "message": "ユーザー名とパスワードを入力"
+   },
+   "contextMenuRequestGlobalAutoType": {
+      "description": "Global Auto-Type shortcut text.",
+      "message": "グローバル自動入力を要求"
+   },
+   "contextMenuSaveCredentials": {
+      "description": "Save credentials using the credential banner.",
+      "message": "資格情報を保存"
+   },
+   "contextMenuShowPasswordGenerator": {
+      "description": "Show password generator text.",
+      "message": "パスワードジェネレーターを表示"
+   },
+   "contextMenuShowPasswordGeneratorIcons": {
+      "description": "Show password generator icon on every password input field.",
+      "message": "パスワード生成アイコンを表示"
+   },
+   "copyDebugInfoButtonTitle": {
+      "description": "Copy debug info button title text on About tab.",
+      "message": "クリップボードにデバッグ情報をコピー"
+   },
+   "credentialExpired": {
+      "description": "If a credential is expired, this is appended to the title label.",
+      "message": "期限切れ"
+   },
+   "credentialsBlockedInIframe": {
+      "description": "Alert message when filling credentials is blocked due to iframe restrictions.",
+      "message": "Credential fill blocked in untrusted iframe."
+   },
+   "credentialsMultipleFound": {
+      "description": "Alert message when trying to fill username and/or password when multiple credentials are found.",
+      "message": "KeePassXC に複数のログイン情報が見つかりました！"
+   },
+   "credentialsMultipleFoundSecondLine": {
+      "description": "Alert message when trying to fill username and/or password when multiple credentials are found.",
+      "message": "KeePassXC-Browser のアイコンをクリックすると、その他のオプションを確認できます。"
+   },
+   "credentialsNoLoginsFound": {
+      "description": "Shown when no credentials are found for the current page.",
+      "message": "ログイン情報が見つかりません。"
+   },
+   "credentialsNoTOTPFound": {
+      "description": "Alert message when no TOTP is found.",
+      "message": "TOTP が見つかりません。"
+   },
+   "credentialsNoUsername": {
+      "description": "Shown when no username is set in the credentials.",
+      "message": "- ユーザー名なし -"
+   },
+   "credentialsNoUsernameFound": {
+      "description": "Alert message when no credentials are found for the given username.",
+      "message": "ユーザー名の資格情報が見つかりません。"
+   },
+   "credentialsRetrieveButton": {
+      "description": "Manual retrieve credentials button text.",
+      "message": "Retrieve credentials"
+   },
+   "defineAlreadySelected": {
+      "description": "A text shown when custom credentials fields are already set for the page.",
+      "message": "このページのログインフィールドは既に選択されているため上書きされます。"
+   },
+   "defineChooseCustomLoginFieldText": {
+      "description": "Help text for Custom Login Field banner.",
+      "message": "カスタムログインフィールドを選択"
+   },
+   "defineChoosePassword": {
+      "description": "Choosing a password field text when choosing Custom Login Fields.",
+      "message": "パスワードフィールドを選択してください"
+   },
+   "defineChooseStringFields": {
+      "description": "Choose String Fields a selection text when choosing Custom Login Fields.",
+      "message": "文字列フィールドを選択してください"
+   },
+   "defineChooseSubmitButton": {
+      "description": "Choose submit button selection text when choosing Custom Login Fields.",
+      "message": "Choose submit button"
+   },
+   "defineChooseTOTP": {
+      "description": "Choosing a TOTP field text when choosing Custom Login Fields.",
+      "message": "TOTP フィールドを選択してください"
+   },
+   "defineChooseUsername": {
+      "description": "Choosing a username field text when choosing Custom Login Fields.",
+      "message": "ユーザー名フィールドを選択してください"
+   },
+   "defineClearData": {
+      "description": "Clear save data button text when choosing Custom Login Fields.",
+      "message": "保存したデータを消去"
+   },
+   "defineClose": {
+      "description": "Close button text when choosing Custom Login Fields.",
+      "message": "閉じる"
+   },
+   "defineConfirm": {
+      "description": "Confirm button text when choosing Custom Login Fields.",
+      "message": "確認"
+   },
+   "defineHelpText": {
+      "description": "Confirm a selection text when choosing Custom Login Fields which contains String Fields.",
+      "message": "Please confirm your selection or choose more fields as String Fields."
+   },
+   "defineKeyboardText": {
+      "description": "Help text when choosing Custom Login Fields.",
+      "message": "キーボードの数字キーで入力フィールドを選択できます。"
+   },
+   "defineMore": {
+      "description": "More button text when choosing Custom Login Fields.",
+      "message": "さらに表示"
+   },
+   "defineReset": {
+      "description": "Reset button text when choosing Custom Login Fields.",
+      "message": "元に戻す"
+   },
+   "defineSkip": {
+      "description": "Skip button text when choosing Custom Login Fields.",
+      "message": "スキップ"
+   },
+   "defineStringField": {
+      "description": "Text for string field.",
+      "message": "String Field"
+   },
+   "defineSubmitButton": {
+      "description": "Text for Submit Button.",
+      "message": "Submit Button"
+   },
+   "dismissHttpAuthButtonTitle": {
+      "description": "Dismiss HTTP Auth button title text.",
+      "message": "Dismisses Basic HTTP Auth."
+   },
+   "documentationGettingStarted": {
+      "description": "Getting Started document text.",
+      "message": "Our Getting Started Guide will get you up and running quickly."
+   },
+   "documentationTroubleshootingGuide": {
+      "description": "Troubleshooting Guide text.",
+      "message": "Need help troubleshooting the browser integration? Check the Troubleshooting Guide."
+   },
+   "documentationUserGuide": {
+      "description": "User Guide text.",
+      "message": "Looking for more comprehensive documentation? Our User Guide is there to help."
+   },
+   "editSitePreferenceButtonTitle": {
+      "description": "Edit button title text on Site Preferences tab.",
+      "message": "このサイト設定の URL を編集します。"
+   },
+   "errorCurrentDatabaseNotConnected": {
+      "description": "Error notification shown when current database is not connected during action.",
+      "message": "現在のデータベースには接続されていません。"
+   },
+   "errorMessageAccessToAllEntriesDenied": {
+      "description": "Access to all entries denied.",
+      "message": "すべてのエントリーへのアクセスが拒否されました。"
+   },
+   "errorMessageAssociate": {
+      "description": "KeePassXC association failed, try again.",
+      "message": "KeePassXC のアソシエーションに失敗しました。再試行してください。"
+   },
+   "errorMessageCanceled": {
+      "description": "Action canceled or denied.",
+      "message": "アクションがキャンセルまたは拒否されました。"
+   },
+   "errorMessageCannotCreateNewGroup": {
+      "description": "Cannot create new group.",
+      "message": "新しいグループを作成できません。"
+   },
+   "errorMessageClientPublicKey": {
+      "description": "Client public key not received.",
+      "message": "クライアントの公開鍵を受信しませんでした。"
+   },
+   "errorMessageDatabaseHash": {
+      "description": "Database hash not received.",
+      "message": "データベースハッシュを受信しませんでした。"
+   },
+   "errorMessageDatabaseNotOpened": {
+      "description": "Database not opened.",
+      "message": "データベースが開かれていません。"
+   },
+   "errorMessageDecrypt": {
+      "description": "Cannot decrypt message.",
+      "message": "メッセージを復号できません。"
+   },
+   "errorMessageEmptyMessage": {
+      "description": "Empty message received.",
+      "message": "空のメッセージを受信しました。"
+   },
+   "errorMessageEncrypt": {
+      "description": "Message encryption failed. Is KeePassXC running?",
+      "message": "メッセージの暗号化に失敗しました。KeePassXC を実行していますか？"
+   },
+   "errorMessageEncryptionKey": {
+      "description": "Encryption key is not recognized.",
+      "message": "暗号化キーが認識されません。"
+   },
+   "errorMessageIncorrectAction": {
+      "description": "Incorrect action.",
+      "message": "不正確なアクションです。"
+   },
+   "errorMessageKeyExchange": {
+      "description": "Key exchange was not successful.",
+      "message": "鍵交換が成功しませんでした。"
+   },
+   "errorMessageNoGroupsFound": {
+      "description": "No groups found.",
+      "message": "グループが見つかりませんでした。"
+   },
+   "errorMessageNoLogins": {
+      "description": "No logins found.",
+      "message": "ログイン情報が見つかりません。"
+   },
+   "errorMessageNoURL": {
+      "description": "No URL provided.",
+      "message": "URL がありません。"
+   },
+   "errorMessageNoValidUuidProvided": {
+      "description": "No valid UUID provided.",
+      "message": "有効な UUID が提供されませんでした。"
+   },
+   "errorMessagePasskeysAttestationNotSupported": {
+      "description": "Attestation not supported.",
+      "message": "対応していない認証です。"
+   },
+   "errorMessagePasskeysContextIsNotSecure": {
+      "description": "Context is not secure.",
+      "message": "Context is not secure."
+   },
+   "errorMessagePasskeysCredentialIsExcluded": {
+      "description": "Passkey not registered due to an existing credential. Remove the existing credential to continue.",
+      "message": "Passkey not registered due to an existing credential. Remove the existing credential to continue."
+   },
+   "errorMessagePasskeysDomainNotValid": {
+      "description": "Effective domain is not a valid domain.",
+      "message": "Effective domain is not a valid domain."
+   },
+   "errorMessagePasskeysDomainRpIdMismatch": {
+      "description": "Origin and RP ID do not match.",
+      "message": "オリジンと RP ID が一致しません。"
+   },
+   "errorMessagePasskeysEmptyPublicKey": {
+      "description": "Empty public key.",
+      "message": "公開鍵が空白です。"
+   },
+   "errorMessagePasskeysInvalidChallenge": {
+      "description": "Challenge is shorter than required minimum length.",
+      "message": "Challenge is shorter than required minimum length."
+   },
+   "errorMessagePasskeysInvalidUrlProvided": {
+      "description": "Invalid URL provided.",
+      "message": "無効な URL が指定されました。"
+   },
+   "errorMessagePasskeysInvalidUserId": {
+      "description": "user.id does not match the required length.",
+      "message": "user.id does not match the required length."
+   },
+   "errorMessagePasskeysInvalidUserVerification": {
+      "description": "Invalid user verification.",
+      "message": "無効なユーザー認証です。"
+   },
+   "errorMessagePasskeysNoSupportedAlgorithms": {
+      "description": "No supported algorithms were provided.",
+      "message": "No supported algorithms were provided."
+   },
+   "errorMessagePasskeysOriginNotAllowed": {
+      "description": "Origin is empty or not allowed.",
+      "message": "オリジンが空である、または許可されていません。"
+   },
+   "errorMessagePasskeysRequestCanceled": {
+      "description": "Passkeys request canceled.",
+      "message": "パスキーリクエストがキャンセルされました。"
+   },
+   "errorMessagePasskeysUnknownError": {
+      "description": "Unknown passkeys error.",
+      "message": "不明なパスキーのエラーです。"
+   },
+   "errorMessagePasskeysWaitforLifeTimer": {
+      "description": "Wait for timer to expire.",
+      "message": "Wait for timer to expire."
+   },
+   "errorMessagePaswordLengthExceeded": {
+      "description": "Error notification text shown when filled password is longer than defined maxLength of the input field.",
+      "message": "フィールドに設定された上限を超えた長さのパスワードが入力されました。"
+   },
+   "errorMessageSavedDatabases": {
+      "description": "No saved databases found.",
+      "message": "保存されたデータベースが見つかりません。"
+   },
+   "errorMessageTimeout": {
+      "description": "Cannot connect to KeePassXC. Check that browser integration is enabled in KeePassXC settings.",
+      "message": "KeePassXC に接続できません。KeePassXC の設定でブラウザー統合が有効になっているか確認してください。"
+   },
+   "errorMessageUnknown": {
+      "description": "Unknown error.",
+      "message": "不明なエラーです。"
+   },
+   "errorNotConnected": {
+      "description": "Error notification shown when not connected to KeePassXC.",
+      "message": "KeePassXC に接続していません。"
+   },
+   "extensionDescription": {
+      "description": "Name of the extension.",
+      "message": "モダンなウェブブラウザーのための KeePassXC 統合"
+   },
+   "fieldsFill": {
+      "description": "Alert message when no fields are found to fill in.",
+      "message": "エラー: 入力するフィールドを見つけられません。"
+   },
+   "fieldsNoPasswordField": {
+      "description": "Message shown when no password fields are found.",
+      "message": "エラー: パスワードフィールドを見つけられません。"
+   },
+   "fieldsPasswordFillNotAccepted": {
+      "description": "Message shown when password fill to a plain text field is prevented.",
+      "message": "プレーンテキストフィールドへのパスワード入力は許可されていません。"
+   },
+   "gettingStartedNewUser": {
+      "description": "Are you a new user? Check links to our documentation.",
+      "message": "Are you a new user? Check links to our documentation."
+   },
+   "gettingStartedSecondWelcomeText": {
+      "description": "Please go through the default settings and check all your preferred options.",
+      "message": "Please go through the default settings and check all your preferred options."
+   },
+   "gettingStartedWelcomeText": {
+      "description": "Welcome to KeePassXC-Browser, the official browser extension for KeePassXC.",
+      "message": "Welcome to KeePassXC-Browser, the official browser extension for KeePassXC."
+   },
+   "httpAuthDialog": {
+      "description": "Options page HTTP Basic Auth dialog text",
+      "message": "HTTP ベーシック認証ダイアログ"
+   },
+   "lockDatabase": {
+      "description": "Lock database button title text.",
+      "message": "データベースをロック"
+   },
+   "multipleCredentialsDetected": {
+      "description": "Notification when HTTP Authentication has multiple credentials detected.",
+      "message": "HTTP 認証で複数の資格情報が検出されました。拡張機能のアイコンをクリックして正しいものを選択してください。"
+   },
+   "openNewTab": {
+      "description": "Title attribute text.",
+      "message": "新しいタブを開く"
+   },
+   "optionsAboutChrome": {
+      "description": "About page link to Chrome Web Store.",
+      "message": "Chrome ウェブストアの KeePassXC-Browser 配布ページを開く。"
+   },
+   "optionsAboutContributors": {
+      "description": "About page text of contributors.",
+      "message": "貢献者"
+   },
+   "optionsAboutCreateNewIssue": {
+      "description": "Link text for creating a new issue.",
+      "message": "GitHub で問題を報告する。"
+   },
+   "optionsAboutDebugInfo": {
+      "description": "Debug info text.",
+      "message": "次の情報を含めてください"
+   },
+   "optionsAboutEdge": {
+      "description": "About page link to Edge Add-ons page.",
+      "message": "Edge Add-ons の KeePassXC-Browser 配布ページを開く。"
+   },
+   "optionsAboutExtensionVersion": {
+      "description": "About page text of extension version.",
+      "message": "KeePassXC-Browser のバージョン: $1"
+   },
+   "optionsAboutGitHub": {
+      "description": "About page link to GitHub.",
+      "message": "GitHub の KeePassXC-Browser プロジェクトページを開く。"
+   },
+   "optionsAboutKeePassXCVersion": {
+      "description": "About page text of KeePassXC version.",
+      "message": "KeePassXC のバージョン: $1"
+   },
+   "optionsAboutLicenses": {
+      "description": "About page text of licenses.",
+      "message": "ライセンス"
+   },
+   "optionsAboutMozilla": {
+      "description": "About page link to AMO.",
+      "message": "Mozilla Add-ons の KeePassXC-Browser 配布ページを開く。"
+   },
+   "optionsAboutReportBugs": {
+      "description": "About page text of reporting bugs.",
+      "message": "バグ報告"
+   },
+   "optionsAboutSupporters": {
+      "description": "Supporters label text.",
+      "message": "サポーター"
+   },
+   "optionsAboutTab": {
+      "description": "About tab text.",
+      "message": "情報"
+   },
+   "optionsAdvancedSettingsTitle": {
+      "description": "Advanced settings title in settings page",
+      "message": "高度な設定"
+   },
+   "optionsAutoFillAndSendHelpText": {
+      "description": "Auto-Fill And Send option help text.",
+      "message": "ページの資格情報が存在し、ログイン方式が HTTP ベーシック認証リクエストの場合、KeePassXC-Browser は最初に受け取った資格情報で自動ログインを試みます。資格情報が複数存在する場合、ポップアップから正しい資格情報を選択できます。この機能が有効になっている場合でも、依然として手動でログインすることは可能です。"
+   },
+   "optionsAutoFillAndSendHelpTextSecond": {
+      "description": "HTTP Basic Auth image help text.",
+      "message": "HTTP ベーシック認証ダイアログはこのような外観です:"
+   },
+   "optionsAutoFillRelevantCredentialHelpText": {
+      "description": "Auto-Fill Relevant Credential option help text.",
+      "message": "2 回目の入力が必要な場合、関連する資格情報を自動的に補完します。"
+   },
+   "optionsAutoFillSingleEntryHelpText": {
+      "description": "Auto-Fill Single Entry option help text.",
+      "message": "エントリーに対する資格情報が単一の場合は、KeePassXC-Browser に自動入力させます。"
+   },
+   "optionsAutoFillSingleEntryWarning": {
+      "description": "Auto-Fill Single Entry warning text.",
+      "message": "警告！自動入力は安全ではありません。自己責任で使用してください。KeePassXC-Browser が自動的にログインフィールドを検出しますが、検出に失敗して安全ではない入力フィールドに機密データを入力してしまう可能性があります。"
+   },
+   "optionsAutoFillSingleTotpHelpText": {
+      "description": "Auto-Fill Single TOTP field option help text.",
+      "message": "単一のエントリーのみ受信した場合、KeePassXC-Browser に TOTP フィールドを自動で入力させる。"
+   },
+   "optionsAutoRetrieveCredentialsHelpText": {
+      "description": "Auto-Retrive Credentials option help text.",
+      "message": "タブがアクティブになった直後に KeePassXC-Browser が資格情報を読み込みます。"
+   },
+   "optionsAutoSubmitHelpText": {
+      "description": "Auto-submit help text.",
+      "message": "選択した資格情報を自動送信します。これは単一エントリーの自動入力では無効になります。"
+   },
+   "optionsAutocompleteUsernamesHelpText": {
+      "description": "Autocomplete Usernames option help text.",
+      "message": "ページにあるすべてのユーザー名フィールドに、利用可能な資格情報を含んだドロップダウンリストを表示します。"
+   },
+   "optionsAutomaticReconnectHelpText": {
+      "description": "Auto-reconnect option help text.",
+      "message": "KeePassXC を検出した際に自動で再接続します。"
+   },
+   "optionsAutomaticReconnectWarning": {
+      "description": "Auto-reconnect warning message.",
+      "message": "警告！これは実験段階の機能です。自己責任で使用してください。"
+   },
+   "optionsButtonAdd": {
+      "description": "Add button text.",
+      "message": "追加"
+   },
+   "optionsButtonCancel": {
+      "description": "Cancel button text when removing database key or Custom Login Fields.",
+      "message": "キャンセル"
+   },
+   "optionsButtonConnect": {
+      "description": "Connect button text.",
+      "message": "接続"
+   },
+   "optionsButtonEdit": {
+      "description": "Edit button text.",
+      "message": "編集"
+   },
+   "optionsButtonExport": {
+      "description": "Export settings button text.",
+      "message": "設定をエクスポート"
+   },
+   "optionsButtonImport": {
+      "description": "Import settings button text.",
+      "message": "設定をインポート"
+   },
+   "optionsButtonRemove": {
+      "description": "Remove button text.",
+      "message": "削除"
+   },
+   "optionsButtonRemoveNow": {
+      "description": "Confirm button text when removing database key or Custom Login Fields.",
+      "message": "はい、今すぐ削除します"
+   },
+   "optionsButtonReset": {
+      "description": "Reset button text for keyboard shortcuts.",
+      "message": "元に戻す"
+   },
+   "optionsButtonResetSettings": {
+      "description": "Reset all settings button text.",
+      "message": "Reset all settings"
+   },
+   "optionsButtonSave": {
+      "description": "Save button text.",
+      "message": "保存"
+   },
+   "optionsButtonUpdate": {
+      "description": "Check for updates button text.",
+      "message": "更新を確認"
+   },
+   "optionsCheckboxAutoCompleteUsernames": {
+      "description": "Activate autocomplete for username fields checkbox text.",
+      "message": "ユーザー名フィールドの自動補完を有効にする"
+   },
+   "optionsCheckboxAutoFillAndSend": {
+      "description": "Allow filling HTTP Basic Auth credentials checkbox text.",
+      "message": "HTTP ベーシック認証への資格情報の補完を許可する"
+   },
+   "optionsCheckboxAutoFillRelevantCredential": {
+      "description": "Automatically fill-in relevant credential entry checkbox text.",
+      "message": "関連する資格情報を自動的に補完する"
+   },
+   "optionsCheckboxAutoFillSingleEntry": {
+      "description": "Automatically fill-in single credential entry checkbox text.",
+      "message": "単一の資格情報エントリーに自動入力する"
+   },
+   "optionsCheckboxAutoFillSingleTotp": {
+      "description": "Automatically fill-in single TOTP entries checkbox text.",
+      "message": "単一の TOTP エントリーに自動入力する"
+   },
+   "optionsCheckboxAutoRetrieveCredentials": {
+      "description": "Automatically retrieve credentials checkbox text.",
+      "message": "資格情報を自動的に読み込む"
+   },
+   "optionsCheckboxAutoSubmit": {
+      "description": "Auto-submit checkbox text.",
+      "message": "ログインフォームの自動送信"
+   },
+   "optionsCheckboxAutomaticReconnect": {
+      "description": "Auto-reconnect checkbox text.",
+      "message": "KeePassXC へ自動的に再接続する"
+   },
+   "optionsCheckboxOTPIcons": {
+      "description": "Activate OTP field icons textbox text.",
+      "message": "2FA/OTP フィールドアイコンを有効にする"
+   },
+   "optionsCheckboxShowGroupNameInAutocomplete": {
+      "description": "Show group name in autocomplete checkbox text.",
+      "message": "異なるグループから資格情報を取得した場合は、自動補完一覧にグループ名を表示する"
+   },
+   "optionsCheckboxShowLoginNotifications": {
+      "description": "Show login notifications checkbox text.",
+      "message": "新しい資格情報をデータベースに保存できる場合、ページ上にバナーを表示する"
+   },
+   "optionsCheckboxShowNotifications": {
+      "description": "Show notifications checkbox text.",
+      "message": "通知を表示する"
+   },
+   "optionsCheckboxUseCompactMode": {
+      "description": "Whether the compact mode (legacy dropdown) should be enabled.",
+      "message": "コンパクトモードを使用する"
+   },
+   "optionsCheckboxUseMonochromeToolbarIcon": {
+      "description": "Use monochrome toolbar icon checkbox text.",
+      "message": "モノクロのツールバーアイコンを使用する"
+   },
+   "optionsCheckboxUsePasswordGenerator": {
+      "description": "Activate password generator icons checkbox text.",
+      "message": "パスワード生成アイコンを有効にする"
+   },
+   "optionsCheckboxUsernameIcons": {
+      "description": "Activate username field icons textbox text.",
+      "message": "ユーザー名フィールドアイコンを有効にする"
+   },
+   "optionsClearCredentialsTimeout": {
+      "description": "Clear credentials label text.",
+      "message": "指定時間経過後、非アクティブなタブの資格情報を消去する (0-3600 秒)。"
+   },
+   "optionsClearCredentialsTimeoutHelpText": {
+      "description": "Clear credentials timeout help text.",
+      "message": "指定した時間が経過するとバックグラウンドタブの資格情報が消去され、そのタブのページの資格情報が再度要求されます。"
+   },
+   "optionsColumnAllowIframes": {
+      "description": "Allow iframes column text.",
+      "message": "クロスオリジン iframe を許可する"
+   },
+   "optionsColumnDelete": {
+      "description": "Site Preferences list column title.",
+      "message": "削除"
+   },
+   "optionsColumnFeatures": {
+      "description": "Site Preferences list column title.",
+      "message": "Features"
+   },
+   "optionsColumnImprovedInputFieldDetection": {
+      "description": "Improved Input Field Detection column text.",
+      "message": "高度な入力フィールド検出"
+   },
+   "optionsColumnPageURL": {
+      "description": "Site Preferences list column title.",
+      "message": "ページの URL"
+   },
+   "optionsColumnUsernameOnly": {
+      "description": "Site Preferences list column title.",
+      "message": "ユーザー名のみ検出"
+   },
+   "optionsConfigureShortcuts": {
+      "description": "Keyboard shortcut button and title text.",
+      "message": " ショートカットを設定"
+   },
+   "optionsConnectedDatabasesNotFound": {
+      "description": "Shown in the connected databases table when there is no connected databases.",
+      "message": "接続済みのデータベースはありません。"
+   },
+   "optionsConnectedDatabasesTab": {
+      "description": "Connected Databases tab text.",
+      "message": "接続済みデータベース"
+   },
+   "optionsConnectedDatabasesText": {
+      "description": "Info text about connected databases.",
+      "message": "KeePassXC-Browser に接続されているデータベースです。"
+   },
+   "optionsConnectionMethod": {
+      "description": "Connection method selection text.",
+      "message": "Connection method"
+   },
+   "optionsConnectionMethodHelpText": {
+      "description": "Connection method help text.",
+      "message": "If native messaging is blocked in your browser, you can switch to a direct WebSocket sonnection. The feature must be enabled from KeePassXC side to work. Browser restart is required."
+   },
+   "optionsConnectionMethodNativeMessaging": {
+      "description": "Native messaging option for Connection method.",
+      "message": "Native messaging"
+   },
+   "optionsConnectionMethodWebSocket": {
+      "description": "WebSocket option for Connection method.",
+      "message": "WebSocket"
+   },
+   "optionsCredentialSortSelectionHeader": {
+      "description": "Credential sort option header text.",
+      "message": "一致した資格情報の並び順"
+   },
+   "optionsCustomFieldsConfirmation": {
+      "description": "Confirmation text when removing saved Custom Login Fields.",
+      "message": "本当にページ: $1 のカスタムログインフィールドを削除しますか？"
+   },
+   "optionsCustomFieldsConfirmationHelpText": {
+      "description": "Part of confirmation text when removing saved Custom Login Fields.",
+      "message": "KeePassXC-Browser は次にこのページに訪問した際に、ログインフィールドを自動検出します。"
+   },
+   "optionsCustomFieldsNotFound": {
+      "description": "Shown when no saved custom credentials are saved.",
+      "message": "保存したカスタムログインフィールドはありません。"
+   },
+   "optionsCustomFieldsRemove": {
+      "description": "Confirmation text when removing saved Custom Login Fields.",
+      "message": "保存したカスタムログインフィールドを削除しますか？"
+   },
+   "optionsCustomFieldsTab": {
+      "description": "Saved Custom Login Fields tab text.",
+      "message": "カスタムログインフィールド"
+   },
+   "optionsCustomFieldsTabHelpTextFirst": {
+      "description": "Saved Custom Login Fields info text, first part.",
+      "message": "KeePassXC-Browser がログインフィールドを間違えて検出した場合は、自分で正しいフィールドを指定できます。"
+   },
+   "optionsCustomFieldsTabHelpTextSecond": {
+      "description": "Saved Custom Login Fields info text, second part.",
+      "message": "対象のページに移動して KeePassXC-Browser のアイコンをクリックし、次のボタンを選択してください:"
+   },
+   "optionsCustomFieldsTabHelpTextThird": {
+      "description": "Saved Custom Login Fields info text, third part.",
+      "message": "このページでは保存したカスタムログインフィールドを管理できます。"
+   },
+   "optionsCustomFieldsTableCaption": {
+      "description": "Table caption of Custom Login Fields page.",
+      "message": "この表から保存したカスタムログインフィールドを管理できます。"
+   },
+   "optionsDatabaseCreated": {
+      "description": "Database list column title.",
+      "message": "作成日"
+   },
+   "optionsDatabaseDelete": {
+      "description": "Database list column title.",
+      "message": "削除"
+   },
+   "optionsDatabaseIdentifier": {
+      "description": "Database list column title.",
+      "message": "識別子"
+   },
+   "optionsDatabaseKey": {
+      "description": "Database list column title.",
+      "message": "キー"
+   },
+   "optionsDatabaseLastUsed": {
+      "description": "Database list column title.",
+      "message": "最終使用日時"
+   },
+   "optionsDatabasesRemoveIdentifier": {
+      "description": "Confirmation text when removing database from the list.",
+      "message": "データベースリストから識別子を削除しますか？"
+   },
+   "optionsDatabasesRemoveIdentifierConfirmFirst": {
+      "description": "Confirmation text when removing database from the list.",
+      "message": "本当にデータベースから識別子 $1 を削除しますか？"
+   },
+   "optionsDatabasesRemoveIdentifierConfirmSecond": {
+      "description": "Confirmation text when removing database from the list, second part.",
+      "message": "いつでもデータベースに再接続できます。"
+   },
+   "optionsDebugLogging": {
+      "description": "Debug logging checkbox text.",
+      "message": "デバッグログ"
+   },
+   "optionsDebugLoggingHelpText": {
+      "description": "Debug logging help text.",
+      "message": "デバッグログを有効にします。追加のコンソールメッセージがバックグラウンドスクリプトとコンテンツスクリプトの両方に表示されます。"
+   },
+   "optionsDefault": {
+      "description": "Default setting text.",
+      "message": "デフォルト: $1"
+   },
+   "optionsDefaultGroupHelpText": {
+      "description": "Default group help text.",
+      "message": "グループはスラッシュで区切ってください (例: グループ/子グループ)。"
+   },
+   "optionsDefaultPasswordManager": {
+      "description": "Default password manager checkbox text.",
+      "message": "デフォルトのパスワードマネージャーに設定する"
+   },
+   "optionsDefaultPasswordManagerHelpText": {
+      "description": "Default password manager help text.",
+      "message": "KeePassXC-Browser をブラウザーのデフォルトのパスワードマネージャーに設定します"
+   },
+   "optionsDefaultSettingsTitle": {
+      "description": "Default settings title for Getting Started page.",
+      "message": "Default settings"
+   },
+   "optionsDownloadFaviconAfterSave": {
+      "description": "Download favicon after save checkbox label text.",
+      "message": "保存後にファビコンをダウンロードする"
+   },
+   "optionsDownloadFaviconAfterSaveHelpText": {
+      "description": "Download favicon after save help text.",
+      "message": "新しい資格情報のファビコンを自動的にダウンロードします。"
+   },
+   "optionsErrorInvalidURL": {
+      "description": "Error shown when input field has an incorrect URL.",
+      "message": "不正な URL です。入力を確認してください。"
+   },
+   "optionsErrorInvalidValue": {
+      "description": "Error shown when input field has an incorrect value.",
+      "message": "不正な値です。入力を確認してください。"
+   },
+   "optionsErrorValueExists": {
+      "description": "Error shown when trying to add a duplicate value to the list.",
+      "message": "その値は既にリストに存在します。"
+   },
+   "optionsExtensionTitle": {
+      "description": "Extension title in settings page",
+      "message": "拡張機能"
+   },
+   "optionsFillSortByMatchingCredentials": {
+      "description": "Default option for Sort after fill. Respects the Matching Credentials sorting setting.",
+      "message": "一致した資格情報設定"
+   },
+   "optionsFillSortByRelevantEntry": {
+      "description": "Relevant credential first option for Sort after fill.",
+      "message": "関連する資格情報を先頭にする"
+   },
+   "optionsFillSortPriority": {
+      "description": "",
+      "message": "入力後の資格情報の並び順"
+   },
+   "optionsFillSortPriorityHelpText": {
+      "description": "Help text for Sort credentials after fill.",
+      "message": "関連する資格情報を先頭にするオプションを選択している場合、以前にログインフィールドに入力した資格情報が自動補完メニューの先頭に表示されます。"
+   },
+   "optionsFillSortPriorityTotp": {
+      "description": "",
+      "message": "入力後の資格情報の並び順 (TOTP)"
+   },
+   "optionsFillSortPriorityTotpHelpText": {
+      "description": "Help text for Sort credentials after fill for TOTP.",
+      "message": "関連する資格情報を先頭にするオプションを選択している場合、以前にログインフィールドに入力した TOTP が自動補完メニューの先頭に表示されます。"
+   },
+   "optionsFillingCredentialsTitle": {
+      "description": "Filling credentials title in settings page",
+      "message": "資格情報の入力"
+   },
+   "optionsGeneralSettingsTab": {
+      "description": "General Settings tab text.",
+      "message": "一般設定"
+   },
+   "optionsHideIconsAlertText": {
+      "description": "Hide icons alert text text.",
+      "message": "必要に応じて Shift + クリックでアイコンを隠すこともできます。"
+   },
+   "optionsImportExportSettings": {
+      "description": "Settings page header text for import/export.",
+      "message": "設定のインポート/エクスポート"
+   },
+   "optionsImportSettingsDialogText": {
+      "description": "Import settings confirmation dialog help text.",
+      "message": "現在の設定を上書きします。本当に設定ファイルをインポートしますか？"
+   },
+   "optionsImportSettingsDialogTitle": {
+      "description": "Import settings confirmation dialog title text.",
+      "message": "外部ファイルから設定をインポートしますか？"
+   },
+   "optionsInfinite": {
+      "description": "Infinite setting text.",
+      "message": "無制限: $1"
+   },
+   "optionsKeePassXCVersionRequired": {
+      "description": "KeePassXC version requirement text.",
+      "message": "次のバージョン以上の KeePassXC が必要です: $1"
+   },
+   "optionsKeyboardShortcutsHeader": {
+      "description": "Keyboard shortcut header text.",
+      "message": "キーボードショートカット"
+   },
+   "optionsLabelDefaultGroup": {
+      "description": "Default group options text.",
+      "message": "新しいパスワードを保存するデフォルトのグループ:"
+   },
+   "optionsLabelDefaultGroupCheckboxHelpText": {
+      "description": "Default checkbox explanation help text.",
+      "message": "有効にすると、グループの一覧をポップアップ表示します。"
+   },
+   "optionsLabelDefaultGroupCheckboxText": {
+      "description": "Default group checkbox help text.",
+      "message": "新しい資格情報をどこに保存するか常に確認する"
+   },
+   "optionsLabelDefaultPasskeyGroup": {
+      "description": "Default passkey group options text.",
+      "message": "新しいパスキーを保存するデフォルトのグループ:"
+   },
+   "optionsLatestVersion": {
+      "description": "Settings page info text about the latest KeePassXC version.",
+      "message": "利用可能な KeePassXC の最新バージョン: $1"
+   },
+   "optionsMenuAbout": {
+      "description": "About page header.",
+      "message": "情報"
+   },
+   "optionsMenuConnectedDatabases": {
+      "description": "Connected Databases page header.",
+      "message": "接続済みデータベース"
+   },
+   "optionsMenuCustomFields": {
+      "description": "Custom Login Fields page header.",
+      "message": "カスタムログインフィールド"
+   },
+   "optionsMenuGeneral": {
+      "description": "General settings page header.",
+      "message": "一般"
+   },
+   "optionsMenuSitePreferences": {
+      "description": "Site Preferences page header.",
+      "message": "サイト設定"
+   },
+   "optionsMinimumKeePassXCVersionRequired": {
+      "description": "KeePassXC minimum version requirement text.",
+      "message": "The extension requires KeePassXC version: $1. Earlier versions can cause unwanted behavior."
+   },
+   "optionsPasskeysEnable": {
+      "description": "Enabled passkeys option text.",
+      "message": "パスキーを有効にする"
+   },
+   "optionsPasskeysEnableFallback": {
+      "description": "Enabled passkeys fallback option text.",
+      "message": "パスキーのフォールバックを有効にする"
+   },
+   "optionsPasskeysEnableFallbackHelpText": {
+      "description": "Passkeys fallback option help text.",
+      "message": "有効にすると、KeePassXC へのリクエストに失敗したりキャンセルされた場合に、ブラウザー内部のパスキーリクエストを開始します。無効にすると KeePassXC への接続が必須になり、リクエストをキャンセルすると登録失敗になります。デフォルト: 有効。"
+   },
+   "optionsPasskeysEnableHelpText": {
+      "description": "Passkeys option help text.",
+      "message": "ウェブ認証への対応を有効にします。"
+   },
+   "optionsPasskeysTitle": {
+      "description": "Passkeys settings title in settings page.",
+      "message": "パスキー"
+   },
+   "optionsPredefinedSiteList": {
+      "description": "Predefined site list details button text.",
+      "message": "事前定義されたサイト"
+   },
+   "optionsRadioMonth": {
+      "description": "Radio button text.",
+      "message": "毎月"
+   },
+   "optionsRadioNever": {
+      "description": "Radio button text.",
+      "message": "しない"
+   },
+   "optionsRadioText": {
+      "description": "Text above radio buttons in the settings page.",
+      "message": "KeePassXC の更新確認:"
+   },
+   "optionsRadioThreeDays": {
+      "description": "Radio button text.",
+      "message": "3 日ごと"
+   },
+   "optionsRadioWeek": {
+      "description": "Radio button text.",
+      "message": "毎週"
+   },
+   "optionsRecommended": {
+      "description": "Recommended setting text.",
+      "message": "推奨: $1"
+   },
+   "optionsRedirectAllowance": {
+      "description": "Redirect allowance range input text.",
+      "message": "許可するリダイレクト数: $1"
+   },
+   "optionsRedirectAllowanceHelpText": {
+      "description": "Redirect allowance help text.",
+      "message": "バナーの表示を終了するまでのリダイレクトの数です。既定の値は 3 で最大に設定すると無制限になります。"
+   },
+   "optionsResetSettingsDialogText": {
+      "description": "Reset all settings dialog text.",
+      "message": "All settings will be reset to defaults. Are you sure?"
+   },
+   "optionsSaveDomainOnly": {
+      "description": "Save domain only checkbox text.",
+      "message": "ドメインのみ保存する"
+   },
+   "optionsSaveDomainOnlyCustomLoginHelpText": {
+      "description": "Save domain only option help text.",
+      "message": "新しいカスタムログインフィールドを保存する場合、完全な URL の代わりにドメインのみを保存します。"
+   },
+   "optionsSaveDomainOnlyHelpText": {
+      "description": "Save domain only option help text.",
+      "message": "新しい資格情報を保存する場合、完全な URL の代わりにドメインのみを保存します。"
+   },
+   "optionsSavingCredentialsTitle": {
+      "description": "Saving credentials title in settings page",
+      "message": "資格情報の保存"
+   },
+   "optionsSelectionAutoSubmit": {
+      "description": "Site Preferences option selection.",
+      "message": "自動送信を無効にする"
+   },
+   "optionsSelectionFull": {
+      "description": "Site Preferences option selection.",
+      "message": "すべての機能を無効にする"
+   },
+   "optionsSelectionNormal": {
+      "description": "Site Preferences option selection.",
+      "message": "資格情報の作成/変更を無効にする"
+   },
+   "optionsSelectionNothing": {
+      "description": "Site Preferences option selection.",
+      "message": "すべての機能を有効にする"
+   },
+   "optionsSelectionPasskeys": {
+      "description": "Site Preferences option selection.",
+      "message": "Disable passkeys"
+   },
+   "optionsShortcutsDanger": {
+      "description": "Error message for changing keyboard shortcuts.",
+      "message": "エラー: ショートカット ($1) は変更されていません。"
+   },
+   "optionsShortcutsInfo": {
+      "description": "Info message for changing keyboard shortcuts.",
+      "message": "ショートカット ($1) をリセットしました。"
+   },
+   "optionsShortcutsSuccess": {
+      "description": "Message for successful keyboard shortcut change.",
+      "message": "ショートカット ($1) を無事に変更しました。"
+   },
+   "optionsShowGroupNameInAutocompleteHelpText": {
+      "description": "Show group name in autocomplete help text.",
+      "message": "複数のグループから資格情報を取得した場合はグループ名を表示します。コンパクトモードのみに影響します。"
+   },
+   "optionsShowLoginFormIconHelpText": {
+      "description": "Username field icon option help text.",
+      "message": "クリックすることで資格情報を入力できるアイコンをユーザー名フィールドに追加します。"
+   },
+   "optionsShowNotificationsHelpText": {
+      "description": "Show notifications option help text.",
+      "message": "エラーが発生した場合や、ユーザーによる操作が必要な場合は通知を表示します。"
+   },
+   "optionsShowOTPIconHelpText": {
+      "description": "OTP field icon option help text.",
+      "message": "OTP/2FA として認識した入力フィールドにアイコンを追加します。"
+   },
+   "optionsSitePreferencesAllowIframesHelpText": {
+      "description": "Allow Cross-Origin iframes help text.",
+      "message": "クロスオリジン iframe を許可すると、別のドメインからの iframe の資格情報が取得可能になります。自己責任で使用してください。"
+   },
+   "optionsSitePreferencesConfirmation": {
+      "description": "Confirmation text when removing site from Site Preferences.",
+      "message": "本当にサイト: $1 をリストから削除しますか？"
+   },
+   "optionsSitePreferencesConfirmationHelpText": {
+      "description": "Part of confirmation text when removing Site Preferences.",
+      "message": "KeePassXC-Browser はユーザー名のみ検出オプションを削除し、このサイトですべての機能を有効にします。"
+   },
+   "optionsSitePreferencesImprovedInputFieldDetectionHelpText": {
+      "description": "Improved Input Field Detection help text.",
+      "message": "高度な入力フィールド検出オプションにより、さらに詳細な入力フィールドの動的検出ができるようになります。ただし、ページのパフォーマンスに影響を与える可能性があり、使用には注意が必要です。"
+   },
+   "optionsSitePreferencesManualAddHelp": {
+      "description": "Help text for adding site manually on Site Preferences tab.",
+      "message": "URL は \u003Ccode>https://\u003C/code>、\u003Ccode>http://\u003C/code>、\u003Ccode>file://\u003C/code>、\u003Ccode>ftp://\u003C/code> のいずれかで始まり、5 文字以上である必要があります。"
+   },
+   "optionsSitePreferencesManualAddText": {
+      "description": "Label for adding site manually on Site Preferences tab.",
+      "message": "URL を手動で追加"
+   },
+   "optionsSitePreferencesNotFound": {
+      "description": "Shown when no Site Preferences are saved.",
+      "message": "サイト設定がありません。"
+   },
+   "optionsSitePreferencesRemove": {
+      "description": "Confirmation text when removing ignored sites from the list.",
+      "message": "サイトを削除しますか？"
+   },
+   "optionsSitePreferencesSelect": {
+      "description": "Title text of select element in Site Preferences.",
+      "message": "ページで拡張機能の機能を無視するためのオプションです。"
+   },
+   "optionsSitePreferencesSettings": {
+      "description": "Site Preferences settings button text.",
+      "message": "Settings"
+   },
+   "optionsSitePreferencesTab": {
+      "description": "Site Preferences fields tab text.",
+      "message": "サイト設定"
+   },
+   "optionsSitePreferencesTabHelpTextFirst": {
+      "description": "Site Preferences info text, first part.",
+      "message": "このページにあるサイトには、特別な処理方法が割り当てられます。"
+   },
+   "optionsSitePreferencesTabHelpTextFourth": {
+      "description": "Site Preferences info text, fourth part.",
+      "message": "ユーザー名のみ検出オプションにより、ユーザー名とパスワードが別々のページに分かれているウェブサイトで KeePassXC-Browser がログイン情報を補完できるようになります。"
+   },
+   "optionsSitePreferencesTabHelpTextSecond": {
+      "description": "Site Preferences info text, second part.",
+      "message": "特定のサイトの新しい資格情報、または変更された資格情報を無視するには、下にある一覧に追加するか、ページ上に表示された資格情報バナーで \u003Cem>このサイトでは確認しない\u003C/em> を選択してください。　"
+   },
+   "optionsSitePreferencesTabHelpTextThird": {
+      "description": "Site Preferences info text, third part.",
+      "message": "サイトを完全に無視する (「\u003Cem>すべての機能を無効にする\u003C/em>」を選択している) 場合は、そのサイトを訪問してもプラグインは何もしません。"
+   },
+   "optionsSitePreferencesTableCaption": {
+      "description": "Table caption of Site Preferences page.",
+      "message": "この表から保存したサイト設定を管理できます。"
+   },
+   "optionsSortByGroupAndTitle": {
+      "description": "Sort matching credentials by group and title option selection.",
+      "message": "グループとタイトル"
+   },
+   "optionsSortByGroupAndUsername": {
+      "description": "Sort matching credentials by group and username option selection.",
+      "message": "グループとユーザー名"
+   },
+   "optionsSortByTitle": {
+      "description": "Sort matching credentials by title option selection.",
+      "message": "タイトル"
+   },
+   "optionsSortByUsername": {
+      "description": "Sort matching credentials by username option selection.",
+      "message": "ユーザー名"
+   },
+   "optionsThemeDark": {
+      "description": "Dark theme text.",
+      "message": "ダーク"
+   },
+   "optionsThemeLight": {
+      "description": "Light theme text.",
+      "message": "ライト"
+   },
+   "optionsThemeSelection": {
+      "description": "Theme selection title text.",
+      "message": "カラーテーマの選択"
+   },
+   "optionsThemeSelectionHeader": {
+      "description": "Theme selection header text.",
+      "message": "カラーテーマ"
+   },
+   "optionsThemeSystem": {
+      "description": "System theme text.",
+      "message": "システム"
+   },
+   "optionsTitle": {
+      "description": "Options page title.",
+      "message": "設定 | KeePassXC-Browser"
+   },
+   "optionsUpdatesTitle": {
+      "description": "Updates title in settings page",
+      "message": "更新"
+   },
+   "optionsUseCompactModeHelpText": {
+      "description": "Use compact (legacy) mode help text.",
+      "message": "資格情報を選択するドロップダウンリストでコンパクト版を使用します。"
+   },
+   "optionsUseMonochromeToolbarIconHelpText": {
+      "description": "Use monochrome toolbar icon option help text.",
+      "message": "ツールバーでブラウザーのライト/ダークテーマに合ったモノクロアイコン (バッジはカラー) を使用します。"
+   },
+   "optionsUseObserver": {
+      "description": "Use dynamic input field detection checkbox text.",
+      "message": "入力フィールドの動的検出を使用する"
+   },
+   "optionsUseObserverHelpText": {
+      "description": "Use dynamic input field detection help text.",
+      "message": "ポップアップや動的ダイアログを使用するページで役立ちます。低スペックなマシンでは、無効にすると CPU 負荷を抑えられます。無効にした場合、資格情報の入力は、キーボードショートカット、コンテキストメニュー、拡張機能のポップアップを使用してください。"
+   },
+   "optionsUsePasswordGeneratorHelpText": {
+      "description": "Password Generator option help text.",
+      "message": "新しいパスワードを生成するアイコンをパスワードフィールドに追加します。"
+   },
+   "optionsUsePasswordGeneratorHelpTextSecond": {
+      "description": "Password Generator option help text, second part.",
+      "message": "パスワードは KeePassXC のパスワード生成プロファイルを使用して生成されます。"
+   },
+   "optionsUsePredefinedSites": {
+      "description": "Use predefined sites checkbox text.",
+      "message": "互換性のために事前定義されたサイトを使用する"
+   },
+   "optionsUsePredefinedSitesHelpText": {
+      "description": "Use predefined sites option help text.",
+      "message": "ユーザー名のみのログインフォームがあるサイトをサイト設定に追加します。"
+   },
+   "optionsUserInterfaceTitle": {
+      "description": "User interface title in settings page",
+      "message": "ユーザーインターフェース"
+   },
+   "optionsVersionDownload": {
+      "description": "Settings page download link.",
+      "message": "次のアドレスから最新の安定バージョンをダウンロードできます: $1"
+   },
+   "optionsVersionInfoText": {
+      "description": "Settings page version info text.",
+      "message": "KeePassXC-Browser は資格情報の読み込みに KeePassXC を必要とします。"
+   },
+   "optionsVersionRunning": {
+      "description": "Settings page info text of user's KeePassXC version.",
+      "message": "実行中の KeePassXC のバージョン: $1"
+   },
+   "optionsWelcomeTitle": {
+      "description": "Main card title for Getting Started page.",
+      "message": "KeePassXC-Browser"
+   },
+   "password": {
+      "description": "General text for password.",
+      "message": "パスワード"
+   },
+   "passwordGeneratorErrorTooLong": {
+      "description": "A warning text shown in the password generator.",
+      "message": "エラー: 許可された長さよりも長いパスワードが生成されました！"
+   },
+   "passwordGeneratorErrorTooLongCut": {
+      "description": "A warning text shown in the password generator.",
+      "message": "超えた部分はカットします。"
+   },
+   "passwordGeneratorErrorTooLongRemember": {
+      "description": "A warning text shown in the password generator.",
+      "message": "新しいパスワードを忘れないようにしてください。"
+   },
+   "passwordGeneratorGenerateText": {
+      "description": "Password icon title text.",
+      "message": "パスワードを生成"
+   },
+   "passwordGeneratorNotSupported": {
+      "message": "このバージョンの KeePassXC はパスワードジェネレーターの起動に対応していません。最新の KeePassXC にアップデートしてください。"
+   },
+   "popupAlertHide": {
+      "description": "Hide alert close button title.",
+      "message": "非表示にして今後表示しない。"
+   },
+   "popupAllowIframeButton": {
+      "description": "Button text for allowing Cross-Origin iframes option.",
+      "message": "サイトのクロスオリジン iframe を許可する"
+   },
+   "popupAuthText": {
+      "description": "A popup message shown when doing HTTP Authentication with multiple credentials present.",
+      "message": "いずれかのログイン情報を選択してください。"
+   },
+   "popupButtonBack": {
+      "description": "Back button text in popup when updating credentials.",
+      "message": "戻る"
+   },
+   "popupButtonCancel": {
+      "description": "Cancel button text in popup when updating credentials.",
+      "message": "キャンセル"
+   },
+   "popupButtonClose": {
+      "description": "Close button text in popup or in notification.",
+      "message": "閉じる"
+   },
+   "popupButtonDismissHttpAuth": {
+      "description": "Dismiss button text when in HTTP Authentication popup.",
+      "message": "棄却してデフォルトの認証ダイアログを表示します"
+   },
+   "popupButtonIgnore": {
+      "description": "Ignore button text in popup or in notification when updating credentials.",
+      "message": "このサイトでは確認しない"
+   },
+   "popupButtonNew": {
+      "description": "New button text in popup when updating credentials.",
+      "message": "新規"
+   },
+   "popupButtonUpdate": {
+      "description": "Update button text in popup when updating credentials.",
+      "message": "更新"
+   },
+   "popupCheckingStatus": {
+      "description": "Checking status message in popup.",
+      "message": "ステータスをチェック中..."
+   },
+   "popupChooseCredentialsText": {
+      "description": "Popup credential choosing button text.",
+      "message": "カスタムログインフィールドを選択"
+   },
+   "popupConfiguredAndAssociated": {
+      "description": "A popup message when a connection to KeePassXC is successful.",
+      "message": "KeePassXC-Browser は次の識別子を使用して KeePassXC に接続しています: $1"
+   },
+   "popupConfiguredNotAssociated": {
+      "description": "A popup message shown when KeePassXC is not connected but configured.",
+      "message": "KeePassXC-Browser はまだ KeePassXC に接続していませんが、次の識別子を使用する設定になっています: $1"
+   },
+   "popupConnectButton": {
+      "description": "Popup Connect button text.",
+      "message": "接続"
+   },
+   "popupDownloadNewVersion": {
+      "description": "Popup warning message link when KeePassXC version is not up-to-date.",
+      "message": "keepassxc.org から最新バージョンをダウンロードしてください"
+   },
+   "popupErrorEncountered": {
+      "description": "A text shown above error message in the popup.",
+      "message": "エラーが発生しました:"
+   },
+   "popupFilterText": {
+      "description": "Text for login credentials quick filter.",
+      "message": "絞り込み:"
+   },
+   "popupGettingStartedLinkText": {
+      "description": "Popup Getting Started Guide link text.",
+      "message": "スタートガイド - ブラウザー統合のセットアップ"
+   },
+   "popupGettingStartedText": {
+      "description": "Popup information message about Getting Started Guide.",
+      "message": "初めて使用する場合はスタートガイドを確認してみてください。"
+   },
+   "popupIframeDetected": {
+      "description": "Text shown when page can be added to Site Preferences with Allow Cross-Origin iframes option enabled.",
+      "message": "クロスオリジン iframe を検出しました。クロスオリジン iframe を許可して、URL をサイト設定に追加しますか？"
+   },
+   "popupLoginText": {
+      "description": "A popup message shown when one or multiple credentials are present.",
+      "message": "ページに入力するログイン情報を選択してください。"
+   },
+   "popupMultiplePasswordFields": {
+      "description": "A popup message shown when web page has multiple password fields.",
+      "message": "このページで複数のパスワードフィールドが見つかりました。それらのパスワードフィールドで右クリックし、次の中から選択してください:"
+   },
+   "popupNeedReconfigure": {
+      "description": "A popup message shown when the extension has been disconnected from KeePassXC.",
+      "message": "KeePassXC-Browser が KeePassXC から切断されました。"
+   },
+   "popupNeedReconfigureMessage": {
+      "description": "A popup message shown when reconnect is needed.",
+      "message": "再接続ボタンをクリックすると新しい接続を確立します。"
+   },
+   "popupNotConfigured": {
+      "description": "A popup message shown when the extension has not been connected to KeePassXC.",
+      "message": "KeePassXC-Browser はまだ設定されていません。接続ボタンをクリックして KeePassXC とペアリングしてください。"
+   },
+   "popupReconnectButton": {
+      "description": "Popup Reconnect button text.",
+      "message": "再接続"
+   },
+   "popupRedetectButton": {
+      "description": "Popup Redetect login fields button text.",
+      "message": "ログインフィールドを再検出"
+   },
+   "popupReloadButton": {
+      "description": "Popup Reload button text.",
+      "message": "再読み込み"
+   },
+   "popupReopenButton": {
+      "description": "Popup reopen database button text.",
+      "message": "データベースを再度開く"
+   },
+   "popupSettingsText": {
+      "description": "Popup Settings button text.",
+      "message": "設定"
+   },
+   "popupTitle": {
+      "description": "Popup window title.",
+      "message": "KeePassXC - ポップアップ"
+   },
+   "popupTroubleshootingLinkText": {
+      "description": "Popup Troubleshooting Guide link text.",
+      "message": "トラブルシューティングガイド"
+   },
+   "popupTroubleshootingText": {
+      "description": "Popup information message about Troubleshooting Guide.",
+      "message": "KeePassXC に接続できない場合は Wiki ページを確認してみてください。"
+   },
+   "popupUpdateAvailable": {
+      "description": "Popup warning message about old version of KeePassXC.",
+      "message": "KeePassXC の古いバージョンを使用しています。"
+   },
+   "popupUsername": {
+      "description": "A username field name shown on credential update.",
+      "message": "ユーザー名:"
+   },
+   "popupUsernameButton": {
+      "description": "Button text for adding Username-only option.",
+      "message": "サイト用の「ユーザー名のみ」オプションを追加"
+   },
+   "popupUsernameFieldDetected": {
+      "description": "Text shown when page can be added to Site Preferences with Username-only option enabled.",
+      "message": "単一のユーザー名フィールドのみを検出しました。「ユーザー名のみ」オプションを有効にして URL をサイト設定に追加しますか？"
+   },
+   "reconnectButtonTitle": {
+      "description": "Reconnect button title text.",
+      "message": "現在アクティブなデータベースを KeePassXC-Browser に再接続します。"
+   },
+   "redetectButtonTitle": {
+      "description": "Redetect login fields button title text.",
+      "message": "ページのすべての入力フィールドを再検出します。"
+   },
+   "reloadButtonTitle": {
+      "description": "Reload button title text.",
+      "message": "拡張機能を再読み込みして KeePassXC に再接続します。"
+   },
+   "rememberChooseCredentials": {
+      "description": "A message shown choosing what credentials user wants to update.",
+      "message": "更新する資格情報を選択してください。"
+   },
+   "rememberChooseGroup": {
+      "description": "A message shown choosing what group user wants to use for new credentials.",
+      "message": "新しい資格情報を保存するグループを選択してください。"
+   },
+   "rememberCredentialsExists": {
+      "description": "Message shown when new credentials already found in database.",
+      "message": "同一の資格情報が既に存在します。更新しません。"
+   },
+   "rememberCredentialsNotSaved": {
+      "description": "Message shown when saving operation was cancelled.",
+      "message": "作業をキャンセルしました。資格情報は更新されません。"
+   },
+   "rememberCredentialsSaved": {
+      "description": "Message shown when new credentials are saved.",
+      "message": "ユーザー名 $1 の新しい資格情報を保存しました。"
+   },
+   "rememberCredentialsUpdated": {
+      "description": "Message shown when new credentials are successfully updated.",
+      "message": "ユーザー名 $1 の資格情報を更新しました。"
+   },
+   "rememberEmptyUsername": {
+      "description": "Means an empty username.",
+      "message": "(空)"
+   },
+   "rememberErrorCannotSaveCredentials": {
+      "description": "Error message shown when credentials cannot be saved or updated.",
+      "message": "資格情報を保存または更新できません。"
+   },
+   "rememberErrorCreatingNewGroup": {
+      "description": "Error message shown when new groups cannot be created.",
+      "message": "新しいグループを作成できません。"
+   },
+   "rememberErrorDatabaseClosed": {
+      "description": "Error message shown when credentials cannot be saved or updated and the database is closed.",
+      "message": "データベースが閉じられているため資格情報を保存または更新できません。"
+   },
+   "rememberErrorPasswordNotChanged": {
+      "description": "Error message shown when credential password is not changed.",
+      "message": "資格情報を更新しません。パスワードは変更されていません。"
+   },
+   "rememberInfoDefaultGroupNotFound": {
+      "description": "Info message shown when default group set cannot be found.",
+      "message": "接続済みデータベースにデフォルトグループを作成しました。"
+   },
+   "rememberInfoText": {
+      "description": "Message when username or password has changed.",
+      "message": "ユーザー名またはパスワードが変更されました。保存しますか？"
+   },
+   "rememberNewUsername": {
+      "description": "A message shown when a new username is detected when saving credentials.",
+      "message": "次のユーザー名は現在保存していません: $1"
+   },
+   "rememberNoPassword": {
+      "description": "Message shown when no password is set when saving credentials.",
+      "message": "資格情報を保存する前にパスワードフィールドに入力してください。"
+   },
+   "rememberNothingChanged": {
+      "description": "Message shown when trying to save credentials that haven't changed.",
+      "message": "エラー: 変更された資格情報を検出できませんでした。"
+   },
+   "rememberSaving": {
+      "description": "A message when saving or updating credentials.",
+      "message": "資格情報を識別子 $1 の接続済みデータベースに保存しました"
+   },
+   "rememberUsernameExists": {
+      "description": "A message shown when an existing username is detected when saving credentials.",
+      "message": "使用したユーザー名の資格情報は太字でマークします: $1"
+   },
+   "removeConnectedDatabaseButtonTitle": {
+      "description": "Remove button title on Connected Databases tab.",
+      "message": "接続されているデータベースを KeePassXC-Browser から削除します。"
+   },
+   "removeCustomLoginFieldsButtonTitle": {
+      "description": "Remove button title on Custom Login Fields tab.",
+      "message": "この URL のカスタムログインフィールドを削除します。"
+   },
+   "removeSitePreferencesButtonTitle": {
+      "description": "Remove button title on Site Preferences tab.",
+      "message": "この URL のサイト設定を削除します。"
+   },
+   "reopenDatabaseButtonTitle": {
+      "description": "Reopen database button title text.",
+      "message": "Reopen current active database."
+   },
+   "stringFields": {
+      "description": "General text for a String Fields.",
+      "message": "文字列フィールド"
+   },
+   "submitButton": {
+      "description": "Custom Submit Button text.",
+      "message": "Submit Button"
+   },
+   "totp": {
+      "description": "TOTP text.",
+      "message": "TOTP"
+   },
+   "totpFieldText": {
+      "description": "OTP field icon hover text.",
+      "message": "KeePassXC から TOTP を入力"
+   },
+   "username": {
+      "description": "General text for username.",
+      "message": "ユーザー名"
+   },
+   "usernameButtonTitle": {
+      "description": "Add Username-only detection button title text.",
+      "message": "ユーザー名のみ検出オプションを現在のページに追加します。"
+   },
+   "usernameDisconnectedFieldText": {
+      "description": "Username field icon hover text when KeePassXC is disconnected.",
+      "message": "KeePassXC に接続していません。"
+   },
+   "usernameFieldText": {
+      "description": "Username field icon hover text.",
+      "message": "KeePassXC から認証情報を補完します。"
+   },
+   "usernameFieldTextNoCredentials": {
+      "description": "Username field icon hover text when no credentials are.",
+      "message": "補完できる資格情報がありません。"
+   },
+   "usernameLockedFieldText": {
+      "description": "Username field icon hover text when database is locked.",
+      "message": "データベースがロックされています。"
+   },
+   "welcomeText": {
+      "description": "Main title of Getting Started page.",
+      "message": "KeePassXC-Browser にようこそ！"
+   }
+}

@@ -1,0 +1,39 @@
+id: watcher.monitorElement
+meta:
+  name: ELEMENT
+  icon: =func(watcher.icon)
+  title: =func(watcher.title)
+  showGrabber: true
+templates:
+  build: =func(watcher.buildElementTemplates)
+  update: =func(watcher.updateElementTemplate)
+  store: =func(watcher.storeElementTemplate)
+inputs:
+  - page
+  - watcher.element
+  - watcher.trigger
+  - trigger
+  - changeUpIs
+  - actions
+  - before
+  - tracking
+  - ua
+  - schedule
+steps:
+  - watcher.page
+  - watcher.navigate
+  - watcher.before
+  - watcher.favicons
+  - type: watcher.parse
+    query: ['item']
+  - watcher.compare
+  - watcher.screenshot
+  - watcher.preview
+  - watcher.actions
+  - watcher.prune
+widgets:
+  value: value
+  graph: graph
+storage:
+  last: null
+  first: null

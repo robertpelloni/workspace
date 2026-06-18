@@ -1,0 +1,8 @@
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_1x32x4_1x4x2_neonbf16, 1, 32, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_2x32x4_1x4x2_neonbf16, 2, 32, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_2x16x4_1x4x2_neonbf16, 2, 16, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_3x16x4_1x4x2_neonbf16, 3, 16, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_4x16x4_1x4x2_neonbf16, 4, 16, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_4x8x4_1x4x2_neonbf16, 4, 8, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_6x8x4_1x4x2_neonbf16, 6, 8, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)
+YNN_DOT_KERNEL(arch_flag::neonbf16, dot_bf16_bf16_fp32_8x4x4_1x4x2_neonbf16, 8, 4, 4, 1, 4, 2, /*flags=*/0, bfloat16, bfloat16, float)

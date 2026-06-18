@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Tanca totes les pestanyes duplicades"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Tanca les pestanyes duplicades"
+   }
+}

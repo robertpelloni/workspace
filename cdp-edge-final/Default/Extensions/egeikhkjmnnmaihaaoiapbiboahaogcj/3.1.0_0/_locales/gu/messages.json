@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "બધા ડુપ્લિકેટ ટૅબ્સ બંધ કરો"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "ડુપ્લિકેટ ટૅબ્સ બંધ કરો"
+   }
+}

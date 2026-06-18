@@ -1,0 +1,40 @@
+{
+   "action": {
+      "_default_popup": "popup.html",
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "24": "icons/icon24.png",
+         "32": "icons/icon32.png",
+         "48": "icons/icon48.png"
+      }
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "styles.css", "folderStyles.css", "promptEnhancer.css", "pinnedMessages.css", "paywallModal.css" ],
+      "js": [ "config.js", "api-client.js", "themes.js", "folderIcons.js", "folderService.js", "themeService.js", "folderModal.js", "defaultPrompts.js", "promptLibraryService.js", "promptChainService.js", "promptChainModal.js", "promptChainExecutor.js", "promptLibraryModal.js", "promptEditorModal.js", "paywallModal.js", "pinnedMessagesService.js", "pinnedMessages.js", "pinnedMessagesModal.js", "chatExporter.js", "content.js", "promptEnhancer.js" ],
+      "matches": [ "https://claude.ai/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Organize chats with folders, export to PDF/Markdown, and master AI with a built-in prompt library. The ultimate Claude toolkit.",
+   "host_permissions": [ "https://claude.ai/*", "https://api.anthropic.com/*" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "24": "icons/icon24.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3S9JimesTNJ7OSnWeqIWhBeNAn/um4rUjTDQXP1/F+R6kLiqeyAW3OnXBVZp05V0OAllnE1d+MzVU4Ic+48Az/IQYYyxZzrzNAJCrXHC9zmt/6nhDocPytsL/O8iwszk4kcTix3uUleZKJtY8dgP23m0stDxGYDZkU0DpVzQujhl2E4IbuzTeuftYcbJdGxqg5pHcADMMLdnO6owu9xWwkrB+/oAYJNSKYeSowntwU++HexNUTGTRAabopfGCZhKGqjrRb8B0huQuzn/dv/FY8BAxUCtWwRz8T6PFRZ+8bWti6j8wh0yQetQMHHN5z68yADIMK35g8o3u/Ey+OUKsQIDAQAB",
+   "manifest_version": 3,
+   "name": "Toolbox for Claude: Export, Folders & Prompts",
+   "permissions": [ "storage", "activeTab", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://claude.ai/*" ],
+      "resources": [ "chatExporter.js" ]
+   } ]
+}

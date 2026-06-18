@@ -1,0 +1,5 @@
+2026/06/04-21:32:42.007 9290 Creating DB C:\Users\hyper\workspace\cdp-profile\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/06/04-21:32:42.019 9290 Reusing MANIFEST C:\Users\hyper\workspace\cdp-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/06/04-21:32:42.245 9490 Level-0 table #5: started
+2026/06/04-21:32:42.255 9490 Level-0 table #5: 682661 bytes OK
+2026/06/04-21:32:42.258 9490 Delete type=0 #3

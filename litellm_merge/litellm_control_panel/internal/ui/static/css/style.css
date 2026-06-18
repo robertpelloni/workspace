@@ -1,0 +1,16 @@
+body { font-family: sans-serif; background: #1a1a1a; color: #eee; padding: 20px; }
+button.inline-action { background: #555; color: white; border: none; padding: 4px 8px; cursor: pointer; border-radius: 4px; margin-left: 5px; font-size: 11px; }
+button.inline-action:hover { background: #777; }
+.tab-btn { background: #333; color: #fff; border: none; padding: 10px 20px; cursor: pointer; margin-right: 5px; }
+.tab-btn.active { background: #4caf50; }
+.tab-content { display: none; margin-top: 20px; }
+.tab-content.active { display: block; }
+button.action { background: #f44336; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px; margin-right: 10px; }
+button.action:hover { background: #d32f2f; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #444; }
+th { background: #333; }
+.latency { color: #aaa; }
+.score { font-weight: bold; color: #4caf50; }
+#logs { background: #000; color: #0f0; font-family: monospace; padding: 10px; height: 200px; overflow-y: scroll; border: 1px solid #444; }
+.model-box { background: #333; padding: 15px; border-radius: 8px; min-height: 200px; }

@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Zatvori sve duplicirane kartice"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "Zatvori duplicirane kartice"
+   }
+}

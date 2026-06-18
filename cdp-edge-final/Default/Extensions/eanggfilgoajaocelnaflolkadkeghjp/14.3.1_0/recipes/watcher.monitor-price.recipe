@@ -1,0 +1,37 @@
+id: watcher.monitorPrice
+meta:
+  name: PRICES
+  icon: =func(watcher.icon)
+  title: =func(watcher.title)
+templates:
+  build: =func(watcher.buildPriceTemplates)
+  update: =func(watcher.updatePriceTemplate)
+inputs:
+  - page
+  - watcher.price
+  - watcher.trigger
+  - trigger
+  - changeUpIs
+  - actions
+  - before
+  - tracking
+  - ua
+  - schedule
+steps:
+  - watcher.page
+  - watcher.navigate
+  - watcher.before
+  - watcher.favicons
+  - type: watcher.parse
+    query: ['data']
+  - watcher.compare
+  - watcher.screenshot
+  - watcher.preview
+  - watcher.actions
+  - watcher.prune
+widgets:
+  value: value
+  graph: graph
+storage:
+  last: null
+  first: null

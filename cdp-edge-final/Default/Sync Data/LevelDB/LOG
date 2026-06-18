@@ -1,0 +1,5 @@
+2026/06/04-22:04:56.384 f704 Creating DB C:\Users\hyper\workspace\cdp-edge-final\Default\Sync Data\LevelDB since it was missing.
+2026/06/04-22:04:56.412 f704 Reusing MANIFEST C:\Users\hyper\workspace\cdp-edge-final\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/06/04-22:18:46.672 13a20 Level-0 table #5: started
+2026/06/04-22:18:46.686 13a20 Level-0 table #5: 353305 bytes OK
+2026/06/04-22:18:46.692 13a20 Delete type=0 #3

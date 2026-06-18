@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "すべての重複タブを閉じる"
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "重複タブを閉じる"
+   }
+}

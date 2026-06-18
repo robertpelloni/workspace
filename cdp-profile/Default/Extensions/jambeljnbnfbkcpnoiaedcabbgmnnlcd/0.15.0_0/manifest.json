@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "icon-16x16.png",
+         "32": "icon-32x32.png"
+      },
+      "default_title": "Record"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "commands": {
+      "inspect": {
+         "description": "Start inspecting",
+         "suggested_key": {
+            "default": "Shift+Alt+C"
+         }
+      },
+      "record": {
+         "description": "Start recording",
+         "suggested_key": {
+            "default": "Shift+Alt+R"
+         }
+      }
+   },
+   "icons": {
+      "128": "icon-192x192.png",
+      "16": "icon-16x16.png",
+      "32": "icon-32x32.png",
+      "48": "icon-48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk27QFUdPW3owD4BCs/86hP5q5wN+Brf4jJ+qSVtILX4TdencBUyHNl38mKAQuT62MbvaBxNc14r9oC02v8szNwrZmuej8zF2m9jx8Q3AjaO2JAdAkuEEc7siusybcjDp9kTnfqaSrh0oFu0czyo64hWDOEZWAvyxsj/jKoD8HmW0oNvbC9WKdMV2zN94qbCPX1zaxoNiYvMfQ1NhE8C/1Rsi6zmRRGREZ++iJaT/ai0DMtJNDpEAQXFjSQVk6VyaZ2hsy3vZ8f6DG25mO3hbsVfFrvxmUsJ/dsuq42shQKjaFYgOBxghISHmB0czz+ItxK34wzuJb9LtK2qm9i/k9QIDAQAB",
+   "manifest_version": 3,
+   "name": "Playwright CRX",
+   "options_ui": {
+      "open_in_tab": false,
+      "page": "preferences.html"
+   },
+   "permissions": [ "debugger", "tabs", "contextMenus", "storage", "sidePanel" ],
+   "side_panel": {
+      "default_path": "empty.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.15.0"
+}

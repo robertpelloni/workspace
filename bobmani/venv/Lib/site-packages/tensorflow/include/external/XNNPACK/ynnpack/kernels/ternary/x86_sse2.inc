@@ -1,0 +1,5 @@
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, quantize_fp32_to_int8_1x16_x86_sse2, quantize_int8, nullptr, float32x1_t, float32x1_t, int32x1_t, int8x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, multiply_fp32_fp32_fp32_1x8_x86_sse2, multiply, nullptr, float32x1_t, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, multiply_int32_fp32_fp32_1x8_x86_sse2, multiply, nullptr, int32x1_t, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, multiply_add_fp32_fp32_fp32_1x8_x86_sse2, multiply_add, nullptr, float32x1_t, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::sse2, clamp_fp32_fp32_fp32_1x8_x86_sse2, clamp, nullptr, float32x1_t, float32x1_t, float32x1_t, float32x1_t)

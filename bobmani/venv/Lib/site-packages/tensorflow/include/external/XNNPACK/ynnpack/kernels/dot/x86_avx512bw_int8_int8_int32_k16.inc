@@ -1,0 +1,8 @@
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_2x16x16_1x4x16_avx512bw, 2, 16, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_2x8x16_1x4x16_avx512bw, 2, 8, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_4x8x16_1x4x16_avx512bw, 4, 8, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_6x8x16_1x4x16_avx512bw, 6, 8, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_2x4x16_1x4x16_avx512bw, 2, 4, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_4x4x16_1x4x16_avx512bw, 4, 4, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_6x4x16_1x4x16_avx512bw, 6, 4, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)
+YNN_DOT_KERNEL(arch_flag::avx512bw, dot_int8_int8_int32_8x4x16_1x4x16_avx512bw, 8, 4, 16, 1, 4, 16, /*flags=*/dot_flag::consistent_arithmetic, int8_t, int8_t, int32_t)

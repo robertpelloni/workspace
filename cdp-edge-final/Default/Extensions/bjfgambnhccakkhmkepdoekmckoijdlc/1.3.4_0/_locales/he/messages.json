@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "תווית עבור הכפתור להוספת ביקורת על היישום",
+      "message": "הוסף ביקורת"
+   },
+   "appUpdated": {
+      "description": "תווית להתרעת עדכון האפליקציה",
+      "message": "העדכון התבצע בהצלחה"
+   },
+   "connect": {
+      "description": "תווית לכפתור להתחברות",
+      "message": "התחבר"
+   },
+   "connectFromThisTab": {
+      "description": "תווית לכפתור להתחברות מהכרטיסייה הנוכחית",
+      "message": "התחבר מכרטיסייה זו"
+   },
+   "disconnect": {
+      "description": "תווית עבור כפתור להתנתקות",
+      "message": "התנתק"
+   },
+   "dismiss": {
+      "description": "פעולה להתעלמות מההתראה",
+      "message": "התעלם"
+   },
+   "error": {
+      "description": "תווית להצגת שגיאה",
+      "message": "שגיאה"
+   },
+   "focusConnectedTab": {
+      "description": "תווית עבור כפתור להתמקדות בכרטיסייה המחוברת",
+      "message": "התמקדות בכרטיסייה מחוברת"
+   },
+   "invalidTab": {
+      "description": "הודעת שגיאה בכרטיסייה לא חוקית",
+      "message": "לא ניתן להפוך את הדף הזה לאוטומטי. אנא נסה דף אחר."
+   },
+   "reviewDescription": {
+      "description": "לבקש מהמשתמש להשאיר ביקורת על היישום",
+      "message": "שלום, אני $NAME$. יצרתי את $APP_NAME$ כדי לעזור לאנשים לחסוך זמן ולהפוך את המשימות שלהם לאוטומטיות. אם אתם נהנים להשתמש בזה, אעריך דירוג של 5 כוכבים כדי לעזור לאחרים לגלות את $APP_NAME$. תודה רבה!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "הודיית משתמש על השימוש באפליקציה",
+      "message": "תודה שהשתמשת ב-$APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "תווית לתיאור לראות מה חדש",
+      "message": "ראה מה חדש"
+   },
+   "signIn": {
+      "description": "תווית לכפתור ההתחברות",
+      "message": "התחבר"
+   },
+   "view": {
+      "description": "תווית עבור הכפתור להצגת העדכון",
+      "message": "צפה"
+   }
+}

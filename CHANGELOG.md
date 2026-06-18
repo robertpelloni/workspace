@@ -1,3 +1,21 @@
+## [5.15.0] - 2026-06-18
+
+### Added
+- Executive Protocol #9: Repository Synchronization & Intelligent Merge executed.
+- Fixed btk repo submodule references for Jules clone compatibility.
+  - bobui-reference: 70a46458 → 1c589f87 (valid HEAD)
+  - juce: 501c07674 → 3ba67d458 (valid HEAD)
+  - ultimatepp: c402c6b7a → 5276c666b (valid HEAD)
+- Removed 9 stale submodule entries from root index (brokeragentworkflow,
+  explorerexedecompiled, forclosureworkflow, etc.)
+- Fixed CLIProxyAPIPlus/ui blocking directory issue.
+- Multiple .gitignore/.gitattributes merge conflict resolutions (10 files).
+- bobfilez pybind11 recursive directory loop destroyed.
+
+### Updated
+- Version governance: global version incremented to 5.14.0 → 5.15.0
+- btk submodule references updated and pushed to GitHub master.
+
 ## [5.14.0] - 2026-06-18
 
 ### Added

@@ -1,0 +1,37 @@
+id: watcher.monitorChanges
+meta:
+  name: PAGE CHANGES
+  icon: =func(watcher.icon)
+  title: =func(watcher.title)
+templates:
+  build: =func(watcher.buildChangesTemplates)
+  update: =func(watcher.updateChangesTemplate)
+inputs:
+  - page
+  - watcher.changes
+  - watcher.trigger
+  - trigger
+  - changeUpIs
+  - actions
+  - before
+  - tracking
+  - ua
+  - schedule
+steps:
+  - watcher.page
+  - watcher.navigate
+  - watcher.before
+  - watcher.favicons
+  - type: watcher.parse
+    query: ['html', 'text', 'data']
+  - watcher.compare
+  - watcher.screenshot
+  - watcher.preview
+  - watcher.actions
+  - watcher.prune
+widgets:
+  value: value
+  graph: graph
+storage:
+  last: null
+  first: null

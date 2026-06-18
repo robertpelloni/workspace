@@ -1,0 +1,408 @@
+/**
+ * Claude Chat TOC Extension Styles
+ * Automatically matches Claude's light/dark theme
+ */
+
+/* CSS Variables - Dark theme (default) */
+#claude-toc-sidebar {
+  --toc-width: 220px;
+  --toc-bg: #2a2a2a;
+  --toc-bg-hover: #353535;
+  --toc-border: #404040;
+  --toc-text: #a0a0a0;
+  --toc-text-active: #e8e8e8;
+  --toc-accent: #d4a574;
+  --toc-line: #454545;
+  --toc-dot: #555555;
+  --toc-dot-active: #d4a574;
+  --toc-transition: 0.2s ease;
+  --toc-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Light theme */
+#claude-toc-sidebar.light-theme {
+  --toc-bg: #ffffff;
+  --toc-bg-hover: #f5f5f5;
+  --toc-border: #e0e0e0;
+  --toc-text: #666666;
+  --toc-text-active: #1a1a1a;
+  --toc-accent: #b58a54;
+  --toc-line: #d0d0d0;
+  --toc-dot: #bbbbbb;
+  --toc-dot-active: #b58a54;
+  --toc-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Sidebar Container */
+#claude-toc-sidebar {
+  position: fixed;
+  left: 300px; /* Default, will be overridden by JS */
+  top: 56px;
+  width: var(--toc-width);
+  min-height: 80px;
+  max-height: calc(100vh - 80px);
+  background: var(--toc-bg);
+  border: 1px solid var(--toc-border);
+  border-radius: 10px;
+  box-shadow: var(--toc-shadow);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  transition: width 0.2s ease, opacity 0.2s ease;
+  overflow: hidden;
+}
+
+/* Responsive positioning */
+@media (max-width: 1500px) {
+  #claude-toc-sidebar {
+    width: 190px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #claude-toc-sidebar {
+    width: 170px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #claude-toc-sidebar {
+    width: 150px;
+  }
+}
+
+@media (max-width: 950px) {
+  #claude-toc-sidebar {
+    display: none;
+  }
+}
+
+/* Collapsed state */
+#claude-toc-sidebar.collapsed {
+  width: 44px;
+  min-height: 44px;
+  min-width: 48px;
+}
+
+#claude-toc-sidebar.collapsed .toc-content,
+#claude-toc-sidebar.collapsed .toc-empty,
+#claude-toc-sidebar.collapsed .toc-title {
+  display: none;
+}
+
+#claude-toc-sidebar.collapsed .toc-header {
+  justify-content: center;
+  padding: 10px;
+  border-bottom: none;
+}
+
+#claude-toc-sidebar.collapsed .toc-toggle {
+  padding: 8px;
+}
+
+/* Header */
+.toc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--toc-border);
+  flex-shrink: 0;
+}
+
+.toc-title {
+  font-weight: 600;
+  color: var(--toc-text-active);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.toc-toggle {
+  background: none;
+  border: none;
+  color: var(--toc-text);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--toc-transition);
+}
+
+.toc-toggle:hover {
+  background: var(--toc-bg-hover);
+  color: var(--toc-text-active);
+}
+
+/* Toggle button wrapper for dot indicator */
+.toc-toggle {
+  position: relative;
+}
+
+/* Dot indicator when collapsed - shows there's content */
+#claude-toc-sidebar.collapsed .toc-toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background: var(--toc-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 4px var(--toc-accent);
+}
+
+/* Content area */
+.toc-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+/* Custom scrollbar */
+.toc-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc-content::-webkit-scrollbar-thumb {
+  background: var(--toc-line);
+  border-radius: 2px;
+}
+
+.toc-content::-webkit-scrollbar-thumb:hover {
+  background: var(--toc-text);
+}
+
+/* TOC List */
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* TOC Item */
+.toc-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 12px 6px 16px;
+  cursor: pointer;
+  transition: all var(--toc-transition);
+  position: relative;
+}
+
+.toc-item:hover {
+  background: var(--toc-bg-hover);
+}
+
+.toc-item.active {
+  background: rgba(212, 165, 116, 0.1);
+}
+
+.toc-item.active .toc-item-title {
+  color: var(--toc-text-active);
+  font-weight: 500;
+}
+
+.toc-item.active .toc-item-dot {
+  background: var(--toc-dot-active);
+  box-shadow: 0 0 8px rgba(212, 165, 116, 0.4);
+}
+
+/* Connector (timeline) */
+.toc-item-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.toc-item-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--toc-dot);
+  flex-shrink: 0;
+  transition: all var(--toc-transition);
+  margin-top: 5px;
+}
+
+.toc-item:hover .toc-item-dot {
+  background: var(--toc-text);
+}
+
+.toc-item-line {
+  width: 2px;
+  flex: 1;
+  min-height: 20px;
+  background: var(--toc-line);
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(100% + 4px);
+}
+
+/* Item content */
+.toc-item-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.toc-item-number {
+  font-size: 10px;
+  color: var(--toc-text);
+  background: var(--toc-border);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  font-weight: 500;
+  min-width: 20px;
+  text-align: center;
+}
+
+.toc-item.active .toc-item-number {
+  background: var(--toc-accent);
+  color: #1a1a1a;
+}
+
+.toc-item-title {
+  color: var(--toc-text);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: color var(--toc-transition);
+  word-break: break-word;
+}
+
+.toc-item:hover .toc-item-title {
+  color: var(--toc-text-active);
+}
+
+/* Empty state */
+.toc-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  color: var(--toc-text);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Load more button */
+.toc-load-more {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.toc-load-more button {
+  background: var(--toc-border);
+  border: none;
+  color: var(--toc-text);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all var(--toc-transition);
+  width: 100%;
+}
+
+.toc-load-more button:hover {
+  background: var(--toc-line);
+  color: var(--toc-text-active);
+}
+
+/* Tooltip */
+#claude-toc-tooltip {
+  position: fixed;
+  background: var(--toc-bg);
+  border: 1px solid var(--toc-border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  max-width: 300px;
+  z-index: 10000;
+  box-shadow: var(--toc-shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  pointer-events: none;
+}
+
+#claude-toc-tooltip.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip-title {
+  font-weight: 500;
+  color: var(--toc-text-active);
+  margin-bottom: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.tooltip-preview {
+  color: var(--toc-text);
+  font-size: 12px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Theme is now handled via JS-added classes: .light-theme and .dark-theme */
+
+/* Smooth scroll behavior for the main page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation for new items */
+@keyframes tocItemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toc-item {
+  animation: tocItemFadeIn 0.2s ease forwards;
+}
+
+/* Pulse animation for active dot */
+@keyframes dotPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 165, 116, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(212, 165, 116, 0);
+  }
+}
+
+.toc-item.active .toc-item-dot {
+  animation: dotPulse 2s ease infinite;
+}

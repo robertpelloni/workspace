@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "تسمية لزر إضافة مراجعة للتطبيق",
+      "message": "أضف مراجعة"
+   },
+   "appUpdated": {
+      "description": "التسمية التي تشير إلى تنبيه تحديث التطبيق",
+      "message": "تم تحديث التطبيق"
+   },
+   "connect": {
+      "description": "تسمية لزر الاتصال",
+      "message": "اتصال"
+   },
+   "connectFromThisTab": {
+      "description": "تسمية الزر للاتصال من علامة التبويب الحالية",
+      "message": "الاتصال من هذه علامة التبويب"
+   },
+   "disconnect": {
+      "description": "تسمية لزر قطع الاتصال",
+      "message": "قطع الاتصال"
+   },
+   "dismiss": {
+      "description": "إجراء لرفض التنبيه",
+      "message": "رفض"
+   },
+   "error": {
+      "description": "تسمية لعرض خطأ",
+      "message": "خطأ"
+   },
+   "focusConnectedTab": {
+      "description": "التسمية للزر للتركيز على علامة التبويب المتصلة",
+      "message": "تركيز على علامة التبويب المتصلة"
+   },
+   "invalidTab": {
+      "description": "رسالة خطأ للعلامة التبويب غير الصالحة",
+      "message": "لا يمكن تشغيل العمليات الآلية على هذه الصفحة. يرجى محاولة صفحة مختلفة."
+   },
+   "reviewDescription": {
+      "description": "اطلب من المستخدم ترك مراجعة للتطبيق",
+      "message": "مرحبًا، أنا $NAME$. لقد أنشأت $APP_NAME$ لمساعدة الناس على توفير الوقت وأتمتة مهامهم. إذا كنت تستمتع باستخدامه، سأكون ممتنًا لتقييم بخمس نجوم لمساعدة الآخرين في اكتشاف $APP_NAME$. شكرًا جزيلاً!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "شُكر المستخدم لاستخدام التطبيق",
+      "message": "شكرًا لاستخدامك $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "تسمية للوصف للاطلاع على الجديد",
+      "message": "اطلع على الجديد"
+   },
+   "signIn": {
+      "description": "تسمية للزر لتسجيل الدخول",
+      "message": "تسجيل الدخول"
+   },
+   "view": {
+      "description": "التسمية للزر لعرض التحديث",
+      "message": "عرض"
+   }
+}

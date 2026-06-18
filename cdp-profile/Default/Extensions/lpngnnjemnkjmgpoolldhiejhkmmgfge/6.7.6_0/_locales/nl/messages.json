@@ -1,0 +1,54 @@
+{
+   "appDesc": {
+      "description": "",
+      "message": "Alles-in-1 bladwijzer manager"
+   },
+   "in": {
+      "description": "",
+      "message": "in Raindrop.io"
+   },
+   "openApp": {
+      "description": "",
+      "message": "App openen"
+   },
+   "openRaindrop": {
+      "description": "",
+      "message": "Raindrop.io website openen"
+   },
+   "openSidePanel": {
+      "description": "",
+      "message": "Zijbalk openen"
+   },
+   "saveHighlight": {
+      "description": "",
+      "message": "Markeringen toevoegen"
+   },
+   "saveImage": {
+      "description": "",
+      "message": "Afbeelding opslaan"
+   },
+   "saveLink": {
+      "description": "",
+      "message": "Link opslaan"
+   },
+   "savePage": {
+      "description": "",
+      "message": "Pagina opslaan"
+   },
+   "savePageOrHighlight": {
+      "description": "",
+      "message": "Bladwijzer / Markeringen opslaan"
+   },
+   "saveTabs": {
+      "description": "",
+      "message": "Tabbladen opslaan"
+   },
+   "saveVideo": {
+      "description": "",
+      "message": "Video opslaan"
+   },
+   "settings": {
+      "description": "",
+      "message": "Instellingen"
+   }
+}

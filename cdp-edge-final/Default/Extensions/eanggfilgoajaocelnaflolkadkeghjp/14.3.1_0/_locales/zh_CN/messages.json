@@ -1,0 +1,8 @@
+{
+   "ext_description": {
+      "message": "Chrome 的 AI 代理。在任何网站上的 ChatGPT / Claude 副驾驶。使用 AI 实现自动化、搜索、总结、翻译、写作。"
+   },
+   "ext_name": {
+      "message": "HARPA AI | ChatGPT, Claude, Gemini, DeepSeek & Perplexity 自动化代理"
+   }
+}

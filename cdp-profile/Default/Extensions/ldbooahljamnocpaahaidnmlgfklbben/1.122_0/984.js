@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_recall_extension=self.webpackChunk_recall_extension||[]).push([[984],{82984:(e,s,n)=>{n.r(s),n.d(s,{configurePdfJs:()=>o,pdfOptions:()=>c});var r=n(27489);const t=new URL(n(36699),n.b).toString(),i=t.includes("pdfjs-dist/build/"),l=new URL(i?"../wasm/":"../pdfjs/",t).toString(),o=()=>(r.GlobalWorkerOptions.workerSrc=t,r),c={wasmUrl:l}}}]);

@@ -1,0 +1,5 @@
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx512f, multiply_fp32_fp32_fp32_1x32_x86_avx512f, multiply, nullptr, float32x1_t, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx512f, multiply_int32_fp32_fp32_1x32_x86_avx512f, multiply, nullptr, int32x1_t, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx512f, subtract_multiply_int32_int32_int32_1x32_x86_avx512f, subtract_multiply, nullptr, int32x1_t, int32x1_t, int32x1_t, int32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx512f, multiply_add_fp32_fp32_fp32_1x32_x86_avx512f, multiply_add, nullptr, float32x1_t, float32x1_t, float32x1_t, float32x1_t)
+YNN_ELEMENTWISE_KERNEL(arch_flag::avx512f, clamp_fp32_fp32_fp32_1x32_x86_avx512f, clamp, nullptr, float32x1_t, float32x1_t, float32x1_t, float32x1_t)

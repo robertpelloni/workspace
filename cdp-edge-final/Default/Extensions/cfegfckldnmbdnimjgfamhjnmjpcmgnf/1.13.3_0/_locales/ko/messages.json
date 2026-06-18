@@ -1,0 +1,8 @@
+{
+   "appDesc": {
+      "message": "AI 컨텍스트를 한 번만 저장하면 ChatGPT, Claude, Gemini, OpenClaw 등 모든 AI 도구에서 재사용할 수 있습니다. 더 이상 같은 말을 반복할 필요가 없습니다."
+   },
+   "appName": {
+      "message": "AI Context Flow: 어디서나 AI 메모리 활용"
+   }
+}

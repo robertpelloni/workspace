@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Etykieta dla przycisku dodawania recenzji aplikacji",
+      "message": "Dodaj recenzję"
+   },
+   "appUpdated": {
+      "description": "Etykieta dla alertu o zaktualizowanej aplikacji",
+      "message": "Aplikacja zaktualizowana"
+   },
+   "connect": {
+      "description": "Etykieta dla przycisku do połączenia",
+      "message": "Połącz"
+   },
+   "connectFromThisTab": {
+      "description": "Etykieta dla przycisku łączenia z bieżącej karty",
+      "message": "Połącz z tej karty"
+   },
+   "disconnect": {
+      "description": "Etykieta dla przycisku do odłączenia",
+      "message": "Odłącz"
+   },
+   "dismiss": {
+      "description": "Akcja zamknięcia alertu",
+      "message": "Zamknij"
+   },
+   "error": {
+      "description": "Etykieta do wyświetlania błędu",
+      "message": "Błąd"
+   },
+   "focusConnectedTab": {
+      "description": "Etykieta do przycisku, aby skupić się na połączonej karcie",
+      "message": "Skup się na połączonej karcie"
+   },
+   "invalidTab": {
+      "description": "Komunikat o błędzie dla nieprawidłowej karty",
+      "message": "Nie można zautomatyzować tej strony. Spróbuj innej strony."
+   },
+   "reviewDescription": {
+      "description": "Prośba o pozostawienie recenzji dla aplikacji",
+      "message": "Cześć, jestem $NAME$. Stworzyłem $APP_NAME$, aby pomóc ludziom oszczędzać czas i automatyzować ich zadania. Jeśli lubisz go używać, prosiłbym o przyznanie 5-gwiazdkowej oceny, aby pomóc innym odkryć $APP_NAME$. Bardzo dziękuję!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Podziękuj użytkownikowi za korzystanie z aplikacji",
+      "message": "Dziękujemy za korzystanie z $APP_NAME$",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Etykieta opisu, aby zobaczyć, co nowego",
+      "message": "Zobacz, co nowego"
+   },
+   "signIn": {
+      "description": "Etykieta dla przycisku do logowania",
+      "message": "Zaloguj się"
+   },
+   "view": {
+      "description": "Etykieta dla przycisku, aby zobaczyć aktualizację",
+      "message": "Zobacz"
+   }
+}

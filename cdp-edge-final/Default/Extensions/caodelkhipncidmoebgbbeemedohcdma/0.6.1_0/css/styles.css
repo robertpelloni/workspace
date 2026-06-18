@@ -1,0 +1,38 @@
+body {
+  padding-bottom: 1em;
+  overflow-y: scroll;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+/* horizontal alignment */
+.txtC, table .txtC, table tr .txtC{text-align:center;}
+.txtL, table .txtL, table tr .txtL{text-align:left;}
+.txtR, table .txtR, table tr .txtR{text-align:right;}
+
+/* vertical alignment */
+.txtT, table .txtT, table tr .txtT{vertical-align:top;}
+.txtB, table .txtB, table tr .txtB{vertical-align:bottom;}
+.txtM, table .txtM, table tr .txtM{vertical-align:middle;}
+
+.table tbody > tr > td.txtM {
+  vertical-align: middle;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}

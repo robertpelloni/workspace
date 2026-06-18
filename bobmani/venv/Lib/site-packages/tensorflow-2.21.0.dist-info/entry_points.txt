@@ -1,0 +1,5 @@
+[console_scripts]
+saved_model_cli = tensorflow.python.tools.saved_model_cli:main
+tf_upgrade_v2 = tensorflow.tools.compatibility.tf_upgrade_v2_main:main
+tflite_convert = tensorflow.lite.python.tflite_convert:main
+toco = tensorflow.lite.python.tflite_convert:main

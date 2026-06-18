@@ -30,3 +30,6 @@ __pycache__/
 *.pyo
 *.pyd
 borg.db
+
+# Large database files - do not track
+workspace_index.db

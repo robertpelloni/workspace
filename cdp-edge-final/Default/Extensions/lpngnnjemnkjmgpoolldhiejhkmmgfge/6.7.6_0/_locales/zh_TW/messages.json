@@ -1,0 +1,54 @@
+{
+   "appDesc": {
+      "description": "",
+      "message": "整合式全功能的書籤管理工具"
+   },
+   "in": {
+      "description": "",
+      "message": "在Raindrop.io中"
+   },
+   "openApp": {
+      "description": "",
+      "message": "開啟應用程式"
+   },
+   "openRaindrop": {
+      "description": "",
+      "message": "開啟Raindrop.io網站"
+   },
+   "openSidePanel": {
+      "description": "",
+      "message": "開啟側邊欄"
+   },
+   "saveHighlight": {
+      "description": "",
+      "message": "新增標記"
+   },
+   "saveImage": {
+      "description": "",
+      "message": "儲存圖片"
+   },
+   "saveLink": {
+      "description": "",
+      "message": "儲存連結"
+   },
+   "savePage": {
+      "description": "",
+      "message": "儲存網頁"
+   },
+   "savePageOrHighlight": {
+      "description": "",
+      "message": "書籤 / 儲存標記"
+   },
+   "saveTabs": {
+      "description": "",
+      "message": "儲存分頁"
+   },
+   "saveVideo": {
+      "description": "",
+      "message": "儲存影片"
+   },
+   "settings": {
+      "description": "",
+      "message": "設定"
+   }
+}

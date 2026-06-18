@@ -1,0 +1,630 @@
+mapping:
+
+  # harpa ai app dashboard
+  - urls: app.harpa.ai
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Reply
+        icon: arrows-flip-backward
+        command: reply
+        hotkey: r
+      - label: Rewrite
+        icon: editor-pencil-02
+        command: rewrite
+        hotkey: w
+      - label: Compose
+        icon: communication-message-chat-square
+        command: compose
+        hotkey: c
+      - label: Translate
+        icon: general-translate-01
+        command: translate
+        hotkey: t
+      - label: Midjourney
+        icon: editor-palette
+        command: midjourney-prompt-wizard
+      - label: Tarot
+        icon: education-certificate-02
+        command: tarot
+      - label: Help
+        icon: communication-message-question-square
+        command: help
+
+  # youtube video
+  - urls: youtube.com/watch
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Summarize video
+        icon: media-youtube
+        command: youtube-summary
+        hotkey: u
+      - label: Repurpose video
+        icon: editor-roller-brush
+        command: repurpose-video
+        hotkey: o
+      - label: Ask & seek video
+        icon: communication-annotation-dots
+        command: ask
+        hotkey: a
+      - label: Create a script
+        icon: media-film-03
+        command: video-script-writer
+        hotkey: i
+      - label: Write comment
+        icon: communication-message-chat-square
+        command: reply
+        inputs:
+          - '{{transcript}}'
+        hotkey: c
+      - label: Analyze channel
+        icon: files-file-02
+        command: youtube-channel-analysis
+        hotkey: y
+      - label: Write a reply
+        icon: arrows-flip-backward
+        command: reply
+        hotkey: r
+
+  # youtube channel
+  - urls: youtube.com/@
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Analyze channel
+        icon: files-file-02
+        command: youtube-channel-analysis
+        hotkey: y
+      - label: Write a poll
+        icon: files-file-02
+        command: youtube-polls-generator
+        hotkey: p
+      - label: Get transcripts
+        icon: general-download-04
+        command: youtube-extract-transcripts
+        hotkey: t
+
+  # mail services
+  - urls:
+      - mail.google.com/mail
+      - app.fastmail.com/mail
+      - mail.proton.me
+      - mail.aol.com
+      - outlook.live.com/mail
+      - mail.com
+      - mail.yahoo.com
+      - hushmail.com
+      - app.mailjet.com
+      - icloud.com/mail
+      - RegExp=mailfence\.com\/sw.+tool=mail
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Summarize email
+        icon: files-file-search-04
+        command: summary
+        hotkey: u
+      - label: Finish writing
+        icon: maps-flag-05
+        command: finish-writing
+        hotkey: f
+      - label: Write email
+        icon: communication-mail-02
+        command: compose
+        inputs:
+          - 'EMAIL'
+          - 'NEW EMAIL'
+        hotkey: w
+      - label: Reply to email
+        icon: arrows-flip-backward
+        command: reply
+        inputs:
+          - 'FIND ON PAGE'
+        hotkey: r
+
+  # e-commerce
+  - urls:
+      - amazon.com
+      - ebay.com
+      - aliexpress.com
+      -	jd.com
+      - etsy.com
+      - walmart.com
+      - taobao.com
+      - bestbuy.com
+      - asos.com
+      - homedepot.com
+      - target.com
+      - wish.com
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Write DM
+        icon: communication-message-chat-square
+        command: compose
+        inputs:
+          - 'DM'
+          - 'NEW DM'
+        hotkey: w
+      - label: Extract data
+        icon: finance-shopping-cart-03
+        command: extract
+        hotkey: d
+      - label: Write review
+        icon: communication-annotation-heart
+        command: product-review-writer
+        hotkey: r
+      - label: Write description
+        icon: finance-scales-01
+        command: product-description-writer
+        hotkey: e
+      - label: Write meta tags
+        icon: general-target-04
+        command: e-commerce-meta-tags
+        hotkey: m
+      - label: Sentiment analysis
+        icon: users-face-content
+        command: sentiment-analysis
+        hotkey: y
+
+  # linkedin
+  - urls:
+      - linkedin.com
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Improve CV
+        icon: weather-stars-02
+        command: resume-improver
+        hotkey: c
+      - label: DM recruited
+        icon: communication-annotation-question
+        command: recruiter-outreach-dm
+        hotkey: d
+      - label: Connect note
+        icon: communication-mail-02
+        command: linkedin-connection-note
+        hotkey: n
+      - label: Cover letter
+        icon: files-file-attachment-02
+        command: resume-cover-letter
+        hotkey: l
+      - label: Interview coach
+        icon: media-gaming-pad-01
+        command: job-interview-coach
+        hotkey: i
+
+  # linkedin jobs, +2 commands
+  - urls:
+      - linkedin.com/jobs
+    options:
+      - label: Job description
+        icon: files-file-05
+        command: job-description-writer
+        hotkey: j
+      - label: Announcement
+        icon: alerts-announcement-02
+        command: job-announcement
+        hotkey: a
+
+  # instagram
+  - urls:
+      - instagram.com
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: IG wizard
+        icon: weather-stars-02
+        command: instagram-wizard
+        hotkey: w
+      - label: Midjourney
+        icon: editor-palette
+        command: midjourney-prompt-wizard
+        hotkey: j
+      - label: Write a reply
+        icon: arrows-flip-backward
+        command: reply
+        hotkey: r
+
+  # social
+  - urls:
+      - facebook.com
+      - twitter.com
+      - pinterest.com
+      - reddit.com
+      - 9gag.com
+      - tumblr.com
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Post ideas
+        icon: media-lightbulb-05
+        command: social-media-content-ideas
+        hotkey: i
+      - label: Finish writing
+        icon: maps-flag-05
+        command: finish-writing
+        hotkey: f
+      - label: Write post
+        icon: communication-annotation-plus
+        command: compose
+        hotkey: p
+      - label: Reply
+        icon: arrows-flip-backward
+        command: reply
+        hotkey: r
+
+  # chats
+  - urls:
+      - whatsapp.com
+      - telegram.org
+      - messenger.com
+      - discord.com
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Summarize
+        icon: files-file-search-04
+        command: summary
+        inputs:
+          - 'REPORT'
+        hotkey: u
+      - label: Rewrite
+        icon: editor-pencil-02
+        command: rewrite
+        hotkey: w
+      - label: Write message
+        icon: communication-annotation-plus
+        command: compose
+        hotkey: m
+      - label: Reply
+        icon: arrows-flip-backward
+        command: reply
+        hotkey: r
+
+  # dictionaries
+  - urls:
+      - translate.google
+      - deepl.com
+      - dictionary.com
+      - merriam-webster.com
+      - thefreedictionary.com
+      - dictionary.cambridge.org
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Translate
+        icon: general-translate-01
+        command: translate
+        hotkey: t
+      - label: Study
+        icon: education-graduation-hat-02
+        command: language-wizard
+        hotkey: u
+
+  # booking
+  - urls:
+      - booking.com
+      - airbnb.com
+      - tripadvisor.com
+      - skyscanner.net
+      - trivago.com
+      - hotels.com
+      - expedia.com
+      - kayak.com
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Trip planner
+        icon: maps-luggage-03
+        command: trip-planner
+        hotkey: p
+      - label: Translate
+        icon: general-translate-01
+        command: translate
+        hotkey: t
+      - label: Write DM
+        icon: communication-message-chat-square
+        command: compose
+        inputs:
+          - 'DM'
+          - 'NEW DM'
+        hotkey: d
+
+  # text editors
+  - urls:
+      - notion.so
+      - coda.io
+      - mem.ai
+      - loop.microsoft.com
+      - app.upbase.io
+      - anytype.io
+      - expedia.com
+      - RegExp=\.slab\.com\/(?!settings)
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Ask page
+        icon: communication-annotation-dots
+        command: ask
+        hotkey: a
+      - label: Summarize
+        icon: files-file-search-04
+        command: summary
+        inputs:
+          - 'REPORT'
+        hotkey: u
+      - label: Key takeaways
+        icon: files-file-search-02
+        command: summary
+        inputs:
+          - 'EMOJI LIST'
+        hotkey: k
+      - label: Extract data
+        icon: editor-dotpoints-02
+        command: extract
+        hotkey: d
+      - label: Rewrite
+        icon: editor-pencil-02
+        command: rewrite
+        hotkey: w
+      - label: Fix grammar
+        icon: files-file-check-02
+        command: rewrite
+        inputs:
+          - null
+          - 'Output the text as is, but fix spelling errors if the text contains them. Do not change the text structure.'
+        hotkey: g
+      - label: Shorten
+        icon: editor-pencil-minus
+        command: rewrite
+        inputs:
+          - null
+          - 'SHORTEN'
+      - label: Expand
+        icon: editor-pencil-plus
+        command: rewrite
+        inputs:
+          - null
+          - 'EXPAND'
+
+  # news
+  - urls:
+      - dailymail.co.uk
+      - cnn.com
+      - theguardian.com
+      - bbc.com
+      - bbc.co.uk
+      - news.yahoo.com
+      - msn.com
+      - nytimes.com
+      - foxnews.com
+      - news.google.com
+      - cbsnews.com
+      - livemint.com
+      - people.com
+      - nbcnews.com
+      - nbc.com
+      - espn.com
+      - reuters.com
+      - nypost.com
+      - usatoday.com
+      - forbes.com
+      - independent.co.uk
+      - nypost.com
+      - washingtonpost.com
+      - news18.com
+      - cnbc.com
+      - mirror.co.uk
+      - wired.com
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Ask page
+        icon: communication-annotation-dots
+        command: ask
+        hotkey: a
+      - label: Summarize
+        icon: files-file-search-04
+        command: summary
+        inputs:
+          - 'REPORT'
+        hotkey: u
+      - label: Rewrite
+        icon: editor-pencil-02
+        command: rewrite
+        hotkey: w
+      - label: Extract data
+        icon: editor-dotpoints-02
+        command: extract
+        hotkey: d
+      - label: Repurpose page
+        icon: editor-roller-brush
+        command: repurpose-text
+        hotkey: o
+      - label: Write a reply
+        icon: arrows-flip-backward
+        command: reply
+        hotkey: r
+
+  # other, no match
+  - options:
+      - label: Capture view
+        icon: layout-grid-03
+        command: vision
+        hotkey: v
+        hideFrame: true
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Ask page
+        icon: communication-annotation-dots
+        command: ask
+        hotkey: a
+      - label: Summarize
+        icon: files-file-search-04
+        command: summary
+        inputs:
+          - 'REPORT'
+        hotkey: u
+      - label: Extract data
+        icon: editor-dotpoints-02
+        command: extract
+        hotkey: d
+      - label: Repurpose page
+        icon: editor-roller-brush
+        command: repurpose-text
+        hotkey: o
+      - label: Rewrite
+        icon: editor-pencil-02
+        command: rewrite
+        hotkey: w
+      - label: Write a reply
+        icon: arrows-flip-backward
+        command: reply
+        hotkey: r
+
+  # text selection on any website
+  - hasSelection: true
+    options:
+      - label: Search the web
+        icon: general-search-refraction
+        command: search
+        inputs:
+          - '{{selection}}'
+        hotkey: s
+      - label: Explain
+        icon: education-atom-02
+        command: explain
+        hotkey: e
+      - label: Summarize
+        icon: files-file-search-04
+        command: tldr
+        hotkey: u
+      - label: Fix grammar
+        icon: files-file-check-02
+        command: rewrite
+        inputs:
+          - '{{selection}}'
+          - 'Output the text as is, but fix spelling errors if the text contains them. Do not change the text structure.'
+        hotkey: g
+      - label: Rephrase
+        icon: editor-magic-wand-02
+        command: rewrite
+        inputs:
+          - '{{selection}}'
+          - 'Rephrase to improve writing, flow, readability and coherence. Fix grammar and spelling.'
+        hotkey: p
+      - label: Rewrite
+        icon: editor-pencil-02
+        command: rewrite
+        inputs:
+          - '{{selection}}'
+        hotkey: w
+      - label: Finish writing
+        icon: maps-flag-05
+        command: finish-writing
+        hotkey: f
+      - label: Translate
+        icon: general-translate-01
+        command: translate
+        inputs:
+          - '{{selection}}'
+          - '{{language}}'
+        hotkey: t
+      - label: Write a reply
+        icon: arrows-flip-backward
+        command: reply
+        inputs:
+          - '{{selection}}'
+        hotkey: r
+
+  # text input on any website
+  - hasInput: true
+    options:
+      - label: Rephrase
+        icon: editor-magic-wand-02
+        command: rewrite
+        inputs:
+          - '{{input}}'
+          - 'Rephrase to improve writing, flow, readability and coherence. Fix grammar and spelling.'
+        hotkey: p
+      - label: Rewrite
+        icon: editor-pencil-02
+        command: rewrite
+        inputs:
+          - '{{input}}'
+        hotkey: w
+      - label: Finish writing
+        icon: maps-flag-05
+        command: finish-writing
+        hotkey: f
+      - label: Fix grammar
+        icon: files-file-check-02
+        command: rewrite
+        inputs:
+          - '{{input}}'
+          - 'Output the text as is, but fix spelling errors if the text contains them. Do not change the text structure.'
+        hotkey: g
+      - label: Translate
+        icon: general-translate-01
+        command: translate
+        inputs:
+          - '{{input}}'
+        hotkey: t

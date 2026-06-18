@@ -1,0 +1,36 @@
+{
+   "background": {
+      "scripts": [ "vendor/jquery-1.7.2_min.js", "vendor/encoder.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/umbrella_19.png",
+      "default_popup": "popup.html",
+      "default_title": "Copy URLs to clipboard"
+   },
+   "commands": {
+      "copy": {
+         "description": "Copy",
+         "suggested_key": {
+            "default": "Alt+C"
+         }
+      },
+      "paste": {
+         "description": "Paste",
+         "suggested_key": {
+            "default": "Alt+V"
+         }
+      }
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Copy all opened tabs URL into clipboard. 4 formats available : Text, HTML, JSON",
+   "icons": {
+      "128": "img/umbrella_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsEL8Aq0V71xr9DOq1rYHOID1Ng3odCcpwo5+YA/tYfF43/9n3YpfaVo1cNws5DnAmd8CCwpsJp9s09Z4lZJLCmdzFhfLecdOQwbd7hhf2CXJCbwglIsiZHUsETLfWs0+qwUsxPmJMRwGIGo7HFGdFGJvTln6N9ncz74TJWwbod87eMTydUIaV0Dhs7sCJqIPPN7WOVfzmlFwQnS1XfDRTEUIqsi/68AdYuU3aKeYL58M5tIjQrNjajOTU4nQtuoC7uSI57rhXH2Vn1t0PRQuMCeEGsId4GgulX9L7oWS3w5keQRJAOB09KJELtL6SorkUCHgmK5uIIj6wybI5SiG1QIDAQAB",
+   "manifest_version": 2,
+   "name": "Copy All Urls",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "clipboardRead", "clipboardWrite", "notifications", "cookies", "storage", "\u003Call_urls>" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "3.9.4.953"
+}

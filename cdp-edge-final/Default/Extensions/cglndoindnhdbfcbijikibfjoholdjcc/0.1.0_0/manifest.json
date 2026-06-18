@@ -1,0 +1,66 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.3c1ed2d2.png",
+         "16": "icon16.plasmo.6c567d50.png",
+         "32": "icon32.plasmo.76b92899.png",
+         "48": "icon48.plasmo.aced7582.png",
+         "64": "icon64.plasmo.8bb5e6e0.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Redplanethq (harshith@tegon.ai)",
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "commands": {
+      "_execute_side_panel": {
+         "description": "Open Core Memory sidepanel",
+         "suggested_key": {
+            "default": "Ctrl+Shift+M",
+            "mac": "Command+Shift+M"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [  ],
+      "js": [ "selection.5cb66ee7.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   }, {
+      "css": [ "gemini.63e81bd0.css" ],
+      "js": [ "gemini.d2550a89.js" ],
+      "matches": [ "https://gemini.google.com/*" ]
+   }, {
+      "css": [ "gemini.63e81bd0.css" ],
+      "js": [ "chatgpt.d4913cf1.js" ],
+      "matches": [ "https://chat.openai.com/*", "https://chatgpt.com/*" ]
+   } ],
+   "description": "Corebrain extension",
+   "host_permissions": [ "https://*/*" ],
+   "icons": {
+      "128": "icon128.plasmo.3c1ed2d2.png",
+      "16": "icon16.plasmo.6c567d50.png",
+      "32": "icon32.plasmo.76b92899.png",
+      "48": "icon48.plasmo.aced7582.png",
+      "64": "icon64.plasmo.8bb5e6e0.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwkOX5BqMJ/JJJScoI0sYgcjWnPm0wb1j5IIqqjCHEywELUID4xs6rsb25ePBhZYKRb1yTpamRkoMA5S0k/slH6rvV6D7/e5wmSFMQB0ilTx0Hhw3XFxqWpgvlyBLRpNnwzAoKxfmNF7VayH/7rcEdfUI5OAXKo6xj8LR6tJ+S04Ooz+J3khodKqRafzAF28h/AHmHz9uygAvQahiex6cqQyjXrA7dFl/Vl7xOrMjaH+RMin1aIv0BVYEeVdWSsnUE6fc8POd1kq4C5COnP6+5Z2OmlpnVon4LwXEouSXtkpoy20AKB9w/tXzz4mwqwZJ+DmrnhN4M46kQrAwpSpVGwIDAQAB",
+   "manifest_version": 3,
+   "name": "Corebrain",
+   "permissions": [ "storage", "sidePanel" ],
+   "side_panel": {
+      "default_path": "sidepanel.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "selection.95bad065.css" ]
+   }, {
+      "matches": [ "https://gemini.google.com/*" ],
+      "resources": [ "selection.95bad065.css" ]
+   }, {
+      "matches": [ "https://chat.openai.com/*", "https://chatgpt.com/*" ],
+      "resources": [ "selection.95bad065.css" ]
+   } ]
+}

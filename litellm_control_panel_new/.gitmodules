@@ -1,0 +1,3 @@
+[submodule "litellm_repo"]
+	path = litellm_repo
+	url = https://github.com/robertpelloni/litellm

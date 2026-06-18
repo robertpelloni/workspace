@@ -1,0 +1,73 @@
+{
+   "addReview": {
+      "description": "Gomb címkéje az alkalmazás értékelésének hozzáadásához",
+      "message": "Értékelés hozzáadása"
+   },
+   "appUpdated": {
+      "description": "Címke az alkalmazás frissítésére figyelmeztető értesítéshez",
+      "message": "Alkalmazás frissítve"
+   },
+   "connect": {
+      "description": "Gomb címke a csatlakozáshoz",
+      "message": "Csatlakozás"
+   },
+   "connectFromThisTab": {
+      "description": "Gomb felirata a jelenlegi lapról való csatlakozáshoz",
+      "message": "Csatlakozás ebből a lapról"
+   },
+   "disconnect": {
+      "description": "Gomb címkéje a kapcsolat bontásához",
+      "message": "Szétkapcsolás"
+   },
+   "dismiss": {
+      "description": "Művelet az értesítés elvetésére",
+      "message": "Elvetés"
+   },
+   "error": {
+      "description": "Címke egy hiba megjelenítéséhez",
+      "message": "Hiba"
+   },
+   "focusConnectedTab": {
+      "description": "Gomb címkéje a kapcsolódó lap fókuszálásához",
+      "message": "Kapcsolódó lap fókuszálása"
+   },
+   "invalidTab": {
+      "description": "Hibaüzenet érvénytelen lap esetén",
+      "message": "Ez az oldal nem automatizálható. Próbálkozzon egy másik oldallal."
+   },
+   "reviewDescription": {
+      "description": "Kérd meg a felhasználót, hogy hagyjon véleményt az alkalmazásról",
+      "message": "Szia, $NAME$ vagyok. Azért hoztam létre a $APP_NAME$-t, hogy segítsek az embereknek időt spórolni és automatizálni a feladataikat. Ha élvezettel használod, hálás lennék egy 5 csillagos értékelésért, hogy mások is felfedezhessék a $APP_NAME$-t. Nagyon köszönöm!",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         },
+         "name": {
+            "content": "Namu"
+         }
+      }
+   },
+   "reviewTitle": {
+      "description": "Köszönd meg a felhasználónak az alkalmazás használatát",
+      "message": "Köszönjük, hogy használja a(z) $APP_NAME$ alkalmazást",
+      "placeholders": {
+         "app_name": {
+            "content": "$1",
+            "example": "AutoBrowser"
+         }
+      }
+   },
+   "seeWhatIsNew": {
+      "description": "Címke az új dolgok megtekintésére",
+      "message": "Nézze meg a legújabbakat"
+   },
+   "signIn": {
+      "description": "Felirat a bejelentkezés gombhoz",
+      "message": "Bejelentkezés"
+   },
+   "view": {
+      "description": "Felirat a frissítés megtekintésére szolgáló gombhoz",
+      "message": "Megtekintés"
+   }
+}

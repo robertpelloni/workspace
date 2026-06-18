@@ -1,0 +1,6 @@
+{
+  "signature": "config_manager.py::Unresolved from this turn — config_manager.py:\n🔴 STOP — 11 issue(s) must be fixed:\n  L44: Expression of type \"None\" cannot be assigned to parameter of type \"str\"\n    \"None\" is not assignable to \"str\"\n  L82: \"context_length\" is not defined\n  L82: \"context_length\" is not defined\n  L84: \"context_length\" is not defined\n  L94: \"context_length\" is not defined\n  L95: \"context_length\" is not defined\n  L206: Operator \"+\" not supported for \"None\"\n  L306: Operator \"+\" not supported for \"None\"\n  Expression of type \"None\" cannot be assigned to parameter of type \"str\"\n    \"None\" is not assignable to \"str\"\n  \"context_length\" is not defined\n  ... and 1 more\n\nℹ️ Advisory — no action required this turn:\nCode-quality warnings introduced/touched this turn: 4 across 1 file(s).\nTop rules: F821×4\nDetails written to .pi-lens/cache/code-quality-warnings.json\n... (truncated)",
+  "sessionId": "lens-mpsm1g58-40ce7075",
+  "projectSeqStart": 18,
+  "projectSeqEnd": 20
+}
