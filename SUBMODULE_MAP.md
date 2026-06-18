@@ -1,104 +1,26 @@
- a6f24d0e4c9a76ee053d11778cd0b1f28e4dee33 ArrowVortex (v1.0.1-415-ga6f24d0)
- d8e38f939234975c71807d0e362dbd004914f9e6 CLIProxyAPIPlus (v6.9.19-0-47-gd8e38f93)
- db864fb8631cddd1ba739b5c564fa2aecaac1654 Cli-Proxy-API-Management-Center (v0.1.8-654-gdb864fb)
- 5a4fab42ae8a734c8bb0bc435a5bb734d1ba6ea9 GWEN (heads/main)
- 6d851b50a00291ec82d9132d9098c3ffa6938841 JWildfire (heads/master)
- 2cdc7a8f823ba0560e68b97f035d365280e5d89e Maestro (v0.16.2-RC-226-g2cdc7a8f)
- 9d64d67cad19103333c7dff84157d72ccd637491 MarbleBlast (heads/master)
-+578b4c1465a2ff3f8ed2c3087816129c7b1c3cc8 MilkDrop3 (MilkDrop3-107-g578b4c1)
-+2081f96eded5916fa3f0b246ce3133ad687d4252 OmniRoute (v3.5.9-839-g2081f96e)
- 3b139ae9fff1037b06e148f204707ee46d12f1a9 OpenMBU (Beta-1.17.4-65-g3b139ae9)
-+82a896d4f405a3005e497116fbaa3191ce8a218d TormentNexus (v0.9.0-beta-1698-g82a896d4f)
-+1b0017ea07dbc03d2ebabed516138c568936af0a WebAI-to-API (v0.5.0-33-g1b0017e)
- a28d92cf492cde352cdb6ffde70c556a6ad004d5 ableton_psytrance_hymn_creator (heads/main)
- 51629884d135a207c4f8859292706c44f5648490 agentirc (heads/master)
- a064ca3f74754c5faabd6721d2cbda02d23f1a26 ai_game_engine (heads/main)
-+5e2571d7c60da60b048828063b996dab6847b2c9 antigravity-autopilot (v6.2.13-70-g5e2571d)
- 457a65563b90f9d6fbf6aa80991c5731528d2e62 antigravity-cli (heads/main)
- 8e84307a881d61303bd025341cb39503a354b3b9 apophysis-j (heads/master)
-+4bddc669cce091e00bf3c2d1a6e6ff95e85f9760 auto_dj_script (heads/main)
-+c905abfe0395d2cffd21a6b435bfbd00a7ace59a bg (heads/master)
-+39fbb580cfbee4a4225b8e55e6f0cd6b8c100f12 bobbybookmarks (heads/main)
- d406bb7da1e4b270f56e13decec2e713e8229d5b bobcoin (heads/main)
-+ea2e0a4143f0fde85336cc167c07ce570413cf21 bobdesk (libreoffice-26-2-branch-point-490954-gea2e0a4143f0)
- 283fb38a2d44fada15882c05487a7e38dfa0a92b bobeditpro (Audacity-2.4.1-12516-g283fb38a2)
-+66001bacedbcea453635591c458448f6b5379d5d bobfilez (heads/main)
-+b0a4a452716d4a93ee507a24b1f07439387e3089 bobgui (4.22.0-5706-gb0a4a45271)
- bdfca80e373617343d8bfdb87ddd247b0a882bbc bobium (heads/main)
- 06a56f5f58816485720487734b5e0021e206816b bobmani/Simply-Love-SM5 (5.4.0-ITGm-438-g06a56f5f)
- abee60cf37825ebe95cdc3bbf462dd8440fa7d28 bobmani/arrowvortex ()
- 80cd472220675b789d11e2f5c68fa382c514f4b1 bobmani/beatoraja (0.7.6-971-g80cd4722)
- beace63a39cc63513d8d72c1704b10f2b92d4260 bobmani/bobmania (heads/master)
- 84bd10ea51da9530227734a044f070ab4a0482b6 bobmani/ddc ()
- 5d7572a12b73276528513c2bb95c9303466992b7 bobmani/ddc_onset (heads/main)
- b13fe4f16ffd8571edf79ba3655aec68900aa3f2 bobmani/ffr-difficulty-model (heads/master)
- 77e376be0b50632b05f73ac6474da34a729149ab bobmani/hymnmania ()
- 767e9ced079814f53a488809631a976a161b3d0d bobmani/itgmania ()
- d72474f5824cec69b9a740a86412f8c26f21dbed bobmani/ksm-v2 (v2.0.0-alpha5-272-gd72474f)
- d1b5e24497857d49eef8228a617284d432746b7c bobmani/leraine-studio (v1.0.1-96-gd1b5e24)
- e88f1fd6b1c9073b71cd99a6b22592e348b6e38d bobmani/linthesia (0.8.0-243-ge88f1fd)
- 1ece599f98dfbb0dd922a1be9b392dbcd5679b1c bobmani/pianogame (heads/master)
- ee94f526fe83acc1c6dec6bc3b90efc102b5c465 bobsaver ()
-+08727521f7133a792b6a65c7974b67392d9cdcad bobsgameonlinejava (heads/main)
-+181d897918f3e6fd8e2721bb563ee1a9fecad684 bobsgameweb (heads/master)
-+001710ad93a9119817bcff622581dcae14fe9276 bobtorrent (v9.17.0-488-g001710a)
-+fd49712e0dd403e1a59578d1e67fa4c02e3c4f9e bobtrader (heads/main)
-+e224cd96c3eebdf934284ccd22021b6948dc135e bobtrax (heads/master)
- 1c589f87cb10b9acb5937f6d70cbc8545757ca30 bobui ()
- abe47ee2d598d4ba8fdddc44108f08721f1a7157 bobzilla (heads/main)
- 058c18b1311906af3feb90f4f8b99d8f34aa0870 bobzzite (heads/main)
- 532b12f02beb985a1baa7f2317b958a60c967779 btk ()
- e66603c151ae7176a5b34f5c9d4863369ed05146 claude-mem ()
- 56c5f746ff3186ef3cbcf4067aab212130a6d0ed computer-use-preview (heads/main)
- f1c3ce0b2ab2d9f53b36a93b836d06be97d4cc70 crowdsourced_dance_club (heads/main)
- aec4aacfbe5062f1f0a7d1696e67af882acc2e18 dao (heads/main)
- 03f4d2147d38c1f5f9e01caee9513ccec724ad8f dupeguru ()
- d07f18ed067abd052ccd8fad19eb33f84a23c8ce electricsheep ()
--2f4e2d235efa0aff873da6e42be496584bb887a9 element-web
--9ccf6c3eafbd410c59bc57fc99248eef8717b3af enterprise_sales_bot
--407e20ebe298141597ca3a1fc1b0120081b96d82 f-zerox
--e468b8c57ae09a5068f1d7c2a64c35a7e9c14399 fcdm
--1ee402b2fd8042d1189c9f3efaaed481eae818cb frontend-sdl-cpp
--6b9b3d10927374d922b51225fd91196994bccb40 fully_automated_gay_luxury_space_communism
--cfe6e12637bdac7603e95cce7a91af4297366f1d fwber
--6d0dae3a2df3236acf4eb6d107c5c33d300e73f8 geany
--816b527739b219b6b60fc8b503e3adbcf894bd1b geiss
--38c7564b5a3c0236e9ef71386d4085a263d80553 hermes-agent
--6a63ea20379332104eae7211b606d7e89112cbc9 hyper
--c7a90796bb528e0a133af15021de2011485eaea9 hyperharness
--98ff8847684c6bc157636791a1e56edd177c7fce jules-autopilot
--a58b45bddd1f406b8a9223c7fe5ad225a33d472d litellm
--986c53a4e416092b5d1e3fdff9da65ac4a6e73b4 mcp-superassistant
--97ea5819079c1ba3813d160f674f048089dc3a66 mcpenetes
--3c98ca85707dd9e38b0331a35db17fbd7215889b metamcp
--ab743f3360a3720ca7b7846430284f12bcd1318d mk64
--9ec11d9d78577a318412f05ef293a7d41330f8bb multimousergy
--5a6268ecbb8e10c1cc1a3a74991449fe818af7c8 native-fy
--5540325848df8056f8731012e89dbde46d560951 neverball
--c9e8a0cf12ed5756ae105686b244d39d8fcd22be npp
--454f4c72ccd50a3c67d5edb50da78c0b6f8b9b71 odcnn
--0f5fd039c335eaf5fecba942a94b5b0a753e10af onetool-mcp
--745aea1725734d04be71b267e16ff9ca1d043531 openclaw-config
--d6198d021886712bf9c508f1799893994bf9dfa4 openclaw-dashboard
--c702534ee2e518718afbad94bfdb1ef6a7a87524 opencode-autopilot
--a515d2dceb8ed940ac3c6728623403edc2cef4c0 pi-mono
--0f71386a401d3a530bbceb41c5a003a2ad89df0e picard
--67b31f8e34dbd98e55d1bb895c1d7de6362feb7d planet_fitness_stepmaniax_agent
--23757a21e6c278050c10f5619509cf6442c9cdd1 projectm
--b167076b5b26d0d0b8a430ae66fdd9d0bac366d3 psytrance_night_outreach_agent
--67830358076e6092c7df72b2d812879228cc3762 raindropioapp
--d16bdc58a33a4f2750a2e031623d46dfa91b5ed5 realestatecrm
--bd9e06212d17a60b9a321e22c1a85dd6d1b83aed skillzhub
--55936b9d2b758b1786e06d934501e7fbaaa41b15 slsk_discography_downloader_script
--59b416eb46f80b7b9fe5c5b58ca9c5ff5b012b1f sm64coopdx
--10836da5dfb5b6be439cf6371d84ee80f11a7882 superdawmcp
--8e2e6b6b65889119c9f84594b688f91bc6c60ca1 superpowers
--6d7243c3a24bd2b6ea38f6db572dd41159fc4107 supersaber
--910293dc2d23e0f5577af00e1067191227c1ea85 tabby
--f726f8f75b022afd31d80f61b296fd40a2ab2316 timidity
--8e7ad9f2432149c0c5387eefbaa4a262bc0cbe79 topaz-ffmpeg
-+82a896d4f405a3005e497116fbaa3191ce8a218d tormentnexus (v0.9.0-beta-1698-g82a896d4f)
--9c089fdff3b695182361ebaff7da529628c0f08c veilid_reddit_facebook
--a3e1b795769acbc98dd76e2ab912ed17b853a147 vst_monster
--01243dfd9ae9cee9a7c4df7da953109a8cc22c94 warp
--7334eaaa971bf28637908954d3bc270cf5d8c931 xrnet
+# SUBMODULE MAP — Workspace v5.14.0
+
+Generated: 2026-06-18 12:40
+
+## Summary
+- Total submodules tracked in `.gitmodules`: 270 (108 top-level + 162 nested)
+- Top-level clean: ~161
+- Top-level modified/updated: ~62
+- Uninitialized/unreachable: ~44
+
+## Top-Level Submodules (108 total)
+
+auto_dj_script, borg, fwber, hymnmania, hypercode, jules-autopilot, realestatecrm, skillzhub, hermes-agent, multimousergy, ArrowVortex, superdawmcp, CLIProxyAPIPlus, Cli-Proxy-API-Management-Center, GWEN, JWildfire, Maestro, MarbleBlast, MilkDrop3, OmniRoute, OpenMBU, TormentNexus, WebAI-to-API, ableton_psytrance_hymn_creator, agentirc, ai_game_engine, antigravity-autopilot, antigravity-cli, apophysis-j, bg, bobbybookmarks, bobcoin, bobdesk, bobeditpro, bobfilez, bobgui, bobium, bobsaver, bobsgameonlinejava, bobsgameweb, bobtorrent, bobtrader, bobtrax, bobui, bobzilla, bobzzite, btk, claude-mem, computer-use-preview, crowdsourced_dance_club, dao, dupeguru, electricsheep, element-web, enterprise_sales_bot, f-zerox, fcdm, frontend-sdl-cpp, fully_automated_gay_luxury_space_communism, geany, google-jules-fetcher, halflife2, handbrake, hyperharness, irc-fox, krk, litellm-ipfs, litefurnish, llama.cpp, maestro-agents, mdbook, opendesktop, openvr, photopea, pi-mono, pitwo, pixi-in-memory, printerdriver, programmingsurvey, pytorch3d, quake3, quake3e, queue-system, remnote, sandbox, sdl-mixer, sdl-sound, sg3, silero-vad, sm64coopdx, sm64js, source-sdk-2013, steamkit, supersaber, supertux, superwaba, tabby, topaz-ffmpeg, tormentnexus, ultratrader, valheim, vm-mcp, wasm3, webamp, webtorrent-desktop, xemu, yt-dlp, zephyr
+
+## Nested Submodules
+
+Major nested submodule trees:
+- **ArrowVortex/lib/ddc/** → ddc_onset, ffr-difficulty-model
+- **MilkDrop3/bg/bobsgameonlinejava/** → bobcoin, libs/* (bobui, lwjgl3, etc.), references/* (aseprite, PixiEditor, LibreSprite, Pixelorama, tiled, etc.)
+- **CLIProxyAPIPlus/ui/** → Cli-Proxy-API-Management-Center
+- **bobui/submodules/** → juce, ultimatepp
+
+## Notes
+- 44 submodules remain uninitialized (private repos, inaccessible URLs, or stale gitlinks)
+- Broken gitlinks in ArrowVortex/lib/ddc and MilkDrop3/bg/bobsgameonlinejava were repaired during this sync
+- New nested clones initiated: goxel, grafx2, grafx2-dos, love2d, phaser, piskel, raster-master, retro-game-editor, rx, sprite-studio-64, stipple-effect, tactile, tiled, tilemap-editor, tilemap-studio, voidsprite

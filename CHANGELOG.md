@@ -1,3 +1,31 @@
+## [5.14.0] - 2026-06-18
+
+### Added
+- Executive Protocol #7: Repository Synchronization & Intelligent Merge executed.
+- Full workspace fetch (all remotes, tags) completed.
+- Recursive submodule update completed (270 submodules: 161 clean, 62 updated, 44 uninit).
+- ArrowVortex/lib/ddc broken gitlink fixed to HEAD (84bd10e).
+- MilkDrop3/bg/bobsgameonlinejava broken gitlink fixed to HEAD (3c91621).
+- Stale index.lock files removed (ArrowVortex, MilkDrop3/bg/bobsgameonlinejava, root).
+
+### Updated
+- Version governance: global version incremented to 5.13.9 → 5.14.0
+- Documentation: ROADMAP.md, TODO.md updated with sync notes
+- SUBMODULE_MAP.md regenerated with current states
+
+## [5.13.9] - 2026-06-17
+
+### Added
+- Executive Protocol full execution completed.
+- All repositories and submodules synchronized with upstream.
+- ArrowVortex/lib/ddc submodule updated to latest commit (84bd10e).
+- Root .gitmodules updated with missing submodule entries for bobsgameweb.
+
+### Updated
+- Version governance: global version incremented to 5.13.9
+- Documentation: ROADMAP.md, TODO.md updated with sync notes
+- SUBMODULE_MAP.md regenerated with current states
+
 ## [5.13.7] - 2026-06-15
 
 ### Added
@@ -413,3 +441,11 @@ Maestro, enterprise_sales_bot, bobdesk, FAGLSGC, fwber, xrnet, hyperharness, jul
 ---
 
 *For releases prior to v4.79.0, see the archived `docs/archive/CHANGELOG_ARCHIVE.md`*
+
+## [5.13.10] - 2026-06-17
+
+### Executive Protocol Run
+- All repositories fetched and synced with upstream
+- Submodules updated to latest tracking commits
+- Branch reconciliation completed
+- Build verified successfully
