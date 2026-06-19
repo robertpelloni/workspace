@@ -89,10 +89,6 @@ url = https://github.com/robertpelloni/OpenMBU
 path = TormentNexus
 url = https://github.com/robertpelloni/TormentNexus
 
-[submodule "WebAI-to-API"]
-path = WebAI-to-API
-url = https://github.com/robertpelloni/WebAI-to-API
-
 [submodule "ableton_psytrance_hymn_creator"]
 path = ableton_psytrance_hymn_creator
 url = https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git
@@ -129,10 +125,6 @@ url = https://github.com/robertpelloni/bobbybookmarks
 [submodule "bobcoin"]
 path = bobcoin
 url = https://github.com/robertpelloni/bobcoin
-
-[submodule "bobdesk"]
-path = bobdesk
-url = https://github.com/robertpelloni/bobdesk
 
 [submodule "bobeditpro"]
 path = bobeditpro

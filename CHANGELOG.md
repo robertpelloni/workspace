@@ -1,3 +1,16 @@
+## [5.16.1] - 2026-06-18
+
+### Changed
+- Deregistered orphaned submodules: bobdesk (4.4GB, LibreOffice fork, GitHub 404), WebAI-to-API (183MB, GitHub 404)
+- Removed 10 orphaned empty directories from disk
+- Synced VERSION.md to match canonical VERSION file (v5.16.1)
+
+### Fixed
+- Purged 20+ stale submodule gitlink entries across 15 repos (bobui, bobgui, btk, bcs, npp, geany, bobtrax, bobsgameonlinejava, bobeditpro, bobsgameweb, mk64, hyperharness, tabby, beatoraja, bobmania, itgmania)
+- Updated 13 GitHub URLs to canonical renamed repo names (bqt, bgtk, bcs)
+- Updated bcs and npp submodule pointers to fix stale bobui/bqt-reference refs
+- Fixed geany submodule mappings for libffi, proxy-libintl
+
 ## [5.16.0] - 2026-06-18
 
 ### Changed
