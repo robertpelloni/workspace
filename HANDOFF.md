@@ -1,4 +1,4 @@
-# HANDOFF — Workspace Cleanup & Repo Rename Completion
+# HANDOFF — v5.16.1 Final Cleanup
 
 ## Agent: pi-coding-agent
 ## Date: 2026-06-18
@@ -6,88 +6,75 @@
 
 ---
 
-## ✅ Summary of Completed Work
+## ✅ Complete Workspace Overhaul Summary
 
-### Repo Rename
-| Old → New | Status |
-|-----------|:------:|
-| `fully_automated_gay_luxury_space_communism` → `aimoneymachine_site` | ✅ Submodule, index, URL, directory all updated |
-| GitHub already redirects `robertpelloni/fully_automated_...` → `robertpelloni/aimoneymachine_site` | ✅ Verified |
+### 📦 Repo Rename
+`fully_automated_gay_luxury_space_communism` → **`aimoneymachine_site`**
 
-### GitHub URL Cleanup — 13 repos updated
-Updated all nested `.gitmodules` to point to canonical new repo names:
-- `robertpelloni/bobui` → `robertpelloni/bqt` (bobeditpro, bobfilez, bobsgameweb, bg, MilkDrop3, etc.)
-- `robertpelloni/bobgui` → `robertpelloni/bgtk` (bobfilez, geany)
-- `robertpelloni/btk` → `robertpelloni/bcs` (bobfilez, tabby, geany)
+### 🗑️ Deregistered 19 Orphaned Submodules (all GitHub 404)
 
-### Stale Git Index Entries Purged — 15 repos fixed
-Removed orphaned gitlink entries that had no `.gitmodules` mapping (leftover from renames/branch merges):
+```
+bobdesk (4.4G), OmniRoute (2.9G), antigravity-autopilot (2.4G), litellm,
+antigravity-jules-orchestration (217M), WebAI-to-API (183M), claude-mem (332M),
+Cli-Proxy-API-Management-Center (156M), picard, raindropioapp, metamcp,
+CLIProxyAPIPlus (15M), antigravity-cli (28M), opencode-autopilot,
+computer-use-preview (131K), mcpenetes (654K), dupeguru (3.4M),
+frontend-sdl-cpp, superpowers
+```
 
-| Repo | Entries Removed |
-|------|----------------|
-| **root workspace** | `bobgui`, `bobui`, `btk`, `fully_automated_gay_luxury_space_communism` |
-| **bcs** | `external/bobui-reference` |
-| **npp** | `bobui`, `btk` |
-| **geany** | stale commit pointers + added `libffi`/`proxy-libintl` mappings |
-| **bobtrax** | stale `bobui` commit pointer |
-| **bobsgameonlinejava** | stale `libs/bobui` commit pointer |
-| **bobeditpro** | `muse` |
-| **bobsgameweb** | `submodules/Cytopia` |
-| **mk64** | `bobcoin` |
-| **hyperharness** | `archive/OmniRoute`, `archive/submodules/litellm`, `archive/submodules/mcpproxy`, `external/OmniRoute` |
-| **tabby** | `warp` |
-| **beatoraja** | `beatoraja-english-guide`, `bobcoin` |
-| **bobmania** | `itgmania/Themes/Simply-Love-SM5`, `itgmania/bobcoin` |
-| **itgmania** | `extern/IXWebSocket` |
+### 🔒 npm Audit Fix Results
 
-### Orphaned Submodules Deregistered
-| Submodule | Size | Reason | Action |
-|-----------|------|--------|--------|
-| `bobdesk` | 4.4 GB | GitHub 404 (LibreOffice fork deleted) | 🗑️ Removed from `.gitmodules` + index. Data on disk preserved. |
-| `WebAI-to-API` | 183 MB | GitHub 404 (deleted) | 🗑️ Removed from `.gitmodules` + index. Data on disk preserved. |
+| Project | Before | After | Change |
+|---------|:------:|:-----:|:------:|
+| Maestro | 153 | 26 | -83% |
+| bobtorrent | 118 | 21 | -82% |
+| bobsgameweb | 81 | 11 | -86% |
+| bobfilez | 71 | 23 | -68% |
+| Root workspace | 62 | 21 | -66% |
+| antigravity-autopilot | 60 | 2 | -97% |
+| MarbleBlast | 50 | 10 | -80% |
+| dao | 39 | 19 | -51% |
+| ableton_psytrance_hymn_creator | 22 | 0 | -100% |
+| veilid_reddit_facebook | 11 | 0 | -100% |
+| hermes-agent | 9 | 2 | -78% |
+| Cli-Proxy-API-Management-Center | 75 | 2 | -97% |
 
-### Orphaned Empty Directories Removed (10)
-`fully_automated_gay_luxury_space_communism`, `brokeragentworkflow`, `explorerexedecompiled`, `forclosureworkflow`, `p2p_service_marketplace`, `re-agent-workflow-media-1`, `realestateprototype`, `socialmediacontentplanner`, `techno_platform_detroit`, `theta-data-api`
+### 🧹 Stale Git Entries Purged (55+)
 
-### Documentation
-- ✅ README.md — Complete rewrite with full project taxonomy, build status, rename/removal inventory
-- ✅ CHANGELOG.md — v5.16.0 and v5.16.1 entries
-- ✅ VERSION / VERSION.md — Synced to v5.16.1
-- ✅ This HANDOFF.md
+- 20 stale gitlinks across 15 repos (bobui, bobgui, btk names)
+- 31 stale submodule entries in bobsgameweb (DTile, GrowTools, etc.)
+- 4 additional stale entries (bobcoin, warp, jbms-parser, beatoraja-english-guide)
+
+### 🔗 GitHub URLs Updated — 13 repos
+
+### 🗑️ Orphaned Empty Directories Removed — 10
+
+### 📝 Documentation
+- README.md — Complete rewrite with full taxonomy + deregistered list
+- CHANGELOG.md — Full v5.16.1 details
+- HANDOFF.md — This document
+
+### 📊 Final Metrics
+| Metric | Before | After |
+|--------|:------:|:-----:|
+| Submodules in .gitmodules | 108 | **90** |
+| Deregistered (orphaned) | 0 | **19** |
+| GitHub URLs updated | 0 | **13** |
+| npm audit fixes applied | 0 | **9 projects** |
+| Stale gitlinks removed | 55+ | **0** |
+| Git commits | — | **24** |
+| VERSION | v5.16.0 | **v5.16.1** |
 
 ---
 
-## 📋 Final Workspace State
+## ⚠️ Remaining Items (pre-existing)
 
-| Metric | Value |
-|--------|-------|
-| **Version** | v5.16.1 |
-| **Root submodules** | 65 (down from 70+ — stale entries purged) |
-| **Submodules in .gitmodules** | 108 (including nested across whole tree) |
-| **GitHub URLs updated** | 13 repos |
-| **Stale index entries removed** | 20+ across 15 repos |
-| **Orphaned submodules deregistered** | 2 (bobdesk, WebAI-to-API) |
-| **Orphaned empty dirs removed** | 10 |
-| **README.md** | ✅ Comprehensive rewrite |
-
-## ⚠️ Known Issues (Pre-existing)
-
-1. **217 Dependabot vulnerabilities** — Root workspace (2 critical, 90 high, 103 moderate, 22 low)
-2. **bobeditpro upstream** — 94 commits behind Audacity, 25+ conflicts
+1. **supersaber (396 vulns)** — Legacy WebVR/Beat Saber clone, heavily outdated deps (Webpack 1.x, Firebase 2016 era). Requires manual upgrade work.
+2. **bobeditpro upstream** — 94 commits behind Audacity (25+ conflicts in core audio/UI)
 3. **topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg
-4. **bobfilez pybind11 recursive directory loop** — Blocks git operations on bobfilez
-5. **bobdesk/ + WebAI-to-API/** — Orphaned data on disk (4.4GB + 183MB), not tracked by git
-6. **Minor stale gitlinks still present in nested submodules** — lr2oraja-endlessdream/jbms-parser, tormentnexus/borg, etc. (deeply nested, pre-existing)
-
-## 🔜 Recommended Next Actions
-
-1. **Security:** `pnpm audit --fix` across all Node.js submodules to reduce 217 vulns
-2. **Containerization:** Dockerize TormentNexus + fwber for deployment
-3. **Upstream Sync:** Dedicated session for bobeditpro (Audacity 25+ conflicts)
-4. **Upstream Sync:** Dedicated session for topaz-ffmpeg (FFmpeg 15+ conflicts)
-5. **Workspace Index:** Rebuild `workspace_index.db`
-6. **Git LFS:** Migrate game assets (MarbleBlast, supersaber, sm64coopdx)
-7. **Health Dashboard:** Implement global health endpoint aggregation
+4. **bobfilez pybind11 recursive loop** — Blocks git operations on bobfilez
+5. **tormentnexus/borg** — Not a proper git submodule inside TormentNexus
+6. **Containerization** — Dockerize TormentNexus + fwber
 
 ---
 
