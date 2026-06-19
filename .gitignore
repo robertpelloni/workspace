@@ -27,6 +27,31 @@ __pycache__/
 # Large database files - do not track
 workspace_index.db
 
+# Deregistered orphaned submodules (GitHub 404 — data preserved on disk)
+CLIProxyAPIPlus/
+Cli-Proxy-API-Management-Center/
+OmniRoute/
+WebAI-to-API/
+antigravity-autopilot/
+antigravity-cli/
+antigravity-jules-orchestration/
+bobdesk/
+claude-mem/
+computer-use-preview/
+dupeguru/
+frontend-sdl-cpp/
+litellm/
+mcpenetes/
+metamcp/
+opencode-autopilot/
+picard/
+raindropioapp/
+superpowers/
+# Temp/legacy files
+_fix_gitignores.sh
+litellm_control_panel_new/
+litellm_merge/
+
 # IMPORTANT: Do NOT add any of the following to .gitignore
 # - Databases (*.db, *.sqlite, etc.)
 # - Session/conversation files (*-session.json, sessions/)
