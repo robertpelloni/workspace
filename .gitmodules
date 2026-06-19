@@ -338,10 +338,6 @@ url = https://github.com/TechNickAI/openclaw-config.git
 path = openclaw-dashboard
 url = https://github.com/tugcantopaloglu/openclaw-dashboard.git
 
-[submodule "opencode-autopilot"]
-path = opencode-autopilot
-url = https://github.com/robertpelloni/opencode-autopilot
-
 [submodule "pi-mono"]
 path = pi-mono
 url = https://github.com/robertpelloni/pi-mono
