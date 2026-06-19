@@ -62,6 +62,3 @@ litellm_merge/
 # Only ignore system logs (*.log), build artifacts, and caches.
 
 
-# Databases
-*.db
-borg.db
