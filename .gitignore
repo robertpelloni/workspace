@@ -26,3 +26,12 @@ __pycache__/
 *.pyd
 # Large database files - do not track
 workspace_index.db
+
+# IMPORTANT: Do NOT add any of the following to .gitignore
+# - Databases (*.db, *.sqlite, etc.)
+# - Session/conversation files (*-session.json, sessions/)
+# - .tormentnexus/ (AI sessions, memory, handoffs, db)
+# - .jules/ (Jules AI conversations and state)
+# These contain critical development history and must be tracked.
+# Only ignore system logs (*.log), build artifacts, and caches.
+
