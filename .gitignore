@@ -52,6 +52,8 @@ superpowers/
 _fix_gitignores.sh
 litellm_control_panel_new/
 litellm_merge/
+.stale_commit_results.json
+.stale_pointers.json
 
 # IMPORTANT: Do NOT add any of the following to .gitignore
 # - Databases (*.db, *.sqlite, etc.)
