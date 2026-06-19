@@ -142,9 +142,9 @@ url = https://github.com/robertpelloni/bobeditpro
 path = bobfilez
 url = https://github.com/robertpelloni/bobfilez
 
-[submodule "bobgui"]
-path = bobgui
-url = https://github.com/robertpelloni/bobgui
+[submodule "bgtk"]
+	path = bgtk
+	url = https://github.com/robertpelloni/bgtk
 
 [submodule "bobium"]
 path = bobium
@@ -227,9 +227,9 @@ url = https://github.com/robertpelloni/bobtrader
 path = bobtrax
 url = https://github.com/robertpelloni/bobtrax
 
-[submodule "bobui"]
-path = bobui
-url = https://github.com/robertpelloni/bobui
+[submodule "bqt"]
+	path = bqt
+	url = https://github.com/robertpelloni/bqt
 
 [submodule "bobzilla"]
 path = bobzilla
@@ -239,9 +239,9 @@ url = https://github.com/robertpelloni/bobzilla
 path = bobzzite
 url = https://github.com/robertpelloni/bobzzite
 
-[submodule "btk"]
-path = btk
-url = https://github.com/robertpelloni/btk
+[submodule "bcs"]
+	path = bcs
+	url = https://github.com/robertpelloni/bcs
 
 [submodule "claude-mem"]
 path = claude-mem
