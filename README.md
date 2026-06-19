@@ -218,24 +218,38 @@ The following repositories have been renamed (old URLs redirect to new):
 | `robertpelloni/tormentnexus` | `MDMAtk/TormentNexus` | ✅ 301 (transferred) |
 | `robertpelloni/TormentNexus` | `MDMAtk/TormentNexus` | ✅ 301 (transferred) |
 
-## 🗑️ Repos Removed from GitHub (404)
+## 🗑️ Deregistered Submodules (GitHub 404 — Deleted)
 
-The following repositories return 404 and have been removed/ deleted:
+These repositories were deleted from GitHub. Removed from `.gitmodules` and git index. Local data preserved on disk.
 
-| Repository | Notes |
-|------------|-------|
-| `robertpelloni/bobdesk` | Still in `.gitmodules` as submodule, local dir exists |
-| `robertpelloni/WebAI-to-API` | Still in `.gitmodules` as submodule, local dir exists |
-| `robertpelloni/brokeragentworkflow` | Removed from `.gitmodules` in v5.15.0 |
-| `robertpelloni/explorerexedecompiled` | Removed from `.gitmodules` in v5.15.0 |
-| `robertpelloni/forclosureworkflow` | Removed from `.gitmodules` in v5.15.0 |
-| `robertpelloni/re-agent-workflow-media-1` | Removed from `.gitmodules` (stale entry) |
-| `robertpelloni/p2p_service_marketplace` | Removed from `.gitmodules` (stale entry) |
-| `robertpelloni/realestateleadcaller` | Removed from `.gitmodules` (stale entry) |
-| `robertpelloni/theta-data-api` | Removed from `.gitmodules` (stale entry) |
-| `robertpelloni/socialmediacontentplanner` | Removed from `.gitmodules` (stale entry) |
+| Repository | Local Size | Reason |
+|------------|:----------:|--------|
+| `robertpelloni/bobdesk` | 4.4 GB | LibreOffice fork, deleted from GitHub |
+| `robertpelloni/OmniRoute` | 2.9 GB | Routing engine, deleted from GitHub |
+| `robertpelloni/antigravity-autopilot` | 2.4 GB | AI automation, deleted from GitHub |
+| `robertpelloni/litellm` | — | LLM proxy fork, deleted from GitHub |
+| `robertpelloni/antigravity-jules-orchestration` | 217 MB | Jules orchestration, deleted from GitHub |
+| `robertpelloni/WebAI-to-API` | 183 MB | Web API proxy, deleted from GitHub |
+| `robertpelloni/Cli-Proxy-API-Management-Center` | 156 MB | API management UI, deleted from GitHub |
+| `robertpelloni/claude-mem` | 332 MB | Claude memory, deleted from GitHub |
+| `robertpelloni/raindropioapp` | — | Raindrop.io fork, deleted from GitHub |
+| `robertpelloni/metamcp` | — | MCP proxy, deleted from GitHub |
+| `robertpelloni/picard` | — | MusicBrainz fork, deleted from GitHub |
+| `robertpelloni/CLIProxyAPIPlus` | 15 MB | CLI proxy, deleted from GitHub |
+| `robertpelloni/antigravity-cli` | 28 MB | CLI tool (krmslmz), upstream deleted |
+| `robertpelloni/opencode-autopilot` | — | AI autopilot, deleted from GitHub |
+| `robertpelloni/computer-use-preview` | 131 KB | Google Gemini tool, upstream deleted |
+| `robertpelloni/mcpenetes` | 654 KB | MCP utilities, deleted from GitHub |
+| `robertpelloni/dupeguru` | 3.4 MB | Duplicate file finder fork, deleted from GitHub |
+| `robertpelloni/frontend-sdl-cpp` | — | SDL frontend, deleted from GitHub |
+| `robertpelloni/superpowers` | — | Game engine, deleted from GitHub |
 
-## 📁 Submodule Removed from Workspace Index
+### Stale Entries (removed in v5.15.0)
+- `brokeragentworkflow`, `explorerexedecompiled`, `forclosureworkflow`
+- `re-agent-workflow-media-1`, `p2p_service_marketplace`
+- `realestateleadcaller`, `theta-data-api`, `socialmediacontentplanner`
+
+## 📁 Submodules Removed from Workspace Index
 
 | Submodule | Reason |
 |-----------|--------|
