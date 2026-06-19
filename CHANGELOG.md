@@ -1,7 +1,7 @@
 ## [5.16.1] - 2026-06-18
 
 ### Changed
-- Deregistered orphaned submodules: bobdesk (4.4GB, LibreOffice fork, GitHub 404), WebAI-to-API (183MB, GitHub 404)
+- Deregistered 10 orphaned submodules (GitHub 404): bobdesk, WebAI-to-API, antigravity-autopilot, CLIProxyAPIPlus, Cli-Proxy-API-Management-Center, antigravity-cli, antigravity-jules-orchestration, computer-use-preview, mcpenetes, opencode-autopilot
 - Removed 10 orphaned empty directories from disk
 - Synced VERSION.md to match canonical VERSION file (v5.16.1)
 
@@ -10,6 +10,9 @@
 - Updated 13 GitHub URLs to canonical renamed repo names (bqt, bgtk, bcs)
 - Updated bcs and npp submodule pointers to fix stale bobui/bqt-reference refs
 - Fixed geany submodule mappings for libffi, proxy-libintl
+
+### Security
+- npm audit fix across root workspace (62→21 vulns), Maestro (153→26), bobfilez (71→23), bobsgameweb (81→7), MarbleBlast (50→0), ableton_psytrance_hymn_creator (22→0), antigravity-autopilot (60→2), Cli-Proxy-API-Management-Center (75→2), bobtorrent (118→25), pi-mono (10→?), dao (42→?)
 
 ## [5.16.0] - 2026-06-18
 
