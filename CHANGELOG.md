@@ -1,3 +1,16 @@
+## [5.18.0] - 2026-06-19
+
+### Changed
+- Intelligent forward merge: ArrowVortex jules DDC Batch Generation improvements merged into release
+- Intelligent forward merge: ArrowVortex jules DDC AI integration (DDC_PERFORMANCE.md, models)
+- Intelligent forward merge: jules-autopilot feat-shadow-pilot (shadow pilot monitoring, multi-language harness, dashboards)
+- Reverse merge: jules-autopilot main synced into jules-485-merge-test and feat-shadow-pilot feature branches
+- Reverse merge: Maestro main synced into jules-add-new-agents and rev/jules feature branches
+- Created multimousergy main branch from netmux-initial-architecture
+- Cleaned up stale litellm_control_panel_new and litellm_merge git-tracked deleted files
+- Version bumped to v5.18.0, synced across VERSION, VERSION.md, build.bat, start.bat
+- Tracked .tormentnexus, .jules, and other AI agent session data (critical history)
+
 ## [5.17.0] - 2026-06-18
 
 ### Changed

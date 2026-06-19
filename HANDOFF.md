@@ -1,42 +1,52 @@
-# HANDOFF — v5.17.0 Final
+# HANDOFF — v5.18.0
 
 ## Agent: pi-coding-agent
-## Date: 2026-06-18
-## Version: v5.17.0
+## Date: 2026-06-19
+## Version: v5.18.0
 
 ---
 
-## ✅ Complete Workspace Overhaul — 45 Commits
+## ✅ Intelligent Merge Engine — Session Summary
 
-### 🗑️ 19 Orphaned Submodules Deregistered (GitHub 404)
-```bobdesk, OmniRoute, antigravity-autopilot, litellm, antigravity-jules-orchestration, WebAI-to-API, claude-mem, Cli-Proxy-API-Management-Center, picard, raindropioapp, metamcp, CLIProxyAPIPlus, antigravity-cli, opencode-autopilot, computer-use-preview, mcpenetes, dupeguru, frontend-sdl-cpp, superpowers```
+### 🔄 Forward Merges (Features → Main/Release)
 
-### 🔒 9 npm Audit Fixes Applied
-`Maestro (153→26), bobtorrent (118→21), bobsgameweb (81→11), bobfilez (71→23), root (62→21), antigravity-autopilot (60→2), MarbleBlast (50→10), dao (39→19), ableton_psytrance_hymn_creator (22→0), veilid_reddit_facebook (11→0), hermes-agent (9→2), Cli-Proxy-API-Management-Center (75→2)`
+| Submodule | Feature Branch | Status | Details |
+|-----------|---------------|--------|---------|
+| **ArrowVortex** | `jules-102189709143505224-702af85d` | ✅ Merged into `release` | DDC Batch Generation UI — Cancel button, non-blocking UI, progress bars (153 insertions, 82 deletions) |
+| **ArrowVortex** | `jules-ddc-integration-v133-16108875121836960734` | ✅ Merged into `release` | DDC AI integration — DDC_PERFORMANCE.md, model files, BatchDDC improvements (conflicts resolved: kept HEAD's forward progress) |
+| **jules-autopilot** | `feat-shadow-pilot-git-diff-ui-12323440949671972104` | ✅ Merged into `main` | Shadow pilot monitoring, multi-language harness, dashboard restoration, Go backend watchdog scripts (582 files, ~772k insertions — conflicts resolved in llm.go, db.go, daemon.go, queue.go, kept main's refined logic) |
+| **Maestro** | `jules-add-new-agents-535743983477155742` | ✅ Reverse-merged (main→feature) | .torrentnexus refactoring, package-lock sync |
+| **Maestro** | `rev/jules-2575151016458646249-2d58a6b7` | ✅ Reverse-merged (main→feature) | Same refactoring synced |
+| **multimousergy** | `netmux-initial-architecture-10413382364036026152` | ✅ Created `main` branch from feature | Single-branch repo now has proper main branch |
 
-### 🧹 55+ Stale Gitlink Entries Removed
-- 20 across 15 repos (old bobui/bobgui/btk names)
-- 31 from bobsgameweb/submodules/
-- 4 more (bobcoin, warp, jbms-parser, beatoraja-english-guide)
+### 🔄 Reverse Merges (Main → Feature Branches)
 
-### 🔧 bobfilez pybind11 Recursive Loop — FIXED
+| Submodule | Feature Branch | Status | Details |
+|-----------|---------------|--------|---------|
+| **jules-autopilot** | `jules-485-merge-test` | ✅ Main synced in | Conflicts resolved in .pi-lens cache (took theirs) and llm.go (kept main logic) |
+| **jules-autopilot** | `feat-shadow-pilot-git-diff-ui-12323440949671972104` | ✅ Main synced in | Clean merge, watchdog scripts added |
 
-### 📝 Version References Synced
-- `VERSION`, `VERSION.md` → v5.17.0
-- `build.bat`, `start.bat` → v5.17.0
-- `README.md`, `HANDOFF.md` → v5.17.0
+### 🧹 Workspace Cleanup
+- **litellm_control_panel_new** — 80+ deleted files cleaned from git index (stale directory was gone)
+- **litellm_merge** — 40+ deleted files cleaned from git index
+- **nul** — Stale tracked file removed
+- **Root git status** — Cleaned up to 0 deleted/stale entries
 
-### 📊 Final Metrics
-| Metric | Value |
-|--------|-------|
-| **VERSION** | v5.17.0 |
-| **Submodules** | 90 |
-| **Deregistered** | 19 |
-| **GitHub URLs updated** | 13 |
-| **Stale gitlinks removed** | 55+ |
-| **npm audit fixes** | 9 projects |
-| **Root git index** | ✅ Clean |
-| **Workspace hygiene** | ✅ Complete |
+### ⚠️ Known Issues / Handled
+- **MilkDrop3/bg/bobsgameonlinejava** — Recursive submodule error (grafx2 not found, ultimatepp revision missing). Previous session's issue, persists.
+- **bobfilez pybind11** — Long path recursion still generates warnings but doesn't block operations.
+- **superdawmcp** — Active feature branch `jules-5372408556252106821-172735fe` is identical to main (no unique commits)
+- **bg** — `jules-1394303886104622315-aa648523` remote branch detected but not merged (no local checkout, released as `master` matches origin)
+
+### 📝 Version References Updated
+| File | Old | New |
+|------|-----|-----|
+| `VERSION` | v5.17.0 | v5.18.0 |
+| `VERSION.md` | v5.17.0 | v5.18.0 |
+| `build.bat` | v5.17.0 | v5.18.0 |
+| `start.bat` | v5.17.0 | v5.18.0 |
+| `CHANGELOG.md` | New entry | v5.18.0 |
+| `ROADMAP.md` | Updated Phase 2 | Added v5.18.0 merge entry |
 
 ---
 
@@ -46,7 +56,10 @@
 2. **topaz-ffmpeg upstream** — 394 commits behind FFmpeg, 1003 ahead
 3. **supersaber** — 396 legacy vulns (Webpack 1.x, Firebase 2016 era)
 4. **Containerization** — Dockerize TormentNexus + fwber
+5. **MilkDrop3 recursive submodule** — bobsgameonlinejava/libs/bobui/submodules/ultimatepp fails
+6. **ArrowVortex/lib/ddc binary models** — Large .pth model files tracked in git (consider LFS)
+7. **Maestro** — 3 local feature branches ahead of origin (needs push)
 
 ---
 
-*End of Handoff — v5.17.0*
+*End of Handoff — v5.18.0*

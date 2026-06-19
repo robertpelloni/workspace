@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: ═══════════════════════════════════════════════════════════════
-:: Omni-Workspace Master Start Script - v5.17.0
+:: Omni-Workspace Master Start Script - v5.18.0
 :: Builds and launches all Go binary services
 :: 7 projects, 10 binaries
 :: ═══════════════════════════════════════════════════════════════

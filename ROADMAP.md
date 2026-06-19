@@ -8,6 +8,7 @@
 ## Phase 2: Feature Branch Resolution (Completed)
 - [x] Complete "Intelligent Merge Engine" execution over heavily conflicted projects (`borg`, `jules-autopilot`, `fwber`, `hymnmania`, `realestatecrm`).
 - [x] Rebase and integrate active feature branches.
+- [x] v5.18.0: Merged ArrowVortex jules DDC features, jules-autopilot feat-shadow-pilot, main→feature reverse merges
 
 ## Phase 3: Global Build Orchestration (In Progress)
 - [x] Connect `build.bat` to all submodule build pipelines.
