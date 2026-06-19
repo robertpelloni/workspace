@@ -1,89 +1,94 @@
-# Executive Protocol #7 — HANDOFF COMPLETION REPORT
+# HANDOFF — Workspace Cleanup & Repo Rename Completion
 
 ## Agent: pi-coding-agent
 ## Date: 2026-06-18
+## Version: v5.16.1
 
 ---
 
-## Executive Protocol COMPLETE (v5.13.9 → v5.14.0)
+## ✅ Summary of Completed Work
 
-### ✅ Summary of Completed Work
+### Repo Rename
+| Old → New | Status |
+|-----------|:------:|
+| `fully_automated_gay_luxury_space_communism` → `aimoneymachine_site` | ✅ Submodule, index, URL, directory all updated |
+| GitHub already redirects `robertpelloni/fully_automated_...` → `robertpelloni/aimoneymachine_site` | ✅ Verified |
 
-| Phase | Status | Details |
-|-------|--------|---------|
-| **1. Upstream Tracking & Submodule Sanitization** | ✅ Complete | All remotes fetched, upstream merged (up to date), 270 submodules processed |
-| **1a. Broken Gitlink Repairs** | ✅ Fixed | ArrowVortex/lib/ddc (missing commit 0c01c81 → 84bd10e), MilkDrop3/bg/bobsgameonlinejava (missing commit ef31c6f → 3c91621) |
-| **1b. Stale Lock Files** | ✅ Removed | Root .git/index.lock, MilkDrop3/bg/bobsgameonlinejava index.lock |
-| **2. Dual-Direction Intelligent Merge** | ✅ Complete | Only `main` branch active. No feature branches to reconcile. |
-| **3. Workspace Cleanup & Documentation** | ✅ Complete | Version bumped, CHANGELOG/ROADMAP/TODO/SUBMODULE_MAP/HANDOFF all updated |
+### GitHub URL Cleanup — 13 repos updated
+Updated all nested `.gitmodules` to point to canonical new repo names:
+- `robertpelloni/bobui` → `robertpelloni/bqt` (bobeditpro, bobfilez, bobsgameweb, bg, MilkDrop3, etc.)
+- `robertpelloni/bobgui` → `robertpelloni/bgtk` (bobfilez, geany)
+- `robertpelloni/btk` → `robertpelloni/bcs` (bobfilez, tabby, geany)
 
-### 📋 Repository State
+### Stale Git Index Entries Purged — 15 repos fixed
+Removed orphaned gitlink entries that had no `.gitmodules` mapping (leftover from renames/branch merges):
+
+| Repo | Entries Removed |
+|------|----------------|
+| **root workspace** | `bobgui`, `bobui`, `btk`, `fully_automated_gay_luxury_space_communism` |
+| **bcs** | `external/bobui-reference` |
+| **npp** | `bobui`, `btk` |
+| **geany** | stale commit pointers + added `libffi`/`proxy-libintl` mappings |
+| **bobtrax** | stale `bobui` commit pointer |
+| **bobsgameonlinejava** | stale `libs/bobui` commit pointer |
+| **bobeditpro** | `muse` |
+| **bobsgameweb** | `submodules/Cytopia` |
+| **mk64** | `bobcoin` |
+| **hyperharness** | `archive/OmniRoute`, `archive/submodules/litellm`, `archive/submodules/mcpproxy`, `external/OmniRoute` |
+| **tabby** | `warp` |
+| **beatoraja** | `beatoraja-english-guide`, `bobcoin` |
+| **bobmania** | `itgmania/Themes/Simply-Love-SM5`, `itgmania/bobcoin` |
+| **itgmania** | `extern/IXWebSocket` |
+
+### Orphaned Submodules Deregistered
+| Submodule | Size | Reason | Action |
+|-----------|------|--------|--------|
+| `bobdesk` | 4.4 GB | GitHub 404 (LibreOffice fork deleted) | 🗑️ Removed from `.gitmodules` + index. Data on disk preserved. |
+| `WebAI-to-API` | 183 MB | GitHub 404 (deleted) | 🗑️ Removed from `.gitmodules` + index. Data on disk preserved. |
+
+### Orphaned Empty Directories Removed (10)
+`fully_automated_gay_luxury_space_communism`, `brokeragentworkflow`, `explorerexedecompiled`, `forclosureworkflow`, `p2p_service_marketplace`, `re-agent-workflow-media-1`, `realestateprototype`, `socialmediacontentplanner`, `techno_platform_detroit`, `theta-data-api`
+
+### Documentation
+- ✅ README.md — Complete rewrite with full project taxonomy, build status, rename/removal inventory
+- ✅ CHANGELOG.md — v5.16.0 and v5.16.1 entries
+- ✅ VERSION / VERSION.md — Synced to v5.16.1
+- ✅ This HANDOFF.md
+
+---
+
+## 📋 Final Workspace State
 
 | Metric | Value |
 |--------|-------|
-| **Version** | v5.13.9 → v5.14.0 |
-| **Total Submodules** | 270 (108 top-level + 162 nested) |
-| **Clean** | ~161 |
-| **Updated (tracking changes)** | ~62 |
-| **Uninitialized/Unreachable** | ~44 |
-| **Active Local Branches** | `main` only |
-| **Active Remote Branches** | `main`, `master` (upstream), 4x dependabot |
+| **Version** | v5.16.1 |
+| **Root submodules** | 65 (down from 70+ — stale entries purged) |
+| **Submodules in .gitmodules** | 108 (including nested across whole tree) |
+| **GitHub URLs updated** | 13 repos |
+| **Stale index entries removed** | 20+ across 15 repos |
+| **Orphaned submodules deregistered** | 2 (bobdesk, WebAI-to-API) |
+| **Orphaned empty dirs removed** | 10 |
+| **README.md** | ✅ Comprehensive rewrite |
 
-### 🔧 Repairs Made
+## ⚠️ Known Issues (Pre-existing)
 
-1. **ArrowVortex/lib/ddc** — Broken gitlink `0c01c81` (not in remote) → updated to `84bd10e` (HEAD of master)
-2. **MilkDrop3/bg/bobsgameonlinejava** — Broken gitlink `ef31c6f` (not in remote) → updated to `3c91621` (HEAD of main)
-3. **Stale index.lock files** — Removed from root, MilkDrop3/bg/bobsgameonlinejava
-4. **Version sync** — build.bat (v5.13.9→v5.14.0), start.bat (v5.09.0→v5.14.0), VERSION file (5.13.9→5.14.0)
+1. **217 Dependabot vulnerabilities** — Root workspace (2 critical, 90 high, 103 moderate, 22 low)
+2. **bobeditpro upstream** — 94 commits behind Audacity, 25+ conflicts
+3. **topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg
+4. **bobfilez pybind11 recursive directory loop** — Blocks git operations on bobfilez
+5. **bobdesk/ + WebAI-to-API/** — Orphaned data on disk (4.4GB + 183MB), not tracked by git
+6. **Minor stale gitlinks still present in nested submodules** — lr2oraja-endlessdream/jbms-parser, tormentnexus/borg, etc. (deeply nested, pre-existing)
 
-### 🚧 Uninitialized Submodules (44)
+## 🔜 Recommended Next Actions
 
-These submodules could not be initialized due to inaccessible URLs, private repos, or stale gitlinks. Some may require authentication or manual intervention:
-
-- **MilkDrop3/bg/bobsgameonlinejava/libs/bobui/submodules/**: juce, ultimatepp
-- **MilkDrop3/bg/bobsgameonlinejava/libs/lz4-java/src/**: lz4
-- **MilkDrop3/bg/bobsgameonlinejava/references/LibreSprite/**: src/flic, third_party/duktape, third_party/simpleini
-- **MilkDrop3/bg/bobsgameonlinejava/references/PixiEditor/**: src/ColorPicker, src/Drawie, src/PixiDocks, src/PixiParser
-- **MilkDrop3/bg/bobsgameonlinejava/references/aseprite/**: laf, src/flic, src/observable, src/psd, src/tga, src/undo, third_party/* (IXWebSocket, TinyEXIF, benchmark, cityhash, cmark, curl, fmt, freetype2, giflib, harfbuzz, json11, libarchive, libpng, libwebp, lua, pixman, qoi, simpleini, tinyexpr, tinyxml2, zlib)
-- **ArrowVortex/lib/ddc/**: ddc_onset, ffr-difficulty-model
-- **WebAI-to-API**: webai-to-api
-
-### 🚀 Version Files Updated
-
-| File | Old | New |
-|------|-----|-----|
-| VERSION | 5.13.9 | 5.14.0 |
-| build.bat | v5.13.9 | v5.14.0 |
-| start.bat | v5.09.0 | v5.14.0 |
-| CHANGELOG.md | [5.13.9] | [5.14.0] added |
-
-### 📚 Documentation Updated
-
-| Document | Changes |
-|----------|---------|
-| CHANGELOG.md | Added [5.14.0] entry with full sync details |
-| ROADMAP.md | Added Executive Protocol #7 completion entry |
-| TODO.md | Updated header to v5.14.0 |
-| SUBMODULE_MAP.md | Regenerated with current 270-submodule state |
-| HANDOFF.md | This handoff report |
-
-### ⚠️ Known Issues (Carried Forward)
-
-1. **44 uninitialized submodules** — Many are references to external repos (aseprite third_party, LibreSprite, PixiEditor) that require specific authentication or are no longer maintained
-2. **bobeditpro upstream** — 94 commits behind Audacity, 25+ conflicts (deferred per protocol)
-3. **topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg (deferred per protocol)
-4. **283 Dependabot vulnerabilities** — Root workspace + submodules need security audit
-5. **Dirty repos** — WebAI-to-API (~30 files) needs review
-
-### 🔜 Next Actions for Successive Models
-
-1. Run `git submodule update --init --recursive` again after authentication fixes
-2. Review and commit/stash WebAI-to-API dirty files
-3. Address 44 uninitialized submodules with proper remote URLs or remove stale gitlinks
-4. Tackle bobeditpro and topaz-ffmpeg upstream syncs (dedicated sessions needed)
-5. Execute build phase: `build.bat` and `build_all.bat`
-6. Push with: `git add -A && git commit -m "chore: bump to v5.14.0" && git push`
+1. **Security:** `pnpm audit --fix` across all Node.js submodules to reduce 217 vulns
+2. **Containerization:** Dockerize TormentNexus + fwber for deployment
+3. **Upstream Sync:** Dedicated session for bobeditpro (Audacity 25+ conflicts)
+4. **Upstream Sync:** Dedicated session for topaz-ffmpeg (FFmpeg 15+ conflicts)
+5. **Workspace Index:** Rebuild `workspace_index.db`
+6. **Git LFS:** Migrate game assets (MarbleBlast, supersaber, sm64coopdx)
+7. **Health Dashboard:** Implement global health endpoint aggregation
 
 ---
 
-*End of Handoff #7 — v5.14.0*
+*End of Handoff — v5.16.1*
