@@ -61,3 +61,7 @@ litellm_merge/
 # These contain critical development history and must be tracked.
 # Only ignore system logs (*.log), build artifacts, and caches.
 
+
+# Databases
+*.db
+borg.db
