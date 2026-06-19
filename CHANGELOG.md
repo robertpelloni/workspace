@@ -1,9 +1,12 @@
-## [5.16.1] - 2026-06-18
+## [5.17.0] - 2026-06-18
 
 ### Changed
-- Deregistered 10 orphaned submodules (GitHub 404): bobdesk, WebAI-to-API, antigravity-autopilot, CLIProxyAPIPlus, Cli-Proxy-API-Management-Center, antigravity-cli, antigravity-jules-orchestration, computer-use-preview, mcpenetes, opencode-autopilot
+- Deregistered 19 orphaned submodules (GitHub 404): bobdesk, OmniRoute, antigravity-autopilot, litellm, CLIProxyAPIPlus, Cli-Proxy-API-Management-Center, antigravity-cli, antigravity-jules-orchestration, WebAI-to-API, claude-mem, computer-use-preview, dupeguru, frontend-sdl-cpp, mcpenetes, metamcp, opencode-autopilot, picard, raindropioapp, superpowers
+- Added 19 deregistered submodules to .gitignore
 - Removed 10 orphaned empty directories from disk
-- Synced VERSION.md to match canonical VERSION file (v5.16.1)
+- Synced VERSION.md to match canonical VERSION file (v5.17.0)
+- Tracked .tormentnexus session data (critical development history)
+- Cleaned up litellm control panel temp dirs and old fix scripts
 
 ### Fixed
 - Purged 20+ stale submodule gitlink entries across 15 repos (bobui, bobgui, btk, bcs, npp, geany, bobtrax, bobsgameonlinejava, bobeditpro, bobsgameweb, mk64, hyperharness, tabby, beatoraja, bobmania, itgmania)
