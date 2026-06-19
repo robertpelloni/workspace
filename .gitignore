@@ -12,6 +12,7 @@ hymn_remaker_backup/
 .pi-lens/metrics-history.json
 .pi-lens/turn-state.json
 .pi-lens/worklog.jsonl
+.pi-lens/sessions/
 .pi/tasks/
 .pi/caps-context-state.json
 .pi/tasks-config.json
