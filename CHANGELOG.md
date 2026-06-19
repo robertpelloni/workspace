@@ -1,3 +1,14 @@
+## [5.16.0] - 2026-06-18
+
+### Changed
+- Renamed GitHub repos: bobui→bqt, bobgui→bgtk, btk→bcs
+- Updated all submodule config references across root, geany, bobtrax, bobsgameonlinejava
+- Fixed broken submodule pointers in bqt (juce/ultimatepp) and bgtk (ultimatepp)
+
+### Added
+- Forked muse-sequencer/muse → robertpelloni/muse, pushed ~60 local audiostreams commits
+- Fixed 11 repos with broken submodule references for Jules proxy compatibility
+
 ## [5.15.0] - 2026-06-18
 
 ### Added
