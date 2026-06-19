@@ -63,7 +63,7 @@ frontend-sdl-cpp, superpowers
 | npm audit fixes applied | 0 | **9 projects** |
 | Stale gitlinks removed | 55+ | **0** |
 | Git commits | — | **24** |
-| VERSION | v5.16.0 | **v5.16.1** |
+| VERSION | v5.16.0 | **v5.17.0** |
 
 ---
 

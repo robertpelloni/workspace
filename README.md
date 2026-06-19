@@ -1,6 +1,6 @@
 # Robert Pelloni's Omni-Workspace (Monorepo)
 
-**Version:** v5.16.0 | **Repos:** 125+ | **Submodules:** 65 (270 nested) | **AI & Human Lines:** 198M+
+**Version:** v5.17.0 | **Repos:** 125+ | **Submodules:** 90 | **AI & Human Lines:** 198M+
 
 ---
 
@@ -187,7 +187,7 @@ The workspace operates via numbered automated sync/merge/build cycles:
 | **Build pass rate** | ~80% verified clean |
 | **MCP tools available** | 46 |
 | **Open Dependabot alerts** | ~170 (being triaged) |
-| **Current version** | v5.16.0 |
+| **Current version** | v5.17.0 |
 
 ---
 
