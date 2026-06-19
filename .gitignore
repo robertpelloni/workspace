@@ -3,8 +3,6 @@ node_modules/
 hymn_remaker_backup/
 # Cache/agent directories (generated — not tracked)
 .agent/
-.borg-session.json
-.borg_startup_marker
 .chunkhound/
 .codemachine/
 .cursor/
@@ -21,15 +19,10 @@ hymn_remaker_backup/
 .gitmodules.restore
 .stale_commit_results.json
 .stale_pointers.json
-.tormentnexus-session.json
-.tormentnexus_startup_marker
-.tormentnexus/
 .vscode/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-borg.db
-
 # Large database files - do not track
 workspace_index.db
