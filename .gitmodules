@@ -46,13 +46,6 @@ url = https://github.com/robertpelloni/ArrowVortex
 path = superdawmcp
 url = https://github.com/robertpelloni/superdawmcp
 
-[submodule "CLIProxyAPIPlus"]
-path = CLIProxyAPIPlus
-url = https://github.com/robertpelloni/CLIProxyAPIPlus
-
-[submodule "Cli-Proxy-API-Management-Center"]
-path = Cli-Proxy-API-Management-Center
-url = https://github.com/robertpelloni/Cli-Proxy-API-Management-Center.git
 
 [submodule "GWEN"]
 path = GWEN
@@ -101,13 +94,6 @@ url = https://github.com/robertpelloni/agentirc.git
 path = ai_game_engine
 url = https://github.com/robertpelloni/ai_game_engine.git
 
-[submodule "antigravity-autopilot"]
-path = antigravity-autopilot
-url = https://github.com/robertpelloni/antigravity-autopilot
-
-[submodule "antigravity-cli"]
-path = antigravity-cli
-url = https://github.com/krmslmz/antigravity-cli.git
 
 [submodule "apophysis-j"]
 path = apophysis-j
@@ -240,10 +226,6 @@ path = claude-mem
 url = https://github.com/robertpelloni/claude-mem.git
 branch = main
 
-[submodule "computer-use-preview"]
-path = computer-use-preview
-url = https://github.com/google-gemini/computer-use-preview
-
 [submodule "crowdsourced_dance_club"]
 path = crowdsourced_dance_club
 url = https://github.com/robertpelloni/crowdsourced_dance_club.git
@@ -317,11 +299,6 @@ url = https://github.com/robertpelloni/freellm
 [submodule "mcp-superassistant"]
 path = mcp-superassistant
 url = https://github.com/robertpelloni/mcp-superassistant
-
-[submodule "mcpenetes"]
-path = mcpenetes
-url = https://github.com/robertpelloni/mcpenetes.git
-branch = main
 
 [submodule "metamcp"]
 path = metamcp
