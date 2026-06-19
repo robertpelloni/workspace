@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: ═══════════════════════════════════════════════════════════════
-:: Omni-Workspace Master Start Script - v5.14.0
+:: Omni-Workspace Master Start Script - v5.17.0
 :: Builds and launches all Go binary services
 :: 7 projects, 10 binaries
 :: ═══════════════════════════════════════════════════════════════
@@ -69,10 +69,10 @@ echo  [5/7] NPP Go
 cd npp\go-port
 start /b npp-go.exe >nul 2>&1
 cd ..\..
-cd npp\bobui
-start /b npp_bobui.exe >nul 2>&1
+cd npp\bqt
+start /b npp_bqt.exe >nul 2>&1
 cd ..\..
-echo        OK  npp-go, npp_bobui
+echo        OK  npp-go, npp_bqt
 
 :: 6. Warp Go
 echo  [6/7] Warp Go
@@ -138,14 +138,14 @@ if errorlevel 1 ( echo        FAIL pi-go & set /a FAIL+=1 ) else ( echo        O
 cd ..
 
 :: 5. NPP Go (2 binaries)
-echo  [5/7] npp-go (ultra + bobui)
+echo  [5/7] npp-go (ultra + bqt)
 cd npp\go-port
 go build -buildvcs=false -ldflags="-s -w" -o npp-go.exe ./cmd/ultra >nul 2>&1
 if errorlevel 1 ( echo        FAIL npp-go & set /a FAIL+=1 ) else ( echo        OK   npp-go.exe & set /a OK+=1 )
 cd ..\..
-cd npp\bobui
-go build -buildvcs=false -o npp_bobui.exe . >nul 2>&1
-if errorlevel 1 ( echo        FAIL npp_bobui & set /a FAIL+=1 ) else ( echo        OK   npp_bobui.exe & set /a OK+=1 )
+cd npp\bqt
+go build -buildvcs=false -o npp_bqt.exe . >nul 2>&1
+if errorlevel 1 ( echo        FAIL npp_bqt & set /a FAIL+=1 ) else ( echo        OK   npp_bqt.exe & set /a OK+=1 )
 cd ..\..
 
 :: 6. Warp Go
@@ -180,7 +180,7 @@ taskkill /f /im hermes-agent-go.exe >nul 2>&1
 taskkill /f /im hyperharness.exe   >nul 2>&1
 taskkill /f /im pi-go.exe          >nul 2>&1
 taskkill /f /im npp-go.exe         >nul 2>&1
-taskkill /f /im npp_bobui.exe      >nul 2>&1
+taskkill /f /im npp_bqt.exe      >nul 2>&1
 taskkill /f /im warp-go.exe        >nul 2>&1
 taskkill /f /im hyper-go.exe       >nul 2>&1
 echo  All Go services stopped.
@@ -196,7 +196,7 @@ echo  === Omni-Workspace Go Service Status ===
 echo.
 echo  Binary                  Status
 echo  ----------------------- ---------
-for %%b in (tabby-backend.exe tabby-native.exe tabby-wails.exe hermes-agent-go.exe hyperharness.exe pi-go.exe npp-go.exe npp_bobui.exe warp-go.exe hyper-go.exe) do (
+for %%b in (tabby-backend.exe tabby-native.exe tabby-wails.exe hermes-agent-go.exe hyperharness.exe pi-go.exe npp-go.exe npp_bqt.exe warp-go.exe hyper-go.exe) do (
     tasklist /fi "imagename eq %%b" 2>nul | findstr /i "%%b" >nul
     if !errorlevel! equ 0 (
         echo  %%b  Running
@@ -237,7 +237,7 @@ echo    tabby\tabby-go\start.bat      [run^|build^|backend^|native^|wails^|test^
 echo    hermes-agent\start.bat        [run^|build^|tui^|gateway^|test^|clean]
 echo    hyperharness\start.bat        [tui^|serve^|pipe^|build^|test^|clean]
 echo    pi-mono\start.bat             [run^|build^|test^|lint^|clean^|install^|help]
-echo    npp\go-port\start.bat         [run^|build^|all^|bobui^|test^|clean^|help]
+echo    npp\go-port\start.bat         [run^|build^|all^|bqt^|test^|clean^|help]
 echo    warp\start.bat                [run^|build^|terminal^|editor^|test^|clean^|help]
 echo    hyper\start.bat               [run^|build^|dev^|test^|clean^|help]
 echo.
