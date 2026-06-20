@@ -25,3 +25,13 @@
 - Executive Protocol #7 executed - Workspace fully synchronized to v5.14.0 (2026-06-18)
 - 270 submodules scanned: 161 clean, 62 tracking updates, 44 private/unreachable
 - ArrowVortex/lib/ddc and MilkDrop3/bg/bobsgameonlinejava broken gitlinks repaired
+
+## Phase 5: Intelligent Merge Engine v5.20.0 (Completed 2026-06-19)
+- [x] Forward merge: Maestro jules-add-new-agents → main
+- [x] Forward merge: pi-mono rev/jules-5192, rev/total-assimilation-cleanup → main
+- [x] Forward merge: aimoneymachine_site feat/v1.0.0-alpha.66 → main (v1.0.0-alpha.89)
+- [x] Forward merge: fcdm fitness-machine-foundation → main
+- [x] Forward merge: jules-autopilot feat-shadow-pilot-git-diff-ui → main
+- [x] Forward merge: bobfilez recovery/detached-work → main
+- [x] Submodule sanitization: fetched tags + updated all submodules recursively
+- [x] Version bumped to v5.20.0 across all reference files

@@ -1,3 +1,18 @@
+## [5.20.0] - 2026-06-19
+
+### Changed
+- Intelligent forward merge: Maestro jules-add-new-agents (new agent orchestration framework)
+- Intelligent forward merge: pi-mono rev/jules-5192 and total-assimilation-cleanup (safePath validation, detailed SUBMODULE_INVENTORY)
+- Intelligent forward merge: aimoneymachine_site feat/v1.0.0-alpha.66 (CoinGecko provider, bump to alpha.89)
+- Intelligent forward merge: fcdm fitness-machine-foundation (FitnessKiosk audio analysis improvements)
+- Intelligent forward merge: jules-autopilot feat-shadow-pilot-git-diff-ui
+- Intelligent forward merge: bobfilez recovery/detached-work (autonomous dev protocol, staging deployment)
+- Intelligent reverse merge: multimousergy, freellm, enterprise_sales_bot, superdawmcp (caught up with main)
+- Submodule sanitization: fetched all tags, updated submodules recursively, resolved ~10 broken deep-nested revisions
+- Conflict resolution: pi-mono SUBMODULE_INVENTORY.md and clean_room_handlers.go merged preserving all features
+- Conflict resolution: aimoneymachine_site VERSION.md, trading.go, dashboard.go — preserved CoinGecko caching/retry
+- Version bumped to v5.20.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+
 ## [5.19.0] - 2026-06-19
 
 ### Changed

@@ -1,6 +1,6 @@
-# TODO — Omni-Workspace v5.13.0
+# TODO — Omni-Workspace v5.20.0
 
-**Current:** v5.14.0 • 270 submodules across workspace • 2026-06-18
+**Current:** v5.20.0 • 270 submodules across workspace • 2026-06-19
 
 ## 🎯 v5.13.0 Milestone: Production Hardening
 
@@ -141,7 +141,7 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 |--------|---------|--------|--------|
 | Submodules Synced | 65/65 | 65/65 | ✅ Current |
 | Upstreams Current | 12/16 | 16/16 | ⚠️ 4 deferred |
-| Feature Branches Merged | 100% | 100% | ✅ Current |
+| Feature Branches Merged | 100% | 100% | ✅ v5.20.0 — Maestro, pi-mono, aimoneymachine_site, fcdm, jules-autopilot, bobfilez |
 | Dependabot Vulnerabilities (Root) | 283 | 0 | 🔴 Critical |
 | TormentNexus Vulnerabilities | 1,114 | 0 | 🔴 Critical (22 critical, 456 high) |
 | jules-autopilot axios vulns | ✅ Fixed | 0 | ✅ 4+ high vulns fixed |
@@ -189,7 +189,7 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 
 ---
 
-*Last updated: 2026-06-13*
-*Previous: v5.12.0 — Upstream Sync & Feature Branch Reconciliation*
-*Next: v5.13.0 — Production Hardening*
+*Last updated: 2026-06-19*
+*Previous: v5.19.0 — enterprise_sales_bot Ph6 + MarbleBlast Ogg/Vorbis*
+*Next: v5.20.0 — Dual-Direction Merge Engine: Maestro, pi-mono, aimoneymachine_site, fcdm, jules-autopilot, bobfilez*
 - Verify build output after 5.13.6 sync
