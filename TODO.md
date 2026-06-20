@@ -1,6 +1,6 @@
-# TODO — Omni-Workspace v5.20.1
+# TODO — Omni-Workspace v5.20.2
 
-**Current:** v5.20.1 • 270 submodules across workspace • 2026-06-19
+**Current:** v5.20.2 • 270 submodules across workspace • 2026-06-19
 
 ## 🎯 v5.13.0 Milestone: Production Hardening
 
@@ -191,5 +191,5 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 
 *Last updated: 2026-06-19*
 *Previous: v5.20.0 — Dual-Direction Merge Engine*
-*Next: v5.20.1 — Submodule fix pass: 7 broken submodule references repaired*
+*Next: v5.20.2 — geany btk submodule fix*
 - Verify build output after 5.13.6 sync

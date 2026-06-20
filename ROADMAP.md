@@ -36,10 +36,10 @@
 - [x] Submodule sanitization: fetched tags + updated all submodules recursively
 - [x] Version bumped to v5.20.0 across all reference files
 
-## Phase 5a: Submodule Fix Pass v5.20.1 (Completed 2026-06-19)
+## Phase 5a: Submodule Fix Pass v5.20.2 (Completed 2026-06-19)
 - [x] bobtrax: fixed lmms + zrythm submodule pointers (commits dropped from upstream)
 - [x] bobsaver: removed dead metamcp/raindropioapp submodules; fixed projectm-eval pointer
 - [x] bobfilez: fixed VERT submodule pointer (local-only commit)
-- [x] geany: fixed bobui submodule pointer (local-only commit)
+- [x] geany: fixed bobui + btk submodule pointers (local-only commits)
 - [x] bobsgameonlinejava: fixed grafx2 submodule pointer (local-only commit)
 - [x] bobmani: created scaffold-docs branch from main for Jules AI tool compatibility

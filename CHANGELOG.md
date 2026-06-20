@@ -1,3 +1,9 @@
+## [5.20.2] - 2026-06-19
+
+### Fixed
+- geany: updated btk submodule pointer (commit 504f73ee9 was local-only)
+- Workspace: synced geany submodule gitlink to match remote fix
+
 ## [5.20.1] - 2026-06-19
 
 ### Fixed
