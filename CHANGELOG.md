@@ -1,3 +1,14 @@
+## [5.19.0] - 2026-06-19
+
+### Changed
+- Intelligent forward merge: enterprise_sales_bot phase6 production hardening (CRM integration, auth module, E2E validation, sales bot core)
+- Intelligent forward merge: enterprise_sales_bot CRM integration tests (CI fixes, gosec security)
+- Intelligent forward merge: enterprise_sales_bot CRM field mapping (real-time quote generation)
+- Intelligent forward merge: enterprise_sales_bot staging docker-compose (automated migrations, secrets)
+- Intelligent forward merge: MarbleBlast jules Ogg/Vorbis native support and asset improvements
+- Version bumped to v5.19.0, synced across VERSION, VERSION.md, build.bat, start.bat
+- Tracked AI agent session data across repos
+
 ## [5.18.0] - 2026-06-19
 
 ### Changed
