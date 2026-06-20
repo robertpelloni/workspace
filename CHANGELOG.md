@@ -1,3 +1,15 @@
+## [5.20.1] - 2026-06-19
+
+### Fixed
+- bobtrax: updated lmms submodule pointer (commit 38145efca dropped from upstream LMMS)
+- bobtrax: updated zrythm submodule pointer (commit 49289ca90 was local-only merge)
+- bobsaver/MilkDrop3: removed dead submodules metamcp and raindropioapp (repos return 404)
+- bobsaver/projectm: updated projectm-eval submodule pointer (commit 99a6aef dropped from upstream)
+- bobfilez: updated VERT submodule pointer (commit b741a34 was local-only)
+- geany: updated bobui submodule pointer (commit 327f624c0a1 was local-only)
+- bobsgameonlinejava: updated grafx2 submodule pointer (commit c51ce97f was local-only)
+- bobmani: created scaffold-docs branch from main (requested by Jules AI tool)
+
 ## [5.20.0] - 2026-06-19
 
 ### Changed
