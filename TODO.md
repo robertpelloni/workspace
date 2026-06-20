@@ -1,6 +1,6 @@
-# TODO — Omni-Workspace v5.20.2
+# TODO — Omni-Workspace v5.21.0
 
-**Current:** v5.20.2 • 270 submodules across workspace • 2026-06-19
+**Current:** v5.21.0 • 270 submodules across workspace • 2026-06-20
 
 ## 🎯 v5.13.0 Milestone: Production Hardening
 
@@ -115,7 +115,7 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 
 ## 📚 Documentation & Knowledge
 
-- [ ] **Update ROADMAP.md** — Move Completed items to history, update Phase 4 with current status
+- [x] **Update ROADMAP.md** — Added Phase 5b: pi-mono Phase 19/20 Assimilation
 - [ ] **Update SUBMODULE_INVENTORY.md** — Current as of v5.12.0, but needs verification pass
 - [ ] **Update DASHBOARD.md** — Last updated 2026-03-20 (90+ days stale). Re-scan all repos
 - [ ] **Create per-project READMEs** — 40+ repos lack a README; critical for onboarding
@@ -189,7 +189,6 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 
 ---
 
-*Last updated: 2026-06-19*
-*Previous: v5.20.0 — Dual-Direction Merge Engine*
-*Next: v5.20.2 — geany btk submodule fix*
-- Verify build output after 5.13.6 sync
+*Last updated: 2026-06-20*
+*Previous: v5.20.2 — geany btk submodule fix*
+*Next: v5.21.0 — pi-mono Phase 19/20 Assimilation Forward Merge*

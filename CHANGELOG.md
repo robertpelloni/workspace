@@ -1,3 +1,15 @@
+## [5.21.0] - 2026-06-20
+
+### Changed
+- Forward merge: pi-mono rev/jules-5192995686709987445-f4e7a729 → main (37 commits, Phase 19/20 Ultimate LLM Harness, safePath validation, security tests, E2E smoke tests)
+- Conflict resolution: SUBMODULE_INVENTORY.md — preserved detailed claude-desktop/claude-code/codex-cli/gemini-cli assimilation entries
+- Conflict resolution: pkg/ai/clean_room_handlers.go — preserved streaming read, added validatePath error check
+- Cross-platform fix: validatePath now rejects Unix-absolute paths (e.g., /etc/passwd) on Windows
+- Version bumped to v5.21.0, synced across VERSION, VERSION.md, build.bat, start.bat
+
+### Fixed
+- pi-mono TestValidatePath/Absolute_escape_attempt — proper rejection of paths with ambiguous root on Windows
+
 ## [5.20.2] - 2026-06-19
 
 ### Fixed

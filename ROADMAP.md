@@ -43,3 +43,9 @@
 - [x] geany: fixed bobui + btk submodule pointers (local-only commits)
 - [x] bobsgameonlinejava: fixed grafx2 submodule pointer (local-only commit)
 - [x] bobmani: created scaffold-docs branch from main for Jules AI tool compatibility
+
+## Phase 5b: pi-mono Phase 19/20 Assimilation v5.21.0 (Completed 2026-06-20)
+- [x] Forward merge: pi-mono rev/jules-5192995686709987445-f4e7a729 → main (37 commits, 33 files changed)
+- [x] Phase 19/20 Ultimate LLM Harness: clean room handlers, security tests, E2E tests, smoke/load tests
+- [x] Cross-platform security fix: validatePath rejects Unix-absolute paths on Windows
+- [x] Version bumped to v5.21.0 across all reference files
