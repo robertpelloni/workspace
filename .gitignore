@@ -31,9 +31,8 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-# Large database files - do not track
+# workspace_index.db is locally regenerated cache — keep out of git
 workspace_index.db
-borg.db
 # Temp/scratch dirs
 _delete_me_temp/
 nul
