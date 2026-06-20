@@ -88,11 +88,26 @@
 ### 🔜 Next Agent Actions
 1. **Push merged work**: Push all submodules above (root already clean)
 2. **Containerization**: Dockerize TormentNexus + fwber per Phase 4
-3. **Security pass**: `NODE_TLS_REJECT_UNAUTHORIZED=0 pnpm -r add axios@^1.12.0 @modelcontextprotocol/sdk@^1.24.0 esbuild@latest`
+3. **Security pass**: `NODE_TLS_REJECT_UNAUTHORIZED=0 pnpm -r add axios@^1.12.0 @modelcontextprotocol/sdk@^1.24.0 esbuild@latest` — then commit across all submodules
 4. **Resolve MilkDrop3 defold submodule** — consider removing dead gitlink or replacing with shallow clone
 5. **Multi-agent coordination**: fwber — set upstream tracking; bobeditpro — dedicated conflict resolution session
 6. **Build verification**: Run `build.bat` and `start.bat` to validate all 7 Go services compile
+7. **Rebuild TormentNexus CLI**: `cd TormentNexus && NODE_TLS_REJECT_UNAUTHORIZED=0 pnpm build` to enable `mcp list/start/stop` commands
+8. **Connect remaining MCP servers**: After CLI is built, run `node packages/cli/dist/index.js mcp start <name>` for anyquery, fetch, supervisor, chrome-devtools
+
+### ✅ Hygiene & Security Pass (2026-06-19)
+| Action | Result |
+|--------|--------|
+| TormentNexus cleanup | Untracked runtime DBs, expanded .gitignore (286 lines), 3 commits |
+| jules-autopilot cleanup | Untracked packages/shared/dist/, expanded .gitignore, committed sec upgrades |
+| Maestro cleanup | Committed sec upgrades (packages.json + pnpm-lock.yaml) |
+| bobbybookmarks cleanup | Untracked .pi-lens/cache/, expanded .gitignore, 21 files deleted from tracking |
+| OmniRoute conflict fix | Resolved merge conflict in electron/package.json |
+| Workspace file cleanup | Removed _delete_me_temp/, nul; added patterns to root .gitignore |
+| SUBMODULE_MAP.md | Updated to v5.19.0 — 90 submodules, 19 deregistered |
+| Security upgrades | minimatch@^9.0.7, js-yaml@^4.1.1 in root + 7 subprojects |
+| **Remaining security** | axios@^1.12.0, @modelcontextprotocol/sdk@^1.24.0, esbuild@latest — blocked by SSL/TLS (use NODE_TLS_REJECT_UNAUTHORIZED=0) |
 
 ---
 
-*End of Handoff — v5.20.0 — Dual-Direction Intelligent Merge Engine*
+*End of Handoff — v5.20.0 — Hygiene/Security/MCP Expansion*
