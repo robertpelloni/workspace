@@ -577,3 +577,12 @@ Maestro, enterprise_sales_bot, bobdesk, FAGLSGC, fwber, xrnet, hyperharness, jul
 - MCP expansion: 16 live servers (up from 3), CLI rebuilt
 - All dependency upgrades pushed to GitHub
 
+
+## [5.23.0] - 2026-06-20
+
+### Changed
+- Executive Protocol #11 executed
+- bobmani: Merged Rust port feature branch (Simfile Preprocessor, Stream/Pattern detectors — 613 new lines)
+- Cleaned 13 stale bobmani submodule gitlinks from root index
+- Reverse-merged bobmani feature branch with latest main
+
