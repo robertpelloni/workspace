@@ -49,3 +49,12 @@
 - [x] Phase 19/20 Ultimate LLM Harness: clean room handlers, security tests, E2E tests, smoke/load tests
 - [x] Cross-platform security fix: validatePath rejects Unix-absolute paths on Windows
 - [x] Version bumped to v5.21.0 across all reference files
+
+## Phase 5c: Executive Protocol #12 — Repository Sync & Submodule Maintenance v5.24.0 (Completed 2026-06-20)
+- [x] Full fetch + tags across root and all 78 submodules (+ nested)
+- [x] Removed 27 stale index.lock files blocking recursive submodule update
+- [x] Reverse merge: main → jules-autopilot (feat-shadow-pilot, jules-485-merge-test)
+- [x] Reverse merge: main → fwber (rev/feat/federation-hardening-auth-integration)
+- [x] Reverse merge: main → fcdm (fitness-machine-foundation)
+- [x] Fixed MilkDrop3/bg/bobsgameonlinejava references/defold — stale hash, deinitialized
+- [x] Version bumped to v5.24.0 across VERSION, VERSION.md, build.bat, start.bat

@@ -1,3 +1,34 @@
+## [5.24.0] - 2026-06-20
+
+### Changed
+- Executive Protocol #12 executed: Repository Synchronization & Intelligent Merge
+- Performed full fetch + recursive submodule update across 78 submodules (+ nested)
+- Reverse-merged main → jules-autopilot (feat-shadow-pilot, jules-485-merge-test) — resolved .pi-lens cache conflicts
+- Reverse-merged main → fwber (rev/feat/federation-hardening-auth-integration)
+- Reverse-merged main → fcdm (fitness-machine-foundation)
+- Removed 27 stale index.lock files across deeply nested submodule tree
+- Fixed MilkDrop3/bg/bobsgameonlinejava references/defold — commit hash missing from upstream, deinitialized to unblock updates
+- Version bumped to v5.24.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
+## [5.23.0] - 2026-06-20
+
+### Changed
+- Executive Protocol #11 executed
+- bobmani: Merged Rust port feature branch (Simfile Preprocessor, Stream/Pattern detectors — 613 new lines)
+- Cleaned 13 stale bobmani submodule gitlinks from root index
+- Reverse-merged bobmani feature branch with latest main
+
+## [5.22.0] - 2026-06-20
+
+### Changed
+- Executive Protocol: Repository Synchronization & Intelligent Merge executed
+- bobeditpro: Merged 129 upstream Audacity commits + resolved 44 conflicts
+- bobmani: Merged Rust workspace init branch, registered 13 submodules as git repo
+- Security upgrades: axios@^1.18.0, minimatch@^9.0.7, esbuild@^0.28.1 across 13 repos
+- MCP expansion: 16 live servers (up from 3), CLI rebuilt
+- All dependency upgrades pushed to GitHub
+
 ## [5.21.0] - 2026-06-20
 
 ### Changed
