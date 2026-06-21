@@ -74,10 +74,6 @@ branch = main
 path = OpenMBU
 url = https://github.com/robertpelloni/OpenMBU
 
-[submodule "TormentNexus"]
-path = TormentNexus
-url = https://github.com/robertpelloni/TormentNexus
-
 [submodule "ableton_psytrance_hymn_creator"]
 path = ableton_psytrance_hymn_creator
 url = https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git

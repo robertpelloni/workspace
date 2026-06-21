@@ -1,3 +1,19 @@
+## [5.27.0] - 2026-06-21
+
+### Changed
+- Executive Protocol #15 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across all root + submodules (recursive)
+- Fixed MilkDrop3 & bg submodule corruption (re-clone)
+- Removed orphaned muse submodule from bobeditpro
+- Consolidated duplicate TormentNexus/tormentnexus submodules (removed TormentNexus, kept tormentnexus)
+- Updated enterprise_sales_bot submodule pointer (blog frontmatter, borg cleanup)
+- Updated tormentnexus submodule pointer to remote HEAD
+- Fixed case-insensitive Windows gitdir collision between TormentNexus/tormentnexus
+- Fixed broken .git/modules/tormentnexus directory
+- Cleaned up .gitmodules (removed duplicate TormentNexus entry)
+- Version bumped to v5.27.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.26.0] - 2026-06-20
 
 ### Changed

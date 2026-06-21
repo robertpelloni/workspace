@@ -73,3 +73,13 @@
 - [x] Updated TormentNexus & tormentnexus to remote HEAD (df03c438)
 - [x] Reverse merge: main → enterprise_sales_bot (jules-autodev-phase5-integration)
 - [x] Version bumped to v5.26.0 across VERSION, VERSION.md, build.bat, start.bat
+
+## Phase 5f: Executive Protocol #15 — Submodule Sanitization & Duplicate Consolidation v5.27.0 (Completed 2026-06-21)
+- [x] Full fetch across all root + 74 submodules (recursive)
+- [x] Fixed MilkDrop3 & bg submodule corruption (re-clone + re-init)
+- [x] Removed orphaned muse submodule from bobeditpro
+- [x] Consolidated duplicate TormentNexus/tormentnexus submodules (removed TormentNexus, kept tormentnexus with branch=main)
+- [x] Fixed case-insensitive Windows gitdir collision (TormentNexus/tormentnexus sharing same .git/modules/)
+- [x] Updated enterprise_sales_bot submodule pointer (blog frontmatter, borg cleanup)
+- [x] Updated tormentnexus submodule pointer to remote HEAD (df03c43)
+- [x] Version bumped to v5.27.0 across VERSION, VERSION.md, build.bat, start.bat
