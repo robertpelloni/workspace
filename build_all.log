@@ -79,3 +79,25 @@ git\commit.go:5:2: missing go.sum entry for module providing package github.com/
 (Use `node --trace-deprecation ...` to show where the warning was created)
 (node:105096) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
 (node:105096) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+Starting comprehensive recursive build script...
+--> Skipping . (already built).
+--> Building ableton_psytrance_hymn_creator...
+    Building Node project...
+      Executing: npm install --no-fund --no-audit --loglevel=error in .\ableton_psytrance_hymn_creator
+
+added 217 packages, removed 607 packages, and changed 93 packages in 1m
+    Running npm run build...
+      Executing: npm run build in .\ableton_psytrance_hymn_creator
+
+> hymnmania-pipeline@1.0.0 build
+> tsc
+
+src/pipeline.ts(63,21): error TS2339: Property 'mood' does not exist on type 'PipelineOptions'.
+src/pipeline.ts(64,59): error TS2339: Property 'mood' does not exist on type 'PipelineOptions'.
+src/pipeline.ts(65,65): error TS2339: Property 'mood' does not exist on type 'PipelineOptions'.
+src/pipeline.ts(81,66): error TS2339: Property 'mood' does not exist on type 'PipelineOptions'.
+src/pipeline.ts(205,27): error TS2339: Property 'mood' does not exist on type 'PipelineOptions'.
+src/server.ts(26,9): error TS2353: Object literal may only specify known properties, and 'mood' does not exist in type 'PipelineOptions'.
+--> Building ableton_psytrance_hymn_creator\hymnmania_src...
+    Building Node project...
+      Executing: npm install --no-fund --no-audit --loglevel=error in .\ableton_psytrance_hymn_creator\hymnmania_src

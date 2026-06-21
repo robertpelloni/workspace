@@ -1,24 +1,34 @@
-# Project Summary: PianoGame (formerly Synthesia)
+# Project Architecture, Patterns, and Decisions
 
-## Architecture & Technology Stack
-- **Language:** C++
-- **Graphics/UI:** OpenGL
-- **MIDI Parsing:** Custom `libmidi` library embedded in the project.
-- **Platform Support:** The project uses native OS APIs. It has a Visual Studio `.sln` and `.vcproj` setup for Windows (`registry.cpp`, `<Windows.h>`) and an Xcode `.xcodeproj` setup for MacOS (`Carbon/Carbon.h`). It lacks a unified build system (like CMake) and does not compile natively on Linux out of the box.
+## 1. The Core Paradigm Shift
+* **Legacy Archival:** The original C++ `PianoGame` repository (with OpenGL and MIDI dependencies) has been fully archived into the `legacy/` directory. This preserves its history while entirely clearing the root for a massive architectural pivot.
+* **New Vision:** The repository is transforming into the "Ultimate Agentic Coding Harness," a universal AI pair programming environment designed to surpass and integrate over 40+ existing CLI/TUI/Web tools.
 
-## Design Patterns & Decisions
-- **State Management:** The application uses a GameStateManager to switch between different modes (e.g., `State_Title`, `State_Playing`, `State_TrackSelection`, `State_Stats`). Each state handles its own rendering and logic update loop.
-- **Configuration:** User settings are managed via the `UserSettings` namespace, which abstracts the underlying OS configuration storage (e.g., Windows Registry or MacOS CFPreferences).
-- **String Handling:** Due to the complexities of handling cross-platform strings in older C++, the project heavily relies on macros like `STRING()` and `WSTRING()`, as well as a utility file `string_util.h` for `std::wstring` conversions.
-- **Hardcoding (Legacy):** Many settings and display values were historically hardcoded (e.g., `LeadIn` and `LeadOut` timing for songs). A major ongoing refactoring pattern is identifying these static constants and migrating them to `UserSettings` or separate configuration files.
-- **Testing:** There are no automated unit tests. Testing relies on manual execution based on test plans documented in `testing/test_plan.txt`.
+## 2. Multi-Language Parity Strategy
+* **Five Target Stacks:** To achieve true universality and native environment integration, the harness is being built simultaneously across five completely different languages:
+  * **Rust:** Configured with `Cargo` (`Cargo.toml`).
+  * **Go:** Configured with Go Modules (`go.mod` using `go 1.20`).
+  * **C#:** Configured as a `.NET 8.0` Console application (`Harness.csproj`).
+  * **Java:** Configured via `Maven` (`pom.xml`).
+  * **TypeScript:** Configured with Node.js (`package.json`, TypeScript 5, Node 20 types).
+* **Parity Goal:** Every single feature (LLM routing, git integration, AST parsing, web scraping) must be ported 1-to-1 across all five architectures.
 
-## Documentation & Versioning
-- **Documentation Strategy:** Comprehensive documentation is maintained in the `docs/` directory, including `VISION.md`, `ROADMAP.md`, `TODO.md`, `CHANGELOG.md`, `VERSION.md`, `HANDOFF.md`, and `DEPLOY.md`.
-- **Versioning:** The single source of truth for versions is meant to be standardized. Currently, the version is manually synchronized between `docs/VERSION.md`, `docs/CHANGELOG.md`, the C++ header `src/version.h` (`PianoGameVersionString`), and the `nsis_installer_script.nsi`.
-- **AI Agent Instructions:** Project guidelines for AI assistants are kept in `docs/AGENTS.md` (general project guidelines) with specific files for models like `CLAUDE.md`, `GEMINI.md`, and `GPT.md`.
+## 3. Submodule Ingestion Engine
+* **The "Harness of Harnesses":** Rather than reinventing the wheel, the project's current phase involves cloning the source code of existing top-tier AI tools as Git submodules into the `submodules/` directory.
+* **First Target (Aider):** The `aider` repository has been successfully ingested. An analysis (`AIDER_ANALYSIS.md`) revealed core features required for the port: AST mapping, native git commit generation, LiteLLM wrapper abstraction, and self-correcting lint/test loops.
 
-## Key Limitations & Tradeoffs
-- Cross-platform development is hindered by direct dependencies on OS-specific windowing and system APIs rather than a cross-platform abstraction layer (like SDL or GLFW).
-- Lack of continuous integration (CI) or automated tests means visual and behavioral verification must be performed manually.
-- Memory management occasionally uses raw pointers that require manual deletion, which is noted in various TODO comments across the codebase as technical debt.
+## 4. Strict Documentation Governance
+The root folder serves as the central brain for continuous autonomous execution, strictly maintaining the following documents:
+* **`VISION.md` & `ROADMAP.md`:** Outlines the long-term milestones (e.g., Phase 1: Ingestion, Phase 2: Multi-Language Scaffolding).
+* **`TODO.md`:** The granular, immediate checklist. The agent *must* update this as tasks are completed.
+* **`VERSION.md` & `CHANGELOG.md`:** The global truth for the application's version (`1.0.0-agentic-alpha.1`). No hardcoded versions exist in the application logic.
+* **`MEMORY.md` & `HANDOFF.md`:** Used for LLM-to-LLM session handoffs to ensure unstoppable autonomy without context degradation.
+
+## 5. Execution Directives
+* **Autopilot Rule:** Execution must be continuous. The system commits and pushes to Git after every major feature without pausing for user confirmation.
+* **Commit Standards:** Every commit message must explicitly reference the exact version string from `VERSION.md`.
+* **Build Hygiene:** `.gitignore` has been thoroughly configured to prevent the massive influx of build artifacts (`target/`, `node_modules/`, `bin/`, `obj/`) from polluting the repository.
+
+## 6. Next Immediate Steps (From `TODO.md`)
+* The foundational scaffolding and the first submodule ingestion are complete.
+* The next step is to ingest the second target repository (e.g., Claude Code, Opencode, or similar) as a submodule, analyze its unique features, and document them to continue building the ultimate feature-parity master list.

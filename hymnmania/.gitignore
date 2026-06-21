@@ -60,9 +60,7 @@ suno_fail.png
 suno_stealth_*.png
 suno_payload_capture.json
 # AI tool artifacts
-.borg_startup_marker
 .pi/
-.jules/
 metamcp.db
 *.db
 # Security: auth tokens and decryption artifacts
@@ -74,3 +72,12 @@ ssr_bucket.*
 hymn_remaker/bin/ffmpeg.exe
 hymn_remaker/bin/ffprobe.exe
 token_gemini.json
+
+# IMPORTANT: Do NOT add any of the following to .gitignore
+# - Databases (*.db, *.sqlite, etc.)
+# - Session/conversation files (*-session.json, sessions/)
+# - .tormentnexus/ (AI sessions, memory, handoffs, db)
+# - .jules/ (Jules AI conversations and state)
+# These contain critical development history and must be tracked.
+# Only ignore system logs (*.log), build artifacts, and caches.
+
