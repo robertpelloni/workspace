@@ -1,3 +1,21 @@
+## [5.25.0] - 2026-06-20
+
+### Changed
+- Executive Protocol #13 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across all submodules + tags (root, submodules, nested)
+- Fixed MilkDrop3/bg/bobsgameonlinejava/references/defold — re-added with valid upstream HEAD (a17be93)
+- Fixed MilkDrop3/bg/bobsgameonlinejava/references/tiled — updated to upstream master HEAD (ad2c29d)
+- Fixed MilkDrop3/bg/bobsgameonlinejava submodule remote URL (was pointing to defold/defold)
+- Updated and pushed commit chain: bobsgameonlinejava → bg → MilkDrop3 → workspace
+- Reverse merge: main → jules-autopilot (feat-shadow-pilot, jules-485-merge-test)
+- Reverse merge: main → enterprise_sales_bot (jules-autodev-phase5-integration)
+- Reverse merge: main → bobfilez (recovery/detached-work)
+- Reverse merge: main → aimoneymachine_site (feat/v1.0.0-alpha.66)
+- Removed 28 stale index.lock files across deeply nested submodule tree
+- Pushed TormentNexus (1 commit ahead of remote)
+- Version bumped to v5.25.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md, SUBMODULE_MAP.md
+
 ## [5.24.0] - 2026-06-20
 
 ### Changed

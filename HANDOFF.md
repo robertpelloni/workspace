@@ -1,8 +1,8 @@
-# HANDOFF — Executive Protocol #12
+# HANDOFF — Executive Protocol #13
 
 ## Agent: pi-coding-agent
 ## Date: 2026-06-20
-## Version: v5.24.0
+## Version: v5.25.0
 
 ---
 
@@ -10,45 +10,62 @@
 
 | Action | Result |
 |--------|--------|
-| **Root fetch** | ✅ All remotes/tags fetched (0 ahead, 0 behind upstream/origin — same repo) |
-| **Submodule fetches** | ✅ Fetched across 78 registered submodules + deeply nested (MilkDrop3/bg/bobsgameonlinejava/references/*, etc.) |
-| **Stale lock cleanup** | ✅ Removed 27 stale `index.lock` files across deeply nested submodule tree (bcs, bobfilez, bobtrader, MilkDrop3, bg, bobsgameonlinejava submodules) |
-| **Recursive submodule update** | ✅ Partial — MilkDrop3 subtree blocked by `references/defold` stale commit hash (upstream defold/defold force-pushed) |
-| **defold workaround** | ⏸️ Deinitialized `MilkDrop3/bg/bobsgameonlinejava/references/defold` — commit `2f81a4eb1bf539cca8b9615193d60c1ffd71f620` unreachable. Needs gitlink update to `a17be93c6c9ac834117c95e94d874f72574e8f88` (latest HEAD) |
+| **Root fetch** | ✅ Up to date (origin = upstream = robertpelloni/workspace) |
+| **Submodule fetches** | ✅ Fetched across all 78 registered submodules + deeply nested |
+| **Stale lock cleanup** | ✅ Removed 28 stale `index.lock` files |
+| **Recursive submodule update** | ✅ Partial — MilkDrop3 subtree had multiple stale reference hashes |
+
+### Submodule Repair (MilkDrop3/bg/bobsgameonlinejava)
+
+| Submodule | Issue | Fix |
+|-----------|-------|-----|
+| `references/defold` | Stale hash `2f81a4eb` — upstream force-pushed | Re-added with valid HEAD `a17be93c6c9ac834117c95e94d874f72574e8f88` |
+| `references/tiled` | Stale hash `e2aa2300` — upstream force-pushed | Updated to upstream master HEAD `ad2c29df8ed347ed23fca1b9f5ed7431a8d9e580` |
+| `bobsgameonlinejava` origin remote | Was pointing to `defold/defold` instead of `robertpelloni/bobsgameonlinejava` | Fixed origin URL |
+| **Commit chain** | All fixes propagated | `bobsgameonlinejava` → `bg` → `MilkDrop3` → `workspace` — all pushed |
+
+Remaining deep issues (deferred):
+- `MilkDrop3/bg/bobsgameweb` — untracked files blocking checkout
+- `MilkDrop3/bg/okgame` — stale commit hash
+- `MilkDrop3/bg/bobsgameonlinejava/references/love2d`, `phaser`, etc. — may have similar hash issues
 
 ## ✅ STEP 2: Dual-Direction Intelligent Merge Engine
 
-| Repo | Branch | Action | Result |
+### Reverse Merge (main → feature branches)
+
+| Repo | Branch | Behind | Result |
 |------|--------|--------|--------|
-| **pi-mono** | `rev/jules-5192...`, `rev/total-assimilation-cleanup-...` | Checked | ✅ Already merged (0 ahead of main) |
-| **enterprise_sales_bot** | `jules-autodev-phase5-integration` | Checked | ✅ Already merged (0 ahead of main) |
-| **jules-autopilot** | `feat-shadow-pilot-git-diff-ui` | Reverse merge | ✅ 4 commits behind — merged main in |
-| **jules-autopilot** | `jules-485-merge-test` | Reverse merge | ✅ 5 commits behind — merged main in, resolved `.pi-lens/cache/` conflicts (deleted per main's cleanup) |
-| **fwber** | `rev/feat/federation-hardening-auth-integration` | Reverse merge | ✅ 4 commits behind — merged main in |
-| **fcdm** | `fitness-machine-foundation` | Reverse merge | ✅ 8 commits behind — merged main in (1 diverged commit was sync-only) |
-| **bobfilez** | `recovery/detached-work` | Checked | ✅ Already merged (0 ahead) |
-| **aimoneymachine_site** | `feat/v1.0.0-alpha.66-...` | Checked | ✅ Already merged (0 ahead, 0 behind) |
-| **bobeditpro** | `main` (local branch) | Checked | ✅ master = origin/master |
-| **bobmani** | `scaffold-docs`, `jules-empty-repo-diagnosis` | Checked | ✅ Already merged (0 ahead) |
+| **jules-autopilot** | `feat-shadow-pilot-git-diff-ui` | 1 commit | ✅ Fast-forward merged & pushed |
+| **jules-autopilot** | `jules-485-merge-test` | 1 commit | ✅ Merged (ort strategy) & pushed |
+| **fwber** | `rev/feat/federation-hardening-auth-integration` | 0 | ✅ Already up to date |
+| **fcdm** | `fitness-machine-foundation` | 0 | ✅ Already up to date |
+| **enterprise_sales_bot** | `jules-autodev-phase5-integration` | 75 | ✅ Merged & pushed |
+| **bobfilez** | `recovery/detached-work` | 7 | ✅ Merged (stashed local changes) |
+| **aimoneymachine_site** | `feat/v1.0.0-alpha.66` | 6 | ✅ Merged & pushed |
+| **TormentNexus** | main | 1 ahead | ✅ Pushed local commit to remote |
+
+All feature branches checked: **0 branches with unmerged unique content**. All AI-tool branches already content-merged.
 
 ## ✅ STEP 3: Workspace Cleanup, Documentation & Build Finalization
 
 | Action | Result |
 |--------|--------|
-| **Scripts validated** | ✅ `build.bat` and `start.bat` updated to v5.24.0 |
-| **Version bump** | ✅ v5.23.0 → v5.24.0 (VERSION, VERSION.md, VERSION.current, build.bat, start.bat) |
-| **CHANGELOG** | ✅ Updated with v5.24.0 entry (chronological order restored — moved 5.22.0/5.23.0 entries above misplaced 5.2.0) |
-| **ROADMAP** | ✅ Added Phase 5c: Executive Protocol #12 |
-| **SUBMODULE_MAP** | ✅ Regenerated with current commit hashes and status |
-| **HANDOFF** | ✅ This document |
+| **Version bump** | ✅ v5.24.0 → **v5.25.0** (VERSION, VERSION.md, VERSION.current, build.bat, start.bat) |
+| **CHANGELOG.md** | ✅ Updated with v5.25.0 entry |
+| **ROADMAP.md** | ✅ Added Phase 5d: Executive Protocol #13 |
+| **SUBMODULE_MAP.md** | ✅ Regenerated |
+| **HANDOFF.md** | ✅ This document |
+| **Commit** | 🔄 Pending — submodule pointer changes need staging |
+| **Build** | ⏸️ Deferred until commit phase |
 
 ## ⏳ Deferred / Known Issues
 
-1. **MilkDrop3/bg/bobsgameonlinejava/references/defold** — Commit hash `2f81a4eb1bf539cca8b9615193d60c1ffd71f620` no longer available in upstream `defold/defold`. Needs gitlink update to `a17be93c6c9ac834117c95e94d874f72574e8f88`. Workaround: deinitialized to unblock recursive updates.
-2. **topaz-ffmpeg upstream** — May be behind FFmpeg (last merged 422 commits upstream)
-3. **npm_and_yarn dependabot branches** — 4 stale dependabot branches exist, content already merged into main
-4. **build_all.log** — Modified but excluded from tracking; consider tracking build logs
+1. **MilkDrop3/bg/bobsgameweb** — Untracked files blocking checkout in submodule
+2. **MilkDrop3/bg/okgame** — Stale commit hash, needs upstream HEAD update
+3. **MilkDrop3/bg/bobsgameonlinejava** — Additional reference submodules (love2d, phaser, etc.) may have stale hashes
+4. **npm_and_yarn dependabot branches** — 4 stale branches exist, content already merged
+5. **build_all.log** — Modified but excluded from tracking
 
 ---
 
-*End of Handoff — v5.24.0 — Executive Protocol #12*
+*End of Handoff — v5.25.0 — Executive Protocol #13*

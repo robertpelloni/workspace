@@ -58,3 +58,12 @@
 - [x] Reverse merge: main → fcdm (fitness-machine-foundation)
 - [x] Fixed MilkDrop3/bg/bobsgameonlinejava references/defold — stale hash, deinitialized
 - [x] Version bumped to v5.24.0 across VERSION, VERSION.md, build.bat, start.bat
+
+## Phase 5d: Executive Protocol #13 — Deep Submodule Repair & Sync v5.25.0 (Completed 2026-06-20)
+- [x] Full fetch across all submodules + tags
+- [x] Fixed MilkDrop3/bg/bobsgameonlinejava/references/defold — re-added with valid upstream HEAD (a17be93)
+- [x] Fixed MilkDrop3/bg/bobsgameonlinejava/references/tiled — updated to upstream master HEAD (ad2c29d)
+- [x] Fixed bobsgameonlinejava submodule remote URL (was pointing to defold/defold)
+- [x] Updated commit chain: bobsgameonlinejava → bg → MilkDrop3 → workspace
+- [x] Reverse merge: main → all active feature branches across 7 repos
+- [x] Version bumped to v5.25.0 across VERSION, VERSION.md, build.bat, start.bat
