@@ -1,3 +1,13 @@
+## [5.26.0] - 2026-06-20
+
+### Changed
+- Executive Protocol #14 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across all submodules + tags
+- Updated TormentNexus & tormentnexus to remote HEAD (df03c438)
+- Reverse merge: main → enterprise_sales_bot (jules-autodev-phase5-integration)
+- Version bumped to v5.26.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.25.0] - 2026-06-20
 
 ### Changed
