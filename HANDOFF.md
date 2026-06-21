@@ -50,6 +50,27 @@
 | **Push** | ⏸️ Pending |
 | **Build** | ⏸️ Pending |
 
+## 🔧 Post-Protocol: Jules Clone Fixes
+
+After Protocol #15 was committed, Jules reported `not our ref` errors cloning robertpelloni repos:
+
+### Fix 1: robertpelloni/geany (clone via Jules)
+| Repo | Change | Commit |
+|------|--------|--------|
+| **bcs** (btk) | `external/juce` → `3ba67d45` (upstream HEAD). `external/ultimatepp` → `5276c666b91` (upstream HEAD) | `34ad6ed3b` |
+| **geany** | `subprojects/btk` pointer → `34ad6ed3b` | `457979d` |
+| **workspace** | `geany` pointer → `457979d` | `5543f51` |
+
+### Fix 2: robertpelloni/bg (clone via Jules — root cause: `bobsgameonlinejava/references/LibreSprite`)
+| Repo | Change | Commit |
+|------|--------|--------|
+| **bobsgameonlinejava** | 17 submodule pins updated from local-only commits to upstream HEAD (bobcoin, libs/bobui, libs/commons-lang, libs/lwjgl3, libs/lz4-java, libs/mysql-connector-j, libs/xz-java, references/LibreSprite, Pixelorama, PixiEditor, aseprite, csprite, defold, love2d, phaser, retro-game-editor, tiled, voidsprite) | `b62bf47` |
+| **bg** | `bobsgameonlinejava` pointer → `b62bf47`. Plus 7 reference submodules (diffusers, LibreSprite, Pixelorama, PixiEditor, aseprite, csprite, tiled, voidsprite) | `54576ec` |
+| **MilkDrop3** | `bg` pointer → `54576ec` | `bc9e120` |
+| **workspace** | `bg` pointer → `54576ec`, `MilkDrop3` pointer → `bc9e120` | `2eeec2606d` |
+
+**Root Cause Pattern:** Jules' `git clone --depth 1 --shallow-submodules --recursive` fetches each pinned submodule commit from the upstream remote. If the commit was made locally (by a previous AI session) and never pushed upstream, the remote returns `upload-pack: not our ref`. Fix: update all stale submodule pins to valid upstream HEAD commits.
+
 ## ⏳ Known Issues / Deferred
 
 1. **tormentnexus lost local commit** — The Dockerfile fix + DB tracking commit (`ab5fb0eab`) was lost when the shared `.git/modules/tormentnexus` directory was corrupted and re-initialized. The commit object still exists in `.git/modules/tormentnexus/borg` (recoverable via `git --git-dir=.git/modules/tormentnexus/borg`). Cherry-pick from there if needed.
