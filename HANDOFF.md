@@ -71,6 +71,15 @@ After Protocol #15 was committed, Jules reported `not our ref` errors cloning ro
 
 **Root Cause Pattern:** Jules' `git clone --depth 1 --shallow-submodules --recursive` fetches each pinned submodule commit from the upstream remote. If the commit was made locally (by a previous AI session) and never pushed upstream, the remote returns `upload-pack: not our ref`. Fix: update all stale submodule pins to valid upstream HEAD commits.
 
+### Fix 3: robertpelloni/bobsgameonlinejava (clone via Jules — `libs/lz4-java` stale proxy issue)
+| Repo | Change | Commit |
+|------|--------|--------|
+| **bobsgameonlinejava** | `master` branch was stale (old commit `37ee245`) despite `main` having correct pointers. Jules' proxy at `192.168.0.1:8080` was serving `master` branch even though Jules specified `-b main`. **Deleted stale `master` branch entirely.** | N/A |
+
+**Lesson:** Jules' git proxy (`http://git@192.168.0.1:8080/.insteadOf https://github.com/`) may serve the `master` branch regardless of the `-b` flag. Ensure `master` (if it exists) is identical to `main`, or delete it. Jules' `git clone --depth 1 --shallow-submodules --recursive` fetches each pinned submodule commit from the upstream remote. If the commit was made locally (by a previous AI session) and never pushed upstream, the remote returns `upload-pack: not our ref`. Fix: update all stale submodule pins to valid upstream HEAD commits.
+
+### Fix 3: robertpelloni/bobsgameonlinejava (clone via Jules — `libs/lz4-java` stale)
+
 ## ⏳ Known Issues / Deferred
 
 1. **tormentnexus lost local commit** — The Dockerfile fix + DB tracking commit (`ab5fb0eab`) was lost when the shared `.git/modules/tormentnexus` directory was corrupted and re-initialized. The commit object still exists in `.git/modules/tormentnexus/borg` (recoverable via `git --git-dir=.git/modules/tormentnexus/borg`). Cherry-pick from there if needed.
