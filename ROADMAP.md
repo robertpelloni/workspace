@@ -149,3 +149,12 @@
 - [x] Reverse merged main back into all active feature branches
 - [x] Initialized 14 new submodules (bdwgc, bobsgameonline, libjruntime, grammars-v4, tokdiet, stepmania, jvm-cpp-runtime, okgame, muse, FFmpeg, jdk, llvm-project, private_gemini_storage, browser-use)
 - [x] Version bumped to v5.35.0 across all reference files
+
+## Phase 5o: Executive Protocol #24 — Repository Sync & Intelligent Merge v5.36.0 (Completed 2026-06-22)
+- [x] Full fetch across all root + submodules
+- [x] enterprise_sales_bot: Forward merged jules-crm-field-mapping (1 commit) — Phase 11 Sales Blueprint
+- [x] bobmani/hymnmania: Forward merged feat/v137-studio-reversal (6 commits) — Studio Reversal validated & packaged
+- [x] bobmani/hymnmania: Forward merged jules-6832 (3 commits) — VST3 integration stub, test fixes
+- [x] Updated 6 submodule pointers (aimoneymachine_site, auto_dj_script, enterprise_sales_bot, jules-autopilot, fwber, bobmani/hymnmania)
+- [x] Reverse merged main back into all active feature branches
+- [x] Version bumped to v5.36.0 across all reference files

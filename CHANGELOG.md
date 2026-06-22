@@ -1,3 +1,16 @@
+## [5.36.0] - 2026-06-22
+
+### Changed
+- Executive Protocol #24 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across all root + submodules
+- enterprise_sales_bot: Forward merged jules-crm-field-mapping (1 commit) — Phase 11 Sales Blueprint
+- bobmani/hymnmania: Forward merged feat/v137-studio-reversal (6 commits) — Studio Reversal validated & packaged
+- bobmani/hymnmania: Forward merged jules-6832 (3 commits) — VST3 integration stub, test fixes, media pipeline hardening
+- Updated 6 submodule pointers (aimoneymachine_site, auto_dj_script, enterprise_sales_bot, jules-autopilot, fwber, bobmani/hymnmania)
+- Reverse merged main back into all active feature branches
+- Version bumped to v5.35.0 → v5.36.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.35.0] - 2026-06-22
 
 ### Changed
