@@ -339,3 +339,6 @@ branch = master
 [submodule "browser-use"]
 	path = browser-use
 	url = https://github.com/browser-use/browser-use.git
+[submodule "bobmani/Simply-Love-SM5"]
+	path = bobmani/Simply-Love-SM5
+	url = https://github.com/robertpelloni/Simply-Love-SM5
