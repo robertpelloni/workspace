@@ -73,3 +73,6 @@ litellm_merge/
 # Only ignore system logs (*.log), build artifacts, and caches.
 
 
+bobsaver_light/
+jvm-cpp-runtime/
+linthesia/
