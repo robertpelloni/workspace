@@ -1,3 +1,13 @@
+## [5.30.0] - 2026-06-21
+
+### Changed
+- Executive Protocol #18 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across all submodules
+- Reverse merged main into 4 enterprise_sales_bot branches (jules-1274, jules-crm-mapping, main-4215, orchestrate-staging)
+- Reverse merged main into 3 aimoneymachine_site branches (feat/automated-monetization, feat/v1.0.0-alpha.41, jules-1783)
+- Version bumped to v5.30.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.29.0] - 2026-06-21
 
 ### Changed
