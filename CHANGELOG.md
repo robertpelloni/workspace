@@ -1,3 +1,15 @@
+## [5.29.0] - 2026-06-21
+
+### Changed
+- Executive Protocol #17 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across all submodules
+- Reverse merged main into 4 enterprise_sales_bot feature branches (jules-autodev-phase5, jules-phase6-hardening, v0.5.0-multi-channel, crm-integration-tests)
+- Reverse merged main into 3 aimoneymachine_site branches (linkedin-provider, social-twitter-v2, social-providers)
+- Reverse merged main into Maestro multi-language-harness-expansion
+- Fixed stale index.lock in tormentnexus submodule
+- Version bumped to v5.29.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.28.0] - 2026-06-21
 
 ### Changed
