@@ -4,3 +4,9 @@ sessions:
   - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-22T14-15-21-273Z_019eefaf-91b9-7320-bafa-bda821755ff6.jsonl"
     branch: main
     started: "2026-06-22T14:18:03.045Z"
+  - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-22T17-42-59-199Z_019ef06d-a97f-78e0-890b-0fcea264d503.jsonl"
+    branch: main
+    started: "2026-06-22T17:45:48.691Z"
+  - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-22T18-48-44-919Z_019ef0a9-de77-7491-bd19-1ab1d1b62d85.jsonl"
+    branch: main
+    started: "2026-06-22T18:49:04.391Z"
