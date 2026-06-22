@@ -338,7 +338,7 @@ branch = master
 	url = https://github.com/robertpelloni/bobsgameonlinejava.git
 [submodule "browser-use"]
 	path = browser-use
-	url = https://github.com/browser-use/browser-use.git
+	url = https://github.com/robertpelloni/browser-use
 [submodule "bobmani/Simply-Love-SM5"]
 	path = bobmani/Simply-Love-SM5
 	url = https://github.com/robertpelloni/Simply-Love-SM5
