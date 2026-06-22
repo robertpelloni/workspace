@@ -320,7 +320,7 @@ branch = master
 
 [submodule "bobmani"]
 	path = bobmani
-	url = https://github.com/robertpelloni/bobmania
+	url = https://github.com/robertpelloni/bobmani
 [submodule "MilkDrop3_fix"]
 	path = MilkDrop3_fix
 	url = https://github.com/robertpelloni/MilkDrop3.git
@@ -378,3 +378,42 @@ branch = master
 [submodule "bobmani/pianogame"]
 	path = bobmani/pianogame
 	url = https://github.com/robertpelloni/pianogame
+[submodule "bdwgc"]
+	path = bdwgc
+	url = https://github.com/robertpelloni/bdwgc
+[submodule "bobsgameonline"]
+	path = bobsgameonline
+	url = https://github.com/robertpelloni/bobsgameonline
+[submodule "libjruntime"]
+	path = libjruntime
+	url = https://github.com/robertpelloni/libjruntime
+[submodule "grammars-v4"]
+	path = grammars-v4
+	url = https://github.com/robertpelloni/grammars-v4
+[submodule "tokdiet"]
+	path = tokdiet
+	url = https://github.com/robertpelloni/tokdiet
+[submodule "stepmania"]
+	path = stepmania
+	url = https://github.com/robertpelloni/stepmania
+[submodule "jvm-cpp-runtime"]
+	path = jvm-cpp-runtime
+	url = https://github.com/robertpelloni/jvm-cpp-runtime
+[submodule "okgame"]
+	path = okgame
+	url = https://github.com/robertpelloni/okgame
+[submodule "muse"]
+	path = muse
+	url = https://github.com/robertpelloni/muse
+[submodule "FFmpeg"]
+	path = FFmpeg
+	url = https://github.com/robertpelloni/FFmpeg
+[submodule "jdk"]
+	path = jdk
+	url = https://github.com/robertpelloni/jdk
+[submodule "llvm-project"]
+	path = llvm-project
+	url = https://github.com/robertpelloni/llvm-project
+[submodule "private_gemini_storage"]
+	path = private_gemini_storage
+	url = https://github.com/robertpelloni/private_gemini_storage
