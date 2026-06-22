@@ -1,3 +1,13 @@
+## [5.32.0] - 2026-06-22
+
+### Changed
+- Executive Protocol #20 executed: Submodule Pointer Reconciliation & Documentation Finalization
+- Full fetch across all root + submodules
+- Updated submodule pointers for aimoneymachine_site (53 commits), enterprise_sales_bot (285 commits), freellm (1 commit), fwber (5 commits), jules-autopilot (11 commits), bg, tormentnexus
+- All feature branches from EP #19 verified synced and pushed upstream
+- Version bumped to v5.31.0 → v5.32.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.31.0] - 2026-06-22
 
 ### Changed

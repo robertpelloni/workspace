@@ -1,8 +1,8 @@
-# HANDOFF — Executive Protocol #19
+# HANDOFF — Executive Protocol #20
 
 ## Agent: pi-coding-agent
 ## Date: 2026-06-22
-## Version: v5.30.0 → v5.31.0
+## Version: v5.31.0 → v5.32.0
 
 ---
 
@@ -10,80 +10,64 @@
 
 | Action | Result |
 |--------|--------|
-| **Root fetch** | ✅ Up to date |
-| **Submodule fetch** | ✅ Fetched across all submodules (recursive with tags) |
-| **.gitignore fix** | ✅ Reverted stale memory log file ignore — memory/session files tracked |
-| **.gitmodules fix** | ✅ Registered all bobmani nested submodules (13 entries: Simply-Love-SM5, arrowvortex, beatoraja, bobmania, ddc, ddc_onset, ffr-difficulty-model, hymnmania, itgmania, ksm-v2, leraine-studio, linthesia, pianogame) |
-| **bobmani URL fix** | ✅ Changed from bobmani.git → bobmania (different repos!) |
-| **Recursive submodule update** | ✅ All submodules initialized, nested submodules inside bobmani updated |
+| **Root fetch** | ✅ Up to date — no upstream changes (upstream == origin) |
+| **Submodule fetch** | ✅ Fetched across all submodules (recursive) |
+| **Submodule pointers** | ✅ Updated 8 submodule pointers to match actual HEADs |
 
 ## ✅ STEP 2: Dual-Direction Intelligent Merge Engine
 
-### enterprise_sales_bot (8 branches → main)
-| Branch | Forward Merge | Reverse Merge |
-|--------|:---:|:---:|
-| crm-integration-tests-10823287328178807054 | ✅ Merged | ✅ Synced |
-| jules-12741150550545531224-863b86a9 | ✅ Merged (in phase5) | ✅ Synced |
-| jules-autodev-phase5-integration-10246787539514155621 | ✅ Merged (comprehensive) | ✅ Synced |
-| jules-crm-field-mapping-12193946835217908533 | ✅ Merged | ✅ Synced |
-| jules-phase6-production-hardening-042-863b86a9 | ✅ Merged | ✅ Synced |
-| main-4215924055125686102 | ✅ Merged | ✅ Synced |
-| orchestrate-staging-docker-compose-18161885601118019175 | ✅ Merged | ✅ Synced |
-| v0.5.0-multi-channel-release-3273472954140028497 | ✅ Merged | ✅ Synced |
-| **Total commits ahead of origin/main** | **281** | |
+**No new feature branches detected** since EP #19. All branches verified in sync:
 
-### aimoneymachine_site (5 branches → main)
-| Branch | Forward Merge | Reverse Merge |
+### enterprise_sales_bot
+| Branch | Behind Main | Ahead of Main |
 |--------|:---:|:---:|
-| feat/automated-monetization-and-leadgen | ✅ Merged | ✅ Synced |
-| feat/linkedin-provider-impl | ✅ Merged | ✅ Synced |
-| feat/social-twitter-v2 | ✅ Merged | ✅ Synced |
-| feature/social-providers | ✅ Merged | ✅ Synced |
-| jules-1783031611774770394-63cefadb | ✅ Merged | ✅ Synced |
+| All 8 feature branches | 0 | 0 (except jules-127411: 2 ahead) |
 
-### Other Submodules
-| Submodule | Action |
-|-----------|--------|
-| **freellm** | ✅ Forward merged freellm-linux (headless Linux build) → main |
-| **fwber** | ✅ Forward merged federation-hardening → main |
-| **jules-autopilot** | ✅ Forward merged jules-485-merge-test → main |
+### aimoneymachine_site
+| Branch | Behind Main | Ahead of Main |
+|--------|:---:|:---:|
+| All 7 feature branches | 0 | 0 |
+
+### All Other Submodules
+- **freellm**: freellm-linux merged and synced
+- **fwber**: federation-hardening merged and synced  
+- **jules-autopilot**: jules-485-merge-test, feat-shadow-pilot synced
 
 ## ✅ STEP 3: Workspace Cleanup, Documentation & Build
 
 | Action | Result |
 |--------|--------|
-| **Submodule map fixed** | ✅ bobmani nested submodules registered in .gitmodules |
-| **Version bump** | ✅ v5.30.0 → **v5.31.0** |
-| **VERSION files** | ✅ Updated VERSION, VERSION.md, VERSION.current |
-| **build.bat** | ✅ Version string updated |
-| **start.bat** | ✅ Version string updated (x2 locations) |
-| **CHANGELOG.md** | ✅ Updated with v5.31.0 entry |
-| **ROADMAP.md** | ✅ Phase 5j added |
+| **Version bump** | ✅ v5.31.0 → **v5.32.0** |
+| **VERSION files** | ✅ VERSION, VERSION.md, VERSION.current |
+| **build.bat** | ✅ v5.31.0 → v5.32.0 |
+| **start.bat** | ✅ v5.31.0 → v5.32.0 (both locations) |
+| **CHANGELOG.md** | ✅ v5.32.0 entry added |
+| **ROADMAP.md** | ✅ Phase 5k added |
 | **HANDOFF.md** | ✅ This document |
-| **Push** | ⏳ Pending (manual execution recommended) |
-| **Build** | ⏳ Pending (manual execution recommended) |
+| **Submodule push** | ✅ aimoneymachine_site, freellm, fwber main branches pushed |
+| **Feature branch push** | ✅ All enterprise_sales_bot and aimoneymachine_site feature branches pushed |
+| **Root push** | ⏳ Pending |
+| **Build** | ⏳ Pending |
 
 ---
 
 ## Key Decisions & Notes
 
-1. **bobmani submodules**: These nested submodules were registered in `.git/config` but missing from `.gitmodules`. Adding them to `.gitmodules` fixed the `git submodule update --init` failures. URL corrected from `bobmani.git` to `bobmania` (different upstream repos).
+1. **EP #19 submodule pointers never committed**: The EP #19 agent's submodule pointer update commit was lost (only .gitmodules + version bump made it). This EP reconciles those pointers properly.
 
-2. **Conflict Resolution Strategy**: Used `-X theirs` strategy for feature branch merges to preserve feature branch progress (these are Jules auto-generated branches with cumulative work). All unique commits preserved.
+2. **No new feature activity**: No new Jules-generated branches or upstream changes since EP #19. All branches are clean and in sync.
 
-3. **jules-autodev-phase5 branch**: This was the "master feature branch" that already contained merges from all other enterprise_sales_bot feature branches. It was the primary merge target.
-
-4. **Memory tracking**: Restored `.gitignore` — removed the ignore rule for `.memory/branches/*/log.md` to ensure memory/brain data stays versioned.
+3. **Untracked directories remain**: The following directories are present but not registered as submodules or gitignored: `agentirc`, `apophysis-j`, `bcs`, `bobcoin`, `bobium`, `bobsaver`, `bobsgameweb`, `bobtrader`, `dao`, `electricsheep`, `geiss`, `planet_fitness_stepmaniax_agent`, `skillzhub`, `veilid_reddit_facebook`. These appear to be AI-agent local clones or reference repos — evaluate for proper submodule registration or gitignore.
 
 ---
 
 ## ⚠️ Next Agent
 
-- **Push**: All submodules and root have unpushed commits. Run `git push --all` in each submodule that has commits ahead of remote, then root push.
-- **Build**: Run `build.bat` to verify Go builds succeed across tormentnexus, hyperharness, pi-mono, and tabby.
-- **Untracked directories**: Several new directories need review: `agentirc`, `apophysis-j`, `bcs`, `bobcoin`, `bobium`, `bobsaver`, `bobsgameweb`, `bobtrader`, `dao`, `electricsheep`, `geiss`, `planet_fitness_stepmaniax_agent`, `skillzhub`, `veilid_reddit_facebook`. Evaluate if they should be added as submodules or gitignored.
-- **Check nested gitignore**: The `bobmani` submodule's `.gitignore` and `.gitmodules` may need syncing with the root.
+- **Push root**: `git push origin main` to publish EP #20 changes
+- **Build**: Run `build.bat` to build Go binaries
+- **Untracked directories**: Review and register/ignore the untracked directories listed above
+- **Monitor**: Check for new feature branches from Jules on next cycle
 
 ---
 
-*End of Handoff — v5.31.0 — Executive Protocol #19*
+*End of Handoff — v5.32.0 — Executive Protocol #20*
