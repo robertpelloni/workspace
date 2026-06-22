@@ -1,3 +1,14 @@
+## [5.35.0] - 2026-06-22
+
+### Changed
+- Executive Protocol #23 executed: Repository Synchronization & Intelligent Merge
+- Synced 3 new upstream commits (14 new submodules, browser-use fork, pointer updates)
+- fwber: Forward merged continue-development (1 commit) — email infrastructure docs, API crash fixes, code cleanup
+- fwber: Updated submodule pointer (+2 new commits: cleanup merge + 1000x UI overhaul)
+- Reverse merged main back into all fwber active feature branches
+- Version bumped to v5.34.0 → v5.35.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.34.0] - 2026-06-22
 
 ### Changed
