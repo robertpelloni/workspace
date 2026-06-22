@@ -19,3 +19,11 @@ This file serves as a reference point for multi-agent workflows (Claude -> Gemin
     *   **GPT:** Architecture, systemic debugging, strict type enforcement.
 3.  **Iteration Cycle:** Read -> Strategize -> Execute -> Validate -> Commit -> Handoff. Never stop the party.
 
+
+## Brain — Agent Memory
+
+This project uses Brain for agent memory management.
+
+**Start here when orienting:** Read `.memory/main.md` for the project roadmap, key decisions, and open problems.
+Read `.memory/AGENTS.md` for the full Brain protocol reference.
+Tools: memory_commit, memory_branch (create/switch/merge)

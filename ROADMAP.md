@@ -102,3 +102,15 @@
 - [x] Reverse merged main into 4 enterprise_sales_bot branches
 - [x] Reverse merged main into 3 aimoneymachine_site branches
 - [x] Version bumped to v5.30.0 across VERSION, VERSION.md, build.bat, start.bat
+
+## Phase 5j: Executive Protocol #19 — Full Dual-Direction Merge & Submodule Registration v5.31.0 (Completed 2026-06-22)
+- [x] Full fetch across all root + submodules (recursive with tags)
+- [x] Registered all bobmani nested submodules in .gitmodules (Simply-Love-SM5, arrowvortex, beatoraja, bobmania, ddc, ddc_onset, ffr-difficulty-model, hymnmania, itgmania, ksm-v2, leraine-studio, linthesia, pianogame)
+- [x] Fixed bobmani submodule URL (bobmani.git → bobmania)
+- [x] Forward merged: enterprise_sales_bot (8 feature branches → main, 281 commits)
+- [x] Forward merged: aimoneymachine_site (5 feature branches → main, 51 commits)
+- [x] Forward merged: freellm (freellm-linux → main)
+- [x] Forward merged: fwber (federation-hardening → main)
+- [x] Forward merged: jules-autopilot (jules-485-merge-test → main)
+- [x] Reverse merged main back into all active feature branches
+- [x] Version bumped to v5.31.0 across all reference files

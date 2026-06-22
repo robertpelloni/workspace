@@ -1,11 +1,18 @@
-## [5.30.0] - 2026-06-21
+## [5.31.0] - 2026-06-22
 
 ### Changed
-- Executive Protocol #18 executed: Repository Synchronization & Intelligent Merge
-- Full fetch across all submodules
-- Reverse merged main into 4 enterprise_sales_bot branches (jules-1274, jules-crm-mapping, main-4215, orchestrate-staging)
-- Reverse merged main into 3 aimoneymachine_site branches (feat/automated-monetization, feat/v1.0.0-alpha.41, jules-1783)
-- Version bumped to v5.30.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Executive Protocol #19 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across all root + submodules (recursive)
+- Fixed .gitmodules: registered bobmani submodules (Simply-Love-SM5, arrowvortex, beatoraja, bobmania, ddc, ddc_onset, ffr-difficulty-model, hymnmania, itgmania, ksm-v2, leraine-studio, linthesia, pianogame)
+- Fixed bobmani URL in .gitmodules (bobmani.git → bobmania)
+- Reverted stale .gitignore ignore of memory log files
+- enterprise_sales_bot: Forward merged 8 feature branches into main (crm-integration-tests, jules-1274, jules-autodev-phase5, jules-crm-field-mapping, jules-phase6-hardening, main-4215, orchestrate-staging, v0.5.0-multi-channel) — 281+ commits, intelligent conflict resolution
+- aimoneymachine_site: Forward merged 5 feature branches into main (feat/automated-monetization, feat/linkedin-provider, feat/social-twitter-v2, feature/social-providers, jules-1783) — 51 commits
+- freellm: Forward merged freellm-linux (headless Linux build) into main
+- fwber: Forward merged federation-hardening branch into main
+- jules-autopilot: Merged jules-485-merge-test into main
+- Reverse merged main back into all active feature branches across all submodules
+- Version bumped to v5.30.0 → v5.31.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
 - Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
 
 ## [5.29.0] - 2026-06-21

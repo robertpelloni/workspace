@@ -320,7 +320,7 @@ branch = master
 
 [submodule "bobmani"]
 	path = bobmani
-	url = git@github.com:robertpelloni/bobmani.git
+	url = https://github.com/robertpelloni/bobmania
 [submodule "MilkDrop3_fix"]
 	path = MilkDrop3_fix
 	url = https://github.com/robertpelloni/MilkDrop3.git
@@ -342,3 +342,39 @@ branch = master
 [submodule "bobmani/Simply-Love-SM5"]
 	path = bobmani/Simply-Love-SM5
 	url = https://github.com/robertpelloni/Simply-Love-SM5
+[submodule "bobmani/arrowvortex"]
+	path = bobmani/arrowvortex
+	url = https://github.com/robertpelloni/arrowvortex
+[submodule "bobmani/beatoraja"]
+	path = bobmani/beatoraja
+	url = https://github.com/robertpelloni/beatoraja
+[submodule "bobmani/bobmania"]
+	path = bobmani/bobmania
+	url = https://github.com/robertpelloni/bobmania
+[submodule "bobmani/ddc"]
+	path = bobmani/ddc
+	url = https://github.com/robertpelloni/ddc
+[submodule "bobmani/ddc_onset"]
+	path = bobmani/ddc_onset
+	url = https://github.com/robertpelloni/ddc_onset
+[submodule "bobmani/ffr-difficulty-model"]
+	path = bobmani/ffr-difficulty-model
+	url = https://github.com/robertpelloni/ffr-difficulty-model
+[submodule "bobmani/hymnmania"]
+	path = bobmani/hymnmania
+	url = https://github.com/robertpelloni/hymnmania
+[submodule "bobmani/itgmania"]
+	path = bobmani/itgmania
+	url = https://github.com/robertpelloni/itgmania
+[submodule "bobmani/ksm-v2"]
+	path = bobmani/ksm-v2
+	url = https://github.com/robertpelloni/ksm-v2
+[submodule "bobmani/leraine-studio"]
+	path = bobmani/leraine-studio
+	url = https://github.com/robertpelloni/leraine-studio
+[submodule "bobmani/linthesia"]
+	path = bobmani/linthesia
+	url = https://github.com/robertpelloni/linthesia
+[submodule "bobmani/pianogame"]
+	path = bobmani/pianogame
+	url = https://github.com/robertpelloni/pianogame
