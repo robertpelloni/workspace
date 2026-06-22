@@ -1,3 +1,15 @@
+## [5.33.0] - 2026-06-22
+
+### Changed
+- Executive Protocol #21 executed: Forward Merge New Feature Branches
+- Full fetch across all root + submodules
+- fcdm: Forward merged feat/audio-analysis (74 commits) and new jules branch (10 commits) into main — ML Viterbi Decoder, Bobcoin Integration, Hardware QA Suite, FitnessKiosk UI
+- fwber: Forward merged federation-webfinger (21 commits) and continue-development (6 commits) — Atmospheric Messaging, Community Quests, AI Economy, Stripe payments
+- Reverse merged main back into all active feature branches
+- Updated fcdm and fwber submodule pointers
+- Version bumped to v5.32.0 → v5.33.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.32.0] - 2026-06-22
 
 ### Changed
