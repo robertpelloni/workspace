@@ -320,3 +320,18 @@ branch = master
 [submodule "bobmani"]
 	path = bobmani
 	url = git@github.com:robertpelloni/bobmani.git
+[submodule "MilkDrop3_fix"]
+	path = MilkDrop3_fix
+	url = https://github.com/robertpelloni/MilkDrop3.git
+[submodule "bg_fix"]
+	path = bg_fix
+	url = https://github.com/robertpelloni/bg.git
+[submodule "bobfilez_fix"]
+	path = bobfilez_fix
+	url = https://github.com/robertpelloni/bobfilez.git
+[submodule "bobsaver_fix"]
+	path = bobsaver_fix
+	url = https://github.com/robertpelloni/bobsaver.git
+[submodule "bobsgameonlinejava_fix"]
+	path = bobsgameonlinejava_fix
+	url = https://github.com/robertpelloni/bobsgameonlinejava.git

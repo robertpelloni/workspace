@@ -1,0 +1,53 @@
+# Bobmani Rhythm Game Suite Submodules
+
+[submodule "Simply-Love-SM5"]
+	path = Simply-Love-SM5
+	url = git@github.com:robertpelloni/Simply-Love-SM5.git
+
+[submodule "arrowvortex"]
+	path = arrowvortex
+	url = git@github.com:robertpelloni/arrowvortex.git
+
+[submodule "beatoraja"]
+	path = beatoraja
+	url = git@github.com:robertpelloni/beatoraja.git
+
+[submodule "bobmania"]
+	path = bobmania
+	url = git@github.com:robertpelloni/bobmania.git
+
+[submodule "ddc"]
+	path = ddc
+	url = git@github.com:robertpelloni/ddc.git
+
+[submodule "ddc_onset"]
+	path = ddc_onset
+	url = git@github.com:robertpelloni/ddc_onset.git
+
+[submodule "ffr-difficulty-model"]
+	path = ffr-difficulty-model
+	url = git@github.com:robertpelloni/ffr-difficulty-model.git
+
+[submodule "hymnmania"]
+	path = hymnmania
+	url = git@github.com:robertpelloni/hymnmania.git
+
+[submodule "itgmania"]
+	path = itgmania
+	url = git@github.com:robertpelloni/itgmania.git
+
+[submodule "ksm-v2"]
+	path = ksm-v2
+	url = git@github.com:robertpelloni/ksm-v2.git
+
+[submodule "leraine-studio"]
+	path = leraine-studio
+	url = git@github.com:robertpelloni/leraine-studio.git
+
+[submodule "linthesia"]
+	path = linthesia
+	url = git@github.com:robertpelloni/linthesia.git
+
+[submodule "pianogame"]
+	path = pianogame
+	url = git@github.com:robertpelloni/pianogame.git
