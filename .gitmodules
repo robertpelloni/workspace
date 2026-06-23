@@ -299,7 +299,7 @@ url = https://github.com/TopazLabs/ffmpeg
 
 [submodule "tormentnexus"]
 path = tormentnexus
-url = https://github.com/robertpelloni/TormentNexus.git
+url = https://github.com/MDMAtk/TormentNexus.git
 branch = main
 
 [submodule "veilid_reddit_facebook"]
