@@ -417,3 +417,6 @@ branch = master
 [submodule "private_gemini_storage"]
 	path = private_gemini_storage
 	url = https://github.com/robertpelloni/private_gemini_storage
+[submodule "projectM-upstream"]
+	path = projectM-upstream
+	url = https://github.com/projectM-visualizer/projectM.git
