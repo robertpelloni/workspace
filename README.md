@@ -1,6 +1,8 @@
+# 🚧 UNDER CONSTRUCTION — ALPHA STATE! 🚧
+
 # Robert Pelloni's Omni-Workspace (Monorepo)
 
-**Version:** v5.17.0 | **Repos:** 125+ | **Submodules:** 90 | **AI & Human Lines:** 198M+
+**Version:** v5.38.0 | **Repos:** 125+ | **Submodules:** 90 | **AI & Human Lines:** 198M+
 
 ---
 
@@ -148,6 +150,7 @@ This is a **centralized federated monorepo and orchestration hub** for Robert Pe
 ## 🧰 Automation Layer
 
 ### Executive Protocols
+
 The workspace operates via numbered automated sync/merge/build cycles:
 
 | Protocol | Date | Action |
@@ -158,6 +161,7 @@ The workspace operates via numbered automated sync/merge/build cycles:
 | **EP #1** | 2026-06-13 | Initial full sync + feature branch merge |
 
 ### Key Scripts (`scripts/`)
+
 - `intelligent_sync_all.py` — Smart sync with conflict detection
 - `dual_merge_engine.py` — Bidirectional merge automation
 - `resolve_all_conflicts.py` — Automated conflict resolution
@@ -167,6 +171,7 @@ The workspace operates via numbered automated sync/merge/build cycles:
 - `workspace_indexer.py` — Workspace file indexing
 
 ### Infrastructure
+
 - **Docker Compose**: LiteLLM proxy (port 4000) + PostgreSQL + Prometheus
 - **MCP Protocol**: TormentNexus aggregates 4+ MCP servers, 46 tools
 - **CI/CD**: GitHub Actions (Playwright tests, consensus gate)
@@ -245,6 +250,7 @@ These repositories were deleted from GitHub. Removed from `.gitmodules` and git 
 | `robertpelloni/superpowers` | — | Game engine, deleted from GitHub |
 
 ### Stale Entries (removed in v5.15.0)
+
 - `brokeragentworkflow`, `explorerexedecompiled`, `forclosureworkflow`
 - `re-agent-workflow-media-1`, `p2p_service_marketplace`
 - `realestateleadcaller`, `theta-data-api`, `socialmediacontentplanner`
