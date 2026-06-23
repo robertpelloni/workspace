@@ -13,21 +13,27 @@ Alpha software notices added across all repos. MilkDrop3 submodule cleaned (stal
 - ~70+ new README.md created for repos that lacked one
 - Idempotent — re-running is safe
 
-### MilkDrop3 Submodule Cleanup
+### Jules Clone Failure Fixes (Critical)
 
-- Removed stale `bg/` directory + `[submodule "bg"]` entry from .gitmodules
-- Removed stale `bobcoin`, `itgmania`, `okgame` submodule entries from .gitmodules
-- Pushed clean MilkDrop3 repo to origin (@ 6b95243)
-- Updated root submodule pointer and pushed
-- `bg` and `MilkDrop3_fix` submodules still have pre-existing fetch failures (nested ghost submodules)
+**Problem:** Jules was failing to clone bobsaver, MilkDrop3, bg — stale submodule pointers referenced commits that don't exist on remotes (bobcoin, itgmania, okgame, bg, metamcp, raindropioapp).
+
+**Fixed repos:**
+
+- **MilkDrop3** — Removed stale `bg/`, `bobcoin`, `itgmania`, `okgame` submodules. Pushed clean main (@6b95243)
+- **bobsaver** — Updated MilkDrop3 pointer to clean commit + alpha notice on README. Pushed (@c84dfc58)
+- **MilkDrop3_fix** — Same cleanup as MilkDrop3 (bobcoin, itgmania, okgame removed). Synced to clean main (@6b95243)
+- **Root workspace** — Updated submodule pointers for MilkDrop3, bobsaver, MilkDrop3_fix
+
+**Still problematic:** `bg` — deep nested submodules (bobsgameonlinejava → aseprite/defold/voidsprite/grafx2) with stale commit pointers.
 
 ### Sync Operations
 
 - `git submodule sync --recursive` completed (all 300+ submodule URLs synced)
-- `git submodule update --init --recursive` partially completed (MilkDrop3 clean; bg/MilkDrop3_fix blocked by 404'd nested submodules)
+- `git submodule update --init --recursive` partially completed (MilkDrop3/MilkDrop3_fix/bobsaver now clean)
 - `git fetch --all --tags` root + submodules
 - Root upstream sync: clean (no divergence between origin/upstream)
-- Version bumped v5.42.0 → v5.43.0, pushed (ace6093513 → 0421d48bf4)
+- Version bumped v5.42.0 → v5.43.0, pushed multiple commits
+- Latest push: d49cd187a4 (bobsaver + MilkDrop3_fix pointer updates)
 
 ### Feature Branch Assessment
 
@@ -52,17 +58,17 @@ Alpha software notices added across all repos. MilkDrop3 submodule cleaned (stal
 
 ## Open Items
 
-1. **bg nested submodule failures** — ~50 references/ submodules (ControlNet, Stable Diffusion, aseprite, etc.) are private/404 repos that can't be fetched
-2. **MilkDrop3_fix submodule** — has same stale nested submodule issues as MilkDrop3 (needs similar cleanup)
-3. **165 GitHub dependabot vulnerabilities** (1 critical, 72 high)
-4. **bobsgameonlinejava_fix fix/stale-lib-submodules** — submodule merge still deferred
-5. **MilkDrop3-2077/** — untracked directory still present
-6. **Deep directory nesting** — `tests/test_cmake_build/...pybind11` causes git status timeouts
-7. **enterprise_sales_bot local WIP** — uncommitted changes preserved (autodev_test.go, orchestrator.go, cadence.go, etc.)
+1. **bg nested submodule failures** — ~50 references/ submodules need cleanup (bobsgameonlinejava → aseprite/defold/voidsprite, etc.)
+2. **165 GitHub dependabot vulnerabilities** (1 critical, 72 high)
+3. **bobsgameonlinejava_fix fix/stale-lib-submodules** — submodule merge still deferred
+4. **MilkDrop3-2077/** — untracked directory still present
+5. **Deep directory nesting** — `tests/test_cmake_build/...pybind11` causes git status timeouts
+6. **enterprise_sales_bot local WIP** — uncommitted changes preserved (autodev_test.go, orchestrator.go, cadence.go, etc.)
+7. **bobsaver apophysis-j/geiss submodules** — uninitialized, directory placeholders remain on disk
 
 ## Next Steps For Next AI Model
 
-1. Consider cleaning up MilkDrop3_fix similarly to MilkDrop3 (remove stale submodule entries)
+1. **Fix bg submodules** — similar cleanup to MilkDrop3 (bobsgameonlinejava's deep submodule tree needs stale entries removed)
 2. Triage enterprise_sales_bot WIP - commit or push local changes
 3. Run `build.bat` to verify Go binaries
 4. Handle deep pybind11 directory (add to .gitignore if not already)
