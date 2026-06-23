@@ -76,3 +76,4 @@ litellm_merge/
 bobsaver_light/
 jvm-cpp-runtime/
 linthesia/
+tests/
