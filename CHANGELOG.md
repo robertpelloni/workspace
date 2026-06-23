@@ -1,3 +1,14 @@
+## [5.43.0] - 2026-06-23
+
+### Changed
+
+- Executive Protocol #31: Added ALPHA SOFTWARE UNDER CONSTRUCTION notice to root + 110 submodules + all nested sub-submodules README.md files
+- Added ~70+ new README.md files to repos that didn't have one (hymnmania, enterprise_sales_bot, superdawmcp nested deps, okgame libs, bobfilez nested deps, etc.)
+- Removed stale MilkDrop3/bg leftover directory (de-nested protocol cleanup)
+- Fixed MilkDrop3 submodule corruption (re-cloned after stale cache)
+- Fixed MilkDrop3/.gitmodules stale `[submodule "bg"]` entry
+- Version bumped to v5.42.0 → v5.43.0
+
 ## [5.42.0] - 2026-06-23
 
 ### Changed

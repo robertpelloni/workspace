@@ -1,53 +1,43 @@
-# HANDOFF — Executive Protocol #28 Complete (v5.40.0)
+# HANDOFF — Executive Protocol #31 Complete (v5.43.0)
 
 ## Summary
 
-Repository synchronization completed for workspace v5.40.0. Light follow-up to Protocol #27 — external tool pushed new commits to 3 submodules since last sync.
+Added 🛠️ ALPHA SOFTWARE UNDER CONSTRUCTION notice to every repo and submodule README.md across the workspace. Cleaned up stale MilkDrop3/bg submodule artifacts. Updated version to v5.43.0.
 
 ## Completed Actions
 
-### Step 1: Upstream Tracking & Submodule Sanitization
+### Alpha Notice Added To All Repos
 
-- **Fetched all remotes** (origin + upstream) + tags on root repo
-- **Fetch on active submodules**: enterprise_sales_bot, bobmani/hymnmania, jules-autopilot
-- **Root upstream sync**: no divergence — origin == upstream == local main
+- **Root README.md:** Prepend `🛠️ ALPHA SOFTWARE UNDER CONSTRUCTION — Use at your own risk. Backwards compatibility not guaranteed.`
+- **110 direct submodules** (from root .gitmodules): Prepend or create README.md with notice
+- **Nested sub-submodules:** Recursively processed all nested .gitmodules (MilkDrop3, MilkDrop3_fix, bobfilez, bobfilez_fix, bobmani, bg, bg_fix, bobsgameonlinejava, bobsgameonlinejava_fix, bobsaver, bobsaver_fix, projectM-upstream, superdawmcp, okgame, etc.)
+- **New README.md files created** for repos that didn't have one (hymnmania, superdawmcp third-party, okgame libs, etc.)
+- **Idempotent:** Already-stamped READMEs skipped; re-running is safe
 
-### Step 2: Dual-Direction Intelligent Merge Engine
+### MilkDrop3/bg Cleanup (Blocking Submodule Updates)
 
-- enterprise_sales_bot: 5 feature branches assessed — 0 ahead, 7-15 behind main. All stagnant (no unique commits). No forward-merges needed.
-- jules-autopilot: 3 feature branches assessed — 0 ahead, 1 behind main. All stagnant.
-- **No forward or reverse merges executed** — no branches with unique progress.
+- Removed leftover `MilkDrop3/bg/` directory (de-nested in v5.40.0)
+- Removed stale `[submodule "bg"]` block from `MilkDrop3/.gitmodules`
+- Re-cloned MilkDrop3 submodule (was corrupted after cache deletion)
+- Full `git submodule sync --recursive` completed successfully
 
-### Step 3: Workspace Cleanup & Versioning
+### Version Bumped: v5.42.0 → v5.43.0
 
-**Version bumped:** v5.39.0 → v5.40.0
+- Updated: VERSION, VERSION.md, CHANGELOG.md
 
-- Files updated: VERSION, VERSION.md, start.bat, build.bat, CHANGELOG.md, ROADMAP.md
+## Open Items (unchanged from v5.42.0)
 
-**Submodule pointer updates (from external tool pushes):**
+1. **Recursive submodule update still blocked** — `MilkDrop3_fix/bg` has a stale bg pointer. Root submodule update with `--recursive --remote` fails. Fix: `cd MilkDrop3_fix && git submodule deinit -f bg && rm -rf bg && sed -i '/\[submodule "bg"\]/,/^\[/d' .gitmodules && cd .. && git submodule sync --recursive && git submodule update --init --recursive`
+2. **165 GitHub dependabot vulnerabilities** (1 critical, 72 high)
+3. **bobsgameonlinejava_fix fix/stale-lib-submodules** — submodule merge still deferred
+4. **MilkDrop3-2077/** — untracked directory still present
+5. **bg nested references/ submodules** (~50) remain uninitialized
 
-| Submodule | Old Commit | New Commit | Diff |
-|-----------|-----------|-----------|------|
-| enterprise_sales_bot | 558b1a7 | 974e33e | +1: third NotebookLM video |
-| bobmani/hymnmania | 0d9d514 | d5d12ab | +1: title fix, public privacy |
-| jules-autopilot | 2c0b468 | 31f2049 | +1: release v3.6.8 |
+## Next Steps For The Next Model
 
-**Memory updated:**
-
-- `.memory/main.md` rewritten for v5.40.0 state
-- `.memory/branches/main/commits.md` updated with Protocol #28 entry
-
-## Open Items (unchanged from v5.39.0)
-
-1. **MilkDrop3-2077/** — untracked directory with gitdir reference, not a registered submodule or worktree.
-2. **projectM-upstream** — local .gitignore change for build_msvc/ (local-only, tracking upstream repo).
-3. **bobsgameonlinejava_fix** (fix/stale-lib-submodules branch) — complex submodule merge deferred across multiple protocols.
-4. **Deep directory nesting** — `tests/test_cmake_build/...pybind11` causes git status timeouts.
-5. **165 GitHub dependabot vulnerabilities** (1 critical, 72 high) — needs triage.
-
-## Next Model Instructions
-
-1. Run `git commit` with staged changes (submodule pointers + docs)
-2. Run `git push origin main`
-3. Execute build.bat (4 Go binaries)
-4. Do NOT clean built binaries
+1. Fix the MilkDrop3_fix/bg stale submodule entry (see above)
+2. Run `git submodule update --init --recursive --remote` to fully sync all submodules
+3. Run upstream sync and dual-direction merge engine (feature branch assessment)
+4. Run build.bat (preserve existing binaries)
+5. Run `git add -A && git commit -m "v5.43.0: Alpha notices on all READMEs, MilkDrop3/bg cleanup" && git push`
+6. Memory commit to Brain

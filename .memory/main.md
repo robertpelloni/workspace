@@ -4,18 +4,19 @@
 
 Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
 
-## Current State (v5.40.0)
+## Current State (v5.43.0)
 
-- **Executive sync protocol healthy** — Protocols #12-#28 completed in succession
+- **Executive sync protocol healthy** — Protocols #12-#31 completed in succession
+- **Alpha notice added** — 🛠️ ALPHA SOFTWARE UNDER CONSTRUCTION notice prepended/created on root + 110 submodules + nested sub-submodule README.md files (~750+ repos annotated)
+- **MilkDrop3/bg cleaned up** — Stale leftover directory and .gitmodules entry removed; MilkDrop3 submodule re-cloned from scratch
 - **All submodules initialized** — no uninitialized submodules in .gitmodules
-- **Version control** — Global version bumped to v5.40.0, synced across VERSION, VERSION.md, start.bat, build.bat, CHANGELOG.md, ROADMAP.md
-- **jules-autopilot on latest** — Forward-merged jules-485 feature branch, now at v3.6.8 release
-- **enterprise_sales_bot clean** — HyperNexus site redesign merged, third NotebookLM video added
-- **hymnmania active** — YouTube OAuth upload working, video generator, MilkDrop render pipeline, public privacy setting, title format fixed
+- **Version control** — Global version bumped to v5.43.0, synced across VERSION, VERSION.md, CHANGELOG.md
+- **jules-autopilot on latest** — At v3.6.9 release (esbuild fix, repo sync)
+- **enterprise_sales_bot clean** — Contact form, real subpages, rolling
+- **hymnmania active** — YouTube OAuth upload working, Batch Suno Pipeline v1.39.0
 - **OAuth secrets scrubbed** — Google Client ID/Secret removed from hymnmania memory log, force-pushed clean
-- **Build pipeline verified** — 5 Go binaries built and preserved (tormentnexus, hyperharness, pi-mono, tabby-backend, tabby-native)
-- **External tool compatibility** — Jules AI pushes new submodule commits between protocol runs; workspace tracks via pointer updates
-- **bg de-nested from MilkDrop3** — Removed redundant nested submodule (bg was checked out at both `MilkDrop3/bg/` and `bg/`). Only doc files, no functional dependency.
+- **Build pipeline verified** — 5 Go binaries built and preserved
+- **bg de-nested from MilkDrop3** — Redundant nested submodule removed
 
 ## Key Decisions Made
 
