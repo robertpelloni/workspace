@@ -158,3 +158,10 @@
 - [x] Updated 6 submodule pointers (aimoneymachine_site, auto_dj_script, enterprise_sales_bot, jules-autopilot, fwber, bobmani/hymnmania)
 - [x] Reverse merged main back into all active feature branches
 - [x] Version bumped to v5.36.0 across all reference files
+
+## Phase 5p: Executive Protocol #25 — Repository Sync & Intelligent Merge v5.37.0 (Completed 2026-06-22)
+- [x] Full fetch across all root + submodules
+- [x] Maestro: Forward merged multi-language-harness-expansion (1 commit) — multi-language secure .env config loaders
+- [x] Updated jules-autopilot submodule pointer (3 commits: LM Studio broadcast fix, concurrency)
+- [x] Updated Maestro submodule pointer
+- [x] Version bumped to v5.37.0 across all reference files

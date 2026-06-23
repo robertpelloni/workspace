@@ -1,3 +1,13 @@
+## [5.37.0] - 2026-06-22
+
+### Changed
+- Executive Protocol #25 executed: Repository Synchronization & Intelligent Merge
+- Maestro: Forward merged multi-language-harness-expansion (1 commit) — multi-language secure .env config loaders
+- Updated jules-autopilot submodule pointer (3 new commits: LM Studio broadcast fix, concurrency changes)
+- Updated Maestro submodule pointer
+- Version bumped to v5.36.0 → v5.37.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.36.0] - 2026-06-22
 
 ### Changed
