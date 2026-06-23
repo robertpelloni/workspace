@@ -1,3 +1,12 @@
+## [5.42.0] - 2026-06-23
+
+### Changed
+
+- Executive Protocol #30 executed: Repository Synchronization & Intelligent Merge
+- Full fetch across root + active submodules — no new remote commits anywhere
+- Feature branch assessment: All stagnant (0 ahead) — no forward or reverse merges needed
+- Version bumped to v5.41.0 → v5.42.0, synced across VERSION, VERSION.md, start.bat, build.bat
+
 ## [5.41.0] - 2026-06-23
 
 ### Changed
