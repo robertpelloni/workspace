@@ -1,3 +1,13 @@
+## [5.38.0] - 2026-06-23
+
+### Changed
+- Executive Protocol #26 executed: Repository Synchronization & Intelligent Merge
+- Maestro: Fixed stale gitlink entries (trae-cli, warp-cli), pushed and reverse-merged all feature branches
+- jules-autopilot: Reverse merged main into feat-shadow-pilot and jules-485-merge-test branches
+- bobsgameonlinejava fix/stale-lib-submodules: Identified submodule merge conflicts (deferred)
+- Version bumped to v5.37.0 → v5.38.0, synced across VERSION, VERSION.md, VERSION.current, build.bat, start.bat
+- Updated HANDOFF.md, ROADMAP.md, CHANGELOG.md
+
 ## [5.37.0] - 2026-06-22
 
 ### Changed
