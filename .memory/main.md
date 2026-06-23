@@ -15,6 +15,7 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 - **OAuth secrets scrubbed** — Google Client ID/Secret removed from hymnmania memory log, force-pushed clean
 - **Build pipeline verified** — 5 Go binaries built and preserved (tormentnexus, hyperharness, pi-mono, tabby-backend, tabby-native)
 - **External tool compatibility** — Jules AI pushes new submodule commits between protocol runs; workspace tracks via pointer updates
+- **bg de-nested from MilkDrop3** — Removed redundant nested submodule (bg was checked out at both `MilkDrop3/bg/` and `bg/`). Only doc files, no functional dependency.
 
 ## Key Decisions Made
 
@@ -23,6 +24,7 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 | **Submodules over subtrees** | Submodules allow independent versioning of each project |
 | **Reverse-merge strategy** | Feature branches with 100+ unique commits kept separate; main synced into them via --allow-unrelated-histories + "theirs" conflict resolution |
 | **Version bump per protocol** | Each Executive Protocol increments the global version (v5.12.0 → v5.40.0 across 28 protocols) |
+| **De-nest bg from MilkDrop3** | MilkDrop3 had `bg` as a redundant nested submodule. Same repo as workspace `bg/`. No functional dependency — only doc files and archive scripts. Removed to eliminate double checkout and simplify pointer propagation. |
 | **Windows case-insensitive gitdir collision** | Two submodule paths differing only by case (TormentNexus/tormentnexus) share the same `.git/modules/` on Windows. Consolidated to one path. |
 | **Secret scrubbing in agent logs** | OAuth secrets in `.memory/branches/main/log.md` must be scrubbed before push. GitHub push protection blocks commits containing Client IDs/Secrets. Use `sed` replacement + `git commit --amend` + `force-with-lease` to resolve. |
 | **Stash conflict resolution** | When `git stash pop` causes merge conflicts in site redesign files, accept `--theirs` (stash version) as the newer rewrite and verify completion. |
@@ -42,6 +44,8 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 - [x] v5.38.0 — Maestro gitlink fixes, reverse merges, bobsgameonlinejava_fix deferred
 - [x] v5.39.0 — enterprise_sales_bot stash resolved, hymnmania WIP committed, OAuth secrets scrubbed, jules-autopilot forward-merged, 5 Go binaries built
 - [x] v5.40.0 — External tool submodule pointer sync (enterprise_sales_bot +1, hymnmania +1, jules-autopilot +1), feature branch assessment
+- [x] v5.40.0 — Cherry-picked & merged 2 feature branches: bobui (bqt) bqt-renaming-audio-graph (93 files, +1339), bobsgameonlinejava port-cpp-puzzle-logic (+152)
+- [x] v5.40.0 — De-nested redundant bg submodule from MilkDrop3
 - [ ] 165 GitHub vulnerabilities on default branch (1 critical, 72 high)
 - [ ] bg nested references/ submodules (~50) remain uninitialized
 
@@ -53,3 +57,4 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 4. **Deep directory nesting issue** — `tests/test_cmake_build/subdirectory_function/build_output/pybind11/...` exceeds Windows MAX_PATH, causes `git status` timeouts.
 5. **Jules proxy freshness** — The proxy at 192.168.0.1:8080 may serve stale git data.
 6. **MilkDrop3-2077/** — Untracked directory with gitdir reference, not a registered submodule or worktree. Possibly orphaned.
+7. **bg de-nested from MilkDrop3** (2026-06-23) — Removed from MilkDrop3/.gitmodules. If anything breaks, add it back.
