@@ -4,16 +4,17 @@
 
 Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
 
-## Current State (v5.39.0)
+## Current State (v5.40.0)
 
-- **Executive sync protocol healthy** — Protocols #12-#27 completed in succession
+- **Executive sync protocol healthy** — Protocols #12-#28 completed in succession
 - **All submodules initialized** — no uninitialized submodules in .gitmodules
-- **Version control** — Global version bumped to v5.39.0, synced across VERSION, VERSION.md, start.bat, build.bat, CHANGELOG.md, ROADMAP.md
-- **jules-autopilot on latest** — Forward-merged jules-485 feature branch (session cache fix) into main
-- **enterprise_sales_bot clean** — HyperNexus site redesign merged from stash (conflict-resolved), pushed to origin
-- **hymnmania active** — YouTube OAuth upload working, video generator, MilkDrop render pipeline, classical_midis.db tracked
+- **Version control** — Global version bumped to v5.40.0, synced across VERSION, VERSION.md, start.bat, build.bat, CHANGELOG.md, ROADMAP.md
+- **jules-autopilot on latest** — Forward-merged jules-485 feature branch, now at v3.6.8 release
+- **enterprise_sales_bot clean** — HyperNexus site redesign merged, third NotebookLM video added
+- **hymnmania active** — YouTube OAuth upload working, video generator, MilkDrop render pipeline, public privacy setting, title format fixed
 - **OAuth secrets scrubbed** — Google Client ID/Secret removed from hymnmania memory log, force-pushed clean
 - **Build pipeline verified** — 5 Go binaries built and preserved (tormentnexus, hyperharness, pi-mono, tabby-backend, tabby-native)
+- **External tool compatibility** — Jules AI pushes new submodule commits between protocol runs; workspace tracks via pointer updates
 
 ## Key Decisions Made
 
@@ -21,7 +22,7 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 |----------|-----------|
 | **Submodules over subtrees** | Submodules allow independent versioning of each project |
 | **Reverse-merge strategy** | Feature branches with 100+ unique commits kept separate; main synced into them via --allow-unrelated-histories + "theirs" conflict resolution |
-| **Version bump per protocol** | Each Executive Protocol increments the global version (v5.12.0 → v5.39.0 across 27 protocols) |
+| **Version bump per protocol** | Each Executive Protocol increments the global version (v5.12.0 → v5.40.0 across 28 protocols) |
 | **Windows case-insensitive gitdir collision** | Two submodule paths differing only by case (TormentNexus/tormentnexus) share the same `.git/modules/` on Windows. Consolidated to one path. |
 | **Secret scrubbing in agent logs** | OAuth secrets in `.memory/branches/main/log.md` must be scrubbed before push. GitHub push protection blocks commits containing Client IDs/Secrets. Use `sed` replacement + `git commit --amend` + `force-with-lease` to resolve. |
 | **Stash conflict resolution** | When `git stash pop` causes merge conflicts in site redesign files, accept `--theirs` (stash version) as the newer rewrite and verify completion. |
@@ -40,6 +41,7 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 - [x] v5.37.0 — Forward merge Maestro .env config loaders, jules-autopilot LM Studio fix
 - [x] v5.38.0 — Maestro gitlink fixes, reverse merges, bobsgameonlinejava_fix deferred
 - [x] v5.39.0 — enterprise_sales_bot stash resolved, hymnmania WIP committed, OAuth secrets scrubbed, jules-autopilot forward-merged, 5 Go binaries built
+- [x] v5.40.0 — External tool submodule pointer sync (enterprise_sales_bot +1, hymnmania +1, jules-autopilot +1), feature branch assessment
 - [ ] 165 GitHub vulnerabilities on default branch (1 critical, 72 high)
 - [ ] bg nested references/ submodules (~50) remain uninitialized
 
