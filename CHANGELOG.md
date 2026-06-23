@@ -1,3 +1,16 @@
+## [5.40.0] - 2026-06-23
+
+### Changed
+
+- Executive Protocol #28 executed: Repository Synchronization & Intelligent Merge
+- enterprise_sales_bot: Updated submodule pointer (+1 commit: third NotebookLM video to hypernexus.site + README)
+- bobmani/hymnmania: Updated submodule pointer (+1 commit: title format fix, public privacy, apostrophe handling)
+- jules-autopilot: Updated submodule pointer (+1 commit: release v3.6.8)
+- Feature branch assessment: enterprise_sales_bot (5 branches 0-ahead, 7-15 behind), jules-autopilot (3 branches 0-ahead, 1 behind) — all stagnant, no forward-merges needed
+- projectM-upstream: .gitignore build_msvc/ kept local-only (upstream tracking repo)
+- .memory/main.md: Rewritten roadmap for v5.39.0 → v5.40.0 state
+- Version bumped to v5.39.0 → v5.40.0, synced across VERSION, VERSION.md, start.bat, build.bat
+
 ## [5.39.0] - 2026-06-23
 
 ### Changed

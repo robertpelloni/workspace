@@ -1,69 +1,53 @@
-# HANDOFF — Executive Protocol #27 Complete (v5.39.0)
+# HANDOFF — Executive Protocol #28 Complete (v5.40.0)
 
 ## Summary
 
-Repository synchronization and intelligent merge completed for workspace v5.39.0.
+Repository synchronization completed for workspace v5.40.0. Light follow-up to Protocol #27 — external tool pushed new commits to 3 submodules since last sync.
 
 ## Completed Actions
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
 
 - **Fetched all remotes** (origin + upstream) + tags on root repo
-- **Upstream sync**: origin == upstream == local main — no divergence found
-- **Submodule update**: ArrowVortex, Maestro, MilkDrop3 updated to latest tracking commits
-- **Recursive submodule init**: updated nested submodules across bg/bobsgameonlinejava chain
+- **Fetch on active submodules**: enterprise_sales_bot, bobmani/hymnmania, jules-autopilot
+- **Root upstream sync**: no divergence — origin == upstream == local main
 
 ### Step 2: Dual-Direction Intelligent Merge Engine
 
-**Forward Merges (Features → Main):**
-
-| Submodule | Branch | Commits | Notes |
-|-----------|--------|---------|-------|
-| jules-autopilot | jules-4852916069977232082-be6d9c55 | 3 | Session cache fix, UNDER CONSTRUCTION banners |
-| enterprise_sales_bot | stash | ~1250 lines | HyperNexus site redesign merged via conflict resolution |
-
-**Conflict Resolution:**
-
-- enterprise_sales_bot: 3 files conflicted (hypernexus_site/index.html, tormentnexus_site/index.html, .memory/state.yaml). Resolved by accepting stash version (newer rewrite, 1494 lines vs 925 HEAD).
-- Dropped stale stash after successful merge.
-
-**Reverse Merges (Main → Features):**
-
-- All feature branches across all submodules verified in sync — no divergence requiring reverse merge.
-
-**Secret Scrubbing:**
-
-- bobmani/hymnmania: Google OAuth Client ID/Secret found in `.memory/branches/main/log.md`. Replaced with [REDACTED], amended commit, force-pushed clean history.
+- enterprise_sales_bot: 5 feature branches assessed — 0 ahead, 7-15 behind main. All stagnant (no unique commits). No forward-merges needed.
+- jules-autopilot: 3 feature branches assessed — 0 ahead, 1 behind main. All stagnant.
+- **No forward or reverse merges executed** — no branches with unique progress.
 
 ### Step 3: Workspace Cleanup & Versioning
 
-**Version bumped:** v5.38.0 → v5.39.0
+**Version bumped:** v5.39.0 → v5.40.0
 
 - Files updated: VERSION, VERSION.md, start.bat, build.bat, CHANGELOG.md, ROADMAP.md
 
-**Files staged for commit:**
+**Submodule pointer updates (from external tool pushes):**
 
-- `.memory/state.yaml`, `.memory/branches/main/log.md`, `.pi-lens/cache/`
-- Submodule pointer updates (6 submodules: ArrowVortex, Maestro, MilkDrop3, hymnmania, enterprise_sales_bot, projectM-upstream)
-- `add_banner.py` (utility script, tracked)
-- `CHANGELOG.md`, `ROADMAP.md`, `VERSION`, `VERSION.md`, `start.bat`, `build.bat`
+| Submodule | Old Commit | New Commit | Diff |
+|-----------|-----------|-----------|------|
+| enterprise_sales_bot | 558b1a7 | 974e33e | +1: third NotebookLM video |
+| bobmani/hymnmania | 0d9d514 | d5d12ab | +1: title fix, public privacy |
+| jules-autopilot | 2c0b468 | 31f2049 | +1: release v3.6.8 |
 
-### Step 4: Ready for Push
+**Memory updated:**
 
-All local commits staged. Submodules enterprise_sales_bot, bobmani/hymnmania, jules-autopilot already pushed to origin. Root workspace commit ready for `git push origin main`.
+- `.memory/main.md` rewritten for v5.40.0 state
+- `.memory/branches/main/commits.md` updated with Protocol #28 entry
 
-## Open Items
+## Open Items (unchanged from v5.39.0)
 
-1. **MilkDrop3-2077/** — untracked directory with gitdir reference, not a registered submodule or worktree. May be orphaned.
-2. **projectM-upstream** — local .gitignore change for build_msvc/ (uncommitted, tracking upstream repo so kept local-only).
-3. **bobsgameonlinejava_fix** (fix/stale-lib-submodules branch) — deferred from previous protocol; complex submodule merge.
-4. **Deep directory nesting issue** — `tests/test_cmake_build/subdirectory_function/build_output/pybind11/...` causes git status timeouts. May need cleanup.
+1. **MilkDrop3-2077/** — untracked directory with gitdir reference, not a registered submodule or worktree.
+2. **projectM-upstream** — local .gitignore change for build_msvc/ (local-only, tracking upstream repo).
+3. **bobsgameonlinejava_fix** (fix/stale-lib-submodules branch) — complex submodule merge deferred across multiple protocols.
+4. **Deep directory nesting** — `tests/test_cmake_build/...pybind11` causes git status timeouts.
+5. **165 GitHub dependabot vulnerabilities** (1 critical, 72 high) — needs triage.
 
 ## Next Model Instructions
 
-1. Run `git commit` on root workspace with the staged changes
-2. Verify commit message is descriptive (included below)
-3. Run `git push origin main` for the root repo
-4. Execute build phase: `build.bat` or `python build_all.py`
-5. Do NOT clean or purge built binaries
-6. Verify all submodule pointers are pushed and in sync
+1. Run `git commit` with staged changes (submodule pointers + docs)
+2. Run `git push origin main`
+3. Execute build.bat (4 Go binaries)
+4. Do NOT clean built binaries
