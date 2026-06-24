@@ -1,3 +1,16 @@
+## [5.46.0] - 2026-06-24
+
+### Changed
+
+- Executive Protocol #34 executed: Repository Synchronization & Intelligent Merge
+- Wrapped ASCII art banner in ` ```text``` code fences across all submodule READMEs
+  (fixes garbled Unicode rendering on GitHub)
+- Fixed MilkDrop3 stale gitlinks (aios, bg) — removed from tree
+- Fixed bobmania/bobcoin submodule pointer (force-push recovery)
+- Reverse-merged main into 2 active feature branches (bobbybookmarks, bobium)
+- Build: 4 Go binaries built successfully
+- Version bumped to v5.45.0 → v5.46.0, synced across VERSION, VERSION.md
+
 ## [5.45.0] - 2026-06-24
 
 ### Changed
