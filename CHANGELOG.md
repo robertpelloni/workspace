@@ -1,3 +1,32 @@
+## [5.45.0] - 2026-06-24
+
+### Changed
+
+- Executive Protocol #33 executed: Repository Synchronization & Submodule Sanitization
+- Fixed UNDER CONSTRUCTION notice in 844 READMEs — added `---` horizontal rule separator
+- Fixed MilkDrop3/bobmani stale submodule pointers: arrowvortex (force-push recovery), beatoraja
+- Fixed MilkDrop3/bobmani/bobmania submodule — re-cloned from scratch after broken gitdir
+- Cleaned 4 stale stash entries
+- Version bumped to v5.44.0 → v5.45.0, synced across VERSION, VERSION.md
+
+## [5.44.0] - 2026-06-23
+
+### Changed
+
+- Executive Protocol #32 executed: Repository Synchronization & Intelligent Merge
+- Forward-merged 7 submodule feature branches into main/master:
+  - **agentirc**: 20 commits (async refactor, Discord bridge, MCP server)
+  - **apophysis-j**: 21 commits (Maven migration, automated testing, deployment docs)
+  - **OpenMBU**: 10 commits (Monkey Target minigame, SMB obstacle suite, warp gates)
+  - **bqt**: 11 commits (AudioGraph, OmniSynthesizer port to Rust/Java/C#)
+  - **bcs**: 13 commits (multi-language port: bcscoretypes, pointer/signal semantics)
+  - **MilkDrop3**: 4 commits (dashboard UI polish, CI fixes)
+  - **bobsgameonlinejava**: 4 commits (C++ puzzle logic port to Java, memory docs)
+- Reverse-merged main into 2 fwber feature branches (keep-alive sync)
+- Fixed MilkDrop3 stale submodule regression (aios, bg, bobcoin, itgmania, okgame removed from Jules branch)
+- Removed deeply nested tests/test_cmake_build/build_output/pybind11 directory (Windows MAX_PATH timeout fix)
+- Version bumped to v5.43.0 → v5.44.0, synced across VERSION, VERSION.md
+
 ## [5.43.0] - 2026-06-23
 
 ### Changed

@@ -237,3 +237,32 @@
 - [x] Upstream sync: Clean
 - [x] Build sequence: 4 Go binaries built and preserved
 - [x] Version bumped to v5.43.0 across all reference files
+
+## Phase 5w: Executive Protocol #32 — Repository Sync & Intelligent Merge v5.44.0 (Completed 2026-06-23)
+
+- [x] Full fetch across root + submodules (recursive)
+- [x] Upstream sync: Origin and upstream in sync (no divergence)
+- [x] Forward-merged 7 submodule feature branches:
+  - **agentirc**: 20 unique commits (async refactor, Discord bridge, MCP server)
+  - **apophysis-j**: 21 unique commits (Maven migration, automated testing, deployment docs)
+  - **OpenMBU**: 10 unique commits (Monkey Target minigame, SMB obstacle suite)
+  - **bqt**: 11 unique commits (AudioGraph, OmniSynthesizer port to Rust/Java/C#)
+  - **bcs**: 13 unique commits (multi-language port: bcscoretypes, pointer/signal semantics)
+  - **MilkDrop3**: 4 unique commits (dashboard UI polish, CI fixes, but re-added stale submodules — fixed)
+  - **bobsgameonlinejava**: 4 unique commits (C++ puzzle logic port to Java, memory docs)
+- [x] Fixed MilkDrop3 stale submodule regression (removed aios, bg, bobcoin, itgmania, okgame)
+- [x] Reverse-merged main into 2 fwber feature branches (keep-alive sync)
+- [x] Removed deeply nested pybind11 directory (Windows MAX_PATH timeout fix)
+- [x] Pushed all updated submodule mains/branches to origin
+- [x] Version bumped to v5.44.0 across all reference files
+
+## Phase 5x: Executive Protocol #33 — Repository Sync & Submodule Sanitization v5.45.0 (Completed 2026-06-24)
+
+- [x] Full fetch across root + submodules (recursive with tags)
+- [x] Upstream sync: origin/upstream in sync (no divergence)
+- [x] Fixed UNDER CONSTRUCTION notice in 844 READMEs — added `---` horizontal rule separator
+- [x] Fixed MilkDrop3/bobmani stale submodule pointers (arrowvortex, beatoraja — force-push recovery)
+- [x] Fixed MilkDrop3/bobmani/bobmania submodule (broken gitdir, re-cloned from scratch)
+- [x] Cleaned 4 stale stash entries
+- [x] Feature branch assessment: No local feature branches. Stagnant dependabot branches ignored.
+- [x] Version bumped to v5.45.0 across all reference files

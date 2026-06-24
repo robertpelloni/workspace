@@ -1,75 +1,46 @@
-# HANDOFF — Executive Protocol #31 Complete (v5.43.0)
+# HANDOFF — Executive Protocol #33, v5.45.0
 
 ## Summary
 
-Alpha software notices added across all repos. MilkDrop3 submodule cleaned (stale bg/bobcoin/itgmania/okgame removed). Version bumped to v5.43.0.
+Repository Synchronization & Intelligent Merge completed. 7 submodule feature branches forward-merged into main, 2 reverse-merged for keep-alive.
 
-## Completed Actions
+## Forward Merges Completed
 
-### Alpha Notice (All Repos)
+| Repository | Branch | Commits Merged | Description |
+|------------|--------|---------------|-------------|
+| **agentirc** | jules-agentirc-async-refactor | 20 | Async refactor, Discord bridge, MCP server, test coverage |
+| **apophysis-j** | jules-1519938167992140499-09bea828 | 21 | Maven migration, automated tests, deployment docs, version bump |
+| **OpenMBU** | jules-375245784545023555-f8502f8d | 10 | Monkey Target minigame, SMB obstacle suite, warp gates, tilt gravity |
+| **bqt** | bqt-renaming-and-audio-graph | 11 | AudioGraph, OmniGain, OmniSynthesizer ported to Rust/Java/C# |
+| **bcs** | jules-10936672596023099293-b3d8ae3d | 13 | Multi-language port: bcscoretypes enums, pointer/signal semantics |
+| **MilkDrop3** | jules-8369004047092951005-260474cf | 4 | Dashboard UI polish, CI flake8 fixes — **NOTE: re-added stale submodules (aios, bg, bobcoin, itgmania, okgame), which were removed** |
+| **bobsgameonlinejava** | port-cpp-puzzle-logic | 4 | C++ engine logic ported to Java, memory architecture docs |
 
-- Root README.md prepended 🛠️ ALPHA SOFTWARE UNDER CONSTRUCTION notice
-- All 110 direct submodules + all nested sub-submodules README.md files updated
-- ~70+ new README.md created for repos that lacked one
-- Idempotent — re-running is safe
+## Reverse Merges Completed
 
-### Jules Clone Failure Fixes (Critical)
+| Repository | Branch | Action |
+|------------|--------|--------|
+| **fwber** | feat/federation-webfinger | Main merged into branch (keep-alive) |
+| **fwber** | feature/continue-development | Main merged into branch (keep-alive, force-push needed due to divergence) |
 
-**Problem:** Jules was failing to clone bobsaver, MilkDrop3, bg — stale submodule pointers referenced commits that don't exist on remotes (bobcoin, itgmania, okgame, bg, metamcp, raindropioapp).
+## Fixes Applied
 
-**Fixed repos:**
+1. **MilkDrop3 stale submodule regression**: The Jules branch re-added 5 stale submodules (aios, bg, bobcoin, itgmania, okgame). These were removed with `git rm` and committed. `git push origin main` pushed the fix.
+2. **Deep pybind11 nesting**: `tests/test_cmake_build/subdirectory_function/build_output/pybind11/` had recursive infinite nesting exceeding Windows MAX_PATH, causing `git status` timeouts. Removed via PowerShell `Remove-Item -Recurse -Force`.
+3. **bcs merge conflicts**: `.gitmodules` conflict + deleted-then-modified `external/bobui-reference` submodule resolved with `--ours` strategy.
 
-- **MilkDrop3** — Removed stale `bg/`, `bobcoin`, `itgmania`, `okgame` submodules. Pushed clean main (@6b95243)
-- **bobsaver** — Updated MilkDrop3 pointer to clean commit + alpha notice on README. Pushed (@c84dfc58)
-- **MilkDrop3_fix** — Same cleanup as MilkDrop3 (bobcoin, itgmania, okgame removed). Synced to clean main (@6b95243)
-- **Root workspace** — Updated submodule pointers for MilkDrop3, bobsaver, MilkDrop3_fix
+## Deferred
 
-**Still problematic:** `bg` — deep nested submodules (bobsgameonlinejava → aseprite/defold/voidsprite/grafx2) with stale commit pointers.
+- **bobsgameonlinejava_fix fix/stale-lib-submodules**: Complex submodule fix involving 20+ stale lib submodule pointers. Deferred again (identified in Protocols #26-#32). See `.memory/main.md` open problems.
+- **165 GitHub Dependabot vulnerabilities**: Untriaged.
+- **bg nested references/ submodules**: ~50 uninitialized.
 
-### Sync Operations
+## Version
 
-- `git submodule sync --recursive` completed (all 300+ submodule URLs synced)
-- `git submodule update --init --recursive` partially completed (MilkDrop3/MilkDrop3_fix/bobsaver now clean)
-- `git fetch --all --tags` root + submodules
-- Root upstream sync: clean (no divergence between origin/upstream)
-- Version bumped v5.42.0 → v5.43.0, pushed multiple commits
-- Latest push: d49cd187a4 (bobsaver + MilkDrop3_fix pointer updates)
+v5.43.0 → v5.44.0
 
-### Feature Branch Assessment
+## Next Steps for Successive Agent
 
-| Repo | Branches | Status |
-|------|----------|--------|
-| enterprise_sales_bot | 7 branches | 6 at 0 ahead (stagnant), 1 at 1 ahead (WIP changes on disk - preserved) |
-| jules-autopilot | 3 branches | All 0 ahead (stagnant) |
-| fwber | 8 branches | 4 at 0 ahead, 4 at 1 ahead (stale rev/ branches) |
-| fcdm | 3 branches | 2 at 0 ahead, 1 at 1 ahead (stale) |
-
-**No forward or reverse merges executed** — no branches with meaningful unique work.
-
-### Files Modified
-
-- VERSION: v5.43.0
-- VERSION.md: v5.43.0
-- CHANGELOG.md: Protocol #31 entry
-- HANDOFF.md: This file
-- .memory/main.md: Updated roadmap to v5.43.0 state
-- MilkDrop3/.gitmodules + index: removed stale submodule entries (bg, bobcoin, itgmania, okgame)
-- All submodule README.md files: alpha notice prepended/created
-
-## Open Items
-
-1. **bg nested submodule failures** — ~50 references/ submodules need cleanup (bobsgameonlinejava → aseprite/defold/voidsprite, etc.)
-2. **165 GitHub dependabot vulnerabilities** (1 critical, 72 high)
-3. **bobsgameonlinejava_fix fix/stale-lib-submodules** — submodule merge still deferred
-4. **MilkDrop3-2077/** — untracked directory still present
-5. **Deep directory nesting** — `tests/test_cmake_build/...pybind11` causes git status timeouts
-6. **enterprise_sales_bot local WIP** — uncommitted changes preserved (autodev_test.go, orchestrator.go, cadence.go, etc.)
-7. **bobsaver apophysis-j/geiss submodules** — uninitialized, directory placeholders remain on disk
-
-## Next Steps For Next AI Model
-
-1. **Fix bg submodules** — similar cleanup to MilkDrop3 (bobsgameonlinejava's deep submodule tree needs stale entries removed)
-2. Triage enterprise_sales_bot WIP - commit or push local changes
-3. Run `build.bat` to verify Go binaries
-4. Handle deep pybind11 directory (add to .gitignore if not already)
-5. Address dependabot vulnerabilities (especially critical)
+- Run build pipeline (build.bat / start.bat) to verify Go binaries compile
+- Consider tackling bobsgameonlinejava_fix stale-lib-submodules
+- Watch MilkDrop3/bobmani nested submodule re-inits (bobmania/bobcoin, bobmania/Simply-Love-SM5)
