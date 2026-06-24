@@ -1,38 +1,57 @@
-# HANDOFF — Executive Protocol #34, v5.46.0
+# HANDOFF — Executive Protocol #35, v5.47.0
 
 ## Summary
 
-Executive Protocol #34: Repository Synchronization & Intelligent Merge completed.
+Executive Protocol #35: Repository Synchronization & Intelligent Merge completed.
 
 ## Changes Applied
 
-- **README Banner Fix**: Wrapped ASCII art banner in ` ```text``` code fences across all
-  submodule READMEs (fixes garbled Unicode rendering on GitHub)
-- **MilkDrop3 cleanup**: Removed stale aios/bg gitlinks from tree (were deleted from .gitmodules
-  but still in index)
-- **bobmania/bobcoin**: Fixed stale submodule pointer (local-only commit force-pushed away)
-- **Feature branches**: Reverse-merged main into 2 active Jules branches
-  (bobbybookmarks/jules-5781..., bobium/jules-7596...)
+- **MilkDrop3 submodule fix**: Restored missing `aios` and `bg` submodule entries in
+  `.gitmodules` (were deleted in Protocol #32 but still in index, breaking `git submodule
+  update --init --recursive`)
+- **Recursive submodule update**: Ran `git submodule update --init --recursive --depth 1`
+  across all nested layers. Synced 40+ submodules to their latest tracked commits.
+- **Version bump**: v5.46.0 → v5.47.0 across VERSION, VERSION.md, CHANGELOG.md, ROADMAP.md
 
-## Fixes Applied
+## Submodule Issues Fixed
 
-1. MilkDrop3: git rm --cached aios bg (deleted from .gitmodules but lingering in tree)
-2. bobmania/bobcoin: Updated gitlink from 77089464 → d406bb7d (remote HEAD)
-3. Build: 4 Go binaries built (tormentnexus, hyperharness, pi-mono, tabby)
+1. **MilkDrop3/.gitmodules**: Added `aios` (robertpelloni/aios) and `bg` (robertpelloni/bg)
+   back to .gitmodules (they were `git rm --cached`-ed in Protocol #32 but left in index)
+2. **MilkDrop3/bg/bobsgameonlinejava/lwjgl3**: Unable to find current revision —
+   the submodule pointer hash doesn't exist in the remote. Needs manual resolution.
+
+## Feature Branch Assessment
+
+- **freellm**: `freellm-linux` (4 unique commits), `clean-freellm` (1 commit) — deferred.
+  These branches have unique work but were not forward-merged in this pass since they
+  appear to be platform-specific build branches.
+- **All other submodule feature branches**: 0 unique commits vs main. Stagnant or already merged.
+- **Upstream feature branches (jules-autopilot, etc.)**: Ignored per protocol (stale/unfinished).
+
+## Stashes
+
+- `stash@{0}`: "EP #23 full stash"
+- `stash@{1}`: "EP #23 pre-pull stash"
 
 ## Deferred
 
-- **bobsgameonlinejava_fix fix/stale-lib-submodules**: Complex submodule fix (Protocols #26-#34)
+- **bobsgameonlinejava_fix fix/stale-lib-submodules**: Complex submodule fix (Protocols #26-#35)
 - **165 GitHub Dependabot vulnerabilities**: Untriaged (1 critical, 72 high)
-- **bg nested references/ submodules**: ~50 uninitialized
-- **bobmania/bobcoin submodule**: Deinitialized (too large to clone)
+- **bg nested references/ submodules**: ~50 uninitialized (third-party, too large)
+- **MilkDrop3/bg/bobsgameonlinejava/lwjgl3**: Broken submodule pointer (commit not in remote)
+- **freellm feature branches**: `freellm-linux` (4 commits), `clean-freellm` (1 commit) — not merged
+- **Deep directory nesting**: `tests/test_cmake_build/subdirectory_function/build_output/pybind11/...`
+  still exceeds Windows MAX_PATH
+- **MilkDrop3-2077/**: Untracked directory at root — orphaned worktree?
 
 ## Version
 
-v5.45.0 → v5.46.0
+v5.46.0 → v5.47.0
 
 ## Next Steps for Successive Agent
 
-- Push the remaining dirty submodule pointers that may not have been pushed
-- Consider tackling bobsgameonlinejava_fix stale-lib-submodules
-- Watch for more force-push-stale submodule pointers in bobfilez and other heavy-third-party repos
+1. **Push**: This commit needs to be pushed to origin (`git push origin main`)
+2. **Build**: Run `build.bat` to verify all binaries build cleanly
+3. **MilkDrop3/bg/bobsgameonlinejava/lwjgl3**: Fix broken submodule pointer or remove it
+4. **freellm**: Consider forward-merging `freellm-linux` (4 commits) into main
+5. **GitHub Dependabot**: Start triaging the 165 vulnerabilities (1 critical)
