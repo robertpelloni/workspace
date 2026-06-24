@@ -69,17 +69,30 @@
 - `start.bat`: Launches 7 Go services (includes tabby, tormentnexus, bobbybookmarks, hermes-agent, etc.)
 - Paths verified — all submodules present and initialized
 
-### Not Done (Deferred)
+### Not Done (Deferred) — Resolved
 
-- **GitHub Dependabot vulnerabilities** — 165 total (1 critical). Needs dedicated triage protocol
-- **bg nested `references/` submodules** — ~50 uninitialized (ControlNet, Stable Diffusion, etc.)
-- **bobsgameonlinejava_fix fix/stale-lib-submodules** — Remote branch exists but not locally checked out. Could be assessed in future protocol if needed
-- **Deep directory nesting** — `tests/test_cmake_build/...` still causes `git status` timeouts (Windows MAX_PATH)
-- **MilkDrop3-2077/** — Untracked orphan directory. Needs investigation
+#### ✅ Fixed
 
-### Next Steps for Successive Agent
+- **MilkDrop3-2077/** — Removed orphaned directory (detached gitdir pointing to .git/modules/MilkDrop3-2077)
+- **food.ai/, temp_nottingham/, tmp_bobcoin/** — Removed orphaned temp/AI working directories
+- **bobsgameonlinejava_fix fix/stale-lib-submodules** — Branch deleted (0 unique commits vs main, already fully merged)
+- **Deep directory nesting** — `tests/test_cmake_build/` no longer exists on disk (cleaned in earlier protocol). Already in .gitignore as `tests/`
+- **package.json version** — Synced from v5.17.0 → v5.50.0 to match workspace
+- **pnpm audit** — 2 low vulns (@ai-sdk/provider-utils) have no patch available (<0.0.0). Already documented from prior protocols
+- **.gitignore cleaned** — Removed duplicate entries, added `temp_*/` and `tmp_*/` patterns for future temp dirs, fixed `.jules/sessions/` tracking (was incorrectly ignored)
 
-1. **Push**: Stage all files and execute `git push origin main`
-2. **Build**: Run `build.bat` to rebuild Go binaries (do not clean built binaries)
-3. Run `git submodule update --recursive` to ensure all gitlinks are correct
-4. If GitHub commit fails, check for secret leakage (OAuth keys in .memory logs)
+#### ⏳ Still Open
+
+- **bg nested `references/` submodules** — ~50 uninitialized large third-party repos (ControlNet, Stable Diffusion, aseprite, etc.). These are deinitialized in bg's .gitmodules. Cannot easily initialize on this machine.
+- **GitHub Dependabot vulnerabilities** — 147 reported (1 critical, 61 high, 68 moderate, 17 low). These span all repos in the robertpelloni org, not just workspace root. Needs organization-wide triage.
+
+### Commits Made
+
+1. `b72fecedd4` — chore: v5.50.0 — Executive Protocol #38: repo sync, submodule updates, branch assessment
+2. `48e856773c` — fix: cleanup orphaned dirs, update .gitignore, sync package.json version to v5.50.0
+
+### Build Status
+
+- ✅ tormentnexus.exe (33MB) — already running
+- ✅ hyperharness.exe (26.7MB) — built fresh
+- ✅ pi-mono.exe (17.5MB) — built fresh
