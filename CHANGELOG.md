@@ -1,3 +1,13 @@
+## [5.48.0] - 2026-06-24
+
+### Changed
+
+- Executive Protocol #36 executed: Repository Synchronization & Intelligent Merge
+- Forward-merged MarbleBlast jules feature branch into master (7 commits: gamepad axis-to-button mapping, Ogg/Vorbis support, audio.ts fix, multiplayer latency)
+- Removed bobcoin submodule from MilkDrop3/bobmani/bobmania (repo too large, timed out on clone)
+- Updated all 3 MilkDrop3 submodule pointers (bobmani, bg, MilkDrop3 themselves)
+- Version bumped to v5.47.0 → v5.48.0, synced across VERSION, VERSION.md
+
 ## [5.47.0] - 2026-06-24
 
 ### Changed
