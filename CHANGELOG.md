@@ -8,6 +8,11 @@
 - Recursive submodule update across all nested layers with --depth 1 optimization
 - Fixed MilkDrop3/bg/bobsgameonlinejava/lwjgl3 submodule revision mismatch
 - Added aios and bg submodule entries back to MilkDrop3/.gitmodules
+- Forward-merged freellm-linux feature branch into main (Makefile, systemd service file)
+- Fixed MilkDrop3/bg/bobsgameonlinejava/libs/lwjgl3 broken submodule pointer (stale commit)
+- Synced bobsgameonlinejava_fix local main with remote (fix/stale-lib-submodules already merged)
+- Fixed 28 Dependabot vulnerabilities in pnpm-lock.yaml (13 high, 13 medium, 2 low)
+- Remaining: 2 low severity in @ai-sdk/provider-utils (no patch available)
 - Version bumped to v5.46.0 → v5.47.0, synced across VERSION, VERSION.md
 
 ## [5.46.0] - 2026-06-24
