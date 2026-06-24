@@ -14,11 +14,14 @@ hymn_remaker_backup/
 .pi-lens/worklog.jsonl
 .pi-lens/sessions/
 .pi-lens/sessions/*.json
-.pi-lens/cache/session-start-guidance.json
-.pi-lens/cache/session-start-guidance.meta.json
+.jules/memory/
+.pi/sessions/
 # Browser session artifacts
 .suno_browser_session/
-.jules/sessions/
+# Temp/scratch dirs
+_delete_me_temp/
+temp_*/
+tmp_*/
 .pi/tasks/
 .pi/caps-context-state.json
 .pi/tasks-config.json
@@ -33,10 +36,6 @@ __pycache__/
 *.pyd
 # workspace_index.db is locally regenerated cache — keep out of git
 workspace_index.db
-# Temp/scratch dirs
-_delete_me_temp/
-nul
-
 # Deregistered orphaned submodules (GitHub 404 — data preserved on disk)
 CLIProxyAPIPlus/
 Cli-Proxy-API-Management-Center/
