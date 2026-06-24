@@ -1,59 +1,39 @@
-# HANDOFF — Executive Protocol #36, v5.48.0
+# HANDOFF — Executive Protocol #37, v5.49.0
 
 ## Summary
 
-Executive Protocol #36: Repository Synchronization & Intelligent Merge completed.
+Executive Protocol #37: Repository Synchronization & Intelligent Merge completed.
 
 ## Changes Applied
 
-### Submodule Fixes
+- **bg submodule pointer synced** to latest (bobsgameonlinejava lwjgl3 fix from EP #35)
+- **Version bumped**: v5.48.0 → **v5.49.0**
+- **Docs synced**: VERSION, VERSION.md, CHANGELOG.md, ROADMAP.md, build.bat, start.bat
 
-- **MilkDrop3/bobmani/bobmania/bobcoin**: Deinitialized and removed from .gitmodules.
-  Repo is too large to clone consistently (times out at 2+ min on fetch).
-  Propagated pointer chain: bobmania→bobmani→MilkDrop3→workspace.
+## Feature Branch Assessment
 
-### Feature Branch Merge
+| Submodule | Branches Scanned | Verdict |
+|-----------|:----------------:|:--------|
+| Maestro | 5 | 0 unique commits — stale |
+| MarbleBlast | 1 | 0 unique commits — just merged in EP #36 |
+| MilkDrop3 | 2 | 0 unique commits — stale |
+| bg | 2 | 0 unique commits — stale |
+| bqt | 1 (remote) | 3 auto-sync commits — no real features |
+| enterprise_sales_bot | 5 | 0 unique commits — stale |
+| jules-autopilot | 3 local + 9 upstream | Upstream branches ignored (stale, 1-2 commits each) |
+| tormentnexus | ~60 task branches | 0 unique commits — stale |
+| **All others** | ~50+ submodules | 0 unique commits — all in sync |
 
-- **MarbleBlast**: Forward-merged `jules-7860170972917308251-a06da448` → master
-  (7 unique commits):
-  - `8ec83bd` — feat: full gamepad axis-to-button mapping and modding pipeline refinement
-  - `88d8e9d` — chore: sync final submodules and documentation
-  - `e0cd482` — chore: finalize repository sync protocol
-  - `763bc9c` — fix: restore lastDot variable missing in audio.ts
-  - `43f36e1` / `820ba6b` — v2.6.20 - Support native Ogg/Vorbis
-  - Created new server.log, multiplayer_latency.ts, VERSION.md
+## Build
 
-### Feature Branch Assessment (Rejected — No Real Features)
-
-- **bqt audio-graph** (3 commits): All auto-sync commits from Jules. Only CI/CD config changes.
-  No real feature work to merge.
-- **Maestro** (5 branches): 0 unique commits vs main.
-- **MilkDrop3** (2 branches): 0 unique commits vs main.
-- **bg** (2 branches): 0 unique commits vs main.
-
-### Version Control
-
-- Version bumped v5.47.0 → **v5.48.0** (VERSION, VERSION.md, CHANGELOG.md, ROADMAP.md,
-  build.bat, start.bat)
-
-## Remaining Dirt
-
-- 113 dirty entries in `git status` — lowercase-m submodule worktree modifications.
-  Safe to ignore.
+- All 5 Go binaries verified present
 
 ## Still Deferred
 
 - **147 GitHub Dependabot vulnerabilities** across 80+ submodule repos (1 critical, 61 high)
-- **bg nested references/ submodules**: ~50 uninitialized (third-party, too large)
+- **bg nested references/ submodules**: ~50 uninitialized (third-party)
 - **MilkDrop3-2077/**: Orphaned untracked directory at root
-- **MilkDrop3/bg/bobsgameonlinejava/libs/lwjgl3**: Fixed in EP #35 — now tracking upstream master
 
 ## Version
 
-v5.47.0 → v5.48.0
-
-## Next Steps
-
-1. Continue triaging Dependabot alerts across submodule repos
-2. Clean up `MilkDrop3-2077/` orphaned directory
-3. Periodic recursive submodule updates
+v5.48.0 → v5.49.0
