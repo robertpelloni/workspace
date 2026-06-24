@@ -1,3 +1,15 @@
+## [5.47.0] - 2026-06-24
+
+### Changed
+
+- Executive Protocol #35 executed: Repository Synchronization & Intelligent Merge
+- Fixed MilkDrop3 stale gitlinks (aios, bg) — restored missing .gitmodules entries
+- Synced 40+ submodule pointers to latest upstream revisions
+- Recursive submodule update across all nested layers with --depth 1 optimization
+- Fixed MilkDrop3/bg/bobsgameonlinejava/lwjgl3 submodule revision mismatch
+- Added aios and bg submodule entries back to MilkDrop3/.gitmodules
+- Version bumped to v5.46.0 → v5.47.0, synced across VERSION, VERSION.md
+
 ## [5.46.0] - 2026-06-24
 
 ### Changed

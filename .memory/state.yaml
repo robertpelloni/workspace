@@ -16,3 +16,15 @@ sessions:
   - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-23T14-33-24-166Z_019ef4e6-73c6-70d9-b2ac-1879cd7ce27b.jsonl"
     branch: main
     started: "2026-06-23T14:33:29.346Z"
+  - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-23T18-04-13-046Z_019ef5a7-7575-70dd-a460-ce92a1d3b925.jsonl"
+    branch: main
+    started: "2026-06-23T18:04:20.138Z"
+  - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-23T23-50-07-909Z_019ef6e4-2725-7229-9235-fe6e6a3c6908.jsonl"
+    branch: main
+    started: "2026-06-23T23:54:08.848Z"
+  - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-24T02-16-25-765Z_019ef76a-17a5-72b5-a9b8-6857721b8a24.jsonl"
+    branch: main
+    started: "2026-06-24T02:16:36.793Z"
+  - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-06-24T17-34-01-296Z_019efab2-2c50-793e-a542-0089085981e6.jsonl"
+    branch: main
+    started: "2026-06-24T17:34:36.889Z"
