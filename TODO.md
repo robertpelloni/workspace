@@ -1,28 +1,28 @@
-# TODO — Omni-Workspace v5.21.0
+# TODO — Omni-Workspace v5.50.0
 
-**Current:** v5.21.0 • 270 submodules across workspace • 2026-06-20
+**Current:** v5.50.0 • 80+ submodules across workspace • 2026-06-24
 
-## 🎯 v5.13.0 Milestone: Production Hardening
+## 🎯 v5.50.0 Milestone: Production Hardening
 
-The ROADMAP calls for **Phase 4: Production Hardening** — this is the next frontier. With all upstreams synced and all feature branches merged, the workspace must now shift from consolidation to stability, security, and observability.
+The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams synced and feature branches assessed, focus shifts to stability, security, and observability.
 
 ### Top Priority
-- [ ] **Resolve 283 GitHub Dependabot vulnerabilities** — Critical security debt across workspace
-- [ ] **Clean massive dirty state in tormentnexus (3,929 files)** — `.pi-lens/cache` artifacts, temp scripts, uncommitted MCP config changes
-- [ ] **Clean ArrowVortex dirty state (980 files)** — Submodule conflict in lib/ddc, pending merge resolution
-- [ ] **Finalize TormentNexus MCP protocol** — Cross-module communication, MCP aggregator stability, alwaysOn servers
-- [ ] **Revisit bobeditpro upstream** — 94 commits behind Audacity, 25+ conflicts in core audio/UI files (deferred x3)
-- [ ] **Revisit topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg (deferred x3)
+
+- [ ] **Resolve 165 GitHub Dependabot vulnerabilities** (1 critical, 72 high) — Security debt across workspace
+- [ ] **Clean remaining dirty state** — `.pi-lens/cache` artifacts, temp scripts, uncommitted changes
+- [ ] **bg nested references/ submodules** — ~50 uninitialized (ControlNet, Stable Diffusion, etc.)
+- [ ] **Finalize TormentNexus MCP protocol** — Cross-module communication, MCP aggregator stability
+- [ ] **Revisit bobeditpro upstream** — 94 commits behind Audacity (deferred multiple times)
+- [ ] **Revisit topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg (deferred multiple times)
 
 ---
 
 ## 🔐 Security (Critical)
 
-- [ ] **Dependabot vulnerability triage** — Categorize 283 vulns by severity (critical, high, medium, low)
-- [ ] **Fix critical/high vulns** — Focus on: jules-autopilot (vite, axios), borg (express, lodash), web apps
+- [ ] **Dependabot vulnerability triage** — Categorize 165 vulns by severity (1 critical, 72 high)
+- [ ] **Fix critical/high vulns** — Focus on: jules-autopilot, borg, web apps
 - [ ] **npm audit pass** — Run `npm audit fix` across all Node.js projects
 - [ ] **pip audit pass** — Run `pip audit` or `safety check` across Python projects
-- [ ] **Docker image scanning** — Audit container images for known CVEs
 - [ ] **Establish Dependabot alert response SLA** — 48h for critical, 7d for high
 
 ---
@@ -33,25 +33,20 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 
 | Project | Dirty Files | Action Required |
 |---------|-------------|-----------------|
-| tormentnexus | 3,929 | Add `.pi-lens/cache/`, `*.tmp`, `akb*`, `_llm_*` to `.gitignore`, then commit |
-| ArrowVortex | 0 | ✅ Clean - untracked build artifacts only (odcnn/, src/) |
-| WebAI-to-API | 30 | Review, commit or discard changes |
-| fwber | 0 | ✅ Clean - feature branch merged and pushed |
-| jules-autopilot | 0 | ✅ Clean - axios upgraded and pushed |
+| tormentnexus | ~3,900 | Add `.pi-lens/cache/`, `*.tmp`, `akb*`, `_llm_*` to `.gitignore`, then commit |
+| borg | 0 | ✅ Clean (after EP #38 sync) |
+| Maestro | 0 | ✅ Clean (synced to latest) |
 
-- [ ] **Update global `.gitignore`** — Add patterns for pi-lens cache, temp scripts, database files, `$null`
-- [ ] **Commit critical uncommitted work** — Review dirty files in each repo for genuine changes vs. artifacts
-- [ ] **Remove orphaned directories** — `metamcp/`, `tormentnexus2/`, `tormentnexus_temp/`, `.tmp-adb-mysql/` if no longer needed
-- [ ] **Rebuild workspace index** — `workspace_index.db` may be stale
+- [ ] **Update global `.gitignore`** — Add patterns for pi-lens cache, temp scripts, database files
+- [ ] **Commit critical uncommitted work** — Review dirty files for genuine changes vs. artifacts
+- [ ] **Remove orphaned directories** — `MilkDrop3-2077/`, `food.ai/`, `temp_nottingham/`, `tmp_bobcoin/`
 
 ### Upstream Sync
 
-- [ ] **bobeditpro upstream merge (Audacity)** — Blocked by 25+ conflicts. Dedicated session needed with manual conflict resolution in core audio/UI files
+- [ ] **bobeditpro upstream merge (Audacity)** — Blocked by 25+ conflicts. Dedicated session needed
 - [ ] **topaz-ffmpeg upstream merge (FFmpeg)** — 15+ conflicts in libswscale. Dedicated session needed
-- [ ] **bobfilez history reconciliation** — Unrelated history with robertpel83/FileOrganizer. Consider replacing with fresh fork
-- [ ] **raindropioapp history reconciliation** — Unrelated history with raindropio/app. Consider replacing with fresh fork
-- [ ] **bobmani/arrowvortex lib/ddc conflict** — Submodule vs embedded files in lib/ddc. Determine canonical source
-- [ ] **Transition remaining HTTP origins to SSH** — The 5 remaining HTTP submodule URLs for consistent auth
+- [ ] **bobfilez history reconciliation** — Unrelated history (deferred)
+- [ ] **Transition remaining HTTP origins to SSH** — Remaining HTTP submodule URLs for consistent auth
 
 ---
 
@@ -127,10 +122,10 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 
 ## ♻️ Disk & Resource Management
 
-- [ ] **Remove stale build artifacts** — Large binaries (ultratrader.exe removed, check for others)
 - [ ] **Compress/archive old logs** — `logs/` directory may contain GBs of debug output
-- [ ] **Review workspace disk usage** — 125 repos × avg 500MB = significant footprint. Identify candidates for LFS
-- [ ] **Migrate game assets to Git LFS** — MarbleBlast, supersaber, sm64coopdx binaries
+- [ ] **Remove stale build artifacts** — Check for large binaries across repos
+- [ ] **Review workspace disk usage** — 80+ repos × avg 500MB = significant footprint. Identify candidates for LFS
+- [ ] **Migrate game assets to Git LFS** — Consider for large game repos
 - [ ] **Clean unused Docker images** — `docker system prune -a` after containerization pass
 
 ---
@@ -139,20 +134,14 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 
 | Metric | Current | Target | Status |
 |--------|---------|--------|--------|
-| Submodules Synced | 65/65 | 65/65 | ✅ Current |
-| Upstreams Current | 12/16 | 16/16 | ⚠️ 4 deferred |
-| Feature Branches Merged | 100% | 100% | ✅ v5.20.0 — Maestro, pi-mono, aimoneymachine_site, fcdm, jules-autopilot, bobfilez |
-| Dependabot Vulnerabilities (Root) | 283 | 0 | 🔴 Critical |
-| TormentNexus Vulnerabilities | 1,114 | 0 | 🔴 Critical (22 critical, 456 high) |
-| jules-autopilot axios vulns | ✅ Fixed | 0 | ✅ 4+ high vulns fixed |
-| TormentNexus security patches | ✅ 42+ pkgs updated | N/A | ✅ vite, mcp-sdk, lodash, axios, undici, path-to-regexp |
-| connectTimeoutMs source fix | ✅ 30s→60s | N/A | ✅ MCPAggregator.ts aligned with dist |
-| Dirty Repos | 2 | 0 | ⚠️ WebAI-to-API (30 files) |
-| Dirty Files Total | ~30 | 0 | ⚠️ Needs cleanup |
-| Port 4100 (TormentNexus) | ✅ Up | ✅ Up | ✅ |
-| MCP Servers Connected | 4/56 | 6+ | ⚠️ Improving |
-| Tools Available | 46 | 63+ | ⚠️ Improving |
-| Documentation Staleness | 90+ days | < 30 days | ⚠️ Needs update |
+| Submodules Synced | 80+/80+ | 80+ | ✅ Current (EP #38) |
+| Upstreams Current | All synced | All synced | ✅ v5.50.0 |
+| Feature Branches Assessed | 86+ scanned | N/A | ✅ No high-value forward merges |
+| Maestro Submodule | ✅ f702e702 | Latest | ✅ Multi-agent router + 26+ agents |
+| bg/bobsgameonlinejava | ✅ 8d09fad | Latest | ✅ lwjgl3 fix |
+| Dependabot Vulnerabilities | 165 | 0 | 🔴 Critical (1 critical, 72 high) |
+| bg nested references/ | ~50 uninitialized | N/A | ⚠️ Large third-party repos |
+| Documentation | Up to date | Current | ✅ ROADMAP, TODO, HANDOFF updated
 
 ---
 
@@ -163,6 +152,7 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 **Week 1 Goals:**
 
 **Completed:**
+
 - [x] Fix TormentNexus MCP aggregator source fix (dist→source persist, connectTimeoutMs 30s→60s)
 - [x] Clean TormentNexus dirty state (add gitignore, commit Go MCP tools)
 - [x] Resolve jules-autopilot axios vulnerabilities (4+ high vulns fixed)
@@ -172,6 +162,7 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 - [x] Build completed successfully
 
 **Remaining:**
+
 - [ ] Resolve top 50 Dependabot vulnerabilities (npm audit broken - SSL/TLS issue on this machine)
 - [ ] WebAI-to-API remaining dirty state (~30 files)
 - [ ] Dockerize TormentNexus + fwber
@@ -181,6 +172,7 @@ The ROADMAP calls for **Phase 4: Production Hardening** — this is the next fro
 - [ ] Update all stale documentation
 
 **Week 2 Goals:**
+
 - [ ] Dockerize TormentNexus + fwber
 - [ ] Resolve bobeditpro upstream sync (dedicated conflict resolution session)
 - [ ] Connect anyquery + tormentnexus-supervisor MCP servers
