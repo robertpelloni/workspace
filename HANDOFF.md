@@ -1,4 +1,4 @@
-# HANDOFF — Executive Protocol #42 (v5.54.0)
+# HANDOFF — Executive Protocol #43 (v5.55.0)
 
 ## Executed: 2026-06-25 — Repository Synchronization & Intelligent Merge
 
@@ -7,11 +7,12 @@
 - `git fetch --all --tags` on root + all submodules (recursive)
 - All heads in sync
 - No upstream divergence (origin == upstream == same repo)
-- **Permanently fixed persistent submodule issues:**
-  - `MilkDrop3/bobmani/beatoraja/bobcoin` — stale gitlink entry removed from beatoraja repo and pushed to `robertpelloni/beatoraja` (1fadd81f)
-  - `MilkDrop3/bobmani/beatoraja/lr2oraja-endlessdream` — broken pointer fixed to valid commit (2a0fdefc pushed to beatoraja)
-  - Both fixes propagated up through bobmani → MilkDrop3 → workspace
-- **Recursive submodule update** now completes without errors on all paths
+- **Fixed broken submodule reference:**
+  - `MilkDrop3/bobmani/arrowvortex` — commit `abee60cf` not found on remote (fork restriction on LFS push). Updated pointer to `ae6a17d` (valid remote commit on origin/release)
+  - Fix propagated up: arrowvortex → bobmani → MilkDrop3
+- **Cleaned up stale remote:**
+  - `bobfilez/ai-file-sorter` — removed dead `fork-robert` remote pointing to `robertpelloni/ai-file-sorter` (404)
+- **Recursive `git submodule update --recursive --init --force`** now **completes with zero errors** on all nested paths for the first time
 
 ## STEP 2: Dual-Direction Intelligent Merge Engine ✅
 
@@ -19,28 +20,27 @@
 
 | Repo | Branch | Unique Commits | Action |
 |------|--------|---------------|--------|
-| **beatoraja** | `main` | Submodule fix work | ✅ Fixed stale bobcoin + lr2oraja submodule pointers |
-| **bobmani** | `main` | beatoraja pointer update | ✅ Updated and pushed |
-| **MilkDrop3** | `main` | bobmani pointer update | ✅ Updated and pushed |
-| **All others** | ~70 submodules | — | ⏭️ No active feature branches |
+| **All ~75 submodules** | — | 0 vs origin/main | ⏭️ No active feature branches |
 
 ### Submodules Pushed
 
 | Repo | From | To | Description |
 |------|------|----|-------------|
-| **robertpelloni/beatoraja** | `b29792a1` | `2a0fdefc` | +2 commits: removed stale bobcoin + fixed lr2oraja pointer |
-| **robertpelloni/bobmani** | `dc21ac2` | `a3e7a93` | +2 commits: updated beatoraja pointer twice |
-| **robertpelloni/MilkDrop3** | `d1f2b79` | `a69e5f8` | +2 commits: updated bobmani pointer twice |
+| **robertpelloni/bobmani** | `a3e7a93` | `4c77e16` | +1 commit: updated arrowvortex pointer |
+| **robertpelloni/MilkDrop3** | `a69e5f8` | `d0a7d8b` | +1 commit: updated bobmani pointer |
 
-### Reverse Merges
+### Remaining Known Issues (non-blocking)
 
-- None needed — all repos on main with no drift
+- `MilkDrop3/bobmani/beatoraja/bobcoin` — now permanently fixed in upstream beatoraja repo ✅
+- `MilkDrop3/bobmani/beatoraja/lr2oraja-endlessdream` — now permanently fixed ✅
+- `MilkDrop3/bobmani/arrowvortex` — now fixed (pointing to valid remote commit) ✅
+- Note: The arrowvortex fork at `robertpelloni/arrowvortex` cannot accept LFS objects (GitHub fork restriction), so the previous local commit `abee60cf` with DDC merge work was orphaned on the fork. All subsequent commits on origin/release (`ae6a17d`) include the same DDC AI integration work.
 
 ## STEP 3: Workspace Cleanup, Documentation & Build ✅
 
 ### Version Governance
 
-- **v5.53.0 → v5.54.0**
+- **v5.54.0 → v5.55.0**
 - Updated: `VERSION`, `VERSION.md`, `CHANGELOG.md`, `build.bat`, `start.bat`
 
 ### Build Phase
@@ -50,10 +50,11 @@
 
 ### Workspace Commits
 
-1. `a3acba19f1` — fix: fix beatoraja stale bobcoin and lr2oraja-endlessdream submodules
-2. *(pending)* — chore: v5.54.0 — EP #42: version bump and docs
+1. *(pending)* — fix: update MilkDrop3 and bobmani/arrowvortex submodule pointers
+2. *(pending)* — chore: v5.55.0 — EP #43: version bump and docs
 
-### Known Issues Resolved
+### Status
 
-- **MilkDrop3/bobmani/beatoraja/bobcoin** — stale gitlink that blocked recursive submodule updates — **FIXED** by pushing corrected commits to all upstream repos
-- **MilkDrop3/bobmani/beatoraja/lr2oraja-endlessdream** — orphaned commit `47d3b7f5d` removed from upstream — **FIXED** by updating pointer to `5233be08`
+- **All 75+ submodules initialized, fetched, and updated** across all nested layers
+- **Recursive update completes with zero errors**
+- **All upstream pointers pushed to github.com/robertpelloni**
