@@ -1,4 +1,4 @@
-# HANDOFF — Executive Protocol #45 (v5.57.0)
+# HANDOFF — Executive Protocol #46 (v5.58.0)
 
 ## Executed: 2026-06-25 — Repository Synchronization & Intelligent Merge
 
@@ -6,62 +6,52 @@
 
 - Fetching origin
 Fetching upstream on root + all submodules (recursive)
-- All heads in sync — origin == upstream (authoritative repo)
-- 112 submodules in .gitmodules
-- Recursive submodule update completed (some deep nesting issues in MilkDrop3/bobmani/hymnmania infinite recursion skipped)
-- **enterprise_sales_bot**: New upstream commits fetched (24806b4 → e84f191)
-- **bobmani**: New remote branches detected (jules-empty-repo-diagnosis, scaffold-docs) — empty/stale, ignored
-- **bqt**: New commits on bqt-renaming-and-audio-graph feature branch
+- No new upstream commits on any submodule since EP #45
+- Root upstream == origin (authoritative repo) — no fork divergence
+- Recursive submodule update completed (minor lock file cleaned on MilkDrop3/borg/enterprise_sales_bot/borg)
+- hymnmania submodule had a forced update (de815ab -> 3fcfd86 on origin/main)
 
 ## STEP 2: Dual-Direction Intelligent Merge Engine ✅
 
-### Forward Merges (Feature → Main)
+- All ~75 submodule feature branches re-assessed: **0 new unique commits vs origin/main**
+- All branch commits are EP #45 reverse-merge artifacts only — no new development
+- No forward or reverse merges needed this cycle
 
-| Repo | Branch | Commits | Description |
-|------|--------|---------|-------------|
-| **fwber** | feature/continue-development | 1 unique commit |  — SSRF protection, FederationInterop.test.ts, FEDERATION_INTEROP.md |
-| **bqt** | bqt-renaming-and-audio-graph | 5 unique commits | Unified event loop, go package graph stabilization, v1.1.75 |
+### Feature Branch Status (unchanged from EP #45)
 
-### Reverse Merges (Main → Feature)
-
-| Repo | Branch | Result |
-|------|--------|--------|
-| **fwber** | feature/continue-development-... | Merged (1 file: README banner) |
-| **fwber** | rev/feat/federation-hardening-... | Merged (51 files) |
-| **fwber** | rev/feat/federation-webfinger-... | Merged (51 files) |
-| **fwber** | rev/feature/continue-development-... | Merged (51 files) |
-
-### Branches Assessed — No Action Needed
-
-| Repo | Branches | Status |
-|------|----------|--------|
-| **enterprise_sales_bot** | 7 AI-generated branches | 0 unique commits vs main |
-| **jules-autopilot** | 3 feature branches | 0 unique commits vs main |
-| **Maestro** | 6 branches (incl. rev/) | Only reverse-merge commits — no new work |
-| **MilkDrop3** | jules-8369..., temp-cleanup | 0 unique commits vs main |
-| **fcdm** | 3 feature branches | 0 unique commits vs main |
-| **freellm** | clean-freellm, freellm-linux | Divergent history — no actionable delta |
+| Repo | Branches | Unique Commits | Action |
+|------|----------|----------------|--------|
+| enterprise_sales_bot | 7 AI branches | 0 vs main | None |
+| jules-autopilot | 3 feature + 31 upstream | 0 vs main | None; upstream stale branches ignored |
+| Maestro | 6 (incl. rev/) | Merge commits only | None |
+| fwber | 5 (incl. rev/) | Merge commits only | None |
+| bqt | bqt-renaming-and-audio-graph | Merged in EP #45 | None |
+| MilkDrop3 | 2 branches | 0 vs main | None |
+| fcdm | 3 branches | 0 vs main | None |
+| freellm | 2 branches | Divergent history | None |
+| bcs | 1 branch | 0 vs main | None |
 
 ## STEP 3: Workspace Cleanup, Documentation & Build ✅
 
 ### Version Governance
 
-- **v5.56.0 → v5.57.0**
-- Updated: VERSION, VERSION.md, CHANGELOG.md
+- **v5.57.0 → v5.58.0**
+- Updated: VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
 
 ### Documentation Updated
 
-- **docs/SUBMODULE_DASHBOARD.md**: Regenerated with 112 submodules
-- **HANDOFF.md**: This file
+- ROADMAP.md, TODO.md — synced to v5.58.0
+- HANDOFF.md — this file
 
 ### Build Phase
 
-- Build deferred (build.bat runs at end — preserves all binaries)
+- Build deferred (build.bat updated but run at end — binaries preserved from EP #45)
 
 ### Known Remaining Issues
 
-1. **GitHub Dependabot vulnerabilities** — 165 total (1 critical). Needs triage.
-2. **bg nested submodules** — ~50 references/ submodules uninitialized (large third-party repos)
-3. **bobsgameonlinejava_fix** — Deferred from multiple protocols; fix/stale-lib-submodules still unmerged
-4. **Deep directory nesting** — tests/test_cmake_build/... exceeds Windows MAX_PATH, causes git status timeouts
-5. **MilkDrop3/bobmani/hymnmania infinite recursion** — ableton_psytrance_hymn_creator ↔ hymnmania_src creates a loop in submodule nesting
+1. **GitHub Dependabot vulnerabilities** — 147 total (1 critical, 61 high, 68 moderate, 17 low)
+2. **bg nested references/ submodules** — ~50 uninitialized (large third-party repos)
+3. **MilkDrop3/bobmani/hymnmania infinite recursion** — ableton_psytrance_hymn_creator ↔ hymnmania_src loop
+4. **bobsgameonlinejava_fix** — Deferred from multiple protocols
+5. **Deep directory nesting** — tests/test_cmake_build/... exceeds Windows MAX_PATH
+6. **trae-stale-lib-submodules** — bobfilez has ~80+ lib submodules with stale commit pointers

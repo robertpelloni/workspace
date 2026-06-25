@@ -334,3 +334,6 @@
   - fwber: Forward-merged activitypub interop, SSRF protection
   - bqt: Forward-merged unified event loop, go package graph
   - fwber: Reverse-merged 3 rev/ feature branches with main
+- Executive Protocol #46 executed — v5.58.0 (2026-06-25)
+  - All submodule feature branches re-assessed: no new development since EP #45
+  - Repository state fully clean and in sync

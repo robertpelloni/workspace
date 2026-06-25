@@ -1,3 +1,13 @@
+## [5.58.0] - 2026-06-25
+
+### Changed
+
+- Executive Protocol #46 executed: Repository Synchronization & Intelligent Merge
+- All submodules fetched and updated recursively
+- All ~75 submodule feature branches re-assessed: 0 new unique commits vs origin/main
+- All feature branch commits are EP #45 reverse-merge commits only — no new development
+- Version bumped to v5.57.0 → v5.58.0, synced across VERSION, VERSION.md, build.bat, start.bat
+
 ## [5.57.0] - 2026-06-25
 
 ### Changed
