@@ -329,3 +329,8 @@
 - [x] freellm: Fixed garbled ASCII art banner (wrapped in code fences)
 - [x] All feature branches assessed — 0 high-value forward merges
 - [x] Version bumped to v5.51.0 → v5.52.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+
+- Executive Protocol #45 executed — v5.57.0 (2026-06-25)
+  - fwber: Forward-merged activitypub interop, SSRF protection
+  - bqt: Forward-merged unified event loop, go package graph
+  - fwber: Reverse-merged 3 rev/ feature branches with main
