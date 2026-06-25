@@ -1,3 +1,15 @@
+## [5.60.0] - 2026-06-25
+
+### Changed
+
+- Executive Protocol #48 executed: Repository Synchronization & Intelligent Merge
+- **bcs**: Forward-merged jules feature branch (15 commits: cross-language port BCS core to Go, Rust, C#, Java — bcsstring, bcstextstream, bcswidget, bcstcpsocket, kernel event loop, BcsInputArbitrator, BcsCommandLineParser; v0.3.0)
+- **fcdm**: Forward-merged jules feature branch (4 commits: System Validation, Performance Tuning v24.1.1, Go Rewrite plan)
+- **bcs**: Reverse-merged main into jules feature branch
+- **fcdm**: Reverse-merged main into jules feature branch
+- All submodules fetched and updated recursively
+- Version bumped to v5.59.0 → v5.60.0, synced across VERSION, VERSION.md, build.bat, start.bat
+
 ## [5.59.0] - 2026-06-25
 
 ### Changed
