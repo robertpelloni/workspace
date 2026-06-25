@@ -337,3 +337,9 @@
 - Executive Protocol #46 executed â€” v5.58.0 (2026-06-25)
   - All submodule feature branches re-assessed: no new development since EP #45
   - Repository state fully clean and in sync
+- Executive Protocol #47 executed — v5.59.0 (2026-06-25)
+  - bobtrader: Forward-merged 2 feature branches (59 total commits)
+  - Resolved 12 file conflicts (both WSHealth + MarketDataStatus endpoints preserved)
+- Executive Protocol #47 executed — v5.59.0 (2026-06-25)
+  - bobtrader: Forward-merged 2 feature branches (59 total commits)
+  - Resolved 12 file conflicts (both WSHealth + MarketDataStatus endpoints preserved)

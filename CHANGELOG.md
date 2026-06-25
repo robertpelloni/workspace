@@ -1,3 +1,14 @@
+## [5.59.0] - 2026-06-25
+
+### Changed
+
+- Executive Protocol #47 executed: Repository Synchronization & Intelligent Merge
+- **bobtrader**: Forward-merged hierarchical-suite (24 commits: v2.1.3–v3.4.0, triangular/multi-hop arbitrage, HFT core, liquidity execution, risk diversification)
+- **bobtrader**: Forward-merged jules-8435867346171279833-a4dd774e (35 commits: WebSocket feed hardening, DrawdownMonitor, Compliance Analyzer, Walk-forward optimizer, React/Vite SPA dashboard, Real Exchange Integration)
+- **enterprise_sales_bot**: Fast-forwarded borg submodule pointer (borg .gitmodules fix)
+- All submodules fetched and updated recursively
+- Version bumped to v5.58.0 → v5.59.0, synced across VERSION, VERSION.md, build.bat, start.bat
+
 ## [5.58.0] - 2026-06-25
 
 ### Changed
