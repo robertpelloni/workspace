@@ -58,3 +58,6 @@
 ### Added
 - Linked the `backend-go` runtime directly to a local `SQLite` driver instance utilizing `gorm.io/gorm`.
 - Auto-migrated `MemoryChunk` and `Session` database struct bounds per the dual-layer RAG indexing roadmap requirements.
+## [0.2.0] - 2024-05-XX
+- Resolved Rust compilation errors.
+- Successfully integrated tract-onnx bindings.
