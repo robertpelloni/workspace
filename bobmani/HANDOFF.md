@@ -1,20 +1,20 @@
-# Handoff
+# Session Handoff Document
 
-## Session Summary (Rust Porting Phase 2)
-During this session, the project transitioned out of its uninitialized state. The core `bobmani` meta-repo was synchronized, bringing in all 13 legacy submodules (such as `Simply-Love-SM5`, `beatoraja`, `ffr-difficulty-model`, etc.).
+## Current Status
+We have transitioned from our `bobmani` rhythm game port logic directly into the **Jules Autopilot (Go Primary Runtime)** infrastructure. The main supervisor directives instructed a shift to building out a high-performance orchestration layer utilizing a `backend-go` server and our previously scaffolded Vite/React SPA.
 
-With the source code available, the directive to "port all submodules into a massive rust program" actively began.
+## Completed Work in This Session
+- **SQLite Persistence layer:** Initialized the `gorm.io/gorm` and `gorm.io/driver/sqlite` drivers inside `backend-go`. Added the models for `MemoryChunk` and `Session` and ran auto-migrations. (Downgraded gorm package slightly to bypass Go 1.25.0 bounds).
+- **Architectural Pivot:** Detected the shift in root documentation (`README.md`, `DEPLOY.md`, `VISION.md`, `ROADMAP.md`).
+- **Go Initialization:** Spun up the `backend-go` directory, ran `go mod init`, and wrote the primary `main.go` entry point.
+- **Borg API Routes:** Implemented the `GET /api/manifest` and `GET /api/fleet/summary` routes explicitly instructed by the roadmap to handle discovery and fleet state payloads.
+- **Verification:** Built `jules-backend` and queried the ports locally, verifying 200 OK responses with the proper capability payloads.
+- **Documentation Reset:** Updated `TODO.md` and `VERSION.md` (to `1.0.1`) to reflect the new state of the repository, setting up the foundation for continuous deployment on Render.
 
-The first target was the `ffr-difficulty-model`.
-- Scaffolding for `src/ffr_diff_model/` was created.
-- The Python mathematical feature extractors `HorizontalDensity`, `VerticalDensity`, `StreamDetector`, and `PatternDetector` were successfully translated into performant, memory-safe Rust structs.
-- A custom Rust `SMChartPreprocessor` was written to parse `.sm` files using the `regex` crate, effectively replacing the Python `simfile` dependency.
-- The entire pipeline was wired into `main.rs` and executed successfully against a test file.
+## Next Immediate Steps for the Next Session
+1. Execute the Git sanitization protocol (fetch, pull).
+2. Wire the real-time WebSockets to the `frontend-vite` system so it can receive session state pushes.
+3. Transition the actual "RAG Indexer" embeddings chunks to use `backend-go` logic to hydrate the `MemoryChunk` database model.
+4. Keep adhering strictly to the documented workflow rules! DON'T EVER STOP THE PARTY!
 
-## Current State
-The `ffr-difficulty-model` pipeline structure is fully mapped out, implemented, and executing in Rust. The project is completely unblocked and the first submodule logic has been successfully ported.
-
-**Next Immediate Steps for Successor Models:**
-1. The `ffr-difficulty-model` currently extracts mathematical features, but it needs the actual ML model inference (e.g., loading the Scikit-learn `.p` weights). Determine if you want to port the model weights to a Rust ML format (like ONNX) or finalize the module here and move on.
-2. Select the next submodule from the repository to port. `ddc` (Dance Dance Convolution) or `arrowvortex` are good candidates for Phase 2 Consolidation.
-3. Maintain the unified version number (currently `0.1.2`) and update `CHANGELOG.md` accordingly. Ensure commits are made after every major step.
+**Last Verified Build Status:** Clean `go build` passing.
