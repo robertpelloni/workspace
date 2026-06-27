@@ -1,6 +1,6 @@
-# TODO — Omni-Workspace v5.69.0
+# TODO — Omni-Workspace v5.70.0
 
-**Current:** v5.69.0 • 80+ submodules across workspace • 2026-06-27
+**Current:** v5.70.0 • 80+ submodules across workspace • 2026-06-27
 
 ## 🎯 v5.50.0 Milestone: Production Hardening
 
@@ -8,7 +8,8 @@ The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams sync
 
 ### Top Priority
 
-- [ ] **Resolve 165 GitHub Dependabot vulnerabilities** (1 critical, 72 high) — Security debt across workspace
+- [x] **Resolve critical shell-quote vulnerability (CVE-2025-27789)** — 1 critical vuln fixed in research/workspace-orchestrator
+- [ ] **Resolve remaining 146 GitHub Dependabot vulnerabilities** (0 critical, 61 high) — Security debt across workspace
 - [ ] **Clean remaining dirty state** — `.pi-lens/cache` artifacts, temp scripts, uncommitted changes
 - [ ] **bg nested references/ submodules** — ~50 uninitialized (ControlNet, Stable Diffusion, etc.)
 - [ ] **Finalize TormentNexus MCP protocol** — Cross-module communication, MCP aggregator stability
@@ -139,7 +140,7 @@ The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams sync
 | Feature Branches Assessed | 86+ scanned | N/A | ✅ No high-value forward merges |
 | Maestro Submodule | ✅ f702e702 | Latest | ✅ Multi-agent router + 26+ agents |
 | bg/bobsgameonlinejava | ✅ 8d09fad | Latest | ✅ lwjgl3 fix |
-| Dependabot Vulnerabilities | 165 | 0 | 🔴 Critical (1 critical, 72 high) |
+| Dependabot Vulnerabilities | 146~ | 0 | 🟡 Fixed critical (awaiting Dependabot re-scan) |
 | bg nested references/ | ~50 uninitialized | N/A | ⚠️ Large third-party repos |
 | Documentation | Up to date | Current | ✅ ROADMAP, TODO, HANDOFF updated
 

@@ -1,7 +1,24 @@
-# EXECUTIVE PROTOCOL HANDOFF — Protocol #57
+# EXECUTIVE PROTOCOL HANDOFF — Protocol #58
 
 **Session:** 2026-06-27
-**Version:** v5.68.0 → v5.69.0
+**Version:** v5.69.0 → v5.70.0
+
+## Security Vulnerability Fixes Applied
+
+### Critical (1)
+
+- **shell-quote** `research/workspace-orchestrator` — Upgraded 1.8.3→1.8.4
+
+### High / Medium / Low (146 remaining after Dependabot re-scan)
+
+- **Python (uv.lock):** Upgraded 10 packages — aiohttp 3.13.4→3.14.1, cryptography 46.0.7→49.0.0, lxml 6.0.2→6.1.1, pillow 12.1.1→12.2.0, pyjwt 2.10.1→2.13.0, python-multipart 0.0.22→0.0.32, starlette 0.50.0→1.3.1, urllib3 2.6.3→2.7.0, authlib 1.6.9→1.7.2, pygments 2.19.2→2.20.0
+- **Node.js (root):** Updated package.json ranges — minimatch 9→10, sinon 21→22, task-master-ai 0.18→0.43, firecrawl-mcp 3.21→3.22, opencode-ai 1.17→1.17.11, supabase 2.107→2.108
+- **Node.js (research/brobocallz):** Fixed 7+ transitive deps — axios 1.13.2→1.18.1, multer 2.0.2→2.2.0, ws 8.19.0→8.21.0, form-data 4.0.5→4.0.6, path-to-regexp 0.1.12→0.1.13, underscore 1.13.7→1.13.8, @xmldom/xmldom 0.8.11→0.9.6
+- **Go (6 repos):** Updated x/net, x/crypto, x/text, x/sys in hyperharness, pi-mono, enterprise_sales_bot, hermes-agent, freellm, bqt
+
+### Infrastructure
+
+- **Maestro:** Removed stale gitlinks (trae-cli, warp-cli) that blocked recursive submodule updates
 
 ## Completed Operations
 
