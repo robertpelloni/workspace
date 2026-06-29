@@ -16,6 +16,12 @@
     "url": "https://github.com/robertpelloni/workspace/issues"
   },
   "homepage": "https://github.com/robertpelloni/workspace#readme",
+  "overrides": {
+    "@ai-sdk/provider-utils": "^5.0.1",
+    "@anthropic-ai/claude-code": "^2.1.195",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "jsondiffpatch": "^0.7.6"
+  },
   "devDependencies": {
     "@playwright/test": "^1.61.1",
     "@types/node": "^24.13.2",

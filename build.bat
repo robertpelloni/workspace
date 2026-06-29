@@ -1,9 +1,20 @@
 @echo off
 echo Starting global build sequence (v5.71.0)...
-echo [1/4] Building tormentnexus (Node.js)...
+echo [1/4] Building tormentnexus (Go services + Node.js dashboard)...
+echo   --- Go microservices ---
+cd tormentnexus\go
+for %%b in (tormentnexus deployment_manager health_monitor repo_sync repository_healer) do (
+    echo   Building %%b...
+    go build -buildvcs=false -o ..\bin\%%b.exe -ldflags "-s -w" .\cmd\%%b\
+)
+cd ..\..
+echo   --- Node.js dashboard ---
 cd tormentnexus
 if exist package.json (
-    echo   TormentNexus is a Node.js project - run npm install && npm run build manually
+    echo   npm install --production...
+    call npm install --production --ignore-scripts 2>nul
+    echo   npm run build...
+    call npm run build 2>nul
 ) else (
     echo   No package.json found
 )
@@ -22,5 +33,5 @@ go build -buildvcs=false -o tabby-backend.exe -ldflags "-s -w" ./cmd/tabby-backe
 go build -buildvcs=false -o tabby-native.exe -ldflags "-s -w" ./cmd/tabby-native/
 cd ../..
 echo Build sequence finished.
-echo ✅ Built: hyperharness, pi-mono, tabby-backend, tabby-native
-echo ℹ️  Skipped: tormentnexus (Node.js - manual build required)
+echo ✅ Built: tormentnexus Go services, hyperharness, pi-mono, tabby-backend, tabby-native
+echo ℹ️  tormentnexus dashboard build result shown above
