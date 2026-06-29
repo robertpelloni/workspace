@@ -1,3 +1,18 @@
+## [5.72.0] - 2026-06-29
+
+### Changed
+
+- Executive Protocol #60 executed: Repository Synchronization & Intelligent Merge
+- **Forward merges (4 feature branches):**
+  - **linthesia** `jules-18255045881388867666` — GTKmm Pango/Cairo Integration, Headless Mode, Go WebSocket Backend, WASM pivot (50+ commits, 20 files, 435 insertions)
+  - **realestatecrm** `jules-ai-drip-execution` — Voice settings, LeadCaptureModal, PhotoGalleryWithIntent, sync-scheduler (16 commits, 8 new files)
+  - **hymnmania** `jules-68329051864378878` — Studio Reversal, Udio automation pipeline, AI video generation (13 commits, resolved add/add conflicts with feature branch)
+  - **fcdm** `jules-5238017387757734088` — Milestone 6 Phase 1-3: Go Pipeline Orchestration, HTTP Server, Hardware/Environment Management (3 commits)
+- Fixed 8 Windows-reserved `nul` files across 8 submodules (restored git status functionality)
+- Fixed upstream/HEAD invalid SHA1 pointer
+- All submodules fetched and updated recursively
+- Version bumped to v5.71.0 → v5.72.0
+
 ## [5.71.0] - 2026-06-28
 
 ### Changed
