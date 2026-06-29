@@ -39,19 +39,27 @@ Executive Protocol #59 completed: Repository Synchronization & Intelligent Merge
 - ✅ TODO.md updated
 - ✅ HANDOFF.md written
 
-## Known Issues (Carried Forward)
+## Fixes Applied Post-Protocol
 
-1. **Dependabot vulnerabilities** — ~146 remaining (0 critical, 61 high after prior fix)
+| Issue | Fix | Status |
+|-------|-----|--------|
+| **`short read while indexing nul`** — corrupted git operations across the whole workspace | Removed 8 `nul` files from: `bobmani/hymnmania`, `aimoneymachine_site`, `bobcoin`, `freellm`, `hermes-agent`, `slsk_discography_downloader_script`, `tormentnexus`, `warp`. Added `nul`/`NUL`/`con`/`prn` patterns to root `.gitignore`. Removed from aimoneymachine_site git index | ✅ **FIXED** |
+| **invalid sha1 pointer refs/remotes/upstream/HEAD** | Fixed via `git symbolic-ref` | ✅ **FIXED** |
+| **Stale `.git/index.lock` files** | Removed lock files blocking git operations | ✅ **FIXED** |
+| **`build.bat` tormentnexus path** | Corrected to reflect Node.js project (not Go binary) | ✅ **FIXED** |
+
+## Remaining Issues
+
+1. **Dependabot vulnerabilities** — 71 on default branch (29 high, 36 moderate, 6 low). Package.json already at latest secure versions. npm audit blocked by SSL/TLS issue on this machine.
 2. **MilkDrop3/bobmani/hymnmania circular recursion** — Pre-existing deep nesting issue
-3. **Deep directory nesting** — `tests/test_cmake_build/...` exceeds Windows MAX_PATH
-4. **pybind11 recursive directory loop** — In bobfilez, blocks some git operations
-5. **bobeditpro upstream sync** — 94 commits behind Audacity, blocked by 25+ conflicts
-6. **topaz-ffmpeg upstream sync** — 15+ libswscale conflicts with FFmpeg
-7. **bg nested references/submodules** — ~50 uninitialized third-party repos
+3. **bobeditpro upstream sync** — 94 commits behind Audacity, blocked by 25+ conflicts
+4. **topaz-ffmpeg upstream sync** — 15+ libswscale conflicts with FFmpeg
+5. **bg nested references/submodules** — ~50 uninitialized third-party repos
 
 ## Next Agent Instructions
 
-1. Push completed work (`git push origin main` on root)
-2. Run build verification (`build.bat` or equivalent)
-3. Address Dependabot vulnerabilities if time permits
-4. Consider dedicating a session to bobeditpro or topaz-ffmpeg upstream conflict resolution
+1. All fixes committed and pushed (`1f97a97bce`)
+2. aimoneymachine_site submodule pushed separately
+3. Build verification passed (hyperharness, pi-mono, tabby-backend, tabby-native all built)
+4. Remaining Dependabot vulnerabilities require a machine with functional npm registry access
+5. bobeditpro and topaz-ffmpeg upstream merges each need dedicated conflict-resolution sessions
