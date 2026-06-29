@@ -76,3 +76,11 @@ bobsaver_light/
 jvm-cpp-runtime/
 linthesia/
 tests/
+
+# Windows reserved device names (created by some tools/scripts — break git on Windows)
+nul
+NUL
+con
+CON
+prn
+PRN
