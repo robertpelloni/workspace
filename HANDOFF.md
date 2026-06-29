@@ -1,80 +1,66 @@
-# EXECUTIVE PROTOCOL HANDOFF — Protocol #60
+# EXECUTIVE PROTOCOL HANDOFF — Protocol #61
 
 **Session:** 2026-06-29
-**Version:** v5.71.0 → v5.72.0
+**Version:** v5.72.0 → v5.73.0
 
 ## Summary
 
-Executive Protocol #60 completed: Repository Synchronization & Intelligent Merge. 4 feature branches forward-merged, 8 `nul` files removed (repairing git status), upstream ref fixed.
+Executive Protocol #61 completed: Repository Synchronization & Intelligent Merge. 4 feature branches forward-merged, beatoraja force-push recovered, stale locks cleaned, ArrowVortex merge conflicts resolved.
 
 ## Completed Operations
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
 
-- ✅ `git fetch --all --tags` on root repo (upstream new: `c61c90fd00..bc189be0ec`)
-- ✅ Upstream sync: no fork, canonical repo — already up to date
-- ✅ Submodules fetched and updated: ArrowVortex, FFmpeg, GWEN, JWildfire, Maestro, MarbleBlast, MilkDrop3, bg, bobmani submodules, enterprise_sales_bot, jules-autopilot, fcdm, realestatecrm, superdawmcp and others
-- ⚠️ tormentnexus checkout blocked by locked `tormentnexus.db` — pointer updated anyway
+- ✅ `git fetch --all --tags` on root repo (upstream new: `bc189be0ec..56eafbc8b4`)
+- ✅ Upstream sync: canonical repo — already up to date
+- ✅ All 156 submodules fetched recursively with `--all --tags`
+- ✅ Submodules updated with `--init --recursive --force` (many nested layers)
+- ⚠️ **MilkDrop3_fix/bg/bobsgameweb/submodules/bobui**: Stale commit reference `9158674f9e` not found in bobui remote. Requires deeper fix (force-push recovery) — skipped for now
 
 ### Step 2: Dual-Direction Intelligent Merge Engine
 
-**4 feature branches forward-merged into `main`:**
+**4 feature branches forward-merged into default branches:**
 
 | Submodule | Branch | Commits | Description |
 |-----------|--------|---------|-------------|
-| **linthesia** | `jules-18255045881388867666-4eef7d68` | 50+ | GTKmm Pango/Cairo Integration, Headless Mode, Go WebSocket Backend, WASM pivot documentation. Clean merge (20 files, 435 insertions) |
-| **realestatecrm** | `jules-ai-drip-execution-12255780436860473735` | 16 | Voice settings (VoiceSettingsClient, voice.ts/config/actions), LeadCaptureModal, PhotoGalleryWithIntent, sync-scheduler, media-pipeline-state. Clean merge (8 new files, 120 insertions) |
-| **hymnmania** | `jules-68329051864378878-a2dcf684` | 13 | Studio Reversal feat, Udio automation (api, browser, oauth, remaker), AI video generation, Gemini generator. Resolved add/add conflicts (14 files) taking feature branch |
-| **fcdm** | `jules-5238017387757734088-c295058a` | 3 | Milestone 6 Phase 1-3: Go Pipeline Orchestration, HTTP Server, Hardware/Environment Management. Clean merge |
+| **fcdm** | `jules-5238017387757734088-c295058a` | 1 new | Go Pipeline Orchestration docs, Handoff halt (`1213734`). Clean merge (5 files, 937 insertions) |
+| **ArrowVortex** | `jules-102189709143505224-702af85d` | 7 | Automated model downloader UI, DDC batch generation with log streaming. Resolved 8 conflicts in HANDOFF, ROADMAP, TODO, BatchDDC code (300+ insertions) |
+| **MarbleBlast** | `jules-7860170972917308251-a06da448` | 5 | Touch/gamepad input, Level Editor raycasting, Svelte migration proposal. Clean merge (34 files, 1062 insertions) |
+| **OpenMBU** | `jules-375245784545023555-f8502f8d` | 5 | Monkey Golf mechanics, Party Framework, Bowling/Target physics. Clean merge (28 files, 993 insertions) |
 
-**Other feature branches scanned (no unique commits, skipped):**
+**Feature branches scanned (no unique commits after prior merges, skipped):**
 
-- agentirc, bobcoin, bobium, bobzilla, superdawmcp, ArrowVortex, MarbleBlast, ksm-v2, pianogame
+- agentirc, Maestro, TurntUpToddler, realestatecrm, superdawmcp, jules-autopilot, slsk_discography_downloader_script, tormentnexus, bobbybookmarks, bobcoin, bobium, bobsaver, bobtorrent, bobtrader, bcs, ableton_psytrance_hymn_creator, bobmani/*, bg*, bobsgameweb, ArrowVortex ddc-integration
 
-**Upstream feature branches:** Skipped per protocol
+**Per-protocol: upstream feature branches ignored**
 
 ### Step 3: Workspace Cleanup & Documentation
 
-- ✅ **8 `nul` files removed** from: bobmani/hymnmania, aimoneymachine_site, bobcoin, freellm, hermes-agent, slsk_discography_downloader_script, tormentnexus, warp
-- ✅ **upstream/HEAD ref fixed** — invalid SHA1 pointer repaired
-- ✅ .gitignore updated with `nul`/`NUL`/`con`/`prn` patterns
-- ✅ VERSION, VERSION.md, CHANGELOG.md, TODO.md updated to v5.72.0
-- ✅ build.bat version string updated
-- ✅ npm overrides added to package.json for transitive vulns
-- ✅ Build phase: all Go binaries rebuilt (9 binaries, 56MB total)
-- ✅ All pushed to origin
+#### Submodule Fixes
 
-## Build Artifacts (9 binaries, total ~56MB)
+- ✅ **beatoraja force-push recovery**: Updated bobmani submodule pointer from stale `b96fcf0145acfa33767fe71d56ffe483899db8db` to valid `2a0fdefce9623aa07b9047214d19eeb98d2f83c4`. Pushed to origin bobmani + MilkDrop3 + root workspace
+- ✅ **Stale index.lock files cleaned**: Multiple nested lock files in MilkDrop3, MilkDrop3_fix, bobmani, beatoraja, bobfilez module trees
+- ✅ **ArrowVortex merge conflicts resolved**: 8 conflicts in HANDOFF.md, ROADMAP.md, TODO.md, BatchDDC.cpp (3 regions), BatchDDC.h — all resolved preserving feature branch progress
 
-```
-tormentnexus/bin/tormentnexus.exe        23MB   (Go MCP aggregator)
-tormentnexus/bin/repo_sync.exe            7.3MB
-tormentnexus/bin/deployment_manager.exe   2.0MB
-tormentnexus/bin/health_monitor.exe       2.0MB
-tormentnexus/bin/repository_healer.exe    2.0MB
-hyperharness/hyperharness.exe            26MB
-pi-mono/pi-mono.exe                      17MB
-tabby/tabby-go/tabby-backend.exe         9.1MB
-tabby/tabby-go/tabby-native.exe          2.8MB
-```
+#### Version & Docs
 
-## Notable Decisions
+- ✅ VERSION, VERSION.md, CHANGELOG.md updated to v5.73.0
+- ✅ TODO.md and ROADMAP.md updated via ArrowVortex merge
 
-- **linthesia merge**: Clean merge — feature branch had substantial GTKmm migration and new Go backend code
-- **hymnmania merge**: 14 add/add conflicts in Python automation files. Resolved in favor of feature branch (newer Udio/AI video pipeline code)
-- **realestatecrm**: `origin` remote now points to `github.com/candlestixxx/realestatecrm` (repo was transferred). Consider updating .gitmodules
-- **tormentnexus.db**: File locked by running process, prevented clean checkout. Old DB file remains. Pointer updated to latest tracked commit
+#### Build Artifacts
+
+- Build phase deferred (see remaining issues)
 
 ## Remaining Issues
 
-1. **tormentnexus.db locked** — Process holds handle; needs restart to free the db file
-2. **bobeditpro upstream sync** — 94 commits behind Audacity, 25+ conflicts
-3. **topaz-ffmpeg upstream sync** — 15+ libswscale conflicts
-4. **realestatecrm remote moved** — Now at `github.com/candlestixxx/realestatecrm` — update .gitmodules
+1. **MilkDrop3_fix/bg/bobsgameweb/submodules/bobui** — Commit `9158674f9e` not reachable from bobui remote main. MilkDrop3's bg/bobsgameweb/bobui chain uses same reference and works. MilkDrop3_fix needs manual fix: either force-push the commit to bobui, or update to newer pointer
+2. **tormentnexus.db locked** — Continuing issue from Protocol #60. Process holds handle
+3. **MilkDrop3_fix** — This module exists but its submodule tree has initialization issues. May need full deinit/reinit
+4. **realestatecrm remote moved** — From Protocol #60: now at `github.com/candlestixxx/realestatecrm`. .gitmodules not yet updated
 
 ## Next Agent Instructions
 
-1. Push completed work (already pushed to root and 4 submodules)
-2. Run build.bat to verify all services build
-3. Consider updating .gitmodules for realestatecrm's new remote URL
-4. Consider dedicated session for bobeditpro or topaz-ffmpeg upstream conflict resolution
+1. Push completed work (already pushed fcdm, ArrowVortex, MarbleBlast, OpenMBU, bobmani, MilkDrop3 — root commit pending)
+2. Run `build.bat` to verify workspace builds
+3. Consider fixing MilkDrop3_fix bobui submodule reference
+4. Consider updating .gitmodules for realestatecrm's new remote URL

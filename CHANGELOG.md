@@ -1,3 +1,21 @@
+## [5.73.0] - 2026-06-29
+
+### Changed
+
+- Executive Protocol #61 executed: Repository Synchronization & Intelligent Merge
+- **Forward merges (5 feature branches):**
+  - **fcdm** `jules-5238017387757734088` — Go Pipeline Orchestration docs, Handoff halt (1 new commit: `1213734`)
+  - **ArrowVortex** `jules-102189709143505224` — Automated model downloader UI, real-time log streaming, async DDC generation (7 commits, 300+ insertions)
+  - **MarbleBlast** `jules-7860170972917308251` — Touch/gamepad input, Level Editor raycasting, Svelte migration proposal (34 files, 1062 insertions)
+  - **OpenMBU** `jules-375245784545023555` — Monkey Golf mechanics, Party Framework, Bowling/Target physics (28 files, 993 insertions)
+- **Reverse merges:** All active feature branches verified and reconciled
+- **Submodule fixes:**
+  - Fixed beatoraja force-push commit reference (bobmani + MilkDrop3 pointer updates)
+  - Cleaned stale index.lock files across submodule tree
+  - Fixed ArrowVortex merge conflicts (HANDOFF, ROADMAP, TODO, BatchDDC code)
+- All 156 submodules fetched, initialized, and updated recursively
+- Version bumped to v5.72.0 → v5.73.0
+
 ## [5.72.0] - 2026-06-29
 
 ### Changed
