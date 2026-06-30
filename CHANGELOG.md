@@ -1,3 +1,12 @@
+## [5.77.0] - 2026-06-30
+
+### Changed
+
+- Executive Protocol #61 (pass 5) executed: Repository Synchronization & Intelligent Merge
+- **Forward merges:**
+  - **MarbleBlast** `jules-7860170972917308251` — Touch UI migration to Svelte (1 new commit, 20 files)
+- Version bumped to v5.76.0 → v5.77.0
+
 ## [5.76.0] - 2026-06-29
 
 ### Changed
