@@ -1,44 +1,56 @@
-# Executive Protocol #28 — Repository Sync & Intelligent Merge
+# EXECUTIVE PROTOCOL HANDOFF — Protocol #61 (Pass 3)
 
-**Date:** 2026-06-29
-**Version:** v5.74.0 → v5.75.0
+**Session:** 2026-06-29
+**Version:** v5.75.0 → v5.76.0
 
 ## Summary
 
-Full repository synchronization across the robertpelloni workspace federation.
+Third execution of Protocol #61: Repository Synchronization & Intelligent Merge.
+3 additional feature branches forward-merged (fcdm, bobsgameweb, MilkDrop3).
+MilkDrop3_fix submodule issues fully resolved.
 
-## Step 1: Upstream Tracking & Submodule Sanitization
-- **Root fetch:** origin and upstream (same repo: robertpelloni/workspace)
-- **Parent HEAD:** v5.74.0 — up to date with origin/main
-- **TurntUpToddler submodule:** fast-forwarded 14 commits (a411793..34a746d)
+## Completed Operations
 
-## Step 2: Dual-Direction Intelligent Merge Engine
+### Step 1: Upstream Tracking & Submodule Sanitization
 
-### Forward Merges (Features → Main)
+- ✅ `git fetch --all --tags` on root repo — up to date
+- ✅ All 156 submodules fetched recursively
+- ✅ `git submodule update --init --recursive --force` completed (MilkDrop3_fix bobui/bobmani issues fully resolved)
+- ✅ New remote branch detected: `unified-stepmania-foundation-5.7.0` in MilkDrop3 (ignored per protocol)
 
-| Repository | Branch | Commits | Description |
-|------------|--------|---------|-------------|
-| **TurntUpToddler** | `main-12830181781022804878` | 14 | Next.js frontend scaffold, InteractiveReviewModal, dynamic kids mode scraping, AI video generation, history/media player, FastAPI endpoints (46 files, 8.8K+ insertions) |
+### Step 2: Dual-Direction Intelligent Merge Engine
 
-### Reverse Merges (Main → Feature Branches)
+**3 feature branches forward-merged:**
 
-| Repository | Branch | Status |
-|------------|--------|--------|
-| **jules-autopilot** | `feat-shadow-pilot-git-diff-ui` | ✅ 68 commits caught up |
-| **jules-autopilot** | `jules-485-merge-test` | ✅ 68 commits caught up |
-| **jules-autopilot** | `jules-4852916069977232082-be6d9c55` | ✅ 68 commits caught up |
-| **freellm** | `freellm-linux` | ✅ 5 commits caught up |
+| Submodule | Branch | Commits | Resolution |
+|-----------|--------|---------|------------|
+| **fcdm** → main | `jules-5238017387757734088` | 2 | Clean merge — Go Stream Sanitizer Migration (Milestone 6/7) |
+| **bobsgameweb** → master | `jules-port-legacy-engines` | 3 | **8 conflicts resolved** — CHANGELOG, MEMORY, ROADMAP, VERSION, package.json, CustomGameEditor.ts, WebGPUDemoScene.ts, WorldScene.ts |
+| **MilkDrop3** → main | `jules-8369004047092951005` | 1 | Clean merge — Phase 4 search/hypercode features |
 
-### Skipped / Pending
-- `freellm/clean-freellm` — 234 commits behind main (massive divergence, requires manual reconciliation)
-- Other upstream tracking repos (timidity, element-web, warp) — local branches in sync or upstream forks
+**Branches re-scanned (no new unique commits, skipped):**
+fwber, bobcoin, ArrowVortex, MarbleBlast, OpenMBU, tormentnexus, jules-autopilot, bobsgameweb (jules-3-0-9, jules-3-0-10), hymnmania, linthesia, itgmania, ksm-v2, borg, enterprise_sales_bot
 
-## Step 3: Workspace Cleanup
-- Version bumped: **v5.74.0 → v5.75.0**
-- CHANGELOG updated
-- TurntUpToddler submodule pointer updated and pushed
-- jules-autopilot (3 branches) pushed
-- freellm-linux pushed
+### Step 3: Workspace Cleanup, Documentation & Build
 
-## Remaining
-- `freellm/clean-freellm` needs manual reconciliation (234 commits behind)
+- ✅ **VERSION/VERSION.md** → v5.76.0
+- ✅ **CHANGELOG.md** — Updated with fcdm, bobsgameweb, MilkDrop3 forward merges
+- ✅ **HANDOFF.md** — This file
+- ✅ **build.bat** — Version string updated
+- ✅ **Submodule pointers staged** — fwber, bobcoin, bobsgameweb, fcdm, MilkDrop3
+
+### Submodule Pointers Updated
+
+- fwber: `e4ea9fbe05c50450810b05` (v0.3.25 + 1129)
+- bobcoin: `a94065fc6162613a73eb3019`
+- bobsgameweb: `d244f495c15eceafde984f78` (v3.0.33 + legacy)
+- fcdm: `4b89e7d8e5cbed2c004a0edcb`
+- MilkDrop3: `9050ecc291bad8227e5096f4` (v5.43.0 + 35)
+
+## Remaining Issues
+
+1. **tormentnexus.db** — Locked by running process
+2. **realestatecrm remote** — Moved to `github.com/candlestixxx/realestatecrm`
+3. **borg pointer** — 117 commits behind in MilkDrop3 (intentional pin?)
+4. **GitHub Dependabot vulns** — 71 on workspace, 1 on bobsgameweb
+5. **Memory/session files untracked** — Multiple untracked files in bobmani/ and hymnmania/

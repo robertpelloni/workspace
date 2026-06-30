@@ -1,3 +1,16 @@
+## [5.76.0] - 2026-06-29
+
+### Changed
+
+- Executive Protocol #61 (pass 3) executed: Repository Synchronization & Intelligent Merge
+- **Forward merges:**
+  - **fcdm** `jules-5238017387757734088` — Milestone 6/7 Go Stream Sanitizer Migration (2 commits, 265 insertions)
+  - **bobsgameweb** `jules-port-legacy-engines` — v3.0.12, CustomGameEditor tooltips, collision fixes (3 commits, 2.9K insertions, 8 conflicts resolved)
+  - **MilkDrop3** `jules-8369004047092951005` — Phase 4 search/hypercode features (1 commit, 10 files)
+- **MilkDrop3_fix submodule repairs:** bobui and bobmani force-push stale references fully resolved
+- All 156 submodules re-fetched and updated recursively
+- Version bumped to v5.75.0 → v5.76.0
+
 ## [5.75.0] - 2026-06-29
 
 ### Changed
