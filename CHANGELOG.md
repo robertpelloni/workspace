@@ -1,3 +1,6 @@
+
+## [v5.77.1] - 2026-06-30
+- Executive Sync v22: full submodule reconciliation, forward merges, push
 ## [5.77.0] - 2026-06-30
 
 ### Changed

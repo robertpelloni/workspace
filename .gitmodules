@@ -423,3 +423,8 @@ branch = master
 [submodule "TurntUpToddler"]
 	path = TurntUpToddler
 	url = https://github.com/Dimensionalplane/TurntUpToddler
+
+[submodule "ksm-v2"]
+	path = ksm-v2
+	url = https://github.com/robertpelloni/ksm-v2.git
+
