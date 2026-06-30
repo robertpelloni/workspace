@@ -1,3 +1,16 @@
+## [5.75.0] - 2026-06-29
+
+### Changed
+
+- Executive Protocol #28 executed: Repository Synchronization & Intelligent Merge
+- **Forward merges:**
+  - **TurntUpToddler** main-12830181781022804878 to main (14 commits): Next.js frontend scaffold,
+    InteractiveReviewModal, dynamic kids mode scraping, AI video generation architecture,
+    history list/media player, FastAPI endpoint expansion (46 files, 8.8K+ insertions)
+- **Reverse merges (main to feature branches):**
+  - **jules-autopilot** 3 branches reverse-merged (68 commits caught up)
+  - **freellm** freellm-linux reverse-merged (5 commits caught up)
+
 ## [5.74.0] - 2026-06-29
 
 ### Changed
