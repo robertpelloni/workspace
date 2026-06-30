@@ -11,10 +11,18 @@ cd ..\..
 echo   --- Node.js dashboard ---
 cd tormentnexus
 if exist package.json (
-    echo   npm install --production...
-    call npm install --production --ignore-scripts 2>nul
+    echo   Installing Node.js dependencies...
+    if exist pnpm-lock.yaml (
+        echo   Using pnpm...
+        set "NODE_OPTIONS=--no-audit --no-fund"
+        call pnpm install --no-frozen-lockfile --ignore-scripts 2>&1
+    ) else (
+        echo   Using npm with --no-audit...
+        set "NODE_OPTIONS=--no-audit --no-fund"
+        call npm install --no-audit --no-fund --ignore-scripts 2>&1
+    )
     echo   npm run build...
-    call npm run build 2>nul
+    call npm run build 2>&1
 ) else (
     echo   No package.json found
 )
