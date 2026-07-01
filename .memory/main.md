@@ -4,19 +4,18 @@
 
 Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
 
-## Current State (v5.43.0)
+## Current State (v5.78.0)
 
-- **Executive sync protocol healthy** — Protocols #12-#31 completed in succession
-- **Alpha notice added** — 🛠️ ALPHA SOFTWARE UNDER CONSTRUCTION notice prepended/created on root + 110 submodules + nested sub-submodule README.md files (~750+ repos annotated)
-- **MilkDrop3/bg cleaned up** — Stale leftover directory and .gitmodules entry removed; MilkDrop3 submodule re-cloned from scratch
+- **Executive sync protocol healthy** — Protocols #12-#62 completed in succession
+- **Protocol #62 (v5.78.0):** 5 feature branches forward-merged across 4 submodules
+- **Forward merges:** ArrowVortex DDC integration (+699), MarbleBlast audio/Svelte (+157), bobsgameonlinejava PolygonLasso (+349), aios Tabby tweaks (+49), bg doc sync (+71)
+- **Submodule fixes:** bobui submodule pointers reinitialized (juce/ultimatepp), jules-autopilot dev.db gitignored, deep pybind11 build_output added to .gitignore
 - **All submodules initialized** — no uninitialized submodules in .gitmodules
-- **Version control** — Global version bumped to v5.43.0, synced across VERSION, VERSION.md, CHANGELOG.md
-- **jules-autopilot on latest** — At v3.6.9 release (esbuild fix, repo sync)
-- **enterprise_sales_bot clean** — Contact form, real subpages, rolling
-- **hymnmania active** — YouTube OAuth upload working, Batch Suno Pipeline v1.39.0
-- **OAuth secrets scrubbed** — Google Client ID/Secret removed from hymnmania memory log, force-pushed clean
-- **Build pipeline verified** — 5 Go binaries built and preserved
-- **bg de-nested from MilkDrop3** — Redundant nested submodule removed
+- **Version control** — Global version bumped to v5.78.0, synced across VERSION, VERSION.md, CHANGELOG.md
+- **jules-autopilot on latest** — v3.6.24 (hourly nudge rate limiting, broadcast retry, archive improvements)
+- **enterprise_sales_bot active** — T-800 skull refinements, hero opacity fix, Go dependency patches
+- **hymnmania active** — YouTube OAuth upload working, Batch Suno Pipeline
+- **Build pipeline verified** — 10 Go binaries preserved, hyperharness rebuilt
 
 ## Key Decisions Made
 
