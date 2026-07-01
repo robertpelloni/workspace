@@ -1,37 +1,47 @@
-# EXECUTIVE PROTOCOL HANDOFF — Protocol #61 (Pass 6)
+# EXECUTIVE PROTOCOL HANDOFF — Protocol #62
 
-**Session:** 2026-06-30
-**Version:** v5.77.0 (unchanged)
+**Session:** 2026-07-01
+**Version:** v5.78.0
 
 ## Summary
 
-Sixth pass of Protocol #61: Repository Synchronization & Intelligent Merge.
-Workspace confirmed fully synced — 0 feature branches with unique commits.
-MilkDrop3_fix odcnn submodule still needs force-push recovery (GitHub connectivity intermittent).
+Executive Protocol #62 executed: Repository Synchronization & Intelligent Merge.
+5 feature branches forward-merged into main across 4 submodules.
 
 ## Completed Operations
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
 
 - ✅ `git fetch --all --tags` on root repo — up to date
-- ✅ All 156 submodules fetched recursively
-- ✅ `git submodule update --init --recursive --force` completed
-- 🔄 New branches detected: `clang_tidy` in ultimatepp, `unified-stepmania-foundation` in MilkDrop3 (ignored per protocol)
-- ⚠️ **MilkDrop3_fix/bobmani/arrowvortex/odcnn** — stale commit `454f4c72cc`. Needs direct clone or object copy from MilkDrop3's cached copy. GitHub fetch/clone consistently timing out
+- ✅ All submodules fetched recursively (ArrowVortex, MilkDrop3, bg, aios, etc.)
+- ✅ Bobui submodule pointers reinitialized — juce/ultimatepp stale refs resolved via reinit
+- ✅ tests/test_cmake_build deep pybind11 directory — added to .gitignore (was causing git status timeouts on Windows due to MAX_PATH)
+- ✅ jules-autopilot backend-go/dev.db — gitignored and untracked (was locked by another process)
+- ⚠️ MilkDrop3_fix/bobmani/arrowvortex/odcnn — still has stale commit (pre-existing)
 
 ### Step 2: Dual-Direction Intelligent Merge Engine
 
-- **All /robertpelloni submodules scanned:** fwber, bobcoin, bobsgameweb, tormentnexus, jules-autopilot, arrowvortex, fcdm, MarbleBlast, OpenMBU, MilkDrop3, Maestro
-- **0 feature branches with unique commits** — workspace fully synced
+- **Forward merges executed:**
+  1. **ArrowVortex** `jules-7500685366569110515-e7a3519c` — DDC integration, model download UI, bobcoin submodule, start.bat (+699 lines, 35 files)
+  2. **MarbleBlast** `jules-7016826551077121800-bb975ac1` — Safari audio context fix, gamepad compat, Svelte OptionsSettings (+157 lines, 9 files)
+  3. **bobsgameonlinejava** `feat/polygon-lasso-4905851647628508372` — New PolygonLassoBrush tool, MapHistoryPanel (+349 lines, 11 files)
+  4. **MilkDrop3/aios** `jules-8602827887619659643-12a833d8` — Tabby dev scripts, MirrorView/TrafficInspector fixes (+49 lines, 14 files)
+  5. **MilkDrop3/bg** `jules-scoring-mechanics-8346944214018951559` — Documentation sync (CHANGELOG, ROADMAP, TODO)
+- **Reverse merges:** None needed — all feature branches already had main up-to-date or were fast-forward merges
+- **Skipped (no unique commits vs main):** bobtrader (3 branches), fcdm (2 branches), fwber (5 branches), bcs, ArrowVortex (2 additional branches)
 
-### Step 3: Workspace Cleanup & Build
+### Step 3: Version Bump & Documentation
 
+- ✅ VERSION: v5.77.1 → v5.78.0
+- ✅ VERSION.md synced
+- ✅ CHANGELOG.md updated with forward merge details
 - ✅ HANDOFF.md updated
-- ✅ Build verified
+- ✅ .gitignore updated (pybind11 build output, jules-autopilot dev.db)
 
 ## Remaining Issues
 
-1. **MilkDrop3_fix/bobmani/arrowvortex/odcnn** — Stale commit, needs force-push recovery
-2. **realestatecrm remote** — Moved to `github.com/candlestixxx/realestatecrm`
+1. **MilkDrop3_fix/bobmani/arrowvortex/odcnn** — Stale commit 454f4c72cc, needs force-push recovery
+2. **realestatecrm remote** — Moved to github.com/candlestixxx/realestatecrm
 3. **borg pointer** — 117 commits behind (intentional pin)
-4. **71 Dependabot vulns** — Pre-existing
+4. **165 GitHub Dependabot vulns** — Pre-existing (1 critical, 72 high)
+5. **bg nested references/ submodules (~50)** — Uninitialized (ControlNet, SD, aseprite, etc.)

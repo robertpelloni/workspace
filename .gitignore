@@ -84,3 +84,4 @@ con
 CON
 prn
 PRN
+tests/test_cmake_build/subdirectory_function/build_output/
