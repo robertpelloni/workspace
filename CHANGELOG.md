@@ -1,4 +1,15 @@
 
+## [v5.81.0] - 2026-07-01
+
+- Executive Protocol #65: Repository Synchronization & Intelligent Merge
+- **Forward merges:**
+  - **ArrowVortex** `jules-7500685366569110515` — Bobcoin wallet integration (2 commits, +79 lines)
+  - **MarbleBlast** `jules-7016826551077121800` — Svelte UI migration finalization — HelpUI, Options (6 commits, +335 lines)
+  - **bobium** `jules-7596736042051083261` + `jules-9934627537741952648` — Milestone 5, build pipeline, validation suite (55 commits, +694 lines)
+  - **bqt** `bqt-renaming-and-audio-graph` + `feature/audio-graph-native-linking-test` — AudioGraph verification, GTK parity, Go/Java/Rust cleanup (16 commits, +239/-1654 lines)
+- **Submodule removal:** qbittorrent removed from bobtorrent (reference C++ client, unused by Go code, broke Jules proxy clone)
+- Version bumped to v5.80.0 → v5.81.0
+
 ## [v5.80.0] - 2026-07-01
 
 - Executive Protocol #64: Repository Synchronization & Intelligent Merge (follow-up sweep)
