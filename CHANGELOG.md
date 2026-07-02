@@ -1,4 +1,11 @@
 
+## [v5.83.0] - 2026-07-01
+
+- Executive Protocol #67: Repository Synchronization & Intelligent Merge (follow-up sweep)
+- **Forward merges:**
+  - **MarbleBlast** `jules-7016826551077121800` — Svelte migration doc update (1 new commit)
+- Version bumped to v5.82.0 → v5.83.0
+
 ## [v5.82.0] - 2026-07-01
 
 - Executive Protocol #66: Repository Synchronization & Intelligent Merge (follow-up sweep)
