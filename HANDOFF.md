@@ -1,46 +1,52 @@
-# Executive Protocol #64 — Handoff Summary (v5.79.0 → v5.80.0)
+# Executive Protocol #65 — Handoff Summary (v5.80.0 → v5.81.0)
 
-## Protocol Execution: July 1, 2026 (Follow-up Sweep)
+## Protocol Execution: July 1, 2026
 
 ### Completed Operations
 
 ## STEP 1: Upstream Tracking & Submodule Sanitization
-- **Fetch All:** `git fetch --all --tags` completed on root + all 112 submodules recursively
-- **Upstream Sync:** Skipped — origin and upstream both point to same repo (github.com/robertpelloni/workspace)
-- **Submodule Update:** Recursive submodule update completed
-- **New branches discovered:** 9 new feature branches across 7 submodules that appeared since Protocol #63
+
+- **Fetch All:** Completed on root + all 112 submodules recursively
+- **Upstream Sync:** Skipped — origin and upstream both same repo
+- **Fixes:** None needed
 
 ## STEP 2: Dual-Direction Intelligent Merge Engine
 
-### Forward Merges (Feature → Main) — New Work Since v5.79.0
+### Forward Merges (Feature → Main)
 
-| Submodule | Branch | Commits | Content |
-|-----------|--------|---------|---------|
-| MarbleBlast | jules-7016826551077121800 | 1 | Finalize Svelte UI migration for Options and Editor overlays |
-| bobsgameonlinejava | feat/polygon-lasso | 6 | Shadow pilot diff monitor, PolygonLassoBrush, MapHistoryPanel, Undo History |
-| enterprise_sales_bot | jules-crm-field-mapping | 1 | golang-migrate database runner, GDPR compliance, Anthropic LLM fallback |
-| OpenMBU | jules-375245784545023555 | 7 | Party Game Framework, Monkey Billiards, Golf, Collectables UI |
-| OpenMBU | party-framework-enhancements | 1 | Monkey Billiards minigame mechanics |
-| TurntUpToddler | feat-editor-endpoints-tooltips | 2 | Kids mode, editor tooltips, test script |
-| ableton_psytrance_hymn_creator | feat/vertical-video-generation | 3 | Headless CDP, Matchering Neural Mastering Engine |
-| bcs | bcs-multi-lang-kernel-port | 1 | C#/Go/Java/Rust kernel port (BcsCommandLineParser, BcsEventLoop) |
+| Submodule | Branches | Commits | Content |
+|-----------|----------|---------|---------|
+| ArrowVortex | jules-7500685366569110515 | 2 | Bobcoin wallet integration dialog, Action/Menubar wiring |
+| MarbleBlast | jules-7016826551077121800 | 6 | Svelte HelpUI, Options refactoring, custom asset pipeline |
+| bobium | jules-7596736042051083261 | 30 | Milestone 5 build pipeline, validation suite, handoff docs |
+| bobium | jules-9934627537741952648 | 25 | Architectural handoff, patch validation, documentation cleanup |
+| bqt | bqt-renaming-and-audio-graph | 8 | AudioGraph verification, Go refactoring, DSP parity |
+| bqt | feature/audio-graph-native-linking-test | 8 | GTK parity, UI tooltips, native Go AudioGraph linking |
 
 ### Conflict Resolution
-- **enterprise_sales_bot:** Multiple conflicts in .gitignore, CHANGELOG, VERSION, go.mod resolved with `-X theirs` strategy
-- **OpenMBU Monkey Billiards:** gameParams.cs, smb_billiards.cs conflicts resolved with `--theirs`
+
+- **bobium:** Multiple doc conflicts resolved with `-X theirs` strategy
+- **bqt:** `.gitignore`/CHANGELOG/HANDOFF/VERSION conflicts resolved with `-X theirs`
+
+### Submodule Removal
+
+- **qbittorrent removed** from bobtorrent (reference C++ client, unused by Go code, caused Jules proxy clone failure)
 
 ## STEP 3: Workspace Cleanup & Documentation
 
 ### Version Governance
-- v5.79.0 → v5.80.0
-- VERSION, VERSION.md, CHANGELOG.md all synced
+
+- v5.80.0 → v5.81.0
+- VERSION, VERSION.md, CHANGELOG.md, .memory/main.md synced
 
 ### Push Status
-- **7 submodules pushed:** MarbleBlast, bobsgameonlinejava, enterprise_sales_bot, OpenMBU, TurntUpToddler, ableton_psytrance_hymn_creator, bcs
-- **Root repo pushed:** 5727eea922..a6fe0e2c42 → main
 
-### Edge Cases & Caveats
-1. **Recursive submodule issues:** MilkDrop3_fix/aios/enterprise_sales_bot/borg still has stale ref
-2. **bgtk:** Hundreds of upstream cherry-pick branches — ignored as upstream work
-3. **OpenMBU:** Had stale upstream tracking (upstream 'origin/master' gone)
-4. **bobsgameonlinejava:** Many nested submodules (bg → references/*) were dirty/uninitialized
+- **4 submodules pushed:** ArrowVortex, MarbleBlast, bobium, bqt
+- **bobtorrent already pushed** (qbittorrent removal from earlier session)
+- **Root repo pushed:** 188db3d976..b3929fdadf → main
+
+### Edge Cases
+
+1. **bqt submodules (juce/ultimatepp)** remain dirty — pre-existing stale submodule pointers
+2. **bobtorrent qbittorrent removal** — local checkout preserved on disk
+3. **62 GitHub vulnerabilities** still pending
