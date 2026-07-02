@@ -1,4 +1,12 @@
 
+## [v5.82.0] - 2026-07-01
+
+- Executive Protocol #66: Repository Synchronization & Intelligent Merge (follow-up sweep)
+- **Forward merges:**
+  - **ArrowVortex** `jules-7500685366569110515` — bobcoin wallet signing (1 new commit)
+  - **MarbleBlast** `jules-7016826551077121800` — test validation & UI state verification (1 new commit)
+- Version bumped to v5.81.0 → v5.82.0
+
 ## [v5.81.0] - 2026-07-01
 
 - Executive Protocol #65: Repository Synchronization & Intelligent Merge
