@@ -14,8 +14,7 @@ hymn_remaker_backup/
 .pi-lens/worklog.jsonl
 .pi-lens/sessions/
 .pi-lens/sessions/*.json
-.jules/memory/
-.pi/sessions/
+# .jules/memory and .pi/sessions are NOT ignored — they contain critical development history
 # Browser session artifacts
 .suno_browser_session/
 # Temp/scratch dirs
