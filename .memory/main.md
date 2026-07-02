@@ -4,18 +4,17 @@
 
 Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
 
-## Current State (v5.78.0)
+## Current State (v5.79.0)
 
-- **Executive sync protocol healthy** — Protocols #12-#62 completed in succession
-- **Protocol #62 (v5.78.0):** 5 feature branches forward-merged across 4 submodules
-- **Forward merges:** ArrowVortex DDC integration (+699), MarbleBlast audio/Svelte (+157), bobsgameonlinejava PolygonLasso (+349), aios Tabby tweaks (+49), bg doc sync (+71)
-- **Submodule fixes:** bobui submodule pointers reinitialized (juce/ultimatepp), jules-autopilot dev.db gitignored, deep pybind11 build_output added to .gitignore
+- **Executive sync protocol healthy** — Protocols #12-#63 completed in succession
+- **Protocol #63 (v5.79.0):** 12 feature branches forward-merged across 11 submodules
+- **Forward merges:** ArrowVortex proof-of-dance (+3), MarbleBlast Svelte Options (+2), agentirc async-refactor websocket bridge (+23), ai_game_engine Godot CGO bridge (+17), bobtorrent GossipSub/I2P (+27), bobsaver projectM assimilation (+1), realestatecrm AI drip execution (+7), bobbybookmarks handoff docs (+3), bqt audio graph renaming (+1), aimoneymachine_site blog/authors (+7), tormentnexus cloud dashboard MCP SSE (+19)
+- **Submodule fixes:** enterprise_sales_bot/borg broken submodule pointer fixed in MilkDrop3_fix/aios, stale index.lock removed from MilkDrop3_fix
 - **All submodules initialized** — no uninitialized submodules in .gitmodules
-- **Version control** — Global version bumped to v5.78.0, synced across VERSION, VERSION.md, CHANGELOG.md
-- **jules-autopilot on latest** — v3.6.24 (hourly nudge rate limiting, broadcast retry, archive improvements)
-- **enterprise_sales_bot active** — T-800 skull refinements, hero opacity fix, Go dependency patches
-- **hymnmania active** — YouTube OAuth upload working, Batch Suno Pipeline
-- **Build pipeline verified** — 10 Go binaries preserved, hyperharness rebuilt
+- **Version control** — Global version bumped to v5.79.0, synced across VERSION, VERSION.md, CHANGELOG.md
+- **jules-autopilot on latest** — v3.6.24
+- **enterprise_sales_bot active** — T-800 skull refinements, hero opacity fix
+- **tormentnexus active** — Cloud dashboard MCP SSE, cold archive, skill evolution
 
 ## Key Decisions Made
 
@@ -46,6 +45,7 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 - [x] v5.40.0 — External tool submodule pointer sync (enterprise_sales_bot +1, hymnmania +1, jules-autopilot +1), feature branch assessment
 - [x] v5.40.0 — Cherry-picked & merged 2 feature branches: bobui (bqt) bqt-renaming-audio-graph (93 files, +1339), bobsgameonlinejava port-cpp-puzzle-logic (+152)
 - [x] v5.40.0 — De-nested redundant bg submodule from MilkDrop3
+- [x] v5.79.0 — Protocol #63: 12 feature branches forward-merged across 11 submodules
 - [ ] 165 GitHub vulnerabilities on default branch (1 critical, 72 high)
 - [ ] bg nested references/ submodules (~50) remain uninitialized
 
