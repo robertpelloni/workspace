@@ -1,13 +1,16 @@
 # Submodule Dashboard & Project Structure
+
 **Last Updated:** 2026-06-21 08:45:57
 
 ## Project Directory Structure Explanation
+
 This monorepo serves as a unified workspace and orchestrator for dozens of independent microservices, libraries, desktop applications, and AI agents.
-*   **`Root/`**: Contains the global orchestration scripts (`sync_and_merge.py`, `intelligent_sync_all.py`), universal documentation (`LLM_INSTRUCTIONS.md`, `ROADMAP.md`), and the workspace-level `package.json` / configuration files.
-*   **`.gemini/`, `.claude/`, etc.**: AI agent configuration and context directories managing instructions and local extensions for LLMs.
-*   **AI Agent Projects**: Folders like `borg`, `metamcp`, `jules-autopilot`, `antigravity-autopilot`, `mcp-superassistant` contain specialized multi-modal and autonomous agents leveraging MCP (Model Context Protocol).
-*   **Full-Stack Apps**: Folders like `Chamber.Law`, `cointrade`, `bobeditpro`, `bobfilez` contain entire standalone full-stack applications with their own submodules.
-*   **Shared Libraries**: Other directories include shared utilities and libraries nested across the ecosystem.
+
+* **`Root/`**: Contains the global orchestration scripts (`sync_and_merge.py`, `intelligent_sync_all.py`), universal documentation (`LLM_INSTRUCTIONS.md`, `ROADMAP.md`), and the workspace-level `package.json` / configuration files.
+* **`.gemini/`, `.claude/`, etc.**: AI agent configuration and context directories managing instructions and local extensions for LLMs.
+* **AI Agent Projects**: Folders like `borg`, `metamcp`, `jules-autopilot`, `antigravity-autopilot`, `mcp-superassistant` contain specialized multi-modal and autonomous agents leveraging MCP (Model Context Protocol).
+* **Full-Stack Apps**: Folders like `Chamber.Law`, `cointrade`, `bobeditpro`, `bobfilez` contain entire standalone full-stack applications with their own submodules.
+* **Shared Libraries**: Other directories include shared utilities and libraries nested across the ecosystem.
 
 ## Submodule Status & Versions
 
@@ -50,13 +53,14 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 0.5.0
 =======
 0.6.0
+
 >>>>>>> origin/jules-phase6-production-hardening-042-863b86a9-12417263503841031080 | main | '3cd9355' | '2026-06-21' | 'Fix LinkedInSource config - reads credentials fro... |
 | f-zerox | N/A | main | '407e20e' | '2026-06-05' | 'fix: update 4 stale submodule pointers to HEAD â€... |
 | fcdm | N/A | main | 'ae852b5' | '2026-06-06' | 'v4.53.0: remove gitlinks - NO submodule reference... |
 | frontend-sdl-cpp | N/A | master | '1ee402b' | '2026-05-02' | 'sync: update project state' |
 | fwber | 2.1.9 | main | 'f8d58bd02' | '2026-06-19' | 'docs: add workspace preservation notice to .gitig... |
 | geany | N/A | master | 'bd221de07' | '2026-06-20' | 'fix: update btk submodule pin â€” btk now has fix... |
-| geiss | N/A | main | '816b527' | '2026-03-05' | 'Merge branch 'main' of https://www.github.com/gei... |
+| geiss | N/A | main | '816b527' | '2026-03-05' | 'Merge branch 'main' of <https://www.github.com/gei>... |
 | hyper | N/A | canary | '7c75cfa7' | '2026-06-14' | 'chore: apply security overrides via pnpm audit --... |
 | hyperharness | 0.5.0-alpha.5 | main | 'f6321e5d' | '2026-06-19' | 'fix: remove stale external/OmniRoute submodule en... |
 | litellm | N/A | HEAD | 'a58b45bddd' | '2026-05-30' | 'merge: audit-and-metrics-implementation (3 commit... |
@@ -101,7 +105,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | antigravity-autopilot\yoke-antigravity | N/A | master | '8c3d312' | '2026-04-08' | 'Auto-sync' |
 | bg\bobsgameonlinejava | N/A |  |  |  |  |
 | bg\okgame | N/A |  |  |  |  |
-| bobeditpro\muse_framework | N/A | main | '42673313' | '2026-05-25' | 'Merge branch 'main' of https://github.com/musesco... |
+| bobeditpro\muse_framework | N/A | main | '42673313' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/musesco>... |
 | bobfilez\VERT | N/A | HEAD | '49821e5' | '2026-06-02' | 'fix: sponsor' |
 | bobfilez\ai-file-sorter | N/A | HEAD | 'cd9a024' | '2026-05-13' | 'feat(packaging): add RPM packaging and backend-aw... |
 | bobmani\Simply-Love-SM5 | N/A | itgmania-release | '06a56f5f' | '2026-06-06' | 'Merge remote-tracking branch 'upstream/itgmania-b... |
@@ -121,14 +125,14 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobsaver\MilkDrop3 | N/A | main | '3376cde' | '2026-06-19' | 'fix: remove dead submodules metamcp and raindropi... |
 | bobsaver\apophysis-j | N/A | master | '8e84307' | '2026-05-19' | 'chore: bump version to 2.10.0 and close _SaveFlam... |
 | bobsaver\electricsheep | N/A | master | 'd07f18e' | '2026-05-22' | 'Fix build errors, modernize dependencies, and gen... |
-| bobsaver\geiss | N/A | main | '816b527' | '2026-03-05' | 'Merge branch 'main' of https://www.github.com/gei... |
+| bobsaver\geiss | N/A | main | '816b527' | '2026-03-05' | 'Merge branch 'main' of <https://www.github.com/gei>... |
 | bobsaver\projectm | N/A | master | '23757a21e' | '2026-06-05' | 'fix: update 1 stale submodule pointer to HEAD â€”... |
 | bobsgameonlinejava\bobcoin | N/A | main | '5e0b5d48' | '2026-05-30' | 'fix: resolve conflict markers in bobcoin HANDOFF.... |
 | bobtorrent\bobcoin | N/A | main | '5e0b5d48' | '2026-05-30' | 'fix: resolve conflict markers in bobcoin HANDOFF.... |
 | bobtorrent\element-web | N/A | develop | '2f4e2d235e' | '2026-06-01' | 'Merge remote-tracking branch 'origin/travis/msc43... |
-| bobtorrent\qbittorrent | N/A | master | '30242fa54' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
+| ~~bobtorrent\qbittorrent~~ | _removed_ | _removed_ | _removed_ | _removed_ | _Removed 2026-07-01 — reference C++ client, caused Jules proxy clone failure, unused by any Go code_ |
 | bobtrax\ardour | N/A | HEAD | '8015119773' | '2026-06-16' | 'silence a gcc fallthrough warning with c++17 port... |
-| bobtrax\bobui | N/A | main | '5e8ea5784a' | '2026-06-01' | 'Merge branch 'main' of https://github.com/robertp... |
+| bobtrax\bobui | N/A | main | '5e8ea5784a' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/robertp>... |
 | bobtrax\lmms | N/A | HEAD | 'e215cd0c3' | '2026-06-19' | 'Remove `Model` constraints on `VolumeKnob` (#8438... |
 | bobtrax\muse | N/A | master | 'fe5e92ed' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobtrax\zrythm | N/A | HEAD | '4967fd053' | '2026-06-18' | 'Merge branch 'feature/chord-functionality' into '... |
@@ -178,7 +182,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | antigravity-autopilot\submodules\antigravity-sdk | N/A | main | 'e6f8efb' | '2026-04-08' | 'Auto-sync' |
 | bcs\external\bqt-reference | N/A | HEAD | '1c589f87cb' | '2026-06-05' | 'fix: update 2 stale submodule pointers to HEAD â€... |
 | bcs\external\juce | N/A | HEAD | '3ba67d4585' | '2026-05-21' | 'CI: Add juce9 branch' |
-| bcs\external\ultimatepp | N/A | HEAD | '5276c666b' | '2026-06-18' | 'Merge branch 'master' of https://github.com/ultim... |
+| bcs\external\ultimatepp | N/A | HEAD | '5276c666b' | '2026-06-18' | 'Merge branch 'master' of <https://github.com/ultim>... |
 | bg\bobsgameonlinejava\bobcoin | N/A |  |  |  |  |
 | bgtk\submodules\juce | N/A | master | '3ba67d4585' | '2026-05-21' | 'CI: Add juce9 branch' |
 | bgtk\submodules\ultimatepp | N/A | master | '70e1422bf' | '2026-05-24' | 'Core/SSL: Hardened AES-GCM-256 encryption/decrypt... |
@@ -187,23 +191,23 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\ADSIdentifier | N/A | master | '7074e07' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\ADSman | N/A | main | '40b0766' | '2026-04-11' | 'chore: save progress before update' |
 | bobfilez\libs\AlternateDataStreams | N/A | master | '9eb3f30' | '2026-02-26' | 'chore: save progress before update' |
-| bobfilez\libs\BLAKE3 | N/A | master | '3702a2e' | '2026-05-25' | 'Merge branch 'master' of https://github.com/BLAKE... |
+| bobfilez\libs\BLAKE3 | N/A | master | '3702a2e' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/BLAKE>... |
 | bobfilez\libs\Bringing-Old-Photos-Back-to-Life | N/A | master | '2093171' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\C | N/A | master | '75cfc361' | '2026-04-14' | 'Merge feature origin/leetcode_writer_fix into mas... |
 | bobfilez\libs\DataStreamBrowser | N/A | master | '70235cc' | '2026-03-01' | 'chore: save progress before update' |
-| bobfilez\libs\Dependencies | N/A | main | '4c1c96a' | '2026-06-01' | 'Merge branch 'main' of https://github.com/ImageMa... |
-| bobfilez\libs\FFmpeg | 0.7.8 | master | 'd6682e1df3' | '2026-05-25' | 'Merge branch 'master' of https://github.com/FFmpe... |
-| bobfilez\libs\ImageMagick | N/A | main | '98dbe3e76' | '2026-06-01' | 'Merge branch 'main' of https://github.com/ImageMa... |
-| bobfilez\libs\Imath | N/A | main | 'f707a64' | '2026-05-25' | 'Merge branch 'main' of https://github.com/Academy... |
+| bobfilez\libs\Dependencies | N/A | main | '4c1c96a' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/ImageMa>... |
+| bobfilez\libs\FFmpeg | 0.7.8 | master | 'd6682e1df3' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/FFmpe>... |
+| bobfilez\libs\ImageMagick | N/A | main | '98dbe3e76' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/ImageMa>... |
+| bobfilez\libs\Imath | N/A | main | 'f707a64' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/Academy>... |
 | bobfilez\libs\JUCE | N/A | master | 'fa781307cb' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
 | bobfilez\libs\LibRaw | N/A |  |  | '2026-05-16' | 'fixed stack memory/previous image metadata exposu... |
 | bobfilez\libs\Magick.NET | N/A | main | '0ab3f2405' | '2026-06-01' | 'Corrected typo.' |
 | bobfilez\libs\MediaInfo | N/A | HEAD | 'fabd16d40' | '2026-05-20' | 'Merge pull request #1283 from g-maxime/appimage' |
-| bobfilez\libs\MediaInfoLib | N/A | master | '4172255b3' | '2026-05-25' | 'Merge branch 'master' of https://github.com/Media... |
+| bobfilez\libs\MediaInfoLib | N/A | master | '4172255b3' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/Media>... |
 | bobfilez\libs\OpenColorIO | N/A | main | '066c5e29' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
-| bobfilez\libs\OpenCue | N/A | master | '979e4e31' | '2026-06-01' | 'Merge branch 'master' of https://github.com/Acade... |
-| bobfilez\libs\OpenImageIO | N/A | main | 'f7f483ba9' | '2026-06-01' | 'Merge branch 'main' of https://github.com/Academy... |
-| bobfilez\libs\OpenRV | N/A | main | '682e4712' | '2026-06-01' | 'Merge branch 'main' of https://github.com/Academy... |
+| bobfilez\libs\OpenCue | N/A | master | '979e4e31' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/Acade>... |
+| bobfilez\libs\OpenImageIO | N/A | main | 'f7f483ba9' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/Academy>... |
+| bobfilez\libs\OpenRV | N/A | main | '682e4712' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/Academy>... |
 | bobfilez\libs\OpenTimelineIO | N/A | main | 'dc802c8' | '2026-06-01' | 'chore: save progress before update' |
 | bobfilez\libs\Powershell-ADS | N/A | master | '13a7507' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\RenStrm | N/A | master | 'f195bb9' | '2026-02-26' | 'chore: save progress before update' |
@@ -212,28 +216,28 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\ShazamIO | N/A | master | '9163c1b' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\SysmonForLinux | N/A | main | '5d4afca' | '2026-06-01' | 'chore: save progress before update' |
 | bobfilez\libs\TinyEXIF | N/A | master | 'feb86cd' | '2026-04-14' | 'chore: save local progress before sync' |
-| bobfilez\libs\Windows | N/A | main | 'e1a9307' | '2026-05-25' | 'Merge branch 'main' of https://github.com/ImageMa... |
+| bobfilez\libs\Windows | N/A | main | 'e1a9307' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/ImageMa>... |
 | bobfilez\libs\WizardsToolkit | N/A | main | 'abe6322' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\ads | N/A | master | '812a05d' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\argon2 | N/A | master | '1ce5c81' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\audio-recognizer | N/A | master | '3dcaaee' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\audiocraft | N/A | main | '28223fe' | '2026-04-14' | 'Merge feature origin/jasco_release_Jan12 into mai... |
 | bobfilez\libs\bobgui | 1.0.2 | HEAD | '79878af782' | '2026-05-25' | 'chore: auto-commit pending changes before workspa... |
-| bobfilez\libs\bobui | N/A | main | '852143497e' | '2026-06-01' | 'Merge branch 'main' of https://github.com/robertp... |
+| bobfilez\libs\bobui | N/A | main | '852143497e' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/robertp>... |
 | bobfilez\libs\brotli | N/A | master | 'b9a3377b' | '2026-06-01' | 'Merge pull request #1406 from mannewalis:fix/emsc... |
 | bobfilez\libs\btk | 0.2.0 | master | '0ccafdbdf' | '2026-06-20' | 'fix: update bobui-reference submodule pin to vali... |
 | bobfilez\libs\c-ares | N/A | master | '6298122' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\cURL | N/A | master | '5104c165f' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
 | bobfilez\libs\calibre | N/A | master | 'e43178cd4c' | '2026-06-01' | 'Cover grid: When using an image larger than the v... |
-| bobfilez\libs\ckmame | N/A | main | 'e2585f6b' | '2026-05-25' | 'Merge branch 'main' of https://github.com/nih-at/... |
+| bobfilez\libs\ckmame | N/A | main | 'e2585f6b' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/nih-at/>... |
 | bobfilez\libs\cmark | N/A | master | 'b6232e9' | '2026-05-29' | 'Refactor: Use snprintf return value instead of re... |
 | bobfilez\libs\cyrus-sasl | N/A | master | '1144b53' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
 | bobfilez\libs\dirent | N/A | master | '1d454a8' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\dokany | N/A | master | 'c192535' | '2026-06-01' | 'chore: save progress before update' |
 | bobfilez\libs\dragonffi | N/A | master | '6790c07' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\dtl-diff | N/A | master | '32567bb' | '2024-07-11' | 'v1.21' |
-| bobfilez\libs\dunst | N/A | master | '4600ec9' | '2026-06-01' | 'Merge branch 'master' of https://github.com/dunst... |
-| bobfilez\libs\enchant | N/A | master | '1e7b104' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
+| bobfilez\libs\dunst | N/A | master | '4600ec9' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/dunst>... |
+| bobfilez\libs\enchant | N/A | master | '1e7b104' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
 | bobfilez\libs\fast-lzma2 | N/A | master | '5ea485a' | '2026-04-13' | 'Merge feature origin/dev into master' |
 | bobfilez\libs\freetype | N/A | master | 'fa9b229' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\fribidi | N/A | master | '09fa0da' | '2026-02-26' | 'chore: save progress before update' |
@@ -242,7 +246,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\gdk-pixbuf | N/A | main | '3648c0a' | '2026-04-11' | 'chore: save progress before update' |
 | bobfilez\libs\getopt-win | N/A | getopt_glibc_2.42_port | 'ac1b9ea' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\getopt-win32 | N/A | original | 'f45e27d' | '2026-04-13' | 'Merge feature origin/ont_msvc14 into main' |
-| bobfilez\libs\gettext | N/A | master | 'd513aad' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
+| bobfilez\libs\gettext | N/A | master | 'd513aad' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
 | bobfilez\libs\ghostpdl | N/A | master | '2379059fb' | '2026-05-28' | 'PDF interpreter - initialise Private values in FD... |
 | bobfilez\libs\glad | N/A | glad2 | 'cef3f89' | '2026-04-09' | 'c: Try loading OpenGL through EGL if GLX isn't av... |
 | bobfilez\libs\glib | N/A | master | '08e2002' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
@@ -259,17 +263,17 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\imageinfo | N/A | master | 'a257837' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\imap | N/A | master | '8b21912' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\imghash-viewer | N/A | main | '1154eb2' | '2026-03-01' | 'chore: save progress before update' |
-| bobfilez\libs\jhead | N/A | master | 'f2945d5' | '2026-05-25' | 'Merge branch 'master' of https://github.com/Matth... |
-| bobfilez\libs\json-c | N/A | master | '9300a67' | '2026-05-25' | 'Merge branch 'master' of https://github.com/json-... |
+| bobfilez\libs\jhead | N/A | master | 'f2945d5' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/Matth>... |
+| bobfilez\libs\json-c | N/A | master | '9300a67' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/json->... |
 | bobfilez\libs\libarchive | N/A | master | '17b4395a' | '2026-06-01' | 'Merge pull request #3082 from stoeckmann/bzip2_de... |
 | bobfilez\libs\libavif | N/A | master | 'fe09b88' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\libbzip2 | N/A | master | 'c380811' | '2026-04-13' | 'Merge feature origin/bzip2-1.0.6 into master' |
 | bobfilez\libs\libde265 | N/A | master | '9183675' | '2026-06-01' | 'Add SSE4.1 accelerated add_residual' |
-| bobfilez\libs\libevent | N/A | master | '0ccdb859' | '2026-06-01' | 'Merge branch 'master' of https://github.com/libev... |
-| bobfilez\libs\libexif | N/A | master | '6155976' | '2026-05-25' | 'Merge branch 'master' of https://github.com/libex... |
-| bobfilez\libs\libffi | N/A | master | 'f791f02' | '2026-05-25' | 'Merge branch 'master' of https://github.com/libff... |
+| bobfilez\libs\libevent | N/A | master | '0ccdb859' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/libev>... |
+| bobfilez\libs\libexif | N/A | master | '6155976' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/libex>... |
+| bobfilez\libs\libffi | N/A | master | 'f791f02' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/libff>... |
 | bobfilez\libs\libgit2 | N/A | HEAD | 'e490b18b7' | '2026-05-25' | 'Merge pull request #7157 from OlekRaymond/main' |
-| bobfilez\libs\libheif | N/A | master | '1df1d148' | '2026-06-01' | 'Merge branch 'master' of https://github.com/struk... |
+| bobfilez\libs\libheif | N/A | master | '1df1d148' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/struk>... |
 | bobfilez\libs\libiconv | N/A | master | '42b5931' |  |  |
 | bobfilez\libs\libimghash | N/A |  |  |  |  |
 | bobfilez\libs\libjpeg | N/A |  |  |  |  |
@@ -277,46 +281,46 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\libmcrypt | N/A |  |  |  |  |
 | bobfilez\libs\libpng | N/A |  |  |  |  |
 | bobfilez\libs\librsync | N/A | master | '271744d' | '2025-08-29' | 'Merge pull request #264 from trel/trel-rdiff.md' |
-| bobfilez\libs\libsodium | N/A | master | '911f62c' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
-| bobfilez\libs\libssh2 | N/A | master | '9329c02' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
+| bobfilez\libs\libsodium | N/A | master | '911f62c' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
+| bobfilez\libs\libssh2 | N/A | master | '9329c02' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
 | bobfilez\libs\libtidy | N/A | master | '1665706' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\libunistd | 1.3 | master | 'bd579ab' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\libvbucket | N/A | master | 'f18a4dd' | '2026-04-14' | 'chore: save local progress before sync' |
-| bobfilez\libs\libvips | N/A | master | 'de292f1ac' | '2026-06-01' | 'Merge branch 'master' of https://github.com/libvi... |
+| bobfilez\libs\libvips | N/A | master | 'de292f1ac' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/libvi>... |
 | bobfilez\libs\libvpx | N/A | master | 'c35e9cb' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\libwebp | N/A | master | 'ec08809' | '2026-04-14' | 'chore: save local progress before sync' |
-| bobfilez\libs\libxml2 | 2.16.0 | master | '55366e5d' | '2026-06-01' | 'Merge branch 'master' of https://github.com/GNOME... |
+| bobfilez\libs\libxml2 | 2.16.0 | master | '55366e5d' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/GNOME>... |
 | bobfilez\libs\libxmlplusplus | N/A | master | '3a6cda0' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
-| bobfilez\libs\libxpm | N/A | master | '6eab947' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
-| bobfilez\libs\libxslt | N/A | master | '242f6e8' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
-| bobfilez\libs\libzip | N/A | main | '1e728030' | '2026-05-25' | 'Merge branch 'main' of https://github.com/nih-at/... |
-| bobfilez\libs\lmdb | N/A | master | '7a041dc' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
+| bobfilez\libs\libxpm | N/A | master | '6eab947' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
+| bobfilez\libs\libxslt | N/A | master | '242f6e8' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
+| bobfilez\libs\libzip | N/A | main | '1e728030' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/nih-at/>... |
+| bobfilez\libs\lmdb | N/A | master | '7a041dc' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
 | bobfilez\libs\lsads | N/A | master | 'b349877' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\lvgl | N/A | master | '98d7c2999' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
 | bobfilez\libs\lz4 | N/A | dev | 'a79e8435' | '2026-06-01' | 'Merge pull request #1755 from lz4/bye_cirrus' |
 | bobfilez\libs\md4c | N/A | master | '6ed63d1' | '2026-05-31' | 'Fix broken testcase related to #352.' |
 | bobfilez\libs\metastore | N/A | master | '9b78b5d' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\mm_file | N/A | master | 'e57b1b0' | '2026-03-01' | 'chore: save progress before update' |
-| bobfilez\libs\mpir | N/A | master | 'ee0bc0e' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
-| bobfilez\libs\mpv | N/A | master | 'a863e08a21' | '2026-06-01' | 'Merge branch 'master' of https://github.com/mpv-p... |
-| bobfilez\libs\net-snmp | N/A | master | 'c5119d1' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
+| bobfilez\libs\mpir | N/A | master | 'ee0bc0e' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
+| bobfilez\libs\mpv | N/A | master | 'a863e08a21' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/mpv-p>... |
+| bobfilez\libs\net-snmp | N/A | master | 'c5119d1' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
 | bobfilez\libs\nghttp2 | N/A | master | '2924fed' | '2026-04-14' | 'chore: save local progress before sync' |
-| bobfilez\libs\nihtest | N/A | main | '971f34b' | '2026-05-25' | 'Merge branch 'main' of https://github.com/nih-at/... |
+| bobfilez\libs\nihtest | N/A | main | '971f34b' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/nih-at/>... |
 | bobfilez\libs\nihtest-cpp | N/A | main | '6f417fd' | '2026-04-14' | 'chore: save local progress before sync' |
-| bobfilez\libs\oniguruma | N/A | master | '9f47fdf' | '2026-05-25' | 'Merge branch 'master' of https://github.com/winli... |
-| bobfilez\libs\openapv | N/A | main | '4c5180c' | '2026-05-25' | 'Merge branch 'main' of https://github.com/Academy... |
-| bobfilez\libs\opencv | N/A | 4.x | 'd1581abe27' | '2026-06-01' | 'Merge branch '4.x' of https://github.com/opencv/o... |
-| bobfilez\libs\openexr | N/A | main | 'ad5022c6' | '2026-06-01' | 'Merge branch 'main' of https://github.com/Academy... |
-| bobfilez\libs\openfx | N/A | main | '2f286ac' | '2026-06-01' | 'Merge branch 'main' of https://github.com/Academy... |
-| bobfilez\libs\openh264 | N/A | master | '672eeb36' | '2026-05-25' | 'Merge branch 'master' of https://github.com/cisco... |
-| bobfilez\libs\openjpeg | N/A | master | '5a7241d4' | '2026-05-25' | 'Merge branch 'master' of https://github.com/uclou... |
+| bobfilez\libs\oniguruma | N/A | master | '9f47fdf' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/winli>... |
+| bobfilez\libs\openapv | N/A | main | '4c5180c' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/Academy>... |
+| bobfilez\libs\opencv | N/A | 4.x | 'd1581abe27' | '2026-06-01' | 'Merge branch '4.x' of <https://github.com/opencv/o>... |
+| bobfilez\libs\openexr | N/A | main | 'ad5022c6' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/Academy>... |
+| bobfilez\libs\openfx | N/A | main | '2f286ac' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/Academy>... |
+| bobfilez\libs\openh264 | N/A | master | '672eeb36' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/cisco>... |
+| bobfilez\libs\openjpeg | N/A | master | '5a7241d4' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/uclou>... |
 | bobfilez\libs\openldap | N/A | master | '4932387' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
 | bobfilez\libs\openssl | N/A | 4.0 | '8729d6d5' | '2026-05-05' | 'Update to 4.0.0' |
 | bobfilez\libs\p7zip | N/A | master | '6819e2d' | '2025-05-20' | 'move license file to the root director (#252)' |
 | bobfilez\libs\pHash | N/A | main | '2f69861' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\pHash.c | N/A | main | 'a03872e' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\pandoc | N/A | main | '903843948' | '2026-06-01' | 'Fix typo in stack.yaml.' |
-| bobfilez\libs\pcre2 | N/A | main | '3f6e8efd' | '2026-05-25' | 'Merge branch 'main' of https://github.com/PCRE2Pr... |
+| bobfilez\libs\pcre2 | N/A | main | '3f6e8efd' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/PCRE2Pr>... |
 | bobfilez\libs\perceptual-dct-hash | N/A | master | 'c533281' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\pngquant | N/A | main | '1808c8f' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\poppler | N/A | master | 'a2cf35eb' | '2026-06-01' | 'Update (C)' |
@@ -325,9 +329,9 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\pthreads | N/A | main | '3015396' | '2026-03-01' | 'chore: save progress before update' |
 | bobfilez\libs\pxz | N/A | master | '6469dd6' | '2026-04-11' | 'chore: save progress before update' |
 | bobfilez\libs\qdbm | N/A | master | '1a556e3' | '2026-03-01' | 'chore: save progress before update' |
-| bobfilez\libs\radare2 | N/A | master | 'ae883b6c79' | '2026-06-01' | 'Merge branch 'master' of https://github.com/radar... |
+| bobfilez\libs\radare2 | N/A | master | 'ae883b6c79' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/radar>... |
 | bobfilez\libs\rapidjson | N/A | master | '382c9a9' | '2026-06-01' | 'chore: save progress before update' |
-| bobfilez\libs\raylib | N/A | master | '278d00705' | '2026-06-01' | 'Merge branch 'master' of https://github.com/raysa... |
+| bobfilez\libs\raylib | N/A | master | '278d00705' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/raysa>... |
 | bobfilez\libs\re2 | N/A | main | '972a15c' | '2026-01-22' | 're2: remove unnecessary & in MutexLock usage' |
 | bobfilez\libs\rename-utils | N/A | main | 'b54c01ec' | '2026-05-18' | 'Add more docstrings.' |
 | bobfilez\libs\ripgrep | N/A | master | '4857d6f' | '2026-05-26' | 'docs: s/our projects/this project in AI policy' |
@@ -342,18 +346,18 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\tinyphash | N/A | master | 'ccab513' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\tinyxml2 | N/A | master | '8224e42' | '2026-05-23' | 'Merge branch 'master' of github.com:leethomason/t... |
 | bobfilez\libs\ultimatepp | N/A | master | '20c352c7c' | '2026-06-01' | 'CtrlCore: Fixed to compile in Linux' |
-| bobfilez\libs\util-linux | N/A | master | '8d3fd92f8' | '2026-05-25' | 'Merge branch 'master' of https://github.com/util-... |
-| bobfilez\libs\vlc | N/A | master | '9b943a3e49' | '2026-05-25' | 'Merge branch 'master' of https://github.com/video... |
+| bobfilez\libs\util-linux | N/A | master | '8d3fd92f8' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/util->... |
+| bobfilez\libs\vlc | N/A | master | '9b943a3e49' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/video>... |
 | bobfilez\libs\wineditline | N/A | master | '20dd166' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\wkhtmltopdf | 0.12.7-dev | master | 'd398c8a' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\xattrlib | N/A | master | '85522f2' | '2026-02-26' | 'chore: save progress before update' |
 | bobfilez\libs\xattrs | N/A | master | 'b60f534' | '2026-02-26' | 'chore: save progress before update' |
-| bobfilez\libs\xxHash | N/A | dev | 'c65bb60' | '2026-06-01' | 'Merge branch 'dev' of https://github.com/Cyan4973... |
+| bobfilez\libs\xxHash | N/A | dev | 'c65bb60' | '2026-06-01' | 'Merge branch 'dev' of <https://github.com/Cyan4973>... |
 | bobfilez\libs\ziptools | N/A | main | 'b9864d1' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\zlib | N/A | master | 'bc33e6c' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\zstd | N/A | dev | '5233c58e' | '2026-05-14' | '[doc] Clarify requirements around Block_Maximum_S... |
 | bobmani\arrowvortex\odcnn | N/A | master | '454f4c7' | '2020-02-26' | 'small change' |
-| bobmani\beatoraja\bobcoin | N/A | main | '9a1dcff' | '2026-04-14' | 'Merge branch 'main' of https://github.com/robertp... |
+| bobmani\beatoraja\bobcoin | N/A | main | '9a1dcff' | '2026-04-14' | 'Merge branch 'main' of <https://github.com/robertp>... |
 | bobmani\beatoraja\lr2oraja-endlessdream | N/A | main | '47d3b7f5' | '2026-04-14' | 'Merge feature origin/bugfix-key-c-binding into ma... |
 | bobmani\bobmania\bobcoin | N/A | main | '77089464' | '2026-06-04' | 'chore: sync working tree' |
 | bobmani\ddc\ddc_onset | N/A | main | '5d7572a' | '2026-05-02' | 'sync: update project state' |
@@ -407,7 +411,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobsgameonlinejava\references\tilemap-editor | N/A | main | '758cdbb' | '2022-12-07' | 'tilemap editor api improvements' |
 | bobsgameonlinejava\references\tilemap-studio | N/A | master | '244378b' | '2026-05-02' | 'Update FLTK to 1.4.5 (#94)' |
 | bobsgameonlinejava\references\voidsprite | N/A | HEAD | 'e18443a' | '2026-05-15' | 'loop animation option in gif export' |
-| bobsgameweb\submodules\bobui | N/A | main | '9158674f9e' | '2026-06-01' | 'Merge branch 'main' of https://github.com/robertp... |
+| bobsgameweb\submodules\bobui | N/A | main | '9158674f9e' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/robertp>... |
 | bqt\submodules\juce | N/A | master | '0729f131f8' | '2026-04-22' | 'chore: sync v2.7.0' |
 | bqt\submodules\ultimatepp | N/A | HEAD | 'fb2a4bc30' | '2026-06-14' | 'CtrlLib: Fixed problem with DisplayPopup getting ... |
 | f-zerox\tools\asm-differ | N/A | HEAD | 'dd7f9f0' | '2026-04-01' | 'Fix --compress-matching with three-way diffing' |
@@ -567,7 +571,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bg\okgame\lib\vorbis | N/A |  |  |  |  |
 | bg\okgame\lib\zlib | N/A |  |  |  |  |
 | bobfilez\ai-file-sorter\external\Catch2 | N/A | devel | '2318c101' | '2026-04-13' | 'chore: save local progress before sync' |
-| bobfilez\libs\SysmonForLinux\sysmonCommon | N/A | main | 'b52df2c' | '2026-05-25' | 'Merge branch 'main' of https://github.com/Microso... |
+| bobfilez\libs\SysmonForLinux\sysmonCommon | N/A | main | 'b52df2c' | '2026-05-25' | 'Merge branch 'main' of <https://github.com/Microso>... |
 | bobfilez\libs\pngquant\lib | N/A | main | '198571b' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobfilez\libs\wkhtmltopdf\qt | N/A | wk_4.8.7 | 'cc6d5e1d37' | '2026-04-14' | 'chore: save local progress before sync' |
 | bobmani\bobmania\Themes\Simply-Love-SM5 | N/A | itgmania-release | 'e9ac235b' | '2026-03-26' | 'Remove (beta)' |
@@ -626,12 +630,12 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobtrax\bobui\submodules\juce | N/A | HEAD | '3ba67d4585' | '2026-05-21' | 'CI: Add juce9 branch' |
 | bobtrax\bobui\submodules\ultimatepp | N/A | HEAD | 'fb2a4bc30' | '2026-06-14' | 'CtrlLib: Fixed problem with DisplayPopup getting ... |
 | bobtrax\lmms\doc\wiki | N/A | HEAD | '538199f' | '2026-05-25' | 'Updated Dependencies OpenBSD (markdown)' |
-| hyperharness\llamafile\stable-diffusion.cpp\ggml | N/A | master | '1ffa6b11' | '2026-04-14' | 'Merge branch 'master' of https://github.com/ggml-... |
+| hyperharness\llamafile\stable-diffusion.cpp\ggml | N/A | master | '1ffa6b11' | '2026-04-14' | 'Merge branch 'master' of <https://github.com/ggml->... |
 | hyperharness\llamafile\third_party\zipalign | N/A | main | '2ee1385' | '2025-11-28' | 'Test it works with BSD make' |
 | mk64\tools\blender\fast64 | N/A | HEAD | 'd517bc4' | '2026-04-10' | '[SM64] Assume "has sm64 settings" -> should load ... |
 | OmniRoute\.next\standalone\workspace\OmniRoute | N/A |  |  |  |  |
 | bcs\external\bqt-reference\submodules\juce | N/A | HEAD | '3ba67d4585' | '2026-05-21' | 'CI: Add juce9 branch' |
-| bcs\external\bqt-reference\submodules\ultimatepp | N/A | HEAD | '26632191f' | '2026-06-05' | 'Merge branch 'master' of https://github.com/ultim... |
+| bcs\external\bqt-reference\submodules\ultimatepp | N/A | HEAD | '26632191f' | '2026-06-05' | 'Merge branch 'master' of <https://github.com/ultim>... |
 | bg\bobsgameonlinejava\references\aseprite\laf | N/A |  |  |  |  |
 | bg\okgame\lib\boost\more | N/A |  |  |  |  |
 | bg\okgame\lib\libjxl\testdata | N/A |  |  |  |  |
@@ -641,14 +645,14 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobfilez\libs\bobgui\submodules\juce | N/A | master | '3ba67d4585' | '2026-05-21' | 'CI: Add juce9 branch' |
 | bobfilez\libs\bobgui\submodules\ultimatepp | N/A | master | '70e1422bf' | '2026-05-24' | 'Core/SSL: Hardened AES-GCM-256 encryption/decrypt... |
 | bobfilez\libs\bobui\submodules\juce | N/A | master | 'dc190df0e7' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
-| bobfilez\libs\bobui\submodules\ultimatepp | N/A | master | 'cdc3b8f59' | '2026-06-01' | 'Merge branch 'master' of https://github.com/ultim... |
+| bobfilez\libs\bobui\submodules\ultimatepp | N/A | master | 'cdc3b8f59' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/ultim>... |
 | bobfilez\libs\btk\external\bobui-reference | N/A | HEAD | 'c7e1fc7059' | '2026-06-19' | 'fix: update submodule pointers to valid HEAD â€” ... |
 | bobfilez\libs\btk\external\juce | N/A | master | '67f7646367' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
-| bobfilez\libs\btk\external\ultimatepp | N/A | master | '274b262ef' | '2026-06-01' | 'Merge branch 'master' of https://github.com/ultim... |
+| bobfilez\libs\btk\external\ultimatepp | N/A | master | '274b262ef' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/ultim>... |
 | bobfilez\libs\pcre2\deps\sljit | N/A | master | 'd9902b1' | '2026-02-15' | 'config: prevent aarch64_be from being autodetecte... |
-| bobfilez\libs\rapidjson\thirdparty\gtest | N/A | main | 'bc2e1882' | '2026-06-01' | 'Merge branch 'main' of https://github.com/google/... |
+| bobfilez\libs\rapidjson\thirdparty\gtest | N/A | main | 'bc2e1882' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/google/>... |
 | bobmani\ksm-v2\kshootmania\ThirdParty\CoTaskLib | N/A | master | 'cdaa8cf' | '2026-04-14' | 'chore: save local progress before sync' |
-| bobmani\ksm-v2\kshootmania\ThirdParty\NocoUI | N/A | master | '14454dd' | '2026-05-25' | 'Merge branch 'master' of https://github.com/m4sak... |
+| bobmani\ksm-v2\kshootmania\ThirdParty\NocoUI | N/A | master | '14454dd' | '2026-05-25' | 'Merge branch 'master' of <https://github.com/m4sak>... |
 | bobmani\ksm-v2\kshootmania\ThirdParty\SQLiteCpp | N/A | master | 'b89a263' | '2026-06-01' | 'chore: save progress before update' |
 | bobsgameonlinejava\libs\bobui\submodules\juce | N/A | master | '3ba67d4585' | '2026-05-21' | 'CI: Add juce9 branch' |
 | bobsgameonlinejava\libs\bobui\submodules\ultimatepp | N/A | master | '20c352c7c' | '2026-06-01' | 'CtrlCore: Fixed to compile in Linux' |
@@ -706,11 +710,11 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobtrax\lmms\src\3rdparty\jack2 | N/A | HEAD | 'ac334fab' | '2024-03-16' | 'Fix startup and shutdown when server is not runni... |
 | bobtrax\lmms\src\3rdparty\qt5-x11embed | N/A | HEAD | '499d737' | '2025-04-26' | 'Bump ECM to v6.13.0-rc1, match cmake min ver' |
 | bobtrax\lmms\src\3rdparty\ringbuffer | N/A | HEAD | '1c46ef3' | '2022-02-24' | 'Github Action for `make test` (#6)' |
-| bobtrax\zrythm\doc\dev\doxygen-awesome-css | N/A | main | '268db8a' | '2026-06-01' | 'Merge branch 'main' of https://github.com/jothepr... |
+| bobtrax\zrythm\doc\dev\doxygen-awesome-css | N/A | main | '268db8a' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/jothepr>... |
 | geany\variants\geany-bobgui\subprojects\bobgui | 5.0.0-ultrasonic |  |  |  |  |
 | geany\variants\geany-bobgui\subprojects\libffi | N/A | master | '35a3dd28' | '2026-06-19' | 'ci: use correct Debian cross triple for mips64el ... |
 | hyperharness\llamafile\stable-diffusion.cpp\thirdparty\libwebm | N/A | main | 'c0996bb' | '2026-04-13' | 'chore: save local progress before sync' |
-| hyperharness\llamafile\stable-diffusion.cpp\thirdparty\libwebp | N/A | main | '3a7f2dcf' | '2026-04-14' | 'Merge branch 'main' of https://github.com/webmpro... |
+| hyperharness\llamafile\stable-diffusion.cpp\thirdparty\libwebp | N/A | main | '3a7f2dcf' | '2026-04-14' | 'Merge branch 'main' of <https://github.com/webmpro>... |
 | bg\bobsgameonlinejava\libs\lz4-java\src\lz4 | N/A |  |  |  |  |
 | bg\bobsgameonlinejava\references\LibreSprite\src\flic | N/A |  |  |  |  |
 | bg\bobsgameonlinejava\references\LibreSprite\third_party\duktape | N/A |  |  |  |  |
@@ -965,9 +969,9 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bg\okgame\lib\snes9x\external\vulkan-headers | N/A |  |  |  |  |
 | bobfilez\ai-file-sorter\app\include\external\llama.cpp | N/A | master | 'a848e9015' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
 | bobfilez\libs\OpenTimelineIO\src\deps\Imath | N/A | main | '307d352' | '2026-05-25' | 'sync: session 19 add all files and merge branches... |
-| bobfilez\libs\OpenTimelineIO\src\deps\pybind11 | N/A | master | '241e67f7' | '2026-06-01' | 'Merge branch 'master' of https://github.com/pybin... |
+| bobfilez\libs\OpenTimelineIO\src\deps\pybind11 | N/A | master | '241e67f7' | '2026-06-01' | 'Merge branch 'master' of <https://github.com/pybin>... |
 | bobfilez\libs\OpenTimelineIO\src\deps\rapidjson | N/A | master | 'a1743352' | '2026-06-01' | 'chore: save progress before update' |
-| bobfilez\libs\dokany\samples\dokan_memfs\spdlog | N/A | v1.x | 'daccc034' | '2026-06-01' | 'Merge branch 'v1.x' of https://github.com/gabime/... |
+| bobfilez\libs\dokany\samples\dokan_memfs\spdlog | N/A | v1.x | 'daccc034' | '2026-06-01' | 'Merge branch 'v1.x' of <https://github.com/gabime/>... |
 | bobfilez\libs\heif\srcs\extlibs\VVCSoftware_VTM | N/A | HEAD | '274e8fc77' | '2021-05-26' | 'update version to 13.0 and PDF of software manual... |
 | bobmani\beatoraja\lr2oraja-endlessdream\core\dependencies\jbms-parser | N/A | master | 'cd980a4' | '2025-11-18' | 'Refactor to use primitive arrays' |
 | bobmani\beatoraja\lr2oraja-endlessdream\core\dependencies\jbmstable-parser | N/A | master | '205a286' | '2023-12-02' | 'Improve performance of table decoding' |
@@ -1032,14 +1036,14 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bg\okgame\lib\snes9x\external\cubeb\cmake\sanitizers-cmake | N/A |  |  |  |  |
 | bg\okgame\lib\snes9x\external\cubeb\src\cubeb-coreaudio-rs | N/A |  |  |  |  |
 | bg\okgame\lib\snes9x\external\cubeb\src\cubeb-pulse-rs | N/A |  |  |  |  |
-| bobfilez\libs\OpenTimelineIO\src\deps\rapidjson\thirdparty\gtest | N/A | main | '37063c3f' | '2026-06-01' | 'Merge branch 'main' of https://github.com/google/... |
+| bobfilez\libs\OpenTimelineIO\src\deps\rapidjson\thirdparty\gtest | N/A | main | '37063c3f' | '2026-06-01' | 'Merge branch 'main' of <https://github.com/google/>... |
 | bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\testdata | N/A | HEAD | 'd81acac' | '2022-07-11' | 'Merge pull request #6 from szabadka/main' |
 | bobsgameonlinejava\references\voidsprite\external\SDL_ttf\external\plutosvg\plutovg | N/A | HEAD | '1a8412d' | '2025-05-15' | 'Release v1.1.0' |
 | bobtrax\lmms\plugins\CarlaBase\carla\source\native-plugins\external | N/A | HEAD | '3c0026d' | '2023-10-03' | 'Fix build with custom updated pugl' |
 | bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\brotli | N/A | HEAD | '74f08a5' | '2025-04-15' | 'fix build for Microsoft-designed ARM64 ABI' |
 | bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\googletest | N/A | HEAD | '58d77fa8' | '2022-06-27' | 'Updates the version number in CMakeLists.txt to 1... |
 | bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\highway | N/A | HEAD | '86a01250' | '2025-12-24' | 'Fix for GCC 15 compiler error on PPC8/PPC9/PPC10' |
-| bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\lcms | N/A | HEAD | '65c63bf' | '2019-04-18' | 'Merge branch 'master' of https://github.com/mm2/L... |
+| bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\lcms | N/A | HEAD | '65c63bf' | '2019-04-18' | 'Merge branch 'master' of <https://github.com/mm2/L>... |
 | bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\libpng | N/A | HEAD | 'a40189cf8' | '2019-04-14' | 'Release libpng version 1.6.37' |
 | bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\sjpeg | N/A | HEAD | '94e0df6' | '2025-04-02' | 'CMakeLists.txt: bump minimum cmake version to 3.5... |
 | bobsgameonlinejava\references\voidsprite\external\SDL_image\external\libjxl\third_party\skcms | N/A | HEAD | '6437475' | '2019-12-11' | 'Add skcms_AdaptToXYZD50 to the API' |
