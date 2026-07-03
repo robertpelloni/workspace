@@ -1,4 +1,41 @@
 
+## [v5.90.0] - 2026-07-03
+
+- Executive Protocol #68: Repository Synchronization & Intelligent Merge
+- **Submodule fixes:**
+  - Removed stale `borg` submodule from `.gitmodules` (renamed to `tormentnexus`)
+  - Fixed `MilkDrop3_fix/aios/enterprise_sales_bot` → `marketing_agent` rename (broken submodule pointer chain)
+- **Forward merges:**
+  - **bobzilla** `jules-13866237571450642745` — javasandbox HW isolation, webgpu passthrough, privacy patches (7 commits, +230 lines)
+  - **psytrance_night_outreach_agent** `feature/psytrance-outreach-v0.2.1` — fast-forwarded to origin/main (10 feature commits already upstream)
+- **Version bumped to v5.90.0**
+
+## [v5.88.0 → v5.89.0] - 2026-07-02
+
+- Executive Protocol #67: Repository Synchronization & Intelligent Merge (follow-up sweep)
+- **Forward merges:**
+  - **MarbleBlast** Svelte migration doc update (1 commit)
+
+## [v5.87.0 → v5.88.0] - 2026-07-02
+
+- Forward-merge ArrowVortex, bobsgameonlinejava, bobium
+
+## [v5.86.0 → v5.87.0] - 2026-07-02
+
+- Forward-merge MarbleBlast Svelte UI (1 commit)
+
+## [v5.85.0 → v5.86.0] - 2026-07-02
+
+- Forward-merge hymnmania session handoff (7 commits)
+
+## [v5.84.0 → v5.85.0] - 2026-07-02
+
+- Protocol sync + magnific integration
+
+## [v5.83.0 → v5.84.0] - 2026-07-01
+
+- Protocol sync (no new branches)
+
 ## [v5.83.0] - 2026-07-01
 
 - Executive Protocol #67: Repository Synchronization & Intelligent Merge (follow-up sweep)
