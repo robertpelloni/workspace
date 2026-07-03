@@ -1,4 +1,14 @@
 
+## [v5.91.0] - 2026-07-03
+
+- Executive Protocol #69: Repository Synchronization & Intelligent Merge
+- **Submodule fixes:**
+  - Re-initialized `MilkDrop3_fix/aios` submodule with fresh shallow clone (removed stale lock/metadata/gitignore blocking checkout)
+  - Pushed updated MilkDrop3_fix pointer to origin/main
+- **Forward merges:** None — no new feature branches with unique commits since Protocol #68
+- **Batch script version sync:** `start.bat` v5.68.0 → v5.90.0, `build.bat` v5.79.0 → v5.90.0
+- **Version bumped to v5.91.0**
+
 ## [v5.90.0] - 2026-07-03
 
 - Executive Protocol #68: Repository Synchronization & Intelligent Merge
