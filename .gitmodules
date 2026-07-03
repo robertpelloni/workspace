@@ -46,7 +46,6 @@ url = https://github.com/robertpelloni/ArrowVortex
 path = superdawmcp
 url = https://github.com/robertpelloni/superdawmcp
 
-
 [submodule "GWEN"]
 path = GWEN
 url = https://github.com/robertpelloni/GWEN.git
@@ -85,7 +84,6 @@ url = https://github.com/robertpelloni/agentirc.git
 [submodule "ai_game_engine"]
 path = ai_game_engine
 url = https://github.com/robertpelloni/ai_game_engine.git
-
 
 [submodule "apophysis-j"]
 path = apophysis-j
@@ -181,9 +179,9 @@ path = element-web
 url = https://github.com/robertpelloni/element-web.git
 branch = develop
 
-[submodule "enterprise_sales_bot"]
-path = enterprise_sales_bot
-url = https://github.com/robertpelloni/enterprise_sales_bot.git
+[submodule "marketing_agent"]
+	path = marketing_agent
+	url = https://github.com/robertpelloni/marketing_agent.git
 
 [submodule "f-zerox"]
 path = f-zerox
