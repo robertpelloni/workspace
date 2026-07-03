@@ -2,10 +2,6 @@
 path = auto_dj_script
 url = https://github.com/robertpelloni/auto_dj_script
 
-[submodule "borg"]
-path = borg
-url = https://github.com/robertpelloni/borg
-
 [submodule "fwber"]
 path = fwber
 url = https://github.com/robertpelloni/fwber.git
