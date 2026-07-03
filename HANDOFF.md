@@ -1,62 +1,63 @@
-# Handoff — Executive Protocol #69 (v5.91.0)
+# HANDOFF — Executive Protocol #70 (v5.92.0)
 
-## Protocol
+**Date:** 2026-07-03
+**From:** pi-lens automated session
+**Previous:** Protocol #69 (v5.91.0)
 
-**EP #69 (2026-07-03):** Repository Synchronization & Intelligent Merge
+---
 
-## Completed Work
+## Summary
+
+Protocol #70 completed comprehensive repository synchronization across the workspace monorepo.
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
 
-- ✅ **Fetched** all remotes (origin + upstream) for root and all submodules
-- ✅ **Fixed MilkDrop3_fix/aios submodule** — Re-initialized with fresh shallow clone:
-  - Removed stale `index.lock` that was blocking all operations
-  - Deleted corrupted `.git/modules/aios` metadata directory
-  - Removed `aios/` from `.gitignore` (was mistakenly added as an ignore rule)
-  - Re-cloned `aios` (13,467 files, ~300 MiB) and registered as proper submodule
-  - Updated and pushed MilkDrop3_fix pointer to origin/main
-- ✅ **Pushed root main** with updated MilkDrop3_fix pointer
+- **Root repo fetched** — `git fetch --all --tags` on both origin and upstream (same URL)
+- **No upstream divergence** — local main matches upstream/main at `f6394b4925`
+- **Stale lock files cleaned:** 3 `index.lock` files removed:
+  - `.git/modules/bobfilez/index.lock`
+  - `.git/modules/bobfilez/modules/libs/btk/index.lock`
+  - `.git/modules/bobmani/ksm-v2/index.lock`
+- **Submodules initialized recursively** — All registered submodules checked out
+- **New submodule cloned:** `MilkDrop3_fix/bobmani/beatoraja/lr2oraja-endlessdream` (seraxis/lr2oraja-endlessdream) with its nested dependencies (`jbms-parser`, `jbmstable-parser`)
+- **Known issues persisted:**
+  - bg nested `references/` submodules (~50) remain uninitialized (third-party repos)
+  - `tests/test_cmake_build/build_output/pybind11/` recursive nesting exceeds Windows MAX_PATH
+  - `MilkDrop3-2077/` untracked directory (not a registered submodule)
 
-### Step 2: Intelligent Merge Engine
+### Step 2: Dual-Direction Intelligent Merge
 
-| Submodule | Branch | Status |
-|-----------|--------|--------|
-| **Maestro** | `rev/jules-2575151016458646249` | ⏭️ 0 unique commits (all merge commits only) |
-| **Maestro** | `rev/jules-add-new-agents` | ⏭️ 0 unique commits (all merge commits only) |
-| **Maestro** | `jules-2575151016458646249` | ⏭️ 0 unique commits |
-| **Maestro** | `maestro-cue-spinout` | ⏭️ 0 unique commits |
-| **Maestro** | `multi-language-harness-expansion` | ⏭️ 0 unique commits |
-| **apophysis-j** | `jules-1519938167992140499` | ⏭️ Still 69 AI deployment churn commits (no real features) |
-| **apophysis-j** | NEW: `jules-2386602910864760306` | ⏭️ 1 commit, also deployment noise |
+**Feature Branch Assessment:**
 
-**Result:** No new feature branches with unique development progress since Protocol #68.
+- Scanned 80+ submodules for active local feature branches
+- All previously forward-merged branches are at 0 ahead of main
+- **Forward merges:** None — no new feature branches with unique commits since Protocol #69
+- **freellm/clean-freellm:** Skipped (1 unique commit but 234 commits behind main, unrelated history — cleanup-only branch that deletes watchdog scripts and agent-cache files. Cherry-pick in future if needed.)
+- **Reverse merges:** superdawmcp (jules-5372408556252106821-172735fe), warp (go-port) — both already up to date with main
 
-### Step 3: Workspace Cleanup & Build Finalization
+**Branches assessed as merged/at 0-ahead (no action needed):**
+agentirc, aimoneymachine_site, bobbybookmarks, bobcoin, bobfilez, bobsgameonlinejava, bobsgameweb, bobtorrent, bobtrader, bobtrax, bobzilla, bqt, bcs, fcdm, fwber, jules-autopilot, marketing_agent, multimousergy, psytrance_night_outreach_agent, realestatecrm, superdawmcp, warp
 
-- ✅ **Version bumped** v5.90.0 → v5.91.0
-- ✅ **Batch script version sync:**
-  - `start.bat`: v5.68.0 → v5.90.0
-  - `build.bat`: v5.79.0 → v5.90.0
-- ✅ **CHANGELOG.md** updated with v5.91.0 entry
-- ✅ **TODO.md** version header updated to v5.91.0
-- ✅ **HANDOFF.md** written (this file)
-- ✅ **Root changes staged and pushed** to origin/main
+### Step 3: Workspace Cleanup & Documentation
 
-## Open Issues / Unresolved
+- **Version bumped:** v5.91.0 → v5.92.0 (VERSION, VERSION.md)
+- **Batch scripts updated:** `start.bat`, `build.bat`→ v5.92.0
+- **CHANGELOG.md updated** with v5.92.0 entry
+- **This HANDOFF.md written**
 
-1. **MilkDrop3_fix/aios** — Now properly initialized as a shallow clone. The submodule is massive (~300 MiB). Future syncs should use `--depth 1` to avoid long clone times.
+### Submodule Pointer Status
 
-2. **Deeply nested pybind11 directory** — `/tests/test_cmake_build/subdirectory_function/build_output/pybind11/` has 90+ levels of nesting, causing `git status` timeouts. Git operations with `--ignore-submodules` or adding to `.gitignore` recommended.
+The following submodules show dirty pointers (modified submodule references in workspace root):
+`MilkDrop3`, `MilkDrop3_fix`, `ableton_psytrance_hymn_creator`, `agentirc`, `aimoneymachine_site`, `apophysis-j`, `auto_dj_script`, `bcs`, `bg`, `bg_fix`, `bgtk`, `bobbybookmarks`, `bobfilez`, `bobmani/*`, `bobsaver`, `bobsgameonlinejava`, `bobsgameonlinejava_fix`, `bobsgameweb`, `bobtorrent`, `bobtrader`, `bobtrax`, `bqt`, `dao`, `electricsheep`, `f-zerox`, `freellm`, `geany`, `geiss`, `hyperharness`, `jules-autopilot`, `jvm-cpp-runtime`, `marketing_agent`, `mcp-superassistant`, `mk64`, `npp`, `planet_fitness_stepmaniax_agent`, `projectM-upstream`, `projectm`, `skillzhub`, `slsk_discography_downloader_script`, `timidity`, `tormentnexus`, `veilid_reddit_facebook`, `vst_monster`
 
-3. **apophysis-j deployment churn** — 69 AI-tool-generated commits on `jules-1519938167992140499` that are just "deploy: confirm artifact generation again" noise. No real feature content. May want to delete this stale branch.
+These are expected — they reflect updated checkouts from the recursive submodule initialization. Push with the next commit.
 
-4. **GitHub vulnerabilities** — 62 vulnerabilities on default branch (Dependabot alerts active).
+---
 
-5. **bgtk upstream** — GTK fork with hundreds of upstream feature branches. These are GNOME/GTK upstream branches (mirror), not our feature branches. Skipped per protocol (upstream feature branches).
+## Next Steps for Successive Agent
 
-## Next Steps for Successor Agent
-
-- Run `build.bat` to validate build integrity
-- Address Dependabot vulnerabilities (62 total, 22 high)
-- Monitor for new Jules/AI tool feature branches in next cycle
-- Consider adding deeply nested pybind11 path to `.gitignore`
+1. **Push to remote:** Stage all files, commit with "feat: sync workspace to v5.92.0 (Protocol #70)", push to origin/main
+2. **Build Phase:** Run `build.bat` to verify all submodules build correctly
+3. **Security:** 165 GitHub vulnerabilities still present (1 critical, 72 high) — needs dedicated triage session
+4. **Forward-merge freellm/clean-freellm (optional):** Cherry-pick the cleanup commit if desired — `git cherry-pick 6fd9c53` in freellm
+5. **bg nested submodules:** Still ~50 uninitialized references/ submodules

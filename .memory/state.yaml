@@ -64,3 +64,6 @@ sessions:
   - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-07-03T16-23-49-017Z_019f28cb-2219-7da9-a4d5-1019a44d3d4b.jsonl"
     branch: main
     started: "2026-07-03T16:24:06.653Z"
+  - file: "C:\Users\hyper\.pi\agent\sessions\--C--Users-hyper-workspace--\2026-07-03T20-11-05-476Z_019f299b-3583-7393-8fa6-99b219406aa0.jsonl"
+    branch: main
+    started: "2026-07-03T20:11:24.557Z"
