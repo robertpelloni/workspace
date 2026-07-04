@@ -8,6 +8,19 @@
   - marketing_agent: dashboard redesign + dual-brand social marketing (12 files, 406 insertions)
   - skillzhub: synthetic data upsell, FFmpeg video pipeline, rate limiting (16 files, 332 insertions)
   - vst_monster: Rust native installer, Go crawler engine, registry API (15 files, 5811 insertions)
+  - dao: exec protocol fix + voluntary tax routing (resolved conflicts)
+  - fwber: federation hardening, webfinger, continue development
+  - ksm-v2: sdvx ex score ARS (23 files, +136)
+  - pi-mono: amp code assimilation (31 commits, resolved conflicts)
+  - tabby: jules updates + jump hosts (12 files, +315)
+  - supersaber: beat-saber research features
+  - TurntUpToddler: editor endpoints + e2e tooltips tests
+  - bobium: ai integration updates
+  - bobsgameweb: engine sync (13 commits)
+  - planet_fitness_stepmaniax_agent: discovery, aggregator, crypto signature
+  - xrnet: backend-api frontend refactor
+- **Submodule sanitization:** Removed borg from MilkDrop3, MilkDrop3_fix trees permanently; updated fwber to valid HEAD commit
+- **Comprehensive branch audit:** 60+ feature branches across 111 submodules checked; upstream/foreign branches excluded per protocol
 - **Companion packages installed:** pi-intercom, pi-prompt-template-model
 - **Batch script version sync:** `start.bat` v5.99.0 → v5.100.0, `build.bat` v5.99.0 → v5.100.0
 - **Version bumped to v5.100.0**
