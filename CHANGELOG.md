@@ -1,4 +1,15 @@
 
+## [v5.99.0] - 2026-07-04
+
+- Executive Protocol #77: Repository Synchronization & Intelligent Merge
+- **Submodule sanitization:** All submodules initialized cleanly
+- **Forward merges:** None — no new feature branches with unique work since Protocol #76
+- **Submodule pointer updates:** tormentnexus (+6 commits — codebase analysis, PowerShell installer, session supervisor), marketing_agent (+1 commit — style fix)
+- **Feature branch assessment:** freellm clean-freellm branch (unrelated history, deferred); f-zerox feature branch (29 duplicate commits, deferred); all others already forward-merged
+- **Upstream sync:** Root repo at HEAD matching upstream/main
+- **Batch script version sync:** `start.bat` v5.98.0 → v5.99.0, `build.bat` v5.98.0 → v5.99.0
+- **Version bumped to v5.99.0**
+
 ## [v5.98.0] - 2026-07-04
 
 - Executive Protocol #76: Repository Synchronization & Intelligent Merge
