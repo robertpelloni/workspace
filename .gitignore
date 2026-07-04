@@ -83,4 +83,4 @@ con
 CON
 prn
 PRN
-tests/test_cmake_build/subdirectory_function/build_output/
+# tests/test_cmake_build/subdirectory_function/build_output/  (removed - covered by tests/ above)
