@@ -4,14 +4,14 @@
 
 Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
 
-## Current State (v5.94.0)
+## Current State (v5.95.0)
 
-- **Executive sync protocol healthy** — Protocols #12-#72 completed in succession
-- **Protocol #72 (v5.94.0):** Major forward-merge wave — 5 feature branches merged across 5 submodules
-- **Forward merges (cumulative):** All previous + f-zerox Netplay/C physics/Fast3D (+29), hyperharness LLM StreamChat/FTS5 (+16), bobtrax WASM port (+10), bqt OmniAudioGraph (+6), aimoneymachine_site affiliate links (+1)
-- **Submodule fixes:** enterprise_sales_bot/borg, stale locks, MilkDrop3_fix/bobmani/bobmania + Themes/Simply-Love-SM5 initialized
+- **Executive sync protocol healthy** — Protocols #12-#73 completed in succession
+- **Protocol #73 (v5.95.0):** Maintenance sync — all submodules clean, no new feature branches
+- **Forward merges (cumulative):** ArrowVortex (+3), MarbleBlast (+2), agentirc (+23), ai_game_engine (+17), bobtorrent (+27), bobsaver (+1), realestatecrm (+7), bobbybookmarks (+3), bqt audio graph renaming (+1), aimoneymachine_site blog (+7), tormentnexus MCP SSE (+19), fcdm Milestone 8 (+1), f-zerox Netplay/C physics/Fast3D (+29), hyperharness LLM StreamChat/FTS5 (+16), bobtrax WASM (+10), bqt OmniAudioGraph (+6), aimoneymachine_site affiliate links (+1)
+- **Submodule fixes:** enterprise_sales_bot/borg, stale locks, MilkDrop3_fix/bobmani/bobmania + Themes/Simply-Love-SM5
 - **All submodules initialized** — no uninitialized submodules in .gitmodules (excluding bg references/)
-- **Version control** — Global version bumped to v5.94.0, synced across VERSION, VERSION.md, CHANGELOG.md
+- **Version control** — Global version bumped to v5.95.0, synced across VERSION, VERSION.md, CHANGELOG.md
 - **jules-autopilot on latest** — v3.6.24
 - **tormentnexus active** — Cloud dashboard MCP SSE, cold archive, skill evolution
 
@@ -51,6 +51,7 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 - [x] v5.92.0 — Protocol #70: Submodule sanitization, stale lock file cleanup, lr2oraja-endlessdream init, feature branch assessment
 - [x] v5.93.0 — Protocol #71: Fixed broken bobmania submodule, forward-merged fcdm go-onnx-inference (+1)
 - [x] v5.94.0 — Protocol #72: Forward-merged 5 feature branches (f-zerox +29, hyperharness +16, bobtrax +10, bqt +6, aimoneymachine_site +1)
+- [x] v5.95.0 — Protocol #73: Maintenance sync, no new feature branches
 - [ ] 165 GitHub vulnerabilities on default branch (1 critical, 72 high)
 - [ ] bg nested references/ submodules (~50) remain uninitialized
 

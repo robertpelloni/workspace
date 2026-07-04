@@ -1,4 +1,13 @@
 
+## [v5.95.0] - 2026-07-03
+
+- Executive Protocol #73: Repository Synchronization & Intelligent Merge
+- **Submodule sanitization:** All submodules initialized cleanly (including fix for Simply-Love-SM5)
+- **Forward merges:** None — no new feature branches with unique commits since Protocol #72
+- **Feature branch assessment:** All active branches already merged; remaining local-only branches are stale (clean-freellm, fwber rev/*) or tracking branches
+- **Batch script version sync:** `start.bat` v5.94.0 → v5.95.0, `build.bat` v5.94.0 → v5.95.0
+- **Version bumped to v5.95.0**
+
 ## [v5.94.0] - 2026-07-03
 
 - Executive Protocol #72: Repository Synchronization & Intelligent Merge

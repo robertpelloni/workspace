@@ -1,42 +1,39 @@
-# HANDOFF — Executive Protocol #72 (v5.94.0)
+# HANDOFF — Executive Protocol #73 (v5.95.0)
 
 **Date:** 2026-07-03
-**Previous:** Protocol #71 (v5.93.0)
+**Previous:** Protocol #72 (v5.94.0)
 
 ---
 
 ## Summary
 
-Protocol #72: Major forward-merge wave — 5 feature branches merged into their respective main branches.
+Protocol #73 completed — maintenance sync with no forward merges needed.
 
 ### Step 1: Upstream Tracking & Submodule Sanitization
 
 - Root repo in sync (0 ahead, 0 behind upstream)
-- Fixed `MilkDrop3_fix/bobmani/bobmania/Themes/Simply-Love-SM5` — properly initialized via shallow clone (--depth 1)
+- All submodules initialized recursively without errors
+- Simply-Love-SM5 theme now properly checked out (fixed in Protocol #72)
 
 ### Step 2: Dual-Direction Intelligent Merge
 
-**5 forward merges completed and pushed to origin:**
-
-| Submodule | Branch | Commits | Description |
-|-----------|--------|---------|-------------|
-| **f-zerox** | `jules-11748325162369049229` | 29 | Netplay broadcast/receive loop, C physics (suspension/wall collisions), Fast3D dynamic lighting, blob shadows, decompilation shiftability. +2732/-1035 lines |
-| **hyperharness** | `jules-5435997250800630192` | 16 | Real LLM StreamChat capabilities, TS client Memory FTS5 sync, subagent manager LLM task loop, parity test suite. +973/-257 lines |
-| **bobtrax** | `bobtrax-ai-stem-separator` | 10 | WASM port analysis/plan, Qt launcher app (`bobtrax_launcher`), WASM build scripts. +249 lines |
-| **bqt** | `feature/audio-graph-native-linking-test` | 6 | OmniAudioGraph mapping JUCE audio primitives into Go (OmniGain, OmniSynthesizer). Resolved README merge conflict. +1870/-964 lines |
-| **aimoneymachine_site** | `jules-3982771769169854143` | 1 | Affiliate link injection into social posts, DuckDuckGo/FearGreed search fix. +225 lines |
+- No new feature branches with unique work discovered
+- All previously identified branches are either:
+  - Already forward-merged (f-zerox, hyperharness, bobtrax, bqt, aimoneymachine_site)
+  - Stale cleanup branches (freellm/clean-freellm, psytrance/temp-feature-merge)
+  - Reverse-merge maintenance branches (fwber rev/*)
+- No forward or reverse merges required
 
 ### Step 3: Workspace Cleanup & Documentation
 
-- **Version bumped:** v5.93.0 → **v5.94.0**
-- **Batch scripts:** `start.bat`, `build.bat` → v5.94.0
-- **CHANGELOG.md** updated with all 5 forward merges
+- **Version bumped:** v5.94.0 → **v5.95.0**
+- **Batch scripts:** `start.bat`, `build.bat` → v5.95.0
+- **CHANGELOG.md** updated with v5.95.0 entry
 - **This HANDOFF.md written**
 
 ---
 
 ## Next Steps
 
-1. **Stage, commit, push** the root workspace changes (version, CHANGELOG, HANDOFF, submodule pointers)
+1. **Stage, commit, push** the root workspace changes
 2. **Run build.bat** to verify all components
-3. **5 submodule pointer updates need staging:** f-zerox, hyperharness, bobtrax, bqt, aimoneymachine_site
