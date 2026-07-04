@@ -1,4 +1,17 @@
 
+## [v5.94.0] - 2026-07-03
+
+- Executive Protocol #72: Repository Synchronization & Intelligent Merge
+- **Submodule fix:** Properly initialized `MilkDrop3_fix/bobmani/bobmania/Themes/Simply-Love-SM5` (shallow clone)
+- **Forward merges:**
+  - **f-zerox** `origin/jules-11748325162369049229-3de7071d` → main (29 commits: Netplay broadcast/receive, C physics suspension/wall collisions, Fast3D blob shadows, dynamic directional lighting, decompilation shiftability — +2732 lines)
+  - **hyperharness** `origin/jules-5435997250800630192-a18374ec` → main (16 commits: real LLM StreamChat capabilities, TS client Memory FTS5 sync, subagent manager LLM task loop, parity tests — +973 lines)
+  - **bobtrax** `origin/bobtrax-ai-stem-separator-4814953891521137570` → main (10 commits: WASM port analysis/plan, Qt bobtrax_launcher app, build scripts — +249 lines)
+  - **bqt** `origin/feature/audio-graph-native-linking-test` → main (6 commits: OmniAudioGraph mapping JUCE audio primitives into Go, OmniGain, OmniSynthesizer — +1870 lines, README conflict resolved)
+  - **aimoneymachine_site** `origin/jules-3982771769169854143-e823f79d` → main (1 commit: affiliate link injection into social media posts, DuckDuckGo/FearGreed search fix — +225 lines)
+- **Batch script version sync:** `start.bat` v5.93.0 → v5.94.0, `build.bat` v5.93.0 → v5.94.0
+- **Version bumped to v5.94.0**
+
 ## [v5.93.0] - 2026-07-03
 
 - Executive Protocol #71: Repository Synchronization & Intelligent Merge
