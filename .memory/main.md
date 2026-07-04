@@ -4,14 +4,14 @@
 
 Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
 
-## Current State (v5.97.0)
+## Current State (v5.98.0)
 
-- **Executive sync protocol healthy** — Protocols #12-#75 completed in succession
-- **Protocol #75 (v5.97.0):** Maintenance sync since Protocol #72
+- **Executive sync protocol healthy** — Protocols #12-#76 completed in succession
+- **Protocol #76 (v5.98.0):** Maintenance sync since Protocol #75
 - **Forward merges (cumulative):** ArrowVortex (+3), MarbleBlast (+2), agentirc (+23), ai_game_engine (+17), bobtorrent (+27), bobsaver (+1), realestatecrm (+7), bobbybookmarks (+3), bqt audio graph renaming (+1), aimoneymachine_site blog (+7), tormentnexus MCP SSE (+19), fcdm Milestone 8 (+1), f-zerox Netplay/C physics/Fast3D (+29), hyperharness LLM StreamChat/FTS5 (+16), bobtrax WASM (+10), bqt OmniAudioGraph (+6), aimoneymachine_site affiliate links (+1)
 - **Submodule fixes:** enterprise_sales_bot/borg, stale locks, MilkDrop3_fix/bobmani/bobmania + Themes/Simply-Love-SM5
 - **All submodules initialized** — no uninitialized submodules in .gitmodules (excluding bg references/)
-- **Version control** — Global version bumped to v5.95.0, synced across VERSION, VERSION.md, CHANGELOG.md
+- **Version control** — Global version bumped to v5.98.0, synced across VERSION, VERSION.md, CHANGELOG.md
 - **jules-autopilot on latest** — v3.6.24
 - **tormentnexus active** — Cloud dashboard MCP SSE, cold archive, skill evolution
 
@@ -53,6 +53,7 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 - [x] v5.94.0 — Protocol #72: Forward-merged 5 feature branches (f-zerox +29, hyperharness +16, bobtrax +10, bqt +6, aimoneymachine_site +1)
 - [x] v5.95.0 — Protocol #73: Maintenance sync, no new feature branches
 - [x] v5.97.0 — Protocol #75: Maintenance sync, no new feature branches
+- [x] v5.98.0 — Protocol #76: Maintenance sync, no new feature branches
 - [ ] 165 GitHub vulnerabilities on default branch (1 critical, 72 high)
 - [ ] bg nested references/ submodules (~50) remain uninitialized
 
