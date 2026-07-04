@@ -1,4 +1,13 @@
 
+## [v5.97.0] - 2026-07-03
+
+- Executive Protocol #75: Repository Synchronization & Intelligent Merge
+- **Submodule sanitization:** All submodules initialized cleanly
+- **Forward merges:** None — no new feature branches with unique work
+- **Feature branch assessment:** Only Dependabot and stale reverse-merge branches found
+- **Batch script version sync:** `start.bat` v5.96.0 → v5.97.0, `build.bat` v5.96.0 → v5.97.0
+- **Version bumped to v5.97.0**
+
 ## [v5.96.0] - 2026-07-03
 
 - Executive Protocol #74: Repository Synchronization & Intelligent Merge
