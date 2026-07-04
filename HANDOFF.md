@@ -1,39 +1,26 @@
-# HANDOFF — Executive Protocol #73 (v5.95.0)
+# HANDOFF — Executive Protocol #74 (v5.96.0)
 
 **Date:** 2026-07-03
-**Previous:** Protocol #72 (v5.94.0)
+**Previous:** Protocol #73 (v5.95.0)
 
 ---
 
 ## Summary
 
-Protocol #73 completed — maintenance sync with no forward merges needed.
+Protocol #74 completed — maintenance sync, no forward merges.
 
-### Step 1: Upstream Tracking & Submodule Sanitization
+### Step 1
 
-- Root repo in sync (0 ahead, 0 behind upstream)
-- All submodules initialized recursively without errors
-- Simply-Love-SM5 theme now properly checked out (fixed in Protocol #72)
+- Root repo in sync (0 ahead, 0 behind)
+- All submodules initialized cleanly
 
-### Step 2: Dual-Direction Intelligent Merge
+### Step 2
 
-- No new feature branches with unique work discovered
-- All previously identified branches are either:
-  - Already forward-merged (f-zerox, hyperharness, bobtrax, bqt, aimoneymachine_site)
-  - Stale cleanup branches (freellm/clean-freellm, psytrance/temp-feature-merge)
-  - Reverse-merge maintenance branches (fwber rev/*)
-- No forward or reverse merges required
+- No new feature branches with unique work since Protocol #72
+- Only branch found: `freellm` Dependabot (not genuine feature work)
 
-### Step 3: Workspace Cleanup & Documentation
+### Step 3
 
-- **Version bumped:** v5.94.0 → **v5.95.0**
-- **Batch scripts:** `start.bat`, `build.bat` → v5.95.0
-- **CHANGELOG.md** updated with v5.95.0 entry
-- **This HANDOFF.md written**
-
----
-
-## Next Steps
-
-1. **Stage, commit, push** the root workspace changes
-2. **Run build.bat** to verify all components
+- Version: v5.95.0 → **v5.96.0**
+- Batch scripts, CHANGELOG, HANDOFF updated
+- 62 Dependabot vulnerabilities remain
