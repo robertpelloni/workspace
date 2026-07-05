@@ -362,3 +362,6 @@
 - Executive Protocol #85 executed — v5.104.0 (2026-07-05)
   - Forward-merged bobmani/beatoraja: Audio PCM refactoring, testing pipeline, LibGDX compile fix
   - 22 commits across 2 feature branches merged
+- Executive Protocol #86 executed — v5.105.0 (2026-07-05)
+  - Forward-merged remaining bobmani/beatoraja jules-3962252154118760376 (18 commits, protocol docs + LibGDX fixes)
+  - Resolved 42 merge conflicts between the two feature branches

@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.105.0] — 2026-07-05 — Protocol #86
+
+### Changed
+
+- **bobmani/beatoraja**: Forward-merged remaining jules-3962252154118760376 (18 commits, 69 files)
+  - Protocol docs v5.95-v5.99, LibGDX compile fixes, input processor fixes
+  - Resolved 42 merge conflicts between the two feature branches
+- **Submodule pointer**: bobmani/beatoraja updated (8db7b610 → 2752c455)
+- **Root**: version bump v5.104.0 → v5.105.0
+
 ## [v5.104.0] — 2026-07-05 — Protocol #85
 
 ### Changed
