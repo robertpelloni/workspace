@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.103.0] — 2026-07-05 — Protocol #84
+
+### Changed
+
+- **jules-autopilot**: Synced dirty state (stashed 3 files), fast-forwarded to origin/main
+- **Submodule fetch**: All key robertpelloni submodules fetched; no new feature branches found
+- **Feature branch scan**: Scanned 50+ submodules — no actionable robertpelloni feature branches remaining
+- **Fixes**: OpenMBU remote HEAD ref confirmed working; MilkDrop3_fix clean
+- **Root**: version bump v5.102.0 → v5.103.0
+
 ## [v5.102.0] — 2026-07-05 — Protocol #83
 
 ### Changed

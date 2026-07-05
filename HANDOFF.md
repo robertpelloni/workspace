@@ -1,69 +1,54 @@
-# HANDOFF — Executive Protocol #83
+# HANDOFF — Executive Protocol #84
 
 ## Summary
 
-Protocol #83 complete. Version bumped v5.101.0 → v5.102.0.
+Protocol #84 complete. Version bumped v5.102.0 → v5.103.0.
 
 ## Completed
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 
-- **Fetch all**: Root + key submodules fetched from origin/upstream (recursive)
-- **Upstream sync**: origin = upstream (same repo), already on latest `main` (976cf4a28f)
-- **Fix**: **OpenMBU** broken `refs/remotes/origin/HEAD` (pointed to non-existent `master` branch) → fixed to `refs/remotes/origin/main`
-- **Fix**: **MilkDrop3_fix** stale checkout — untracked workspace files blocked checkout; cleaned and updated
-- **Submodule status**: 108 submodules scanned; MilkDrop3_fix updated (+)
+- **Root fetch**: origin/upstream synced at 437ce81012
+- **Key submodule fetch**: 20 robertpelloni submodules + Maestro + tormentnexus fetched
+- **jules-autopilot**: Dirty detached HEAD saved to stash, fast-forwarded to origin/main
+- **OpenMBU**: `refs/remotes/origin/HEAD` fix confirmed working
+- **MilkDrop3_fix**: Clean (after Protocol #83 fix)
+- **Previous merges verified**: f-zerox, bqt, aimoneymachine_site, marketing_agent submodule pointers confirmed
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
-**Forward Merges (Features → Main):**
+**Forward Merges**: ✅ None needed
 
-| Submodule | Branch | Commits | Changes | Key Features |
-|-----------|--------|---------|---------|--------------|
-| **f-zerox** | `feat-cup-logic-11541917540145335304` | 1 | +1786/-2882 | Dynamic asset loading, netplay improvements, game loop restructuring |
-| **bqt** | `feature/audio-graph-native-linking-test-6780237492250065447` | 6 | +247/-47 | Shell integration API, signal system enhancements with EventLoop, audio graph tests |
-| **aimoneymachine_site** | `jules-3982771769169854143-e823f79d` | 4 | +99/-191 | Affiliate Engine for social auto-posting, landing page overhaul with Phase 5 CTA |
-| **marketing_agent** | `jules-chore-replace-mocks-8620715448874870664` | 12 | +4285/-1683 | GDPR export/delete endpoints, pricing UI, A/B prompt testing, security input sanitization |
+**Feature Branch Scan** — 50+ submodules checked. Results:
 
-**Conflict Resolution:**
+- ✅ All 4 forward-merged branches from Protocol #83 remain clean (0 unique commits)
+- ✅ All other robertpelloni submodule feature branches have 0 unique commits
+- ✅ jules-autopilot (3 local branches): 0 unique commits each
+- ✅ Ignored dependabot branches (auto-generated, not features)
+- ✅ Ignored `fix-twitter-auth-logging` on aimoneymachine_site (1 stale AI-generated commit, 13 behind main)
+- ✅ Ignored bgtk upstream GNOME branches (upstream/unfinished)
 
-- **f-zerox** (29 conflicting files): Accepted feature branch version for game engine logic; kept main version for documentation (HANDOFF.md, ROADMAP.md)
-- **marketing_agent** (4 conflicting files): Accepted feature branch version for VERSION/CHANGELOG/repository.go
-
-**Branch Assessment — Others:**
-
-- TurntUpToddler: 1 merge-only commit (no unique content)
-- bobium: 1 merge-only commit (no unique content)
-- All other branches: 0 unique commits
-
-**Reverse Merges:**
-
-- None needed — all feature branches are either merged or have no unique commits
+**Reverse Merges**: ✅ None needed — all feature branches are at main
 
 ### STEP 3: Workspace Cleanup & Documentation
 
-- **Version**: v5.101.0 → v5.102.0
+- **Version**: v5.102.0 → v5.103.0
 - **VERSION/VERSION.md**: Updated and synced
-- **CHANGELOG.md**: Updated with Protocol #83 entry
+- **CHANGELOG.md**: Updated with Protocol #84 entry
 - **ROADMAP.md**: Updated with completion marker
-- **TODO.md**: Version string updated
-- **HANDOFF.md**: Regenerated with full protocol summary
-- **Batch scripts**: Verified — no hardcoded version strings in build.bat or start.bat
+- **HANDOFF.md**: Regenerated
 
 ## Remaining Work
 
 ### Known Issues (Unchanged)
 
-- **bobfilez**: pybind11 recursive directory loop blocks git operations
+- **bobfilez**: pybind11 recursive directory loop
 - **bobeditpro**: 188+ commits behind Audacity upstream
 - **topaz-ffmpeg**: 15+ libswscale conflicts with FFmpeg upstream
 - **bg nested references/**: ~50 uninitialized submodules
-- **bobsgameweb**: No `refs/remotes/origin/HEAD`, blocks MilkDrop3/bg recursive submodule ops
+- **bobsgameweb**: No `refs/remotes/origin/HEAD`, blocks MilkDrop3/bg recursion
 - 62 GitHub vulnerabilities on default branch (22 high, 35 moderate, 5 low)
-
-### Pending Actions
-
-- Push and build to follow
+- **jules-autopilot dev.db**: Locked by running process, couldn't clean — state preserved in stash
 
 ## Running Services
 
