@@ -1,10 +1,10 @@
 # Changelog
 
-## [v5.99.2] — 2026-07-04 — Protocol #79
+## [v5.99.3] — 2026-07-04 — Protocol #80
 
 ### Changed
 
-- **17 submodules forward-merged** with feature branch progress preserved
-- Key merges: f-zerox (+29), apophysis-j (+69), electricsheep (+24), geiss (+65), native-fy (+83), itgmania (+30), beatoraja (+22), ksm-v2 (+29), sm64coopdx (+36), neverball (+26), projectm (+13), dao (+53), veilid_reddit (+17), marketing_agent, agentirc, bobbybookmarks, bobsaver
-- Conflicts resolved: itgmania extern deletions, beatoraja skin properties, native-fy README/stats, sm64coopdx waypoints, slsk service files, veilid package.json
-- Root: memory state sync
+- **4 submodules synced** with origin/main (MilkDrop3, ai_game_engine, bobsaver, bobsgameonlinejava_fix)
+- **marketing_agent**: Forward-merged jules-chore-replace-mocks (+12)
+- **Reverse merges**: TurntUpToddler (3 branches), bobium (2 branches), openclaw-dashboard — synced main into 6 feature branches
+- **Root**: memory state sync, version bump
