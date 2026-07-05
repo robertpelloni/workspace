@@ -350,3 +350,8 @@
   - openclaw-config: Cherry-picked 3 upstream docs commits into main (app-router HTTPS docs)
   - openclaw-config: Reverse-merged main into agents-completion-hardening
   - Submodule fetch-all: All 107 submodule states verified; bg references skipped
+- Executive Protocol #83 executed — v5.102.0 (2026-07-05)
+  - Forward-merged 4 feature branches: f-zerox feat-cup-logic, bqt audio-graph-native-linking,
+    aimoneymachine_site Affiliate Engine, marketing_agent chore-replace-mocks
+  - Fixed OpenMBU broken remote HEAD ref
+  - Fixed MilkDrop3_fix stale checkout

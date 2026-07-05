@@ -1,5 +1,18 @@
 # Changelog
 
+## [v5.102.0] — 2026-07-05 — Protocol #83
+
+### Changed
+
+- **f-zerox**: Forward-merged feat-cup-logic (1 commit, +1786/-2882) — dynamic asset loading, netplay
+- **bqt**: Forward-merged feature/audio-graph-native-linking-test (6 commits, +247/-47) — shell integration API, signals
+- **aimoneymachine_site**: Forward-merged jules-3982771769169854143 (4 commits, +99/-191) — Affiliate Engine, landing page overhaul
+- **marketing_agent**: Forward-merged jules-chore-replace-mocks (12 commits, +4285/-1683) — GDPR endpoints, A/B testing, pricing UI
+- **Submodule pointers**: Updated f-zerox, bqt, aimoneymachine_site, marketing_agent
+- **Fix**: OpenMBU broken remotes/origin/HEAD ref
+- **Fix**: MilkDrop3_fix stale checkout (untracked files cleaned)
+- **Root**: version bump v5.101.0 → v5.102.0
+
 ## [v5.101.0] — 2026-07-05 — Protocol #82
 
 ### Changed
