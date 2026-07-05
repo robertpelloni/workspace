@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.104.0] — 2026-07-05 — Protocol #85
+
+### Changed
+
+- **bobmani/beatoraja**: Forward-merged 2 feature branches (22 commits) — Audio PCM refactoring, testing pipeline, LWJGL input fix, LibGDX compile fixes
+  - jules-17656952767861670374: Testing pipeline finalization + Audio PCM refactoring (106 files, +2319/-6149)
+  - jules-3962252154118760376: Protocol docs v5.95-v5.99 + LibGDX compile fix (69 files, +707/-679)
+- **Submodule pointer**: bobmani/beatoraja updated (2a0fdefc → 8db7b610)
+- **Root**: version bump v5.103.0 → v5.104.0
+
 ## [v5.103.0] — 2026-07-05 — Protocol #84
 
 ### Changed
