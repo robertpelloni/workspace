@@ -337,12 +337,16 @@
 - Executive Protocol #46 executed â€” v5.58.0 (2026-06-25)
   - All submodule feature branches re-assessed: no new development since EP #45
   - Repository state fully clean and in sync
-- Executive Protocol #47 executed — v5.59.0 (2026-06-25)
+- Executive Protocol #47 executed ï¿½ v5.59.0 (2026-06-25)
   - bobtrader: Forward-merged 2 feature branches (59 total commits)
   - Resolved 12 file conflicts (both WSHealth + MarketDataStatus endpoints preserved)
-- Executive Protocol #47 executed — v5.59.0 (2026-06-25)
+- Executive Protocol #47 executed ï¿½ v5.59.0 (2026-06-25)
   - bobtrader: Forward-merged 2 feature branches (59 total commits)
   - Resolved 12 file conflicts (both WSHealth + MarketDataStatus endpoints preserved)
-- Executive Protocol #48 executed — v5.60.0 (2026-06-25)
+- Executive Protocol #48 executed ï¿½ v5.60.0 (2026-06-25)
   - bcs: Forward-merged cross-language port (15 commits, Go/Rust/C#/Java)
   - fcdm: Forward-merged System Validation/Performance Tuning (4 commits, v24.1.1)
+- Executive Protocol #82 executed â€” v5.101.0 (2026-07-05)
+  - openclaw-config: Cherry-picked 3 upstream docs commits into main (app-router HTTPS docs)
+  - openclaw-config: Reverse-merged main into agents-completion-hardening
+  - Submodule fetch-all: All 107 submodule states verified; bg references skipped

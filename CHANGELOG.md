@@ -1,5 +1,14 @@
 # Changelog
 
+## [v5.101.0] — 2026-07-05 — Protocol #82
+
+### Changed
+
+- **openclaw-config**: Cherry-picked 3 upstream docs commits into main (app-router HTTPS docs)
+- **openclaw-config**: Reverse-merged main into agents-completion-hardening (fast-forward)
+- **Submodule sync**: Fetch-all completed across all submodules; bg references skipped (known limitation)
+- **Root**: version bump v5.99.3→v5.100.0→v5.101.0; VERSION file synced with VERSION.md/CHANGELOG.md
+
 ## [v5.100.0] — 2026-07-05 — Protocol #81
 
 ### Changed
