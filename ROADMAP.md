@@ -365,3 +365,6 @@
 - Executive Protocol #86 executed — v5.105.0 (2026-07-05)
   - Forward-merged remaining bobmani/beatoraja jules-3962252154118760376 (18 commits, protocol docs + LibGDX fixes)
   - Resolved 42 merge conflicts between the two feature branches
+- Executive Protocol #87 executed — v5.106.0 (2026-07-05)
+  - Maintenance sync: all robertpelloni feature branches confirmed merged
+  - tormentnexus session artifacts stashed

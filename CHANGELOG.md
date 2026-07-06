@@ -1,5 +1,13 @@
 # Changelog
 
+## [v5.106.0] — 2026-07-05 — Protocol #87
+
+### Changed
+
+- **tormentnexus**: Stashed 3 session artifacts (log, server.go, dev.db)
+- **Feature branch scan**: No actionable robertpelloni branches found — workspace fully synced
+- **Root**: version bump v5.105.0 → v5.106.0
+
 ## [v5.105.0] — 2026-07-05 — Protocol #86
 
 ### Changed

@@ -75318,3 +75318,159 @@ Protocol #86 complete. Version bumped v5.104.0 → v5.105.0.
 ", path: "HANDOFF.md")
 **Observation**: write: success
 
+## Turn 11 | 2026-07-05T23:45:55.460Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Action**: bash(command: "cd C:/Users/hyper/workspace && git add -A 2>&1 | tail -3 && git commit -m "v5.105.0 — Protocol #86: complete bobmani/beatoraja second feature branch merge
+
+- bobmani/beatoraja: Forward-merged jules-3962252154118760376 (18 commits)
+  - Protocol docs v5.95-v5.99, LibGDX compile fixes, input processor fixes
+- Resolved 42 merge conflicts between the two feature branches (theirs wins)
+- Fixes incomplete merge from Protocol #85
+
+Version: v5.104.0 → v5.105.0" 2>&1 && git push origin main 2>&1")
+**Observation**: bash: success
+
+## Turn 12 | 2026-07-05T23:47:08.519Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Thinking**: Now for the build phase.
+**Action**: bash(command: "cd C:/Users/hyper/workspace && cmd //c "build.bat" 2>&1 | tail -8", timeout: 300)
+**Observation**: bash: success
+
+## Turn 13 | 2026-07-05T23:47:45.946Z | deepseek/deepseek-v4-flash
+
+**Thought**: ## ✅ EXECUTIVE PROTOCOL #86 — COMPLETE
+
+### v5.104.0 → v5.105.0
+
+### What happened
+
+**Correction from Protocol #85**: The second beatoraja feature branch (18 commits) wasn't actually merged — the earlier merge was incomplete. This protocol completed it properly, resolving **42 conflicts** between the two branches.
+
+| Action | Result |
+|--------|--------|
+| **bobmani/beatoraja** `jules-3962252154118760376` | ✅ Forward-merged (18 commits, 69 files +707/-679) |
+| **42 merge conflicts** | ✅ Resolved — accepted second branch (newer) |
+| **Build** | ✅ All core services built |
+| **Push** | ✅ `604e57a009` → `origin/main` |
+
+### Remaining feature branches
+
+All robertpelloni feature branches across the workspace are now **fully merged** into their respective `main` branches.
+
+## Turn 1 | 2026-07-06T13:50:19.695Z | deepseek/deepseek-v4-flash
+
+**Thought**: Starting **Executive Protocol #87**. Let me run through the full cycle.
+**Thinking**: The user is running the Executive Protocol again. Protocol #87. Let me execute it.
+**Action**: bash(command: "cd C:/Users/hyper/workspace && echo "=== Version ===" && cat VERSION && echo "=== HEAD ===" && git log --oneline -2 && echo "=== Root fetch ===" && git fetch --all --tags 2>&1 && echo "=== Status ===" && git status -sb")
+**Observation**: bash: success
+
+## Turn 2 | 2026-07-06T13:51:36.909Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Thinking**: I notice the HEAD is at `01f224d51a` which is a different commit than what I pushed (604e57a009). It says "chore: sync TurntUpToddler — Phase 3-5" — this is a session from a different AI agent that committed new changes. And `tormentnexus` has a staged change (`M`). Let me proceed with the protocol.
+
+Root is ahead of upstream (we pushed). Let me fetch key submodules and scan for feature branches.
+**Action**: bash(command: "cd C:/Users/hyper/workspace && echo "=== Fetch key submodules ===" && for sm in f-zerox bqt aimoneymachine_site marketing_agent Maestro hyperharness bobtrax ai_game_engine bobtorrent fcdm bobsgameonlinejava jules-autopilot freellm bobmani/beatoraja tormentnexus; do if [ -d "$sm" ]; then (cd "$sm" && git fetch origin main 2>&1 | grep -v "Already\|warning:" | head -2) 2>&1; echo "  $sm: done"; fi; done", timeout: 120)
+**Observation**: bash: success
+
+## Turn 3 | 2026-07-06T13:51:54.496Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Thinking**: All fetched. Now let me scan for feature branches.
+**Action**: bash(command: "cd C:/Users/hyper/workspace && echo "=== Feature branch scan (robertpelloni repos) ===" && for sm in ArrowVortex Maestro f-zerox hyperharness bobtrax bqt ai_game_engine bobtorrent realestatecrm fcdm bobsgameonlinejava freellm aimoneymachine_site marketing_agent TurntUpToddler bobium jules-autopilot agentirc bobtorrent bobtrader auto_dj_script bobcoin bobbybookmarks bobmani/arrowvortex bobmani/beatoraja bobmani/bobmania bobmani/hymnmania bobmani/itgmania bobmani/ksm-v2 bobmani/ddc tormentnexus bg bg_fix; do if [ -d "$sm" ]; then cd "$sm" 2>/dev/null; found=0; for r in $(git remote 2>/dev/null); do url=$(git remote get-url $r 2>/dev/null); if echo "$url" | grep -qi "robertpelloni"; then for b in $(git branch -a 2>/dev/null | grep "remotes/$r/" | grep -v "HEAD\|main\|master" | tr -d ' *' 2>/dev/null); do count=$(git log --oneline main..$b 2>/dev/null 2>/dev/null | wc -l); if [ "$count" -gt 0 ] 2>/dev/null; then if [ "$found" -eq 0 ]; then echo "=== $sm ==="; found=1; fi; echo "$b ($count commits)"; fi; done; fi; done; cd C:/Users/hyper/workspace 2>/dev/null; fi; done", timeout: 120)
+**Observation**: bash: success
+
+## Turn 4 | 2026-07-06T13:52:25.619Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Thinking**: Only dependabot (auto-generated PRs) and the stale fix-twitter-auth-logging branch remain. All robertpelloni feature branches are fully merged.
+
+Let me check the staged tormentnexus change.
+**Action**: bash(command: "cd C:/Users/hyper/workspace && echo "=== Check staged tormentnexus change ===" && git diff --cached -- tormentnexus && echo "=== tormentnexus state ===" && cd tormentnexus && git rev-parse HEAD && git status -sb && cd ..")
+**Observation**: bash: success
+
+## Turn 5 | 2026-07-06T13:52:31.941Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Thinking**: tormentnexus has dirty state (3 modified files + a database file). The `M` in the root status was actually from the previous commit that touched it. Let me check if the submodule pointer changed.
+
+Actually looking at the root git status, `M tormentnexus` has a space before M, meaning it's a staged change in the index. But `git diff --cached -- tormentnexus` shows nothing, which means the index matches HEAD for the submodule pointer.
+
+The dirty files in tormentnexus are likely session artifacts. Let me check if they matter.
+**Action**: bash(command: "cd C:/Users/hyper/workspace/tormentnexus && echo "=== Dirty files content check ===" && git diff --stat HEAD 2>/dev/null")
+**Observation**: bash: success
+
+## Turn 6 | 2026-07-06T13:52:40.959Z | deepseek/deepseek-v4-flash
+
+**Thought**: Only session artifacts and a db file. Stashing and proceeding to STEP 3.
+**Thinking**: These are just session log and minor server changes. Not merge-worthy feature work. Let me stash them and move to STEP 3.
+**Action**: bash(command: "cd C:/Users/hyper/workspace/tormentnexus && git stash save "EP #87: tormentnexus session state" 2>&1; cd ..")
+**Observation**: bash: success
+
+## Turn 7 | 2026-07-06T13:52:57.053Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Thinking**: Now proceed to STEP 3.
+**Action**: write(content: "v5.106.0
+", path: "VERSION"), write(content: "v5.106.0
+", path: "VERSION.md"), edit(path: "CHANGELOG.md", edits: [object Object])
+**Observation**: write: success; write: success; edit: success
+
+## Turn 8 | 2026-07-06T13:53:49.014Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Action**: edit(path: "ROADMAP.md", edits: [object Object])
+**Observation**: edit: success
+
+## Turn 9 | 2026-07-06T13:54:06.511Z | deepseek/deepseek-v4-flash
+
+**Thought**: 
+**Action**: write(content: "# HANDOFF — Executive Protocol #87
+
+## Summary
+
+Protocol #87 complete. Version bumped v5.105.0 → v5.106.0.
+
+## Completed
+
+### STEP 1: Upstream Tracking & Submodule Sanitization
+
+- **Root fetch**: origin/upstream synced at 01f224d51a
+- **Key submodule fetch**: All robertpelloni submodules fetched
+- **tormentnexus**: Session artifacts stashed (log, server.go, dev.db)
+
+### STEP 2: Dual-Direction Intelligent Merge Engine
+
+**Forward Merges:** None needed
+
+**Feature Branch Scan** — All robertpelloni repos checked:
+- ✅ All previously merged feature branches remain at 0 unique commits
+- ✅ Only dependabot branches (auto-generated) remain — ignored
+- ✅ Only stale fix-twitter-auth-logging remains — ignored
+
+**Reverse Merges:** None needed
+
+### STEP 3: Workspace Cleanup & Documentation
+
+- **Version**: v5.105.0 → v5.106.0
+- **VERSION/VERSION.md**: Updated and synced
+- **CHANGELOG.md**: Updated
+- **ROADMAP.md**: Updated
+- **HANDOFF.md**: Regenerated
+
+## Remaining Work
+
+### Known Issues (Unchanged)
+- 62 GitHub vulnerabilities on default branch
+- bg nested references/ (~50 uninitialized)
+- bobfilez pybind11 loop, bobeditpro behind Audacity, topaz-ffmpeg conflicts
+
+## Running Services
+
+- TormentNexus Go kernel on 7778 with tRPC ✅
+- TormentNexus Dashboard on 7779 ✅
+", path: "HANDOFF.md")
+**Observation**: write: success
+
