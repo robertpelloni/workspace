@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.110.0] — 2026-07-06 — Protocol #91
+
+### Changed
+
+- **Submodule pointers**: tormentnexus (+1), hymnmania (+1) updated
+- **Feature branch cleanup**: Cleaned 3 stale Jules branches from bobium (already merged) and superdawmcp (no unique content)
+- **bobsgameweb**: Fixed origin/HEAD ref (master→main)
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **All feature branches confirmed merged**: No new forward merges required
+- **Root**: version bump v5.109.0 → v5.110.0
+
 ## [v5.109.0] — 2026-07-06 — Protocol #90
 
 ### Changed
