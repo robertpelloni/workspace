@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.108.0] — 2026-07-06 — Protocol #89
+
+### Changed
+
+- **jules-autopilot**: Synced dirty dev.db (1 commit)
+- **tormentnexus**: Synced dirty memory log (1 commit)
+- **Submodule pointers**: jules-autopilot (+1), tormentnexus (+1) updated
+- **Feature branch scan**: All remote feature branches confirmed merged (0 commits ahead)
+- **Root**: version bump v5.107.0 → v5.108.0
+
 ## [v5.107.0] — 2026-07-06 — Protocol #88
 
 ### Changed
