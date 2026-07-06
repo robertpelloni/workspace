@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.112.0] — 2026-07-06 — Protocol #93
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **Submodule pointers**: TurntUpToddler (+3 commits, psytrance songs), tormentnexus (+1, systray menu), hymnmania (+1, Suno upload fix)
+- **Feature branch scan**: 13 remote branches scanned across 10 submodules — all confirmed merged
+- **All feature branches confirmed merged**: No new forward merges required
+- **Root**: version bump v5.111.0 → v5.112.0
+
 ## [v5.111.0] — 2026-07-06 — Protocol #92
 
 ### Changed

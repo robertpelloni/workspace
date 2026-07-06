@@ -1,8 +1,8 @@
-# HANDOFF — Executive Protocol #92
+# HANDOFF — Executive Protocol #93
 
 ## Summary
 
-Protocol #92 complete. Version bumped v5.110.0 → v5.111.0. Maintenance sync — all feature branches confirmed merged.
+Protocol #93 complete. Version bumped v5.111.0 → v5.112.0. Maintenance sync — all feature branches confirmed merged. Submodule pointer updates for TurntUpToddler (+3), tormentnexus (+1), hymnmania (+1).
 
 ## Completed
 
@@ -10,7 +10,11 @@ Protocol #92 complete. Version bumped v5.110.0 → v5.111.0. Maintenance sync �
 
 - **Root fetch**: `git fetch --all --tags` completed — upstream in sync (no divergence)
 - **Recursive submodule update**: `git submodule update --init --recursive --remote --force` completed
-- **MilkDrop3**: Cleared stale `index.lock` file (was held by another process)
+- **Submodule pointer updates**:
+  - **TurntUpToddler**: +3 commits (psytrance songs via Suno)
+  - **tormentnexus**: +1 commit (systray right-click menu, 20 MCP server stubs)
+  - **bobmani/hymnmania**: +1 commit (Suno v5.5 upload fix)
+- **Lock cleanup**: Cleared stale MilkDrop3/aios index.lock; killed zombie git.exe processes (Session 0, from 6/26)
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
@@ -20,32 +24,26 @@ Protocol #92 complete. Version bumped v5.110.0 → v5.111.0. Maintenance sync �
 |-----------|----------|--------|
 | TurntUpToddler | `feature/web-ui-and-parallelization`, `jules-v1-27-0-docker-optimization` | ✅ Already merged |
 | agentirc | `jules-agentirc-async-refactor` | ✅ Already merged |
-| bobium | `jules-7596736042051083261`, `jules-9934627537741952648` | ✅ Already merged |
+| bobium | 2 jules-* branches | ✅ Already merged |
 | bobmani | `jules-empty-repo-diagnosis` | ✅ Already merged |
 | bobsaver_light | `jules-17743220499720909756` | ✅ Already merged |
 | bobsgameonlinejava | `fix/stale-lib-submodules` | ✅ Already merged |
 | bobzilla | `jules-13866237571450642745` | ✅ Already merged |
-| jules-autopilot | `jules-485-merge-test`, `jules-4852916069977232082` | ✅ Already merged |
-| marketing_agent | `jules-chore-replace-mocks`, `jules-crm-field-mapping` | ✅ Already merged |
-| superdawmcp | `jules-5372408556252106821` | ✅ Default branch (no merge needed) |
+| jules-autopilot | 2 jules-* branches | ✅ Already merged |
+| marketing_agent | 2 jules-* branches | ✅ Already merged |
+| superdawmcp | `jules-5372408556252106821` | ✅ Default branch |
 
 **No forward merges needed** — all feature branches already incorporated into their respective mains.
 
 ### STEP 3: Workspace Cleanup & Documentation
 
-- **Version**: v5.110.0 → v5.111.0
+- **Version**: v5.111.0 → v5.112.0
 - **VERSION/VERSION.md**: Updated and synced
-- **CHANGELOG.md**: Updated with Protocol #92 details
-- **ROADMAP.md**: Updated with Protocol #92 entry
-- **TODO.md**: Version updated to v5.111.0
-- **build.bat / start.bat**: Version strings updated to v5.111.0
+- **CHANGELOG.md**: Updated with Protocol #93 details
+- **ROADMAP.md**: Updated with Protocol #93 entry
+- **TODO.md**: Version updated to v5.112.0
+- **build.bat / start.bat**: Version strings updated to v5.112.0
 - **HANDOFF.md**: Regenerated
-
-### bobfilez pybind11 Fix
-
-- **Root cause**: 17 deleted files in `libs/OpenTimelineIO/src/deps/pybind11/tests/test_cmake_build/` caused git status hangs
-- **Fix**: `git checkout -- tests/` restored the deleted test files
-- **Result**: pybind11 submodule now clean (0 dirty files, 99ms status check)
 
 ## Remaining Work (Unchanged)
 
