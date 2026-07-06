@@ -1,5 +1,14 @@
 # Changelog
 
+## [v5.109.0] — 2026-07-06 — Protocol #90
+
+### Changed
+
+- **jules-autopilot**: Synced dirty dev.db (1 commit)
+- **Submodule pointer**: jules-autopilot (+1) updated
+- **Feature branch scan**: All remote feature branches confirmed merged (0 commits ahead)
+- **Root**: version bump v5.108.0 → v5.109.0
+
 ## [v5.108.0] — 2026-07-06 — Protocol #89
 
 ### Changed
