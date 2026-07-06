@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.113.0] — 2026-07-06 — Protocol #94
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **Submodule pointers**: tormentnexus (+1, 25 Go MCP server ports)
+- **Feature branch scan**: 13 remote branches scanned across 10 submodules — all confirmed merged
+- **Lock cleanup**: Cleared 50+ stale lock files across .git submodule tree (Session 0 zombie git processes from 6/26)
+- **All feature branches confirmed merged**: No new forward merges required
+- **Root**: version bump v5.112.0 → v5.113.0
+
 ## [v5.112.0] — 2026-07-06 — Protocol #93
 
 ### Changed

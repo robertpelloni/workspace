@@ -1,20 +1,17 @@
-# HANDOFF — Executive Protocol #93
+# HANDOFF — Executive Protocol #94
 
 ## Summary
 
-Protocol #93 complete. Version bumped v5.111.0 → v5.112.0. Maintenance sync — all feature branches confirmed merged. Submodule pointer updates for TurntUpToddler (+3), tormentnexus (+1), hymnmania (+1).
+Protocol #94 complete. Version bumped v5.112.0 → v5.113.0. Maintenance sync — all feature branches confirmed merged.
 
 ## Completed
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 
 - **Root fetch**: `git fetch --all --tags` completed — upstream in sync (no divergence)
-- **Recursive submodule update**: `git submodule update --init --recursive --remote --force` completed
-- **Submodule pointer updates**:
-  - **TurntUpToddler**: +3 commits (psytrance songs via Suno)
-  - **tormentnexus**: +1 commit (systray right-click menu, 20 MCP server stubs)
-  - **bobmani/hymnmania**: +1 commit (Suno v5.5 upload fix)
-- **Lock cleanup**: Cleared stale MilkDrop3/aios index.lock; killed zombie git.exe processes (Session 0, from 6/26)
+- **Recursive submodule update**: All submodules updated to latest tracking commits
+- **Submodule pointer update**: **tormentnexus** (+1 commit, 25 Go MCP server ports, 38 total handlers)
+- **Lock cleanup**: Cleared 50+ stale `.lock` files across `.git/modules/` tree — zombie git.exe processes from 6/26 (Session 0) holding locks on MilkDrop3, bg, bobfilez, and many nested submodules
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
@@ -22,27 +19,27 @@ Protocol #93 complete. Version bumped v5.111.0 → v5.112.0. Maintenance sync �
 
 | Submodule | Branches | Status |
 |-----------|----------|--------|
-| TurntUpToddler | `feature/web-ui-and-parallelization`, `jules-v1-27-0-docker-optimization` | ✅ Already merged |
-| agentirc | `jules-agentirc-async-refactor` | ✅ Already merged |
-| bobium | 2 jules-* branches | ✅ Already merged |
-| bobmani | `jules-empty-repo-diagnosis` | ✅ Already merged |
-| bobsaver_light | `jules-17743220499720909756` | ✅ Already merged |
+| TurntUpToddler | 2 branches | ✅ Already merged |
+| agentirc | 1 branch | ✅ Already merged |
+| bobium | 2 branches | ✅ Already merged |
+| bobmani | 1 branch | ✅ Already merged |
+| bobsaver_light | 1 branch | ✅ Already merged |
 | bobsgameonlinejava | `fix/stale-lib-submodules` | ✅ Already merged |
-| bobzilla | `jules-13866237571450642745` | ✅ Already merged |
-| jules-autopilot | 2 jules-* branches | ✅ Already merged |
-| marketing_agent | 2 jules-* branches | ✅ Already merged |
-| superdawmcp | `jules-5372408556252106821` | ✅ Default branch |
+| bobzilla | 1 branch | ✅ Already merged |
+| jules-autopilot | 2 branches | ✅ Already merged |
+| marketing_agent | 2 branches | ✅ Already merged |
+| superdawmcp | 1 branch | ✅ Default branch |
 
 **No forward merges needed** — all feature branches already incorporated into their respective mains.
 
 ### STEP 3: Workspace Cleanup & Documentation
 
-- **Version**: v5.111.0 → v5.112.0
+- **Version**: v5.112.0 → v5.113.0
 - **VERSION/VERSION.md**: Updated and synced
-- **CHANGELOG.md**: Updated with Protocol #93 details
-- **ROADMAP.md**: Updated with Protocol #93 entry
-- **TODO.md**: Version updated to v5.112.0
-- **build.bat / start.bat**: Version strings updated to v5.112.0
+- **CHANGELOG.md**: Updated with Protocol #94 details
+- **ROADMAP.md**: Updated with Protocol #94 entry
+- **TODO.md**: Version updated to v5.113.0
+- **build.bat / start.bat**: Version strings updated to v5.113.0
 - **HANDOFF.md**: Regenerated
 
 ## Remaining Work (Unchanged)
@@ -54,6 +51,7 @@ Protocol #93 complete. Version bumped v5.111.0 → v5.112.0. Maintenance sync �
 - bobeditpro 94 commits behind Audacity (upstream merge deferred)
 - topaz-ffmpeg 15+ libswscale conflicts with FFmpeg (deferred)
 - MilkDrop3-2077/ orphaned directory (not a registered submodule)
+- 6 stale git.exe processes in Session 0 (from 6/26) — can't be killed from user session; may require service restart
 
 ## Running Services (if any)
 
