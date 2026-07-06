@@ -1,61 +1,62 @@
-# HANDOFF — Executive Protocol #91
+# HANDOFF — Executive Protocol #92
 
 ## Summary
 
-Protocol #91 complete. Version bumped v5.109.0 → v5.110.0.
+Protocol #92 complete. Version bumped v5.110.0 → v5.111.0. Maintenance sync — all feature branches confirmed merged.
 
 ## Completed
 
 ### STEP 1: Upstream Tracking & Submodule Sanitization
 
-- **Root fetch**: `git fetch --all --tags` completed (upstream had 1 new commit — workspace now at `e1a2f07257`)
+- **Root fetch**: `git fetch --all --tags` completed — upstream in sync (no divergence)
 - **Recursive submodule update**: `git submodule update --init --recursive --remote --force` completed
-- **bobsgameweb**: Fixed broken `origin/HEAD` ref (was pointing to `master`, changed to `main`)
-- **All 80+ submodules**: Recursively updated submodules-of-submodules including bg nested chain
+- **MilkDrop3**: Cleared stale `index.lock` file (was held by another process)
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
-**Feature Branch Scan** — All robertpelloni repos checked for active AI-tool-generated branches:
+**Feature Branch Scan** — 13 remote branches scanned across 10 robertpelloni submodules:
 
-| Submodule | Branch | Status |
-|-----------|--------|--------|
-| bobium | `jules-7596736042051083261-af4b1f4e` | ✅ Already merged into main — **deleted** |
-| bobium | `jules-9934627537741952648-ccd6ef4d` | ✅ No unique content (merge commit only) — **deleted** |
-| superdawmcp | `jules-5372408556252106821-172735fe` | ✅ Already ancestor of main — **deleted** |
-| bobsgameweb | `jules-3-0-9-engine-sync-...` | ✅ Already merged into main |
-| bobsgameweb | `jules-port-legacy-engines-...` | ✅ Already merged into main |
-| bobsgameweb | `jules-3-0-10-sanitization-...` | ✅ Already merged into main |
-| bobsgameweb | `merge-master-into-feature` | ✅ Already ancestor of main |
-
-**Submodule pointer updates:**
-
-- **tormentnexus**: `12099cc29b` → `52940cddd7` (+1 commit, Executive Protocol R7)
-- **bobmani/hymnmania**: `f838dffcec` → `a499916d3b` (+1 commit, cover pipeline v5.94.0)
+| Submodule | Branches | Status |
+|-----------|----------|--------|
+| TurntUpToddler | `feature/web-ui-and-parallelization`, `jules-v1-27-0-docker-optimization` | ✅ Already merged |
+| agentirc | `jules-agentirc-async-refactor` | ✅ Already merged |
+| bobium | `jules-7596736042051083261`, `jules-9934627537741952648` | ✅ Already merged |
+| bobmani | `jules-empty-repo-diagnosis` | ✅ Already merged |
+| bobsaver_light | `jules-17743220499720909756` | ✅ Already merged |
+| bobsgameonlinejava | `fix/stale-lib-submodules` | ✅ Already merged |
+| bobzilla | `jules-13866237571450642745` | ✅ Already merged |
+| jules-autopilot | `jules-485-merge-test`, `jules-4852916069977232082` | ✅ Already merged |
+| marketing_agent | `jules-chore-replace-mocks`, `jules-crm-field-mapping` | ✅ Already merged |
+| superdawmcp | `jules-5372408556252106821` | ✅ Default branch (no merge needed) |
 
 **No forward merges needed** — all feature branches already incorporated into their respective mains.
 
 ### STEP 3: Workspace Cleanup & Documentation
 
-- **Version**: v5.109.0 → v5.110.0
+- **Version**: v5.110.0 → v5.111.0
 - **VERSION/VERSION.md**: Updated and synced
-- **CHANGELOG.md**: Updated with Protocol #91 details
-- **ROADMAP.md**: Updated with Protocol #91 entry
-- **TODO.md**: Version updated to v5.110.0
-- **build.bat / start.bat**: Version strings updated to v5.110.0
+- **CHANGELOG.md**: Updated with Protocol #92 details
+- **ROADMAP.md**: Updated with Protocol #92 entry
+- **TODO.md**: Version updated to v5.111.0
+- **build.bat / start.bat**: Version strings updated to v5.111.0
 - **HANDOFF.md**: Regenerated
+
+### bobfilez pybind11 Fix
+
+- **Root cause**: 17 deleted files in `libs/OpenTimelineIO/src/deps/pybind11/tests/test_cmake_build/` caused git status hangs
+- **Fix**: `git checkout -- tests/` restored the deleted test files
+- **Result**: pybind11 submodule now clean (0 dirty files, 99ms status check)
 
 ## Remaining Work (Unchanged)
 
 ### Known Issues
 
 - 62 GitHub vulnerabilities on default branch (22 high, 35 moderate, 5 low)
-- bg nested references/ (~50 uninitialized third-party submodules — ControlNet, Stable Diffusion, aseprite, etc.)
-- bobfilez pybind11 recursive directory loop (Windows MAX_PATH)
+- bg nested references/ (~50 uninitialized third-party submodules)
 - bobeditpro 94 commits behind Audacity (upstream merge deferred)
 - topaz-ffmpeg 15+ libswscale conflicts with FFmpeg (deferred)
-- bobsgameonlinejava_fix/fix/stale-lib-submodules — identified unique work but complex
 - MilkDrop3-2077/ orphaned directory (not a registered submodule)
 
 ## Running Services (if any)
 
-Status unknown — build phase not yet executed in this protocol. Execute `build.bat` and verify running services.
+Not executed in this protocol. Run `build.bat` to rebuild Go services.

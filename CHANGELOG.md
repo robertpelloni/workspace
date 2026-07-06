@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.111.0] — 2026-07-06 — Protocol #92
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **Feature branch scan**: Scanned 50+ submodules — 13 remote feature branches found, all confirmed merged
+- **MilkDrop3**: Cleared stale index.lock (held by another process)
+- **bobfilez pybind11 fix**: Restored 17 deleted test files in `libs/OpenTimelineIO/src/deps/pybind11/tests/test_cmake_build/` — fixes `git status` hang
+- **All feature branches confirmed merged**: No new forward merges required
+- **Root**: version bump v5.110.0 → v5.111.0
+
 ## [v5.110.0] — 2026-07-06 — Protocol #91
 
 ### Changed
