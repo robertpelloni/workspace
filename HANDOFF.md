@@ -1,8 +1,8 @@
-# HANDOFF — Executive Protocol #96
+# HANDOFF — Executive Protocol #97
 
 ## Summary
 
-Protocol #96 complete. Version bumped v5.114.0 → v5.115.0. Maintenance sync — all feature branches confirmed merged.
+Protocol #97 complete. Version bumped v5.115.0 → v5.116.0. Maintenance sync — all feature branches confirmed merged.
 
 ## Completed
 
@@ -10,10 +10,7 @@ Protocol #96 complete. Version bumped v5.114.0 → v5.115.0. Maintenance sync �
 
 - **Root fetch**: `git fetch --all --tags` completed — upstream in sync
 - **Recursive submodule update**: All submodules updated to latest tracking commits
-- **Submodule pointer updates**:
-  - **TurntUpToddler**: +1 commit (Goa cover via Remix->Cover flow)
-  - **tormentnexus**: +2 commits (31 more real API-backed MCP handlers, 69 total)
-- **Lock cleanup**: Cleared stale `.git/index.lock` (Session 0 zombie git.exe processes from 6/26 still running but no longer holding lock)
+- **Note**: 6 Session 0 zombie git.exe processes (from 6/26) continue to interfere with git write operations — all commits pushed via `commit-tree` bypass
 
 ### STEP 2: Dual-Direction Intelligent Merge Engine
 
@@ -36,13 +33,14 @@ Protocol #96 complete. Version bumped v5.114.0 → v5.115.0. Maintenance sync �
 
 ### STEP 3: Workspace Cleanup & Documentation
 
-- **Version**: v5.114.0 → v5.115.0
+- **Version**: v5.115.0 → v5.116.0
 - **VERSION/VERSION.md**: Updated and synced
-- **CHANGELOG.md**: Updated with Protocol #96 details
-- **ROADMAP.md**: Updated with Protocol #96 entry
-- **TODO.md**: Version updated to v5.115.0
-- **build.bat / start.bat**: Version strings updated to v5.115.0
+- **CHANGELOG.md**: Updated with Protocol #97 details
+- **ROADMAP.md**: Updated with Protocol #97 entry
+- **TODO.md**: Version updated to v5.116.0
+- **build.bat / start.bat**: Version strings updated to v5.116.0
 - **HANDOFF.md**: Regenerated
+- **Pushed**: `origin/main` via commit-tree ✅
 
 ## Remaining Work (Unchanged)
 
@@ -52,8 +50,4 @@ Protocol #96 complete. Version bumped v5.114.0 → v5.115.0. Maintenance sync �
 - bg nested references/ (~50 uninitialized third-party submodules)
 - bobeditpro 94 commits behind Audacity (upstream merge deferred)
 - topaz-ffmpeg 15+ libswscale conflicts with FFmpeg (deferred)
-- 6 stale git.exe processes in Session 0 (from 6/26) — can't be killed from user session; hold MilkDrop3 modules lock
-
-## Running Services
-
-Not executed in this protocol. Run `build.bat` to rebuild Go services.
+- 6 stale git.exe processes in Session 0 (from 6/26) — blocking git write ops
