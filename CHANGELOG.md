@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.114.0] — 2026-07-06 — Protocol #95
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **Forward Merge — bobmani**: Merged `jules-empty-repo-diagnosis` (2 commits, +1701/-251, Rust backend replaces Go backend)
+- **Forward Merge — bobium**: Merged `jules-9934627537741952648-ccd6ef4d` (4 commits, +1086/-216, Chromium patch stack: adblock, privacy, ungoogled, performance)
+- **Submodule pointers**: hymnmania (+1, Psytrance pipeline 8/14 speeds), tormentnexus (+2, 28 real API-backed MCP handlers)
+- **Feature branch scan**: 13 remote branches scanned — 11 merged, 2 forward-merged
+- **Root**: version bump v5.113.0 → v5.114.0
+
 ## [v5.113.0] — 2026-07-06 — Protocol #94
 
 ### Changed

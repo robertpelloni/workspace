@@ -1,1 +1,2 @@
-1. Connect WebSockets to Backend-Go
+1. Implement tract-onnx execution pipeline for ddc_onset models
+2. Fully connect Axum WebSockets
