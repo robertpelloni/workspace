@@ -1,7 +1,6 @@
-# HANDOFF — Protocol #108
+# HANDOFF — Protocol #109
 
-**v5.126.0 → v5.127.0** | Maintenance sync
+**v5.127.0 → v5.128.0** | Maintenance sync
 
-- Fetch done. Upstream synced (1 new commit from external).
-- All 13 branches merged.
+- Fetch done. All 13 branches merged.
 - Version bump + docs. Pushed ✅
