@@ -1,5 +1,17 @@
 # Changelog
 
+## [v5.134.0] — 2026-07-07 — Protocol #116
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **Submodule fix**: Removed broken `borg` submodule from MilkDrop3 (repo deleted/renamed)
+- **Forward merge**: aios `fix/nextjs-turbopack-windows` — 8 commits (Stripe billing, enterprise UI, MCP client targets, Next.js Windows fix)
+- **Feature branch scan**: ~30 branches scanned across robertpelloni submodules
+- **Deferred**: bobsgameonlinejava `feat/polygon-lasso` (4 unmerged commits — pending conflict resolution)
+- **Deferred**: libs/bobui `feature/audio-graph-native-linking-test` (local changes blocking merge)
+- **Root**: version bump v5.133.0 → v5.134.0
+
 ## [v5.133.0] — 2026-07-06 — Protocol #114
 
 ### Changed
