@@ -84,3 +84,9 @@ CON
 prn
 PRN
 # tests/test_cmake_build/subdirectory_function/build_output/  (removed - covered by tests/ above)
+
+# Edge CDP browser profiles (user-local browser cache)
+cdp-edge/
+cdp-edge-final/
+cdp-profile/
+cdp-profile2/
