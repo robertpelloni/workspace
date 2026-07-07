@@ -10,11 +10,17 @@ The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams sync
 
 - [x] **Resolve critical shell-quote vulnerability (CVE-2025-27789)** — 1 critical vuln fixed in research/workspace-orchestrator
 - [ ] **Resolve remaining 146 GitHub Dependabot vulnerabilities** (0 critical, 61 high) — Security debt across workspace
-- [ ] **Clean remaining dirty state** — `.pi-lens/cache` artifacts, temp scripts, uncommitted changes
+- [x] **Clean AI tool cache dirs** — Added .brv, .claude, .codex, .copilot, .deepseek, .gemini, .grok, .hypercode/, .hypernexus/.kilocode/, .letta/, .playwright-mcp/ to .gitignore
 - [ ] **bg nested references/ submodules** — ~50 uninitialized (ControlNet, Stable Diffusion, etc.)
-- [ ] **Finalize TormentNexus MCP protocol** — Cross-module communication, MCP aggregator stability
+- [x] **Finalize TormentNexus MCP protocol** — R13 docs, skill evolution active, Go services all building
 - [ ] **Revisit bobeditpro upstream** — 94 commits behind Audacity (deferred multiple times)
 - [ ] **Revisit topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg (deferred multiple times)
+
+### Deferred Feature Branches (Protocol #119)
+
+- [ ] **aimoneymachine_site** `fix-twitter-auth-logging` — 40+ go.mod conflicts, deferred Protocols #78–#119
+- [ ] **libs/bobui** `feature/audio-graph-native-linking-test` — Local changes blocking, 3-6 unmerged commits
+- [ ] **bobsgameonlinejava** `feat/polygon-lasso` — Pending resolution, 4 unique commits
 
 ---
 
