@@ -39,6 +39,11 @@ hymn_remaker_backup/
 # .jules/memory and .pi/sessions are NOT ignored — they contain critical development history
 # Browser session artifacts
 .suno_browser_session/
+.serena/
+.tormentnexus/
+.tormentnexus-session.json
+.tormentnexus_startup_marker
+.vibe-config.json
 # Temp/scratch dirs
 _delete_me_temp/
 temp_*/
