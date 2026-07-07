@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.137.0] — 2026-07-07 — Protocol #119
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch completed
+- **Submodule pointer updates**: MilkDrop3, TurntUpToddler (+2 goa cover commits), freellm (switch to main), tormentnexus (+5 docs commits)
+- **Feature branch scan**: 0 new actionable forward merges — all substantive branches already reconciled
+- **Deferred** (unchanged): aimoneymachine_site fix-twitter-auth-logging, libs/bobui feature/audio-graph-native-linking-test, bobsgameonlinejava feat/polygon-lasso
+- **Root**: version bump v5.136.0 → v5.137.0
+
 ## [v5.136.0] — 2026-07-07 — Protocol #118
 
 ### Changed

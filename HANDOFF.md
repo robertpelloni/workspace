@@ -1,13 +1,16 @@
-# HANDOFF — Protocol #118
+# HANDOFF — Protocol #119
 
-**v5.135.0 → v5.136.0** | Maintenance sync
+**v5.136.0 → v5.137.0** | Maintenance sync
 
 ## STEP 1: Submodule Sanitization
 
 - ✅ `git fetch --all --tags` on root repo completed
 - ✅ origin/upstream in sync
-- ✅ All 68 top-level submodules checked out to pinned commits
-- ⚠️ A few submodules show dirty/untracked content: TurntUpToddler, freellm
+- ✅ Recursive submodule fetch + update completed
+- ✅ MilkDrop3: checkout main (recorded commit 480ec5a force-pushed — updated to origin/main)
+- ✅ TurntUpToddler: main checkout (stashed dirty working files)
+- ✅ freellm: switched from temp-main back to main
+- ✅ tormentnexus: updated to latest main (+5 docs commits)
 
 ## STEP 2: Feature Branch Assessment
 
@@ -15,23 +18,25 @@
 
 None — all previously actionable branches already handled.
 
-### Deferred (unchanged from Protocol #117)
+### Branches Scanned (no action needed)
 
-| Submodule | Branch | Unmerged | Reason |
-|-----------|--------|----------|--------|
-| aimoneymachine_site | fix-twitter-auth-logging | 1 | 40+ go.mod conflicts |
-| libs/bobui | feature/audio-graph-native-linking-test | 3-6 | Local changes blocking |
-| bobsgameonlinejava | feat/polygon-lasso | 4 | Pending resolution |
-| bcs | bcs-multi-lang-kernel-port | 1 | Already merged locally; remote not updated |
-| external/bqt-reference | bqt-renaming-and-audio-graph | 28 | Upstream feature branch — no action |
-| external/bqt-reference | feature/audio-graph-native-linking-test | 30 | Upstream feature branch — no action |
+| Submodule | Branch | Status |
+|-----------|--------|--------|
+| TurntUpToddler | feat-editor-endpoints-tooltips | 1 merge commit ahead only — no unique work |
+| psytrance_night_outreach_agent | temp-feature-merge | 2 docs-only README banners — no substantive work |
+| freellm | temp-main | go.sum diff only (getlantern/systray +2 lines) — already in main |
+| bcs | jules-10936672596023099293-b3d8ae3d | Already merged to main in prior protocol |
 
 **Branches scanned**: ~42 total across robertpelloni submodules
-**Jules auto-gen**: 12 branches across aios, itgmania, beatoraja, ksm-v2, etc. (ongoing)
-**Dependabot**: 16 branches across aios, aimoneymachine_site (automated)
+**Deferred** (unchanged from Protocol #118):
+
+- aimoneymachine_site fix-twitter-auth-logging (40+ go.mod conflicts)
+- libs/bobui feature/audio-graph-native-linking-test (local changes blocking)
+- bobsgameonlinejava feat/polygon-lasso (pending resolution)
 
 ## STEP 3: Version Bump & Push
 
-- ✅ Version bumped v5.135.0 → v5.136.0
-- ✅ CHANGELOG.md, VERSION, VERSION.md, build.bat, start.bat synced
+- ✅ Version bumped v5.136.0 → v5.137.0
+- ✅ CHANGELOG.md, VERSION, VERSION.md synced
+- ✅ Submodule pointers updated: MilkDrop3, TurntUpToddler, freellm, tormentnexus
 - ✅ No new merges — clean maintenance sync
