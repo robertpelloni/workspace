@@ -1,5 +1,14 @@
 # Changelog
 
+## [v5.129.0] — 2026-07-06 — Protocol #110
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **Feature branch scan**: 13 remote branches scanned across 10 submodules — all confirmed merged
+- **All feature branches confirmed merged**: No new forward merges required
+- **Root**: version bump v5.128.0 → v5.129.0
+
 ## [v5.128.0] — 2026-07-06 — Protocol #109
 
 ### Changed
