@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.135.0] — 2026-07-07 — Protocol #117
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + submodule update
+- **Forward merge**: bcs `bcs-multi-lang-kernel-port` — 1 commit (C# event kernel, CHANGELOG/MEMORY/VERSION sync)
+- **Feature branch scan**: ~40 branches scanned across robertpelloni submodules
+- **Deferred**: aimoneymachine_site `fix-twitter-auth-logging` (40+ conflicts — deferring)
+- **Deferred**: libs/bobui `feature/audio-graph-native-linking-test` (local changes blocking)
+- **Root**: version bump v5.134.0 → v5.135.0
+
 ## [v5.134.0] — 2026-07-07 — Protocol #116
 
 ### Changed

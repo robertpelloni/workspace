@@ -1,49 +1,47 @@
-# HANDOFF — Protocol #116
+# HANDOFF — Protocol #117
 
-**v5.133.0 → v5.134.0** | Maintenance sync + Forward Merge
+**v5.134.0 → v5.135.0** | Maintenance sync + Forward merge
 
 ## STEP 1: Submodule Sanitization
 
-- ✅ `git fetch --all --tags` on root repo (origin/upstream in sync)
-- ✅ Recursive submodule update with `--init --force`
-- ⚠️ `MilkDrop3/borg` submodule found broken — **removed** from MilkDrop3 .gitmodules (fatal: Unable to find current revision)
-- ⚠️ `MilkDrop3_fix` had stale index.lock — cleared
-- ✅ All 68 top-level submodules checked out to their pinned commits
-- ⚠️ Recursive submodule update still has issues with nested references/ (bg submodule)
+- ✅ `git fetch --all --tags` on root repo completed
+- ✅ origin/upstream in sync (canonical repo)
+- ✅ Submodule status verified across all 68 top-level entries
+- ⚠️ MilkDrop3 points to local commit `480ec5a` (borg→tormentnexus rename, not pushed to remote)
 
 ## STEP 2: Feature Branch Assessment
 
 ### Forward Merged
 
-| Submodule | Branch | Commits | Changes |
+| Submodule | Branch | Commits | Outcome |
 |-----------|--------|---------|---------|
-| aios (MilkDrop3) | fix/nextjs-turbopack-windows | 8 | Fast-forward: Stripe billing webhook, enterprise UI, Next.js Windows fix, MCP client targets |
+| bcs | bcs-multi-lang-kernel-port | 1 | ✅ Merged (C# event kernel, docs sync) |
 
-### Deferred (conflicts or local changes)
+### Deferred (conflicts)
 
 | Submodule | Branch | Unmerged | Status |
 |-----------|--------|----------|--------|
-| libs/bobui (bobsgameonlinejava) | feature/audio-graph-native-linking-test | 3 | Local changes blocking merge |
-| bobsgameonlinejava | feat/polygon-lasso | 4 | Partially merged in earlier protocol; 4 commits remain |
-| bcs | bcs-multi-lang-kernel-port | 1 | Needs merge review |
+| aimoneymachine_site | fix-twitter-auth-logging | 1 | Aborted — 40+ conflicts across go.mod files |
+| libs/bobui (bobsgameonlinejava) | feature/audio-graph-native-linking-test | 3 | Local changes blocking |
+| bobsgameonlinejava | feat/polygon-lasso | 4 | Partially merged in earlier protocol |
 
-### Jules auto-generated branches (ongoing — no action)
+### Jules auto-generated (ongoing — no action)
 
-- Multiple jules-* branches across aios, itgmania, apophysis-j, beatoraja, ksm-v2, bobsgameweb
-- These are tracked as continuous development
+- jules-* branches across aios, itgmania, beatoraja, ksm-v2, apophysis-j, bobsgameweb
 
-### Dependabot branches (automated — no action)
+### Dependabot (automated — no action)
 
 - Multiple dependabot/* branches across aios, aimoneymachine_site
 
-## STEP 3: Version Bump & Docs
+## STEP 3: Version Bump & Push
 
-- ✅ Version bumped v5.133.0 → v5.134.0
-- ✅ CHANGELOG.md updated with Protocol #116 entry
-- ✅ VERSION, VERSION.md, build.bat, start.bat synced
+- ✅ Version bumped v5.134.0 → v5.135.0
+- ✅ CHANGELOG.md, VERSION, VERSION.md, build.bat, start.bat synced
+- ⚠️ Submodule pointers updated: bcs (+1 commit for merge)
+- ⚠️ Need to consider pushing MilkDrop3 pointer (borg→tormentnexus rename)
 
-## Known Issues
+## Open Items
 
-1. **borg→tormentnexus rename fix**: Per user context, `aios → borg → hypercode → tormentnexus`. MilkDrop3 now points to `tormentnexus` at `https://github.com/MDMAtk/TormentNexus.git` with valid commit `0ce94b56fa`
-2. **tormentnexus** submodule dirty — memory logs accumulating
-3. **cdp-edge, cdp-profile, cdp-profile2** added to .gitignore (Edge browser cache data)
+1. MilkDrop3 commit `480ec5a` has borg→tormentnexus rename — not pushed to remote
+2. bcs merge commit `5b03d816b` — committed locally, needs root pointer update
+3. 15 GitHub vulnerabilities (unchanged)
