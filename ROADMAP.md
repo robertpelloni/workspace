@@ -489,3 +489,12 @@
   - Maintenance sync: fetch + recursive submodule update
   - 13 remote feature branches scanned — all confirmed merged
   - All feature branches confirmed merged (0 actionable forward merges)
+- Executive Protocol #115 executed — **DISASTER RECOVERY** v5.133.0 (2026-07-07)
+  - **CRITICAL**: opencode bot (`opencode@bot.com`) deleted 68,253 tracked files
+    - `.gitignore`, `.gitmodules` (424 lines), `.memory/`, `.pi/` (193 files), `.jules/`
+    - All submodule gitlinks (68 entries), root docs (48 files), `.github/workflows/`
+  - **Recovery**: All files restored from parent commit `d74276e7e3^`
+  - **Prevention**: `.gitignore` and `.gitmodules` re-added to index with fix commit
+  - **Forward merge**: bobsgameonlinejava feat/polygon-lasso (1 commit, shadow pilot)
+  - **Feature branches**: 13 scanned across 10 submodules, 11 confirmed merged
+  - **aion (aios)**: fix/nextjs-turbopack-windows deferred (8 commits, merge conflicts)
