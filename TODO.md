@@ -1,6 +1,6 @@
 # TODO — Omni-Workspace v5.99.0
 
-**Current:** v5.117.0 • 80+ submodules across workspace • 2026-07-06
+**Current:** v5.118.0 • 80+ submodules across workspace • 2026-07-06
 
 ## 🎯 v5.50.0 Milestone: Production Hardening
 
