@@ -44,7 +44,6 @@
 
 ## Known Issues
 
-1. **MilkDrop3/borg** removed — but root `.git/modules/MilkDrop3/modules/borg/` still has metadata (can't delete via CLI)
-2. **MilkDrop3** has a local commit (`0bda35a`) removing borg — pointer needs updating in root
+1. **borg→tormentnexus rename fix**: Per user context, `aios → borg → hypercode → tormentnexus`. MilkDrop3 now points to `tormentnexus` at `https://github.com/MDMAtk/TormentNexus.git` with valid commit `0ce94b56fa`
+2. **tormentnexus** submodule dirty — memory logs accumulating
 3. **cdp-edge, cdp-profile, cdp-profile2** added to .gitignore (Edge browser cache data)
-4. **tormentnexus** submodule dirty — memory logs accumulating
