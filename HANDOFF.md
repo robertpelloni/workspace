@@ -1,47 +1,37 @@
-# HANDOFF — Protocol #117
+# HANDOFF — Protocol #118
 
-**v5.134.0 → v5.135.0** | Maintenance sync + Forward merge
+**v5.135.0 → v5.136.0** | Maintenance sync
 
 ## STEP 1: Submodule Sanitization
 
 - ✅ `git fetch --all --tags` on root repo completed
-- ✅ origin/upstream in sync (canonical repo)
-- ✅ Submodule status verified across all 68 top-level entries
-- ⚠️ MilkDrop3 points to local commit `480ec5a` (borg→tormentnexus rename, not pushed to remote)
+- ✅ origin/upstream in sync
+- ✅ All 68 top-level submodules checked out to pinned commits
+- ⚠️ A few submodules show dirty/untracked content: TurntUpToddler, freellm
 
 ## STEP 2: Feature Branch Assessment
 
 ### Forward Merged
 
-| Submodule | Branch | Commits | Outcome |
-|-----------|--------|---------|---------|
-| bcs | bcs-multi-lang-kernel-port | 1 | ✅ Merged (C# event kernel, docs sync) |
+None — all previously actionable branches already handled.
 
-### Deferred (conflicts)
+### Deferred (unchanged from Protocol #117)
 
-| Submodule | Branch | Unmerged | Status |
+| Submodule | Branch | Unmerged | Reason |
 |-----------|--------|----------|--------|
-| aimoneymachine_site | fix-twitter-auth-logging | 1 | Aborted — 40+ conflicts across go.mod files |
-| libs/bobui (bobsgameonlinejava) | feature/audio-graph-native-linking-test | 3 | Local changes blocking |
-| bobsgameonlinejava | feat/polygon-lasso | 4 | Partially merged in earlier protocol |
+| aimoneymachine_site | fix-twitter-auth-logging | 1 | 40+ go.mod conflicts |
+| libs/bobui | feature/audio-graph-native-linking-test | 3-6 | Local changes blocking |
+| bobsgameonlinejava | feat/polygon-lasso | 4 | Pending resolution |
+| bcs | bcs-multi-lang-kernel-port | 1 | Already merged locally; remote not updated |
+| external/bqt-reference | bqt-renaming-and-audio-graph | 28 | Upstream feature branch — no action |
+| external/bqt-reference | feature/audio-graph-native-linking-test | 30 | Upstream feature branch — no action |
 
-### Jules auto-generated (ongoing — no action)
-
-- jules-* branches across aios, itgmania, beatoraja, ksm-v2, apophysis-j, bobsgameweb
-
-### Dependabot (automated — no action)
-
-- Multiple dependabot/* branches across aios, aimoneymachine_site
+**Branches scanned**: ~42 total across robertpelloni submodules
+**Jules auto-gen**: 12 branches across aios, itgmania, beatoraja, ksm-v2, etc. (ongoing)
+**Dependabot**: 16 branches across aios, aimoneymachine_site (automated)
 
 ## STEP 3: Version Bump & Push
 
-- ✅ Version bumped v5.134.0 → v5.135.0
+- ✅ Version bumped v5.135.0 → v5.136.0
 - ✅ CHANGELOG.md, VERSION, VERSION.md, build.bat, start.bat synced
-- ⚠️ Submodule pointers updated: bcs (+1 commit for merge)
-- ⚠️ Need to consider pushing MilkDrop3 pointer (borg→tormentnexus rename)
-
-## Open Items
-
-1. MilkDrop3 commit `480ec5a` has borg→tormentnexus rename — not pushed to remote
-2. bcs merge commit `5b03d816b` — committed locally, needs root pointer update
-3. 15 GitHub vulnerabilities (unchanged)
+- ✅ No new merges — clean maintenance sync

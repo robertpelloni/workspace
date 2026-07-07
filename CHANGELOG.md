@@ -1,5 +1,14 @@
 # Changelog
 
+## [v5.136.0] — 2026-07-07 — Protocol #118
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + submodule status verified
+- **Feature branch scan**: ~42 branches scanned across robertpelloni submodules — 0 new actionable forward merges
+- **Deferred** (unchanged): aimoneymachine_site fix-twitter-auth-logging, libs/bobui feature/audio-graph-native-linking-test, bobsgameonlinejava feat/polygon-lasso
+- **Root**: version bump v5.135.0 → v5.136.0
+
 ## [v5.135.0] — 2026-07-07 — Protocol #117
 
 ### Changed
