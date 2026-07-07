@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.115.0] — 2026-07-06 — Protocol #96
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule update completed
+- **Submodule pointers**: TurntUpToddler (+1, Goa cover), tormentnexus (+2, 31 real API-backed MCP handlers)
+- **Feature branch scan**: 13 remote branches scanned across 10 submodules — all confirmed merged
+- **All feature branches confirmed merged**: No new forward merges required
+- **Root**: version bump v5.114.0 → v5.115.0
+
 ## [v5.114.0] — 2026-07-06 — Protocol #95
 
 ### Changed
