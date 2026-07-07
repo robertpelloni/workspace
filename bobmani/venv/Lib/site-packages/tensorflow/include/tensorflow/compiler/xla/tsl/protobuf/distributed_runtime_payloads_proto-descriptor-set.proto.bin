@@ -1,10 +1,0 @@
-
-…
-3xla/tsl/protobuf/distributed_runtime_payloads.prototensorflow.distributed_runtime"³
-GrpcPayloadContainer^
-payloads (2B.tensorflow.distributed_runtime.GrpcPayloadContainer.PayloadsEntryRpayloads;
-PayloadsEntry
-key (	Rkey
-value (Rvalue:8"
-GrpcPayloadsLost"
-WorkerPossiblyRestartedBAZ<github.com/tsl/tsl/go/core/protobuf/for_core_protos_go_protoøbproto3

@@ -1,9 +1,0 @@
-[project]
-name = "workspace"
-version = "5.17.0"
-description = "Robert Pelloni's unified development ecosystem — monorepo orchestration hub"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "browser-use>=0.9.5",
-]

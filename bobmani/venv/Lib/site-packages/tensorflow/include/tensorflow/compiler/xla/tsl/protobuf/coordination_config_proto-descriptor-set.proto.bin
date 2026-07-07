@@ -1,22 +1,0 @@
-
-…
-*xla/tsl/protobuf/coordination_config.proto
-tensorflow"A
-CoordinatedJob
-name (	Rname
-	num_tasks (RnumTasks"¦
-CoordinationServiceConfig!
-service_type (	RserviceType%
-service_leader (	RserviceLeader.
-enable_health_check (RenableHealthCheckB
-cluster_register_timeout_in_ms (RclusterRegisterTimeoutInMsA
-cluster_register_with_barrier (RclusterRegisterWithBarrier5
-heartbeat_timeout_in_ms (RheartbeatTimeoutInMsL
-coordinated_job_list
- (2.tensorflow.CoordinatedJobRcoordinatedJobListB
-shutdown_barrier_timeout_in_ms (RshutdownBarrierTimeoutInMsK
-"agent_destruction_without_shutdown (RagentDestructionWithoutShutdown)
-recoverable_jobs	 (	RrecoverableJobsJ
-"allow_new_incarnation_to_reconnect (RallowNewIncarnationToReconnect#
-force_disable (RforceDisableP
-&poll_for_error_from_service_at_startup (R pollForErrorFromServiceAtStartupJBWZUgithub.com/tensorflow/tensorflow/tensorflow/go/core/protobuf/for_core_protos_go_protobproto3

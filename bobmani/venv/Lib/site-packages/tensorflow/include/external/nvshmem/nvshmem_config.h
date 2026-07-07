@@ -1,1 +1,0 @@
-constexpr static char XLA_NVSHMEM_VERSION[] = "3";

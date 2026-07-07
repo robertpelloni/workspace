@@ -1,12 +1,0 @@
-
-Š
-xla/tsl/protobuf/status.proto
-tensorflow"xla/tsl/protobuf/error_codes.proto"Ï
-StatusProto*
-code (2.tensorflow.error.CodeRcode
-message (	Rmessage>
-payload (2$.tensorflow.StatusProto.PayloadEntryRpayload:
-PayloadEntry
-key (	Rkey
-value (Rvalue:8B_
-org.tensorflow.frameworkPZ>github.com/google/tsl/tsl/go/protobuf/for_core_protos_go_protoøbproto3
