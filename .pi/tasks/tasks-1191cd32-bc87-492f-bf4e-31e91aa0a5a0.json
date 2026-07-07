@@ -1,0 +1,17 @@
+{
+  "nextId": 21,
+  "tasks": [
+    {
+      "id": "20",
+      "subject": "Go Migration and Ultra-Project Integration for claude-mem",
+      "description": "1.  **Analyze `robertpelloni/claude-mem`**: Perform an extreme depth analysis of the `claude-mem` project, including all source files, submodules, and conversation history.\n2.  **Go Migration**: Systematically port the project to Go, ensuring every feature and functionality is implemented in a robust and superior manner.\n3.  **Architectural Integration**: Consolidate competing/overlapping submodule projects into a streamlined Go ultra-project, assimilating all unique features.\n4.  **UI/UX & Documentation**: Ensure all implemented and planned features are fully represented in the UI with detailed labels, descriptions, and tooltips. Update `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `GPT.md`, and create/refine a `UNIVERSAL_LLM_INSTRUCTIONS.md`.\n5.  **Roadmap Implementation**: Reanalyze `TODO.md`, `ROADMAP.md`, and `VISION.md` to identify and implement the next set of high-priority features.\n6.  **Continuous Iteration**: Proceed methodically, committing and pushing findings after each task, and ensuring no loss of user intent or dense instructions.",
+      "status": "completed",
+      "activeForm": "Implementing Go migration and architectural integration for claude-mem",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1775925716495,
+      "updatedAt": 1775926343917
+    }
+  ]
+}

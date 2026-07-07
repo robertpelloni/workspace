@@ -1,0 +1,86 @@
+node_modules/
+.env
+hymn_remaker_backup/
+# Cache/agent directories (generated — not tracked)
+.agent/
+.chunkhound/
+.codemachine/
+.cursor/
+.pi-lens/cache/
+.pi-lens/change-log.jsonl
+.pi-lens/code-quality-warnings.jsonl
+.pi-lens/metrics-history.json
+.pi-lens/turn-state.json
+.pi-lens/worklog.jsonl
+.pi-lens/sessions/
+.pi-lens/sessions/*.json
+# .jules/memory and .pi/sessions are NOT ignored — they contain critical development history
+# Browser session artifacts
+.suno_browser_session/
+# Temp/scratch dirs
+_delete_me_temp/
+temp_*/
+tmp_*/
+.pi/tasks/
+.pi/caps-context-state.json
+.pi/tasks-config.json
+# Generated files
+.gitmodules.restore
+.stale_commit_results.json
+.stale_pointers.json
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# workspace_index.db is locally regenerated cache — keep out of git
+workspace_index.db
+# Deregistered orphaned submodules (GitHub 404 — data preserved on disk)
+CLIProxyAPIPlus/
+Cli-Proxy-API-Management-Center/
+OmniRoute/
+WebAI-to-API/
+antigravity-autopilot/
+antigravity-cli/
+antigravity-jules-orchestration/
+bobdesk/
+claude-mem/
+computer-use-preview/
+dupeguru/
+frontend-sdl-cpp/
+litellm/
+mcpenetes/
+metamcp/
+opencode-autopilot/
+picard/
+raindropioapp/
+superpowers/
+# Temp/legacy files
+_fix_gitignores.sh
+litellm_control_panel_new/
+litellm_merge/
+.stale_commit_results.json
+.stale_pointers.json
+
+# IMPORTANT: Do NOT add any of the following to .gitignore
+# - Databases (*.db, *.sqlite, etc.)
+# - Session/conversation files (*-session.json, sessions/)
+# - .tormentnexus/ (AI sessions, memory, handoffs, db)
+# - .jules/ (Jules AI conversations and state)
+# These contain critical development history and must be tracked.
+# Only ignore system logs (*.log), build artifacts, and caches.
+
+
+bobsaver_light/
+jvm-cpp-runtime/
+linthesia/
+tests/
+
+# Windows reserved device names (created by some tools/scripts — break git on Windows)
+nul
+NUL
+con
+CON
+prn
+PRN
+# tests/test_cmake_build/subdirectory_function/build_output/  (removed - covered by tests/ above)
