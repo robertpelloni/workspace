@@ -1,5 +1,21 @@
 # Changelog
 
+## [v5.143.0] — 2026-07-07 — Protocol #122
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch completed
+- **Submodule fix**: Removed redundant nested `okgame` submodule from bobsgameweb (2nd orphaned nested submodule)
+- **Feature branch scan**: All branches scanned — 0 new actionable forward merges
+- **Pointer chain**: bobsgameweb → bg → MilkDrop3 → workspace synced
+- **Root**: version bump v5.142.0 → v5.143.0
+
+## [v5.142.0] — 2026-07-07 — Protocol #121 (fix)
+
+### Changed
+
+- **Fix**: Remove redundant okgame nested submodule from bobsgameweb
+
 ## [v5.141.0] — 2026-07-07 — Protocol #121
 
 ### Changed
