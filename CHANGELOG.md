@@ -1,5 +1,22 @@
 # Changelog
 
+## [v5.141.0] — 2026-07-07 — Protocol #121
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch completed
+- **Submodule fix**: Updated juce submodule pointer in bobui (upstream force-push recovery: 0729f13f → 2cdfca8f)
+- **Submodule fix**: Removed redundant nested `bobsgameonlinejava` submodule from bobsgameweb (exists at workspace root)
+- **Feature branch scan**: ~80+ branches scanned across all submodules — 0 new actionable forward merges
+- **Pointer chain**: juce → bobui → bobsgameweb → bg → MilkDrop3 → workspace synced
+- **Root**: version bump v5.140.0 → v5.141.0
+
+## [v5.140.0] — 2026-07-07 — Protocol #120 (fix)
+
+### Changed
+
+- **Fix**: Update submodule pointers for juce force-push recovery + redundant nested submodule removal
+
 ## [v5.139.0] — 2026-07-07 — Protocol #120
 
 ### Changed

@@ -1,35 +1,23 @@
-# HANDOFF — Protocol #120
+# HANDOFF — Protocol #121
 
-**v5.138.0 → v5.139.0** | Dual forward-merge + submodule fix
+**v5.140.0 → v5.141.0** | Submodule fix + maintenance sync
 
 ## STEP 1: Submodule Sanitization
 
 - ✅ `git fetch --all --tags` on root repo completed
 - ✅ origin/upstream in sync
 - ✅ Recursive submodule fetch + update
-- ✅ **Fix**: Removed stale `borg` submodule from MilkDrop3 (replaced by `tormentnexus` at root)
-- ✅ MilkDrop3 pushed to origin/main with fix
+- ✅ **Fix**: Updated JUCE submodule pointer in bobui (upstream force-push: 0729f13f → 2cdfca8f)
+- ✅ **Fix**: Removed redundant nested `bobsgameonlinejava` submodule from bobsgameweb
+- ✅ Pointer chain: juce → bobui → bobsgameweb → bg → MilkDrop3 → workspace
 
 ## STEP 2: Feature Branch Assessment
 
-### Forward Merged (2 branches resolved!)
-
-| Submodule | Branch | Commits | Description |
-|-----------|--------|---------|-------------|
-| bobsgameonlinejava | feat/polygon-lasso | 6 | Shadow Pilot telemetry, WebSocket server, CI auto-fix hook, ParityTest, render.yaml |
-| bobui (bqt) | feature/audio-graph-native-linking-test | 5 | Audio graph event dispatch, OmniGain, Go port, Java/C#/Rust audio primitives, shell integration |
-
-### Pointer Chain Updated
-
-bobui → bobsgameweb → bg → MilkDrop3 → workspace
-
-### Still Deferred
-
-- **aimoneymachine_site** fix-twitter-auth-logging (40+ go.mod conflicts)
+- ✅ ~80+ remote feature branches scanned across all submodules
+- ✅ 0 new actionable forward merges (all previously identified branches already reconciled)
 
 ## STEP 3: Version Bump & Push
 
-- ✅ Version bumped v5.138.0 → v5.139.0
+- ✅ Version bumped v5.140.0 → v5.141.0
 - ✅ CHANGELOG.md, VERSION, VERSION.md, build.bat, start.bat synced
-- ✅ 2 deferred feature branches forward-merged
 - ✅ All pushed to origin/main
