@@ -1,5 +1,22 @@
 # Changelog
 
+## [v5.139.0] — 2026-07-07 — Protocol #120
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch completed
+- **Submodule fix**: Removed stale `borg` submodule from MilkDrop3 (renamed to `tormentnexus` at root)
+- **Forward merge**: bobsgameonlinejava `feat/polygon-lasso` — 6 commits (Shadow Pilot telemetry, WebSocket, CI auto-fix, ParityTest)
+- **Forward merge**: bobui (bqt) `feature/audio-graph-native-linking-test` — 5 commits (audio graph event dispatch, Go port, Java/C#/Rust audio primitives)
+- **Pointer chain**: bobui → bobsgameweb → bg → MilkDrop3 → workspace synced
+- **Root**: version bump v5.138.0 → v5.139.0
+
+## [v5.138.0] — 2026-07-07 — Protocol #119 (fix)
+
+### Changed
+
+- **Fix**: Remove stale `borg` submodule from MilkDrop3, update pointer
+
 ## [v5.137.0] — 2026-07-07 — Protocol #119
 
 ### Changed
