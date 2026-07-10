@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.152.0] — 2026-07-09 — Protocol #132
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch completed
+- **tormentnexus**: Committed memory extraction/migration/vector rebuild scripts (497 lines)
+- **Feature branch scan**: No actionable forward merges
+- **Workspace**: Clean maintenance — 162 clean submodules, 14 modified (references), 120 uninitialized (references)
+- **Root**: version bump v5.151.0 → v5.152.0
+
 ## [v5.151.0] — 2026-07-09 — Protocol #130
 
 ### Changed
