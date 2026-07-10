@@ -1,6 +1,6 @@
-# TODO — Omni-Workspace v5.137.0
+# TODO — Omni-Workspace v5.150.0
 
-**Current:** v5.137.0 • 80+ submodules across workspace • 2026-07-07
+**Current:** v5.150.0 • 80+ submodules across workspace • 2026-07-09
 
 ## 🎯 v5.50.0 Milestone: Production Hardening
 
@@ -40,6 +40,10 @@ The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams sync
 
 | Project | Dirty Files | Action Required |
 |---------|-------------|-----------------|
+| MilkDrop3_fix/borg | 0 | ✅ Removed empty submodule (no remote refs) — Protocol #129 |
+| TurntUpToddler | 0 | ✅ Committed hymn_remaker scripts — Protocol #129 |
+| slsk_discography_downloader_script | 0 | ✅ Committed orchestrator.py fix — Protocol #129 |
+| auto_dj_script | 0 | ✅ Committed tracklist update — Protocol #129 |
 | tormentnexus | ~3,900 | Add `.pi-lens/cache/`, `*.tmp`, `akb*`, `_llm_*` to `.gitignore`, then commit |
 | borg | 0 | ✅ Clean (after EP #38 sync) |
 | Maestro | 0 | ✅ Clean (synced to latest) |

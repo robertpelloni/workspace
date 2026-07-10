@@ -1,16 +1,60 @@
-# HANDOFF — Protocol #125
+# Handoff — Protocol #129 (v5.150.0)
 
-**v5.145.0 → v5.146.0** | Maintenance sync
+**Date:** 2026-07-09
+**Previous:** Protocol #128 (v5.149.0, 2026-07-07)
 
-## STEP 1
+## Summary
 
-- ✅ `git fetch --all --tags` + recursive submodule update — all clean
+Full workspace synchronization executed. No upstream changes to merge (origin==upstream).
+Submodule pointer reconciliation complete. Version bumped v5.149.0 → v5.150.0.
 
-## STEP 2
+## Step 1: Upstream Tracking & Submodule Sanitization
 
-- ✅ All branches scanned — 0 new actionable forward merges
+- ✅ **Root fetch**: `git fetch --all --tags` completed. Local main at 8c8db40f5d, in sync with upstream.
+- ✅ **Submodule fetch**: `--recurse-submodules=on-demand` completed. Some tags rejected (defold), submodules fetched cleanly.
+- ✅ **Submodule update**: `git submodule update --init --recursive --force` completed across 80+ repos.
+- ✅ **borg fix**: Removed empty `MilkDrop3_fix/borg` submodule — remote had no refs, commit 2585a2b9 not found.
+  - Removed from `.gitmodules`, committed `git rm --cached borg` in `MilkDrop3_fix` (commit db34801).
+  - Updated workspace submodule pointer to track the fixed MilkDrop3_fix commit.
 
-## STEP 3
+## Step 2: Dual-Direction Intelligent Merge Engine
 
-- ✅ Version bumped v5.145.0 → v5.146.0
-- ✅ CHANGELOG, VERSION, build.bat, start.bat synced
+- ✅ **No local feature branches**: Only `main` exists locally. Remote branches are dependabot auto-updates only.
+- ✅ **No stash**: Dropped 2 stale stashes (old OTA log data, no feature work).
+- ✅ **Submodule commits preserved**:
+  - **TurntUpToddler** (7b35dfe): Committed 281-line `generate_hymn_suno.py` + generated audio
+  - **auto_dj_script** (13175169): Committed updated tracklist + rekordbox XML (454 insertions)
+  - **slsk_discography_downloader_script**: Committed `orchestrator.py` fix + delete_review FLACs
+
+## Step 3: Workspace Cleanup
+
+- ✅ **Version bump**: v5.149.0 → v5.150.0 in `VERSION`, `VERSION.md`, `CHANGELOG.md`
+- ✅ **CHANGELOG.md**: Added Protocol #129 entry with borg fix and submodule commits
+- ✅ **TODO.md**: Updated to v5.150.0, marked completed dirty repo cleanups
+- ✅ **HANDOFF.md**: Written
+
+## Pending / Deferred Items (from TODO.md)
+
+- **Security**: 146+ Dependabot vulns (0 critical, 61 high) — npm audit broken (SSL issue)
+- **bobeditpro upstream**: 94 commits behind Audacity — 25+ conflicts
+- **topaz-ffmpeg upstream**: 15+ libswscale conflicts
+- **bg nested references/**: ~50 uninitialized third-party repos
+- **TormentNexus**: MCP aggregator source fix needed
+- **Dockerization**: TormentNexus, fwber, jules-autopilot
+- **Submodule jules branches**: Multiple remote-only feature branches across ArrowVortex, Maestro, MarbleBlast, bg, aios, bobcoin — none merged; deferred
+
+## Push Status
+
+Changes staged but **NOT YET PUSHED**. Ready for `git push` after verification.
+
+## Key Commands for Next Agent
+
+```bash
+cd /c/Users/hyper/workspace
+# Verify submodule pointers are correct
+git submodule status
+
+# Push if satisfied
+git push origin main
+git submodule foreach --recursive "git push origin HEAD:main 2>&1" | grep -E "(Everything|fatal)"
+```
