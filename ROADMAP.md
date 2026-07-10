@@ -542,3 +542,10 @@
     - **neverball** (3 real): Level editor proto, arcade physics, camera snap
   - **Already merged**: supersaber, tabby, openclaw-config — already in main, skipped
   - **Version bump**: v5.153.0 → v5.154.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #135 executed — v5.155.0 (2026-07-10)
+  - **Maintenance sync**: Full fetch + recursive submodule update; cleaned 2 stale index.lock files
+  - **Feature branch scan**: 5 robertpelloni submodules with remote Jules/feat branches evaluated — 0 new actionable forward merges
+  - **Pending pushes dispatched**: supersaber (+29), tabby (+14) pushed to origin
+  - **hermes-agent**: upstream/feat/prompt-caching-enabled-toggle-v2 (1948 commits from NousResearch) — upstream feature branch, ignored per protocol
+  - **All deferred branches unchanged** from Protocol #134
+  - **Version bump**: v5.154.0 → v5.155.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.155.0] — 2026-07-10 — Protocol #135
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Submodule Update**: Recursive submodule update; cleaned 2 stale index.lock files (MilkDrop3, bobmani)
+- **Feature Branch Scan**: 60+ remote branches scanned across 75 robertpelloni submodules — **0 new actionable forward merges**
+- **Pending Pushes**: Pushed supersaber (+29) and tabby (+14) submodule mains to origin (leftover from Protocol #133)
+- **All deferred branches**: Unchanged from Protocol #134
+- **Root**: version bump v5.154.0 → v5.155.0
+
 ## [v5.154.0] — 2026-07-10 — Protocol #134
 
 ### Changed
