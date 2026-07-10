@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.156.0] — 2026-07-10 — Protocol #136
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Submodule Update**: Recursive submodule update; cleaned stale index.lock files
+- **Feature Branch Scan**: All robertpelloni submodule branches evaluated — **0 new actionable forward merges**
+- **Upstream branches (ignored)**: hermes-agent ~40 upstream feature branches from NousResearch (up to 1948 commits each) — per protocol, upstream feature branches are skipped
+- **All previously merged branches**: In sync (apophysis-j, dao, electricsheep, native-fy, bobsgameweb, projectm, sm64coopdx, neverball, supersaber, tabby, etc.)
+- **Root**: version bump v5.155.0 → v5.156.0
+
 ## [v5.155.0] — 2026-07-10 — Protocol #135
 
 ### Changed
