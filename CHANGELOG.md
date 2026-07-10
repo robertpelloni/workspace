@@ -1,5 +1,20 @@
 # Changelog
 
+## [v5.153.0] — 2026-07-10 — Protocol #133
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch completed across 75 submodules
+- **Submodule Updates**: Updated all submodules to latest tracking commits; cleaned stale lock files
+- **Dual-Direction Intelligent Merge**: Merged 6 Jules AI feature branches across 6 submodules:
+  - **apophysis-j** (70 commits): Thinlet UI modernization, Maven deployment pipeline, headless renderer
+  - **dao** (57 commits): JWT auth, cross-chain features, Phase 7-8 infrastructure, ZKP, TreasuryDashboard
+  - **electricsheep** (24 commits): Dear ImGui integration, CMake build system, Phase 2-4 UI overhaul
+  - **native-fy** (87 commits): SVG CLI rendering, hot reload module, Python bridge, audio support
+  - **planet_fitness_stepmaniax_agent** (24 commits): Firmware WebSocket, StepMania fitness, HTMX pipeline
+  - **veilid_reddit_facebook** (20 commits): Cryptographic voting, Tauri v2, MediaPlayer, Top8Friends
+- **Root**: version bump v5.152.0 → v5.153.0
+
 ## [v5.152.0] — 2026-07-09 — Protocol #132
 
 ### Changed
