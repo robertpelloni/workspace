@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.157.0] — 2026-07-10 — Protocol #137
+
+### Changed
+
+- **Maintenance sync**: Full `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Feature Branch Scan**: All robertpelloni submodule branches evaluated — **0 new actionable forward merges**
+- **Upstream branches (ignored)**: hermes-agent ~40 upstream feature branches from NousResearch — per protocol
+- **All previously merged branches**: In sync from Protocols #133-#136
+- **Root**: version bump v5.156.0 → v5.157.0
+
 ## [v5.156.0] — 2026-07-10 — Protocol #136
 
 ### Changed
