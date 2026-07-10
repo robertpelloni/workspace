@@ -24,7 +24,7 @@ Submodule pointer reconciliation complete. Version bumped v5.149.0 → v5.150.0.
 - ✅ **Submodule commits preserved**:
   - **TurntUpToddler** (7b35dfe): Committed 281-line `generate_hymn_suno.py` + generated audio
   - **auto_dj_script** (13175169): Committed updated tracklist + rekordbox XML (454 insertions)
-  - **slsk_discography_downloader_script**: Committed `orchestrator.py` fix + delete_review FLACs
+  - **slsk_discography_downloader_script**: Committed `orchestrator.py` fix + .gitignore for delete_review/ FLACs
 
 ## Step 3: Workspace Cleanup
 
@@ -45,16 +45,15 @@ Submodule pointer reconciliation complete. Version bumped v5.149.0 → v5.150.0.
 
 ## Push Status
 
-Changes staged but **NOT YET PUSHED**. Ready for `git push` after verification.
+✅ **ALL PUSHED** — root + submodules
 
-## Key Commands for Next Agent
+- Root: `main` @ 6a2697f3c8
+- TurntUpToddler: `main` @ 7b35dfe
+- MilkDrop3_fix: borg fix already upstream (4b3392c)
+- auto_dj_script: `main` @ 13175169
+- slsk_discography_downloader_script: `main` @ 83754a3
 
-```bash
-cd /c/Users/hyper/workspace
-# Verify submodule pointers are correct
-git submodule status
+## Batch Scripts
 
-# Push if satisfied
-git push origin main
-git submodule foreach --recursive "git push origin HEAD:main 2>&1" | grep -E "(Everything|fatal)"
-```
+- ✅ `build.bat` version: v5.149.0 → v5.150.0
+- ✅ `start.bat` version: v5.149.0 → v5.150.0
