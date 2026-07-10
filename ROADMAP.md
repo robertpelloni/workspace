@@ -533,3 +533,12 @@
     - **veilid_reddit_facebook** (20 commits): Cryptographic voting, Tauri v2, MediaPlayer, Top8Friends
   - **Feature branches**: 12 remote feature branches scanned — 6 forward merged, 6 dependabot deferred
   - **Version bump**: v5.152.0 → v5.153.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #134 executed — v5.154.0 (2026-07-10)
+  - **Full fetch**: git fetch --all --tags + recursive submodule fetch across 75 submodules
+  - **Forward merges**: Merged 4 Jules AI feature branches into main:
+    - **bobsgameweb** (13 commits): Legacy engine parity, modular entity system, collision fixes
+    - **projectm** (13 commits): v4.1.0-dev refactoring, C compat, PCM opt, CI polish
+    - **sm64coopdx** (36 commits): MMO features + weapon visuals/class system (merged, 5-file conflict resolved)
+    - **neverball** (3 real): Level editor proto, arcade physics, camera snap
+  - **Already merged**: supersaber, tabby, openclaw-config — already in main, skipped
+  - **Version bump**: v5.153.0 → v5.154.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

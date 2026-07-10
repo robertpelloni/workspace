@@ -1,5 +1,20 @@
 # Changelog
 
+## [v5.154.0] — 2026-07-10 — Protocol #134
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Submodule Updates**: Recursive submodule update; cleaned stale index.lock files
+- **Dual-Direction Intelligent Merge**: Merged 4 Jules AI feature branches into main:
+  - **bobsgameweb** (13 commits): Legacy engine parity, modular entity system, collision fixes (resolved .gitignore conflict)
+  - **projectm** (13 commits): v4.1.0-dev refactoring, C compatibility, CI polish, PCM optimizations
+  - **sm64coopdx** (25+11=36 commits): MMO features (guilds, trading, waypoints) + weapon visuals/class system (resolved 5-file merge conflict)
+  - **neverball** (3 real+26 total): Level editor prototype, arcade physics, camera snap
+- **Already merged (skipped)**: supersaber, tabby, openclaw-config — feature branches already in main
+- **Evaluated & skipped**: beatoraja (all docs-only commits), bcs, Maestro (merge-only branches)
+- **Root**: version bump v5.153.0 → v5.154.0
+
 ## [v5.153.0] — 2026-07-10 — Protocol #133
 
 ### Changed
