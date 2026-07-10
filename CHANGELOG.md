@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.151.0] — 2026-07-09 — Protocol #130
+
+### Changed
+
+- **Fetch & Sync**: Full `git fetch --all --tags` + recursive submodule fetch completed
+- **MilkDrop3_fix**: Removed aios submodule (shallow clone issues), pushed to origin
+- **Submodule commits**: TurntUpToddler (cover pipeline scripts), freellm (gitignore rankings cache)
+- **Feature branch scan**: 2 local jules branches in MilkDrop3/bg — 1 empty, 1 with 1 redundant commit (skipped)
+- **Root**: version bump v5.150.0 → v5.151.0
+
 ## [v5.150.0] — 2026-07-09 — Protocol #129
 
 ### Changed
