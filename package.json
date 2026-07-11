@@ -1,0 +1,42 @@
+{
+  "name": "workspace",
+  "version": "5.52.0",
+  "description": "Software developer with experience in game development, systems programming, and web applications.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertpelloni/workspace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/robertpelloni/workspace/issues"
+  },
+  "homepage": "https://github.com/robertpelloni/workspace#readme",
+  "overrides": {
+    "@ai-sdk/provider-utils": "^5.0.1",
+    "@anthropic-ai/claude-code": "^2.1.195",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "jsondiffpatch": "^0.7.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^24.13.2",
+    "sinon": "^22.0.0",
+    "supabase": "^2.108.0",
+    "supertest": "^7.2.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.18.1",
+    "esbuild": "^0.28.1",
+    "firecrawl-mcp": "^3.22.1",
+    "mem0ai": "^3.0.10",
+    "minimatch": "^10.2.5",
+    "opencode-ai": "^1.17.11",
+    "task-master-ai": "^0.43.1"
+  }
+}

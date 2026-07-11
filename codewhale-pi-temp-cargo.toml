@@ -1,0 +1,19 @@
+[package]
+name = "codewhale-foundation-pi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Port of TormentNexus Pi Foundation — exact tool contracts, session store, runtime events"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+anyhow.workspace = true
+tokio.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

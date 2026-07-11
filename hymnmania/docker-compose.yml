@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  streamlit_ui:
+    build: .
+    container_name: hymn_remaker_ui
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - REPLICATE_API_TOKEN=${REPLICATE_API_TOKEN}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+    volumes:
+      - ./hymn_remaker/input:/app/hymn_remaker/input
+      - ./hymn_remaker/output:/app/hymn_remaker/output
+      - ./.cache:/app/.cache
+      - ./client_secrets.json:/app/client_secrets.json
+    restart: unless-stopped
+
+  daemon:
+    build: .
+    container_name: hymn_remaker_daemon
+    command: ["python", "-m", "hymn_remaker.main", "--daemon"]
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - REPLICATE_API_TOKEN=${REPLICATE_API_TOKEN}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+    volumes:
+      - ./hymn_remaker/input:/app/hymn_remaker/input
+      - ./hymn_remaker/output:/app/hymn_remaker/output
+      - ./.cache:/app/.cache
+      - ./client_secrets.json:/app/client_secrets.json
+    restart: unless-stopped

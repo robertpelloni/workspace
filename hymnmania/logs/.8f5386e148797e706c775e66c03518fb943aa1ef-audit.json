@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\hyper\\workspace\\hymnmania\\logs\\.8f5386e148797e706c775e66c03518fb943aa1ef-audit.json",
+    "files": [
+        {
+            "date": 1778289372396,
+            "name": "C:\\Users\\hyper\\workspace\\hymnmania\\logs\\mcp-puppeteer-2026-05-08.log",
+            "hash": "073994546597db43f26559edcee16be20ec1de42271d9052e549b56e45c926be"
+        }
+    ],
+    "hashType": "sha256"
+}
