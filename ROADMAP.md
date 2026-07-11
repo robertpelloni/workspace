@@ -597,3 +597,8 @@
   - **Forward merged**: ksm-v2 (SDVX parity fixes, 136 lines)
   - **Updated pointers**: bg_fix, bobsaver to latest upstream
   - **Version bump**: v5.163.0 → v5.164.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #145 executed — v5.165.0 (2026-07-10)
+  - **Maintenance sync**: Full fetch + recursive submodule update
+  - **Feature branch scan**: All robertpelloni branches evaluated — 0 new actionable merges
+  - **All previously merged branches in sync**: Protocols #133-#144
+  - **Version bump**: v5.164.0 → v5.165.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

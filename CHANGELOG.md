@@ -1,5 +1,14 @@
 # Changelog
 
+## [v5.165.0] — 2026-07-10 — Protocol #145
+
+### Changed
+
+- **Maintenance sync**: Full `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Feature Branch Scan**: All robertpelloni submodule branches evaluated — **0 new actionable forward merges**
+- **All previously merged branches**: In sync from Protocols #133-#144
+- **Root**: version bump v5.164.0 → v5.165.0
+
 ## [v5.164.0] — 2026-07-10 — Protocol #144
 
 ### Changed
