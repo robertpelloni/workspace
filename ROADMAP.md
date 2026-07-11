@@ -567,3 +567,10 @@
   - **Upstream branches ignored**: hermes-agent ~40 upstream feature branches from NousResearch
   - **All previously merged branches in sync**: Protocols #133-#137
   - **Version bump**: v5.157.0 → v5.158.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #139 executed — v5.159.0 (2026-07-10)
+  - **Comprehensive scan**: Thoroughly evaluated ALL robertpelloni submodule branches (not filtering by size) — found real work in 3 repos
+  - **Forward merged**: ArrowVortex (23 commits — Bobcoin, PoD, Pump It Up)
+  - **Forward merged**: geany x2 (58 commits — Qt6 bobui, Go/Rust TextFX ports, DashboardHelper)
+  - **Forward merged**: bobtorrent (21 commits — Element-Web, GossipSub, I2P darknet)
+  - **Deferred**: aimoneymachine_site fix-twitter-auth-logging (42 go.mod conflicts)
+  - **Version bump**: v5.158.0 → v5.159.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

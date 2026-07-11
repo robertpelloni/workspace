@@ -1,5 +1,20 @@
 # Changelog
 
+## [v5.159.0] — 2026-07-10 — Protocol #139
+
+### Changed
+
+- **Full fetch**: `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Comprehensive Feature Branch Scan**: Thoroughly scanned ALL robertpelloni submodule branches (not filtering by size) — discovered and merged 4 repos with real work:
+  - **ArrowVortex** (23 commits): Bobcoin integration (PoD gameplay, decentralized rewards pool, wallet UI), Pump It Up game mode, unit tests
+  - **geany** — branch 1 (53 commits): submodule registration, Qt6 bobui integration, DashboardHelper, geany-go Go backend (1,080 lines added)
+  - **geany** — branch 2 (5 commits): TextFX port to Go and Rust, UI tab orientation (resolved 7-file merge conflict — all implementations preserved)
+  - **bobtorrent** (21 commits): Element-Web integration, GossipSub architecture, swarm discovery, I2P darknet, protobuf messenger
+- **Evaluated but already in main**: bcs, fcdm, npp, aimoneymachine_site (other branches)
+- **Deferred (conflict-heavy)**: aimoneymachine_site fix-twitter-auth-logging (42 go.mod conflicts — same deferral since Protocol #117)
+- **Upstream branches ignored**: hermes-agent ~40 NousResearch feature branches
+- **Root**: version bump v5.158.0 → v5.159.0
+
 ## [v5.158.0] — 2026-07-10 — Protocol #138
 
 ### Changed

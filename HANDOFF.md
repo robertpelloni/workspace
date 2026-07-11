@@ -1,4 +1,4 @@
-# Executive Protocol #138 — v5.158.0
+# Executive Protocol #139 — v5.159.0
 
 **Date:** 2026-07-10  
 **Agent:** Pi (pi-coding-agent)  
@@ -6,19 +6,27 @@
 
 ---
 
-## Step 1: Upstream Tracking ✅
+## Merged This Protocol
 
-- **Full fetch**: `git fetch --all --tags --recurse-submodules` across 75 submodules
-- **Upstream sync**: No divergence (origin == upstream == robertpelloni/workspace)
+| Submodule | Default Branch | Commits | Key Features |
+|-----------|---------------|---------|-------------|
+| **ArrowVortex** | release | 23 | Bobcoin PoD gameplay, decentralized rewards pool, wallet UI, Pump It Up mode, unit tests |
+| **geany** (branch 1) | master | 53 | submodule registration, Qt6 bobui, DashboardHelper, geany-go backend (1,080 lines) |
+| **geany** (branch 2) | master | 5 | TextFX Go/Rust ports, sort lines, proper/sentence case, tab orientation (resolved 7-file conflict) |
+| **bobtorrent** | master | 21 | Element-Web integration, GossipSub, swarm discovery, I2P darknet, protobuf messenger |
 
-## Step 2: Intelligent Merge Engine ✅
+## Deferred (from Protocol #117)
 
-**5th consecutive maintenance sync — 0 new actionable forward merges.**
+- **aimoneymachine_site** fix-twitter-auth-logging: 42 go.mod conflicts (structural refactoring)
 
-All robertpelloni submodule feature branches evaluated. Only hermes-agent upstream branches (NousResearch) remain unmerged — skipped per protocol. All previously merged branches from Protocols #133-#137 are in sync.
+## Already in Main (Evaluated)
 
-## Step 3: Version, Docs, Build ✅
+- bcs, fcdm, npp, supersaber, tabby, projectm, veilid_reddit_facebook
 
-- **Version**: v5.157.0 → **v5.158.0**
-- **Docs**: ROADMAP.md, CHANGELOG.md updated
-- **Build**: Executing full build sequence
+## Submodule Pointers Updated
+
+ArrowVortex, geany
+
+## Build
+
+Executing full build sequence.
