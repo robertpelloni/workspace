@@ -1,5 +1,19 @@
 # Changelog
 
+## [v5.161.0] — 2026-07-10 — Protocol #141
+
+### Changed
+
+- **Full fetch**: `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Deep scan — 5 more repos found**: Skipped bgtk (~500 upstream branches) and hermes-agent (~40 upstream branches), manually checked every other robertpelloni submodule
+- **Forward merged 5 repos**:
+  - **dao** (2 commits): Multi-token persistent matching pools, treasury API (resolved 7-file conflict)
+  - **geiss** (65 commits, 3,107 lines): Go backend (CI autofix, conflict resolution, log tailer, submodule status dashboard, deployment pipeline, drift detection), UI tooltips, Vite dashboard
+  - **crowdsourced_dance_club** (75 commits, 2,956 lines): ML pipeline (Neural Conductor, predictive vibe analysis), DMX hardware controller (OLA), audio engine, Spotify integration, generative visuals
+  - **pi-mono** (31 commits): Security patches (safePath boundary), clean-room handlers (Claude Code, Codex CLI, Gemini), advanced reasoning harness router, submodule status endpoint
+  - **bobtorrent/monorepo-unification** (6 commits): Mega-messenger protocol, game engine asset ingestion, anonymous signaling
+- **Root**: version bump v5.160.0 → v5.161.0
+
 ## [v5.160.0] — 2026-07-10 — Protocol #140
 
 ### Changed

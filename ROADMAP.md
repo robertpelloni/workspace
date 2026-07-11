@@ -579,3 +579,8 @@
   - **Forward merged**: bcs (1 commit, 64 files, 2,529 lines): BcsFont/BcsColor multi-language ports, kernel IPC, timers
   - **Pushed leftover**: bobtorrent (+23) pushed to master
   - **Version bump**: v5.159.0 → v5.160.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #141 executed — v5.161.0 (2026-07-10)
+  - **Deep scan**: Manually checked every robertpelloni submodule (excluding bgtk/hermes upstream)
+  - **Forward merged**: dao, geiss, crowdsourced_dance_club, pi-mono, bobtorrent (5 repos, ~179 commits)
+  - **Lines added**: geiss (3,107), crowdsourced_dance_club (2,956), pi-mono (many), dao (few)
+  - **Version bump**: v5.160.0 → v5.161.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
