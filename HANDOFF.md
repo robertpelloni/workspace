@@ -1,18 +1,22 @@
-# Executive Protocol #141 — v5.161.0
+# Executive Protocol #142 — v5.162.0
 
 **Date:** 2026-07-10  
 **Status:** ✅ Complete
 
-## Merged This Protocol
+## Summary
 
-| Submodule | Default | Commits | Key Features |
-|-----------|---------|---------|-------------|
-| **geiss** | main | 65 (3,107 loc) | Go backend (CI autofix, conflict resolution, log tailer, submodule dashboard, deployment pipeline, drift detection), UI tooltips, Vite frontend |
-| **crowdsourced_dance_club** | main | 75 (2,956 loc) | ML Neural Conductor, DMX hardware (OLA), Spotify integration, generative visuals, predictive vibe analysis |
-| **pi-mono** | main | 31 | Security patches (safePath), clean-room handlers (Claude Code, Codex CLI, Gemini), harness router |
-| **dao** | main | 2 | Multi-token matching pools, treasury API (7-file conflict resolved) |
-| **bobtorrent** | master | 6 | Mega-messenger protocol, game engine asset ingestion |
+**Minutiae scan**: Checked submodules where default branch is NOT `main` (e.g., `master`, `release`). Found **npp** with 3 unmerged branches (9,317 lines total).
 
-## Cumulative Tally (Protocols #133-#141)
+### Merged This Protocol
 
-**16 repos merged, ~24 feature branches, ~8,600+ lines of code preserved.**
+| Submodule | Default | Branches | Lines | Key Features |
+|-----------|---------|----------|-------|-------------|
+| **npp** | master | 3 | 9,317 | Rust port (buffer, LSP, plugins, buildsys), Go backend (auth, autosave, LSP parity, textfx, theme engine), dual-font prose/code |
+
+## Master List — ALL Processed Branches (Protocols #133-#142)
+
+**17 repos, ~27 feature branches, ~18,000+ lines of code preserved.**
+
+**Processed:** apophysis-j, dao, electricsheep, native-fy, planet_fitness_stepmaniax_agent, veilid_reddit_facebook, bobsgameweb, projectm, sm64coopdx, neverball, ArrowVortex, geany, bobtorrent, bcs, geiss, crowdsourced_dance_club, pi-mono, npp
+
+**Deferred:** aimoneymachine_site (42 go.mod conflicts)

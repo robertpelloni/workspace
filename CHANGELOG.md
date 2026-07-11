@@ -1,5 +1,17 @@
 # Changelog
 
+## [v5.162.0] — 2026-07-10 — Protocol #142
+
+### Changed
+
+- **Full fetch**: `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Minutiae scan — checked repos without `origin/main`**: Discovered npp uses `master` as default (not `main`) — found 3 unmerged branches!
+- **Forward merged npp (3 branches, 9,317 lines)**:
+  - **jules-1390** (23 commits, 6,968 lines): Proportional font context switching, shadow pilot git diff monitoring, CI auto-fix, Go auth/autosave/LSP/textfx/theme backend
+  - **jules-rust-port** (7 commits, 2,349 lines): Full Rust port of core Notepad++ (buffer, LSP, plugins, buildsys, markdown, workspace)
+  - **feat/dual-font-prose-code** (19 commits): Dual font for prose vs code, idle flush autosave, DB versioning hooks, UI dashboard (resolved 15-file conflict with previous branch)
+- **Root**: version bump v5.161.0 → v5.162.0
+
 ## [v5.161.0] — 2026-07-10 — Protocol #141
 
 ### Changed
