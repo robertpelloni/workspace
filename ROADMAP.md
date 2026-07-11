@@ -561,3 +561,9 @@
   - **Upstream branches ignored**: hermes-agent ~40 upstream feature branches from NousResearch — per protocol
   - **All previously merged branches in sync**: Protocols #133-#136 fully reconciled
   - **Version bump**: v5.156.0 → v5.157.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #138 executed — v5.158.0 (2026-07-10)
+  - **5th consecutive maintenance sync**: Full fetch + recursive submodule update
+  - **Feature branch scan**: All robertpelloni branches evaluated — 0 new actionable merges
+  - **Upstream branches ignored**: hermes-agent ~40 upstream feature branches from NousResearch
+  - **All previously merged branches in sync**: Protocols #133-#137
+  - **Version bump**: v5.157.0 → v5.158.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

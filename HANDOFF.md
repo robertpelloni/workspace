@@ -1,4 +1,4 @@
-# Executive Protocol #137 — v5.157.0
+# Executive Protocol #138 — v5.158.0
 
 **Date:** 2026-07-10  
 **Agent:** Pi (pi-coding-agent)  
@@ -6,24 +6,19 @@
 
 ---
 
-## Step 1: Upstream Tracking & Submodule Sanitization ✅
+## Step 1: Upstream Tracking ✅
 
-- **Full fetch**: `git fetch --all --tags --recurse-submodules` across all 75 submodules
-- **Recursive update**: Cleaned stale lock files; known nested bobcoin issue in MilkDrop3/bg non-blocking
+- **Full fetch**: `git fetch --all --tags --recurse-submodules` across 75 submodules
 - **Upstream sync**: No divergence (origin == upstream == robertpelloni/workspace)
 
-## Step 2: Dual-Direction Intelligent Merge Engine ✅
+## Step 2: Intelligent Merge Engine ✅
 
-**Fourth consecutive maintenance sync — 0 new actionable forward merges.**
+**5th consecutive maintenance sync — 0 new actionable forward merges.**
 
-All robertpelloni submodule branches evaluated. All ~40 hermes-agent branches are upstream (NousResearch) — skipped per protocol. All previously merged branches (Protocols #133-#136) remain in sync.
+All robertpelloni submodule feature branches evaluated. Only hermes-agent upstream branches (NousResearch) remain unmerged — skipped per protocol. All previously merged branches from Protocols #133-#137 are in sync.
 
 ## Step 3: Version, Docs, Build ✅
 
-- **Version**: v5.156.0 → **v5.157.0**
-- **Docs**: ROADMAP.md, CHANGELOG.md, HANDOFF.md updated
-- **Build**: Executing full build sequence (Go binaries + Node.js dashboard)
-
-### Next Steps
-
-Continue periodic monitoring for new Jules AI feature branches.
+- **Version**: v5.157.0 → **v5.158.0**
+- **Docs**: ROADMAP.md, CHANGELOG.md updated
+- **Build**: Executing full build sequence
