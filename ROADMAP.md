@@ -574,3 +574,8 @@
   - **Forward merged**: bobtorrent (21 commits — Element-Web, GossipSub, I2P darknet)
   - **Deferred**: aimoneymachine_site fix-twitter-auth-logging (42 go.mod conflicts)
   - **Version bump**: v5.158.0 → v5.159.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #140 executed — v5.160.0 (2026-07-10)
+  - **Exhaustive scan**: Manually iterated all 75 robertpelloni submodules, checking every remote branch
+  - **Forward merged**: bcs (1 commit, 64 files, 2,529 lines): BcsFont/BcsColor multi-language ports, kernel IPC, timers
+  - **Pushed leftover**: bobtorrent (+23) pushed to master
+  - **Version bump**: v5.159.0 → v5.160.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

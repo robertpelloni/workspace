@@ -1,5 +1,17 @@
 # Changelog
 
+## [v5.160.0] — 2026-07-10 — Protocol #140
+
+### Changed
+
+- **Full fetch**: `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Exhaustive Feature Branch Scan**: Manually iterated ALL 75 robertpelloni submodules checking every remote branch against each repo's correct default branch
+- **Forward merged**: bcs (1 missed commit, 64 files, 2,529 lines): BcsFont/BcsColor cross-language ports (Go, Rust, Java, C#), BcsIpc, BcsTimer, BcsAction, BcsActionGroup — multi-language kernel event porting
+- **Pushed leftover**: bobtorrent (+23 commits from Protocol #139) pushed to origin master
+- **Evaluated & in main**: ArrowVortex, geany, all previous protocols
+- **Deferred**: aimoneymachine_site fix-twitter-auth-logging (42 go.mod conflicts)
+- **Root**: version bump v5.159.0 → v5.160.0
+
 ## [v5.159.0] — 2026-07-10 — Protocol #139
 
 ### Changed

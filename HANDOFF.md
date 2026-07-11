@@ -1,4 +1,4 @@
-# Executive Protocol #139 — v5.159.0
+# Executive Protocol #140 — v5.160.0
 
 **Date:** 2026-07-10  
 **Agent:** Pi (pi-coding-agent)  
@@ -6,26 +6,17 @@
 
 ---
 
-## Merged This Protocol
+## Final Exhaustive Scan Results
 
-| Submodule | Default Branch | Commits | Key Features |
-|-----------|---------------|---------|-------------|
-| **ArrowVortex** | release | 23 | Bobcoin PoD gameplay, decentralized rewards pool, wallet UI, Pump It Up mode, unit tests |
-| **geany** (branch 1) | master | 53 | submodule registration, Qt6 bobui, DashboardHelper, geany-go backend (1,080 lines) |
-| **geany** (branch 2) | master | 5 | TextFX Go/Rust ports, sort lines, proper/sentence case, tab orientation (resolved 7-file conflict) |
-| **bobtorrent** | master | 21 | Element-Web integration, GossipSub, swarm discovery, I2P darknet, protobuf messenger |
+All 75 robertpelloni submodules iterated, checking every remote branch against each repo's actual default branch.
 
-## Deferred (from Protocol #117)
-
-- **aimoneymachine_site** fix-twitter-auth-logging: 42 go.mod conflicts (structural refactoring)
-
-## Already in Main (Evaluated)
-
-- bcs, fcdm, npp, supersaber, tabby, projectm, veilid_reddit_facebook
-
-## Submodule Pointers Updated
-
-ArrowVortex, geany
+| Outcome | Details |
+|---------|---------|
+| **Forward merged** | **bcs**: Multi-language kernel event port (BcsFont, BcsColor, BcsIpc, BcsTimer, BcsAction, BcsActionGroup) — 64 files, 2,529 lines across Go/Rust/Java/C# |
+| **Pushed leftover** | **bobtorrent** (+23 from Protocol #139) |
+| **Already in main** | ArrowVortex, geany, bobsgameweb, projectm, sm64coopdx, neverball, supersaber, tabby, apophysis-j, dao, electricsheep, native-fy, planet_fitness_stepmaniax_agent, veilid_reddit_facebook, npp, fcdm, bcs (jules branch) |
+| **Deferred** | aimoneymachine_site (42 go.mod conflicts) |
+| **Upstream (skipped)** | hermes-agent ~40 branches, bgtk ~500 branches |
 
 ## Build
 
