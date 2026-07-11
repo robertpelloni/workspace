@@ -587,4 +587,8 @@
 - Executive Protocol #142 executed — v5.162.0 (2026-07-10)
   - **Minutiae scan**: Checked repos whose default is NOT main — found npp (uses master)
   - **Forward merged npp** (3 branches, 9,317 lines): Rust port, Go backend, dual-font/autosave
-  - **Version bump**: v5.161.0 → v5.162.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #143 executed — v5.163.0 (2026-07-10)
+  - **Deep scan — submodules at feature branch commits**: Found 3 repos pinned to feature branches
+  - **Forward merged**: marketing_agent, vst_monster, xrnet
+  - **Lines added**: vst_monster (11,598), xrnet (3,083)
+  - **Version bump**: v5.162.0 → v5.163.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

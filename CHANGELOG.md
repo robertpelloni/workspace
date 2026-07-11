@@ -1,5 +1,17 @@
 # Changelog
 
+## [v5.163.0] — 2026-07-10 — Protocol #143
+
+### Changed
+
+- **Full fetch**: `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Deep scan — checked submodules pinned at feature branch commits**: Found 3 repos whose submodule pointers tracked feature branches instead of main
+- **Forward merged 3 repos**:
+  - **marketing_agent** (8 commits): DeepSeek LLM integration, TormentNexus outreach templates, billing webhook, dashboard ListRecentSocialPosts
+  - **vst_monster** (26 commits, 11,598 lines): Rust native Tauri installer, Go crawler engine (Colly scraper, KVR/GitHub scrapers, downloader, proxy), registry UI
+  - **xrnet** (9 commits, 3,083 lines): Escrow with ZK-proofs, plugin architecture, refactored backend API modules, DiscoveryPanel, EscrowPanel, SocialMatchPanel
+- **Root**: version bump v5.162.0 → v5.163.0
+
 ## [v5.162.0] — 2026-07-10 — Protocol #142
 
 ### Changed
