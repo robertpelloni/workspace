@@ -592,3 +592,8 @@
   - **Forward merged**: marketing_agent, vst_monster, xrnet
   - **Lines added**: vst_monster (11,598), xrnet (3,083)
   - **Version bump**: v5.162.0 → v5.163.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #144 executed — v5.164.0 (2026-07-10)
+  - **Submodule pointer scan**: Verified each submodule pin against upstream
+  - **Forward merged**: ksm-v2 (SDVX parity fixes, 136 lines)
+  - **Updated pointers**: bg_fix, bobsaver to latest upstream
+  - **Version bump**: v5.163.0 → v5.164.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

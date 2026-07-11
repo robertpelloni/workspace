@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.164.0] — 2026-07-10 — Protocol #144
+
+### Changed
+
+- **Full fetch**: `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Submodule Pointer Scan**: Checked every submodule pin against its upstream default branch
+- **Forward merged**: ksm-v2 (29 commits, 136 lines): SDVX parity fixes (judgment handling, scoring, editor layout, key beam graphics, combo status)
+- **Updated submodule pointers**: bg_fix (+1), bobsaver (+3) — pinned at latest upstream, not feature branches
+- **Verified**: ArrowVortex, bobtorrent, jules-autopilot, skillzhub, superdawmcp — already at correct commits
+- **Root**: version bump v5.163.0 → v5.164.0
+
 ## [v5.163.0] — 2026-07-10 — Protocol #143
 
 ### Changed
