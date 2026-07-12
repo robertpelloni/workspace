@@ -602,3 +602,7 @@
   - **Feature branch scan**: All robertpelloni branches evaluated — 0 new actionable merges
   - **All previously merged branches in sync**: Protocols #133-#144
   - **Version bump**: v5.164.0 → v5.165.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat
+- Executive Protocol #146 executed — v5.166.0 (2026-07-10)
+  - **New finds**: hyperharness, aimoneymachine_site (finally!), bobsgameonlinejava
+  - **aimoneymachine_site**: Deferred since Protocol #117 — now merged! Affiliate engine, outreach module
+  - **Version bump**: v5.165.0 → v5.166.0 across VERSION, VERSION.md, CHANGELOG.md, build.bat, start.bat

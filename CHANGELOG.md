@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.166.0] — 2026-07-10 — Protocol #146
+
+### Changed
+
+- **Full fetch**: `git fetch --all --tags` + recursive submodule fetch across 75 submodules
+- **Feature branch scan**: Found 3 repos with new unmerged branches:
+  - **hyperharness** (9 commits): Phase 5 agent integration (Goose delegate, OpenCode task tools, subagent spawning, LLM providers) — 1,411 lines
+  - **aimoneymachine_site** (50 commits, finally merged!): Affiliate engine for curation/RSS, outreach module with cadence scheduling, zero-profit affiliate auditing — deferred since Protocol #117, now resolved
+  - **bobsgameonlinejava** (3 commits, already in main): Polygon lasso feature, autonomous debate logic
+- **Root**: version bump v5.165.0 → v5.166.0
+
 ## [v5.165.0] — 2026-07-10 — Protocol #145
 
 ### Changed
