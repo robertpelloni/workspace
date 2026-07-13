@@ -1,3 +1,9 @@
+## [v5.179.0] — 2026-07-13 — Protocol #159
+
+### Changed
+
+- **Maintenance sync**: Full fetch + ls-remote scan of all robertpelloni submodules — all feature branches clean (0 commits ahead)
+
 ## [v5.178.0] — 2026-07-13 — Protocol #158
 
 ### Changed
