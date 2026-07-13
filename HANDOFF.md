@@ -1,1 +1,1 @@
-v5.181.0 - Protocol #161: Maintenance sync — upstream at HEAD, no new branches
+v5.182.0 - Protocol #162: Maintenance sync — upstream at HEAD, fork resource limit prevented scan
