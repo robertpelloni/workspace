@@ -1,3 +1,20 @@
+## [v5.177.0] — 2026-07-13 — Protocol #157
+
+### Merged
+
+- **skillzhub (+2)** → skillzhub `main`: CI/CD workflow (.github/workflows/ci.yml), worker.ts refactor (+251/-172), e2e pipeline test updates
+- **bcs (+18)** → bcs `main`: Multi-language kernel port — C#/Go/Java/Rust kernel/gui layer ports (bcs-multi-lang-kernel-port branch). 26 add/add conflicts resolved by keeping main.
+- **freellm (+1)** → freellm `main`: Webview example + systray updates from clean-freellm branch. 52 conflicts resolved by keeping main.
+- **bqt (+9)** → bqt `main`: Audio graph native linking test — MIDI handler (concurrent_audio_graph_test.go), JavaFX bridge, OmniMidiHandler migration from C++ to Go. Previously deferred across multiple protocols.
+- **hyperharness (+4)** → hyperharness `main`: Subagent test suite (e2e_parity_test.go, manager_integration_test.go, manager_load_test.go), TUI chat/dashboard refactor (+1827/-1769)
+
+### Assessed (no action)
+
+- **bobmani/itgmania jules-125128** (30 commits): Aborted — deep extern/ submodule conflicts (mbedtls, ogg, vorbis, zlib, IXWebSocket)
+- **bobmani/beatoraja jules-396225** (4 commits): Branch ref deleted, can't merge
+- **bgtk**: 15 upstream GTK branches (up to 828 commits each) — skip per protocol
+- **onetool-mcp/gh-pages, tabby/gh-pages, tormentnexus/gh-pages**: Deployment branches, skip
+
 ## [v5.176.0] — 2026-07-13 — Protocol #156
 
 ### Merged

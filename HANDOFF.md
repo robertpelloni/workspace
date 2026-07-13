@@ -1,26 +1,27 @@
-v5.176.0 - Protocol #156: Infrastructure fixes + realestatecrm forward merge (+1)
+v5.177.0 - Protocol #157: 5 feature branches merged across 5 submodules (+34 total commits)
 
 ## Summary
 
-Protocol #156 focused on fixing broken submodule infrastructure that was blocking git status operations, plus one forward merge.
+Protocol #157 completed a thorough feature branch sweep, merging 5 previously missed/deferred branches.
 
 ### Merges Completed
 
-- **realestatecrm**: Fast-forward merge from dashboard-newest (1 doc commit shared across 5 identical branches)
+- **skillzhub** (+2): CI/CD workflow, worker.ts refactor — clean merge
+- **bcs** (+18): Multi-language kernel port (C#/Go/Java/Rust) — 26 conflicts resolved (ours)
+- **freellm** (+1): Webview example + systray — 52 conflicts resolved (ours)
+- **bqt** (+9): Audio graph native linking + MIDI handler — clean merge (was deferred in protocols #63-#155!)
+- **hyperharness** (+4): Subagent test suite, TUI refactor — clean merge
 
-### Submodule Infrastructure Fixes
+### Aborted/Skipped
 
-- **bobtrax**: Fixed broken gitdir refs in muse/zrythm `.git` files; corrected worktree paths in git configs; deinited lmms/ardour/zrythm/muse — bobtrax git status now clean
-- **bobfilez**: Deinited 60+ libs/* submodules (fstlib, heif, libheif, imageinfo, Windows, etc.) — eliminating git status timeouts
-- **MilkDrop3/MilkDrop3_fix bobmani**: Deinited deeply nested submodules (hymnmania, arrowvortex, beatoraja, bobmania, ddc, ksm-v2, itgmania, etc.) from both repos — eliminating recursive timeout chains
-- **bg**: Resolved bobsgameweb submodule pointer merge conflict (UU → resolved)
-
-### Workspace root git status now functional with `--ignore-submodules=dirty`
+- bobmani/itgmania (30): Deep extern/ submodule conflicts aborted
+- bobmani/beatoraja (4): Branch deleted on remote
+- bgtk (15 upstream branches): GTK upstream, skip per protocol
+- gh-pages branches: Deployment branches only
 
 ### Next Agent Tasks
 
-1. Stage remaining submodule pointer updates (`git add` all `+` submodules)
+1. Push submodule changes: `git submodule foreach 'git push origin main'`
 2. Run full build: `build.bat`
-3. Merge workspace root dependabot branches
-4. Address 29 GitHub dependabot vulnerabilities
-5. Push individual submodule changes: `git submodule foreach 'git push origin main'`
+3. Workspace root dependabot branches still pending
+4. Address 29 GitHub vulnerabilities
