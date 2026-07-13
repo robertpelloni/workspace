@@ -1,1 +1,1 @@
-v5.173.0 - Protocol #153b: Merge freellm-linux (44 commits, Linux headless, system tray, security patches)
+v5.174.0 - Protocol #154: Maintenance sync — no new feature branches
