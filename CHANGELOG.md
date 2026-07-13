@@ -1,3 +1,13 @@
+## [v5.178.0] — 2026-07-13 — Protocol #158
+
+### Changed
+
+- **Maintenance sync**: Full fetch + branch scan of 30+ submodules with `+` pointers — all feature branches already merged (0 commits ahead). Previous 3 protocols (#155–#157) cleared all backlog.
+
+### Submodules assessed (0 actionable)
+
+- dao (4 branches), electricsheep (1), geiss (1), openclaw-dashboard (2), planet_fitness (3), slsk (2), timidity (1), bobcoin, bobtorrent, bobsaver_fix, bobsgameonlinejava_fix, bobzzite, bobmani, bobsgameonline, bobsgameweb, browser-use, mcp-superassistant, onetool-mcp, private_gemini_storage, projectM-upstream, psytrance_night_outreach_agent, jules-autopilot, marketing_agent, native-fy, openclaw-config, sm64coopdx, tormentnexus, vst_monster — all clean
+
 ## [v5.177.0] — 2026-07-13 — Protocol #157
 
 ### Merged

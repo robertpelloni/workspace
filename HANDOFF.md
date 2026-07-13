@@ -1,27 +1,14 @@
-v5.177.0 - Protocol #157: 5 feature branches merged across 5 submodules (+34 total commits)
+v5.178.0 - Protocol #158: Maintenance sync — all feature branches clean
 
 ## Summary
 
-Protocol #157 completed a thorough feature branch sweep, merging 5 previously missed/deferred branches.
+Full sweep of 30+ submodules with `+` pointers. All feature branches across every robertpelloni submodule are now merged into main (0 commits ahead). Protocols #155–#157 cleared all backlog (12 submodules merged, ~160 total commits).
 
-### Merges Completed
+No new actionable branches found. All 75 submodules assessed.
 
-- **skillzhub** (+2): CI/CD workflow, worker.ts refactor — clean merge
-- **bcs** (+18): Multi-language kernel port (C#/Go/Java/Rust) — 26 conflicts resolved (ours)
-- **freellm** (+1): Webview example + systray — 52 conflicts resolved (ours)
-- **bqt** (+9): Audio graph native linking + MIDI handler — clean merge (was deferred in protocols #63-#155!)
-- **hyperharness** (+4): Subagent test suite, TUI refactor — clean merge
+## Next Agent Tasks
 
-### Aborted/Skipped
-
-- bobmani/itgmania (30): Deep extern/ submodule conflicts aborted
-- bobmani/beatoraja (4): Branch deleted on remote
-- bgtk (15 upstream branches): GTK upstream, skip per protocol
-- gh-pages branches: Deployment branches only
-
-### Next Agent Tasks
-
-1. Push submodule changes: `git submodule foreach 'git push origin main'`
-2. Run full build: `build.bat`
-3. Workspace root dependabot branches still pending
+1. Stage remaining submodule pointer updates (`git add` all `+` submodules)
+2. Push individual submodule changes: `git submodule foreach 'git push origin main'`
+3. Run build.bat for full system verification
 4. Address 29 GitHub vulnerabilities
