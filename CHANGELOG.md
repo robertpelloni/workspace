@@ -1,3 +1,9 @@
+## [v5.181.0] — 2026-07-13 — Protocol #161
+
+### Changed
+
+- **Maintenance sync**: Fetch complete — upstream at HEAD, no new feature branches expected after 5 consecutive clean protocols
+
 ## [v5.180.0] — 2026-07-13 — Protocol #160
 
 ### Changed
