@@ -1,3 +1,10 @@
+## [v5.171.0] — 2026-07-12 — Protocol #152
+
+### Changed
+
+- **Maintenance sync**: Full fetch + branch scan — all robertpelloni submodules in sync
+- **All feature branches**: Fully merged into respective mains; no new actionable branches
+
 ## [v5.170.0] — 2026-07-12 — Protocol #151
 
 ### Changed
