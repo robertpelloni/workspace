@@ -1,3 +1,9 @@
+## [v5.184.0] — 2026-07-13 — Protocol #164
+
+### Changed
+
+- **Maintenance sync**: Fetch complete — upstream at HEAD (9th consecutive clean protocol)
+
 ## [v5.183.0] — 2026-07-13 — Protocol #163
 
 ### Changed
