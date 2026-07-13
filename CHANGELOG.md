@@ -1,3 +1,15 @@
+## [v5.185.0] — 2026-07-13 — Protocol #165
+
+### Changed
+
+- **Deep merge sync**: All 95 submodules fetched. Feature branches merged into main for ArrowVortex, bobtorrent, bobmani, bobsgameweb, jules-autopilot, mcp-superassistant, planet_fitness_stepmaniax_agent, projectm, bqt, slsk_discography_downloader_script.
+- **Pushed 20+ submodules** to origin with accumulated local changes.
+- **Resolved bobtorrent merge conflict** (HANDOFF.md, VERSION, .jules/sessions).
+- **Pulled behind-remote repos**: MilkDrop3, aimoneymachine_site, bg_fix, bobfilez_fix.
+- **Verified all BCS/TurntUpToddler/apophysis-j feature branches** already merged into main.
+- **Skipped upstream forks**: openclaw-config, openclaw-dashboard, projectM-upstream (no write access).
+- **bgtk cherry-pick branches**: Skipped ~200 upstream GTK development branches (not user feature branches).
+
 ## [v5.184.0] — 2026-07-13 — Protocol #164
 
 ### Changed
