@@ -1,3 +1,9 @@
+## [v5.173.0] — 2026-07-12 — Protocol #153b
+
+### Merged
+
+- **freellm-linux (44 commits)** → freellm `main`: Linux headless binary support, Windows system tray with activity icons, security vulnerability patches (x/net, x/crypto, x/sys), model routing improvements (MinParamsFilter=120, NumRetries=5, FanOutSize=3), tokdiet disabled by default (opt-in via FREELLM_TOKDIET=1), GLM-5.2 model support, debug stream gating
+
 ## [v5.172.0] — 2026-07-12 — Protocol #153
 
 ### Changed
