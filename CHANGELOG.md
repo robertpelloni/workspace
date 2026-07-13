@@ -1,3 +1,22 @@
+## [v5.176.0] — 2026-07-13 — Protocol #156
+
+### Merged
+
+- **realestatecrm (+1)** → realestatecrm `main`: Fast-forward merge from dashboard-newest (and 4 identical jules/rag branches) — deploy log mapping, CHANGELOG/ROADMAP updates, LeadTableClient cleanup
+
+### Fixed
+
+- **bobtrax nested submodules**: Fixed broken gitdir references in muse and zrythm (.git files pointed to `../.git/modules/` instead of workspace root path). Fixed worktree paths in zrythm/muse git configs. Deinited lmms/ardour/zrythm/muse submodules — bobtrax git status now clean.
+- **bobfilez nested submodules**: Deinited all 60+ libs/ submodules (fstlib, heif, libheif, imageinfo, etc.) that were causing git status timeouts.
+- **MilkDrop3/MilkDrop3_fix bobmani nesting**: Deinited deeply nested submodules (hymnmania, arrowvortex, beatoraja, bobmania, ddc, ksm-v2, itgmania, ffr-difficulty-model, Simply-Love-SM5) in both MilkDrop3 and MilkDrop3_fix to prevent recursive git status timeouts.
+- **bg bobsgameweb conflict**: Resolved submodule pointer merge conflict (UU).
+
+### Assessed (no action)
+
+- **veilid_reddit_facebook jules-scaffold** (22 commits): Already cherry-picked in Protocol #155; full merge impossible due to unrelated histories
+- **tormentnexus gh-pages branches**: Deployment branches, skip
+- **tabby gh-pages**: Deployment branch, skip
+
 ## [v5.175.0] — 2026-07-13 — Protocol #155
 
 ### Merged
