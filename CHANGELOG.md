@@ -1,5 +1,32 @@
 # Changelog
 
+## [v5.167.0] — 2026-07-12 — Protocol #149
+
+### Changed
+
+- **Maintenance sync**: Full fetch + recursive submodule update across 75 submodules
+- **Feature Branch Scan**: All robertpelloni branches evaluated — 0 new actionable forward merges
+- **All previously merged branches**: In sync from Protocols #133-#148
+- **Root**: version bump v5.166.2 → v5.167.0
+
+## [v5.166.2] — 2026-07-12 — Protocol #148
+
+### Changed
+
+- **Full repository synchronization**: Fetched all remotes, tags, and submodules recursively
+- **Intelligent Branch Reconciliation**: Reconciled and merged active feature branches across root and submodules
+- **Upstream Sync & Rebase**: Synced local branches with upstream origins and resolved merge conflicts
+- **Version Bump**: Bumped global version to v5.166.2
+
+## [v5.166.1] — 2026-07-12 — Protocol #147
+
+### Changed
+
+- **Full repository synchronization**: Fetched all remotes, tags, and submodules recursively
+- **Intelligent Branch Reconciliation**: Reconciled and merged active feature branches across root and submodules
+- **Upstream Sync & Rebase**: Synced local branches with upstream origins and resolved merge conflicts
+- **Version Bump**: Bumped global version to v5.166.1
+
 ## [v5.166.0] — 2026-07-10 — Protocol #146
 
 ### Changed
