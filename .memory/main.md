@@ -4,16 +4,16 @@
 
 Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
 
-## Current State (v5.137.0)
+## Current State (v5.175.0)
 
-- **Executive sync protocol healthy** — Protocols #12-#119 completed in succession
-- **Protocol #119 (v5.137.0):** Maintenance sync since Protocol #118
-- **Forward merges (cumulative):** ArrowVortex (+3), MarbleBlast (+2), agentirc (+23), ai_game_engine (+17), bobtorrent (+27), bobsaver (+1), realestatecrm (+7), bobbybookmarks (+3), bqt audio graph renaming (+1), aimoneymachine_site blog (+7), tormentnexus MCP SSE (+19), fcdm Milestone 8 (+1), f-zerox Netplay/C physics/Fast3D (+29), hyperharness LLM StreamChat/FTS5 (+16), bobtrax WASM (+10), bqt OmniAudioGraph (+6), aimoneymachine_site affiliate links (+1), aios fix-nextjs-turbopack-windows (+8), bcs bcs-multi-lang-kernel-port (+1)
-- **Submodule fixes:** enterprise_sales_bot/borg, stale locks, MilkDrop3_fix/bobmani/bobmania + Themes/Simply-Love-SM5, borg→tormentnexus rename, MilkDrop3 pointer fix
+- **Executive sync protocol healthy** — Protocols #12-#155 completed in succession
+- **Protocol #155 (v5.175.0):** Forward merged hyper (+124), hyperharness (+2), tormentnexus (+5 files), veilid (+15 files)
+- **Forward merges (cumulative):** ArrowVortex (+3), MarbleBlast (+2), agentirc (+23), ai_game_engine (+17), bobtorrent (+27), bobsaver (+1), realestatecrm (+7), bobbybookmarks (+3), bqt audio graph renaming (+1), aimoneymachine_site blog (+7), tormentnexus MCP SSE (+19), fcdm Milestone 8 (+1), f-zerox Netplay/C physics/Fast3D (+29), hyperharness LLM StreamChat/FTS5 (+18), bobtrax WASM (+10), bqt OmniAudioGraph (+6), aimoneymachine_site affiliate links (+1), aios fix-nextjs-turbopack-windows (+8), bcs bcs-multi-lang-kernel-port (+1), freellm-linux (+44), hyper multi-language (+124), veilid v1.1.0 Gold Master (+15 files)
+- **Submodule fixes:** enterprise_sales_bot/borg, stale locks, MilkDrop3_fix/bobmani/bobmania + Themes/Simply-Love-SM5, borg→tormentnexus rename, MilkDrop3 pointer fix, bobsgameonlinejava rebase cleanup, bobui ultimatepp merge cleanup
 - **All submodules initialized** — no uninitialized submodules in .gitmodules (excluding bg references/)
-- **Version control** — Global version bumped to v5.137.0, synced across VERSION, VERSION.md, CHANGELOG.md
+- **Version control** — Global version bumped to v5.175.0, synced across VERSION, VERSION.md, CHANGELOG.md
 - **jules-autopilot on latest** — v3.6.24
-- **tormentnexus active** — Cloud dashboard MCP SSE, cold archive, skill evolution, R13+ docs updates
+- **tormentnexus active** — npm packages published, v1.0.0-alpha.262, Next.js build fixes cherry-picked
 
 ## Key Decisions Made
 
@@ -57,6 +57,8 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 - [x] v5.99.0 — Protocol #77: Maintenance sync, no new feature branches; submodule pointer updates for tormentnexus (+6), marketing_agent (+1)
 - [x] v5.100.0–v5.136.0 — Protocols #78–#118: Continuous maintenance syncs, submodule pointer updates, periodic feature branch merges (bcs multi-lang-kernel-port, aios fix-nextjs-turbopack-windows, etc.)
 - [x] v5.137.0 — Protocol #119: Submodule pointer updates (MilkDrop3, TurntUpToddler, freellm, tormentnexus), feature branch scan — 0 actionable merges
+- [x] v5.138.0–v5.174.0 — Protocols #120–#154: Continuous maintenance syncs, freellm-linux (+44) merged in v5.173.0
+- [x] v5.175.0 — Protocol #155: hyper (+124 across 3 branches), hyperharness (+2), tormentnexus (+5 files), veilid (+15 files)
 - [ ] 62 GitHub vulnerabilities on default branch (22 high, 35 moderate, 5 low)
 - [ ] bg nested references/ submodules (~50) remain uninitialized
 - [ ] aimoneymachine_site fix-twitter-auth-logging deferred (40+ go.mod conflicts)
@@ -75,3 +77,4 @@ Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodul
 8. **aimoneymachine_site fix-twitter-auth-logging** — Deferred across multiple protocols due to 40+ go.mod conflicts.
 9. **libs/bobui feature/audio-graph-native-linking-test** — Local changes blocking merge.
 10. **bobsgameonlinejava feat/polygon-lasso** — Pending resolution, 4 unique commits.
+11. **bobtrax nested submodules (lmms/ardour/zrythm)** — Broken gitdir references cause git status timeouts in workspace root. Needs submodule deinit/re-init.

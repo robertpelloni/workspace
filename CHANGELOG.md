@@ -1,3 +1,25 @@
+## [v5.175.0] — 2026-07-13 — Protocol #155
+
+### Merged
+
+- **hyper (124 commits)** → hyper `main`: 3 feature branches merged — multi-language-agent-foundation (+27: C#/Java/Rust/TS agentic tools, GhostText, CommandBlock, Wave notebook), tormentnexus-v0.0.1 (+34: TormentNexus v1.1.0 LLM harness core), hyper-2 (+63: upstream terminal fixes, xterm v3.8-3.9, electron window.open fix)
+- **hyperharness (2 commits)** → hyperharness `main`: AUDIT.md resolution from jules-543599 — doc-only audit completion notes
+- **tormentnexus (5 files)** → tormentnexus `main`: cherry-pick Next.js build fixes + missing DB files (catalog.db, tormentnexus.db) from jules-3383
+- **veilid_reddit_facebook (15 files)** → veilid_reddit_facebook `main`: cherry-pick Gold Master v1.1.0 additions — Bobcoin integration, crypto auth handlers (crypto.go, bobcoin_bridge.go), wallet UI (TipButton, WalletTab, useBobcoin, useDAO hooks)
+
+### Fixed
+
+- **Submodule lock cleanup**: Stale index.lock files removed from MilkDrop3, bobmani, bobsgameonlinejava
+- **bobsgameonlinejava rebase abort**: Stale rebase in progress cleaned up
+- **bobui submodule ultimatepp merge conflict**: Aborted and reset to origin/main
+- **bg_fix nested submodules**: Skipped deep clone of defold/lwjgl3 references (known timeout issue)
+
+### Assessed (no action)
+
+- **TurntUpToddler** 4 jules branches, **bobsgameweb** 3 jules branches — all already merged into main (0 commits ahead)
+- **openclaw-config** ~40 feature branches — all 0 commits ahead of main
+- **Workspace root** dependabot branches — deferred (blocked by broken lmms/ardour submodule in bobtrax causing git status timeouts)
+
 ## [v5.174.0] — 2026-07-12 — Protocol #154
 
 ### Changed
