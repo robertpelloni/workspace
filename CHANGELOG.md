@@ -1,3 +1,9 @@
+## [v5.172.0] — 2026-07-12 — Protocol #153
+
+### Changed
+
+- **Maintenance sync**: Full fetch + branch scan — all 75 submodules in sync, no new actionable branches
+
 ## [v5.171.0] — 2026-07-12 — Protocol #152
 
 ### Changed
