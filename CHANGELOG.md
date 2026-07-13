@@ -1,19 +1,31 @@
+## [v5.170.0] — 2026-07-12 — Protocol #151
+
+### Changed
+
+- **Maintenance sync**: Full fetch + branch scan — no new actionable feature branches
+- **All 75 submodules**: In sync, all previously merged branches current
+
 ## [v5.169.0] — 2026-07-12 — Protocol #150
 
 ### Merged
+
 - **aimoneymachine_site**: forward-merged fix-twitter-auth-logging, jules-outreach, dependabot
 - **Maestro**: rev/jules-* branches already up to date
 
 ### Submodule Updates
+
 - **TurntUpToddler**: 0e775b46 → chore: add kids mode Turntable Toddler TODO (+3 commits, cover pipeline, retry logic, generated MP3s)
 
 ### Features
+
 - **TurntUpToddler**: Suno Remix→Cover pipeline now generates melody-preserving EDM covers
 - **TurntUpToddler**: Auto-retry logic (3 attempts) when Suno Create button stays disabled
 - **TurntUpToddler**: Kids mode TODO added — modern nursery rhyme rewrites (DJ/producer/AI education)
 
 ### Infrastructure
+
 - All 80+ submodules fetched and verified
+
 # Changelog
 
 ## [v5.167.0] — 2026-07-12 — Protocol #149
