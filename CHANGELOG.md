@@ -1,3 +1,12 @@
+## [v5.187.0] — 2026-07-13 — Protocol #167
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled 4 behind-remote repos (bobsgameonlinejava_fix, bobsaver, bobfilez_fix, MilkDrop3).
+- **Pushed submodules**: fwber, bobmani, bobsgameonlinejava_fix, auto_dj_script, bobfilez_fix.
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+- **Remaining dirty repos**: bobfilez, MilkDrop3, geany, freellm, bobsgameonlinejava, bqt, bg, bcs, bobsgameweb, bobsaver — nested submodule content changes (tracked at submodule level, not committable at parent).
+
 ## [v5.186.0] — 2026-07-13 — Protocol #166
 
 ### Changed

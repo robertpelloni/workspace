@@ -1,45 +1,29 @@
-# HANDOFF: v5.186.0 — Continuation Sync (Protocol #166)
+# HANDOFF: v5.187.0 — Sync Pass (Protocol #167)
 
 ## Summary
 
-Re-executed full repository synchronization after Protocol #165. Resolved stale git lock files, merged conflicts in 3 repos, pushed 14+ submodules to origin.
+Quick synchronization pass. All 95 submodules fetched, 4 behind-remote repos pulled, 5 submodules pushed.
 
 ## What Was Done
 
-### Stale Lock File Resolution
+### Pulled (behind remote)
 
-Fixed `.git/index.lock` files in: bobfilez, bg, MilkDrop3 (via `.git/modules/` paths)
+- bobsgameonlinejava_fix (2 commits), bobsaver (2), bobfilez_fix (2), MilkDrop3 (1)
 
-### Merge Conflicts Resolved
+### Pushed to Origin
 
-| Repo | Conflict | Resolution |
-|------|----------|------------|
-| bobsgameonlinejava | libs/lz4-java, libs/xz-java, libs/commons-lang, libs/lwjgl3 | Used theirs (remote) |
-| bobfilez | libs/ADSman | Used theirs (remote) |
-| bgtk | submodules/ultimatepp | Used theirs (remote) |
-
-### Repos Pushed to Origin (14)
-
-- bobsgameonlinejava_fix, bobsaver, bobsaver_fix, bobfilez_fix
-- f-zerox, geany, ableton_psytrance_hymn_creator
-- bobsgameonlinejava, bobfilez, auto_dj_script
-- hermes-agent (3088 files staged and pushed)
-- bobtrader, bobmani (already up-to-date)
+- fwber, bobmani, bobsgameonlinejava_fix, auto_dj_script, bobfilez_fix
 
 ### Feature Branch Verification
 
-All feature branches across all submodules verified as already merged into main:
+- BCS: 4 branches — 0 unique vs main (already merged)
 
-- BCS: 4 branches (0 unique vs main)
-- TurntUpToddler: 5 branches (0 unique vs main)
-- Maestro: 2 branches (0 unique vs main)
+### Remaining Dirty Repos (nested submodule content)
 
-### Repos Still Needing Attention
+bobfilez (37), MilkDrop3 (5), geany (4), freellm (4), bobsgameonlinejava (3), bqt (2), bg (2), bcs (2), bobsgameweb (1), bobsaver (1), bgtk (1), ableton_psytrance_hymn_creator (1), MilkDrop3_fix (1)
 
-- **bg_fix**: Detached HEAD with commit not on origin/master. Needs manual reconciliation.
-- **MilkDrop3**: Has untracked `tormentnexus/` dir and `aios` — nested submodule noise.
-- **openclaw-config/dashboard, projectM-upstream**: Upstream forks, no write access.
+These are nested submodule internal state changes — tracked at the submodule level, not committable at the parent workspace.
 
 ## Version
 
-Bumped from v5.185.0 → v5.186.0
+Bumped from v5.186.0 → v5.187.0
