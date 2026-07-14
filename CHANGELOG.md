@@ -1,3 +1,12 @@
+## [v5.197.0] — 2026-07-14 — Protocol #177
+
+### Changed
+
+- **Full dirty repo sweep**: Processed ALL dirty submodules (not hardcoded list). Committed/pushed: bobfilez, jules-autopilot (dev.db), marketing_agent, tormentnexus (enrich-mimo.py).
+- **MilkDrop3**: Cherry-picked aios submodule addition from detached HEAD to main.
+- **Remaining dirty repos**: All are `m` (modified submodule content) — not committable at parent level. Expected behavior.
+- **Protocol improvement**: Future syncs will iterate ALL dirty repos dynamically.
+
 ## [v5.196.0] — 2026-07-14 — Protocol #176
 
 ### Changed
