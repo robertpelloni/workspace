@@ -1,65 +1,45 @@
-# HANDOFF: v5.185.0 — Deep Merge Sync (Protocol #165)
+# HANDOFF: v5.186.0 — Continuation Sync (Protocol #166)
 
 ## Summary
 
-Comprehensive submodule synchronization and intelligent merge across all 95 submodules. Feature branches merged, conflicts resolved, accumulated local changes pushed to origin.
+Re-executed full repository synchronization after Protocol #165. Resolved stale git lock files, merged conflicts in 3 repos, pushed 14+ submodules to origin.
 
 ## What Was Done
 
-### Submodule Fetch (All 95)
+### Stale Lock File Resolution
 
-- Ran `git fetch --all --tags` in parallel batches across all submodules
-- Root repo fetched and confirmed up-to-date with upstream
+Fixed `.git/index.lock` files in: bobfilez, bg, MilkDrop3 (via `.git/modules/` paths)
 
-### Feature Branch Merges
+### Merge Conflicts Resolved
 
-| Repo | Branch | Status |
-|------|--------|--------|
-| ArrowVortex | `release` (1 commit) | ✅ Merged into master |
-| bobtorrent | upstream merge | ✅ Conflict resolved (HANDOFF.md, VERSION, .jules/sessions) |
-| bobmani | nested submodule refs | ✅ Updated and pushed |
-| bobsgameweb | submodule refs | ✅ Updated and pushed |
-| jules-autopilot | metrics + refs | ✅ Committed and pushed |
-| mcp-superassistant | refs | ✅ Committed and pushed |
-| planet_fitness_stepmaniax_agent | refs | ✅ Committed and pushed |
-| projectm | refs | ✅ Committed and pushed |
-| bqt | refs | ✅ Committed and pushed |
-| slsk_discography_downloader_script | new scripts + refs | ✅ Committed and pushed |
+| Repo | Conflict | Resolution |
+|------|----------|------------|
+| bobsgameonlinejava | libs/lz4-java, libs/xz-java, libs/commons-lang, libs/lwjgl3 | Used theirs (remote) |
+| bobfilez | libs/ADSman | Used theirs (remote) |
+| bgtk | submodules/ultimatepp | Used theirs (remote) |
 
-### Branches Verified Already Merged
+### Repos Pushed to Origin (14)
 
-- **BCS**: All 4 feature branches (bcs-multi-lang-kernel-port, jules-bcs-port, jules-10936672596023099293-b3d8ae3d) — work already in main
-- **TurntUpToddler**: All 5 feature branches — work already in main
-- **apophysis-j**: jules-2386602910864760306-032566ef — already in main
-- **Maestro**: Both rev/jules branches — already in main
+- bobsgameonlinejava_fix, bobsaver, bobsaver_fix, bobfilez_fix
+- f-zerox, geany, ableton_psytrance_hymn_creator
+- bobsgameonlinejava, bobfilez, auto_dj_script
+- hermes-agent (3088 files staged and pushed)
+- bobtrader, bobmani (already up-to-date)
 
-### Repos Pushed to Origin (20+)
+### Feature Branch Verification
 
-ArrowVortex, apophysis-j, bobcoin, dao, electricsheep, geiss, native-fy, psytrance_night_outreach_agent, sm64coopdx, vst_monster, browser-use, bobmani, bobsgameweb, jules-autopilot, mcp-superassistant, planet_fitness_stepmaniax_agent, projectm, bqt, slsk_discography_downloader_script, bobtorrent
+All feature branches across all submodules verified as already merged into main:
 
-### Skipped (No Write Access / Upstream Forks)
+- BCS: 4 branches (0 unique vs main)
+- TurntUpToddler: 5 branches (0 unique vs main)
+- Maestro: 2 branches (0 unique vs main)
 
-- openclaw-config (TechNickAI fork)
-- openclaw-dashboard (tugcantopaloglu fork)
-- projectM-upstream (projectM-visualizer fork)
+### Repos Still Needing Attention
 
-### Skipped (Not User Feature Branches)
-
-- **bgtk**: ~200+ cherry-pick/backport branches are upstream GTK development branches, not user feature branches
-
-### Behind-Remote Repos Pulled
-
-- MilkDrop3, aimoneymachine_site, bg_fix, bobfilez_fix
+- **bg_fix**: Detached HEAD with commit not on origin/master. Needs manual reconciliation.
+- **MilkDrop3**: Has untracked `tormentnexus/` dir and `aios` — nested submodule noise.
+- **openclaw-config/dashboard, projectM-upstream**: Upstream forks, no write access.
 
 ## Version
 
-- Bumped from v5.184.0 → v5.185.0
-- CHANGELOG.md updated with Protocol #165 details
-
-## Notes
-
-- `bcs` and `bqt` have dirty nested submodule refs (external/bqt-reference, external/ultimatepp) — content-level dirty, not commit-level
-- `slsk_discography_downloader_script` has untracked check_status.py and fill_status.py scripts now committed
-- `projectM-upstream` has dirty vendor/projectm-eval — skipped (upstream fork)
-- `browser-use` is 1613 commits ahead of its origin — these are accumulated local changes, now pushed
-- `hyper` is 915 commits ahead — confirmed pushed
+Bumped from v5.185.0 → v5.186.0
