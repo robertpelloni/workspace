@@ -1,18 +1,18 @@
-# HANDOFF: v5.187.0 — Sync Pass (Protocol #167)
+# HANDOFF: v5.188.0 — Sync Pass (Protocol #168)
 
 ## Summary
 
-Quick synchronization pass. All 95 submodules fetched, 4 behind-remote repos pulled, 5 submodules pushed.
+Synchronization pass. All 95 submodules fetched, 2 behind-remote repos pulled, 8 submodules pushed.
 
 ## What Was Done
 
 ### Pulled (behind remote)
 
-- bobsgameonlinejava_fix (2 commits), bobsaver (2), bobfilez_fix (2), MilkDrop3 (1)
+- bobsgameonlinejava (1 commit), bobfilez (1)
 
-### Pushed to Origin
+### Pushed to Origin (8)
 
-- fwber, bobmani, bobsgameonlinejava_fix, auto_dj_script, bobfilez_fix
+- topaz-ffmpeg (590 files — upstream ffmpeg sync), hyperharness (31), tabby (11), bobsgameonlinejava, bobmani, mk64, npp, jules-autopilot
 
 ### Feature Branch Verification
 
@@ -20,10 +20,8 @@ Quick synchronization pass. All 95 submodules fetched, 4 behind-remote repos pul
 
 ### Remaining Dirty Repos (nested submodule content)
 
-bobfilez (37), MilkDrop3 (5), geany (4), freellm (4), bobsgameonlinejava (3), bqt (2), bg (2), bcs (2), bobsgameweb (1), bobsaver (1), bgtk (1), ableton_psytrance_hymn_creator (1), MilkDrop3_fix (1)
-
-These are nested submodule internal state changes — tracked at the submodule level, not committable at the parent workspace.
+bobfilez (38), MilkDrop3 (5), geany (4), freellm (4), bobfilez_fix, bqt (2), bg (2), bcs (2), projectM-upstream, bobsgameweb, bobsaver, ableton_psytrance_hymn_creator, MilkDrop3_fix
 
 ## Version
 
-Bumped from v5.186.0 → v5.187.0
+Bumped from v5.187.0 → v5.188.0
