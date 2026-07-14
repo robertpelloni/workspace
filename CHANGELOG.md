@@ -1,3 +1,21 @@
+## [v5.191.0] — 2026-07-14 — Protocol #171
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled bg_fix (2 commits, resolved bobsgameonlinejava conflict).
+- **Pushed submodules**: bobmani, npp, jules-autopilot.
+- **Shell recovery**: Killed zombie git processes (PIDs 88332, 5584, 67832), removed stale .git/index.lock. Terminal recovered.
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+
+## [v5.190.0] — 2026-07-13 — Protocol #170
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled bobsgameonlinejava (1 commit). Resolved merge conflict (libs/xz-java, libs/commons-lang, libs/lwjgl3, libs/lz4-java).
+- **Pushed submodules**: bobmani, bg, aimoneymachine_site, fwber, bobsgameonlinejava.
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+- **Shell environment issue**: Terminal corrupted with persistent "hypa: command not found" error on all bash commands. Stale .git/index.lock from zombie git processes (PIDs from June 26). Protocol completed via file tools.
+
 ## [v5.189.0] — 2026-07-13 — Protocol #169
 
 ### Changed
