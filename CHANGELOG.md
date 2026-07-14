@@ -1,3 +1,11 @@
+## [v5.192.0] — 2026-07-14 — Protocol #172
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled bobsgameonlinejava_fix (4 commits), bobsgameweb (2 commits — WorldScene.ts renderer, 139 insertions).
+- **Pushed submodules**: bobmani, bobsgameonlinejava_fix, bobsgameonlinejava, tormentnexus, npp, jules-autopilot, bobsgameweb, bobsaver.
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+
 ## [v5.191.0] — 2026-07-14 — Protocol #171
 
 ### Changed
