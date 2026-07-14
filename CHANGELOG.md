@@ -1,3 +1,12 @@
+## [v5.189.0] — 2026-07-13 — Protocol #169
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled bobsgameonlinejava_fix (1 commit).
+- **Pushed submodules**: tormentnexus, tabby, bobmani, bobsgameonlinejava_fix, jules-autopilot.
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+- **Remaining dirty repos**: bobfilez (38), hyperharness (21), MilkDrop3 (5), geany (4), freellm (4), bobsgameonlinejava (3), npp (2), bqt (2), bg (2), bcs (2) — nested submodule content changes.
+
 ## [v5.188.0] — 2026-07-13 — Protocol #168
 
 ### Changed
