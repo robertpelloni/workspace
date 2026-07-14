@@ -1,3 +1,11 @@
+## [v5.194.0] — 2026-07-14 — Protocol #174
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled bobsgameonlinejava_fix (1 commit).
+- **Pushed submodules**: bobsgameonlinejava_fix.
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+
 ## [v5.193.0] — 2026-07-14 — Protocol #173
 
 ### Changed
