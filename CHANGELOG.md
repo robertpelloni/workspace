@@ -1,3 +1,11 @@
+## [v5.198.0] — 2026-07-14 — Protocol #178
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled bobsgameonlinejava (1), bobfilez_fix (1), MilkDrop3_fix (1).
+- **All dirty repos scanned**: 9 remaining dirty — all `m` (modified submodule content only, not committable at parent).
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+
 ## [v5.197.0] — 2026-07-14 — Protocol #177
 
 ### Changed
