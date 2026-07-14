@@ -1,19 +1,15 @@
-# HANDOFF: v5.189.0 — Sync Pass (Protocol #169)
+# HANDOFF: v5.190.0 — Sync Pass (Protocol #170)
 
 ## Summary
 
-Quick sync pass. 95 submodules fetched, 1 behind-remote repo pulled, 5 submodules pushed.
+Sync pass. 95 submodules fetched, 1 behind-remote pulled, 5 submodules pushed. Resolved bobsgameonlinejava merge conflict.
 
 ## What Was Done
 
-- Pulled: bobsgameonlinejava_fix (1)
-- Pushed: tormentnexus, tabby, bobmani, bobsgameonlinejava_fix, jules-autopilot
+- Pulled: bobsgameonlinejava (1 — resolved libs/xz-java, commons-lang, lwjgl3, lz4-java conflicts)
+- Pushed: bobmani, bg, aimoneymachine_site, fwber, bobsgameonlinejava
 - BCS: 4 branches — 0 unique (already merged)
-
-## Remaining Dirty (nested submodule content)
-
-bobfilez (38), hyperharness (21), MilkDrop3 (5), geany (4), freellm (4), bobsgameonlinejava (3), npp (2), bqt (2), bg (2), bcs (2)
 
 ## Version
 
-v5.188.0 → v5.189.0
+v5.189.0 → v5.190.0
