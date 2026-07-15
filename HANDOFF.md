@@ -1,15 +1,16 @@
-# HANDOFF: v5.198.0 — Sync Pass (Protocol #178)
+# HANDOFF: v5.199.0 — Sync Pass (Protocol #179)
 
 ## Summary
 
-Sync pass. 95 submodules fetched, 3 behind-remote pulled, all dirty repos scanned (all `m` only).
+Sync pass. 95 submodules fetched, 1 behind-remote pulled, tormentnexus pushed (new reddit-agent.py).
 
 ## What Was Done
 
-- Pulled: bobsgameonlinejava (1), bobfilez_fix (1), MilkDrop3_fix (1)
-- Dirty scan: 9 repos — all `m` (modified submodule content, not committable at parent)
+- Pulled: MilkDrop3_fix (1)
+- Pushed: tormentnexus (scripts/reddit-agent.py)
+- Dirty sweep: 18 repos scanned, 17 are `m` only (expected), 1 committable (tormentnexus — pushed)
 - BCS: 4 branches — 0 unique (already merged)
 
 ## Version
 
-v5.197.0 → v5.198.0
+v5.198.0 → v5.199.0
