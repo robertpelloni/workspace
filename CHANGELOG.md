@@ -1,3 +1,11 @@
+## [v5.201.0] — 2026-07-14 — Protocol #181
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled MilkDrop3_fix (1 commit).
+- **Full dirty sweep**: 17 dirty repos scanned — all `m` only (submodule content, not committable). No new committable changes.
+- **All feature branches verified merged**: BCS (4 branches) — 0 unique commits vs main.
+
 ## [v5.200.0] — 2026-07-14 — Protocol #180
 
 ### Changed
