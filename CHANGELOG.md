@@ -1,3 +1,10 @@
+## [v5.203.0] — 2026-07-14 — Protocol #183
+
+### Changed
+
+- **Sync pass**: All 95 submodules fetched. Pulled MilkDrop3_fix (1 commit).
+- **Full dirty sweep**: 18 dirty repos scanned. Tormentnexus pushed (new whitepaper: apps/landing/public/tormentnexus_whitepaper.html). 17 other repos are `m` only.
+
 ## [v5.202.0] — 2026-07-14 — Protocol #182
 
 ### Changed

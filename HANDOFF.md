@@ -1,14 +1,15 @@
-# HANDOFF: v5.202.0 — Sync Pass (Protocol #182)
+# HANDOFF: v5.203.0 — Sync Pass (Protocol #183)
 
 ## Summary
 
-Sync pass. 95 submodules fetched, 1 behind-remote pulled. All 18 dirty repos are `m` only — no committable changes.
+Sync pass. 95 submodules fetched, 1 behind-remote pulled. Tormentnexus pushed (whitepaper).
 
 ## What Was Done
 
 - Pulled: MilkDrop3_fix (1)
-- Dirty sweep: 18 repos — all `m` (submodule content only)
+- Pushed: tormentnexus (apps/landing/public/tormentnexus_whitepaper.html)
+- Dirty sweep: 18 repos — 1 committable (tormentnexus), 17 `m` only
 
 ## Version
 
-v5.201.0 → v5.202.0
+v5.202.0 → v5.203.0
