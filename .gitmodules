@@ -291,9 +291,9 @@ branch = cvs
 path = topaz-ffmpeg
 url = https://github.com/TopazLabs/ffmpeg
 
-[submodule "tormentnexus"]
-path = tormentnexus
-url = https://github.com/MDMAtk/TormentNexus.git
+[submodule "HyperNexus"]
+path = HyperNexus
+url = https://gitlab.com/robertpelloni/HyperNexus.git
 branch = main
 
 [submodule "veilid_reddit_facebook"]
