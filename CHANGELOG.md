@@ -1,3 +1,23 @@
+## [v5.251.0] — 2026-07-21 — Protocol #228 — Branch Reconciliation Pass 4
+
+### Changed
+
+- **Fourth merge sweep**: All 112 submodules re-fetched and processed. New branches merged since Pass 3.
+- **New merges**: hymnmania (2 dependabot branches), bcs (bcs-multi-lang-kernel-port + main cherry-pick), dao (dependabot branch), bobmani/hymnmania (main cherry-pick, 22 commits)
+- **Updated submodule pointers**: bgtk, element-web, MilkDrop3_fix, bobmani/arrowvortex, bobmani/itgmania, bobmani/ksm-v2, ksm-v2
+- **Fixed**: bobfilez VERT submodule reference (dead commit 8e44c064 removed upstream)
+- **Total branches merged across all passes**: 110+ feature branches across 55+ repositories
+- **Version bumped**: v5.250.0 → v5.251.0
+
+## [v5.250.0] — 2026-07-21 — Protocol #227 — Branch Reconciliation Pass 3
+
+### Changed
+
+- **Third merge sweep**: All 112 submodules fetched and processed. Optimized script skips 26 upstream forks.
+- **New merges**: skillzhub (dependabot), multimousergy (3 branches), ArrowVortex (master), bobmani/hymnmania (141 commits), vst_monster (dependabot), xrnet (dependabot)
+- **Fixed**: ArrowVortex stale ddc_onset submodule reference removed, bobmani/arrowvortex merge conflict resolved
+- **Version bumped**: v5.249.0 → v5.250.0
+
 ## [v5.249.0] — 2026-07-21 — Protocol #226 — Branch Reconciliation Pass 2
 
 ### Changed
