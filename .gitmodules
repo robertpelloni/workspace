@@ -422,3 +422,7 @@ branch = master
 	path = ksm-v2
 	url = https://github.com/robertpelloni/ksm-v2.git
 
+
+[submodule "HyperNexus2old"]
+	path = HyperNexus2old
+	url = https://gitlab.com/robertpelloni/HyperNexus.git
