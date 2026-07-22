@@ -1,3 +1,13 @@
+## [v5.252.0] — 2026-07-21 — Protocol #229 — Branch Reconciliation Pass 5
+
+### Changed
+
+- **Fifth merge sweep**: All 112 submodules re-fetched and processed. 2 new branches merged.
+- **New merges**: hymnmania (dependabot/uv), dao (dependabot/npm_and_yarn)
+- **Updated submodule pointers**: MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Total branches merged across all passes**: 115+ feature branches across 55+ repositories
+- **Version bumped**: v5.251.0 → v5.252.0
+
 ## [v5.251.0] — 2026-07-21 — Protocol #228 — Branch Reconciliation Pass 4
 
 ### Changed
