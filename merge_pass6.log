@@ -1,0 +1,322 @@
+=== RECONCILIATION PASS 6 — 2026-07-22 15:18:37.644770 ===
+
+Starting Reconciliation Pass 6 from C:\Users\hyper\workspace
+Found 112 submodules in .gitmodules
+
+[1/112] Processing: auto_dj_script
+
+[2/112] Processing: fwber
+
+[3/112] Processing: hymnmania
+
+[4/112] Processing: hypercode
+
+[5/112] Processing: jules-autopilot
+
+[6/112] Processing: realestatecrm
+
+[7/112] Processing: skillzhub
+  [skillzhub] MERGE: jules-4381928419539428611-835d49c7 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[8/112] Processing: hermes-agent
+
+[9/112] Processing: multimousergy
+
+[10/112] Processing: ArrowVortex
+
+[11/112] Processing: superdawmcp
+
+[12/112] Processing: GWEN
+
+[13/112] Processing: JWildfire
+
+[14/112] Processing: Maestro
+
+[15/112] Processing: MarbleBlast
+  SKIP (upstream fork): MarbleBlast
+
+[16/112] Processing: MilkDrop3
+
+[17/112] Processing: OpenMBU
+  SKIP (upstream fork): OpenMBU
+
+[18/112] Processing: ableton_psytrance_hymn_creator
+  [ableton_psytrance_hymn_creator] MERGE: jules-12359894311656669020-972f5851 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[19/112] Processing: agentirc
+
+[20/112] Processing: ai_game_engine
+
+[21/112] Processing: apophysis-j
+  SKIP (upstream fork): apophysis-j
+
+[22/112] Processing: bg
+
+[23/112] Processing: bobbybookmarks
+
+[24/112] Processing: bobcoin
+  [bobcoin] MERGE: jules-ui-tooltips-7616787743030212991 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[25/112] Processing: bobeditpro
+
+[26/112] Processing: bobfilez
+
+[27/112] Processing: bgtk
+  SKIP (upstream fork): bgtk
+
+[28/112] Processing: bobium
+  SKIP (upstream fork): bobium
+
+[29/112] Processing: bobsaver
+
+[30/112] Processing: bobsgameonlinejava
+
+[31/112] Processing: bobsgameweb
+
+[32/112] Processing: bobtorrent
+
+[33/112] Processing: bobtrader
+
+[34/112] Processing: bobtrax
+
+[35/112] Processing: bqt
+  SKIP (upstream fork): bqt
+
+[36/112] Processing: bobzilla
+  [bobzilla] MERGE: jules-15362848323663521494-f8c9dfe1 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[37/112] Processing: bobzzite
+
+[38/112] Processing: bcs
+
+[39/112] Processing: crowdsourced_dance_club
+  [crowdsourced_dance_club] MERGE: jules-18324564706212732124-fad861aa (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[40/112] Processing: dao
+
+[41/112] Processing: electricsheep
+  SKIP (upstream fork): electricsheep
+
+[42/112] Processing: element-web
+  SKIP (upstream fork): element-web
+
+[43/112] Processing: marketing_agent
+
+[44/112] Processing: f-zerox
+
+[45/112] Processing: fcdm
+
+[46/112] Processing: aimoneymachine_site
+
+[47/112] Processing: geany
+  SKIP (upstream fork): geany
+
+[48/112] Processing: geiss
+  [geiss] MERGE: jules-ui-improvements-7018479838332640361 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[49/112] Processing: hyper
+  SKIP (too many branches: 68): hyper
+
+[50/112] Processing: hyperharness
+  [hyperharness] MERGE: dependabot/go_modules/go_modules-bf97549811 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+  [hyperharness] MERGE: jules-5435997250800630192-a18374ec (3 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[51/112] Processing: freellm
+
+[52/112] Processing: mcp-superassistant
+  SKIP (upstream fork): mcp-superassistant
+
+[53/112] Processing: mk64
+  SKIP (upstream fork): mk64
+
+[54/112] Processing: native-fy
+
+[55/112] Processing: neverball
+  SKIP (upstream fork): neverball
+
+[56/112] Processing: npp
+  SKIP (upstream fork): npp
+
+[57/112] Processing: odcnn
+
+[58/112] Processing: onetool-mcp
+
+[59/112] Processing: openclaw-config
+  SKIP (upstream fork): openclaw-config
+
+[60/112] Processing: openclaw-dashboard
+  SKIP (upstream fork): openclaw-dashboard
+
+[61/112] Processing: pi-mono
+  SKIP (upstream fork): pi-mono
+
+[62/112] Processing: planet_fitness_stepmaniax_agent
+
+[63/112] Processing: projectm
+  SKIP (upstream fork): projectm
+
+[64/112] Processing: psytrance_night_outreach_agent
+
+[65/112] Processing: slsk_discography_downloader_script
+
+[66/112] Processing: sm64coopdx
+  SKIP (upstream fork): sm64coopdx
+
+[67/112] Processing: supersaber
+
+[68/112] Processing: tabby
+  SKIP (upstream fork): tabby
+
+[69/112] Processing: timidity
+  SKIP (upstream fork): timidity
+
+[70/112] Processing: topaz-ffmpeg
+  SKIP (upstream fork): topaz-ffmpeg
+
+[71/112] Processing: HyperNexus
+  [HyperNexus] MERGE: gh-pages-hypernexus (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+  [HyperNexus] MERGE: gh-pages-tormentnexus (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[72/112] Processing: veilid_reddit_facebook
+  [veilid_reddit_facebook] MERGE: jules-tauri-v2-migration-17094978728525831753 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[73/112] Processing: warp
+  SKIP (upstream fork): warp
+
+[74/112] Processing: vst_monster
+
+[75/112] Processing: xrnet
+
+[76/112] Processing: bobmani
+
+[77/112] Processing: MilkDrop3_fix
+
+[78/112] Processing: bg_fix
+
+[79/112] Processing: bobfilez_fix
+
+[80/112] Processing: bobsaver_fix
+
+[81/112] Processing: bobsgameonlinejava_fix
+
+[82/112] Processing: browser-use
+  SKIP (upstream fork): browser-use
+
+[83/112] Processing: bobmani/Simply-Love-SM5
+  SKIP (upstream fork): bobmani/Simply-Love-SM5
+
+[84/112] Processing: bobmani/arrowvortex
+  SKIP (upstream fork): bobmani/arrowvortex
+
+[85/112] Processing: bobmani/beatoraja
+  SKIP (upstream fork): bobmani/beatoraja
+
+[86/112] Processing: bobmani/bobmania
+  SKIP (upstream fork): bobmani/bobmania
+
+[87/112] Processing: bobmani/ddc
+
+[88/112] Processing: bobmani/ddc_onset
+
+[89/112] Processing: bobmani/ffr-difficulty-model
+
+[90/112] Processing: bobmani/hymnmania
+
+[91/112] Processing: bobmani/itgmania
+  SKIP (upstream fork): bobmani/itgmania
+
+[92/112] Processing: bobmani/ksm-v2
+  SKIP (upstream fork): bobmani/ksm-v2
+
+[93/112] Processing: bobmani/leraine-studio
+
+[94/112] Processing: bobmani/linthesia
+  [bobmani/linthesia] MERGE: jules-gtkmm-migration-17914190840350960258 (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[95/112] Processing: bobmani/pianogame
+  [bobmani/pianogame] MERGE: jules-71435653877870057-8b2f1bce (43 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+[96/112] Processing: bdwgc
+  SKIP (upstream fork): bdwgc
+
+[97/112] Processing: bobsgameonline
+
+[98/112] Processing: libjruntime
+
+[99/112] Processing: grammars-v4
+  SKIP (upstream fork): grammars-v4
+
+[100/112] Processing: tokdiet
+
+[101/112] Processing: stepmania
+  SKIP (upstream fork): stepmania
+
+[102/112] Processing: jvm-cpp-runtime
+
+[103/112] Processing: okgame
+
+[104/112] Processing: muse
+
+[105/112] Processing: FFmpeg
+  SKIP (upstream fork): FFmpeg
+
+[106/112] Processing: jdk
+  SKIP (upstream fork): jdk
+
+[107/112] Processing: llvm-project
+  SKIP (upstream fork): llvm-project
+
+[108/112] Processing: private_gemini_storage
+
+[109/112] Processing: projectM-upstream
+  SKIP (upstream fork): projectM-upstream
+
+[110/112] Processing: TurntUpToddler
+  SKIP (upstream fork): TurntUpToddler
+
+[111/112] Processing: ksm-v2
+  SKIP (upstream fork): ksm-v2
+
+[112/112] Processing: HyperNexus2old
+  [HyperNexus2old] MERGE: gh-pages-hypernexus (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+  [HyperNexus2old] MERGE: gh-pages-tormentnexus (1 unique commits)
+    [FAIL] Could not merge or cherry-pick
+
+============================================================
+RECONCILIATION PASS 6 SUMMARY
+============================================================
+Total submodules processed: 112
+Total branches merged: 0
+Total repos pushed: 0
+
+Repos with failed merges:
+  skillzhub: jules-4381928419539428611-835d49c7
+  ableton_psytrance_hymn_creator: jules-12359894311656669020-972f5851
+  bobcoin: jules-ui-tooltips-7616787743030212991
+  bobzilla: jules-15362848323663521494-f8c9dfe1
+  crowdsourced_dance_club: jules-18324564706212732124-fad861aa
+  geiss: jules-ui-improvements-7018479838332640361
+  hyperharness: dependabot/go_modules/go_modules-bf97549811, jules-5435997250800630192-a18374ec
+  HyperNexus: gh-pages-hypernexus, gh-pages-tormentnexus
+  veilid_reddit_facebook: jules-tauri-v2-migration-17094978728525831753
+  bobmani/linthesia: jules-gtkmm-migration-17914190840350960258
+  bobmani/pianogame: jules-71435653877870057-8b2f1bce
+  HyperNexus2old: gh-pages-hypernexus, gh-pages-tormentnexus
+
+Skipped repos: 39
+
+Log saved to: C:\Users\hyper\workspace\merge_pass6.log
