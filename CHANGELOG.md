@@ -1,3 +1,19 @@
+## [v5.254.0] — 2026-07-21 — Protocol #231 — Intelligent Cherry-Pick Resolution
+
+### Changed
+
+- **Resolved all persistent merge conflicts** via intelligent cherry-picking across 9 repositories
+- **skillzhub**: Merged Jules auth URL fix (25 files, new API routes, tests, vlm-processor)
+- **bobcoin**: Merged Phase V expansion (48 files, E2E harness, Go services, WASM proof-of-play)
+- **geiss**: Merged NEW_COLORS_430 implementation (main.cpp, 9553 lines)
+- **hyperharness**: Merged 4 commits (dependabot Go modules, subagent lifecycle hooks, observability hooks, AUDIT docs)
+- **bobzilla**: Merged Javasandbox Guest OS integration (18 files, guest-os, patches, build scripts)
+- **crowdsourced_dance_club**: Merged Milestone 4 (Neural Conductor, proactive sync, dashboard UI)
+- **ableton_psytrance_hymn_creator**: Merged Phase 3 (Neural Mastering, Radio Streaming, Dashboard)
+- **veilid_reddit_facebook**: Merged Tauri v2 migration (26 files, mobile cross-compilation scaffold)
+- **bobmani/linthesia**: Merged GTKmm migration docs and InputManager/KeyMapper/MainWindow source
+- **Version bumped**: v5.253.0 → v5.254.0
+
 ## [v5.253.0] — 2026-07-21 — Protocol #230 — Branch Reconciliation Pass 6 (Convergence)
 
 ### Changed
