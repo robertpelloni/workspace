@@ -1,3 +1,12 @@
+## [v5.255.0] — 2026-07-21 — Protocol #232 — Dependabot Branch Sweep
+
+### Changed
+
+- **hyper**: Merged 8 dependabot branches (GitHub Actions updates, Electron, Node.js dependencies)
+- **skillzhub**: Merged 1 new dependabot branch (npm_and_yarn-3fb4487f37)
+- **Updated submodule pointers**: MilkDrop3_fix, bobfilez_fix, bobmani/itgmania, bobmani/ksm-v2, HyperNexus2old
+- **Version bumped**: v5.254.0 → v5.255.0
+
 ## [v5.254.0] — 2026-07-21 — Protocol #231 — Intelligent Cherry-Pick Resolution
 
 ### Changed
