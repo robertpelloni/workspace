@@ -1,3 +1,11 @@
+## [v5.257.0] — 2026-07-21 — Protocol #234 — Maintenance Pass (No New Branches)
+
+### Changed
+
+- **No new branches to merge** — convergence confirmed across all passes
+- **Updated submodule pointers**: MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Version bumped**: v5.256.0 → v5.257.0
+
 ## [v5.256.0] — 2026-07-21 — Protocol #233 — New Branch Merge Sweep
 
 ### Changed
