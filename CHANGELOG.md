@@ -1,3 +1,14 @@
+## [v5.256.0] — 2026-07-21 — Protocol #233 — New Branch Merge Sweep
+
+### Changed
+
+- **multimousergy**: Merged netmux-initial-architecture branch (4 commits)
+- **fcdm**: Merged fitness-machine-foundation branch (2 commits)
+- **vst_monster**: Merged jules-vst-monster-init branch (1 commit)
+- **bobmani/hymnmania**: Merged main into master (2 commits, resolved conflicts)
+- **Updated submodule pointers**: multimousergy, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Version bumped**: v5.255.0 → v5.256.0
+
 ## [v5.255.0] — 2026-07-21 — Protocol #232 — Dependabot Branch Sweep
 
 ### Changed
