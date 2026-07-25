@@ -1,3 +1,17 @@
+## [v5.258.0] — 2026-07-21 — Protocol #235 — Feature Branch Sweep (10 New Merges)
+
+### Changed
+
+- **bobsgameweb**: Merged fix-post-deploy-verification (20 files, MapIndexer, WeatherRenderer, deploy scripts)
+- **fwber**: Merged feat-group-aura-chatroom (resolved FederationInterop.test.ts conflict)
+- **agentirc**: Merged jules branch (resolved VERSION conflicts)
+- **ai_game_engine**: Merged feature-multiplayer-networking (resolved .jules session conflict)
+- **f-zerox**: Merged feat-cup-logic (resolved HANDOFF conflict, network.c + ui_tab_netplay.c merged)
+- **dao**: Merged feature-phase7-multi-token-treasury (20+ files, TreasuryDashboard, security, zkp)
+- **psytrance_night_outreach_agent**: Merged feature-token-budget-alerts (resolved doc + config conflicts)
+- **Updated submodule pointers**: marketing_agent, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Version bumped**: v5.257.0 → v5.258.0
+
 ## [v5.257.0] — 2026-07-21 — Protocol #234 — Maintenance Pass (No New Branches)
 
 ### Changed
