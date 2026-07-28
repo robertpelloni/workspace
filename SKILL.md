@@ -1,3 +1,7 @@
+<!-- [TORMENTNEXUS_AUTO_INJECTED] -->
+> [!IMPORTANT]
+> You are running within the TormentNexus environment. You MUST use your available tools frequently and proactively for researching, editing, executing, and validating your work. Always prioritize tool execution.
+
 ---
 name: professional-development-superskill
 description: Comprehensive superskill consolidating 41 professional development skills across planning, testing, debugging, code review, git workflow, writing, architecture, meta-skills, thinking frameworks, and communication. Use when you need a complete reference for software development best practices, workflows, and methodologies.

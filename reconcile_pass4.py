@@ -18,14 +18,44 @@ STATE_FILE = WORKSPACE / "merge_pass4_state.json"
 
 # Upstream forks or repos with massive numbers of branches to skip
 SKIP_REPOS = {
-    "bgtk", "bobium", "bqt", "element-web", "FFmpeg", "jdk", "llvm-project",
-    "stepmania", "geany", "npp", "electricsheep", "browser-use",
-    "openclaw-config", "openclaw-dashboard", "projectM-upstream",
-    "apophysis-j", "timidity", "projectm", "bdwgc", "grammars-v4",
-    "tabby", "mk64", "sm64coopdx", "neverball", "MarbleBlast", "OpenMBU",
-    "mcp-superassistant", "pi-mono", "topaz-ffmpeg", "warp", "TurntUpToddler",
-    "bobmania", "ksm-v2", "bobmani/arrowvortex", "bobmani/beatoraja",
-    "bobmani/itgmania", "bobmani/Simply-Love-SM5", "bobmani/ksm-v2",
+    "bgtk",
+    "bobium",
+    "bqt",
+    "element-web",
+    "FFmpeg",
+    "jdk",
+    "llvm-project",
+    "stepmania",
+    "geany",
+    "npp",
+    "electricsheep",
+    "browser-use",
+    "openclaw-config",
+    "openclaw-dashboard",
+    "projectM-upstream",
+    "apophysis-j",
+    "timidity",
+    "projectm",
+    "bdwgc",
+    "grammars-v4",
+    "tabby",
+    "mk64",
+    "sm64coopdx",
+    "neverball",
+    "MarbleBlast",
+    "OpenMBU",
+    "mcp-superassistant",
+    "pi-mono",
+    "topaz-ffmpeg",
+    "warp",
+    "TurntUpToddler",
+    "bobmania",
+    "ksm-v2",
+    "bobmani/arrowvortex",
+    "bobmani/beatoraja",
+    "bobmani/itgmania",
+    "bobmani/Simply-Love-SM5",
+    "bobmani/ksm-v2",
 }
 
 MAX_BRANCHES_PER_REPO = 25
@@ -35,7 +65,9 @@ def run(args, cwd=None, timeout=60):
     if isinstance(args, str):
         args = shlex.split(args)
     try:
-        r = subprocess.run(args, capture_output=True, text=True, cwd=cwd, timeout=timeout)
+        r = subprocess.run(
+            args, capture_output=True, text=True, cwd=cwd, timeout=timeout
+        )
         return r.returncode == 0, r.stdout.strip(), r.stderr.strip()
     except (subprocess.TimeoutExpired, OSError) as e:
         if isinstance(e, subprocess.TimeoutExpired):
@@ -104,12 +136,22 @@ def save_state(state):
 
 def process_submodule(sub_path, state):
     if sub_path in state.get("completed", []):
-        return {"path": sub_path, "status": "already_done", "merges": [], "pushed": False}
+        return {
+            "path": sub_path,
+            "status": "already_done",
+            "merges": [],
+            "pushed": False,
+        }
 
     repo_name = Path(sub_path).name
     if repo_name in SKIP_REPOS or sub_path in SKIP_REPOS:
         log(f"  SKIP (upstream fork): {sub_path}")
-        return {"path": sub_path, "status": "skipped_upstream", "merges": [], "pushed": False}
+        return {
+            "path": sub_path,
+            "status": "skipped_upstream",
+            "merges": [],
+            "pushed": False,
+        }
 
     full_path = str(WORKSPACE / sub_path)
     if not (WORKSPACE / sub_path).exists():
@@ -126,9 +168,16 @@ def process_submodule(sub_path, state):
 
     ok, _, _ = run(["git", "checkout", default_branch], cwd=full_path)
     if not ok:
-        run(["git", "checkout", "-b", default_branch, f"origin/{default_branch}"], cwd=full_path)
+        run(
+            ["git", "checkout", "-b", default_branch, f"origin/{default_branch}"],
+            cwd=full_path,
+        )
 
-    run(["git", "pull", "origin", default_branch, "--no-edit"], cwd=full_path, timeout=120)
+    run(
+        ["git", "pull", "origin", default_branch, "--no-edit"],
+        cwd=full_path,
+        timeout=120,
+    )
 
     ok, out, _ = run(["git", "branch", "-r"], cwd=full_path)
     if not ok:
@@ -146,14 +195,21 @@ def process_submodule(sub_path, state):
 
     if len(branches) > MAX_BRANCHES_PER_REPO:
         log(f"  SKIP (too many branches: {len(branches)}): {sub_path}")
-        return {"path": sub_path, "status": "skipped_many_branches", "merges": [], "pushed": False}
+        return {
+            "path": sub_path,
+            "status": "skipped_many_branches",
+            "merges": [],
+            "pushed": False,
+        }
 
     if not branches:
         return {"path": sub_path, "status": "clean", "merges": [], "pushed": False}
 
     merged_branches = []
     failed_branches = []
-    safe_chars = set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_./")
+    safe_chars = set(
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_./"
+    )
 
     for branch in branches:
         if not all(c in safe_chars for c in branch):
@@ -171,9 +227,16 @@ def process_submodule(sub_path, state):
         log(f"  [{sub_path}] MERGE: {branch} ({unique_commits} unique commits)")
 
         ok, _, err = run(
-            ["git", "merge", f"origin/{branch}", "--no-edit",
-             "-m", f"merge: {branch} into {default_branch} (pass 4)"],
-            cwd=full_path, timeout=120,
+            [
+                "git",
+                "merge",
+                f"origin/{branch}",
+                "--no-edit",
+                "-m",
+                f"merge: {branch} into {default_branch} (pass 4)",
+            ],
+            cwd=full_path,
+            timeout=120,
         )
         if ok:
             log("    [OK] Merged successfully")
@@ -191,13 +254,19 @@ def process_submodule(sub_path, state):
                 for commit in commits:
                     if not all(c in "0123456789abcdef" for c in commit):
                         continue
-                    cp_ok, _, _ = run(["git", "cherry-pick", commit, "--no-edit"], cwd=full_path, timeout=30)
+                    cp_ok, _, _ = run(
+                        ["git", "cherry-pick", commit, "--no-edit"],
+                        cwd=full_path,
+                        timeout=30,
+                    )
                     if cp_ok:
                         cherry_picked += 1
                     else:
                         run(["git", "cherry-pick", "--abort"], cwd=full_path)
                 if cherry_picked > 0:
-                    log(f"    [OK] Cherry-picked {cherry_picked}/{len(commits)} commits")
+                    log(
+                        f"    [OK] Cherry-picked {cherry_picked}/{len(commits)} commits"
+                    )
                     merged_branches.append(f"{branch} (cherry-pick)")
                 else:
                     log("    [FAIL] Could not merge or cherry-pick")
@@ -208,7 +277,9 @@ def process_submodule(sub_path, state):
 
     pushed = False
     if merged_branches:
-        ok, _, err = run(["git", "push", "origin", default_branch], cwd=full_path, timeout=120)
+        ok, _, err = run(
+            ["git", "push", "origin", default_branch], cwd=full_path, timeout=120
+        )
         if ok:
             log(f"  [OK] Pushed {sub_path}")
             pushed = True
@@ -218,7 +289,9 @@ def process_submodule(sub_path, state):
     for branch_info in merged_branches:
         branch = branch_info.replace(" (cherry-pick)", "").strip()
         if all(c in safe_chars for c in branch):
-            run(["git", "push", "origin", "--delete", branch], cwd=full_path, timeout=30)
+            run(
+                ["git", "push", "origin", "--delete", branch], cwd=full_path, timeout=30
+            )
 
     return {
         "path": sub_path,

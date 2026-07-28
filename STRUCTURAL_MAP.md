@@ -1,26 +1,119 @@
-# Workspace Structural Map
+# Structural Map — Generated 2026-07-21 18:45
+# Total submodules: 112
 
-This document tracks the current state of all submodules within the workspace monorepo.
+Path                                               URL                                                               Commit         Status
+-------------------------------------------------- ----------------------------------------------------------------- -------------- ----------
+auto_dj_script                                     https://github.com/robertpelloni/auto_dj_script                   a47e1d387b6e   OK
+fwber                                              https://github.com/robertpelloni/fwber.git                        c18e06581248   OK
+hymnmania                                          https://github.com/robertpelloni/hymnmania                        4f14f79ca04f   OK
+hypercode                                          https://github.com/robertpelloni/hypercode                        not initialized MISSING
+jules-autopilot                                    https://github.com/robertpelloni/jules-autopilot                  e932cddc7281   OK
+realestatecrm                                      https://github.com/robertpelloni/realestatecrm.git                e07aa1d94de4   OK
+skillzhub                                          https://github.com/robertpelloni/skillzhub                        bf7006f79ead   OK
+hermes-agent                                       https://github.com/robertpelloni/hermes-agent                     033968a3e4d4   OK
+multimousergy                                      https://github.com/robertpelloni/multimousergy.git                7b55f96df2c9   OK
+ArrowVortex                                        https://github.com/robertpelloni/ArrowVortex                      954cac501c04   OK
+superdawmcp                                        https://github.com/robertpelloni/superdawmcp                      53f7182d1072   OK
+GWEN                                               https://github.com/robertpelloni/GWEN.git                         d4e2ebcc68a4   OK
+JWildfire                                          https://github.com/robertpelloni/JWildfire.git                    fd36877fc28e   OK
+Maestro                                            https://github.com/robertpelloni/Maestro                          070409c8b55f   OK
+MarbleBlast                                        https://github.com/robertpelloni/MarbleBlast                      30615cd40c01   OK
+MilkDrop3                                          https://github.com/robertpelloni/MilkDrop3.git                    69c21064e9f0   OK
+OpenMBU                                            https://github.com/robertpelloni/OpenMBU                          19a5f99f422b   OK
+ableton_psytrance_hymn_creator                     https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git 3428807ee28a   OK
+agentirc                                           https://github.com/robertpelloni/agentirc.git                     3a04a96e9532   OK
+ai_game_engine                                     https://github.com/robertpelloni/ai_game_engine.git               92dc9e8b8e26   OK
+apophysis-j                                        https://github.com/robertpelloni/apophysis-j.git                  e2ad01a8703d   OK
+bg                                                 https://github.com/robertpelloni/bg.git                           9ec7fe5c2a00   OK
+bobbybookmarks                                     https://github.com/robertpelloni/bobbybookmarks                   24bd4d788ddc   OK
+bobcoin                                            https://github.com/robertpelloni/bobcoin                          22f003c455ed   OK
+bobeditpro                                         https://github.com/robertpelloni/bobeditpro                       398d4a7fa95c   OK
+bobfilez                                           https://github.com/robertpelloni/bobfilez                         e28f0ee8aff6   OK
+bgtk                                               https://github.com/robertpelloni/bgtk                             767ac919b325   OK
+bobium                                             https://github.com/robertpelloni/bobium                           0d2263b2ab91   OK
+bobsaver                                           https://github.com/robertpelloni/bobsaver                         224d3bdcba7a   OK
+bobsgameonlinejava                                 https://github.com/robertpelloni/bobsgameonlinejava.git           8584a915329f   OK
+bobsgameweb                                        https://github.com/robertpelloni/bobsgameweb.git                  2e688223b2bc   OK
+bobtorrent                                         https://github.com/robertpelloni/bobtorrent                       f61b174a18b6   OK
+bobtrader                                          https://github.com/robertpelloni/bobtrader                        dfcfd6bcc19f   OK
+bobtrax                                            https://github.com/robertpelloni/bobtrax                          4db6f2b9522e   OK
+bqt                                                https://github.com/robertpelloni/bqt                              ac471b4e4346   OK
+bobzilla                                           https://github.com/robertpelloni/bobzilla                         4ad7f040a2d2   OK
+bobzzite                                           https://github.com/robertpelloni/bobzzite                         8e728a916107   OK
+bcs                                                https://github.com/robertpelloni/bcs                              5e3df5e8c5fb   OK
+crowdsourced_dance_club                            https://github.com/robertpelloni/crowdsourced_dance_club.git      c9a2e261aab2   OK
+dao                                                https://github.com/robertpelloni/dao.git                          f893339f5986   OK
+electricsheep                                      https://github.com/robertpelloni/electricsheep.git                6c59f071957d   OK
+element-web                                        https://github.com/robertpelloni/element-web.git                  a6a90b53dd9f   OK
+marketing_agent                                    https://github.com/robertpelloni/marketing_agent.git              ad71f0d09747   OK
+f-zerox                                            https://github.com/robertpelloni/f-zerox                          3bb780422835   OK
+fcdm                                               https://github.com/robertpelloni/fcdm.git                         4fdaf589ab68   OK
+aimoneymachine_site                                https://github.com/robertpelloni/aimoneymachine_site.git          8511429c8a59   OK
+geany                                              https://github.com/robertpelloni/geany                            e62aaae19571   OK
+geiss                                              https://github.com/robertpelloni/geiss.git                        0290fe39e86f   OK
+hyper                                              https://github.com/robertpelloni/hyper.git                        7c75cfa7789e   OK
+hyperharness                                       https://github.com/robertpelloni/hyperharness                     94672d268d89   OK
+freellm                                            https://github.com/robertpelloni/freellm                          2492966d5b9a   OK
+mcp-superassistant                                 https://github.com/robertpelloni/mcp-superassistant               5efe6d1771b0   OK
+mk64                                               https://github.com/robertpelloni/mk64                             83f4d85f59d5   OK
+native-fy                                          https://github.com/robertpelloni/native-fy                        0bfb2ce0847b   OK
+neverball                                          https://github.com/robertpelloni/neverball                        b2d0c606770f   OK
+npp                                                https://github.com/robertpelloni/npp                              b82edc5f6703   OK
+odcnn                                              https://github.com/robertpelloni/odcnn.git                        288a363805d2   OK
+onetool-mcp                                        https://github.com/robertpelloni/onetool-mcp                      d2d28c4150d8   OK
+openclaw-config                                    https://github.com/TechNickAI/openclaw-config.git                 b00c039d859f   OK
+openclaw-dashboard                                 https://github.com/tugcantopaloglu/openclaw-dashboard.git         d6198d021886   OK
+pi-mono                                            https://github.com/robertpelloni/pi-mono                          1205d89506af   OK
+planet_fitness_stepmaniax_agent                    https://github.com/robertpelloni/planet_fitness_stepmaniax_agent  c4b355f62431   OK
+projectm                                           https://github.com/robertpelloni/projectm.git                     23757a21e6c2   OK
+psytrance_night_outreach_agent                     https://github.com/robertpelloni/psytrance_night_outreach_agent.git ed807815cdff   OK
+slsk_discography_downloader_script                 https://github.com/robertpelloni/slsk_discography_downloader_script bc2b514a0e56   OK
+sm64coopdx                                         https://github.com/robertpelloni/sm64coopdx                       b39c2fd80c3e   OK
+supersaber                                         https://github.com/robertpelloni/supersaber                       76c8e8dde888   OK
+tabby                                              https://github.com/robertpelloni/tabby                            05e242e1dc5b   OK
+timidity                                           https://github.com/robertpelloni/timidity.git                     f726f8f75b02   OK
+topaz-ffmpeg                                       https://github.com/TopazLabs/ffmpeg                               eaa1762ca45b   OK
+HyperNexus                                         https://gitlab.com/robertpelloni/HyperNexus.git                   fd0892009ce1   OK
+veilid_reddit_facebook                             https://github.com/robertpelloni/veilid_reddit_facebook           f13a3cc50ed3   OK
+warp                                               https://github.com/robertpelloni/warp.git                         25d557224446   OK
+vst_monster                                        https://github.com/robertpelloni/vst_monster                      efc99a82f118   OK
+xrnet                                              https://github.com/robertpelloni/xrnet                            09914b76759f   OK
+bobmani                                            https://github.com/robertpelloni/bobmani                          329ec1b236ba   OK
+MilkDrop3_fix                                      https://github.com/robertpelloni/MilkDrop3.git                    791185aa6ced   OK
+bg_fix                                             https://github.com/robertpelloni/bg.git                           9ec7fe5c2a00   OK
+bobfilez_fix                                       https://github.com/robertpelloni/bobfilez.git                     e28f0ee8aff6   OK
+bobsaver_fix                                       https://github.com/robertpelloni/bobsaver.git                     224d3bdcba7a   OK
+bobsgameonlinejava_fix                             https://github.com/robertpelloni/bobsgameonlinejava.git           8584a915329f   OK
+browser-use                                        https://github.com/robertpelloni/browser-use                      008dccc81741   OK
+bobmani/Simply-Love-SM5                            https://github.com/robertpelloni/Simply-Love-SM5                  06a56f5f5881   OK
+bobmani/arrowvortex                                https://github.com/robertpelloni/arrowvortex                      954cac501c04   OK
+bobmani/beatoraja                                  https://github.com/robertpelloni/beatoraja                        5ef64d1838a0   OK
+bobmani/bobmania                                   https://github.com/robertpelloni/bobmania                         f86ecf1308d8   OK
+bobmani/ddc                                        https://github.com/robertpelloni/ddc                              b9f6b51bc39e   OK
+bobmani/ddc_onset                                  https://github.com/robertpelloni/ddc_onset                        5ff36228e06f   OK
+bobmani/ffr-difficulty-model                       https://github.com/robertpelloni/ffr-difficulty-model             c637d41489b8   OK
+bobmani/hymnmania                                  https://github.com/robertpelloni/hymnmania                        65d718570da9   OK
+bobmani/itgmania                                   https://github.com/robertpelloni/itgmania                         dd066d29ba14   OK
+bobmani/ksm-v2                                     https://github.com/robertpelloni/ksm-v2                           2d666919b9da   OK
+bobmani/leraine-studio                             https://github.com/robertpelloni/leraine-studio                   d1b5e2449785   OK
+bobmani/linthesia                                  https://github.com/robertpelloni/linthesia                        7e4cfe86422a   OK
+bobmani/pianogame                                  https://github.com/robertpelloni/pianogame                        5008830c1fb3   OK
+bdwgc                                              https://github.com/robertpelloni/bdwgc                            1d38c6d905a8   OK
+bobsgameonline                                     https://github.com/robertpelloni/bobsgameonline                   fc12ee9e94ea   OK
+libjruntime                                        https://github.com/robertpelloni/libjruntime                      f0ec4d77d776   OK
+grammars-v4                                        https://github.com/robertpelloni/grammars-v4                      5a9a89fa7274   OK
+tokdiet                                            https://github.com/robertpelloni/tokdiet                          5c4f57e2615e   OK
+stepmania                                          https://github.com/robertpelloni/stepmania                        09b542543f69   OK
+jvm-cpp-runtime                                    https://github.com/robertpelloni/jvm-cpp-runtime                  b19313703fe5   OK
+okgame                                             https://github.com/robertpelloni/okgame                           1611d6d4fdd0   OK
+muse                                               https://github.com/robertpelloni/muse                             fe5e92edca92   OK
+FFmpeg                                             https://github.com/robertpelloni/FFmpeg                           4c2700257ce5   OK
+jdk                                                https://github.com/robertpelloni/jdk                              2e179fec7b51   OK
+llvm-project                                       https://github.com/robertpelloni/llvm-project                     d6d4921b71e6   OK
+private_gemini_storage                             https://github.com/robertpelloni/private_gemini_storage           af74ac7a54e3   OK
+projectM-upstream                                  https://github.com/projectM-visualizer/projectM.git               2f244141320f   OK
+TurntUpToddler                                     https://github.com/Dimensionalplane/TurntUpToddler                179511520183   OK
+ksm-v2                                             https://github.com/robertpelloni/ksm-v2.git                       d72474f5824c   OK
+HyperNexus2old                                     https://gitlab.com/robertpelloni/HyperNexus.git                   fd0892009ce1   OK
 
-## Repositories
-
-| Path | Commit Hash | Branch/Tag State |
-| :--- | :--- | :--- |
-| `auto_dj_script` | `cd170f78a253b98a3120426ca93ebb5de1b18e9c` | `heads/main` |
-| `borg` | `9ce45acdf1debe55aa96d99d739e82a93cc9ed63` | `v0.9.0-beta-1443-g9ce45acdf` (Local modifications saved) |
-| `brokeragentworkflow` | `1e47df223b443ad10d76d8d7c2645fa2b67f3362` | `heads/main` (Local modifications saved) |
-| `explorerexedecompiled` | `319b277bfb5bb0fed89848afdd8b8b0a9e04dbf9` | `heads/main` |
-| `forclosureworkflow` | `727e3c0afe4bebd127f39eced3c53c1c328942ba` | `heads/feat/foreclosure-crm-mvp-9726332118304912403` |
-| `fwber` | `ce4fbfba2b1d0e3e9dc379c98045dff410f6db2b` | `remotes/origin/HEAD` |
-| `hermes-agent` | `e3f7ff1123fc8e0dc156807fb0935c89f613d6f4` | `v2026.5.16-187-ge3f7ff112` |
-| `hymnmania` | `a4268012c2171e24e3ca46291db204ddd16ff305` | `heads/main` (Local modifications saved) |
-| `hypercode` | `be13824e844f0687fdbeb55d41932094eaadd7b0` | `v0.9.0-beta-1411-gbe13824e` (Local modifications saved) |
-| `jules-autopilot` | `7f306fc1e0b75d15958f760a1d6a9eeb04a78791` | `v0.2.5-609-g7f306fc` (Local modifications saved) |
-| `p2p_service_marketplace` | `e9115dc69b4cf258b3c256817db90a71bbde99cc` | `remotes/origin/HEAD` |
-| `re-agent-workflow-media-1` | `240b4931bccfc89e5506378ea817dff619e7fd3f` | `heads/feature/init-media-pipeline-17967464845567188821` |
-| `realestatecrm` | `12672c97f40090990d6f8ea0ab84032affa9cf02` | `heads/main` |
-| `realestateleadcaller` | `580e124486a8f9cc0a69091d9267fbf166f2e41b` | `heads/jules-ai-real-estate-concierge-mvp-8261096991693832942` |
-| `realestateprototype` | `00b88234df7de7b626464cd469d53fad79b4ba75` | `heads/master` |
-| `skillzhub` | `bd9e06212d17a60b9a321e22c1a85dd6d1b83aed` | `heads/main` |
-| `socialmediacontentplanner` | `820d6a2cf3932a59a25a24e6c71843097c3c9798` | `heads/foundation-build-11917896674798314449` |
-| `theta-data-api` | `96f4807cd39f53a41ff460da3496bccbe4460453` | `heads/main` |
+# Initialized: 111/112
