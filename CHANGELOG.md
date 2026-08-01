@@ -1,3 +1,18 @@
+## [v5.261.0] — 2026-07-28 — Protocol #236 — Deep Feature Branch Reconciliation
+
+### Changed
+- **multimousergy**: v0.1.88-alpha → v0.1.89-alpha version bump (CMake version synced from stale 0.1.0). All 6 feature branches verified fully merged into main; pushed main to origin (b04828c).
+- **marketing_agent**: Pushed 31 unpushed commits (marketing bot CDP automation, Gmail OAuth2, purchasing scraper, cross-posting infra) → 6cf03ebe
+- **hermes-agent**: Pushed 423 unpushed commits → 22aa19c90f
+- **skillzhub**: Resolved dependabot push conflicts (next 16.2.12), merged remote main → da2bea1
+- **ableton_psytrance_hymn_creator**: Merged jules phase-3 branch (Neural Mastering, Radio Streaming, Dashboard Overhaul) → v1.18.4
+- **bobcoin**: Merged jules-ui-tooltips (Phase V, Go services canonicalization) → v8.114.3
+- **bobzilla**: Merged jules branch (Javasandbox Guest OS). Combined privacy patches into multi-hunk versions → v0.1.46
+- **crowdsourced_dance_club**: Merged jules Milestone-4 (Neural Conductor). Combined README + deploy script → v3.4.0
+- **projectm**: Fast-forwarded master to include all v4.1.0-dev work → 3be7393eb
+- **hyperharness**: Merged jules branch (subagent lifecycle hooks) → 59b501fe
+- **Deliberately skipped destructive branches**: geiss jules-ui-improvements (would delete 8688 lines), veilid_reddit_facebook jules-tauri-v2-migration (pure deletions), browser-use upstream branches (500+ upstream maintainer branches)
+- **Version bumped**: v5.260.0 → v5.261.0
 ## [v5.258.0] — 2026-07-21 — Protocol #235 — Feature Branch Sweep (10 New Merges)
 
 ### Changed
