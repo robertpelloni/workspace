@@ -1,3 +1,11 @@
+## [v5.264.0] — 2026-08-02 — Protocol #239 — Maintenance Pass (No New Merges)
+
+### Changed
+
+- **No new branches to merge** — all remaining branches are either hyper dependabot (yarn.lock conflicts), destructive (geiss jules-ui-improvements: deletes 8688 lines), or deployment branches (HyperNexus gh-pages)
+- **Updated submodule pointers**: hermes-agent, marketing_agent, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Version bumped**: v5.263.0 → v5.264.0
+
 ## [v5.263.0] — 2026-08-01 — Protocol #238 — NNT Content Harvest + Branch Merge
 
 ### Changed
