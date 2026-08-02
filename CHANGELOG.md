@@ -1,6 +1,21 @@
+## [v5.262.0] — 2026-08-01 — Protocol #237 — Dependabot & Feature Branch Sweep
+
+### Changed
+
+- **hymnmania**: Merged dependabot/uv branch (uv.lock update)
+- **bobcoin**: Merged dependabot/npm_and_yarn branch (frontend + supertorrent lockfile updates)
+- **dao**: Merged dependabot/npm_and_yarn branch (lockfile + pnpm updates)
+- **xrnet**: Merged dependabot/cargo branch (backend Cargo.lock update)
+- **bobtrax**: Merged jules branch (WASM analysis, port plan, build.sh) — resolved doc conflicts
+- **fcdm**: Merged go-onnx-inference branch (teensy.go, main.go, orchestrator) — resolved binary + code conflicts
+- **bobtorrent**: Merged fix-wasm-build branch (resolved session + version conflicts)
+- **Updated submodule pointers**: hermes-agent, multimousergy, Maestro, fcdm, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Version bumped**: v5.261.0 → v5.262.0
+
 ## [v5.261.0] — 2026-07-28 — Protocol #236 — Deep Feature Branch Reconciliation
 
 ### Changed
+
 - **multimousergy**: v0.1.88-alpha → v0.1.89-alpha version bump (CMake version synced from stale 0.1.0). All 6 feature branches verified fully merged into main; pushed main to origin (b04828c).
 - **marketing_agent**: Pushed 31 unpushed commits (marketing bot CDP automation, Gmail OAuth2, purchasing scraper, cross-posting infra) → 6cf03ebe
 - **hermes-agent**: Pushed 423 unpushed commits → 22aa19c90f
@@ -13,6 +28,7 @@
 - **hyperharness**: Merged jules branch (subagent lifecycle hooks) → 59b501fe
 - **Deliberately skipped destructive branches**: geiss jules-ui-improvements (would delete 8688 lines), veilid_reddit_facebook jules-tauri-v2-migration (pure deletions), browser-use upstream branches (500+ upstream maintainer branches)
 - **Version bumped**: v5.260.0 → v5.261.0
+
 ## [v5.258.0] — 2026-07-21 — Protocol #235 — Feature Branch Sweep (10 New Merges)
 
 ### Changed
