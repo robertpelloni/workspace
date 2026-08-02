@@ -1,3 +1,14 @@
+## [v5.263.0] — 2026-08-01 — Protocol #238 — NNT Content Harvest + Branch Merge
+
+### Changed
+
+- **NNT Content Harvest**: Downloaded full content from robertpelloni.com/NNT via WordPress REST API (167KB HTML, 124K chars text, 47 media files including videos and AI-generated images)
+- **Site Media**: Downloaded all media from robertpelloni.com (images, videos, AI art) into nnt_content/site_media/
+- **Pages**: Scraped all WordPress pages (NNT, Analysis, Digital Gnosticism, Resume) and posts
+- **bobcoin**: Merged dependabot/npm_and_yarn/frontend branch (package-lock.json + supertorrent updates)
+- **Updated submodule pointers**: hermes-agent, marketing_agent, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Version bumped**: v5.262.0 → v5.263.0
+
 ## [v5.262.0] — 2026-08-01 — Protocol #237 — Dependabot & Feature Branch Sweep
 
 ### Changed

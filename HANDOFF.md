@@ -1,32 +1,51 @@
-# HANDOFF — v5.262.0 — Protocol #237
+# HANDOFF — v5.263.0 — Protocol #238
 
-## Session Summary: Dependabot & Feature Branch Sweep
+## Session Summary: NNT Content Harvest + Branch Merge
 
 ### Completed Actions
 
-1. **Merged 7 new branches** across 7 repositories
-2. **Updated 7 submodule pointers** (hermes-agent, multimousergy, Maestro, fcdm, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2)
-3. **Pushed 3 unpulled submodules** (hermes-agent 11 commits, bobmani/itgmania 7, bobmani/ksm-v2 32)
+1. **NNT Content Harvest**: Scraped full content from robertpelloni.com/NNT via WordPress REST API
+   - 167KB HTML page content (The New New Testament — comparative theology framework)
+   - 124K chars of extracted text saved to nnt_content/nnt_content.md
+   - 47 media files downloaded (AI-generated images, screenshots, videos)
+   - All WordPress pages scraped (NNT, Analysis, Digital Gnosticism, Resume)
+   - All blog posts scraped (12 posts)
+   - RSS feed saved
+   - Images directory: nnt_content/site_media/
+   - Pages directory: nnt_content/pages/
 
-### Merge Results
+2. **bobcoin**: Merged dependabot/npm_and_yarn/frontend branch
 
-| Repository | Branch | Resolution |
-|------------|--------|------------|
-| hymnmania | dependabot/uv | Clean merge |
-| bobcoin | dependabot/npm_and_yarn | Fast-forward |
-| dao | dependabot/npm_and_yarn | Fast-forward |
-| xrnet | dependabot/cargo | Fast-forward |
-| bobtrax | jules WASM branch | Resolved doc conflicts (ours for docs, theirs for code) |
-| fcdm | go-onnx-inference | Resolved binary + code conflicts |
-| bobtorrent | fix-wasm-build | Resolved session + version conflicts |
+3. **Submodule pointer updates**: hermes-agent, marketing_agent, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
 
-### Remaining Unmerged (by design)
+### NNT Content Structure
 
-- **hyper**: ~48 dependabot branches (yarn.lock conflicts)
-- **HyperNexus/HyperNexus2old**: gh-pages deployment branches
-- **Various Jules branches**: Already cherry-picked, different commit hashes
+```
+nnt_content/
+├── nnt_raw.html          # Full page HTML (216KB)
+├── nnt_content.md        # Extracted text (124K chars)
+├── nnt_page.html         # WP REST API content (167KB)
+├── rss_posts.md          # RSS feed posts
+├── nnt_images.txt        # Image URLs
+├── nnt_links.txt         # Internal links
+├── nnt_media.txt         # Media file URLs
+├── images/               # Favicon images
+├── site_media/           # All site media (47 files)
+│   ├── download.mp4      # Video
+│   ├── RecordIt-*.mp4    # Screen recording
+│   ├── ChatGPT-*.jpg     # AI-generated images
+│   ├── ai_*.png          # AI art
+│   ├── IMG_*.jpg         # Photos
+│   └── image*.png        # Various images
+└── pages/                # All WordPress pages + posts
+    ├── nnt.html          # NNT full content
+    ├── analysis.html     # Analysis page
+    ├── 33179-2.html      # Digital Gnosticism
+    ├── resume.html       # Resume
+    └── post_*.html       # Blog posts
+```
 
 ### Version
 
-- Bumped: v5.261.0 → v5.262.0
+- Bumped: v5.262.0 → v5.263.0
 - Updated: VERSION, VERSION.current, VERSION.md, CHANGELOG.md
