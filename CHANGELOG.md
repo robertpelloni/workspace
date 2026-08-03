@@ -1,3 +1,13 @@
+## [v5.265.0] — 2026-08-02 — Protocol #240 — Dependabot Branch Sweep
+
+### Changed
+
+- **veilid_reddit_facebook**: Merged dependabot/npm_and_yarn branch (package-lock + pnpm-lock updates)
+- **vst_monster**: Merged dependabot/npm_and_yarn/client branch (client lockfile update)
+- **hyperharness**: Merged dependabot/go_modules branch (Go dependency updates)
+- **Updated submodule pointers**: hermes-agent, marketing_agent, vst_monster, MilkDrop3_fix, bobmani/itgmania, bobmani/ksm-v2
+- **Version bumped**: v5.264.0 → v5.265.0
+
 ## [v5.264.0] — 2026-08-02 — Protocol #239 — Maintenance Pass (No New Merges)
 
 ### Changed
