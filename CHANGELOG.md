@@ -1,3 +1,19 @@
+## [v5.267.0] — 2026-08-04 — Protocol #242 — Feature Branch Merge (Round 2)
+
+### Changed
+
+- **Maestro**: Merged 2 branches (rev/jules-2575151016458646249-2d58a6b7, rev/jules-add-new-agents-535743983477155742)
+- **vst_monster**: Merged dependabot/npm_and_yarn/client branch
+- **projectm**: Merged main-17361973617088245412 branch
+- **bobmani/linthesia**: Merged jules-18255045881388867666-4eef7d68 branch
+- **bobmani/pianogame**: Merged init-agentic-harness-docs-8160185321968005056 branch
+- **onetool-mcp**: Cherry-picked gh-pages deployment commits
+- **veilid_reddit_facebook**: Cherry-picked scaffold commits
+- **projectM-upstream**: Cherry-picked test-headers commits (permission denied for push)
+- **openclaw-dashboard**: Merged add-dockerfile branch (permission denied for push)
+- **Submodule sync**: All submodules updated to latest tracking commits
+- **Version bumped**: v5.266.0 → v5.267.0
+
 ## [v5.266.0] — 2026-08-04 — Protocol #241 — Repository Sync & Feature Branch Merge
 
 ### Changed

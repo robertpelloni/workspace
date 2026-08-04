@@ -1,63 +1,63 @@
-# HANDOFF — v5.266.0 — 2026-08-04
+# HANDOFF — v5.267.0 — 2026-08-04
 
-## Session Summary
+## Session Summary — Repository Synchronization Round 2
 
-### Repository Synchronization & Intelligent Merge
+### Merged Feature Branches
 
-**Merged Feature Branches:**
+| Repository | Branch | Status | Commits |
+|------------|--------|--------|---------|
+| Maestro | rev/jules-2575151016458646249-2d58a6b7 | merged | 1 |
+| Maestro | rev/jules-add-new-agents-535743983477155742 | merged | 1 |
+| vst_monster | dependabot/npm_and_yarn/client/npm_and_yarn-14d799c0ca | merged | 1 |
+| projectm | main-17361973617088245412 | merged | 1 |
+| bobmani/linthesia | jules-18255045881388867666-4eef7d68 | merged | 1 |
+| bobmani/pianogame | init-agentic-harness-docs-8160185321968005056 | merged | 1 |
+| onetool-mcp | gh-pages | cherry-picked | 1/32 |
+| veilid_reddit_facebook | jules-scaffold-0.1.0-18345075036601368068 | cherry-picked | 1/22 |
+| projectM-upstream | test-headers | cherry-picked | 1/9 |
 
-1. **hyperharness**: `jules-5435997250800630192-a18374ec` — real-time subagent observability hooks in TUI dashboard
-2. **veilid_reddit_facebook**: Cherry-picked scaffold commits from `jules-scaffold-0.1.0` branch
-3. **onetool-mcp**: Cherry-picked gh-pages deployment commits
-4. **openclaw-dashboard**: Merged `add-dockerfile` branch (reverted — upstream fork permissions denied)
+### Failed Merges (Conflicts)
 
-**Submodule Sync:**
+| Repository | Branch | Reason |
+|------------|--------|--------|
+| bobtorrent | fix-wasm-build-and-lattice-10556890247683923816 | conflicts |
+| bcs | bcs-multi-lang-kernel-port-863320579547549283 | conflicts |
+| bcs | jules-10936672596023099293-b3d8ae3d | conflicts |
+| bcs | jules-bcs-port | conflicts |
+| electricsheep | jules-4264994397503046839-283805b2 | conflicts |
+| geany | 0.18, 0.19, 0.20 | conflicts |
+| hyperharness | dependabot/go_modules/go_modules-8092289f51 | conflicts |
+| freellm | dependabot/go_modules/go_modules-9c5197dcb8 | conflicts |
+| freellm | temp-main | conflicts |
+| neverball | jules-7470902756302474025-cf364f23 | conflicts |
+| supersaber | jules-14329411782159669901-cbf6b1cb | conflicts |
+| tabby | gh-pages | conflicts |
+| bobmani/itgmania | jules-12512815185672744343-3c9d3dde | conflicts |
+| bobmani/pianogame | jules-71435653877870057-8b2f1bce | conflicts |
+| projectM-upstream | fix/egl-link-926, llvm_version_check, release-automation, release-automation-master | conflicts |
 
-- 94 submodules updated to latest tracking commits
-- 16 errors (mostly nested submodule pathspec issues in bobmani, local changes in slsk_discography_downloader_script and TurntUpToddler)
+### Permission Denied (Upstream Forks)
 
-**Pi & Extensions Updated:**
+- **openclaw-dashboard**: add-dockerfile merged but cannot push (fork from tugcantopaloglu)
+- **projectM-upstream**: test-headers cherry-picked but cannot push (fork from projectM-visualizer)
 
-- pi: 0.82.1 → 0.83.0
-- pi-tui: 0.75.5 → 0.83.0
-- pi-lens: 3.8.43 → 3.8.74
-- pi-subagents: 0.25.0 → 0.40.0
-- pi-context: 1.1.4 → 2.1.2
-- pi-mcp-adapter: 2.8.0 → 2.19.0
-- Plus 18 other extensions updated
+### Branch Scan Summary
 
-**Branch Scan Results:**
-
-- Total feature branches scanned: ~300+ across 40 submodules
-- Most branches had no unique commits (already merged or empty)
-- hermes-agent: 1603 branches (upstream fork — all FAIL to merge due to divergent history)
-- fwber: 34 branches (mostly stale upstream dependabot)
-- openclaw-config: 131 branches (all no unique commits)
-
-**Known Issues:**
-
-- ArrowVortex: nested submodule `ffr-difficulty-model` has no URL mapping
-- hermes-agent: massive upstream fork with 1600+ branches, all divergent
-- openclaw-dashboard: fork from tugcantopaloglu — no push access
-- slsk_discography_downloader_script: local changes preventing submodule update
-- TurntUpToddler: local changes preventing submodule update
-
-### Hymn Pipeline Status
-
-- **520/825 YouTube videos** generated (63%)
-- **519/825 TikTok videos** generated (63%)
-- Pipeline (PID 19848) still running in background
-- Currently processing: Oh For A Thousand Tongues (25/55)
-- Estimated time remaining: ~20 hours
+- **Total repos scanned**: 29
+- **Total mergeable branches found**: 1,872
+- **Branches processed**: 35
+- **Successfully merged/cherry-picked**: 9
+- **Failed due to conflicts**: 22
+- **Skipped (no unique commits)**: 2
 
 ### Version Bump
 
-- v5.265.0 → v5.266.0
+- v5.266.0 → v5.267.0
 - Updated: VERSION, VERSION.current, VERSION.md, CHANGELOG.md
 
 ### Next Steps
 
-1. Monitor hymn pipeline completion
-2. Review remaining feature branches in fwber (upstream dependabot conflicts)
-3. Address ArrowVortex nested submodule issue
-4. Consider creating fork for openclaw-dashboard to enable pushes
+1. Resolve conflicts in bcs, bobtorrent, electricsheep, geany branches
+2. Create forks for upstream repos (openclaw-dashboard, projectM-upstream) to enable pushes
+3. Monitor hymn pipeline completion (521/825 videos, ~63%)
+4. Address remaining 1,837 branches (mostly upstream forks: bgtk 1444, browser-use 196, hermes-agent 124)
