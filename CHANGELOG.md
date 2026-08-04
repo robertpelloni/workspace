@@ -1,3 +1,15 @@
+## [v5.266.0] — 2026-08-04 — Protocol #241 — Repository Sync & Feature Branch Merge
+
+### Changed
+
+- **hyperharness**: Merged jules-5435997250800630192-a18374ec branch (real-time subagent observability hooks in TUI dashboard)
+- **veilid_reddit_facebook**: Cherry-picked scaffold commits from jules-scaffold-0.1.0 branch
+- **onetool-mcp**: Cherry-picked gh-pages deployment commits
+- **openclaw-dashboard**: Merged add-dockerfile branch (Docker setup) — reverted due to upstream fork permissions
+- **Pi updated**: 0.82.1 → 0.83.0 (pi-tui, pi-lens, pi-subagents, pi-context, pi-mcp-adapter all updated)
+- **Submodule sync**: 94 submodules updated to latest tracking commits
+- **Version bumped**: v5.265.0 → v5.266.0
+
 ## [v5.265.0] — 2026-08-02 — Protocol #240 — Dependabot Branch Sweep
 
 ### Changed
