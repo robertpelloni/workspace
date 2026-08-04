@@ -1,0 +1,247 @@
+﻿18:03:15.806 | 7068 | 7076 | conhost.exe | 
+18:03:15.813 | 10628 | 8248 | cmd.exe | "C:\WINDOWS\system32\cmd.exe" /C "C:\Program Files\AMD\CNext\CNext\AMDRSServ.exe"
+18:03:15.813 | 11072 | 10628 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.813 | 18096 | 18996 | powershell.exe | "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -WindowStyle Hidden -NoLogo -ExecutionPolicy Bypass -File C:\Users\hyper\workspace\jules-autopilot\backend-go\watchdog_loop.ps1
+18:03:15.814 | 17200 | 17176 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.814 | 21332 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x92c --server 0xed4
+18:03:15.814 | 4652 | 11256 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.814 | 5052 | 18096 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.815 | 21640 | 31976 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.815 | 33016 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0xddc --server 0xea0
+18:03:15.815 | 33592 | 5936 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.815 | 34080 | 34120 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.815 | 34532 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0xfc0 --server 0x4dc
+18:03:15.816 | 29888 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x10e8 --server 0x10e0
+18:03:15.816 | 31996 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x108c --server 0xea8
+18:03:15.816 | 34284 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x1094 --server 0x108c
+18:03:15.817 | 23460 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x11b4 --server 0x11ac
+18:03:15.817 | 27896 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x11e8 --server 0x11e0
+18:03:15.817 | 29216 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x1120 --server 0x1118
+18:03:15.817 | 8816 | 33344 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.818 | 28840 | 33740 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.818 | 35120 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x11c8 --server 0xd78
+18:03:15.818 | 36044 | 18236 | conhost.exe | \\?\C:\WINDOWS\system32\conhost.exe --headless --width 68 --height 50 --signal 0x1258 --server 0x1250
+18:03:15.819 | 20992 | 31412 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "echo \"=== Starting Marketing Bot ===\"
+cd C:/Users/hyper/workspace/marketing_agent/scripts && python marketing_bot/run.py 2>&1 &
+BOT_PID=$!
+echo \"Bot started (PID: $BOT_PID)\"
+
+sleep 25
+echo \"\"
+echo \"=== Status after 25 seconds ===\""
+18:03:15.819 | 24064 | 20340 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.819 | 29612 | 29724 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.819 | 4216 | 20992 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "echo \"=== Starting Marketing Bot ===\"
+cd C:/Users/hyper/workspace/marketing_agent/scripts && python marketing_bot/run.py 2>&1 &
+BOT_PID=$!
+echo \"Bot started (PID: $BOT_PID)\"
+
+sleep 25
+echo \"\"
+echo \"=== Status after 25 seconds ===\""
+18:03:15.820 | 33996 | 34724 | python.exe | "C:\Python314\python.exe" scripts/marketing_bot/run.py
+18:03:15.820 | 3492 | 4216 | python.exe | C:\Python314\python.exe marketing_bot/run.py
+18:03:15.821 | 19384 | 37636 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.821 | 27068 | 21792 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.821 | 36204 | 21792 | python.exe | python port_forwarder.py
+18:03:15.821 | 37592 | 37636 | python.exe | python port_forwarder.py
+18:03:15.821 | 38724 | 29104 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.821 | 40908 | 29104 | python.exe | python port_forwarder.py
+18:03:15.822 | 12772 | 3664 | python.exe | C:\Python314\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000 --log-level info
+18:03:15.822 | 2740 | 3136 | wscript.exe | 
+18:03:15.822 | 33552 | 33632 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.822 | 36384 | 33632 | python.exe | python port_forwarder.py
+18:03:15.823 | 12780 | 12772 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.823 | 8692 | 25624 | cmd.exe | C:\WINDOWS\system32\cmd.exe /d /s /c ""C:\Users\hyper\.pi-lens\tools\node_modules\.bin\pyright-langserver" --stdio"
+18:03:15.824 | 16736 | 42312 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.824 | 19664 | 42840 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.824 | 40208 | 3500 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.824 | 41864 | 8692 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.825 | 36248 | 39816 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "cat > /tmp/procmon2.ps1 << 'EOF'
+$observed = @{}
+$deadline = (Get-Date).AddSeconds(60)
+Write-Host \"Sampling process table for 60s...\"
+$count = 0
+while ((Get-Date) -lt $deadline) {
+    $count++
+    $procs = Get-CimInstance Win32_Process -Filter \"Name='cmd.exe' OR Name='taskkill.exe' OR Name='tasklist.exe' OR Name='wmic.exe' OR Name='conhost.exe' OR Name='powershell.exe' OR Name='cscript.exe' OR Name='wscript.exe' OR Name='bash.exe' OR Name='python.exe'\" -ErrorAction SilentlyContinue
+    foreach ($p in $procs) {
+        $key = \"$($p.ProcessId)|$($p.Name)\"
+        if (-not $observed.ContainsKey($key)) {
+            $observed[$key] = \"$(Get-Date -Format 'HH:mm:ss.fff') | $($p.ProcessId) | $($p.ParentProcessId) | $($p.Name) | $($p.CommandLine)\"
+        }
+    }
+    Start-Sleep -Milliseconds 300
+}
+$observed.Values | Sort-Object | Out-File C:\Users\hyper\workspace\procmon2_out.txt -Encoding UTF8
+Write-Host \"Captured $($observed.Count) unique console-ish processes in $count samples\"
+EOF
+powershell -NoProfile -ExecutionPolicy Bypass -File /tmp/procmon2.ps1 2>&1 | tail -3"
+18:03:15.825 | 39816 | 42324 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "cat > /tmp/procmon2.ps1 << 'EOF'
+$observed = @{}
+$deadline = (Get-Date).AddSeconds(60)
+Write-Host \"Sampling process table for 60s...\"
+$count = 0
+while ((Get-Date) -lt $deadline) {
+    $count++
+    $procs = Get-CimInstance Win32_Process -Filter \"Name='cmd.exe' OR Name='taskkill.exe' OR Name='tasklist.exe' OR Name='wmic.exe' OR Name='conhost.exe' OR Name='powershell.exe' OR Name='cscript.exe' OR Name='wscript.exe' OR Name='bash.exe' OR Name='python.exe'\" -ErrorAction SilentlyContinue
+    foreach ($p in $procs) {
+        $key = \"$($p.ProcessId)|$($p.Name)\"
+        if (-not $observed.ContainsKey($key)) {
+            $observed[$key] = \"$(Get-Date -Format 'HH:mm:ss.fff') | $($p.ProcessId) | $($p.ParentProcessId) | $($p.Name) | $($p.CommandLine)\"
+        }
+    }
+    Start-Sleep -Milliseconds 300
+}
+$observed.Values | Sort-Object | Out-File C:\Users\hyper\workspace\procmon2_out.txt -Encoding UTF8
+Write-Host \"Captured $($observed.Count) unique console-ish processes in $count samples\"
+EOF
+powershell -NoProfile -ExecutionPolicy Bypass -File /tmp/procmon2.ps1 2>&1 | tail -3"
+18:03:15.825 | 42236 | 42324 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:15.825 | 42324 | 32496 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "cat > /tmp/procmon2.ps1 << 'EOF'
+$observed = @{}
+$deadline = (Get-Date).AddSeconds(60)
+Write-Host \"Sampling process table for 60s...\"
+$count = 0
+while ((Get-Date) -lt $deadline) {
+    $count++
+    $procs = Get-CimInstance Win32_Process -Filter \"Name='cmd.exe' OR Name='taskkill.exe' OR Name='tasklist.exe' OR Name='wmic.exe' OR Name='conhost.exe' OR Name='powershell.exe' OR Name='cscript.exe' OR Name='wscript.exe' OR Name='bash.exe' OR Name='python.exe'\" -ErrorAction SilentlyContinue
+    foreach ($p in $procs) {
+        $key = \"$($p.ProcessId)|$($p.Name)\"
+        if (-not $observed.ContainsKey($key)) {
+            $observed[$key] = \"$(Get-Date -Format 'HH:mm:ss.fff') | $($p.ProcessId) | $($p.ParentProcessId) | $($p.Name) | $($p.CommandLine)\"
+        }
+    }
+    Start-Sleep -Milliseconds 300
+}
+$observed.Values | Sort-Object | Out-File C:\Users\hyper\workspace\procmon2_out.txt -Encoding UTF8
+Write-Host \"Captured $($observed.Count) unique console-ish processes in $count samples\"
+EOF
+powershell -NoProfile -ExecutionPolicy Bypass -File /tmp/procmon2.ps1 2>&1 | tail -3"
+18:03:15.826 | 41532 | 36248 | powershell.exe | C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:/Users/hyper/AppData/Local/Temp/procmon2.ps1
+18:03:19.409 | 30508 | 40108 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:19.409 | 34128 | 40108 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== CURRENT CODE LINE 125-135 ===' && sed -n '125,135p' /var/www/aimoneymachine/wp-content/mu-plugins/advanced-optimizer.php && echo '' && python3 - << 'PYEOF'
+path = '/var/www/aimoneymachine/wp-content/mu-plugins/advanced-optimizer.php'
+with open(path) as f:
+    content = f.read()
+old = '''    global \$post;
+    \$word_count = str_word_count(strip_tags(\$post->post_content));
+    \$reading_time = ceil(\$word_count / 200);'''
+new = '''    global \$post;
+    if (!isset(\$post) || !is_object(\$post) || empty(\$post->post_content)) {
+        return \$excerpt;
+    }
+    \$word_count = str_word_count(strip_tags(\$post->post_content));
+    \$reading_time = ceil(\$word_count / 200);'''
+if old in content:
+    content = content.replace(old, new, 1)
+    with open(path, 'w') as f:
+        f.write(content)
+    print('FIXED: null guard added')
+else:
+    print('NOT FOUND')
+PYEOF
+echo '' && php -l /var/www/aimoneymachine/wp-content/mu-plugins/advanced-optimizer.php 2>&1\" 2>&1"
+18:03:19.409 | 40108 | 33532 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== CURRENT CODE LINE 125-135 ===' && sed -n '125,135p' /var/www/aimoneymachine/wp-content/mu-plugins/advanced-optimizer.php && echo '' && python3 - << 'PYEOF'
+path = '/var/www/aimoneymachine/wp-content/mu-plugins/advanced-optimizer.php'
+with open(path) as f:
+    content = f.read()
+old = '''    global \$post;
+    \$word_count = str_word_count(strip_tags(\$post->post_content));
+    \$reading_time = ceil(\$word_count / 200);'''
+new = '''    global \$post;
+    if (!isset(\$post) || !is_object(\$post) || empty(\$post->post_content)) {
+        return \$excerpt;
+    }
+    \$word_count = str_word_count(strip_tags(\$post->post_content));
+    \$reading_time = ceil(\$word_count / 200);'''
+if old in content:
+    content = content.replace(old, new, 1)
+    with open(path, 'w') as f:
+        f.write(content)
+    print('FIXED: null guard added')
+else:
+    print('NOT FOUND')
+PYEOF
+echo '' && php -l /var/www/aimoneymachine/wp-content/mu-plugins/advanced-optimizer.php 2>&1\" 2>&1"
+18:03:25.396 | 42628 | 33532 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== CURRENT PM CONFIG ===' && grep -E 'pm\.|pm.max|pm.start|pm.min' /etc/php/8.4/fpm/pool.d/www.conf 2>/dev/null | grep -v '^;' && echo '' && echo '=== MEMORY CHECK ===' && free -h | head -2\" 2>&1"
+18:03:25.397 | 39600 | 42628 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:25.397 | 42064 | 42628 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== CURRENT PM CONFIG ===' && grep -E 'pm\.|pm.max|pm.start|pm.min' /etc/php/8.4/fpm/pool.d/www.conf 2>/dev/null | grep -v '^;' && echo '' && echo '=== MEMORY CHECK ===' && free -h | head -2\" 2>&1"
+18:03:31.312 | 11572 | 26904 | cmd.exe | C:\WINDOWS\system32\cmd.exe /c CALL "C:\Program Files\nodejs\\node.exe" "C:\Program Files\nodejs\\node_modules\npm\bin\npm-prefix.js"
+18:03:31.312 | 26904 | 33532 | cmd.exe | C:\WINDOWS\system32\cmd.exe /d /s /c "npm ^"view^" ^"@danchamorro/pi-prompt-enhancer^" ^"version^" ^"--json^""
+18:03:31.950 | 36992 | 33532 | cmd.exe | C:\WINDOWS\system32\cmd.exe /d /s /c "npm ^"view^" ^"pi-lcm^" ^"version^" ^"--json^""
+18:03:31.950 | 4784 | 33532 | cmd.exe | C:\WINDOWS\system32\cmd.exe /d /s /c "npm ^"view^" ^"pi-subagents^" ^"version^" ^"--json^""
+18:03:31.951 | 18248 | 33532 | cmd.exe | C:\WINDOWS\system32\cmd.exe /d /s /c "npm ^"view^" ^"@narumitw/pi-retry^" ^"version^" ^"--json^""
+18:03:33.174 | 20852 | 33532 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"sed -i 's/pm.max_children = 5/pm.max_children = 8/; s/pm.start_servers = 2/pm.start_servers = 3/; s/pm.min_spare_servers = 1/pm.min_spare_servers = 2/; s/pm.max_spare_servers = 3/pm.max_spare_servers = 5/' /etc/php/8.4/fpm/pool.d/www.conf && echo '=== NEW CONFIG ===' && grep -E 'pm.max_children|pm.start_servers|pm.min_spare|pm.max_spare' /etc/php/8.4/fpm/pool.d/www.conf | grep -v '^;' && systemctl reload php8.4-fpm && echo 'PHP-FPM reloaded' && sleep 2 && curl -s -o /dev/null -w 'Site: %{http_code} (%{time_total}s)' 'https://aimoneymachine.site/' 2>/dev/null && echo ''\" 2>&1"
+18:03:33.174 | 27100 | 20852 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"sed -i 's/pm.max_children = 5/pm.max_children = 8/; s/pm.start_servers = 2/pm.start_servers = 3/; s/pm.min_spare_servers = 1/pm.min_spare_servers = 2/; s/pm.max_spare_servers = 3/pm.max_spare_servers = 5/' /etc/php/8.4/fpm/pool.d/www.conf && echo '=== NEW CONFIG ===' && grep -E 'pm.max_children|pm.start_servers|pm.min_spare|pm.max_spare' /etc/php/8.4/fpm/pool.d/www.conf | grep -v '^;' && systemctl reload php8.4-fpm && echo 'PHP-FPM reloaded' && sleep 2 && curl -s -o /dev/null -w 'Site: %{http_code} (%{time_total}s)' 'https://aimoneymachine.site/' 2>/dev/null && echo ''\" 2>&1"
+18:03:33.174 | 39052 | 20852 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:33.796 | 38152 | 29108 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:41.161 | 8880 | 33532 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== TWITTER CREDENTIALS ===' && wp option get twitter_api_key --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---' && wp option get twitter_api_secret --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---' && wp option get twitter_access_token --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---' && wp option get twitter_access_secret --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---END'\" 2>&1"
+18:03:41.162 | 39840 | 8880 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:41.162 | 41660 | 8880 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== TWITTER CREDENTIALS ===' && wp option get twitter_api_key --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---' && wp option get twitter_api_secret --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---' && wp option get twitter_access_token --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---' && wp option get twitter_access_secret --allow-root --path=/var/www/aimoneymachine 2>/dev/null; echo '---END'\" 2>&1"
+18:03:49.020 | 41492 | 33532 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== TWITTER PLUGIN LOGIC ===' && sed -n '30,45p' /var/www/aimoneymachine/wp-content/mu-plugins/twitter-autopost.php && echo '' && echo '=== TEST TWITTER API DIRECTLY ===' && wp eval '\$api_key = \\\"TTAY2LIOc6xJJqjuzAfipxQLu\\\"; \$api_secret = \\\"Q2ofAosx7ZuOyB0kla5jF63Exfzh1UiEZJsm9ZYlvz5qnBt9DZ\\\"; \$access_token = \\\"2044648665470406656-0XoJGZKNI2BAsqUv21oaYj8f0FKzmg\\\"; \$access_secret = \\\"YsfORLb10M16HMY6SLJ2B5NX4zyOgxOOl3dcDmREns2cK\\\"; \$token = base64_encode(rawurlencode(\$api_key) . \\\":\\\" . rawurlencode(\$api_secret)); \$resp = wp_remote_post(\\\"https://api.twitter.com/2/oauth2/token\\\", array(\\\"headers\\\" => array(\\\"Authorization\\\" => \\\"Basic \\\" . \$token, \\\"Content-Type\\\" => \\\"application/x-www-form-urlencoded\\\"), \\\"body\\\" => \\\"grant_type=client_credentials\\\", \\\"timeout\\\" => 15)); echo is_wp_error(\$resp) ? \\\"ERROR: \\\" . \$resp->get_error_message() : wp_remote_retrieve_body(\$resp);' --allow-root --path=/var/www/aimoneymachine 2>/dev/null\" 2>&1"
+18:03:49.021 | 18396 | 41492 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== TWITTER PLUGIN LOGIC ===' && sed -n '30,45p' /var/www/aimoneymachine/wp-content/mu-plugins/twitter-autopost.php && echo '' && echo '=== TEST TWITTER API DIRECTLY ===' && wp eval '\$api_key = \\\"TTAY2LIOc6xJJqjuzAfipxQLu\\\"; \$api_secret = \\\"Q2ofAosx7ZuOyB0kla5jF63Exfzh1UiEZJsm9ZYlvz5qnBt9DZ\\\"; \$access_token = \\\"2044648665470406656-0XoJGZKNI2BAsqUv21oaYj8f0FKzmg\\\"; \$access_secret = \\\"YsfORLb10M16HMY6SLJ2B5NX4zyOgxOOl3dcDmREns2cK\\\"; \$token = base64_encode(rawurlencode(\$api_key) . \\\":\\\" . rawurlencode(\$api_secret)); \$resp = wp_remote_post(\\\"https://api.twitter.com/2/oauth2/token\\\", array(\\\"headers\\\" => array(\\\"Authorization\\\" => \\\"Basic \\\" . \$token, \\\"Content-Type\\\" => \\\"application/x-www-form-urlencoded\\\"), \\\"body\\\" => \\\"grant_type=client_credentials\\\", \\\"timeout\\\" => 15)); echo is_wp_error(\$resp) ? \\\"ERROR: \\\" . \$resp->get_error_message() : wp_remote_retrieve_body(\$resp);' --allow-root --path=/var/www/aimoneymachine 2>/dev/null\" 2>&1"
+18:03:49.021 | 35228 | 41492 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:03:49.021 | 37760 | 18396 | bash.exe | 
+18:03:55.535 | 24368 | 36548 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== FULL TWITTER PLUGIN ===' && cat /var/www/aimoneymachine/wp-content/mu-plugins/twitter-autopost.php\" 2>&1"
+18:03:55.535 | 36548 | 33532 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"echo '=== FULL TWITTER PLUGIN ===' && cat /var/www/aimoneymachine/wp-content/mu-plugins/twitter-autopost.php\" 2>&1"
+18:03:55.535 | 38896 | 36548 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:04:06.922 | 19956 | 33532 | bash.exe | "C:\Program Files\Git\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"wp eval '
+\$api_key = get_option(\\\"twitter_api_key\\\");
+\$api_secret = get_option(\\\"twitter_api_secret\\\");
+\$access_token = get_option(\\\"twitter_access_token\\\");
+\$access_secret = get_option(\\\"twitter_access_secret\\\");
+// Build request manually to see raw response
+\$url = \\\"https://api.twitter.com/1.1/statuses/update.json\\\";
+\$params = array(\\\"status\\\" => \\\"test from aimoneymachine \\\" . time());
+\$oauth_params = array(
+    \\\"oauth_consumer_key\\\" => \$api_key,
+    \\\"oauth_nonce\\\" => md5(uniqid(mt_rand(), true)),
+    \\\"oauth_signature_method\\\" => \\\"HMAC-SHA1\\\",
+    \\\"oauth_timestamp\\\" => time(),
+    \\\"oauth_token\\\" => \$access_token,
+    \\\"oauth_version\\\" => \\\"1.0\\\"
+);
+\$all_params = array_merge(\$oauth_params, \$params);
+ksort(\$all_params);
+\$base_string = \\\"POST&\\\" . urlencode(\$url) . \\\"&\\\" . urlencode(http_build_query(\$all_params, \\\"\\\", \\\"&\\\", PHP_QUERY_RFC3986));
+\$signing_key = urlencode(\$api_secret) . \\\"&\\\" . urlencode(\$access_secret);
+\$signature = base64_encode(hash_hmac(\\\"sha1\\\", \$base_string, \$signing_key, true));
+\$oauth_params[\\\"oauth_signature\\\"] = \$signature;
+\$auth_parts = array();
+foreach (\$oauth_params as \$key => \$value) { \$auth_parts[] = \$key . \\\"=\\\\\\\"\\\" . urlencode(\$value) . \\\"\\\\\\\"\\\"; }
+\$auth_header = \\\"OAuth \\\" . implode(\\\", \\\", \$auth_parts);
+\$response = wp_remote_post(\$url, array(\\\"headers\\\" => array(\\\"Authorization\\\" => \$auth_header), \\\"body\\\" => \$params, \\\"timeout\\\" => 15));
+if (is_wp_error(\$response)) { echo \\\"ERR: \\\" . \$response->get_error_message(); }
+else { echo \\\"HTTP \\\" . wp_remote_retrieve_response_code(\$response) . \\\": \\\" . wp_remote_retrieve_body(\$response); }
+' --allow-root --path=/var/www/aimoneymachine 2>/dev/null\" 2>&1"
+18:04:06.922 | 29484 | 19956 | conhost.exe | \??\C:\WINDOWS\system32\conhost.exe 0x4
+18:04:06.922 | 36612 | 19956 | bash.exe | "C:\Program Files\Git\bin\..\usr\bin\bash.exe" -c "ssh -o ConnectTimeout=20 hetzner \"wp eval '
+\$api_key = get_option(\\\"twitter_api_key\\\");
+\$api_secret = get_option(\\\"twitter_api_secret\\\");
+\$access_token = get_option(\\\"twitter_access_token\\\");
+\$access_secret = get_option(\\\"twitter_access_secret\\\");
+// Build request manually to see raw response
+\$url = \\\"https://api.twitter.com/1.1/statuses/update.json\\\";
+\$params = array(\\\"status\\\" => \\\"test from aimoneymachine \\\" . time());
+\$oauth_params = array(
+    \\\"oauth_consumer_key\\\" => \$api_key,
+    \\\"oauth_nonce\\\" => md5(uniqid(mt_rand(), true)),
+    \\\"oauth_signature_method\\\" => \\\"HMAC-SHA1\\\",
+    \\\"oauth_timestamp\\\" => time(),
+    \\\"oauth_token\\\" => \$access_token,
+    \\\"oauth_version\\\" => \\\"1.0\\\"
+);
+\$all_params = array_merge(\$oauth_params, \$params);
+ksort(\$all_params);
+\$base_string = \\\"POST&\\\" . urlencode(\$url) . \\\"&\\\" . urlencode(http_build_query(\$all_params, \\\"\\\", \\\"&\\\", PHP_QUERY_RFC3986));
+\$signing_key = urlencode(\$api_secret) . \\\"&\\\" . urlencode(\$access_secret);
+\$signature = base64_encode(hash_hmac(\\\"sha1\\\", \$base_string, \$signing_key, true));
+\$oauth_params[\\\"oauth_signature\\\"] = \$signature;
+\$auth_parts = array();
+foreach (\$oauth_params as \$key => \$value) { \$auth_parts[] = \$key . \\\"=\\\\\\\"\\\" . urlencode(\$value) . \\\"\\\\\\\"\\\"; }
+\$auth_header = \\\"OAuth \\\" . implode(\\\", \\\", \$auth_parts);
+\$response = wp_remote_post(\$url, array(\\\"headers\\\" => array(\\\"Authorization\\\" => \$auth_header), \\\"body\\\" => \$params, \\\"timeout\\\" => 15));
+if (is_wp_error(\$response)) { echo \\\"ERR: \\\" . \$response->get_error_message(); }
+else { echo \\\"HTTP \\\" . wp_remote_retrieve_response_code(\$response) . \\\": \\\" . wp_remote_retrieve_body(\$response); }
+' --allow-root --path=/var/www/aimoneymachine 2>/dev/null\" 2>&1"
