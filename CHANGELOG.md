@@ -1,3 +1,11 @@
+## [v5.271.0] — 2026-08-05 — Protocol #246 — Repository Sync (No New Merges)
+
+### Changed
+
+- **No new branches to merge** — all feature branches either have conflicts or no unique commits
+- **Submodule sync**: All submodules fetched and synchronized
+- **Version bumped**: v5.270.0 → v5.271.0
+
 ## [v5.270.0] — 2026-08-05 — Protocol #245 — Repository Sync & Feature Branch Merge
 
 ### Changed
