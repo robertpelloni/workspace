@@ -1,3 +1,12 @@
+## [v5.270.0] — 2026-08-05 — Protocol #245 — Repository Sync & Feature Branch Merge
+
+### Changed
+
+- **projectM-upstream**: Cherry-picked test-headers branch (permission denied for push — upstream fork)
+- **veilid_reddit_facebook**: Merged jules-scaffold-0.1.0 branch
+- **Submodule sync**: All submodules fetched and synchronized
+- **Version bumped**: v5.269.0 → v5.270.0
+
 ## [v5.269.0] — 2026-08-05 — Protocol #244 — Repository Sync (No New Merges)
 
 ### Changed
