@@ -1,3 +1,18 @@
+## [v5.272.0] — 2026-08-07 — Protocol #247 — Repository Sync & Social Media Setup
+
+### Changed
+
+- **No new branches to merge** — all feature branches either have conflicts or no unique commits
+- **Social Media Mirror**: Created unified social media posting script (YouTube, Facebook, Twitter, LinkedIn, Bluesky)
+- **YouTube**: Authenticated "ok" channel (UCM8L3qN_W5MZz2y6ncQ5DOg)
+- **Bluesky**: Connected both @bobsgame and @robertpelloni accounts
+- **Twitter/X**: Configured @bobsgame (API credits depleted - needs paid plan)
+- **LinkedIn**: Configured (needs OAuth flow)
+- **WordPress**: Fixed upload permissions on robertpelloni.com (chown www-data)
+- **Pi updated**: 0.82.1 → 0.83.0 with all extensions
+- **Submodule sync**: All submodules fetched and synchronized
+- **Version bumped**: v5.271.0 → v5.272.0
+
 ## [v5.271.0] — 2026-08-05 — Protocol #246 — Repository Sync (No New Merges)
 
 ### Changed
