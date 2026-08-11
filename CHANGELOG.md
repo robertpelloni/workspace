@@ -1,3 +1,11 @@
+## [v5.275.0] — 2026-08-07 — Protocol #250 — Repository Sync (No New Merges)
+
+### Changed
+
+- **No new branches to merge** — all feature branches either have conflicts or no unique commits
+- **Submodule sync**: All submodules fetched and synchronized
+- **Version bumped**: v5.274.0 → v5.275.0
+
 ## [v5.274.0] — 2026-08-07 — Protocol #249 — Repository Sync (No New Merges)
 
 ### Changed
