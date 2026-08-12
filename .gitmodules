@@ -18,6 +18,7 @@ url = https://github.com/robertpelloni/hypercode
 path = jules-autopilot
 url = https://github.com/robertpelloni/jules-autopilot
 
+	branch = main
 [submodule "realestatecrm"]
 path = realestatecrm
 url = https://github.com/robertpelloni/realestatecrm.git
@@ -30,10 +31,12 @@ url = https://github.com/robertpelloni/skillzhub
 path = hermes-agent
 url = https://github.com/robertpelloni/hermes-agent
 
+	branch = main
 [submodule "multimousergy"]
 path = multimousergy
 url = https://github.com/robertpelloni/multimousergy.git
 
+	branch = main
 [submodule "ArrowVortex"]
 path = ArrowVortex
 url = https://github.com/robertpelloni/ArrowVortex
@@ -84,7 +87,7 @@ url = https://github.com/robertpelloni/ai_game_engine.git
 [submodule "apophysis-j"]
 path = apophysis-j
 url = https://github.com/robertpelloni/apophysis-j.git
-branch = master
+	branch = main
 
 [submodule "bg"]
 path = bg
@@ -122,10 +125,11 @@ url = https://github.com/robertpelloni/bobsaver
 path = bobsgameonlinejava
 url = https://github.com/robertpelloni/bobsgameonlinejava.git
 
+	branch = main
 [submodule "bobsgameweb"]
 path = bobsgameweb
 url = https://github.com/robertpelloni/bobsgameweb.git
-branch = master
+	branch = main
 
 [submodule "bobtorrent"]
 path = bobtorrent
@@ -139,6 +143,7 @@ url = https://github.com/robertpelloni/bobtrader
 path = bobtrax
 url = https://github.com/robertpelloni/bobtrax
 
+	branch = main
 [submodule "bqt"]
 	path = bqt
 	url = https://github.com/robertpelloni/bqt
@@ -147,6 +152,7 @@ url = https://github.com/robertpelloni/bobtrax
 path = bobzilla
 url = https://github.com/robertpelloni/bobzilla
 
+	branch = main
 [submodule "bobzzite"]
 path = bobzzite
 url = https://github.com/robertpelloni/bobzzite
@@ -168,7 +174,7 @@ branch = main
 [submodule "electricsheep"]
 path = electricsheep
 url = https://github.com/robertpelloni/electricsheep.git
-branch = master
+	branch = main
 
 [submodule "element-web"]
 path = element-web
@@ -179,6 +185,7 @@ branch = develop
 	path = marketing_agent
 	url = https://github.com/robertpelloni/marketing_agent.git
 
+	branch = main
 [submodule "f-zerox"]
 path = f-zerox
 url = https://github.com/robertpelloni/f-zerox
@@ -212,6 +219,7 @@ url = https://github.com/robertpelloni/hyperharness
 path = freellm
 url = https://github.com/robertpelloni/freellm
 
+	branch = main
 [submodule "mcp-superassistant"]
 path = mcp-superassistant
 url = https://github.com/robertpelloni/mcp-superassistant
@@ -228,6 +236,7 @@ url = https://github.com/robertpelloni/native-fy
 path = neverball
 url = https://github.com/robertpelloni/neverball
 
+	branch = main
 [submodule "npp"]
 path = npp
 url = https://github.com/robertpelloni/npp
@@ -277,6 +286,7 @@ url = https://github.com/robertpelloni/sm64coopdx
 path = supersaber
 url = https://github.com/robertpelloni/supersaber
 
+	branch = main
 [submodule "tabby"]
 path = tabby
 url = https://github.com/robertpelloni/tabby
@@ -315,6 +325,7 @@ branch = master
 [submodule "bobmani"]
 	path = bobmani
 	url = https://github.com/robertpelloni/bobmani
+	branch = main
 [submodule "MilkDrop3_fix"]
 	path = MilkDrop3_fix
 	url = https://github.com/robertpelloni/MilkDrop3.git
@@ -327,9 +338,11 @@ branch = master
 [submodule "bobsaver_fix"]
 	path = bobsaver_fix
 	url = https://github.com/robertpelloni/bobsaver.git
+	branch = main
 [submodule "bobsgameonlinejava_fix"]
 	path = bobsgameonlinejava_fix
 	url = https://github.com/robertpelloni/bobsgameonlinejava.git
+	branch = main
 [submodule "browser-use"]
 	path = browser-use
 	url = https://github.com/robertpelloni/browser-use
@@ -422,6 +435,7 @@ branch = master
 	path = ksm-v2
 	url = https://github.com/robertpelloni/ksm-v2.git
 
+	branch = main
 
 [submodule "HyperNexus2old"]
 	path = HyperNexus2old
