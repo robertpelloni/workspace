@@ -1,3 +1,14 @@
+## [v5.280.0] — 2026-08-19 — Protocol #255 — Repository Sync & UnitedBeats Site
+
+### Changed
+
+- **No new branches to merge** — all feature branches either have conflicts or no unique commits
+- **UnitedBeats**: Created unitedbeats_site repo with supernova-themed website featuring 58 names
+- **UnitedBeats**: Deployed to Hetzner with SSL on unitedbeats.org, unitedbeats.net, unitedbeats.site
+- **WordPress**: Increased upload limit to 256MB on robertpelloni.com
+- **Submodule sync**: All submodules fetched and synchronized
+- **Version bumped**: v5.279.0 → v5.280.0
+
 ## [v5.279.0] — 2026-08-13 — Protocol #254 — Repository Sync (No New Merges)
 
 ### Changed
