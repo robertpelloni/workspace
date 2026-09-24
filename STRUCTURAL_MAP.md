@@ -1,6 +1,6 @@
 # STRUCTURAL MAP — Submodules
 
-Generated: 2026-08-12 (Protocol #253)
+Generated: 2026-08-19 (Protocol #256)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|

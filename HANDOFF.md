@@ -1,45 +1,52 @@
-# HANDOFF — v5.278.0 — 2026-08-12
+# HANDOFF — v5.281.0 — 2026-08-19
 
-## Session Summary — Repository Sync & Intelligent Merge (Protocol #253)
+## Session Summary — Repository Sync & Intelligent Merge (Protocol #256)
 
-### Merges Completed
+### Step 1: Upstream Tracking & Submodule Sanitization
+
+- **112 submodules** fetched and FF-pulled (101 OK)
+- **6 upstream tracking refs fixed**: auto_dj_script, freellm, HyperNexus (→gitlab/main), bobmani/ddc, HyperNexus2old, warp (fetch refspec master→*)
+- **2 not-init noted**: hymnmania (tracked as regular files, not gitlink), hypercode (stale .gitmodules entry)
+- **topaz-ffmpeg**: origin in sync; FFmpeg upstream (1247 behind) deferred per prior protocols
+
+### Step 2: Dual-Direction Intelligent Merge
 
 | Repository | Branch | Result |
 |-----------|--------|--------|
-| geiss | jules-ui-improvements (NEW_COLORS_430) | ✅ Merged (resolved README.md + .gitignore conflicts) |
-| hyper | canary (11 commits) | ✅ Merged (resolved yarn.lock/package.json conflicts) |
-| TurntUpToddler | feat-editor-endpoints-tooltips | ✅ Merged (earlier session) |
-| workspace root | dependabot aiohttp bump | ✅ Merged |
+| root | dependabot/npm_and_yarn/npm_and_yarn-154cd1d72d | ✅ Merged (12 npm dep updates across 3 directories) |
+| root | dependabot/uv/uv-221f256022 | ✅ Merged (3 uv dep updates) |
+| bobmani/hymnmania | origin/master (ahead 4, behind 20) | ✅ Merged (union AGENTS.md, truncate_title + description-genre in rename_youtube_titles.py) |
+| projectM-upstream | origin/master (ahead 66, behind 16) | ✅ Merged (projectm-eval 1.0.7 pkgconfig fix) |
+| freellm | temp-main (2 commits) | ✅ Cherry-picked (go.sum regen, transformPlaintextToolCalls) |
+| warp | zb/continue-cloud-tombstone (38 commits) | ⏸️ Deferred (unrelated histories, too conflicted) |
 
-### Branch Reconciliation — All Own Repos Verified
+### Conflict Resolutions
 
-All 96 submodules fetched. The following own-project repos were verified to have **no unmerged feature branches** (0 unique commits): TurntUpToddler, HyperNexus, ableton_psytrance_hymn_creator, agentirc, ai_game_engine, aimoneymachine_site, crowdsourced_dance_club, fwber, hyperharness, planet_fitness_stepmaniax_agent, psytrance_night_outreach_agent, realestatecrm, skillzhub.
+- **bobmani/hymnmania AGENTS.md**: Union of TikTok Pipeline docs (ours) + Beat Video Branding / Growth Recommendations (theirs). Kept both pipeline script tables merged.
+- **bobmani/hymnmania rename_youtube_titles.py**: Combined truncate_title() from ours + description-based genre extraction from theirs. Genre fallback `[EDM LSDance]` per spec.
+- **bobmani/hymnmania submodule**: Kept ours (157368eb) — theirs (994eb8ca) not present locally.
+- **projectM-upstream vendor/projectm-eval**: Took theirs (22fb0cf, v1.0.7) — newer than ours (v1.0.6).
+- **freellm go.sum**: Took theirs (regenerated after filter-repo).
+- **freellm AA conflicts** (60 files): Real files → theirs, .pi-lens cache artifacts → dropped from index.
+- **bobmani/hymnmania stash pop**: Union .social_posted.json video IDs (63 total), merge HANDOFF.md Outstanding Issues + Credentials Reference sections.
 
-Ignored per protocol: third-party upstream feature branches (hermes-agent upstream, pi-mono upstream, jules-autopilot upstream), and large third-party forks (FFmpeg, GTK/bgtk, LLVM, JDK, browser-use, litellm, etc.).
+### Deferred / Known Issues
+
+1. **warp zb/* branches** (5 stacked, 38 commits total): Unrelated histories to main. Unique work preserved on `origin/zb/continue-cloud-tombstone`. Needs dedicated session with `--allow-unrelated-histories` + manual conflict resolution across crates/editor/.
+2. **topaz-ffmpeg FFmpeg upstream**: 1247 commits behind, 15+ libswscale conflicts. Dedicated session needed.
+3. **bobeditpro Audacity upstream**: 94 commits behind, 25+ conflicts. Dedicated session needed.
+4. **hymnmania/hypercode .gitmodules**: hymnmania tracked as regular files (not gitlink); hypercode directory missing. Stale entries.
+5. **HyperNexus2old remote URL** contains embedded GitLab PAT — scrub before any public push of .git/config.
 
 ### Version Bump
 
-- Workspace: v5.277.0 → **v5.278.0**
-- TurntUpToddler: 5.40.0 → **5.41.0**
-- Updated: VERSION, VERSION.current, VERSION.md, CHANGELOG.md (both repos), STRUCTURAL_MAP.md
-
-### TurntUpToddler Pipeline Status (v5.41.0)
-
-- **tut_run.py**: CDP-based Suno cover pipeline — React portal modal detection working
-- **tut_kling.py**: Kling AI video generator
-- **tut_upload.py**: YouTube OAuth batch uploader
-- 20 WAV files rendered (5 songs × 4 speeds)
-
-### Known Issues for Next Session
-
-1. Suno "Continue" button interaction still needs refinement (clip not appearing in feed after modal handling)
-2. File chooser fatigue after ~370 upload cycles — add periodic page refresh
-3. Short WAVs (<10s) rejected silently by Suno
-4. ArrowVortex nested submodule (ffr-difficulty-model) missing URL in .gitmodules
+- Workspace: v5.280.0 → **v5.281.0**
+- Updated: VERSION, VERSION.current, VERSION.md, CHANGELOG.md, ROADMAP.md, TODO.md
 
 ### Next Steps
 
-1. Fix Suno Continue button in `wait_for_upload_done()`
-2. Set up YouTube OAuth (`tut_client_secrets.json`) for TurntUpToddler channel
-3. Get Kling API key for video generation
-4. Run full pipeline: `tut_run.py` → `tut_kling.py` → `tut_upload.py`
+1. Resolve warp zb/continue-cloud-tombstone merge (dedicated session)
+2. Resolve bobeditpro / topaz-ffmpeg upstream syncs (dedicated sessions)
+3. Clean up .gitmodules stale entries (hymnmania, hypercode)
+4. Scrub HyperNexus2old embedded PAT from remote URL
+5. Continue HymnMania pipeline: Zernio TikTok API setup, 81 vertical uploads, ~50 YouTube hymn videos

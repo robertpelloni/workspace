@@ -1,3 +1,30 @@
+## [v5.281.0] — 2026-08-19 — Protocol #256 — Repository Sync & Intelligent Merge
+
+### Merged
+
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-154cd1d72d` — 12 npm dep updates across 3 directories
+- **root**: `dependabot/uv/uv-221f256022` — 3 uv dep updates
+- **bobmani/hymnmania**: `origin/master` (ahead 4, behind 20) — union AGENTS.md (TikTok pipeline + Beat Video Branding + Growth Recs), rename_youtube_titles.py (truncate_title + description-genre extraction), keep ableton submodule pointer
+- **projectM-upstream**: `origin/master` (ahead 66, behind 16) — take projectm-eval 1.0.7 (pkgconfig linker fix), auto-merge CMake/docs/workflows
+- **freellm**: cherry-picked `temp-main` (2 commits) — go.sum regeneration after filter-repo, restore transformPlaintextToolCalls cross-platform build
+
+### Fixed
+
+- **warp**: Fixed fetch refspec (`master` → `*`), set upstream tracking for 6 repos (auto_dj_script, freellm, HyperNexus, bobmani/ddc, HyperNexus2old, warp)
+- **warp**: Stashed dirty working tree as `ep-281-warp-dirty` before merge attempt
+
+### Deferred
+
+- **warp** `zb/continue-cloud-tombstone` (38 commits) — unrelated histories, full merge too conflicted. Unique work preserved on branch. Needs dedicated session.
+- **topaz-ffmpeg** FFmpeg upstream (1247 commits behind) — deferred per prior protocols
+- **bobeditpro** Audacity upstream (94 commits behind) — deferred per prior protocols
+
+### Changed
+
+- **Submodule sync**: 112 submodules fetched/FF-pulled (101 OK, 5 no-upstream fixed, 2 not-init noted, 4 diverged merged/deferred)
+- **bobmani/hymnmania**: Stash pop conflicts resolved — union .social_posted.json video IDs, merge HANDOFF.md Outstanding Issues + Credentials Reference
+- **Version bumped**: v5.280.0 → v5.281.0
+
 ## [v5.280.0] — 2026-08-19 — Protocol #255 — Repository Sync & UnitedBeats Site
 
 ### Changed

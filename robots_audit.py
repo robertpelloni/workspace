@@ -32,6 +32,7 @@ def fetch(url, timeout=25):
 
 # ---------------------------------------------------------------- robots.txt
 
+
 def parse_robots(text):
     """Return {user_agent: [rules]}, each rule (allow_bool, pattern)."""
     groups = {}
@@ -97,6 +98,7 @@ def is_allowed(groups, path):
 
 # ------------------------------------------------------------------ sitemaps
 
+
 def sitemap_urls(root, depth=0, seen=None):
     if seen is None:
         seen = set()
@@ -140,8 +142,11 @@ def main():
                 print(f"       {'Allow' if allow else 'Disallow'}: {pat}")
 
         sm = re.search(r"(?im)^\s*Sitemap:\s*(\S+)", robots)
-        roots = [sm.group(1)] if sm else [f"https://{site}/wp-sitemap.xml",
-                                          f"https://{site}/sitemap_index.xml"]
+        roots = (
+            [sm.group(1)]
+            if sm
+            else [f"https://{site}/wp-sitemap.xml", f"https://{site}/sitemap_index.xml"]
+        )
         print(f"\n  sitemaps: {', '.join(roots)}")
 
         urls = []
@@ -167,7 +172,7 @@ def main():
         for u, why in blocked[:40]:
             print(f"      {u}\n          by  {why}")
         if len(blocked) > 40:
-            print(f"      ... and {len(blocked)-40} more")
+            print(f"      ... and {len(blocked) - 40} more")
         if not blocked:
             print("      none — the sitemap and robots.txt agree")
 

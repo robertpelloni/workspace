@@ -1,6 +1,6 @@
-# TODO — Omni-Workspace v5.152.0
+# TODO — Omni-Workspace v5.281.0
 
-**Current:** v5.152.0 • 80+ submodules across workspace • 2026-07-09
+**Current:** v5.281.0 • 80+ submodules across workspace • 2026-08-19
 
 ## 🎯 v5.50.0 Milestone: Production Hardening
 
@@ -16,9 +16,10 @@ The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams sync
 - [ ] **Revisit bobeditpro upstream** — 94 commits behind Audacity (deferred multiple times)
 - [ ] **Revisit topaz-ffmpeg upstream** — 15+ libswscale conflicts with FFmpeg (deferred multiple times)
 
-### Deferred Feature Branches (Protocol #119)
+### Deferred Feature Branches (Protocol #256)
 
-- [ ] **aimoneymachine_site** `fix-twitter-auth-logging` — 40+ go.mod conflicts, deferred Protocols #78–#119
+- [ ] **warp** `zb/continue-cloud-tombstone` — 38 commits, unrelated histories, needs dedicated session
+- [ ] **aimoneymachine_site** `fix-twitter-auth-logging` — 40+ go.mod conflicts, deferred Protocols #78–#256
 - [ ] **libs/bobui** `feature/audio-graph-native-linking-test` — Local changes blocking, 3-6 unmerged commits
 - [ ] **bobsgameonlinejava** `feat/polygon-lasso` — Pending resolution, 4 unique commits
 
