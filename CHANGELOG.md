@@ -1,3 +1,45 @@
+## [v5.282.0] — 2026-08-28 — Protocol #257 — Repository Sync & Intelligent Merge
+
+### Merged
+
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-93d0da07b8` — 2 npm dep updates across 2 directories
+- **root**: `dependabot/uv/uv-8a7c940acc` — 3 uv dep updates
+- **projectM-upstream**: `origin/master` (3 new commits) — HLSL remainder/precedence fixes, PCM buffer size, hlslparser perf
+- **HyperNexus2old**: `origin/main` (6 new commits) — VectorStore semantic search, MCP catalog indexing, Ollama embeddings, dashboard UI, watchdog, CI/CD. 133 add/add conflicts resolved taking ours (587 local commits of maturity)
+
+### Changed
+
+- **Submodule sync**: 112 submodules fetched (107 OK, 2 not-init noted, 3 diverged merged/verified)
+- **topaz-ffmpeg**: Verified in sync with origin (FF-FAIL was transient)
+- **Version bumped**: v5.281.0 → v5.282.0
+
+### Deferred
+
+- **warp** `zb/*` (5 stacked branches, 38 commits) — unrelated histories, needs dedicated session
+- **topaz-ffmpeg** FFmpeg upstream — deferred per prior protocols
+- **bobeditpro** Audacity upstream — deferred per prior protocols
+
+## [v5.282.0] — 2026-08-28 — Protocol #257 — Repository Sync & Intelligent Merge
+
+### Merged
+
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-93d0da07b8` — 2 npm dep updates across 2 directories
+- **root**: `dependabot/uv/uv-8a7c940acc` — 3 uv dep updates
+- **projectM-upstream**: `origin/master` (3 new commits) — HLSL parser fixes, PCM buffer size API
+- **HyperNexus2old**: `origin/main` (6 new commits) — VectorStore semantic search, MCP catalog indexing, Ollama embeddings, dashboard UI, watchdog, CI/CD. 133 add/add conflicts resolved taking ours (587 local commits of maturity)
+
+### Changed
+
+- **Submodule sync**: 112 submodules fetched (107 OK, 2 not-init noted, 3 diverged merged/verified)
+- **topaz-ffmpeg**: Verified in sync with origin (FF-FAIL was transient)
+- **Version bumped**: v5.281.0 → v5.282.0
+
+### Deferred
+
+- **warp** `zb/*` (5 stacked branches, 38 commits) — unrelated histories, needs dedicated session
+- **topaz-ffmpeg** FFmpeg upstream — deferred per prior protocols
+- **bobeditpro** Audacity upstream — deferred per prior protocols
+
 ## [v5.281.0] — 2026-08-19 — Protocol #256 — Repository Sync & Intelligent Merge
 
 ### Merged
