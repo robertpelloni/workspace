@@ -1,0 +1,25 @@
+{
+  "memories": [
+    {
+      "id": "54ca48a2af910f7a",
+      "content": "HyperNexus kernel now uses Ollama nomic-embed-text for 768-dimensional semantic embeddings instead of hash-based SimHash vectors. This enables real semantic similarity search.",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "memory_fact",
+        "tags": [
+          "ollama",
+          "embedding",
+          "upgrade"
+        ]
+      },
+      "createdAt": "2026-09-26T23:46:23.9999167Z",
+      "accessedAt": "2026-09-26T23:46:23.9999167Z",
+      "accessCount": 0,
+      "ttl": null
+    }
+  ],
+  "savedAt": "2026-09-26T23:46:24.0004224Z",
+  "version": 1
+}

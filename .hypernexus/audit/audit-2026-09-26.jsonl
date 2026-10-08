@@ -1,0 +1,126 @@
+{"timestamp":"2026-09-25T20:05:17.8631234-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-25T20:05:32.6627237-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"test","value":"MCP all-tools test PASSED"}}
+{"timestamp":"2026-09-25T20:05:42.655476-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"test"}}
+{"timestamp":"2026-09-25T20:05:52.9655013-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_append","result":"SUCCESS","metadata":{"key":"test","value":" Appended text works too."}}
+{"timestamp":"2026-09-25T20:06:31.212235-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"echo","result":"SUCCESS","metadata":{"message":"echo test OK"}}
+{"timestamp":"2026-09-25T20:07:02.4531979-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"hello_world","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T20:07:42.9239292-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T20:20:26.4734428-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-25T20:20:26.6685591-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"test","value":"ALL FIXES VERIFIED"}}
+{"timestamp":"2026-09-25T20:20:26.6971256-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"test"}}
+{"timestamp":"2026-09-25T20:20:26.7101519-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_append","result":"SUCCESS","metadata":{"key":"test","value":" + appended"}}
+{"timestamp":"2026-09-25T20:20:26.7259597-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"test"}}
+{"timestamp":"2026-09-25T20:20:26.7529888-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"echo","result":"SUCCESS","metadata":{"message":"echo OK"}}
+{"timestamp":"2026-09-25T20:20:26.7832741-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"hello_world","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T20:20:26.8868141-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T20:20:27.3126721-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"bash","result":"SUCCESS","metadata":{"command":"echo bash_OK"}}
+{"timestamp":"2026-09-25T20:20:27.3763042-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"ls","result":"SUCCESS","metadata":{"limit":3,"path":"."}}
+{"timestamp":"2026-09-25T20:20:31.300158-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"repomap","result":"SUCCESS","metadata":{"max_files":3}}
+{"timestamp":"2026-09-25T21:04:40.2236154-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-25T21:04:40.3809568-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"test","value":"ALL 8 ITEMS DONE"}}
+{"timestamp":"2026-09-25T21:04:40.3926533-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_append","result":"SUCCESS","metadata":{"key":"test","value":" + context-aware repomap"}}
+{"timestamp":"2026-09-25T21:04:40.4023433-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"echo","result":"SUCCESS","metadata":{"message":"echo OK"}}
+{"timestamp":"2026-09-25T21:04:40.419128-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"hello_world","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:04:40.4704689-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:04:40.5758755-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"bash","result":"SUCCESS","metadata":{"command":"echo bash_OK"}}
+{"timestamp":"2026-09-25T21:04:40.5939281-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"ls","result":"SUCCESS","metadata":{"limit":3,"path":"."}}
+{"timestamp":"2026-09-25T21:04:40.6252019-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"read","result":"SUCCESS","metadata":{"path":"VERSION"}}
+{"timestamp":"2026-09-25T21:04:41.4055492-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"repomap","result":"SUCCESS","metadata":{"max_files":3}}
+{"timestamp":"2026-09-25T21:04:41.4289327-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"get_system_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:04:41.4576103-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"apply_search_replace","result":"FAILURE: read failed: open NONEXISTENT: The system cannot find the file specified.","metadata":{"file_path":"NONEXISTENT","replace_block":"y","search_block":"x"}}
+{"timestamp":"2026-09-25T21:04:41.5715572-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"cloud_troubleshoot","result":"SUCCESS","metadata":{"error_log":"timeout","resource_id":"i-123"}}
+{"timestamp":"2026-09-25T21:04:41.5821248-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"confluence_search","result":"SUCCESS","metadata":{"query":"deploy"}}
+{"timestamp":"2026-09-25T21:04:41.5994005-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"grep","result":"SUCCESS","metadata":{"limit":3,"path":"go/cmd","pattern":"package main"}}
+{"timestamp":"2026-09-25T21:06:24.8278329-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"infra","value":"Kernel: port 7778, Dashboard: port 7779. Binary: bin/hypernexus.exe. Build: go build -o bin/hypernexus-new.exe ./cmd/tormentnexus/"}}
+{"timestamp":"2026-09-25T21:06:24.9361776-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"architecture","value":"POST /api/agent/tool dispatches via internal/tools.Registry. Root tools.Registry serves MCP server built-in tools. Scratchpad uses GlobalVectorStore (SQLite at .hypernexus/memory.db)."}}
+{"timestamp":"2026-09-25T21:06:24.9718909-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"bugfix_log","value":"2025-07-20: Fixed scratchpad timeout (missing native registry), UIAutomation Int32 overflow (NaN guards), repomap timeout (file walk cap + context). All deployed."}}
+{"timestamp":"2026-09-25T21:06:24.9832158-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"human","value":"Active developer working on HyperNexus kernel, MCP server, and supervisor automation."}}
+{"timestamp":"2026-09-25T21:06:24.9944066-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"bugfix_log"}}
+{"timestamp":"2026-09-25T21:24:08.6382647-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"infrastructure","content":"HyperNexus kernel runs on port 7778","importance":0.8,"tags":"infra"}}
+{"timestamp":"2026-09-25T21:24:25.0053929-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"infrastructure","content":"HyperNexus kernel runs on port 7778, dashboard on port 7779. Binary at bin/hypernexus.exe.","importance":0.8,"tags":"infra,ports"}}
+{"timestamp":"2026-09-25T21:24:25.1982792-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"devops","content":"Build kernel: go build -o bin/hypernexus-new.exe ./cmd/tormentnexus/ from the go/ directory.","importance":0.7,"tags":"build,deploy"}}
+{"timestamp":"2026-09-25T21:24:25.2261262-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"infrastructure","content":"MCP server started with 'hypernexus mcp' command, proxies to kernel at 127.0.0.1:7778.","importance":0.7,"tags":"mcp,architecture"}}
+{"timestamp":"2026-09-25T21:24:25.2558262-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"architecture","content":"POST /api/agent/tool dispatches via internal/tools.Registry. Root tools.Registry serves MCP built-in tools.","importance":0.6,"tags":"architecture,tools"}}
+{"timestamp":"2026-09-25T21:24:25.2877892-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"architecture","content":"Scratchpad uses GlobalVectorStore backed by SQLite at .hypernexus/memory.db. Fixed deadlock in Commit→detectConflicts→SemanticSearch.","importance":0.6,"tags":"memory,bugfix"}}
+{"timestamp":"2026-09-25T21:24:25.3047199-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"bugfix","content":"UIAutomation Convert-Bounds must guard against NaN from minimized/offscreen windows.","importance":0.5,"tags":"bugfix,supervisor"}}
+{"timestamp":"2026-09-25T21:24:25.3186216-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"architecture","content":"Repo graph Build() skips _disabled, archive, mcpimpl dirs. Max 500 files. Context-aware cancellation.","importance":0.5,"tags":"performance,repograph"}}
+{"timestamp":"2026-09-25T21:24:25.3319359-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"devops","content":"Kernel watchdog at scripts/kernel-watchdog.ps1 polls /health every 30s, restarts after 3 failures.","importance":0.6,"tags":"ops,watchdog"}}
+{"timestamp":"2026-09-25T21:24:25.3472674-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:24:53.5173732-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-25T21:24:53.604204-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"test","value":"ALL FIXED"}}
+{"timestamp":"2026-09-25T21:24:53.6348374-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"test","content":"test memory"}}
+{"timestamp":"2026-09-25T21:24:53.6458424-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"search_memory","result":"SUCCESS","metadata":{"query":"kernel port"}}
+{"timestamp":"2026-09-25T21:24:53.6598665-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:24:53.6691602-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"echo","result":"SUCCESS","metadata":{"message":"OK"}}
+{"timestamp":"2026-09-25T21:24:53.677943-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"hello_world","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:24:53.7244791-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"bash","result":"SUCCESS","metadata":{"command":"echo OK"}}
+{"timestamp":"2026-09-25T21:24:53.7335585-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"ls","result":"SUCCESS","metadata":{"limit":3,"path":"."}}
+{"timestamp":"2026-09-25T21:24:53.7440987-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"read","result":"SUCCESS","metadata":{"path":"VERSION"}}
+{"timestamp":"2026-09-25T21:24:53.8707252-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"repomap","result":"SUCCESS","metadata":{"max_files":3}}
+{"timestamp":"2026-09-25T21:27:47.1557672-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-25T21:27:47.2450846-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"test","content":"final test"}}
+{"timestamp":"2026-09-25T21:27:47.3170375-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"search_memory","result":"SUCCESS","metadata":{"query":"kernel"}}
+{"timestamp":"2026-09-25T21:27:47.330392-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:27:47.3750947-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"bash","result":"SUCCESS","metadata":{"command":"echo OK"}}
+{"timestamp":"2026-09-25T21:27:47.3841486-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"ls","result":"SUCCESS","metadata":{"limit":3,"path":"."}}
+{"timestamp":"2026-09-25T21:27:47.5132478-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"repomap","result":"SUCCESS","metadata":{"max_files":3}}
+{"timestamp":"2026-09-25T21:28:07.559299-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"codebase_outline","result":"SUCCESS","metadata":{"symbolName":"HandleEcho"}}
+{"timestamp":"2026-09-25T21:28:07.5716785-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"get_system_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-25T21:28:07.5833647-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"echo","result":"SUCCESS","metadata":{"message":"OK"}}
+{"timestamp":"2026-09-25T21:28:12.9371959-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"codebase_search","result":"SUCCESS","metadata":{"limit":3,"query":"Server"}}
+{"timestamp":"2026-09-25T21:29:17.6369543-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"codebase_search","result":"SUCCESS","metadata":{"limit":3,"query":"Server"}}
+{"timestamp":"2026-09-25T21:29:17.7531579-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"codebase_outline","result":"SUCCESS","metadata":{"symbolName":"HandleEcho"}}
+{"timestamp":"2026-09-25T21:29:17.7705349-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"test","content":"quick test"}}
+{"timestamp":"2026-09-25T21:29:17.7801349-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T06:41:50.418512-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-26T06:41:50.6072428-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"test","value":"ALL 9 ITEMS DONE"}}
+{"timestamp":"2026-09-26T06:41:50.6323481-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_append","result":"SUCCESS","metadata":{"key":"test","value":" + embeddings active"}}
+{"timestamp":"2026-09-26T06:41:50.6609361-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"test","content":"Final verification test memory"}}
+{"timestamp":"2026-09-26T06:41:50.6990824-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"search_memory","result":"SUCCESS","metadata":{"query":"kernel port"}}
+{"timestamp":"2026-09-26T06:41:50.7208339-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T06:41:50.7358539-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"echo","result":"SUCCESS","metadata":{"message":"OK"}}
+{"timestamp":"2026-09-26T06:41:50.7605191-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"hello_world","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T06:41:50.834646-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"bash","result":"SUCCESS","metadata":{"command":"echo OK"}}
+{"timestamp":"2026-09-26T06:41:50.8563346-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"ls","result":"SUCCESS","metadata":{"limit":3,"path":"."}}
+{"timestamp":"2026-09-26T06:41:50.8888813-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"read","result":"SUCCESS","metadata":{"path":"VERSION"}}
+{"timestamp":"2026-09-26T06:41:51.1547199-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"repomap","result":"SUCCESS","metadata":{"max_files":3}}
+{"timestamp":"2026-09-26T06:41:51.1753538-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"get_system_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T06:41:51.196935-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"cloud_troubleshoot","result":"SUCCESS","metadata":{"error_log":"timeout","resource_id":"i-123"}}
+{"timestamp":"2026-09-26T06:41:51.2127285-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"confluence_search","result":"SUCCESS","metadata":{"query":"deploy"}}
+{"timestamp":"2026-09-26T09:49:08.9222277-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"infra"}}
+{"timestamp":"2026-09-26T09:49:15.2341003-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"search_memory","result":"SUCCESS","metadata":{"query":"kernel port 7778"}}
+{"timestamp":"2026-09-26T09:50:46.473901-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"list_processes","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T09:50:47.2639026-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"detect_chat_state","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T09:50:48.1497256-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"detect_chat_surface","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T09:50:48.1618986-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"list_surface_profiles","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T09:50:48.1761394-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"get_supervisor_settings","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T11:57:42.7351552-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"search_memory","result":"SUCCESS","metadata":{"limit":100,"query":""}}
+{"timestamp":"2026-09-26T11:58:22.2504085-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T11:58:38.4338492-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"search_memory","result":"SUCCESS","metadata":{"query":"kernel port"}}
+{"timestamp":"2026-09-26T11:58:57.4398795-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-26T11:58:57.5289149-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"human"}}
+{"timestamp":"2026-09-26T11:58:57.5819478-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"infra"}}
+{"timestamp":"2026-09-26T11:58:57.5924415-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"architecture"}}
+{"timestamp":"2026-09-26T11:58:57.6016388-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"bugfix_log"}}
+{"timestamp":"2026-09-26T12:00:59.0302486-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"infrastructure","content":"HyperNexus kernel runs on port 7778, dashboard on port 7779.","importance":0.8,"tags":"infra"}}
+{"timestamp":"2026-09-26T12:00:59.1408656-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"devops","content":"Build: go build -o bin/hypernexus-new.exe ./cmd/tormentnexus/ from go/ directory.","importance":0.7,"tags":"build"}}
+{"timestamp":"2026-09-26T12:00:59.1565391-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"architecture","content":"POST /api/agent/tool dispatches via internal/tools.Registry with 30+ native tools.","importance":0.6,"tags":"tools"}}
+{"timestamp":"2026-09-26T12:00:59.1660597-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"architecture","content":"Scratchpad uses GlobalVectorStore backed by SQLite. Fixed deadlock in Commit→detectConflicts.","importance":0.6,"tags":"memory,bugfix"}}
+{"timestamp":"2026-09-26T12:00:59.1793248-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"architecture","content":"Repo graph pre-builds in background on startup. Max 500 files, skips _disabled/archive/mcpimpl.","importance":0.5,"tags":"performance"}}
+{"timestamp":"2026-09-26T12:00:59.1893569-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"devops","content":"Kernel watchdog at scripts/kernel-watchdog.ps1 with -MonitorMCP and -WebhookUrl support.","importance":0.6,"tags":"ops"}}
+{"timestamp":"2026-09-26T12:00:59.2104849-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T12:01:37.4438549-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_get","result":"SUCCESS","metadata":{"key":"persona"}}
+{"timestamp":"2026-09-26T12:01:37.5389968-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_scratchpad_set","result":"SUCCESS","metadata":{"key":"test","value":"done"}}
+{"timestamp":"2026-09-26T12:01:37.58263-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"add_memory","result":"SUCCESS","metadata":{"category":"test","content":"final test"}}
+{"timestamp":"2026-09-26T12:01:37.5935906-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"search_memory","result":"SUCCESS","metadata":{"query":"kernel"}}
+{"timestamp":"2026-09-26T12:01:37.605752-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"memory_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T12:01:37.6185597-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"echo","result":"SUCCESS","metadata":{"message":"OK"}}
+{"timestamp":"2026-09-26T12:01:37.6302521-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"hello_world","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T12:01:37.6805579-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"bash","result":"SUCCESS","metadata":{"command":"echo OK"}}
+{"timestamp":"2026-09-26T12:01:37.6920039-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"ls","result":"SUCCESS","metadata":{"limit":3,"path":"."}}
+{"timestamp":"2026-09-26T12:01:37.7032096-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"read","result":"SUCCESS","metadata":{"path":"VERSION"}}
+{"timestamp":"2026-09-26T12:01:37.8553596-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"repomap","result":"SUCCESS","metadata":{"max_files":3}}
+{"timestamp":"2026-09-26T12:01:37.8653331-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"get_system_stats","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T12:01:39.1128224-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"list_processes","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T12:01:39.7175327-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"detect_chat_state","result":"SUCCESS","metadata":{}}
+{"timestamp":"2026-09-26T12:01:39.7298224-04:00","userId":"system","action":"EXECUTE_TOOL","resource":"list_surface_profiles","result":"SUCCESS","metadata":{}}

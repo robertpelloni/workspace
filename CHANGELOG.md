@@ -1,3 +1,31 @@
+
+## [v5.281.0] — 2026-10-07 — Protocol #256 — Repository Sync & Intelligent Merge
+
+### Fixed
+
+- **Massive file-wipe recovery**: Restored 100,000+ staged-deleted tracked files across 15+ submodules (bobsaver 42k, bobcoin 27k, bobfilez 29k, bobbybookmarks 14k, auto_dj_script 12k, bobeditpro 6k, etc.) — a prior process had staged deletions of .gitignore/AGENTS.md/workflows/docs in many repos
+- **ArrowVortex**: Added missing `ffr-difficulty-model` submodule mapping to `.gitmodules` (orphan gitlink broke recursive submodule ops)
+- **HyperNexus**: Resolved HANDOFF.md + TODO.md merge conflicts (union of v1.0.13 line + T48 testing notes)
+
+### Merged
+
+- **workspace root**: dependabot/uv/uv-221f256022 (uv dependency bump) fast-forwarded into main
+- **HyperNexus**: github/main (14 commits — Go fallbacks, build fixes, lazy CREATE TABLE bugs) merged into clean-main
+- **fwber**: v2.3.34 dashboard IA overhaul + feature tile tooltips committed
+- **realestatecrm nested submodules**: 8 AI-generated feature branches (jules-*, foundation-build-*, feat/*) verified 0 unique commits — all fast-forwarded to origin/main
+
+### Verified Redundant (Not Merged)
+
+- **HyperNexus** `gitlab/feature/cloud-dashboard-mcp-sse-*`: 2687 commits, orphaned history (no merge base with clean-main). L3 archive, P2P gossip mesh, skill evolution, MCP SSE all already present in clean-main (superior versions). Left as archive reference.
+
+### Protocol Compliance
+
+- Un-ignored memory, sessions, and databases in root + HyperNexus `.gitignore` — now tracked per protocol
+- catalog.db, hypernexus.db, .hypernexus/ agent_memory, imported_sessions, audit logs all staged
+
+### Version bumped
+
+- Workspace: v5.280.0 ? **v5.281.0**
 ## [v5.280.0] â€” 2026-08-19 â€” Protocol #255 â€” Repository Sync & UnitedBeats Site
 
 ### Changed
@@ -1353,3 +1381,4 @@
 - **marketing_agent**: Forward-merged jules-chore-replace-mocks (+12)
 - **Reverse merges**: TurntUpToddler (3 branches), bobium (2 branches), openclaw-dashboard â€” synced main into 6 feature branches
 - **Root**: memory state sync, version bump
+

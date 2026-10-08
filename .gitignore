@@ -18,7 +18,8 @@ hymn_remaker_backup/
 .hypercode/
 .hypercode-session.json
 .hypercode_startup_marker
-.hypernexus/
+# Protocol: memory, sessions, databases MUST stay tracked (not ignored)
+# .hypernexus/ intentionally tracked
 .hypernexus-session.json
 .hypernexus_startup_marker
 .kilocode/
@@ -40,7 +41,7 @@ hymn_remaker_backup/
 # Browser session artifacts
 .suno_browser_session/
 .serena/
-.tormentnexus/
+# Protocol: .tormentnexus memory/sessions must be tracked
 .tormentnexus-session.json
 .tormentnexus_startup_marker
 .vibe-config.json
