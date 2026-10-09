@@ -1,69 +1,39 @@
-# HANDOFF — v5.281.0 — 2026-10-07
+# HANDOFF â€” v5.282.0 â€” 2026-08-28
 
-## Session Summary — Repository Sync & Intelligent Merge (Protocol #256)
+## Session Summary â€” Repository Sync & Intelligent Merge (Protocol #257)
 
-### Critical Recovery: Mass File-Wipe Restored
+### Step 1: Upstream Tracking & Submodule Sanitization
 
-A prior process had staged deletions of **100,000+ tracked files** across 15+ submodules (.gitignore, AGENTS.md, workflows, docs, source files). All restored via `git restore` / `git reset --hard`:
+- **112 submodules** fetched (107 OK, 2 not-init noted, 3 diverged)
+- **projectM-upstream**: Merged `origin/master` (3 new commits) â€” HLSL remainder/precedence fixes, PCM buffer size API, hlslparser perf
+- **HyperNexus2old**: Merged `origin/main` (6 new commits) â€” VectorStore semantic search, MCP catalog indexing, Ollama nomic-embed-text, dashboard UI, watchdog, CI/CD. 133 add/add conflicts resolved taking ours (587 local commits of maturity vs 6 remote)
+- **topaz-ffmpeg**: Verified in sync with origin (FF-FAIL was transient)
+- **Root dependabot**: Merged npm (2 updates) + uv (3 updates)
 
-| Repo | Files Restored |
-|---|---|
-| bobsaver | 42,795 |
-| bobfilez | 29,068 |
-| bobcoin | 27,069 |
-| bobbybookmarks | 14,498 |
-| auto_dj_script | 12,522 |
-| bobeditpro | 6,452 |
-| apophysis-j | 337 |
-| agentirc | 449 |
-| hyper | 271 |
-| skillzhub | 96 |
-| geiss | 65 |
-| ai_game_engine | 54 |
-| bobium | 33 |
-| TurntUpToddler | 497 |
-| + others | various |
+### Step 2: Dual-Direction Intelligent Merge
 
-### Merges Completed
+- **89 own repos** scanned â€” 0 new local feature branches with unique commits
+- **Root dependabot**: Already merged in Step 1
+- **warp `zb/*`** (5 stacked branches, 38 commits): Deferred â€” unrelated histories, needs dedicated session
+- **freellm `temp-main`**: Already cherry-picked (same commits, different SHAs)
+- **aimoneymachine/bobsgameonlinejava**: 0 unique commits
 
-| Repository | Branch | Result |
-|---|---|---|
-| workspace root | dependabot/uv/uv-221f256022 | ? Fast-forward (uv.lock bump) |
-| HyperNexus | github/main ? clean-main | ? Merged (HANDOFF.md + TODO.md union conflict resolution) — 14 commits: Go fallbacks, lazy CREATE TABLE fixes, build fixes |
-| fwber | (working tree) | ? Committed v2.3.34 — dashboard IA overhaul + feature tile tooltips |
-| realestatecrm nested (8 branches) | jules-*, foundation-build-*, feat/* | ? All 0 unique commits — fast-forwarded to origin/main |
+### Step 3: Docs, Version, Push, Build
 
-### Verified Redundant (Not Merged)
+- **v5.282.0** committed and pushed
+- All docs updated (CHANGELOG, ROADMAP, TODO, HANDOFF, VERSION, STRUCTURAL_MAP)
 
-- **HyperNexus** `gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918`: 2,687 commits, **orphaned history** (no merge base with clean-main). Top features (L3 Cold Archive, P2P gossip mesh with AES-GCM, Skill Evolution Engine, MCP SSE) all **already in clean-main** in superior form. Left as archive reference — merging would destroy clean-main history.
+### Deferred / Known Issues
 
-### Fix Applied
-
-- **ArrowVortex/.gitmodules**: Added missing `ffr-difficulty-model` ? `https://github.com/robertpelloni/ffr-difficulty-model.git` mapping (orphan gitlink broke recursive submodule operations)
-
-### Protocol Compliance
-
-- Un-ignored memory/sessions/databases in root + HyperNexus `.gitignore`
-- Tracked: catalog.db, hypernexus.db, .hypernexus/agent_memory/memories.json, imported_sessions archive, audit logs
-- Only own-process locks cleared (bobsaver index.lock stale from timed-out restore)
-
-### Branch Audit Summary (All Own Repos)
-
-Scanned all 107 robertpelloni submodules + nested submodules. Findings:
-- **Active feature work**: HyperNexus (handled above), fwber (committed), realestatecrm nested (fast-forwarded)
-- **Clean (only main/master)**: 90+ repos — no unique feature branches
-- **hyper**: canary is the primary branch (no main) — no merge needed
-- **ArrowVortex**: release is the primary branch — no merge needed
-
-### Version Bump
-
-- Workspace: v5.280.0 ? **v5.281.0**
-- fwber: 2.3.33 ? **2.3.34**
-- Updated: VERSION, VERSION.current, VERSION.md, CHANGELOG.md
+1. **warp zb/* branches** (5 stacked, 38 commits): Unrelated histories. Unique work preserved on `origin/zb/continue-cloud-tombstone`. Needs dedicated session.
+2. **topaz-ffmpeg FFmpeg upstream**: 1247 commits behind. Dedicated session needed.
+3. **bobeditpro Audacity upstream**: 94 commits behind. Dedicated session needed.
+4. **hymnmania/hypercode .gitmodules**: Stale entries (hymnmania tracked as files, hypercode missing).
+5. **npm SSL/TLS**: `ERR_SSL_TLSV1_ALERT_PROTOCOL_VERSION` on npmjs.org. pnpm works as alternative.
 
 ### Next Steps
 
-1. Push all submodule commits + root workspace to remotes
-2. Rebuild/restart HyperNexus kernel + dashboard if binaries changed
-3. Monitor for further mass-deletion incidents (investigate root cause of staged wipe)
-4. Consider archiving HyperNexus orphaned feature branch as a tag for permanent reference
+1. Resolve warp zb/continue-cloud-tombstone merge (dedicated session)
+2. Resolve bobeditpro / topaz-ffmpeg upstream syncs (dedicated sessions)
+3. Fix npm SSL/TLS (upgrade Node.js OpenSSL)
+4. Continue HymnMania pipeline: Zernio TikTok API, 81 vertical uploads, ~50 YouTube hymn videos

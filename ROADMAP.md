@@ -1,6 +1,6 @@
 # ROADMAP.md — HymnMania & Workspace
 
-## Current Status (v5.268.0)
+## Current Status (v5.282.0)
 
 ### HymnMania Pipeline
 
@@ -15,10 +15,13 @@
 | TikTok Uploads | ⏳ Pending | Requires Zernio API setup |
 | Facebook Posting | ✅ Working | daily_scheduler.py |
 
-### Workspace Merges (v5.268.0)
+### Workspace Merges (v5.282.0)
 
 | Repository | Branch Merged | Description |
 |------------|---------------|-------------|
+| root | dependabot npm+uv | 5 dependency updates |
+| projectM-upstream | origin/master | HLSL/PCM fixes |
+| HyperNexus2old | origin/main | VectorStore, MCP catalog, Ollama embeddings (133 conflicts resolved) |
 | skillzhub | dependabot-3d78e36c6 | 4 dependency updates |
 | bobcoin | dependabot-dcc3f92f05 | 1 dependency update |
 | apophysis-j | jules-032566ef | v2.10.20 milestone |
@@ -53,6 +56,8 @@
 
 ## Version History
 
+- v5.282.0: Repository sync, dependabot merges, projectM-upstream/HyperNexus2old feature branch reconciliation
+- v5.281.0: Repository sync, dependabot merges, hymnmania/projectM/freellm feature branch reconciliation
 - v5.268.0: Repository sync, feature branch merges, HymnMania TikTok pipeline
 - v5.267.0: Feature branch merge round 2
 - v5.266.0: Repository sync, hyperharness merge

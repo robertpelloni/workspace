@@ -1,0 +1,13 @@
+# bobsgame.com — single-page browser game.
+#
+# The entire game is served from "/". Deep links are hash fragments
+# (/#play=..., /#replay=...) which never reach the server, so there are no
+# crawlable sub-pages. This file exists mainly so that /robots.txt is real:
+# previously the SPA fallback answered it with index.html, i.e. HTTP 200 and
+# content-type text/html, which crawlers treat as an invalid robots.txt.
+
+User-agent: *
+Allow: /
+
+# Socket endpoint — an API, never content.
+Disallow: /socket.io/

@@ -1,0 +1,22 @@
+# TormentNexus - AI Control Plane
+# Website: https://tormentnexus.site
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tormentnexus.site/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin/API endpoints
+Disallow: /api/
+Disallow: /admin/
+
+# NOTE (2026-10): /_next/ used to be Disallowed here, and has been removed.
+# It is the static JS/CSS bundle directory behind the /dashboard app — never
+# content itself — so blocking it bought nothing, while blocking it risked
+# being reported in Search Console as "Blocked by robots.txt" the moment any
+# page linked to one of those bundles. Nothing on this site references /_next/
+# today, so the rule was inert; it is deleted so it can never become active.

@@ -1,31 +1,72 @@
-
-## [v5.281.0] � 2026-10-07 � Protocol #256 � Repository Sync & Intelligent Merge
-
-### Fixed
-
-- **Massive file-wipe recovery**: Restored 100,000+ staged-deleted tracked files across 15+ submodules (bobsaver 42k, bobcoin 27k, bobfilez 29k, bobbybookmarks 14k, auto_dj_script 12k, bobeditpro 6k, etc.) � a prior process had staged deletions of .gitignore/AGENTS.md/workflows/docs in many repos
-- **ArrowVortex**: Added missing `ffr-difficulty-model` submodule mapping to `.gitmodules` (orphan gitlink broke recursive submodule ops)
-- **HyperNexus**: Resolved HANDOFF.md + TODO.md merge conflicts (union of v1.0.13 line + T48 testing notes)
+## [v5.282.0] — 2026-08-28 — Protocol #257 — Repository Sync & Intelligent Merge
 
 ### Merged
 
-- **workspace root**: dependabot/uv/uv-221f256022 (uv dependency bump) fast-forwarded into main
-- **HyperNexus**: github/main (14 commits � Go fallbacks, build fixes, lazy CREATE TABLE bugs) merged into clean-main
-- **fwber**: v2.3.34 dashboard IA overhaul + feature tile tooltips committed
-- **realestatecrm nested submodules**: 8 AI-generated feature branches (jules-*, foundation-build-*, feat/*) verified 0 unique commits � all fast-forwarded to origin/main
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-93d0da07b8` — 2 npm dep updates across 2 directories
+- **root**: `dependabot/uv/uv-8a7c940acc` — 3 uv dep updates
+- **projectM-upstream**: `origin/master` (3 new commits) — HLSL remainder/precedence fixes, PCM buffer size, hlslparser perf
+- **HyperNexus2old**: `origin/main` (6 new commits) — VectorStore semantic search, MCP catalog indexing, Ollama embeddings, dashboard UI, watchdog, CI/CD. 133 add/add conflicts resolved taking ours (587 local commits of maturity)
 
-### Verified Redundant (Not Merged)
+### Changed
 
-- **HyperNexus** `gitlab/feature/cloud-dashboard-mcp-sse-*`: 2687 commits, orphaned history (no merge base with clean-main). L3 archive, P2P gossip mesh, skill evolution, MCP SSE all already present in clean-main (superior versions). Left as archive reference.
+- **Submodule sync**: 112 submodules fetched (107 OK, 2 not-init noted, 3 diverged merged/verified)
+- **topaz-ffmpeg**: Verified in sync with origin (FF-FAIL was transient)
+- **Version bumped**: v5.281.0 → v5.282.0
 
-### Protocol Compliance
+### Deferred
 
-- Un-ignored memory, sessions, and databases in root + HyperNexus `.gitignore` � now tracked per protocol
-- catalog.db, hypernexus.db, .hypernexus/ agent_memory, imported_sessions, audit logs all staged
+- **warp** `zb/*` (5 stacked branches, 38 commits) — unrelated histories, needs dedicated session
+- **topaz-ffmpeg** FFmpeg upstream — deferred per prior protocols
+- **bobeditpro** Audacity upstream — deferred per prior protocols
 
-### Version bumped
+## [v5.282.0] — 2026-08-28 — Protocol #257 — Repository Sync & Intelligent Merge
 
-- Workspace: v5.280.0 ? **v5.281.0**
+### Merged
+
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-93d0da07b8` — 2 npm dep updates across 2 directories
+- **root**: `dependabot/uv/uv-8a7c940acc` — 3 uv dep updates
+- **projectM-upstream**: `origin/master` (3 new commits) — HLSL parser fixes, PCM buffer size API
+- **HyperNexus2old**: `origin/main` (6 new commits) — VectorStore semantic search, MCP catalog indexing, Ollama embeddings, dashboard UI, watchdog, CI/CD. 133 add/add conflicts resolved taking ours (587 local commits of maturity)
+
+### Changed
+
+- **Submodule sync**: 112 submodules fetched (107 OK, 2 not-init noted, 3 diverged merged/verified)
+- **topaz-ffmpeg**: Verified in sync with origin (FF-FAIL was transient)
+- **Version bumped**: v5.281.0 → v5.282.0
+
+### Deferred
+
+- **warp** `zb/*` (5 stacked branches, 38 commits) — unrelated histories, needs dedicated session
+- **topaz-ffmpeg** FFmpeg upstream — deferred per prior protocols
+- **bobeditpro** Audacity upstream — deferred per prior protocols
+
+## [v5.281.0] — 2026-08-19 — Protocol #256 — Repository Sync & Intelligent Merge
+
+### Merged
+
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-154cd1d72d` — 12 npm dep updates across 3 directories
+- **root**: `dependabot/uv/uv-221f256022` — 3 uv dep updates
+- **bobmani/hymnmania**: `origin/master` (ahead 4, behind 20) — union AGENTS.md (TikTok pipeline + Beat Video Branding + Growth Recs), rename_youtube_titles.py (truncate_title + description-genre extraction), keep ableton submodule pointer
+- **projectM-upstream**: `origin/master` (ahead 66, behind 16) — take projectm-eval 1.0.7 (pkgconfig linker fix), auto-merge CMake/docs/workflows
+- **freellm**: cherry-picked `temp-main` (2 commits) — go.sum regeneration after filter-repo, restore transformPlaintextToolCalls cross-platform build
+
+### Fixed
+
+- **warp**: Fixed fetch refspec (`master` → `*`), set upstream tracking for 6 repos (auto_dj_script, freellm, HyperNexus, bobmani/ddc, HyperNexus2old, warp)
+- **warp**: Stashed dirty working tree as `ep-281-warp-dirty` before merge attempt
+
+### Deferred
+
+- **warp** `zb/continue-cloud-tombstone` (38 commits) — unrelated histories, full merge too conflicted. Unique work preserved on branch. Needs dedicated session.
+- **topaz-ffmpeg** FFmpeg upstream (1247 commits behind) — deferred per prior protocols
+- **bobeditpro** Audacity upstream (94 commits behind) — deferred per prior protocols
+
+### Changed
+
+- **Submodule sync**: 112 submodules fetched/FF-pulled (101 OK, 5 no-upstream fixed, 2 not-init noted, 4 diverged merged/deferred)
+- **bobmani/hymnmania**: Stash pop conflicts resolved — union .social_posted.json video IDs, merge HANDOFF.md Outstanding Issues + Credentials Reference
+- **Version bumped**: v5.280.0 → v5.281.0
+
 ## [v5.280.0] — 2026-08-19 — Protocol #255 — Repository Sync & UnitedBeats Site
 
 ### Changed
