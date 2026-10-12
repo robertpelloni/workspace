@@ -1,3 +1,19 @@
+## [v5.283.0] — 2026-10-11 — Protocol #258 — Repository Sync & Intelligent Merge
+
+### Merged
+
+- **fwber** (submodule): full EXECUTIVE PROTOCOL run — upstream tracking (`robertpelloni/fwber` at identical commit `cacc94b7`), no feature branches to merge, runtime-log untracking, repair-tool tracking, version bump v2.3.34 → v2.3.35. Superproject gitlink bumped to `abe2fcc0`.
+- **ArrowVortex** (submodule): forward-merged `fix/gitmodules-ffr` → `release` (cherry-picked `ddc_onset` + `ffr-difficulty-model` submodule mappings onto orphan `release` history). Pushed `release` 954cac5..b230052.
+
+### Changed
+
+- **Version bumped**: v5.282.0 → v5.283.0
+- **Branch audit**: `skillzhub`/`freellm`/`HyperNexus2old` "origin" branches verified as parsing false-positives (single `main` only).
+
+### Deferred
+
+- **HyperNexus** `gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918` (2687 ahead of `clean-main`): separate actively-managed project; needs dedicated session + HyperNexus governance.
+
 ## [v5.282.0] — 2026-08-28 — Protocol #257 — Repository Sync & Intelligent Merge
 
 ### Merged

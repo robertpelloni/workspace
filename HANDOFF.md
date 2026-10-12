@@ -1,3 +1,60 @@
+# HANDOFF — v5.283.0 — 2026-10-11
+
+## Session Summary — Repository Sync & Intelligent Merge (Protocol #258)
+
+### Scope
+
+Targeted the `fwber` submodule (primary) plus recursive submodule-gitlink
+tracking for the `robertpelloni/workspace` superproject. Ran the full EXECUTIVE
+PROTOCOL on `fwber` and reconciled the small ArrowVortex divergence found by
+the branch audit.
+
+### fwber (submodule) — v2.3.34 → v2.3.35
+
+- **Upstream**: registered `upstream` remote (`robertpelloni/fwber`); fork
+  (`FWBerLLC/fwber`) and upstream at identical commit `cacc94b7` (0/0).
+- **Merge engine**: single `main` branch on local + both remotes; no feature
+  branches or stashes. Nothing to merge.
+- **Sanitization**: untracked runtime startup logs (`logs-startup*.txt`);
+  gitignored npm extraction scratch dirs (`_elliptic*/`, `_hashjs/`, `*.tgz`).
+- **Tooling tracked**: `tools/audit-entry-points.cjs`,
+  `tools/repair-truncated-packages.cjs`.
+- **Version**: `VERSION.md` fixed (stale 2.3.9 → 2.3.35). Backend `tsc` passes.
+- Pushed to `FWBerLLC/fwber` main (`abe2fcc0`). Superproject gitlink bumped.
+
+### ArrowVortex (submodule) — forward merge
+
+- Branch audit found `fix/gitmodules-ffr` (2 commits: add `ddc_onset` +
+  `ffr-difficulty-model` submodule mappings) vs `release` (orphan snapshot).
+- Unrelated histories → cherry-picked the `.gitmodules` fix onto `release`
+  (commit `b230052`), preserving all 4 submodule mappings (odcnn, lib/ddc,
+  ddc_onset, ffr-difficulty-model). Pushed `release` 954cac5..b230052.
+- Pre-existing dirty tree (AGENTS.md/CLAUDE.md churn + lib/ddc & odcnn
+  submodule drift) preserved via stash pop — not committed.
+
+### Branch-audit false positives
+
+`skillzhub`, `freellm`, `HyperNexus2old` reported "origin" feature branches;
+verified they only have `main` (audit-script parsing artifact).
+
+### Deferred (carried forward)
+
+1. **HyperNexus** `gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918`
+   (2687 ahead of `clean-main`): separate actively-managed project (own skill
+   set). Needs dedicated session + HyperNexus governance. NOT auto-merged.
+2. warp zb/*, topaz-ffmpeg, bobeditpro upstream syncs (from v5.282.0).
+3. Parent superproject `git status` is broken: `realestatecrm` submodule
+   (`'git status --porcelain=2' failed`) and `backend-go/dev.db-shm` permission
+   denied. Pre-existing, unrelated to this session.
+
+### Next Steps
+
+1. Decide HyperNexus `cloud-dashboard-mcp-sse` disposition (merge vs abandon).
+2. Repair `realestatecrm` submodule + `backend-go/dev.db-shm` git-status errors.
+3. Continue from v5.282.0 deferred list (warp zb/*, topaz-ffmpeg, bobeditpro).
+
+---
+
 # HANDOFF — v5.282.0 — 2026-08-28
 
 ## Session Summary — Repository Sync & Intelligent Merge (Protocol #257)
