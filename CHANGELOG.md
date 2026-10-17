@@ -1,3 +1,25 @@
+## [v5.284.0] — 2026-10-11 — Protocol #259 — Repository Sync & Intelligent Merge
+
+### Fixed
+
+- **Mass wipe recovery (50+11 submodules)**: Detected and restored staged-deletion wipe across 61 submodules (50 initial + 11 large repos that timed out on first pass). All cleared stale `index.lock` files and ran `git reset --hard HEAD`. Removed Windows reserved `go/NUL` file in HyperNexus2old via `\\?\` extended path. Final verification: **all 112 submodules clean**.
+
+### Merged
+
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-f035e3d05a` + `dependabot/uv/uv-a24a3dabe7` — npm and uv dependency bumps
+- **fwber**: `upstream/jules-1794191804214308582-9f5ccf75` — Federation test improvements, v2.3.36 docs/version bump. Superproject gitlink updated.
+
+### Verified
+
+- **ArrowVortex**: `fix/gitmodules-ffr` cherry-picks confirmed already incorporated in `release` (both commits empty on cherry-pick)
+- **HyperNexus**: `gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918` confirmed orphan (zero merge-base with `clean-main`) — left unmerged per prior decision
+- **Root/hyper/timidity**: no actionable feature branches
+
+### Changed
+
+- **Submodule fetch**: 112/112 fetched successfully, 110/112 fast-forwarded (HyperNexus + HyperNexus2old have local commits, expected)
+- **Version bumped**: v5.283.0 → v5.284.0
+
 ## [v5.283.0] — 2026-10-11 — Protocol #258 — Repository Sync & Intelligent Merge
 
 ### Merged

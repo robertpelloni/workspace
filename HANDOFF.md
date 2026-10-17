@@ -1,4 +1,49 @@
-# HANDOFF — v5.283.0 — 2026-10-11
+# HANDOFF — v5.284.0 — 2026-10-11
+
+## Session Summary — Repository Sync & Intelligent Merge (Protocol #259)
+
+### Scope
+
+Full EXECUTIVE PROTOCOL across the entire 112-submodule workspace: wipe recovery, fetch/sync, feature-branch merge engine, version bump, and build.
+
+### Mass Wipe Recovery (CRITICAL)
+
+A mass staged-deletion wipe was detected across 61 submodules (50 in initial scan + 11 large repos that timed out on first reset pass). Root cause: prior bulk sync scripts (`sync_1.1.1.py`, `reconcile_repos.py`) staging `git add .` deletions.
+
+**Recovery procedure executed:**
+1. Scanned all 112 submodules for staged deletions via `git diff --cached --diff-filter=D`
+2. Cleared stale `index.lock` files left by timed-out resets
+3. Ran `git reset --hard HEAD` per repo with timeout handling (large repos: element-web, geany, FFmpeg, HyperNexus2old needed 60-300s each)
+4. Removed Windows reserved `go/NUL` file in HyperNexus2old via `\\?\` extended path syntax
+5. Final verification: **all 112 submodules clean** (0 staged deletions)
+
+### STEP 1: Upstream Tracking & Submodule Sanitization
+
+- **Fetch**: 112/112 submodules fetched with `--all --tags --no-recurse-submodules` — 0 failures
+- **Fast-forward**: 110/112 updated to latest tracking commits. HyperNexus (`clean-main`) and HyperNexus2old (`main`) have local commits ahead — expected (active development).
+- **Root**: in sync with `origin/main` at `ed57c0648`
+
+### STEP 2: Dual-Direction Intelligent Merge Engine
+
+- **root Dependabot**: `npm_and_yarn-f035e3d05a` + `uv-a24a3dabe7` merged (dep bumps). `uv-221f256022` already merged.
+- **fwber**: `upstream/jules-1794191804214308582-9f5ccf75` merged — Federation test improvements + v2.3.36 docs. Main was at v2.3.35 from concurrent session; merged cleanly with ort strategy.
+- **ArrowVortex**: `fix/gitmodules-ffr` cherry-picks verified as already incorporated in `release` (both empty).
+- **HyperNexus**: `gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918` confirmed orphan (zero merge-base with `clean-main`). Left unmerged per prior governance decision.
+- **hyper / timidity**: only tracking branches (`canary` / `cvs`), no feature branches.
+- **110 other submodules**: no actionable feature branches (only remote HEAD pointers, parsing artifacts).
+
+### STEP 3: Workspace Cleanup & Finalization
+
+- **Version**: v5.283.0 → v5.284.0 (VERSION, VERSION.md, CHANGELOG.md synchronized)
+- **CHANGELOG.md**: new Protocol #259 entry with full merge/wipe-recovery log
+- **HANDOFF.md**: this document
+- All required files verified present (start.bat, build.bat, ROADMAP.md, TODO.md, HANDOFF.md, CHANGELOG.md)
+
+### Deferred (carried forward)
+
+- **HyperNexus** `gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918` — needs dedicated session + HyperNexus governance.
+- **178 Dependabot vulnerabilities** on `robertpelloni/workspace` default branch (1 critical) — not addressed.
+- **Root bulk sync scripts** (`sync_1.1.1.py`, `reconcile_repos.py`, `resolve.py`) — `resolve.py` hardcodes foreign path `C:\Users\jakeg\workspace\borg`. Consider auditing/removing.
 
 ## Session Summary — Repository Sync & Intelligent Merge (Protocol #258)
 
