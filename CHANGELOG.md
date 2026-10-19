@@ -20,6 +20,22 @@
 - **Submodule fetch**: 112/112 fetched successfully, 110/112 fast-forwarded (HyperNexus + HyperNexus2old have local commits, expected)
 - **Version bumped**: v5.283.0 → v5.284.0
 
+## [v5.285.1] — 2026-10-19 — Protocol #261 — Repository Sync & Intelligent Merge
+
+### Merged
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-99446ad252` — cherry-pick
+- **root**: `dependabot/uv/uv-ea96c0b163` — cherry-pick
+
+### Fetch
+- **Submodules fetched**: 110/112
+- **Fetch failures**: 2
+- **Clean submodules**: 41, **Dirty**: 71
+
+### Changed
+- **Version bumped**: v5.285.0 -> v5.285.1
+- **Full branch audit**: 112 submodules scanned for feature branches
+
+
 ## [v5.285.0] -- 2026-10-18 -- Protocol #260 -- Repository Sync & Intelligent Merge
 
 ### Merged
