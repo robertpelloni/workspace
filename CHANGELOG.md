@@ -23,27 +23,28 @@
 ## [v5.285.0] -- 2026-10-18 -- Protocol #260 -- Repository Sync & Intelligent Merge
 
 ### Merged
-- ArrowVortex: `fix/gitmodules-ffr` merged into `release` (unrelated-histories)
-- Root: Dependabot branches pending merge
-
+- **ArrowVortex**: `fix/gitmodules-ffr` (2 commits) merged into `release` via unrelated-histories strategy
+- **Root**: `dependabot/npm_and_yarn/npm_and_yarn-99446ad252` cherry-picked (npm dep bumps, 5 files)
+- **Root**: `dependabot/uv/uv-ea96c0b163` cherry-picked (uv dep bumps, 1 file)
 
 ### Fetch
-- **Submodules fetched**: 0/112
+- **Submodules fetched**: 96/112 (16 were uninitialized, now all 112 initialized)
 - **Fetch errors**: 0
-- **Not initialized**: 0
-- **Dirty submodules**: 0
+- **Not initialized**: 0 (was 16, all now initialized)
+- **Dirty submodules**: 13 (fwber, jules-autopilot, realestatecrm, multimousergy, ArrowVortex, Maestro, agentirc, ai_game_engine, bobeditpro, bobium, slsk_discography_downloader_script, HyperNexus, HyperNexus2old)
 
 ### Changed
-- **Version bumped**: v5.285.0 -> v5.285.0
+- **Version bumped**: v5.284.0 -> v5.285.0
 - **Stale index.lock files removed**: 3 (bobfilez, bqt, HyperNexus)
 - **Branch audit**: All 112 submodules scanned for feature branches
+- **16 submodules initialized**: hymnmania, hypercode, jvm-cpp-runtime, bobmani/Simply-Love-SM5, bobmani/arrowvortex, bobmani/beatoraja, bobmani/bobmania, bobmani/ddc, bobmani/ddc_onset, bobmani/ffr-difficulty-model, bobmani/hymnmania, bobmani/itgmania, bobmani/ksm-v2, bobmani/leraine-studio, bobmani/linthesia, bobmani/pianogame
 
 ### Deferred
 - HyperNexus `gitlab/feature/cloud-dashboard-mcp-sse` -- needs dedicated session
 - warp `zb/*` branches -- unrelated histories
 - topaz-ffmpeg FFmpeg upstream -- large, needs dedicated session
 - bobeditpro Audacity upstream -- needs dedicated session
-- 16 uninitialized submodules (bobmani/*, hymnmania, hypercode, jvm-cpp-runtime)
+- 155 Dependabot vulnerabilities on workspace default branch (11 critical, 58 high)
 
 
 ## [v5.283.0] — 2026-10-11 — Protocol #258 — Repository Sync & Intelligent Merge
