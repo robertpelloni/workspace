@@ -1,0 +1,492 @@
+{
+ "Adventist Youth": {
+  "natural_bpm": 103,
+  "speed": 1.408,
+  "upload": "84445b3b-c6cb-4e2b-baf9-4b6f445b8c29",
+  "clip": "f7a64cf2-89a6-4111-8632-b912a84f80c7",
+  "final_bpm": 144
+ },
+ "Are You A Christian": {
+  "natural_bpm": 99,
+  "speed": 1.465,
+  "upload": "f86c3777-f3d0-43af-ac20-44a4cb93acb1",
+  "clip": "d7227b07-f4cd-48de-b793-b17dae388633",
+  "final_bpm": 72
+ },
+ "Are You Ready For Jesus To Come": {
+  "natural_bpm": 129,
+  "speed": 1.124,
+  "upload": "b07d1984-1064-42cb-9e58-359233ffb93d",
+  "clip": "ef8cd1b7-aa5b-4c60-a593-a1f6351336a4",
+  "final_bpm": 115
+ },
+ "As For Me": {
+  "natural_bpm": 129,
+  "speed": 1.325,
+  "upload": "0a4e43c4-9f6d-4085-a947-2d139b07ff6c",
+  "clip": "82c434a1-ba2e-494d-9e97-53948f6af413",
+  "final_bpm": 89,
+  "pass": 2
+ },
+ "Behold What Manner Of Love 1 John 3 1": {
+  "natural_bpm": 136,
+  "speed": 1.066
+ },
+ "Can The World See Jesus In You": {
+  "natural_bpm": 129,
+  "speed": 1.509,
+  "upload": "8aec980d-f010-4eeb-a428-56e9b919f4a0",
+  "clip": "8c953b0d-72da-4bab-bc40-34d36aee2e0f",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "Christ The Joy Of Loving Hearts": {
+  "natural_bpm": 108,
+  "speed": 1.343,
+  "upload": "dba7e41f-e4ec-4099-aea2-0aa5f5f36a9c",
+  "clip": "cbae90d6-7f89-4857-a70b-aa6ed467072d",
+  "final_bpm": 144
+ },
+ "Do You Know My Jesus": {
+  "natural_bpm": 96,
+  "speed": 1.51,
+  "upload": "95e2c003-fe2f-4ee1-a1da-fbd7321800b4",
+  "clip": "6329ae1f-16be-4867-b703-26220e16b591",
+  "final_bpm": 161
+ },
+ "Echo Chorus": {
+  "natural_bpm": 129,
+  "speed": 1.124,
+  "upload": "b6bfefa8-27de-40c4-a665-906f1b8a7d6a",
+  "clip": "4aa41fd0-b448-4cca-a83e-e6c82fd9ee04",
+  "final_bpm": 129
+ },
+ "Emmanuel": {
+  "natural_bpm": 99,
+  "speed": 1.465,
+  "upload": "c8cf07bd-38bd-4cd0-908a-f8f7299812b1",
+  "clip": "c8b96735-3787-423f-b915-41d89df51f2b",
+  "final_bpm": 74
+ },
+ "Everybody Ought To Know": {
+  "natural_bpm": 117,
+  "speed": 1.536,
+  "final_bpm": 172,
+  "pass": 2
+ },
+ "Every Day With Jesus": {
+  "natural_bpm": 112,
+  "speed": 1.295,
+  "upload": "864351c4-4a11-4ca2-876a-ed7c559367e4",
+  "clip": "296a3565-d372-4b27-831d-b59ead18d6e2",
+  "final_bpm": 144
+ },
+ "Every Moment Of Every Day": {
+  "natural_bpm": 112,
+  "speed": 1.295,
+  "upload": "03fe2803-cb97-49a7-b6be-879908b030ec",
+  "clip": "e46f8b6b-f592-4020-9b7d-222c7c8aaee7",
+  "final_bpm": 144
+ },
+ "Father We Love You": {
+  "natural_bpm": 136
+ },
+ "Follow Me": {
+  "natural_bpm": 108,
+  "speed": 1.343,
+  "upload": "9df9347c-214b-409e-b5c0-1fd54592704e",
+  "clip": "4c9f8342-de0b-4450-89f6-e6b7c9b23f0e",
+  "final_bpm": 144
+ },
+ "For God So Loved The World": {
+  "natural_bpm": 129,
+  "speed": 1.509,
+  "upload": "a1c6e450-d6d8-49a7-b528-4026e1ba8d41",
+  "clip": "67016b63-42f4-4e6f-9090-d197f87853c0",
+  "final_bpm": 161,
+  "pass": 2
+ },
+ "For God So Loved The World with Tag": {
+  "natural_bpm": 129,
+  "speed": 1.263,
+  "upload": "dda4edbc-b35c-4743-9051-cb8a2fa71cd6",
+  "clip": "f85fc851-b53a-409d-bc87-9026950c0000",
+  "final_bpm": 123,
+  "pass": 2
+ },
+ "God Is So Good": {
+  "natural_bpm": 108,
+  "speed": 2.188,
+  "upload": "02d548f1-8833-4206-b4c4-409ff0d9264a",
+  "clip": "a6460683-bde8-4987-b2cc-727d514a310e",
+  "final_bpm": 112,
+  "pass": 2
+ },
+ "God s Love Is Wonderful": {
+  "natural_bpm": 129
+ },
+ "Great Are You Lord": {
+  "natural_bpm": 136
+ },
+ "Happiness Is The Lord": {
+  "natural_bpm": 123,
+  "speed": 1.39,
+  "final_bpm": 161,
+  "pass": 2
+ },
+ "Ha la la la la": {
+  "natural_bpm": 161
+ },
+ "He Lives": {
+  "natural_bpm": 129,
+  "speed": 1.124
+ },
+ "He s Able": {
+  "natural_bpm": 112,
+  "speed": 1.124,
+  "final_bpm": 129,
+  "pass": 2
+ },
+ "I Have Decided To Follow Jesus": {
+  "natural_bpm": 96
+ },
+ "Jesus Comes With Power": {
+  "natural_bpm": 144
+ },
+ "Thy Word": {
+  "natural_bpm": 117
+ },
+ "Far Beyond The Sun": {
+  "natural_bpm": 102,
+  "speed": 1.422,
+  "upload": "5aebe3c6-f745-4bdb-babb-9c642d2635a2",
+  "clip": "99145ee3-02d0-4730-a718-d630f21a82ea",
+  "final_bpm": 96
+ },
+ "Father, We Love You": {
+  "natural_bpm": 136,
+  "speed": 1.501,
+  "upload": "e01e4af4-354c-49b2-bf1b-2a55153d59b5",
+  "clip": "3864b124-b778-44d9-a20e-90f7fbd5ccb9",
+  "final_bpm": 72,
+  "pass": 2
+ },
+ "God's Love Is Wonderful": {
+  "natural_bpm": 129,
+  "speed": 1.124,
+  "upload": "77710658-2af3-4abe-8d41-597f5a25c201",
+  "clip": "6414f9e1-f9d6-4378-8873-9ae37cba4b83",
+  "final_bpm": 136
+ },
+ "Great Are You, Lord": {
+  "natural_bpm": 136,
+  "speed": 1.066
+ },
+ "Ha-la-la-la-la": {
+  "natural_bpm": 161,
+  "speed": 0.901,
+  "upload": "451d47d8-39f7-4aa5-93c2-0d210e1bcb7d",
+  "clip": "8149042d-8894-4a7b-b3ef-3273d1c0c52e",
+  "final_bpm": 144
+ },
+ "He's Able": {
+  "natural_bpm": 99,
+  "speed": 1.647,
+  "upload": "a4cf9721-c3f7-4b9f-bc62-de909dcd8591",
+  "clip": "de36082b-fe92-442e-b4cf-c6eb5a379de6",
+  "final_bpm": 136,
+  "pass": 2
+ },
+ "He's Got The Whole World": {
+  "natural_bpm": 117,
+  "speed": 1.239,
+  "upload": "8346b83c-26c3-45e7-a770-62dd643c8bc0",
+  "clip": "df9b2562-640b-4c75-8dca-14dcf5eda77f",
+  "final_bpm": 136
+ },
+ "How Majestic Is Your Name": {
+  "natural_bpm": 136,
+  "speed": 1.321,
+  "upload": "d0330a9c-2d3b-431d-92f5-d76341f0c206",
+  "clip": "a4602549-8351-4ed9-98ed-0ba55ec69d8b",
+  "final_bpm": 185,
+  "pass": 2
+ },
+ "Humble Thyself": {
+  "natural_bpm": 72,
+  "speed": 2.014,
+  "upload": "530676a6-df3a-4fb6-9d27-8b87df6e0663",
+  "clip": "7c90f906-717e-40db-bfc2-8308d1845079",
+  "final_bpm": 144
+ },
+ "I Just Keep Trusting My Lord": {
+  "natural_bpm": 103,
+  "speed": 1.408,
+  "upload": "1461e8c3-bc35-4dc9-96dc-992ad8584981",
+  "clip": "a871e6a7-4d70-4e30-933a-d8c3426566aa",
+  "final_bpm": 144
+ },
+ "I Just Keep Trusting My Lord with Tag": {
+  "natural_bpm": 108,
+  "speed": 1.343,
+  "upload": "71fa2c6f-6310-40ca-8795-7a089c034af5",
+  "clip": "0163ed56-9c77-4bfe-bc75-e69c85ec8217",
+  "final_bpm": 172
+ },
+ "I Know The Lord Has Made A Way": {
+  "natural_bpm": 144,
+  "speed": 0.789,
+  "upload": "58e98822-7256-447c-91ab-dadce029b10c",
+  "clip": "9f7e68ef-d404-4d3f-a02d-f7c3c989dfc0",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "I Know The Lord Has Made A Way Tag": {
+  "natural_bpm": 144,
+  "speed": 1.132,
+  "upload": "a157a064-aaec-4b64-8a11-0031732fa32e",
+  "clip": "cdc89f5d-93d8-4381-9157-1d8c97ddf4bb",
+  "final_bpm": 199,
+  "pass": 2
+ },
+ "I Shall Not Be Moved": {
+  "natural_bpm": 136,
+  "speed": 1.066,
+  "upload": "3a41eb6c-89df-487a-a58d-0630e5ac53f5",
+  "clip": "db0ac739-4950-44fa-a858-dc6b759082a3",
+  "final_bpm": 144
+ },
+ "I Shall See The King": {
+  "natural_bpm": 136,
+  "speed": 1.066
+ },
+ "I Want To Be Ready": {
+  "natural_bpm": 112,
+  "speed": 0.589,
+  "upload": "49b882c7-adfb-4006-b464-7623011e2213",
+  "clip": "7da8c442-9264-4b6a-8e62-e33e06164a87",
+  "final_bpm": 86,
+  "pass": 2
+ },
+ "I Will Make You Fishers Of Men": {
+  "natural_bpm": 129,
+  "speed": 1.124
+ },
+ "I Will Serve Thee": {
+  "natural_bpm": 136,
+  "speed": 0.899,
+  "upload": "117bfa50-9586-4810-95f2-561730c3d02b",
+  "clip": "9c30e443-0bbf-48c2-863a-bc838b47eca8",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "I Will Sing Of The Mercies Of The Lord Psalm 89 1": {
+  "natural_bpm": 77,
+  "speed": 1.476,
+  "upload": "6b0446ce-9056-4a5f-814f-38ba2a427259",
+  "clip": "9b03aac0-4d1b-47ce-ad9d-2d55331abe8d",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "I'll Share My Faith": {
+  "natural_bpm": 129,
+  "speed": 1.582,
+  "upload": "173260b7-49c9-47ae-9986-45ea59a160a3",
+  "clip": "f5efefd4-c55f-4012-999e-e105f5599f59",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "I'm So Happy": {
+  "natural_bpm": 129,
+  "speed": 1.325,
+  "upload": "be1ace02-5b6d-41c4-a355-b2cfb459687b",
+  "clip": "b6e95b74-8d9e-4272-809b-58dcdf7f3de3",
+  "final_bpm": 136,
+  "pass": 2
+ },
+ "I've Found The Way": {
+  "natural_bpm": 126,
+  "speed": 1.151,
+  "upload": "9f6905f4-ed30-42c3-bcc4-6346d63bb7a1",
+  "clip": "41318a26-8621-45fc-92b0-58ed51558acb",
+  "final_bpm": 117
+ },
+ "I've Got Love Like An Ocean": {
+  "natural_bpm": 108,
+  "speed": 1.343
+ },
+ "If You Know The Lord": {
+  "natural_bpm": 129,
+  "speed": 1.124,
+  "upload": "1ac45741-04e3-49e2-b274-1335ef8d55d8",
+  "clip": "e9825755-7a8b-40c2-9b10-d9b42fa4c773",
+  "final_bpm": 129
+ },
+ "If You Want Joy": {
+  "natural_bpm": 108,
+  "speed": 2.188,
+  "upload": "dbbd4dc9-c699-45b0-ae03-ede7314e49b2",
+  "clip": "6c97220c-0a89-4ffc-9c32-8c2303959da3",
+  "final_bpm": 199,
+  "pass": 2
+ },
+ "In Moments Like These": {
+  "natural_bpm": 112,
+  "speed": 1.295,
+  "upload": "b631c32e-e959-4b6e-9676-ac9377debfb0",
+  "clip": "13e44145-a92f-48d2-8a38-0906b7dd4972",
+  "final_bpm": 129
+ },
+ "In My Heart There Rings A Melody": {
+  "natural_bpm": 112,
+  "speed": 1.295,
+  "upload": "86e39bd7-d3e2-49dc-bcee-46e0d3dda1f7",
+  "clip": "4fef0ea6-4a01-4820-b731-2b2343c34b4f",
+  "final_bpm": 144
+ },
+ "In The Name Of Jesus": {
+  "natural_bpm": 129,
+  "speed": 1.263,
+  "upload": "8425336a-7c74-4448-8d01-3823089b6786",
+  "clip": "e1b4cd2b-91a3-4bd7-a40c-c47d7d1ca643",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "In The Name Of Jesus with Yesterday, Today, Forever": {
+  "natural_bpm": 117,
+  "speed": 1.239,
+  "upload": "45e275fb-be87-49ca-b797-6a974eee7dbf",
+  "clip": "50176386-7c12-46ba-9553-eb75930fcc16",
+  "final_bpm": 144
+ },
+ "It's About Grace": {
+  "natural_bpm": 117,
+  "speed": 0.971,
+  "upload": "a2176d2e-4923-4ccc-a6b1-00aa85e2880f",
+  "clip": "b0f6867c-5887-453a-b64d-6e83860cdbd1",
+  "final_bpm": 112,
+  "pass": 2
+ },
+ "It's the Sabbath": {
+  "natural_bpm": 136,
+  "speed": 1.066,
+  "upload": "7149f12e-8146-488e-bee3-0659761dcec5",
+  "clip": "d9f9a70c-fcb2-4e74-886d-a7cad3adf366",
+  "final_bpm": 136
+ },
+ "Jesus Is The Joy Of Living": {
+  "natural_bpm": 129,
+  "speed": 1.325,
+  "upload": "b7118ba7-0205-4dff-899f-ca393043a93e",
+  "clip": "c0aa1bb0-6359-45fe-aa8f-500d89901ddb",
+  "final_bpm": 199,
+  "pass": 2
+ },
+ "Jesus, Name Above All Names": {
+  "natural_bpm": 89,
+  "speed": 2.019,
+  "upload": "a0db52cf-22e9-4cdd-86c7-b310f28b38cd",
+  "clip": "789ac472-8119-4ee4-bf3f-26fbcf67d7f3",
+  "final_bpm": 129,
+  "pass": 2
+ },
+ "Joy Is The Flag": {
+  "natural_bpm": 172,
+  "speed": 0.661,
+  "upload": "6aa792e9-d622-4c76-b449-ee5d0168fa97",
+  "clip": "f0db807e-a432-437a-91e0-b62fe5f3ce0b",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "Just To Know Him": {
+  "natural_bpm": 108,
+  "speed": 1.343,
+  "upload": "8f36d20b-f65e-4966-9947-c9fa353e65a6",
+  "clip": "136dc8aa-1145-4d04-a72a-3e35f709695c",
+  "final_bpm": 144
+ },
+ "Let's Sing A Happy Song": {
+  "natural_bpm": 136,
+  "speed": 1.066,
+  "upload": "ce3e7cb7-a93e-49ee-a773-e7f94aa24aaa",
+  "clip": "84eea809-1c40-4048-aa2c-acf841119785",
+  "final_bpm": 136
+ },
+ "Lord, Be Glorified": {
+  "natural_bpm": 99,
+  "speed": 1.465,
+  "upload": "0a27c5e4-d88b-4959-adf8-02f08f6e0e3c",
+  "clip": "b6c3bcbf-3369-496c-8c80-e68e2bf8f8e2",
+  "final_bpm": 144
+ },
+ "Love Is In Your Hand": {
+  "natural_bpm": 129,
+  "speed": 0.819,
+  "upload": "37bbd8f6-22e9-4185-9e4f-d1e7f77b9817",
+  "clip": "6088214a-9b69-4045-997d-17ef51d9596e",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "Love Is Something": {
+  "natural_bpm": 185,
+  "speed": 0.784
+ },
+ "Maranatha": {
+  "natural_bpm": 108,
+  "speed": 1.343,
+  "upload": "c3b61a7a-475e-4333-8ef2-daf2f8bd13dc",
+  "clip": "9d8c9dbb-4a22-4469-8999-86e8fac82368",
+  "final_bpm": 144
+ },
+ "My Lord Knows The Way": {
+  "natural_bpm": 103,
+  "speed": 1.408,
+  "upload": "efa3af44-e0e8-45d9-935d-d9de24202b7a",
+  "clip": "81a39c76-aba4-4377-abc4-debf83cb6df5",
+  "final_bpm": 144
+ },
+ "My Peace": {
+  "natural_bpm": 152,
+  "speed": 0.748,
+  "upload": "3496b93b-a709-47e9-a86f-e77f49f98a1d",
+  "clip": "f568f027-58b0-4127-aa22-7425e9fd65e3",
+  "final_bpm": 144,
+  "pass": 2
+ },
+ "New Life In Christ": {
+  "natural_bpm": 129,
+  "speed": 1.124,
+  "upload": "579e736b-40d4-4e41-beed-8421357ae428",
+  "clip": "f91b122b-d307-43de-8e77-5a4c8cefeee8",
+  "final_bpm": 108
+ },
+ "book1-prelude01": {
+  "natural_bpm": 96,
+  "speed": 1.51,
+  "upload": "36d9ad80-3393-4a5f-84ba-4919b6259055",
+  "clip": "c41b8de9-940e-4fe8-8d41-811b63ce07ea",
+  "final_bpm": 136
+ },
+ "book1-prelude03": {
+  "natural_bpm": 117,
+  "speed": 1.239,
+  "upload": "bc6e1588-e7fb-4a8c-b6ad-27c23b7cb0cb",
+  "clip": "3475e7d1-9e0b-4c74-a673-48920cd345f0",
+  "final_bpm": 98
+ },
+ "book1-prelude06": {
+  "natural_bpm": 136,
+  "speed": 1.066,
+  "upload": "e7d0f409-1feb-4791-bfde-2a3688de5823",
+  "clip": "7e9ab2ea-f1c7-4116-9920-70f9774533ba",
+  "final_bpm": 129
+ },
+ "osterreichische-bundeshymne": {
+  "natural_bpm": 172,
+  "speed": 0.711,
+  "upload": "0e0da5f3-f851-4f14-b4de-0627b24daed6",
+  "clip": "8544f222-7da7-451d-b07a-8c7b2c3f9b40",
+  "final_bpm": 144,
+  "pass": 2
+ }
+}

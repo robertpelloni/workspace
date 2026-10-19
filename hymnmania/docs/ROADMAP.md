@@ -1,23 +1,28 @@
-# Roadmap
+# Project Roadmap
 
-## Phase 7: Algorithmic Psytrance (Psy-Mono) [Completed]
-- [x] Python-Native MIDI DNA Extraction & Procedural 145 BPM Sequencer.
-- [x] Euclidean Rhythm Gating for Hymn Melodies.
-- [x] Automated Hip-Hop Vocal Isolation, Ratio-based Grid-Locking, and Pitch-Alignment.
-- [x] Transient-Only Rendering for Udio/Suno conditioning.
-- [x] Real-time "Live Studio" parameter tweaking & Multi-Channel Mixer via C++ engine.
-- [x] Real-time microphone input for on-the-fly melody generation (pYIN).
-- [x] Local Generative AI rendering (MusicGen).
+## Phase 1: Foundation (Complete)
+- [x] Basic MIDI rendering.
+- [x] MusicGen integration via Replicate.
+- [x] Video generation with lyrics overlay.
 
-## Phase 8: Optimization, Analytics & Export [Completed]
-- [x] Studio V133 Interface with Performance Mode & Live MIDI Monitoring.
-- [x] Integrated Optimization & Analytics suite (A/B testing, preference correlation).
-- [x] Algorithmic Style Presets (Full-On, DarkPsy, Progressive, Morning).
-- [x] Video Rendering & Export (MP4 with kaleidoscope visuals).
-- [x] User Feedback & Refinement system.
+## Phase 2: Experimental Optimization (Current)
+- [x] Sonic Vacuum: Dry transient rendering for better AI inspiration.
+- [x] Symbolic Normalization: Velocity flattening and grid alignment.
+- [x] House Structural Quantization: Snap to 124 BPM.
+- [x] Suno & Udio browser automation (CDP).
+- [x] **v1.37.0: Suno Experiment Matrix (0.5x, 1x, 2x speeds across Deep House, DnB, Psytrance).**
+- [x] **v1.37.0: Reverse Engineering Pipeline (Audio -> MIDI -> Ableton).**
 
-## Phase 9: Multi-Agent Collaboration & Web Scaling [Next]
-- [ ] Real-time browser-based synth engine (WebAudio/WASM).
-- [ ] Decentralized GPU render cluster integration (RabbitMQ/Redis).
-- [ ] Multi-agent collaborative music production (Jules + Music Agents).
-- [ ] Automated YouTube content automation and engagement metrics tracking.
+## Phase 3: Advanced Studio Integration
+- [x] VST3 hosting in C++ engine.
+- [ ] Real-time MIDI jam mode.
+- [x] **v5.97.4: Full Social Media Pipeline** — YouTube uploads with branded descriptions, Facebook cross-posting with video previews, Instagram credentials saved.
+- [x] **Classical Remix Pipeline** — Canon in D, Toccata & Fugue, Amazing Grace, How Great Thou Art, Clair de Lune across 10+ electronic genres.
+- [x] Beat-synced video composer with Magnific AI clip library (92 clips).
+
+## Phase 4: Content Scaling (Active)
+- [x] 443+ YouTube videos published
+- [x] 41+ Facebook posts with video preview cards
+- [x] Daily scheduler for staggered social media posting
+- [ ] Instagram Reels cross-posting
+- [ ] Spotify/Apple Music distribution

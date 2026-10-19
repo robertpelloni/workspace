@@ -1,0 +1,59 @@
+=== chiptune ===
+  [chiptune] Create clicked
+  [chiptune] complete clip 5f841832-4fa — CAPTURING
+  [chiptune] complete clip e0944b79-a67 — CAPTURING
+  [chiptune] saved C:\Users\jakeg\robertpelloni\hymnmania\scripts\..\generated\Jesus_Comes_With_Power_10x_chiptune_A_cover.mp3 centroid=316.8 DEGRADED!
+  chiptune: FAILED or degraded
+=== deep_house ===
+  [deep_house] Create clicked
+  [deep_house] complete clip 9f3cc6a1-c2b — CAPTURING
+  [deep_house] complete clip 9f3cc6a1-c2b — CAPTURING
+  [deep_house] saved C:\Users\jakeg\robertpelloni\hymnmania\scripts\..\generated\Jesus_Comes_With_Power_10x_deep_house_A_cover.mp3 centroid=3214.3 OK
+=== detroit_house ===
+  [detroit_house] Create clicked
+  [detroit_house] complete clip 8a8169f1-af0 — CAPTURING
+  [detroit_house] complete clip 8a8169f1-af0 — CAPTURING
+  capture err: no blob
+  detroit_house: FAILED or degraded
+=== drum_and_bass ===
+Traceback (most recent call last):
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\gen_and_capture.py", line 170, in <module>
+    with sync_playwright() as pw:
+    ^^^^^^
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\gen_and_capture.py", line 162, in main
+    pass
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\gen_and_capture.py", line 45, in trigger_cover
+    page.goto(f'https://suno.com/song/{upload_cid}', wait_until='domcontentloaded', timeout=30000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 9875, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 560, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 156, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: Navigation to "https://suno.com/song/d2246d83-d592-4081-89eb-218a765535a9" is interrupted by another navigation to "https://suno.com/song/8a8169f1-af02-47c0-aa24-7a836eb58661"
+Call log:
+  - navigating to "https://suno.com/song/d2246d83-d592-4081-89eb-218a765535a9", waiting until "domcontentloaded"
+

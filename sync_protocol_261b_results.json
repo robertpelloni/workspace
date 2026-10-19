@@ -1,0 +1,377 @@
+{
+  "dirty_committed": [
+    {
+      "path": "fwber",
+      "files": 4,
+      "type": "databases, agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "hymnmania",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "jules-autopilot",
+      "files": 28,
+      "type": "code, databases, agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "hermes-agent",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "multimousergy",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "ArrowVortex",
+      "files": 4,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "JWildfire",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "Maestro",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "MarbleBlast",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "MilkDrop3",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "agentirc",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "ai_game_engine",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "bg",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobcoin",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobeditpro",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobfilez",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bgtk",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobium",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "bobsgameonlinejava",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobsgameweb",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobtorrent",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobtrader",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobtrax",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bqt",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobzilla",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "bobzzite",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "crowdsourced_dance_club",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "dao",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "electricsheep",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "element-web",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "marketing_agent",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "f-zerox",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "aimoneymachine_site",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "geany",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "hyperharness",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "freellm",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "mk64",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "native-fy",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "neverball",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "npp",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "onetool-mcp",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "openclaw-config",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "pi-mono",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "planet_fitness_stepmaniax_agent",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "slsk_discography_downloader_script",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "sm64coopdx",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "supersaber",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "tabby",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "HyperNexus",
+      "files": 110,
+      "type": "code, databases, agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "veilid_reddit_facebook",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "bobmani",
+      "files": 9,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "MilkDrop3_fix",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bg_fix",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobfilez_fix",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobsgameonlinejava_fix",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "browser-use",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobmani/Simply-Love-SM5",
+      "files": 1153,
+      "type": "docs/config"
+    },
+    {
+      "path": "bobmani/bobmania",
+      "files": 8937,
+      "type": "code, agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobmani/ddc",
+      "files": 5397,
+      "type": "code, agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobmani/ddc_onset",
+      "files": 41,
+      "type": "code, docs/config"
+    },
+    {
+      "path": "bobmani/ffr-difficulty-model",
+      "files": 58,
+      "type": "code, agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "bobmani/leraine-studio",
+      "files": 249,
+      "type": "code, agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "grammars-v4",
+      "files": 1,
+      "type": "docs/config"
+    },
+    {
+      "path": "okgame",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "ksm-v2",
+      "files": 2,
+      "type": "agent-memory/sessions, docs/config"
+    },
+    {
+      "path": "HyperNexus2old",
+      "files": 1,
+      "type": "working-tree sync"
+    }
+  ],
+  "merge_results": [
+    {
+      "path": "hymnmania",
+      "branch": "master",
+      "status": "cherry-picked 1/7"
+    },
+    {
+      "path": "bobmani/beatoraja",
+      "branch": "jules-3962252154118760376-7a465b48",
+      "status": "merged"
+    },
+    {
+      "path": "bobmani/hymnmania",
+      "branch": "master",
+      "status": "cherry-picked 1/7"
+    },
+    {
+      "path": "bobmani/ksm-v2",
+      "branch": "feat-async-post-ranking-unlock-7547845477294015222",
+      "status": "merged"
+    },
+    {
+      "path": "bobmani/linthesia",
+      "branch": "jules-gtkmm-migration-17914190840350960258",
+      "status": "failed"
+    },
+    {
+      "path": "bobmani/pianogame",
+      "branch": "jules-71435653877870057-8b2f1bce",
+      "status": "failed"
+    },
+    {
+      "path": "jvm-cpp-runtime",
+      "branch": "jvmcpp-runtime-13637006691171799819",
+      "status": "merged"
+    }
+  ],
+  "pushed": [
+    "hymnmania",
+    "bobmani/beatoraja",
+    "bobmani/ksm-v2",
+    "jvm-cpp-runtime"
+  ]
+}

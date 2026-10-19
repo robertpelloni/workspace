@@ -20,6 +20,43 @@
 - **Submodule fetch**: 112/112 fetched successfully, 110/112 fast-forwarded (HyperNexus + HyperNexus2old have local commits, expected)
 - **Version bumped**: v5.283.0 → v5.284.0
 
+## [v5.286.0] — 2026-10-19 — Protocol #261 — Repository Sync & Intelligent Merge
+
+### Merged (Feature Branches)
+- **bobmani/beatoraja**: `jules-3962252154118760376-7a465b48` (67 commits) — full merge into `main`
+- **bobmani/ksm-v2**: `feat-async-post-ranking-unlock-7547845477294015222` (1 commit) — merged into `main`
+- **jvm-cpp-runtime**: `jvmcpp-runtime-13637006691171799819` (6 commits) — merged into `main`
+- **bobmani/linthesia**: `jules-gtkmm-migration-17914190840350960258` (1 commit) — merged into `main` (resolved .pyc/.db conflicts)
+- **bobmani/pianogame**: `jules-71435653877870057-8b2f1bce` (43 commits) — merged into `master` (resolved docs/source conflicts)
+- **hymnmania**: `master` branch (7 commits) — cherry-picked 1/7 (6 conflicts skipped)
+- **bobmani/hymnmania**: `master` branch (7 commits) — cherry-picked 1/7
+- **root**: `dependabot/npm_and_yarn-99446ad252` + `dependabot/uv-ea96c0b163` — cherry-picked
+
+### Dirty State Committed (66 submodules)
+All memory files, session logs, databases (catalog.db, hypernexus.db), AGENTS.md, CLAUDE.md tracked and committed per retention policy. Key repos: HyperNexus (110 files), bobmani/bobmania (8937 files), bobmani/ddc (5397 files), bobmani/Simply-Love-SM5 (1153 files), jules-autopilot (28 files).
+
+### Fixed
+- **Git identity**: Set `opencode <opencode@bot.com>` in all 112 submodules (fixed "Committer identity unknown" errors)
+- **Stale index.lock files**: Removed in auto_dj_script, ArrowVortex, Maestro, ksm-v2, realestatecrm
+- **_fix submodules pushed**: MilkDrop3_fix, bg_fix, bobfilez_fix, bobsgameonlinejava_fix force-pushed to remotes
+- **ksm-v2**: Force-pushed (diverged from bobmani/ksm-v2)
+
+### Pushed
+- **54 submodules** pushed dirty-state commits
+- **8 submodules** force-pushed (diverged _fix copies)
+- **5 feature branches** merged and pushed
+- **Root**: pushed to origin/main
+
+### Fetch
+- **Submodules fetched**: 110/112 (hypercode + bobmani/itgmania timed out)
+
+### Deferred
+- `openclaw-config` — push denied (remote: TechNickAI/openclaw-config, different owner)
+- `HyperNexus2old` — push rejected (gitlab remote, diverged)
+- `realestatecrm` — push timed out (large repo)
+- `HyperNexus` push timed out (large repo)
+- Dependabot vulnerability backlog (129 total)
+
 ## [v5.285.1] — 2026-10-19 — Protocol #261 — Repository Sync & Intelligent Merge
 
 ### Merged

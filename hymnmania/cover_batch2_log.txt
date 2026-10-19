@@ -1,0 +1,29 @@
+WARNING: upload d2246d83-d592-4081-89eb-218a765535a9 not in recent feed (may be deep-paged). Proceeding anyway — covers are filtered by cover_clip_id.
+
+=== synthwave ===
+  FOUND synthwave: Jesus Comes With Power (Neon N 4523dbf2-bea cover=d2246d83-d59
+  FOUND synthwave: Jesus Comes With Power (Neon N 140e58c9-088 cover=d2246d83-d59
+  FOUND synthwave: Psychedelic Power Descent e5069135-c52 cover=d2246d83-d59
+  FOUND synthwave: Psychedelic Power Descent 70762c34-a94 cover=d2246d83-d59
+    recording 245s...
+  synthwave: A saved -> Jesus_Comes_With_Power_10x_synthwave_A_cover.mp3 (5741KB)
+
+=== detroit_house ===
+  FOUND detroit_house: Jesus Comes With Power (Motor  ab93f790-bae cover=d2246d83-d59
+  FOUND detroit_house: Jesus Comes With Power (Motor  0f9ed428-4a1 cover=d2246d83-d59
+  FOUND detroit_house: Psychedelic Power Descent e5069135-c52 cover=d2246d83-d59
+  FOUND detroit_house: Psychedelic Power Descent 70762c34-a94 cover=d2246d83-d59
+    recording 245s...
+  detroit_house: A saved -> Jesus_Comes_With_Power_10x_detroit_house_A_cover.mp3 (5741KB)
+
+=== japanese_hardcore_techno ===
+  FOUND japanese_hardcore_techno: Jesus_Comes_With_Power (J-Core 82512325-2f6 cover=d2246d83-d59
+  FOUND japanese_hardcore_techno: Jesus_Comes_With_Power (J-Core 53ed8c6d-0d1 cover=d2246d83-d59
+  FOUND japanese_hardcore_techno: Jesus Comes With Power (Broste 2b898fa2-318 cover=d2246d83-d59
+  FOUND japanese_hardcore_techno: Jesus Comes With Power (Broste 8bf3c5b5-47b cover=d2246d83-d59
+  FOUND japanese_hardcore_techno: Psychedelic Power Descent e5069135-c52 cover=d2246d83-d59
+  FOUND japanese_hardcore_techno: Psychedelic Power Descent 70762c34-a94 cover=d2246d83-d59
+    recording 245s...
+  japanese_hardcore_techno: A saved -> Jesus_Comes_With_Power_10x_japanese_hardcore_techno_A_cover.mp3 (5741KB)
+
+DONE

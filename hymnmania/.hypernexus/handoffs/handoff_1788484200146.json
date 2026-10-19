@@ -1,0 +1,41 @@
+{
+  "version": "0.99.1",
+  "timestamp": 1788484200146,
+  "sessionId": "hymnmania-v5.97.11-capture-fix-and-full-genre-repost",
+  "stats": {
+    "totalCount": 6,
+    "sessionCount": 4,
+    "workingCount": 1,
+    "longTermCount": 1,
+    "observationCount": 4,
+    "uniqueObservationCount": 4,
+    "promptCount": 0,
+    "sessionSummaryCount": 0,
+    "session": 4,
+    "working": 1,
+    "long_term": 1,
+    "user": 0,
+    "agent": 0,
+    "project": 4,
+    "discovery": 0,
+    "decision": 4,
+    "progress": 4,
+    "warning": 1,
+    "fix": 5
+  },
+  "recentContext": [
+    {
+      "kind": "fix",
+      "content": "CRITICAL SUNO CAPTURE FIX (2026-09-02): MediaRecorder captures DEGRADED (lowpassed ~300Hz sine) audio from Suno song pages in batch/automated runs. The WORKING method: (1) generate cover fresh, (2) capture IMMEDIATELY within ~30 min of clip creation, (3) get metadata duration first, (4) play via SINGLE main-track play button (aria-label=Play, y<500), (5) MediaRecorder for exactly metadata_duration+3s, (6) ffmpeg webm->mp3. Verify quality via spectral centroid (>2000 = real cover, ~330 = sine/degraded). Helper: gen_capture_genre.py + cap_final.py. NEVER click all play buttons (queues wrong track)."
+    },
+    {
+      "kind": "observation",
+      "content": "All 11 genre covers for Jesus Comes With Power re-captured with REAL audio (centroids 2800-5000). 10 beat videos rebuilt + re-posted to YouTube (8 full + 2 shorts, all live): Chiptune vwQv7t9tK0k, Deep House 3Gott4XdqHk, Detroit House mrbJLzwRIHg, Detroit Techno hab94PLA8J8, DnB BtQnvhrCm8s, Dubstep U6oftZT4kFk, Gabba XSAXZ9TeH0o, Hardstyle S9Qhrn5dPnM, JapHardcore short s43HurTMIgw, Synthwave short KrMdmryZoUc. Channel at 1172. Confirmed extended quota handles 10+ uploads/day."
+    },
+    {
+      "kind": "decision",
+      "content": "End screens (custom recommended-video thumbnails at video end) CANNOT be set via YouTube Data API \u2014 only via YouTube Studio UI manually. YouTube auto-suggests channel videos at end by default (working as intended)."
+    }
+  ],
+  "notes": "v5.97.11. NEXT: post TikTok shorts for @resurrecting.beat (login resurrectingbeats@gmail.com / Temppass0!)."
+}

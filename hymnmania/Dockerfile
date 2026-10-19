@@ -37,7 +37,10 @@ RUN pip install --no-cache-dir \
     oemer==0.1.8 \
     demucs==4.0.1 \
     opencv-python-headless==4.11.0.86 \
-    onnxruntime==1.22.0
+    onnxruntime==1.22.0 \
+    basic-pitch==0.3.0 \
+    diffusers==0.33.0 \
+    accelerate==1.5.0
 
 # --- Stage 3: Runtime Environment (slim) ---
 FROM python:3.12-slim
@@ -75,6 +78,8 @@ RUN pip install --no-cache-dir --no-deps \
     streamlit-autorefresh==1.0.1 \
     playwright-stealth==2.0.3 \
     pyrubberband==0.4.0 \
+    pylive==0.4.0 \
+    requests_oauthlib==2.0.0 \
     && pip install --no-cache-dir \
     google-auth>=2.41 \
     google-api-core>=2.30 \
@@ -87,7 +92,7 @@ RUN pip install --no-cache-dir --no-deps \
 # Copy compiled C++ extension from builder
 COPY --from=builder /build/hymn_player_ext*.so ./
 
-# Copy ML packages from ml-deps stage (PyTorch, oemer, demucs, OpenCV, ONNX)
+# Copy ML packages from ml-deps stage (PyTorch, oemer, demucs, OpenCV, ONNX, basic-pitch, diffusers)
 COPY --from=ml-deps /usr/local/lib/python3.12/site-packages/ /usr/local/lib/python3.12/site-packages/
 
 # Copy the rest of the application

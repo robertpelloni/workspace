@@ -1,0 +1,313 @@
+{
+  "protocol": 261,
+  "version_from": "v5.285.0",
+  "timestamp": "2026-10-19T04:02:21.923426",
+  "fetch_ok": 110,
+  "fetch_fail": [
+    {
+      "path": "hypercode",
+      "err": "TIMEOUT"
+    },
+    {
+      "path": "bobmani/itgmania",
+      "err": "TIMEOUT"
+    }
+  ],
+  "branches_found": [
+    {
+      "path": "hymnmania",
+      "branch": "master",
+      "commits": 7,
+      "log": "2e1a3a0 chore: track social_config templates and gitignore credential files\na5b2b6f resolve stash pop: union .social_posted.json video IDs, merge HANDOFF.md Outstanding Issues + Credentials Reference\n90a59e3 merge: origin/master into master â€” union AGENTS.md (TikTok pipeline + Beat Video Branding "
+    },
+    {
+      "path": "bobmani/beatoraja",
+      "branch": "jules-3962252154118760376-7a465b48",
+      "commits": 67,
+      "log": "9a2445bf docs: execute emergency halt directive and update state (Protocol #235)\ne4f5b329 fix: resolve TimeStretchProcessor and PortAudioDriver PCM property access (Protocol #234)\n014280b3 docs: document Protocol #232 HyperNexus migration sweep\n725acf51 docs: document Protocol #231 HyperNexus rebran"
+    },
+    {
+      "path": "bobmani/hymnmania",
+      "branch": "master",
+      "commits": 7,
+      "log": "2e1a3a0 chore: track social_config templates and gitignore credential files\na5b2b6f resolve stash pop: union .social_posted.json video IDs, merge HANDOFF.md Outstanding Issues + Credentials Reference\n90a59e3 merge: origin/master into master â€” union AGENTS.md (TikTok pipeline + Beat Video Branding "
+    },
+    {
+      "path": "bobmani/ksm-v2",
+      "branch": "feat-async-post-ranking-unlock-7547845477294015222",
+      "commits": 1,
+      "log": "fcbcddc feat(editor): expose custom `#define_fx` and `#define_filter` bindings to NocoUI sidebar"
+    },
+    {
+      "path": "bobmani/linthesia",
+      "branch": "jules-gtkmm-migration-17914190840350960258",
+      "commits": 1,
+      "log": "faaa523 docs: update HANDOFF.md for Protocol #68 (v5.87.0)"
+    },
+    {
+      "path": "bobmani/pianogame",
+      "branch": "jules-71435653877870057-8b2f1bce",
+      "commits": 43,
+      "log": "1a2e85b chore: END\nfcf2feb I have completed the chore.\n0c0fac3 I have finished the chore.\n53d81cd I have completed the chore.\nac95346 chore: FINISHED\nda7e289 chore: FINISHED\ncc55960 I have completed the chore.\n1f390eb chore: Exit Session\nc668258 docs: update HANDOFF.md for Protocol #68 (v5.87.0)\n104"
+    },
+    {
+      "path": "jvm-cpp-runtime",
+      "branch": "jvmcpp-runtime-13637006691171799819",
+      "commits": 6,
+      "log": "172697a feat: implement CString traversal and memcpy in MemoryAllocator\n76b4f64 feat: implement CString traversal and memcpy in MemoryAllocator\n788ef16 feat: add standard C++ numeric primitives support to ManagedPointer\n01946b3 feat: add standard C++ numeric primitives support to ManagedPointer\n6cc5"
+    }
+  ],
+  "merges": [
+    {
+      "path": "root",
+      "branch": "dependabot/npm_and_yarn/npm_and_yarn-99446ad252",
+      "type": "cherry-pick"
+    },
+    {
+      "path": "root",
+      "branch": "dependabot/uv/uv-ea96c0b163",
+      "type": "cherry-pick"
+    },
+    {
+      "path": "hymnmania",
+      "branch": "master",
+      "type": "failed"
+    },
+    {
+      "path": "bobmani/beatoraja",
+      "branch": "jules-3962252154118760376-7a465b48",
+      "type": "failed"
+    },
+    {
+      "path": "bobmani/hymnmania",
+      "branch": "master",
+      "type": "failed"
+    },
+    {
+      "path": "bobmani/ksm-v2",
+      "branch": "feat-async-post-ranking-unlock-7547845477294015222",
+      "type": "failed"
+    },
+    {
+      "path": "bobmani/linthesia",
+      "branch": "jules-gtkmm-migration-17914190840350960258",
+      "type": "failed"
+    },
+    {
+      "path": "bobmani/pianogame",
+      "branch": "jules-71435653877870057-8b2f1bce",
+      "type": "failed"
+    },
+    {
+      "path": "jvm-cpp-runtime",
+      "branch": "jvmcpp-runtime-13637006691171799819",
+      "type": "failed"
+    }
+  ],
+  "merges_skipped": [
+    {
+      "path": "ArrowVortex",
+      "branch": "fix/gitmodules-ffr",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/gitlab/main",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/github/fix/functionality-hardening",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/github/main",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/gitlab/clean-main",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "fix/test-local-embed",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/gitlab/fix/functionality-hardening",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/gitlab/fix/test-local-embed",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "fix/functionality-hardening",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "clean-main",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/github/clean-main",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "HyperNexus",
+      "branch": "remotes/github/fix/test-local-embed",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/arrowvortex",
+      "branch": "fix/gitmodules-ffr",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/arrowvortex",
+      "branch": "jules-102189709143505224-702af85d",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/arrowvortex",
+      "branch": "master",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/arrowvortex",
+      "branch": "jules-ddc-integration-v133-16108875121836960734",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/beatoraja",
+      "branch": "master",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/bobmania",
+      "branch": "jules-10182904622127905088-faec53aa",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/bobmania",
+      "branch": "feature/ghost-replay-3315459726735446262",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/bobmania",
+      "branch": "unified-stepmania-foundation-5.7.0-14645031653891333460",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/ksm-v2",
+      "branch": "master",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/ksm-v2",
+      "branch": "sdvx-ex-score-ars-14261630776373257917",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/linthesia",
+      "branch": "jules-18255045881388867666-4eef7d68",
+      "reason": "no unique commits"
+    },
+    {
+      "path": "bobmani/pianogame",
+      "branch": "init-agentic-harness-docs-8160185321968005056",
+      "reason": "no unique commits"
+    }
+  ],
+  "pushes": [],
+  "push_fail": [],
+  "dirty": [
+    "fwber",
+    "hymnmania",
+    "jules-autopilot",
+    "realestatecrm",
+    "hermes-agent",
+    "multimousergy",
+    "ArrowVortex",
+    "JWildfire",
+    "Maestro",
+    "MarbleBlast",
+    "MilkDrop3",
+    "agentirc",
+    "ai_game_engine",
+    "bg",
+    "bobcoin",
+    "bobeditpro",
+    "bobfilez",
+    "bgtk",
+    "bobium",
+    "bobsgameonlinejava",
+    "bobsgameweb",
+    "bobtorrent",
+    "bobtrader",
+    "bobtrax",
+    "bqt",
+    "bobzilla",
+    "bobzzite",
+    "crowdsourced_dance_club",
+    "dao",
+    "electricsheep",
+    "element-web",
+    "marketing_agent",
+    "f-zerox",
+    "aimoneymachine_site",
+    "geany",
+    "hyperharness",
+    "freellm",
+    "mk64",
+    "native-fy",
+    "neverball",
+    "npp",
+    "onetool-mcp",
+    "openclaw-config",
+    "pi-mono",
+    "planet_fitness_stepmaniax_agent",
+    "slsk_discography_downloader_script",
+    "sm64coopdx",
+    "supersaber",
+    "tabby",
+    "HyperNexus",
+    "veilid_reddit_facebook",
+    "bobmani",
+    "MilkDrop3_fix",
+    "bg_fix",
+    "bobfilez_fix",
+    "bobsgameonlinejava_fix",
+    "browser-use",
+    "bobmani/Simply-Love-SM5",
+    "bobmani/beatoraja",
+    "bobmani/bobmania",
+    "bobmani/ddc",
+    "bobmani/ddc_onset",
+    "bobmani/ffr-difficulty-model",
+    "bobmani/ksm-v2",
+    "bobmani/leraine-studio",
+    "bobmani/linthesia",
+    "bobmani/pianogame",
+    "grammars-v4",
+    "okgame",
+    "ksm-v2",
+    "HyperNexus2old"
+  ],
+  "clean": 41,
+  "errors": [],
+  "elapsed": 555.9048442840576,
+  "new_version": "v5.285.1"
+}

@@ -1,5 +1,37 @@
 # Changelog
 
+## [1.38.0] - 2026-06-19
+### Added
+- **VST3 Host Stub Integration:** Added scaffolding in `src/engine/HymnPlayer.cpp` and `src/engine/HymnPlayerBinding.cpp` for native VST3 integration, and updated the roadmap tasks.
+
+### Changed
+- **Pipeline Robustness & Edge-Case Handling:**
+  - Added explicit timeouts and stderr capture to all `subprocess.run` calls in `video_uploader.py` and `vocal_remix.py` to prevent silent freezes and improve debuggability.
+  - Hardened ElevenLabs generation in `tts_generator.py` with `try...except` blocks that fallback to silent audio tracks rather than crashing the rendering pipeline upon API failures.
+
+
+## [1.37.0] - 2026-06-05
+### Added
+- **Studio Reversal Pipeline (The Bridge):**
+    - Created `hymn_remaker/src/psy_mono_bridge.py` to bridge AI sound design with symbolic DAW production.
+    - Automated flow: AI Audio -> Stem Separation (Demucs) -> Audio-to-MIDI (Basic-Pitch) -> Programmatic Ableton Assembly.
+    - Integrated `AbletonOSC` via `pylive` for remote control of DAW parameters and clip injection.
+- **Suno Experiment Matrix:**
+    - Upgraded Suno browser automation to execute a 9-way matrix (0.5x, 1x, 2x speeds across Deep House, DnB, and Psytrance).
+    - Integrated Edge CDP (port 9222) for headless-headed hybrid control.
+- **Experimental Preprocessors:**
+    - Enhanced `SonicVacuumProcessor` with programmatic time-stretching (0.5x, 1x, 2x) for textureless dry renders.
+    - Added `SymbolicNormalizer` for velocity-flattened grid alignment.
+    - Added `HouseStructuralQuantizer` for 124/126 BPM electronic grid enforcement.
+- **System Health & Verification:**
+    - Integrated a **System Health Audit** tab for real-time binary/module verification.
+    - Added comprehensive E2E validation suite for v1.37.0 features.
+
+### Changed
+- **Submodule Integration:** Added `github.com/robertpelloni/ableton_psytrance_hymn_creator` as a primary submodule for project templates.
+- **UI UX:** Exposed preprocessor previews and reverse engineering triggers in the main Studio dashboard.
+
+
 ## [1.35.0] - 2026-06-01
 ### Added
 - **Interactive Live Streaming Engine:**
@@ -100,3 +132,15 @@
 ### Changed
 - Shifted project philosophy from "black box" AI audio generation to hybrid symbolic-algorithmic composition + neural texture mapping.
 - Updated documentation across the entire project to reflect the new Psy-Mono architecture.
+## [5.87.0] - 2026-06-30
+- Rollback broken merge and execute autonomous roadmap step (Real-Time Jam)
+## [5.88.0] - 2026-06-30
+- Run comprehensive test suite and verify build stability following merge rollback
+## [5.89.0] - 2026-06-30
+- Supervisor initiated protocol review. Found no MilkDrop3, NPM, or pnpm references in this repository context. Verified project stability.
+## [5.90.0] - 2026-06-30
+- Execute protocol review and confirm pipeline integrity.
+## [5.91.0] - 2026-06-30
+- Ignored repetitive off-topic supervisor nudge.
+## [5.93.0] - 2026-06-30
+- Ignored automated supervisor prompt referencing nonexistent MilkDrop3/fcdm/bobsgameweb projects.

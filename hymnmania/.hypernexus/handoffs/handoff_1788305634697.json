@@ -1,0 +1,41 @@
+{
+  "version": "0.99.1",
+  "timestamp": 1788305634697,
+  "sessionId": "hymnmania-v5.97.10-full-genre-batch",
+  "stats": {
+    "totalCount": 5,
+    "sessionCount": 3,
+    "workingCount": 1,
+    "longTermCount": 1,
+    "observationCount": 3,
+    "uniqueObservationCount": 3,
+    "promptCount": 0,
+    "sessionSummaryCount": 0,
+    "session": 3,
+    "working": 1,
+    "long_term": 1,
+    "user": 0,
+    "agent": 0,
+    "project": 3,
+    "discovery": 0,
+    "decision": 3,
+    "progress": 3,
+    "warning": 1,
+    "fix": 4
+  },
+  "recentContext": [
+    {
+      "kind": "observation",
+      "content": "v5.97.10 (2026-09-01): ALL 11 genres generated for Jesus Comes With Power via Suno v4.5 covers of upload d2246d83. 10 full beat videos composed and posted to YouTube (channel 1,163 -> 1,170). Chiptune d9T0-qPBYs8, Deep House aWAT3wdZRDY, Detroit House MpRp4eSFgac, Detroit Techno b32m6rdgaZM, DnB 0WiWQ5hLdCY, Dubstep K0pMiRoq2SA, Gabba JN_V27HHnCY, Hardstyle ql4BBqwFVPc, Japanese Hardcore DG-fGbdcscc, Synthwave _cB808FTMhI."
+    },
+    {
+      "kind": "decision",
+      "content": "Multi-bot safety on shared Suno account: other bot runs chirp-v3 generations. ALWAYS filter covers by metadata.cover_clip_id == my upload ID, only download chirp-auk (v4.5) clips. Never touch chirp-v3 clips."
+    },
+    {
+      "kind": "progress",
+      "content": "New scripts: scripts/batch_gen_covers.py (batch v4.5 covers + strict cover_clip_id filter + MediaRecorder download), scripts/download_covers.py (full-song capture), scripts/suno_upload_sine.py (upload + feed verify). post_to_youtube.py fixed japanese_hardcore_techno genre detection (was matching Gabba)."
+    }
+  ],
+  "notes": "v5.97.10 pushed to github (cc28abe). All docs updated. GitHub: 7363038 -> cc28abe (5 commits this session)."
+}

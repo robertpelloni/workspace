@@ -1,0 +1,84 @@
+Upload confirmed: Jesus_Comes_With_Power_1.0x (chirp-chirp)
+
+=== deep_house ===
+  FOUND deep_house: Jesus_Comes_With_Power (Deep H ad6361ec-98a cover=d2246d83-d59
+  FOUND deep_house: Jesus_Comes_With_Power (Deep H eed3ccb6-644 cover=d2246d83-d59
+    recording 245s...
+  deep_house: A saved -> Jesus_Comes_With_Power_10x_deep_house_A_cover.mp3 (5741KB)
+
+=== drum_and_bass ===
+  FOUND drum_and_bass: Jesus_Comes_With_Power_DnB_1.1 6d4dc58d-9e2 cover=d2246d83-d59
+  FOUND drum_and_bass: Jesus_Comes_With_Power_DnB_1.1 91915cb7-877 cover=d2246d83-d59
+    recording 245s...
+  drum_and_bass: A saved -> Jesus_Comes_With_Power_10x_drum_and_bass_A_cover.mp3 (5741KB)
+
+=== gabba ===
+  FOUND gabba: Jesus_Comes_With_Power_1.0x (G 44d398ed-002 cover=d2246d83-d59
+  FOUND gabba: Jesus_Comes_With_Power_1.0x (G 3f6ce78b-aab cover=d2246d83-d59
+    recording 245s...
+  gabba: A saved -> Jesus_Comes_With_Power_10x_gabba_A_cover.mp3 (5741KB)
+
+=== chiptune ===
+  FOUND chiptune: Jesus_Comes_With_Power_1.1x d05d9925-690 cover=d2246d83-d59
+  FOUND chiptune: Jesus_Comes_With_Power_1.1x 461ee9fe-8f7 cover=d2246d83-d59
+    recording 245s...
+  chiptune: A saved -> Jesus_Comes_With_Power_10x_chiptune_A_cover.mp3 (5741KB)
+
+=== synthwave ===
+  FOUND synthwave: Jesus_Comes_With_Power_1.0x (C 4c73d270-ee6 cover=d2246d83-d59
+  FOUND synthwave: Jesus_Comes_With_Power_1.0x (C e8ccd18a-5af cover=d2246d83-d59
+    recording 245s...
+  synthwave: download failed
+
+=== hardstyle ===
+  FOUND hardstyle: Jesus_Comes_With_Power_1.5x (H e4d120bc-e14 cover=d2246d83-d59
+  FOUND hardstyle: Jesus_Comes_With_Power_1.5x (H fd5e0561-e32 cover=d2246d83-d59
+  FOUND hardstyle: Psychedelic Power Descent e5069135-c52 cover=d2246d83-d59
+  FOUND hardstyle: Psychedelic Power Descent 70762c34-a94 cover=d2246d83-d59
+    recording 245s...
+  hardstyle: A saved -> Jesus_Comes_With_Power_10x_hardstyle_A_cover.mp3 (5740KB)
+
+=== detroit_techno ===
+  FOUND detroit_techno: Jesus_Comes_With_Power_1.1x (D d21295a8-067 cover=d2246d83-d59
+  FOUND detroit_techno: Jesus_Comes_With_Power_1.1x (D 3dd93bb4-5b8 cover=d2246d83-d59
+  FOUND detroit_techno: Psychedelic Power Descent e5069135-c52 cover=d2246d83-d59
+  FOUND detroit_techno: Psychedelic Power Descent 70762c34-a94 cover=d2246d83-d59
+    recording 245s...
+Traceback (most recent call last):
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\batch_gen_covers.py", line 234, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\batch_gen_covers.py", line 225, in main
+    ok = download_via_mediarecorder(page, clips[0]['id'], out_a)
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\batch_gen_covers.py", line 150, in download_via_mediarecorder
+    result = page.evaluate('''async (ms) => {
+        const a = Array.from(document.querySelectorAll('audio')).find(e => (e.currentSrc||'').startsWith('blob:'));
+    ...<19 lines>...
+        return JSON.stringify({size:bytes.length, b64: btoa(bin)});
+    }''', record_ms)  # full song capture
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 9385, in evaluate
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.evaluate(expression=expression, arg=mapping.to_impl(arg))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 472, in evaluate
+    return await self._main_frame.evaluate(expression, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 345, in evaluate
+    await self._channel.send(
+    ...<6 lines>...
+    )
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.evaluate: AbortError: The play() request was interrupted by a new load request.

@@ -1,0 +1,140 @@
+=== chiptune ===
+  [chiptune] Create clicked at 2026-09-02T14:46:24
+  [chiptune] NEW complete 8a8169f1-af0 at 2026-09-02T14:28:04.832Z
+  [chiptune] 8a8169f1-af0 sample centroid=3208.6
+  [chiptune] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [chiptune] 241ab53f-e4a sample centroid=1464.8
+  [chiptune] DEGRADED — skip (need fresh clip)
+  [chiptune] NEW complete 10de85b7-455 at 2026-09-02T14:46:22.398Z
+  [chiptune] no blob on 10de85b7-455
+  [chiptune] NEW complete 8a8169f1-af0 at 2026-09-02T14:28:04.832Z
+  [chiptune] no blob on 8a8169f1-af0
+  [chiptune] NEW complete 73934956-564 at 2026-09-02T14:28:04.832Z
+  [chiptune] 73934956-564 sample centroid=342.0
+  [chiptune] DEGRADED — skip (need fresh clip)
+  [chiptune] NEW complete 9f3cc6a1-c2b at 2026-09-02T14:18:53.763Z
+  [chiptune] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [chiptune] 241ab53f-e4a sample centroid=1497.5
+  [chiptune] DEGRADED — skip (need fresh clip)
+  [chiptune] NEW complete 10de85b7-455 at 2026-09-02T14:46:22.398Z
+  [chiptune] 10de85b7-455 sample centroid=3344.1
+  [chiptune] SAVED full centroid=328.5 DEGRADED!
+  [chiptune] NEW complete 8a8169f1-af0 at 2026-09-02T14:28:04.832Z
+  [chiptune] 8a8169f1-af0 sample centroid=3161.8
+  chiptune: FAILED
+=== drum_and_bass ===
+  [drum_and_bass] Create clicked at 2026-09-02T14:57:56
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] 241ab53f-e4a sample centroid=330.1
+  [drum_and_bass] DEGRADED — skip (need fresh clip)
+  [drum_and_bass] NEW complete 10de85b7-455 at 2026-09-02T14:46:22.398Z
+  [drum_and_bass] 10de85b7-455 sample centroid=2319.9
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 241ab53f-e4a at 2026-09-02T14:46:22.399Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  [drum_and_bass] NEW complete 2b535282-ef3 at 2026-09-02T14:59:48.007Z
+  drum_and_bass: FAILED
+=== dubstep ===
+Traceback (most recent call last):
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\gen_and_capture.py", line 196, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\gen_and_capture.py", line 188, in main
+    trig = trigger_cover(page, upload_cid, genre)
+  File "C:\Users\jakeg\robertpelloni\hymnmania\scripts\gen_and_capture.py", line 45, in trigger_cover
+    page.goto(f'https://suno.com/song/{upload_cid}', wait_until='domcontentloaded', timeout=30000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 9875, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 560, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 156, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jakeg\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed

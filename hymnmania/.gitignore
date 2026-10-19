@@ -51,18 +51,25 @@ package-lock.json
 dist/
 tsconfig.tsbuildinfo
 
+# IMPORTANT: Do NOT add any of the following to .gitignore
+# - Databases (*.db, *.sqlite, etc.) — these contain critical development history
+# - Session/conversation files (*-session.json, sessions/)
+# - .tormentnexus/ (AI sessions, memory, handoffs, db)
+# - .pi/ (AI agent memory and taskplane)
+# - .jules/ (Jules AI conversations and state)
+# - .memory/ (project memory blocks)
+# Only ignore system logs (*.log), build artifacts, and caches.
+
 # Experiments & Logs
-*.txt
+*.log
 pipeline/output/
 suno_create_*.png
 suno_error.png
 suno_fail.png
 suno_stealth_*.png
 suno_payload_capture.json
-# AI tool artifacts
-.pi/
+# AI tool artifacts — ONLY ignore specific non-project DBs, NOT project databases
 metamcp.db
-*.db
 # Security: auth tokens and decryption artifacts
 *.bin
 __hssrc.bin
@@ -72,12 +79,69 @@ ssr_bucket.*
 hymn_remaker/bin/ffmpeg.exe
 hymn_remaker/bin/ffprobe.exe
 token_gemini.json
+.secrets.json
+#Secrets
 
-# IMPORTANT: Do NOT add any of the following to .gitignore
-# - Databases (*.db, *.sqlite, etc.)
-# - Session/conversation files (*-session.json, sessions/)
-# - .tormentnexus/ (AI sessions, memory, handoffs, db)
-# - .jules/ (Jules AI conversations and state)
-# These contain critical development history and must be tracked.
-# Only ignore system logs (*.log), build artifacts, and caches.
+# === EXPLICIT UN-IGNORE: Track all AI session, memory, and documentation ===
+!.jules/
+!.memory/
+!.pi/
+!.tormentnexus/
+!.borg*
+!*-session.json
+!*_startup_marker
+!classical_midis.db
+!classicalmania.db
+!tormentnexus.db
+!borg.db
+!CHANGELOG.md
+!ROADMAP.md
+!TODO.md
+!README.md
+!VISION.md
+!IDEAS.md
+!MEMORY.md
+!DEPLOY.md
+!HANDOFF.md
+!AGENTS.md
+!VERSION
 
+# Media outputs (large, regenerable)
+generated/
+mp3_input/
+pipeline_output/
+demo_output/
+demo_input/
+*.mp3
+*.mp4
+*.wav
+*.m4a
+*.webm
+*.raw
+*.mid
+
+# Session artifacts
+.yt_uploads.json
+.feed_covers.json
+.short_vids.json
+.regen_list.json
+.unposted_covers.json
+regen_log.txt
+regen_progress.txt
+suno_*.png
+test_beat.mp4
+
+# Edge CDP profiles (secrets — browser sessions)
+.edge-cdp-data/
+.dedicated-edge-profile/
+.suno-iso-profile/
+
+# Scheduler runtime state
+.scheduler_log.json
+logs/
+.yt_upload_limit.json
+_s1.mp4
+_s2.mp4
+_a.aac
+_list.txt
+_out.mp4

@@ -1,0 +1,679 @@
+{
+ "hymns": {
+  "Adventist Youth": {
+   "upload": "161a78f0-d3d9-4f46-8b19-7f152bcc5576",
+   "covers": {
+    "psytrance": [
+     "c73de083-f0e9-40f4-84be-c3136637c64c",
+     "973b1ad7-105f-4252-928c-03325d1faa6b"
+    ],
+    "deep_house": [
+     "030ec907-93a6-42fc-8f9a-7690f69ab402",
+     "6a8fb4f6-032f-4f1d-a005-b0137749ca45"
+    ],
+    "synthwave": [
+     "94f6a4d4-0b72-499e-ab54-8f6bef3bb3e5",
+     "1008f346-be27-4d4d-aa4c-99921b30b246"
+    ],
+    "drum_and_bass": [
+     "adca1a75-9b33-49e1-9a1b-ec97af577fa2",
+     "9f1f09f9-90cb-460a-9771-1f11e90c5fe2"
+    ],
+    "gabba": [
+     "9e5878a4-aec0-4d0d-8d7f-fc8c4bd05940",
+     "fd6ad888-eda7-4f89-84c7-c2dfd4f5260f"
+    ],
+    "dubstep": [
+     "95f2f568-d587-4d91-b478-78b0267c66fe",
+     "5d67b7cd-967f-47de-b186-a6eac381db1d"
+    ],
+    "chiptune": [
+     "c847c45d-ded6-4e53-ace1-da0d17fa16df",
+     "ae0e6609-7adc-4232-88ea-f1db6450409a"
+    ],
+    "hardstyle": [
+     "be79c9e8-09db-4d55-a9fe-41d0400a12db",
+     "b251420b-7cbc-40e9-943c-17f9cd6b1ca2"
+    ],
+    "japanese_hardcore_techno": [
+     "c09cc4f1-bc4e-4467-b547-3dc5124a5711",
+     "a458ba7c-6898-4a5f-b3d3-0db00b1ac5c3"
+    ],
+    "detroit_techno": [
+     "152b8a85-91f0-470e-8518-7fc73cb0e8e0",
+     "3b6a1a38-aa8a-4851-97cc-219704ca20b9"
+    ],
+    "detroit_house": [
+     "df723930-c9b3-4779-a5d5-65e59862f0cc",
+     "c10b0083-aa66-43f7-b785-6ccddef274d5"
+    ]
+   }
+  },
+  "Are You A Christian": {
+   "upload": "1ce16b24-8da9-46fc-acfb-4cb4345c32b9",
+   "covers": {
+    "psytrance": [
+     "09dd9193-f606-457c-b064-82182e9b5b7c",
+     "57fbed19-342f-42a9-b395-c6fd217b6742"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "f01397fe-6e12-442b-b40c-de400458e7b0",
+     "dd16eff0-f7f1-4a72-a85b-6690e9b5523f"
+    ],
+    "drum_and_bass": [
+     "d8f458d6-51aa-4256-a645-5e25d5e62077",
+     "cc3e5e0d-85c0-47dd-b5d0-20ebe5d780e0"
+    ],
+    "gabba": [
+     "943049ce-e3ec-4f16-96be-fc7332b47365",
+     "7a681011-19c0-42ca-8aba-f181af104c2c"
+    ],
+    "dubstep": [
+     "c49d9e30-08ad-4b40-aab7-fdb7e696e699",
+     "df4026dc-2588-4d00-9c68-c6c9cb229aa6"
+    ],
+    "chiptune": [
+     "61040903-9a22-4ac0-baf7-0b8ba35314de",
+     "21fd8ab8-75cd-4117-bcd1-c54d4ec19391"
+    ],
+    "hardstyle": [
+     "43b62a5a-8908-4319-a6dc-cf45d46943ca",
+     "9139387b-a69b-40ed-acf2-e776534464c6"
+    ],
+    "japanese_hardcore_techno": [
+     "ba235365-d707-41c2-a756-fc98883c6ad7",
+     "213e0e56-3b27-41a0-8aec-72701e4cec06"
+    ],
+    "detroit_techno": [
+     "73c861ff-52af-4420-b574-f4cff382d4e7",
+     "a3eb9a54-05a5-4313-b45a-2d0a5ff629a4"
+    ],
+    "detroit_house": [
+     "ee996b23-5072-4130-b02f-48a89ad6b2b7",
+     "7fd823b4-6cf7-4e6e-b608-ed2b24d9febd"
+    ]
+   }
+  },
+  "Are You Ready For Jesus To Come": {
+   "upload": "73060d9a-9bb5-4302-a780-179e7a036e32",
+   "covers": {
+    "psytrance": [
+     "09712ffb-8d92-4e9a-8cce-0634a9169dec",
+     "d0c5b477-1834-430b-80d5-76104518f41c"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "4dcd2a76-5d24-438d-99c7-e98ab8fe0ba8",
+     "228a2c7d-bd7c-471d-9ccf-a04837823111"
+    ],
+    "drum_and_bass": [],
+    "gabba": [
+     "b2c18366-7ca2-48f8-8a56-ef288cea7801",
+     "3ecd58c0-249c-40db-a9d5-285e7c852b83",
+     "c91da931-3a9c-4e98-a3d5-60916dbe2828",
+     "9820af84-3075-4a49-9e4a-4153dc803035"
+    ],
+    "dubstep": [
+     "2fb61f8d-abc5-40af-a35d-117cb13a354d",
+     "36691e6f-489e-4abb-abf1-ac3bd4637881"
+    ],
+    "chiptune": [
+     "01487515-804b-4116-8eac-541f1148ede7",
+     "cb46dc91-e207-4002-802a-5488848216f3"
+    ],
+    "hardstyle": [
+     "ba7bef48-7a5b-4433-ad4a-7c9eee3e385e",
+     "13996b34-88f0-440d-8dfc-fdff2d07054e"
+    ],
+    "japanese_hardcore_techno": [
+     "e5524316-4c8a-4ede-81c6-36c4346b4548",
+     "dc8cd63d-736c-43fe-9b3b-ff7ebf3b4680"
+    ],
+    "detroit_techno": [
+     "93f6269d-0cdd-48b6-aae1-f708033dbc98",
+     "9431a9ae-e9f2-4c00-bd1f-5c4efa290c4d"
+    ],
+    "detroit_house": [
+     "f33f5bb7-faf1-4a31-87d0-a5f3212932f1"
+    ]
+   }
+  },
+  "As For Me": {
+   "upload": "2a0670ad-cfe3-49f7-9616-0aaf126bcead",
+   "covers": {
+    "psytrance": [
+     "1991b31b-ea98-4639-9f95-54a5add8a02d",
+     "532bd9da-fd86-4a06-a150-952bbcdd3849"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "345b0597-1581-4e83-8dbd-878bc1c02155",
+     "c8e5d957-5b2d-4f33-a38f-ce952503b438"
+    ],
+    "drum_and_bass": [
+     "672ed030-fd19-48c5-9536-254884eacc63",
+     "6df81f75-7674-4ff3-9839-5c7b5f2d7db4"
+    ],
+    "gabba": [
+     "66ff3d07-139e-485a-8a85-6adcac4cb71a",
+     "ba8d9563-642c-42ab-88c5-c9559cc98bd1"
+    ],
+    "dubstep": [
+     "2d0ed2d0-1fcf-496a-bfa7-5a025aec6fac",
+     "d6911e71-68f2-404a-84cb-e38d97556dd8"
+    ],
+    "chiptune": [
+     "5917e48f-8d20-4a4c-8652-e6f921d3e1f2",
+     "3d478e42-f32c-4721-b2e1-cfab86c4b0ce"
+    ],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "90812ef5-2847-4cad-b6b5-35ce8e42802c",
+     "10cef5a0-0fab-4582-b1d1-c7b7f02be902"
+    ],
+    "detroit_techno": [],
+    "detroit_house": [
+     "be6f6c94-6493-412b-9d2d-a017b6df9d68",
+     "a4e8c54b-d6ac-4ef9-b2da-7f1e8185829a"
+    ]
+   }
+  },
+  "Behold What Manner Of Love 1 John 3 1": {
+   "upload": "d6b36a3d-ad46-4ceb-ac8b-715f16b8c474",
+   "covers": {
+    "psytrance": [
+     "519cc927-19c0-4d73-9742-9cd587d883fc",
+     "60442205-ed03-4d5f-aee1-32fb0f4ebb01"
+    ],
+    "deep_house": [],
+    "synthwave": [],
+    "drum_and_bass": [
+     "8b965a27-70d8-4c4b-bc93-a183d4b84480",
+     "c642ee45-31a1-4de6-a170-4254029aa27a",
+     "b281ca29-9a46-45f7-97a6-da88fcf2283a"
+    ],
+    "gabba": [
+     "b51c70bf-68bf-4965-9939-e39b72b491f4",
+     "4a5d8bc4-130c-449f-8a8f-62d9cb270563"
+    ],
+    "dubstep": [
+     "704f5563-e8ad-4213-9f72-7376e33db819",
+     "492a1439-6787-4a8a-9fb2-21593a58ecf0"
+    ],
+    "chiptune": [
+     "b4aa8934-89c4-4004-bb2c-e62719513727",
+     "14e5da56-3c11-46a4-83c1-645093ce6c97"
+    ],
+    "hardstyle": [
+     "90d17834-badd-43c2-a774-32574960295c"
+    ],
+    "japanese_hardcore_techno": [
+     "aa0186b7-1ec4-481c-842b-275d65b51d2a",
+     "8c3ca13f-226b-41f3-9cac-ba0e83d92009",
+     "5a4efd67-5b6a-40e5-b6b5-379816a4ae23"
+    ],
+    "detroit_techno": [
+     "bdcae6e3-600d-44fc-8912-397001b0e3e5",
+     "a773d48b-79b1-4d70-8773-c27940c647ca"
+    ],
+    "detroit_house": []
+   }
+  },
+  "Can The World See Jesus In You": {
+   "upload": "9784dcee-a064-41d3-aed7-d4a267c7bd62",
+   "covers": {
+    "psytrance": [
+     "5ccdf3f9-9923-4669-8204-0ea92eba02b6",
+     "a2bd1f80-6128-4b92-b3f6-0c690651bcfe"
+    ],
+    "deep_house": [],
+    "synthwave": [],
+    "drum_and_bass": [
+     "21bff2c6-cb00-4f5d-b253-24ae81bb08e9",
+     "2a927412-81aa-42a6-a304-f7e685c3631a",
+     "da62d0b8-5ee6-4dbd-964e-e9978f79af7a",
+     "fff63a6c-21ef-47d3-b72b-a21bec6e579e"
+    ],
+    "gabba": [
+     "3806a521-7a4f-48c0-b3bc-e98b9bd0d4b2"
+    ],
+    "dubstep": [
+     "298a8616-f3d2-4758-ab6a-28ce39cf919d"
+    ],
+    "chiptune": [
+     "29017c41-6633-4172-9e82-620c3910cf60",
+     "5dcb5756-6704-44c2-ae1f-cdf27e1970f0",
+     "4207cd91-5187-443e-815d-13a52d8167da",
+     "1649f41f-6b81-4b1e-ae40-3aa8ecfb011a"
+    ],
+    "hardstyle": [
+     "bfd8de1d-02ea-4110-88a2-ce6615440e2e",
+     "96fcc9b1-695b-46c6-a2dc-7f798cbdca10"
+    ],
+    "japanese_hardcore_techno": [
+     "837fc9a7-db0c-4f4d-b656-45135fd0c5d3"
+    ],
+    "detroit_techno": [
+     "43264937-3fab-48a0-8618-105000d52af6",
+     "4dbed02b-abaa-422f-8f38-b83ffeef0b4e",
+     "e4904038-89dc-495f-bcb2-5c063b0e7836"
+    ],
+    "detroit_house": [
+     "2cc415f7-ce87-4fb4-b13e-a1d64f81842a",
+     "14ff2a5b-de88-4cd0-a439-4bec366c9038"
+    ]
+   }
+  },
+  "Christ The Joy Of Loving Hearts": {
+   "upload": "1a3d570d-c144-4cfe-a5e7-f4bc32a73cef",
+   "covers": {
+    "psytrance": [
+     "43e1ef6c-e1c0-495b-b9cb-5496c308aa09",
+     "434b7aac-b5be-4f89-967f-bf61d55e74fe"
+    ],
+    "deep_house": [],
+    "synthwave": [],
+    "drum_and_bass": [
+     "6163374e-061b-4491-bd3a-19c4e2966a7a",
+     "56974703-adfd-41f6-af06-cd2ce9812c4a",
+     "7b9b548e-83cf-40e5-bc14-48df991e441a",
+     "5a49db53-2c05-4cd0-b413-e423f85dc00a"
+    ],
+    "gabba": [
+     "46d480c8-0c23-46b2-b91e-82aaccd38640",
+     "10533122-07c2-43f6-b825-61eb656451eb"
+    ],
+    "dubstep": [
+     "2be25043-df2a-40a1-afd4-0640f99939f4",
+     "a05ec319-0c75-4884-a71f-0e2101081027"
+    ],
+    "chiptune": [
+     "aef1fd06-cebf-4128-88e8-45d6cd548354",
+     "b58948d1-f684-4f2f-abf6-6a87e39d5ee2"
+    ],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "886e4b3f-2e47-4d87-b304-cebe9e8d0177",
+     "0c844095-00af-4065-b271-f0fee57ec2b4"
+    ],
+    "detroit_techno": [
+     "63d665e7-0649-457a-a4fe-109619e34d84"
+    ],
+    "detroit_house": [
+     "ab185998-bdb8-44fd-9293-f31795fd6557",
+     "b6daa940-ce00-48ab-8ddd-43342884e132",
+     "53874c08-2f30-447b-818e-364d0761acd4"
+    ]
+   }
+  },
+  "Do You Know My Jesus": {
+   "upload": "d523fe60-1481-49f8-8d1d-de10ccca85cb",
+   "covers": {
+    "psytrance": [
+     "e42af709-b587-4fc2-a826-05b26ba8a7cb",
+     "9f369371-8529-4be2-b13e-0481c755df2d"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "2ae5a7d4-dc46-4fa3-a019-6df686a3a0a5"
+    ],
+    "drum_and_bass": [
+     "a2c49618-2cdf-4a63-a21f-3070348c4d64"
+    ],
+    "gabba": [
+     "109127d9-74c6-45c7-867f-7468f0854626",
+     "92dfb426-2c40-4d81-b819-86ea9acdb239"
+    ],
+    "dubstep": [
+     "7ee29103-2a86-4d7f-b9c1-eddae23da5bf",
+     "083a1a0a-245c-4184-9cc3-a9d2c8a790dc",
+     "ed987aa4-8caa-4cf5-99cb-3656450c3cca",
+     "6b4e6021-53d9-4edf-9066-1daba156551c"
+    ],
+    "chiptune": [
+     "56dfeca8-e4ab-40a8-846c-f7bbffb1e6b9",
+     "ccf7fc12-8e0d-420a-82e2-04642416c2c8"
+    ],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "314d5453-b0ef-4b72-a48e-3043a7cc117a"
+    ],
+    "detroit_techno": [],
+    "detroit_house": [
+     "58ca20aa-53f9-45bd-ba77-826fbd4ec5ee",
+     "a3a975a9-b296-4848-b407-31ec97010561"
+    ]
+   }
+  },
+  "Echo Chorus": {
+   "upload": "02752d6b-c336-4c2e-9f11-65a0d9ab0118",
+   "covers": {
+    "psytrance": [
+     "0d283eda-92da-41ef-ba8f-8118f3bd4732",
+     "e763894c-3b2b-42c9-8506-f9f6f5dca44e"
+    ],
+    "deep_house": [],
+    "synthwave": [],
+    "drum_and_bass": [
+     "25c06d2f-b79f-4a03-8f2b-7447ec8672ce"
+    ],
+    "gabba": [],
+    "dubstep": [
+     "7568bc23-6476-4ee9-98fd-3f2172cb73a2",
+     "e7c77a5e-3c7d-4b4d-b97f-5c92160b545a"
+    ],
+    "chiptune": [],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "422c416a-97e7-43f0-983d-d6aa136cb1f5",
+     "3c879325-e663-4532-96b0-75e6e1cdcc42",
+     "50eb8939-2d97-4381-aca2-ffbb4c133545"
+    ],
+    "detroit_techno": [
+     "0d0eda26-79bd-48a9-9891-849f947088f7",
+     "d0888cf2-9916-4b6f-8924-98e593869e33",
+     "d0b98c4c-7e53-437c-b4e4-f14dfef45b9c"
+    ],
+    "detroit_house": []
+   }
+  },
+  "Emmanuel": {
+   "upload": "0920dec2-4d47-492b-96a3-41d299d91c7b",
+   "covers": {
+    "psytrance": [
+     "a0d6612f-a70a-48a1-bfbd-5a6f65afd984",
+     "44a75e1c-2a4b-4636-b873-e4b7ca2fa1c8"
+    ],
+    "deep_house": [],
+    "synthwave": [],
+    "drum_and_bass": [],
+    "gabba": [
+     "fabfbaae-f189-45ba-9c36-712e2a653abe",
+     "92a9671a-490a-4e74-9367-544aa012c454"
+    ],
+    "dubstep": [
+     "565aa1e8-9b6f-4837-b3dc-7033d9cd56df",
+     "c38f0f0b-5b7f-43f9-bf3a-1735b3a18642",
+     "805c82e9-d7ad-4535-b61a-5e8f9f199bd6"
+    ],
+    "chiptune": [
+     "d11a7761-c1ed-4b86-ac51-8545b6a2c783"
+    ],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "2fb200e8-adb5-4056-bc45-53fa429165fa",
+     "49508881-f8d8-4552-a1cb-bac9f9a4f6a3"
+    ],
+    "detroit_techno": [],
+    "detroit_house": [
+     "de98e042-3019-458b-b8bc-623fc003e46b",
+     "4479e499-dcc1-4232-ab1c-9ed2c931f5b8"
+    ]
+   }
+  },
+  "Every Day With Jesus": {
+   "upload": "0a755895-d7de-4014-9f2e-23aa1585eefa",
+   "covers": {
+    "psytrance": [
+     "3f66a6ef-909f-4ace-8dd3-1d524aeb6c32",
+     "52b0f746-3095-46f7-85cf-f3f7cc4b7672"
+    ],
+    "deep_house": [],
+    "synthwave": [],
+    "drum_and_bass": [
+     "c43713fc-7d96-4021-9d84-2e72cc56cc2e",
+     "1655f11e-004b-48c4-a235-a5f3471250b3"
+    ],
+    "gabba": [],
+    "dubstep": [
+     "f71348dc-f645-43cc-a12c-09de2500ffbb",
+     "a270ded7-f41e-49dd-b213-e6f021072cb6"
+    ],
+    "chiptune": [
+     "53b35942-af8e-406c-908b-62cb19771ddf",
+     "d7e43047-4f2b-420a-90e9-08bcf4f3030d",
+     "dbdff3d7-fcbb-4255-8624-45c23d6970a2",
+     "c19ab58b-549a-4e92-9d5d-513a806626da"
+    ],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "8769030a-f12b-4bbf-80ec-e478a3bacaa8",
+     "3849d1dd-6a4e-4ead-a93b-cb21cfbedc6c"
+    ],
+    "detroit_techno": [],
+    "detroit_house": [
+     "44e08ff6-e265-4e6d-abfa-a38fd25e138d",
+     "d1497bac-9c16-4adf-82e0-9cd01fad37c7"
+    ]
+   }
+  },
+  "Every Moment Of Every Day": {
+   "upload": "3016c739-31af-4f6c-9b68-c6264bb7a117",
+   "covers": {
+    "psytrance": [
+     "2c329a35-bd01-4c2c-ab45-67150ba5bc64",
+     "090057fc-92bd-4b04-aa29-21acda1ec5ea"
+    ]
+   }
+  },
+  "Everybody Ought To Know": {
+   "upload": "e8026668-55d3-4b1f-a96b-56df7648823a",
+   "covers": {}
+  },
+  "Far Beyond The Sun": {
+   "upload": "e0fecb81-7db9-4cbc-9377-f73a3c13aa15",
+   "covers": {}
+  },
+  "Father, We Love You": {
+   "upload": "c4ef0b75-b304-43a7-b154-8a8647154992",
+   "covers": {}
+  },
+  "Follow Me": {
+   "upload": "dc6cceb8-bc58-4e77-9eeb-e8287c3a2bea",
+   "covers": {}
+  },
+  "For God So Loved The World with Tag": {
+   "upload": "28712401-f026-4b7e-9cd6-7a402c695f6f",
+   "covers": {}
+  },
+  "For God So Loved The World": {
+   "upload": "b475655f-4515-4950-aef9-e6bb66aa91e6",
+   "covers": {}
+  },
+  "God Is So Good": {
+   "upload": "8d8828f5-164c-4945-81b6-aea8bd2bd50c",
+   "covers": {}
+  },
+  "God's Love Is Wonderful": {
+   "upload": "3a91dd37-b382-4b2f-a154-9ffd035e9d26",
+   "covers": {}
+  },
+  "Great Are You, Lord": {
+   "upload": "aec91747-7434-4afb-82ae-a5c9f1ca1aa1",
+   "covers": {}
+  },
+  "Ha-la-la-la-la": {
+   "upload": "93db707f-7cb3-45f3-ab6a-c6a8dc3ec10c",
+   "covers": {}
+  },
+  "Happiness Is The Lord": {
+   "upload": "a3d196c8-131f-42e2-a420-582f76338856",
+   "covers": {}
+  },
+  "He Lives": {
+   "upload": "657eba81-8211-4074-86b6-93a3cd65e0f6",
+   "covers": {}
+  },
+  "He's Able": {
+   "upload": "9a7ed5f6-8e08-4540-80a4-c4ddc9f2ce0f",
+   "covers": {}
+  },
+  "He's Got The Whole World": {
+   "upload": "b79df829-03e0-4ab0-8d0b-d6fc19a3f8ee",
+   "covers": {}
+  },
+  "How Majestic Is Your Name": {
+   "upload": "f95b39c2-fe8f-435e-88c3-babaa9c2c29c",
+   "covers": {}
+  },
+  "Humble Thyself": {
+   "upload": "41d79855-0c30-41db-a24b-ff4b4e59fe96",
+   "covers": {}
+  },
+  "I Just Keep Trusting My Lord with Tag": {
+   "upload": "678775e6-6c56-450a-9491-a9125ee5a327",
+   "covers": {}
+  },
+  "I Just Keep Trusting My Lord": {
+   "upload": "2790b159-cf1e-4110-8022-0fdc2e657567",
+   "covers": {}
+  },
+  "I Know The Lord Has Made A Way Tag": {
+   "upload": "8a76cc2a-f566-4a52-9547-ce2a0a86f4c0",
+   "covers": {}
+  },
+  "I Know The Lord Has Made A Way": {
+   "upload": "88298328-dd29-4e90-b9d0-6107b663a12a",
+   "covers": {}
+  },
+  "I Shall Not Be Moved": {
+   "upload": "0cf14777-f863-4036-9324-05ac5c045e78",
+   "covers": {}
+  },
+  "I Shall See The King": {
+   "upload": "ef86b07a-ff2b-4e34-9f7e-57442b51d085",
+   "covers": {}
+  },
+  "I Want To Be Ready": {
+   "upload": "1d0d2096-1104-423e-ac8d-8110c7abdea7",
+   "covers": {}
+  },
+  "I Will Make You Fishers Of Men": {
+   "upload": "66417300-ae1a-4496-bc84-fe0aea289388",
+   "covers": {}
+  },
+  "I Will Serve Thee": {
+   "upload": "d635140a-4f15-4a2d-b2fc-c885fdf56bce",
+   "covers": {}
+  },
+  "I Will Sing Of The Mercies Of The Lord Psalm 89 1": {
+   "upload": "a68b6f2e-2b48-420b-8ced-d31b795092f4",
+   "covers": {}
+  },
+  "I'll Share My Faith": {
+   "upload": "8074a9ce-2467-4eef-90c6-9533e706cc80",
+   "covers": {}
+  },
+  "I'm So Happy": {
+   "upload": "0d100dbd-19e8-41c5-a884-485e20fd59a2",
+   "covers": {}
+  },
+  "I've Found The Way": {
+   "upload": "8625e6f6-a6e5-47cf-95f0-38ed1b31785b",
+   "covers": {}
+  },
+  "I've Got Love Like An Ocean": {
+   "upload": "7f000836-861c-49f4-8eef-1fcb9ef56540",
+   "covers": {}
+  },
+  "If You Know The Lord": {
+   "upload": "6d408789-e659-47c9-91b8-1adf42bda9e0",
+   "covers": {}
+  },
+  "If You Want Joy": {
+   "upload": "b6878bc2-3e0c-47a4-b3b1-9415b2857ece",
+   "covers": {}
+  },
+  "In Moments Like These": {
+   "upload": "0ce2d3ef-b01e-4849-a046-67a99ca32111",
+   "covers": {}
+  },
+  "In My Heart There Rings A Melody": {
+   "upload": "f1a7c350-0179-4f2e-ac7e-32be20fcdcd4",
+   "covers": {}
+  },
+  "In The Name Of Jesus with Yesterday, Today, Forever": {
+   "upload": "f412d388-7f66-41ab-9ef4-408e2d08e10d",
+   "covers": {}
+  },
+  "In The Name Of Jesus": {
+   "upload": "c84ac9a6-d7af-4b76-b937-3388426af717",
+   "covers": {}
+  },
+  "It's About Grace": {
+   "upload": "caadb740-9abf-4827-8b53-eab47ed7e55d",
+   "covers": {}
+  },
+  "It's the Sabbath": {
+   "upload": "eb7cc5f4-4903-4a78-8502-df6e9068f314",
+   "covers": {}
+  },
+  "Jesus Is The Joy Of Living": {
+   "upload": "5710e716-5057-4685-b1f0-4b72e69681ec",
+   "covers": {}
+  },
+  "Jesus, Name Above All Names": {
+   "upload": "d91bb435-c25b-4558-a891-f663e8e99377",
+   "covers": {}
+  },
+  "Joy Is The Flag": {
+   "upload": "034bd971-f8f5-479f-80ae-d721b626f2ea",
+   "covers": {}
+  },
+  "Just To Know Him": {
+   "upload": "f8ed5703-896a-488b-af67-6099b754f187",
+   "covers": {}
+  },
+  "Let's Sing A Happy Song": {
+   "upload": "2efe887a-cf55-4db1-9899-51a7b768ba46",
+   "covers": {}
+  },
+  "Lord, Be Glorified": {
+   "upload": "f46d266a-e6a3-449c-b6fe-0cb43ef24a22",
+   "covers": {}
+  },
+  "Love Is In Your Hand": {
+   "upload": "7c277df0-2e7a-45ee-8f91-ebb9bbc96789",
+   "covers": {}
+  },
+  "Love Is Something": {
+   "upload": "be2c529a-43f3-470c-9f7d-dafee54ad176",
+   "covers": {}
+  },
+  "Maranatha": {
+   "upload": "ad85821d-9cb9-4e49-aa06-12cafc4c4a3a",
+   "covers": {}
+  },
+  "My Lord Knows The Way": {
+   "upload": "deabed7f-7ecd-4337-b75f-629f05092063",
+   "covers": {}
+  },
+  "My Peace": {
+   "upload": "578d69ac-dc8e-4a57-8355-beeadc1bcb19",
+   "covers": {}
+  },
+  "New Life In Christ": {
+   "upload": "62f9edf3-ce72-486e-95e5-66c1c2574017",
+   "covers": {}
+  },
+  "book1-prelude01": {
+   "upload": "66a0e193-850d-4c67-bd27-8447c06c0397",
+   "covers": {}
+  },
+  "book1-prelude03": {
+   "upload": "31736af7-1dcb-4603-8e19-8344852ab9e0",
+   "covers": {}
+  },
+  "book1-prelude06": {
+   "upload": "417ce80e-8013-4b2d-8650-e4bcf6c573c5",
+   "covers": {}
+  },
+  "osterreichische-bundeshymne": {
+   "upload": "bc5321bc-b5cf-47c4-bd63-446ad5d418fa",
+   "covers": {}
+  }
+ },
+ "started": "2026-09-14T09:32:01.903759",
+ "round": 2
+}

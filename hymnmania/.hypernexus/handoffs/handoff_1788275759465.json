@@ -1,0 +1,41 @@
+{
+  "version": "0.99.1",
+  "timestamp": 1788275759465,
+  "sessionId": "hymnmania-v5.97.9-pipeline-fix",
+  "stats": {
+    "totalCount": 3,
+    "sessionCount": 1,
+    "workingCount": 1,
+    "longTermCount": 1,
+    "observationCount": 1,
+    "uniqueObservationCount": 1,
+    "promptCount": 0,
+    "sessionSummaryCount": 0,
+    "session": 1,
+    "working": 1,
+    "long_term": 1,
+    "user": 0,
+    "agent": 0,
+    "project": 1,
+    "discovery": 0,
+    "decision": 1,
+    "progress": 1,
+    "warning": 1,
+    "fix": 2
+  },
+  "recentContext": [
+    {
+      "kind": "fix",
+      "content": "Suno DRM download protection (2026-09-01): audio_url returns /api/forbidden, media_urls m4a is encrypted blob (no ftyp/mdat), mp3 CDN returns 403. Working method: play song in browser, audio element gets blob:https://suno.com/... src, capture via AudioContext.createMediaElementSource + MediaRecorder, save webm, ffmpeg to mp3. Helper: scripts/suno_download_via_mediarecorder.py. Must reload page between captures."
+    },
+    {
+      "kind": "fix",
+      "content": "scripts/pipeline_config_central_definitions_genres_speeds.py was deleted (only .pyc remained) causing ModuleNotFoundError in cover scripts. Restored from git commit c780ddf along with 6 other deleted pipeline scripts (suno_browser_setup, audio_speed_variants_exporter, suno_modal_dismissal, suno_feed_polling, visuals_video_ffmpeg_pipe_muxer, visuals_milkdrop_renderer, v2_youtube_oauth_uploader, generate_sine_cover.py)."
+    },
+    {
+      "kind": "progress",
+      "content": "Full pipeline verified end-to-end v5.97.9: MIDI -> sine MP3 -> SUNO COVER -> beat video -> post. Suno v4.5 cover flow: song page -> More menu (three dots) -> Remix -> Cover -> /create with v4.5-all model -> fill Song Description textarea index 2 (maxLen 3000) with genre -> Instrumental ON -> Create -> poll feed (model chirp-auk). Generated + downloaded full psytrance cover of Jesus Comes With Power (4:19)."
+    }
+  ],
+  "notes": "v5.97.9 committed and pushed to github.com/robertpelloni/hymnmania (d35184d). Docs updated: AGENTS.md, HANDOFF.md, MEMORY.md, CHANGELOG.md."
+}

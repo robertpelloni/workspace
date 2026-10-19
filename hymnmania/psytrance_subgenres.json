@@ -1,0 +1,12 @@
+{
+  "_comment": "Psytrance family - 8 sub-genres. Full-On carries 2x weight (the channel flagship). BPM values are the tempo-correction targets.",
+  "psytrance_fullon":      {"bpm": 142, "range": [140, 145], "weight": 2, "label": "Full-On",              "desc": "high-energy morning/daytime, bright melodies, punchy bass, sci-fi FX"},
+  "goa_trance":            {"bpm": 135, "range": [130, 140], "weight": 1, "label": "Goa Trance",           "desc": "melodic, organic analogue synths, eastern scales, 90s roots"},
+  "psytrance_progressive": {"bpm": 132, "range": [128, 138], "weight": 1, "label": "Progressive Psytrance","desc": "clean hypnotic rolling groove, daytime, gradual build-ups"},
+  "psytrance_dark":        {"bpm": 150, "range": [145, 155], "weight": 1, "label": "Darkpsy",             "desc": "fast, aggressive, nocturnal, eerie chaotic sci-fi"},
+  "psytrance_forest":      {"bpm": 143, "range": [138, 148], "weight": 1, "label": "Forest Psy",          "desc": "organic earthy FX, mysterious woodland atmosphere"},
+  "psytrance_hitech":      {"bpm": 165, "range": [150, 180], "weight": 1, "label": "Hi-Tech",             "desc": "extremely fast, glitching, rapid-fire percussion"},
+  "psytrance_psychill":    {"bpm": 105, "range": [95, 120],  "weight": 1, "label": "Psychill / Psybient", "desc": "ambient chill-out, dub bass, meditative, made for resting"},
+  "psytrance_zenonesque":  {"bpm": 130, "range": [125, 135], "weight": 1, "label": "Zenonesque",          "desc": "dark funky minimalist, off-beat bass, Zenon Records groove"},
+  "_ratio": "Full-On 2 : others 1 each"
+}

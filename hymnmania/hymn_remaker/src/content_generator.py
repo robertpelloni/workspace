@@ -4,7 +4,6 @@ import logging
 import json
 import hashlib
 import requests
-from .utils import retry_request
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -27,10 +26,9 @@ class ContentGenerator:
             try:
                 prompt = (
                     f"Generate metadata for a YouTube video featuring a {style} remake "
-                    f"of the hymn '{hymn_name}'.\n"
-                    f"Provide the following fields in JSON format:\n"
-                    f"1. title: A catchy, modern title for the video.\n"
-                    f"2. description: A compelling description (max 1000 chars).\n"
+                    f"of the hymn '{hymn_name}'. Provide the following in JSON format: "
+                    f"1. title: A catchy modern title. "
+                    f"2. description: A compelling description (max 1000 chars). "
                     f"3. tags: A list of 10 relevant tags."
                 )
                 logger.info(f"Generating metadata for '{hymn_name}' via OpenAI...")
@@ -52,8 +50,6 @@ class ContentGenerator:
                     logger.warning("OpenAI quota exceeded. Using offline fallback for metadata.")
                 else:
                     logger.warning(f"OpenAI metadata generation failed: {err_msg[:100]}. Using offline fallback.")
-
-        # Offline fallback
         return self._offline_metadata(hymn_name, style)
 
     def generate_lyrics(self, hymn_name):
@@ -61,18 +57,16 @@ class ContentGenerator:
         if self.client:
             try:
                 prompt = (
-                    f"Provide the original public domain lyrics for the hymn '{hymn_name}'.\n"
-                    f"Output them in a JSON array where each element has:\n"
-                    f"- 'text': The line of lyrics.\n"
-                    f"- 'start': Estimated start time in seconds (float).\n"
-                    f"- 'end': Estimated end time in seconds (float).\n"
-                    f"First line starts around 5 seconds in. Estimate pacing for 3-4 min song."
+                    f"Provide the original public domain lyrics for the hymn '{hymn_name}'. "
+                    f"Output them in a JSON array where each element has: "
+                    f"'text': The line of lyrics, 'start': start time in seconds, "
+                    f"'end': end time in seconds. First line at ~5s."
                 )
                 logger.info(f"Generating synced lyrics for '{hymn_name}' via OpenAI...")
                 response = self.client.chat.completions.create(
                     model="gpt-4-turbo",
                     messages=[
-                        {"role": "system", "content": "You are a lyric synchronization expert. Respond in valid JSON with a 'lyrics' key containing a list of objects."},
+                        {"role": "system", "content": "You are a lyric synchronization expert. Respond in valid JSON with a 'lyrics' key."},
                         {"role": "user", "content": prompt}
                     ],
                     response_format={"type": "json_object"}
@@ -88,7 +82,6 @@ class ContentGenerator:
                     logger.warning("OpenAI quota exceeded. Using offline fallback for lyrics.")
                 else:
                     logger.warning(f"OpenAI lyrics generation failed: {err_msg[:100]}. Using offline fallback.")
-
         return self._offline_lyrics(hymn_name)
 
     def generate_art(self, prompt):
@@ -98,15 +91,13 @@ class ContentGenerator:
         os.makedirs(cache_dir, exist_ok=True)
         prompt_hash = hashlib.md5(prompt.encode('utf-8')).hexdigest()
         cached_image_path = os.path.join(cache_dir, f"{prompt_hash}.png")
-
         if os.path.exists(cached_image_path):
             logger.info(f"Found cached album art for prompt hash {prompt_hash}")
             return cached_image_path
 
-        # Try DALL-E 3
         if self.client:
             try:
-                logger.info(f"Generating album art via DALL-E 3 for: '{prompt[:60]}...'")
+                logger.info(f"Generating album art via DALL-E 3...")
                 response = self.client.images.generate(
                     model="dall-e-3",
                     prompt=prompt,
@@ -131,15 +122,12 @@ class ContentGenerator:
                     logger.warning("OpenAI quota exceeded. Using offline fallback for album art.")
                 else:
                     logger.warning(f"DALL-E 3 art generation failed: {err_msg[:100]}. Using offline fallback.")
-
         return self._offline_art(prompt, cached_image_path)
-
-    # --- Offline Fallback Methods ---
 
     def _offline_metadata(self, hymn_name, style="Deep House"):
         """Generate sensible default metadata without API calls."""
         clean_name = hymn_name.replace("_", " ").replace("-", " ").title()
-        metadata = {
+        return {
             "title": f"{clean_name} ({style} Remix)",
             "description": (
                 f"A {style} remix of the classic hymn '{clean_name}'. "
@@ -152,8 +140,6 @@ class ContentGenerator:
                 "ai generated", "music", "sacred"
             ]
         }
-        logger.info(f"Generated offline metadata for '{hymn_name}'")
-        return metadata
 
     def _offline_lyrics(self, hymn_name):
         """Generate basic lyrics without API calls."""
@@ -173,13 +159,11 @@ class ContentGenerator:
             from PIL import Image, ImageDraw, ImageFont
             img = Image.new('RGB', (1024, 1024), color=(20, 30, 60))
             draw = ImageDraw.Draw(img)
-            # Draw gradient background
             for y in range(1024):
                 r = int(20 + (y / 1024) * 40)
                 g = int(30 + (y / 1024) * 20)
                 b = int(60 + (y / 1024) * 80)
                 draw.line([(0, y), (1024, y)], fill=(r, g, b))
-            # Extract title from prompt
             title = prompt.split("for ")[-1].split(",")[0].strip() if "for " in prompt else "Hymn Remaker"
             try:
                 font = ImageFont.truetype("arial.ttf", 48)
@@ -200,8 +184,7 @@ if __name__ == "__main__":
         generator = ContentGenerator()
         import sys
         if len(sys.argv) > 1:
-            hymn = sys.argv[1]
-            print(generator.generate_metadata(hymn))
+            print(generator.generate_metadata(sys.argv[1]))
         else:
             print("Usage: python content_generator.py <hymn_name>")
     else:

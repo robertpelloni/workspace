@@ -1,6 +1,9 @@
 import mido
 import os
 import json
+import logging
+
+logger = logging.getLogger(__name__)
 
 class SymbolicNormalizer:
     def __init__(self, midi_path: str):
@@ -8,19 +11,25 @@ class SymbolicNormalizer:
 
     def normalize(self, output_path):
         """Velocity Flattening and Performance Purge"""
-        mid = mido.MidiFile(self.midi_path)
-        new_mid = mido.MidiFile()
+        try:
+            mid = mido.MidiFile(self.midi_path)
+        except Exception as e:
+            logger.error(f"Failed to load MIDI {self.midi_path}: {e}")
+            return None
 
-        for track in mid.tracks:
+        new_mid = mido.MidiFile(ticks_per_beat=mid.ticks_per_beat)
+
+        for i, track in enumerate(mid.tracks):
             new_track = mido.MidiTrack()
             for msg in track:
                 if msg.is_meta:
                     # Keep only essential meta messages
                     if msg.type in ['set_tempo', 'time_signature', 'key_signature', 'track_name']:
-                        new_track.append(msg)
+                        new_track.append(msg.copy())
                 elif msg.type in ['note_on', 'note_off']:
-                    # Force velocity 100 for note_on, 0 for note_off
-                    if msg.type == 'note_on':
+                    # Force velocity 100 for note_on with velocity > 0, velocity 0 for others
+                    # Standard note_on with velocity 0 is treated as note_off
+                    if msg.type == 'note_on' and msg.velocity > 0:
                         new_msg = msg.copy(velocity=100)
                     else:
                         new_msg = msg.copy(velocity=0)
@@ -29,6 +38,10 @@ class SymbolicNormalizer:
 
             if len(new_track) > 0:
                 new_mid.tracks.append(new_track)
+
+        if len(new_mid.tracks) == 0:
+            logger.warning(f"No tracks produced for {self.midi_path}. Adding dummy track.")
+            new_mid.tracks.append(mido.MidiTrack())
 
         new_mid.save(output_path)
 
@@ -39,7 +52,10 @@ class SymbolicNormalizer:
             "original_file": os.path.basename(self.midi_path)
         }
         config_path = output_path.replace(".mid", "_config.json")
-        with open(config_path, 'w') as f:
-            json.dump(config, f, indent=4)
+        try:
+            with open(config_path, 'w') as f:
+                json.dump(config, f, indent=4)
+        except Exception as e:
+            logger.error(f"Failed to write config {config_path}: {e}")
 
         return output_path

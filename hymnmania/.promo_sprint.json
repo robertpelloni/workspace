@@ -1,0 +1,3190 @@
+{
+ "hymns": {
+  "A_Childs_Prayer": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Adventist Youth": {
+   "upload": "161a78f0-d3d9-4f46-8b19-7f152bcc5576",
+   "covers": {
+    "psytrance": [
+     "f237eeaa-8b5e-4ef4-9882-5a4ec66bf9f2",
+     "c38fc9a8-7b19-4bf7-9d69-3cf0457fa3ff"
+    ],
+    "deep_house": [
+     "cb45211a-becb-43c5-bb1e-83e6601191d1",
+     "ce17b0d9-c633-4bf8-9e41-93a4e43c582e"
+    ],
+    "synthwave": [
+     "d0bc684d-5640-4bdd-80e6-4ef2699813e2",
+     "73d4052f-6399-4481-96a0-471f4f7b721a"
+    ],
+    "drum_and_bass": [
+     "7e99de00-1d66-4461-a4d5-bf5348b65170",
+     "8c3f612f-b840-4287-8ea3-e9b5a92977c6"
+    ],
+    "gabba": [
+     "03721295-fbba-4746-b290-9aec8a76f070",
+     "2bc10208-70d1-493a-8c50-9d4a354fa89c"
+    ],
+    "dubstep": [
+     "c2185e8b-86f2-491f-8f3f-a8c5710a9749",
+     "4749f15f-9093-4ff9-bab2-2be985ade069"
+    ],
+    "chiptune": [],
+    "hardstyle": [
+     "11a3e7dd-43d8-48e9-a276-eca8913d3a66",
+     "b3311c73-428d-43ed-a551-c9f3355990ac"
+    ],
+    "japanese_hardcore_techno": [
+     "df14e895-e51f-4b4e-806a-515d186a43f3",
+     "a3277895-fc64-4da9-8258-fe0398c6089a"
+    ],
+    "detroit_techno": [
+     "dfc1a94c-f530-4463-9173-22f9d29b7d22",
+     "40eb4e97-9dda-48a4-97f1-045cdcae7548"
+    ],
+    "detroit_house": [
+     "ea4e2a6a-5bad-4b4f-9294-8b1a46b8fa50",
+     "b5bdd5e2-5329-40dc-9a5c-7be4426a5510"
+    ]
+   }
+  },
+  "Are You A Christian": {
+   "upload": "1ce16b24-8da9-46fc-acfb-4cb4345c32b9",
+   "covers": {
+    "psytrance": [
+     "5d95cca8-220b-48b0-9c63-fb7ad9b1dcee",
+     "d365ad4b-28c6-4c83-9225-d09eceafe4cf",
+     "8438717d-de50-49d0-a247-6ecd5fca96fa",
+     "20a5d664-f325-4f56-8f34-5c46238c2a49"
+    ],
+    "deep_house": [
+     "04223140-0c01-470e-965d-fc5c17e7f987",
+     "c00b3171-2547-48c9-bd05-11b276cc694b"
+    ],
+    "synthwave": [
+     "2b8c5b80-d729-4f3c-89ad-82e4931101e1",
+     "a55efe23-ba54-408d-b899-0afc7a92e25c"
+    ],
+    "drum_and_bass": [
+     "d502399c-d263-4ac2-bc65-cf74641b4f9e",
+     "14010650-97ea-426e-885d-406379df6f3e"
+    ],
+    "gabba": [
+     "b60e0d10-1524-4e94-85e8-cb7f0b68c5f5",
+     "b130e23f-0324-4c2c-97a6-ff1dd49fe489"
+    ],
+    "dubstep": [
+     "23a3976a-e26f-4a3e-aacb-6bd1a0366429",
+     "7503dbcc-e046-4a31-98b7-2dd21ef2a817"
+    ],
+    "chiptune": [
+     "58cbdf24-0dad-4df2-a865-07669cab6c59",
+     "35c35ed5-7fc1-40e6-bedd-6951d211bccc"
+    ],
+    "hardstyle": [
+     "bab8d0dc-41ff-4a0c-9503-d7f7ceca1058",
+     "81405f6e-bb9d-4168-853f-40e3c967bb9d"
+    ],
+    "japanese_hardcore_techno": [
+     "b117de11-5885-4d37-a67d-b3dd67ae5840",
+     "0bfd9528-39f2-4eda-8ff0-4639ce1d924c"
+    ],
+    "detroit_techno": [],
+    "detroit_house": [
+     "0d5e2d6d-5f68-4003-8414-b0bb105bf109",
+     "fe8cdac0-2c6a-4741-b1aa-1df79a304cfd"
+    ]
+   }
+  },
+  "Are You Ready For Jesus To Come": {
+   "upload": "73060d9a-9bb5-4302-a780-179e7a036e32",
+   "covers": {
+    "psytrance": [
+     "662ea88a-9f25-4fd7-99dd-634510525588",
+     "54649fd9-c3eb-4aa0-a79f-68112b592439"
+    ],
+    "deep_house": [
+     "b7f4b817-578d-4a0c-9fc9-2125b9eb635a",
+     "20a2744f-e816-4b09-8c42-2c904a7e0a73"
+    ],
+    "synthwave": [
+     "b5d9076a-1cd3-4b08-8260-2ef041e36934",
+     "8d14880f-6fa1-485a-9eaa-05ed75b01932"
+    ],
+    "drum_and_bass": [
+     "33ed0106-d83b-484f-87ec-5469b16b4e13",
+     "b06724d8-f3af-49db-aef9-83a5358e35b8"
+    ],
+    "gabba": [
+     "f9e32e78-24d6-4962-8c78-733720c27869",
+     "093febb1-2955-4a7e-975f-e610e449bde8"
+    ],
+    "dubstep": [
+     "06ec7c4f-0f5c-474a-9bde-d449eb715d1a",
+     "f6de2d7d-2af9-4919-bcd7-abb664e993aa"
+    ],
+    "chiptune": [
+     "11d3f5a1-a1fe-48a3-a812-992850300719"
+    ],
+    "hardstyle": [
+     "5c21d7bb-b20b-4303-81b3-048c7ff61864",
+     "a197b4fe-6478-439d-8e5a-b1afdb9eaa14",
+     "5b2f0f4f-2aca-4b59-82d8-2749db4be5df"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "45b6ecdb-7f73-481c-982c-6c501996b7b4",
+     "b4dc74f7-e99f-4ddb-a11f-9ff3e8e2a8a7"
+    ],
+    "detroit_house": [
+     "5033962d-85af-467c-bf75-70a2603748c8",
+     "1ecc315a-a38c-4999-ad11-a58d4aa15980"
+    ]
+   }
+  },
+  "As For Me": {
+   "upload": "2a0670ad-cfe3-49f7-9616-0aaf126bcead",
+   "covers": {
+    "psytrance": [
+     "4f61324f-5ed4-4a97-90d0-3eeca4209e39",
+     "b4311da7-5774-4eac-81ec-cecfbe4194c5"
+    ],
+    "deep_house": [
+     "820af411-9f1b-43c2-a7c6-5954ffbd04cd",
+     "5ded0401-55d7-4e17-bcd9-c316bfa886a6"
+    ],
+    "synthwave": [
+     "c1833b8a-4e83-4396-9732-1a133525ca07",
+     "89c88d33-ee88-409b-877e-1e725e70caac"
+    ],
+    "drum_and_bass": [
+     "e9639ee7-8048-4d13-8c64-ca3f6380fa33",
+     "c64cb8fa-54a1-4a35-a7ea-feeac9ff072d"
+    ],
+    "gabba": [
+     "64183e55-8b6a-4c47-9381-68918d4b3d85",
+     "6ec4bb0d-1d19-46cc-bbed-4e626a848d31"
+    ],
+    "dubstep": [],
+    "chiptune": [
+     "8350442f-c8d1-4d2e-ac2c-3b512cbc0c0b"
+    ],
+    "hardstyle": [
+     "8ac5e5cd-7aa9-401a-87fd-6863dbe0979a",
+     "778cab80-49fd-44a9-9915-632657272ead",
+     "e89b0afa-5a70-4de0-b2bd-119658c6e60f"
+    ],
+    "japanese_hardcore_techno": [
+     "f0e1f770-b1d3-4b51-a26c-2713bb6f6a62",
+     "2176c441-d352-4299-b043-75259c865e9b"
+    ],
+    "detroit_techno": [
+     "4ed6e9fa-45e6-4452-8853-3158877d76a4",
+     "e34cc017-85b2-45b6-b8cd-0b62f3422e99"
+    ],
+    "detroit_house": [
+     "11c4d328-0551-4557-b0e8-0fd395887e77",
+     "bbc101c4-e621-4055-acef-2a560ca94af9"
+    ]
+   }
+  },
+  "Beautiful": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Behold What Manner Of Love 1 John 3 1": {
+   "upload": "d6b36a3d-ad46-4ceb-ac8b-715f16b8c474",
+   "covers": {
+    "psytrance": [
+     "8c1c48bb-e19f-451f-b3d4-810e6522101b",
+     "fdf8fde0-404c-461b-ab1a-7257ac074e33"
+    ],
+    "deep_house": [
+     "f34750e3-b610-4c1a-8c80-dbf9c8f564e8",
+     "3c3ea62e-6199-4289-a2b3-81497808f1b2"
+    ],
+    "synthwave": [
+     "e3373878-b08c-4bae-9621-c47f03c2579c",
+     "835ac719-a9bc-47d3-bdf1-725c82cf646f"
+    ],
+    "drum_and_bass": [
+     "3dc406e8-3719-4ac2-b1b4-042a027bf9bb",
+     "9ddab846-b8e5-479a-a5a1-d81f345f45b6"
+    ],
+    "gabba": [
+     "774aa6a8-2783-4e1a-b87f-c1c24c5d2506",
+     "73e89109-b6e5-4eb2-a0f6-681beb55c507"
+    ],
+    "dubstep": [
+     "3c53b86e-b23e-4b41-ae11-a60dbd39f183",
+     "eeeb6cf7-7870-4f93-bbd0-5ed69fbb6d0b"
+    ],
+    "chiptune": [
+     "4558287f-3ef8-4900-96b8-8cd0633c6845",
+     "7ad9dc9e-60b9-434c-a3db-c2f492d8caf0"
+    ],
+    "hardstyle": [
+     "e8680e4b-59f0-40aa-ae2f-0d40a526ca75",
+     "ba14acae-9bc1-4e0b-98bb-a2390908665a"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "9ce6f69c-8a24-4517-989a-e7fe0bdfc850",
+     "a206d318-05a8-4391-b604-0f25405410d9"
+    ],
+    "detroit_house": [
+     "62e617b0-19be-41cd-9af2-d644218ba123",
+     "fbc3dfa9-39eb-4a65-8a8c-a45dbfba4988"
+    ]
+   }
+  },
+  "Blessed Be The Lord God Almighty": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Can The World See Jesus In You": {
+   "upload": "9784dcee-a064-41d3-aed7-d4a267c7bd62",
+   "covers": {
+    "psytrance": [
+     "67bebcbf-d9d0-40d6-a45c-40e4b61a1fad",
+     "e92756f1-f79d-438e-8ead-e6e05f8e0263"
+    ],
+    "deep_house": [
+     "99dbeddc-00f6-4e90-8475-5de66fcc2751",
+     "bc705e12-028a-4c3f-ac29-8517d3367d6f"
+    ],
+    "synthwave": [
+     "f1d1e57e-e9ae-4c07-a441-7dc080b03f51",
+     "384e4fd3-c13c-431b-a5ef-6d6b912db126"
+    ],
+    "drum_and_bass": [
+     "3746465a-91db-4678-b9b3-db4e436bb888",
+     "5b9b3cb9-5c97-46dc-a8de-c7a04fd3c4bf"
+    ],
+    "gabba": [
+     "da373ec3-f4ac-49ac-b0ba-ed1dae847cd7",
+     "ad36922a-b51f-4d77-941a-59fd7c24d42c"
+    ],
+    "dubstep": [
+     "09f9d13c-42a6-4ef7-a1d1-185007bc1b0e"
+    ],
+    "chiptune": [
+     "c6850da9-d500-4048-affb-646c0007b29c",
+     "0b333ee5-a742-4b9f-a219-03482602afb8"
+    ],
+    "hardstyle": [
+     "20190504-9307-4e77-a248-a3342b0d0d91",
+     "3f5283b9-cdb9-4483-adc5-45fb8c7fc27e"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "20d3ea54-92eb-4b94-9ebf-0691a6fee854",
+     "878ba7e1-c49c-4ecf-8ed3-85250324e992"
+    ],
+    "detroit_house": [
+     "f6683ea1-a032-42a4-8856-a2a4892d1b1a",
+     "31adac2f-f806-4bce-af5b-8cb602eb4865"
+    ]
+   }
+  },
+  "Cares Chorus": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Christ The Joy Of Loving Hearts": {
+   "upload": "1a3d570d-c144-4cfe-a5e7-f4bc32a73cef",
+   "covers": {
+    "psytrance": [
+     "3986a440-f477-4896-9b10-32f5d59cf889",
+     "21ba9a17-365e-4a9e-a219-abbee9270119"
+    ],
+    "deep_house": [
+     "0bb3be2e-0bcd-413c-9b07-ec354b4aff36",
+     "a2041cd4-0b29-4b2b-abf3-7b39ef9621ea"
+    ],
+    "synthwave": [
+     "c03c8191-e6c7-45ee-b1d9-ac63722deb5a",
+     "784c1a33-c85a-4bc0-bf57-ed93749522b6"
+    ],
+    "drum_and_bass": [
+     "43f07fcc-95c9-4a4f-a7e4-abb957960158",
+     "c7fa01c6-9652-4b58-afe9-0054a0ec695d"
+    ],
+    "gabba": [
+     "2215b94d-645b-4a76-85bf-48808e0de337",
+     "a076e84e-3d30-42d3-a1fc-958ed8b9c1bc"
+    ],
+    "dubstep": [
+     "823abe07-bebb-4b07-a6c0-5b0685011d7c",
+     "180d1293-e564-4169-a499-17412798415c"
+    ],
+    "chiptune": [
+     "7d456359-6546-4e92-817a-bf924ccaae6a",
+     "5a980c1f-aa2b-4380-aa50-9e7d7fa9fd4a"
+    ],
+    "hardstyle": [
+     "96c79fbd-2da7-439d-a9a3-867f6e86697d",
+     "dd7a759d-a524-4d03-a6b4-c13d871d0caf"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "4e01a5f7-4902-4265-abab-b3d7e9dca5d2",
+     "5e1c082b-7f88-44b5-8e13-f81a331b49c6"
+    ],
+    "detroit_house": [
+     "5e9f6c53-778c-4b71-b689-a9dfe33abb89",
+     "95e8d563-c8ff-4791-a19c-fac3ee7c7c9e"
+    ]
+   }
+  },
+  "Come And Sing Praises": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Do You Know My Jesus": {
+   "upload": "d523fe60-1481-49f8-8d1d-de10ccca85cb",
+   "covers": {
+    "psytrance": [
+     "15640594-e89f-465d-965b-4ce43eed56b8",
+     "1129641c-8adc-4ad5-9fc0-11b402c243dc"
+    ],
+    "deep_house": [
+     "260b3ef2-67d4-470a-b386-46d47f4d4c1e",
+     "58ac99d8-4a53-454d-be96-1557a6ddfcac"
+    ],
+    "synthwave": [
+     "8dba221b-137c-48dc-b9b4-d8fc779b838c",
+     "d5842010-d081-46c4-b174-8e9c6809e999"
+    ],
+    "drum_and_bass": [
+     "5b1ef80b-1a27-4cc8-ad55-f3d23e697001"
+    ],
+    "gabba": [
+     "f0931255-dc11-44b3-80f6-7892e1ce2785",
+     "57813509-0b30-4acd-80ca-6b2f1bcba2ac",
+     "d1e82759-e668-4d04-b286-87c9fffe71b1"
+    ],
+    "dubstep": [
+     "866f459e-8e38-4987-8f00-0b991bca42fb",
+     "a4be5839-c3d7-45d5-bf01-2fb93248e49f"
+    ],
+    "chiptune": [
+     "44179ed1-ae0d-45b8-b983-0b2e337d49d1",
+     "31ce6ee7-dedf-421e-9bc0-ed0f8dd9218f"
+    ],
+    "hardstyle": [
+     "3465b4c4-ceb0-496c-bc26-2982b0edcf37"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [],
+    "detroit_house": [
+     "41aaf263-3f48-4c6d-a502-50fc5321a0d7",
+     "fdfcc810-1f43-4929-bddc-753684b4cf97",
+     "ed1a31cb-116a-429c-bfc6-f6d49cf32677",
+     "e775b06d-7314-4c10-ae4f-b01b99b82c09"
+    ]
+   }
+  },
+  "Do, Lord": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Down In My Heart": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Echo Chorus": {
+   "upload": "02752d6b-c336-4c2e-9f11-65a0d9ab0118",
+   "covers": {
+    "psytrance": [
+     "4d673aca-3864-4135-9fd0-5f78ba773166",
+     "461bd60f-9b90-4dd8-979e-8f4cb6d12f45"
+    ],
+    "deep_house": [
+     "747fb96b-7009-4e69-8d3a-c82e9997b3b7",
+     "5e2ddcb9-1a86-46d6-9d53-e7cd6781a8b1"
+    ],
+    "synthwave": [
+     "57f75280-ca1f-4f9b-81ac-6e2787b481ca"
+    ],
+    "drum_and_bass": [
+     "7c2aea64-ce31-4489-9525-c5a5a90c4355",
+     "4e511f18-4fb9-4480-b646-3e667de23408",
+     "6c9ee0d3-45a6-4a64-85f9-2fd36f0d8ee3"
+    ],
+    "gabba": [
+     "25068a57-d743-4f15-83d7-2f3cf02799e3",
+     "aa1c26c9-8ee5-4bca-a40d-96609a7990d3"
+    ],
+    "dubstep": [
+     "6716df4d-c042-40b7-9ff7-913b0679790e",
+     "d79c2102-26fc-45eb-9300-b3ffb00d022f"
+    ],
+    "chiptune": [
+     "5a104a39-a71c-40aa-a3d2-24c19196cf16",
+     "b76cc501-8933-4810-a0a9-c75a1b2805a4"
+    ],
+    "hardstyle": [
+     "875cb69e-d316-4e84-9b44-3b3e7f142c41",
+     "91c32308-bb40-49b4-8b81-e04564a4caf7"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [],
+    "detroit_house": [
+     "556bd3d3-9d9a-417b-9f75-d02549c7928b",
+     "86c58c5f-de73-46dd-b8ca-48258eeaf120"
+    ]
+   }
+  },
+  "Emmanuel": {
+   "upload": "0920dec2-4d47-492b-96a3-41d299d91c7b",
+   "covers": {
+    "psytrance": [
+     "40e11e54-cdf6-45f2-abcc-71178dca7b54",
+     "2466459d-2277-41cb-b458-52f797f2a7f2"
+    ],
+    "deep_house": [
+     "aa061564-f0cd-41eb-bd70-fb3fdf5428f3",
+     "38df0ced-09fc-4423-8454-3446c72a9b11"
+    ],
+    "synthwave": [
+     "ef7e7557-fa7a-49d4-bf33-390c352bd502",
+     "1bf9666d-01e9-46a8-917b-3df03caf770a"
+    ],
+    "drum_and_bass": [
+     "cac2bd7e-913b-4800-a340-9071b42ce434",
+     "8331913c-0e3e-4639-88f6-a24a16acef2c"
+    ],
+    "gabba": [
+     "fc5e7b9d-7f34-48fd-8cbb-1366368883fc",
+     "38bdb8ab-eef9-4c49-8f21-a9e93286aa5e"
+    ],
+    "dubstep": [
+     "6633bc3e-b736-4e30-b1c3-a541fb449667",
+     "67ca8645-b815-42c8-af7a-2f3148c6f181"
+    ],
+    "chiptune": [
+     "fbab4264-3c2c-44fb-8588-c9eab86cf805"
+    ],
+    "hardstyle": [
+     "2aa2e3ec-3080-4bf2-bd16-a960e1dac078",
+     "26702a25-110b-468b-a093-e74754574819",
+     "4c5e6dcc-9142-410a-9b47-9173016cf20b"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "c2af37d8-0024-45b2-aeff-866fc0748c09",
+     "5cdb6aba-9e46-4546-a2ad-b6a37fa6798b"
+    ],
+    "detroit_house": [
+     "1905538d-38e6-410f-9a17-643da98eea0e"
+    ]
+   }
+  },
+  "Every Day With Jesus": {
+   "upload": "0a755895-d7de-4014-9f2e-23aa1585eefa",
+   "covers": {
+    "psytrance": [
+     "5e3f7393-fc04-4c08-8336-01df7f75a063",
+     "7b89c098-1c8c-4be6-9927-ee34456a6c6e"
+    ],
+    "deep_house": [
+     "a4815a16-d66d-4cd4-8432-ac6461c0d834",
+     "353ffbba-5a43-4cc9-b1b2-baf42bc5f5fb"
+    ],
+    "synthwave": [
+     "4e948cd4-836d-468d-ac71-995b84de8f3d",
+     "5571fe8c-3b32-4c1e-aba5-6ffd7747cd8a"
+    ],
+    "drum_and_bass": [
+     "aab1aafb-ae91-47ee-bf22-b644fec15b02",
+     "2e0816f1-5961-4423-a227-9d8a03483d7f"
+    ],
+    "gabba": [
+     "4a26c114-5d21-4eb9-a134-9cded333451f",
+     "182c5f86-8634-4494-9020-5d6146155a1c"
+    ],
+    "dubstep": [
+     "3dc53e76-04e2-4dbf-8814-002622a358d1",
+     "8d61e1df-0968-4ef5-9708-655c1f87bb8e"
+    ],
+    "chiptune": [
+     "ce65cf74-84ba-4b20-b953-271e0c113980",
+     "1dda924e-36fc-4e98-9bc6-1d7f399742d6"
+    ],
+    "hardstyle": [
+     "03a53503-becb-4f5c-93b6-ca448bdb34ba",
+     "af4b333f-c2b2-4f07-bd55-0fc0b4439492"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "a2a53709-93ba-4180-a8bc-466b041f8033",
+     "582a2bfc-313c-44dd-9a17-095a81d8951f"
+    ],
+    "detroit_house": [
+     "0ccb481f-5bb2-4015-8f13-6bcdd4131f43",
+     "e4dea08b-e44c-4ae9-9f9f-423bf95f1d4c"
+    ]
+   }
+  },
+  "Every Moment Of Every Day": {
+   "upload": "3016c739-31af-4f6c-9b68-c6264bb7a117",
+   "covers": {
+    "psytrance": [
+     "819709b1-4507-487c-9dc2-8d11f598bc84",
+     "fdb58c32-bb4e-4684-b054-73f3ba3a13d5"
+    ],
+    "deep_house": [
+     "d4e15a7c-fd3c-4648-a613-8705a24b0255",
+     "fe75ca97-731c-4ede-b32f-3e76098049ba"
+    ],
+    "synthwave": [
+     "86c2f405-9be3-49fa-9a81-adf69b6885a5",
+     "5fb17889-7a5a-4164-9735-ee56c5d8c497"
+    ],
+    "drum_and_bass": [
+     "cea52477-1192-438a-920c-7d8268ae30e5"
+    ],
+    "gabba": [
+     "a6ad57fd-911a-4038-96a6-0dc2aa2a127e",
+     "8c64e951-deac-42db-8f82-6b9ea2eb10a8",
+     "c7d7aa0f-ca4c-460c-bb20-ba228f743fb5"
+    ],
+    "dubstep": [
+     "3a2ffc0f-cd23-42ea-b98d-1d35b7b8fb4c",
+     "8f9cee86-2b88-472d-85b0-504aeacb63c3"
+    ],
+    "chiptune": [
+     "cb4225f5-c10d-4f19-8bf0-5c60c937894c",
+     "1b0f7902-a191-4b36-9375-6caed02864c5"
+    ],
+    "hardstyle": [
+     "f27afc36-a1d4-47fd-82be-17e8efd4fd3d",
+     "fc8a0131-de56-4620-aecb-466912c0a301"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "083b93c7-36bc-47a4-86ed-55e8bdfcc2f1",
+     "14e0e4d6-7d13-4cab-b9c0-8fe1997312de"
+    ],
+    "detroit_house": [
+     "b8301f6f-900c-4c83-b8d6-ac536bdd682f"
+    ]
+   }
+  },
+  "Everybody Ought To Know": {
+   "upload": "e8026668-55d3-4b1f-a96b-56df7648823a",
+   "covers": {
+    "psytrance": [
+     "e89f592f-5f63-4ded-a9d7-0f01b5e9244f",
+     "7bfe0ca2-d692-412f-a3de-f477a4b5305c"
+    ],
+    "deep_house": [
+     "0b340ecd-e682-40cb-aa8a-dd470466f1d1",
+     "ab45a48b-5ceb-4925-8751-196179b672fb"
+    ],
+    "synthwave": [
+     "643b7b1a-2e8b-46c9-8054-a5ca43211031",
+     "944d9cbf-69e3-46df-a0c9-dfc5d76001f4"
+    ],
+    "drum_and_bass": [
+     "aa6b6162-c4d2-4f8b-a284-456fa67f1535",
+     "ed5b1add-093b-4da0-a96c-d5c8c191d1ca"
+    ],
+    "gabba": [
+     "84a9f8d9-5d6b-496f-bef2-901eefab0ca4"
+    ],
+    "dubstep": [
+     "15bd8655-aba3-4730-b538-0a9b9a7f15b7"
+    ],
+    "chiptune": [
+     "61a83a8c-5ee3-4755-a730-cab84ab21907",
+     "7457e63f-e91a-4f09-a8bd-08592b6bcb8a"
+    ],
+    "hardstyle": [
+     "2517fd94-58ac-456f-bacc-8886a1d834f6",
+     "3bda97a1-8b67-4a4f-ae30-2f5960779e41",
+     "aa80d65f-3e38-47dd-929d-6dea3ee7c6b7"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "b9a9aea6-6915-4ad6-9d22-390a5179310c"
+    ],
+    "detroit_house": [
+     "b6b3e3e5-1ab9-4317-8756-d157ed2314d8",
+     "d9069c88-88f9-446b-bd7c-4e94e3dc6aa0"
+    ]
+   }
+  },
+  "Everything's Alright": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Far Beyond The Sun": {
+   "upload": "e0fecb81-7db9-4cbc-9377-f73a3c13aa15",
+   "covers": {
+    "psytrance": [
+     "9227d3e3-292b-43d3-a512-f66939f9b372",
+     "5d5a478e-4392-4c6f-b315-9160cb082c41"
+    ],
+    "deep_house": [
+     "10335e40-b75c-4c93-9126-9bd99c8397d4",
+     "7c900419-1fa4-402c-9c4b-855664675f30"
+    ],
+    "synthwave": [
+     "17f65fe3-bc55-4e83-8864-37dc731df0f3",
+     "2ceeec3c-d441-46a2-b162-6859edac6499"
+    ],
+    "drum_and_bass": [
+     "8a77f6b2-7830-4be8-b5b2-b744040aa0a3",
+     "bdb19df7-cc31-46d7-8cbc-3eb46730e1b6"
+    ],
+    "gabba": [],
+    "dubstep": [
+     "d23e71ed-8be7-421e-92af-1f055fa8728c",
+     "56557c26-27dc-4d55-bc63-732f9858e979"
+    ],
+    "chiptune": [
+     "cae03c2c-5f0f-4c0a-a875-1658f4f1ed4e",
+     "74070e8c-c28d-476e-975b-e785295dbbb8"
+    ],
+    "hardstyle": [
+     "37d93e9a-72d0-4a3d-a44f-ec64a4ee5143"
+    ],
+    "japanese_hardcore_techno": [
+     "e707b2a1-bfc2-49fd-bdae-77fc422bf61e"
+    ],
+    "detroit_techno": [
+     "6936a57a-6283-4524-a702-6cdb367b54fc",
+     "1ba4b392-fe14-4f09-a395-af4245a421b7",
+     "4d8c8aa8-0dd4-441a-8284-dfcdbf6243f2"
+    ],
+    "detroit_house": [
+     "bf138713-8915-4252-b4eb-b829800c066e"
+    ]
+   }
+  },
+  "Father, I Adore You": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Father, We Love You": {
+   "upload": "c4ef0b75-b304-43a7-b154-8a8647154992",
+   "covers": {
+    "psytrance": [
+     "a39cf113-2ab9-4404-8203-95983e3a5197",
+     "ee06feef-4af5-4483-b4f9-96da90980dc0"
+    ],
+    "deep_house": [
+     "eaa10bb5-eab2-4360-93a3-b44b116b5f39",
+     "4e2ae1e3-f196-4e5f-9de1-78be63ec8fa0"
+    ],
+    "synthwave": [
+     "d8aa6e2d-a4d7-4ffa-baa0-da05eed584c0",
+     "2f896aaf-d4e3-4d54-bd26-14d578eb305a"
+    ],
+    "drum_and_bass": [
+     "f039c836-f39a-4017-ba33-d89cbf3f7755",
+     "b61e0ef8-c0da-4a39-97ef-540b935d321f"
+    ],
+    "gabba": [],
+    "dubstep": [
+     "dfcc8f1a-751e-4cc6-abd6-a04a415877a5",
+     "a0325fa2-5de4-4854-afe8-34bb1b43c5fe",
+     "be22f9d2-c826-4c15-aa0c-c35bacc1e2b4",
+     "b321650f-10a4-4281-8ab4-eb2414aa093c"
+    ],
+    "chiptune": [
+     "2ff9aa0c-536b-465b-a8da-22577e0ede0c",
+     "f54f661f-3f04-4123-a7b6-ef50224a279d"
+    ],
+    "hardstyle": [
+     "48819ac7-562a-4a30-99a3-a2d5ac578ab5"
+    ],
+    "japanese_hardcore_techno": [
+     "ca0f759e-2d1c-4514-a950-a81a27b0b5c9",
+     "7c6a5880-6591-40b3-b8d1-c6c072dcd714"
+    ],
+    "detroit_techno": [
+     "c320d83c-9c15-434c-b787-b0bbed234f74",
+     "282e5fa0-bddd-41d0-9bac-85c879848762"
+    ],
+    "detroit_house": [
+     "18302793-6511-4669-b596-6a3e39b84e90",
+     "bc83dfeb-6911-4ced-8cdf-200055a6cfac"
+    ]
+   }
+  },
+  "Follow Me": {
+   "upload": "dc6cceb8-bc58-4e77-9eeb-e8287c3a2bea",
+   "covers": {
+    "psytrance": [
+     "cd56d577-9a21-45d6-b7f1-c7a29fad83e4",
+     "b4a83f11-23a8-44c2-b411-65e60a7d4d97"
+    ],
+    "deep_house": [
+     "69c14709-223b-4b7d-bcf5-0b68f49d5fda",
+     "dc22174a-89da-47bb-bec7-25fa478d01c4"
+    ],
+    "synthwave": [
+     "1628ac79-e840-44c2-8920-9970a46599c1",
+     "973d349f-b4dc-4132-abc0-a31c312f2b77"
+    ],
+    "drum_and_bass": [
+     "b55f5ad6-9784-4917-83c2-58da3dbcc091",
+     "6ef10d60-4a64-47b1-bb07-a591268b6157"
+    ],
+    "gabba": [
+     "6734f92f-328b-4fb3-8279-fe33d5ec0542",
+     "3f80e1b9-da0f-4acf-b98a-edb690b0de34"
+    ],
+    "dubstep": [
+     "70751e42-4b0b-4e54-bc2d-64213cd580f6",
+     "ddf41cab-0c80-4a90-ab13-1ecabc6ab66e"
+    ],
+    "chiptune": [
+     "9c8f7ab1-6e31-4060-af58-68bd840ab632",
+     "8ad221e8-0b9e-47de-acb8-9221773911cd"
+    ],
+    "hardstyle": [
+     "db40e75b-ab01-43c0-b34a-2b156dd99a17",
+     "d3196516-fa9a-4f40-b238-d913b84732f8"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "d9191f24-b639-4161-b8f9-ea76ad3fa45c",
+     "42297865-97d6-4dd0-b84f-3c504ba6ae98"
+    ],
+    "detroit_house": [
+     "41a61305-3ead-4dfb-87c7-10debb72541b",
+     "aa3c9699-8153-4d90-b489-ada9c6cb0972"
+    ]
+   }
+  },
+  "For God So Loved The World with Tag": {
+   "upload": "28712401-f026-4b7e-9cd6-7a402c695f6f",
+   "covers": {
+    "psytrance": [
+     "77e05e62-3e63-4a0c-a54b-42c5bed49601",
+     "44802421-fbb7-4543-8a35-5310b0e6f08b"
+    ],
+    "deep_house": [
+     "4569aac7-01ed-4372-a568-1236e784056e",
+     "3cf06923-fcf7-4f8c-ae30-5388591a13a0"
+    ],
+    "synthwave": [
+     "679d20fa-dd6c-4f36-a8fa-bd9934dee0c7",
+     "6a47fe22-4598-44e9-9d95-534e11bd4ed2"
+    ],
+    "drum_and_bass": [
+     "aac93be3-64e0-4bc3-bfb1-1b66e020619b",
+     "d01cc127-2598-4f44-b101-bce829876a3c"
+    ],
+    "gabba": [
+     "f173d8cd-ce61-491a-bc54-ef6382633239",
+     "d8c4d57f-adb8-43a1-8f80-1a4ddd520458"
+    ],
+    "dubstep": [
+     "ee99ca58-2c87-4580-ac52-70fda6f6f416",
+     "b2e4a125-14f0-4787-bd5c-493a515a2dd2"
+    ],
+    "chiptune": [
+     "d171650f-0ec6-4eec-8998-6491c4d6639a",
+     "67335b88-02e5-44e9-ab7d-29805f32206a"
+    ],
+    "hardstyle": [
+     "92f7ae04-bf44-4877-8eae-3118493312d9",
+     "6a4f4655-607c-4e2f-b0c9-c176af614527"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "d8ef3efa-3f89-4754-93b7-f78989c254fa",
+     "21194696-a1dc-4ca6-a445-32527449241d"
+    ],
+    "detroit_house": [
+     "3e701a07-0a68-4031-977e-8b257ec11e8c",
+     "9d3a7c26-277c-4b23-af95-86afb77a6240"
+    ]
+   }
+  },
+  "For God So Loved The World": {
+   "upload": "b475655f-4515-4950-aef9-e6bb66aa91e6",
+   "covers": {
+    "psytrance": [
+     "41e527d7-7199-4cb2-b950-77edc7c497d9",
+     "70e0a80b-5ca2-4772-a839-6c71932a4f86"
+    ],
+    "deep_house": [
+     "7aa96ce3-2f78-47aa-9472-e4aac433df8b",
+     "c23a9d16-507f-4051-ac4b-b67a1c6b538c"
+    ],
+    "synthwave": [
+     "68eeed4a-43e6-4f74-b7c1-d49500c6c489",
+     "5890eec9-a649-42d7-b19e-c4cc10bcb8a3"
+    ],
+    "drum_and_bass": [
+     "74ed4c88-29c7-46eb-ad78-1eb67b83afde",
+     "c9154e91-5c7a-4c72-9286-aa8c57d679ae"
+    ],
+    "gabba": [
+     "0d294f37-337d-46e9-9cd2-8ac80ff6ea5d",
+     "83cd7ebf-a656-45de-8ec6-fe99ad34d329"
+    ],
+    "dubstep": [
+     "f1487aac-0863-48df-ac4e-1d2727957212",
+     "4a80940a-89b9-48c2-a334-0ac8c3d209c2"
+    ],
+    "chiptune": [
+     "dc072c47-e6b8-42d2-9b2e-7f0f83d5c8c3",
+     "6c04b423-e376-442d-9782-9cc3e8012e76"
+    ],
+    "hardstyle": [
+     "0c8d2eeb-4c05-4521-b62a-32152b8de7cc",
+     "ad0a0150-6d5f-4c4b-ac86-3ff36e58dd67"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "5d653582-bbb9-44d6-865e-af77f9c21369",
+     "2c1f5509-7a4c-45dc-908e-ed11220a73a1"
+    ],
+    "detroit_house": [
+     "d07a6933-18e9-41a1-9143-c26fb96fd743",
+     "c5d215b7-73d2-4782-8804-708ee09fa9b2"
+    ]
+   }
+  },
+  "Friends": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Give Me Oil In My Lamp": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "God Is So Good": {
+   "upload": "8d8828f5-164c-4945-81b6-aea8bd2bd50c",
+   "covers": {
+    "psytrance": [
+     "22580b51-40a7-4ffb-93ab-14358d1256a0",
+     "d26f8384-ff57-4f7c-9199-4bf2c54765be"
+    ],
+    "deep_house": [
+     "2a966ff5-a097-4a9e-a4b0-8213a443acf2",
+     "fdde3d94-f1dd-437e-b8ec-4ecb63e326f7"
+    ],
+    "synthwave": [
+     "ac7ffd30-467d-4863-ac1e-d1c0738ae5da"
+    ],
+    "drum_and_bass": [
+     "30b7b6ed-fabf-4161-9eac-20aa6001320a",
+     "33c555d2-3cb3-4c8d-a342-2e8d6f4fe63a",
+     "c49842fd-53d3-422a-a4ec-788a92c1f757"
+    ],
+    "gabba": [
+     "a865ac1b-26f6-4771-a1f0-6ed7f4801350",
+     "8430ae30-45cf-400a-ad49-e862124bbe89"
+    ],
+    "dubstep": [
+     "99eb16ac-0581-4af8-9988-93e43a3627aa",
+     "c8ee9765-1d44-4264-b3f0-a7927b3e0504"
+    ],
+    "chiptune": [
+     "4acf42d7-7acc-43a2-8e07-10022fe0e8e1",
+     "73acac5d-5969-405a-b9ca-ca21913ab24b"
+    ],
+    "hardstyle": [
+     "2a97eb94-3514-4381-bdfc-9cfc98ff8c7e",
+     "47995c32-b435-47c6-a6df-467016041a25"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "2eea6b13-2424-4514-9cb1-f77a7985d866"
+    ],
+    "detroit_house": [
+     "9f1f9ce2-60f2-48aa-b286-51bb3a0fb227",
+     "a12a2c88-b8c0-44d3-b246-94845ed6b123",
+     "d347019c-afa9-4ca5-b2e8-0fb081ebb3fc"
+    ]
+   }
+  },
+  "God's Love Is Wonderful": {
+   "upload": "3a91dd37-b382-4b2f-a154-9ffd035e9d26",
+   "covers": {
+    "psytrance": [
+     "e460a3ba-b896-44b8-85bf-3bc02cfc0b31",
+     "f08d9740-0ff5-4a25-8de2-a15dad001571"
+    ],
+    "deep_house": [
+     "91766f2c-a034-43a9-9113-977e0e8f7b93",
+     "76b84a25-bcc7-4c6e-a71c-601962c5d148"
+    ],
+    "synthwave": [
+     "2502f5f6-c694-44c8-a774-8c84468c78d7",
+     "f3ccff14-bd07-43e2-88ea-15125a470b4e"
+    ],
+    "drum_and_bass": [
+     "d4f11f6d-d3f5-41e6-bdb1-8e7c53e55078",
+     "bf9555df-0c30-4f1f-ab7f-844a909a40bc"
+    ],
+    "gabba": [
+     "31d6f68d-5563-4598-bbc8-15c3dca140ef",
+     "e79eecc2-54a1-4020-8ea3-fe5c33d8ab3c"
+    ],
+    "dubstep": [
+     "70ded0d6-9f7a-417d-aded-2e266c77393b",
+     "162dbeb5-d531-4385-bb2d-fc8e67908712"
+    ],
+    "chiptune": [
+     "5a784c7c-d71c-4284-a7c4-ea5b03a6417a",
+     "c4fbec1a-d4f2-46ab-8489-40160c93e1c8"
+    ],
+    "hardstyle": [
+     "cb68bdd3-0f0d-4644-9cd0-ffc896939f55",
+     "3225aaf1-6ffb-4ccb-81da-0b5be51e3c4d"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "56906746-09dd-4221-877f-d0f175b1b4d9",
+     "d0f98d6d-a9a1-4810-8e7a-144e3efc0422"
+    ],
+    "detroit_house": [
+     "95be6cb7-169b-44a7-ba2b-79b828e95177",
+     "3c69abf3-a53c-42dd-84e3-a8d3ffd8901b"
+    ]
+   }
+  },
+  "Great Are You, Lord": {
+   "upload": "aec91747-7434-4afb-82ae-a5c9f1ca1aa1",
+   "covers": {
+    "psytrance": [
+     "b7a9a731-2e38-462d-99ce-c1ded75bc96f",
+     "f76452f8-399c-4d97-8efe-873945563fdd"
+    ],
+    "deep_house": [
+     "8ead2170-2f6c-42d5-adf7-bc781879d076",
+     "cf8c4e32-6308-4c04-8b60-0bf4b94df95f"
+    ],
+    "synthwave": [
+     "bfbdac28-1f83-4f63-a357-76f258ef1adc",
+     "faaaaa48-0585-4096-be89-9b45ca56f93b"
+    ],
+    "drum_and_bass": [
+     "61d89505-038e-43e6-b32a-6fbcc0da4700",
+     "f660efbf-2450-4926-8681-42dd961f01f6"
+    ],
+    "gabba": [
+     "6191e38f-58f3-4a74-904b-6144aee37e78",
+     "7fd90c1c-98d3-4fd7-a4cf-a5f9f4b188bc"
+    ],
+    "dubstep": [
+     "72942f68-3d39-43f6-8e75-70b85b4d7f91",
+     "e8c1f3bd-b2d3-4d75-98a4-c727272ce495"
+    ],
+    "chiptune": [
+     "314c7a0f-8159-4656-8708-837d8d47fc47",
+     "8931842f-ba78-49a3-835e-ab39348e3da4"
+    ],
+    "hardstyle": [
+     "ff57d92a-9c6f-46b0-a5f6-fa44a5ff1493",
+     "5046d472-2ba4-4b53-a33c-f789fb1e4a0f"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "91ce2388-998c-4fdd-884b-5239769c18ec",
+     "6587078b-70ca-495a-aea8-e27428b906c0"
+    ],
+    "detroit_house": []
+   }
+  },
+  "Ha-la-la-la-la": {
+   "upload": "93db707f-7cb3-45f3-ab6a-c6a8dc3ec10c",
+   "covers": {
+    "psytrance": [
+     "ebc9b2ea-3d3e-417c-85ba-396d09cc5494",
+     "ceacca30-6371-4d7c-baa5-9a501167fa05"
+    ],
+    "deep_house": [
+     "f18e31c0-11a7-4a67-8202-db7df13ab594",
+     "559052e5-1626-403b-accc-332aa28f089a"
+    ],
+    "synthwave": [
+     "b20377e9-2ddc-4787-b761-8929bb651558",
+     "f6557f83-17b2-4ff7-9d69-fc374e5a1aba"
+    ],
+    "drum_and_bass": [
+     "5c46a3c4-751b-40a6-9cdf-8e42ed841963",
+     "d08b22be-8b52-4ba6-a1ee-0eeeebc9fdfb"
+    ],
+    "gabba": [
+     "e807d2d2-468f-4b42-8a84-f2af98b9092e"
+    ],
+    "dubstep": [
+     "4df57357-460f-4bfb-b4a3-6ca4e3021c79",
+     "45597669-8cf8-4be0-9de5-b5aa9b2bfba0",
+     "ad8e238a-398c-4380-830a-4164b05c1be4"
+    ],
+    "chiptune": [
+     "f0bfa0bc-ed5c-459b-88d0-dcd54e65f39f",
+     "7fe52cdf-8c3f-4a1c-98e8-91dfaf0cb654"
+    ],
+    "hardstyle": [
+     "7ccacaa2-2df1-4333-8939-9e166cf6c0e2",
+     "64751900-7282-453f-8e84-ad3b42c84a05"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "88e6dbbf-526f-4f1a-af6e-c2da67b1330b",
+     "6177ce81-6bfb-4090-b4fd-da8d57483e2b"
+    ],
+    "detroit_house": [
+     "3405691f-5b6a-40ff-88b9-200a0df3fd49",
+     "562e8662-43f4-446b-8284-ef0f88717318"
+    ]
+   }
+  },
+  "Hallelu, Hallelu": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Happiness Is The Lord": {
+   "upload": "a3d196c8-131f-42e2-a420-582f76338856",
+   "covers": {
+    "psytrance": [
+     "54cf2cc3-5939-4fd7-84cb-9961939bd4a1",
+     "f5a9ab2f-5557-467b-94b0-c53899b474b6"
+    ],
+    "deep_house": [
+     "f3a524ec-93ba-4893-acaa-c92e2c575f9f",
+     "c6de3551-fb1e-4751-978d-118a4f9780e1"
+    ],
+    "synthwave": [
+     "83386206-0e1c-4601-b19c-2a471cab3d6e",
+     "01fde4eb-e89b-47ff-8b1e-2d23c685c01c"
+    ],
+    "drum_and_bass": [
+     "e0d36bf5-3359-4cec-86fb-cf22ff009ce4",
+     "02ea76b7-6f82-4a2f-96f8-3f535470a9b2"
+    ],
+    "gabba": [
+     "cb746aed-9df6-4707-9d3c-346a3cb53b92",
+     "be83c96a-13e4-435f-9fcb-bce04a0df83b"
+    ],
+    "dubstep": [
+     "d6be36fb-0762-41bd-8a78-430c6cbb976f",
+     "ab6cb496-3498-4646-87e8-902c4967ec76"
+    ],
+    "chiptune": [
+     "169d4271-c4fe-43cf-845d-81d9fe1b84c1",
+     "b3f8868b-b1b6-4040-9e25-c974e89e959a"
+    ],
+    "hardstyle": [
+     "faa7014d-959c-4789-ab11-c9643907adda",
+     "cafd59c2-4220-4019-8d3d-f8a325dd76e0"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "e04abdd7-79aa-4deb-84ce-4729314fcbe6",
+     "c052c737-c19c-46b5-96df-81b22490afb8"
+    ],
+    "detroit_house": [
+     "00bc3793-00f7-4e3e-a3df-9bf79fced806",
+     "f0d41733-0ac9-453d-a86d-255cda0f0cfc"
+    ]
+   }
+  },
+  "Happy All The Time": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "He Keeps Me Singing": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "He Lives": {
+   "upload": "657eba81-8211-4074-86b6-93a3cd65e0f6",
+   "covers": {
+    "psytrance": [
+     "d75cd531-580b-4cd7-a8bf-6d9c4623d567",
+     "78edf448-6c25-4bde-a4af-f3d95c36de8a"
+    ],
+    "deep_house": [
+     "e300d770-bbcf-4c88-a217-057f47eac4b6",
+     "e2779a1e-de6e-462b-a758-c220703a47ea"
+    ],
+    "synthwave": [
+     "12987b52-24d1-4c9b-86b7-1769a98fba6a"
+    ],
+    "drum_and_bass": [
+     "ccb4303d-5462-4c57-93dd-0fc44290199d",
+     "2f047de9-a68a-40ce-8f4f-57266c9ed1eb"
+    ],
+    "gabba": [
+     "e2fd085b-91ad-4bc4-80ad-5a31541b0215"
+    ],
+    "dubstep": [
+     "00ba98c1-e6e2-4fad-b629-0d4203c342a6",
+     "37130932-5bc3-4c74-bc5d-dd2be2863b47",
+     "712ea6e6-4e08-4a74-9c9b-1d3c67f1d643",
+     "b442ecf1-d6a3-4f42-8d97-552d4fa58874"
+    ],
+    "chiptune": [
+     "1a8db89f-3726-4738-8783-5b703b916111",
+     "7ea0a756-7b2a-41f9-862a-e068bda0c3bd"
+    ],
+    "hardstyle": [
+     "5f8fe6c4-d419-4d36-af5b-50652449020d",
+     "1b41af0e-f737-41c8-876b-34507d150d05"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "e0428256-5c10-4b27-a969-2a4f1393220e",
+     "e8a10746-6d35-42f1-9de8-9c10a570036f"
+    ],
+    "detroit_house": [
+     "850884d9-fa65-40a3-aeaf-a678f39c5dd6"
+    ]
+   }
+  },
+  "He's Able": {
+   "upload": "9a7ed5f6-8e08-4540-80a4-c4ddc9f2ce0f",
+   "covers": {
+    "psytrance": [
+     "5581637b-1317-4e89-9dda-ccccf3d2a25d",
+     "7ad8ac54-f2e3-43c6-8acc-39f5931e9815"
+    ],
+    "deep_house": [
+     "7f28a296-b946-44c0-adc7-06d3280ca1c5",
+     "fa1228c7-427e-4c2d-a951-5feef4780cb0"
+    ],
+    "synthwave": [
+     "e834a4a1-22ae-466b-8251-664cd2c2e145",
+     "0f2c37dc-5c96-41ec-8a0c-0008041cdaa3"
+    ],
+    "drum_and_bass": [
+     "5e875609-28ea-46a0-912e-9633a09cd8f3",
+     "77b679cb-4980-4463-9e49-1223f1e626f8"
+    ],
+    "gabba": [
+     "dcc1c920-a384-4c0d-9541-0ebe9caf7e2b",
+     "9a578c6e-f39f-442a-9a29-b6dcdf92841b"
+    ],
+    "dubstep": [
+     "5501cf83-a525-4a76-a530-41139b9d5c1c",
+     "d0ccb16b-4034-4614-9f6a-ef6337eb5c5e"
+    ],
+    "chiptune": [
+     "ba8be575-d878-4173-a317-9ae81236a4d4",
+     "ea131148-7cd6-48a6-bf74-9b4f335658c6"
+    ],
+    "hardstyle": [
+     "896e4ae2-080b-4946-9a78-b4dd5d8e24fc",
+     "ab5f7819-b67f-4120-aa51-5a44bdff772e"
+    ],
+    "japanese_hardcore_techno": [],
+    "detroit_techno": [
+     "5be50b04-be19-428b-8176-c7bb355c9583",
+     "c4671b63-7654-4bda-ae65-845ce623f73c"
+    ],
+    "detroit_house": [
+     "d229e8a9-4565-4cfa-a962-37c31ab9e31d"
+    ]
+   }
+  },
+  "He's Got The Whole World": {
+   "upload": "b79df829-03e0-4ab0-8d0b-d6fc19a3f8ee",
+   "covers": {
+    "psytrance": [
+     "49cae37f-c941-479e-9cae-002313165cc4",
+     "b2f5d52d-33ea-401b-a249-602087414674"
+    ],
+    "deep_house": [
+     "79aff008-adab-494a-b609-84524d993aad",
+     "ff6669c3-8f34-422f-ab60-af1b6061c6b2"
+    ],
+    "synthwave": [
+     "0bfda3d5-df96-4d1f-81e5-bdf583e68b83",
+     "ac6b088d-dde4-4fee-905d-3f98ff9f6834"
+    ],
+    "drum_and_bass": [
+     "e987f879-5878-497b-b69c-684893c5e6c8",
+     "82308138-b888-432c-8378-fc5d5ee41da2"
+    ],
+    "gabba": [
+     "2c794c42-4d87-4d71-a4c3-982403547111",
+     "e984abcc-2f35-49e6-b184-52a98f8f2011"
+    ],
+    "dubstep": [
+     "15a98851-6236-4fb9-8b90-89c1c9f05762",
+     "9d9e0389-119d-4a50-926c-3bbc9ee111b4"
+    ],
+    "chiptune": [
+     "f197dd58-69ca-44a6-8163-842dd91187b8",
+     "53028d22-3909-4a7a-a0dd-13963e8ae9bc"
+    ],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "ca41bc6f-9bee-48d5-90c3-e04d15757e6f",
+     "a8e476fe-f5ea-4508-9081-b5f2abc4407a"
+    ],
+    "detroit_techno": [
+     "616fa6e1-10d5-42f0-8a3e-5323affc10ef",
+     "48bf8e5c-7ece-47c6-b06c-69a9d37994a9"
+    ],
+    "detroit_house": [
+     "8ea87447-8cb9-4c79-bb9b-bb5f5a247199",
+     "5c65f50e-bd7d-40cd-9acc-3aaa7e812c98"
+    ]
+   }
+  },
+  "Heaven Came Down And Glory Filled My Soul": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Here Am I, Lord": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "His Banner Over Me Is Love": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "His Name Is Wonderful": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "How Majestic Is Your Name": {
+   "upload": "f95b39c2-fe8f-435e-88c3-babaa9c2c29c",
+   "covers": {
+    "psytrance": [
+     "7e1afb73-75c9-4acd-a7b5-9a9492c4bffe",
+     "53d831d7-644d-43e0-bb7d-5187fafd22a0"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "1f0d4576-f8e1-4a46-aa0a-404934d5a126",
+     "30137027-3e47-4778-93b4-30858d10f71d"
+    ],
+    "drum_and_bass": [
+     "affff8a3-e6ec-451f-81fb-1281591a87b1",
+     "9f09502e-9c7e-4d11-b84d-5168296c19e9"
+    ],
+    "gabba": [
+     "8034befa-192c-4dec-823f-037f2fbed643",
+     "4c342e56-d44a-4dda-a3df-41a769e094d4"
+    ],
+    "dubstep": [
+     "4099bac2-b8f7-4492-a9ef-bfc9abe2240e",
+     "ab69e2a3-284e-4f67-a218-ff3469a7ce74"
+    ],
+    "chiptune": [
+     "d3e66c84-ef11-49e7-9e2e-53fbd69b3e30",
+     "863eef71-17b8-4f70-9e76-bd3e634f1bb9"
+    ],
+    "hardstyle": [
+     "0c1ec8a3-f7e7-4b9c-8182-993a8b7143bb",
+     "46bfe026-95e4-49f0-aedc-5458526d3afb"
+    ],
+    "japanese_hardcore_techno": [
+     "418c9495-7969-429c-be6a-caa9b9ac17cc"
+    ],
+    "detroit_techno": [
+     "d4e6f129-9979-4955-beb9-96eaf7f53957",
+     "a6f22ceb-ace2-4a7e-9ee8-6769220ce13a",
+     "0f1eba69-5415-45e1-a11a-ce4c8f224851"
+    ],
+    "detroit_house": [
+     "961eecc7-c9d9-43c0-b3c9-3e41920f8935",
+     "27c6f7ab-55d3-41ac-ac77-31918d480aa9"
+    ]
+   }
+  },
+  "Humble Thyself": {
+   "upload": "41d79855-0c30-41db-a24b-ff4b4e59fe96",
+   "covers": {
+    "psytrance": [
+     "5b7fd235-a2bf-4a20-b7f9-0dba4b68e194",
+     "ee84963d-d8b4-4603-9308-2f6234dc8f76"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "138855e2-ee26-4b4d-81a2-b91cc5e11329"
+    ],
+    "drum_and_bass": [
+     "15243784-78ef-4245-8b6e-1ef5a61b5fe4",
+     "2623940d-9dfc-4086-aa34-9075c8b73d0d",
+     "e8194ac6-18f5-42bb-899a-7ca1c7d8ad3f"
+    ],
+    "gabba": [
+     "6f726040-52b1-460b-8f68-9a79e2935b77",
+     "c574e191-c80a-41e5-bef7-13fcbf60a5a2"
+    ],
+    "dubstep": [
+     "0c001e84-b2cd-429b-aa31-415fa58568b8",
+     "efaff748-2c6b-43a7-bc7a-b3fc1b4ea581"
+    ],
+    "chiptune": [
+     "1aac64ca-f6f8-4540-af8a-aff7888c7a73",
+     "426b0112-163b-472c-b1ef-bb39cf6adf25"
+    ],
+    "hardstyle": [
+     "cfeb34ce-a3ee-43ae-ab1b-9c29945764dc",
+     "d9d48a6f-f3b2-46ed-9585-60e68247b7d5"
+    ],
+    "japanese_hardcore_techno": [
+     "e353fd2a-cc74-4d98-acda-1d304f1cb342",
+     "9b3e0f23-a43c-4187-835a-c78f8e45ae12"
+    ],
+    "detroit_techno": [
+     "f8e3be5c-0fe0-4f77-aff6-1052049f512f",
+     "f450577e-44f5-4f5a-b372-46bb2921bc69"
+    ],
+    "detroit_house": [
+     "58b6de42-e221-4bcd-bc6b-d1928776d494",
+     "59d38372-c527-4b34-84dd-1e04ce988f5a"
+    ]
+   }
+  },
+  "I Am A Christian": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "I Just Came To Praise The Lord": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "I Just Keep Trusting My Lord with Tag": {
+   "upload": "678775e6-6c56-450a-9491-a9125ee5a327",
+   "covers": {
+    "psytrance": [
+     "3f837c0d-ac0a-458f-b2fa-dc40961cb9ae",
+     "8cd2eb50-c33e-4474-a823-fa953c071423"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "816bd28d-76a6-44e3-ab49-156ddbfa408a"
+    ],
+    "drum_and_bass": [
+     "327b37d5-7392-4ba8-b263-4433fe9a208b",
+     "079266b2-28df-4935-83ae-a16d582a1c32",
+     "ac9dfc57-66ec-401d-9e38-3fc81e8c030f"
+    ],
+    "gabba": [
+     "bd5a826f-4535-4d3b-b3c1-a9f9eacc0353",
+     "887bac25-fe47-48fb-a542-aca23f9c1f24"
+    ],
+    "dubstep": [
+     "c3b7c5c3-95e1-4b17-91ee-e517b35f1d94",
+     "0e18ca0a-9be6-4334-8003-bb4de69501f2"
+    ],
+    "chiptune": [
+     "4aeb4e06-72e7-49ae-b810-fbcaaa7057ad",
+     "ee6c7707-937d-418a-9acb-0cb355c3953a"
+    ],
+    "hardstyle": [
+     "e25c4b88-a33b-4da4-8ab7-3c48e6635e2a",
+     "5e6c9991-ee1d-4f6a-9688-e6cc04aafcea"
+    ],
+    "japanese_hardcore_techno": [
+     "20fac3e9-4613-42ae-97b2-464cceb827ba",
+     "e7deea94-9723-4373-82b0-d61fa046f5b3"
+    ],
+    "detroit_techno": [
+     "e1243de2-7fb0-4e8c-8c7a-3b8d9244af13",
+     "a24ec12d-5919-4dbd-bbe9-ed64077734a5"
+    ],
+    "detroit_house": [
+     "255f6bf8-82c6-45fb-9fbe-4b4c2faf11e0",
+     "1172c18f-a962-4b57-8f6a-c1aebd417543"
+    ]
+   }
+  },
+  "I Just Keep Trusting My Lord": {
+   "upload": "2790b159-cf1e-4110-8022-0fdc2e657567",
+   "covers": {
+    "psytrance": [
+     "db6dfd85-716a-4d66-b9a7-9c7bf234a764",
+     "827fb447-d0f9-4d18-a663-1584e387d336"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "5fbc8159-6632-4eea-80e7-de50cc793510"
+    ],
+    "drum_and_bass": [
+     "2de228fd-98f8-49d1-b349-cc5948e125cf",
+     "d39af5ea-1d41-4bce-b303-45fe9466addc",
+     "762ebfba-a2cb-4d63-8733-67d006a140bc"
+    ],
+    "gabba": [
+     "e84f457e-19b6-496d-9a4b-331fbee11237",
+     "bf3e25d3-152c-4112-bb13-92f9018d3099"
+    ],
+    "dubstep": [
+     "67c71e1d-0909-4ece-8dd7-1519d5456a58"
+    ],
+    "chiptune": [
+     "3ad65a5c-8321-4fe0-a1d1-e27023d5bdb5",
+     "8f24ed35-76af-4a7f-b3ba-1a6be41192e4",
+     "b697d0da-fd6e-4657-99c6-48f54cd4d003"
+    ],
+    "hardstyle": [
+     "c9fc727f-09ff-4a3c-92b7-834a57fbfe93"
+    ],
+    "japanese_hardcore_techno": [
+     "a28f21ba-b634-45ff-a5f9-9b5c2daca1ee",
+     "d952a9ee-cce8-41cc-b2d1-c362c9ad8223"
+    ],
+    "detroit_techno": [
+     "0af3a099-35ee-4b10-bb4b-24cbcfb9c444",
+     "013a1377-840e-4b1d-a62f-0d472479c3dd"
+    ],
+    "detroit_house": [
+     "0802427c-fbc4-4ff8-8e10-9d6afd71013a",
+     "755c4d27-8b10-4185-af65-226d010e178a",
+     "d7cf0edb-23b3-4088-8458-3f2e79518070"
+    ]
+   }
+  },
+  "I Know The Lord Has Made A Way Tag": {
+   "upload": "8a76cc2a-f566-4a52-9547-ce2a0a86f4c0",
+   "covers": {
+    "psytrance": [
+     "3e44d89c-9a58-4610-a7b6-6d6a278be151",
+     "403390e5-8b62-49e6-a8d3-931cb37e19d2"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "30a83a11-6c5d-4d5c-8612-f82619e17258",
+     "17c61aa6-ff55-4fec-95be-080368428907"
+    ],
+    "drum_and_bass": [
+     "f348c3a1-a02b-4067-8d98-d1fb8c793074",
+     "ee382b46-097e-480d-b206-2cf71fe5c45a"
+    ],
+    "gabba": [
+     "361827bd-c277-4494-9fcf-a443287266fb",
+     "59a628ea-dd94-4949-92d0-6f6e44bdfd29"
+    ],
+    "dubstep": [
+     "5cd52060-e33c-40a8-b892-8804d84b605e",
+     "6056badb-4ebb-438e-9479-d95dfb840500"
+    ],
+    "chiptune": [
+     "12720de5-828e-47ba-9306-5d966a0f5163",
+     "597fbb2f-3ead-43bf-9cc5-87686948bb6e"
+    ],
+    "hardstyle": [
+     "3f3c6fc0-3c44-431d-b726-189498be0ebd",
+     "12bf324b-2016-49c5-bd40-24e310eeffe0"
+    ],
+    "japanese_hardcore_techno": [
+     "f65ba7f2-4dd3-4baf-b0e3-2d300e9d1b71",
+     "9fa517d0-bb2f-4085-b706-3c33ad7d56fa"
+    ],
+    "detroit_techno": [
+     "5c631449-a36f-477f-8d7d-5de72c3f5490",
+     "3b4575a2-674d-478c-a450-282fbbd2310c"
+    ],
+    "detroit_house": [
+     "c907a671-b52f-427b-8725-236dfbf88b5f",
+     "65017d7d-cb1a-4eba-b165-7a65a66d552a"
+    ]
+   }
+  },
+  "I Know The Lord Has Made A Way": {
+   "upload": "88298328-dd29-4e90-b9d0-6107b663a12a",
+   "covers": {
+    "psytrance": [
+     "9eee9f4e-4b66-4b38-97d7-d21ae89ca8d2",
+     "a5db9835-26c3-4c11-a577-177b37166f1b"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "29afbe7f-126c-486d-b73d-39a25c9aebef",
+     "44299949-78bd-4507-8c7a-8d944fb4fcff"
+    ],
+    "drum_and_bass": [
+     "22cb4b14-dc3d-4fd2-973d-3629f007f3ae",
+     "5ec1f468-2a2a-4a73-971b-42e5943e6199"
+    ],
+    "gabba": [
+     "83cee298-29b6-4494-9a02-942b4f232a69",
+     "b93278ed-f46f-4faf-87e2-2a2b466f6d6d"
+    ],
+    "dubstep": [
+     "4d03b0ec-0131-47ae-b53c-3dba58329c7c"
+    ],
+    "chiptune": [
+     "3e4983c3-f4b2-4f1b-bd8c-e46bfbd3c63b",
+     "9c7540ae-f28e-491f-9a03-a87a845df524",
+     "875354a4-eb13-4e62-8dbe-237c8b021cb6"
+    ],
+    "hardstyle": [
+     "cf3e46f0-5bfa-45b1-a053-6c6b92954d2d",
+     "a2e2ef18-d98c-4d2f-9c42-94d845432ae7"
+    ],
+    "japanese_hardcore_techno": [
+     "320be90b-e8da-452b-b07c-d58d0f0733e6",
+     "ef8b95a1-d6c6-44eb-8bba-f3cb52fc5d3d"
+    ],
+    "detroit_techno": [
+     "87132fb2-d466-463f-ac14-a84c821dc9dd",
+     "f9be9e9f-8f16-4eee-bf87-1f03d180ecee"
+    ],
+    "detroit_house": [
+     "c6831908-b65d-45a1-96f7-87236a462b59",
+     "778b0b21-c2f0-43f2-828a-0703010f2687"
+    ]
+   }
+  },
+  "I Shall Not Be Moved": {
+   "upload": "0cf14777-f863-4036-9324-05ac5c045e78",
+   "covers": {
+    "psytrance": [
+     "5bdca86a-6211-4c03-b4bb-0e4d77e56fea",
+     "0f552329-beb4-44a6-9476-27d911859b7e"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "9c68b9d9-d287-4958-aa8a-de0fc63c7e62",
+     "06012488-39a8-4c85-ad9e-719941905af4"
+    ],
+    "drum_and_bass": [
+     "a724b489-c72a-4812-bc45-8393743fd11e",
+     "9822009b-e62c-42df-b7b8-880ee6795f16"
+    ],
+    "gabba": [
+     "51fd3ef6-1c58-4efa-9530-bdf453375ed6",
+     "5956c317-4232-427c-9876-10991af9a180"
+    ],
+    "dubstep": [
+     "b7042cbb-7e41-4704-90c3-4033c5649ea5",
+     "e6fd4076-3214-4c73-8cfc-6f064dac3257"
+    ],
+    "chiptune": [
+     "aca10be0-781a-47c6-816d-bcad50442024"
+    ],
+    "hardstyle": [
+     "bc516284-ed24-40c7-9bc6-845894866727",
+     "ba99a9de-4459-4e9f-aca5-ab394f7c8394",
+     "4405e5e1-4b9b-42dd-81c1-d07473ff3609"
+    ],
+    "japanese_hardcore_techno": [
+     "be1d9e63-f495-4f55-b765-25a7e011cee8",
+     "ca0d10b3-879e-4ad6-824a-45709e175b81"
+    ],
+    "detroit_techno": [
+     "1a96a747-ea18-4f15-b0e8-d654393a9606",
+     "b0897d33-5e34-45af-bb56-12e3a23dbf53"
+    ],
+    "detroit_house": []
+   }
+  },
+  "I Shall See The King": {
+   "upload": "ef86b07a-ff2b-4e34-9f7e-57442b51d085",
+   "covers": {
+    "psytrance": [
+     "064bb7af-5fcd-44bd-8dab-aa081bccd7de",
+     "01408466-7f70-42e0-a21d-d0d9d1ac1fbb"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "01b9e7de-e05a-49e7-b39c-cc264cc38b1d"
+    ],
+    "drum_and_bass": [
+     "82ed7bda-51ed-48fd-9955-9107e9f0c31a",
+     "526a91db-10ec-4514-b1bc-30d8690a9bf6",
+     "57e23955-3f11-49d6-a11c-eb2d7205c91f"
+    ],
+    "gabba": [
+     "650d180f-4e34-42e9-bb33-63beafaf76ea",
+     "d80bad98-b9b2-4e65-8e39-5d052a7cc1dd"
+    ],
+    "dubstep": [
+     "3050294e-9630-4d4a-9386-7c1a6ca8cd0a"
+    ],
+    "chiptune": [
+     "b1f09003-9431-4c34-8730-fd0172a65caf"
+    ],
+    "hardstyle": [
+     "bff8d849-1a66-4a6f-ac51-e06f72c01d0c",
+     "d81480db-5872-46c4-a72c-50318d79a4c6",
+     "2409d2dd-9b8a-4bdb-844c-ed6f3123ce40",
+     "74cc2045-f3c1-4888-bc01-c1eaa1feb92c"
+    ],
+    "japanese_hardcore_techno": [
+     "2861e07b-3804-40f2-8aeb-9cdbe1f7f6f6"
+    ],
+    "detroit_techno": [
+     "4536ad27-4122-4860-8a61-2234ee8389af",
+     "93a1bf33-4bd7-4f91-985d-486753f31bd4"
+    ],
+    "detroit_house": [
+     "338e53e9-c203-46d7-ab23-2fe98f1bbcb3",
+     "92903326-4e5d-4ff7-8311-d61368a46f4c",
+     "0e6ebcff-b174-4ffa-a5d8-60cb548d7171"
+    ]
+   }
+  },
+  "I Want To Be Ready": {
+   "upload": "1d0d2096-1104-423e-ac8d-8110c7abdea7",
+   "covers": {
+    "psytrance": [
+     "c86e790f-0b86-4536-a575-e45ef472e5a2",
+     "7d72e218-e977-4b43-995a-86f619d7f5f0"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "89e1aa5c-52c0-4126-9d71-6f1677c75fc0",
+     "38998a8a-2885-4864-ae40-12bcdbd0285a"
+    ],
+    "drum_and_bass": [
+     "0cc8c21e-e96c-42b4-9043-1b5e0f8dbf93",
+     "95acb1c1-75ab-427f-a5b0-ea648a4fb04e"
+    ],
+    "gabba": [
+     "9fd596b2-b963-40ef-8ece-4a3448682397",
+     "561c2700-b1b6-401e-9446-b7c9e3c1aa10"
+    ],
+    "dubstep": [
+     "764ddcc2-7363-4fc5-b711-56ec0dca6a2c",
+     "229395bd-ad25-42d9-a3da-5cac3ad9a00a"
+    ],
+    "chiptune": [
+     "000a54f2-bf4a-465d-b979-5e8afcd988f5",
+     "4f470cf3-e440-453b-a69a-3f715e66d15d"
+    ],
+    "hardstyle": [
+     "656ff930-3882-43f5-8c90-4a67006f2384",
+     "beab657c-226a-4e43-b7b7-fc2eec5888dc"
+    ],
+    "japanese_hardcore_techno": [
+     "e6a31887-dc23-4d11-962e-5fc6858f6c4b",
+     "0872aa10-2c3a-452d-b892-dd54e3f71b1b"
+    ],
+    "detroit_techno": [
+     "f4f632d5-f353-4893-93ff-36387727d7fb"
+    ],
+    "detroit_house": [
+     "a2d2d280-5996-4077-9c09-f438b57211fc",
+     "cf44b363-ca7d-4407-9720-b17046ea6002",
+     "fbe45019-3444-4177-bfd6-b708812af703"
+    ]
+   }
+  },
+  "I Will Make You Fishers Of Men": {
+   "upload": "66417300-ae1a-4496-bc84-fe0aea289388",
+   "covers": {
+    "psytrance": [
+     "ddca58f0-19fb-4a7d-af48-055302ae949f",
+     "06fa2478-7233-4fd3-8b00-f940e2b335b9"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "4c4dd77f-5249-4a8d-a2f9-19a129f91b57",
+     "c62675e0-51ff-4722-ab78-e8e94a681fa7"
+    ],
+    "drum_and_bass": [
+     "7b5ebe53-4d9f-405c-a161-400a3e02f81c",
+     "d7e4ee55-90b2-4ded-aa49-330689d3981c"
+    ],
+    "gabba": [
+     "41c399cf-bd0a-4914-bf4b-6d5d7ff96689",
+     "88d6f539-8081-4ecd-bbda-6b5857ba1ace"
+    ],
+    "dubstep": [
+     "fab52c29-f057-4d39-a6fa-a98539063cd3",
+     "b2ce98a5-62d7-4ea7-ae36-2a5fe6b818b5"
+    ],
+    "chiptune": [
+     "1a40447a-4789-4e5c-9246-3850c629b355",
+     "d297c0f2-3159-4110-810c-f544a4746a8d"
+    ],
+    "hardstyle": [
+     "8615dd32-f4c8-4dee-89c5-57b616d0e9a0",
+     "acc4b03c-5e3c-4ca0-8155-08e077226367"
+    ],
+    "japanese_hardcore_techno": [
+     "afa56d15-09f5-4848-b39b-7d6f6c8d4386",
+     "5bcf28e5-fe8d-495d-9d6a-9dd5cd793604"
+    ],
+    "detroit_techno": [
+     "20118d6b-fdd3-4388-b72b-9952fa349c0e",
+     "4e824fe7-cc20-4892-880f-308acaef9dd4"
+    ],
+    "detroit_house": [
+     "1b452383-69ed-4391-adac-c4bde07c8ce8",
+     "55b51228-b687-4689-b652-3af8f1188d57"
+    ]
+   }
+  },
+  "I Will Serve Thee": {
+   "upload": "d635140a-4f15-4a2d-b2fc-c885fdf56bce",
+   "covers": {
+    "psytrance": [
+     "83cf9421-68b9-431c-a0ef-b9b56f36d6d8",
+     "5ff6c63d-34a0-4ffb-9e73-47e56f122ad8"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "b18fe600-a907-46e6-8102-5388f538cbb1",
+     "6b55293b-d7b1-4908-9e9d-ff52c41ab410"
+    ],
+    "drum_and_bass": [
+     "5b532310-eed5-4ce8-a42f-6bf388370312",
+     "8608b6b0-0d57-48ba-a5c3-bc9bede31fa0"
+    ],
+    "gabba": [
+     "28aa9395-0cf2-484c-b1c2-8e1bef0febcf",
+     "a9bce0f8-2dea-47c8-b7d1-81673baf5d32"
+    ],
+    "dubstep": [
+     "ef55bcca-ee84-47fb-8dec-54a6665f0455",
+     "ad137df8-165b-41dc-a56f-1772a913477e"
+    ],
+    "chiptune": [
+     "4c3f2246-a4b7-4965-a6db-c3a8315c80ec",
+     "b5ece284-2dcb-4741-8a91-60557d9f375e"
+    ],
+    "hardstyle": [
+     "8441e55d-c299-4a50-a3ea-4e9e3e7e3f03",
+     "998afb42-1ebc-4680-84f6-89920da399b7"
+    ],
+    "japanese_hardcore_techno": [
+     "64423cae-ecf0-4ba7-b0ae-f36e22c55e5f",
+     "3a60ca48-1126-4451-a85a-3fc4ea60c0fb"
+    ],
+    "detroit_techno": [
+     "3f082a0f-344f-4fcf-ba4c-a5edef0029f4",
+     "0c32d170-586c-432f-bcd4-d87a58a368a2"
+    ],
+    "detroit_house": [
+     "cc3582a4-4b1e-46de-a7af-e396937baf58",
+     "e7958210-d6ef-4e1c-9efc-3957dfef0c46"
+    ]
+   }
+  },
+  "I Will Sing Of The Mercies Of The Lord Psalm 89 1": {
+   "upload": "a68b6f2e-2b48-420b-8ced-d31b795092f4",
+   "covers": {
+    "psytrance": [
+     "7928c03f-baaa-49eb-b81e-4384a2e98038",
+     "faa24a97-52e3-4c40-8a25-d0074d225ce7"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "a78bd05e-b776-475e-8b96-5cbd797a3376",
+     "ea1a11f3-6058-4fd4-9eb3-05e8b6113b59"
+    ],
+    "drum_and_bass": [
+     "1ef8df48-05cd-49ee-8593-e14c09b1bd28",
+     "cd79bebe-18df-4eb8-b04b-d27fa98374b8"
+    ],
+    "gabba": [],
+    "dubstep": [
+     "364838de-f517-4675-8ba4-2d894b276bfa",
+     "d9da8cf5-928a-40f1-97f0-c7f3fb7387a7",
+     "3f2ab7be-07ef-4bcc-a222-9d86c172e057",
+     "e65ceb65-b4da-4c18-81fe-c097e3fe16bc"
+    ],
+    "chiptune": [
+     "68c42df0-7dcb-40d6-959d-e07ff5740556",
+     "079ba2ad-1503-4704-a965-1c2dc12af49c"
+    ],
+    "hardstyle": [
+     "c4607da9-48d4-4892-aee2-d03e23031b3b",
+     "8078d2ed-20f0-4561-ac9a-af563f55bf65"
+    ],
+    "japanese_hardcore_techno": [
+     "9877cde9-ddcd-4f8b-b0f9-44902b420d5b"
+    ],
+    "detroit_techno": [
+     "33459581-d998-49bb-936a-e0482258b5fd",
+     "b342c98d-90f9-4d28-bb34-711d22ff89cb"
+    ],
+    "detroit_house": [
+     "0e0337c3-0ec6-4774-9f96-f284f74a6384",
+     "86e80781-2c53-4340-b5e4-6add6ce055d3",
+     "241c5061-8927-4c60-a69a-eb924a0b4032"
+    ]
+   }
+  },
+  "I'll Share My Faith": {
+   "upload": "8074a9ce-2467-4eef-90c6-9533e706cc80",
+   "covers": {
+    "psytrance": [
+     "88d36fe9-7906-4e71-b967-7c35d7b17d9f",
+     "cfb9d26c-d183-43be-bcea-46f9ae5c82bc"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "202e2daf-ae1a-48f7-91eb-50f3c3f7d2e8",
+     "f00875de-aac7-4299-8709-d65d33d0a3ab"
+    ],
+    "drum_and_bass": [
+     "db182855-bd9d-4de1-8a48-0e6650928fc9",
+     "7b1d1cb1-9377-4c5d-8380-c36a4a1fe00b"
+    ],
+    "gabba": [
+     "d1d78829-28c8-4fb4-a894-980e771f0b14",
+     "996576af-d39a-46f8-a1d4-ae829cc50007"
+    ],
+    "dubstep": [
+     "d16d6136-311c-48f1-94d7-4bad0c693050",
+     "14bd6c6f-6f28-46bc-aeab-cf4434f37f63"
+    ],
+    "chiptune": [
+     "4018de6f-5f89-473b-bc4d-fad96f6560e2",
+     "ed2f61db-e38c-4061-8464-136ac8c3e857"
+    ],
+    "hardstyle": [
+     "9eddd940-30ce-438e-872f-d0aa96cc4755",
+     "71a9ba41-bd58-4aa9-a5ea-f1c67ece27f6"
+    ],
+    "japanese_hardcore_techno": [
+     "7b28c8d8-c3b6-43c4-ab61-b2e5441853a7",
+     "3b5a2719-96d0-4a5d-980e-cc423d1ee542"
+    ],
+    "detroit_techno": [
+     "7607013f-e22d-44e5-9e9c-53765252ee61",
+     "81432d36-83d8-4e7c-a8d3-5135d3a0235a"
+    ],
+    "detroit_house": [
+     "504b5b4e-eee9-44ee-a034-68671b2e8c44",
+     "3c15f496-f1d4-47f2-bd9f-682f9a0647f9"
+    ]
+   }
+  },
+  "I'm So Happy": {
+   "upload": "0d100dbd-19e8-41c5-a884-485e20fd59a2",
+   "covers": {
+    "psytrance": [
+     "89eaea2e-3dd8-43e3-baa9-b4795ae000a3",
+     "a3fd4ecc-d077-4cf6-95ab-c5ab2d6b8586"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "a48defd5-4847-4d02-bf8a-f77afc10f891",
+     "635ee771-463e-431f-a346-7082fb3023ed"
+    ],
+    "drum_and_bass": [
+     "7a8d3444-8162-43c4-82cf-c36d5e294d47",
+     "d55152c9-afe4-4a75-8964-9eed5f136bf0"
+    ],
+    "gabba": [
+     "fc8b8bc7-9372-4bc0-adb6-f3bfdf6ca73b",
+     "65d10503-f3af-4897-99f9-5a89778893cb"
+    ],
+    "dubstep": [
+     "df16148b-86a4-41c5-855c-76e853d1a52c",
+     "0647321f-de8e-4e96-91ac-7d13ce0199f7"
+    ],
+    "chiptune": [
+     "815568ae-676a-488f-8f85-ed1993593a54",
+     "e3661fd3-ec2b-499b-9f1a-ce6616a1eeb6"
+    ],
+    "hardstyle": [
+     "56c67a6d-1648-438f-8b5f-e42292d87514",
+     "d6c08cd9-7738-42b2-9678-7e151cc3b0f8"
+    ],
+    "japanese_hardcore_techno": [
+     "d837e2d3-63a3-446f-a7f0-780caa83264e",
+     "9e2d8954-a8c8-493b-a24a-b6d2f24ca229"
+    ],
+    "detroit_techno": [
+     "88e1eed6-14e1-432e-a8cd-6ae2539602fd",
+     "38260de6-41c5-4b0a-9809-19e4b12a9790"
+    ],
+    "detroit_house": [
+     "af3868bf-1344-46ce-9c9f-d91ee1ab2370",
+     "4eb4ecc6-f4cd-4b7f-a385-cd76e68a4327"
+    ]
+   }
+  },
+  "I've Found The Way": {
+   "upload": "8625e6f6-a6e5-47cf-95f0-38ed1b31785b",
+   "covers": {
+    "psytrance": [
+     "07c3ad1c-8684-4fec-9a9c-1ba57aa71de8",
+     "60517ea6-067c-4636-a041-e59d8d122460"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "7a01523e-b8da-4a0f-870c-ab9b4270d4c6",
+     "d7a5f7e0-1bf0-40b2-9eb4-368583413e5c"
+    ],
+    "drum_and_bass": [
+     "86e5892f-9dd9-40f8-a4e8-2eda6852e383",
+     "b215036d-0a2e-4d99-bf3b-9577cbb4f2b0"
+    ],
+    "gabba": [
+     "1ba6a3d8-09f9-4f61-8761-54dd64e4be4d",
+     "3193850a-a284-4ec2-a930-86fc0158ec5a"
+    ],
+    "dubstep": [
+     "a588ad11-1090-482d-b9d3-eac7aaea5fae",
+     "045e3bf1-e0aa-4957-be40-d5493344e4d6"
+    ],
+    "chiptune": [
+     "bf2755ee-5012-464f-aa35-9b02e1337206",
+     "2c7e7a95-2661-41a6-965c-a4c368c47e73"
+    ],
+    "hardstyle": [
+     "89830426-bcab-407e-a722-8b254bfa390b",
+     "f6093153-c387-40a2-b2c5-b590763e178f"
+    ],
+    "japanese_hardcore_techno": [
+     "3e11211b-c9af-448f-abc1-50b7f83d272c",
+     "e8f60da5-7ff8-4f2f-8140-c2da71b1ef17"
+    ],
+    "detroit_techno": [
+     "a560ad34-295a-49ec-98a7-745f4779f0a8",
+     "f10c0574-b24c-46a4-b4fa-4dd9120ef2d2"
+    ],
+    "detroit_house": [
+     "8828e307-a380-4ec3-a9d7-37fe449a80eb",
+     "9c8ceba4-a6a4-4e18-8615-373f9e9a638e"
+    ]
+   }
+  },
+  "I've Got A River Of Life": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "I've Got Love Like An Ocean": {
+   "upload": "7f000836-861c-49f4-8eef-1fcb9ef56540",
+   "covers": {
+    "psytrance": [
+     "8a78f908-2f98-4d55-919f-46640c4e9e3f",
+     "c66c49e6-3551-4d3c-8302-e0fae28dbf1f"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "a26f1f68-11f6-4176-bffc-8f2cdf10ff60",
+     "2090d01a-ac9e-4da9-afbd-b759095a16c4"
+    ],
+    "drum_and_bass": [
+     "4353d724-2b61-494b-a7c6-477955768317",
+     "bc1f7927-976b-4311-b2b2-bf69cba99a73"
+    ],
+    "gabba": [
+     "92eabdbb-d066-4f1e-b38c-cb15b0434aca",
+     "b5b641e5-a12c-4932-abab-5aedc2b1b66c"
+    ],
+    "dubstep": [
+     "56f1d8af-4900-4c4b-b0f4-d914d3734b8f",
+     "a32b5a95-6065-43da-aa4c-5d0defb61ed7"
+    ],
+    "chiptune": [
+     "6d020c5f-b591-4ef7-9a09-8c83ecd97017",
+     "1941284a-4610-4834-9baa-edc1e136a15c"
+    ],
+    "hardstyle": [
+     "dccbbf79-2ff5-4018-8e33-7c00bca6a183",
+     "6bd617c3-ebc0-4658-bf19-3ce7f065070d"
+    ],
+    "japanese_hardcore_techno": [
+     "6a822b9a-4607-43c6-b659-5a99a0f7f53e",
+     "91399a91-ef51-4f86-b3d6-c0e2c7bd9934"
+    ],
+    "detroit_techno": [
+     "f362b828-3a07-437d-a3b4-24a78d93c60b",
+     "baf15edb-fea2-4948-ab67-510fb3b3eda5"
+    ],
+    "detroit_house": [
+     "06c31e06-914a-4ea3-b82a-53a2f69bc965",
+     "d680e54e-bee2-4cb0-8ff2-d6757b48b2b4"
+    ]
+   }
+  },
+  "If You Know The Lord": {
+   "upload": "6d408789-e659-47c9-91b8-1adf42bda9e0",
+   "covers": {
+    "psytrance": [
+     "bcfd23d4-d05f-45a8-8e0f-70f68557dc68",
+     "3a55a8b4-e2ec-4630-8d0c-03378d136d75"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "be1ddd65-f3ef-4dfb-90a2-41f37ddf3ffa",
+     "6095454f-d413-44d2-8ea0-b1d4cee39287"
+    ],
+    "drum_and_bass": [
+     "1dec9614-9c07-4155-9a7c-3747e99212f2",
+     "670922c1-18dd-491a-acb9-533d69e51e2d"
+    ],
+    "gabba": [
+     "f57bb960-af11-4547-aad5-c84267dc3f4e",
+     "f3005497-ca9a-4c96-821c-50d531c3dc7f"
+    ],
+    "dubstep": [
+     "215e4948-8e2d-4725-95bb-864cdceacbfe",
+     "ec0bef75-f1c1-452f-966b-f32122245a85"
+    ],
+    "chiptune": [
+     "afaf0d73-9162-4afe-b873-3b774a78a406",
+     "53a35d8e-a9a7-4e67-9c5a-fa0175e168ed"
+    ],
+    "hardstyle": [
+     "2c4bf789-b1a6-4559-8ac0-f5b4bc963aee",
+     "b8afe807-3bed-4d78-b5f9-7a256339ce64"
+    ],
+    "japanese_hardcore_techno": [
+     "c3c6cbca-0f90-4b52-adef-2c305bf5b6ab",
+     "9e8e96ea-280d-4d3a-b6f6-ef5345e4a420"
+    ],
+    "detroit_techno": [
+     "0510007b-f0b1-4ab2-9876-cdba7add4751",
+     "369576cb-b8e7-4bc9-9c7c-83d00c970c10"
+    ],
+    "detroit_house": [
+     "1ec9b697-d230-45cf-bf4c-931876b29c76",
+     "13112c99-eda6-40a6-8a1c-a1e4ee09cb4e"
+    ]
+   }
+  },
+  "If You Want Joy": {
+   "upload": "b6878bc2-3e0c-47a4-b3b1-9415b2857ece",
+   "covers": {
+    "psytrance": [
+     "cec5c8ff-c78b-4ef0-b803-bc6d87b67c62",
+     "d34445ec-3ed5-4951-87e9-e876646c025f"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "7990d7ba-64cd-4511-8f19-34b413abe096",
+     "cfd47a20-7850-42b5-aef9-c11c24f2138b"
+    ],
+    "drum_and_bass": [
+     "31b58006-1e84-405c-ab33-7fcf8a02c4aa",
+     "617323c4-cda7-4de5-aee9-ad3c9afd9f6a"
+    ],
+    "gabba": [
+     "d71f2a11-90f8-4e32-8711-fa2a769b7024",
+     "64593794-ffaa-42d6-879f-bfd7b911ba08"
+    ],
+    "dubstep": [
+     "e9103f15-0bb4-4fc7-ba2d-9226f16476e5",
+     "617e687c-2656-4bf8-bbc0-83dc1dc06c4b"
+    ],
+    "chiptune": [
+     "a737bbcc-0c7e-4af8-bda7-2175390287d4",
+     "355f05f1-9c13-4a81-bd15-9670ac6fcd42"
+    ],
+    "hardstyle": [
+     "77ea553f-7a42-4834-857c-ded686cc4ae6",
+     "26f826f0-ecfc-4bb7-a55a-4b92c914779b"
+    ],
+    "japanese_hardcore_techno": [
+     "85ee8ecf-4eab-4f48-986f-325ac5962f66",
+     "79be4b72-f18d-4533-b614-de55e41b1952"
+    ],
+    "detroit_techno": [
+     "6fb20cb7-8f82-4453-8666-a9e99151168f",
+     "30eeea0c-f5be-4739-a951-9dda3f0f2b91"
+    ],
+    "detroit_house": [
+     "290ef3da-8a99-40b1-b357-6c0099d7d48b",
+     "014afe00-4ceb-49ba-a321-4ea88a8429d0"
+    ]
+   }
+  },
+  "In His Time": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "In Moments Like These": {
+   "upload": "0ce2d3ef-b01e-4849-a046-67a99ca32111",
+   "covers": {
+    "psytrance": [
+     "2439bf1f-dd9b-4a3b-ac13-0232e501fa05",
+     "6dfa61d9-62e4-48e9-9fcc-011e18a21c1c"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "e939297f-be2c-464c-9dd0-ad2a343b4272"
+    ],
+    "drum_and_bass": [
+     "488c32bc-96c6-4542-8b76-0507742042e1",
+     "eba56481-adb8-4353-85ee-442e4994c60d",
+     "b4fcac16-78ab-4c46-963a-e82be03d2b7f"
+    ],
+    "gabba": [
+     "3e150529-835f-4af6-a3da-480c3c6f9293",
+     "ed95d036-f61d-43ce-baae-ed1bd6d76849"
+    ],
+    "dubstep": [
+     "21d4ef36-6b31-47fc-b8b5-33f218246859"
+    ],
+    "chiptune": [
+     "2932b505-d416-462c-9213-b9bebf3567ea",
+     "e8366ee4-94c7-416b-a488-282da432918f",
+     "23d1d829-57a7-4d1d-98f6-3252cbeb27ce"
+    ],
+    "hardstyle": [
+     "3ac60a56-f6d8-4724-b780-f93e97ce48fa",
+     "8feb9102-71dc-455d-a586-b2668496a695"
+    ],
+    "japanese_hardcore_techno": [
+     "b5c43c8f-3c23-40c9-b52d-9add8e221d64",
+     "b85a8673-7278-483e-b940-eebd1a910fa6"
+    ],
+    "detroit_techno": [
+     "a76035b4-0b56-465a-b006-5b582f80658a",
+     "606ce296-d6fe-4d02-8912-cb6dec991bb4"
+    ],
+    "detroit_house": [
+     "4b34dc64-b697-442f-ad6d-0b1a566340ed"
+    ]
+   }
+  },
+  "In My Heart There Rings A Melody": {
+   "upload": "f1a7c350-0179-4f2e-ac7e-32be20fcdcd4",
+   "covers": {
+    "psytrance": [
+     "d5f546c4-7c7c-4bc5-8fb5-63ee4ee2693a",
+     "6e6b5c9c-1348-4244-93ee-4c94ec0da4f4"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "4457fbbd-ef5a-42bd-8d30-a358f1b8af3a",
+     "089077b1-30d0-4cbc-bcae-d725422fcfe8"
+    ],
+    "drum_and_bass": [
+     "5bddd200-2dd2-42cb-b333-e057639e692b",
+     "9518bbc4-6458-4ec0-acb9-c66a4c5a5cb9"
+    ],
+    "gabba": [
+     "2a082ea8-966f-41a9-a63e-9c1ee3f36923"
+    ],
+    "dubstep": [
+     "7b94d9b8-db86-4963-954b-71027ab29a00",
+     "7b000eac-aa5a-4bc3-adf5-79f215b83d5b",
+     "28e41adc-8a34-4f7b-af01-e64141ba21eb"
+    ],
+    "chiptune": [],
+    "hardstyle": [
+     "7ba3ec99-877c-4161-8512-6d3692c6b7cf",
+     "636004db-dea6-48e1-9f6d-71264cd4860c",
+     "d688ce05-bd57-41a6-b7e7-3e0b58273592",
+     "06a2ac4f-d6dc-4825-8773-e9915f2e0af5"
+    ],
+    "japanese_hardcore_techno": [
+     "f77acd06-3445-4b6b-977b-c14e077f1568",
+     "c674ad60-4d80-46d8-98f4-00cbc074070c"
+    ],
+    "detroit_techno": [
+     "c0711bed-5c58-4720-a7b4-330bd672b8d6",
+     "06551c4a-caa1-4227-9044-b81624fa2cc3"
+    ],
+    "detroit_house": []
+   }
+  },
+  "In The Name Of Jesus with Yesterday, Today, Forever": {
+   "upload": "f412d388-7f66-41ab-9ef4-408e2d08e10d",
+   "covers": {
+    "psytrance": [
+     "1a9eefc6-45b7-4977-8817-62dd239d8b81",
+     "1e60d5cd-4085-4c33-8ff4-d4fb4a297aa6"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "a65b8620-7e4e-4528-a696-1214601c2809",
+     "055a16aa-10ca-42f4-9845-c6aaba67214a"
+    ],
+    "drum_and_bass": [
+     "a2871564-71f8-4b92-b98b-3fb5a30d3531",
+     "dfad88b7-c7d2-46e1-aa40-4fcada4037b8"
+    ],
+    "gabba": [
+     "437b6576-e07d-4a37-9690-4a1578481b2c",
+     "06aa2cdb-1500-4d51-86f6-b774bba087b0"
+    ],
+    "dubstep": [
+     "0f1d6612-7082-47d7-94a8-3de58c6b3842",
+     "20ff4ef9-4514-4835-98a8-f41b225481c6"
+    ],
+    "chiptune": [
+     "6a805b5a-fc73-4ce6-8ad7-b9b99f31c87f",
+     "f0c25210-899b-47b3-9c89-d5b6c8d29c00"
+    ],
+    "hardstyle": [
+     "76d57406-d9ba-4ce6-842f-a70e3cf5a93f",
+     "2bc29c20-c1ea-4a57-bcd8-4adfb7a3108c"
+    ],
+    "japanese_hardcore_techno": [
+     "d57e05de-c395-4513-acb9-1488fc144f7c",
+     "42f2988c-fc36-455c-a9ab-8294a9c13826"
+    ],
+    "detroit_techno": [
+     "a7b74269-8481-469c-89ce-c00e2a850f6f"
+    ],
+    "detroit_house": [
+     "73ce6cff-86e4-4133-88fb-14260905b186",
+     "9ff85c3b-106a-43f6-b2a0-f262d86eca1d",
+     "50fb1afd-00a7-4b2c-9ec0-11fd095a96d7"
+    ]
+   }
+  },
+  "In The Name Of Jesus": {
+   "upload": "c84ac9a6-d7af-4b76-b937-3388426af717",
+   "covers": {
+    "psytrance": [
+     "c1060f97-7da9-4642-9914-bd475753cb57",
+     "f6d3772d-c44b-4dd5-8744-c335d9f291ef"
+    ],
+    "deep_house": [
+     "ba102804-c0c7-4fea-a043-43f5862dd4a1",
+     "eae1adf4-d5a5-47b7-90e4-0076747883a2"
+    ],
+    "synthwave": [],
+    "drum_and_bass": [
+     "4acd75bc-7737-4949-8be8-23a5bcce8b5e",
+     "030fcdef-d2d5-4e21-8f3e-93b1b125de52"
+    ],
+    "gabba": [],
+    "dubstep": [
+     "b8aa1463-2ad3-4b5c-b4f5-c80ad4678643",
+     "23a15dfd-3027-4ccb-9025-47c8eb50d162",
+     "43f2c1b1-d987-48e1-bce1-2114be3d8c4f",
+     "8a606af4-3606-4929-83bb-9b296c0febf6"
+    ],
+    "chiptune": [
+     "c8b0a7a9-7d95-44a2-83c5-a1c66fc694f0",
+     "be2191ab-dcc5-4670-af26-70d159437707"
+    ],
+    "hardstyle": [
+     "4d912271-ab68-4139-a8ef-a297b6328b93",
+     "504aeef5-876c-4eec-894f-668a02f43a34"
+    ],
+    "japanese_hardcore_techno": [
+     "7214f4ca-ade1-4a50-95e2-4d01c94ff82e",
+     "17b9d957-47a3-4249-b589-3d8769e5d126"
+    ],
+    "detroit_techno": [],
+    "detroit_house": [
+     "2345cf32-605a-479d-8825-d51b2df3a927",
+     "6697c1f7-9904-4e40-89ef-584bba98e300",
+     "bfd34fef-04fd-41af-9dbb-5f37b6abffc1"
+    ]
+   }
+  },
+  "In The Service Of The King": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Isn't He Wonderful": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "It's About Grace": {
+   "upload": "caadb740-9abf-4827-8b53-eab47ed7e55d",
+   "covers": {
+    "psytrance": [
+     "c6d6c564-0962-40d1-acc4-57467e8e4df4",
+     "06d48d60-36a6-4302-aa56-f4765211a16b"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "8c446533-b44d-45a1-9bbf-b91af07ec460",
+     "22f70e47-7809-43c8-ba04-551d42acb94c"
+    ],
+    "drum_and_bass": [
+     "22913665-6fe8-4850-b475-3fa3f7fe6b66",
+     "7ea29665-0fc8-48cf-9a27-1f6c43b6f932"
+    ],
+    "gabba": [
+     "41b22013-1967-4790-87ff-ac51efa949ae",
+     "debabfca-6af9-4c84-aafa-fb623081a9ec"
+    ],
+    "dubstep": [
+     "baffc39d-3aad-47ad-97cd-6c99d7a4b992",
+     "bcb25f5c-7576-4f58-be71-8f02c1134ba9"
+    ],
+    "chiptune": [
+     "c6777253-3b1a-4e16-8d7d-1fa80ff61255",
+     "e312f590-d3db-400c-a70f-e4ed56d744de"
+    ],
+    "hardstyle": [
+     "5d460ffb-a3a9-4959-80df-dbbfeb8b6e91",
+     "f654c4b7-490a-4b6f-b743-bf1ebb2ca941"
+    ],
+    "japanese_hardcore_techno": [
+     "ca81bb7d-a1b9-45ab-96c9-ed1002436055",
+     "cbe73bf6-a088-4ec5-864b-71290b79e1a2"
+    ],
+    "detroit_techno": [
+     "00b49f1a-ed76-4a00-835c-543a0f3c0ab8",
+     "7e286873-f2de-4da2-9cad-8342f761d117"
+    ],
+    "detroit_house": [
+     "c1021dd5-fb7d-4e6b-af17-44d44198d0d3",
+     "c7a800b6-29ba-4e45-8ac1-e675065adbe7"
+    ]
+   }
+  },
+  "It's the Sabbath": {
+   "upload": "eb7cc5f4-4903-4a78-8502-df6e9068f314",
+   "covers": {
+    "psytrance": [
+     "1cc5dcad-1a82-492c-a062-1bdea063f91c",
+     "d69e625a-6c36-4501-970a-cffad4812c5d"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "294bd42b-73c2-4bbe-8b00-32331055fcb4",
+     "8f35baac-f32e-46c2-ae6c-e04bbbef0496"
+    ],
+    "drum_and_bass": [
+     "e0727457-717e-4496-b578-9a827d841dc0",
+     "3698eab7-2371-4c5f-9d22-e56f59970c3a"
+    ],
+    "gabba": [
+     "57515c2a-0254-45fc-971a-4b81c9ecac40",
+     "96d89e3b-af1b-4a6e-ae95-44b3740bb4f5"
+    ],
+    "dubstep": [
+     "9c827100-761a-48b3-bb85-f5fd439e01be",
+     "f3d6dce1-297f-401b-a9d5-bd18a5f29d45"
+    ],
+    "chiptune": [
+     "83427e21-9d76-453f-aa65-5cd671d9a7b8",
+     "f19b092f-66a0-4c4e-b0de-0cbcf7036967"
+    ],
+    "hardstyle": [
+     "bcb06052-d55f-4ac9-a4a9-edf30d841e51",
+     "ee8cce42-f383-41fc-8c4a-1a4e6d3850ec"
+    ],
+    "japanese_hardcore_techno": [
+     "425415f3-e548-49d9-939c-e9cd73f0b64c",
+     "2c7fd854-4dee-49a0-85a1-724c35f1a38a"
+    ],
+    "detroit_techno": [
+     "68a1c477-140d-4da3-a3e2-0b33a1868bf6",
+     "3d80cb5f-faec-4a93-98ee-06b2d81aac63"
+    ],
+    "detroit_house": [
+     "c239299a-9e3e-4a92-8053-42ef427ac8a2",
+     "93d4d169-7627-4c6f-9b1c-3c9a51aae2bd"
+    ]
+   }
+  },
+  "Jesus Is Coming Again": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Jesus Is The Joy Of Living": {
+   "upload": "5710e716-5057-4685-b1f0-4b72e69681ec",
+   "covers": {
+    "psytrance": [
+     "d6a09cff-f81d-4cff-924c-3954e37bbb15",
+     "f8091c9d-57a5-41f5-9e50-e3843415165c"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "4afd29c5-5a5b-49de-aa4d-2b4468363528"
+    ],
+    "drum_and_bass": [
+     "fcf3ecc4-4219-4273-9d56-e7e97ce41a46",
+     "28a80c3d-6990-4d74-9475-ad2c3e44e3b1",
+     "70382297-b3ec-4a57-a3ea-fc25b43927cd"
+    ],
+    "gabba": [
+     "cbbf6330-4265-43d0-b661-4bb229f34779",
+     "44be3f73-43b7-41ca-b7f4-c7e82ecda131"
+    ],
+    "dubstep": [],
+    "chiptune": [
+     "5c85189f-8640-4277-910c-cd268e5b6a11",
+     "9cdf0924-4573-44a0-94ee-18a824b45d90",
+     "c9acddfd-5f49-4bb8-b5cd-719de2807732",
+     "39b85a63-82de-4eca-b5f3-3b9811dc2630"
+    ],
+    "hardstyle": [
+     "449e1456-0f3f-4600-a27b-a9f45ff7a4f8",
+     "0231baf6-8eaa-43ea-a559-b92a8ec5d322"
+    ],
+    "japanese_hardcore_techno": [
+     "b477f160-830b-4947-9af7-8ccd03d37d0b",
+     "3222f4be-a576-44f4-8247-790d6e0caa4c"
+    ],
+    "detroit_techno": [
+     "01e2e58e-cd45-4d24-8b65-26262f4ec79c",
+     "3e357111-5a78-45b2-8549-dbd8065bac02"
+    ],
+    "detroit_house": [
+     "9271a14d-27ee-459d-9895-2d95936778d5",
+     "f3de67d0-188a-4776-bdaf-75eb45a932f5"
+    ]
+   }
+  },
+  "Jesus, Name Above All Names": {
+   "upload": "d91bb435-c25b-4558-a891-f663e8e99377",
+   "covers": {
+    "psytrance": [
+     "fd185744-42b8-4818-b756-7e1c8a125205",
+     "6c678f10-73d0-4389-93cf-0459b90ca6f0"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "e82dbee2-5e92-45a6-a3db-c86f790a31fc",
+     "2d67d0f0-6df9-43ca-b886-bcae91ace53b"
+    ],
+    "drum_and_bass": [
+     "5a3f85f7-3d5a-4c4a-aa45-1431c67d5e43",
+     "7c0a42c1-0028-49f9-9aad-21703c7b3b53"
+    ],
+    "gabba": [
+     "62dbab6a-688c-4c58-b261-23ecf356aff6"
+    ],
+    "dubstep": [
+     "4f036bb9-a0f8-4703-b953-6ba0c27b25b4",
+     "0b2117a6-ff57-45e7-90ee-2a3d5b9acfe8"
+    ],
+    "chiptune": [
+     "258b2240-0aaa-4ce3-b999-26c7a72ad391",
+     "06e92c39-67b7-4175-b59a-94262b433718",
+     "b7a2ab14-5aec-48c5-983e-865c120599eb"
+    ],
+    "hardstyle": [
+     "39a9e8fe-f2d1-4036-b53e-0f6382add395",
+     "5423c740-4ddb-44c8-bcec-0b134defe160"
+    ],
+    "japanese_hardcore_techno": [
+     "ac4295e2-57bd-4db6-94c8-083d35ac1961",
+     "21a56a8f-f3e7-4057-8e85-a53dff4c9582"
+    ],
+    "detroit_techno": [
+     "5b4869d4-3ebe-4485-a6b3-726830e1fb75",
+     "0da1838e-7311-409a-a404-768e1cc2e90b"
+    ],
+    "detroit_house": [
+     "0634cb62-b66d-4a53-bbe8-27c907bbf1d7",
+     "b94fc2bc-264b-4cc0-9e7b-4e471d121466"
+    ]
+   }
+  },
+  "Joy Is The Flag": {
+   "upload": "034bd971-f8f5-479f-80ae-d721b626f2ea",
+   "covers": {
+    "psytrance": [
+     "aab3a3a5-20fc-48be-ba18-cc6607bb499a",
+     "4c2e1ad0-b979-43f4-a672-e933c8ae0591"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "cf2eb299-2159-4998-8162-40c1e34f6495",
+     "9ab05823-c98d-4d5a-a07e-2449f55f27a3"
+    ],
+    "drum_and_bass": [
+     "360b90ea-2dbe-4640-ab70-c4a0af80ee00",
+     "6e67cdcf-952d-410b-885b-e057f87d052a"
+    ],
+    "gabba": [
+     "8d58afa6-7932-4008-98d6-08f8aee272d5",
+     "7dd15899-0906-47bd-a504-4e4eaa09f512"
+    ],
+    "dubstep": [
+     "505204d3-6661-4c05-bda8-dee50c011544",
+     "dcb3fcc0-d98a-4da5-8b03-40b596abec09"
+    ],
+    "chiptune": [
+     "6adf4458-2396-4071-bb1c-6077f41d83a6",
+     "ad906c74-639f-413a-a33d-df31bd9dbd95"
+    ],
+    "hardstyle": [
+     "5a2b2a76-31cd-438a-aa7e-8e5a754d57ce",
+     "a7c83168-def6-4665-b121-40f245f160ea"
+    ],
+    "japanese_hardcore_techno": [
+     "026a897a-3520-4fa7-be45-69a936a48047",
+     "c66961c4-f9e7-4b56-94e4-8b3d2b0b2fe4"
+    ],
+    "detroit_techno": [
+     "31f5405a-8daf-4950-bd23-949714d033c8",
+     "5f56682a-7e0a-4088-855e-8b11ba7deadd"
+    ],
+    "detroit_house": [
+     "0e24ec62-7a97-420f-9f9f-79da01da5f53",
+     "4565666c-bf89-4f8a-9813-7b16959fb9f9"
+    ]
+   }
+  },
+  "Just To Know Him": {
+   "upload": "f8ed5703-896a-488b-af67-6099b754f187",
+   "covers": {
+    "psytrance": [
+     "eaa02aff-9c1e-49d6-9501-405c9c96e2c9",
+     "1781cd0a-9fcf-4de8-baac-bc09ea6e079f"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "bf08f4eb-497a-4827-bc65-9d27d037644c",
+     "6612cfa7-c4b6-449f-8204-14a6ce0b0a57"
+    ],
+    "drum_and_bass": [
+     "f96f8772-1019-4443-9c18-e2c0fa88aa89",
+     "8669e97d-2e6c-4b9e-8a34-bc19378575bd"
+    ],
+    "gabba": [
+     "e70b7432-33d9-4021-b3c8-241997f8d2b2",
+     "18c0b5a0-139c-44bc-b15c-e4c9443d4c8c"
+    ],
+    "dubstep": [
+     "a4a0bc92-6d8d-46d3-bdb6-964088bd327a",
+     "e0e7162a-e924-48c2-8697-a1d61b05457a"
+    ],
+    "chiptune": [
+     "c6c93e4b-ceb4-43d1-9cc4-57e9c68fb33e",
+     "42b481a5-3237-4d47-83a2-7abf4660033a"
+    ],
+    "hardstyle": [
+     "20470216-71ae-4c6b-8c13-8e352fedca01",
+     "adfa7064-288b-4bef-b7a7-c1d39692739b"
+    ],
+    "japanese_hardcore_techno": [
+     "e61e1952-9690-4aeb-b03a-499e23f338b1"
+    ],
+    "detroit_techno": [
+     "c7ca3c6a-3999-4ebd-ad87-1e8267293f4b",
+     "73512f54-cb6a-4ad9-b08e-1e794bbfd5eb"
+    ],
+    "detroit_house": [
+     "b6056fe7-b2e5-4167-8b07-c6aeacfa06ef",
+     "eea2e0bf-5e22-4c9b-b906-7ec9c9006cc3",
+     "f6badada-2866-4979-ad63-4bd51027d5b0"
+    ]
+   }
+  },
+  "King Of Kings": {
+   "upload": null,
+   "covers": {}
+  },
+  "Let's Sing A Happy Song": {
+   "upload": "2efe887a-cf55-4db1-9899-51a7b768ba46",
+   "covers": {
+    "psytrance": [
+     "3819ce04-d166-4f07-87ea-5aa2af4cb4ca",
+     "1c436127-5cd8-4aaa-b7a0-617f18858341"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "3b1b734e-4dc3-4ffa-945a-6b065a5dcdc2",
+     "4aab7ea8-3037-4b82-bd44-e66a60c80dfe"
+    ],
+    "drum_and_bass": [
+     "f3978f94-749b-4278-9e4c-0ecd179d9fa5",
+     "c1af7009-a809-44cc-a80f-194081182af1"
+    ],
+    "gabba": [
+     "f5101d73-f009-4a4d-8c66-3ec6f2866a25",
+     "b16765fa-9122-4639-9611-7a25eb92dc22"
+    ],
+    "dubstep": [
+     "b24e6631-e95b-43ad-bc7e-4a8e1ff2d8fa"
+    ],
+    "chiptune": [
+     "e3161f35-4b01-4c0f-a844-50c16b4500ab",
+     "14231137-94ab-4490-8895-1739021e0680",
+     "1ff6083c-1be8-4c0b-8726-ee2e241a36e8"
+    ],
+    "hardstyle": [
+     "039cf5e3-07d7-4a88-a0b0-27280cb345b1",
+     "c5d2ac18-9f89-4d99-b784-19f03bf5c7dc"
+    ],
+    "japanese_hardcore_techno": [
+     "6b739a06-b867-4dbe-b829-82dd3b06fd76",
+     "0d4d5f74-17b9-447c-a741-119ba37819b2"
+    ],
+    "detroit_techno": [
+     "7a8730e9-d95f-4e56-a9e1-1a3dc8dddd5d",
+     "d18ffec8-4c4d-4a0f-8ff5-c1d58e843a49"
+    ],
+    "detroit_house": [
+     "79e0d5c3-4f95-46fb-8f72-6813da7d24fd",
+     "ffde6ea4-5cf7-4496-9983-098245807096"
+    ]
+   }
+  },
+  "Lord, Be Glorified": {
+   "upload": "f46d266a-e6a3-449c-b6fe-0cb43ef24a22",
+   "covers": {
+    "psytrance": [
+     "0ff97445-fabf-46b2-b5d4-beae9a0fe67c",
+     "c055cac6-ce33-44e9-bd73-8133660f302d"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "fc8e1651-cb6c-4b3a-8d39-b25600116259",
+     "a505f1e1-a595-4b48-bf98-8a65ba2b8dd5"
+    ],
+    "drum_and_bass": [
+     "fbc7bbe6-c2e3-4d77-9450-819e7142ebab",
+     "10cfb326-23ed-4ee9-83d6-413ff05d4035"
+    ],
+    "gabba": [
+     "f2207e5f-3435-4019-9b92-4b9d61631cf3",
+     "61074e31-0c7a-4327-841a-c878ded08c80"
+    ],
+    "dubstep": [
+     "cc86832b-f241-4a73-a93c-3d6990987579",
+     "0d3f7815-b37b-4572-be1d-44c4ff31140c"
+    ],
+    "chiptune": [
+     "67d0d305-da41-4a85-a410-84f6675c94ef",
+     "75416792-6574-4718-a34e-11571f299cce"
+    ],
+    "hardstyle": [
+     "fe768c5a-a17e-4966-ac41-16c2534cdc2c",
+     "6dc56be5-40f2-4e12-8f8f-8212d143ab26"
+    ],
+    "japanese_hardcore_techno": [
+     "232ddbd6-ab7f-4f64-b3ba-4a8fcf474575",
+     "5bb28c0c-6e3d-4e4a-8593-10c2539b2202"
+    ],
+    "detroit_techno": [
+     "3ea126f7-40e6-4b0a-aaad-280394614e71",
+     "d23f9ed1-a1c6-4651-a12c-5d171f3bb8a2"
+    ],
+    "detroit_house": [
+     "dd6067f1-6318-4a7c-8161-6732def93152",
+     "a1898e33-52de-41aa-ae4a-f58f1a5af533"
+    ]
+   }
+  },
+  "Love Is In Your Hand": {
+   "upload": "7c277df0-2e7a-45ee-8f91-ebb9bbc96789",
+   "covers": {
+    "psytrance": [
+     "ad479291-9809-4834-bcb7-fe662277c65e",
+     "6646f6b3-ff3f-440e-89c0-f4bd4885b110"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "d142226f-18bb-4e0b-ae4d-a7829c7bac9a",
+     "0030f896-ef47-4ee2-ab37-c89a60dbef8d"
+    ],
+    "drum_and_bass": [
+     "a4550322-d9d8-4c58-b408-6a0765ef3133",
+     "80693fc4-4f48-43c6-bf9b-8bc9517f7f80"
+    ],
+    "gabba": [
+     "bc0b2380-2ec3-4c47-8883-c5d3fa404a62"
+    ],
+    "dubstep": [
+     "c9e5fb39-514b-4195-aae4-ce53fc2f0f07",
+     "d4eac4c1-e5a1-4916-872c-997c9056a320",
+     "c1bf50e0-8d62-41f1-be07-f00929530d80"
+    ],
+    "chiptune": [
+     "e7280673-3e1a-4fc0-b898-19acebfce089"
+    ],
+    "hardstyle": [
+     "cc05b04c-67b1-4bba-807d-26755ce672a7",
+     "9d3a07a3-641e-4fc6-85fa-0cb519271633",
+     "9e43ee98-fdc9-47b4-a34f-b4e90bde1573"
+    ],
+    "japanese_hardcore_techno": [
+     "f6e06fc5-d81f-4373-bcc1-c6956964196a",
+     "e115b72f-9e0b-4ed4-9198-ffff99bd524d"
+    ],
+    "detroit_techno": [
+     "66ac33ac-259e-48eb-9ecf-6bdcef08966b"
+    ],
+    "detroit_house": [
+     "2c62fed2-d975-4de9-ab3f-02a19b7b6821",
+     "81af9670-205f-4fc3-bb55-82256b8730b8",
+     "a02adb16-3199-4089-81de-ceb64fb018a8"
+    ]
+   }
+  },
+  "Love Is Something": {
+   "upload": "be2c529a-43f3-470c-9f7d-dafee54ad176",
+   "covers": {
+    "psytrance": [
+     "c0770b87-9eee-4374-ace1-70b0d3864d91",
+     "e287b007-e27c-403c-8a53-0c2feca20fcf"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "ca7debdb-540b-43d8-9b76-b3ce9c493119",
+     "ed17f520-9c7e-4679-b12a-d3f7b6584627"
+    ],
+    "drum_and_bass": [
+     "8db5ef01-afa7-445d-8f50-1aa70a24ee74"
+    ],
+    "gabba": [
+     "f3fba2df-aa31-4ee7-9190-9d71dc7955ac",
+     "59f7c3aa-9df4-44b9-be4a-50e9ff428697",
+     "546c569e-9267-4358-adf6-de557dbe083f"
+    ],
+    "dubstep": [
+     "a8283912-5950-40ee-a795-70318714d061",
+     "ad3ea6fa-ec8a-4d76-8af5-d94722324b21"
+    ],
+    "chiptune": [
+     "42285bdf-e11f-4ca0-977f-1db1c4a19adb",
+     "099b6394-f30c-4e98-892f-4b3cfeae963e"
+    ],
+    "hardstyle": [
+     "77ab9223-09e6-4612-8263-7e88b9276236",
+     "845f0003-0c93-4a2f-86dc-b2097fc4cd3d"
+    ],
+    "japanese_hardcore_techno": [
+     "dc423a0e-7d42-4373-8613-d6c6d7279da9",
+     "15f87376-efaf-42b5-840e-04537d4cca7e"
+    ],
+    "detroit_techno": [
+     "cb88fbaf-18ff-4d06-a7c7-ac1a8eaf5b41",
+     "4050108a-e6a3-4c11-b1e1-df1bf2f021cd"
+    ],
+    "detroit_house": [
+     "8b916048-b9b1-4775-b4f7-0846f7409269",
+     "2687de95-66e1-4c72-af7e-dabbff9996f1"
+    ]
+   }
+  },
+  "Love, Love": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Majesty": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Make A Joyfiul Noise": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Make Me A Servant": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Mansion Over The Hilltop": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "Maranatha": {
+   "upload": "ad85821d-9cb9-4e49-aa06-12cafc4c4a3a",
+   "covers": {
+    "psytrance": [
+     "e62ee254-d7a5-4f62-a259-1e259c55bb70",
+     "572744e0-f5a2-4296-9a6a-35ac1523272a"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "9eee8f36-31b6-4c8d-8f1e-b9b8e7e88441",
+     "d454184c-55d8-4e13-bad6-f4dad63bdfc3"
+    ],
+    "drum_and_bass": [
+     "b5cbb8fb-cb68-49e2-a912-6300d664be2e",
+     "f96f1272-97bc-40fb-adef-384df7e42bbf"
+    ],
+    "gabba": [
+     "357a4512-0aa7-45b3-ac55-f9306bd72f23",
+     "a612b920-3728-4fc9-822b-57610b92afb0"
+    ],
+    "dubstep": [
+     "c9425458-e89b-44b0-8b0e-9262dc1d897f",
+     "c63ae656-839c-4ee6-8999-f885645cfef9"
+    ],
+    "chiptune": [
+     "dfb09ea6-ccfb-4cff-a844-d26b83380a7d",
+     "830e00e8-18a7-412e-ae80-a73ec4b310ba"
+    ],
+    "hardstyle": [
+     "b3b8cabb-b8db-4726-94c1-2f8d78980d82",
+     "4d04b1c8-46af-460c-b19d-6f63898cf4a9"
+    ],
+    "japanese_hardcore_techno": [
+     "ad03b5e8-5551-4633-91c2-bafb67922f2e",
+     "a401c11b-b93b-403e-9252-84a9a3f41b4b"
+    ],
+    "detroit_techno": [
+     "98de165b-e810-4e87-b3df-a79474436afa",
+     "4906d9f9-d8e0-4947-b983-51ede3e6d2c4"
+    ],
+    "detroit_house": [
+     "89d54dd8-1ccf-46c5-a51b-29570f20d4b0",
+     "a56c1222-4248-4138-aef3-17137700cb00"
+    ]
+   }
+  },
+  "My God Is So Great": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "My God Loves Me": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "My Lord Knows The Way": {
+   "upload": "deabed7f-7ecd-4337-b75f-629f05092063",
+   "covers": {
+    "psytrance": [
+     "baf39608-eeb0-4858-9fb1-921b9a912e53",
+     "fd8f8094-5617-491d-beed-516e700a467e"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "415b1cf6-3b80-45af-8b75-2c5be31f87ab",
+     "edc5cad7-948e-4b9d-a00a-7490b4e296ad"
+    ],
+    "drum_and_bass": [
+     "c5ca8d0a-a70d-482d-aed3-76e0a3ba138b",
+     "9a901efb-2558-48e0-bae3-d47f9a43d546"
+    ],
+    "gabba": [
+     "9fb34f89-4055-43f1-b4d6-94233f82563f",
+     "5f18e913-295e-4a73-a7b2-18b431d7f47b"
+    ],
+    "dubstep": [
+     "fa7e8ce6-6edb-4738-9e19-9992476934af",
+     "43f7f54b-b297-431f-b27c-f53135f31050"
+    ],
+    "chiptune": [
+     "ca8a8f51-2b42-4834-b3af-3b5beb904af7",
+     "0f74fcee-b521-4c6f-b1bb-3d7e9a8b2b96"
+    ],
+    "hardstyle": [
+     "dbf4c7e4-3b89-4387-96e2-92fc77469821",
+     "343511ee-7e0f-4b34-853b-3f9f37f0e9b8"
+    ],
+    "japanese_hardcore_techno": [
+     "9b45886b-2383-4830-93f8-b328305a46b5",
+     "767324f0-49de-4d1d-b7aa-a525c2a45c94"
+    ],
+    "detroit_techno": [
+     "d80c1fda-3bf7-4373-a59f-5f2ec12af825",
+     "260d46a5-96c7-4221-af23-ac489e1981b2"
+    ],
+    "detroit_house": [
+     "fbc661b2-7fa5-48dc-906f-7d8e10eb915f",
+     "fdbfdef7-f13b-4773-b8c8-cb9031a97a15"
+    ]
+   }
+  },
+  "My Peace": {
+   "upload": "578d69ac-dc8e-4a57-8355-beeadc1bcb19",
+   "covers": {
+    "psytrance": [
+     "42046eed-f8a3-4153-8f57-12596077973f",
+     "6607ad64-a289-4beb-a9f1-69b89d6fa10f"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "e9eccd7c-6593-4495-a2ee-28f72c35d1e3",
+     "f652904c-d55b-495f-99e6-f75fbd027d0f"
+    ],
+    "drum_and_bass": [
+     "d61efb0e-fb77-49f9-ae5c-98128a89b742",
+     "d2ba1f35-1e6f-4ed8-b6bb-83f2e695416e"
+    ],
+    "gabba": [
+     "5355c877-f224-415d-a137-e961ca45c3d2",
+     "e80ab7b3-cfc0-488c-b718-8e6a98a1957e"
+    ],
+    "dubstep": [
+     "30dbb1d6-dc4a-410f-bba8-9942bcbddf9d",
+     "15be4921-2511-4299-b1d0-d162aa3860c9"
+    ],
+    "chiptune": [],
+    "hardstyle": [
+     "7f9c572e-120a-47a0-a4d0-4f605cc2131e",
+     "2e844d5e-7f36-4ae1-8842-8a79282dfa17"
+    ],
+    "japanese_hardcore_techno": [
+     "2c98073a-5e15-46f4-98c0-1a2d187a568f",
+     "a39ba4cb-f3e8-4fbd-8585-f501e42c33e1"
+    ],
+    "detroit_techno": [
+     "15020b0c-a7ff-40bd-a33c-d3be3ecea6f6",
+     "e12ded7e-7f1b-499b-8d03-4ba58285ea7e"
+    ],
+    "detroit_house": [
+     "02b91e78-c356-4d52-99c2-e721ba057ff6",
+     "b787b03a-c6d4-4279-84ea-f2e7cdd36bbe"
+    ]
+   }
+  },
+  "New Life In Christ": {
+   "upload": "62f9edf3-ce72-486e-95e5-66c1c2574017",
+   "covers": {
+    "psytrance": [
+     "8f121c9f-256a-459e-8477-311d680f8306",
+     "40d4fe06-f2fe-425f-9b35-82976cf0b4d5"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "b1579a27-c212-450f-b177-920d0c879b08",
+     "33c65d07-94a2-4e12-9886-041dba3bb0df"
+    ],
+    "drum_and_bass": [
+     "5be25e0e-735e-4b2e-8579-046b8852b682"
+    ],
+    "gabba": [
+     "58906e20-6fc2-41e2-b1ee-1a574e1d3a92",
+     "43ae650e-419c-4069-bcf9-bdfb87cb489f",
+     "60c0ed15-129f-4cf6-a87d-cd39e20e56cf"
+    ],
+    "dubstep": [
+     "7b74a276-bfb9-4152-83c2-1d70f8d8ec73"
+    ],
+    "chiptune": [
+     "2171bb0c-c5a8-4f58-88e7-8fc512f49eec",
+     "4bc5656b-e333-4f2c-8337-4ec7bc5644e0"
+    ],
+    "hardstyle": [
+     "903ef330-be7c-4f81-94ce-61c5049d236f",
+     "3d323099-e64c-4759-9a22-a8433b53e17e",
+     "76acd189-d630-42da-a8b1-05700ad49471"
+    ],
+    "japanese_hardcore_techno": [
+     "ae2a244e-1295-4f12-815a-5f18e284eb40",
+     "f74d8cd5-8956-47f6-911b-83cf1179608a"
+    ],
+    "detroit_techno": [
+     "e0e5618f-8288-4330-b196-f64bdcd5e4e1"
+    ],
+    "detroit_house": [
+     "fb769b36-94da-4bf4-9663-af7426f0f1e8",
+     "3700b1c8-3ab6-4d12-b4cd-caa81888769c",
+     "a2af7d37-30ca-4308-869c-2cc7d2455646"
+    ]
+   }
+  },
+  "O Friend Do You Love Jesus": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "O How He Loves You And Me": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-fugue02": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-fugue10": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-fugue14": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-fugue24-string-quartet": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-fugue24": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-prelude01": {
+   "upload": "66a0e193-850d-4c67-bd27-8447c06c0397",
+   "covers": {
+    "psytrance": [
+     "5715ffba-e6cd-4914-9390-0d0e7284f7f6",
+     "a23cae8c-8de4-440b-82c5-7c8d4a994a07"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "6b792a4b-15f3-4b8f-9d16-e3483b226dd0",
+     "fa146bc2-50db-4170-bcf5-d9a435ea462b"
+    ],
+    "drum_and_bass": [
+     "cfd82b67-5a97-4bf2-bf56-8e179906a96a",
+     "7e7f211d-e996-45fc-900d-63b78793208f"
+    ],
+    "gabba": [
+     "17027dba-78ed-40db-8f06-a34882229ee2",
+     "1adc8c27-09bb-4b96-a817-f7617cf57260"
+    ],
+    "dubstep": [
+     "73bf08ab-21dc-48ec-a471-b971fabf87f5"
+    ],
+    "chiptune": [
+     "92309de5-72c1-4ff5-bb3a-fc406d66deb0",
+     "fb8bcb39-3470-4787-bc31-0c1f36b1cb93",
+     "4ccc5e7f-9288-4d8a-a5c1-3649e3c0c406"
+    ],
+    "hardstyle": [],
+    "japanese_hardcore_techno": [
+     "11463eef-f3fc-4e20-8ff3-dc5094980f20",
+     "36d7ae52-46e4-4a1c-b596-a5c692e523af",
+     "ba42a706-c1b9-4902-9e6b-90e9dab60361",
+     "df99d7c3-d004-4c5a-8612-43099ece096c"
+    ],
+    "detroit_techno": [
+     "0a0679fc-6734-4dba-84ca-64d1ee7bb416",
+     "85de0efe-df15-45d3-b578-0c431e012e34"
+    ],
+    "detroit_house": [
+     "5907a23b-576a-4660-b696-15637ae047ac",
+     "abfa031e-00f7-4559-9a68-eafbde542e17"
+    ]
+   }
+  },
+  "book1-prelude02": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-prelude03": {
+   "upload": "31736af7-1dcb-4603-8e19-8344852ab9e0",
+   "covers": {
+    "psytrance": [
+     "66311d07-a17a-4fe4-941c-0107f8532ecf",
+     "ac30b34d-486e-496b-8e8a-bc4a9fca94b5"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "0a3bf39c-2073-441e-a4c2-1b62ad0f29f5",
+     "b86a62b5-8d1b-4cad-8276-ecc3222a1c8c"
+    ],
+    "drum_and_bass": [
+     "bea98fa4-52ca-45f6-ad46-6366c21206f3",
+     "312674bc-4bed-4038-96f1-1f525b7050cf"
+    ],
+    "gabba": [
+     "36dc47dd-fe03-45e8-8be7-2a62fee440cf",
+     "3d6551fa-8c6a-487e-a9b4-8f6837a9db8c"
+    ],
+    "dubstep": [
+     "e354a4bb-52cf-43fa-9506-50be799750ae",
+     "1b161e45-736c-472e-917d-c6220625a4b5"
+    ],
+    "chiptune": [
+     "b5c309ae-b3db-4ada-b4d1-50f8b547230c",
+     "87365dba-ac33-4604-a283-392d73e2159a"
+    ],
+    "hardstyle": [
+     "48c6c688-fa85-47f4-9fce-f643ddace206",
+     "9a6d0d1b-10dd-48e8-920c-5ee7ae72c5cd"
+    ],
+    "japanese_hardcore_techno": [
+     "33ef2430-be43-4525-84cd-6d9097a9cf37",
+     "fc8267c6-e53b-4da9-b584-da4d61634aa8"
+    ],
+    "detroit_techno": [
+     "a312b7f8-1162-4795-b47e-3b7cd0721f81",
+     "5a9e6b4b-42b5-4804-b826-d714b82493b6"
+    ],
+    "detroit_house": [
+     "587fc45b-c7cd-4940-8fbf-29ad2c698f0a",
+     "1b3d694c-eb2c-4ddf-b1cd-11a6c9b5ab0a"
+    ]
+   }
+  },
+  "book1-prelude06": {
+   "upload": "417ce80e-8013-4b2d-8650-e4bcf6c573c5",
+   "covers": {
+    "psytrance": [
+     "9051e4bd-565e-49c4-b9b1-654221d583e4",
+     "4b1abfb6-a6e9-480d-b41c-14aaa470ea77"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "ec2a19b6-f5d5-46f3-98a9-0128fc7aeae5"
+    ],
+    "drum_and_bass": [
+     "9369e07e-536c-4612-92c2-b7dfd40fc99f",
+     "9b2d88cd-4623-4c2f-89e0-22a2df223c17",
+     "31be506a-9e3a-43c9-9c79-031c7f2dabdf"
+    ],
+    "gabba": [
+     "4ab7d9da-edcb-45df-95dc-70d04ee6a37a",
+     "70cd19f2-8c4c-48bc-af56-fa464578800d"
+    ],
+    "dubstep": [
+     "9cbf792a-b289-405a-bd33-27cce5b05762",
+     "4f04f04d-cbd7-48fd-ab2f-7891c29c3617"
+    ],
+    "chiptune": [
+     "f1b375bd-dd28-4c99-843a-b97a46e1ebb8",
+     "433f19d8-bf24-40c3-b419-9d3535184137"
+    ],
+    "hardstyle": [
+     "ea4d9f9c-5129-43e3-bfa5-6e7708979b13",
+     "e49b3c0a-420d-4916-aa06-cd0007383f11"
+    ],
+    "japanese_hardcore_techno": [
+     "b3f211af-15d2-4fb2-bde5-d0162e3a2e34",
+     "4fee98b3-3499-431d-9094-56260d1db6fd"
+    ],
+    "detroit_techno": [
+     "4f910013-90b6-4bbc-b2cb-16d05cf3948f"
+    ],
+    "detroit_house": [
+     "6b4317ff-5b42-4cc7-a817-6164c53d53f4",
+     "cfa1c294-bdcc-4e34-ab31-79cd447a3723",
+     "2975f230-0ab7-49fa-a195-fca83473b836"
+    ]
+   }
+  },
+  "book1-prelude14": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book1-prelude24": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book2-fugue02": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "book2-prelude02": {
+   "upload": "BLOCKED",
+   "covers": {}
+  },
+  "osterreichische-bundeshymne": {
+   "upload": "bc5321bc-b5cf-47c4-bd63-446ad5d418fa",
+   "covers": {
+    "psytrance": [
+     "09cadd9d-701a-40d8-9185-079660a10b55",
+     "7e1e50aa-3fb8-4a4e-b92d-95e24a33adb0"
+    ],
+    "deep_house": [],
+    "synthwave": [
+     "5f516e28-6190-43be-aa0c-8eb13dbd54b5",
+     "8f608583-699d-4aa7-9f85-bd039cae94b4"
+    ],
+    "drum_and_bass": [
+     "89e9c586-015b-47c4-9bbc-d2282f4d577a",
+     "9997cd40-12c1-4e7b-a6dc-48d8d34cf2b1"
+    ],
+    "gabba": [
+     "65eb7fe8-7fc6-4072-bcca-46b994bd386a",
+     "443fe35d-0279-499b-a9ae-956d6bee9e18"
+    ],
+    "dubstep": [
+     "811b50df-169a-49ca-9273-dfaabada189f"
+    ],
+    "chiptune": [
+     "1be816c7-2127-4d9c-bfaf-da723b391b2a",
+     "3a158aa6-f182-4a8d-9595-c9923b6172bc",
+     "8310d7ce-ed14-43d5-b50f-ba7fde4b4c14"
+    ],
+    "hardstyle": [
+     "6e8ba12e-61ea-464d-b986-3aba59b7a997",
+     "a92d5d01-e018-4493-9744-f547995818e1"
+    ],
+    "japanese_hardcore_techno": [
+     "48cf7735-c1e9-43f2-91d6-42a4bd7a80ca",
+     "083d7cdf-329c-4c75-a699-f8171667ce84"
+    ],
+    "detroit_techno": [
+     "356a1229-9157-4ca3-b163-468aa8fb0333",
+     "a2189c01-f27b-4b70-b5f9-8015479a4cc3"
+    ],
+    "detroit_house": [
+     "c672d3b6-a59e-425a-81b5-2f65b4222253",
+     "928173c8-c102-4d68-9f75-76cdcef7000f"
+    ]
+   }
+  }
+ },
+ "started": "2026-09-12T15:58:10.330686"
+}
