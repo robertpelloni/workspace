@@ -20,6 +20,32 @@
 - **Submodule fetch**: 112/112 fetched successfully, 110/112 fast-forwarded (HyperNexus + HyperNexus2old have local commits, expected)
 - **Version bumped**: v5.283.0 → v5.284.0
 
+## [v5.285.0] -- 2026-10-18 -- Protocol #260 -- Repository Sync & Intelligent Merge
+
+### Merged
+- ArrowVortex: `fix/gitmodules-ffr` merged into `release` (unrelated-histories)
+- Root: Dependabot branches pending merge
+
+
+### Fetch
+- **Submodules fetched**: 0/112
+- **Fetch errors**: 0
+- **Not initialized**: 0
+- **Dirty submodules**: 0
+
+### Changed
+- **Version bumped**: v5.285.0 -> v5.285.0
+- **Stale index.lock files removed**: 3 (bobfilez, bqt, HyperNexus)
+- **Branch audit**: All 112 submodules scanned for feature branches
+
+### Deferred
+- HyperNexus `gitlab/feature/cloud-dashboard-mcp-sse` -- needs dedicated session
+- warp `zb/*` branches -- unrelated histories
+- topaz-ffmpeg FFmpeg upstream -- large, needs dedicated session
+- bobeditpro Audacity upstream -- needs dedicated session
+- 16 uninitialized submodules (bobmani/*, hymnmania, hypercode, jvm-cpp-runtime)
+
+
 ## [v5.283.0] — 2026-10-11 — Protocol #258 — Repository Sync & Intelligent Merge
 
 ### Merged

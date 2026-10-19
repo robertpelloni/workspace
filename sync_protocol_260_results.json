@@ -1,0 +1,16 @@
+{
+  "fetched": [],
+  "fetch_errors": [],
+  "branches_found": {},
+  "merges_attempted": [],
+  "merges_success": [],
+  "merges_failed": [],
+  "merges_skipped": [],
+  "pushed": [],
+  "push_errors": [],
+  "not_init": [],
+  "dirty": [],
+  "errors": [],
+  "new_version": "v5.285.0",
+  "completed": true
+}
