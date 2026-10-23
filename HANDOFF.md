@@ -1,8 +1,8 @@
-# HANDOFF — v5.286.5 — 2026-10-23
+# HANDOFF — v5.286.6 — 2026-10-23
 
-## Session Summary — Protocol #266
+## Session Summary — Protocol #267
 
-### Fetch: 110/112, Clean: 108, Dirty: 4
+### Fetch: 113/115, Clean: 111, Dirty: 4
 ### Merges: 4, Failed: 2, Dirty committed: 3
 
 #### Merged
@@ -11,6 +11,12 @@
 - **root**: `dependabot/uv/uv-4d825ab99f` — cherry-pick
 - **root**: `dependabot/uv/uv-ea96c0b163` — cherry-pick
 ---
+
+## Previous Sessions
+
+## Previous Sessions
+
+
 
 ## Previous Sessions
 
