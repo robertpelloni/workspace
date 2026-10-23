@@ -440,3 +440,12 @@ branch = master
 [submodule "HyperNexus2old"]
 	path = HyperNexus2old
 	url = https://gitlab.com/robertpelloni/HyperNexus.git
+[submodule "hyperporn"]
+	path = hyperporn
+	url = https://github.com/robertpelloni/hyperporn
+[submodule "foone_datetime_short"]
+	path = foone_datetime_short
+	url = https://github.com/robertpelloni/foone_datetime_short
+[submodule "bob_and_lum_sitcom"]
+	path = bob_and_lum_sitcom
+	url = https://github.com/robertpelloni/bob_and_lum_sitcom
