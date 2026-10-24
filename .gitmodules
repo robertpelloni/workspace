@@ -449,3 +449,6 @@ branch = master
 [submodule "bob_and_lum_sitcom"]
 	path = bob_and_lum_sitcom
 	url = https://github.com/robertpelloni/bob_and_lum_sitcom
+[submodule "gods-eye-view"]
+	path = gods-eye-view
+	url = https://github.com/robertpelloni/gods-eye-view
