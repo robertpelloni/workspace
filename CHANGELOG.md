@@ -20,6 +20,39 @@
 - **Submodule fetch**: 112/112 fetched successfully, 110/112 fast-forwarded (HyperNexus + HyperNexus2old have local commits, expected)
 - **Version bumped**: v5.283.0 → v5.284.0
 
+## [v5.286.7] — 2026-10-25 — Protocol #268 — Repository Sync & Intelligent Merge
+
+### Merged
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-2f608de5f9` — cherry-pick
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-99446ad252` — cherry-pick
+- **root**: `dependabot/uv/uv-4d825ab99f` — cherry-pick
+- **root**: `dependabot/uv/uv-ea96c0b163` — cherry-pick
+- **gods-eye-view**: `feat/voice-geometry` — merge
+- **gods-eye-view**: `codex/local-adsb-altitude-freshness` — merge
+- **gods-eye-view**: `feat/voice-on-device` — merge
+- **gods-eye-view**: `claude/vcam-virtual-camera` — merge
+- **gods-eye-view**: `codex/spatial-conversations` — merge
+- **gods-eye-view**: `feat/voice-outlines` — merge
+- **gods-eye-view**: `feat/global-radar` — merge
+- **gods-eye-view**: `codex/fix-annotation-height-culling` — merge
+- **gods-eye-view**: `codex/fix-hidden-tab-polling` — merge
+- **gods-eye-view**: `intro-sequence-first-light` — merge
+- **gods-eye-view**: `codex/fix-tool-display-text` — merge
+- **gods-eye-view**: `german/hal-530-street-level-ux-cuts` — merge
+- **gods-eye-view**: `codex/fix-geocoder-antimeridian` — merge
+- **gods-eye-view**: `codex/overpass-admission-review-fixes` — merge
+- **gods-eye-view**: `codex/cctv-shared-batch-20261019` — merge
+- **gods-eye-view**: `codex/community-weather-base` — merge
+- **gods-eye-view**: `claude/mobile-4d-world-app-k98w5m` — merge
+- **gods-eye-view**: `codex/fix-cctv-session-admission` — merge
+- **gods-eye-view**: `codex/hal-646-zh-tw` — merge
+### Fetch
+- **Submodules**: 114/116 fetched, 112 clean, 4 dirty (committed: 3)
+
+### Changed
+- **Version**: v5.286.6 -> v5.286.7
+
+
 ## [v5.286.6] — 2026-10-23 — Protocol #267 — Repository Sync & Intelligent Merge
 
 ### Merged
