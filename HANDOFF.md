@@ -1,35 +1,22 @@
-# HANDOFF — v5.286.7 — 2026-10-25
+# HANDOFF — v5.286.8 — 2026-10-26
 
-## Session Summary — Protocol #268
+## Session Summary — Protocol #269
 
-### Fetch: 114/116, Clean: 112, Dirty: 4
-### Merges: 23, Failed: 2, Dirty committed: 3
+### Fetch: 113/116, Clean: 110, Dirty: 6
+### Merges: 4, Failed: 2, Dirty committed: 4
 
 #### Merged
 - **root**: `dependabot/npm_and_yarn/npm_and_yarn-2f608de5f9` — cherry-pick
 - **root**: `dependabot/npm_and_yarn/npm_and_yarn-99446ad252` — cherry-pick
 - **root**: `dependabot/uv/uv-4d825ab99f` — cherry-pick
 - **root**: `dependabot/uv/uv-ea96c0b163` — cherry-pick
-- **gods-eye-view**: `feat/voice-geometry` — merge
-- **gods-eye-view**: `codex/local-adsb-altitude-freshness` — merge
-- **gods-eye-view**: `feat/voice-on-device` — merge
-- **gods-eye-view**: `claude/vcam-virtual-camera` — merge
-- **gods-eye-view**: `codex/spatial-conversations` — merge
-- **gods-eye-view**: `feat/voice-outlines` — merge
-- **gods-eye-view**: `feat/global-radar` — merge
-- **gods-eye-view**: `codex/fix-annotation-height-culling` — merge
-- **gods-eye-view**: `codex/fix-hidden-tab-polling` — merge
-- **gods-eye-view**: `intro-sequence-first-light` — merge
-- **gods-eye-view**: `codex/fix-tool-display-text` — merge
-- **gods-eye-view**: `german/hal-530-street-level-ux-cuts` — merge
-- **gods-eye-view**: `codex/fix-geocoder-antimeridian` — merge
-- **gods-eye-view**: `codex/overpass-admission-review-fixes` — merge
-- **gods-eye-view**: `codex/cctv-shared-batch-20261019` — merge
-- **gods-eye-view**: `codex/community-weather-base` — merge
-- **gods-eye-view**: `claude/mobile-4d-world-app-k98w5m` — merge
-- **gods-eye-view**: `codex/fix-cctv-session-admission` — merge
-- **gods-eye-view**: `codex/hal-646-zh-tw` — merge
 ---
+
+## Previous Sessions
+
+## Previous Sessions
+
+
 
 ## Previous Sessions
 
