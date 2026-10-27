@@ -24,7 +24,11 @@ HYMNS = {
     "winchester": ("Winchester", "Thomas Olivers", "1770"),
     "emmanuel": ("Emmanuel", "Latin, 12th Century", "1710"),
     "praise him": ("Praise Him! Praise Him!", "Fanny J. Crosby", "1869"),
-    "oh for a thousand": ("Oh, For a Thousand Tongues to Sing", "Charles Wesley", "1739"),
+    "oh for a thousand": (
+        "Oh, For a Thousand Tongues to Sing",
+        "Charles Wesley",
+        "1739",
+    ),
     "he leadeth me": ("He Leadeth Me", "Joseph H. Gilmore", "1862"),
     "amazing grace": ("Amazing Grace", "John Newton", "1779"),
     "how great thou art": ("How Great Thou Art", "Carl Boberg", "1885"),
@@ -57,6 +61,7 @@ GENRE_MAP = {
     "8bit": "Chiptune", "neon": "Synthwave",
 }
 
+
 def detect_genre(title_lower):
     # "DnB Rechip" must be Drum and Bass — the "chip" inside "Rechip" is a false positive
     if "dnb" in title_lower or "drum and bass" in title_lower or "drumandbass" in title_lower:
@@ -65,6 +70,7 @@ def detect_genre(title_lower):
         if key in title_lower:
             return name
     return None
+
 
 def detect_speed(title_lower):
     if "05x" in title_lower or "0.5x" in title_lower or "half" in title_lower:
@@ -77,12 +83,50 @@ def detect_speed(title_lower):
         return "Triple Speed (3.0x)"
     return "1.0x Speed"
 
+
 def detect_variant(title_lower):
-    if title_lower.endswith(" b") or " b_" in title_lower or title_lower.rstrip().endswith("b"):
+    if (
+        title_lower.endswith(" b")
+        or " b_" in title_lower
+        or title_lower.rstrip().endswith("b")
+    ):
         return " [B]"
-    if title_lower.endswith(" a") or " a_" in title_lower or title_lower.rstrip().endswith("a"):
+    if (
+        title_lower.endswith(" a")
+        or " a_" in title_lower
+        or title_lower.rstrip().endswith("a")
+    ):
         return " [A]"
     return ""
+
+
+MAX_TITLE_LEN = 100
+
+
+def truncate_title(new_title):
+    """YouTube titles are limited to 100 characters.
+    If over, drop the variant suffix, then the speed suffix, then truncate the author."""
+    if len(new_title) <= MAX_TITLE_LEN:
+        return new_title
+    # Drop variant suffix [A]/[B]
+    for marker in (" [B]", " [A]"):
+        if marker in new_title:
+            cand = new_title.replace(marker, "")
+            if len(cand) <= MAX_TITLE_LEN:
+                return cand
+    # Drop the | speed portion entirely
+    if " | " in new_title:
+        cand = new_title.split(" | ")[0]
+        if len(cand) <= MAX_TITLE_LEN:
+            return cand
+    # Hard truncate at the last space before the limit
+    if len(new_title) > MAX_TITLE_LEN:
+        cut = new_title[:MAX_TITLE_LEN]
+        if " " in cut:
+            cut = cut.rsplit(" ", 1)[0]
+        return cut
+    return new_title
+
 
 def build_correct_title(title, description=""):
     orig = title.lower()
@@ -102,7 +146,7 @@ def build_correct_title(title, description=""):
                and " | " in clean and not clean.startswith("electronic "))
     if already and not was_unknown:
         return None
-    
+
     genre = detect_genre(clean)
     if not genre and is_shorts:
         genre = detect_genre(orig)
@@ -145,19 +189,19 @@ def build_correct_title(title, description=""):
         if key in clean:
             if not genre:
                 genre = "[EDM LSDance]"
-            return f"{genre} Classical Remix - {name} ({author}, {year}) | {speed}{variant}" + (" #Shorts" if is_shorts else "")
+            return truncate_title(f"{genre} Classical Remix - {name} ({author}, {year}) | {speed}{variant}") + (" #Shorts" if is_shorts else "")
     
     for key, (name, author, year) in HYMNS.items():
         if key in clean:
             if not genre:
                 genre = "[EDM LSDance]"
-            return f"{genre} Hymn 2026 Remix: {name} ({author}, {year}) | {speed}{variant}" + (" #Shorts" if is_shorts else "")
+            return truncate_title(f"{genre} Hymn 2026 Remix: {name} ({author}, {year}) | {speed}{variant}") + (" #Shorts" if is_shorts else "")
     
     # Neon Valse
     if "neon valse" in clean:
         if not genre:
             genre = "[EDM LSDance]"
-        return f"{genre} Electronic Remix - Neon Valse (Original, 2026) | {speed}{variant}" + (" #Shorts" if is_shorts else "")
+        return truncate_title(f"{genre} Electronic Remix - Neon Valse (Original, 2026) | {speed}{variant}") + (" #Shorts" if is_shorts else "")
     
     return None
 
@@ -165,30 +209,37 @@ def build_correct_title(title, description=""):
 def rename_all():
     renamed = 0
     page_token = None
-    
+
     while True:
         req = yt.search().list(
-            part="snippet", forMine=True, maxResults=50, type="video", order="date",
-            pageToken=page_token
+            part="snippet",
+            forMine=True,
+            maxResults=50,
+            type="video",
+            order="date",
+            pageToken=page_token,
         )
         resp = req.execute()
         items = resp.get("items", [])
-        
+
         for item in items:
             if "snippet" not in item:
                 continue
             vid = item["id"]["videoId"]
             title = item["snippet"]["title"]
             desc = item["snippet"].get("description", "")
-            
+
             new_title = build_correct_title(title, desc)
             if new_title is None:
                 continue
-            
+
             try:
                 yt.videos().update(
                     part="snippet",
-                    body={"id": vid, "snippet": {"title": new_title, "categoryId": "10"}},
+                    body={
+                        "id": vid,
+                        "snippet": {"title": new_title, "categoryId": "10"},
+                    },
                 ).execute()
                 renamed += 1
                 print(f"[{renamed}] {title[:60]} -> {new_title[:80]}")
@@ -200,11 +251,11 @@ def rename_all():
                     return renamed
                 print(f"  SKIP [{vid[:8]}]: {err[:60]}")
                 time.sleep(0.5)
-        
+
         page_token = resp.get("nextPageToken")
         if not page_token or len(items) == 0:
             break
-    
+
     return renamed
 
 

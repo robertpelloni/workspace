@@ -1,3 +1,18 @@
+## [v5.286.9] — 2026-10-27 — HymnMania Master Reconciliation
+
+### Merged (hymnmania `master` → `main`)
+- **social_config templates** (`2e1a3a0`): LinkedIn/Twitter config templates + credential gitignore patterns + `.pi/caps-context-state.json` — cherry-picked clean
+- **Title pipeline** (`31ae083`, Robert's own): truncation logic + `dry_run_titles.py` — cherry-picked with intelligent merge (kept main's evolved genre maps, unknown-prefix handling, description-aware calls; added `MAX_TITLE_LEN` + `truncate_title()` wired into all 3 title returns; kept main's submodule pointer)
+- **Verified already in main**: TikTok pipeline (`8c64812` = `1edfabe`), TikTok AGENTS.md docs (25 mentions), truncation substance from `ee8749f`
+- **Assessed superseded**: stash resolution (`a5b2b6f`), merge composite (`90a59e3`) — absorbed by main's 82 commits
+- **Pushed**: `hymnmania` main `33bdb18..c57682f`, `bobmani/hymnmania` fast-forwarded to `c57682f`
+
+### Added
+- **ww3_game** submodule registered (`https://github.com/robertpelloni/ww3_game.git`, branch main)
+
+### Changed
+- **Version bumped**: v5.286.8 → v5.286.9
+
 ## [v5.284.0] — 2026-10-11 — Protocol #259 — Repository Sync & Intelligent Merge
 
 ### Fixed

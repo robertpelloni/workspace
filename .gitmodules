@@ -452,3 +452,7 @@ branch = master
 [submodule "gods-eye-view"]
 	path = gods-eye-view
 	url = https://github.com/robertpelloni/gods-eye-view
+[submodule "ww3_game"]
+	path = ww3_game
+	url = https://github.com/robertpelloni/ww3_game.git
+	branch = main

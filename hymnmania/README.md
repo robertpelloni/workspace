@@ -1,89 +1,25 @@
-🛠️ ALPHA SOFTWARE UNDER CONSTRUCTION — Use at your own risk. Backwards compatibility not guaranteed.
+# HymnMania
 
-```text
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                                                                              ║
-║                     ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗              ║
-║                     ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗             ║
-║                     ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝             ║
-║                     ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗             ║
-║                     ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║             ║
-║                      ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝             ║
-║                                                                              ║
-║                     ██████╗ ██████╗ ███╗   ██╗███████╗████████╗██████╗      ║
-║                    ██╔════╝██╔═══██╗████╗  ██║██╔════╝╚══██╔══╝██╔══██╗     ║
-║                    ██║     ██║   ██║██╔██╗ ██║███████╗   ██║   ██████╔╝     ║
-║                    ██║     ██║   ██║██║╚██╗██║╚════██║   ██║   ██╔══██╗     ║
-║                    ╚██████╗╚██████╔╝██║ ╚████║███████║   ██║   ██║  ██║     ║
-║                     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝     ║
-║                                                                              ║
-║                     █████╗ ██╗     ██████╗ ██╗  ██╗ █████╗                  ║
-║                    ██╔══██╗██║     ██╔══██╗██║  ██║██╔══██╗                 ║
-║                    ███████║██║     ██████╔╝███████║███████║                 ║
-║                    ██╔══██║██║     ██╔═══╝ ██╔══██║██╔══██║                 ║
-║                    ██║  ██║███████╗██║     ██║  ██║██║  ██║                 ║
-║                    ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝                 ║
-║                                                                              ║
-║                    ╔══════════════════════════════════════╗                  ║
-║                    ║     ⚠️  ALPHA SOFTWARE  ⚠️           ║                  ║
-║                    ║  EXPECT BREAKING CHANGES & BUGS     ║                  ║
-║                    ║  NOT READY FOR PRODUCTION USE       ║                  ║
-║                    ╚══════════════════════════════════════╝                  ║
-║                                                                              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
+An automation pipeline that turns classical hymns and classical pieces (MIDI) into electronic covers and beat-synced videos, then publishes them: MIDI → speed-adjusted render → Suno AI covers across multiple electronic genres → AI-visual music videos synced to the beat → upload to YouTube, Facebook, and Instagram.
 
----
-[hymnmania](https://github.com/robertpelloni/hymnmania) — **v5.97.5**
+Version **v5.97.5** (per the previous README header). Python.
 
-## 🎵 Automated Hymn → Electronic Cover → Beat-Synced Video → YouTube + Social Pipeline
+## What it does
 
-HymnMania is an end-to-end automation platform that takes classical hymns and classical pieces (MIDI files), renders them as speed-adjusted audio, generates modern electronic music covers via Suno AI across 11 genres, creates beat-synced music videos with AI-generated visuals, and publishes to YouTube, Facebook, and Instagram.
+1. **Source** — hymns/classical MIDI files (see `CLASSICAL_PIECES.md`; `BLOCKED_HYMNS.md` tracks pieces that can't be used)
+2. **Render** — speed/tempo-adjusted audio renders of the source pieces
+3. **Cover** — Suno AI generates electronic covers in multiple genres per piece
+4. **Video** — beat-synced music videos assembled with AI-generated visuals
+5. **Publish** — scheduled uploads to YouTube, Facebook, and Instagram, with caption generation and throttling
 
-### 🚀 Quick Start
+## A note on the tree
 
-```bash
-# 1. Launch Edge with remote debugging
-python scripts/launch_edge_suno.py
+This repo is a **live bot workspace**, not a clean package: the root is full of runtime state files (`.upload_queue.json`, `.social_posted.json`, `.suno_credits_before.json`, `.throttle_state.json`, caption drafts, promo-sprint logs) written by the pipeline as it runs, plus session markers from the AI tools that operate it. The state files are the pipeline's memory — deleting them changes what it will do next. Start from the docs (`AGENTS.md`, `CHANGELOG.md`, and the pipeline scripts) rather than treating the root as source layout.
 
-# 2. Generate a cover (Suno AI)
-cd scripts
-python suno_cover_remix_options_form_style_submitter.py psytrance 05x Thy_Word --instrumental
+## Related
 
-# 3. Compose beat-synced video
-python quick_composer.py --audio input.mp3 --video output.mp4
+Harry's fork of this project (GitHub user Dimensionalplane) grew into **TurntUpToddler** (~209 commits) — the hymn-cover idea taken further as its own thing.
 
-# 4. Update YouTube descriptions
-python youtube_update_descriptions.py
+## Status
 
-# 5. Post to Facebook
-python daily_scheduler.py
-```
-
-### 📂 Project Structure
-
-```
-hymnmania/
-├── scripts/                          # Active pipeline components
-├── src/                              # TypeScript pipeline core
-├── services/                         # Renderer workers
-├── pipeline/                         # Pipeline orchestration
-├── hymn_remaker/                     # MIDI rendering (FluidSynth + FFmpeg)
-├── submodules/                       # Git submodules
-├── data/                             # MIDI databases (~33K files)
-├── docs/                             # Documentation
-├── AGENTS.md                         # Agent instructions
-├── CHANGELOG.md                      # Version history
-├── HANDOFF.md                        # Session handoff notes
-├── ROADMAP.md                        # Development roadmap
-└── VERSION                           # Current version
-```
-
-### 🔗 Social Channels
-
-| Platform | Link |
-|----------|------|
-| YouTube | [Resurrecting Beats](https://youtube.com/@ResurrectingBeats) |
-| Facebook | [Resurrecting Beats](https://www.facebook.com/profile.php?id=61588784931149) |
-| Instagram | [@ResurrectingBeats](https://www.instagram.com/resurrectingbeats) |
-| TikTok | [@resurrecting.beat](https://www.tiktok.com/@resurrecting.beat) |
+Actively operated automation, single-purpose and personal. Expect the tree to change daily while it is running; there is no stable release to consume.

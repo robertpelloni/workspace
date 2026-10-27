@@ -105,7 +105,6 @@ token_gemini.json
 !HANDOFF.md
 !AGENTS.md
 !VERSION
-
 # Media outputs (large, regenerable)
 generated/
 mp3_input/
@@ -145,3 +144,13 @@ _s2.mp4
 _a.aac
 _list.txt
 _out.mp4
+
+# Credentials (never commit)
+.social_config/bluesky_accounts.json
+.social_config/bluesky_config.json
+.social_config/bluesky_robertpelloni.json
+.social_config/fb_state.json
+.social_config/linkedin_config.json
+.social_config/twitter_config.json
+.social_config/youtube_token.json
+.tiktok_state.json
