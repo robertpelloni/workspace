@@ -13,6 +13,20 @@
 ### Changed
 - **Version bumped**: v5.286.8 → v5.286.9
 
+## [v5.286.10] — 2026-10-28 — Protocol #270
+
+### Merged
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-2f608de5f9` — cherry-pick
+- **root**: `dependabot/npm_and_yarn/npm_and_yarn-99446ad252` — cherry-pick
+- **root**: `dependabot/uv/uv-4d825ab99f` — cherry-pick
+- **root**: `dependabot/uv/uv-ea96c0b163` — cherry-pick
+### Fetch
+- 114/117 fetched, 110 clean, 7 dirty (committed 5)
+
+### Changed
+- v5.286.9 -> v5.286.10
+
+
 ## [v5.284.0] — 2026-10-11 — Protocol #259 — Repository Sync & Intelligent Merge
 
 ### Fixed
