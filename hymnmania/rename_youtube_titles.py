@@ -3,7 +3,9 @@
 Hymn format:  [Genre] Hymn 2026 Remix: [Title] ([Author], [Year]) | [Speed] [Variant]
 Classical:    [Genre] Classical Remix - [Piece] ([Composer], [Year]) | [Speed]
 """
-import json, time, re
+
+import json
+import time
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build

@@ -1,3 +1,7 @@
+<!-- [HYPERNEXUS_AUTO_INJECTED] -->
+> [!IMPORTANT]
+> You are running within the HyperNexus environment. You MUST use your available tools frequently and proactively for researching, editing, executing, and validating your work. Always prioritize tool execution.
+
 # HymnMania — Agent Instructions
 
 > **Version: 5.97.25**
@@ -221,6 +225,7 @@ YouTube, Facebook, Instagram, and TikTok all DISREGARD every hashtag if a single
 **Classical:** `[Genre] Classical Remix - [Piece] ([Composer], [Year]) | [Speed]`
 
 Examples:
+
 - `Psytrance Hymn 2026 Remix: Thy Word (Amy Grant & Michael W. Smith, 1984) | 1.0x Speed [A]`
 - `Dubstep Classical Remix - Canon in D (Johann Pachelbel, 1680) | Triple Speed (3.0x)`
 
@@ -310,6 +315,7 @@ Watch the full 4K visual journey on YouTube!
 ```
 
 ### Spacing Rules
+
 - Double newlines (`\n\n`) between EVERY section
 - Space after links and hashtags
 - YouTube link MUST be on its own line at the bottom for preview regeneration
@@ -318,13 +324,14 @@ Watch the full 4K visual journey on YouTube!
 ## Instagram Post Template
 
 Same template as Facebook, but:
+
 - Set `{{LINK_CTA_TEXT}}` to: `(Full 4K visual journey link in our bio! 🔗)`
 - Update Instagram bio link to the YouTube video URL
 - Upload MP4 video to Instagram Reels/Feed
 
 ## Instagram Credentials
 
-- **Login**: resurrectingbeats@gmail.com
+- **Login**: <resurrectingbeats@gmail.com>
 - **Password**: Temppass0!
 - **Profile**: @ResurrectingBeats
 
@@ -353,6 +360,114 @@ Same template as Facebook, but:
 | TikTok Poster | `tiktok_poster.py` | Convert to vertical + upload via CDP browser |
 | Scheduler Bot | `scheduler_bot.py` | Weekly auto-posting Mon-Fri to TikTok + Facebook |
 | AI Metadata | Embedded JSON-LD | Schema.org MusicRecording for AI crawler indexing |
+
+---
+
+## TikTok Pipeline
+
+### Overview
+
+The TikTok pipeline crops existing 16:9 horizontal videos to 9:16 vertical format and uploads them to TikTok with the same naming conventions as YouTube.
+
+### TikTok Content Requirements
+
+| Requirement | Specification |
+|-------------|---------------|
+| Format | MP4, MOV, WebM (H.264 video + AAC audio) |
+| Aspect Ratio | 9:16 (1080x1920) vertical preferred |
+| Duration | 3 seconds to 10 minutes (API) / 60 minutes (web) |
+| AI Content | Must set `is_aigc: true` flag |
+| Links | NOT clickable in captions (bio link only) |
+| Caption Limit | 2200 characters max |
+
+### Vertical Crop Workflow
+
+```bash
+# Single video
+cd scripts
+python vertical_video_cropper.py --input ../generated/video.mp4 --output ../generated/video_vertical.mp4
+
+# Batch crop all hymn videos
+python vertical_video_cropper.py --batch ../generated/ --outdir ../generated/vertical/
+```
+
+**Crop Logic:**
+
+- Input: 640x360 (16:9) → Crop center 202x360 → Scale to 1080x1920
+- Input: 1920x1080 (16:9) → Crop center 607x1080 → Scale to 1080x1920
+- Formula: `crop_w = input_h * (9/16)`, center crop, then scale
+
+### TikTok Upload Workflow
+
+```bash
+# Single video upload
+cd scripts
+python tiktok_uploader.py --video ../generated/video_vertical.mp4 --title "Psytrance Hymn 2026 Remix: Thy Word" --tags "hymn,remix,psytrance"
+
+# Batch upload
+python tiktok_uploader.py --batch ../generated/vertical/
+```
+
+**Upload Steps:**
+
+1. Navigate to TikTok upload page
+2. Upload video file via file input
+3. Fill caption with title + hashtags
+4. Set AIGC flag for AI-generated content
+5. Click Post button
+
+### Naming Convention (Same as YouTube)
+
+**TikTok Caption Format:**
+
+```
+[Genre] Hymn 2026 Remix: [Title] ([Author], [Year]) | [Speed]
+
+#ResurrectingBeats #Hymnmania #ElectronicMusic #ChristianMusic #Worship #Remix #AIMusic #HymnRemix #ElectronicWorship #2026
+```
+
+**Example:**
+
+```
+Psytrance Hymn 2026 Remix: Thy Word (Amy Grant & Michael W. Smith, 1984) | 1.0x Speed
+
+#ResurrectingBeats #Hymnmania #ElectronicMusic #ChristianMusic #Worship #Remix #AIMusic #HymnRemix #ElectronicWorship #2026
+```
+
+### Full Pipeline (YouTube + TikTok)
+
+```bash
+# Process single video for both platforms
+cd scripts
+python multi_platform_pipeline.py --audio ../generated/cover.mp3 --hymn "Thy Word" --genre psytrance --speed "1.0x"
+
+# Process all top 5 hymns
+python multi_platform_pipeline.py --batch-top5
+```
+
+**Pipeline Steps:**
+
+1. Generate beat-synced video (enhanced_video_composer.py)
+2. Crop to 9:16 vertical (vertical_video_cropper.py)
+3. Upload to YouTube with standard naming
+4. Upload to TikTok with same naming + hashtags
+
+### TikTok Browser State
+
+The TikTok uploader saves browser state to `.tiktok_state.json` for persistent login. If not logged in, the script will prompt for manual login.
+
+### Platform Comparison
+
+| Feature | TikTok | YouTube |
+|---------|--------|---------|
+| Accepts Audio Only? | No (Video/Carousel only) | No (Must render to .mp4) |
+| Max API Video Length | 10 Minutes | 12 Hours |
+| Shorts/Vertical Spec | 9:16 (1080x1920) | 9:16 (1080x1920, ≤60 sec) |
+| Clickable Links in Post | ❌ Bio link only | ✅ Description & Pinned Comment |
+| Auto-Posting Obstacle | Requires TikTok App Audit | Requires YouTube API Project Quotas |
+| AI Content Flag | Required (`is_aigc: true`) | Not required |
+
+---
 
 ## Beat Video Branding
 

@@ -1,6 +1,12 @@
-# TODO — Omni-Workspace v5.282.0
+# TODO — Omni-Workspace v5.286.11
 
-**Current:** v5.282.0 • 80+ submodules across workspace • 2026-08-28
+**Current:** v5.286.11 • 117 submodules across workspace • 2026-10-31
+
+### Protocol #271 Outcomes (2026-10-31)
+- [x] **hymnmania `master` → `main` recovered** — 8 commits (TikTok pipeline, title truncation, social templates); initial merge blocked by dirty worktree, retried clean via nested clone path + direct retry, pushed `cc23698`
+- [ ] **ArrowVortex `odcnn` nested content** — modified files inside nested submodule, pointer commit deferred (would freeze dirty state)
+- [ ] **ww3_game nested MCP checkouts** — 5 modified godot/unity MCP server dirs, pointer commit deferred (active dev state)
+- [ ] **bobmani/itgmania fetch** — remote fetch failed, needs retry
 
 ## 🎯 v5.50.0 Milestone: Production Hardening
 
