@@ -28,7 +28,10 @@
 - v5.286.10 → v5.286.11 (VERSION, VERSION.md, CHANGELOG.md); build.bat/start.bat echoes aligned to v5.286.11; STRUCTURAL_MAP.md regenerated (117 rows); ROADMAP/TODO headers + outcomes updated
 
 ### Push & build
-- Root commit + push: PENDING at handoff write (see below); build.bat execution: PENDING
+- Root commit + push: DONE (`73ec72d10`, 80 files, `6c1e2865a..73ec72d10 main -> main`); build.bat execution: see below
+
+### Build
+- PENDING at handoff write
 
 ---
 
