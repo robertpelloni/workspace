@@ -13,6 +13,17 @@
 ### Changed
 - **Version bumped**: v5.286.8 → v5.286.9
 
+## [v5.286.12] — 2026-10-31 — Protocol #272
+
+### Merged
+- No new feature branches
+### Fetch
+- 114/117 fetched, 111 clean, 6 dirty (committed 5)
+
+### Changed
+- v5.286.11 -> v5.286.12
+
+
 ## [v5.286.11] — 2026-10-31 — Protocol #271
 
 ### Merged
