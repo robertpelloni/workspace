@@ -31,7 +31,9 @@
 - Root commit + push: DONE (`73ec72d10`, 80 files, `6c1e2865a..73ec72d10 main -> main`); build.bat execution: see below
 
 ### Build
-- PENDING at handoff write
+- **build.bat repaired**: was targeting ghost `tormentnexus\go` (not a submodule, dir absent) and its `cd` cascade broke all later steps while echoing false success. Rewrote with per-step `if exist` guards, OK/FAIL/SKIP counts, truthful exit code. Also fixed two latent batch bugs found during repair: file must be CRLF, and unescaped `)` inside a parenthesized-block echo prematurely closed the block.
+- **Result**: `2 OK, 2 failed, 1 skipped` (exit 1). OK: `pi-mono.exe`, `tabby-native.exe`. Failed (environmental/pre-existing, unrelated to sync): `hyperharness` (proxy.golang.org TLS handshake timeouts fetching glamour module), `tabby-backend` (incomplete `vendor/` tree: sentry-go, uuid missing). Skipped: tormentnexus (not initialized).
+- **Binaries**: no compiled binaries deleted; no running processes killed or restarted (all running services belong to the user session — none were started by this protocol).
 
 ---
 
