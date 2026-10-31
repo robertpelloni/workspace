@@ -1,6 +1,12 @@
-# TODO — Omni-Workspace v5.286.11
+# TODO — Omni-Workspace v5.286.12
 
-**Current:** v5.286.11 • 117 submodules across workspace • 2026-10-31
+**Current:** v5.286.12 • 117 submodules across workspace • 2026-10-31
+
+### Protocol #272 Outcomes (2026-10-31)
+- Maintenance sync: 0 feature branches with unique commits (all candidates already merged), 0 failures
+- 5 dirty-state commits (fwber, jules-autopilot, realestatecrm, pi-mono + pi-mono.exe, tabby + tabby-native.exe), 4 pushed + jules-autopilot verified in sync
+- Fetch 114/117 (HyperNexus, HyperNexus2old, private_gemini_storage timed out)
+- HyperNexus worktree advanced externally mid-run — pointer left unstaged, do not interfere
 
 ### Protocol #271 Outcomes (2026-10-31)
 - [x] **hymnmania `master` → `main` recovered** — 8 commits (TikTok pipeline, title truncation, social templates); initial merge blocked by dirty worktree, retried clean via nested clone path + direct retry, pushed `cc23698`

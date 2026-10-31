@@ -5,11 +5,11 @@ Generated: 2026-10-31 (Protocol #271)
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script  |  https://github.com/robertpelloni/auto_dj_script  |  a47e1d387b6e |
-| fwber  |  https://github.com/robertpelloni/fwber.git  |  8677be509877 |
+| fwber  |  https://github.com/robertpelloni/fwber.git  |  89e65ea30d47 |
 | hymnmania  |  https://github.com/robertpelloni/hymnmania  |  cc236980a4a9 |
 | hypercode  |  N/A  |  not initialized |
-| jules-autopilot  |  https://github.com/robertpelloni/jules-autopilot  |  cf8e7272a80a |
-| realestatecrm  |  https://github.com/robertpelloni/realestatecrm.git  |  94e632389f83 |
+| jules-autopilot  |  https://github.com/robertpelloni/jules-autopilot  |  4a762aa26fae |
+| realestatecrm  |  https://github.com/robertpelloni/realestatecrm.git  |  d3e4faa351df |
 | skillzhub  |  https://github.com/robertpelloni/skillzhub  |  b6285f9fd5a3 |
 | hermes-agent  |  https://github.com/robertpelloni/hermes-agent  |  166ab639f437 |
 | multimousergy  |  https://github.com/robertpelloni/multimousergy.git  |  1adcf8ce8154 |
@@ -64,17 +64,17 @@ Generated: 2026-10-31 (Protocol #271)
 | onetool-mcp  |  https://github.com/robertpelloni/onetool-mcp  |  00017a1545c3 |
 | openclaw-config  |  https://github.com/TechNickAI/openclaw-config.git  |  95f781d90b3d |
 | openclaw-dashboard  |  https://github.com/tugcantopaloglu/openclaw-dashboard.git  |  ffd2504f097d |
-| pi-mono  |  https://github.com/robertpelloni/pi-mono  |  a243689ab300 |
+| pi-mono  |  https://github.com/robertpelloni/pi-mono  |  29ea41cd0b64 |
 | planet_fitness_stepmaniax_agent  |  https://github.com/robertpelloni/planet_fitness_stepmaniax_agent  |  fac90918fcf2 |
 | projectm  |  https://github.com/robertpelloni/projectm.git  |  ba052dcc6bc8 |
 | psytrance_night_outreach_agent  |  https://github.com/robertpelloni/psytrance_night_outreach_agent.git  |  2017f1a5667d |
 | slsk_discography_downloader_script  |  https://github.com/robertpelloni/slsk_discography_downloader_script  |  2de506c1d1c7 |
 | sm64coopdx  |  https://github.com/robertpelloni/sm64coopdx  |  0107842c05b1 |
 | supersaber  |  https://github.com/robertpelloni/supersaber  |  9df214458fcb |
-| tabby  |  https://github.com/robertpelloni/tabby  |  88d8a3c21dee |
+| tabby  |  https://github.com/robertpelloni/tabby  |  a890bc2c1af6 |
 | timidity  |  https://github.com/robertpelloni/timidity.git  |  f726f8f75b02 |
 | topaz-ffmpeg  |  https://github.com/TopazLabs/ffmpeg  |  8e7ad9f24321 |
-| HyperNexus  |  https://gitlab.com/robertpelloni/HyperNexus.git  |  0d61af4ad843 |
+| HyperNexus  |  https://gitlab.com/robertpelloni/HyperNexus.git  |  02eef8db9390 |
 | veilid_reddit_facebook  |  https://github.com/robertpelloni/veilid_reddit_facebook  |  735a1e77c128 |
 | warp  |  https://github.com/robertpelloni/warp.git  |  25d557224446 |
 | vst_monster  |  https://github.com/robertpelloni/vst_monster  |  8614d52fdb73 |

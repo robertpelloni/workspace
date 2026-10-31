@@ -1,3 +1,30 @@
+# HANDOFF — v5.286.12 — 2026-10-31 — Protocol #272: Repository Sync & Intelligent Merge
+
+## Session — Protocol #272 (maintenance sync)
+
+### Fetch
+- **114/117 submodules fetched** (`--all --tags`); fail (timeout): `HyperNexus`, `HyperNexus2old`, `private_gemini_storage` — retry next protocol
+- **Root**: no upstream fork (origin only) — upstream sync skipped
+- **Sanitization**: no new stale gitlinks (MilkDrop3 aios fix from #271 holding); root `.git/index.lock` absent — no action needed
+
+### Branch audit (dual-direction)
+- **Result: 0 branches with unique commits, 0 merges, 0 failures** — full candidate sweep (root dependabots via `git cherry`, fwber upstream/jules, ArrowVortex fix, HyperNexus fix/feat, bobmani nested jules, gods-eye-view remotes) all already contained in their mains
+- **Reverse merges**: none required — no unmerged active feature branches
+
+### Dirty-state commits (5 committed, 4 pushed + 1 verified)
+- fwber (`.hypernexus/.installed`), jules-autopilot (`backend-go/dev.db` + shm/wal runtime churn), realestatecrm (`scripts/muse-cdp.js`), pi-mono (`pi-mono.exe` build output), tabby (`tabby-native.exe` build output) — pushed fwber, realestatecrm, pi-mono, tabby; jules-autopilot verified `main...origin/main` in sync ("Everything up-to-date")
+- **Deferred**: ArrowVortex (`M odcnn` nested content), ww3_game (5 modified MCP-server checkouts) — same as #271, would freeze dirty state
+- **Unstaged by design**: HyperNexus pointer advanced *externally* mid-run (autopilot activity, worktree `-dirty`) — left alone, do not interfere
+- Root: `e4c1b00d2` (script; commit client timed out but landed — verified in log) + `6e883291c` pointer sync, both pushed
+
+### Docs / version
+- v5.286.11 → v5.286.12 (VERSION, VERSION.md, CHANGELOG.md via script); build.bat/start.bat echoes → v5.286.12; STRUCTURAL_MAP.md regenerated (117 rows); ROADMAP/TODO + .memory/main.md updated
+
+### Push & build
+- Root `e4c1b00d2..6e883291c` pushed; docs commit + build below
+
+---
+
 # HANDOFF — v5.286.11 — 2026-10-31 — Protocol #271: Repository Sync & Intelligent Merge
 
 ## Session — Protocol #271
