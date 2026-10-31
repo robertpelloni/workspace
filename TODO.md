@@ -1,6 +1,13 @@
-# TODO — Omni-Workspace v5.286.12
+# TODO — Omni-Workspace v5.286.13
 
-**Current:** v5.286.12 • 117 submodules across workspace • 2026-10-31
+**Current:** v5.286.13 • 117 submodules across workspace • 2026-10-31
+
+### Protocol #273 Outcomes (2026-10-31)
+- Maintenance sync: 0 feature branches with unique commits, 0 failures
+- 2 dirty-state commits (jules-autopilot dev.db, hyperharness + hyperharness.exe); hyperharness push rejected (remote advanced) → merged via ort (their README) + pushed `aa02d45`
+- fwber advanced externally to `9885cd6a5` (already on origin) — pointer updated
+- Fetch 111/117 (bcs, projectm, timidity, HyperNexus, HyperNexus2old, private_gemini_storage timed out)
+- LFS locks/verify repeatedly failing through proxy — set `lfs...locksverify false` locally per git's own hint; pushes succeed after that
 
 ### Protocol #272 Outcomes (2026-10-31)
 - Maintenance sync: 0 feature branches with unique commits (all candidates already merged), 0 failures

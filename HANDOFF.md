@@ -1,3 +1,33 @@
+# HANDOFF — v5.286.13 — 2026-10-31 — Protocol #273: Repository Sync & Intelligent Merge
+
+## Session — Protocol #273 (maintenance sync)
+
+### Fetch
+- **111/117 submodules fetched**; fail (timeouts, slower network this round): `bcs`, `projectm`, `timidity`, `HyperNexus`, `HyperNexus2old`, `private_gemini_storage` — retry next protocol
+- **Root**: no upstream fork (origin only) — upstream sync skipped; no new stale gitlinks
+
+### Branch audit (dual-direction)
+- **0 branches with unique commits, 0 merges, 0 failures** — all candidates already contained in their mains
+- **Reverse merges**: none required
+
+### Dirty-state commits (2) + external advances (2)
+- jules-autopilot (`backend-go/dev.db` runtime churn) — already on origin, pointer staged
+- hyperharness (`hyperharness.exe` from #272 build) — push **rejected** (remote advanced externally mid-run); merged via ort (their README trim) + pushed `02d9ff6..aa02d45`, pointer staged
+- fwber advanced externally to `9885cd6a5` (pushed) — pointer updated, nothing to commit
+- **Deferred** (unchanged): ArrowVortex `odcnn`, ww3_game MCP checkouts, HyperNexus (external activity) — left alone
+
+### Push infra note
+- `git push` repeatedly failed at `lfs/.../locks/verify` (TCP abort through proxy); set `lfs.https://github.com/robertpelloni/workspace.git/info/lfs.locksverify false` in local repo config per git's own hint — pushes succeed since
+
+### Docs / version
+- v5.286.12 → v5.286.13 (VERSION, VERSION.md, CHANGELOG.md via script); build.bat/start.bat → v5.286.13; STRUCTURAL_MAP.md regen (117 rows); ROADMAP/TODO + .memory/main.md updated
+- Root: `98b71bb9f` (script) + pointer-sync commit + docs commit (see below)
+
+### Build
+- PENDING at handoff write (see below)
+
+---
+
 # HANDOFF — v5.286.12 — 2026-10-31 — Protocol #272: Repository Sync & Intelligent Merge
 
 ## Session — Protocol #272 (maintenance sync)
@@ -59,7 +89,7 @@
 
 ### Build
 - **build.bat repaired**: was targeting ghost `tormentnexus\go` (not a submodule, dir absent) and its `cd` cascade broke all later steps while echoing false success. Rewrote with per-step `if exist` guards, OK/FAIL/SKIP counts, truthful exit code. Also fixed two latent batch bugs found during repair: file must be CRLF, and unescaped `)` inside a parenthesized-block echo prematurely closed the block.
-- **Result**: `2 OK, 2 failed, 1 skipped` (exit 1). OK: `pi-mono.exe`, `tabby-native.exe`. Failed (environmental/pre-existing, unrelated to sync): `hyperharness` (proxy.golang.org TLS handshake timeouts fetching glamour module), `tabby-backend` (incomplete `vendor/` tree: sentry-go, uuid missing). Skipped: tormentnexus (not initialized).
+- **Result (final, after module downloads completed)**: `3 OK, 1 failed, 1 skipped` (exit 1). OK: `hyperharness.exe`, `pi-mono.exe`, `tabby-native.exe`. Failed (pre-existing, unrelated to sync): `tabby-backend` (incomplete `vendor/` tree: sentry-go, uuid missing). Skipped: tormentnexus (not initialized).
 - **Binaries**: no compiled binaries deleted; no running processes killed or restarted (all running services belong to the user session — none were started by this protocol).
 
 ---

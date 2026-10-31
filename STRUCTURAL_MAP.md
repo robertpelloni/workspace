@@ -5,10 +5,10 @@ Generated: 2026-10-31 (Protocol #271)
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script  |  https://github.com/robertpelloni/auto_dj_script  |  a47e1d387b6e |
-| fwber  |  https://github.com/robertpelloni/fwber.git  |  89e65ea30d47 |
+| fwber  |  https://github.com/robertpelloni/fwber.git  |  9885cd6a5262 |
 | hymnmania  |  https://github.com/robertpelloni/hymnmania  |  cc236980a4a9 |
 | hypercode  |  N/A  |  not initialized |
-| jules-autopilot  |  https://github.com/robertpelloni/jules-autopilot  |  4a762aa26fae |
+| jules-autopilot  |  https://github.com/robertpelloni/jules-autopilot  |  720fe5c3fb9a |
 | realestatecrm  |  https://github.com/robertpelloni/realestatecrm.git  |  d3e4faa351df |
 | skillzhub  |  https://github.com/robertpelloni/skillzhub  |  b6285f9fd5a3 |
 | hermes-agent  |  https://github.com/robertpelloni/hermes-agent  |  166ab639f437 |
@@ -53,7 +53,7 @@ Generated: 2026-10-31 (Protocol #271)
 | geany  |  https://github.com/robertpelloni/geany  |  9c778ff988b7 |
 | geiss  |  https://github.com/robertpelloni/geiss.git  |  178de2b17886 |
 | hyper  |  https://github.com/robertpelloni/hyper.git  |  7094efae84c0 |
-| hyperharness  |  https://github.com/robertpelloni/hyperharness  |  b0aba3cdf494 |
+| hyperharness  |  https://github.com/robertpelloni/hyperharness  |  aa02d45a2bd1 |
 | freellm  |  https://github.com/robertpelloni/freellm  |  a2d0a1ce8979 |
 | mcp-superassistant  |  https://github.com/robertpelloni/mcp-superassistant  |  5efe6d1771b0 |
 | mk64  |  https://github.com/robertpelloni/mk64  |  d8c1931b1ea8 |
