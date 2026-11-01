@@ -24,7 +24,8 @@
 - Root: `98b71bb9f` (script) + pointer-sync commit + docs commit (see below)
 
 ### Build
-- PENDING at handoff write (see below)
+- **Result**: `3 OK, 1 failed, 1 skipped` (exit 1). OK: `hyperharness.exe`, `pi-mono.exe`, `tabby-native.exe`. Failed (pre-existing): `tabby-backend` (incomplete `vendor/` tree). Skipped: tormentnexus (not initialized).
+- **Binaries**: none cleaned or purged; no processes killed or restarted (all running services belong to the user session — none were started by this protocol).
 
 ---
 
