@@ -456,3 +456,51 @@ branch = master
 	path = ww3_game
 	url = https://github.com/robertpelloni/ww3_game.git
 	branch = main
+[submodule "succubus.red"]
+	path = succubus.red
+	url = https://github.com/robertpelloni/succubus.red.git
+[submodule "bobble"]
+	path = bobble
+	url = https://github.com/robertpelloni/bobble.git
+[submodule "newz"]
+	path = newz
+	url = https://github.com/robertpelloni/newz.git
+[submodule "explorerexedecompiled"]
+	path = explorerexedecompiled
+	url = https://github.com/robertpelloni/explorerexedecompiled.git
+[submodule "autositcom"]
+	path = autositcom
+	url = https://github.com/robertpelloni/autositcom.git
+[submodule "webapp_factory"]
+	path = webapp_factory
+	url = https://github.com/robertpelloni/webapp_factory.git
+[submodule "educational_video_pipeline"]
+	path = educational_video_pipeline
+	url = https://github.com/robertpelloni/educational_video_pipeline.git
+[submodule "mparty"]
+	path = mparty
+	url = https://github.com/robertpelloni/mparty.git
+[submodule "make_elon_laugh"]
+	path = make_elon_laugh
+	url = https://github.com/robertpelloni/make_elon_laugh.git
+[submodule "unitedbeats_site"]
+	path = unitedbeats_site
+	url = https://github.com/robertpelloni/unitedbeats_site.git
+[submodule "sales_bot"]
+	path = sales_bot
+	url = https://github.com/robertpelloni/sales_bot.git
+[submodule "borg"]
+	path = borg
+	url = https://github.com/robertpelloni/borg.git
+[submodule "Folderum3-The-Last-Attempt"]
+	path = Folderum3-The-Last-Attempt
+	url = https://github.com/robertpelloni/Folderum3-The-Last-Attempt.git
+[submodule "CodeWhale-Extensions"]
+	path = CodeWhale-Extensions
+	url = https://github.com/robertpelloni/CodeWhale-Extensions.git
+[submodule "DataStreamBrowser"]
+	path = DataStreamBrowser
+	url = https://github.com/robertpelloni/DataStreamBrowser.git
+[submodule "ADSFileSystem"]
+	path = ADSFileSystem
+	url = https://github.com/robertpelloni/ADSFileSystem.git

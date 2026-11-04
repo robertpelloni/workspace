@@ -1,3 +1,54 @@
+# HANDOFF — v5.286.15 — 2026-11-03 — Protocol #275: 16 Missing Repos + Branch Reconciliation
+
+## Session — Protocol #275
+
+### Submodule expansion (117 -> 133)
+- Compared 116 robertpelloni GH repos vs .gitmodules: 16 genuinely missing, all added --depth 1, paths = repo names, no nested .gitmodules in any
+- New: succubus.red 97a3dc6, bobble 49936a3, newz 00cb6af, explorerexedecompiled 31a4794, autositcom b34cc85, webapp_factory 36faf3f, educational_video_pipeline 55fd8f8, mparty e100af6, make_elon_laugh 2db2227, unitedbeats_site 5a5b7c4, sales_bot f52e142, borg 964a130, Folderum3-The-Last-Attempt 2541eb1, CodeWhale-Extensions 223d89d, DataStreamBrowser 70235cc (master), ADSFileSystem 5ab73c6 (master)
+- Skipped (already present nested): beatoraja, ddc, ddc_onset, ffr-difficulty-model, itgmania, linthesia, leraine-studio, pianogame, Simply-Love-SM5, ksm-v2, bobmania under bobmani/
+- enterprise_sales_bot NOT on GitHub (absent from gh list) — relates to Jules TormentNexus clone failure (nested borg pin f33149 not on remote)
+
+### Fetch
+- Root fetch --all --tags --prune OK (origin only, no upstream)
+- New 16 are fresh clones at remote HEAD; full 133-way fetch deferred (prior 111-114/117 pattern)
+
+### Branch audit
+- fwber 5 feature branches + HyperNexus 4 branches: ALL 0-ahead of main — fully contained, no merges needed, branches left in place per retention
+- realestatecrm, marketing_agent: main only
+
+### Dirty-state (4 commits, all pushed before root commit)
+- jules-autopilot, realestatecrm, marketing_agent (+ort merge over mid-run README advance), HyperNexus — see CHANGELOG
+- fwber pointer-only (v2.3.54 cdafa91ba, clean)
+- Deferred ww3_game pointer (nested godot-mcp modified)
+
+### Docs / version
+- v5.286.14 -> v5.286.15 (VERSION, VERSION.current, VERSION.md, build.bat/start.bat, CHANGELOG.md)
+- STRUCTURAL_MAP.md regen queued (117 -> 133 rows)
+
+---
+# HANDOFF — v5.286.14 — 2026-11-03 — Protocol #274: Maintenance Sync + United Beats Umbrella v3
+
+## Session — Protocol #274 (maintenance sync + umbrella analysis)
+
+### Fetch
+- **Root**: fetch --all --tags --prune OK (origin only, no upstream fork — sync skipped; 6 stale dependabot refs pruned)
+- **Submodules**: revenue-core fetches kicked off (fwber shows origin+upstream remotes); full 117-way fetch not completed this pass (prior #273: 111/117, fails bcs/projectm/timidity/HyperNexus/HyperNexus2old/private_gemini_storage)
+
+### Branch audit (dual-direction)
+- **Forward merges**: 0 completed this pass — no new unique feature branches surfaced without full sweep; v5.286.13 zero-merge state carries forward
+- **Reverse merges**: none required
+- **Retention rule honored**: no branches deleted; memory/sessions/DBs left tracked; no processes killed; no binaries cleaned
+
+### Docs / version
+- v5.286.13 → v5.286.14 (VERSION, VERSION.current, VERSION.md, build.bat/start.bat, CHANGELOG.md via prepend)
+- Added UNITED_BEATS_UMBRELLA_v3.md — Potential (Mkt+Upside) vs Execution (Exist+Likelihood) re-rank; Stars fwber/HyperNexus/marketing_agent/skillzhub/realestatecrm/hymnmania; gods-eye-view demoted to Bet; freellm added as Bet
+- TODO/ROADMAP/.memory/main.md sync deferred to next protocol except version string (workspace lockup risk on full status)
+
+### Push / build
+- Pending: stage + commit + push root (see below); submodules untouched (no pointer changes staged)
+- Build: full system build NOT run this pass (prior #273: 3 OK / 1 failed tabby-backend / 1 skipped); no binaries restarted or purged per protocol
+
+---
 # HANDOFF — v5.286.13 — 2026-10-31 — Protocol #273: Repository Sync & Intelligent Merge
 
 ## Session — Protocol #273 (maintenance sync)
@@ -279,3 +330,4 @@ Full EXECUTIVE PROTOCOL across the workspace: fetch all 112 submodules, branch a
 3. Continue topaz-ffmpeg and bobeditpro upstream syncs (dedicated sessions)
 4. Address Dependabot vulnerability backlog
 5. Review dirty submodules for commit readiness
+

@@ -1,3 +1,38 @@
+## [v5.286.15] — 2026-11-03 — Protocol #275: 16 Missing Repos Added + Branch Reconciliation
+
+### Added
+- 16 missing robertpelloni repos registered as submodules (117 -> 133): succubus.red, bobble, newz, explorerexedecompiled, autositcom, webapp_factory, educational_video_pipeline, mparty, make_elon_laugh, unitedbeats_site, sales_bot, borg, Folderum3-The-Last-Attempt, CodeWhale-Extensions, DataStreamBrowser, ADSFileSystem (all --depth 1, no nested submodules)
+- UNITED_BEATS_UMBRELLA_v3.md (from #274) stays current decision doc
+
+### Merged
+- fwber feature branches all 0-ahead of main (chore/frontend-hardening-2026-10-26, feat/next16-react19, feat/radix-tooltip-1.2, feat/react-leaflet-5, feat/wallet-login-backend) — fully contained, no action
+- HyperNexus branches all 0-ahead (clean-main, feat/mimo-plugin-max-surface, fix/functionality-hardening, fix/test-local-embed) — fully contained, no action
+
+### Dirty-state commits (4, all pushed)
+- jules-autopilot ff50ec7 (dev.db churn) — pushed
+- realestatecrm f63a35d (next-env.d.ts, prisma/dev.db) — pushed
+- marketing_agent 781f74d + ort merge a283989 (remote README advanced mid-run) — pushed
+- HyperNexus 920235e73 (agent_memory, imported_sessions, dbs) — pushed to github/main
+
+### Deferred
+- ww3_game pointer (nested mcp-servers/godot/Coding-Solo.godot-mcp modified — would freeze dirty state, per #271 precedent)
+
+### Changed
+- Version bumped: v5.286.14 -> v5.286.15
+## [v5.286.14] — 2026-11-03 — Protocol #274: Maintenance Sync + United Beats Umbrella v3
+
+### Protocol
+- Root fetch --all --tags --prune OK (origin only, no upstream fork — sync skipped, 6 dependabot deletions pruned)
+- Submodule fetches for revenue core (fwber/HyperNexus/realestatecrm/marketing_agent/hymnmania) initiated; full 117-way fetch deferred (prior protocols 111-114/117 with timeouts on bcs/projectm/timidity/HyperNexus/HyperNexus2old/private_gemini_storage)
+- Dual-direction audit: no new unique feature branches surfaced in this pass; prior state v5.286.13 (0 merges) holds — full branch sweep deferred to avoid workspace lockups
+- Batch scripts: build.bat/start.bat version strings synced to v5.286.14
+
+### Added
+- UNITED_BEATS_UMBRELLA_v3.md — one-org analysis prioritizing Potential (Mkt+Upside) vs Execution (Existing+Likelihood); Stars: fwber/HyperNexus/realestatecrm/marketing_agent/hymnmania; Bets: skillzhub/gods-eye-view/bobmani-focused/freellm
+
+### Changed
+- Version bumped: v5.286.13 → v5.286.14
+
 ## [v5.286.9] — 2026-10-27 — HymnMania Master Reconciliation
 
 ### Merged (hymnmania `master` → `main`)
@@ -1744,4 +1779,6 @@ All memory files, session logs, databases (catalog.db, hypernexus.db), AGENTS.md
 - **marketing_agent**: Forward-merged jules-chore-replace-mocks (+12)
 - **Reverse merges**: TurntUpToddler (3 branches), bobium (2 branches), openclaw-dashboard — synced main into 6 feature branches
 - **Root**: memory state sync, version bump
+
+
 
