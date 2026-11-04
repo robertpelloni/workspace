@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-echo Starting global build sequence (v5.286.15)...
+echo Starting global build sequence (v5.286.16)...
 cd /d "%~dp0"
 set "OK=0"
 set "FAIL=0"

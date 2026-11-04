@@ -1,3 +1,10 @@
+## [v5.286.16] — 2026-11-04 — Protocol #276: bobmani 8-Stale-Pin Repair
+
+### Fixed
+- bobmani 8 unpublished Protocol #261 pins re-pinned to published HEADs and pushed (a74aa12, cbdd442..8bcc0dc): Simply-Love-SM5 06a56f5, arrowvortex 608c412, bobmania 96b738a, ddc 68d26d9, ddc_onset f35cf13, ffr-difficulty-model 0574a00, ksm-v2 62a0723, leraine-studio db2b8ca (all destructive local-only bulk-deletion commits kept in backup/* branches)
+- itgmania empty checkout repaired at published pin dd066d29; beatoraja c3256c8a, hymnmania e569fa5c, linthesia 32033fb, pianogame 5bbb11a verified published, untouched
+- Unblocks Jules recursive clone of robertpelloni/bobmani (was failing on Simply-Love-SM5 a2096df not our ref)
+
 ## [v5.286.15] — 2026-11-03 — Protocol #275: 16 Missing Repos Added + Branch Reconciliation
 
 ### Added

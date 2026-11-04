@@ -1,3 +1,14 @@
+# HANDOFF — v5.286.16 — 2026-11-04 — Protocol #276: bobmani Stale-Pin Repair
+
+## Session — Protocol #276
+
+### bobmani repair (8 re-pins, pushed cbdd442..8bcc0dc)
+- Root cause: local-only Protocol #261 bulk-deletion commits (0 additions, thousands of deletions) never pushed; remote advertised different HEADs, so --recursive clones failed with not our ref
+- Verified each pin via ls-remote before touching; backup/* branch created in every submodule before reset
+- STRUCTURAL_MAP.md updated (bobmani + 9 nested rows, incl. itgmania now initialized)
+- Workspace pointer advanced to 8bcc0dc (commit 2181b0920, pushed)
+
+---
 # HANDOFF — v5.286.15 — 2026-11-03 — Protocol #275: 16 Missing Repos + Branch Reconciliation
 
 ## Session — Protocol #275
