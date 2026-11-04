@@ -1,15 +1,15 @@
 # STRUCTURAL MAP — Submodules
 
-Generated: 2026-10-31 (Protocol #271)
+Generated: 2026-11-03 (Protocol #275, incremental: 117-row base + 16 new)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script  |  https://github.com/robertpelloni/auto_dj_script  |  a47e1d387b6e |
-| fwber  |  https://github.com/robertpelloni/fwber.git  |  9885cd6a5262 |
+| fwber  |  https://github.com/robertpelloni/fwber.git  |  405057d88bf4 |
 | hymnmania  |  https://github.com/robertpelloni/hymnmania  |  cc236980a4a9 |
 | hypercode  |  N/A  |  not initialized |
-| jules-autopilot  |  https://github.com/robertpelloni/jules-autopilot  |  720fe5c3fb9a |
-| realestatecrm  |  https://github.com/robertpelloni/realestatecrm.git  |  d3e4faa351df |
+| jules-autopilot  |  https://github.com/robertpelloni/jules-autopilot  |  ff50ec75b293 |
+| realestatecrm  |  https://github.com/robertpelloni/realestatecrm.git  |  f63a35d21d8e |
 | skillzhub  |  https://github.com/robertpelloni/skillzhub  |  b6285f9fd5a3 |
 | hermes-agent  |  https://github.com/robertpelloni/hermes-agent  |  166ab639f437 |
 | multimousergy  |  https://github.com/robertpelloni/multimousergy.git  |  1adcf8ce8154 |
@@ -46,7 +46,7 @@ Generated: 2026-10-31 (Protocol #271)
 | dao  |  https://github.com/robertpelloni/dao.git  |  0a37ea590f42 |
 | electricsheep  |  https://github.com/robertpelloni/electricsheep.git  |  f045e2068598 |
 | element-web  |  https://github.com/robertpelloni/element-web.git  |  4fc0c4db781f |
-| marketing_agent  |  https://github.com/robertpelloni/marketing_agent.git  |  9483ae3fd352 |
+| marketing_agent  |  https://github.com/robertpelloni/marketing_agent.git  |  7404cf4863a4 |
 | f-zerox  |  https://github.com/robertpelloni/f-zerox  |  ceab8cf04d39 |
 | fcdm  |  https://github.com/robertpelloni/fcdm.git  |  a465e622831e |
 | aimoneymachine_site  |  https://github.com/robertpelloni/aimoneymachine_site.git  |  477b6fa536ae |
@@ -74,7 +74,7 @@ Generated: 2026-10-31 (Protocol #271)
 | tabby  |  https://github.com/robertpelloni/tabby  |  a890bc2c1af6 |
 | timidity  |  https://github.com/robertpelloni/timidity.git  |  f726f8f75b02 |
 | topaz-ffmpeg  |  https://github.com/TopazLabs/ffmpeg  |  8e7ad9f24321 |
-| HyperNexus  |  https://gitlab.com/robertpelloni/HyperNexus.git  |  02eef8db9390 |
+| HyperNexus  |  https://gitlab.com/robertpelloni/HyperNexus.git  |  82239c819bcf |
 | veilid_reddit_facebook  |  https://github.com/robertpelloni/veilid_reddit_facebook  |  735a1e77c128 |
 | warp  |  https://github.com/robertpelloni/warp.git  |  25d557224446 |
 | vst_monster  |  https://github.com/robertpelloni/vst_monster  |  8614d52fdb73 |
@@ -122,4 +122,23 @@ Generated: 2026-10-31 (Protocol #271)
 | gods-eye-view  |  https://github.com/robertpelloni/gods-eye-view  |  6bd00d808d94 |
 | ww3_game  |  https://github.com/robertpelloni/ww3_game.git  |  04fcc4a3103e |
 
-Total: 117 submodules.
+| succubus.red  |  https://github.com/robertpelloni/succubus.red.git  |  97a3dc6 |
+| bobble  |  https://github.com/robertpelloni/bobble.git  |  49936a3 |
+| newz  |  https://github.com/robertpelloni/newz.git  |  00cb6af |
+| explorerexedecompiled  |  https://github.com/robertpelloni/explorerexedecompiled.git  |  31a4794 |
+| autositcom  |  https://github.com/robertpelloni/autositcom.git  |  b34cc85 |
+| webapp_factory  |  https://github.com/robertpelloni/webapp_factory.git  |  36faf3f |
+| educational_video_pipeline  |  https://github.com/robertpelloni/educational_video_pipeline.git  |  55fd8f8 |
+| mparty  |  https://github.com/robertpelloni/mparty.git  |  e100af6 |
+| make_elon_laugh  |  https://github.com/robertpelloni/make_elon_laugh.git  |  2db2227 |
+| unitedbeats_site  |  https://github.com/robertpelloni/unitedbeats_site.git  |  5a5b7c4 |
+| sales_bot  |  https://github.com/robertpelloni/sales_bot.git  |  f52e142 |
+| borg  |  https://github.com/robertpelloni/borg.git  |  964a130 |
+| Folderum3-The-Last-Attempt  |  https://github.com/robertpelloni/Folderum3-The-Last-Attempt.git  |  2541eb1 |
+| CodeWhale-Extensions  |  https://github.com/robertpelloni/CodeWhale-Extensions.git  |  223d89d |
+| DataStreamBrowser  |  https://github.com/robertpelloni/DataStreamBrowser.git  |  70235cc |
+| ADSFileSystem  |  https://github.com/robertpelloni/ADSFileSystem.git  |  5ab73c6 |
+
+Total: 133 submodules.
+
+
