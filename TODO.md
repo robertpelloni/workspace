@@ -1,7 +1,17 @@
-# TODO — Omni-Workspace v5.286.15
+# TODO — Omni-Workspace v5.287.0
 
-**Current:** v5.286.15 • 133 submodules across workspace • 2026-11-03
+**Current:** v5.287.0 • 133 submodules across workspace • 2026-11-03
 
+
+### Protocol #277 Outcomes (2026-11-05)
+- 91 forward merges pushed across ~45 repos (bcs x5, pi-mono dashboard, succubus.red x4, new-repo Jules waves); 35+ defaults sync-merged with origin
+- [ ] freellm `temp-main` (+2/-253) — conflicts both strategies, dedicated session
+- [ ] slsk `jules-57044827041196387` (+7) + sync-conflict — dedicated session
+- [ ] veilid `jules-scaffold-0.1.0` Gold Master (+17/-84) — dedicated session
+- [ ] bobmani/itgmania `jules-12512815185672744343` (+30) — dedicated session
+- [ ] sales_bot `jules-project-sirens` (+40) — dedicated session
+- [ ] bobmani/hymnmania origin sync (+86 conflicts); bobmani sync-conflict; beatoraja checkout ambiguity
+- [ ] _fix repos push-rejected (bg_fix, bobfilez_fix, bobsgameonlinejava_fix) — local syncs retained, needs force-with-lease decision
 ### Protocol #273 Outcomes (2026-10-31)
 - Maintenance sync: 0 feature branches with unique commits, 0 failures
 - 2 dirty-state commits (jules-autopilot dev.db, hyperharness + hyperharness.exe); hyperharness push rejected (remote advanced) → merged via ort (their README) + pushed `aa02d45`

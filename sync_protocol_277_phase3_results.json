@@ -1,0 +1,235 @@
+[
+  {
+    "repo": "auto_dj_script",
+    "action": "synced-origin"
+  },
+  {
+    "repo": "auto_dj_script",
+    "action": "pushed",
+    "ahead": 2,
+    "detail": ""
+  },
+  {
+    "repo": "fwber",
+    "action": "sync-conflict",
+    "ahead": 20,
+    "behind": 5
+  },
+  {
+    "repo": "jules-autopilot",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 15
+  },
+  {
+    "repo": "realestatecrm",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 198
+  },
+  {
+    "repo": "Maestro",
+    "action": "dirty-committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "Maestro",
+    "action": "sync-conflict",
+    "ahead": 5,
+    "behind": 1
+  },
+  {
+    "repo": "MilkDrop3",
+    "action": "dirty-commit-fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bg",
+    "action": "dirty-commit-fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobbybookmarks",
+    "action": "synced-origin"
+  },
+  {
+    "repo": "bobbybookmarks",
+    "action": "pushed",
+    "ahead": 4,
+    "detail": ""
+  },
+  {
+    "repo": "bobfilez",
+    "action": "dirty-commit-fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobsgameonlinejava",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 2
+  },
+  {
+    "repo": "bobtorrent",
+    "action": "sync-conflict",
+    "ahead": 0,
+    "behind": 1
+  },
+  {
+    "repo": "bobtrader",
+    "action": "sync-conflict",
+    "ahead": 0,
+    "behind": 2
+  },
+  {
+    "repo": "electricsheep",
+    "action": "checkout-fail"
+  },
+  {
+    "repo": "marketing_agent",
+    "action": "dirty-committed",
+    "files": [
+      "internal/knowledge/telemetry_test.go",
+      "internal/web/handlers_test.go",
+      "internal/web/server.go",
+      "internal/web/web_test.go",
+      "scripts/outreach/outreach_followup.py",
+      "scripts/outreach/outreach_smtp.py"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "action": "pushed",
+    "ahead": 6,
+    "detail": ""
+  },
+  {
+    "repo": "freellm",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 2
+  },
+  {
+    "repo": "mk64",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 1
+  },
+  {
+    "repo": "neverball",
+    "action": "dirty-committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "neverball",
+    "action": "checkout-fail"
+  },
+  {
+    "repo": "onetool-mcp",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 1
+  },
+  {
+    "repo": "openclaw-dashboard",
+    "action": "synced-origin"
+  },
+  {
+    "repo": "openclaw-dashboard",
+    "action": "push-fail",
+    "ahead": 6,
+    "detail": "rmission to tugcantopaloglu/openclaw-dashboard.git denied to robertpelloni.\nfatal: unable to access 'https://github.com/tugcantopaloglu/openclaw-dashboard.git/': The requested URL returned error: 403\n"
+  },
+  {
+    "repo": "pi-mono",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 2
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 3
+  },
+  {
+    "repo": "bobmani",
+    "action": "sync-conflict",
+    "ahead": 0,
+    "behind": 14
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "action": "dirty-commit-fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bg_fix",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 2
+  },
+  {
+    "repo": "bobfilez_fix",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 7
+  },
+  {
+    "repo": "bobsgameonlinejava_fix",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 2
+  },
+  {
+    "repo": "bobmani/beatoraja",
+    "action": "checkout-fail"
+  },
+  {
+    "repo": "bobmani/ddc",
+    "action": "sync-conflict",
+    "ahead": 0,
+    "behind": 2
+  },
+  {
+    "repo": "bobmani/hymnmania",
+    "action": "sync-conflict",
+    "ahead": 0,
+    "behind": 86
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "action": "checkout-fail"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "action": "dirty-commit-fail",
+    "files": [
+      "kson/include/kson/common/common.hpp"
+    ]
+  },
+  {
+    "repo": "okgame",
+    "action": "sync-conflict",
+    "ahead": 1,
+    "behind": 2
+  }
+]

@@ -1,0 +1,9 @@
+# Disk space monitor for robertpelloni.com / hypernexus server
+# Replaced 2026-09-14: previous version had a broken awk field spec
+# (awk "{print \}" instead of $5) so it never fired, and it only used
+# "wall", which reaches nobody when no one is logged in.
+#
+# Thresholds and notification settings live in /etc/disk-alert.conf
+# Script: /usr/local/bin/disk-check.py | Log: /var/log/disk-alert.log
+MAILTO=""
+*/15 * * * * root /usr/bin/python3 /usr/local/bin/disk-check.py >/dev/null 2>&1

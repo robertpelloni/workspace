@@ -1,0 +1,6432 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HyperNexus — Corporate AI Control Plane</title>
+
+    <meta name="description" content="The corporate AI orchestration platform. Secure, compliant, scalable. Deploy anywhere. Control everything.">
+
+    <style>
+
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --glass-border: #e2e8f0;
+        --neon-blue: #0284c7;
+        --neon-purple: #1e3a8a; /* Deep Sapphire */
+        --neon-magenta: #0ea5e9;
+        --neon-cyan: #0369a1;
+        --neon-blue-glow: rgba(2, 132, 199, 0.05);
+        --neon-purple-glow: rgba(30, 58, 138, 0.03);
+        --text: #0f172a;
+        --text-secondary: #475569;
+        --text-dim: #64748b;
+        --primary: #0284c7;
+        --primary-glow: rgba(2, 132, 199, 0.08);
+        --shadow-card: inset 0 1px 0 #ffffff, 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(2, 132, 199, 0.03);
+        --shadow-card-hover: inset 0 1px 0 #ffffff, 0 10px 15px -3px rgba(2, 132, 199, 0.08), 0 4px 6px -4px rgba(2, 132, 199, 0.08), 0 0 0 1px rgba(2, 132, 199, 0.15);
+        --gradient-neon: linear-gradient(135deg, #0284c7 0%, #1e3a8a 50%, #0369a1 100%);
+      }
+
+      *{margin:0;padding:0;box-sizing:border-box}
+
+      html{scroll-behavior:smooth}
+
+      body{background:radial-gradient(circle at top, #ffffff 0%, #f1f5f9 100%), #f1f5f9;background-attachment:fixed;color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-y:auto;overflow-x:hidden}
+
+      ::selection{background:#0284c7;color:white}
+
+      /* Disable all neon wire animations and background gradient shifts */
+      body::after { display: none !important; }
+      .ambient { display: none !important; }
+
+      .container{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:10}
+
+      /* ── HEADER ── */
+
+      header{padding:14px 0;position:sticky;top:0;z-index:100;background:rgba(255, 255, 255, 0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(226, 232, 240, 0.8);box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.02)}
+
+      header::after{display:none}
+
+      .header-inner{display:flex;align-items:center;justify-content:space-between}
+
+      .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+
+      .logo-icon{width:36px;height:36px;background:linear-gradient(135deg, #0284c7, #1e3a8a);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:18px;box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 4px 10px rgba(2, 132, 199, 0.2);transition:all 0.25s;border:1px solid #0369a1}
+
+      .logo:hover .logo-icon{transform:scale(1.04);background:linear-gradient(135deg, #0369a1, #1e3a8a);box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 6px 12px rgba(2, 132, 199, 0.25)}
+
+      .logo-text{font-size:20px;font-weight:700;color:var(--text);letter-spacing:-0.5px}
+
+      .logo-text span{background:none;-webkit-text-fill-color:initial;color:#0284c7;background-clip:initial}
+
+      nav{display:flex;align-items:center;gap:28px}
+
+      nav a{color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:500;transition:all 0.2s;position:relative;padding:4px 0}
+
+      nav a::after{display:none}
+
+      nav a:hover{color:#0284c7}
+
+      .nav-cta{background:linear-gradient(180deg, #0284c7 0%, #0369a1 100%);color:white !important;padding:10px 20px;border-radius:6px;font-weight:600;transition:all 0.2s !important;box-shadow:inset 0 1px 0 rgba(255,255,255,0.2), 0 4px 10px rgba(2,132,199,0.1);border:1px solid #0284c7;position:relative;overflow:hidden}
+
+      .nav-cta::before{display:none}
+
+      .nav-cta:hover{background:linear-gradient(180deg, #0369a1 0%, #0284c7 100%);transform:translateY(-1px) !important;box-shadow:inset 0 1px 0 rgba(255,255,255,0.3), 0 6px 12px rgba(2, 132, 199, 0.2)}
+
+      /* ── HERO ── */
+
+      .hero{padding:20px 0 10px;text-align:center;position:relative}
+
+      .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 22px;background:rgba(255, 255, 255, 0.8);backdrop-filter:blur(10px);border:1px solid rgba(226, 232, 240, 0.8);border-radius:100px;font-size:13px;font-weight:600;color:#0284c7;margin-bottom:32px;animation:fadeInUp 0.8s ease-out;box-shadow:0 2px 8px rgba(0,0,0,0.02)}
+
+      .hero-badge .dot{width:6px;height:6px;background:#0284c7;border-radius:50%;animation:blink 1.5s infinite;box-shadow:0 0 10px rgba(2, 132, 199, 0.3)}
+
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+
+      .hero h1{font-size:clamp(44px,7vw,86px);font-weight:900;letter-spacing:-2.5px;line-height:1.03;margin-bottom:20px;animation:fadeInUp 0.8s ease-out 0.2s both;color:#0f172a}
+
+      .hero h1 .gradient-title{background:var(--gradient-neon);background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 2px 4px rgba(2, 132, 199, 0.1))}
+
+      .hero p{font-size:18px;color:var(--text-secondary);max-width:600px;margin:0 auto 40px;line-height:1.7;animation:fadeInUp 0.8s ease-out 0.4s both}
+
+      @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+      .hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeInUp 0.8s ease-out 0.6s both}
+
+      /* ── BUTTONS & GLOSSY SWEENS ── */
+
+      .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 36px;font-size:15px;font-weight:600;text-decoration:none;border-radius:8px;transition:all 0.25s;cursor:pointer;border:none;position:relative;overflow:hidden}
+
+      /* Glass Shine Sweep reflection effect on hover */
+      .btn::before, .price-btn::before, .price-card::before, .feature::before, .stat::before, .compliance-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+        transform: skewX(-30deg);
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      .btn:hover::before, .price-btn:hover::before, .price-card:hover::before, .feature:hover::before, .stat:hover::before, .compliance-item:hover::before {
+        left: 150%;
+        transition: left 0.75s ease-in-out;
+      }
+
+      .btn-primary{background:linear-gradient(180deg, #0284c7 0%, #0369a1 100%);color:white;box-shadow:inset 0 1px 0 rgba(255,255,255,0.25), 0 4px 12px rgba(2, 132, 199, 0.15);border:1px solid #0284c7}
+
+      .btn-primary:hover{transform:translateY(-2px);background:linear-gradient(180deg, #0369a1 0%, #0284c7 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.35), 0 6px 16px rgba(2, 132, 199, 0.25)}
+
+      .btn-secondary{background:#ffffff;color:var(--text);border:1px solid #cbd5e1;box-shadow:0 2px 4px rgba(0,0,0,0.02)}
+
+      .btn-secondary:hover{background:#f8fafc;border-color:#94a3b8;transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,0.04)}
+
+      /* ── LOGOS ── */
+
+      .logos{padding:60px 0;border-top:1px solid rgba(77,124,255,0.06);border-bottom:1px solid rgba(77,124,255,0.06)}
+
+      .logos-label{text-align:center;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--text-dim);margin-bottom:32px}
+
+      .logos-grid{display:flex;justify-content:center;gap:56px;flex-wrap:wrap}
+
+      .logo-item{font-size:16px;font-weight:800;background:var(--gradient-neon);background-size:300% 300%;animation:gradientShift 6s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0.25;transition:all 0.4s;cursor:default}
+
+      .logo-item:hover{opacity:0.9;transform:scale(1.1);letter-spacing:2px}
+
+      .logo-item:nth-child(2){animation-delay:0.8s}
+
+      .logo-item:nth-child(3){animation-delay:1.6s}
+
+      .logo-item:nth-child(4){animation-delay:2.4s}
+
+      .logo-item:nth-child(5){animation-delay:3.2s}
+
+      /* ── STATS ── */
+
+      .stats{padding:80px 0}
+
+      .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+
+      .stat{text-align:center;padding:40px 24px;background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;transition:all 0.3s;position:relative;box-shadow:var(--shadow-card);overflow:hidden}
+
+      .stat::after{display:none}
+
+      .stat:hover::after{display:none}
+
+      .stat:hover{background:#ffffff;border-color:#0284c7;transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+
+      .stat-num{font-size:44px;font-weight:900;color:#0284c7;margin-bottom:6px;letter-spacing:-1px;position:relative;z-index:1}
+
+      .stat-label{font-size:14px;color:var(--text-secondary);font-weight:500;position:relative;z-index:1}
+
+      /* ── FEATURES ── */
+
+      .features{padding:80px 0}
+
+      .section-header{text-align:center;margin-bottom:64px}
+
+      .section-header .label{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#0284c7;margin-bottom:12px}
+
+      .section-header h2{font-size:38px;font-weight:800;letter-spacing:-0.5px;margin-bottom:12px;display:inline-block;position:relative}
+
+      .section-header h2::after{content:'';position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:#0284c7;border-radius:3px}
+
+      .section-header p{font-size:16px;color:var(--text-secondary);max-width:500px;margin:0 auto}
+
+      .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+
+      .feature{background:#ffffff;padding:40px 28px;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;position:relative;overflow:hidden;box-shadow:var(--shadow-card);will-change:transform}
+
+      .feature::after{display:none}
+
+      .feature:hover::after{display:none}
+
+      .feature:hover{background:#ffffff;border-color:#0284c7;transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+
+      .feature-icon{width:52px;height:52px;background:#f0f9ff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:20px;border:1px solid #e0f2fe;transition:all 0.2s;position:relative;z-index:1}
+
+      .feature:hover .feature-icon{background:#e0f2fe;border-color:#bae6fd;transform:scale(1.05)}
+
+      .feature h3{font-size:18px;font-weight:700;margin-bottom:10px;position:relative;z-index:1}
+
+      .feature p{font-size:14px;color:var(--text-secondary);line-height:1.7;position:relative;z-index:1}
+
+      /* ── COMPLIANCE ── */
+
+      .compliance{padding:80px 0}
+
+      .compliance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+
+      .compliance-item{text-align:center;padding:40px 24px;border:1px solid #e2e8f0;border-radius:12px;background:#ffffff;transition:all 0.3s;position:relative;overflow:hidden;box-shadow:var(--shadow-card)}
+
+      .compliance-item::before{display:none}
+
+      .compliance-item:hover::before{display:none}
+
+      .compliance-item:hover{background:#ffffff;border-color:#0284c7;transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+
+      .compliance-icon{font-size:34px;margin-bottom:12px;display:block;transition:all 0.2s;position:relative;z-index:1}
+
+      .compliance-item:hover .compliance-icon{transform:scale(1.1)}
+
+      .compliance-item h4{font-size:15px;font-weight:700;margin-bottom:6px;position:relative;z-index:1}
+
+      .compliance-item p{font-size:13px;color:var(--text-secondary);position:relative;z-index:1}
+
+      /* ── PRICING ── */
+
+      .pricing{padding:100px 0}
+
+      .pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:800px;margin:0 auto}
+
+      .price-card{background:#ffffff;padding:44px 32px;border-radius:12px;border:1px solid #e2e8f0;position:relative;transition:all 0.3s;overflow:visible;box-shadow:var(--shadow-card)}
+
+      .price-card:hover{background:#ffffff;border-color:#0284c7;transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+
+      .price-card.featured{border-color:#0284c7;box-shadow:var(--shadow-card)}
+
+      .price-card.featured .price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#0284c7;color:white;padding:4px 16px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;z-index:2}
+
+      .price-tier{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#0284c7;margin-bottom:16px;position:relative;z-index:1}
+
+      .price-amount{font-size:48px;font-weight:900;margin-bottom:6px;letter-spacing:-2px;position:relative;z-index:1;color:var(--text)}
+
+      .price-amount .period{font-size:14px;font-weight:500;color:var(--text-secondary);letter-spacing:0}
+
+      .price-desc{font-size:14px;color:var(--text-secondary);margin-bottom:28px;line-height:1.6;position:relative;z-index:1}
+
+      .price-features{list-style:none;margin-bottom:28px;position:relative;z-index:1}
+
+      .price-features li{padding:8px 0;font-size:14px;display:flex;align-items:center;gap:10px;color:var(--text-secondary);transition:all 0.2s}
+
+      .price-features li:hover{color:var(--text)}
+
+      .price-features li::before{content:"\2713";color:#0284c7;font-weight:700}
+
+      .price-btn{display:block;width:100%;padding:14px;text-align:center;border-radius:8px;font-size:15px;font-weight:600;text-decoration:none;transition:all 0.2s;position:relative;overflow:hidden}
+
+      .price-btn::before{display:none}
+
+      .price-btn-primary{background:#0284c7;color:white}
+
+      .price-btn-primary:hover{background:#0369a1;transform:translateY(-1px)}
+
+      .price-btn-secondary{background:#ffffff;color:var(--text);border:1px solid #cbd5e1}
+
+      .price-btn-secondary:hover{background:#f8fafc;border-color:#94a3b8}
+
+      /* ── CTA ── */
+
+      .cta{padding:80px 0;text-align:center;background:#f1f5f9;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;position:relative;overflow:hidden}
+
+      .cta::before{display:none}
+
+      .cta h2{font-size:36px;font-weight:800;margin-bottom:12px;letter-spacing:-0.5px;position:relative}
+
+      .cta p{font-size:16px;color:var(--text-secondary);margin-bottom:32px;max-width:450px;margin-left:auto;margin-right:auto;position:relative}
+
+      .btn-white{background:#0284c7;color:white;padding:16px 44px;font-size:15px;font-weight:700;border-radius:8px;text-decoration:none;display:inline-block;transition:all 0.2s}
+
+      .btn-white::before{display:none}
+
+      .btn-white:hover{background:#0369a1;transform:translateY(-2px)}
+
+      /* ── MODAL ── */
+
+      .modal-overlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 23, 42, 0.7);
+        backdrop-filter: blur(4px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+      .modal-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .modal-content {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+        position: relative;
+      }
+      .modal-overlay.active .modal-content {
+        transform: translateY(0);
+      }
+      .modal-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--text-secondary);
+      }
+      .modal-content h3 {
+        margin-bottom: 8px;
+        font-size: 24px;
+        color: var(--text);
+      }
+      .modal-content p {
+        font-size: 14px;
+        color: var(--text-secondary);
+        margin-bottom: 24px;
+      }
+      .form-group {
+        margin-bottom: 16px;
+      }
+      .form-group label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--text);
+      }
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      .form-group input:focus {
+        outline: none;
+        border-color: #0284c7;
+        box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
+      }
+      #modal-form-submit {
+        margin-top: 8px;
+      }
+
+      /* ── FOOTER ── */
+
+      footer{padding:60px 0 40px;border-top:1px solid #e2e8f0;background:#ffffff}
+
+      .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+
+      .footer-brand p{font-size:14px;color:var(--text-secondary);margin-top:16px;line-height:1.7}
+
+      .footer-col h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text);margin-bottom:20px;position:relative;display:inline-block}
+
+      .footer-col h4::after{content:'';position:absolute;bottom:-4px;left:0;width:24px;height:2px;background:#0284c7;border-radius:2px}
+
+      .footer-col a{display:block;font-size:14px;color:var(--text-secondary);text-decoration:none;padding:5px 0;transition:all 0.2s}
+
+      .footer-col a:hover{color:#0284c7}
+
+      .footer-bottom{padding-top:32px;border-top:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center}
+
+      .footer-bottom p{font-size:13px;color:var(--text-dim)}
+
+      .footer-bottom a{color:var(--text-secondary);text-decoration:none;transition:all 0.2s}
+
+      .footer-bottom a:hover{color:#0284c7}
+
+      .self-host-note{text-align:center;margin-top:32px;padding:20px 24px;border:1px solid #e2e8f0;border-radius:8px;background:#f8fafc;font-size:13px;color:var(--text-secondary);letter-spacing:0.3px;line-height:1.6}
+
+      .self-host-note a{color:#0284c7;text-decoration:none;font-weight:600;border-bottom:1px dashed #0284c7;padding-bottom:2px;transition:all 0.2s}
+
+      .self-host-note a:hover{color:#0369a1}
+
+      @media (max-width: 768px){nav{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}.features-grid{grid-template-columns:1fr}.compliance-grid{grid-template-columns:repeat(2,1fr)}.pricing-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+
+      #particle-canvas{display:none}</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="ambient ambient-1"></div>
+
+    <div class="ambient ambient-2"></div>
+
+    <div class="ambient ambient-3"></div>
+
+    <header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container header-inner">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <a href="/" class="logo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-icon">H</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-text">Hyper<span>Nexus</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#features">Platform</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#compliance">Security</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#pricing">Pricing</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="https://github.com/NexusSoftMDMA/TormentNexus" target="_blank">Docs</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="/contact.php" class="nav-cta">Request Demo →</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="hero">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="hero-badge"><span class="dot"></span> SOC 2 Type II Certified · HIPAA Ready · GDPR Compliant</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h1>Corporate AI Orchestration<br><span class="gradient-title">Built for Scale</span></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <p>The secure, compliant AI control plane that gives your organization complete visibility and governance over multi-model workflows. Deploy anywhere. Control everything.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="hero-buttons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="/contact.php" class="btn btn-primary">Schedule a Demo →</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="hero-videos" style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="https://notebooklm.google.com/notebook/0a540934-3f43-4c52-91e0-ebc622071409/artifact/12652b93-e2f0-4b35-bc6a-31c2c8fa51f0?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_" target="_blank" class="btn btn-secondary" style="font-size:13px;padding:10px 22px">▶ HyperNexus: Ultimate Agent</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="hypernexus-hero-vid" style="margin-top:20px;max-width:750px;margin-left:auto;margin-right:auto;border-radius:12px;overflow:hidden;border:1px solid rgba(77,124,255,0.2);box-shadow:0 0 30px rgba(77,124,255,0.1);background:#0a0e1a">
+
+          <video controls style="width:100%;display:block" preload="auto" playsinline>
+
+            <source src="/hypernexus_ultimate_agent.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="logos">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="logos-label">Trusted by forward-thinking companies</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="logos-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-item">Fortune 500</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-item">Global Tech</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-item">FinServ Inc</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-item">HealthCorp</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-item">GovSecure</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="stats">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="stats-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num" data-target="11000">0</div><div class="stat-label">Tool Integrations</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num" data-target="9999">0</div><div class="stat-label">Uptime SLA (%)</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num">&lt;26ms</div><div class="stat-label">Avg Latency</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num">SOC 2</div><div class="stat-label">Certified</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="features" class="features">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="label">Platform</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2>Everything your AI stack needs</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>High-value capabilities built for developers and corporate oversight teams alike.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Developer Focus Section -->
+            <h3 style="text-align:left; font-size:20px; font-weight:700; margin-bottom:20px; color:#0f172a; border-bottom:1px solid #cbd5e1; padding-bottom:8px; letter-spacing:-0.3px">Developer Focus</h3>
+            <div class="features-grid" style="margin-bottom:60px">
+
+                <div class="feature"><div class="feature-icon">⚡</div><h3>Progressive Tool Routing</h3><p>Optimise context windows with semantic tool selection, injecting only the top 3 relevant schemas per prompt to prevent token bloat.</p></div>
+
+                <div class="feature"><div class="feature-icon">🌊</div><h3>Resilient Model Cascading</h3><p>Ensure uninterrupted coding by automatically routing around rate limits (429s/5xx) down a waterfall chain to local Ollama backups.</p></div>
+
+                <div class="feature"><div class="feature-icon">🩹</div><h3>Autonomous Self-Healing</h3><p>Fixes runtime and syntax errors automatically using an isolated Diagnose-Fix-Verify feedback loop inside secure test execution runners.</p></div>
+
+                <div class="feature"><div class="feature-icon">🧠</div><h3>Dual-Tier Vector Memory</h3><p>Persist development context across sessions. Leverages L1 session scratchpads and L2 permanent SQLite vector databases with automatic harvesting.</p></div>
+
+                <div class="feature"><div class="feature-icon">🕸️</div><h3>Collaborative Swarm Mesh</h3><p>Coordinate specialized subagents (Planner, Implementer, Tester, Critic) inside secure workspaces using type-safe A2A message routing.</p></div>
+
+                <div class="feature"><div class="feature-icon">🔗</div><h3>Universal Harness Parity</h3><p>Avoid vendor lock-in. Maintain byte-for-byte identical tool signatures across Claude Code, Cursor, Aider, Windsurf, and Copilot environments.</p></div>
+
+            </div>
+
+            <!-- Corporate Focus Section -->
+            <h3 style="text-align:left; font-size:20px; font-weight:700; margin-bottom:20px; color:#0f172a; border-bottom:1px solid #cbd5e1; padding-bottom:8px; letter-spacing:-0.3px">Corporate Focus</h3>
+             <div class="features-grid">
+
+                <div class="feature"><div class="feature-icon">🔐</div><h3>SSO & Access Control</h3><p>Integrate existing identity systems in minutes using secure SAML 2.0 and OIDC configurations with granular RBAC.</p></div>
+
+                <div class="feature"><div class="feature-icon">📊</div><h3>Immutable Compliance Audits</h3><p>Maintain export-ready logs tracking all model calls, data reads, and tool execution states for SOC 2, HIPAA, and GDPR audit runs.</p></div>
+
+                <div class="feature"><div class="feature-icon">🏢</div><h3>VPC & Air-Gapped Runs</h3><p>Keep proprietary codebase assets behind your perimeter. Run entirely offline with cryptographically signed licensing validation.</p></div>
+
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="compliance" class="compliance">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="label">Security & Compliance</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2>Corporate-grade by design</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>Built from the ground up to meet the most stringent regulatory requirements.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="compliance-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">🔒</div><h4>SOC 2 Type II</h4><p>Independently audited security controls</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">🏥</div><h4>HIPAA Ready</h4><p>BAA available for healthcare organizations</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">🇪🇺</div><h4>GDPR Compliant</h4><p>Data processing agreements and EU hosting</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">📋</div><h4>SBOM Included</h4><p>Complete software bill of materials</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="pricing" class="pricing">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="label">Pricing</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2>Plans that scale with you</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>Start with a proof of concept. Scale to corporate-wide deployment.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="pricing-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="price-card featured">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="price-badge">Most Popular</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="price-tier">Professional</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="price-amount">$1.99 <span class="period">/ seat / mo</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="price-desc">For growing teams that need governance and compliance.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <ul class="price-features">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <li>Unlimited seats</li><li>SSO & RBAC</li><li>Audit logging</li><li>Priority support</li><li>Cloud or self-hosted</li><li>Usage analytics</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a href="/contact.php" class="price-btn price-btn-primary">Start Free Trial</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="price-card">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="price-tier">Corporate</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="price-amount">Custom</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="price-desc">For organizations with advanced security and compliance needs.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <ul class="price-features">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <li>Everything in Professional</li><li>Air-gapped deployment</li><li>Dedicated support SLA</li><li>Custom integrations</li><li>IP indemnification</li><li>On-site training</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a href="/contact.php" class="price-btn price-btn-secondary">Contact Sales</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="self-host-note">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                For personal use, individual developers, non-commercial, or self-hosted deployments &rarr; <a href="https://tormentnexus.site" target="_blank">TormentNexus.site</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="contact" class="cta">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h2>Ready to secure your AI stack?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <p>Join the companies that trust HyperNexus to orchestrate their AI workflows.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <a href="/contact.php" class="btn-white">Request a Demo →</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="cta" style="border-top:1px solid var(--glass-border);padding:60px 0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="label">Video Dossier</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2>AI-Generated Intelligence Briefings</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>Deep-dive video overviews covering the TormentNexus ecosystem, generated by AI from 182 source documents each.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="https://notebooklm.google.com/notebook/0a540934-3f43-4c52-91e0-ebc622071409/artifact/12652b93-e2f0-4b35-bc6a-31c2c8fa51f0?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_" target="_blank" class="btn btn-primary" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:24px 16px;border-radius:12px;text-decoration:none;font-size:14px;line-height:1.4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <span style="font-size:28px">▶</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <strong>HyperNexus:<br>Ultimate Agent</strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <span style="font-size:12px;opacity:0.7">182 sources</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="hypernexus-dossier-vid" style="margin-top:25px;max-width:750px;margin-left:auto;margin-right:auto;border-radius:12px;overflow:hidden;border:1px solid rgba(77,124,255,0.2);box-shadow:0 0 30px rgba(77,124,255,0.1);background:#0a0e1a">
+
+          <video controls style="width:100%;display:block" preload="auto" playsinline>
+
+            <source src="/hypernexus_ultimate_agent.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-brand">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="logo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="logo-icon" style="width:32px;height:32px;font-size:16px">H</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="logo-text" style="font-size:18px">Hyper<span>Nexus</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <p>Corporate AI orchestration platform. Secure, compliant, and built for scale.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-col"><h4>Product</h4><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="https://github.com/NexusSoftMDMA/TormentNexus">Documentation</a><a href="https://github.com/robertpelloni/marketing_agent/blob/main/CHANGELOG.md">Changelog</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-col"><h4>Company</h4><a href="https://tormentnexus.site">About</a><a href="https://tormentnexus.site/blog/">Blog</a><a href="/contact.php">Careers</a><a href="/contact.php">Contact</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a><a href="/privacy.html#security">Security</a><a href="/contact.php">DPA</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer-bottom">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>© 2026 HyperNexus, Inc. All rights reserved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p><a href="https://tormentnexus.site">Powered by TormentNexus</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== SLEEK MINIMAL PARTICLE SYSTEM ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const canvas = document.getElementById('particle-canvas');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const ctx = canvas.getContext('2d');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let W, H;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        resize();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        window.addEventListener('resize', resize);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const particles = [];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const PARTICLE_COUNT = 5; // Reduced from 80 to 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class Particle {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            constructor() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.reset();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.alpha = Math.random();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.alphaDir = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            reset() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.x = Math.random() * W;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.y = Math.random() * H;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.size = 2 + Math.random() * 3; // Bigger particles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.speedX = (Math.random() - 0.5) * 0.2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.speedY = (Math.random() - 0.5) * 0.2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.opacity = 0.3 + Math.random() * 0.4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.hue = 220 + Math.random() * 40;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.pulse = Math.random() * Math.PI * 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            update() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.x += this.speedX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.y += this.speedY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.pulse += 0.015;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                if (this.x < -20 || this.x > W + 20 || this.y < -20 || this.y > H + 20) this.reset();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.alpha += 0.008 * this.alphaDir;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                if(this.alpha > 1 || this.alpha < 0) this.alphaDir *= -1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.opacity = 0.15 + this.alpha * 0.4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            draw() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var pulseFactor = 0.7 + Math.sin(this.pulse) * 0.3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var r = this.size * pulseFactor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.save();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Outer glow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, r * 4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                grad.addColorStop(0, 'hsla(' + this.hue + ', 80%, 70%, ' + (this.opacity * 0.3) + ')');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                grad.addColorStop(0.5, 'hsla(' + this.hue + ', 80%, 60%, ' + (this.opacity * 0.08) + ')');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                grad.addColorStop(1, 'hsla(' + this.hue + ', 80%, 60%, 0)');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fillStyle = grad;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.arc(this.x, this.y, r * 4, 0, Math.PI * 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fill();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.shadowColor = 'hsla(' + this.hue + ', 80%, 70%, 0.3)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.shadowBlur = 15;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fillStyle = 'hsla(' + this.hue + ', 80%, 70%, ' + this.opacity + ')';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.arc(this.x, this.y, r, 0, Math.PI * 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fill();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Bright center dot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.shadowBlur = 20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fillStyle = 'hsla(' + this.hue + ', 90%, 90%, ' + (this.opacity * 0.6) + ')';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.arc(this.x, this.y, r * 0.4, 0, Math.PI * 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fill();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.restore();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function drawConnections() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            for (let i = 0; i < particles.length; i++) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                for (let j = i + 1; j < particles.length; j++) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dx = particles[i].x - particles[j].x;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dy = particles[i].y - particles[j].y;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    if (dist < 180) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        const alpha = 0.06 * (1 - dist / 180) * (particles[i].opacity + particles[j].opacity) * 0.5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        // Glow line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.save();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.shadowColor = 'hsla(220, 80%, 60%, 0.08)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.shadowBlur = 6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.strokeStyle = 'hsla(220, 80%, 60%, ' + alpha + ')';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.lineWidth = 0.6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.moveTo(particles[i].x, particles[i].y);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.lineTo(particles[j].x, particles[j].y);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.stroke();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.restore();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Mouse-reactive particles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let mouseX = -9999, mouseY = -9999;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        canvas.addEventListener('mousemove', function(e) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            mouseX = e.clientX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            mouseY = e.clientY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function animate() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ctx.clearRect(0, 0, W, H);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            particles.forEach(p => { p.update(); p.draw(); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            drawConnections();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Mouse ripple
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if (mouseX > 0) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                particles.forEach(p => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dx = p.x - mouseX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dy = p.y - mouseY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    if (dist < 250) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        const force = (1 - dist / 250) * 0.12;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        p.speedX += (dx / dist) * force || 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        p.speedY += (dy / dist) * force || 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            requestAnimationFrame(animate);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        animate();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== ANIMATED COUNTERS ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function animateCounters() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            document.querySelectorAll('.stat-num[data-target]').forEach(el => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                const target = parseInt(el.dataset.target);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                let current = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                const increment = Math.ceil(target / 80);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                const interval = setInterval(() => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    current += increment;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    if (current >= target) { current = target; clearInterval(interval); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    if (target === 9999) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        el.textContent = (current / 100).toFixed(2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    } else {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        el.textContent = current.toLocaleString() + '+';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }, 20);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        setTimeout(animateCounters, 600);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== 3D TILT WITH SHINE FOLLOW ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.querySelectorAll('.feature, .stat, .price-card, .compliance-item').forEach(function(card) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            card.addEventListener('mousemove', function(e) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var r = card.getBoundingClientRect();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var x = e.clientX - r.left, y = e.clientY - r.top;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var cx = r.width / 2, cy = r.height / 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var rotX = (y - cy) / cy * -10, rotY = (x - cx) / cx * 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var shinePos = (x / r.width) * 100 + '% ' + (y / r.height) * 100 + '%';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                card.style.transform = 'perspective(1200px) rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg) translateY(-10px) scale(1.04)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                card.style.transition = 'transform 0.05s';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                card.style.setProperty('--shine', shinePos);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                card.style.background = 'radial-gradient(circle at ' + shinePos + ', rgba(255,255,255,0.025), transparent 60%), var(--glass)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            card.addEventListener('mouseleave', function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                card.style.transform = '';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                card.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                card.style.background = '';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== SCROLL REVEAL ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var observer = new IntersectionObserver(function(entries) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            entries.forEach(function(e) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                if (e.isIntersecting) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    e.target.style.opacity = '1';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    e.target.style.transform = 'translateY(0)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    e.target.style.transition = 'opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.querySelectorAll('.feature, .stat, .compliance-item, .price-card, .section-header').forEach(function(el) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            el.style.opacity = '0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            el.style.transform = 'translateY(40px)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            el.style.transition = 'opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            observer.observe(el);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== SMOOTH PARALLAX ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        window.addEventListener('scroll', function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            var scrollY = window.scrollY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            var hero = document.querySelector('.hero');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if (hero && scrollY < 800) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                hero.style.transform = 'translateY(' + (scrollY * 0.03) + 'px)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                hero.style.opacity = Math.max(0.35, 1 - scrollY * 0.0012);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-overlay" id="leadModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <h3>Request Access</h3>
+        <p>Enter your company domain to join the waitlist.</p>
+        <form id="leadForm">
+          <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" placeholder="Acme Corp" required>
+          </div>
+          <div class="form-group">
+            <label for="companyDomain">Company Domain</label>
+            <input type="text" id="companyDomain" placeholder="acme.com" required>
+          </div>
+          <button type="submit" class="btn btn-primary" id="modal-form-submit" style="width: 100%; justify-content: center;">Submit Request</button>
+          <div id="formStatus" style="margin-top: 12px; font-size: 13px; text-align: center; display: none;"></div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openModal(e) {
+        if(e) e.preventDefault();
+        document.getElementById('leadModal').classList.add('active');
+        document.getElementById('formStatus').style.display = 'none';
+      }
+
+      function closeModal() {
+        document.getElementById('leadModal').classList.remove('active');
+      }
+
+      // Dynamically fetch quote pricing for Professional tier
+      fetch('/api/v1/quote?company_size=Mid-Market')
+        .then(res => res.json())
+        .then(data => {
+          if (data && data.quote) {
+            const priceCards = document.querySelectorAll('.price-tier');
+            priceCards.forEach(tier => {
+              if (tier.textContent === 'Professional') {
+                const amountEl = tier.nextElementSibling; // div.price-amount
+                if (amountEl && amountEl.classList.contains('price-amount')) {
+                  amountEl.innerHTML = `$` + Math.round(data.quote / 12) + ` <span class="period">/ mo</span>`;
+                }
+              }
+            });
+          }
+        })
+        .catch(err => console.error('Failed to load real-time pricing:', err));
+
+      // Wire up all demo/contact buttons to open the modal
+      document.querySelectorAll('a[href="/contact.php"]').forEach(el => {
+        el.addEventListener('click', openModal);
+      });
+
+      document.getElementById('leadForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('modal-form-submit');
+        const status = document.getElementById('formStatus');
+        const name = document.getElementById('companyName').value;
+        const domain = document.getElementById('companyDomain').value;
+
+        btn.disabled = true;
+        btn.textContent = 'Submitting...';
+
+        fetch('http://localhost:8080/api/v1/leads', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: name,
+            domain: domain,
+            tech_stack: [],
+            hiring_signals: ["Inbound Web Request"]
+          })
+        })
+        .then(res => {
+          if(!res.ok) throw new Error('Network error');
+          return res.json();
+        })
+        .then(data => {
+          btn.textContent = 'Submitted!';
+          btn.style.background = '#28a745';
+          status.style.display = 'block';
+          status.style.color = '#28a745';
+          status.textContent = 'Thank you! We will evaluate your request shortly.';
+          setTimeout(closeModal, 2000);
+        })
+        .catch(err => {
+          btn.disabled = false;
+          btn.textContent = 'Submit Request';
+          status.style.display = 'block';
+          status.style.color = '#dc3545';
+          status.textContent = 'Error submitting request. Please try again.';
+          console.error(err);
+        });
+      });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

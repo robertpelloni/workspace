@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download HyperNexus — Universal AI Control Plane</title>
+    <meta name="description" content="Download HyperNexus for Windows, macOS, and Linux. One command connects all your AI tools with persistent memory.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #22c55e, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            color: #a1a1aa;
+            font-size: 1.125rem;
+        }
+        /* OS Detection Banner */
+        .os-banner {
+            background: linear-gradient(135deg, #22c55e20, #3b82f620);
+            border: 1px solid #22c55e40;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .os-banner h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .os-banner .detected-os {
+            color: #22c55e;
+            font-weight: 600;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #22c55e;
+            color: #000;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            margin: 1rem 0;
+        }
+        .download-btn:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+        .download-btn .icon {
+            margin-right: 0.5rem;
+        }
+        /* Terminal Commands */
+        .terminal-section {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .terminal-section h3 {
+            margin-bottom: 1rem;
+            color: #a1a1aa;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .terminal-block {
+            background: #09090b;
+            border: 1px solid #27272a;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .terminal-block code {
+            font-family: 'Fira Code', 'Cascadia Code', monospace;
+            font-size: 0.875rem;
+            color: #22c55e;
+        }
+        .terminal-block .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            color: #a1a1aa;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+        .terminal-block .copy-btn:hover {
+            background: #3f3f46;
+            color: #e4e4e7;
+        }
+        /* Download Table */
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #18181b;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .download-table th,
+        .download-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #27272a;
+        }
+        .download-table th {
+            background: #27272a;
+            font-weight: 600;
+            color: #a1a1aa;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .download-table a {
+            color: #22c55e;
+            text-decoration: none;
+        }
+        .download-table a:hover {
+            text-decoration: underline;
+        }
+        .download-table .size {
+            color: #71717a;
+            font-size: 0.875rem;
+        }
+        /* Security Warning */
+        .security-warning {
+            background: #27272a;
+            border-left: 3px solid #f59e0b;
+            border-radius: 0 8px 8px 0;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        .security-warning h4 {
+            color: #f59e0b;
+            margin-bottom: 0.5rem;
+        }
+        .security-warning p {
+            color: #a1a1aa;
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+        .security-warning code {
+            background: #18181b;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        /* Features Preview */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .feature .icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .feature h4 {
+            margin-bottom: 0.25rem;
+        }
+        .feature p {
+            color: #a1a1aa;
+            font-size: 0.875rem;
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #27272a;
+            color: #71717a;
+            font-size: 0.875rem;
+        }
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Download HyperNexus</h1>
+            <p>One command. Every AI tool. Persistent memory.</p>
+        </div>
+
+        <!-- OS Auto-Detection Banner -->
+        <div class="os-banner" id="osBanner">
+            <h2>Download for <span class="detected-os" id="detectedOS">Your Platform</span></h2>
+            <p style="color: #a1a1aa; margin-bottom: 1rem;">Detected from your browser</p>
+            <a href="#" class="download-btn" id="primaryDownload">
+                <span class="icon">⬇️</span> Download HyperNexus
+            </a>
+            <p style="color: #71717a; font-size: 0.875rem; margin-top: 0.5rem;">
+                v1.0.0 • <span id="downloadSize">~35 MB</span>
+            </p>
+        </div>
+
+        <!-- Terminal Commands -->
+        <div class="terminal-section">
+            <h3>Or install via terminal</h3>
+            
+            <div class="terminal-block">
+                <button class="copy-btn" onclick="copyCommand('macLinuxCmd')">Copy</button>
+                <code id="macLinuxCmd">curl -fsSL https://hypernexus.site/install.sh | bash</code>
+            </div>
+            
+            <div class="terminal-block">
+                <button class="copy-btn" onclick="copyCommand('windowsCmd')">Copy</button>
+                <code id="windowsCmd">irm https://hypernexus.site/install.ps1 | iex</code>
+            </div>
+        </div>
+
+        <!-- Security Warning -->
+        <div class="security-warning">
+            <h4>⚠️ First-time install notes</h4>
+            <p><strong>Windows:</strong> If Windows Defender SmartScreen appears, click "More Info" → "Run Anyway"</p>
+            <p><strong>macOS:</strong> If blocked by Gatekeeper, run: <code>xattr -d com.apple.quarantine hypernexus</code></p>
+        </div>
+
+        <!-- Features Preview -->
+        <div class="features">
+            <div class="feature">
+                <div class="icon">🧠</div>
+                <h4>Persistent Memory</h4>
+                <p>Your AI tools remember everything across sessions</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🔧</div>
+                <h4>20,000+ MCP Tools</h4>
+                <p>Progressive routing reduces token usage by 95%</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🔄</div>
+                <h4>Cross-Tool Sync</h4>
+                <p>Context follows you from Cursor to Claude to Codex</p>
+            </div>
+            <div class="feature">
+                <div class="icon">💰</div>
+                <h4>$50/year</h4>
+                <p>Less than Cursor or Copilot. Lifetime local license.</p>
+            </div>
+        </div>
+
+        <!-- Direct Download Table -->
+        <h3 style="margin-bottom: 1rem; color: #a1a1aa;">All Downloads</h3>
+        <table class="download-table">
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Architecture</th>
+                    <th>File</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Windows</td>
+                    <td>x86_64</td>
+                    <td>Installer (.exe)</td>
+                    <td><a href="https://releases.hypernexus.site/v1.0.0/hypernexus-windows-amd64.exe">hypernexus-windows-amd64.exe</a> <span class="size">(36 MB)</span></td>
+                </tr>
+                <tr>
+                    <td>macOS</td>
+                    <td>Apple Silicon (arm64)</td>
+                    <td>Binary</td>
+                    <td><a href="https://releases.hypernexus.site/v1.0.0/hypernexus-darwin-arm64">hypernexus-darwin-arm64</a> <span class="size">(34 MB)</span></td>
+                </tr>
+                <tr>
+                    <td>macOS</td>
+                    <td>Intel (x86_64)</td>
+                    <td>Binary</td>
+                    <td><a href="https://releases.hypernexus.site/v1.0.0/hypernexus-darwin-amd64">hypernexus-darwin-amd64</a> <span class="size">(36 MB)</span></td>
+                </tr>
+                <tr>
+                    <td>Linux</td>
+                    <td>x86_64</td>
+                    <td>Binary</td>
+                    <td><a href="https://releases.hypernexus.site/v1.0.0/hypernexus-linux-amd64">hypernexus-linux-amd64</a> <span class="size">(35 MB)</span></td>
+                </tr>
+                <tr>
+                    <td>Linux</td>
+                    <td>ARM64</td>
+                    <td>Binary</td>
+                    <td><a href="https://releases.hypernexus.site/v1.0.0/hypernexus-linux-arm64">hypernexus-linux-arm64</a> <span class="size">(33 MB)</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p>By downloading, you agree to our <a href="/terms">Terms</a> and <a href="/privacy">Privacy Policy</a></p>
+            <p style="margin-top: 0.5rem;">
+                <a href="/docs">Documentation</a> · <a href="https://discord.gg/Hj9P3GbVxR">Discord</a> · <a href="https://github.com/HyperNexusLLC/HyperNexus">GitHub</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // OS Detection
+        function detectOS() {
+            const ua = navigator.userAgent;
+            const platform = navigator.platform;
+            
+            if (ua.includes('Windows') || platform.includes('Win')) {
+                return 'windows';
+            } else if (ua.includes('Mac') || platform.includes('Mac')) {
+                // Check for Apple Silicon
+                if (ua.includes('ARM') || navigator.hardwareConcurrency > 8) {
+                    return 'macos-arm';
+                }
+                return 'macos-intel';
+            } else if (ua.includes('Linux') || platform.includes('Linux')) {
+                // Check for ARM
+                if (ua.includes('aarch64') || ua.includes('arm64')) {
+                    return 'linux-arm';
+                }
+                return 'linux-x64';
+            }
+            return 'unknown';
+        }
+
+        // Set OS-specific content
+        const os = detectOS();
+        const osNames = {
+            'windows': 'Windows',
+            'macos-arm': 'macOS (Apple Silicon)',
+            'macos-intel': 'macOS (Intel)',
+            'linux-x64': 'Linux (x86_64)',
+            'linux-arm': 'Linux (ARM64)',
+            'unknown': 'Your Platform'
+        };
+
+        const downloadUrls = {
+            'windows': 'https://releases.hypernexus.site/v1.0.0/hypernexus-windows-amd64.exe',
+            'macos-arm': 'https://releases.hypernexus.site/v1.0.0/hypernexus-darwin-arm64',
+            'macos-intel': 'https://releases.hypernexus.site/v1.0.0/hypernexus-darwin-amd64',
+            'linux-x64': 'https://releases.hypernexus.site/v1.0.0/hypernexus-linux-amd64',
+            'linux-arm': 'https://releases.hypernexus.site/v1.0.0/hypernexus-linux-arm64'
+        };
+
+        const downloadSizes = {
+            'windows': '36 MB',
+            'macos-arm': '34 MB',
+            'macos-intel': '36 MB',
+            'linux-x64': '35 MB',
+            'linux-arm': '33 MB'
+        };
+
+        const downloadIcons = {
+            'windows': '🪟',
+            'macos-arm': '🍎',
+            'macos-intel': '🍎',
+            'linux-x64': '🐧',
+            'linux-arm': '🐧'
+        };
+
+        // Update UI
+        document.getElementById('detectedOS').textContent = osNames[os] || 'Your Platform';
+        document.getElementById('downloadSize').textContent = downloadSizes[os] || '~35 MB';
+        
+        const primaryBtn = document.getElementById('primaryDownload');
+        if (downloadUrls[os]) {
+            primaryBtn.href = downloadUrls[os];
+            // Clear existing content
+            while (primaryBtn.firstChild) primaryBtn.removeChild(primaryBtn.firstChild);
+            // Add icon span
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'icon';
+            iconSpan.textContent = downloadIcons[os] || '⬇️';
+            primaryBtn.appendChild(iconSpan);
+            // Add text
+            primaryBtn.appendChild(document.createTextNode(` Download for ${osNames[os]}`));
+        }
+
+        // Copy command
+        function copyCommand(id) {
+            const text = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(text);
+            
+            const btn = event.target;
+            btn.textContent = 'Copied!';
+            setTimeout(() => btn.textContent = 'Copy', 2000);
+        }
+
+        // Track download click
+        primaryBtn.addEventListener('click', async () => {
+            try {
+                await fetch('/api/v1/telemetry/first_run', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        deviceId: 'download-page-' + Date.now(),
+                        platform: os,
+                        version: 'v1.0.0',
+                        timestamp: new Date().toISOString()
+                    })
+                });
+            } catch (e) {
+                // Non-critical
+            }
+        });
+    </script>
+</body>
+</html>

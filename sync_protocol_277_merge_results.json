@@ -1,0 +1,1090 @@
+[
+  {
+    "repo": "auto_dj_script",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "fwber",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 81 behind origin"
+  },
+  {
+    "repo": "jules-autopilot",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 15 behind origin"
+  },
+  {
+    "repo": "realestatecrm",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 198 behind origin"
+  },
+  {
+    "repo": "skillzhub",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "hermes-agent",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "ArrowVortex",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local release: 0 ahead / 4 behind origin"
+  },
+  {
+    "repo": "JWildfire",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "MarbleBlast",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "MilkDrop3",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "ableton_psytrance_hymn_creator",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "ai_game_engine",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bg",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local master: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobbybookmarks",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobcoin",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobfilez",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 7 behind origin"
+  },
+  {
+    "repo": "bobium",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobsaver",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobsgameonlinejava",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 4 behind origin"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "FF",
+    "action": "ff-fail",
+    "ff": "local master: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobtrader",
+    "phase": "FF",
+    "action": "ff-fail",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobtrax",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bqt",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 3 behind origin"
+  },
+  {
+    "repo": "bobzilla",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobzzite",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "crowdsourced_dance_club",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "dao",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "f-zerox",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "aimoneymachine_site",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "hyperharness",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 4 behind origin"
+  },
+  {
+    "repo": "freellm",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "mk64",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local master: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "native-fy",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "onetool-mcp",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "psytrance_night_outreach_agent",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 3 behind origin"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "xrnet",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobmani",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 14 behind origin"
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bg_fix",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local master: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobfilez_fix",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 7 behind origin"
+  },
+  {
+    "repo": "bobsaver_fix",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobsgameonlinejava_fix",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/arrowvortex",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local release: 0 ahead / 4 behind origin"
+  },
+  {
+    "repo": "bobmani/bobmania",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/ddc",
+    "phase": "FF",
+    "action": "ff-fail",
+    "ff": "local master: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/ddc_onset",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/ffr-difficulty-model",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/hymnmania",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local master: 0 ahead / 86 behind origin"
+  },
+  {
+    "repo": "bobmani/leraine-studio",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/linthesia",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/pianogame",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 44 behind origin"
+  },
+  {
+    "repo": "bobsgameonline",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "libjruntime",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "jvm-cpp-runtime",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 8 behind origin"
+  },
+  {
+    "repo": "okgame",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "explorerexedecompiled",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 22 behind origin"
+  },
+  {
+    "repo": "unitedbeats_site",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "fwber",
+    "phase": "MERGE",
+    "branch": "origin/jules-10314857368856784967-6dd32a46",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "fwber",
+    "phase": "MERGE",
+    "branch": "origin/jules-16977656443855205703-93141c90",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "skillzhub",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-63f9813d79",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "multimousergy",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "bobbybookmarks",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/go_modules/backend/go_modules-5dc7f209c2",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobcoin",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/supertorrent/npm_and_yarn-573c91500e",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "bobcoin",
+    "phase": "MERGE",
+    "branch": "origin/jules-1709637530501540288-e8a5a039",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "bobium",
+    "phase": "MERGE",
+    "branch": "origin/jules-1202050764085936330-47f6d7fb",
+    "action": "merged+pushed",
+    "cherry_plus": 9,
+    "detail": ""
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-2c585e131a",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-418f2b8baa",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE",
+    "branch": "origin/jules-15152994296719336092-bf36e2cb",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "MERGE",
+    "branch": "fix-wasm-build-and-lattice-10556890247683923816",
+    "action": "conflict-aborted",
+    "cherry_plus": 1,
+    "behind": 9
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "conflict-aborted",
+    "cherry_plus": 1,
+    "behind": 9
+  },
+  {
+    "repo": "bobtrax",
+    "phase": "MERGE",
+    "branch": "origin/bobtrax-omni-dashboard-v1.0.18-12527709832240548796",
+    "action": "merged+pushed",
+    "cherry_plus": 8,
+    "detail": ""
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/uv/util/wasm/bobuiwasmserver/uv-4ee2c2337b",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE",
+    "branch": "origin/jules-885412765636779725-8505c877",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobzilla",
+    "phase": "MERGE",
+    "branch": "origin/jules-17008129538408180149-a69a953f",
+    "action": "merged+pushed",
+    "cherry_plus": 6,
+    "detail": ""
+  },
+  {
+    "repo": "bobzzite",
+    "phase": "MERGE",
+    "branch": "origin/jules-7085680721290284559-50f69569",
+    "action": "merged+pushed",
+    "cherry_plus": 19,
+    "detail": ""
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE",
+    "branch": "jules-10936672596023099293-b3d8ae3d",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE",
+    "branch": "jules-bcs-port",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283-13794587466097602758",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "crowdsourced_dance_club",
+    "phase": "MERGE",
+    "branch": "origin/jules-v3.5.0-unified-dashboard-system-tray-5792003287601159920",
+    "action": "merged+pushed",
+    "cherry_plus": 7,
+    "detail": ""
+  },
+  {
+    "repo": "dao",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-567da7ee86",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "fcdm",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "fcdm",
+    "phase": "MERGE",
+    "branch": "origin/jules-9983641314289768934-948d1cd3",
+    "action": "merged+pushed",
+    "cherry_plus": 6,
+    "detail": ""
+  },
+  {
+    "repo": "hyperharness",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/go_modules/go_modules-74d16eabcd",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE",
+    "branch": "temp-main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "native-fy",
+    "phase": "MERGE",
+    "branch": "origin/jules-14229561386908893093-c00f4da6",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "openclaw-dashboard",
+    "phase": "MERGE",
+    "branch": "add-dockerfile",
+    "action": "merged-push-fail",
+    "cherry_plus": 3,
+    "detail": "rmission to tugcantopaloglu/openclaw-dashboard.git denied to robertpelloni.\nfatal: unable to access 'https://github.com/tugcantopaloglu/openclaw-dashboard.git/': The requested URL returned error: 403\n"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "MERGE",
+    "branch": "origin/robertpelloni-phase-20-9492881022554947468",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "MERGE",
+    "branch": "origin/feat/dashboard-consolidation-and-system-tray-15304076502127754935",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/pip/pip-295b8e3527",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE",
+    "branch": "origin/feat-dashboard-ui-tooltips-v9.1.0-1263687878424888147",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "psytrance_night_outreach_agent",
+    "phase": "MERGE",
+    "branch": "origin/jules-17639512437334612056-885a7d9b",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "MERGE",
+    "branch": "origin/jules-mmo-features-9604862245014919785-7370784885254616881",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "MERGE",
+    "branch": "origin/feature/consolidated-dashboard-and-server-tray-v1.17-16848237908804950718",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE",
+    "branch": "origin/jules-14329411782159669901-cbf6b1cb",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE",
+    "branch": "origin/jules-16182655854796579706-5da02c01",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE",
+    "branch": "origin/jules-11529260254792556504-8d38890e",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-df3b79f84b",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE",
+    "branch": "origin/jules-tauri-v2-migration-17094978728525831753",
+    "action": "conflict-aborted",
+    "cherry_plus": 1,
+    "behind": 40
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE",
+    "branch": "origin/jules-tauri-v2-sidecar-pipeline-2887319380514012639",
+    "action": "merged+pushed",
+    "cherry_plus": 2,
+    "detail": ""
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted",
+    "cherry_plus": 17,
+    "behind": 84,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "vst_monster",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "merged+pushed",
+    "cherry_plus": 2,
+    "detail": ""
+  },
+  {
+    "repo": "vst_monster",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/registry/npm_and_yarn-049d63b98d",
+    "action": "merged+pushed",
+    "cherry_plus": 3,
+    "detail": ""
+  },
+  {
+    "repo": "vst_monster",
+    "phase": "MERGE",
+    "branch": "origin/jules-vst-monster-dashboard-overhaul-0.2.0-1527371743825490864",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "vst_monster",
+    "phase": "MERGE",
+    "branch": "origin/vst-monster-dashboard-v0.2.2-17471248922835068382",
+    "action": "conflict-aborted",
+    "cherry_plus": 8,
+    "behind": 0
+  },
+  {
+    "repo": "xrnet",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/cargo/backend/cargo-40bd753b41",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "xrnet",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/frontend/npm_and_yarn-cf06c8aca1",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "xrnet",
+    "phase": "MERGE",
+    "branch": "origin/jules-18056260933869023888-d0f77957",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/beatoraja",
+    "phase": "MERGE",
+    "branch": "jules-17656952767861670374-69adc199",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/beatoraja",
+    "phase": "MERGE",
+    "branch": "jules-3962252154118760376-7a465b48",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/beatoraja",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/bobmania",
+    "phase": "MERGE",
+    "branch": "origin/jules-17912975226662906424-6de3f8d8",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE",
+    "branch": "jules-14567467811770799398-9073d7db",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "MERGE",
+    "branch": "origin/feat-async-post-ranking-unlock-7547845477294015222",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "MERGE",
+    "branch": "origin/sdvx-ex-score-ars-14261630776373257917",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bobmani/leraine-studio",
+    "phase": "MERGE",
+    "branch": "origin/jules-208712761241480082-5e6fb3e2",
+    "action": "merged+pushed",
+    "cherry_plus": 4,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/pianogame",
+    "phase": "MERGE",
+    "branch": "origin/jules-7923437021684046164-a5f90854",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE",
+    "branch": "origin/feat-async-post-ranking-unlock-7547845477294015222",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE",
+    "branch": "sdvx-ex-score-ars-14261630776373257917",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE",
+    "branch": "main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "bob_and_lum_sitcom",
+    "phase": "MERGE",
+    "branch": "origin/jules-12770174946235540910-6ac5fcac",
+    "action": "merged+pushed",
+    "cherry_plus": 4,
+    "detail": ""
+  },
+  {
+    "repo": "gods-eye-view",
+    "phase": "MERGE",
+    "branch": "origin/jules-sovereign-governance-v0.2.0-368247989745874146",
+    "action": "merged+pushed",
+    "cherry_plus": 3,
+    "detail": ""
+  },
+  {
+    "repo": "ww3_game",
+    "phase": "MERGE",
+    "branch": "origin/jules-ww3-v0.2.0-console-stealth-tray-7170280376813147888",
+    "action": "merged+pushed",
+    "cherry_plus": 4,
+    "detail": ""
+  },
+  {
+    "repo": "ww3_game",
+    "phase": "MERGE",
+    "branch": "origin/jules-ww3-v0.3.2-command-center-tray-cleanup-5866779385412196809",
+    "action": "conflict-aborted",
+    "cherry_plus": 7,
+    "behind": 0
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE",
+    "branch": "origin/jules-working-branch-14379441795123645795",
+    "action": "merged+pushed",
+    "cherry_plus": 2,
+    "detail": ""
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE",
+    "branch": "origin/jules-1228751708724889681-341e0325",
+    "action": "conflict-aborted",
+    "cherry_plus": 3,
+    "behind": 0
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
+    "action": "conflict-aborted",
+    "cherry_plus": 5,
+    "behind": 0
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE",
+    "branch": "origin/jules-1566629906621855064-aba00be1",
+    "action": "conflict-aborted",
+    "cherry_plus": 14,
+    "behind": 1,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "bobble",
+    "phase": "MERGE",
+    "branch": "origin/dependabot/npm_and_yarn/omnicore-ui/ui/npm_and_yarn-4bb469df06",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "bobble",
+    "phase": "MERGE",
+    "branch": "origin/jules-11301324765694309973-a802fcfe",
+    "action": "merged+pushed",
+    "cherry_plus": 10,
+    "detail": ""
+  },
+  {
+    "repo": "newz",
+    "phase": "MERGE",
+    "branch": "origin/omnifeed-scaffolding-v1-12010847412342953271",
+    "action": "merged+pushed",
+    "cherry_plus": 4,
+    "detail": ""
+  },
+  {
+    "repo": "newz",
+    "phase": "MERGE",
+    "branch": "origin/omnifeed-unified-dashboard-v0-2-0-6192871868108129425",
+    "action": "conflict-aborted",
+    "cherry_plus": 7,
+    "behind": 0
+  },
+  {
+    "repo": "explorerexedecompiled",
+    "phase": "MERGE",
+    "branch": "origin/jules-17953985424687139578-97e0278c",
+    "action": "merged+pushed",
+    "cherry_plus": 3,
+    "detail": ""
+  },
+  {
+    "repo": "autositcom",
+    "phase": "MERGE",
+    "branch": "origin/task-1-config-schemas-5640157944374514955",
+    "action": "merged+pushed",
+    "cherry_plus": 7,
+    "detail": ""
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE",
+    "branch": "origin/feat-phase3-html-generator-15078070406737928861",
+    "action": "conflict-aborted",
+    "cherry_plus": 1,
+    "behind": 1
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE",
+    "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
+    "action": "merged+pushed",
+    "cherry_plus": 2,
+    "detail": ""
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE",
+    "branch": "origin/jules-autonomous-utility-factory-15727112982623760124",
+    "action": "conflict-aborted",
+    "cherry_plus": 41,
+    "behind": 1,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "educational_video_pipeline",
+    "phase": "MERGE",
+    "branch": "origin/feat/unified-dashboard-tray-manager-0.4.0-7731780132859260669",
+    "action": "merged+pushed",
+    "cherry_plus": 4,
+    "detail": ""
+  },
+  {
+    "repo": "educational_video_pipeline",
+    "phase": "MERGE",
+    "branch": "origin/feat/automated-video-pipeline-5420906501011390029",
+    "action": "conflict-aborted",
+    "cherry_plus": 67,
+    "behind": 1,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE",
+    "branch": "origin/jules-15689288545271426252-5ef46452",
+    "action": "merged+pushed",
+    "cherry_plus": 4,
+    "detail": ""
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE",
+    "branch": "origin/jules-3776172491299359700-6e4f3989",
+    "action": "conflict-aborted",
+    "cherry_plus": 30,
+    "behind": 3,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE",
+    "branch": "origin/feature/ai-pipeline-infrastructure-10039428997882654970",
+    "action": "conflict-aborted",
+    "cherry_plus": 58,
+    "behind": 1,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE",
+    "branch": "origin/jules-8067423937083367268-08d72221",
+    "action": "merged+pushed",
+    "cherry_plus": 8,
+    "detail": ""
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE",
+    "branch": "origin/emperor-musk-bot-1918957439548629996",
+    "action": "conflict-aborted",
+    "cherry_plus": 46,
+    "behind": 1,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "unitedbeats_site",
+    "phase": "MERGE",
+    "branch": "origin/consolidated-dashboard-system-tray-2047344066934679060",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE",
+    "branch": "origin/jules-10535575989870826411-555f6b7b",
+    "action": "conflict-aborted",
+    "cherry_plus": 2,
+    "behind": 1
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE",
+    "branch": "origin/jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted",
+    "cherry_plus": 50,
+    "behind": 1,
+    "reverse": "reverse-conflict-aborted"
+  }
+]

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HyperNexus — Account</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", -apple-system, sans-serif;
+        background: #0a0e1a;
+        color: #e2e8f0;
+        min-height: 100vh;
+      }
+      .header {
+        background: rgba(15, 23, 42, 0.95);
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        font-size: 20px;
+        font-weight: 800;
+        color: #38bdf8;
+      }
+      .nav a {
+        color: #94a3b8;
+        text-decoration: none;
+        margin-left: 24px;
+        font-size: 14px;
+        transition: color 0.2s;
+      }
+      .nav a:hover {
+        color: #38bdf8;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 24px;
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 8px;
+      }
+      .subtitle {
+        color: #64748b;
+        font-size: 15px;
+        margin-bottom: 32px;
+      }
+      .card {
+        background: rgba(30, 41, 59, 0.6);
+        border: 1px solid rgba(148, 163, 184, 0.1);
+        border-radius: 12px;
+        padding: 28px;
+        margin-bottom: 20px;
+      }
+      .card h2 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #38bdf8;
+      }
+      .card p {
+        color: #94a3b8;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(180deg, #0284c7, #0369a1);
+        color: #fff;
+        padding: 14px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        border: none;
+        cursor: pointer;
+      }
+      .download-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(2, 132, 199, 0.3);
+      }
+      .download-btn .icon {
+        font-size: 20px;
+      }
+      .install-cmd {
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 8px;
+        padding: 14px 18px;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 14px;
+        color: #38bdf8;
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .copy-btn {
+        background: rgba(56, 189, 248, 0.15);
+        border: 1px solid rgba(56, 189, 248, 0.3);
+        color: #38bdf8;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+      .copy-btn:hover {
+        background: rgba(56, 189, 248, 0.25);
+      }
+      .platform-tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+      .tab {
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        background: transparent;
+        color: #94a3b8;
+        transition: all 0.2s;
+      }
+      .tab.active {
+        background: rgba(56, 189, 248, 0.15);
+        border-color: #38bdf8;
+        color: #38bdf8;
+      }
+      .status-badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 9999px;
+        font-size: 12px;
+        font-weight: 600;
+        background: rgba(34, 197, 94, 0.15);
+        color: #22c55e;
+        border: 1px solid rgba(34, 197, 94, 0.3);
+      }
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 16px;
+      }
+      .info-item {
+        font-size: 14px;
+      }
+      .info-item .label {
+        color: #64748b;
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+      .info-item .value {
+        color: #e2e8f0;
+        font-weight: 600;
+      }
+      @media (max-width: 640px) {
+        .info-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">HyperNexus</div>
+      <div class="nav">
+        <a href="https://hypernexus.site">Home</a>
+        <a href="https://cloud.hypernexus.site">Cloud</a>
+        <a href="https://hypernexus.site/pricing.html">Pricing</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Account Dashboard</h1>
+      <p class="subtitle">Manage your HyperNexus installation and subscription</p>
+
+      <!-- Download Section -->
+      <div class="card">
+        <h2>⬇️ Download HyperNexus</h2>
+        <p>Install HyperNexus on your machine. One command sets up MCP for 36+ AI tools.</p>
+
+        <div class="platform-tabs">
+          <div class="tab active" onclick="showPlatform('windows')">Windows</div>
+          <div class="tab" onclick="showPlatform('macos')">macOS</div>
+          <div class="tab" onclick="showPlatform('linux')">Linux</div>
+        </div>
+
+        <div id="windows">
+          <a href="https://releases.hypernexus.site/v1.0.0/hypernexus.exe" class="download-btn" download>
+            <span class="icon">🪟</span>
+            Download for Windows
+          </a>
+          <div class="install-cmd">
+            <span>npx @hypernexus/install@latest</span>
+            <button class="copy-btn" onclick="copyCmd(this, 'npx @hypernexus/install@latest')">Copy</button>
+          </div>
+        </div>
+
+        <div id="macos" style="display:none">
+          <div class="install-cmd">
+            <span>curl -sSL https://releases.hypernexus.site/install.sh | bash</span>
+            <button class="copy-btn" onclick="copyCmd(this, 'curl -sSL https://releases.hypernexus.site/install.sh | bash')">Copy</button>
+          </div>
+        </div>
+
+        <div id="linux" style="display:none">
+          <div class="install-cmd">
+            <span>curl -sSL https://releases.hypernexus.site/install.sh | bash</span>
+            <button class="copy-btn" onclick="copyCmd(this, 'curl -sSL https://releases.hypernexus.site/install.sh | bash')">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscription Section -->
+      <div class="card">
+        <h2>💳 Subscription</h2>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+          <span style="font-weight:600">Professional Plan</span>
+          <span class="status-badge">Active</span>
+        </div>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="label">Plan</div>
+            <div class="value">Professional — $1.99/mo</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Includes</div>
+            <div class="value">Local license + Cloud hosting</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Cloud API</div>
+            <div class="value">cloud.hypernexus.site</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Status</div>
+            <div class="value" style="color:#22c55e">All systems operational</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Start Section -->
+      <div class="card">
+        <h2>🚀 Quick Start</h2>
+        <p>Get up and running in under a minute:</p>
+        <div style="margin-top:16px">
+          <div class="install-cmd" style="margin-bottom:8px">
+            <span>1. Download & run the installer</span>
+          </div>
+          <div class="install-cmd" style="margin-bottom:8px">
+            <span>2. Restart your AI tools</span>
+          </div>
+          <div class="install-cmd">
+            <span>3. Your AI now has persistent memory!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Links Section -->
+      <div class="card">
+        <h2>🔗 Resources</h2>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:8px">
+          <a href="https://cloud.hypernexus.site" style="color:#38bdf8;text-decoration:none;font-size:14px">→ Cloud Dashboard</a>
+          <a href="https://hypernexus.site/pricing.html" style="color:#38bdf8;text-decoration:none;font-size:14px">→ Pricing & Plans</a>
+          <a href="https://github.com/robertpelloni/HyperNexus" style="color:#38bdf8;text-decoration:none;font-size:14px">→ GitHub Repository</a>
+          <a href="https://gitlab.com/hypernexus-org/HyperNexus" style="color:#38bdf8;text-decoration:none;font-size:14px">→ GitLab Repository</a>
+          <a href="https://www.producthunt.com/products/hypernexus?launch=hypernexus" style="color:#38bdf8;text-decoration:none;font-size:14px">→ Product Hunt</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPlatform(platform) {
+        document.getElementById('windows').style.display = platform === 'windows' ? 'block' : 'none';
+        document.getElementById('macos').style.display = platform === 'macos' ? 'block' : 'none';
+        document.getElementById('linux').style.display = platform === 'linux' ? 'block' : 'none';
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        event.target.classList.add('active');
+      }
+
+      function copyCmd(btn, text) {
+        navigator.clipboard.writeText(text).then(() => {
+          btn.textContent = 'Copied!';
+          setTimeout(() => btn.textContent = 'Copy', 2000);
+        });
+      }
+    </script>
+  </body>
+</html>

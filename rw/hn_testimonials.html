@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperNexus Testimonials — What Developers Say</title>
+    <meta name="description" content="See what developers are saying about HyperNexus - the universal AI control plane with persistent memory.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #22c55e, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            color: #a1a1aa;
+            font-size: 1.125rem;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .testimonial {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #e4e4e7;
+        }
+        .testimonial-text::before {
+            content: '"';
+            font-size: 2rem;
+            color: #22c55e;
+            line-height: 0;
+            vertical-align: -0.5rem;
+            margin-right: 0.25rem;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #22c55e, #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        .author-info {
+            flex: 1;
+        }
+        .author-name {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        .author-role {
+            color: #71717a;
+            font-size: 0.75rem;
+        }
+        .stars {
+            color: #f59e0b;
+            margin-bottom: 0.5rem;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .stat {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #22c55e;
+        }
+        .stat-label {
+            color: #a1a1aa;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #22c55e;
+            color: #000;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn:hover {
+            background: #16a34a;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← Back to Home</a>
+        
+        <div class="hero">
+            <h1>What Developers Say</h1>
+            <p>Trusted by AI engineering teams worldwide</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">95%</div>
+                <div class="stat-label">Token Reduction</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">36+</div>
+                <div class="stat-label">AI Clients Supported</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">14,250+</div>
+                <div class="stat-label">MCP Tools Available</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">$19.99/yr</div>
+                <div class="stat-label">Starting Price</div>
+            </div>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">HyperNexus eliminated our tool context bloat. We went from 50K tokens of tool definitions to under 5K with progressive routing. Our agents are actually useful now.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SE</div>
+                    <div class="author-info">
+                        <div class="author-name">Senior Engineer</div>
+                        <div class="author-role">Series B Startup</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">The LLM waterfall is a game-changer. When OpenAI rate-limited us, we seamlessly fell back to local Ollama. Zero downtime during our busiest sprint.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">DL</div>
+                    <div class="author-info">
+                        <div class="author-name">DevOps Lead</div>
+                        <div class="author-role">Fortune 500 Company</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">Finally, a system that gives our agents real memory. The L2 vault with semantic search means our team never loses context between sessions.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">CT</div>
+                    <div class="author-info">
+                        <div class="author-name">CTO</div>
+                        <div class="author-role">AI-First Agency</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">We run 47 MCP servers. Without progressive routing, our agents were drowning in tool schemas. HyperNexus cut our context waste by 80% overnight.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LE</div>
+                    <div class="author-info">
+                        <div class="author-name">Lead Engineer</div>
+                        <div class="author-role">Series B AI Startup</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">Reduced our agent execution latency by 40% simply by offloading tool context management. The ROI was immediate.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LA</div>
+                    <div class="author-info">
+                        <div class="author-name">Lead AI Architect</div>
+                        <div class="author-role">Enterprise SaaS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">We evaluated LangChain, CrewAI, and AutoGPT. HyperNexus was the only one with real multi-agent consensus and persistent memory that survives restarts.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">CT</div>
+                    <div class="author-info">
+                        <div class="author-name">CTO</div>
+                        <div class="author-role">AI Infrastructure Company</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <p style="color: #a1a1aa; margin-bottom: 1rem;">Ready to upgrade your AI workflow?</p>
+            <a href="/get-started" class="btn">Get Started — $19.99/year</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperNexus Changelog</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #22c55e, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            color: #a1a1aa;
+        }
+        .release {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .release-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .release h2 {
+            font-size: 1.5rem;
+        }
+        .release-date {
+            color: #71717a;
+            font-size: 0.875rem;
+        }
+        .release-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .tag-latest { background: #22c55e20; color: #22c55e; }
+        .tag-stable { background: #3b82f620; color: #3b82f6; }
+        .changes {
+            margin-top: 1rem;
+        }
+        .change-type {
+            margin-bottom: 1rem;
+        }
+        .change-type h3 {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        .change-type h3.feat { color: #22c55e; }
+        .change-type h3.fix { color: #ef4444; }
+        .change-type h3.perf { color: #f59e0b; }
+        .change-type h3.docs { color: #3b82f6; }
+        .change-list {
+            list-style: none;
+            padding: 0;
+        }
+        .change-list li {
+            padding: 0.25rem 0;
+            color: #a1a1aa;
+        }
+        .change-list li::before {
+            content: "•";
+            margin-right: 0.5rem;
+            color: #71717a;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← Back to Home</a>
+        
+        <div class="hero">
+            <h1>Changelog</h1>
+            <p>What's new in HyperNexus</p>
+        </div>
+
+        <!-- v1.0.1 -->
+        <div class="release">
+            <div class="release-header">
+                <h2>v1.0.1</h2>
+                <div>
+                    <span class="release-tag tag-latest">Latest</span>
+                    <span class="release-date">August 21, 2026</span>
+                </div>
+            </div>
+            <div class="changes">
+                <div class="change-type">
+                    <h3 class="feat">Features</h3>
+                    <ul class="change-list">
+                        <li>Universal AI client installer (36+ clients)</li>
+                        <li>Auto-detection of installed IDEs and tools</li>
+                        <li>OS-specific download page with auto-detection</li>
+                        <li>First-run telemetry and analytics</li>
+                        <li>License management system</li>
+                        <li>Cloud memory sync API</li>
+                        <li>Subscription management (Stripe)</li>
+                        <li>Account dashboard</li>
+                        <li>DeepSeek Harness integration (Cordis plugin)</li>
+                        <li>Grok Build integration (MCP + native skill)</li>
+                        <li>GitHub Action for CI/CD</li>
+                        <li>API documentation page</li>
+                        <li>Comparison page (vs Cursor, Copilot, Codeium)</li>
+                        <li>Watchdog service for Linux servers</li>
+                    </ul>
+                </div>
+                <div class="change-type">
+                    <h3 class="fix">Fixes</h3>
+                    <ul class="change-list">
+                        <li>Fixed TormentNexus dashboard branding</li>
+                        <li>Fixed nginx proxy configuration</li>
+                        <li>Fixed Claude Desktop MCP config format</li>
+                        <li>Fixed install script version detection</li>
+                        <li>Fixed telemetry API routing</li>
+                    </ul>
+                </div>
+                <div class="change-type">
+                    <h3 class="perf">Performance</h3>
+                    <ul class="change-list">
+                        <li>95% token reduction via progressive tool routing</li>
+                        <li>Optimized download page load time</li>
+                        <li>Reduced installer size</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- v1.0.0 -->
+        <div class="release">
+            <div class="release-header">
+                <h2>v1.0.0</h2>
+                <div>
+                    <span class="release-tag tag-stable">Stable</span>
+                    <span class="release-date">July 20, 2026</span>
+                </div>
+            </div>
+            <div class="changes">
+                <div class="change-type">
+                    <h3 class="feat">Initial Release</h3>
+                    <ul class="change-list">
+                        <li>Go-based MCP server with progressive tool routing</li>
+                        <li>SQLite-vec local vector memory</li>
+                        <li>LLM waterfall failover (OpenAI → OpenRouter → Ollama)</li>
+                        <li>Multi-agent swarm orchestration</li>
+                        <li>Next.js dashboard</li>
+                        <li>Claude Desktop integration</li>
+                        <li>Cursor integration</li>
+                        <li>VS Code extension (HyperNexus)</li>
+                        <li>Windows installer (PowerShell)</li>
+                        <li>Linux/macOS installer (Bash)</li>
+                        <li>Stripe billing integration</li>
+                        <li>Marketing agent with autonomous outreach</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

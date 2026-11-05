@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperNexus - Get Started</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 480px;
+            width: 100%;
+            padding: 2rem;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .logo h1 {
+            font-size: 2rem;
+            background: linear-gradient(135deg, #22c55e, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #a1a1aa;
+            margin-bottom: 1.5rem;
+        }
+        .price {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .price .amount {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #22c55e;
+        }
+        .price .period {
+            color: #a1a1aa;
+        }
+        .price .original {
+            text-decoration: line-through;
+            color: #71717a;
+            margin-left: 0.5rem;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: #22c55e;
+            color: #000;
+        }
+        .btn-primary:hover {
+            background: #16a34a;
+        }
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid #3f3f46;
+            color: #e4e4e7;
+            margin-top: 0.75rem;
+        }
+        .btn-secondary:hover {
+            background: #27272a;
+        }
+        .divider {
+            text-align: center;
+            margin: 1.5rem 0;
+            color: #71717a;
+        }
+        .features {
+            margin-top: 1.5rem;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+        }
+        .feature .check {
+            color: #22c55e;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #71717a;
+            font-size: 0.875rem;
+        }
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>HyperNexus</h1>
+            <p>Universal AI Control Plane</p>
+        </div>
+
+        <div class="card">
+            <h2>Get Started</h2>
+            <p>Choose your plan to unlock persistent memory and MCP tool routing for all your AI tools.</p>
+
+            <div class="price">
+                <span class="amount">$19.99</span>
+                <span class="period">/year</span>
+                <span class="original">$100</span>
+            </div>
+
+            <a href="/auth/register" class="btn btn-primary">Create Account</a>
+            <a href="/auth/login" class="btn btn-secondary">Sign In</a>
+
+            <div class="divider">or</div>
+
+            <a href="/checkout.html" class="btn btn-secondary">Buy as Guest ($19.99/yr)</a>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Persistent memory across all AI tools</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>14,250+ MCP servers</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Works with 38+ AI agents</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Lifetime local license</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>1 year cloud hosting included</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>30-day money-back guarantee</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>By purchasing, you agree to our <a href="/terms">Terms</a> and <a href="/privacy">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>

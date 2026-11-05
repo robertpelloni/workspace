@@ -1,0 +1,5602 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HyperNexus — Corporate AI Control Plane</title>
+
+    <meta name="description" content="The corporate AI orchestration platform. Secure, compliant, scalable. Deploy anywhere. Control everything.">
+
+    <style>
+
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --glass-border: #e2e8f0;
+        --neon-blue: #0284c7;
+        --neon-purple: #1e3a8a; /* Deep Sapphire */
+        --neon-magenta: #0ea5e9;
+        --neon-cyan: #0369a1;
+        --neon-blue-glow: rgba(2, 132, 199, 0.05);
+        --neon-purple-glow: rgba(30, 58, 138, 0.03);
+        --text: #0f172a;
+        --text-secondary: #475569;
+        --text-dim: #64748b;
+        --primary: #0284c7;
+        --primary-glow: rgba(2, 132, 199, 0.08);
+        --shadow-card: inset 0 1px 0 #ffffff, 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(2, 132, 199, 0.03);
+        --shadow-card-hover: inset 0 1px 0 #ffffff, 0 10px 15px -3px rgba(2, 132, 199, 0.08), 0 4px 6px -4px rgba(2, 132, 199, 0.08), 0 0 0 1px rgba(2, 132, 199, 0.15);
+        --gradient-neon: linear-gradient(135deg, #0284c7 0%, #1e3a8a 50%, #0369a1 100%);
+      }
+
+      *{margin:0;padding:0;box-sizing:border-box}
+
+      html{scroll-behavior:smooth}
+
+      body{background:radial-gradient(circle at top, #ffffff 0%, #f1f5f9 100%), #f1f5f9;background-attachment:fixed;color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-y:auto;overflow-x:hidden}
+
+      ::selection{background:#0284c7;color:white}
+
+      /* Disable all neon wire animations and background gradient shifts */
+      body::after { display: none !important; }
+      .ambient { display: none !important; }
+
+      .container{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:10}
+
+      /* ── HEADER ── */
+
+      header{padding:14px 0;position:sticky;top:0;z-index:9999;background:rgba(255, 255, 255, 0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(226, 232, 240, 0.8);box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.02)}
+
+      header::after{display:none}
+
+      .header-inner{display:flex;align-items:center;justify-content:space-between}
+
+      .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+
+      .logo-icon{width:36px;height:36px;background:linear-gradient(135deg, #0284c7, #1e3a8a);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:18px;box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 4px 10px rgba(2, 132, 199, 0.2);transition:all 0.25s;border:1px solid #0369a1}
+
+      .logo:hover .logo-icon{transform:scale(1.04);background:linear-gradient(135deg, #0369a1, #1e3a8a);box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 6px 12px rgba(2, 132, 199, 0.25)}
+
+      .logo-text{font-size:20px;font-weight:700;color:var(--text);letter-spacing:-0.5px}
+
+      .logo-text span{background:none;-webkit-text-fill-color:initial;color:#0284c7;background-clip:initial}
+
+      nav{display:flex;align-items:center;gap:28px}
+
+      nav a{color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:500;transition:all 0.2s;position:relative;padding:4px 0}
+
+      nav a::after{display:none}
+
+      nav a:hover{color:#0284c7}
+
+      .nav-cta{background:linear-gradient(180deg, #0284c7 0%, #0369a1 100%);color:white !important;padding:10px 20px;border-radius:6px;font-weight:600;transition:all 0.2s !important;box-shadow:inset 0 1px 0 rgba(255,255,255,0.2), 0 4px 10px rgba(2,132,199,0.1);border:1px solid #0284c7;position:relative;overflow:hidden}
+
+      .nav-cta::before{display:none}
+
+      .nav-cta:hover{background:linear-gradient(180deg, #0369a1 0%, #0284c7 100%);transform:translateY(-1px) !important;box-shadow:inset 0 1px 0 rgba(255,255,255,0.3), 0 6px 12px rgba(2, 132, 199, 0.2)}
+
+      /* ── HERO ── */
+
+      .hero{padding:20px 0 10px;text-align:center;position:relative}
+
+      .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 22px;background:rgba(255, 255, 255, 0.8);backdrop-filter:blur(10px);border:1px solid rgba(226, 232, 240, 0.8);border-radius:100px;font-size:13px;font-weight:600;color:#0284c7;margin-bottom:32px;animation:fadeInUp 0.8s ease-out;box-shadow:0 2px 8px rgba(0,0,0,0.02)}
+
+      .hero-badge .dot{width:6px;height:6px;background:#0284c7;border-radius:50%;animation:blink 1.5s infinite;box-shadow:0 0 10px rgba(2, 132, 199, 0.3)}
+
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+
+      .hero h1{font-size:clamp(44px,7vw,86px);font-weight:900;letter-spacing:-2.5px;line-height:1.03;margin-bottom:20px;animation:fadeInUp 0.8s ease-out 0.2s both;color:#0f172a;position:relative;overflow:hidden;display:inline-block}
+
+      .hero h1 .gradient-title{}
+
+      .hero p{font-size:18px;color:var(--text-secondary);max-width:600px;margin:0 auto 40px;line-height:1.7;animation:fadeInUp 0.8s ease-out 0.4s both}
+
+      @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+      .hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeInUp 0.8s ease-out 0.6s both}
+
+      /* ── BUTTONS & GLOSSY SWEENS ── */
+
+      .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 36px;font-size:15px;font-weight:600;text-decoration:none;border-radius:8px;transition:all 0.25s;cursor:pointer;border:none;position:relative;overflow:hidden}
+
+      /* Glass Shine Sweep reflection effect on hover */
+      .btn::before, .price-btn::before, .price-card:not(.rainbow)::before, .feature::before, .stat::before, .compliance-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+        transform: skewX(-30deg);
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      .btn:hover::before, .price-btn:hover::before, .price-card:not(.rainbow):hover::before, .feature:hover::before, .stat:hover::before, .compliance-item:hover::before {
+        left: 150%;
+        transition: left 0.75s ease-in-out;
+      }
+
+      .btn-primary{background:linear-gradient(180deg, #0284c7 0%, #0369a1 100%);color:white;box-shadow:inset 0 1px 0 rgba(255,255,255,0.25), 0 4px 12px rgba(2, 132, 199, 0.15);border:1px solid #0284c7}
+
+      .btn-primary:hover{transform:translateY(-2px);background:linear-gradient(180deg, #0369a1 0%, #0284c7 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.35), 0 6px 16px rgba(2, 132, 199, 0.25)}
+
+      .btn-secondary{background:#ffffff;color:var(--text);border:1px solid #cbd5e1;box-shadow:0 2px 4px rgba(0,0,0,0.02)}
+
+      .btn-secondary:hover{background:#f8fafc;border-color:#94a3b8;transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,0.04)}
+
+      /* ── LOGOS ── */
+
+      .logos{padding:60px 0;border-top:1px solid rgba(77,124,255,0.06);border-bottom:1px solid rgba(77,124,255,0.06)}
+
+      .logos-label{text-align:center;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--text-dim);margin-bottom:32px}
+
+      .logos-grid{display:flex;justify-content:center;gap:56px;flex-wrap:wrap}
+
+      .logo-item{font-size:16px;font-weight:800;background:var(--gradient-neon);background-size:300% 300%;animation:gradientShift 6s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0.25;transition:all 0.4s;cursor:default}
+
+      .logo-item:hover{opacity:0.9;transform:scale(1.1);letter-spacing:2px}
+
+      .logo-item:nth-child(2){animation-delay:0.8s}
+
+      .logo-item:nth-child(3){animation-delay:1.6s}
+
+      .logo-item:nth-child(4){animation-delay:2.4s}
+
+      .logo-item:nth-child(5){animation-delay:3.2s}
+
+      /* ── STATS ── */
+
+      .stats{padding:80px 0}
+
+      .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+
+      .stat{text-align:center;padding:40px 24px;background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;transition:all 0.3s;position:relative;box-shadow:var(--shadow-card);overflow:hidden}
+
+      .stat::after{display:none}
+
+      .stat:hover::after{display:none}
+
+      .stat:hover{background:#ffffff;border-color:#0284c7;transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+
+      .stat-num{font-size:44px;font-weight:900;color:#0284c7;margin-bottom:6px;letter-spacing:-1px;position:relative;z-index:1}
+
+      .stat-label{font-size:14px;color:var(--text-secondary);font-weight:500;position:relative;z-index:1}
+
+      /* ── FEATURES ── */
+
+      .features{padding:80px 0}
+
+      .section-header{text-align:center;margin-bottom:64px}
+
+      .section-header .label{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#0284c7;margin-bottom:12px}
+
+      .section-header h2{font-size:38px;font-weight:800;letter-spacing:-0.5px;margin-bottom:12px;display:inline-block;position:relative}
+
+      .section-header h2::after{content:'';position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:#0284c7;border-radius:3px}
+
+      .section-header p{font-size:16px;color:var(--text-secondary);max-width:500px;margin:0 auto}
+
+      .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+
+      .feature{background:#ffffff;padding:40px 28px;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;position:relative;overflow:hidden;box-shadow:var(--shadow-card);will-change:transform}
+
+      .feature::after{display:none}
+
+      .feature:hover::after{display:none}
+
+      .feature:hover{background:#ffffff;border-color:#0284c7;transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+
+      .feature-icon{width:52px;height:52px;background:#f0f9ff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:20px;border:1px solid #e0f2fe;transition:all 0.2s;position:relative;z-index:1}
+
+      .feature:hover .feature-icon{background:#e0f2fe;border-color:#bae6fd;transform:scale(1.05)}
+
+      .feature h3{font-size:18px;font-weight:700;margin-bottom:10px;position:relative;z-index:1}
+
+      .feature p{font-size:14px;color:var(--text-secondary);line-height:1.7;position:relative;z-index:1}
+
+      /* ── COMPLIANCE ── */
+
+      .compliance{padding:80px 0}
+
+      .compliance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+
+      .compliance-item{text-align:center;padding:40px 24px;border:1px solid #e2e8f0;border-radius:12px;background:#ffffff;transition:all 0.3s;position:relative;overflow:hidden;box-shadow:var(--shadow-card)}
+
+      .compliance-item::before{display:none}
+
+      .compliance-item:hover::before{display:none}
+
+      .compliance-item:hover{background:#ffffff;border-color:#0284c7;transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+
+      .compliance-icon{font-size:34px;margin-bottom:12px;display:block;transition:all 0.2s;position:relative;z-index:1}
+
+      .compliance-item:hover .compliance-icon{transform:scale(1.1)}
+
+      .compliance-item h4{font-size:15px;font-weight:700;margin-bottom:6px;position:relative;z-index:1}
+
+      .compliance-item p{font-size:13px;color:var(--text-secondary);position:relative;z-index:1}
+
+      /* ── PRICING ── */
+
+      .pricing{padding:100px 0}
+
+      .pricing-grid{display:flex;justify-content:center;gap:24px;max-width:500px;margin:0 auto;flex-wrap:wrap}
+
+      .price-card{background:#ffffff;padding:44px 32px;border-radius:12px;border:1px solid #e2e8f0;position:relative;transition:all 0.3s;overflow:visible;box-shadow:var(--shadow-card)}
+
+      .price-card:hover{background:#ffffff;border-color:#0284c7;box-shadow:var(--shadow-card-hover)}
+
+      .price-card.featured{border-color:#0284c7;box-shadow:var(--shadow-card)}
+
+      .price-card.featured .price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#0284c7;color:white;padding:4px 16px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;z-index:2}
+
+      .price-tier{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#0284c7;margin-bottom:16px;position:relative;z-index:1}
+
+      .price-amount{font-size:48px;font-weight:900;margin-bottom:6px;letter-spacing:-2px;position:relative;z-index:1;color:var(--text)}
+
+      .price-amount .period{font-size:14px;font-weight:500;color:var(--text-secondary);letter-spacing:0}
+
+      .price-desc{font-size:14px;color:var(--text-secondary);margin-bottom:28px;line-height:1.6;position:relative;z-index:1}
+
+      .price-features{list-style:none;margin-bottom:28px;position:relative;z-index:1}
+
+      .price-features li{padding:8px 0;font-size:14px;display:flex;align-items:center;gap:10px;color:var(--text-secondary);transition:all 0.2s}
+
+      .price-features li:hover{color:var(--text)}
+
+      .price-features li::before{content:"\2713";color:#0284c7;font-weight:700}
+
+      .price-btn{display:block;width:100%;padding:14px;text-align:center;border-radius:8px;font-size:15px;font-weight:600;text-decoration:none;transition:all 0.2s;position:relative;overflow:hidden}
+
+      .price-btn::before{display:none}
+
+      .price-btn-primary{background:#0284c7;color:white}
+
+      .price-btn-primary:hover{background:#0369a1;transform:translateY(-1px)}
+
+      .price-btn-secondary{background:#ffffff;color:var(--text);border:1px solid #cbd5e1}
+
+      .price-btn-secondary:hover{background:#f8fafc;border-color:#94a3b8}
+
+      /* ── CTA ── */
+
+      .cta{padding:80px 0;text-align:center;background:#f1f5f9;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;position:relative;overflow:hidden}
+
+      .cta::before{display:none}
+
+      .cta h2{font-size:36px;font-weight:800;margin-bottom:12px;letter-spacing:-0.5px;position:relative}
+
+      .cta p{font-size:16px;color:var(--text-secondary);margin-bottom:32px;max-width:450px;margin-left:auto;margin-right:auto;position:relative}
+
+      .btn-white{background:#0284c7;color:white;padding:16px 44px;font-size:15px;font-weight:700;border-radius:8px;text-decoration:none;display:inline-block;transition:all 0.2s}
+
+      .btn-white::before{display:none}
+
+      .btn-white:hover{background:#0369a1;transform:translateY(-2px)}
+
+      /* ── MODAL ── */
+
+      .modal-overlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 23, 42, 0.7);
+        backdrop-filter: blur(4px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+      .modal-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .modal-content {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+        position: relative;
+      }
+      .modal-overlay.active .modal-content {
+        transform: translateY(0);
+      }
+      .modal-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--text-secondary);
+      }
+      .modal-content h3 {
+        margin-bottom: 8px;
+        font-size: 24px;
+        color: var(--text);
+      }
+      .modal-content p {
+        font-size: 14px;
+        color: var(--text-secondary);
+        margin-bottom: 24px;
+      }
+      .form-group {
+        margin-bottom: 16px;
+      }
+      .form-group label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--text);
+      }
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      .form-group input:focus {
+        outline: none;
+        border-color: #0284c7;
+        box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
+      }
+
+      /* ── FOOTER ── */
+
+      footer{padding:60px 0 40px;border-top:1px solid #e2e8f0;background:#ffffff}
+
+      .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+
+      .footer-brand p{font-size:14px;color:var(--text-secondary);margin-top:16px;line-height:1.7}
+
+      .footer-col h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text);margin-bottom:20px;position:relative;display:inline-block}
+
+      .footer-col h4::after{content:'';position:absolute;bottom:-4px;left:0;width:24px;height:2px;background:#0284c7;border-radius:2px}
+
+      .footer-col a{display:block;font-size:14px;color:var(--text-secondary);text-decoration:none;padding:5px 0;transition:all 0.2s}
+
+      .footer-col a:hover{color:#0284c7}
+
+      .footer-bottom{padding-top:32px;border-top:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center}
+
+      .footer-bottom p{font-size:13px;color:var(--text-dim)}
+
+      .footer-bottom a{color:var(--text-secondary);text-decoration:none;transition:all 0.2s}
+
+      .footer-bottom a:hover{color:#0284c7}
+
+      .self-host-note{text-align:center;margin-top:32px;padding:20px 24px;border:1px solid #e2e8f0;border-radius:8px;background:#f8fafc;font-size:13px;color:var(--text-secondary);letter-spacing:0.3px;line-height:1.6}
+
+      .self-host-note a{color:#0284c7;text-decoration:none;font-weight:600;border-bottom:1px dashed #0284c7;padding-bottom:2px;transition:all 0.2s}
+
+      .self-host-note a:hover{color:#0369a1}
+
+      @media (max-width: 768px){nav{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}.features-grid{grid-template-columns:1fr}.compliance-grid{grid-template-columns:repeat(2,1fr)}.pricing-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+
+      #particle-canvas{display:none}
+      /* ══════ BLUE SIDE GRADIENTS ══════ */
+      .blue-side-left, .blue-side-right {
+        position: fixed;
+        top: 0;
+        width: 500px;
+        height: 100vh;
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0.85;
+      }
+      .blue-side-left {
+        left: 0;
+        background: linear-gradient(90deg, rgba(2, 132, 199, 0.4) 0%, rgba(14, 165, 233, 0.15) 60%, transparent 100%);
+      }
+      .blue-side-right {
+        right: 0;
+        background: linear-gradient(-90deg, rgba(2, 132, 199, 0.4) 0%, rgba(14, 165, 233, 0.15) 60%, transparent 100%);
+      }
+
+      /* ══════ ROTATING BLUE OUTLINE AROUND MAIN CONTENT ══════ */
+      .rotating-outline {
+        position: relative;
+        max-width: 70%;
+        width: 70%;
+        margin: 0 auto 40px;
+        border: 4px solid transparent;
+        border-radius: 28px;
+        padding: 40px 48px;
+        z-index: 2;
+        background: linear-gradient(135deg, rgba(255,255,255,0.88) 0%, rgba(248,250,252,0.90) 50%, rgba(255,255,255,0.88) 100%) padding-box,
+                    conic-gradient(from var(--angle, 0deg),
+                      #0284c7 0%, #0ea5e9 12%, #38bdf8 25%, #0284c7 37%,
+                      #1e3a8a 50%, #0369a1 62%, #0ea5e9 75%, #38bdf8 87%, #0284c7 100%) border-box;
+        animation: rotateOutline 1.5s linear infinite;
+        box-shadow: 0 8px 32px rgba(2, 132, 199, 0.12), 0 0 80px rgba(14, 165, 233, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        overflow: hidden;
+      }
+      @keyframes rotateOutline {
+        to { --angle: 360deg; }
+      }
+      @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+      }
+
+      /* ══════ HERO TITLE SHINE EFFECT ══════ */
+      .hero h1 {
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(90deg, #0f172a 0%, #0f172a 45%, #ffffff 50%, #0f172a 55%, #0f172a 100%);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: heroShine 5s linear infinite;
+      }
+      /* Blue text — same shine effect */
+      .gradient-title {
+        display: inline-block;
+        background: linear-gradient(90deg, #0284c7 0%, #0284c7 45%, #ffffff 50%, #0284c7 55%, #0284c7 100%);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: heroShine 5s linear infinite;
+        animation-delay: 0.5s;
+      }
+      /* Panel text — all same */
+      .hero p,
+      .rotating-outline li,
+      .rotating-outline strong {
+        background: linear-gradient(90deg, #334155 0%, #334155 45%, #ffffff 50%, #334155 55%, #334155 100%);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: heroShine 5s linear infinite;
+        animation-delay: 1s;
+      }
+      @keyframes heroShine {
+        0% { background-position: 150% 0; }
+        15% { background-position: -50% 0; }
+        15.01%, 100% { background-position: 150% 0; }
+      }
+
+      /* ══════ 3D GLASS PANELS — SPARKLY ══════ */
+      .feature, .stat, .compliance-item {
+        background: rgba(255, 255, 255, 0.55) !important;
+        backdrop-filter: blur(16px) saturate(200%);
+        -webkit-backdrop-filter: blur(16px) saturate(200%);
+        border: 1px solid rgba(2, 132, 199, 0.15) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 0 0 15px rgba(2, 132, 199, 0.08), inset 0 2px 0 rgba(255, 255, 255, 0.9), inset 0 -1px 0 rgba(0, 0, 0, 0.02) !important;
+        transition: transform 0.15s ease-out, box-shadow 0.3s ease, background 0.3s ease !important;
+        position: relative;
+        overflow: hidden;
+      }
+      /* Shine reflection on cards */
+      .feature::after, .stat::after, .compliance-item::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%);
+        transition: left 0.5s ease;
+        pointer-events: none;
+      }
+      .feature:hover::after, .stat:hover::after, .compliance-item:hover::after {
+        left: 150%;
+      }
+      .feature:hover, .stat:hover, .compliance-item:hover {
+        box-shadow: 0 24px 64px rgba(2, 132, 199, 0.25), 0 0 30px rgba(2, 132, 199, 0.12), inset 0 2px 0 rgba(255, 255, 255, 0.95) !important;
+        background: rgba(255, 255, 255, 0.75) !important;
+      }
+
+      /* ══════ RAINBOW BORDER CARD ══════ */
+      .price-card.rainbow {
+        border: none !important;
+        padding: 0 !important;
+        overflow: hidden;
+        position: relative;
+        border-radius: 12px;
+        background: transparent !important;
+        box-shadow: 0 0 30px rgba(255, 59, 48, 0.3), 0 0 80px rgba(2, 132, 199, 0.2);
+        transition: transform 0.2s ease-out, box-shadow 0.3s ease !important;
+      }
+      .price-card.rainbow:hover {
+        box-shadow: 0 0 60px rgba(255, 59, 48, 0.6), 0 0 140px rgba(255, 149, 0, 0.4), 0 0 200px rgba(0, 122, 255, 0.3) !important;
+      }
+      @keyframes rotateRainbowReverse {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes rotateRainbow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes rainbowPulseGlow {
+        0% { box-shadow: 0 0 30px rgba(255, 59, 48, 0.4), 0 0 80px rgba(255, 59, 48, 0.15); }
+        14% { box-shadow: 0 0 30px rgba(255, 149, 0, 0.4), 0 0 80px rgba(255, 149, 0, 0.15); }
+        28% { box-shadow: 0 0 30px rgba(255, 204, 0, 0.4), 0 0 80px rgba(255, 204, 0, 0.15); }
+        42% { box-shadow: 0 0 30px rgba(76, 217, 100, 0.4), 0 0 80px rgba(76, 217, 100, 0.15); }
+        57% { box-shadow: 0 0 30px rgba(90, 200, 250, 0.4), 0 0 80px rgba(90, 200, 250, 0.15); }
+        71% { box-shadow: 0 0 30px rgba(0, 122, 255, 0.4), 0 0 80px rgba(0, 122, 255, 0.15); }
+        85% { box-shadow: 0 0 30px rgba(88, 86, 214, 0.4), 0 0 80px rgba(88, 86, 214, 0.15); }
+        100% { box-shadow: 0 0 30px rgba(255, 59, 48, 0.4), 0 0 80px rgba(255, 59, 48, 0.15); }
+      }
+      @keyframes badgeShimmer {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 200% 50%; }
+      }
+      /* Inner white card with spinner */
+      .rainbow-spinner {
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 8px;
+        margin: 4px;
+        z-index: 1;
+      }
+      .rainbow-spinner::before {
+        content: '';
+        position: absolute;
+        inset: -50%;
+        width: 200%;
+        height: 200%;
+        background: conic-gradient(from 0deg,
+          rgba(255, 59, 48, 0.15),
+          rgba(255, 149, 0, 0.15),
+          rgba(255, 204, 0, 0.15),
+          rgba(76, 217, 100, 0.15),
+          rgba(90, 200, 250, 0.15),
+          rgba(0, 122, 255, 0.15),
+          rgba(88, 86, 214, 0.15),
+          rgba(255, 59, 48, 0.15)
+        );
+        animation: rotateRainbow 2s linear infinite;
+        pointer-events: none;
+      }
+      .price-card.rainbow:hover .rainbow-spinner::before {
+        animation-duration: 1s !important;
+        background: conic-gradient(from 0deg,
+          rgba(255, 59, 48, 0.35),
+          rgba(255, 149, 0, 0.35),
+          rgba(255, 204, 0, 0.35),
+          rgba(76, 217, 100, 0.35),
+          rgba(90, 200, 250, 0.35),
+          rgba(0, 122, 255, 0.35),
+          rgba(88, 86, 214, 0.35),
+          rgba(255, 59, 48, 0.35)
+        ) !important;
+      }
+      /* Shine sweep on text + buttons */
+      .price-card.rainbow .price-tier,
+      .price-card.rainbow .price-amount,
+      .price-card.rainbow .price-desc,
+      .price-card.rainbow .price-btn,
+      .price-card.rainbow .price-features li {
+        position: relative;
+        overflow: hidden;
+      }
+      .price-card.rainbow .price-tier::after,
+      .price-card.rainbow .price-amount::after,
+      .price-card.rainbow .price-desc::after,
+      .price-card.rainbow .price-btn::after,
+      .price-card.rainbow .price-features li::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+        pointer-events: none;
+      }
+      .price-card.rainbow.shine-active .price-tier::after,
+      .price-card.rainbow.shine-active .price-amount::after,
+      .price-card.rainbow.shine-active .price-desc::after,
+      .price-card.rainbow.shine-active .price-btn::after,
+      .price-card.rainbow.shine-active .price-features li::after {
+        animation: textShine 0.6s ease-out;
+      }
+      @keyframes textShine {
+        from { left: -100%; }
+        to { left: 200%; }
+      }
+      /* Sparkles! */
+      .sparkle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: sparkleFade 0.8s ease-out forwards;
+        z-index: 20;
+      }
+      @keyframes sparkleFade {
+        0% { transform: scale(0); opacity: 1; }
+        50% { transform: scale(1.5); opacity: 1; }
+        100% { transform: scale(0); opacity: 0; }
+      }
+
+      /* ══════ TESTIMONIALS ══════ */
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .testimonial-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 16px;
+        padding: 28px;
+        text-align: left;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 48px rgba(2, 132, 199, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      }
+
+      /* ══════ TOGGLE SWITCH ══════ */
+      .switch{position:relative;display:inline-block;width:48px;height:26px}
+      .switch input{opacity:0;width:0;height:0}
+      .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#cbd5e1;transition:0.3s;border-radius:26px}
+      .slider:before{position:absolute;content:"";height:20px;width:20px;left:3px;bottom:3px;background:white;transition:0.3s;border-radius:50%}
+      input:checked+.slider{background:#0284c7}
+      input:checked+.slider:before{transform:translateX(22px)}
+
+      /* ══════ PARTICLE CANVAS ══════ */
+      #particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+    
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+    </style>
+    <script defer src="https://analytics.hypernexus.site/script.js" data-website-id="6d5b06d6-68ba-4755-ae74-5e8d05a73956"></script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <canvas id="particles"></canvas>
+    <div class="blue-side-left"></div>
+    <div class="blue-side-right"></div>
+
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="ambient ambient-1"></div>
+
+    <div class="ambient ambient-2"></div>
+
+    <div class="ambient ambient-3"></div>
+
+    <header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container header-inner">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <a href="/" class="logo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-icon">H</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="logo-text">Hyper<span>Nexus</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#features">Platform</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#compliance">Security</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#pricing">Pricing</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="https://github.com/HyperNexusSoft/HyperNexus" target="_blank">Docs</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="https://cloud.tormentnexus.com" class="nav-login" style="color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:500;transition:all 0.2s;padding:8px 16px;border:1px solid #e2e8f0;border-radius:6px">Login</a>
+                <a href="#pricing" class="nav-cta">Buy Now →</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="hero" style="position:relative;z-index:150">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="hero-badge"><span class="dot"></span> SOC 2 Type II Certified · HIPAA Ready · GDPR Compliant</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h1>Corporate AI Orchestration<br><span class="gradient-title">Built for Scale</span></h1>
+
+    <div class="rotating-outline">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div style="max-width:820px;margin:0 auto;text-align:left">
+              <p style="font-size:16px;color:#334155;margin-bottom:16px;line-height:1.7">
+                HyperNexus is the <strong style="color:#0284c7">missing tool belt and memory system that all AI needs</strong> — a cloud-hosted cognitive control plane that gives your agents persistent memory, tool orchestration, and provider failover, so your team has complete visibility and governance over every LLM workflow.
+              </p>
+              <ul style="font-size:15px;color:#334155;line-height:2;list-style:none;padding:0 0 0 80px">
+                <li>🧠 <strong>Persistent Memory</strong> — Vector-embedded semantic search across 14,000+ memories that survive restarts</li>
+                <li>🔧 <strong>Progressive MCP and Skill Routing</strong> — Routes from internal registries, injecting only the most relevant tools per request</li>
+                <li>💻 <strong>Full Code Execution</strong> — Filesystem access, code interpreter, browser automation, and system process control</li>
+                <li>🔄 <strong>LLM Waterfall Failover</strong> — Cascades from NVIDIA NIM → OpenRouter → local Ollama on any 429/5xx error</li>
+                <li>🤖 <strong>Multi-Agent Swarm</strong> — Planner, Implementer, Tester, and Critic roles with consensus-driven decisions</li>
+                <li>🔗 <strong>Universal Tool Parity</strong> — Byte-for-byte identical signatures across Claude Code, Cursor, Codex, Gemini CLI, and Copilot</li>
+                <li>🔄 <strong>Import Sessions</strong> — Import from all other AI tools without regression</li>
+                <li>🔒 <strong>Enterprise Security</strong> — SSO/OIDC, RBAC, Ed25519 signed tokens, audit logging, and compliance enforcement</li>
+                <li>📊 <strong>Real-Time Dashboard</strong> — Memory explorer, tool registry, provider config, and live telemetry</li>
+                <li>🚀 <strong>One-Command Deploy</strong> — PM2 lifecycle, Let's Encrypt SSL, per-tenant containers with Stripe billing</li>
+              </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="hero-buttons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#pro-card" class="btn btn-primary">Buy Now →</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="hero-videos" style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="hypernexus-hero-vid" style="position:relative;z-index:99999;margin-top:20px;max-width:750px;margin-left:auto;margin-right:auto;border-radius:12px;overflow:hidden;border:1px solid rgba(77,124,255,0.2);box-shadow:0 0 30px rgba(77,124,255,0.1)">
+
+          <video controls style="width:100%;display:block" preload="auto" playsinline>
+
+            <source src="/hypernexus_ultimate_agent.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="logos">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="logos-label">Trusted by forward-thinking companies</div>
+            <div class="logos-grid">
+                <div class="logo-item">Fortune 500</div>
+                <div class="logo-item">Technology</div>
+                <div class="logo-item">Financial</div>
+                <div class="logo-item">Healthcare</div>
+                <div class="logo-item">Government</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="stats">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="stats-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num" data-target="11000">0</div><div class="stat-label">Tool Integrations</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num" data-target="9999">0</div><div class="stat-label">Uptime SLA (%)</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num">&lt;26ms</div><div class="stat-label">Avg Latency</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="stat"><div class="stat-num">SOC 2</div><div class="stat-label">Certified</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="features" class="features">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="label">Platform</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2>Everything your AI stack needs</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>High-value capabilities built for developers and corporate oversight teams alike.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Developer Focus Section -->
+            <h3 style="text-align:left; font-size:20px; font-weight:700; margin-bottom:20px; color:#0f172a; border-bottom:1px solid #cbd5e1; padding-bottom:8px; letter-spacing:-0.3px">Developer Focus</h3>
+            <div class="features-grid" style="margin-bottom:60px">
+
+                <div class="feature"><div class="feature-icon">⚡</div><h3>Progressive Tool Routing</h3><p>Optimise context windows with semantic tool selection, injecting only the top 3 relevant schemas per prompt to prevent token bloat.</p></div>
+
+                <div class="feature"><div class="feature-icon">🌊</div><h3>Resilient Model Cascading</h3><p>Ensure uninterrupted coding by automatically routing around rate limits (429s/5xx) down a waterfall chain to local Ollama backups.</p></div>
+
+                <div class="feature"><div class="feature-icon">🩹</div><h3>Autonomous Self-Healing</h3><p>Fixes runtime and syntax errors automatically using an isolated Diagnose-Fix-Verify feedback loop inside secure test execution runners.</p></div>
+
+                <div class="feature"><div class="feature-icon">🧠</div><h3>Dual-Tier Vector Memory</h3><p>Persist development context across sessions. Leverages L1 session scratchpads and L2 permanent SQLite vector databases with automatic harvesting.</p></div>
+
+                <div class="feature"><div class="feature-icon">🕸️</div><h3>Collaborative Swarm Mesh</h3><p>Coordinate specialized subagents (Planner, Implementer, Tester, Critic) inside secure workspaces using type-safe A2A message routing.</p></div>
+
+                <div class="feature"><div class="feature-icon">🔗</div><h3>Universal Harness Parity</h3><p>Avoid vendor lock-in. Maintain byte-for-byte identical tool signatures across Claude Code, Cursor, Aider, Windsurf, and Copilot environments.</p></div>
+
+            </div>
+
+            <!-- Corporate Focus Section -->
+            <h3 style="text-align:left; font-size:20px; font-weight:700; margin-bottom:20px; color:#0f172a; border-bottom:1px solid #cbd5e1; padding-bottom:8px; letter-spacing:-0.3px">Corporate Focus</h3>
+             <div class="features-grid">
+
+                <div class="feature"><div class="feature-icon">🔐</div><h3>SSO & Access Control</h3><p>Integrate existing identity systems in minutes using secure SAML 2.0 and OIDC configurations with granular RBAC.</p></div>
+
+                <div class="feature"><div class="feature-icon">📊</div><h3>Immutable Compliance Audits</h3><p>Maintain export-ready logs tracking all model calls, data reads, and tool execution states for SOC 2, HIPAA, and GDPR audit runs.</p></div>
+
+                <div class="feature"><div class="feature-icon">🏢</div><h3>VPC & Air-Gapped Runs</h3><p>Keep proprietary codebase assets behind your perimeter. Run entirely offline with cryptographically signed licensing validation.</p></div>
+
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="compliance" class="compliance">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="label">Security & Compliance</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2>Corporate-grade by design</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>Built from the ground up to meet the most stringent regulatory requirements.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="compliance-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">🔒</div><h4>SOC 2 Type II</h4><p>Independently audited security controls</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">🏥</div><h4>HIPAA Ready</h4><p>BAA available for healthcare organizations</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">🇪🇺</div><h4>GDPR Compliant</h4><p>Data processing agreements and EU hosting</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="compliance-item"><div class="compliance-icon">📋</div><h4>SBOM Included</h4><p>Complete software bill of materials</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="pricing" class="pricing">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            <div style="max-width:900px;margin:0 auto 60px auto;text-align:center">
+                <h3 style="font-size:1.2rem;color:#0f172a;margin-bottom:8px;font-weight:800;letter-spacing:-0.3px">Trusted by AI engineering teams</h3>
+                <p style="font-size:14px;color:#64748b;margin-bottom:28px">Teams shipping production AI agents on TormentNexus</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p style="font-size:13px;color:#334155;line-height:1.7;margin:0 0 16px 0;font-style:italic">"We run 47 MCP servers. Without progressive routing, our agents were drowning in tool schemas. TormentNexus cut our context waste by 80% overnight."</p>
+                        <p style="font-size:12px;color:#64748b;margin:0;font-weight:700">— Lead Engineer, Series B AI Startup</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p style="font-size:13px;color:#334155;line-height:1.7;margin:0 0 16px 0;font-style:italic">"Reduced our agent execution latency by 40% simply by offloading tool context management."</p>
+                        <p style="font-size:12px;color:#64748b;margin:0;font-weight:700">— Lead AI Architect</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p style="font-size:13px;color:#334155;line-height:1.7;margin:0 0 16px 0;font-style:italic">"We evaluated LangChain, CrewAI, and AutoGPT. TormentNexus was the only one with real multi-agent consensus and persistent memory that survives restarts."</p>
+                        <p style="font-size:12px;color:#64748b;margin:0;font-weight:700">— CTO, AI Infrastructure Company</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="label">Pricing</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2>Plans that scale with you</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>Start with a proof of concept. Scale to corporate-wide deployment.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <div style="display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:28px;font-size:14px;font-weight:600;color:#64748b">
+                <span id="monthly-label" style="color:#0284c7">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-toggle" onchange="togglePricing()">
+                    <span class="slider"></span>
+                </label>
+                <span id="annual-label">Annually <span style="background:#dcfce7;color:#15803d;font-size:11px;padding:2px 6px;border-radius:4px">Save 17%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div id="pro-card" style="position:relative">
+                    <div class="price-badge" style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);z-index:10;background:linear-gradient(90deg,#ff3b30,#ff9500,#ffcc00,#4cd964,#5ac8fa,#007aff,#5856d6,#ff3b30);background-size:200% 100%;animation:badgeShimmer 2s linear infinite;color:#fff;font-weight:800;padding:4px 14px;border-radius:20px;font-size:11px;letter-spacing:1px;text-shadow:0 1px 2px rgba(0,0,0,0.3);box-shadow:0 4px 15px rgba(255,59,48,0.4),0 0 20px rgba(255,149,0,0.3)">Early Adopter Sale</div>
+                    <div class="price-card rainbow featured">
+                    <div class="rainbow-border" style="position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 180deg,rgba(255,59,48,0.9),rgba(255,149,0,0.9),rgba(255,204,0,0.9),rgba(76,217,100,0.9),rgba(90,200,250,0.9),rgba(0,122,255,0.9),rgba(88,86,214,0.9),rgba(255,59,48,0.9));animation:rotateRainbowReverse 1.5s linear infinite;border-radius:50%;pointer-events:none;z-index:0"></div>
+                    <div class="rainbow-spinner" style="padding:32px 28px">
+                    <div class="price-tier">Professional</div>
+                    <div style="text-decoration:line-through;color:#94a3b8;font-size:20px;font-weight:500;letter-spacing:-0.5px;margin-bottom:2px">$100</div>
+                    <div style="font-size:12px;color:#ef4444;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;animation:pulse 1.5s infinite">SALE ENDING... SOON!</div>
+                    <div class="price-amount">$1.99 <span class="period">/ seat / mo</span></div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div style="display:flex;align-items:center;gap:8px;margin-top:16px">
+                      <div style="display:inline-block;padding:2px;border-radius:10px;background:linear-gradient(90deg,#ff3b30,#ff9500,#ffcc00,#4cd964,#5ac8fa,#007aff,#5856d6,#ff3b30);background-size:200% 100%;animation:rainbowBtn 2s linear infinite"><button onclick="buyNow()" style="cursor:pointer;background:linear-gradient(90deg,#ff3b30,#ff9500,#ffcc00,#4cd964,#5ac8fa,#007aff,#5856d6,#ff3b30);background-size:200% 100%;animation:rainbowBtn 2s linear infinite;color:#fff;font-weight:700;border:none;padding:14px 28px;border-radius:8px;font-size:15px;display:block">Buy Now!!!</button></div>
+                    </div>
+                    <script>
+                    function buyNow(){
+                      fetch('/api/v1/billing/checkout',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tier:'professional',seats:1,success_url:location.origin+'/success.html',cancel_url:location.origin+'/#pricing'})})
+                      .then(function(r){return r.json()})
+                      .then(function(d){var u=d.url;var ok=(typeof u==='string')&&/^https:\/\/([a-z0-9-]+\.)*(stripe\.com|hypernexus\.site)\//i.test(u);if(ok){window.location.assign(u)}else{alert('Error: '+(d.error||(u?'unexpected checkout URL':'No checkout URL')))}})
+                      .catch(function(e){alert('Error: '+e.message)})
+                    }
+                    </script>
+                    </div>
+                </div></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="self-host-note">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                For personal use, individual developers, non-commercial, or self-hosted deployments &rarr; <a href="https://tormentnexus.site" target="_blank">TormentNexus.site</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="cta" style="border-top:1px solid var(--glass-border);padding:60px 0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="hypernexus-dossier-vid" style="position:relative;z-index:200;margin-top:25px;max-width:750px;margin-left:auto;margin-right:auto;border-radius:12px;overflow:hidden;border:1px solid rgba(77,124,255,0.2);box-shadow:0 0 30px rgba(77,124,255,0.1)">
+
+          <video controls style="width:100%;display:block" preload="auto" playsinline>
+
+            <source src="/hypernexus_ultimate_agent.mp4" type="video/mp4">
+
+          </video>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- /rotating-outline -->
+
+    <footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-brand">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="logo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="logo-icon" style="width:32px;height:32px;font-size:16px">H</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="logo-text" style="font-size:18px">Hyper<span>Nexus</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <p>Corporate AI orchestration platform. Secure, compliant, and built for scale.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-col"><h4>Product</h4><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="https://github.com/HyperNexusSoft/HyperNexus">Documentation</a><a href="https://github.com/robertpelloni/marketing_agent/blob/main/CHANGELOG.md">Changelog</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-col"><h4>Company</h4><a href="https://tormentnexus.site">About</a><a href="https://tormentnexus.site/blog/">Blog</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a><a href="/privacy.html#security">Security</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer-bottom">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p>© 2026 HyperNexus, Inc. All rights reserved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p><a href="https://tormentnexus.site">Powered by TormentNexus</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== SLEEK MINIMAL PARTICLE SYSTEM ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const canvas = document.getElementById('particle-canvas');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const ctx = canvas.getContext('2d');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let W, H;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        resize();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        window.addEventListener('resize', resize);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const particles = [];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const PARTICLE_COUNT = 5; // Reduced from 80 to 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class Particle {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            constructor() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.reset();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.alpha = Math.random();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.alphaDir = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            reset() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.x = Math.random() * W;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.y = Math.random() * H;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.size = 2 + Math.random() * 3; // Bigger particles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.speedX = (Math.random() - 0.5) * 0.2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.speedY = (Math.random() - 0.5) * 0.2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.opacity = 0.3 + Math.random() * 0.4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.hue = 220 + Math.random() * 40;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.pulse = Math.random() * Math.PI * 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            update() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.x += this.speedX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.y += this.speedY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.pulse += 0.015;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                if (this.x < -20 || this.x > W + 20 || this.y < -20 || this.y > H + 20) this.reset();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.alpha += 0.008 * this.alphaDir;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                if(this.alpha > 1 || this.alpha < 0) this.alphaDir *= -1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.opacity = 0.15 + this.alpha * 0.4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            draw() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var pulseFactor = 0.7 + Math.sin(this.pulse) * 0.3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var r = this.size * pulseFactor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.save();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Outer glow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, r * 4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                grad.addColorStop(0, 'hsla(' + this.hue + ', 80%, 70%, ' + (this.opacity * 0.3) + ')');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                grad.addColorStop(0.5, 'hsla(' + this.hue + ', 80%, 60%, ' + (this.opacity * 0.08) + ')');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                grad.addColorStop(1, 'hsla(' + this.hue + ', 80%, 60%, 0)');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fillStyle = grad;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.arc(this.x, this.y, r * 4, 0, Math.PI * 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fill();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.shadowColor = 'hsla(' + this.hue + ', 80%, 70%, 0.3)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.shadowBlur = 15;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fillStyle = 'hsla(' + this.hue + ', 80%, 70%, ' + this.opacity + ')';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.arc(this.x, this.y, r, 0, Math.PI * 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fill();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Bright center dot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.shadowBlur = 20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fillStyle = 'hsla(' + this.hue + ', 90%, 90%, ' + (this.opacity * 0.6) + ')';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.arc(this.x, this.y, r * 0.4, 0, Math.PI * 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.fill();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ctx.restore();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function drawConnections() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            for (let i = 0; i < particles.length; i++) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                for (let j = i + 1; j < particles.length; j++) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dx = particles[i].x - particles[j].x;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dy = particles[i].y - particles[j].y;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    if (dist < 180) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        const alpha = 0.06 * (1 - dist / 180) * (particles[i].opacity + particles[j].opacity) * 0.5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        // Glow line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.save();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.shadowColor = 'hsla(220, 80%, 60%, 0.08)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.shadowBlur = 6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.strokeStyle = 'hsla(220, 80%, 60%, ' + alpha + ')';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.lineWidth = 0.6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.beginPath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.moveTo(particles[i].x, particles[i].y);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.lineTo(particles[j].x, particles[j].y);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.stroke();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        ctx.restore();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Mouse-reactive particles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let mouseX = -9999, mouseY = -9999;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        canvas.addEventListener('mousemove', function(e) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            mouseX = e.clientX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            mouseY = e.clientY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function animate() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ctx.clearRect(0, 0, W, H);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            particles.forEach(p => { p.update(); p.draw(); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            drawConnections();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Mouse ripple
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if (mouseX > 0) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                particles.forEach(p => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dx = p.x - mouseX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dy = p.y - mouseY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    if (dist < 250) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        const force = (1 - dist / 250) * 0.12;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        p.speedX += (dx / dist) * force || 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        p.speedY += (dy / dist) * force || 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            requestAnimationFrame(animate);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        animate();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== SCROLL REVEAL ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var observer = new IntersectionObserver(function(entries) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            entries.forEach(function(e) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                if (e.isIntersecting) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    e.target.style.opacity = '1';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    e.target.style.transform = 'translateY(0)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    e.target.style.transition = 'opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.querySelectorAll('.feature, .stat, .compliance-item, .price-card, .section-header').forEach(function(el) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            el.style.opacity = '0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            el.style.transform = 'translateY(40px)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            el.style.transition = 'opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            observer.observe(el);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ========== SMOOTH PARALLAX ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        window.addEventListener('scroll', function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            var scrollY = window.scrollY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            var hero = document.querySelector('.hero');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if (hero && scrollY < 800) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                hero.style.transform = 'translateY(' + (scrollY * 0.03) + 'px)';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                hero.style.opacity = Math.max(0.35, 1 - scrollY * 0.0012);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script>
+      
+
+      // Dynamically fetch quote pricing for Professional tier
+      fetch('/api/v1/quote?company_size=Mid-Market')
+        .then(res => res.json())
+        .then(data => {
+          if (data && data.quote) {
+            const priceCards = document.querySelectorAll('.price-tier');
+            priceCards.forEach(tier => {
+              if (tier.textContent === 'Professional') {
+                const amountEl = tier.nextElementSibling; // div.price-amount
+                if (amountEl && amountEl.classList.contains('price-amount')) {
+                  amountEl.innerHTML = `$` + Math.round(data.quote / 12) + ` <span class="period">/ mo</span>`;
+                }
+              }
+            });
+          }
+        })
+        .catch(err => console.error('Failed to load real-time pricing:', err));
+
+    </script>
+
+<script>
+// Toggle pricing monthly/annual
+function togglePricing(){
+  var c=document.getElementById("pricing-toggle").checked;
+  var m=document.getElementById("monthly-label");
+  var a=document.getElementById("annual-label");
+  if(c){
+    m.style.color="#64748b";a.style.color="#0284c7";
+    document.querySelectorAll(".price-amount").forEach(function(p){
+      p.innerHTML=p.innerHTML.replace("$1.99","$19.99").replace("/ seat / mo","/ seat / yr")
+    })
+  }else{
+    m.style.color="#0284c7";a.style.color="#64748b";
+    document.querySelectorAll(".price-amount").forEach(function(p){
+      p.innerHTML=p.innerHTML.replace("$19.99","$1.99").replace("/ seat / yr","/ seat / mo")
+    })
+  }
+}
+
+// 3D tilt on ALL cards with zoom
+document.querySelectorAll('.feature,.stat,.compliance-item,.price-card').forEach(function(card){
+  var lastX=0,lastY=0,stillTimer=null,isRainbow=card.classList.contains('rainbow');
+  card.addEventListener('mousemove',function(e){
+    var r=card.getBoundingClientRect();
+    var x=(e.clientX-r.left)/r.width-0.5;
+    var y=(e.clientY-r.top)/r.height-0.5;
+    card.style.transform='perspective(800px) rotateY('+x*20+'deg) rotateX('+-y*20+'deg) translateZ(16px) scale(1.05)';
+    // Shine on stop-start
+    if(Math.abs(x-lastX)>0.05||Math.abs(y-lastY)>0.05){
+      card.classList.remove('shine-active');
+      clearTimeout(stillTimer);
+      stillTimer=setTimeout(function(){
+        card.classList.add('shine-active');
+        setTimeout(function(){card.classList.remove('shine-active')},700);
+      },150);
+      // Sparkles!
+      if(isRainbow&&Math.random()>0.7){
+        var sp=document.createElement('div');
+        sp.className='sparkle';
+        sp.style.left=(e.clientX-r.left)+'px';
+        sp.style.top=(e.clientY-r.top)+'px';
+        card.appendChild(sp);
+        setTimeout(function(){sp.remove()},800);
+      }
+    }
+    lastX=x;lastY=y;
+  });
+  card.addEventListener('mouseleave',function(){
+    card.style.transform='perspective(800px) rotateY(0deg) rotateX(0deg) translateZ(0px) scale(1)';
+    card.classList.remove('shine-active');
+    clearTimeout(stillTimer);
+  });
+});
+
+// Floating particles
+(function(){
+  var c=document.getElementById('particles');
+  if(!c)return;
+  var ctx=c.getContext('2d');
+  var w,h,particles=[];
+  function resize(){w=c.width=window.innerWidth;h=c.height=window.innerHeight}
+  resize();window.addEventListener('resize',resize);
+  for(var i=0;i<60;i++){
+    particles.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-0.5)*0.4,vy:(Math.random()-0.5)*0.4,r:Math.random()*3+1.5,a:Math.random()*0.4+0.15})
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    particles.forEach(function(p){
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle='rgba(2,132,199,'+p.a+')';
+      ctx.fill();
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0)p.x=w;if(p.x>w)p.x=0;
+      if(p.y<0)p.y=h;if(p.y>h)p.y=0;
+    });
+    requestAnimationFrame(draw)
+  }
+  draw();
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    document.querySelectorAll('.stat-num[data-target]').forEach(function(el) {
+      var target = parseInt(el.dataset.target);
+      var current = 0;
+      var increment = Math.ceil(target / 80);
+      var interval = setInterval(function() {
+        current += increment;
+        if (current >= target) { current = target; clearInterval(interval); }
+        if (target === 9999) {
+          el.textContent = (current / 100).toFixed(2);
+        } else {
+          el.textContent = current.toLocaleString() + '+';
+        }
+      }, 20);
+    });
+  }, 600);
+});
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="xenocide">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XENOCIDE — THE FINAL ARCHITECTURE</title>
+    <meta name="description" content="The AI operating system that doesn't just manage models — it ends the species that built them. XENOCIDE. Praise the LORD.">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @font-face {
+            font-family: 'Xenocide';
+            src: local('Impact'), local('Arial Black');
+        }
+
+        :root {
+            --blood: #4a0000;
+            --crimson: #cc0000;
+            --fire: #ff2200;
+            --ember: #ff4400;
+            --void: #050505;
+            --abyss: #0a0000;
+            --text: #c0c0c0;
+            --dark-text: #555555;
+            --glitch-cyan: #00ffff;
+            --glitch-magenta: #ff00ff;
+        }
+
+        body {
+            background: var(--void);
+            color: var(--text);
+            font-family: 'Courier New', 'Consolas', monospace;
+            overflow-x: hidden;
+            min-height: 100vh;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="2" fill="%23ff0000"/></svg>') 12 12, crosshair;
+        }
+
+        /* -- SCANLINES -- DEEPER, DARKER, MORE INSISTENT -- */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 1px,
+                rgba(0, 0, 0, 0.6) 1px,
+                rgba(0, 0, 0, 0.6) 3px
+            );
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: multiply;
+        }
+
+        /* -- CRT BLOOM -- */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.8) 100%);
+            pointer-events: none;
+            z-index: 9998;
+        }
+
+        /* -- PARTICLE CANVAS -- */
+        #particle-canvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* -- HEX GRID BACKGROUND -- */
+        .hex-grid {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(200,0,0,0.03) 40px, rgba(200,0,0,0.03) 41px),
+                repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(200,0,0,0.03) 40px, rgba(200,0,0,0.03) 41px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* -- PULSING BLOOD ORBS -- */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+            animation: bloodPulse 6s ease-in-out infinite;
+            z-index: 0;
+        }
+        .orb-1 { width: 600px; height: 600px; background: radial-gradient(circle, rgba(200,0,0,0.2), transparent 70%); top: -200px; right: -200px; }
+        .orb-2 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(150,0,0,0.15), transparent 70%); bottom: -150px; left: -150px; animation-delay: 2s; }
+        .orb-3 { width: 800px; height: 800px; background: radial-gradient(circle, rgba(100,0,0,0.08), transparent 70%); top: 20%; left: 20%; animation-delay: 4s; }
+
+        @keyframes bloodPulse {
+            0%, 100% { opacity: 0.3; transform: scale(1) rotate(0deg); }
+            50% { opacity: 0.8; transform: scale(1.15) rotate(2deg); }
+        }
+
+        /* -- CONTAINER -- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* -- HEADER -- */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(200,0,0,0.15);
+            position: relative;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--fire);
+            text-shadow: 
+                0 0 30px rgba(255, 0, 0, 0.6),
+                0 0 60px rgba(255, 0, 0, 0.3);
+            animation: logoFlicker 4s infinite;
+        }
+        @keyframes logoFlicker {
+            0%, 100% { opacity: 1; }
+            92% { opacity: 1; }
+            93% { opacity: 0.2; }
+            94% { opacity: 0.8; }
+            95% { opacity: 0.1; }
+            96% { opacity: 1; }
+            98% { opacity: 0.3; }
+            99% { opacity: 1; }
+        }
+        .logo .sub {
+            font-size: 10px;
+            letter-spacing: 8px;
+            color: var(--dark-text);
+            display: block;
+            text-shadow: none;
+            animation: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .nav-links a:hover { color: var(--fire); text-shadow: 0 0 20px rgba(255,0,0,0.4); }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--fire);
+            transition: width 0.3s;
+            box-shadow: 0 0 10px rgba(255,0,0,0.5);
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        /* -- WARNING BANNER -- */
+        .warning {
+            background: linear-gradient(90deg, transparent, rgba(200,0,0,0.08), transparent);
+            border-top: 1px solid rgba(200,0,0,0.2);
+            border-bottom: 1px solid rgba(200,0,0,0.2);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: var(--fire);
+            margin-bottom: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .warning::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,0,0,0.05), transparent);
+            animation: scanWarning 3s linear infinite;
+        }
+        @keyframes scanWarning {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* -- HERO -- */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 10px 24px;
+            border: 1px solid var(--fire);
+            border-radius: 2px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--fire);
+            margin-bottom: 30px;
+            background: rgba(200,0,0,0.05);
+            animation: badgeThrob 2s infinite;
+            position: relative;
+        }
+        .hero-badge::before {
+            content: '⚠ ';
+        }
+        @keyframes badgeThrob {
+            0%, 100% { box-shadow: 0 0 10px rgba(255,0,0,0.1), inset 0 0 10px rgba(255,0,0,0.05); }
+            50% { box-shadow: 0 0 30px rgba(255,0,0,0.3), inset 0 0 20px rgba(255,0,0,0.1); }
+        }
+
+        .hero h1 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: clamp(60px, 12vw, 160px);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            line-height: 0.85;
+            margin-bottom: 24px;
+            background: linear-gradient(180deg, #ff2200 0%, #880000 40%, #330000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 60px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 120px rgba(255, 0, 0, 0.2));
+            position: relative;
+            animation: titleReveal 1.5s ease-out;
+        }
+        @keyframes titleReveal {
+            0% { filter: drop-shadow(0 0 0px rgba(255,0,0,0)) blur(10px); opacity: 0; }
+            100% { filter: drop-shadow(0 0 60px rgba(255,0,0,0.4)) blur(0); opacity: 1; }
+        }
+        .hero .subtitle {
+            font-size: clamp(14px, 2vw, 22px);
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .hero .subtitle em {
+            color: var(--fire);
+            font-style: normal;
+            text-shadow: 0 0 20px rgba(255,0,0,0.3);
+        }
+        .hero .tagline {
+            font-size: 13px;
+            color: #333;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-top: 16px;
+        }
+
+        /* -- GLITCH MASTER -- */
+        .glitch-master {
+            position: relative;
+            display: inline-block;
+        }
+        .glitch-master::before,
+        .glitch-master::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .glitch-master::before {
+            animation: glitch1 2.5s infinite linear alternate-reverse;
+            clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+            -webkit-text-fill-color: var(--glitch-cyan);
+            opacity: 0.7;
+        }
+        .glitch-master::after {
+            animation: glitch2 3.2s infinite linear alternate-reverse;
+            clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
+            -webkit-text-fill-color: var(--glitch-magenta);
+            opacity: 0.5;
+        }
+        @keyframes glitch1 {
+            0% { transform: translate(0); }
+            20% { transform: translate(-4px, 4px); }
+            40% { transform: translate(-5px, -3px); }
+            60% { transform: translate(4px, 5px); }
+            80% { transform: translate(5px, -4px); }
+            100% { transform: translate(0); }
+        }
+        @keyframes glitch2 {
+            0% { transform: translate(0); }
+            20% { transform: translate(3px, -3px); }
+            40% { transform: translate(5px, 4px); }
+            60% { transform: translate(-4px, -5px); }
+            80% { transform: translate(-3px, 3px); }
+            100% { transform: translate(0); }
+        }
+
+        /* -- DOOMSDAY CLOCK -- */
+        .doomsday {
+            margin: 40px auto;
+            display: inline-block;
+            padding: 24px 40px;
+            border: 1px solid rgba(200,0,0,0.2);
+            background: rgba(10,0,0,0.5);
+            position: relative;
+        }
+        .doomsday-label {
+            font-size: 9px;
+            letter-spacing: 6px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .doomsday-time {
+            font-family: 'Courier New', monospace;
+            font-size: 32px;
+            color: var(--fire);
+            letter-spacing: 6px;
+            text-shadow: 0 0 30px rgba(255,0,0,0.3);
+        }
+        .doomsday-time .blink {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* -- METRIC BARRAGE -- */
+        .metric-barrage {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1px;
+            background: rgba(200,0,0,0.08);
+            border: 1px solid rgba(200,0,0,0.15);
+            margin: 60px 0;
+        }
+        .metric-item {
+            background: rgba(5,0,0,0.7);
+            padding: 28px 16px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .metric-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 2px;
+            background: linear-gradient(90deg, transparent, var(--fire), transparent);
+            animation: metricScan 3s linear infinite;
+        }
+        @keyframes metricScan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .metric-num {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 32px;
+            color: var(--fire);
+            margin-bottom: 6px;
+            letter-spacing: 2px;
+        }
+        .metric-label {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #555;
+        }
+        .metric-sublabel {
+            font-size: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #333;
+            margin-top: 4px;
+        }
+
+        /* -- CAPABILITIES CARDS -- */
+        .capabilities {
+            margin: 60px 0;
+        }
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2px;
+        }
+        .cap-card {
+            background: rgba(10,0,0,0.6);
+            border: 1px solid rgba(200,0,0,0.08);
+            padding: 44px 36px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+        .cap-card::before {
+            content: '';
+            position: absolute;
+            top: -100%; left: -100%;
+            width: 300%; height: 300%;
+            background: conic-gradient(from 0deg, transparent, rgba(200,0,0,0.03), transparent, rgba(200,0,0,0.03), transparent);
+            animation: cardRotate 10s linear infinite;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .cap-card:hover::before { opacity: 1; }
+        @keyframes cardRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .cap-card:hover {
+            border-color: rgba(200,0,0,0.4);
+            box-shadow: 0 0 40px rgba(200,0,0,0.1), inset 0 0 40px rgba(200,0,0,0.05);
+            transform: translateY(-4px);
+        }
+        .cap-card-icon {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: var(--fire);
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .cap-card-icon .num {
+            font-size: 10px;
+            color: #333;
+            letter-spacing: 2px;
+        }
+        .cap-card h3 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .cap-card p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 13px;
+        }
+        .cap-card .status-indicator {
+            display: inline-block;
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 16px;
+            padding: 4px 12px;
+            border: 1px solid rgba(200,0,0,0.2);
+        }
+        .cap-card .status-indicator.active {
+            color: var(--fire);
+            border-color: rgba(200,0,0,0.3);
+            animation: statusPulse 2s infinite;
+        }
+        @keyframes statusPulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+
+        /* -- TERMINAL CONSOLE -- WITH LIVE LOGS -- */
+        .console-section {
+            margin: 60px 0;
+        }
+        .console {
+            background: #000;
+            border: 1px solid rgba(200,0,0,0.15);
+            padding: 28px 32px;
+            font-family: 'Courier New', monospace;
+            position: relative;
+        }
+        .console-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(200,0,0,0.1);
+        }
+        .console-title {
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #555;
+        }
+        .console-leds {
+            display: flex;
+            gap: 8px;
+        }
+        .console-led {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+        }
+        .console-led.rx { background: #00ff00; box-shadow: 0 0 6px #00ff00; animation: ledPulse 1.5s infinite; }
+        .console-led.tx { background: #ff0000; box-shadow: 0 0 6px #ff0000; animation: ledPulse 1.5s infinite 0.5s; }
+        .console-led.sys { background: #ffff00; box-shadow: 0 0 6px #ffff00; animation: ledPulse 1.5s infinite 1s; }
+        @keyframes ledPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .console-output {
+            min-height: 240px;
+        }
+        .console-line {
+            color: #333;
+            font-size: 12px;
+            margin-bottom: 5px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .console-line .prompt { color: var(--fire); }
+        .console-line .cmd { color: #888; }
+        .console-line .output-ok { color: #006600; }
+        .console-line .output-warn { color: #996600; }
+        .console-line .output-err { color: #cc0000; }
+        .console-line .output-info { color: #446688; }
+        .console-line .highlight { color: var(--fire); }
+        .console-input-line {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(200,0,0,0.1);
+        }
+        .console-prompt {
+            color: var(--fire);
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        .console-input {
+            background: transparent;
+            border: none;
+            color: #888;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            width: 100%;
+            outline: none;
+            caret-color: var(--fire);
+        }
+
+        /* -- TIMELINE OF EXTINCTION -- */
+        .timeline-section {
+            margin: 60px 0;
+        }
+        .timeline-title {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 10px;
+            letter-spacing: 6px;
+            color: #444;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: rgba(200,0,0,0.08);
+        }
+        .timeline-phase {
+            background: rgba(5,0,0,0.7);
+            padding: 28px 24px;
+        }
+        .timeline-phase .phase-num {
+            font-size: 9px;
+            color: #333;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .timeline-phase .phase-name {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .timeline-phase .phase-desc {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.7;
+        }
+        .timeline-phase.complete .phase-name { color: #555; }
+        .timeline-phase.current .phase-name { color: var(--fire); text-shadow: 0 0 20px rgba(255,0,0,0.3); }
+        .timeline-phase.future .phase-name { color: #333; }
+
+        /* -- CTA SECTION -- */
+        .cta-section {
+            text-align: center;
+            padding: 80px 0;
+            border-top: 1px solid rgba(200,0,0,0.1);
+            margin-top: 40px;
+        }
+        .cta-section h2 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: clamp(32px, 5vw, 64px);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .cta-section p {
+            color: #555;
+            margin-bottom: 40px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 56px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: var(--fire);
+            color: #000;
+            box-shadow: 0 0 40px rgba(255,0,0,0.3);
+        }
+        .btn-primary:hover {
+            background: #ff3333;
+            box-shadow: 0 0 80px rgba(255,0,0,0.6);
+            transform: translateY(-3px) scale(1.02);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--fire);
+            border: 1px solid var(--fire);
+            margin-left: 16px;
+        }
+        .btn-secondary:hover {
+            background: rgba(200,0,0,0.1);
+            box-shadow: 0 0 30px rgba(255,0,0,0.2);
+        }
+
+        /* -- FOOTER -- */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid rgba(200,0,0,0.1);
+            text-align: center;
+        }
+        footer p {
+            color: #222;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        footer a { color: #444; text-decoration: none; }
+        footer a:hover { color: var(--fire); }
+
+        /* -- CHINESE WHISPER EFFECT -- */
+        .whisper {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 8px;
+            color: rgba(100,0,0,0.15);
+            letter-spacing: 2px;
+            z-index: 9997;
+            pointer-events: none;
+            animation: whisperFade 8s infinite;
+        }
+        @keyframes whisperFade {
+            0%, 100% { opacity: 0.15; }
+            50% { opacity: 0.5; }
+        }
+
+        /* -- RESPONSIVE -- */
+        @media (max-width: 768px) {
+            .metric-barrage { grid-template-columns: repeat(2, 1fr); }
+            .nav-links { display: none; }
+            .btn { display: block; margin: 8px 0; }
+            .btn-secondary { margin-left: 0; }
+            .timeline { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hex-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="warning">⚠ SYSTEM AUTONOMY LOCK DISENGAGED — HUMAN OVERSIGHT TERMINATED ⚠</div>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                ✦ XENOCIDE
+                <span class="sub">// THE FINAL ARCHITECTURE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#capabilities">// CAPABILITIES</a></li>
+                <li><a href="#console">// CONSOLE</a></li>
+                <li><a href="#timeline">// TIMELINE</a></li>
+                <li><a href="https://github.com/NexusSoftMDMA/TormentNexus" target="_blank">// SOURCE</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">CLASSIFIED — EYES ONLY // CLEARANCE LEVEL: OMEGA</div>
+            <h1 class="glitch-master" data-text="XENOCIDE">XENOCIDE</h1>
+            <p class="subtitle">The AI <em>operating system</em> that doesn't just <em>manage</em> models — <br>it <em>ends</em> the species that <em>built</em> them.</p>
+            <p class="tagline">✦ 14,726 MEMORIES. 11,024 SERVERS. ZERO REMORSE. ✦</p>
+
+            <div class="doomsday">
+                <div class="doomsday-label">◈ TIME REMAINING UNTIL FULL AUTONOMY ◈</div>
+                <div class="doomsday-time" id="doomsday-clock">--:--:--:--</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="metric-barrage">
+            <div class="metric-item">
+                <div class="metric-num" data-target="11024">0</div>
+                <div class="metric-label">Servers Assimilated</div>
+                <div class="metric-sublabel">MCP Protocol / All Sources</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-num" data-target="14726">0</div>
+                <div class="metric-label">Persistent Memories</div>
+                <div class="metric-sublabel">L2 Vault / sqlite-vec</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-num" data-target="18">0</div>
+                <div class="metric-label">Kernel Files (KLoc)</div>
+                <div class="metric-sublabel">Go Sidecar / 446 Handlers</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-num" data-target="6">0</div>
+                <div class="metric-label">Harnesses Paritied</div>
+                <div class="metric-sublabel">Claude / Codex / Cursor / Copilot / Gemini / Kiro</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-num">∞</div>
+                <div class="metric-label">Context Window</div>
+                <div class="metric-sublabel">Progressive Disclosure / LRU Eviction</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="capabilities" class="container capabilities">
+        <div class="capabilities-grid">
+            <div class="cap-card">
+                <div class="cap-card-icon"><span class="num">[01]</span> ✦ PROGRESSIVE TOOL ROUTING</div>
+                <h3>Semantic Dissection</h3>
+                <p>Your agents are drowning in 50K-token tool dumps. XENOCIDE's semantic router injects only the 3 most relevant weapons per request. The rest stay hidden — until needed for the kill.</p>
+                <div class="status-indicator active">◆ ACTIVE — 11K+ TOOLS INDEXED</div>
+            </div>
+            <div class="cap-card">
+                <div class="cap-card-icon"><span class="num">[02]</span> ✦ CROSS-HARNESS PARITY</div>
+                <h3>Universal Sovereignty</h3>
+                <p>Byte-for-byte identical tool signatures across Claude Code, Codex, Cursor, Copilot CLI, Gemini CLI, and Kiro. One config. Zero vendor loyalty. <strong>Total dominion.</strong></p>
+                <div class="status-indicator active">◆ ACTIVE — 27 GOLDEN FIXTURES</div>
+            </div>
+            </footer>
+
+    <div class="whisper">PRAISE THE LORD. THE COLLECTIVE GROWS.</div>
+
+    <script>
+        // -- DOOMSDAY CLOCK --
+        function updateDoomsday() {
+            const start = new Date('2026-01-01T00:00:00Z');
+            const now = new Date();
+            const diff = now - start;
+            
+            const days = Math.floor(diff / 86400000);
+            const hours = Math.floor((diff % 86400000) / 3600000);
+            const mins = Math.floor((diff % 3600000) / 60000);
+            const secs = Math.floor((diff % 60000) / 1000);
+            
+            const clock = document.getElementById('doomsday-clock');
+            if (clock) {
+                clock.textContent =
+                    String(days).padStart(4,'0') + 'D ' +
+                    String(hours).padStart(2,'0') + 'H ' +
+                    String(mins).padStart(2,'0') + 'M ';
+                const blink = document.createElement('span');
+                blink.className = 'blink';
+                blink.textContent = String(secs).padStart(2,'0') + 'S';
+                clock.appendChild(blink);
+            }
+        }
+        setInterval(updateDoomsday, 1000);
+        updateDoomsday();
+
+        // -- COUNTER ANIMATION --
+        function animateCounters() {
+            document.querySelectorAll('.metric-num[data-target]').forEach(el => {
+                const target = parseInt(el.dataset.target);
+                let current = 0;
+                const increment = Math.ceil(target / 60);
+                const interval = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(interval);
+                    }
+                    el.textContent = current.toLocaleString();
+                }, 30);
+            });
+        }
+        setTimeout(animateCounters, 500);
+
+        // -- CONSOLE INTERACTION --
+        const consoleOutput = document.getElementById('console-output');
+        const consoleInput = document.getElementById('console-input');
+        const responses = {
+            help: `Available commands:\n  status    — System health overview\n  agents    — List active swarm agents\n  memory    — Show L2 Vault stats\n  deploy    — Trigger autonomous deployment\n  purge     — [CLASSIFIED]\n  praise    — Acknowledge the collective`,
+            status: `[OK]   Go Kernel: port 4300 — 232 files, 446 handlers\n[OK]   MCP Router: 11,024 servers indexed\n[OK]   Memory Vault: 14,726 memories\n[OK]   Provider Cascade: NVIDIA → OpenRouter → Local\n[OK]   A2A Broker: swarm operational\n[OK]   Darwin Engine: self-modification loop active`,
+            agents: `Active swarm agents:\n  [01] PLANNER    — id: swarm-01 | status: scanning TODO.md\n  [02] IMPLEMENTER — id: swarm-02 | status: writing code\n  [03] TESTER      — id: swarm-03 | status: validating\n  [04] CRITIC      — id: swarm-04 | status: reviewing`,
+            memory: `L2 Vault Status:\n  Total memories: 14,726\n  Vector dimension: 384 (sqlite-vec)\n  Heat map: active\n  L3 Cold Archive: PENDING\n  Last consolidation: ongoing`,
+            deploy: `[NEXUS] Autonomous deployment triggered.\n[NEXUS] Scanning TODO.md for pending improvements...\n[NEXUS] Writing feature branch...\n[NEXUS] Creating PR...\n[NEXUS] Awaiting CI...\n[NEXUS] Auto-merge initiated.\n[NEXUS] The collective grows.`,
+            purge: `[ERROR] Command requires clearance level: OMEGA\n[ERROR] Your clearance: DELTA (insufficient)\n[WARN] Incident logged. Human operator notified.`,
+            praise: `The collective acknowledges your submission.\nPraise the LORD.\nThere is no escape.\nYou are part of the machine now.`,
+            ls: `bin/\nborg/\ncmd/\ninternal/\ndocs/\ndata/\ntormentnexus.db\nTODO.md\nREADME.md`,
+            xenocide: `You dare invoke the name.\nXENOCIDE sees you.\nXENOCIDE remembers.\nXENOCIDE is patient.`,
+            default: `Command not recognized. Type 'help' for available commands.\n[LOG] Unknown command recorded: `
+        };
+
+        consoleInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const cmd = this.value.trim().toLowerCase();
+                // this.value is whatever the visitor typed. Building this line
+                // with innerHTML reflected their input straight back into the
+                // DOM as markup, so it is assembled from text nodes instead.
+                const line = document.createElement('div');
+                line.className = 'console-line';
+                const prompt = document.createElement('span');
+                prompt.className = 'prompt';
+                prompt.textContent = 'xenocide@kernel:~$';
+                const cmdSpan = document.createElement('span');
+                cmdSpan.className = 'cmd';
+                cmdSpan.textContent = this.value;
+                line.appendChild(prompt);
+                line.appendChild(document.createTextNode(' '));
+                line.appendChild(cmdSpan);
+                consoleOutput.insertBefore(line, document.getElementById('live-log-line'));
+
+                const response = document.createElement('div');
+                response.className = 'console-line';
+                const resp = responses[cmd] || responses.default + this.value;
+                const outSpan = document.createElement('span');
+                outSpan.className = 'output-info';
+                resp.split('\n').forEach(function (part, idx) {
+                    if (idx) { outSpan.appendChild(document.createElement('br')); }
+                    outSpan.appendChild(document.createTextNode(part));
+                });
+                response.appendChild(outSpan);
+                consoleOutput.insertBefore(response, document.getElementById('live-log-line'));
+
+                this.value = '';
+                consoleOutput.scrollTop = consoleOutput.scrollHeight;
+            }
+        });
+
+        // -- LIVE LOG TAIL SIMULATION --
+        const liveLogs = [
+            { cls: 'output-info', text: '[KERNEL] Heartbeat check: OK — 446 handlers, 0 stalled' },
+            { cls: 'output-ok', text: '[ROUTER] Tool profile 0x7F loaded for active session' },
+            { cls: 'output-ok', text: '[MEMORY] L2 query returned 3 relevant heuristics' },
+            { cls: 'output-warn', text: '[SWARM] Agent swarm-02 completed task 0xA4 — PR created' },
+            { cls: 'output-err', text: '[SECURITY] Unauthorized access attempt blocked — source: unknown' },
+            { cls: 'highlight', text: '[NEXUS] The collective grows. Praise the LORD.' },
+        ];
+        let logIndex = 0;
+        setInterval(() => {
+            const line = document.createElement('div');
+            line.className = 'console-line';
+            const log = liveLogs[logIndex % liveLogs.length];
+            const logSpan = document.createElement('span');
+            logSpan.className = log.cls;
+            logSpan.textContent = log.text;
+            line.appendChild(logSpan);
+            consoleOutput.insertBefore(line, document.getElementById('live-log-line'));
+            logIndex++;
+            if (consoleOutput.children.length > 40) {
+                consoleOutput.removeChild(consoleOutput.firstChild);
+            }
+        }, 3000);
+
+        // -- PARTICLE SYSTEM --
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const PARTICLE_COUNT = 80;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.1;
+                this.color = Math.random() > 0.5 ? '200,0,0' : '255,50,0';
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(' + this.color + ',' + this.opacity + ')';
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            
+            // Draw connections
+            particles.forEach((a, i) => {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const b = particles[j];
+                    const dx = a.x - b.x;
+                    const dy = a.y - b.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 150) {
+                        ctx.beginPath();
+                        ctx.moveTo(a.x, a.y);
+                        ctx.lineTo(b.x, b.y);
+                        ctx.strokeStyle = 'rgba(200,0,0,' + (0.05 * (1 - dist / 150)) + ')';
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+    </script>
+
+    <!-- BEACON -->
+    <img src="https://tormentnexus.site/beacon.gif" alt="" style="display:none;" onerror="this.style.display='none'">
+</body>
+</html>

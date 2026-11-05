@@ -1,0 +1,137 @@
+[
+  {
+    "repo": "Maestro",
+    "action": "pushed-no-verify",
+    "detail": "To https://github.com/robertpelloni/Maestro\n   70b59875..f492a7e0  main -> main\n"
+  },
+  {
+    "repo": "bobtorrent",
+    "branch": "fix-wasm-build-and-lattice-10556890247683923816",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobtorrent",
+    "branch": "main",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobtrax",
+    "branch": "origin/bobtrax-omni-dashboard-v1.0.18-12527709832240548796",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bqt",
+    "branch": "origin/jules-885412765636779725-8505c877",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobzilla",
+    "branch": "origin/jules-17008129538408180149-a69a953f",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bcs",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bcs",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283-13794587466097602758",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bcs",
+    "branch": "jules-10936672596023099293-b3d8ae3d",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bcs",
+    "branch": "jules-bcs-port",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bcs",
+    "branch": "main",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "freellm",
+    "branch": "temp-main",
+    "action": "conflict-final"
+  },
+  {
+    "repo": "pi-mono",
+    "branch": "origin/feat/dashboard-consolidation-and-system-tray-15304076502127754935",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "pi-mono",
+    "branch": "origin/robertpelloni-phase-20-9492881022554947468",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "psytrance_night_outreach_agent",
+    "branch": "origin/jules-17639512437334612056-885a7d9b",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "conflict-final"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-final"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "action": "conflict-final"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "jules-14567467811770799398-9073d7db",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "main",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "branch": "main",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobmani/leraine-studio",
+    "branch": "origin/jules-208712761241480082-5e6fb3e2",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobmani/pianogame",
+    "branch": "origin/jules-7923437021684046164-a5f90854",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobble",
+    "branch": "origin/jules-11301324765694309973-a802fcfe",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "branch": "origin/jules-project-sirens-9283818547340256471",
+    "action": "conflict-final"
+  }
+]

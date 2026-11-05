@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HyperNexus — Sign In</title>
+    <meta
+      name="description"
+      content="Sign in to HyperNexus. Connect to your cloud or local AI control plane."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230284c7'/></svg>"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RX66REH6LV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-RX66REH6LV");
+    </script>
+    <style>
+      @property --accent-hue {
+        syntax: "<number>";
+        inherits: true;
+        initial-value: 0;
+      }
+      :root {
+        --accent-hue: 0;
+        animation: hueShift 14s linear infinite;
+      }
+      @keyframes hueShift {
+        0% {
+          --accent-hue: 0;
+        }
+        100% {
+          --accent-hue: 360;
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(
+          90deg,
+          hsl(var(--accent-hue), 80%, 75%) 0%,
+          hsl(var(--accent-hue), 60%, 85%) 10%,
+          hsl(var(--accent-hue), 30%, 94%) 22%,
+          hsl(var(--accent-hue), 30%, 94%) 78%,
+          hsl(var(--accent-hue), 60%, 85%) 90%,
+          hsl(var(--accent-hue), 80%, 75%) 100%
+        );
+        background-attachment: fixed;
+        color: #0f172a;
+        font-family: "Inter", system-ui, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        padding: 20px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+      }
+      .logo {
+        text-decoration: none;
+      }
+      .logo-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 0;
+      }
+      .logo-text {
+        position: relative;
+        z-index: 1;
+        padding: 0 8px;
+        font-size: 20px;
+        font-weight: 700;
+        background: linear-gradient(
+          90deg,
+          #ff3b30,
+          #ff9500,
+          #ffcc00,
+          #4cd964,
+          #5ac8fa,
+          #007aff,
+          #5856d6,
+          #ff3b30
+        );
+        background-size: 800% 100%;
+        animation: rainbowBtnSlow 1.5s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .logo-text span {
+        color: #0f172a;
+        -webkit-text-fill-color: #0f172a;
+        background: none;
+        -webkit-background-clip: initial;
+        background-clip: initial;
+        animation: heroShine 3.5s linear infinite;
+        background: linear-gradient(
+          90deg,
+          #0f172a 0%,
+          #0f172a 40%,
+          #ffffff 50%,
+          #0f172a 60%,
+          #0f172a 100%
+        );
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @keyframes heroShine {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+      @keyframes rainbowBtnSlow {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 800% 50%;
+        }
+      }
+      .header-links a {
+        color: #475569;
+        text-decoration: none;
+        font-size: 14px;
+        margin-left: 24px;
+      }
+      .header-links a:hover {
+        color: #0f172a;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 24px;
+      }
+      .login-card {
+        width: 100%;
+        max-width: 440px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        padding: 40px;
+      }
+      .login-card h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+      .login-card .subtitle {
+        font-size: 14px;
+        color: #475569;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+      .tabs {
+        display: flex;
+        gap: 4px;
+        background: rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+        padding: 4px;
+        margin-bottom: 24px;
+      }
+      .tab {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        background: transparent;
+        color: #475569;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      .tab.active {
+        background: hsl(var(--accent-hue), 80%, 50%);
+        color: #fff;
+        font-weight: 600;
+      }
+      .form-group {
+        margin-bottom: 16px;
+      }
+      .form-group label {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: #475569;
+        margin-bottom: 6px;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 12px 14px;
+        background: rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+        color: #0f172a;
+        font-size: 14px;
+        outline: none;
+      }
+      .form-group input:focus {
+        border-color: hsl(var(--accent-hue), 80%, 50%);
+      }
+      .form-group input::placeholder {
+        color: rgba(0, 0, 0, 0.25);
+      }
+      .divider {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 24px 0;
+      }
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.08);
+      }
+      .divider span {
+        font-size: 12px;
+        color: #475569;
+      }
+      .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-decoration: none;
+      }
+      .btn-accent {
+        background: hsl(var(--accent-hue), 80%, 50%);
+        color: #fff;
+        border: none;
+      }
+      .btn-secondary {
+        background: rgba(0, 0, 0, 0.04);
+        color: #0f172a;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+      }
+      .btn-rainbow {
+        background: linear-gradient(
+          90deg,
+          #ff3b30,
+          #ff9500,
+          #ffcc00,
+          #4cd964,
+          #5ac8fa,
+          #007aff,
+          #5856d6,
+          #ff3b30
+        );
+        background-size: 800% 100%;
+        animation: rainbowBtnSlow 3s linear infinite;
+        color: #fff;
+        box-shadow:
+          0 0 15px rgba(255, 59, 48, 0.4),
+          0 0 30px rgba(255, 149, 0, 0.3);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+      .footer-text {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 13px;
+        color: #475569;
+      }
+      .footer-text a {
+        color: hsl(var(--accent-hue), 80%, 50%);
+        text-decoration: none;
+      }
+      .error {
+        color: #dc2626;
+        font-size: 13px;
+        margin-top: 4px;
+        display: none;
+      }
+      .success {
+        color: #16a34a;
+        font-size: 13px;
+        margin-top: 4px;
+        display: none;
+      }
+      footer {
+        padding: 24px;
+        text-align: center;
+        color: #475569;
+        font-size: 12px;
+      }
+      footer a {
+        color: hsl(var(--accent-hue), 80%, 50%);
+        text-decoration: none;
+      }
+      .local-section {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-bar"></div>
+      <a href="/" class="logo">
+        <div class="logo-text">Hyper<span>Nexus</span></div>
+      </a>
+      <div class="header-links">
+        <a href="https://hypernexus.site/#features">Features</a>
+        <a href="https://hypernexus.site/pricing.html">Pricing</a>
+        <a href="https://hypernexus.site/download">Download</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="login-card">
+        <h1>Welcome back</h1>
+        <p class="subtitle">Sign in to your HyperNexus control plane</p>
+
+        <div class="tabs">
+          <button class="tab active" onclick="switchTab('cloud')">
+            ☁️ Cloud
+          </button>
+          <button class="tab" onclick="switchTab('local')">🖥️ Local</button>
+        </div>
+
+        <div id="cloud-section">
+          <form onsubmit="return handleCloudLogin(event);">
+            <div class="form-group">
+              <label>Email</label
+              ><input
+                type="email"
+                id="cloud-email"
+                placeholder="you@company.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Password</label
+              ><input
+                type="password"
+                id="cloud-password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+            <div id="cloud-error" class="error"></div>
+            <div id="cloud-success" class="success"></div>
+            <button
+              type="submit"
+              class="btn btn-accent"
+              style="margin-top: 16px"
+            >
+              Sign In to Cloud
+            </button>
+          </form>
+          <div class="divider"><span>or</span></div>
+          <a
+            href="#"
+            class="btn btn-secondary"
+            onclick="
+              event.preventDefault();
+              return false;
+            "
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24">
+              <path
+                fill="#4285F4"
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+              />
+              <path
+                fill="#34A853"
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+              />
+              <path
+                fill="#FBBC05"
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+              />
+              <path
+                fill="#EA4335"
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+              />
+            </svg>
+            Continue with Google
+          </a>
+          <div class="footer-text" style="margin-top: 20px">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+
+        <div id="local-section" class="local-section">
+          <form onsubmit="return handleLocalLogin(event);">
+            <div class="form-group">
+              <label>Local Instance URL</label
+              ><input type="url" id="local-url" value="http://localhost:4300" />
+            </div>
+            <div class="form-group">
+              <label
+                >API Token <span style="color: #475569">(optional)</span></label
+              ><input
+                type="password"
+                id="local-token"
+                placeholder="Leave blank for local access"
+              />
+            </div>
+            <div id="local-error" class="error"></div>
+            <div id="local-success" class="success"></div>
+            <button
+              type="submit"
+              class="btn btn-accent"
+              style="margin-top: 16px"
+            >
+              Connect to Local Instance
+            </button>
+          </form>
+          <div class="divider"><span>or</span></div>
+          <div style="text-align: center">
+            <p style="font-size: 14px; color: #475569; margin-bottom: 12px">
+              Don't have HyperNexus running locally?
+            </p>
+            <a href="https://hypernexus.site/download" class="btn btn-secondary"
+              >Download HyperNexus</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-text" style="margin-top: 24px">
+          By signing in, you agree to our
+          <a href="https://hypernexus.site/terms.html">Terms</a> and
+          <a href="https://hypernexus.site/privacy.html">Privacy Policy</a>
+        </div>
+        <div style="text-align: center; margin-top: 16px">
+          <a
+            href="https://hypernexus.site/pricing.html"
+            style="color: #475569; font-size: 13px; text-decoration: none"
+            >View Pricing</a
+          >
+          <span style="margin: 0 8px; color: #cbd5e1">·</span>
+          <!-- Introductory Offer Badge -->
+          <div style="text-align:center;margin-bottom:10px">
+            <span style="display:inline-block;background:linear-gradient(90deg,hsl(calc(var(--accent-hue) + 180), 80%, 50%),hsl(calc(var(--accent-hue) + 240), 80%, 50%),hsl(calc(var(--accent-hue) + 300), 80%, 50%));background-size:200% 100%;animation:rainbowBtnSlow 3s linear infinite;color:white;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:1px">Introductory Offer — 50% Off</span>
+          </div>
+          <!-- Monthly/Yearly Tabs -->
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 0;
+              margin-bottom: 10px;
+            "
+          >
+            <button
+              id="tab-monthly"
+              onclick="switchPlan('monthly')"
+              style="
+                padding: 5px 14px;
+                border: 1px solid hsl(calc(var(--accent-hue) + 180), 80%, 50%);
+                border-right: none;
+                border-radius: 5px 0 0 5px;
+                font-size: 11px;
+                font-weight: 600;
+                cursor: pointer;
+                background: hsl(calc(var(--accent-hue) + 180), 80%, 50%);
+                color: white;
+                transition: all 0.3s;
+              "
+            >
+              Monthly
+            </button>
+            <button
+              id="tab-yearly"
+              onclick="switchPlan('yearly')"
+              style="
+                padding: 5px 14px;
+                border: 1px solid hsl(calc(var(--accent-hue) + 180), 80%, 50%);
+                border-left: none;
+                border-radius: 0 5px 5px 0;
+                font-size: 11px;
+                font-weight: 600;
+                cursor: pointer;
+                background: transparent;
+                color: hsl(calc(var(--accent-hue) + 180), 80%, 50%);
+                transition: all 0.3s;
+              "
+            >
+              Yearly
+            </button>
+          </div>
+          <a
+            href="#"
+            id="get-started-btn"
+            class="btn-rainbow"
+            style="
+              display: inline-block;
+              padding: 8px 16px;
+              font-size: 13px;
+              font-weight: 600;
+              text-decoration: none;
+              border-radius: 6px;
+            "
+            >Get Started — <span id="price-label">$5/mo</span> →</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2026 HyperNexus LLC · <a href="/">Home</a> ·
+        <a href="https://hypernexus.site/blog/">Blog</a> ·
+        <a href="https://github.com/HyperNexusSoft/HyperNexus" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      function switchTab(tab) {
+        document.querySelectorAll(".tab").forEach(function (t) {
+          t.classList.remove("active");
+        });
+        document
+          .querySelector(
+            ".tab:" + (tab === "cloud" ? "first-child" : "last-child"),
+          )
+          .classList.add("active");
+        document.getElementById("cloud-section").style.display =
+          tab === "cloud" ? "block" : "none";
+        document.getElementById("local-section").style.display =
+          tab === "local" ? "block" : "none";
+      }
+      function handleCloudLogin(e) {
+        e.preventDefault();
+        document.getElementById("cloud-success").textContent =
+          "Connecting to cloud...";
+        document.getElementById("cloud-success").style.display = "block";
+        setTimeout(function () {
+          window.location.href = "https://cloud.hypernexus.site/dashboard";
+        }, 1000);
+        return false;
+      }
+      function handleLocalLogin(e) {
+        e.preventDefault();
+        var url = document.getElementById("local-url").value;
+        var token = document.getElementById("local-token").value;
+        var errorEl = document.getElementById("local-error");
+        var successEl = document.getElementById("local-success");
+        errorEl.style.display = "none";
+        successEl.textContent = "Testing connection...";
+        successEl.style.display = "block";
+        fetch(url + "/health", {
+          headers: token ? { Authorization: "Bearer " + token } : {},
+        })
+          .then(function (r) {
+            if (r.ok) {
+              successEl.textContent = "Connected!";
+              localStorage.setItem("hypernexus_local_url", url);
+              setTimeout(function () {
+                window.location.href = url;
+              }, 500);
+            } else throw new Error();
+          })
+          .catch(function () {
+            errorEl.textContent = "Could not connect to " + url;
+            errorEl.style.display = "block";
+            successEl.style.display = "none";
+          });
+        return false;
+      }
+      function handleOAuthLogin(p) {
+        window.location.href = "https://hypernexus.site/auth/" + p;
+      }
+
+      // Get Started button - direct Stripe checkout
+      document
+        .getElementById("get-started-btn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          fetch("https://hypernexus.site/api/v1/billing/checkout", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              tier: "HYPERNEXUS_PROFESSIONAL_LICENSE",
+              seats: 1,
+              price_amount: window.__price_amount || 500,
+              interval: window.__pricing_plan === "yearly" ? "year" : "month",
+              success_url: "https://hypernexus.site/success.html",
+              cancel_url: "https://cloud.hypernexus.site/",
+            }),
+          })
+            .then(function (r) {
+              return r.json();
+            })
+            .then(function (d) {
+              if (d.url) window.location.href = d.url;
+              else alert("Error: No checkout URL");
+            })
+            .catch(function (e) {
+              alert("Error: " + e.message);
+            });
+        });
+
+      // Monthly/Yearly pricing toggle
+      var __pricing_plan = localStorage.getItem("pricing_plan") || "monthly";
+      window.__pricing_plan = __pricing_plan;
+      window.__price_amount = __pricing_plan === "yearly" ? 5000 : 500;
+
+      function switchPlan(plan) {
+        var isYearly = plan === "yearly";
+
+        window.__pricing_plan = plan;
+        window.__price_amount = isYearly ? 5000 : 500;
+        localStorage.setItem("pricing_plan", plan);
+
+        var priceLabel = document.getElementById("price-label");
+        if (priceLabel) priceLabel.textContent = isYearly ? "$50/yr" : "$5/mo";
+
+        // Complementary color (180 degrees offset from accent)
+        var compColor = "hsl(calc(var(--accent-hue) + 180), 80%, 50%)";
+
+        var tabM = document.getElementById("tab-monthly");
+        var tabY = document.getElementById("tab-yearly");
+        if (tabM) {
+          tabM.style.background = isYearly ? "transparent" : compColor;
+          tabM.style.color = isYearly ? compColor : "white";
+          tabM.style.borderColor = compColor;
+        }
+        if (tabY) {
+          tabY.style.background = isYearly ? compColor : "transparent";
+          tabY.style.color = isYearly ? "white" : compColor;
+          tabY.style.borderColor = compColor;
+        }
+      }
+
+      // Set initial state on load
+      document.addEventListener("DOMContentLoaded", function () {
+        var savedPlan = localStorage.getItem("pricing_plan") || "monthly";
+        switchPlan(savedPlan);
+      });
+
+      var savedUrl = localStorage.getItem("hypernexus_local_url");
+      if (savedUrl) document.getElementById("local-url").value = savedUrl;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing — HyperNexus</title>
+    <meta
+      name="description"
+      content="HyperNexus pricing: Start your 7-day free trial. $50/seat for local license + cloud hosting."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230284c7'/></svg>"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RX66REH6LV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-RX66REH6LV");
+    </script>
+    <style>
+      @property --accent-hue {
+        syntax: "<number>";
+        inherits: true;
+        initial-value: 0;
+      }
+      :root {
+        --accent-hue: 0;
+        animation: hueShift 14s linear infinite;
+      }
+      @keyframes hueShift {
+        0% {
+          --accent-hue: 0;
+        }
+        100% {
+          --accent-hue: 360;
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          Inter,
+          -apple-system,
+          sans-serif;
+        background: #0a0a0a;
+        color: #e0e0e0;
+        min-height: 100vh;
+        padding: 60px 20px;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .header h1 {
+        font-size: 3rem;
+        margin-bottom: 16px;
+        color: hsl(var(--accent-hue), 80%, 60%);
+        text-shadow: 0 0 20px hsla(var(--accent-hue), 80%, 60%, 0.3);
+      }
+      @keyframes rainbowBtnSlow {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 800% 50%;
+        }
+      }
+      .header p {
+        color: #888;
+        font-size: 1.2rem;
+      }
+      .pricing-container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 2px solid hsl(var(--accent-hue), 80%, 60%);
+        border-radius: 16px;
+        padding: 48px 32px;
+        position: relative;
+        overflow: hidden;
+      }
+      .card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: conic-gradient(
+          from 0deg,
+          transparent,
+          hsl(var(--accent-hue), 80%, 60%, 0.1),
+          transparent
+        );
+        animation: cardSpin 8s linear infinite;
+        pointer-events: none;
+      }
+      @keyframes cardSpin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .price {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+      .price-amount {
+        font-size: 4rem;
+        font-weight: 900;
+        color: #fff;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 8px;
+      }
+      .price-amount .dollar {
+        font-size: 2rem;
+        color: hsl(var(--accent-hue), 80%, 60%);
+      }
+      .price-period {
+        color: #888;
+        font-size: 1.1rem;
+      }
+      .price-note {
+        color: #666;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+      .section-title {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: hsl(var(--accent-hue), 80%, 60%);
+        margin: 32px 0 16px;
+      }
+      .features {
+        list-style: none;
+        margin-bottom: 32px;
+      }
+      .features li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .features li::before {
+        content: "✓";
+        color: hsl(var(--accent-hue), 80%, 60%);
+        font-weight: 700;
+        min-width: 20px;
+      }
+      .features li.highlight {
+        color: #fff;
+        font-weight: 600;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 18px 32px;
+        border-radius: 12px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-primary {
+        background: linear-gradient(
+          90deg,
+          #ff3b30,
+          #ff9500,
+          #ffcc00,
+          #4cd964,
+          #5ac8fa,
+          #007aff,
+          #5856d6,
+          #ff3b30
+        );
+        background-size: 800% 100%;
+        animation:
+          rainbowBtnSlow 3s linear infinite,
+          colorFlash 4s ease-in-out infinite;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+      @keyframes colorFlash {
+        0%,
+        100% {
+          filter: brightness(1);
+        }
+        50% {
+          filter: brightness(1.3);
+        }
+      }
+      .btn-primary::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        animation: btnShine 2s linear infinite;
+        pointer-events: none;
+      }
+      @keyframes btnShine {
+        0% {
+          transform: translateX(-100%) rotate(45deg);
+        }
+        100% {
+          transform: translateX(100%) rotate(45deg);
+        }
+      }
+      .btn:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 30px hsla(var(--accent-hue), 80%, 60%, 0.4);
+      }
+      .guarantee {
+        text-align: center;
+        margin-top: 24px;
+        color: #888;
+        font-size: 14px;
+      }
+      .guarantee strong {
+        color: hsl(var(--accent-hue), 80%, 60%);
+      }
+      .comparison {
+        max-width: 800px;
+        margin: 80px auto 0;
+      }
+      .comparison h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 32px;
+        background: linear-gradient(
+          90deg,
+          #ff3b30,
+          #ff9500,
+          #ffcc00,
+          #4cd964,
+          #5ac8fa,
+          #007aff,
+          #5856d6,
+          #ff3b30
+        );
+        background-size: 800% 100%;
+        animation: rainbowBtnSlow 3s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .comparison table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .comparison th,
+      .comparison td {
+        padding: 16px;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .comparison th {
+        color: hsl(var(--accent-hue), 80%, 60%);
+        font-weight: 600;
+      }
+      .check {
+        color: #4cd964;
+      }
+      .x {
+        color: #ff3b30;
+      }
+      .logo-text {
+        font-size: 20px;
+        font-weight: 700;
+        background: linear-gradient(
+          90deg,
+          #ff3b30,
+          #ff9500,
+          #ffcc00,
+          #4cd964,
+          #5ac8fa,
+          #007aff,
+          #5856d6,
+          #ff3b30
+        );
+        background-size: 800% 100%;
+        animation: rainbowBtnSlow 1.5s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .logo-text span {
+        color: #fff;
+        -webkit-text-fill-color: #fff;
+        background: none;
+        -webkit-background-clip: initial;
+        background-clip: initial;
+        animation: heroShine 3.5s linear infinite;
+        background: linear-gradient(
+          90deg,
+          #fff 0%,
+          #fff 40%,
+          rgba(255, 255, 255, 0.3) 50%,
+          #fff 60%,
+          #fff 100%
+        );
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @keyframes heroShine {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+      .nav {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .nav a {
+        color: #888;
+        text-decoration: none;
+        margin: 0 16px;
+        font-size: 14px;
+      }
+      .nav a:hover {
+        color: #fff;
+      }
+      footer {
+        text-align: center;
+        margin-top: 80px;
+        color: #555;
+        font-size: 13px;
+      }
+      footer a {
+        color: hsl(var(--accent-hue), 80%, 60%);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a
+        href="/"
+        class="logo-text"
+        style="text-decoration: none; font-size: 18px"
+        >Hyper<span>Nexus</span></a
+      >
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/blog">Blog</a>
+    </div>
+
+    <div class="header">
+      <h1>Simple, Transparent Pricing</h1>
+      <p>Free for 7 days. Cancel anytime. No charge until trial ends.</p>
+    </div>
+
+    <div class="pricing-container">
+      <div class="card">
+        <!-- Introductory Offer Badge -->
+        <div style="text-align:center;margin-bottom:20px">
+          <span style="display:inline-block;background:linear-gradient(90deg,#ff3b30,#ff9500,#ffcc00,#4cd964,#5ac8fa,#007aff,#5856d6,#ff3b30);background-size:800% 100%;animation:rainbowBtnSlow 3s linear infinite;color:white;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:1px">7-Day Free Trial</span>
+        </div>
+        <div class="price">
+          <!-- Monthly/Yearly Tabs -->
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 0;
+              margin: 0 auto 20px;
+            "
+          >
+            <button
+              id="tab-monthly"
+              onclick="switchPlan('monthly')"
+              style="
+                padding: 8px 20px;
+                border: 1px solid hsl(var(--accent-hue), 80%, 60%);
+                border-right: none;
+                border-radius: 6px 0 0 6px;
+                font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+                background: hsl(var(--accent-hue), 80%, 60%);
+                color: white;
+                transition: all 0.3s;
+              "
+            >
+              Monthly
+            </button>
+            <button
+              id="tab-yearly"
+              onclick="switchPlan('yearly')"
+              style="
+                padding: 8px 20px;
+                border: 1px solid hsl(var(--accent-hue), 80%, 60%);
+                border-left: none;
+                border-radius: 0 6px 6px 0;
+                font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+                background: transparent;
+                color: hsl(var(--accent-hue), 80%, 60%);
+                transition: all 0.3s;
+              "
+            >
+              Yearly <span style="font-size: 11px; opacity: 0.8">Save 17%</span>
+            </button>
+          </div>
+          <div class="price-amount" id="price-display">
+            <span class="dollar">$</span><span id="price-value">5</span>
+          </div>
+          <div class="price-period" id="price-period">per seat / month</div>
+          <div class="price-note" id="price-note">
+            Less than a coffee per month. Cancel anytime.
+          </div>
+        </div>
+
+        <div class="section-title">What's Included</div>
+        <ul class="features">
+          <li class="highlight">Lifetime local license (yours forever)</li>
+          <li class="highlight">1 year cloud hosting included</li>
+          <li>Unlimited projects and memories</li>
+          <li>20,000+ MCP tool integrations</li>
+          <li>Works with 38+ AI agents</li>
+          <li>Multi-tier memory (L1/L2/L3)</li>
+          <li>Automatic daily backups</li>
+          <li>Cross-device sync</li>
+          <li>Team knowledge sharing</li>
+          <li>Full audit logs</li>
+          <li>Priority email support</li>
+          <li>All future 1.x updates</li>
+        </ul>
+
+        <div class="section-title">After Year 1</div>
+        <ul class="features">
+          <li>Local license continues working forever</li>
+          <li>Cloud renewal: $25/year (optional)</li>
+          <li>Keep your data — export anytime</li>
+          <li>No lock-in, no vendor hostage</li>
+        </ul>
+
+        <button onclick="buyNow()" class="btn btn-primary">
+          Sign Up Now!!!
+        </button>
+        <script>
+          function buyNow() {
+            fetch("/api/v1/billing/checkout", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                tier: "HYPERNEXUS_PROFESSIONAL_LICENSE",
+                seats: 1,
+                price_amount: window.__price_amount || 500,
+                interval: window.__pricing_plan === "yearly" ? "year" : "month",
+                success_url: "https://hypernexus.site/success.html",
+                cancel_url: "https://hypernexus.site/pricing.html",
+              }),
+            })
+              .then(function (r) {
+                if (!r.ok) throw new Error("Server error " + r.status);
+                return r.json();
+              })
+              .then(function (d) {
+                if (d.url) window.location.href = d.url;
+                else alert("Error: No checkout URL returned");
+              })
+              .catch(function (e) {
+                console.error("Checkout error:", e);
+                alert("Checkout error: " + e.message);
+              });
+          }
+        </script>
+
+        <p class="guarantee">
+          <strong>30-day money-back guarantee.</strong> No questions asked.
+        </p>
+      </div>
+    </div>
+
+    <div class="comparison">
+      <h2>How We Compare</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>HyperNexus</th>
+          <th>Cursor</th>
+          <th>GitHub Copilot</th>
+        </tr>
+        <tr>
+          <td>Persistent Memory</td>
+          <td class="check">✓ Included</td>
+          <td class="x">✗</td>
+          <td class="x">✗</td>
+        </tr>
+        <tr>
+          <td>MCP Tool Catalog</td>
+          <td class="check">✓ 20,000+</td>
+          <td>Limited</td>
+          <td>Limited</td>
+        </tr>
+        <tr>
+          <td>Cross-Harness Parity</td>
+          <td class="check">✓ 6 harnesses</td>
+          <td class="x">✗</td>
+          <td class="x">✗</td>
+        </tr>
+        <tr>
+          <td>LLM Waterfall</td>
+          <td class="check">✓ Auto-failover</td>
+          <td class="x">✗</td>
+          <td class="x">✗</td>
+        </tr>
+        <tr>
+          <td>Multi-Agent Swarm</td>
+          <td class="check">✓ Built-in</td>
+          <td class="x">✗</td>
+          <td class="x">✗</td>
+        </tr>
+        <tr>
+          <td>Local-First</td>
+          <td class="check">✓ Full offline</td>
+          <td class="x">✗</td>
+          <td class="x">✗</td>
+        </tr>
+        <tr>
+          <td>Self-Hosted Option</td>
+          <td class="check">✓ Included</td>
+          <td class="x">✗</td>
+          <td class="x">✗</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td class="check"><span id="comparison-price">$5/mo</span></td>
+          <td>$240/year</td>
+          <td>$120/year</td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2026 HyperNexus LLC · <a href="/">Home</a> ·
+        <a href="/blog">Blog</a> ·
+        <a href="https://github.com/HyperNexusSoft/HyperNexus" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Monthly/Yearly pricing toggle
+      var __pricing_plan = localStorage.getItem("pricing_plan") || "monthly";
+      window.__pricing_plan = __pricing_plan;
+      window.__price_amount = __pricing_plan === "yearly" ? 5000 : 500;
+
+      function switchPlan(plan) {
+        var isYearly = plan === "yearly";
+        window.__pricing_plan = plan;
+        window.__price_amount = isYearly ? 5000 : 500;
+        localStorage.setItem("pricing_plan", plan);
+
+        var priceValue = document.getElementById("price-value");
+        var pricePeriod = document.getElementById("price-period");
+        var priceNote = document.getElementById("price-note");
+
+        if (priceValue) priceValue.textContent = isYearly ? "50" : "5";
+        if (pricePeriod)
+          pricePeriod.textContent = isYearly
+            ? "per seat / year"
+            : "per seat / month";
+        if (priceNote)
+          priceNote.textContent = isYearly
+            ? "That's $4.17/month. Save 17% vs monthly."
+            : "Less than a coffee per month. Cancel anytime.";
+
+        // Update comparison price
+        var compPrice = document.getElementById("comparison-price");
+        if (compPrice) compPrice.textContent = isYearly ? "$50/yr" : "$5/mo";
+
+        // Update tab styles
+        var tabM = document.getElementById("tab-monthly");
+        var tabY = document.getElementById("tab-yearly");
+        if (tabM) {
+          tabM.style.background = isYearly
+            ? "transparent"
+            : "hsl(var(--accent-hue), 80%, 60%)";
+          tabM.style.color = isYearly
+            ? "hsl(var(--accent-hue), 80%, 60%)"
+            : "white";
+        }
+        if (tabY) {
+          tabY.style.background = isYearly
+            ? "hsl(var(--accent-hue), 80%, 60%)"
+            : "transparent";
+          tabY.style.color = isYearly
+            ? "white"
+            : "hsl(var(--accent-hue), 80%, 60%)";
+        }
+      }
+
+      // Set initial state on load
+      document.addEventListener("DOMContentLoaded", function () {
+        var savedPlan = localStorage.getItem("pricing_plan") || "monthly";
+        switchPlan(savedPlan);
+      });
+    </script>
+  </body>
+</html>

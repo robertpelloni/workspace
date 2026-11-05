@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "savedAt": "2026-07-29T02:27:56.880080+00:00",
+  "memories": [
+    {
+      "id": "d757cb49337a1b3c",
+      "content": "When deploying behind nginx, use same origin not hardcoded ports",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "local_script",
+        "tags": [
+          "nginx",
+          "dashboard",
+          "routing"
+        ],
+        "title": "Dashboard API Routing"
+      },
+      "createdAt": "2026-07-29T00:15:41.790493+00:00",
+      "accessedAt": "2026-07-29T00:15:41.790493+00:00",
+      "accessCount": 0,
+      "ttl": null
+    },
+    {
+      "id": "cf220a04a9aa84be",
+      "content": "POST /api/memory/facts/add with {title,content,tags,namespace}. NOT /api/memory/store (404) or tRPC memory.store",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "local_script",
+        "tags": [
+          "api",
+          "memory",
+          "reference"
+        ],
+        "title": "Memory API Reference"
+      },
+      "createdAt": "2026-07-29T00:16:00.061563+00:00",
+      "accessedAt": "2026-07-29T00:16:00.061563+00:00",
+      "accessCount": 0,
+      "ttl": null
+    },
+    {
+      "id": "3733f4021209e70a",
+      "content": "Fully verified: Price ID price_1TxqpoPISUNpi4xXjfth4nvk, webhook secret whsec_AKi3urJaX9Hbjl10p6X8GInd5wVovQdQ, checkout working",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "local_script",
+        "tags": [
+          "stripe",
+          "billing",
+          "payment"
+        ],
+        "title": "Stripe Integration"
+      },
+      "createdAt": "2026-07-29T00:16:04.583809+00:00",
+      "accessedAt": "2026-07-29T00:16:04.583809+00:00",
+      "accessCount": 0,
+      "ttl": null
+    },
+    {
+      "id": "223342f726007449",
+      "content": "Services: Go kernel (7778), Dashboard (7779), Marketing (8087), Memory Export (8090). nginx proxies /api/go/ to Next.js, /api/ to Go kernel",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "local_script",
+        "tags": [
+          "deployment",
+          "server",
+          "nginx"
+        ],
+        "title": "Hetzner Deployment"
+      },
+      "createdAt": "2026-07-29T00:16:11.607053+00:00",
+      "accessedAt": "2026-07-29T00:16:11.607053+00:00",
+      "accessCount": 0,
+      "ttl": null
+    },
+    {
+      "id": "a56af52cdfc1f35e",
+      "content": "MUST put /api/go/ BEFORE /api/ in nginx config. More specific locations first for proper proxy chain",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "local_script",
+        "tags": [
+          "nginx",
+          "config",
+          "proxy"
+        ],
+        "title": "Nginx Location Order"
+      },
+      "createdAt": "2026-07-29T00:16:17.910248+00:00",
+      "accessedAt": "2026-07-29T00:16:17.910248+00:00",
+      "accessCount": 0,
+      "ttl": null
+    },
+    {
+      "id": "573d581607fb362e",
+      "content": "Testing local memory storage",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "local_script",
+        "tags": [
+          "test",
+          "local",
+          "phase3"
+        ],
+        "title": "Phase 3 Local Test"
+      },
+      "createdAt": "2026-07-29T02:25:45.952667+00:00",
+      "accessedAt": "2026-07-29T02:25:45.952667+00:00",
+      "accessCount": 0,
+      "ttl": null
+    },
+    {
+      "id": "abed2ef1413a4796",
+      "content": "Testing dual storage",
+      "type": "working",
+      "namespace": "project",
+      "metadata": {
+        "memoryKind": "fact",
+        "source": "local_script",
+        "tags": [
+          "dual"
+        ],
+        "title": "Dual Storage Test"
+      },
+      "createdAt": "2026-07-29T02:27:56.879312+00:00",
+      "accessedAt": "2026-07-29T02:27:56.879312+00:00",
+      "accessCount": 0,
+      "ttl": null
+    }
+  ]
+}

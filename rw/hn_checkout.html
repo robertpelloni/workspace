@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperNexus - Checkout</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 480px;
+            width: 100%;
+            padding: 2rem;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .logo h1 {
+            font-size: 2rem;
+            background: linear-gradient(135deg, #22c55e, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .plan-summary {
+            background: #27272a;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .plan-summary h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        .plan-summary .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #22c55e;
+        }
+        .plan-summary .period {
+            color: #a1a1aa;
+        }
+        .plan-summary .features {
+            margin-top: 1rem;
+        }
+        .plan-summary .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0;
+            color: #a1a1aa;
+        }
+        .plan-summary .feature .check {
+            color: #22c55e;
+        }
+        #checkout-form {
+            margin-top: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #a1a1aa;
+            font-size: 0.875rem;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 6px;
+            color: #e4e4e7;
+            font-size: 1rem;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #22c55e;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: #22c55e;
+            color: #000;
+            margin-top: 1.5rem;
+        }
+        .btn-primary:hover {
+            background: #16a34a;
+        }
+        .btn-primary:disabled {
+            background: #3f3f46;
+            color: #71717a;
+            cursor: not-allowed;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            color: #71717a;
+            font-size: 0.875rem;
+        }
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .error {
+            color: #ef4444;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+        .success {
+            text-align: center;
+            padding: 2rem;
+        }
+        .success h2 {
+            color: #22c55e;
+            margin-bottom: 1rem;
+        }
+        .success p {
+            color: #a1a1aa;
+            margin-bottom: 1.5rem;
+        }
+        .stripe-badge {
+            text-align: center;
+            margin-top: 1rem;
+            color: #71717a;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>HyperNexus</h1>
+        </div>
+
+        <div class="card" id="checkoutCard">
+            <h2>Complete Your Purchase</h2>
+
+            <div class="plan-summary">
+                <h3>Professional License</h3>
+                <div>
+                    <span class="price">$19.99</span>
+                    <span class="period">/year</span>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>Lifetime local license</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>1 year cloud hosting</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>14,250+ MCP servers</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>Works with 38+ AI agents</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>30-day money-back guarantee</span>
+                    </div>
+                </div>
+            </div>
+
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="error" id="errorMsg"></div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                    Pay $19.99/year
+                </button>
+            </form>
+
+            <div class="stripe-badge">
+                🔒 Secured by Stripe
+            </div>
+        </div>
+
+        <div class="card success" id="successCard" style="display: none;">
+            <h2>🎉 Welcome to HyperNexus!</h2>
+            <p>Your purchase is complete. Check your email for login details.</p>
+            <a href="/download" class="btn btn-primary">Download HyperNexus</a>
+        </div>
+
+        <div class="footer">
+            <p>30-day money-back guarantee. Cancel anytime.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a>
+            </p>
+        </div>
+    </div>
+
+        <script>
+        
+        document.getElementById('checkout-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+            const submitBtn = document.getElementById('submitBtn');
+            const errorEl = document.getElementById('errorMsg');
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Processing...';
+            errorEl.style.display = 'none';
+
+            try {
+                const res = await fetch('/api/v1/billing/checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        tier: 'HYPERNEXUS_PROFESSIONAL_LICENSE',
+                        seats: 1,
+                        success_url: 'https://hypernexus.site/success.html',
+                        cancel_url: 'https://hypernexus.site/checkout.html'
+                    })
+                });
+
+                const data = await res.json();
+
+                if (res.ok && data.url) {
+                    window.location.href = data.url;
+                } else {
+                    errorEl.textContent = data.error || 'Checkout failed';
+                    errorEl.style.display = 'block';
+                }
+            } catch (err) {
+                errorEl.textContent = 'Network error. Please try again.';
+                errorEl.style.display = 'block';
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Pay $19.99/year';
+        });
+
+        // Check for success parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            document.getElementById('checkoutCard').style.display = 'none';
+            document.getElementById('successCard').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

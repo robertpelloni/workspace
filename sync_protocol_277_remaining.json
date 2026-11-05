@@ -1,0 +1,132 @@
+[
+  {
+    "repo": "bobtorrent",
+    "branch": "fix-wasm-build-and-lattice-10556890247683923816",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bobtorrent",
+    "branch": "main",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bobtrax",
+    "branch": "origin/bobtrax-omni-dashboard-v1.0.18-12527709832240548796",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bqt",
+    "branch": "origin/jules-885412765636779725-8505c877",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bobzilla",
+    "branch": "origin/jules-17008129538408180149-a69a953f",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bcs",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283",
+    "cherry_plus": 17
+  },
+  {
+    "repo": "bcs",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283-13794587466097602758",
+    "cherry_plus": 17
+  },
+  {
+    "repo": "bcs",
+    "branch": "jules-10936672596023099293-b3d8ae3d",
+    "cherry_plus": 15
+  },
+  {
+    "repo": "bcs",
+    "branch": "jules-bcs-port",
+    "cherry_plus": 15
+  },
+  {
+    "repo": "bcs",
+    "branch": "main",
+    "cherry_plus": 18
+  },
+  {
+    "repo": "freellm",
+    "branch": "temp-main",
+    "cherry_plus": 2
+  },
+  {
+    "repo": "pi-mono",
+    "branch": "origin/feat/dashboard-consolidation-and-system-tray-15304076502127754935",
+    "cherry_plus": 13
+  },
+  {
+    "repo": "pi-mono",
+    "branch": "origin/robertpelloni-phase-20-9492881022554947468",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "psytrance_night_outreach_agent",
+    "branch": "origin/jules-17639512437334612056-885a7d9b",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "cherry_plus": 7
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "cherry_plus": 17
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "cherry_plus": 30
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "jules-14567467811770799398-9073d7db",
+    "cherry_plus": 6
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "main",
+    "cherry_plus": 6
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "branch": "main",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bobmani/leraine-studio",
+    "branch": "origin/jules-208712761241480082-5e6fb3e2",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bobmani/pianogame",
+    "branch": "origin/jules-7923437021684046164-a5f90854",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "bobble",
+    "branch": "origin/jules-11301324765694309973-a802fcfe",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "sales_bot",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "sales_bot",
+    "branch": "origin/jules-project-sirens-9283818547340256471",
+    "cherry_plus": 40
+  }
+]

@@ -1,0 +1,859 @@
+[
+  {
+    "repo": "auto_dj_script",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "autodj/analysis.py",
+      "autodj/np_signal.py"
+    ]
+  },
+  {
+    "repo": "auto_dj_script",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "fwber",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      ".pi-lens/cache/project-snapshot.json",
+      ".pi-lens/cache/project-snapshot.meta.json",
+      ".pi-lens/sessions/019eefaf-b346-7ef3-82cf-bd21fc7724d6.json"
+    ]
+  },
+  {
+    "repo": "fwber",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "jules-autopilot",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "backend-go/dev.db",
+      "backend-go/dev.db-shm",
+      "backend-go/dev.db-wal",
+      "backend-go/watchdog_loop.ps1"
+    ]
+  },
+  {
+    "repo": "jules-autopilot",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "realestatecrm",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "prisma/dev.db"
+    ]
+  },
+  {
+    "repo": "realestatecrm",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "ArrowVortex",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "MilkDrop3",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "ableton_psytrance_hymn_creator",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bg",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobbybookmarks",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "incoming_resources.txt"
+    ]
+  },
+  {
+    "repo": "bobbybookmarks",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "bobfilez",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobsaver",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobsgameonlinejava",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobsgameonlinejava",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": ".f742ac4\nerror: Unable to create 'C:/Users/hyper/workspace/.git/modules/bobtorrent/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n"
+  },
+  {
+    "repo": "bobtrader",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "..69beaa3\nerror: Unable to create 'C:/Users/hyper/workspace/.git/modules/bobtrader/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n"
+  },
+  {
+    "repo": "bqt",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "hyperharness",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "freellm",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md"
+    ]
+  },
+  {
+    "repo": "freellm",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "mk64",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "mk64",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "native-fy",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "native-fy",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "onetool-mcp",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "onetool-mcp",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "_artist_names.json",
+      "discography_webapp/services/orchestrator.py"
+    ]
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "supersaber",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "bobmani",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "ng 4fa13b1..8bcc0dc\nerror: Unable to create 'C:/Users/hyper/workspace/bobmani/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n"
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bg_fix",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bg_fix",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "bobfilez_fix",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobfilez_fix",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "bobsgameonlinejava_fix",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobsgameonlinejava_fix",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "bobmani/arrowvortex",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobmani/ddc",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "68d26d9\nerror: Unable to create 'C:/Users/hyper/workspace/.git/modules/bobmani/ddc/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n"
+  },
+  {
+    "repo": "bobmani/hymnmania",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "Updating 2e1a3a0..e569fa5\nerror: The following untracked working tree files would be overwritten by merge:\n\t.uploaded_videos.txt\nPlease move or remove them before you merge.\nAborting\n"
+  },
+  {
+    "repo": "okgame",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "okgame",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "fwber",
+    "phase": "MERGE2",
+    "branch": "origin/jules-10314857368856784967-6dd32a46",
+    "action": "merged-push-fail"
+  },
+  {
+    "repo": "fwber",
+    "phase": "MERGE2",
+    "branch": "origin/jules-16977656443855205703-93141c90",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobbybookmarks",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/go_modules/backend/go_modules-5dc7f209c2",
+    "action": "merged-push-fail"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-2c585e131a",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-418f2b8baa",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE2",
+    "branch": "origin/jules-15152994296719336092-bf36e2cb",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "MERGE2",
+    "branch": "fix-wasm-build-and-lattice-10556890247683923816",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "MERGE2",
+    "branch": "main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/uv/util/wasm/bobuiwasmserver/uv-4ee2c2337b",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE2",
+    "branch": "origin/jules-885412765636779725-8505c877",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE2",
+    "branch": "jules-10936672596023099293-b3d8ae3d",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE2",
+    "branch": "jules-bcs-port",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE2",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE2",
+    "branch": "bcs-multi-lang-kernel-port-863320579547549283-13794587466097602758",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bcs",
+    "phase": "MERGE2",
+    "branch": "main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "hyperharness",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/go_modules/go_modules-74d16eabcd",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2",
+    "branch": "temp-main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "native-fy",
+    "phase": "MERGE2",
+    "branch": "origin/jules-14229561386908893093-c00f4da6",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/pip/pip-295b8e3527",
+    "action": "merged-push-fail"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE2",
+    "branch": "origin/feat-dashboard-ui-tooltips-v9.1.0-1263687878424888147",
+    "action": "merged-push-fail"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE2",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "MERGE2",
+    "branch": "origin/jules-mmo-features-9604862245014919785-7370784885254616881",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "MERGE2",
+    "branch": "origin/feature/consolidated-dashboard-and-server-tray-v1.17-16848237908804950718",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE2",
+    "branch": "origin/jules-14329411782159669901-cbf6b1cb",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE2",
+    "branch": "origin/jules-16182655854796579706-5da02c01",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE2",
+    "branch": "origin/jules-11529260254792556504-8d38890e",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2",
+    "branch": "origin/jules-tauri-v2-migration-17094978728525831753",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "vst_monster",
+    "phase": "MERGE2",
+    "branch": "origin/vst-monster-dashboard-v0.2.2-17471248922835068382",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "kson/include/kson/common/common.hpp"
+    ]
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "kson/include/kson/common/common.hpp"
+    ]
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "kson/include/kson/common/common.hpp"
+    ]
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE2",
+    "branch": "origin/feat-async-post-ranking-unlock-7547845477294015222",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "ww3_game",
+    "phase": "MERGE2",
+    "branch": "origin/jules-ww3-v0.3.2-command-center-tray-cleanup-5866779385412196809",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2",
+    "branch": "origin/jules-1228751708724889681-341e0325",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2",
+    "branch": "origin/jules-1566629906621855064-aba00be1",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "newz",
+    "phase": "MERGE2",
+    "branch": "origin/omnifeed-unified-dashboard-v0-2-0-6192871868108129425",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2",
+    "branch": "origin/feat-phase3-html-generator-15078070406737928861",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2",
+    "branch": "origin/jules-autonomous-utility-factory-15727112982623760124",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "educational_video_pipeline",
+    "phase": "MERGE2",
+    "branch": "origin/feat/automated-video-pipeline-5420906501011390029",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2",
+    "branch": "origin/jules-3776172491299359700-6e4f3989",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2",
+    "branch": "origin/feature/ai-pipeline-infrastructure-10039428997882654970",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2",
+    "branch": "origin/emperor-musk-bot-1918957439548629996",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "origin/jules-10535575989870826411-555f6b7b",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "origin/jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "MERGE2X",
+    "branch": "fix-wasm-build-and-lattice-10556890247683923816",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "MERGE2X",
+    "branch": "main",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-tauri-v2-migration-17094978728525831753",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2X",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "vst_monster",
+    "phase": "MERGE2X",
+    "branch": "origin/vst-monster-dashboard-v0.2.2-17471248922835068382",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "ww3_game",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-ww3-v0.3.2-command-center-tray-cleanup-5866779385412196809",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-1228751708724889681-341e0325",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2X",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-1566629906621855064-aba00be1",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "newz",
+    "phase": "MERGE2X",
+    "branch": "origin/omnifeed-unified-dashboard-v0-2-0-6192871868108129425",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2X",
+    "branch": "origin/feat-phase3-html-generator-15078070406737928861",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-autonomous-utility-factory-15727112982623760124",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "educational_video_pipeline",
+    "phase": "MERGE2X",
+    "branch": "origin/feat/automated-video-pipeline-5420906501011390029",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-3776172491299359700-6e4f3989",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2X",
+    "branch": "origin/feature/ai-pipeline-infrastructure-10039428997882654970",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2X",
+    "branch": "origin/emperor-musk-bot-1918957439548629996",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-10535575989870826411-555f6b7b",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "fwber",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-16977656443855205703-93141c90",
+    "action": "merged-theirs-push-fail"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2X",
+    "branch": "temp-main",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "native-fy",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-14229561386908893093-c00f4da6",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE2X",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-mmo-features-9604862245014919785-7370784885254616881",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-14329411782159669901-cbf6b1cb",
+    "action": "merged-theirs-push-fail"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-16182655854796579706-5da02c01",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "supersaber",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-11529260254792556504-8d38890e",
+    "action": "merged-theirs+pushed"
+  }
+]
