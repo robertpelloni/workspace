@@ -18,7 +18,8 @@
 3. bobmani/hymnmania +86 sync; HyperNexus orphan; HyperNexus2old; openclaw foreign remotes
 
 ### Step 3
-- v5.288.0 version sync; STRUCTURAL_MAP regen; build below after push
+- v5.288.0 version sync; STRUCTURAL_MAP regen; root pushed `e1ad25050e`
+- Build: `build.bat` 4 OK / 0 failed / 1 skipped (hyperharness, pi-mono, tabby-backend, tabby-native; tormentnexus not initialized). No binaries purged, no processes killed/restarted
 
 ---
 # HANDOFF — v5.287.0 — 2026-11-05 — Protocol #277: Repository Sync & Intelligent Merge
