@@ -1,3 +1,26 @@
+# HANDOFF — v5.288.0 — 2026-11-05 — Protocol #278: Repository Sync & Intelligent Merge
+
+## Session — Protocol #278
+
+### Step 1
+- Root 0/0 at start; fetch pruned 4 merged dependabot refs; `uv-4d825ab99f` re-verified applied (cherry `-`)
+- Submodule fetch 129/133 (tabby tag-clobber, HyperNexus2old timeout; hymnmania/hypercode known non-gitlinks)
+
+### Step 2 (36 forward merges, pushed)
+- **beatoraja closed**: created local master from origin/master, merged main (+125; jules-3962/jules-1765 already contained), pushed `5ef64d18..31498b0d`
+- Residual Jules increments + new dependabots merged (see CHANGELOG). pi-mono dashboard +3 merged and `go build ./...` re-verified green after #277 handler restoration
+- _fix repos (bg_fix, bobfilez_fix, bobsgameonlinejava_fix) syncs finally pushed (phase 4)
+- Reverse attempts on the 5 retained branches conflicted again both ways — branches untouched, no deletions
+
+### Deferred (Robert decisions, per Bobbi coordination)
+1. freellm temp-main, slsk jules (+11 now), veilid Gold Master scaffold, bobmani/itgmania jules-1251 (+27), sales_bot sirens (+40)
+2. unitedbeats_site local work + dashboard branch (+7)
+3. bobmani/hymnmania +86 sync; HyperNexus orphan; HyperNexus2old; openclaw foreign remotes
+
+### Step 3
+- v5.288.0 version sync; STRUCTURAL_MAP regen; build below after push
+
+---
 # HANDOFF — v5.287.0 — 2026-11-05 — Protocol #277: Repository Sync & Intelligent Merge
 
 ## Session — Protocol #277

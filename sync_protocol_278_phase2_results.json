@@ -1,0 +1,156 @@
+[
+  {
+    "repo": "realestatecrm",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobmani",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "ng 4fa13b1..8bcc0dc\nerror: Unable to create 'C:/Users/hyper/workspace/bobmani/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n"
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobmani/hymnmania",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "Updating 2e1a3a0..e569fa5\nerror: The following untracked working tree files would be overwritten by merge:\n\t.uploaded_videos.txt\nPlease move or remove them before you merge.\nAborting\n"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-64b597e9dc",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/npm_and_yarn/OmniUI/cli/npm_and_yarn-b392f9dba6",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE2",
+    "branch": "origin/jules-885412765636779725-8505c877",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2",
+    "branch": "temp-main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "pi-mono.exe"
+    ]
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE2",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2",
+    "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2",
+    "branch": "origin/jules-15689288545271426252-5ef46452",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2",
+    "branch": "origin/jules-8067423937083367268-08d72221",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2X",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2X",
+    "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-15689288545271426252-5ef46452",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-8067423937083367268-08d72221",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2X",
+    "branch": "temp-main",
+    "action": "conflict-aborted-final"
+  }
+]

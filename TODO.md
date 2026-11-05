@@ -1,7 +1,12 @@
-# TODO — Omni-Workspace v5.287.0
+# TODO — Omni-Workspace v5.288.0
 
-**Current:** v5.287.0 • 133 submodules across workspace • 2026-11-03
+**Current:** v5.288.0 • 133 submodules across workspace • 2026-11-03
 
+
+### Protocol #278 Outcomes (2026-11-05)
+- 36 forward merges pushed; beatoraja master closed (+125); _fix repos published; pi-mono build re-verified
+- [ ] 5 retained conflict branches (freellm, slsk +11, veilid, itgmania +27, sales_bot sirens +40) - Robert decision: cherry-pick / dedicated / abandon
+- [ ] unitedbeats_site dashboard branch (+7) - merge after local site work is committed
 
 ### Protocol #277 Outcomes (2026-11-05)
 - 91 forward merges pushed across ~45 repos (bcs x5, pi-mono dashboard, succubus.red x4, new-repo Jules waves); 35+ defaults sync-merged with origin

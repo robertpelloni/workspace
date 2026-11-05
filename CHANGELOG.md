@@ -1,3 +1,25 @@
+## [v5.288.0] — 2026-11-05 — Protocol #278: Repository Sync & Intelligent Merge
+
+### Synced
+- **root**: already at origin (0/0); superseded dependabots pruned, `uv-4d825ab99f` re-verified already-applied
+- **Submodules**: 129/133 fetched (fail: tabby upstream tag-clobber, HyperNexus2old timeout; hymnmania tracked-as-files, hypercode stale entry — both known)
+
+### Merged (36 forward merges, pushed)
+- **bobmani/beatoraja resolved**: local `master` created from origin/master, `main` (+125) merged in (both jules branches already contained), pushed `5ef64d18..31498b0d` — closes the #277 checkout-ambiguity deferral
+- **Residual Jules increments** (live activity since #277): pi-mono dashboard (+3, build re-verified), bobzzite (+6), crowdsourced_dance_club (+4), bobtrax, bobzilla, bobium, dao, ww3_game, bobble, bobmani/leraine-studio, bobmani/pianogame, sales_bot jules-3518, mparty, make_elon_laugh, webapp_factory consolidated-dashboard
+- **Dependabots**: skillzhub, bobsgameweb, bqt, xrnet (cargo+npm), veilid, succubus.red, newz, webapp_factory x2, educational_video_pipeline, mparty, make_elon_laugh, sales_bot, planet_fitness
+
+### Fixed
+- **_fix repos published**: bg_fix / bobfilez_fix / bobsgameonlinejava_fix syncs pushed in phase 4 (previously push-rejected in #277)
+
+### Deferred (retained, unchanged from #277)
+- 5 conflict-final branches: freellm `temp-main`, slsk `jules-57044827041196387` (grew to +11), veilid `jules-scaffold-0.1.0`, bobmani/itgmania `jules-12512815185672744343` (+27), sales_bot `jules-project-sirens` (+40)
+- unitedbeats_site: local site work + dashboard branch (+7) retained unmerged per retention
+- HyperNexus cloud-dashboard orphan, HyperNexus2old diverged, openclaw-* foreign remotes, bobmani/hymnmania +86 sync, warp/hermes upstream branches (ignored per protocol)
+
+### Changed
+- **Version bumped**: v5.287.0 → v5.288.0; STRUCTURAL_MAP.md regen (132/133 initialized)
+
 ## [v5.287.0] — 2026-11-05 — Protocol #277: Repository Sync & Intelligent Merge
 
 ### Synced
