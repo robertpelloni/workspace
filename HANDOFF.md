@@ -28,7 +28,8 @@
 ### Step 3: Docs / version / build
 - v5.287.0 across VERSION, VERSION.current, VERSION.md, build.bat, start.bat, TODO, ROADMAP; STRUCTURAL_MAP.md regen (133 rows)
 - Scripts added: `sync_protocol_277_*.py` (scan/triage/merge/phase2-4/final/verify/map/tally) + JSON ledgers
-- Build: see BUILD note below (build.bat run after root push)
+- Build: `build.bat` final run 4 OK / 0 failed / 1 skipped (tormentnexus not initialized). First run exposed pi-mono regression: phase-20 `-X theirs` merge dropped Gemini wrappers + Amp/Factory handlers/registrations — restored from `7e32ce220`, added `TestCleanRoomHandlers_GeminiWrappers`, `go build ./...` + `go test ./pkg/ai/` green, pushed pi-mono `003713106`. No binaries purged, no processes killed/restarted
+- Push note: first root push rejected (GH001) — `backups/*.tar.gz` (133MB+130MB) swept by `git add -A`; removed from commit (kept on disk, untracked), amended, pushed `c08e2c2b5a`
 
 ---
 # HANDOFF — v5.286.16 — 2026-11-04 — Protocol #276: bobmani Stale-Pin Repair
