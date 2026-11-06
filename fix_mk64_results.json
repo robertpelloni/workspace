@@ -1,0 +1,35 @@
+{
+  "fixes": [
+    [
+      "doxygen-awesome-css",
+      "940796eeb0c37ff7ab11637ba4f6ee33918ae6c8",
+      "46483f1e5a70ffb9ecd3b82d0a1cd1b24edf13da",
+      "MISSING"
+    ],
+    [
+      "tools/asm-differ",
+      "4c336587dc4c53cb57d05844841ca4aac7f3a8ee",
+      "0dd09af8f8008f1f880327cf0aca3b26d2562ea2",
+      "MISSING"
+    ],
+    [
+      "tools/blender/fast64",
+      "e173035cf1d5b171f3f89910addbff7ff287e824",
+      "b13010949567e4a2bf44ba3ccc18b06427243153",
+      "MISSING"
+    ],
+    [
+      "tools/decomp-permuter",
+      "a9f989d83b46dce939e7b05eda3eb071cc0703b2",
+      "8556c81d80d1c1af98a858c8f4dc951357f29139",
+      "MISSING"
+    ],
+    [
+      "tools/torch",
+      "44129c58ece4a51c3176d6df14663091dad3eecb",
+      "7f5d55f9de53f96e61c11399cb3066f8dd8e835e",
+      "MISSING"
+    ]
+  ],
+  "head": "c18fb99320ec152018d8bdaf6b638923c08f5709"
+}
