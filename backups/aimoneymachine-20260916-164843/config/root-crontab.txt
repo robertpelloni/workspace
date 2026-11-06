@@ -1,0 +1,1 @@
+0 9 * * * cd /opt/marketing_agent/scripts/outreach && /opt/marketing_agent/venv/bin/python run_outreach.py --followups >> /var/log/outreach_followup.log 2>&1

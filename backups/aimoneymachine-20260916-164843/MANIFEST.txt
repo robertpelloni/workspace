@@ -1,0 +1,47 @@
+AI Money Machine backup
+created : 20260916-164843
+host    : us-east-ubuntu-2-8-80
+reason  : stopped the AI Money Machine after finding it running in mock
+          mode for 84-92 days, burning ~24% CPU, fabricating ledger
+          figures, and writing ~18MB/day of syslog noise.
+
+CONTENTS
+-rw-r--r-- 1 root root 1.2K Sep 16 16:50 BACKUP.log
+drwxr-xr-x 2 root root 4.0K Sep 16 16:50 config
+drwxr-xr-x 2 root root 4.0K Sep 16 16:50 ledgers
+-rw-r--r-- 1 root root  290 Sep 16 16:50 MANIFEST.txt
+-rw-r--r-- 1 root root  14M Sep 16 16:50 mysql-aimoneymachine_wp.sql.gz
+-rw-r--r-- 1 root root 3.0G Sep 16 16:50 opt-aimoneymachine.tar.gz
+-rw-r--r-- 1 root root  15M Sep 16 16:50 opt-aimoney.tar.gz
+-rw-r--r-- 1 root root 124M Sep 16 16:50 www-aimoneymachine.tar.gz
+
+RESTORE OUTLINE
+  1) tar xzf opt-aimoneymachine.tar.gz -C /opt
+  2) tar xzf opt-aimoney.tar.gz        -C /opt
+  3) tar xzf www-aimoneymachine.tar.gz -C /var/www
+  4) zcat mysql-aimoneymachine_wp.sql.gz | mysql -u<user> -p <db>
+  5) tar xzf config/systemd-units.tar.gz -C /etc/systemd/system && systemctl daemon-reload
+  6) systemctl unmask <unit> && systemctl enable --now <unit>
+
+EXCLUDED (recreatable, not backed up)
+  /opt/aimoneymachine/venv        -> pip install -r requirements.txt
+  **/__pycache__                  -> regenerated
+  wp-content/cache, wp-content/upgrade, wp-statistics -> regenerated
+
+MODEL INCLUDED: gemma-4-E2B-it-ultra-uncensored-heretic-Q4_K_M.gguf (2.9G)
+
+SERVICE STATE AT STOP
+aimm-audit.service active running
+aimm-content.service active running
+aimm-dashboard.service active running
+aimm-freellm.service active running
+aimm-healthcheck.service inactive dead
+aimm-hustle-gen.service active running
+aimm-litellm.service active running
+aimm-orchestrator.service active running
+aimm-publisher.service active running
+aimm-twitter.service failed failed
+aimm-watchdog.service active running
+aimoney.service active running
+Legend: → Reflects
+12 units listed.

@@ -1,0 +1,14 @@
+aimm-audit.service active running
+aimm-content.service active running
+aimm-dashboard.service active running
+aimm-freellm.service active running
+aimm-healthcheck.service inactive dead
+aimm-hustle-gen.service active running
+aimm-litellm.service active running
+aimm-orchestrator.service active running
+aimm-publisher.service active running
+aimm-twitter.service failed failed
+aimm-watchdog.service active running
+aimoney.service active running
+Legend: → Reflects
+12 units listed.

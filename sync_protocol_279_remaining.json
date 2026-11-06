@@ -1,0 +1,32 @@
+[
+  {
+    "repo": "freellm",
+    "branch": "temp-main",
+    "cherry_plus": 2
+  },
+  {
+    "repo": "pi-mono",
+    "branch": "origin/feat/dashboard-consolidation-and-system-tray-15304076502127754935",
+    "cherry_plus": 2
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "cherry_plus": 13
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "cherry_plus": 17
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "cherry_plus": 27
+  },
+  {
+    "repo": "sales_bot",
+    "branch": "jules-project-sirens-9283818547340256471",
+    "cherry_plus": 40
+  }
+]

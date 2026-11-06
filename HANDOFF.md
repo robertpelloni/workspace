@@ -1,3 +1,23 @@
+# HANDOFF — v5.289.0 — 2026-11-06 — Protocol #279: Repository Sync & Intelligent Merge
+
+## Session — Protocol #279 (resumed and completed 2026-11-06)
+
+### Step 2 results (34 forward merges pushed; ledgers `sync_protocol_279_*_results.json`)
+- Phases 1–2 (84 actions): plain/`-X theirs`/`-X ours` merges + FF; dirty state committed first; conflicts aborted and retained
+- Phase 4: jules-autopilot + pi-mono syncs pushed; slsk origin-sync conflict final (retained); stale MilkDrop3_fix index.lock removed after proving no live git owner
+- Final sweep: Maestro pushed; pi-mono dashboard branch merged, then regression (stale `clean_room_custom.go` from `-X theirs`) fixed by restoring mature handlers — build + `pkg/ai` tests green, pushed `55c86feee`
+- **5 conflict branches retained for Robert**: freellm temp-main, slsk jules-57044827041196387 (+13), veilid jules-scaffold-0.1.0 (+17), bobmani/itgmania jules-12512815185672744343 (+27), sales_bot jules-project-sirens (+40). No branch deletions.
+
+### Coordination / kernel
+- Supervisor session `session-1791239437228525100` crash fixed end-to-end (executable mapping, Claude Code 2.1.226, unprefixed `muse-spark-1.3-contributor` model); verified clean smoke run, exit 0. HyperNexus Go fix + test remain uncommitted in the submodule (loop no-commit rule) — commit them with the next authorized HyperNexus change.
+- Bobbi (muse.ai) has not answered the v6 authorization asks despite repeated CDP check-ins; Gemini endorsed the PROVISIONAL +1 Execution cap (folded into UNITED_BEATS_UMBRELLA_v6.md). Do not treat silence as endorsement.
+
+### Next agent
+- Robert decisions pending: 5 retained conflict branches, launch order, HyperNexus prospect contact/spending.
+- Protocol #280 can start from root v5.289.0; re-run triage from fresh refs.
+
+---
+
 # HANDOFF — v5.288.0 — 2026-11-05 — Protocol #278: Repository Sync & Intelligent Merge
 
 ## Session — Protocol #278

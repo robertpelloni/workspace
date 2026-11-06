@@ -1,0 +1,217 @@
+[
+  {
+    "repo": "realestatecrm",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "ArrowVortex",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "ableton_psytrance_hymn_creator",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bg",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobfilez",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobsgameonlinejava",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE2",
+    "branch": "origin/jules-15152994296719336092-bf36e2cb",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE2",
+    "branch": "origin/dependabot/go_modules/go_modules-f0f091c0c5",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE2",
+    "branch": "origin/jules-885412765636779725-8505c877",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2",
+    "branch": "temp-main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "DIRTYCOMMIT",
+    "action": "fail",
+    "files": [
+      "pi-mono.exe"
+    ]
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2",
+    "branch": "origin/jules-tauri-v2-sidecar-pipeline-2887319380514012639",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "xrnet",
+    "phase": "MERGE2",
+    "branch": "origin/jules-18056260933869023888-d0f77957",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE2",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE2",
+    "branch": "main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2",
+    "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2",
+    "branch": "origin/jules-15689288545271426252-5ef46452",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2",
+    "branch": "origin/jules-8067423937083367268-08d72221",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-tauri-v2-sidecar-pipeline-2887319380514012639",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2X",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "xrnet",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-18056260933869023888-d0f77957",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE2X",
+    "branch": "main",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2X",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2X",
+    "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-15689288545271426252-5ef46452",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-8067423937083367268-08d72221",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2X",
+    "branch": "temp-main",
+    "action": "conflict-aborted-final"
+  }
+]

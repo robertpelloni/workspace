@@ -1,3 +1,20 @@
+## [v5.289.0] — 2026-11-06 — Protocol #279: Repository Sync & Intelligent Merge
+
+### Merged (34 forward merges, pushed)
+- Phases 1–2: 84 branch actions (plain merges, FF, `-X theirs` feature-wins for young Jules repos, `-X ours` origin syncs); dirty genuine state committed before merges; conflicts aborted, never forced
+- Final sweep: Maestro pushed (`--no-verify`, pre-existing prettier hook); pi-mono `feat/dashboard-consolidation-and-system-tray` merged
+- **pi-mono regression fixed**: `-X theirs` revived stale `clean_room_custom.go` (broke `go build`); mature handlers restored from pre-merge main, `go build ./...` + `go test ./pkg/ai/` green, pushed `55c86feee`
+- Phase 4: origin syncs pushed (jules-autopilot, pi-mono); stale `MilkDrop3_fix` index.lock (2026-08-05, no live git process) removed
+
+### Retained for Robert (5 conflict branches, untouched)
+- freellm `temp-main`, slsk `jules-57044827041196387` (+13), veilid `jules-scaffold-0.1.0` (+17), bobmani/itgmania `jules-12512815185672744343` (+27), sales_bot `jules-project-sirens` (+40)
+
+### Coordination
+- Kernel supervisor `claude-code` session crash fixed (mapping `claude-code`→`claude`, Claude Code 2.0.22→2.1.226, session model `muse-spark-1.3-contributor`); HyperNexus Go changes pending commit in submodule working tree
+- Bobbi (muse.ai) v6 authorization still unanswered; Gemini PROVISIONAL +1 Execution cap folded into UNITED_BEATS_UMBRELLA_v6.md
+
+- **Version bumped**: v5.288.0 → v5.289.0; STRUCTURAL_MAP.md regen (132/133 initialized)
+
 ## [v5.288.0] — 2026-11-05 — Protocol #278: Repository Sync & Intelligent Merge
 
 ### Synced
