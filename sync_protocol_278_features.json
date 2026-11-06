@@ -3,38 +3,80 @@
     "repo": "realestatecrm",
     "branch": "origin",
     "current": "main",
-    "ahead": 2,
+    "ahead": 7,
     "behind": 0,
-    "cherry_plus": 2,
+    "cherry_plus": 5,
     "subjects": [
-      "3498dfd docs: HANDOFF v0.61.9 listings-are-money note",
-      "952fe5d v0.61.9: listings are money - 6 seeded homes + pipeline deals + money strip"
-    ]
-  },
-  {
-    "repo": "skillzhub",
-    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-4ccc51145a",
-    "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
-    "subjects": [
-      "25d63c5 chore(deps): bump the npm_and_yarn group across 1 directory with 6 updates"
+      "1d6d887 docs: record v0.62.0 Hetzner deployment",
+      "4c0d732 Merge remote-tracking branch 'origin/main'",
+      "b810fff v0.62.0: per-agent MLS connections (RESO) + commission override (option b)",
+      "c7e2f30 feat: v0.61.12 Meeting of the Minds - RED seller ask vs GREEN integrity price with 5-year projection",
+      "e7d0b31 feat: v0.61.11 One House Many Layers + realtor MLS credential connection for calculator (Excel Legacy Realty Group)"
     ]
   },
   {
     "repo": "hermes-agent",
     "branch": "upstream",
     "current": "main",
-    "ahead": 47117,
+    "ahead": 47242,
     "behind": 68,
-    "cherry_plus": 44737,
+    "cherry_plus": 44859,
     "subjects": [
-      "ab84eb7aa0 fix(plugin-catalog): point hermes-security's card image at the new pin",
-      "4754e7ddf3 chore(plugin-catalog): bump hermes-security to 0.1.1",
-      "3db385620c chore: map contributor email for christofilojohn",
-      "e7cd16c8ee feat(plugin-catalog): add searchapi entry",
-      "3987a6bfc3 chore: map contributor emails for the sweep-1105 maintainer copy"
+      "53a6ced422 Merge pull request #149746 from NousResearch/chore/pnpm-switch",
+      "5d72e9382b Merge pull request #149824 from NousResearch/ci/pin-gate-timing-cut",
+      "e73fdb4532 test(ci): pin ci.yaml's gate timing cut to a step the gate runs",
+      "dfd3c61224 docs: only Hermes's builds enforce the devEngines pnpm pin",
+      "d62c60787f fix: pnpm review follow-ups in nix, evals, the hang repro and an e2e test"
+    ]
+  },
+  {
+    "repo": "ArrowVortex",
+    "branch": "origin",
+    "current": "release",
+    "ahead": 1,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "c4e1f3a fix: re-pin submodules to published commits (Jules recursive clone)"
+    ]
+  },
+  {
+    "repo": "ableton_psytrance_hymn_creator",
+    "branch": "origin",
+    "current": "main",
+    "ahead": 4,
+    "behind": 0,
+    "cherry_plus": 3,
+    "subjects": [
+      "296b7a3 merge: origin/main sync (re-pin)",
+      "2d23548 fix: re-pin submodules to published commits (Jules recursive clone)",
+      "157368e chore: auto checkpoint before sync",
+      "26f3e7e chore: auto checkpoint before sync"
+    ]
+  },
+  {
+    "repo": "bg",
+    "branch": "origin",
+    "current": "master",
+    "ahead": 3,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "33c5a51 merge: origin/master sync (Protocol #278, local-wins conflicts)",
+      "9efc300 merge: origin/master sync (Protocol #277, local-wins conflicts)",
+      "1fc788c chore: track dirty state (Protocol #277)"
+    ]
+  },
+  {
+    "repo": "bobcoin",
+    "branch": "origin/jules-1709637530501540288-e8a5a039",
+    "current": "main",
+    "ahead": 2,
+    "behind": 3,
+    "cherry_plus": 2,
+    "subjects": [
+      "9bf7a10a feat: surface real-time AI Oracle entropy telemetry on dashboard v8.115.4",
+      "cef8b632 feat: wire mobile vitality proof to backend and test e2e v8.115.3"
     ]
   },
   {
@@ -69,6 +111,19 @@
   },
   {
     "repo": "bobfilez",
+    "branch": "origin",
+    "current": "main",
+    "ahead": 3,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "40e5fadf5 merge: origin/main sync (Protocol #278, local-wins conflicts)",
+      "c957fcac7 merge: origin/main sync (Protocol #277, local-wins conflicts)",
+      "2f2c38149 chore: track dirty state (Protocol #277)"
+    ]
+  },
+  {
+    "repo": "bobfilez",
     "branch": "upstream",
     "current": "main",
     "ahead": 62,
@@ -83,26 +138,27 @@
     ]
   },
   {
-    "repo": "bobium",
-    "branch": "origin/jules-1202050764085936330-47f6d7fb",
+    "repo": "bobsgameonlinejava",
+    "branch": "origin",
     "current": "main",
-    "ahead": 2,
-    "behind": 1,
-    "cherry_plus": 2,
+    "ahead": 3,
+    "behind": 0,
+    "cherry_plus": 1,
     "subjects": [
-      "91aa629 docs(release): update release checklist for v1.0.0-rc.2",
-      "c44f2cc docs(release): update release checklist for v1.0.0-rc.2"
+      "c4b0a43 merge: origin/main sync (Protocol #278, local-wins conflicts)",
+      "742960f merge: origin/main sync (Protocol #277, local-wins conflicts)",
+      "ddaa0a5 chore: track dirty state (Protocol #277)"
     ]
   },
   {
     "repo": "bobsgameweb",
-    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-64b597e9dc",
+    "branch": "origin/jules-15152994296719336092-bf36e2cb",
     "current": "main",
     "ahead": 1,
-    "behind": 0,
+    "behind": 5,
     "cherry_plus": 1,
     "subjects": [
-      "59191f50 chore(deps): bump the npm_and_yarn group across 2 directories with 2 updates"
+      "90c1918f v3.0.13: Refine Electron client and wire AI server lifecycle into preload bridge"
     ]
   },
   {
@@ -110,7 +166,7 @@
     "branch": "upstream",
     "current": "master",
     "ahead": 12,
-    "behind": 325,
+    "behind": 326,
     "cherry_plus": 12,
     "subjects": [
       "4ad7c6d chore(deps): update dependency tape to v5.10.3 (#596)",
@@ -136,77 +192,72 @@
     "repo": "bobtrax",
     "branch": "origin/bobtrax-omni-dashboard-v1.0.18-12527709832240548796",
     "current": "main",
-    "ahead": 3,
-    "behind": 2,
-    "cherry_plus": 3,
+    "ahead": 2,
+    "behind": 3,
+    "cherry_plus": 2,
     "subjects": [
-      "03077c8 feat: bump version to 1.0.31 with cross-DAW session export engine",
-      "cf54dd5 feat: bump version to 1.0.30 with session checkpoints and undo engine",
-      "5110d29 feat: bump version to 1.0.29 with unified ecosystem test suite"
+      "2fccc0e feat: integrate Omni-Plugin parameter synchronization v1.0.35",
+      "f73f81f feat: bump version to 1.0.32 with system health watchdog daemon"
     ]
   },
   {
     "repo": "bqt",
-    "branch": "origin/dependabot/npm_and_yarn/OmniUI/cli/npm_and_yarn-b392f9dba6",
+    "branch": "origin/dependabot/go_modules/go_modules-f0f091c0c5",
     "current": "main",
     "ahead": 1,
-    "behind": 2,
+    "behind": 0,
     "cherry_plus": 1,
     "subjects": [
-      "e59709b6c13 chore(deps): bump the npm_and_yarn group across 2 directories with 5 updates"
+      "17a910efe50 chore(deps): bump golang.org/x/image"
     ]
   },
   {
     "repo": "bqt",
     "branch": "origin/jules-885412765636779725-8505c877",
     "current": "main",
-    "ahead": 2,
-    "behind": 4,
-    "cherry_plus": 2,
+    "ahead": 1,
+    "behind": 7,
+    "cherry_plus": 1,
     "subjects": [
-      "58ac828daa5 feat: add internal/ui/theme unit tests and bump version to v1.1.83",
-      "56b5be74ee5 feat: add internal/state ValueTree automated unit tests and bump version to v1.1.82"
+      "73602b26dfa feat: add internal/ui/anim unit tests and bump version to v1.1.84"
     ]
   },
   {
     "repo": "bobzilla",
     "branch": "origin/jules-17008129538408180149-a69a953f",
     "current": "main",
-    "ahead": 2,
-    "behind": 2,
-    "cherry_plus": 2,
+    "ahead": 1,
+    "behind": 3,
+    "cherry_plus": 1,
     "subjects": [
-      "85b0c87 feat: compact density and custom UI scaling v0.1.54",
-      "fe97af1 feat: dynamic vertical tabs and workspace layout v0.1.53"
+      "634d79d feat: integrate uidensity into vertical tabs v0.1.55"
     ]
   },
   {
     "repo": "bobzzite",
     "branch": "origin/jules-7085680721290284559-50f69569",
     "current": "main",
-    "ahead": 6,
-    "behind": 1,
-    "cherry_plus": 6,
+    "ahead": 4,
+    "behind": 2,
+    "cherry_plus": 4,
     "subjects": [
-      "dd3773c v1.9.0: add system tray monitor applet & autostart",
-      "7787e4b v1.8.0: implement controller & handheld mapping tool",
-      "50af346 v1.7.0: implement system performance & latency tuning presets",
-      "2147976 v1.6.1: synchronize documentation index & tooling guides",
-      "a842e70 v1.6.0: add Flatpak packaging manifests & builder tooling"
+      "ea6c563 Release v2.3.0: multi-flavor build engine, flavor inspector, and docs",
+      "6d9071f Release v2.2.0: audio manager, Flatpak builder refinement, and audio docs",
+      "b3b4780 Release v2.1.0: system benchmarking, hardware profiler, and docs",
+      "fe6d956 Release v2.0.0: storage cleaner, maintenance guide, and major milestone"
     ]
   },
   {
     "repo": "crowdsourced_dance_club",
     "branch": "origin/jules-v3.5.0-unified-dashboard-system-tray-5792003287601159920",
     "current": "main",
-    "ahead": 4,
-    "behind": 1,
-    "cherry_plus": 4,
+    "ahead": 3,
+    "behind": 2,
+    "cherry_plus": 3,
     "subjects": [
-      "b3a03d8 feat(analytics): v3.5.5 - conductor vibe performance & genre effectiveness",
-      "a95a871 feat(dashboard): v3.5.4 - audio stream & visual studio integration",
-      "2ba3b9a feat(dashboard): v3.5.4 - audio stream & visual studio integration",
-      "7b16d46 v3.5.4: Generative Visuals Studio & ComfyUI Prompt Bridge Integration"
+      "a3b7bf9 feat(dashboard): v3.5.8 - cohesive navigation & sticky pills",
+      "268e2b0 feat(dashboard): v3.5.7 - consolidated audio monitor & transition studio",
+      "c2a20b0 feat(governance): v3.5.6 - dao governance proposals ttl cache"
     ]
   },
   {
@@ -214,21 +265,22 @@
     "branch": "origin/main-16124871948715776938",
     "current": "main",
     "ahead": 2,
-    "behind": 2,
+    "behind": 3,
     "cherry_plus": 2,
     "subjects": [
-      "c9718df feat: consolidate dashboard UI, add tray daemon controller, and fix tests",
-      "f13fb9b feat: consolidate dashboard UI, add system tray controller, and stabilize backend test suite"
+      "74ce59a feat: finalize dashboard consolidation and daemon controller",
+      "f9dd7c9 feat: complete dashboard UI consolidation and tray controller"
     ]
   },
   {
     "repo": "electricsheep",
     "branch": "origin/jules-12868067778578944851-4867ca50",
     "current": "main",
-    "ahead": 3,
+    "ahead": 4,
     "behind": 1,
-    "cherry_plus": 3,
+    "cherry_plus": 4,
     "subjects": [
+      "6081d0f Refine F1 in-app HUD hotkey toggling and telemetry controls",
       "6b961bc Release 2.7b33-fork-v1.1.0: Dashboard UI overhaul and system tray",
       "21cdce5 Release 2.7b33-fork-v1.1.0: Dashboard UI overhaul and system tray",
       "f045e20 Protocol #261: track agent-memory/sessions, docs/config (2 files)"
@@ -258,6 +310,17 @@
       "7404cf48 Website + outreach: publish TLS checklist post, sync 5 production posts, fix meta/pricing, unhide blog index, update sitemap",
       "a2839892 Merge remote-tracking branch 'origin/main'",
       "781f74da Protocol #275: track docs + outreach queue"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/backup/fdafa92-pre-borg-repin",
+    "current": "main",
+    "ahead": 1,
+    "behind": 635,
+    "cherry_plus": 1,
+    "subjects": [
+      "fdafa92d chore: update borg submodule to latest (v1.0.0-alpha.158)"
     ]
   },
   {
@@ -301,15 +364,27 @@
     "repo": "marketing_agent",
     "branch": "github/feature/v0.7.1-consolidated-dashboard-13584474834696992846",
     "current": "main",
-    "ahead": 20,
+    "ahead": 23,
     "behind": 6,
-    "cherry_plus": 19,
+    "cherry_plus": 22,
     "subjects": [
+      "f92bf6f0 feat(outreach): prioritize recently enriched contacts v0.7.1",
+      "5ffb0ae5 feat(outreach): optimize replies for MCP & skill targeting v0.7.1",
+      "f961e866 feat(metrics): add DB pool metrics endpoints v0.7.1",
       "d5f09254 test(docker): add automated compose smoke testing v0.7.1",
-      "714741ee feat(discovery): prioritize leads active within 24 hours v0.7.1",
-      "7deb05f8 feat(reddit): add thumbnail metadata and staging health check v0.7.1",
-      "753a928f feat(dashboard): add LinkedIn safety indicator v0.7.1",
-      "c1a0d5e7 feat(v0.7.1): add CSV outreach export and resilient telemetry reconnect"
+      "714741ee feat(discovery): prioritize leads active within 24 hours v0.7.1"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/fix/jules-borg-pin",
+    "current": "main",
+    "ahead": 2,
+    "behind": 635,
+    "cherry_plus": 2,
+    "subjects": [
+      "d63fbc22 fix: re-pin borg submodule to published HEAD 964a130 (was unpublished f3314909, broke Jules recursive clone)",
+      "fdafa92d chore: update borg submodule to latest (v1.0.0-alpha.158)"
     ]
   },
   {
@@ -779,15 +854,15 @@
     "repo": "hyper",
     "branch": "origin/jules-12860271385039058662-f70a3246",
     "current": "main",
-    "ahead": 6,
+    "ahead": 10,
     "behind": 170,
-    "cherry_plus": 3,
+    "cherry_plus": 7,
     "subjects": [
-      "0b80e183 test: add automated test suites for internal mcp and agent and update user manuals",
-      "e0835ee7 feat: unified mission control dashboard and terminal block tests v1.1.0",
-      "de5ac7b8 feat: unified mission control dashboard v1.1.0",
-      "d9b4d6fd feat: unified mission control dashboard v1.1.0",
-      "51ef327e feat: unified mission control dashboard v1.1.0"
+      "32d1367e feat: autonomous agent Think-Act-Observe workflows",
+      "aae8c52c feat: real-time MCP tool execution monitoring and latency graphs",
+      "9d9819ca test: add PTY session manager unit test",
+      "0783c8c6 test: add unit tests for internal config and intelligence indexer",
+      "0b80e183 test: add automated test suites for internal mcp and agent and update user manuals"
     ]
   },
   {
@@ -818,7 +893,7 @@
     "branch": "upstream",
     "current": "master",
     "ahead": 6,
-    "behind": 51,
+    "behind": 52,
     "cherry_plus": 6,
     "subjects": [
       "58cfcb022 Clarify vehicle ticking and fix some func spellings (#781)",
@@ -903,39 +978,39 @@
     "repo": "pi-mono",
     "branch": "origin/feat/dashboard-consolidation-and-system-tray-15304076502127754935",
     "current": "main",
-    "ahead": 3,
-    "behind": 6,
-    "cherry_plus": 3,
+    "ahead": 2,
+    "behind": 8,
+    "cherry_plus": 2,
     "subjects": [
-      "cbea254bd docs: update CHANGELOG for dashboard consolidation and server shutdown",
-      "b9b9f566d test(coding-agent): migrate remaining test imports to @mariozechner namespace",
-      "0c68f8c25 feat: implement server shutdown endpoints, desktop menu & single-page dashboard"
+      "fbf4d76cd feat(desktop): trigger server shutdown endpoint on QuitServers",
+      "8e4412d48 fix(scripts): standardize version extraction in build-go.sh"
     ]
   },
   {
     "repo": "pi-mono",
     "branch": "upstream",
     "current": "main",
-    "ahead": 4026,
-    "behind": 332,
-    "cherry_plus": 3830,
+    "ahead": 4034,
+    "behind": 338,
+    "cherry_plus": 3838,
     "subjects": [
-      "d9af3d73a feat: p2 TUI through Radius (npm run tui -- --radius)",
-      "e3c8c3b48 fix(p2): the composer renders its draft at once again",
-      "52e9c17b0 fix(p2): one tap on Send sends on phones",
-      "20d86c365 feat(p2): Chord v2 cleanup pass",
-      "1137075c7 fix(p2): touch selection, Copy and Paste in the web terminal"
+      "2a32a605a feat(p2): Gondolin sandbox environments",
+      "6d3e342b2 fix(coding-agent): follow local schema refs in tool search and codemode summaries (#11850)",
+      "850ea2eae docs(coding-agent): changelog for MCP OAuth callback close hang",
+      "63ea042ce fix(mcp): close remaining connections when the OAuth callback server closes (#11855)",
+      "80d4d3c86 fix(coding-agent): remove all extension overlays on /reload and session switch (#11853)"
     ]
   },
   {
     "repo": "planet_fitness_stepmaniax_agent",
-    "branch": "origin/dependabot/pip/pip-109d8d33aa",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
     "current": "main",
-    "ahead": 1,
-    "behind": 2,
-    "cherry_plus": 1,
+    "ahead": 2,
+    "behind": 9,
+    "cherry_plus": 2,
     "subjects": [
-      "eeb3a85 chore(deps): bump the pip group across 1 directory with 3 updates"
+      "0f40228 feat(dashboard): deliver consolidated operations center and system tray manager v9.3.0",
+      "45f6f2a fix(pytest): configure pytest.ini scoping and ignore submodules"
     ]
   },
   {
@@ -969,11 +1044,13 @@
     "repo": "psytrance_night_outreach_agent",
     "branch": "origin/jules-17639512437334612056-885a7d9b",
     "current": "main",
-    "ahead": 1,
-    "behind": 2,
-    "cherry_plus": 1,
+    "ahead": 3,
+    "behind": 3,
+    "cherry_plus": 3,
     "subjects": [
-      "6c053c0 feat(dashboard): v1.1.79 asynchronous bulk lead actions & batch approval UI"
+      "19a5be7 feat: v1.1.82 - Detroit vibe calibration and Midwest-Toronto circuit optimizer",
+      "d827215 feat(digest): v1.1.81 pipeline activity digest generator and dashboard modal",
+      "4983e2d feat(dashboard): v1.1.80 add venue comparison view"
     ]
   },
   {
@@ -993,15 +1070,15 @@
     "repo": "slsk_discography_downloader_script",
     "branch": "origin/jules-57044827041196387-8ad75250",
     "current": "main",
-    "ahead": 11,
+    "ahead": 13,
     "behind": 1,
-    "cherry_plus": 11,
+    "cherry_plus": 13,
     "subjects": [
+      "2a5c59c feat: stalled download recovery & network disruption watchdog",
+      "7cd3ed9 feat(rust): rate limiting, retries & watchdog stabilization",
       "7b4c649 feat(watchdog): restore watchdog service & agent telemetry",
       "449422b feat(agent): real-time session telemetry & background monitoring",
-      "03f929d feat(agent): real-time session telemetry & background monitoring",
-      "89281e7 feat(agent): real-time session telemetry & background monitoring",
-      "bc60a3d feat(ui): consolidate dashboard, tooltips, lifecycle v2.2.0"
+      "03f929d feat(agent): real-time session telemetry & background monitoring"
     ]
   },
   {
@@ -1015,6 +1092,17 @@
       "55b8cf8d2 [build] Release v1.17: Consolidate Dashboard UI & Add Server Tray Manager",
       "5684f574a Release v1.17: Consolidate Dashboard UI & Add Server Tray Manager",
       "4120fe7ed Release v1.17: Consolidate Dashboard UI & Add Server Tray Manager"
+    ]
+  },
+  {
+    "repo": "sm64coopdx",
+    "branch": "origin/jules-mmo-features-9604862245014919785-7370784885254616881",
+    "current": "main",
+    "ahead": 1,
+    "behind": 2,
+    "cherry_plus": 1,
+    "subjects": [
+      "dad12f0f9 docs(network): outline concurrency optimization and interest management architecture"
     ]
   },
   {
@@ -1033,7 +1121,7 @@
     "branch": "feature/cloud-dashboard-mcp-sse-389806464713532918",
     "current": "main",
     "ahead": 67,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 66,
     "subjects": [
       "775605d4bf refactor: rename TormentNexus to HyperNexus globally",
@@ -1048,7 +1136,7 @@
     "branch": "gh-pages-hypernexus",
     "current": "main",
     "ahead": 1,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 1,
     "subjects": [
       "fb61b29a34 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
@@ -1059,7 +1147,7 @@
     "branch": "gh-pages-tormentnexus",
     "current": "main",
     "ahead": 1,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 1,
     "subjects": [
       "fad3aaf3bc Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
@@ -1070,7 +1158,7 @@
     "branch": "github/archive/cloud-dashboard-mcp-sse-775605d",
     "current": "main",
     "ahead": 67,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 66,
     "subjects": [
       "775605d4bf refactor: rename TormentNexus to HyperNexus globally",
@@ -1085,7 +1173,7 @@
     "branch": "github/gh-pages-hypernexus",
     "current": "main",
     "ahead": 1,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 1,
     "subjects": [
       "fb61b29a34 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
@@ -1096,7 +1184,7 @@
     "branch": "github/gh-pages-tormentnexus",
     "current": "main",
     "ahead": 1,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 1,
     "subjects": [
       "fad3aaf3bc Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
@@ -1107,7 +1195,7 @@
     "branch": "gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918",
     "current": "main",
     "ahead": 67,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 66,
     "subjects": [
       "8d597c3286 refactor: rename TormentNexus to HyperNexus globally",
@@ -1122,7 +1210,7 @@
     "branch": "gitlab/gh-pages-hypernexus",
     "current": "main",
     "ahead": 1,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 1,
     "subjects": [
       "fb61b29a34 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
@@ -1133,7 +1221,7 @@
     "branch": "gitlab/gh-pages-tormentnexus",
     "current": "main",
     "ahead": 1,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 1,
     "subjects": [
       "fad3aaf3bc Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
@@ -1144,7 +1232,7 @@
     "branch": "origin-tormentnexus/dependabot/npm_and_yarn/npm_and_yarn-51a4835a46",
     "current": "main",
     "ahead": 537,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 528,
     "subjects": [
       "3c9ac14a76 chore(deps): bump the npm_and_yarn group across 6 directories with 6 updates",
@@ -1159,7 +1247,7 @@
     "branch": "origin-tormentnexus/gh-pages-hypernexus",
     "current": "main",
     "ahead": 17,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 17,
     "subjects": [
       "5bf095fa9d Deploy HyperNexus site 4313734f376dd87049e0c115e6591ba411d23f9d",
@@ -1174,7 +1262,7 @@
     "branch": "origin-tormentnexus/gh-pages-tormentnexus",
     "current": "main",
     "ahead": 6,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 6,
     "subjects": [
       "5daab23f08 Deploy TormentNexus site 4df7d1d5ed10c6adeaf52c56513a88389d6c10bc",
@@ -1189,7 +1277,7 @@
     "branch": "origin-tormentnexus/main",
     "current": "main",
     "ahead": 542,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 533,
     "subjects": [
       "a6c33ab703 feat: add Reddit thread finder and commenter tools",
@@ -1204,7 +1292,7 @@
     "branch": "robertpelloni/dependabot/npm_and_yarn/npm_and_yarn-51a4835a46",
     "current": "main",
     "ahead": 537,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 528,
     "subjects": [
       "3c9ac14a76 chore(deps): bump the npm_and_yarn group across 6 directories with 6 updates",
@@ -1219,7 +1307,7 @@
     "branch": "robertpelloni/gh-pages-hypernexus",
     "current": "main",
     "ahead": 17,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 17,
     "subjects": [
       "5bf095fa9d Deploy HyperNexus site 4313734f376dd87049e0c115e6591ba411d23f9d",
@@ -1234,7 +1322,7 @@
     "branch": "robertpelloni/gh-pages-tormentnexus",
     "current": "main",
     "ahead": 6,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 6,
     "subjects": [
       "5daab23f08 Deploy TormentNexus site 4df7d1d5ed10c6adeaf52c56513a88389d6c10bc",
@@ -1249,7 +1337,7 @@
     "branch": "robertpelloni/main",
     "current": "main",
     "ahead": 542,
-    "behind": 368,
+    "behind": 370,
     "cherry_plus": 533,
     "subjects": [
       "a6c33ab703 feat: add Reddit thread finder and commenter tools",
@@ -1264,7 +1352,7 @@
     "branch": "jules-scaffold-0.1.0-18345075036601368068",
     "current": "main",
     "ahead": 22,
-    "behind": 91,
+    "behind": 93,
     "cherry_plus": 17,
     "subjects": [
       "bb5edd4 Gold Master Release v1.1.0-prod: Sovereign Social Network Finalized",
@@ -1276,13 +1364,24 @@
   },
   {
     "repo": "veilid_reddit_facebook",
-    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-f33bf194ff",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-222ab68314",
     "current": "main",
     "ahead": 1,
-    "behind": 2,
+    "behind": 0,
     "cherry_plus": 1,
     "subjects": [
-      "a0058e1 build(deps): bump the npm_and_yarn group across 1 directory with 3 updates"
+      "3ec09d5 build(deps): bump @tauri-apps/plugin-shell"
+    ]
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "branch": "origin/jules-tauri-v2-sidecar-pipeline-2887319380514012639",
+    "current": "main",
+    "ahead": 1,
+    "behind": 7,
+    "cherry_plus": 1,
+    "subjects": [
+      "e86eb1e feat: automate cross-platform sidecar matrix build and collaborative CRDT wiki"
     ]
   },
   {
@@ -1664,14 +1763,15 @@
     "repo": "warp",
     "branch": "origin/jules-18223913328910802532-f975ead7",
     "current": "main",
-    "ahead": 4,
+    "ahead": 7,
     "behind": 0,
-    "cherry_plus": 4,
+    "cherry_plus": 7,
     "subjects": [
+      "a17f4d6 feat: release v0.2.4 texture atlas and glyph caching",
+      "b8ab6cd feat: release v0.2.3 extended ANSI 256-color & truecolor",
+      "c63ba0e feat: release v0.2.2 syntax highlighting lexer",
       "f187cfb feat: release v0.2.1 editor save and Ctrl+S persistence",
-      "f258463 feat: release v0.2.0 unified dashboard, tray & docs",
-      "3d07a74 feat: release v0.2.0 unified dashboard, tray & docs",
-      "599d8ea feat: release v0.2.0 unified dashboard, tray & docs"
+      "f258463 feat: release v0.2.0 unified dashboard, tray & docs"
     ]
   },
   {
@@ -2422,25 +2522,16 @@
     ]
   },
   {
-    "repo": "xrnet",
-    "branch": "origin/dependabot/cargo/backend/cargo-8681492501",
-    "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
+    "repo": "vst_monster",
+    "branch": "origin/vst-monster-dashboard-v0.2.2-17471248922835068382",
+    "current": "jules-vst-monster-init-0.1.0-9631431859280147761",
+    "ahead": 3,
+    "behind": 7,
+    "cherry_plus": 3,
     "subjects": [
-      "085d662 build(deps): bump rustls"
-    ]
-  },
-  {
-    "repo": "xrnet",
-    "branch": "origin/dependabot/npm_and_yarn/frontend/npm_and_yarn-9246c426d1",
-    "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
-    "subjects": [
-      "ad5614e build(deps): bump the npm_and_yarn group across 1 directory with 5 updates"
+      "4944b51 release: v0.2.9 advanced filtering and preview modal",
+      "74f0d98 release: v0.2.8 rich plugin badging and explorer actions",
+      "4465f28 release: v0.2.7 consolidated dashboard and native installer"
     ]
   },
   {
@@ -2448,25 +2539,10 @@
     "branch": "origin/jules-18056260933869023888-d0f77957",
     "current": "main",
     "ahead": 1,
-    "behind": 5,
+    "behind": 10,
     "cherry_plus": 1,
     "subjects": [
-      "71991ff feat: consolidate dashboard UI, add systray manager, and bump v0.1.112"
-    ]
-  },
-  {
-    "repo": "bobmani",
-    "branch": "origin",
-    "current": "main",
-    "ahead": 14,
-    "behind": 0,
-    "cherry_plus": 13,
-    "subjects": [
-      "8bcc0dc fix: re-pin leraine-studio to published HEAD db2b8ca (drop local-only 87k-deletion 425ce48)",
-      "cfe56d2 fix: re-pin ksm-v2 to published HEAD 62a0723 (drop local-only 34k-deletion 6462ac7; kept in backup branch)",
-      "26bdfa0 fix: re-pin ffr-difficulty-model to published HEAD 0574a00 (drop local-only 3850-deletion 5571c71)",
-      "01d4771 fix: re-pin ddc_onset to published HEAD f35cf13 (drop local-only 822-deletion 9bbf8e4)",
-      "cbdd442 fix: re-pin ddc to published HEAD 68d26d9 (drop local-only bulk-deletion ad786f8)"
+      "d3705ef feat: refine dashboard UI, add live telemetry & shutdown API, bump v0.1.122"
     ]
   },
   {
@@ -2484,39 +2560,14 @@
     ]
   },
   {
-    "repo": "bg_fix",
-    "branch": "origin",
-    "current": "master",
-    "ahead": 2,
-    "behind": 2,
-    "cherry_plus": 0,
-    "subjects": [
-      "3853df5 merge: origin/master sync (Protocol #277, local-wins conflicts)",
-      "c2c556b chore: track dirty state (Protocol #277)"
-    ]
-  },
-  {
-    "repo": "bobfilez_fix",
+    "repo": "bobsaver_fix",
     "branch": "origin",
     "current": "main",
-    "ahead": 2,
-    "behind": 2,
-    "cherry_plus": 0,
+    "ahead": 1,
+    "behind": 0,
+    "cherry_plus": 1,
     "subjects": [
-      "8232773e merge: origin/main sync (Protocol #277, local-wins conflicts)",
-      "8413e846 chore: track dirty state (Protocol #277)"
-    ]
-  },
-  {
-    "repo": "bobsgameonlinejava_fix",
-    "branch": "origin",
-    "current": "main",
-    "ahead": 2,
-    "behind": 2,
-    "cherry_plus": 0,
-    "subjects": [
-      "883eee8 merge: origin/main sync (Protocol #277, local-wins conflicts)",
-      "e78f355 chore: track dirty state (Protocol #277)"
+      "bb335125 fix: re-pin submodules to published commits (Jules recursive clone)"
     ]
   },
   {
@@ -2539,7 +2590,7 @@
     "branch": "jules-7500685366569110515-e7a3519c",
     "current": "release",
     "ahead": 3,
-    "behind": 15,
+    "behind": 16,
     "cherry_plus": 0,
     "subjects": [
       "06efc00 Merge branch 'jules-7500685366569110515-e7a3519c'",
@@ -2552,7 +2603,7 @@
     "branch": "upstream",
     "current": "release",
     "ahead": 68,
-    "behind": 435,
+    "behind": 436,
     "cherry_plus": 65,
     "subjects": [
       "2437a4b ArrowVortex Release 1.1",
@@ -2565,31 +2616,16 @@
   {
     "repo": "bobmani/beatoraja",
     "branch": "upstream",
-    "current": "main",
-    "ahead": 216,
-    "behind": 342,
-    "cherry_plus": 195,
+    "current": "master",
+    "ahead": 217,
+    "behind": 344,
+    "cherry_plus": 196,
     "subjects": [
+      "2292ddc6 Use queue signaling for video commands and add XML failure/exit diagnostics with regression tests",
       "8eeb0276 Add Launcher Notes Offset Center setting and unify note resize anchors under destination.offsetcenter",
       "af0da2af add BundledIR",
       "84447a24 Update JLayer to 1.0.2-gdx and add regression tests for MP3 key sound and preview playback compatibility",
-      "2942a036 Update JInput to 2.0.10 and Jamepad to 2.30.0.0, align natives and preserve input compatibility with regression tests",
-      "b9066232 Update LWJGL to 3.4.3 with Windows/X11 IME compatibility fixes and regression tests"
-    ]
-  },
-  {
-    "repo": "bobmani/hymnmania",
-    "branch": "origin",
-    "current": "master",
-    "ahead": 86,
-    "behind": 0,
-    "cherry_plus": 85,
-    "subjects": [
-      "e569fa5 Protocol #270: sync master with main (all master value already merged forward)",
-      "a6cecce Protocol #270: track dirty state",
-      "c57682f chore: update title pipeline and hymn submodule pointer",
-      "51aa4a3 chore: track social_config templates and gitignore credential files",
-      "33bdb18 docs: rewrite README from full repo analysis"
+      "2942a036 Update JInput to 2.0.10 and Jamepad to 2.30.0.0, align natives and preserve input compatibility with regression tests"
     ]
   },
   {
@@ -2597,7 +2633,7 @@
     "branch": "jules-12512815185672744343-3c9d3dde",
     "current": "release",
     "ahead": 30,
-    "behind": 9,
+    "behind": 10,
     "cherry_plus": 27,
     "subjects": [
       "8b7bd51a90 chore: v5.78.0 \u2014 Executive Protocol #66: Full submodule tracking and branch alignment",
@@ -2612,7 +2648,7 @@
     "branch": "upstream",
     "current": "release",
     "ahead": 156,
-    "behind": 10,
+    "behind": 11,
     "cherry_plus": 156,
     "subjects": [
       "8a3bf8884a Move unistd.h include into #ifdef __linux__",
@@ -2627,7 +2663,7 @@
     "branch": "upstream",
     "current": "master",
     "ahead": 98,
-    "behind": 124,
+    "behind": 125,
     "cherry_plus": 98,
     "subjects": [
       "37afba94 \u30de\u30a6\u30b9\u64cd\u4f5c\u7121\u52b9\u30aa\u30d7\u30b7\u30e7\u30f3\u304c\u5168\u753b\u9762\u30af\u30ea\u30c3\u30af\u306b\u52b9\u3044\u3066\u3044\u306a\u304b\u3063\u305f\u306e\u3092\u4fee\u6b63",
@@ -2641,40 +2677,41 @@
     "repo": "bobmani/leraine-studio",
     "branch": "origin/jules-208712761241480082-5e6fb3e2",
     "current": "master",
-    "ahead": 3,
-    "behind": 6,
-    "cherry_plus": 3,
+    "ahead": 2,
+    "behind": 7,
+    "cherry_plus": 2,
     "subjects": [
-      "9c673ff feat: add waveform color customization and dashboard color editor v1.8.0",
-      "6f92b8b feat: add FFT audio spectrum analysis and dashboard visualizer v1.7.0",
-      "23c7156 feat: add stereo waveform channel mode and test suite (v1.6.0)"
+      "c348ee0 feat: add waveform alpha transparency control v1.10.0",
+      "9805954 feat: add multi-chart difficulty tab switcher v1.9.0"
     ]
   },
   {
     "repo": "bobmani/pianogame",
     "branch": "origin/jules-7923437021684046164-a5f90854",
     "current": "master",
-    "ahead": 2,
-    "behind": 2,
-    "cherry_plus": 2,
+    "ahead": 4,
+    "behind": 3,
+    "cherry_plus": 4,
     "subjects": [
-      "f1280a3 feat: complete MCP server implementations across Rust, C#, and Java (v5.77.0)",
-      "bbf721e feat: implement MCP server interface across harnesses and dashboard (v5.76.0)"
+      "a2ed6af feat: implement cross-engine stability and performance health monitor (v5.81.0)",
+      "2e8a9f8 feat: implement persistent state store and memory manager (v5.80.0)\"",
+      "d5b60d2 feat: implement cross-platform desktop native tray launcher (v5.79.0)",
+      "7314de3 feat: implement native WebSocket bridges for remote agent control (v5.78.0)"
     ]
   },
   {
     "repo": "HyperNexus2old",
     "branch": "origin",
     "current": "main",
-    "ahead": 358,
+    "ahead": 360,
     "behind": 3209,
-    "cherry_plus": 351,
+    "cherry_plus": 353,
     "subjects": [
+      "1ce7c8ba4 docs: blocked-harness dispositions - jcode 0.99.1 surfacing fixed, maki/droid/hax/reasonix blockers pinned (v1.0.28)",
+      "9c1d359da fix: attestation TodoWrite (claude live HN-CLAUDE-OK) + gap-closing status (v1.0.28)",
       "a9f1fd720 feat: install remaining harnesses (prime/paseo/omnigent/openwebui/juggler/t3/openchamber/hax-wsl/codewhale-0.10.2), opencode dual-shape provider, kernel-proxy rewires, live proofs (v1.0.28)",
       "1175b1438 merge: remote harness dual-model sweep + codex attestation fix (v1.0.28)",
-      "647440ef6 fix: attestation strip apply_patch/update_plan (codex live) + codex TOML top-level insert (v1.0.28)",
-      "3ab894b4b docs: codex-gui swarm verification (wonder pinned, drift fixed, report-back channel checked)",
-      "c505a6caa feat: copilot-cli + opencode dual-model via META_MODEL env (spark default, wonder opt-in); copilot slot audited untouched-by-design"
+      "647440ef6 fix: attestation strip apply_patch/update_plan (codex live) + codex TOML top-level insert (v1.0.28)"
     ]
   },
   {
@@ -2760,27 +2797,39 @@
     ]
   },
   {
+    "repo": "gods-eye-view",
+    "branch": "origin/jules-sovereign-governance-v0.2.0-368247989745874146",
+    "current": "main",
+    "ahead": 2,
+    "behind": 1,
+    "cherry_plus": 2,
+    "subjects": [
+      "0456c58a ui: enrich display controls with tooltips (v0.2.0)",
+      "9bb2b267 fix(geojson): deduplicate mapAnalystRecord and enforce package boundaries"
+    ]
+  },
+  {
     "repo": "ww3_game",
     "branch": "origin/jules-ww3-v0.3.2-command-center-tray-cleanup-5866779385412196809",
     "current": "main",
-    "ahead": 3,
-    "behind": 6,
-    "cherry_plus": 3,
+    "ahead": 2,
+    "behind": 7,
+    "cherry_plus": 2,
     "subjects": [
-      "51b9a12 feat(act1): implement overhead guard alert indicators and quick-reload loop v0.3.6",
-      "25c7a51 feat(act1): add overhead guard alerts and quick retry loop v0.3.6",
-      "81f7768 feat(act1): add overhead guard alerts and quick retry loop v0.3.6"
+      "0c29eee feat(act1): add thrown bottle distraction lure and guard investigation v0.3.8",
+      "ec153de feat(act1): add radiant light thermodynamics and shivering noise v0.3.7"
     ]
   },
   {
     "repo": "succubus.red",
-    "branch": "origin/dependabot/npm_and_yarn/client/npm_and_yarn-128dd77606",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
     "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
+    "ahead": 2,
+    "behind": 25,
+    "cherry_plus": 2,
     "subjects": [
-      "031359a build(deps): bump the npm_and_yarn group across 2 directories with 7 updates"
+      "86e891a feat: v0.26.0 - WebGL Memory Disposal on Avatar Switching",
+      "f735b82 feat: v0.25.0 - Key Light Color & Shadow Map Resolution Controls"
     ]
   },
   {
@@ -2788,23 +2837,12 @@
     "branch": "origin/jules-11301324765694309973-a802fcfe",
     "current": "main",
     "ahead": 3,
-    "behind": 4,
+    "behind": 5,
     "cherry_plus": 3,
     "subjects": [
-      "e823d96 feat(engine): add federated group channels v0.4.0",
-      "9b7d791 release: v0.3.9 - zero-knowledge cloud backup & consolidated UI",
-      "566ae47 release: v0.3.8 - decentralized identity cards, outbox queue & UI consolidation"
-    ]
-  },
-  {
-    "repo": "newz",
-    "branch": "origin/dependabot/npm_and_yarn/frontend/npm_and_yarn-fba7fb8875",
-    "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
-    "subjects": [
-      "8b969d5 build(deps): bump the npm_and_yarn group across 1 directory with 2 updates"
+      "45d229e feat(engine): add causal conflict resolution and ordering v0.4.3",
+      "5d27629 feat(engine): add reputation and spam heuristics v0.4.2",
+      "a4d0dae feat(mobile): add settings screen and Tor/identity controls v0.4.1"
     ]
   },
   {
@@ -2812,129 +2850,99 @@
     "branch": "origin/omnifeed-unified-dashboard-v0-2-0-6192871868108129425",
     "current": "main",
     "ahead": 3,
-    "behind": 6,
+    "behind": 9,
     "cherry_plus": 3,
     "subjects": [
-      "2bca90a Release v0.5.3: Dynamic single-source versioning helper",
-      "f4469e8 Release v0.5.2: Multi-source data flow architecture specification",
-      "e18e4d9 Release v0.5.1: Progressive Web App with offline caching"
+      "82d9978 Release v0.5.6: Tauri desktop bundle refinement and offline experience",
+      "1fa4258 Release v0.5.5: Deep architectural component specifications",
+      "2d91399 Release v0.5.4: Chronological topic evolution timeline & rich correlation"
     ]
   },
   {
     "repo": "webapp_factory",
-    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-7ae92e7f3e",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-384e5204cf",
     "current": "main",
     "ahead": 1,
-    "behind": 0,
+    "behind": 2,
     "cherry_plus": 1,
     "subjects": [
-      "61e3a9b build(deps): bump the npm_and_yarn group across 2 directories with 12 updates"
-    ]
-  },
-  {
-    "repo": "webapp_factory",
-    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-a34b2f87c0",
-    "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
-    "subjects": [
-      "f6a0eb1 build(deps): bump the npm_and_yarn group across 2 directories with 10 updates"
+      "1af4aa3 build(deps): bump the npm_and_yarn group across 2 directories with 8 updates"
     ]
   },
   {
     "repo": "webapp_factory",
     "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
     "current": "main",
-    "ahead": 1,
-    "behind": 45,
-    "cherry_plus": 1,
+    "ahead": 2,
+    "behind": 50,
+    "cherry_plus": 2,
     "subjects": [
-      "483736f feat: execute factory cycle and verify unified dashboard"
+      "98004e7 feat(deployer): Phase 4 multi-tenant verification and dashboard status",
+      "200e8ab feat(discovery): optimize scrapers and deploy prompt utility"
     ]
   },
   {
     "repo": "educational_video_pipeline",
-    "branch": "origin/dependabot/npm_and_yarn/frontend/npm_and_yarn-50d09a21cd",
+    "branch": "origin/feat/unified-dashboard-tray-manager-0.4.0-7731780132859260669",
     "current": "main",
     "ahead": 1,
-    "behind": 68,
+    "behind": 71,
     "cherry_plus": 1,
     "subjects": [
-      "ef67100 build(deps): bump the npm_and_yarn group across 1 directory with 3 updates"
+      "6f9240d fix(audio): support SentenceBoundary in edge-tts stream and safeguard subtitle overlay"
     ]
   },
   {
     "repo": "mparty",
-    "branch": "origin/dependabot/npm_and_yarn/web/npm_and_yarn-680b8c6d5e",
+    "branch": "origin/dependabot/npm_and_yarn/web/npm_and_yarn-629b8f36f3",
     "current": "main",
     "ahead": 1,
-    "behind": 0,
+    "behind": 2,
     "cherry_plus": 1,
     "subjects": [
-      "902471d build(deps): bump the npm_and_yarn group across 1 directory with 10 updates"
+      "fe114d9 build(deps): bump the npm_and_yarn group across 1 directory with 2 updates"
     ]
   },
   {
     "repo": "mparty",
     "branch": "origin/jules-15689288545271426252-5ef46452",
     "current": "main",
-    "ahead": 1,
-    "behind": 91,
-    "cherry_plus": 1,
+    "ahead": 2,
+    "behind": 94,
+    "cherry_plus": 2,
     "subjects": [
-      "e81e8de feat(netplay): implement WebRTC DataChannel packet streaming v0.48.0"
-    ]
-  },
-  {
-    "repo": "make_elon_laugh",
-    "branch": "origin/dependabot/pip/pip-d80e46b4af",
-    "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
-    "subjects": [
-      "164afa4 build(deps): bump the pip group across 1 directory with 2 updates"
+      "c4fcd38 feat(ai): integrate structured assembly diff feedback in decompilation loop v0.50.0",
+      "5b92164 feat(decomp): add intelligent typed C stub generation and pattern analysis v0.49.0"
     ]
   },
   {
     "repo": "make_elon_laugh",
     "branch": "origin/jules-8067423937083367268-08d72221",
     "current": "main",
-    "ahead": 4,
-    "behind": 48,
-    "cherry_plus": 3,
+    "ahead": 5,
+    "behind": 51,
+    "cherry_plus": 4,
     "subjects": [
-      "baabb7c Release v0.14.0: Add automated performance digest & exportable reports",
-      "b7bf98a Release v0.13.0: Add weekly visual calendar grid & queue metrics",
-      "68e0cc8 feat: Implement Scheduled Tweet Queue System v0.12.0",
-      "c2ff0e1 feat: Implement Scheduled Tweet Queue System v0.12.0"
-    ]
-  },
-  {
-    "repo": "unitedbeats_site",
-    "branch": "origin",
-    "current": "main",
-    "ahead": 1,
-    "behind": 0,
-    "cherry_plus": 1,
-    "subjects": [
-      "5a5b7c4 docs: rewrite README from full repo analysis"
+      "e9ca293 Release v0.17.0: Weekly Digest CLI Generator & Report Download Controls",
+      "86eae2d Release v0.16.0: Automated Recurring Digest Broadcast Worker & Dashboard Controls",
+      "3e9d166 docs: extract historical Tweepy script and design draft to docs/HISTORICAL_EXTRACTS.md",
+      "0e2fc0b v0.15.0: add performance digest webhook dispatcher",
+      "63c0e50 v0.15.0: add performance digest webhook dispatcher"
     ]
   },
   {
     "repo": "unitedbeats_site",
     "branch": "origin/consolidated-dashboard-system-tray-2047344066934679060",
     "current": "main",
-    "ahead": 8,
-    "behind": 0,
-    "cherry_plus": 8,
+    "ahead": 11,
+    "behind": 2,
+    "cherry_plus": 11,
     "subjects": [
-      "9d93391 v1.2.0: consolidate dashboard, tray menu & deploy workflow",
-      "837e118 v1.2.0: add operations hub, tray menu & deploy workflow",
-      "68a4ef3 v1.2.0: add operations hub, tray menu & deploy workflow",
-      "4ae4bbc v1.2.0: add operations hub, tray menu & deploy workflow",
-      "f53877d ci: configure github actions deploy workflow v1.1.0"
+      "167caf4 v1.2.0: Consolidated Operations Hub, System Tray, and Documentation Suite",
+      "0a28a21 v1.2.0: update README, deploy script & consolidated dashboard",
+      "17b9438 v1.2.0: consolidate dashboard, tray menu & deploy workflow",
+      "ccf3e70 v1.2.0: consolidate dashboard, tray menu & deploy workflow",
+      "9d93391 v1.2.0: consolidate dashboard, tray menu & deploy workflow"
     ]
   },
   {
@@ -2942,7 +2950,7 @@
     "branch": "jules-project-sirens-9283818547340256471",
     "current": "main",
     "ahead": 50,
-    "behind": 12,
+    "behind": 19,
     "cherry_plus": 40,
     "subjects": [
       "f246865 Add scalability report and backlog",
@@ -2954,27 +2962,15 @@
   },
   {
     "repo": "sales_bot",
-    "branch": "origin/dependabot/pip/pip-1b74ff96a4",
-    "current": "main",
-    "ahead": 1,
-    "behind": 2,
-    "cherry_plus": 1,
-    "subjects": [
-      "8948e08 build(deps): bump the pip group across 1 directory with 6 updates"
-    ]
-  },
-  {
-    "repo": "sales_bot",
     "branch": "origin/jules-3518869660633291422-889bc1a4",
     "current": "main",
-    "ahead": 4,
-    "behind": 5,
-    "cherry_plus": 4,
+    "ahead": 3,
+    "behind": 8,
+    "cherry_plus": 3,
     "subjects": [
-      "e9a85c4 Release v1.0.0: Multi-Armed Bandit A/B Engine & Edge Vision Acceleration",
-      "d87bdef Release v1.0.0: Multi-Armed Bandit A/B Engine & Edge Vision Acceleration",
-      "14b5bc4 Release v0.9.0: Multi-Armed Bandit A/B Testing Engine",
-      "c9794bc Release v0.8.0: Vision feature extraction & VLM multimodal integration"
+      "af65e8d Release v1.3.0: Enhance Multi-Armed Bandit framework",
+      "a114c1a v1.2.0: add leads export, summary analytics, and vision-driven scarcity tuning",
+      "9afe440 Release v1.1.0: Dynamic Promotional Engine & Retail Prompt Synthesis"
     ]
   },
   {
