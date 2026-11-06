@@ -19,7 +19,7 @@ Full Execution uplift requires runtime proof (demo / tests beyond build / live U
 | Repo | Provisional combined | Runtime proof? | Disposition |
 |---|---|---|---|
 | educational_video_pipeline | ~4.25 (capped) | None yet | First in line: needs one end-to-end video produced |
-| webapp_factory | ~4.5 (capped) | None yet | Needs one generated app/site demo |
+| webapp_factory | ~3.5 (Gemini downgrade 2026-11-05: compiles ≠ shipped output) | None yet | Needs one generated app/site demo deployed |
 | newz | ~5.0 (capped) | None yet | Needs live feed demo |
 | bobble | ~5.75 (capped) | None; gated on HyperNexus API | Hold |
 | mparty | ~4.25 (capped) | None yet | Needs ROM/output proof |
