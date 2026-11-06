@@ -1,0 +1,377 @@
+[
+  {
+    "parent": "f-zerox",
+    "sub": "tools/asm-differ",
+    "sha": "2bf661ca52a9dc8f73876daeca68c6b4130940ae",
+    "status": "MISSING",
+    "tip": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2",
+    "url": "https://github.com/simonlindholm/asm-differ"
+  },
+  {
+    "parent": "f-zerox",
+    "sub": "tools/asm-processor",
+    "sha": "94a7b664f69d86404a00eec532b3cb6006e06fa7",
+    "status": "MISSING",
+    "tip": "f3b2f85a5bc7e8ae2030ea5a83ea8aa0bcbede03",
+    "url": "https://github.com/simonlindholm/asm-processor"
+  },
+  {
+    "parent": "f-zerox",
+    "sub": "tools/ido5.3_cc",
+    "sha": "f5d61bfef869fd927d74cc982096fe8ea4b0e363",
+    "status": "MISSING",
+    "tip": "faa773c7e70fc38b1e5337bfe3ef05fb0702b2f4",
+    "url": "https://github.com/n64decomp/ido5.3_cc"
+  },
+  {
+    "parent": "f-zerox",
+    "sub": "tools/splat",
+    "sha": "c91489b5a8905005a5b57bfc7fb4563c7e46e413",
+    "status": "MISSING",
+    "tip": "7548b9771e6f8418507b23434187fb07741af6d4",
+    "url": "https://github.com/ethteck/splat/"
+  },
+  {
+    "parent": "geiss",
+    "sub": "aios",
+    "sha": "200a29131b72ff87c3464bdb53b5b554f6371958",
+    "status": "MISSING",
+    "tip": "ad9de6c0b355353837260383cf4bcd0a223aa2c5",
+    "url": "https://github.com/robertpelloni/aios.git"
+  },
+  {
+    "parent": "geiss",
+    "sub": "bobmani",
+    "sha": "1cf61c29603738ef663c48ee9459d291dc3e4e00",
+    "status": "MISSING",
+    "tip": "8bcc0dc56ab958fb9079c539f8c993c8410e108f",
+    "url": "https://github.com/robertpelloni/bobmani.git"
+  },
+  {
+    "parent": "geiss",
+    "sub": "borg",
+    "sha": "313d1af3187976a275d4a58b3651218ad2bc48f2",
+    "status": "MISSING",
+    "tip": "964a1306131d6e856cb5b41c5a861f624d4b83fb",
+    "url": "https://github.com/robertpelloni/borg.git"
+  },
+  {
+    "parent": "geiss",
+    "sub": "fwber",
+    "sha": "c88cc061d968f2fe0a94714ebcd9cfb34ae82435",
+    "status": "MISSING",
+    "tip": "f3417993ba159f093ba5b72acd1a59ef508178c2",
+    "url": "https://github.com/robertpelloni/fwber.git"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "adrenaline",
+    "sha": "c341e2700509e9591349d763ac0702e661e31671",
+    "status": "MISSING",
+    "tip": "7520e9cc96d936b9e473bc1074a9b9712076d69d",
+    "url": "https://github.com/shobrook/adrenaline"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "aider",
+    "sha": "a753a3fadc32d35b73c58c81f2ddfe22a0c98185",
+    "status": "MISSING",
+    "tip": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+    "url": "https://github.com/paul-gauthier/aider"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "amazon-q-developer-cli",
+    "sha": "d1469ffd71b6d98c430f14a193f51016488cb82b",
+    "status": "MISSING",
+    "tip": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+    "url": "https://github.com/aws/amazon-q-developer-cli"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "azure-ai-cli",
+    "sha": "6b6bd914e918f2f1287c735b633f052576873518",
+    "status": "MISSING",
+    "tip": "8d3b8e4a9d3e1faa69681dcc1f5ba443e0ba104f",
+    "url": "https://github.com/Azure/azure-ai-cli"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "bito-cli",
+    "sha": "70c9a0d6c914ef42478e43a23736e9454ba11b17",
+    "status": "MISSING",
+    "tip": "cb3a77903b48171c24cad3db07172fd3cc9ff8ee",
+    "url": "https://github.com/gitbito/CLI"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "byterover-cli",
+    "sha": "9aaf4302a6fd93273a3284ecbaa7837747db6bb2",
+    "status": "MISSING",
+    "tip": "1052ac1a5dd0fde4da8693d4712064f7876c269c",
+    "url": "https://github.com/campfirein/byterover-cli"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "claude-code",
+    "sha": "5feda3a8cc4b3ec8e605cb1d76b29bb542540d79",
+    "status": "MISSING",
+    "tip": "a371abbe75ffa0d0a3c92290e2bbf56a7ef54367",
+    "url": "https://github.com/yasasbanukaofficial/claude-code"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "claude-code-templates",
+    "sha": "f32ba4ed93d238838b080d46bc1318476dd2a5c2",
+    "status": "MISSING",
+    "tip": "77b087e2153e35250cd3cc7c192218a2d990b6ed",
+    "url": "https://github.com/davila7/claude-code-templates"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "code-cli",
+    "sha": "5097ea7b130a0eef979af03eda9e0e03c9772e65",
+    "status": "MISSING",
+    "tip": "dd8a84a21b04686e4b5c71fecba582d847d2b277",
+    "url": "https://github.com/just-every/code"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "copilot-cli",
+    "sha": "93e0d26571513623a43accc13ff80355341138ac",
+    "status": "MISSING",
+    "tip": "841e7a57ba6ec683d710826c113f3c0cdd8f0940",
+    "url": "https://github.com/github/copilot-cli"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "crush",
+    "sha": "1ee00758c6940b407aa14163dcce4aaad1a12a17",
+    "status": "MISSING",
+    "tip": "c98fc5459982d35fd6152718ad1148c0256625bd",
+    "url": "https://github.com/charmbracelet/crush"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "dolt",
+    "sha": "6dbd3b0fc51a8629b935700f203e7f864698550a",
+    "status": "MISSING",
+    "tip": "5bace43533ea3ed1e99560f9da6e58285a25b5bb",
+    "url": "https://github.com/dolthub/dolt"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "factory-cli",
+    "sha": "d840e3460696c8f36e0ec0d48b90c41cf36e881d",
+    "status": "MISSING",
+    "tip": "892925c655a97e7a0bc7d558236015ebb22cb214",
+    "url": "https://github.com/Factory-AI/factory"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "gemini-cli",
+    "sha": "2d70d22c552a9950ee518a9b45cbb56ac38f71e7",
+    "status": "MISSING",
+    "tip": "3fd7d263466b9e5d30b2da1ebf85dae956a0fb86",
+    "url": "https://github.com/google-gemini/gemini-cli"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "goose",
+    "sha": "29c7968fd46fef512699acb5904e78e88193c7e2",
+    "status": "MISSING",
+    "tip": "4facf56cbab049142809d9afa4648ebe6823ba80",
+    "url": "https://github.com/block/goose"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "grok-cli",
+    "sha": "de4cf1bd1f6131ba29c9abbe13170e718b947b39",
+    "status": "MISSING",
+    "tip": "fb97af83f06dca873281d60168430f06c8de6324",
+    "url": "https://github.com/superagent-ai/grok-cli"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "jules-extension",
+    "sha": "8e2191b501c3ae044fb660d3a62753ab3b41afcc",
+    "status": "MISSING",
+    "tip": "9f2fc14a41e8b604bdaf2d50ae6041cdc5507175",
+    "url": "https://github.com/gemini-cli-extensions/jules"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "kilocode",
+    "sha": "f781c4c8aadb70fdb890a590db0723db54983aa9",
+    "status": "MISSING",
+    "tip": "aab1e99aefd67b415eaac2379e51cc39d99fd51d",
+    "url": "https://github.com/Kilo-Org/kilocode"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "kimi-cli",
+    "sha": "f0464256b59939371b057f4dabb32c14223eb9dc",
+    "status": "MISSING",
+    "tip": "9ab1286b8fe4e6bcd116949a27ce5e0ac3389c82",
+    "url": "https://github.com/MoonshotAI/kimi-cli"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "llamafile",
+    "sha": "3584e4494aaf09ddcfa99104732492dbd6ca3dea",
+    "status": "MISSING",
+    "tip": "334e66444a96d5429fd2d667301bd067029b1eb5",
+    "url": "https://github.com/Mozilla-Ocho/llamafile"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "mistral-vibe",
+    "sha": "dba47e0d64119a2088a16964db1d4dfd0f2b9b6c",
+    "status": "MISSING",
+    "tip": "c96a6dbb34d34f8a868b3f67b279ecabbf1aa616",
+    "url": "https://github.com/mistralai/mistral-vibe"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "ollama",
+    "sha": "b86f6e43945d9b32c0092b5034da5f5edaf6470c",
+    "status": "MISSING",
+    "tip": "6362e0a30887bdd4f69e07a94e8a513383576204",
+    "url": "https://github.com/ollama/ollama"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "open-interpreter",
+    "sha": "14b42992f0f9891a504443264abe4055339fc5f8",
+    "status": "MISSING",
+    "tip": "f12ce327eeee679d2f2f22ce23018b0db9ae092f",
+    "url": "https://github.com/OpenInterpreter/open-interpreter"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "opencode",
+    "sha": "7e7a9adf5f565253eddd377a6591953e10d37675",
+    "status": "MISSING",
+    "tip": "97178e54b8c0940719a64f1a8595c794cbf1e50b",
+    "url": "https://github.com/anomalyco/opencode"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "pi-cli",
+    "sha": "f55cea7cf454382b44ab05b86015bc7f9d9b2287",
+    "status": "MISSING",
+    "tip": "2a32a605a9f18a5f0191f65358a2e764b2f69fc7",
+    "url": "https://github.com/badlogic/pi-mono"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "qwen-code-cli",
+    "sha": "93e49ffee187f4bfc75c924557e8d55940e12585",
+    "status": "MISSING",
+    "tip": "dbf277291908dc45a1fee1c8b635ffe26e4f9d97",
+    "url": "https://github.com/dinoanderson/qwen_cli_coder"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "rowboat",
+    "sha": "351ca17acd5248f37303cc1ea4b9da29cf4e2935",
+    "status": "MISSING",
+    "tip": "9dc29dd17a9db9404b05ac8665919ad89d8ea1a0",
+    "url": "https://github.com/rowboatlabs/rowboat"
+  },
+  {
+    "parent": "hyperharness",
+    "sub": "smithery-cli",
+    "sha": "f79e171a43bbf180f672c4a34bf24e7d582f3c1d",
+    "status": "MISSING",
+    "tip": "407ac3b33944a585357379bc213fdf1ee55464d7",
+    "url": "https://github.com/smithery-ai/cli"
+  },
+  {
+    "parent": "itgmania",
+    "sub": "Themes/Simply-Love-SM5",
+    "sha": "9ccc8dca9032e74dfd1889610ab447b3b1898e7c",
+    "status": "MISSING",
+    "tip": "06a56f5f58816485720487734b5e0021e206816b",
+    "url": "https://github.com/robertpelloni/Simply-Love-SM5.git"
+  },
+  {
+    "parent": "bobtorrent",
+    "sub": "MobileMessenger",
+    "sha": "215ce1e4dd29527d2624cace008d8b58198c0099",
+    "status": "NO_URL",
+    "tip": ""
+  },
+  {
+    "parent": "bobtorrent",
+    "sub": "bobcoin",
+    "sha": "09c5012d0eb305b80d909b2d4a376897a63091e6",
+    "status": "MISSING",
+    "tip": "31c79ffbe24fb7b25f43062c3602e8df941eaecc",
+    "url": "https://github.com/robertpelloni/bobcoin"
+  },
+  {
+    "parent": "okgame",
+    "sub": "lib/libmidi",
+    "sha": "1b5c6e1c2695312ba001cfabc45fe73fd5cae746",
+    "status": "DEAD_OR_FETCH_FAIL",
+    "tip": "",
+    "url": "https://github.com/opencodewin/libmidi"
+  },
+  {
+    "parent": "okgame",
+    "sub": "lib/projectm",
+    "sha": "be0715ade88568266f37385f0d40bca6afe837ad",
+    "status": "UNREACHABLE",
+    "tip": "ba052dcc6bc82566f94c52fd30e04df630b491cd",
+    "url": "https://github.com/robertpelloni/projectm"
+  },
+  {
+    "parent": "bobsaver",
+    "sub": "JWildfire",
+    "sha": "244a0d1f482359317b41cc6db52bc144c06e41de",
+    "status": "MISSING",
+    "tip": "76e741369ea13e66acad0a57d8c6cec281021526",
+    "url": "https://github.com/robertpelloni/JWildfire"
+  },
+  {
+    "parent": "superdawmcp",
+    "sub": "third_party/ableton-proj-mcp",
+    "sha": "2618bcdc1debd23c8137440d82054e1d233a0320",
+    "status": "UNREACHABLE",
+    "tip": "a6104d6ddd84e0f12bd301bc957cfb50aea96b0e",
+    "url": "https://github.com/closestfriend/ableton-proj-mcp"
+  },
+  {
+    "parent": "superdawmcp",
+    "sub": "third_party/daw-mcp-ruud0",
+    "sha": "d68aab9df37e488ca49c53834f55bbdd2731323a",
+    "status": "UNREACHABLE",
+    "tip": "9da360d79b70ddcd8ddc85faf2b191468d9cd80e",
+    "url": "https://github.com/ruud0/daw-mcp"
+  },
+  {
+    "parent": "superdawmcp",
+    "sub": "third_party/dawpilot-mcp",
+    "sha": "900eb657feb8c8a142252899432ee1550146318b",
+    "status": "DEAD_OR_FETCH_FAIL",
+    "tip": "",
+    "url": "https://github.com/squarewave-studio/dawpilot-mcp"
+  },
+  {
+    "parent": "linthesia",
+    "sub": "pianogame",
+    "sha": "fc1ec8d36552654d8f1f6f8d53dcb912c5a5f2af",
+    "status": "MISSING",
+    "tip": "d8964b9f65e9f4e7feb3a73618a291f032d93628",
+    "url": "https://github.com/robertpelloni/pianogame.git"
+  },
+  {
+    "parent": "bobmani/itgmania",
+    "sub": "Themes/Simply-Love-SM5",
+    "sha": "9ccc8dca9032e74dfd1889610ab447b3b1898e7c",
+    "status": "MISSING",
+    "tip": "06a56f5f58816485720487734b5e0021e206816b",
+    "url": "https://github.com/robertpelloni/Simply-Love-SM5.git"
+  }
+]

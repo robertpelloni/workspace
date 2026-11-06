@@ -1,0 +1,128 @@
+[
+  {
+    "parent": "f-zerox",
+    "action": "repinned+pushed",
+    "applied": [
+      "tools/asm-differ: -> 0dd09af8f800",
+      "tools/asm-processor: -> f3b2f85a5bc7",
+      "tools/ido5.3_cc: -> faa773c7e70f",
+      "tools/splat: -> 7548b9771e6f"
+    ],
+    "head": "22be52a6adc1",
+    "detail": ""
+  },
+  {
+    "parent": "geiss",
+    "action": "repinned+pushed",
+    "applied": [
+      "aios: -> ad9de6c0b355",
+      "bobmani: -> 8bcc0dc56ab9",
+      "borg: -> 964a1306131d",
+      "fwber: -> f3417993ba15"
+    ],
+    "head": "83fc1f52c506",
+    "detail": ""
+  },
+  {
+    "parent": "hyperharness",
+    "action": "repinned+pushed",
+    "applied": [
+      "adrenaline: -> 7520e9cc96d9",
+      "aider: -> 5dc9490bb35f",
+      "amazon-q-developer-cli: -> 15cc8f3cd18c",
+      "azure-ai-cli: -> 8d3b8e4a9d3e",
+      "bito-cli: -> cb3a77903b48",
+      "byterover-cli: -> 1052ac1a5dd0",
+      "claude-code: -> a371abbe75ff",
+      "claude-code-templates: -> 77b087e2153e",
+      "code-cli: -> dd8a84a21b04",
+      "copilot-cli: -> 841e7a57ba6e",
+      "crush: -> c98fc5459982",
+      "dolt: -> 5bace43533ea",
+      "factory-cli: -> 892925c655a9",
+      "gemini-cli: -> 3fd7d263466b",
+      "goose: -> 4facf56cbab0",
+      "grok-cli: -> fb97af83f06d",
+      "jules-extension: -> 9f2fc14a41e8",
+      "kilocode: -> aab1e99aefd6",
+      "kimi-cli: -> 9ab1286b8fe4",
+      "llamafile: -> 334e66444a96",
+      "mistral-vibe: -> c96a6dbb34d3",
+      "ollama: -> 6362e0a30887",
+      "open-interpreter: -> f12ce327eeee",
+      "opencode: -> 97178e54b8c0",
+      "pi-cli: -> 2a32a605a9f1",
+      "qwen-code-cli: -> dbf277291908",
+      "rowboat: -> 9dc29dd17a9d",
+      "smithery-cli: -> 407ac3b33944"
+    ],
+    "head": "1bdd97e5693f",
+    "detail": ""
+  },
+  {
+    "parent": "itgmania",
+    "action": "repinned+pushed",
+    "applied": [
+      "Themes/Simply-Love-SM5: -> 06a56f5f5881"
+    ],
+    "head": "84b2b821debb",
+    "detail": ""
+  },
+  {
+    "parent": "bobtorrent",
+    "action": "repinned+pushed",
+    "applied": [
+      "bobcoin: -> 31c79ffbe24f"
+    ],
+    "head": "fcba943283e6",
+    "detail": ""
+  },
+  {
+    "parent": "okgame",
+    "action": "repinned+pushed",
+    "applied": [
+      "lib/libmidi: REMOVED (upstream 404)",
+      "lib/projectm: -> ba052dcc6bc8"
+    ],
+    "head": "4ce96159404f",
+    "detail": ""
+  },
+  {
+    "parent": "bobsaver",
+    "action": "repinned+pushed",
+    "applied": [
+      "JWildfire: -> 76e741369ea1"
+    ],
+    "head": "bb335125576c",
+    "detail": ""
+  },
+  {
+    "parent": "superdawmcp",
+    "action": "repinned-push-fail",
+    "applied": [
+      "third_party/ableton-proj-mcp: -> a6104d6ddd84",
+      "third_party/daw-mcp-ruud0: -> 9da360d79b70",
+      "third_party/dawpilot-mcp: REMOVED (upstream 404)"
+    ],
+    "head": "f362d1e6cdd4",
+    "detail": "itory pushing to\nhint: the same ref. If you want to integrate the remote changes, use\nhint: 'git pull' before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.\n"
+  },
+  {
+    "parent": "linthesia",
+    "action": "repinned+pushed",
+    "applied": [
+      "pianogame: -> d8964b9f65e9"
+    ],
+    "head": "a7fcf9f8ba1f",
+    "detail": ""
+  },
+  {
+    "parent": "bobmani/itgmania",
+    "action": "repinned+pushed",
+    "applied": [
+      "Themes/Simply-Love-SM5: -> 06a56f5f5881"
+    ],
+    "head": "85c803bd336d",
+    "detail": ""
+  }
+]
