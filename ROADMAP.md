@@ -1,6 +1,6 @@
 ﻿# ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.289.0)
+## Current Status (v5.290.0)
 
 **Protocol #278 (2026-11-05):** 36 forward merges pushed; bobmani/beatoraja master closed (+125); _fix repos published; 5 conflict branches retained for Robert's disposition decision.
 

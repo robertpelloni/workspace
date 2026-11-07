@@ -1,0 +1,225 @@
+[
+  {
+    "repo": "realestatecrm",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "phase": "FF2",
+    "action": "ff-fail",
+    "detail": "er:\nhint:\nhint: \tgit merge --no-ff\nhint:\nhint: or:\nhint:\nhint: \tgit rebase\nhint:\nhint: Disable this message with \"git config set advice.diverging false\"\nfatal: Not possible to fast-forward, aborting.\n"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "fwber",
+    "phase": "MERGE2",
+    "branch": "origin/jules-10314857368856784967-6dd32a46",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "MERGE2",
+    "branch": "origin/jules-15152994296719336092-bf36e2cb",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "MERGE2",
+    "branch": "origin/feat/ui-command-center-and-tray-10795819310687522178",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bqt",
+    "phase": "MERGE2",
+    "branch": "origin/jules-885412765636779725-8505c877",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "f-zerox",
+    "phase": "MERGE2",
+    "branch": "origin/feat-shiftability-v0.1.26-18288067904668722129",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "hyperharness",
+    "phase": "MERGE2",
+    "branch": "origin/jules-12604745342105359539-c1a88709",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2",
+    "branch": "temp-main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE2",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2",
+    "branch": "jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE2",
+    "branch": "origin/jules-itgmania-rust-core-and-submodule-sync-11514080082475122631",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE2",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "MERGE2",
+    "branch": "origin/jules-8596699743322931750-d3945a4e",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobmani/linthesia",
+    "phase": "MERGE2",
+    "branch": "origin/jules-9758934134147247787-b9ef8669",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE2",
+    "branch": "origin/jules-8596699743322931750-d3945a4e",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2",
+    "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2",
+    "branch": "origin/jules-15689288545271426252-5ef46452",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2",
+    "branch": "origin/jules-8067423937083367268-08d72221",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2",
+    "branch": "jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "fwber",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-10314857368856784967-6dd32a46",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "MERGE2X",
+    "branch": "origin/feat/unified-dashboard-system-tray-966743343893726561",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "phase": "MERGE2X",
+    "branch": "jules-57044827041196387-8ad75250",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2X",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-8596699743322931750-d3945a4e",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "succubus.red",
+    "phase": "MERGE2X",
+    "branch": "origin/feat/v0.20.0-viewport-drag-drop-and-mic-tester-10685070663608887304",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "MERGE2X",
+    "branch": "origin/feat-consolidated-dashboard-and-tray-v4.1.0-5988067505451563780",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "mparty",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-15689288545271426252-5ef46452",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-8067423937083367268-08d72221",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-3518869660633291422-889bc1a4",
+    "action": "merged-theirs+pushed"
+  },
+  {
+    "repo": "sales_bot",
+    "phase": "MERGE2X",
+    "branch": "jules-project-sirens-9283818547340256471",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2X",
+    "branch": "temp-main",
+    "action": "conflict-aborted-final"
+  }
+]
