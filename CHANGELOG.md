@@ -1,3 +1,16 @@
+## [v5.290.0] — 2026-11-06 — Protocol #280: Repository Sync & Intelligent Merge
+
+### Merged (39 forward merges, pushed)
+- Triage: 195 actionable across 47 repos from fresh recursive fetch (upstream-mirror branches in hermes-agent/fwber excluded per protocol; openclaw-config local-only branches excluded, push denied)
+- Phases 1–2 + final: plain merges, FF, `-X theirs` feature-wins, `-X ours` origin syncs; dirty genuine state committed first; conflicts aborted, never forced
+- pi-mono dashboard branch re-merged (new commits); `go build ./...` + `go test ./pkg/ai/` re-verified green — no handler regression this time
+- Phase 4/final: Maestro pushed, MilkDrop3_fix synced+pushed, bobmani/ksm-v2 merged in final sweep
+
+### Retained for Robert (5 conflict branches, untouched)
+- freellm `temp-main`, slsk `jules-57044827041196387` (+13), veilid `jules-scaffold-0.1.0` (+17), bobmani/itgmania `jules-12512815185672744343` (+27), sales_bot `jules-project-sirens` (+40)
+
+- **Version bumped**: v5.289.0 → v5.290.0; STRUCTURAL_MAP.md regen (132/133 initialized)
+
 ## [v5.289.0] — 2026-11-06 — Protocol #279: Repository Sync & Intelligent Merge
 
 ### Merged (34 forward merges, pushed)

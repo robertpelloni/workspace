@@ -1,3 +1,24 @@
+# HANDOFF — v5.290.0 — 2026-11-06 — Protocol #280: Repository Sync & Intelligent Merge
+
+## Session — Protocol #280
+
+### Step 2 results (39 forward merges pushed; ledgers `sync_protocol_280_*_results.json`)
+- Triage from fresh recursive fetch: 195 actionable / 47 repos; hermes-agent + fwber upstream-mirror branches ignored per protocol; openclaw-config (135 ahead, push denied) and HyperNexus2old excluded
+- Phase 1: 22 merged+pushed, 1 FF, 13 defer-dirty, 12 conflict-aborted, 1 push-fail (openclaw-dashboard, merged in phase 2)
+- Phase 2: 7 merged+pushed, 8 `-X theirs`+pushed, 2 FF; phase 4: MilkDrop3_fix synced+pushed, hyperporn push-fail (local commit retained); final: Maestro + bobmani/ksm-v2 pushed
+- pi-mono dashboard re-merge verified: `go build ./...` and `go test ./pkg/ai/` green
+- **5 conflict branches retained for Robert** (unchanged set): freellm temp-main, slsk jules-57044827041196387 (+13), veilid jules-scaffold-0.1.0 (+17), bobmani/itgmania jules-12512815185672744343 (+27), sales_bot jules-project-sirens (+40). No branch deletions.
+
+### Coordination / kernel
+- Supervisor session remains healthy-degraded (0 failures) after the #279 fix; HyperNexus Go fix + test still uncommitted in submodule working tree.
+- Bobbi (muse.ai) v6 authorization still unanswered despite repeated CDP check-ins; Gemini PROVISIONAL +1 cap folded into UNITED_BEATS_UMBRELLA_v6.md. Silence is not endorsement.
+
+### Next agent
+- Robert decisions pending: 5 retained conflict branches, launch order, HyperNexus prospect contact/spending, global `ANTHROPIC_MODEL=xiaomi/mimo-v2.5-pro` stale in ~/.claude/settings.json.
+- Protocol #281 can start from root v5.290.0; re-run triage from fresh refs.
+
+---
+
 # HANDOFF — v5.289.0 — 2026-11-06 — Protocol #279: Repository Sync & Intelligent Merge
 
 ## Session — Protocol #279 (resumed and completed 2026-11-06)

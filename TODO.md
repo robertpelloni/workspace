@@ -1,7 +1,12 @@
-﻿# TODO â€” Omni-Workspace v5.289.0
+﻿# TODO â€” Omni-Workspace v5.290.0
 
-**Current:** v5.289.0 â€¢ 133 submodules across workspace â€¢ 2026-11-03
+**Current:** v5.290.0 â€¢ 133 submodules across workspace â€¢ 2026-11-03
 
+
+### Protocol #280 Outcomes (2026-11-06)
+- 39 forward merges pushed; pi-mono dashboard re-merged and build/pkg-ai tests re-verified green; Maestro + MilkDrop3_fix pushed
+- [ ] 5 retained conflict branches (freellm, slsk +11, veilid, itgmania +27, sales_bot sirens +40) - Robert decision: cherry-pick / dedicated / abandon
+- [ ] unitedbeats_site dashboard branch (+7) - merge after local site work is committed
 
 ### Protocol #279 Outcomes (2026-11-05)
 - 34 forward merges pushed; pi-mono dashboard branch merged + clean-room handler regression restored (build+pkg/ai tests green); _fix repos published
