@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(r"C:\Users\hyper\workspace")
 SKIP_REPOS = {"openclaw-config", "HyperNexus2old", "HyperNexus", "hypercode", "ArrowVortex"}
-SKIP_BRANCH_SUBSTR = ["heads/upstream/", "upstream/", "gh-pages", "cloud-dashboard-mcp-sse", "backup/"]
+SKIP_BRANCH_SUBSTR = ["heads/upstream/", "upstream/", "gh-pages", "cloud-dashboard-mcp-sse", "backup/", "freellm-linux", "clean-freellm", "jules-12512815185672744343"]
 
 def run(cmd, cwd, timeout=180):
     try:
