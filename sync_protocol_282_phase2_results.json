@@ -1,0 +1,54 @@
+[
+  {
+    "repo": "jules-autopilot",
+    "phase": "DIRTYCOMMIT",
+    "action": "committed",
+    "files": [
+      "backend-go/dev.db",
+      "backend-go/dev.db-shm",
+      "backend-go/dev.db-wal"
+    ]
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2",
+    "branch": "origin/clean-freellm",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2",
+    "branch": "origin/freellm-linux",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE2",
+    "branch": "origin/jules-12512815185672744343-3c9d3dde",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "ww3_game",
+    "phase": "MERGE2",
+    "branch": "origin/jules-ww3-v0.3.2-command-center-tray-cleanup-5866779385412196809",
+    "action": "merged+pushed"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2X",
+    "branch": "origin/clean-freellm",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2X",
+    "branch": "origin/freellm-linux",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE2X",
+    "branch": "origin/jules-12512815185672744343-3c9d3dde",
+    "action": "conflict-aborted-final"
+  }
+]

@@ -1,6 +1,10 @@
 ﻿# ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.290.0)
+## Current Status (v5.291.0)
+
+**Protocol #282 (2026-11-07):** 22 fast-forwards + 10 forward merges pushed (bobmani x6 incl. beatoraja master close, jvm-cpp-runtime +17, gods-eye-view, ww3_game); fetch 133/133; 3 conflict branches retained (freellm x2, itgmania jules-1251).
+
+**Protocol #281 (2026-11-07, leader run):** 77 fast-forwards + 7 merges pushed; resolved slsk/veilid/sales_bot retained branches; stacked on origin #280 (no divergence).
 
 **Protocol #278 (2026-11-05):** 36 forward merges pushed; bobmani/beatoraja master closed (+125); _fix repos published; 5 conflict branches retained for Robert's disposition decision.
 

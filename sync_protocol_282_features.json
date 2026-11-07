@@ -1,0 +1,224 @@
+[
+  {
+    "repo": "hymnmania",
+    "branch": "backup/wip-leader-sync-20261107",
+    "current": "main",
+    "ahead": 1,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "2a7416a chore: preserve WIP before leader sync FF (20261107)"
+    ]
+  },
+  {
+    "repo": "jules-autopilot",
+    "branch": "origin",
+    "current": "backup/wip-leader-sync-20261107",
+    "ahead": 5,
+    "behind": 1,
+    "cherry_plus": 4,
+    "subjects": [
+      "4c93967 chore: track dirty state (Protocol #280)",
+      "d00d9a9 feat: repository sync & intelligent merge, session status tooltip (v3.7.3)",
+      "87665ca chore: track dirty state (Protocol #279)",
+      "788bfb0 merge: origin/main sync (Protocol #277, local-wins conflicts)",
+      "f8c3769 chore: track dirty state (Protocol #277)"
+    ]
+  },
+  {
+    "repo": "ArrowVortex",
+    "branch": "origin",
+    "current": "release",
+    "ahead": 1,
+    "behind": 1,
+    "cherry_plus": 1,
+    "subjects": [
+      "c4e1f3a fix: re-pin submodules to published commits (Jules recursive clone)"
+    ]
+  },
+  {
+    "repo": "bobbybookmarks",
+    "branch": "backup/wip-leader-sync-20261107",
+    "current": "main",
+    "ahead": 1,
+    "behind": 4,
+    "cherry_plus": 1,
+    "subjects": [
+      "32c5c36 chore: preserve WIP before leader sync FF (20261107)"
+    ]
+  },
+  {
+    "repo": "bobfilez",
+    "branch": "backup/wip-leader-sync-20261107",
+    "current": "main",
+    "ahead": 1,
+    "behind": 5,
+    "cherry_plus": 1,
+    "subjects": [
+      "8708961a chore: preserve WIP before leader sync FF (20261107)"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "backup/wip-leader-sync-20261107",
+    "current": "main",
+    "ahead": 1,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "3244322 chore: preserve WIP before leader sync FF (20261107)"
+    ]
+  },
+  {
+    "repo": "freellm",
+    "branch": "origin/clean-freellm",
+    "current": "main",
+    "ahead": 1,
+    "behind": 7,
+    "cherry_plus": 1,
+    "subjects": [
+      "967042a Initial clean commit \u00e2\u20ac\u201c agent-cache removed, GCP secret scrubbed"
+    ]
+  },
+  {
+    "repo": "freellm",
+    "branch": "origin/freellm-linux",
+    "current": "main",
+    "ahead": 234,
+    "behind": 7,
+    "cherry_plus": 217,
+    "subjects": [
+      "5195498 fix: update Go dependencies to patch security vulnerabilities (x/net, x/crypto, x/text, x/sys)",
+      "8610bd2 fix: set MinParamsFilter=120 to exclude small models from routing",
+      "448b691 fix: gate all Proxy Error messages behind ShowDebugStream",
+      "464e11f fix: disable tokdiet RoundTripper by default, enable via FREELLM_TOKDIET=1",
+      "93192e6 fix: gate auto-continuation model prefix behind ShowDebugStream"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github/archive/cloud-dashboard-mcp-sse-775605d",
+    "current": "main",
+    "ahead": 67,
+    "behind": 387,
+    "cherry_plus": 66,
+    "subjects": [
+      "775605d4b refactor: rename TormentNexus to HyperNexus globally",
+      "d8ce11ee0 refactor: rename TormentNexus to HyperNexus globally",
+      "760b6e242 refactor: rename TormentNexus to HyperNexus globally",
+      "25d2bc16f refactor: globally rename TormentNexus to HyperNexus",
+      "7cdcbce65 fix: resolve compile errors and corrupted JSON struct tags"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github/gh-pages-hypernexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 387,
+    "cherry_plus": 1,
+    "subjects": [
+      "fb61b29a3 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github/gh-pages-tormentnexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 387,
+    "cherry_plus": 1,
+    "subjects": [
+      "fad3aaf3b Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918",
+    "current": "main",
+    "ahead": 2687,
+    "behind": 387,
+    "cherry_plus": 2561,
+    "subjects": [
+      "8d597c328 refactor: rename TormentNexus to HyperNexus globally",
+      "b2139dd2d refactor: rename TormentNexus to HyperNexus globally",
+      "7ca65aad6 refactor: rename TormentNexus to HyperNexus globally",
+      "4d1023185 refactor: globally rename TormentNexus to HyperNexus",
+      "988750a1d fix: resolve compile errors and corrupted JSON struct tags"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gitlab/gh-pages-hypernexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 387,
+    "cherry_plus": 1,
+    "subjects": [
+      "fb61b29a3 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gitlab/gh-pages-tormentnexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 387,
+    "cherry_plus": 1,
+    "subjects": [
+      "fad3aaf3b Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "bobmani/Simply-Love-SM5",
+    "branch": "backup/a2096df-261-docs-delete",
+    "current": "itgmania-release",
+    "ahead": 1,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "a2096df0 Protocol #261: track docs/config (1153 files)"
+    ]
+  },
+  {
+    "repo": "bobmani/hymnmania",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "current": "main",
+    "ahead": 1,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "2a7416a chore: preserve WIP before leader sync FF (20261107)"
+    ]
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "jules-12512815185672744343-3c9d3dde",
+    "current": "main",
+    "ahead": 30,
+    "behind": 23,
+    "cherry_plus": 27,
+    "subjects": [
+      "8b7bd51a90 chore: v5.78.0 \u00e2\u20ac\u201d Executive Protocol #66: Full submodule tracking and branch alignment",
+      "da4a3b29d4 chore: v5.77.0 \u00e2\u20ac\u201d Executive Protocol #65: npm audit stability check",
+      "b72d69962d chore: v5.76.0 \u00e2\u20ac\u201d Executive Protocol #64: CI and Workflow Synchronization",
+      "658be2188e fix: register IXWebSocket submodule in .gitmodules to unblock CI checkout",
+      "f68826edd4 chore: v5.75.0 \u00e2\u20ac\u201d Executive Protocol #63: Synchronization and UI checks"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin",
+    "current": "main",
+    "ahead": 387,
+    "behind": 2,
+    "cherry_plus": 375,
+    "subjects": [
+      "fddc8e55 merge: gitlab main (memory/session/database state v1.0.29) into lane completions",
+      "513c3a20 merge: github main (repo sync v1.0.29, upstream merge) into lane completions",
+      "7536e76a docs: handoff entries for lane completions",
+      "e18b9ef6 lane(codex-gui): swarm bus driver + docs",
+      "47fb1d49 lane(bus): session bus + cdp bridge completion"
+    ]
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "repo": "jules-autopilot",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 5 behind origin"
+  },
+  {
+    "repo": "bobcoin",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 5 behind origin"
+  },
+  {
+    "repo": "bobium",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 5 behind origin"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 7 behind origin"
+  },
+  {
+    "repo": "bobtorrent",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 4 behind origin"
+  },
+  {
+    "repo": "bobtrax",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 10 behind origin"
+  },
+  {
+    "repo": "bqt",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 18 behind origin"
+  },
+  {
+    "repo": "bobzilla",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 8 behind origin"
+  },
+  {
+    "repo": "bobzzite",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 22 behind origin"
+  },
+  {
+    "repo": "crowdsourced_dance_club",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "dao",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 8 behind origin"
+  },
+  {
+    "repo": "f-zerox",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 14 behind origin"
+  },
+  {
+    "repo": "hyperharness",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 14 behind origin"
+  },
+  {
+    "repo": "pi-mono",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 5 behind origin"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 6 behind origin"
+  },
+  {
+    "repo": "psytrance_night_outreach_agent",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 5 behind origin"
+  },
+  {
+    "repo": "sm64coopdx",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 3 behind origin"
+  },
+  {
+    "repo": "xrnet",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 12 behind origin"
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 6 behind origin"
+  },
+  {
+    "repo": "bg_fix",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobsgameonlinejava_fix",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 2 behind origin"
+  },
+  {
+    "repo": "bobmani/linthesia",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 3 behind origin"
+  },
+  {
+    "repo": "ksm-v2",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1195 behind origin"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE",
+    "branch": "origin/clean-freellm",
+    "action": "conflict-aborted",
+    "cherry_plus": 1,
+    "behind": 7
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE",
+    "branch": "origin/freellm-linux",
+    "action": "conflict-aborted",
+    "cherry_plus": 217,
+    "behind": 7,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "bobmani/beatoraja",
+    "phase": "MERGE",
+    "branch": "origin/master",
+    "action": "merged+pushed",
+    "cherry_plus": 1,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE",
+    "branch": "origin/jules-itgmania-rust-core-and-submodule-sync-11514080082475122631",
+    "action": "merged+pushed",
+    "cherry_plus": 8,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE",
+    "branch": "origin/release",
+    "action": "merged+pushed",
+    "cherry_plus": 8,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "phase": "MERGE",
+    "branch": "origin/jules-12512815185672744343-3c9d3dde",
+    "action": "conflict-aborted",
+    "cherry_plus": 27,
+    "behind": 9,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "MERGE",
+    "branch": "origin/jules-8596699743322931750-d3945a4e",
+    "action": "merged+pushed",
+    "cherry_plus": 2,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "phase": "MERGE",
+    "branch": "origin/master",
+    "action": "merged+pushed",
+    "cherry_plus": 5,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/leraine-studio",
+    "phase": "MERGE",
+    "branch": "origin/jules-208712761241480082-5e6fb3e2",
+    "action": "merged+pushed",
+    "cherry_plus": 2,
+    "detail": ""
+  },
+  {
+    "repo": "bobmani/pianogame",
+    "phase": "MERGE",
+    "branch": "origin/jules-7923437021684046164-a5f90854",
+    "action": "merged+pushed",
+    "cherry_plus": 3,
+    "detail": ""
+  },
+  {
+    "repo": "jvm-cpp-runtime",
+    "phase": "MERGE",
+    "branch": "origin/jules-8847694738038870517-92422947",
+    "action": "merged+pushed",
+    "cherry_plus": 17,
+    "detail": ""
+  },
+  {
+    "repo": "gods-eye-view",
+    "phase": "MERGE",
+    "branch": "origin/jules-sovereign-governance-v0.2.0-368247989745874146",
+    "action": "merged+pushed",
+    "cherry_plus": 4,
+    "detail": ""
+  },
+  {
+    "repo": "ww3_game",
+    "phase": "MERGE",
+    "branch": "origin/jules-ww3-v0.3.2-command-center-tray-cleanup-5866779385412196809",
+    "action": "defer-dirty"
+  }
+]

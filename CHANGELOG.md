@@ -1,3 +1,19 @@
+## [v5.291.0] — 2026-11-07 — Protocol #282: Repository Sync & Intelligent Merge
+
+### Synced
+- **Root**: local #281 verified already stacked on origin #280 (earlier fork reading was a graph misread — `merge-base` confirms ancestry, 2 ahead / 0 behind); no origin merge needed. Fetch 133/133 OK (first clean sweep since #277)
+- **Submodules**: 22 fast-forwarded to origin defaults (incl. ksm-v2 +1195 commits); bobmani 10 nested pins rolled up + pushed `585f027`; jules-autopilot runtime churn preserved on `backup/wip-leader-sync-20261107`
+
+### Merged (10 repos, pushed)
+- bobmani/beatoraja `origin/master`, bobmani/itgmania (rust-core + release), bobmani/ksm-v2 (`origin/master` + jules-8596), bobmani/leraine-studio, bobmani/pianogame, jvm-cpp-runtime (+17), gods-eye-view sovereign-governance, ww3_game command-center-tray-cleanup
+- jvm-cpp-runtime pushed to its remote (root gitignores the path — pointer untracked by design, no root action)
+
+### Retained for Robert (untouched, no deletions)
+- freellm `clean-freellm` + `freellm-linux` (+217, conflicts both directions, reverse also conflicts), bobmani/itgmania `jules-12512815185672744343` (+27, conflicts both directions)
+- jules-autopilot main FF blocked by live `backend-go/dev.db-wal` (service running — same as #281); ArrowVortex `release` (upstream mirror); HyperNexus (sibling lane holds uncommitted kernel work); HyperNexus2old, openclaw-config (push denied), hypercode (stale entry, no gitlink)
+
+- **Version bumped**: v5.290.0 → v5.291.0
+
 ## [v5.290.0] — 2026-11-07 — Protocol #281 (leader run): Repository Sync & Intelligent Merge
 
 ### Synced

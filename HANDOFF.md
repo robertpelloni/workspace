@@ -1,3 +1,30 @@
+# HANDOFF — v5.291.0 — 2026-11-07 — Protocol #282: Repository Sync & Intelligent Merge
+
+## Session — Protocol #282
+
+### Step 1 (fetch & sanitization)
+- Root fetch OK (origin only, no upstream fork — sync skipped). Initial `git status` showed a staged revert of #281 docs (index held #280 text over #281 HEAD) — restored via `git checkout HEAD -- HANDOFF.md CHANGELOG.md` before any other work
+- Apparent root fork (#281 local vs #280 origin) investigated with `merge-base`: origin #280 IS an ancestor of local #281 (earlier fork reading was a graph misread) — 2 ahead / 0 behind, no origin merge needed
+- Submodule fetch 133/133 OK (first clean sweep; prior best 129/133). Triage vs origin defaults: 27 actionable (vs 195 in #280)
+
+### Step 2 (22 FF + 10 merges pushed; ledgers `sync_protocol_282_*_results.json`)
+- Phase A: 22 FF (bobcoin, bobium, bobsgameweb, bobtorrent, bobtrax, bqt, bobzilla, bobzzite, crowdsourced_dance_club, dao, f-zerox, hyperharness, pi-mono, planet_fitness, psytrance, sm64coopdx, xrnet, MilkDrop3_fix, bg_fix, bobsgameonlinejava_fix, bobmani/linthesia, ksm-v2 +1195); jules-autopilot FF deferred (live db-wal)
+- Phase B: 9 merged+pushed (beatoraja master, itgmania rust-core + release, ksm-v2 master + jules-8596, leraine-studio, pianogame, jvm-cpp-runtime +17, gods-eye-view sovereign-governance); ww3_game deferred-dirty then merged+pushed in phase 2 after dirty commit
+- Conflict-final (retained, both directions conflict): freellm clean-freellm, freellm-linux (+217 — NEW vs #281, Linux port branch), itgmania jules-1251 (+27). `-X theirs` retries also conflicted — never forced
+- Excluded per protocol: backup/* WIP branches, HyperNexus (sibling lane), HyperNexus2old, openclaw-config, ArrowVortex release, hypercode stale entry, upstream-mirror forks
+- jules-autopilot: db churn committed to backup branch (`53afdb3`); main checkout blocked by live-regenerating `dev.db-wal` (running service) — left exactly as #281 retained it; root pointer NOT staged (unpushed HEAD guard)
+- Pin safety: root staged only pointers whose submodule HEAD is on an origin ref (`branch -r --contains`); bobmani 10 nested pins verified pushed, committed + pushed `585f027`, then root pointer staged
+
+### Step 3 (docs / version / push / build)
+- v5.290.0 → v5.291.0 (VERSION, VERSION.current, VERSION.md, build.bat, start.bat, CHANGELOG, HANDOFF, TODO, ROADMAP); STRUCTURAL_MAP regen
+- Root: intermediate submodule-sync commit `0ddcf0ad3`, docs commit, push to origin/main (pending at handoff write time — see below)
+
+### Next agent
+- Robert decisions pending: freellm history rewrite + freellm-linux port disposition, itgmania jules-1251, ArrowVortex release, jules-autopilot db-wal live file, plus prior queue
+- Protocol #283 can start from v5.291.0; re-run triage from fresh refs
+
+---
+
 # HANDOFF — v5.290.0 — 2026-11-07 — Protocol #281 (leader run): Repository Sync & Intelligent Merge
 
 ## Session — Protocol #281 (leader session muse-leader-laptop-workspace, 2026-11-07)
