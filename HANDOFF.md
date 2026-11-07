@@ -1,3 +1,29 @@
+# HANDOFF — v5.290.0 — 2026-11-07 — Protocol #281 (leader run): Repository Sync & Intelligent Merge
+
+## Session — Protocol #281 (leader session muse-leader-laptop-workspace, 2026-11-07)
+
+### What was already done before this run
+- Sibling lanes executed Protocols #277 (91 merges), #278 (36), #279 (34) directly on remotes. Local checkout was stale at v5.286.16; this run synchronized local state and finished the retained items. All local feature branches interrogated: every one already merged into main (0 unique commits).
+
+### Step 1
+- Fetch 133/133 (3 timeouts retried OK). Root FF 15 commits to v5.289.0 (local UNITED_BEATS_UMBRELLA_v5.md was an older untracked copy; incoming version kept).
+- Submodules: 77 FF to origin defaults. 9 dirty repos (hymnmania, jules-autopilot, bobbybookmarks, bobfilez, marketing_agent, hyperporn, bob_and_lum_sitcom, ww3_game + ArrowVortex attempted) preserved as pushed `backup/wip-leader-sync-20261107` branches before any checkout. HyperNexus excluded — sibling lane holds it with uncommitted kernel work (per #279 note).
+
+### Step 2 (7 merges, all pushed)
+- Diverged syncs merged local-wins: MilkDrop3 (`254704a`), bg (`38f3e0f`), bobsgameonlinejava (`38b817c`), bobmani/ksm-v2 (`6101295`). MilkDrop3 + veilid pushes were rejected once (remote moved), re-merged and pushed.
+- Retained #279 branches resolved: slsk jules-5704 (+20 plain, `3681362`), veilid jules-1096 (feature-wins, `2be77e1`), sales_bot jules-project-sirens (+50 feature-wins, `3bd582c`, vendor/yolov11-edge gitlink resolved theirs).
+- Retained for Robert (untouched): freellm `clean-freellm` (unrelated histories — secret-scrub rewrite), bobmani/itgmania `jules-12512815185672744343` (stale chore branch, submodule conflicts), ArrowVortex `release`, jules-autopilot main FF (blocked by `backend-go/dev.db-wal`; WIP on backup branch).
+
+### Step 3
+- Version v5.289.0 → v5.290.0 (VERSION, VERSION.current, CHANGELOG, HANDOFF). Root commit + push of 77 submodule pointers + merged-repo pointers.
+- Coordination: bus broadcast `bm-mw6h5f79` holds lanes; kernel serve flapping (auto-restarts, bus intact) flagged to HyperNexus lane `bm-mw68jnee`.
+
+### Next agent
+- Robert decisions: freellm history rewrite, itgmania stale branch, ArrowVortex release, jules-autopilot db-wal, plus prior queue (DDACC, Copilot BYOK, marketing_agent pricing, pink sign-in, realestatecrm keys, GitLab token rotation).
+- Prompt-injection API + kernel latency build (per-key reads, bus adapters) designed, awaiting go-ahead.
+
+---
+
 # HANDOFF — v5.289.0 — 2026-11-06 — Protocol #279: Repository Sync & Intelligent Merge
 
 ## Session — Protocol #279 (resumed and completed 2026-11-06)

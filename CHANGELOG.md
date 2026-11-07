@@ -1,3 +1,18 @@
+## [v5.290.0] — 2026-11-07 — Protocol #281 (leader run): Repository Sync & Intelligent Merge
+
+### Synced
+- **Root**: fast-forwarded 15 commits to v5.289.0 (Protocols #277–#279 + Umbrella v6 docs landed remotely by sibling lanes); fetch completed 133/133
+- **Submodules**: 77 fast-forwarded to origin defaults; 9 dirty repos preserved first as pushed `backup/wip-leader-sync-20261107` branches; HyperNexus excluded (sibling lane holds it, uncommitted kernel work)
+
+### Merged (7 repos, pushed)
+- Diverged origin syncs (local-wins `CLAUDE.md` pattern from #277): MilkDrop3, bg, bobsgameonlinejava, bobmani/ksm-v2
+- Retained conflict branches resolved: slsk `jules-57044827041196387` (+20, plain), veilid `jules-10960345020908633347` (feature-wins), sales_bot `jules-project-sirens` (+50, feature-wins, 1 gitlink resolved theirs)
+
+### Retained for Robert (untouched, no deletions)
+- freellm `clean-freellm` (unrelated histories — secret-scrub rewrite; replacing main is a decision, not a merge), bobmani/itgmania `jules-12512815185672744343` (stale protocol-chore branch, submodule conflicts), ArrowVortex `release` (upstream mirror, submodule conflict), jules-autopilot (WIP backed up; main FF blocked by `backend-go/dev.db-wal`)
+
+- **Version bumped**: v5.289.0 → v5.290.0
+
 ## [v5.289.0] — 2026-11-06 — Protocol #279: Repository Sync & Intelligent Merge
 
 ### Merged (34 forward merges, pushed)
