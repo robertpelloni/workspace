@@ -484,3 +484,8 @@ Full EXECUTIVE PROTOCOL across the workspace: fetch all 112 submodules, branch a
 4. Address Dependabot vulnerability backlog
 5. Review dirty submodules for commit readiness
 
+ 
+# HANDOFF 2026-11-09 - robertpelloni.com backup plus front page, RATING v3, v7 addendum, DDACC restamp 
+Backup complete in parent dir with SHA256 checksums. 10 posts unvaulted from the-vault era, front page live-verified. posts_per_page 1000 to 35, pagination restored. 
+RATING v3 filed (Argon 7-rank merged, viability ordered). v7 addendum filed, stays DRAFT pending Robert. DDACC unchanged, blocked on inputs and reviews. 
+Next: runtime-proof demos (educational_video_pipeline first), FWBer beta plus payments, HyperNexus token verify. Minus-2 slugs parked pending redirect decision. 
