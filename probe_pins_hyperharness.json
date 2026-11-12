@@ -1,0 +1,219 @@
+[
+  {
+    "path": "adrenaline",
+    "sha": "7520e9cc96d936b9e473bc1074a9b9712076d69d",
+    "url": "https://github.com/shobrook/adrenaline",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "aider",
+    "sha": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+    "url": "https://github.com/paul-gauthier/aider",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "amazon-q-developer-cli",
+    "sha": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+    "url": "https://github.com/aws/amazon-q-developer-cli",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "auggie",
+    "sha": "96479b7a290083de8e72878cecf9c90c0fb400ad",
+    "url": "https://github.com/augmentcode/auggie",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "azure-ai-cli",
+    "sha": "8d3b8e4a9d3e1faa69681dcc1f5ba443e0ba104f",
+    "url": "https://github.com/Azure/azure-ai-cli",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "bito-cli",
+    "sha": "cb3a77903b48171c24cad3db07172fd3cc9ff8ee",
+    "url": "https://github.com/gitbito/CLI",
+    "fetchable": false,
+    "tip": "cb3a77903b48171c24cad3db07172fd3cc9ff8ee"
+  },
+  {
+    "path": "byterover-cli",
+    "sha": "1052ac1a5dd0fde4da8693d4712064f7876c269c",
+    "url": "https://github.com/campfirein/byterover-cli",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "claude-code",
+    "sha": "a371abbe75ffa0d0a3c92290e2bbf56a7ef54367",
+    "url": "https://github.com/yasasbanukaofficial/claude-code",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "claude-code-templates",
+    "sha": "77b087e2153e35250cd3cc7c192218a2d990b6ed",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "code-cli",
+    "sha": "dd8a84a21b04686e4b5c71fecba582d847d2b277",
+    "url": "https://github.com/just-every/code",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "copilot-cli",
+    "sha": "841e7a57ba6ec683d710826c113f3c0cdd8f0940",
+    "url": "https://github.com/github/copilot-cli",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "crush",
+    "sha": "c98fc5459982d35fd6152718ad1148c0256625bd",
+    "url": "https://github.com/charmbracelet/crush",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "dolt",
+    "sha": "5bace43533ea3ed1e99560f9da6e58285a25b5bb",
+    "url": "https://github.com/dolthub/dolt",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "factory-cli",
+    "sha": "892925c655a97e7a0bc7d558236015ebb22cb214",
+    "url": "https://github.com/Factory-AI/factory",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "gemini-cli",
+    "sha": "3fd7d263466b9e5d30b2da1ebf85dae956a0fb86",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "goose",
+    "sha": "4facf56cbab049142809d9afa4648ebe6823ba80",
+    "url": "https://github.com/block/goose",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "grok-cli",
+    "sha": "fb97af83f06dca873281d60168430f06c8de6324",
+    "url": "https://github.com/superagent-ai/grok-cli",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "jules-extension",
+    "sha": "9f2fc14a41e8b604bdaf2d50ae6041cdc5507175",
+    "url": "https://github.com/gemini-cli-extensions/jules",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "kilocode",
+    "sha": "aab1e99aefd67b415eaac2379e51cc39d99fd51d",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "kimi-cli",
+    "sha": "9ab1286b8fe4e6bcd116949a27ce5e0ac3389c82",
+    "url": "https://github.com/MoonshotAI/kimi-cli",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "litellm",
+    "sha": "dc9297d36f6b9ef0965ff365664c7696bc4131a8",
+    "url": "https://github.com/BerriAI/litellm",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "llamafile",
+    "sha": "334e66444a96d5429fd2d667301bd067029b1eb5",
+    "url": "https://github.com/Mozilla-Ocho/llamafile",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "llm-cli",
+    "sha": "0392226e6630746ef51ffd309c2bee6a5f72b58e",
+    "url": "https://github.com/simonw/llm",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "mistral-vibe",
+    "sha": "c96a6dbb34d34f8a868b3f67b279ecabbf1aa616",
+    "url": "https://github.com/mistralai/mistral-vibe",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "ollama",
+    "sha": "6362e0a30887bdd4f69e07a94e8a513383576204",
+    "url": "https://github.com/ollama/ollama",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "open-interpreter",
+    "sha": "f12ce327eeee679d2f2f22ce23018b0db9ae092f",
+    "url": "https://github.com/OpenInterpreter/open-interpreter",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "opencode",
+    "sha": "97178e54b8c0940719a64f1a8595c794cbf1e50b",
+    "url": "https://github.com/anomalyco/opencode",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "pi-cli",
+    "sha": "2a32a605a9f18a5f0191f65358a2e764b2f69fc7",
+    "url": "https://github.com/badlogic/pi-mono",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "qwen-code-cli",
+    "sha": "dbf277291908dc45a1fee1c8b635ffe26e4f9d97",
+    "url": "https://github.com/dinoanderson/qwen_cli_coder",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "rowboat",
+    "sha": "9dc29dd17a9db9404b05ac8665919ad89d8ea1a0",
+    "url": "https://github.com/rowboatlabs/rowboat",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "smithery-cli",
+    "sha": "407ac3b33944a585357379bc213fdf1ee55464d7",
+    "url": "https://github.com/smithery-ai/cli",
+    "fetchable": true,
+    "tip": null
+  }
+]

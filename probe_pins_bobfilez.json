@@ -1,0 +1,1192 @@
+[
+  {
+    "path": "libs/7zip",
+    "sha": "fea94d384103118be0d8c2675ad263060d6fb45f",
+    "url": "https://github.com/nicehash/NiceHashQuickMiner",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/ADSFileSystem",
+    "sha": "5ab73c6ff2c7af685d25227b91b782141d8e5fcd",
+    "url": "https://github.com/robertpelloni/ADSFileSystem",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/ADSIdentifier",
+    "sha": "7ce734886ee89ecef7bdc3db8d00874fc4b623a1",
+    "url": "https://github.com/HannahVernon/ADSIdentifier",
+    "fetchable": false,
+    "tip": "099e808b0d9e155a3355edfb6b8c74265313e3ab"
+  },
+  {
+    "path": "libs/ADSman",
+    "sha": "187e647309ac7c3c6fb0c54de6d0d271d1586426",
+    "url": "https://github.com/8gudbits/ADSman",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/AlternateDataStreams",
+    "sha": "f806cb957c74cf0335e963e0e25fb1cb07278cfc",
+    "url": "https://github.com/narasimha14/AlternateDataStreams",
+    "fetchable": false,
+    "tip": "34cd1cb17f8c8eabe125cf470ca183e3fc770024"
+  },
+  {
+    "path": "libs/BLAKE3",
+    "sha": "3f6dd9359aff7f3fa5c81cd2a5c9c300219499d3",
+    "url": "https://github.com/BLAKE3-team/BLAKE3.git",
+    "fetchable": false,
+    "tip": "f55849f89cd85083c1c9daa2c5de20766f309c00"
+  },
+  {
+    "path": "libs/Bringing-Old-Photos-Back-to-Life",
+    "sha": "49c8ca55c13765b7810e0e7ac5b09f2d7e9764b1",
+    "url": "https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life",
+    "fetchable": false,
+    "tip": "33875eccf4ebcd3665cf38cc56f3a0ce563d3a9c"
+  },
+  {
+    "path": "libs/C",
+    "sha": "38bbf87bbab03a3ab774c46ba26d42ae79aa63e7",
+    "url": "https://github.com/TheAlgorithms/C",
+    "fetchable": false,
+    "tip": "e5dad3fa8def3726ec850ca66a7f51521f8ad393"
+  },
+  {
+    "path": "libs/DataStreamBrowser",
+    "sha": "70235cc7bda6dc4b5fb57cf15700e6aaed397612",
+    "url": "https://github.com/robertpelloni/DataStreamBrowser",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/Dependencies",
+    "sha": "cd276ee5c97738470bbb133c4eef6ab90bb6aaa8",
+    "url": "https://github.com/ImageMagick/Dependencies",
+    "fetchable": false,
+    "tip": "8014e169a6bc92d1667ba60742d038b458a9516c"
+  },
+  {
+    "path": "libs/FFmpeg",
+    "sha": "b30c3e52ecf3c5dbd75dc1024e1b11e499259600",
+    "url": "https://github.com/FFmpeg/FFmpeg",
+    "fetchable": false,
+    "tip": "2bf291526e50480d2c355b4c6c8dd04863212aa1"
+  },
+  {
+    "path": "libs/ImageMagick",
+    "sha": "21c964d1e585c585e6e410ceafae523db3956b09",
+    "url": "https://github.com/ImageMagick/ImageMagick",
+    "fetchable": false,
+    "tip": "0ec011d587242e6dc61cfa5ed5f2476d647115c3"
+  },
+  {
+    "path": "libs/Imath",
+    "sha": "11630277c164c20f2e1792a467e18595ca2d9c3f",
+    "url": "https://github.com/AcademySoftwareFoundation/Imath",
+    "fetchable": false,
+    "tip": "5b39e4699b028b3bdd5b9712be2fdc24ab0efcb1"
+  },
+  {
+    "path": "libs/JUCE",
+    "sha": "46bff28f78fd9adb63a6775ac81a5977969e3d4d",
+    "url": "https://github.com/juce-framework/JUCE.git",
+    "fetchable": false,
+    "tip": "d60b7a78030661574a615b586d9325ba7a7fa7dd"
+  },
+  {
+    "path": "libs/LibRaw",
+    "sha": "95b0ee9845c131be6f7baf4f862c16cd04ee60f1",
+    "url": "https://github.com/LibRaw/LibRaw",
+    "fetchable": false,
+    "tip": "211ec9340888b66f430e23ec9ec5afaad01887ca"
+  },
+  {
+    "path": "libs/Magick.NET",
+    "sha": "d5bc62782b9003253caf45f855b5b145aec04590",
+    "url": "https://github.com/dlemstra/Magick.NET",
+    "fetchable": false,
+    "tip": "03a413fb5b0ac4eb20679f4519041bedc3d4c077"
+  },
+  {
+    "path": "libs/MediaInfo",
+    "sha": "948e91657970aef684fcb56f73a8d6d16cf1dc48",
+    "url": "https://github.com/MediaArea/MediaInfo",
+    "fetchable": false,
+    "tip": "dd97b50c676ef8d51e9dc3a35aece34252dfed01"
+  },
+  {
+    "path": "libs/MediaInfoLib",
+    "sha": "3c434659c1e2cea32c50045ba913490522a6faaa",
+    "url": "https://github.com/MediaArea/MediaInfoLib",
+    "fetchable": false,
+    "tip": "737c7c23e047cfb4a8cb987a06f9ab2d2cafe399"
+  },
+  {
+    "path": "libs/OpenColorIO",
+    "sha": "32ab11791fccc901392a6b149b0cee5ebd84ce06",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenColorIO",
+    "fetchable": false,
+    "tip": "22dd9c4faa0d1b7cfb3d64d1a6e9cb454acc6cfd"
+  },
+  {
+    "path": "libs/OpenCue",
+    "sha": "3f46372ad988fc23932858dfdaa04c27013f81fb",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenCue",
+    "fetchable": false,
+    "tip": "f14888e864fe9d0bf88d566b2d7fc0e960948fb0"
+  },
+  {
+    "path": "libs/OpenImageIO",
+    "sha": "d8c93b662f3948222e82680212a8b570fedf080e",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenImageIO",
+    "fetchable": false,
+    "tip": "8cadd33d4eb4da40790656ff3f90a4e26e480309"
+  },
+  {
+    "path": "libs/OpenRV",
+    "sha": "5aabd9c0dff88aebdc28026534db33d4a799c826",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenRV",
+    "fetchable": false,
+    "tip": "2fd50d8fd4f4154169dcd292ef90bab897660435"
+  },
+  {
+    "path": "libs/OpenTimelineIO",
+    "sha": "d18cc24f6643a60290e91ab7df38481e258e0737",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO",
+    "fetchable": false,
+    "tip": "f5377aa313a419b332e1623aa64c8d09f30aab07"
+  },
+  {
+    "path": "libs/Powershell-ADS",
+    "sha": "780a069f92b767a94c997693f2acac0aa3ef2b3b",
+    "url": "https://github.com/phlashko/Powershell-ADS",
+    "fetchable": false,
+    "tip": "5227a03cd5d9b882a389ff397660755febff0587"
+  },
+  {
+    "path": "libs/RenStrm",
+    "sha": "9c8bbe92824f44dd88e40b2c159fe1deb0c55bd8",
+    "url": "https://github.com/hernandp/RenStrm",
+    "fetchable": false,
+    "tip": "3874e391b233fa170fb6070da45919e1bbf9ff41"
+  },
+  {
+    "path": "libs/SharpADS",
+    "sha": "f5b8fdc4dfbe821319e3646a2067782f0ac54b97",
+    "url": "https://github.com/ricardojoserf/SharpADS",
+    "fetchable": false,
+    "tip": "ea6d0b9dc6c26ed9ad9c3c76390a74e5ce91c4c3"
+  },
+  {
+    "path": "libs/ShazamAPI",
+    "sha": "a49d130b44b183614b024fa60b8616de04c1aae5",
+    "url": "https://github.com/Numenorean/ShazamAPI",
+    "fetchable": false,
+    "tip": "ff8f89d1af6d962f54a519766c7ca9f5e13de0f1"
+  },
+  {
+    "path": "libs/ShazamIO",
+    "sha": "2eb12b2b65581f4cce77dde4e5ae9a8da97f0b51",
+    "url": "https://github.com/shazamio/ShazamIO",
+    "fetchable": false,
+    "tip": "a0789aff6c2fb66b0a9ec55f8e289f77cf76f14f"
+  },
+  {
+    "path": "libs/SysmonForLinux",
+    "sha": "e0f351d0b3f64538cc378c107b5874a50f36b974",
+    "url": "https://github.com/microsoft/SysmonForLinux",
+    "fetchable": false,
+    "tip": "962934f7e710a8e860ed5020f2068c6eba6aff64"
+  },
+  {
+    "path": "libs/TinyEXIF",
+    "sha": "434bd4cf7b4f2eb5eca02dd03c4a63bc6f2cc397",
+    "url": "https://github.com/cdcseacave/TinyEXIF",
+    "fetchable": false,
+    "tip": "5e08e79c1ee3d6980923bb57c2f927f80683866e"
+  },
+  {
+    "path": "libs/Windows",
+    "sha": "a9af1e406248ec10216ffda8cf77bad46c6f818e",
+    "url": "https://github.com/ImageMagick/Windows",
+    "fetchable": false,
+    "tip": "00ddd4dfc905f970f1ab658d9a86afce9ea9d387"
+  },
+  {
+    "path": "libs/WizardsToolkit",
+    "sha": "b5926e7410df581a88a18510a105a9ee1b5db614",
+    "url": "https://github.com/ImageMagick/WizardsToolkit",
+    "fetchable": false,
+    "tip": "9633203220c067597c9a8f63b365b178465d1869"
+  },
+  {
+    "path": "libs/ads",
+    "sha": "6dbac68919397ad0ce5fb6c8837ba5000ce58a8d",
+    "url": "https://github.com/katahiromz/ads",
+    "fetchable": false,
+    "tip": "87fc3aac11c74e1aa6a510f2fd7e53b3afe633ff"
+  },
+  {
+    "path": "libs/argon2",
+    "sha": "96fd458c58bd571004fae00a19cfbf93e656026e",
+    "url": "https://github.com/winlibs/argon2",
+    "fetchable": false,
+    "tip": "fb53ef37be212380d51877b70f514f3bf2c1ee40"
+  },
+  {
+    "path": "libs/audio-recognizer",
+    "sha": "291d1fc7dc6e17d34ef79e52feb3b6358a40c521",
+    "url": "https://github.com/wsieroci/audio-recognizer",
+    "fetchable": false,
+    "tip": "3028b6147dcd09f6b1bd418b8b0d2bacd7c8afc3"
+  },
+  {
+    "path": "libs/audiocraft",
+    "sha": "eb623ab42038d5f524387a39b6d420337bf438bc",
+    "url": "https://github.com/facebookresearch/audiocraft",
+    "fetchable": false,
+    "tip": "896ec7c47f5e5d1e5aa1e4b260c4405328bf009d"
+  },
+  {
+    "path": "libs/bobgui",
+    "sha": "341db5f713b7c6617f99539ccfd8a455a28b9938",
+    "url": "https://github.com/robertpelloni/bgtk",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/bobui",
+    "sha": "d0b9a49f9b1f8dde36ebe89db86f88357386e86f",
+    "url": "https://github.com/robertpelloni/bqt.git",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/brotli",
+    "sha": "7581694b3486ddc8944496b696cd7d7e3c2076cd",
+    "url": "https://github.com/google/brotli",
+    "fetchable": false,
+    "tip": "d89c4b1c52e25ddafe047bc78bbee5c1e24b1809"
+  },
+  {
+    "path": "libs/btk",
+    "sha": "6f5f34e043fc7580c6a3abd4f5c632d2dcc7d8c1",
+    "url": "https://github.com/robertpelloni/bcs.git",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/c-ares",
+    "sha": "5cd236383873fc19c91f0c27df8acaa5fff31835",
+    "url": "https://github.com/winlibs/c-ares",
+    "fetchable": false,
+    "tip": "6c783a942d2bba34a2d3b742d5c7247ae30f284f"
+  },
+  {
+    "path": "libs/cURL",
+    "sha": "cda84dbe245cb9feb50d9e93f44654190b190266",
+    "url": "https://github.com/winlibs/cURL",
+    "fetchable": false,
+    "tip": "21d4089f0235269313381c04a99b38422e1439ba"
+  },
+  {
+    "path": "libs/calibre",
+    "sha": "f83c553e63643a3a39f53e02810e9f12700a95a1",
+    "url": "https://github.com/kovidgoyal/calibre",
+    "fetchable": false,
+    "tip": "3d389329454e04ce186f185f26b25f47a7127577"
+  },
+  {
+    "path": "libs/ckmame",
+    "sha": "bd6e7bea37c361e69a6c91bab6d5d8753a29e800",
+    "url": "https://github.com/nih-at/ckmame",
+    "fetchable": false,
+    "tip": "1b670d1994329132f01bfa0ba31072c58bffa5ed"
+  },
+  {
+    "path": "libs/cmark",
+    "sha": "969b278f1164fc1759729578bfea3eab32023fea",
+    "url": "https://github.com/commonmark/cmark",
+    "fetchable": false,
+    "tip": "522c37ac04b1670b60d121381b439aae42e39194"
+  },
+  {
+    "path": "libs/cyrus-sasl",
+    "sha": "4e1728735a5ec7fdb457b2f57535d8d508d77ee3",
+    "url": "https://github.com/winlibs/cyrus-sasl",
+    "fetchable": false,
+    "tip": "ac2695a6049f7079983a92ec7e21a81c35997d14"
+  },
+  {
+    "path": "libs/dirent",
+    "sha": "01abed18135afaf7c4bf9cc348d0a07843b0f786",
+    "url": "https://github.com/winlibs/dirent",
+    "fetchable": false,
+    "tip": "f7d48413d5e862e46c306a9f5e5f4a8551c685c5"
+  },
+  {
+    "path": "libs/dokany",
+    "sha": "ca7d2d1cfb02b081715d7f322fc8abb31249109d",
+    "url": "https://github.com/dokan-dev/dokany",
+    "fetchable": false,
+    "tip": "49ae5ed3628806878408995916d772b60241e083"
+  },
+  {
+    "path": "libs/dragonffi",
+    "sha": "ef4092fa17cad156dc8220b5e5c04814bd493632",
+    "url": "https://github.com/aguinet/dragonffi",
+    "fetchable": false,
+    "tip": "90c66b3db9dd859f340e23eee7d65ab72a0e0122"
+  },
+  {
+    "path": "libs/dtl-diff",
+    "sha": "e70e736c73e1f41bbef886e82f5f49d21e220762",
+    "url": "https://github.com/cubicdaiya/dtl",
+    "fetchable": false,
+    "tip": "32567bb9ec704f09040fb1ed7431a3d967e3df03"
+  },
+  {
+    "path": "libs/dunst",
+    "sha": "de7325b4aa4d8119721b67028b381224216aed9c",
+    "url": "https://github.com/dunst-project/dunst",
+    "fetchable": false,
+    "tip": "ceab81e69be1201bc2e5ea20d494cd5287974f9d"
+  },
+  {
+    "path": "libs/enchant",
+    "sha": "b4553b9ae522402c47f944fdb0c996681ff876b1",
+    "url": "https://github.com/winlibs/enchant",
+    "fetchable": false,
+    "tip": "37e09ab3d76d61784d8a9d4cca2badbd56d080f4"
+  },
+  {
+    "path": "libs/fast-lzma2",
+    "sha": "3daee6268152f3cbe8b5b111b16496baf2d0e7ec",
+    "url": "https://github.com/conor42/fast-lzma2",
+    "fetchable": false,
+    "tip": "967306d39daacf9a14ad923c86fa7f9c4552b59b"
+  },
+  {
+    "path": "libs/freetype",
+    "sha": "fc0f4cf3aed04032dbca0db95d91d37c82932252",
+    "url": "https://github.com/winlibs/freetype",
+    "fetchable": false,
+    "tip": "64edb7bb59160252ff9c9ae7a89d80e5aa96e012"
+  },
+  {
+    "path": "libs/fribidi",
+    "sha": "fdaeffdd389e0beaa2e72f4021260733b1fc227d",
+    "url": "https://github.com/winlibs/fribidi",
+    "fetchable": false,
+    "tip": "cbcc997561d8e4b0d502b1741d60dc7dcee0da26"
+  },
+  {
+    "path": "libs/fstlib",
+    "sha": "bb046ea87a795435b129d0455f5e5fac54420ec1",
+    "url": "https://github.com/fstpackage/fstlib",
+    "fetchable": false,
+    "tip": "4d61c19a874a56292a7ede56321c70db5a306cd6"
+  },
+  {
+    "path": "libs/fuse_xattrs",
+    "sha": "c58b4556f642a8ccf8235f78b4e36b477196d1c5",
+    "url": "https://github.com/fbarriga/fuse_xattrs",
+    "fetchable": false,
+    "tip": "d1e304659a2381e04c715afc6425c66b663f277d"
+  },
+  {
+    "path": "libs/gdk-pixbuf",
+    "sha": "12843236ab6447dada7cc9a1dacc342f38f930d4",
+    "url": "https://github.com/ImageMagick/gdk-pixbuf",
+    "fetchable": false,
+    "tip": "92a234886a0337480770ef93dc74ea920bf39ab3"
+  },
+  {
+    "path": "libs/getopt-win",
+    "sha": "b5e50e591c8cdbb100b1210d58eaa9a709db35ae",
+    "url": "https://github.com/ludvikjerabek/getopt-win",
+    "fetchable": false,
+    "tip": "36e55dd0f1b44f7b8d0405e74603a1d1b1a47eb0"
+  },
+  {
+    "path": "libs/getopt-win32",
+    "sha": "815ba4a6cd374ff23996e3456d3a47c67a7600a8",
+    "url": "https://github.com/nanoporetech/getopt-win32",
+    "fetchable": false,
+    "tip": "b3de5c2928369d3477ee135bf83cceb711bd92f6"
+  },
+  {
+    "path": "libs/gettext",
+    "sha": "4a2685f7a64c7f6357d84173797c432a29e2554b",
+    "url": "https://github.com/winlibs/gettext",
+    "fetchable": false,
+    "tip": "cd6fcaeffc493305f9c0081310efa0e063060da6"
+  },
+  {
+    "path": "libs/ghostpdl",
+    "sha": "7f57b2a5fbad28fc0344687d8026f2d921759758",
+    "url": "https://github.com/ArtifexSoftware/ghostpdl",
+    "fetchable": false,
+    "tip": "a68a4d962e7eb08c68379b051c58787ea9fcb6d7"
+  },
+  {
+    "path": "libs/glad",
+    "sha": "5a45e47a4bbd4409d6ece0fdf8bbcbf7f318a2d2",
+    "url": "https://github.com/Dav1dde/glad",
+    "fetchable": false,
+    "tip": "0a7cf1af9e25e02821587bd4095807fc90b6426a"
+  },
+  {
+    "path": "libs/glib",
+    "sha": "21e31f029c13965902ac4fcf3ab162a5dd3bb7b8",
+    "url": "https://github.com/winlibs/glib",
+    "fetchable": false,
+    "tip": "ca9d6adf53e11099045a6d51116dd0b678faa1f3"
+  },
+  {
+    "path": "libs/hash-library",
+    "sha": "1f94d390c46b1f441c32669d801ca44dd08c3b43",
+    "url": "https://github.com/stbrumme/hash-library",
+    "fetchable": false,
+    "tip": "d389d18112bcf7e4786ec5e8723f3658a7f433d7"
+  },
+  {
+    "path": "libs/hashcat",
+    "sha": "08a7abfe10fecb00f4dbfa704c4017de280435f8",
+    "url": "https://github.com/hashcat/hashcat",
+    "fetchable": false,
+    "tip": "d9daf5b3ebbbbc8d758e24471a17d164bd216121"
+  },
+  {
+    "path": "libs/hashingImage",
+    "sha": "a30f691e2d29afae85bfc198e8a36f630021429a",
+    "url": "https://github.com/goongong/hashingImage",
+    "fetchable": false,
+    "tip": "f00adc99355a8bfdcca23ccb3a7ae937d8851b99"
+  },
+  {
+    "path": "libs/heif",
+    "sha": "ae87cf73f7f1c0f9cd65ed710b3d0e3060a3c882",
+    "url": "https://github.com/nokiatech/heif",
+    "fetchable": false,
+    "tip": "363cf942bd45ec6772c52b04d7d0b016801c2db4"
+  },
+  {
+    "path": "libs/highlightjs",
+    "sha": "1691e6baf36f919150660b3927a6ad66f5cbfb83",
+    "url": "https://github.com/highlightjs/highlight.js",
+    "fetchable": false,
+    "tip": "60e092057673595fa542db0bc2b13a99df5d0551"
+  },
+  {
+    "path": "libs/httpd",
+    "sha": "9142092dd08e82eaf24773db66fc208aed1fa97c",
+    "url": "https://github.com/apache/httpd",
+    "fetchable": false,
+    "tip": "6dda601b64d039323c35aeeba73100e7d50b3993"
+  },
+  {
+    "path": "libs/icu4c",
+    "sha": "f3777e96abe52857605c0a0a74eba7145015cce5",
+    "url": "https://github.com/winlibs/icu4c",
+    "fetchable": false,
+    "tip": "0a9f55bff1e5a541d54c8a2811bf2b41a66e0c14"
+  },
+  {
+    "path": "libs/image-hash",
+    "sha": "bb73fb593ef5c47eebb1a2fdc5b16cedb2d6dcab",
+    "url": "https://github.com/ytetsuro/image-hash",
+    "fetchable": false,
+    "tip": "a9dc7a96b2f289b4a9ba1ba9cc595c0228a38905"
+  },
+  {
+    "path": "libs/image_info",
+    "sha": "f0ab154a372a752ef621769143e45c352f63b2d7",
+    "url": "https://github.com/gottfrois/image_info",
+    "fetchable": false,
+    "tip": "1b6222dd953f463a082461b12d3a5fba354eb6e0"
+  },
+  {
+    "path": "libs/imagehash",
+    "sha": "546bf7b74b03a71d06e59cfcc20ce2a7dac96222",
+    "url": "https://github.com/vitali-fedulov/imagehash",
+    "fetchable": false,
+    "tip": "1a775c30f44071dcb07e16de67483686e0f646a6"
+  },
+  {
+    "path": "libs/imageinfo",
+    "sha": "a257837298d7485d9e04987676e759bc4a041ea3",
+    "url": "https://github.com/xiaozhuai/imageinfo",
+    "fetchable": false,
+    "tip": "fcdb6e8fd8106305577a762de25b990db9858141"
+  },
+  {
+    "path": "libs/imap",
+    "sha": "1073dc7f66cf0b2a9c954b52f1c7cc0744ab22b8",
+    "url": "https://github.com/winlibs/imap",
+    "fetchable": false,
+    "tip": "4f5969e9dd677122f30416de044576644f612c71"
+  },
+  {
+    "path": "libs/imghash-viewer",
+    "sha": "8c0966c4d3614a7615b36e9193e7ff1bf5bbf918",
+    "url": "https://github.com/YannickAlex07/imghash-viewer",
+    "fetchable": false,
+    "tip": "8b72a9f3c654fa8de1d0a48408b537ed25e74708"
+  },
+  {
+    "path": "libs/jhead",
+    "sha": "0ae9a1c45227d9f78f3fca1648428cb83dabacf0",
+    "url": "https://github.com/Matthias-Wandel/jhead",
+    "fetchable": false,
+    "tip": "5007491cdc8c727c16ea6a27734535cfd0ed4349"
+  },
+  {
+    "path": "libs/json-c",
+    "sha": "e7c8935abb532ca2627400798318b208232e6b81",
+    "url": "https://github.com/json-c/json-c",
+    "fetchable": false,
+    "tip": "d9b375ff1b4ea0305566527e377ecf6545771e80"
+  },
+  {
+    "path": "libs/libarchive",
+    "sha": "2ce8fe48680f76ef1a24f9cef0ac1c2c9247f324",
+    "url": "https://github.com/libarchive/libarchive",
+    "fetchable": false,
+    "tip": "eb57ffefe20e98eb7ba05829ee1c23b90e589a71"
+  },
+  {
+    "path": "libs/libavif",
+    "sha": "700438bd8e04d05899a1dc173be0e609ec4677ba",
+    "url": "https://github.com/winlibs/libavif",
+    "fetchable": false,
+    "tip": "14976153789c7ebf2ca24b22215a964bbc5be213"
+  },
+  {
+    "path": "libs/libbzip2",
+    "sha": "e129d29445425833ffb05b7431117b57d7d0c95b",
+    "url": "https://github.com/winlibs/libbzip2",
+    "fetchable": false,
+    "tip": "99d3c4812e2b98bc305ae4b867f35346946717f0"
+  },
+  {
+    "path": "libs/libde265",
+    "sha": "f06319789c090e630d3e03db5ef6d0ce664f08ab",
+    "url": "https://github.com/strukturag/libde265",
+    "fetchable": false,
+    "tip": "4fb298ec1af0686211dc2def73f4f41c2ce19ce5"
+  },
+  {
+    "path": "libs/libevent",
+    "sha": "5927e3e010779fb301fdd43e44d1fdc7c1300589",
+    "url": "https://github.com/libevent/libevent",
+    "fetchable": false,
+    "tip": "d82464a277d0f42703702c4dfd9af6af38595a83"
+  },
+  {
+    "path": "libs/libexif",
+    "sha": "621640a443ec1f60f893a5cd1ccbf2c36780f288",
+    "url": "https://github.com/libexif/libexif",
+    "fetchable": false,
+    "tip": "11fe112094c9ca53fb85865e6b65002b266a86cb"
+  },
+  {
+    "path": "libs/libffi",
+    "sha": "b2bc1683c85bf000b0604390c110301404d3f07f",
+    "url": "https://github.com/libffi/libffi",
+    "fetchable": false,
+    "tip": "d02afc25e8ea3aac9e78e227748e1fd7c9f14c82"
+  },
+  {
+    "path": "libs/libgit2",
+    "sha": "dfc6bcd02f7eed4035cdeaefb9581b93adc39392",
+    "url": "https://github.com/libgit2/libgit2",
+    "fetchable": false,
+    "tip": "42a89d7cc9374a19e72fa57011e5fe3a99c7b3bf"
+  },
+  {
+    "path": "libs/libheif",
+    "sha": "1df1d1483364b731757e506f6aafd763c117ec2f",
+    "url": "https://github.com/strukturag/libheif",
+    "fetchable": false,
+    "tip": "12a259a5882dd99d45ec5fc77e296a3b620d1e2e"
+  },
+  {
+    "path": "libs/libiconv",
+    "sha": "713968a9e7b58dd4bca829951dce3c7c99e5e91c",
+    "url": "https://github.com/winlibs/libiconv",
+    "fetchable": false,
+    "tip": "accac417318a3eef7402685a268cab8037e62ba1"
+  },
+  {
+    "path": "libs/libimghash",
+    "sha": "da4939cade336f9757e498eee4be05f7abcafacd",
+    "url": "https://github.com/shuttie/libimghash",
+    "fetchable": false,
+    "tip": "ec97409b2274896366bc75b1b4a6877227f4742b"
+  },
+  {
+    "path": "libs/libjpeg",
+    "sha": "a63ceb5ba843c40300734ed509b2a8b6b91535fe",
+    "url": "https://github.com/winlibs/libjpeg",
+    "fetchable": false,
+    "tip": "5e31759d415fef210f96b75bab79fe22aa77680a"
+  },
+  {
+    "path": "libs/libjpeg-turbo",
+    "sha": "29481d73457293764740ac2236ed2e9c8abdb59f",
+    "url": "https://github.com/libjpeg-turbo/libjpeg-turbo",
+    "fetchable": false,
+    "tip": "29e4d9b0178f08158fc72c6068f086c5ba27b772"
+  },
+  {
+    "path": "libs/libmcrypt",
+    "sha": "9b379082b4977f08607f2beea0b29aaae8b8e08a",
+    "url": "https://github.com/winlibs/libmcrypt",
+    "fetchable": false,
+    "tip": "1e93cbe97a463a2c0c62338d607b17fe011eb77e"
+  },
+  {
+    "path": "libs/libpng",
+    "sha": "d2d2883c156b861197beb0b3f4807b91e45408bc",
+    "url": "https://github.com/winlibs/libpng",
+    "fetchable": false,
+    "tip": "7cda9e2cb293ca6320211891ae32a4c6f84f1365"
+  },
+  {
+    "path": "libs/librsync",
+    "sha": "59e330827669b2a6d910a464021c7dae699e49ab",
+    "url": "https://github.com/librsync/librsync",
+    "fetchable": false,
+    "tip": "271744de428c0177e993f95c045d70b8cf2558f2"
+  },
+  {
+    "path": "libs/libsodium",
+    "sha": "3766aae65b3a8366a9b306f7178c86799bcc498e",
+    "url": "https://github.com/winlibs/libsodium",
+    "fetchable": false,
+    "tip": "1777bbc853d2aeb124e7b842a11b916193db7bdf"
+  },
+  {
+    "path": "libs/libssh2",
+    "sha": "72c9ef3b02116ed92fcd1e543036aeed6f94f63d",
+    "url": "https://github.com/winlibs/libssh2",
+    "fetchable": false,
+    "tip": "7817741ff29d52165b0e8c157acbe4c0ec582117"
+  },
+  {
+    "path": "libs/libtidy",
+    "sha": "7d47ad8de5cf62ce0b528cb96401d87aadd7a067",
+    "url": "https://github.com/winlibs/libtidy",
+    "fetchable": false,
+    "tip": "8b6229fd70409656257a6446a254fd62fde8a03a"
+  },
+  {
+    "path": "libs/libunistd",
+    "sha": "b808590101136573c7f110b2edd0dc1c01415282",
+    "url": "https://github.com/robinrowe/libunistd",
+    "fetchable": false,
+    "tip": "3f269dfc49249dd218cf229439b787164d1e3e03"
+  },
+  {
+    "path": "libs/libvbucket",
+    "sha": "9975a330ba777fe5ed5ffc8ec8c010290ed9e41e",
+    "url": "https://github.com/membase/libvbucket",
+    "fetchable": false,
+    "tip": "5590fff683f5ae57f55728eccb4ce0b8acc42c44"
+  },
+  {
+    "path": "libs/libvips",
+    "sha": "b4f4d562ec6773962a36a5b66c4cfb297429136f",
+    "url": "https://github.com/libvips/libvips",
+    "fetchable": false,
+    "tip": "12c9899a42ab37970f89626999a9856eea3ffad1"
+  },
+  {
+    "path": "libs/libvpx",
+    "sha": "cecbf6105a15658b0ca6fb693e560ecf89e4e1ec",
+    "url": "https://github.com/winlibs/libvpx",
+    "fetchable": false,
+    "tip": "5e76714446d78b5e6679ddf46b13d1d9a25dacf3"
+  },
+  {
+    "path": "libs/libwebp",
+    "sha": "cca7c0d991fc68e68de5cfc37342a9f57372f57a",
+    "url": "https://github.com/winlibs/libwebp",
+    "fetchable": false,
+    "tip": "1b7801dd9a59c1dc5bda38895d8f94c815732a9f"
+  },
+  {
+    "path": "libs/libxml2",
+    "sha": "69aa9a10358bf070939e7833241a0feb6bf1f658",
+    "url": "https://github.com/GNOME/libxml2",
+    "fetchable": false,
+    "tip": "febeb5c91fffeca92b84162d57a1832fe5a60b09"
+  },
+  {
+    "path": "libs/libxmlplusplus",
+    "sha": "913a2f49d027e36de39a3976fafe4f78278efaeb",
+    "url": "https://github.com/libxmlplusplus/libxmlplusplus",
+    "fetchable": false,
+    "tip": "187a53f6036f9e2310d4257a6e17345bdbd1143f"
+  },
+  {
+    "path": "libs/libxpm",
+    "sha": "a66144ca13091be85129ef4ff932c0133eed628a",
+    "url": "https://github.com/winlibs/libxpm",
+    "fetchable": false,
+    "tip": "51d6d2b642bfa4ff6e6e169eb488e4da542790b7"
+  },
+  {
+    "path": "libs/libxslt",
+    "sha": "00f29b3fb11e485128e01e74c467528ce20a71ab",
+    "url": "https://github.com/winlibs/libxslt",
+    "fetchable": false,
+    "tip": "c0076eaa6e0d1f99e01107e8db225a308eb1e543"
+  },
+  {
+    "path": "libs/libzip",
+    "sha": "c18b72270dd8eb7b19c49bf1f13724d6fb339f86",
+    "url": "https://github.com/nih-at/libzip",
+    "fetchable": false,
+    "tip": "d6d9382b8e2ea6629183da38e7647456a945c4c4"
+  },
+  {
+    "path": "libs/lmdb",
+    "sha": "ebd1ff9b18cc5a3ebdd8d4cb8c3f2c9be19eeed5",
+    "url": "https://github.com/winlibs/lmdb",
+    "fetchable": false,
+    "tip": "337459047d55fbf52e634bc26285195d06ac145d"
+  },
+  {
+    "path": "libs/lsads",
+    "sha": "78aca62f8c9443aeb3a6b577c788510472ef3ddc",
+    "url": "https://github.com/assarbad/lsads",
+    "fetchable": false,
+    "tip": "e2d15992822cccd7ce3911325accc08dc068cd0f"
+  },
+  {
+    "path": "libs/lvgl",
+    "sha": "ecf407149cab39104302c5274fff15fadbeee6ef",
+    "url": "https://github.com/lvgl/lvgl",
+    "fetchable": false,
+    "tip": "793c238033d65675d70d37604ea6ad16ee1f5398"
+  },
+  {
+    "path": "libs/lz4",
+    "sha": "0d04f459815ce442cf7888601b21565cb88a08fe",
+    "url": "https://github.com/lz4/lz4",
+    "fetchable": false,
+    "tip": "d04dab3152ffdb8f8e8708e4d135f7293c0f6136"
+  },
+  {
+    "path": "libs/md4c",
+    "sha": "0347a40784daa1b423d6f122da19a63969a8b289",
+    "url": "https://github.com/mity/md4c",
+    "fetchable": false,
+    "tip": "f9e5eb232b95b737373ae706648cb75bd259ed1a"
+  },
+  {
+    "path": "libs/metastore",
+    "sha": "8a317421276169053e0685ec7101fa7c2f93a168",
+    "url": "https://github.com/przemoc/metastore",
+    "fetchable": false,
+    "tip": "8f0dd4c8788a94a3b3841207ac96662f5ce30d53"
+  },
+  {
+    "path": "libs/mm_file",
+    "sha": "def5082336b41f319bbf8549c76308089ed001f5",
+    "url": "https://github.com/jermp/mm_file",
+    "fetchable": false,
+    "tip": "5b5291360488095ce3617c48af0f5145fdf9e710"
+  },
+  {
+    "path": "libs/mpir",
+    "sha": "e71297374e3995cb7c2418c4c4262e1a1972651c",
+    "url": "https://github.com/winlibs/mpir",
+    "fetchable": false,
+    "tip": "428e153fb13739dbb6f301408d3c23910ec10333"
+  },
+  {
+    "path": "libs/mpv",
+    "sha": "610755ef7c1e06ddc3bc1d1391b53c820f4c5e7c",
+    "url": "https://github.com/mpv-player/mpv",
+    "fetchable": false,
+    "tip": "55d3feb45c3dda1afd02b3087d3463c57d6514f7"
+  },
+  {
+    "path": "libs/net-snmp",
+    "sha": "8fec2fec329420d0bd79eed0789f4a8efa4f1220",
+    "url": "https://github.com/winlibs/net-snmp",
+    "fetchable": false,
+    "tip": "c243d83ad7188593ae005254c99583b53f291477"
+  },
+  {
+    "path": "libs/nghttp2",
+    "sha": "12405a784dde81ed00ce03426953703a30b55f11",
+    "url": "https://github.com/winlibs/nghttp2",
+    "fetchable": false,
+    "tip": "50895b5f3cebeb2553a4e40a62561707a1a129e0"
+  },
+  {
+    "path": "libs/nihtest",
+    "sha": "ab8f3ab6234c5083de3b247ecbe5618567a269a6",
+    "url": "https://github.com/nih-at/nihtest",
+    "fetchable": false,
+    "tip": "01d2588dbec93c7560236ad1b0ba5be30bc0a785"
+  },
+  {
+    "path": "libs/nihtest-cpp",
+    "sha": "78d7c69bca38733cfde982b3c9816d525189859d",
+    "url": "https://github.com/nih-at/nihtest-cpp",
+    "fetchable": false,
+    "tip": "8eafcb2216bd0325dfc1b465226a51a616baa133"
+  },
+  {
+    "path": "libs/oniguruma",
+    "sha": "9ed516e52575fcbf0aae3b3db97dffc3119183a1",
+    "url": "https://github.com/winlibs/oniguruma",
+    "fetchable": false,
+    "tip": "fceeeffdb609661ffaea9be4075c6ff4d6696611"
+  },
+  {
+    "path": "libs/openapv",
+    "sha": "f05e6fdeb7ee234dded3976fa6c4c3b4a408280f",
+    "url": "https://github.com/AcademySoftwareFoundation/openapv",
+    "fetchable": false,
+    "tip": "1d3cc6bfd0ff0c34953a2f8265f0fd6ee4efdd02"
+  },
+  {
+    "path": "libs/opencv",
+    "sha": "089055e6ccf34abb0fe865a5a5b2f6379569e7de",
+    "url": "https://github.com/opencv/opencv",
+    "fetchable": false,
+    "tip": "1780d20b80810f41a92c02fa8a90edda0eafb725"
+  },
+  {
+    "path": "libs/openexr",
+    "sha": "1b1e24f7b0f257763462931c3e0acd5c47a7495b",
+    "url": "https://github.com/AcademySoftwareFoundation/openexr",
+    "fetchable": false,
+    "tip": "e9e9fefc429904f412699199a5264bcba1e655ec"
+  },
+  {
+    "path": "libs/openfx",
+    "sha": "03a7f016248d4969777efffe7fbc009a6ca92114",
+    "url": "https://github.com/AcademySoftwareFoundation/openfx",
+    "fetchable": false,
+    "tip": "b2d2eea3a64e511bfabb80e56f902d96adf4a05e"
+  },
+  {
+    "path": "libs/openh264",
+    "sha": "90453423837446889ba8a757d1db6e8b4cb8a8f3",
+    "url": "https://github.com/cisco/openh264",
+    "fetchable": false,
+    "tip": "1bca62311e447fd9c39fc93de2c4b96cd5ce971c"
+  },
+  {
+    "path": "libs/openjpeg",
+    "sha": "b0747bff8a0f552055d94a218f4e7d29497019d2",
+    "url": "https://github.com/uclouvain/openjpeg",
+    "fetchable": false,
+    "tip": "8314119b067c0fc77834731168daaebd379fdb12"
+  },
+  {
+    "path": "libs/openldap",
+    "sha": "5bd8eda75a30e3b6ee64be20fe5324bf4120801d",
+    "url": "https://github.com/winlibs/openldap",
+    "fetchable": false,
+    "tip": "8aedbc7d067fa0096395d540f396ac75cc032846"
+  },
+  {
+    "path": "libs/openssl",
+    "sha": "a721284322265daeba666cdee777d620b11fcee1",
+    "url": "https://github.com/winlibs/openssl",
+    "fetchable": false,
+    "tip": "2eff43ade5de21986e9f5f343bcd0367f2bf3120"
+  },
+  {
+    "path": "libs/p7zip",
+    "sha": "f86014598b7af0dfa50155564d90b84f3ce57df2",
+    "url": "https://github.com/p7zip-project/p7zip",
+    "fetchable": false,
+    "tip": "6819e2dc1917e1267babddc6391cea56ead7123d"
+  },
+  {
+    "path": "libs/pHash",
+    "sha": "f591ce57e81769e806149e6be5d69f0ea8198880",
+    "url": "https://github.com/nihas101/pHash",
+    "fetchable": false,
+    "tip": "e98831e34240417a8d5f9006407dc2ea43c906b8"
+  },
+  {
+    "path": "libs/pHash.c",
+    "sha": "6d4d363025080c3858b01ea6de780ecdc176f9bd",
+    "url": "https://github.com/folksable/pHash.c",
+    "fetchable": false,
+    "tip": "1d7c056b980811d2d1138b9392fee9a03abf37e2"
+  },
+  {
+    "path": "libs/pandoc",
+    "sha": "0e30dc4bd4a116e8ec6e569d8f821407e289ba0c",
+    "url": "https://github.com/jgm/pandoc",
+    "fetchable": false,
+    "tip": "160de949372ac4ac23f3558c7914a3eb99aa9d9e"
+  },
+  {
+    "path": "libs/pcre2",
+    "sha": "a53441e245f1747ef3c49fde46bf8ae61d8411d4",
+    "url": "https://github.com/PCRE2Project/pcre2",
+    "fetchable": false,
+    "tip": "70277ebd19285e447b015e195d291a589c8a08ad"
+  },
+  {
+    "path": "libs/perceptual-dct-hash",
+    "sha": "b614f517d7e6be02939a8103f05f5c4752d396d9",
+    "url": "https://github.com/alangshur/perceptual-dct-hash",
+    "fetchable": false,
+    "tip": "9646476294a024f5e4515b5c3d5f61dacfc4d469"
+  },
+  {
+    "path": "libs/pngquant",
+    "sha": "0462a6e7d555bd5eaafa3955f33dafa02877527e",
+    "url": "https://github.com/kornelski/pngquant",
+    "fetchable": false,
+    "tip": "6628b9d4e541e38f50d572d135327ac8b29d1a79"
+  },
+  {
+    "path": "libs/poppler",
+    "sha": "7e72681a514318e89ec1f744fa6d9fa5cba40f40",
+    "url": "https://gitlab.freedesktop.org/poppler/poppler",
+    "fetchable": false,
+    "tip": "c650d043bcf75e7ea978175b50278b9c7ba5454b"
+  },
+  {
+    "path": "libs/postgresql",
+    "sha": "6b8c1b87c3ce0041ac1f8c0cdafa9d564ac4477c",
+    "url": "https://github.com/winlibs/postgresql",
+    "fetchable": false,
+    "tip": "391bd98ac39a3f4dbd7d8a3621ebaf82cd94280a"
+  },
+  {
+    "path": "libs/pslib",
+    "sha": "09bbd0dfa9f225b1c014d0236d447050a12a3e03",
+    "url": "https://github.com/winlibs/pslib",
+    "fetchable": false,
+    "tip": "4c6b93bd12d52be36fb9a23745c3959a40266fdc"
+  },
+  {
+    "path": "libs/pthreads",
+    "sha": "8a11cb9c64f9bf33434a4f9cc9d054933fd0414a",
+    "url": "https://github.com/winlibs/pthreads",
+    "fetchable": false,
+    "tip": "648488da5ce4c484777a9b4000ee8f213c789f05"
+  },
+  {
+    "path": "libs/pxz",
+    "sha": "61913d4019ca56b3a5cdf8233680b92993aac00d",
+    "url": "https://github.com/jnovy/pxz",
+    "fetchable": false,
+    "tip": "824de5dd22df3ba54bfe2cdd76029a62e53201fe"
+  },
+  {
+    "path": "libs/qdbm",
+    "sha": "a81e590addb5f0d58f0390d9ab5250f62f3cf277",
+    "url": "https://github.com/winlibs/qdbm",
+    "fetchable": false,
+    "tip": "586aa477ff42f0d307dc26adada275642630b28f"
+  },
+  {
+    "path": "libs/radare2",
+    "sha": "ff04520a1dfffefd288ed7f10cd831c0c15db07b",
+    "url": "https://github.com/radareorg/radare2",
+    "fetchable": false,
+    "tip": "1d2300059152c35e5e24025e0af7cb9e138675d9"
+  },
+  {
+    "path": "libs/rapidjson",
+    "sha": "50e4ce265c4e5488584db61d8c6cbd39684b0d26",
+    "url": "https://github.com/Tencent/rapidjson",
+    "fetchable": false,
+    "tip": "297637bc0a0f00dc504dbc1a47ebdaa577f8ae19"
+  },
+  {
+    "path": "libs/raylib",
+    "sha": "dde8304fe52adc0a25b4e521b684d04e469d8f39",
+    "url": "https://github.com/raysan5/raylib",
+    "fetchable": false,
+    "tip": "41b7da8139b564451a699e2f6072847e77e80b16"
+  },
+  {
+    "path": "libs/re2",
+    "sha": "2b3e785f7bd46c0ae8c8664bf205295595367399",
+    "url": "https://github.com/google/re2",
+    "fetchable": false,
+    "tip": "2da0056814cf180480a19f5cf811e7e1c054bf6d"
+  },
+  {
+    "path": "libs/rename-utils",
+    "sha": "79c8684bec8d78d5851d8f7b935dbb502ddbe92d",
+    "url": "https://github.com/nih-at/ckmame",
+    "fetchable": false,
+    "tip": "1b670d1994329132f01bfa0ba31072c58bffa5ed"
+  },
+  {
+    "path": "libs/ripgrep",
+    "sha": "f9804abb1f841eb402b35a5232652a8a35d2b290",
+    "url": "https://github.com/BurntSushi/ripgrep",
+    "fetchable": false,
+    "tip": "91f5d22ef48bde459d90a8c7dbeab416e97d0f2b"
+  },
+  {
+    "path": "libs/securecopy",
+    "sha": "aa76ba922b6d3fc58be5633ed7a81633b81ac4d7",
+    "url": "https://github.com/hansij66/securecopy",
+    "fetchable": false,
+    "tip": "a82171b398901989234a876b2a9af93293589d85"
+  },
+  {
+    "path": "libs/seek-tune",
+    "sha": "92167a48cb8a8103da9f5eb7c5c016b5a45fbce1",
+    "url": "https://github.com/cgzirim/seek-tune",
+    "fetchable": false,
+    "tip": "a6507e8f1e4a3dce1053eb8ff4c57144d698966f"
+  },
+  {
+    "path": "libs/sigil",
+    "sha": "a22a57d918179c5b71378d5243b6f6ca06742f45",
+    "url": "https://github.com/Sigil-Ebook/Sigil",
+    "fetchable": false,
+    "tip": "747700d760372ac1a612e723af86ac39b407b048"
+  },
+  {
+    "path": "libs/sqlite",
+    "sha": "696f285843c3714c9b3a5587ad86eb2124c27b04",
+    "url": "https://github.com/sqlite/sqlite",
+    "fetchable": false,
+    "tip": "85814474e5c49fdb706d98410696e3efc162b978"
+  },
+  {
+    "path": "libs/sqlite3",
+    "sha": "698fc5a7979566bea4902a063663dfa715998ef9",
+    "url": "https://github.com/winlibs/sqlite3",
+    "fetchable": false,
+    "tip": "9652784a43e2719e1ab71f3276b87e5be8a66696"
+  },
+  {
+    "path": "libs/ssdeep",
+    "sha": "5e83651f02bda90038104d94647bdc8ec504936f",
+    "url": "https://github.com/winlibs/ssdeep",
+    "fetchable": false,
+    "tip": "a326864d8cd766333028e772f4e90fa3b7320405"
+  },
+  {
+    "path": "libs/sumatrapdf",
+    "sha": "810b96e374af2ee115fd106f89584fda41e37805",
+    "url": "https://github.com/sumatrapdfreader/sumatrapdf",
+    "fetchable": false,
+    "tip": "71df8fb5497e1e850af662586b3be2b0cd113c75"
+  },
+  {
+    "path": "libs/the_silver_searcher",
+    "sha": "7f2c6ce761692aca2f93d63e948af86c4351f299",
+    "url": "https://github.com/ggreer/the_silver_searcher",
+    "fetchable": false,
+    "tip": "a61f1780b64266587e7bc30f0f5f71c6cca97c0f"
+  },
+  {
+    "path": "libs/tinyphash",
+    "sha": "16961e5ec84006132e7dea6938d83f3d71d18be0",
+    "url": "https://github.com/Wassasin/tinyphash",
+    "fetchable": false,
+    "tip": "7c7c503d331cc8fd5507db58e5813398f3939189"
+  },
+  {
+    "path": "libs/tinyxml2",
+    "sha": "5ed6c68113e75d6ad1ed04038125c46261f42e9a",
+    "url": "https://github.com/leethomason/tinyxml2",
+    "fetchable": false,
+    "tip": "8224e427b655b83dae5e2298f1e6919523a78737"
+  },
+  {
+    "path": "libs/ultimatepp",
+    "sha": "2709f94db542de069bf0b147535ed641e0d86dc9",
+    "url": "https://github.com/ultimatepp/ultimatepp",
+    "fetchable": false,
+    "tip": "603d90b0f8f0b43f115e084e13e9e84751060bff"
+  },
+  {
+    "path": "libs/util-linux",
+    "sha": "918d38d947d21dac9f2c8db90df9044f8bd0a6be",
+    "url": "https://github.com/util-linux/util-linux",
+    "fetchable": false,
+    "tip": "bd3a77c82ba7d88235e2d8942b248e0f69488f2e"
+  },
+  {
+    "path": "libs/vlc",
+    "sha": "131f36ff44ae57de895790dd0a41f7c1738d24ee",
+    "url": "https://github.com/videolan/vlc",
+    "fetchable": false,
+    "tip": "2cb78ca89c016df5b15b4f421d8b11e3253cb1a7"
+  },
+  {
+    "path": "libs/wineditline",
+    "sha": "41f02fb386f8d99a42f90fb03a57541656a4bd38",
+    "url": "https://github.com/winlibs/wineditline",
+    "fetchable": false,
+    "tip": "39ae4ff02a06c97f804833844b767777d6625fb8"
+  },
+  {
+    "path": "libs/wkhtmltopdf",
+    "sha": "c5426299bbc2fc7d908d4f0edc8b90d1ef7eca5d",
+    "url": "https://github.com/wkhtmltopdf/wkhtmltopdf",
+    "fetchable": false,
+    "tip": "024b2b2bb459dd904d15b911d04c6df4ff2c9031"
+  },
+  {
+    "path": "libs/xattrlib",
+    "sha": "f75fe224bc0d1260053fe14deead2e29fec5fd6a",
+    "url": "https://github.com/amdf/xattrlib",
+    "fetchable": false,
+    "tip": "286d38bdd76b3594a3cf93d5f671526ee216f343"
+  },
+  {
+    "path": "libs/xattrs",
+    "sha": "ce73f4cf9e17e0366af4bfd37949caa0fed3aa9a",
+    "url": "https://github.com/hrbrmstr/xattrs",
+    "fetchable": false,
+    "tip": "9fd00c6eaaaf787dfefd4cb9716be6b7ea02912a"
+  },
+  {
+    "path": "libs/xxHash",
+    "sha": "f6f5c007002f195e0350247d94274264af031424",
+    "url": "https://github.com/Cyan4973/xxHash",
+    "fetchable": false,
+    "tip": "2ec67caeb18ec15ae60c0853174331089acddfc0"
+  },
+  {
+    "path": "libs/ziptools",
+    "sha": "a2c9d232e451d6e808b78efba87862a624b6015e",
+    "url": "https://github.com/nih-at/ziptools",
+    "fetchable": false,
+    "tip": "24ccea5f67792895f2781149c38027b45d41221f"
+  },
+  {
+    "path": "libs/zlib",
+    "sha": "2687a492b95461a4000c98b2793c7dfe85e355bd",
+    "url": "https://github.com/winlibs/zlib",
+    "fetchable": false,
+    "tip": "cf7eb981cf4fce56a88608c68fd3f255a2c452c9"
+  },
+  {
+    "path": "libs/zstd",
+    "sha": "eb9339be256ee2921f6a7cd72450095eed315422",
+    "url": "https://github.com/facebook/zstd",
+    "fetchable": false,
+    "tip": "8b985c516d93e255b93dc27a0bd2bf5cf7d51883"
+  }
+]

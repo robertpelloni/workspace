@@ -1,0 +1,86 @@
+[
+  {
+    "path": "bobcoin",
+    "sha": "a2f5eca95ad7b9d87be94c9b1b58032f4519877a",
+    "url": "https://github.com/robertpelloni/bobcoin",
+    "fetchable": false,
+    "tip": "cbc8b1b089c38e062b8688753cc1473798cf0b4d"
+  },
+  {
+    "path": "libs/aseprite-file",
+    "sha": "06b6189291d36f7c877aef50c6172cf5087466c7",
+    "url": "https://github.com/elgopher/aseprite-file",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/bobui",
+    "sha": "d0b9a49f9b1f8dde36ebe89db86f88357386e86f",
+    "url": "https://github.com/robertpelloni/bqt",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/commons-lang",
+    "sha": "1f9ff065e8104e45553f7b24475aa786ec278fa9",
+    "url": "https://github.com/apache/commons-lang",
+    "fetchable": false,
+    "tip": "d58c7ed8d4d3283ee5fbd01a866ce9a10ecf80a8"
+  },
+  {
+    "path": "libs/jinput",
+    "sha": "85b8f1bb589a428e7f481c7278cf8d19a14a5686",
+    "url": "https://github.com/jinput/jinput",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/lwjgl3",
+    "sha": "2e4de4476f2e94d601166d1f599c9475ca96243a",
+    "url": "https://github.com/LWJGL/lwjgl3",
+    "fetchable": false,
+    "tip": "8adda2367a10f0283ba7ac27a2222fcf7fc67212"
+  },
+  {
+    "path": "libs/lz4-java",
+    "sha": "e5b2210b1aafdc98c09d7aa3e2a05329551b8f1b",
+    "url": "https://github.com/lz4/lz4-java",
+    "fetchable": false,
+    "tip": "be9ce5759ec6cce99544c7112e434be11aedb1a8"
+  },
+  {
+    "path": "libs/micromod",
+    "sha": "83b5d9aebddb528ea177e115b0afed5d75f6b92a",
+    "url": "https://github.com/martincameron/micromod",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/mysql-connector-j",
+    "sha": "db67defdc52d53ed0ae4aa5c3f2e3ef022a61d19",
+    "url": "https://github.com/mysql/mysql-connector-j",
+    "fetchable": false,
+    "tip": "fac9201148ebe3f84a5754cb86ebbacaf1cdce7f"
+  },
+  {
+    "path": "libs/twl-lwjgl3",
+    "sha": "647ec3479a42dec7ed8d1240e203f20075614857",
+    "url": "https://github.com/ThemableWidgetLibrary/twl-lwjgl3",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/xpp3",
+    "sha": "a591a4efe53dd978f459f9f8bacc41f5726b0a1f",
+    "url": "https://github.com/codelibs/xpp3",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "libs/xz-java",
+    "sha": "e2a4aecc426c72eb4ba7ff499a5b2da62befdf97",
+    "url": "https://github.com/tukaani-project/xz-java",
+    "fetchable": false,
+    "tip": "f14a603924233993c245efc85ae4aca320bf360e"
+  }
+]
