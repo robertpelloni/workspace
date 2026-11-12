@@ -1,0 +1,23 @@
+[
+  {
+    "path": "aios",
+    "sha": "ad9de6c0b355353837260383cf4bcd0a223aa2c5",
+    "url": "https://github.com/robertpelloni/aios.git",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "borg",
+    "sha": "964a1306131d6e856cb5b41c5a861f624d4b83fb",
+    "url": "https://github.com/robertpelloni/borg.git",
+    "fetchable": true,
+    "tip": null
+  },
+  {
+    "path": "fwber",
+    "sha": "f3417993ba159f093ba5b72acd1a59ef508178c2",
+    "url": "https://github.com/robertpelloni/fwber.git",
+    "fetchable": true,
+    "tip": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "repo": "bobsaver",
+    "path": "MilkDrop3",
+    "sha": "69c21064e9f05410ae61438e85193dabfc6b689b",
+    "url": "https://github.com/robertpelloni/MilkDrop3.git",
+    "issue": "NOT_ADVERTISED",
+    "tip": "254704aef2e0d9d1eb49bafc3293bd323245f5f3"
+  },
+  {
+    "repo": "bobsaver",
+    "path": "apophysis-j",
+    "sha": "803fbbb9e8e09e4667eeacb2c5fdd1e576e48805",
+    "url": "https://github.com/robertpelloni/apophysis-j",
+    "issue": "NOT_ADVERTISED",
+    "tip": "a5b2c74f8dc6b3538297afdcb70d09d4a8bdfe58"
+  },
+  {
+    "repo": "bobsaver",
+    "path": "electricsheep",
+    "sha": "a5e68c32d4fcd4f2b4a46ab429f2e78cfb5d8692",
+    "url": "https://github.com/robertpelloni/electricsheep",
+    "issue": "NOT_ADVERTISED",
+    "tip": "f045e206859847163fa48030b8fe9e6a2eae34c0"
+  },
+  {
+    "repo": "bobsaver",
+    "path": "geiss",
+    "sha": "0290fe39e86fba09bf2ff80272fd8f8664037c85",
+    "url": "https://github.com/robertpelloni/geiss",
+    "issue": "NOT_ADVERTISED",
+    "tip": "83fc1f52c5061f2492212151569aa816506ebdb1"
+  }
+]
