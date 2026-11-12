@@ -1,3 +1,13 @@
+## [v5.292.0] — 2026-11-12 — Protocol #283: Dual-Direction Merge + Friday Push
+
+### Merged
+- **jules-autopilot**: backup branch merged to main (watchdog consecutive-failure policy + BelowNormal rule + runtime untrack), then origin Protocol 281 churn merged keeping untracked; pushed clean
+- **realestatecrm**: origin v0.63.0 TSF bundle merged with local Command Center rail; coord scripts + .opencode tracked; pushed
+- **HyperNexus**: feat/fix branches hold zero unique commits vs main; nothing to merge
+- **marketing_agent**: verified in sync with origin
+### CDP
+- Edge bridge healthy (Edg 157); Bobbi tab live; no Gemini or ChatGPT tabs yet; WS tail-read attempted, receipt unconfirmed
+
 ## [v5.291.0] — 2026-11-07 — Protocol #282: Repository Sync & Intelligent Merge
 
 ### Synced
@@ -1877,6 +1887,7 @@ All memory files, session logs, databases (catalog.db, hypernexus.db), AGENTS.md
 - **marketing_agent**: Forward-merged jules-chore-replace-mocks (+12)
 - **Reverse merges**: TurntUpToddler (3 branches), bobium (2 branches), openclaw-dashboard — synced main into 6 feature branches
 - **Root**: memory state sync, version bump
+
 
 
 

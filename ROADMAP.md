@@ -1,6 +1,6 @@
-﻿# ROADMAP.md â€” HymnMania & Workspace
+# ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.291.0)
+## Current Status (v5.292.0)
 
 **Protocol #282 (2026-11-07):** 22 fast-forwards + 10 forward merges pushed (bobmani x6 incl. beatoraja master close, jvm-cpp-runtime +17, gods-eye-view, ww3_game); fetch 133/133; 3 conflict branches retained (freellm x2, itgmania jules-1251).
 
@@ -70,3 +70,4 @@
 - v5.267.0: Feature branch merge round 2
 - v5.266.0: Repository sync, hyperharness merge
 - v5.265.0: Dependabot branch sweep
+

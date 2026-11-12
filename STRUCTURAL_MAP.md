@@ -7,8 +7,8 @@ auto_dj_script                                     https://github.com/robertpell
 fwber                                              https://github.com/robertpelloni/fwber.git                        5f47fd8726a6   OK
 hymnmania                                          https://github.com/robertpelloni/hymnmania                        cc236980a4a9   OK
 hypercode                                          https://github.com/robertpelloni/hypercode                        not initialized MISSING
-jules-autopilot                                    https://github.com/robertpelloni/jules-autopilot                  53afdb3db5fe   OK
-realestatecrm                                      https://github.com/robertpelloni/realestatecrm.git                7b4623027f7f   OK
+jules-autopilot                                    https://github.com/robertpelloni/jules-autopilot                  d2538d356314   OK
+realestatecrm                                      https://github.com/robertpelloni/realestatecrm.git                3cc22f476a03   OK
 skillzhub                                          https://github.com/robertpelloni/skillzhub                        3aa327f9c807   OK
 hermes-agent                                       https://github.com/robertpelloni/hermes-agent                     166ab639f437   OK
 multimousergy                                      https://github.com/robertpelloni/multimousergy.git                9f375bd7770e   OK
