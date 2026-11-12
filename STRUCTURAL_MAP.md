@@ -8,12 +8,12 @@ Generated: 2026-11-07 (Protocol #283, full regen)
 | fwber | https://github.com/robertpelloni/fwber.git | 4417a142e2e0 |
 | hymnmania | https://github.com/robertpelloni/hymnmania | 1e3019dd1385 |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
-| jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 978ed8be30e6 |
-| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | b7cdec582a0a |
+| jules-autopilot | https://github.com/robertpelloni/jules-autopilot | d2538d356314 |
+| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 3cc22f476a03 |
 | skillzhub | https://github.com/robertpelloni/skillzhub | 36ff45761e2c |
 | hermes-agent | https://github.com/robertpelloni/hermes-agent | 166ab639f437 |
 | multimousergy | https://github.com/robertpelloni/multimousergy.git | 70066c3a277d |
-| ArrowVortex | https://github.com/robertpelloni/ArrowVortex | c4e1f3a438e3 |
+| ArrowVortex | https://github.com/robertpelloni/ArrowVortex | d03a5fe18ab3 |
 | superdawmcp | https://github.com/robertpelloni/superdawmcp | 473606511618 |
 | GWEN | https://github.com/robertpelloni/GWEN.git | d4e2ebcc68a4 |
 | JWildfire | https://github.com/robertpelloni/JWildfire.git | 76e741369ea1 |
@@ -46,7 +46,7 @@ Generated: 2026-11-07 (Protocol #283, full regen)
 | dao | https://github.com/robertpelloni/dao.git | 2bb56e88c03e |
 | electricsheep | https://github.com/robertpelloni/electricsheep.git | f9450c5a5821 |
 | element-web | https://github.com/robertpelloni/element-web.git | a6a90b53dd9f |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | f50577ce806f |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 0fab5a4b354c |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | 4d47eaa67c58 |
 | aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | ac8ed55da553 |
@@ -87,7 +87,7 @@ Generated: 2026-11-07 (Protocol #283, full regen)
 | bobsgameonlinejava_fix | https://github.com/robertpelloni/bobsgameonlinejava.git | da0c19c91ae5 |
 | browser-use | https://github.com/robertpelloni/browser-use | 008dccc81741 |
 | bobmani/Simply-Love-SM5 | https://github.com/robertpelloni/Simply-Love-SM5 | 06a56f5f5881 |
-| bobmani/arrowvortex | https://github.com/robertpelloni/arrowvortex | c4e1f3a438e3 |
+| bobmani/arrowvortex | https://github.com/robertpelloni/arrowvortex | d03a5fe18ab3 |
 | bobmani/beatoraja | https://github.com/robertpelloni/beatoraja | 19e02af1a482 |
 | bobmani/bobmania | https://github.com/robertpelloni/bobmania | 702e35e9e5f6 |
 | bobmani/ddc | https://github.com/robertpelloni/ddc | 88ec337f1ec4 |
@@ -114,7 +114,7 @@ Generated: 2026-11-07 (Protocol #283, full regen)
 | private_gemini_storage | https://github.com/robertpelloni/private_gemini_storage | af74ac7a54e3 |
 | projectM-upstream | https://github.com/projectM-visualizer/projectM.git | b238d09ec6b3 |
 | TurntUpToddler | https://github.com/Dimensionalplane/TurntUpToddler | d269bb8d1537 |
-| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | 341503ff41c9 |
+| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | 22872ad81b5e |
 | HyperNexus2old | https://gitlab.com/robertpelloni/HyperNexus.git | d8c4b2f39fb4 |
 | hyperporn | https://github.com/robertpelloni/hyperporn | 792a0f579085 |
 | foone_datetime_short | https://github.com/robertpelloni/foone_datetime_short | 816730809e44 |

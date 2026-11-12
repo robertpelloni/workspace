@@ -1,4 +1,4 @@
-﻿# ROADMAP.md â€” HymnMania & Workspace
+# ROADMAP.md â€” HymnMania & Workspace
 
 ## Current Status (v5.292.0)
 
@@ -71,3 +71,4 @@
 - v5.267.0: Feature branch merge round 2
 - v5.266.0: Repository sync, hyperharness merge
 - v5.265.0: Dependabot branch sweep
+

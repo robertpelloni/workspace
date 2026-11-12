@@ -1,6 +1,6 @@
-﻿@echo off
+@echo off
 setlocal enabledelayedexpansion
-echo Starting global build sequence (v5.291.0)...
+echo Starting global build sequence (v5.292.0)...
 cd /d "%~dp0"
 set "OK=0"
 set "FAIL=0"
@@ -76,3 +76,4 @@ if not exist tabby\tabby-go (
 
 echo Build sequence finished: %OK% OK, %FAIL% failed, %SKIP% skipped.
 if %FAIL% gtr 0 exit /b 1
+

@@ -1895,3 +1895,7 @@ All memory files, session logs, databases (catalog.db, hypernexus.db), AGENTS.md
 
 
 
+
+## [v5.292.0-local] — 2026-11-12 — Protocol #283 local dual-direction merge (fold into next bump)
+- **jules-autopilot**: backup branch merged to main (watchdog consecutive-failure + BelowNormal + runtime untrack), origin Protocol 281 churn merged keeping untracked; pushed clean
+- **realestatecrm**: origin v0.63.0 TSF bundle merged with local Command Center rail; coord scripts + .opencode tracked; pushed
