@@ -1,5 +1,20 @@
 ## [v5.293.0] - 2026-11-12 - Protocol sync, Gate1 closed, deploy held
 
+## [v5.297.0] - 2026-11-13 - Protocol #288: Repository Sync & Intelligent Merge
+
+### Synced
+- **Submodules**: 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber/realestatecrm/marketing_agent tips advanced by their lanes, 3 submodule pointers staged (fwber, realestatecrm, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final. Scan/triage covered 114 repos; unique branches remained only in upstream mirrors (fwber/hermes-agent `heads/upstream/*`, filtered), dependabot branches (filtered), excluded lanes, and the 4 retained conflicts below.
+- Reverse: veilid scaffold reverse-merge attempted, conflict-aborted (retained, no reverse). `bobmani/itgmania jules-12512815185672744343` verified fully contained in `release` (cherry 0), no reverse needed.
+- Origin sync: hyperporn origin-sync attempted (`+2/-3`), conflict-final, retained diverged; electricsheep/neverball upstream defaults unchanged (push up-to-date).
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling lanes; fetch/status only from leader lane), openclaw-config / openclaw-dashboard (foreign/diverged), unitedbeats_site (site lane), unpublished root pointers not staged (openclaw-dashboard, projectM-upstream, hyperporn skipped by pincheck guard)
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi reviewing proposal PDFs, no v6 ruling yet (usage); Gemini replied with HyperNexus tormentnexus.db LFS caution (mirrored to bus bm-mwfdbbha, Robert/other-lane decision, not decided). Always-deploy followed on close-out.
+- HyperNexus code + running kernel both v1.0.63, fetch-verified 0/0 vs origin/main; supervisor session still degraded (consecutiveFailures 0).
+
 ## [v5.296.0] - 2026-11-13 - Protocol #287: Repository Sync & Intelligent Merge
 
 ### Synced

@@ -1,0 +1,18 @@
+[
+  {
+    "repo": "electricsheep",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "neverball",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "hyperporn",
+    "action": "sync-conflict-final",
+    "ahead": 2,
+    "behind": 3
+  }
+]
