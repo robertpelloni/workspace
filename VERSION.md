@@ -1,4 +1,4 @@
 # VERSION
 
-**Current:** v5.293.0
+**Current:** v5.293.2
 **Updated:** 2026-11-12
