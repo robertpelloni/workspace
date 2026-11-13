@@ -1,0 +1,667 @@
+[
+  {
+    "path": "hypercode",
+    "status": "NOT_INIT",
+    "tail": ""
+  },
+  {
+    "path": "hymnmania",
+    "status": "NOT_INIT",
+    "tail": ""
+  },
+  {
+    "path": "auto_dj_script",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/auto_dj_script\n - [deleted]           (none)     -> origin/dependabot/pip/pip-26f8b248e5\n"
+  },
+  {
+    "path": "ArrowVortex",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "multimousergy",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "skillzhub",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/skillzhub\n   bc41287..c2b8aa2  main       -> origin/main\n"
+  },
+  {
+    "path": "realestatecrm",
+    "status": "OK",
+    "tail": "Fetching legacy\nFetching origin\nFrom https://github.com/candlestixxx/realestatecrm\n   aa44329..40e8bb6  main       -> legacy/main\n"
+  },
+  {
+    "path": "superdawmcp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "GWEN",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "jules-autopilot",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\nFrom https://github.com/robertpelloni/jules-autopilot\n   d2538d3..ff5b0fb  main       -> origin/main\n"
+  },
+  {
+    "path": "JWildfire",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "MarbleBlast",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "Maestro",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "fwber",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\n"
+  },
+  {
+    "path": "MilkDrop3",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "OpenMBU",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ableton_psytrance_hymn_creator",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/ableton_psytrance_hymn_creator\n - [deleted]         (none)     -> origin/dependabot/npm_and_yarn/npm_and_yarn-ca98b9b853\n"
+  },
+  {
+    "path": "agentirc",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/agentirc\n   f76ed66..8cb7f0a  main       -> origin/main\n"
+  },
+  {
+    "path": "ai_game_engine",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/ai_game_engine\n   095ba76..45ff892  main       -> origin/main\n"
+  },
+  {
+    "path": "apophysis-j",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bg",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bg\n   2da9ece..3bca100  master     -> origin/master\n"
+  },
+  {
+    "path": "bobcoin",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobcoin\n   4e9baae0..6816d881  main       -> origin/main\n"
+  },
+  {
+    "path": "bobbybookmarks",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\nFrom https://github.com/robertpelloni/bobbybookmarks\n   62c4d6d6..9fc00275  main       -> upstream/main\nFrom https://github.com/robertpelloni/bobbybookmarks\n   62c4d6d6..9fc00275  main       -> origin/main\n"
+  },
+  {
+    "path": "bobium",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobium\n   fc44cf6..49cd371  main       -> origin/main\n"
+  },
+  {
+    "path": "bobeditpro",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobfilez",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobsgameonlinejava",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bgtk",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bgtk\n   6e89d51904..da8c39a9f0  main       -> origin/main\n"
+  },
+  {
+    "path": "bobtrax",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobtrax\n   89d96a8..32e04eb  main       -> origin/main\n"
+  },
+  {
+    "path": "bqt",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bqt\n   a0d9e963370..0169ea46b66  main       -> origin/main\n"
+  },
+  {
+    "path": "bobtrader",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobtorrent",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobzilla",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobzilla\n   f494c9d..c820e3d  main       -> origin/main\n"
+  },
+  {
+    "path": "bobzzite",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobzzite\n   f588c62..04af492  main       -> origin/main\n"
+  },
+  {
+    "path": "bcs",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "crowdsourced_dance_club",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/crowdsourced_dance_club\n   b8779f3..bfb0bde  main       -> origin/main\n"
+  },
+  {
+    "path": "electricsheep",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "dao",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/dao\n   2bb56e8..3a5f1e4  main       -> origin/main\n"
+  },
+  {
+    "path": "f-zerox",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "element-web",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "fcdm",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/fcdm\n   ea14593..a0dd3f6  main       -> origin/main\n"
+  },
+  {
+    "path": "aimoneymachine_site",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/aimoneymachine_site\n   ac8ed55..374311f  main       -> origin/main\n"
+  },
+  {
+    "path": "geiss",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "geany",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "hyper",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "hyperharness",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "marketing_agent",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching github\nFrom https://github.com/robertpelloni/marketing_agent\n   4f53aa43..4893fe68  main       -> github/main\n"
+  },
+  {
+    "path": "freellm",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "native-fy",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/native-fy\n   d27522f..f1b1b72  main       -> origin/main\n"
+  },
+  {
+    "path": "mcp-superassistant",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "neverball",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "mk64",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "npp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "odcnn",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "onetool-mcp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "openclaw-dashboard",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "planet_fitness_stepmaniax_agent",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/planet_fitness_stepmaniax_agent\n   99b9608..c430c9b  main       -> origin/main\n"
+  },
+  {
+    "path": "openclaw-config",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\n"
+  },
+  {
+    "path": "hermes-agent",
+    "status": "OK",
+    "tail": "-> upstream/sec/77471-secrets-config  (forced update)\n + 84e92eeb36...9b89848cdc sec/95306-fs-write-text-guard -> upstream/sec/95306-fs-write-text-guard  (forced update)\n + cbb4cf4073...a08cc4acf2 sec/nit-154135-bridge-token-off-loop -> upstream/sec/nit-154135-bridge-token-off-loop  (forced update)\n"
+  },
+  {
+    "path": "bobsgameweb",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobsgameweb\n   17fb5444..72f8f13c  main       -> origin/main\n"
+  },
+  {
+    "path": "psytrance_night_outreach_agent",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/psytrance_night_outreach_agent\n   1387d78..9a8cc84  main       -> origin/main\n"
+  },
+  {
+    "path": "projectm",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "slsk_discography_downloader_script",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "timidity",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "supersaber",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "sm64coopdx",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "veilid_reddit_facebook",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "warp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "vst_monster",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/vst_monster\n   0dcb605..c719789  main       -> origin/main\n"
+  },
+  {
+    "path": "tabby",
+    "status": "FAIL",
+    "tail": "could not fetch origin\nFrom https://github.com/Eugeny/tabby\n - [deleted]           (none)     -> upstream/dependabot/npm_and_yarn/tabby-settings/marked-18.1.3\n * [new branch]        dependabot/npm_and_yarn/tabby-settings/marked-18.2.0 -> upstream/dependabot/npm_and_yarn/tabby-settings/marked-18.2.0\n"
+  },
+  {
+    "path": "xrnet",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/xrnet\n   d9dcd59..6c53739  main       -> origin/main\n"
+  },
+  {
+    "path": "bobmani",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobfilez_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobsaver",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobsaver\n   32684413..abd32a4e  main       -> origin/main\n"
+  },
+  {
+    "path": "MilkDrop3_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bg_fix",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bg\n   2da9ece..3bca100  master     -> origin/master\n"
+  },
+  {
+    "path": "bobsaver_fix",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobsaver\n   32684413..abd32a4e  main       -> origin/main\n"
+  },
+  {
+    "path": "bobsgameonlinejava_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "topaz-ffmpeg",
+    "status": "OK",
+    "tail": "Fetching upstream-topaz\nFetching upstream\nFetching origin\nFrom https://github.com/FFmpeg/FFmpeg\n   a948f8e34a..634e00732a  master     -> upstream/master\n"
+  },
+  {
+    "path": "browser-use",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani/Simply-Love-SM5",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/arrowvortex",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/beatoraja",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "HyperNexus",
+    "status": "OK",
+    "tail": "Fetching gitlab\nFetching origin\nFetching github\n"
+  },
+  {
+    "path": "pi-mono",
+    "status": "OK",
+    "tail": "nup -> upstream/fix/terminal-write-cleanup\n   a635f3901..275dde410  main       -> upstream/main\nerror: Could not read 671155307eca5177678d857d6f370ab14dcad7f3\nfatal: unable to parse commit 671155307eca5177678d857d6f370ab14dcad7f3\nerror: failed to write commit-graph\nerror: task 'commit-graph' failed\n"
+  },
+  {
+    "path": "bobmani/ddc",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\n"
+  },
+  {
+    "path": "bobmani/bobmania",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\nFrom https://github.com/robertpelloni/bobmania\n   702e35e9e5..51c813b4be  master     -> origin/master\n"
+  },
+  {
+    "path": "bobmani/hymnmania",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani/ddc_onset",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/ffr-difficulty-model",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bdwgc",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani/itgmania",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobsgameonline",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobsgameonline\n   3568cea..e2d97f8  main       -> origin/main\n"
+  },
+  {
+    "path": "bobmani/leraine-studio",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/linthesia",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/pianogame",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "libjruntime",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/libjruntime\n   0e83e9d..05edb61  main       -> origin/main\n"
+  },
+  {
+    "path": "tokdiet",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "grammars-v4",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani/ksm-v2",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\nFrom https://github.com/kshootmania/ksm-v2\n   ca00e8aa..7dfd59b7  develop    -> upstream/develop\n"
+  },
+  {
+    "path": "stepmania",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/stepmania\n   9b5e6fc..6a05854  main       -> origin/main\n"
+  },
+  {
+    "path": "okgame",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "jvm-cpp-runtime",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/jvm-cpp-runtime\n   d661c7f..24b7be0  main       -> origin/main\n"
+  },
+  {
+    "path": "muse",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "jdk",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "llvm-project",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "projectM-upstream",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "FFmpeg",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "TurntUpToddler",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "private_gemini_storage",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/private_gemini_storage\n   af74ac7..4e823c0  main       -> origin/main\n"
+  },
+  {
+    "path": "hyperporn",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "foone_datetime_short",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/foone_datetime_short\n   8167308..0979cbc  main       -> origin/main\n"
+  },
+  {
+    "path": "gods-eye-view",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bob_and_lum_sitcom",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bob_and_lum_sitcom\n   a0177be..e60cf92  main       -> origin/main\n"
+  },
+  {
+    "path": "ww3_game",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/ww3_game\n   56116c8..740708e  main       -> origin/main\n"
+  },
+  {
+    "path": "succubus.red",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobble",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/bobble\n   bb0a950..0b32d22  main       -> origin/main\n"
+  },
+  {
+    "path": "newz",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/newz\n   1f8b3b5..8ca2905  main       -> origin/main\n"
+  },
+  {
+    "path": "explorerexedecompiled",
+    "status": "OK",
+    "tail": "From https://github.com/candlestixxx/explorerexedecompiled\n   315f3fc..6896c2e  main       -> origin/main\n"
+  },
+  {
+    "path": "ksm-v2",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\nFrom https://github.com/kshootmania/ksm-v2\n   ca00e8aa..7dfd59b7  develop    -> upstream/develop\n"
+  },
+  {
+    "path": "autositcom",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/autositcom\n   096e276..8e07bb9  main       -> origin/main\n"
+  },
+  {
+    "path": "webapp_factory",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/webapp_factory\n   9f4d645..07ccab2  main       -> origin/main\n"
+  },
+  {
+    "path": "mparty",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "educational_video_pipeline",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/educational_video_pipeline\n   7d95abf..9a692de  main       -> origin/main\n"
+  },
+  {
+    "path": "unitedbeats_site",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "sales_bot",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "Folderum3-The-Last-Attempt",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "make_elon_laugh",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/make_elon_laugh\n   ccc62b7..8e6b0d6  main       -> origin/main\n"
+  },
+  {
+    "path": "borg",
+    "status": "OK",
+    "tail": "From https://github.com/robertpelloni/borg\n   964a130..0af9a54  main       -> origin/main\n"
+  },
+  {
+    "path": "DataStreamBrowser",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "CodeWhale-Extensions",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ADSFileSystem",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "HyperNexus2old",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching github\nFrom https://gitlab.com/robertpelloni/HyperNexus\n   ac8a49240..aed8e9c4b  main       -> origin/main\nFrom https://github.com/robertpelloni/HyperNexus\n * [new branch]          main       -> github/main\n"
+  }
+]

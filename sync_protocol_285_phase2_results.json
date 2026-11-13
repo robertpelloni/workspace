@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "bg",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobsaver",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bqt",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bg_fix",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobsaver_fix",
+    "phase": "FF2",
+    "action": "ff-ok"
+  },
+  {
+    "repo": "bobfilez",
+    "phase": "MERGE2",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2",
+    "branch": "temp-main",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "hyperporn",
+    "phase": "MERGE2",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "conflict-aborted"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE2X",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "hyperporn",
+    "phase": "MERGE2X",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "conflict-aborted-final"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE2X",
+    "branch": "temp-main",
+    "action": "conflict-aborted-final"
+  }
+]

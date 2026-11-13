@@ -1,0 +1,22 @@
+[
+  {
+    "repo": "bobfilez",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "cherry_plus": 1
+  },
+  {
+    "repo": "freellm",
+    "branch": "temp-main",
+    "cherry_plus": 2
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "cherry_plus": 17
+  },
+  {
+    "repo": "hyperporn",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "cherry_plus": 2
+  }
+]

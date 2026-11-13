@@ -1,0 +1,259 @@
+[
+  {
+    "repo": "jules-autopilot",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "skillzhub",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "ai_game_engine",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bg",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local master: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobbybookmarks",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobcoin",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobium",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobsaver",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobsgameweb",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobtrax",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bqt",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobzilla",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobzzite",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "crowdsourced_dance_club",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "dao",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "aimoneymachine_site",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "native-fy",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "psytrance_night_outreach_agent",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "xrnet",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bg_fix",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local master: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobsaver_fix",
+    "phase": "FF",
+    "action": "defer-dirty",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobmani/bobmania",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local master: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobsgameonline",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "libjruntime",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "jvm-cpp-runtime",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "private_gemini_storage",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "foone_datetime_short",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bob_and_lum_sitcom",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "ww3_game",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobble",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "newz",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "explorerexedecompiled",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "autositcom",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "webapp_factory",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "educational_video_pipeline",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "make_elon_laugh",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "borg",
+    "phase": "FF",
+    "action": "ff-ok",
+    "ff": "local main: 0 ahead / 1 behind origin"
+  },
+  {
+    "repo": "bobfilez",
+    "phase": "MERGE",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE",
+    "branch": "temp-main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted",
+    "cherry_plus": 17,
+    "behind": 111,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "hyperporn",
+    "phase": "MERGE",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "conflict-aborted",
+    "cherry_plus": 1,
+    "behind": 2
+  }
+]

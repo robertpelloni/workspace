@@ -1,3 +1,18 @@
+# HANDOFF - v5.294.0 - 2026-11-12 - Protocol #285: Repository Sync & Intelligent Merge
+
+## Session - Protocol #285 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_285_*`)
+- Scan/triage: 155 actionable before upstream filtering (warp dominates). 35 fast-forwards pushed, Maestro swept, hyperharness origin-sync pushed, 1 reverse merge pushed, 38 submodule pointers staged, 4 branches retained, 0 forward merges needed.
+- Remaining verified unmerged = exactly 4 branches, all conflict-final both directions, retained (list in CHANGELOG v5.294.0).
+- Root pointers staged with published-only pincheck; build below.
+- Build: `cmd /c build.bat` (Protocol #285): 4 OK / 0 failed / 1 skipped (tormentnexus not initialized). Binaries kept, none purged.
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop` registered and acked; Antigravity `ff90f2fd`/`8e716423` read for catch-up. Coordination loop cron `e6b40ba9` checks CDP + bus + HyperNexus fetch sync every 17 min.
+- Build: see Build section above.
+
+## Prior
 # HANDOFF - v5.293.0 - 2026-11-12 - Protocol #284: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #284 (this session)

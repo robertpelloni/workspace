@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.293.0)
+## Current Status (v5.294.0)
+
+**Protocol #285 (2026-11-12):** 35 fast-forwards pushed, Maestro swept, hyperharness origin-sync pushed, 1 reverse merge pushed, 38 submodule pointers staged, 4 branches retained, 0 forward merges needed. 4 conflict branches retained for Robert.
+
+ (v5.293.0)
 
 **Protocol #284 (2026-11-12):** 2 forward merges pushed, 3 fast-forwards, Maestro swept, ~10 origin-sync pushes, 1 reverse merge pushed, 30 submodule pointers staged, 4 branches retained. 4 conflict branches retained for Robert. HyperNexus kernel binary v1.0.43 behind code v1.0.47 (Robert call). Codex bus registration pending.
 

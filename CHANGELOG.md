@@ -1,5 +1,19 @@
 ## [v5.293.0] - 2026-11-12 - Protocol sync, Gate1 closed, deploy held
 
+## [v5.294.0] - 2026-11-12 - Protocol #285: Repository Sync & Intelligent Merge
+
+### Synced
+- **Submodules**: 35 fast-forwards pushed, Maestro swept, hyperharness origin-sync pushed, 1 reverse merge pushed, 38 submodule pointers staged, 4 branches retained, 0 forward merges needed. Feature-branch inventory had already converged via parallel leader lanes (#281-#284) plus this lane's #284; this run fast-forwarded every default branch that lagged its published tip.
+- Reverse: main merged back into `bobmani/itgmania jules-12512815185672744343` and pushed.
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions, never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling Antigravity/Codex lanes; fetch/status only), openclaw-config (foreign remote), unitedbeats_site (site lane), unpublished root pointers not staged
+
+### Coordination
+- Caught up on latest Antigravity sessions (`ff90f2fd` HyperNexus v1.0.48 shipped; `8e716423` RealEstateCRM build lane) and Codex Desktop rollout `01a1d0bc` (died at start: missing `MODEL_API_KEY`; live Codex lane runs via kernel bus id `codex-desktop-laptop`).
+- HyperNexus code + running kernel both v1.0.48, fetch-verified 0/0 vs GitLab origin/main.
+
 - Root 89a747201 clean, VERSION v5.293.0
 - realestatecrm ff 0be8dec to aa44329, 7 commits, only main, no feature branches
 - jules-autopilot ff d2538d3 to ff5b0fb, backup branch retained
