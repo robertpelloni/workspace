@@ -2,7 +2,7 @@
 
 - [x] v5.295.0 - Protocol #286: 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, jules-autopilot dirty-state commit pushed (+1), fwber v2.3.70 dirty-state commit pushed (version sync + useWebRTC), 4 submodule pointers staged (fwber, jules-autopilot, realestatecrm, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final
 - [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
-- [ ] Verify pi-mono `go build ./...` + `go test ./pkg/ai/` (not re-run in #283-#286; build.bat compiles pi-mono only)
+- [x] Verify pi-mono `go build ./...` + `go test ./pkg/ai/` - done in #286 (build exit 0, tests ok 13.4s)
 
 ### Protocol #285 Outcomes (2026-11-12)
 

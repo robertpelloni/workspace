@@ -11,6 +11,9 @@
 - 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
 - Excluded: HyperNexus + HyperNexus2old (sibling lanes; fetch/status only from leader lane), openclaw-config / openclaw-dashboard (foreign/diverged), unitedbeats_site (site lane), unpublished root pointers not staged (openclaw-dashboard, projectM-upstream, hyperporn skipped by pincheck guard)
 
+### Build & Deploy
+- `cmd /c build.bat`: 4 OK / 0 failed / 1 skipped (tormentnexus not initialized). pi-mono `go build ./...` exit 0 + `go test ./pkg/ai/` ok (13.4s). Batch version strings (build.bat/start.bat) synced to v5.295.0.
+
 ### Coordination
 - Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi reviewing proposal PDFs, no v6 ruling yet (usage). Robert instruction recorded: always deploy on protocol close-out.
 - HyperNexus code + running kernel both v1.0.53, fetch-verified 0/0 vs origin/main; supervisor session still degraded (consecutiveFailures 0).

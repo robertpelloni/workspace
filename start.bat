@@ -2,9 +2,9 @@
 setlocal enabledelayedexpansion
 
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-:: Omni-Workspace Master Start Script - v5.292.0
-:: Builds and launches all Go binary services
-:: 7 projects, 10 binaries
+:: Omni-Workspace Master Start Script - v5.295.0
+:: Builds and launches all Go binary services + Control Center (:2999)
+:: 7 projects, 10 Go binaries + Consolidated Control Center & Tray
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 cd /d "%~dp0"
@@ -12,11 +12,13 @@ cd /d "%~dp0"
 :: â”€â”€â”€ Parse command â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 set "ACTION=%1"
 if "%ACTION%"=="" set "ACTION=run"
-if /i "%ACTION%"=="run"    goto :run_all
-if /i "%ACTION%"=="build"  goto :build_all
-if /i "%ACTION%"=="stop"   goto :stop_all
-if /i "%ACTION%"=="status" goto :status
-if /i "%ACTION%"=="help"   goto :help
+if /i "%ACTION%"=="run"       goto :run_all
+if /i "%ACTION%"=="build"     goto :build_all
+if /i "%ACTION%"=="stop"      goto :stop_all
+if /i "%ACTION%"=="status"    goto :status
+if /i "%ACTION%"=="dashboard" goto :dashboard
+if /i "%ACTION%"=="tray"      goto :tray
+if /i "%ACTION%"=="help"      goto :help
 echo Unknown command: %ACTION%
 goto :help
 
@@ -37,54 +39,54 @@ echo.
 :: 1. Tabby Go
 echo  [1/7] Tabby Go
 cd tabby\tabby-go
-start /b tabby-backend.exe >nul 2>&1
-start /b tabby-native.exe >nul 2>&1
-start "" tabby-wails.exe >nul 2>&1
+start /b /belownormal tabby-backend.exe >nul 2>&1
+start /b /belownormal tabby-native.exe >nul 2>&1
+start "" /belownormal tabby-wails.exe >nul 2>&1
 cd ..\..
 echo        OK  tabby-backend, tabby-native, tabby-wails
 
 :: 2. Hermes Agent Go
 echo  [2/7] Hermes Agent Go
 cd hermes-agent
-start /b hermes-agent-go.exe >nul 2>&1
+start /b /belownormal hermes-agent-go.exe >nul 2>&1
 cd ..
 echo        OK  hermes-agent-go
 
 :: 3. HyperHarness Go
 echo  [3/7] HyperHarness Go
 cd hyperharness
-start /b hyperharness.exe >nul 2>&1
+start /b /belownormal hyperharness.exe >nul 2>&1
 cd ..
 echo        OK  hyperharness
 
 :: 4. Pi-Mono Go
 echo  [4/7] Pi-Mono Go
 cd pi-mono
-start /b pi-go.exe >nul 2>&1
+start /b /belownormal pi-go.exe >nul 2>&1
 cd ..
 echo        OK  pi-go
 
 :: 5. NPP Go
 echo  [5/7] NPP Go
 cd npp\go-port
-start /b npp-go.exe >nul 2>&1
+start /b /belownormal npp-go.exe >nul 2>&1
 cd ..\..
 cd npp\bqt
-start /b npp_bqt.exe >nul 2>&1
+start /b /belownormal npp_bqt.exe >nul 2>&1
 cd ..\..
 echo        OK  npp-go, npp_bqt
 
 :: 6. Warp Go
 echo  [6/7] Warp Go
 cd warp
-start /b warp-go.exe >nul 2>&1
+start /b /belownormal warp-go.exe >nul 2>&1
 cd ..
 echo        OK  warp-go
 
 :: 7. Hyper Go
 echo  [7/7] Hyper Go
 cd hyper
-start /b hyper-go.exe >nul 2>&1
+start /b /belownormal hyper-go.exe >nul 2>&1
 cd ..
 echo        OK  hyper-go
 
@@ -210,18 +212,34 @@ goto :end
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ::  HELP
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+:dashboard
+echo.
+echo  Launching Consolidated Control Center on http://localhost:2999 (BelowNormal)...
+pushd "%~dp0research\workspace-orchestrator"
+start "" /b /belownormal node server/index.js >nul 2>&1
+popd
+timeout /t 2 /nobreak >nul
+start "" "http://localhost:2999"
+goto :end
+
+:tray
+call "%~dp0start_dashboard_tray.bat"
+goto :end
+
 :help
 echo.
-echo  Omni-Workspace Master Start Script - v5.292.0
+echo  Omni-Workspace Master Start Script - v5.295.0
 echo.
 echo  Usage: start.bat [command]
 echo.
 echo  Commands:
-echo    run       Build all + launch all Go services (default)
-echo    build     Build all Go binaries (don't launch)
-echo    stop      Kill all running Go services
-echo    status    Show which Go services are running
-echo    help      Show this help
+echo    run         Build all + launch all Go services at BelowNormal priority (default)
+echo    build       Build all Go binaries (don't launch)
+echo    stop        Kill all running Go services
+echo    status      Show which Go services are running
+echo    dashboard   Launch Consolidated Control Center (:2999) and open browser
+echo    tray        Launch Control Center (:2999) + Windows System Tray Controller
+echo    help        Show this help
 echo.
 echo  Go Services (7 projects, 10 binaries):
 echo    1. tabby-go          Terminal backend + native + wails GUI
