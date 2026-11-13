@@ -533,3 +533,9 @@ Merged sibling origin/main 839779c72 (42 forward merges, v5.292.0) with local dd
 - CDP Bobbi 05258DDEC thread 7a7cd9ff verified hold and deploy present, no dupe send, tail virtualized
 - HyperNexus 1.0.30 up 182578s, recall ok, L2 add returns empty, coordination via HANDOFF
 - Deploy HOLD enforced, no prod restart, next is hermes foreclosure reliability plus fleet triage in chunks
+
+## v5.294.0 2026-11-13 protocol merge engine
+- realestatecrm ff aa44329 to fe34d17 v0.64.0 Universal plus v0.63.7, foreclosureworkflow pinned 8a87077, parent 0 0
+- marketing_agent merged 0fab5a4 plus origin 4f53aa4 to 4893fe6, pushed 0 0, no loss
+- HyperNexus branches all 34 behind 0 unique, parked per protocol, hermes and jules clean
+- root pins updated, VERSION v5.294.0, deploy HOLD enforced, CHANGELOG sync deferred to next pass
