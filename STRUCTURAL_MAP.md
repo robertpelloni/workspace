@@ -1,15 +1,15 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-13 (Protocol #286, full regen)
+Generated: 2026-11-13 (Protocol #287, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | 188cad3391f6 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | d7a1d760fabc |
+| fwber | https://github.com/robertpelloni/fwber.git | 65b1794de1c6 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 3e3b04f584c8 |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
-| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 0c0b1f2218ed |
+| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | e9322ca83f93 |
 | skillzhub | https://github.com/robertpelloni/skillzhub | c2b8aa26aa41 |
 | hermes-agent | https://github.com/robertpelloni/hermes-agent | 166ab639f437 |
 | multimousergy | https://github.com/robertpelloni/multimousergy.git | 70066c3a277d |
@@ -46,7 +46,7 @@ Generated: 2026-11-13 (Protocol #286, full regen)
 | dao | https://github.com/robertpelloni/dao.git | 3a5f1e4483a3 |
 | electricsheep | https://github.com/robertpelloni/electricsheep.git | f9450c5a5821 |
 | element-web | https://github.com/robertpelloni/element-web.git | a6a90b53dd9f |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 2cfb2d41f62f |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | c67d79483a26 |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | 4d47eaa67c58 |
 | aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 374311f9e811 |
@@ -74,7 +74,7 @@ Generated: 2026-11-13 (Protocol #286, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 05e242e1dc5b |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | d2d05b233d1c |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 3048e87a1364 |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | 92415d6c9ce6 |
 | warp | https://github.com/robertpelloni/warp.git | 25d557224446 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | c0c806e0b2d3 |

@@ -1,0 +1,1914 @@
+[
+  {
+    "repo": "auto_dj_script",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "fwber",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/js/Datejs-master/acorn-5.7.4",
+        "ahead": 1,
+        "behind": 2956,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/js/Datejs-master/copy-props-2.0.5",
+        "ahead": 1,
+        "behind": 2956,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/js/Datejs-master/decode-uri-component-0.2.2",
+        "ahead": 1,
+        "behind": 2956,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/js/Datejs-master/hosted-git-info-2.8.9",
+        "ahead": 1,
+        "behind": 2956,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/js/Datejs-master/ini-1.3.8",
+        "ahead": 1,
+        "behind": 2956,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/js/Datejs-master/y18n-3.2.2",
+        "ahead": 1,
+        "behind": 2956,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      }
+    ]
+  },
+  {
+    "repo": "hymnmania",
+    "status": "NOT_INIT",
+    "features": []
+  },
+  {
+    "repo": "hypercode",
+    "status": "NOT_INIT",
+    "features": []
+  },
+  {
+    "repo": "jules-autopilot",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "realestatecrm",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "skillzhub",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "hermes-agent",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "heads/upstream/UI",
+        "ahead": 4,
+        "behind": 15087,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/add-morph-snapshot",
+        "ahead": 1,
+        "behind": 15091,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/add-prokletor",
+        "ahead": 9,
+        "behind": 15055,
+        "cherry_plus": 8,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/add-upstream-atropos-tool-use-changes",
+        "ahead": 14,
+        "behind": 14123,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/alice/nous-portal-recommended-models",
+        "ahead": 1,
+        "behind": 9477,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/api-server-enforce-key",
+        "ahead": 9,
+        "behind": 11359,
+        "cherry_plus": 5,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/asyncio",
+        "ahead": 7,
+        "behind": 15055,
+        "cherry_plus": 6,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/atropos-integrations",
+        "ahead": 50,
+        "behind": 14958,
+        "cherry_plus": 49,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/atropos-integrations-pr",
+        "ahead": 1,
+        "behind": 14926,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/austin/feat/google-oauth-provider",
+        "ahead": 2,
+        "behind": 7425,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/austin/fix/dashboard-perf",
+        "ahead": 5,
+        "behind": 2563,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/austin/fix/minimax-oauth",
+        "ahead": 300,
+        "behind": 7300,
+        "cherry_plus": 295,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/austin/fix/new-profile-modal",
+        "ahead": 2825,
+        "behind": 68,
+        "cherry_plus": 2634,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/austin/fix/types-node-lockfile",
+        "ahead": 1,
+        "behind": 4231,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/austin/fix/wsl-gui",
+        "ahead": 2000,
+        "behind": 68,
+        "cherry_plus": 1894,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/agent-traces",
+        "ahead": 4,
+        "behind": 2607,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/backend-contract-bump-profile-routing",
+        "ahead": 1,
+        "behind": 4903,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/base-gui",
+        "ahead": 1,
+        "behind": 9204,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/clarify-prompt-timeout-stuck",
+        "ahead": 6,
+        "behind": 5484,
+        "cherry_plus": 6,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/cli-resize-duplication",
+        "ahead": 11,
+        "behind": 15098,
+        "cherry_plus": 11,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/cron-history-timeout",
+        "ahead": 1,
+        "behind": 4768,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-hmr-survival",
+        "ahead": 2,
+        "behind": 2631,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-install-path-clarity",
+        "ahead": 2,
+        "behind": 5328,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/bb/desktop-kanban",
+        "ahead": 1657,
+        "behind": 68,
+        "cherry_plus": 1555,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-memory-provider-discovery",
+        "ahead": 1,
+        "behind": 3593,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-remote-image-upload",
+        "ahead": 1,
+        "behind": 4880,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-remote-residue",
+        "ahead": 2731,
+        "behind": 68,
+        "cherry_plus": 2559,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-send-to-all",
+        "ahead": 4,
+        "behind": 4967,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-split-main",
+        "ahead": 2,
+        "behind": 2021,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-terminal-bottom",
+        "ahead": 3,
+        "behind": 4507,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/desktop-update-slash",
+        "ahead": 3,
+        "behind": 4895,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/docker-tui-prebuilt",
+        "ahead": 1,
+        "behind": 8359,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/docs-remote-backend-update-skew",
+        "ahead": 1,
+        "behind": 4903,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/fix-tui-input-selection",
+        "ahead": 1,
+        "behind": 8932,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/gui-gateway-attach-wiring",
+        "ahead": 56,
+        "behind": 7446,
+        "cherry_plus": 46,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/gui-mainmerge-tmp",
+        "ahead": 603,
+        "behind": 5615,
+        "cherry_plus": 549,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/installer-branch-refspec",
+        "ahead": 2829,
+        "behind": 68,
+        "cherry_plus": 2638,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/installer-trusted-uv-resolution",
+        "ahead": 3,
+        "behind": 5320,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/learning-ledger",
+        "ahead": 24,
+        "behind": 8639,
+        "cherry_plus": 24,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/lsp-lint",
+        "ahead": 295,
+        "behind": 7300,
+        "cherry_plus": 290,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-fs-ipc",
+        "ahead": 3,
+        "behind": 2021,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-logs-ipc",
+        "ahead": 6,
+        "behind": 2021,
+        "cherry_plus": 6,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-media-ipc",
+        "ahead": 11,
+        "behind": 2021,
+        "cherry_plus": 11,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-projectdir-ipc",
+        "ahead": 7,
+        "behind": 2021,
+        "cherry_plus": 7,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-terminal-ipc",
+        "ahead": 4,
+        "behind": 2021,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-uninstall-ipc",
+        "ahead": 9,
+        "behind": 2021,
+        "cherry_plus": 9,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-updates-ipc",
+        "ahead": 5,
+        "behind": 2021,
+        "cherry_plus": 5,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-version-ipc",
+        "ahead": 10,
+        "behind": 2021,
+        "cherry_plus": 10,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/main-vscode-theme-ipc",
+        "ahead": 8,
+        "behind": 2021,
+        "cherry_plus": 8,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/model-routing",
+        "ahead": 2,
+        "behind": 4387,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/no-lazy-installs-in-tests",
+        "ahead": 2422,
+        "behind": 68,
+        "cherry_plus": 2277,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/p2-mru-resume-order",
+        "ahead": 7,
+        "behind": 8932,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/plugin-sdk-i18n",
+        "ahead": 688,
+        "behind": 68,
+        "cherry_plus": 652,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/salvage-67603-desktop-session",
+        "ahead": 1601,
+        "behind": 68,
+        "cherry_plus": 1506,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/slash-freetext-enter",
+        "ahead": 2800,
+        "behind": 68,
+        "cherry_plus": 2617,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/theme",
+        "ahead": 1,
+        "behind": 8615,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-copy-on-select",
+        "ahead": 2,
+        "behind": 8497,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-ctrlj-newline",
+        "ahead": 1,
+        "behind": 14138,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-gateway-attach-core",
+        "ahead": 55,
+        "behind": 7446,
+        "cherry_plus": 45,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-mouse-burst-swallow",
+        "ahead": 3,
+        "behind": 14952,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-mouse-toggle",
+        "ahead": 1,
+        "behind": 9852,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-perf-fix",
+        "ahead": 4,
+        "behind": 9153,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-reload-env",
+        "ahead": 3,
+        "behind": 8636,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-status-ticker-width",
+        "ahead": 2,
+        "behind": 8646,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/tui-web-chat",
+        "ahead": 1,
+        "behind": 9485,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/update-reexec-after-pull",
+        "ahead": 2,
+        "behind": 4950,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/wake-word",
+        "ahead": 1657,
+        "behind": 68,
+        "cherry_plus": 1552,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/wake-word-macos-tflite",
+        "ahead": 2812,
+        "behind": 68,
+        "cherry_plus": 2631,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/bb/windows-cli-tui-native-main",
+        "ahead": 2,
+        "behind": 7446,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/brooklyn/gui-installer-prereqs",
+        "ahead": 523,
+        "behind": 7123,
+        "cherry_plus": 486,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/chore/contributor-mapping-ruslanvasylev",
+        "ahead": 1003,
+        "behind": 68,
+        "cherry_plus": 947,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/ci/matrix-split-v2",
+        "ahead": 4,
+        "behind": 10619,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/ci/nix-manual-workflow",
+        "ahead": 1402,
+        "behind": 68,
+        "cherry_plus": 1327,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/claude-code-inspired/context-breakdown",
+        "ahead": 1,
+        "behind": 11334,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/claude-code-inspired/dangerous-cmd-hardening",
+        "ahead": 1,
+        "behind": 10384,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/claude-code-inspired/session-branch",
+        "ahead": 1,
+        "behind": 11938,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/claude-code-inspired/session-recap",
+        "ahead": 1,
+        "behind": 8194,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/claude-code-inspired/session-runaway-caps",
+        "ahead": 516,
+        "behind": 68,
+        "cherry_plus": 501,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/claude-code-inspired/shell-startup-write-deny",
+        "ahead": 1,
+        "behind": 4026,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/cline-port/login-shell-path",
+        "ahead": 2613,
+        "behind": 68,
+        "cherry_plus": 2450,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/cline-port/openrouter-qwen-cache-control",
+        "ahead": 1,
+        "behind": 7666,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/cline-port/parallel-tool-call-guidance",
+        "ahead": 1,
+        "behind": 3678,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/cluster-fail",
+        "ahead": 1,
+        "behind": 15060,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/codex-port/mcp-parallel-tool-calls",
+        "ahead": 1,
+        "behind": 10945,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/codex-port/rm-flags-after-operands",
+        "ahead": 1192,
+        "behind": 68,
+        "cherry_plus": 1121,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/compaction-secrets-preservation",
+        "ahead": 5,
+        "behind": 10970,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/cowork/publish-site",
+        "ahead": 2476,
+        "behind": 68,
+        "cherry_plus": 2325,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/cowork/workflow-record",
+        "ahead": 2479,
+        "behind": 68,
+        "cherry_plus": 2327,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/dependabot/github_actions/actions-minor-patch-7818a9c165",
+        "ahead": 2715,
+        "behind": 68,
+        "cherry_plus": 2544,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/github_actions/docker/setup-buildx-action-4.1.0",
+        "ahead": 1,
+        "behind": 2976,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/npm_and_yarn/postcss-8.5.22",
+        "ahead": 2030,
+        "behind": 68,
+        "cherry_plus": 1922,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/scripts/whatsapp-bridge/body-parser-1.20.6",
+        "ahead": 1859,
+        "behind": 68,
+        "cherry_plus": 1753,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/npm_and_yarn/tar-7.5.21",
+        "ahead": 1859,
+        "behind": 68,
+        "cherry_plus": 1753,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/npm_and_yarn/website/body-parser-1.20.6",
+        "ahead": 1096,
+        "behind": 68,
+        "cherry_plus": 1029,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/npm_and_yarn/website/dompurify-3.4.12",
+        "ahead": 1190,
+        "behind": 68,
+        "cherry_plus": 1119,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/npm_and_yarn/website/fast-uri-3.1.4",
+        "ahead": 1190,
+        "behind": 68,
+        "cherry_plus": 1119,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/website/shell-quote-1.10.0",
+        "ahead": 1096,
+        "behind": 68,
+        "cherry_plus": 1029,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/npm_and_yarn/website/svgo-3.3.4",
+        "ahead": 1190,
+        "behind": 68,
+        "cherry_plus": 1119,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/website/webpack-dev-server-5.2.6",
+        "ahead": 1096,
+        "behind": 68,
+        "cherry_plus": 1029,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/npm_and_yarn/website/websocket-driver-0.7.5",
+        "ahead": 124,
+        "behind": 68,
+        "cherry_plus": 117,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/npm_and_yarn/website/ws-7.5.13",
+        "ahead": 2058,
+        "behind": 68,
+        "cherry_plus": 1948,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/uv/httplib2-0.32.0",
+        "ahead": 2030,
+        "behind": 68,
+        "cherry_plus": 1922,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/uv/mcp-1.28.1",
+        "ahead": 2942,
+        "behind": 68,
+        "cherry_plus": 2723,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/uv/pyasn1-0.6.4",
+        "ahead": 1190,
+        "behind": 68,
+        "cherry_plus": 1119,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/uv/pytest-9.0.3",
+        "ahead": 1,
+        "behind": 1612,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/uv/setuptools-83.0.0",
+        "ahead": 2632,
+        "behind": 68,
+        "cherry_plus": 2469,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/dependabot/uv/starlette-1.3.1",
+        "ahead": 1,
+        "behind": 133,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "upstream/dependabot/uv/tornado-6.5.7",
+        "ahead": 1,
+        "behind": 3838,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      },
+      {
+        "branch": "heads/upstream/desktop-cmd-ctrl-2",
+        "ahead": 1,
+        "behind": 4345,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/docker",
+        "ahead": 7,
+        "behind": 12282,
+        "cherry_plus": 7,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/docker_s6",
+        "ahead": 36,
+        "behind": 14021,
+        "cherry_plus": 6,
+        "kind": "feature"
+      },
+      {
+        "branch": "upstream/docs/hermes-cloud-mcp",
+        "ahead": 1566,
+        "behind": 68,
+        "cherry_plus": 1472,
+        "kind": "feature"
+      },
+      {
+        "branch": "heads/upstream/docs/hooks-page-update",
+        "ahead": 11,
+        "behind": 12483,
+        "cherry_plus": 5,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "multimousergy",
+    "status": "OK",
+    "default": "netmux-initial-architecture-10413382364036026152",
+    "ff": "local netmux-initial-architecture-10413382364036026152: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "ArrowVortex",
+    "status": "OK",
+    "default": "release",
+    "ff": "local release: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "superdawmcp",
+    "status": "OK",
+    "default": "jules-5372408556252106821-172735fe",
+    "ff": "local jules-5372408556252106821-172735fe: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "GWEN",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "JWildfire",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "Maestro",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "MarbleBlast",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "MilkDrop3",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "OpenMBU",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "ableton_psytrance_hymn_creator",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "agentirc",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "ai_game_engine",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "apophysis-j",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bg",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobbybookmarks",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobcoin",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobeditpro",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "main",
+        "ahead": 189,
+        "behind": 0,
+        "cherry_plus": 144,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "bobfilez",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "origin/backup/wip-leader-sync-20261107",
+        "ahead": 1,
+        "behind": 8,
+        "cherry_plus": 1,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "bobium",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobsaver",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobsgameonlinejava",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobsgameweb",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobtorrent",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobtrader",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobtrax",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bqt",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobzilla",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobzzite",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bcs",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "crowdsourced_dance_club",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "dao",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "electricsheep",
+    "status": "OK",
+    "default": "master",
+    "ff": "",
+    "features": []
+  },
+  {
+    "repo": "marketing_agent",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "f-zerox",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "fcdm",
+    "status": "OK",
+    "default": "fitness-machine-foundation-15646876857894738390",
+    "ff": "local fitness-machine-foundation-15646876857894738390: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "aimoneymachine_site",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "geiss",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "hyperharness",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "freellm",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "temp-main",
+        "ahead": 2,
+        "behind": 257,
+        "cherry_plus": 2,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "mcp-superassistant",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "mk64",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "native-fy",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "neverball",
+    "status": "OK",
+    "default": "master",
+    "ff": "",
+    "features": []
+  },
+  {
+    "repo": "odcnn",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "onetool-mcp",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "openclaw-config",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 135 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "add-claude-github-actions-1770011148518",
+        "ahead": 2,
+        "behind": 224,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "agents-completion-hardening",
+        "ahead": 124,
+        "behind": 3,
+        "cherry_plus": 82,
+        "kind": "feature"
+      },
+      {
+        "branch": "branch_feat_budget-guard-from-paperclip",
+        "ahead": 1,
+        "behind": 50,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "branch_feat_forward-motion-dcos",
+        "ahead": 4,
+        "behind": 92,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "branch_feat_hubspot-skill",
+        "ahead": 4,
+        "behind": 63,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "chore/agents-completion-hardening",
+        "ahead": 1,
+        "behind": 72,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "docs/app-router-https-and-dashboard-build",
+        "ahead": 128,
+        "behind": 3,
+        "cherry_plus": 85,
+        "kind": "feature"
+      },
+      {
+        "branch": "docs/migration-analysis",
+        "ahead": 3,
+        "behind": 95,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "eco/ecosystem-intel-fixes",
+        "ahead": 1,
+        "behind": 54,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "feat/budget-guard-from-paperclip",
+        "ahead": 1,
+        "behind": 50,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "feat/forward-motion-dcos",
+        "ahead": 4,
+        "behind": 92,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "feat/hubspot-skill",
+        "ahead": 4,
+        "behind": 63,
+        "cherry_plus": 4,
+        "kind": "feature"
+      },
+      {
+        "branch": "feat/security-hardening",
+        "ahead": 2,
+        "behind": 155,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "feature/agentmail-skill",
+        "ahead": 3,
+        "behind": 108,
+        "cherry_plus": 3,
+        "kind": "feature"
+      },
+      {
+        "branch": "feature/apple-mail-skill",
+        "ahead": 6,
+        "behind": 225,
+        "cherry_plus": 6,
+        "kind": "feature"
+      },
+      {
+        "branch": "feature/followupboss-skill",
+        "ahead": 6,
+        "behind": 209,
+        "cherry_plus": 6,
+        "kind": "feature"
+      },
+      {
+        "branch": "feature/learning-loop",
+        "ahead": 7,
+        "behind": 115,
+        "cherry_plus": 7,
+        "kind": "feature"
+      },
+      {
+        "branch": "feature/vapi-calls-and-naming-fix",
+        "ahead": 2,
+        "behind": 136,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "fix/9router-health-review-sweep",
+        "ahead": 130,
+        "behind": 3,
+        "cherry_plus": 85,
+        "kind": "feature"
+      },
+      {
+        "branch": "fix/app-router-pm2-js-syntax",
+        "ahead": 132,
+        "behind": 3,
+        "cherry_plus": 85,
+        "kind": "feature"
+      },
+      {
+        "branch": "fix/contact-steward-identity-anchors",
+        "ahead": 2,
+        "behind": 82,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "fix/cortex-schema-categories",
+        "ahead": 134,
+        "behind": 3,
+        "cherry_plus": 86,
+        "kind": "feature"
+      },
+      {
+        "branch": "fix/librarian-firstname-lastname",
+        "ahead": 2,
+        "behind": 135,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "review-sweep/pr-61-fixes",
+        "ahead": 2,
+        "behind": 98,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "scrub-pii-rename-docs",
+        "ahead": 2,
+        "behind": 117,
+        "cherry_plus": 2,
+        "kind": "feature"
+      },
+      {
+        "branch": "origin/feat/email-steward-header-heuristics",
+        "ahead": 1,
+        "behind": 3,
+        "cherry_plus": 1,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "openclaw-dashboard",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 6 ahead / 8 behind origin",
+    "features": [
+      {
+        "branch": "add-dockerfile",
+        "ahead": 5,
+        "behind": 11,
+        "cherry_plus": 3,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "pi-mono",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "origin/dependabot/pip/pip-a223a3ed80",
+        "ahead": 1,
+        "behind": 0,
+        "cherry_plus": 1,
+        "kind": "dependabot"
+      }
+    ]
+  },
+  {
+    "repo": "projectm",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "psytrance_night_outreach_agent",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "slsk_discography_downloader_script",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "sm64coopdx",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "supersaber",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "HyperNexus",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 1 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "feature/cloud-dashboard-mcp-sse-389806464713532918",
+        "ahead": 67,
+        "behind": 439,
+        "cherry_plus": 66,
+        "kind": "feature"
+      },
+      {
+        "branch": "gh-pages-hypernexus",
+        "ahead": 1,
+        "behind": 439,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "gh-pages-tormentnexus",
+        "ahead": 1,
+        "behind": 439,
+        "cherry_plus": 1,
+        "kind": "feature"
+      },
+      {
+        "branch": "origin/lane/muse-wonder-dashboard",
+        "ahead": 15,
+        "behind": 31,
+        "cherry_plus": 15,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": [
+      {
+        "branch": "jules-scaffold-0.1.0-18345075036601368068",
+        "ahead": 22,
+        "behind": 111,
+        "cherry_plus": 17,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "vst_monster",
+    "status": "OK",
+    "default": "jules-vst-monster-init-0.1.0-9631431859280147761",
+    "ff": "local jules-vst-monster-init-0.1.0-9631431859280147761: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "xrnet",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "MilkDrop3_fix",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bg_fix",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobfilez_fix",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobsaver_fix",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobsgameonlinejava_fix",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/Simply-Love-SM5",
+    "status": "OK",
+    "default": "itgmania-release",
+    "ff": "local itgmania-release: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/arrowvortex",
+    "status": "OK",
+    "default": "release",
+    "ff": "local release: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/beatoraja",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/bobmania",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/ddc",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/ddc_onset",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/ffr-difficulty-model",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/hymnmania",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "status": "OK",
+    "default": "release",
+    "ff": "local release: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/leraine-studio",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/linthesia",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobmani/pianogame",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobsgameonline",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "libjruntime",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "tokdiet",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "jvm-cpp-runtime",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "okgame",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "private_gemini_storage",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "TurntUpToddler",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "ksm-v2",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "HyperNexus2old",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 3209 ahead / 428 behind origin",
+    "features": [
+      {
+        "branch": "origin/feature/cloud-dashboard-mcp-sse-389806464713532918",
+        "ahead": 2687,
+        "behind": 438,
+        "cherry_plus": 2561,
+        "kind": "feature"
+      },
+      {
+        "branch": "origin/lane/muse-wonder-dashboard",
+        "ahead": 15,
+        "behind": 30,
+        "cherry_plus": 15,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "hyperporn",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 2 ahead / 3 behind origin",
+    "features": [
+      {
+        "branch": "origin/backup/wip-leader-sync-20261107",
+        "ahead": 1,
+        "behind": 2,
+        "cherry_plus": 1,
+        "kind": "feature"
+      }
+    ]
+  },
+  {
+    "repo": "foone_datetime_short",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bob_and_lum_sitcom",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "gods-eye-view",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "ww3_game",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "succubus.red",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "bobble",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "newz",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "explorerexedecompiled",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "autositcom",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "webapp_factory",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "educational_video_pipeline",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "mparty",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "make_elon_laugh",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "unitedbeats_site",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "sales_bot",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "borg",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "Folderum3-The-Last-Attempt",
+    "status": "OK",
+    "default": "main",
+    "ff": "local main: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "DataStreamBrowser",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  },
+  {
+    "repo": "ADSFileSystem",
+    "status": "OK",
+    "default": "master",
+    "ff": "local master: 0 ahead / 0 behind origin",
+    "features": []
+  }
+]
