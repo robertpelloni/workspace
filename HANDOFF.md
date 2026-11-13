@@ -1,3 +1,19 @@
+# HANDOFF - v5.295.0 - 2026-11-13 - Protocol #286: Repository Sync & Intelligent Merge
+
+## Session - Protocol #286 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_286_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, jules-autopilot dirty-state commit pushed (+1), fwber v2.3.70 dirty-state commit pushed (version sync + useWebRTC), 4 submodule pointers staged (fwber, jules-autopilot, realestatecrm, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.295.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- fwber dirty commit `cae36e90e`: FWBer lane v2.3.70 version-string sync across VERSION/package files + `useWebRTC.ts` hook update, committed as track-dirty-state and pushed (repo moved notice: FWBerLLC/fwber).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
 # HANDOFF - v5.294.0 - 2026-11-12 - Protocol #285: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #285 (this session)

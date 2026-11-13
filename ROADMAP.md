@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.294.0)
+## Current Status (v5.295.0)
+
+**Protocol #286 (2026-11-13):** 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, jules-autopilot dirty-state commit pushed (+1), fwber v2.3.70 dirty-state commit pushed (version sync + useWebRTC), 4 submodule pointers staged (fwber, jules-autopilot, realestatecrm, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.294.0)
 
 **Protocol #285 (2026-11-12):** 35 fast-forwards pushed, Maestro swept, hyperharness origin-sync pushed, 1 reverse merge pushed, 38 submodule pointers staged, 4 branches retained, 0 forward merges needed. 4 conflict branches retained for Robert.
 

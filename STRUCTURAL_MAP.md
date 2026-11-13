@@ -1,15 +1,15 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-07 (Protocol #285, full regen)
+Generated: 2026-11-13 (Protocol #286, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | f1dd55590a2e |
-| hymnmania | https://github.com/robertpelloni/hymnmania | ed1384f9da76 |
+| fwber | https://github.com/robertpelloni/fwber.git | 188cad3391f6 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | d7a1d760fabc |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
-| jules-autopilot | https://github.com/robertpelloni/jules-autopilot | ff5b0fb51664 |
-| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 40e8bb65840d |
+| jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
+| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 0c0b1f2218ed |
 | skillzhub | https://github.com/robertpelloni/skillzhub | c2b8aa26aa41 |
 | hermes-agent | https://github.com/robertpelloni/hermes-agent | 166ab639f437 |
 | multimousergy | https://github.com/robertpelloni/multimousergy.git | 70066c3a277d |
@@ -46,7 +46,7 @@ Generated: 2026-11-07 (Protocol #285, full regen)
 | dao | https://github.com/robertpelloni/dao.git | 3a5f1e4483a3 |
 | electricsheep | https://github.com/robertpelloni/electricsheep.git | f9450c5a5821 |
 | element-web | https://github.com/robertpelloni/element-web.git | a6a90b53dd9f |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | f50577ce806f |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 2cfb2d41f62f |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | 4d47eaa67c58 |
 | aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 374311f9e811 |
@@ -74,7 +74,7 @@ Generated: 2026-11-07 (Protocol #285, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 05e242e1dc5b |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 9df3176ef17d |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | d2d05b233d1c |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | 92415d6c9ce6 |
 | warp | https://github.com/robertpelloni/warp.git | 25d557224446 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | c0c806e0b2d3 |
@@ -94,7 +94,7 @@ Generated: 2026-11-07 (Protocol #285, full regen)
 | bobmani/ddc_onset | https://github.com/robertpelloni/ddc_onset | f35cf13f8b79 |
 | bobmani/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model | 0574a001c065 |
 | bobmani/hymnmania | https://github.com/robertpelloni/hymnmania | 7763ad3a2051 |
-| bobmani/itgmania | https://github.com/robertpelloni/itgmania | dd066d29ba14 |
+| bobmani/itgmania | https://github.com/robertpelloni/itgmania | 7405e4c3a9c6 |
 | bobmani/ksm-v2 | https://github.com/robertpelloni/ksm-v2 | b8ac26e4ae41 |
 | bobmani/leraine-studio | https://github.com/robertpelloni/leraine-studio | b8c77616eece |
 | bobmani/linthesia | https://github.com/robertpelloni/linthesia | 4e0cced9e7d1 |
