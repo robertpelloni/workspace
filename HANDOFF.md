@@ -7,7 +7,7 @@
 - Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.297.0).
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
 - Site work this session (own repo, deployed to Hetzner): unitedbeats.org building-photo background v1.3.0 and Kourlos spelling + Agathi v1.3.1 (79 souls), both verified live.
-- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+- Build/deploy: `cmd /c build.bat` (v5.297.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push e90743c096 + build commit, per always-deploy. Recurring sync/merge/fix job scheduled every 10 min (b3c2a1fe, permanent).
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
