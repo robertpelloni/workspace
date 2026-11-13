@@ -504,3 +504,6 @@ branch = master
 [submodule "ADSFileSystem"]
 	path = ADSFileSystem
 	url = https://github.com/robertpelloni/ADSFileSystem.git
+[submodule "unitedbeats_hypernexus_gtm"]
+	path = unitedbeats_hypernexus_gtm
+	url = https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git
