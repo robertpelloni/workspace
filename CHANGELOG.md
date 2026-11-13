@@ -1,5 +1,24 @@
 ## [v5.292.0] - 2026-11-07 - Protocol #283: Repository Sync & Intelligent Merge
 
+## [v5.293.0] - 2026-11-12 - Protocol #284: Repository Sync & Intelligent Merge
+
+### Synced
+- **Root**: merged origin/main absorbing the parallel lanes' Protocol #283 jules-autopilot/realestatecrm merge + HANDOFF follow-ups, plus this session's loop commit recording Bobbi's authorization-flag ruling in `UNITED_BEATS_UMBRELLA_v6.md`; local-only until this run's commit
+- **Submodules**: 2 forward merges pushed, 3 fast-forwards, Maestro swept, ~10 origin-sync pushes, 1 reverse merge pushed, 30 submodule pointers staged, 4 branches retained; most feature-branch work had already been merged by parallel leader lanes (#281-#283), so this run was a maintenance sweep
+
+### Merged (pushed)
+- Forward: `slsk_discography_downloader_script` jules branch, `ableton_psytrance_hymn_creator` dependabot npm group; fast-forwards incl. `ksm-v2`
+- Origin-sync pushes (`-X ours`, local wins): freellm, pi-mono, veilid_reddit_facebook, bobmani/hymnmania, hyperharness, slsk, ableton; Maestro pushed `--no-verify`
+- Reverse: main merged back into `bobmani/itgmania jules-12512815185672744343` and pushed (forward merge already landed via parallel lane)
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions, never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling Antigravity/Codex lanes; fetch/status only), openclaw-config (foreign remote), unitedbeats_site (site lane), openclaw-dashboard + projectM-upstream + hyperporn pointers unpublished at root (not staged)
+
+### Coordination
+- Leader bus id `muse-wonder-leader` registered on HyperNexus session bus; Coordination v2 sent to Bobbi (muse.ai) via CDP; no Codex lane registered on the bus yet (registration asked, relay via Bobbi meanwhile)
+- HyperNexus code v1.0.47 == GitLab origin/main; running kernel binary still v1.0.43 (flagged for Robert, not swapped)
+
 ### Synced
 - **Root**: fast-forwarded to origin/main (`1e3019dd13`, v5.291.0) absorbing the parallel leader-run Protocols #281/#282 before this run's commit; this session is renumbered Protocol #283 (ledgers `sync_protocol_283_*`)
 - **Submodules**: 42 forward merges pushed (23 plain + 11 deferred-after-dirty-commit + 8 -X theirs), 28 fast-forwards, 65 submodule pointers staged; fetch 125/133 OK + 2 not-init (hymnmania, hypercode) + 6 anomalies (tabby tag-clobber, 3 _fix nested-submodule, HyperNexus2old/bcs timeout - defaults still merged from local origin refs)

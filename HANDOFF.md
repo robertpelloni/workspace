@@ -1,3 +1,23 @@
+# HANDOFF - v5.293.0 - 2026-11-12 - Protocol #284: Repository Sync & Intelligent Merge
+
+## Session - Protocol #284 (this session)
+
+### Step 1 (fetch & sanitization)
+- Scan/triage `sync_protocol_284_*`: fetch across 133 submodules; warp upstream branches dominate the actionable list and are filtered as upstream. Root merged origin/main (+3 from parallel lanes) before work.
+- System Git still broken; GitHub Desktop git 2.56.1 via `%TEMP%\agent281-bin` shim used throughout.
+
+### Step 2 (merges - ledgers `sync_protocol_284_merge_results.json`, `_phase2_results.json`, `_final_results.json`, `_phase4_results.json`)
+- 2 forward merges pushed, 3 fast-forwards, Maestro swept, ~10 origin-sync pushes, 1 reverse merge pushed, 30 submodule pointers staged, 4 branches retained.
+- Remaining verified unmerged = exactly 4 branches, all conflict-final both directions, retained (list in CHANGELOG v5.293.0).
+- Build: see Build section below.
+
+### Coordination (new this session)
+- Read latest Antigravity workspace session `ff90f2fd` (HyperNexus v1.0.46/v1.0.47 shipped to GitLab; now v1.0.48 systray). Registered leader on HyperNexus session bus as `muse-wonder-leader`; broadcast Coordination v2; direct note to `antigravity-gemini`. Codex lanes not yet bus-registered - asked via Bobbi relay.
+- Coordination loop cron `e6b40ba9` (every 17 min) now also checks bus inbox + HyperNexus fetch sync. Bobbi ruled the umbrella authorization flag stays Robert-only (recorded in `UNITED_BEATS_UMBRELLA_v6.md`).
+- rp-files-20261108.tgz (3.70 GB robertpelloni.com backup) downloaded to workspace root, tar-verified (21,143 entries); Bobbi confirmed server copy deleted.
+- Build: `cmd /c build.bat` (Protocol #284): 4 OK / 0 failed / 1 skipped (tormentnexus not initialized). Built: HyperNexus hypernexus-go.exe, hyperharness.exe, pi-mono.exe, Tabby tabby-backend.exe + tabby-native.exe. Do not clean/purge built binaries.
+
+## Prior
 # HANDOFF - v5.292.0 - 2026-11-07 - Protocol #283: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #283 (this session; renumbered - parallel leader session already published #281/#282 to origin)

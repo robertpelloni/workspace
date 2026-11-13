@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.292.0)
+## Current Status (v5.293.0)
+
+**Protocol #284 (2026-11-12):** 2 forward merges pushed, 3 fast-forwards, Maestro swept, ~10 origin-sync pushes, 1 reverse merge pushed, 30 submodule pointers staged, 4 branches retained. 4 conflict branches retained for Robert. HyperNexus kernel binary v1.0.43 behind code v1.0.47 (Robert call). Codex bus registration pending.
+
+ (v5.292.0)
 
 **Protocol #283 (2026-11-07):** 42 forward merges pushed (23 plain + 11 deferred-after-dirty-commit + 8 -X theirs), 28 fast-forwards, 65 submodule pointers staged; 5 conflict branches retained; system Git broken (GitHub Desktop git used).
 **Protocol #282 (2026-11-07):** 22 fast-forwards + 10 forward merges pushed (bobmani x6 incl. beatoraja master close, jvm-cpp-runtime +17, gods-eye-view, ww3_game); fetch 133/133; 3 conflict branches retained (freellm x2, itgmania jules-1251).
