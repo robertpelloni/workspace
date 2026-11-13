@@ -31,11 +31,11 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "axios": "^1.21.0",
+    "axios": "^1.21.1",
     "esbuild": "^0.28.1",
     "firecrawl-mcp": "^3.22.1",
     "mem0ai": "^3.1.6",
-    "minimatch": "^11.0.1",
+    "minimatch": "^11.0.2",
     "opencode-ai": "^1.17.11",
     "task-master-ai": "^0.43.1"
   }
