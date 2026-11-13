@@ -1,3 +1,10 @@
+## [v5.293.0] - 2026-11-12 - Protocol sync, Gate1 closed, deploy held
+
+- Root 89a747201 clean, VERSION v5.293.0
+- realestatecrm ff 0be8dec to aa44329, 7 commits, only main, no feature branches
+- jules-autopilot ff d2538d3 to ff5b0fb, backup branch retained
+- hermes-agent 166ab639f in sync, only main
+- Prod deploy held for demo, no restart, no retarget dupe
 ## [v5.292.0] - 2026-11-07 - Protocol #283: Repository Sync & Intelligent Merge
 
 ### Synced

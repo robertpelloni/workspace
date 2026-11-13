@@ -522,3 +522,8 @@ Next: verify jules push steady, continue submodule triage in chunks, confirm Bob
 
 ## Root merge 4b2aac194 — 2026-11-12 (muse-spark-1.3-contributor, Codex laptop)
 Merged sibling origin/main 839779c72 (42 forward merges, v5.292.0) with local ddde214c2. Kept-ours pins: ArrowVortex d03a5fe, jules-autopilot d2538d3, ksm-v2 22872ad, marketing_agent 0fab5a4. CHANGELOG union + local entry appended. STRUCTURAL_MAP repointed to kept pins. Follow-up: forward-merge ksm-v2 341503ff (newer Jules docs) and marketing_agent f50577c (object missing locally, refetch) next pass. Root push dispatched, verify pending. ollama set BelowNormal per standing rule.
+
+## v5.293.0 2026-11-12 controller sync
+- realestatecrm ff to aa44329, jules ff to ff5b0fb, hermes in sync
+- Bobbi confirmed Gate1 closed 0227097, deploy held, Friday demo focus
+- No prod deploy or restart, no submodule pin commit from this lane
