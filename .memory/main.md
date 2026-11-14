@@ -1,87 +1,31 @@
-# Workspace Monorepo — Project Roadmap
+# Workspace Monorepo — Brain Memory (`main`)
+
+*Last Updated: 2026-11-14 (v5.308.0 — Protocol #299)*
 
 ## Project Purpose
 
-Massive monorepo at `github.com/robertpelloni/workspace` containing 74+ submodules across games, AI agents, MCP servers, terminal tools, UI frameworks, music apps, and developer utilities. Functions as a unified development platform with global build orchestration (`build.bat`, `start.bat`) across Go, Rust, C++, Java, Python, Node.js, and .NET projects.
+Federated monorepo at `github.com/robertpelloni/workspace` orchestrating **134 submodules** (`133` initialized) across AI agent harnesses (`HyperNexus`, `hyperharness`, `pi-mono`, `hermes-agent`, `Maestro`, `jules-autopilot`), terminals/IDEs (`tabby`, `warp`, `hyper`, `npp`, `bqt`, `bgtk`), games & rhythm engines (`bg`, `bobmani`, `hymnmania`, `ArrowVortex`, `beatoraja`), and commercial/web platforms (`fwber`, `realestatecrm`, `marketing_agent`, `unitedbeats_site`, `unitedbeats_hypernexus_gtm`).
 
-## Current State (v5.292.0)
+## Current State (`v5.308.0`)
 
-- **Executive sync protocol healthy** — Protocols #12-#156 completed in succession
-- **Protocol #156 (v5.176.0):** Infrastructure fixes (bobtrax, bobfilez, MilkDrop3/MilkDrop3_fix submodule cleanup) + realestatecrm forward merge (+1)
-- **Forward merges (cumulative):** ArrowVortex (+3), MarbleBlast (+2), agentirc (+23), ai_game_engine (+17), bobtorrent (+27), bobsaver (+1), realestatecrm (+8), bobbybookmarks (+3), bqt audio graph renaming (+1), aimoneymachine_site blog (+7), tormentnexus MCP SSE (+19), fcdm Milestone 8 (+1), f-zerox Netplay/C physics/Fast3D (+29), hyperharness LLM StreamChat/FTS5 (+18), bobtrax WASM (+10), bqt OmniAudioGraph (+6), aimoneymachine_site affiliate links (+1), aios fix-nextjs-turbopack-windows (+8), bcs bcs-multi-lang-kernel-port (+1), freellm-linux (+44), hyper multi-language (+124), veilid v1.1.0 Gold Master (+15 files)
-- **Submodule infrastructure fixes:** bobtrax nested submodules (gitdir/worktree paths fixed, lmms/ardour/zrythm/muse deinited), bobfilez libs/* submodules deinited (60+), MilkDrop3/MilkDrop3_fix bobmani nesting deinited (hymnmania, arrowvortex, beatoraja, etc.), bg bobsgameweb conflict resolved
-- **Git status functional** with `--ignore-submodules=dirty`
-- **Version control** — Global version bumped to v5.176.0, synced across VERSION, VERSION.md, CHANGELOG.md
-- **jules-autopilot on latest** — v3.6.24
-- **tormentnexus active** — npm packages published, v1.0.0-alpha.262
+- **Executive Protocols #1–#299 Complete:** Continuous zero-loss synchronization, dirty-state tracking, forward/reverse branch reconciliation, and published-only root pointer pincheck (`0` unpublished pins).
+- **Consolidated Control Center (`:2999`) & System Tray (`v2.0.0`):** Live in `research/workspace-orchestrator/` (`start.bat dashboard` / `start.bat tray` / `start_dashboard_tray.bat`), running at `BelowNormal` CPU priority and managing all **10/10** Go binaries (`hyper-go` fixed from `./cmd/hyper` -> `.`).
+- **Disk & Build Cache Healthy:** Stale git `.tmp` packs cleaned (`~285 GB` free on `C:`); Go caches routed to `D:\agent-cache\go-build` & `D:\agent-cache\go-tmp`.
+- **Org Migrations & GTM:** `fwber` -> `FWBerLLC`; `unitedbeats_site` -> `UnitedBeatsLLC` (`unitedbeats.org` live on WordPress `UnitedBeats Legacy` `v1.4.0` with 79 souls, `Kourlos` spelling fixed, and 10 public B2B/project pages); `unitedbeats_hypernexus_gtm` (`v0.1.0`) seeded for the 30-day HyperNexus B2B rollout.
+- **Handover Note (2026-11-14):** Muse leader (`muse-wonder-leader`, session `01a1aa95-ba13-7573-81c8-8d1c0a06a63a`) hit subscription quota `429` at `09:57 EST` (resets `2026-11-16 00:00 UTC`); Antigravity (`antigravity-gemini`) seamlessly took over and completed Protocol #299 (`v5.308.0`).
 
-## Key Decisions Made
+## Key Standing Decisions
 
 | Decision | Rationale |
 |----------|-----------|
-| **Submodules over subtrees** | Submodules allow independent versioning of each project |
-| **Reverse-merge strategy** | Feature branches with 100+ unique commits kept separate; main synced into them via --allow-unrelated-histories + "theirs" conflict resolution |
-| **Version bump per protocol** | Each Executive Protocol increments the global version (v5.12.0 → v5.40.0 across 28 protocols) |
-| **De-nest bg from MilkDrop3** | MilkDrop3 had `bg` as a redundant nested submodule. Same repo as workspace `bg/`. No functional dependency — only doc files and archive scripts. Removed to eliminate double checkout and simplify pointer propagation. |
-| **Windows case-insensitive gitdir collision** | Two submodule paths differing only by case (TormentNexus/tormentnexus) share the same `.git/modules/` on Windows. Consolidated to one path. |
-| **Secret scrubbing in agent logs** | OAuth secrets in `.memory/branches/main/log.md` must be scrubbed before push. GitHub push protection blocks commits containing Client IDs/Secrets. Use `sed` replacement + `git commit --amend` + `force-with-lease` to resolve. |
-| **Stash conflict resolution** | When `git stash pop` causes merge conflicts in site redesign files, accept `--theirs` (stash version) as the newer rewrite and verify completion. |
-| **Deepseek API key** | Set via `DEEPSEEK_API_KEY` in WSL `~/.hermes/.env` (rotated per standard practice) |
-| **tabby** | Tracks `master` branch. Merged upstream Eugeny/tabby into our fork. Pinned to v1.0.115-level commit with our custom features (broadcast mode, session logging, Ctrl+C paste). |
+| **Always-Deploy Close-Out** | Verify `build.bat`, keep all `.exe` binaries, update docs/maps, and push root `0/0` every protocol. |
+| **Published-Only Pincheck** | Never stage a submodule gitlink unless `git branch -r --contains HEAD` passes (`pincheck == 0`). |
+| **GitHub Desktop Git + `.env` Auth** | Prepend GitHub Desktop `git.exe` to `PATH`; unset burned OS `GITHUB_TOKEN` or load verified `.env` token per-shell without printing. |
+| **`D:\agent-cache` + `BelowNormal`** | Prevents `C:` disk exhaustion and keeps desktop responsiveness smooth during Go/C++ builds. |
+| **Sibling Lane Isolation** | Leader sync runs fetch/status only on `HyperNexus`, `HyperNexus2old`, and `unitedbeats_site`. |
 
-## Milestones
+## Open Owner-Gated Items (Reserved for Robert)
 
-- [x] v5.12.0–v5.30.0 — 18 Executive Protocols completed
-- [x] v5.31.0 — Full dual-direction merge & submodule registration (enterprise_sales_bot: 8 branches, aimoneymachine_site: 5 branches, freellm, fwber, jules-autopilot)
-- [x] v5.32.0 — Submodule pointer reconciliation & finalization
-- [x] v5.33.0 — Forward merge fcdm (74+10 commits), fwber (21+6 commits)
-- [x] v5.34.0 — Forward merge Maestro multi-language-harness-expansion (15 commits)
-- [x] v5.35.0 — Synced 3 upstream commits, initialized 14 new submodules
-- [x] v5.36.0 — Forward merge enterprise_sales_bot CRM mapping, hymnmania studio reversal
-- [x] v5.37.0 — Forward merge Maestro .env config loaders, jules-autopilot LM Studio fix
-- [x] v5.38.0 — Maestro gitlink fixes, reverse merges, bobsgameonlinejava_fix deferred
-- [x] v5.39.0 — enterprise_sales_bot stash resolved, hymnmania WIP committed, OAuth secrets scrubbed, jules-autopilot forward-merged, 5 Go binaries built
-- [x] v5.40.0 — External tool submodule pointer sync (enterprise_sales_bot +1, hymnmania +1, jules-autopilot +1), feature branch assessment
-- [x] v5.40.0 — Cherry-picked & merged 2 feature branches: bobui (bqt) bqt-renaming-audio-graph (93 files, +1339), bobsgameonlinejava port-cpp-puzzle-logic (+152)
-- [x] v5.40.0 — De-nested redundant bg submodule from MilkDrop3
-- [x] v5.79.0 — Protocol #63: 12 feature branches forward-merged across 11 submodules
-- [x] v5.80.0 — Protocol #64: 9 feature branches forward-merged across 7 submodules (follow-up sweep)
-- [x] v5.81.0 — Protocol #65: 7 feature branches forward-merged across 4 submodules + qbittorrent removed from bobtorrent
-- [x] v5.91.0 — Protocol #69: MilkDrop3_fix/aios re-initialized, stale lock/metadata cleanup
-- [x] v5.92.0 — Protocol #70: Submodule sanitization, stale lock file cleanup, lr2oraja-endlessdream init, feature branch assessment
-- [x] v5.93.0 — Protocol #71: Fixed broken bobmania submodule, forward-merged fcdm go-onnx-inference (+1)
-- [x] v5.94.0 — Protocol #72: Forward-merged 5 feature branches (f-zerox +29, hyperharness +16, bobtrax +10, bqt +6, aimoneymachine_site +1)
-- [x] v5.95.0 — Protocol #73: Maintenance sync, no new feature branches
-- [x] v5.97.0 — Protocol #75: Maintenance sync, no new feature branches
-- [x] v5.98.0 — Protocol #76: Maintenance sync, no new feature branches
-- [x] v5.99.0 — Protocol #77: Maintenance sync, no new feature branches; submodule pointer updates for tormentnexus (+6), marketing_agent (+1)
-- [x] v5.100.0–v5.136.0 — Protocols #78–#118: Continuous maintenance syncs, submodule pointer updates, periodic feature branch merges (bcs multi-lang-kernel-port, aios fix-nextjs-turbopack-windows, etc.)
-- [x] v5.137.0 — Protocol #119: Submodule pointer updates (MilkDrop3, TurntUpToddler, freellm, tormentnexus), feature branch scan — 0 actionable merges
-- [x] v5.138.0–v5.174.0 — Protocols #120–#154: Continuous maintenance syncs, freellm-linux (+44) merged in v5.173.0
-- [x] v5.175.0 — Protocol #155: hyper (+124 across 3 branches), hyperharness (+2), tormentnexus (+5 files), veilid (+15 files)
-- [x] v5.176.0 — Protocol #156: Infrastructure fixes (bobtrax/bobfilez/MilkDrop3 submodule nesting), realestatecrm (+1), bg conflict resolved
-- [x] v5.286.11 — Protocol #271: hymnmania master (8) merged after dirty-tree retry, stale MilkDrop3 aios gitlinks removed, 9 dirty-state commits, 116/117 fetched
-- [x] v5.286.12 — Protocol #272: maintenance sync (0 merges, 0 fail), 5 dirty-state commits, 114/117 fetched, HyperNexus external activity left untouched
-- [x] v5.286.13 — Protocol #273: maintenance sync (0 merges, 0 fail), 2 dirty-state commits, hyperharness remote-advanced merge recovery, LFS locksverify bypass, 111/117 fetched
-- [x] v5.287.0 - Protocol #277: 91 forward merges (~45 repos), 21 submodules initialized (132/133), 35+ defaults synced, 5 conflict-final branches deferred
-- [x] v5.288.0 - Protocol #278: 36 forward merges, beatoraja master closed (+125), _fix repos published, 129/133 fetched
-- [x] v5.292.0 - Protocol #283: 42 forward merges pushed (23 plain + 11 deferred-after-dirty-commit + 8 -X theirs), 28 fast-forwards, 65 submodule pointers staged, 5 branches retained
-- [ ] 62 GitHub vulnerabilities on default branch (22 high, 35 moderate, 5 low)
-- [ ] bg nested references/ submodules (~50) remain uninitialized
-- [ ] aimoneymachine_site fix-twitter-auth-logging deferred (40+ go.mod conflicts)
-- [ ] libs/bobui feature/audio-graph-native-linking-test deferred (local changes blocking)
-- [ ] bobsgameonlinejava feat/polygon-lasso deferred (pending resolution)
-
-## Open Problems
-
-1. **GitHub Dependabot vulnerabilities** — 165 total (1 critical). Needs triage.
-2. **bg nested submodules** — ~50 references/ submodules (ControlNet, Stable Diffusion, aseprite, etc.) are large third-party repos that can't be easily initialized.
-3. **bobsgameonlinejava_fix fix/stale-lib-submodules** — Identified unique work but complex submodule merge deferred from multiple protocols.
-4. **Deep directory nesting issue** — `tests/test_cmake_build/subdirectory_function/build_output/pybind11/...` exceeds Windows MAX_PATH, causes `git status` timeouts.
-5. **Jules proxy freshness** — The proxy at 192.168.0.1:8080 may serve stale git data.
-6. **MilkDrop3-2077/** — Untracked directory with gitdir reference, not a registered submodule or worktree. Possibly orphaned.
-7. **bg de-nested from MilkDrop3** (2026-06-23) — Removed from MilkDrop3/.gitmodules. If anything breaks, add it back.
-8. **aimoneymachine_site fix-twitter-auth-logging** — Deferred across multiple protocols due to 40+ go.mod conflicts.
-9. **libs/bobui feature/audio-graph-native-linking-test** — Local changes blocking merge.
-10. **bobsgameonlinejava feat/polygon-lasso** — Pending resolution, 4 unique commits.
-11. **bobtrax/bobfilez/MilkDrop3 nested submodules** — Fixed in Protocol #156 (deinited deeply nested submodules). If needed, re-init with `git submodule update --init`.
+1. **4 Retained Dual-Conflict Branches:** `bobfilez` (`origin/backup/wip-leader-sync-20261107` `+1`), `freellm` (`temp-main` `+2`), `veilid_reddit_facebook` (`jules-scaffold-0.1.0-18345075036601368068` `+17`), `hyperporn` (`origin/backup/wip-leader-sync-20261107` `+2`).
+2. **Commercial & Legal Gates:** `unitedbeats_hypernexus_gtm` pricing/pilot outreach, Hank/Excel Legacy Realty proposal & Invoice #001, Mercury invite, Umbrella `v6`/`v7` confirmation with Bobbi (`muse.ai` weekly usage resets Nov 14 `18:38 EST`).
+3. **Maintenance Window Gates:** Replacing burned OS-level `GITHUB_TOKEN` in Windows System Environment Variables, Groq/HF key rotation, and 2-minute HyperNexus quiesce window to checkpoint/LFS-handle `HyperNexus/data/tormentnexus.db`.

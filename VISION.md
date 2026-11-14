@@ -1,113 +1,42 @@
-# Vision — Omni-Workspace v2.0
+# Vision — Omni-Workspace (v5.308.0)
+
+*Last Updated: 2026-11-14*
 
 ## The Ultimate Goal
 
-An **autonomous, self-healing, federated monorepo** of 125+ projects spanning AI agents, rhythm games, web platforms, crypto, desktop apps, and game engines — orchestrated by a unified multi-agent AI pipeline that handles sync, merge, build, test, and deploy with zero human intervention.
+An **autonomous, self-healing, federated monorepo** of **134 submodules** spanning AI agent harnesses, multi-model control planes, rhythm games, B2B SaaS platforms, decentralized P2P tools, desktop IDEs, and creative engines — orchestrated by a unified multi-agent pipeline (Muse, Antigravity/Gemini, Claude, Codex/GPT, Jules) that synchronizes, merges, builds, verifies, and deploys continuously.
 
 ## Three Pillars
 
-### 1. Automation Over Manual Intervention ⚙️
+### 1. Self-Healing Repository Federation
+- **Zero-Loss Branch Reconciliation:** Every feature branch across `robertpelloni`, `UnitedBeatsLLC`, and `FWBerLLC` is triaged, forward-merged when clean, and preserved without data loss when conflicted.
+- **Published-Only Integrity:** Submodule gitlinks in root are guarded by automated `pincheck` verification so root `main` never pins an unpublished commit.
+- **Resource-Aware Execution:** Builds and daemons run at `BelowNormal` CPU priority with Go build caches offloaded to `D:\agent-cache`.
 
-The workspace must detect and heal itself:
-- **Outdated dependencies** → Auto-update with PR review
-- **Broken submodule links** → Auto-resolve from canonical remotes
-- **Unmerged feature branches** → Auto-detect, test-merge, and integrate
-- **Dependabot alerts** → Auto-triage, patch, and verify
-- **Dirty working trees** → Auto-classify artifacts vs. genuine changes
+### 2. Unified Control Plane & Observability
+- **Consolidated Workspace Control Center (`:2999`) + Native Windows Tray:** Real-time visibility and lifecycle management over all 10 Go binaries, 134 submodules, infrastructure ports (`:2999`, `:7778`, `:7779`, `:8082`, `:3006`, `:9222`), and root governance documents.
+- **HyperNexus Federation (`:7778` / `:7779`):** Cross-harness session bus (`session-bus.mjs`) and MS Edge CDP bridge (`cdp-bridge.mjs`) connecting CLI agents, IDE agents, and web reasoning threads (`muse.ai`, Gemini, ChatGPT).
 
-*Current: Executive Protocol v5.x handles sync cycles. Next: fully automated vulnerability remediation and dirty-state lifecycle management.*
+### 3. Commercial & Ecosystem Execution
+- **United Beats Umbrella (`unitedbeats.org`):** Public corporate hub and B2B gateway (`UnitedBeats Legacy` WordPress v1.4.0) showcasing flagship enterprise and creative products while isolating adult properties.
+- **HyperNexus B2B Go-To-Market (`unitedbeats_hypernexus_gtm`):** Structured pilot & enterprise rollout for multi-agent engineering orchestration.
 
-### 2. No Code Left Behind 📦
+## Current Phase Status (Nov 2026)
 
-Every feature branch — whether from Google Jules, Claude, GPT, or any AI tool — is inherently valuable. The system must:
-- **Intelligently merge** branches without regressions
-- **Preserve context** across handoffs (Gemini → Claude → GPT → DeepSeek)
-- **Catalog all features** in a unified registry with provenance
-- **Test before merge** — smoke tests, lint, and build verification
-- **Roll back safely** when a merge introduces regressions
+| Phase | Status | Milestone Highlights |
+|-------|--------|----------------------|
+| 1. Consolidation | Complete | 134 submodules mapped (`133/134` initialized), org migrations (`FWBerLLC`, `UnitedBeatsLLC`) |
+| 2. Zero-Loss Merge Engine | Complete | 299 Executive Protocols executed; automated triage, dirty-state preservation, and pincheck guard |
+| 3. Global Build & Tray Control | Complete | `build.bat` (4/4 OK), `start.bat build` (10/10 Go binaries OK), `:2999` Control Center + System Tray |
+| 4. Federated Multi-Agent Ops | Active | HyperNexus `:7778` session bus + `:9222` Edge CDP bridge coordinating Muse, Antigravity, Codex, and Bobbi |
+| 5. Enterprise GTM & Hardening | In Progress | `unitedbeats.org` v1.4.0 live, `unitedbeats_hypernexus_gtm` seeded, Dependabot & conflict-branch disposition queued |
 
-*Current: All v4.x-era feature branches merged. Next: real-time branch detection and automated merge qualification.*
+## By the Numbers (v5.308.0)
 
-### 3. Transparent Multi-Model Synergy 🧠
-
-The workspace leverages model specialization in the "Handoff Cycle":
-- **Claude / DeepSeek** — Architecture, debugging, complex reasoning
-- **Gemini** — Research, large-scale analysis, speed
-- **GPT** — UI refinement, creative work, documentation
-- **Ollama / Local models** — Private data processing, offline operation
-
-Each model plays to its strengths. The workspace orchestrates the handoff automatically.
-
-## The End State
-
-> A single prompt to the workspace root triggers a **cascade of intelligent, recursive updates** down the tree:  
-> → Detect stale repos → Sync upstreams → Merge feature branches → Resolve conflicts → Run builds → Update docs → Push to GitHub → Deploy services  
-> Result: perfectly compiled, deployed, and documented sub-projects — a true AI-driven development pipeline.
-
-## Current Phase: Production Hardening (Phase 4)
-
-The ROADMAP is 75% complete:
-
-| Phase | Status | What It Means |
-|-------|--------|---------------|
-| 1. Consolidation | ✅ Complete | All submodules unified, pointers fixed, .gitignore established |
-| 2. Feature Branch Resolution | ✅ Complete | All Jules branches merged, conflict engine proven |
-| 3. Global Build Orchestration | ✅ Complete | build.bat + start.bat connected, SSH migration done |
-| **4. Production Hardening** | 🔜 **In Progress** | **Security, health checks, containerization, MCP protocol** |
-| 5. Full Autonomy | ⏳ Future | Zero-touch from prompt to deployment |
-
-## Near-Term Targets (v5.13.0 → v6.0.0)
-
-### v5.13.0 — Security & Hygiene
-- [ ] 0 Dependabot vulnerabilities
-- [ ] 0 dirty repos
-- [ ] All upstreams synced (including deferred)
-- [ ] TormentNexus MCP aggregator stable with 6+ servers
-
-### v5.14.0 — Observability
-- [ ] Global health dashboard for all services
-- [ ] Centralized logging (Loki/ELK)
-- [ ] Uptime monitoring with alerting
-- [ ] Automated backup pipeline
-
-### v5.15.0 — Containerization
-- [ ] Docker Compose for key services
-- [ ] Reproducible dev environments
-- [ ] CI/CD pipeline (GitHub Actions)
-- [ ] Automated build verification
-
-### v6.0.0 — Full Autonomy
-- [ ] Single-command full sync + build + deploy
-- [ ] Self-healing git state (auto-stash, auto-resolve, auto-clean)
-- [ ] Multi-model orchestration with automatic handoff
-- [ ] Real-time workspace health in browser dashboard
-
-## By the Numbers
-
-| Metric | Current | Target (v6.0.0) |
-|--------|---------|-----------------|
-| Repos | 125 | 125+ |
-| Submodules | 65 | 65 |
-| Upstreams Synced | 12/16 | 16/16 |
-| MCP Servers Connected | 4/56 | 10+ |
-| Tools Available | 46 | 100+ |
-| Dependabot Vulns | 283 | 0 |
-| Dirty Repos | 5 | 0 |
-| Dirty Files | ~5,000 | 0 |
-| CI/CD | ❌ None | ✅ Full pipeline |
-| Health Dashboard | ❌ None | ✅ Real-time |
-| Auto-Deploy | ❌ None | ✅ Trigger-based |
-
-## Core Principles
-
-1. **Automate everything that repeats more than twice** — If you've done it twice, script it. If you've done it three times, automate it.
-2. **Document before you forget** — Every decision gets an ADR. Every merge gets a changelog entry. Every handoff gets a summary.
-3. **Fail fast, recover faster** — No merge is irreversible. No deploy is final. The workspace must heal itself.
-4. **Model-specific strengths** — Use the right model for the right job. Don't brute-force through a model's weakness.
-5. **Security is not optional** — 283 vulnerabilities is unacceptable. Every commit must pass security gates.
-
----
-
-*Last updated: 2026-06-13*
-*Previous version: v1.0 (Omni-Workspace concept)*
-*Next milestone: v5.13.0 — Production Hardening*
+| Metric | Current Verified State | Target (v6.0.0) |
+|--------|------------------------|-----------------|
+| Submodules Registered | 134 (`133` initialized) | 134+ (`100%` initialized) |
+| Executive Protocols Completed | 299 (`v5.308.0`) | Continuous autonomous cadence |
+| Core Go Service Binaries | 10 / 10 compiling (`start.bat build`) | 10+ with automated smoke tests |
+| Retained Conflict Branches | 4 (preserved for owner review) | 0 unresolved |
+| Control Plane Health | Live (`:2999`, `:7778`, `:7779`, `:9222`) | Full self-healing supervisor (`0` degraded) |

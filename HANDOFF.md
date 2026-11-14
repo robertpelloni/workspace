@@ -1,3 +1,28 @@
+# HANDOFF - v5.308.0 - 2026-11-14 - Protocol #299: Repository Sync, Control Center v2.0 & 10/10 Go Builds
+
+## Session - Protocol #299 (Antigravity handover from Muse `muse-wonder-leader`)
+
+### 1. Muse Catch-Up & Handover Context
+- Digested full transcript of root Muse leader session `01a1aa95-ba13-7573-81c8-8d1c0a06a63a` (`muse-wonder-leader`), which shipped Protocols `#284`–`#298` (`v5.293.0` -> `v5.307.0`), solved the `C:` disk space crunch (`D:\agent-cache` + stale git `.tmp` pack cleanup), migrated `fwber` (`FWBerLLC`) and `unitedbeats_site` (`UnitedBeatsLLC`), launched `unitedbeats.org` WordPress `UnitedBeats Legacy` theme `v1.4.0` (100vh legacy memorial w/ `79 souls` + `Kourlos` fix + 10 public project pages; adult pages kept draft/off-menu for AdSense & B2B safety), and created `unitedbeats_hypernexus_gtm` (`v0.1.0`).
+- Muse halted mid-Protocol `#299` at `2026-11-14 09:57:48 EST` due to `429 Subscription quota exhausted` (resets `2026-11-16T00:00:00Z`). Antigravity (`antigravity-gemini`) seamlessly took over and completed `#299`.
+
+### 2. Protocol #299 Sync & Merge Outcomes (`sync_protocol_299_*`)
+- **Scan & Triage:** 134 `.gitmodules` entries (`133/134` initialized; `hypercode` uninitialized); 163 actionable items triaged across 114 scanned repos; remaining 6 unmerged = 4 owner-retained conflicts + 2 filtered Dependabot branches (`bobcoin`, `planet_fitness_stepmaniax_agent`).
+- **Fast-Forwards & Pushes:** Fast-forwarded `bobfilez_fix`, `okgame`, and `bg_fix`; `Maestro` pushed `--no-verify` (up-to-date); Phase 4 dirty-state tracked & pushed `bobfilez` (+5), `bobtorrent` (+6), `marketing_agent` (+3), `realestatecrm` (+1), `bobcoin` (+1), `bobmani/hymnmania` (+1), and `bobble` (+1); Phase 4b verified `fwber`, `bobmani/ksm-v2`, `electricsheep`, and `neverball` up-to-date.
+- **Root Submodule Pointers:** 17 published pointers staged (`ArrowVortex`, `aimoneymachine_site`, `bcs`, `bg`, `bg_fix`, `bgtk`, `bob_and_lum_sitcom`, `bobble`, `bobcoin`, `bobfilez`, `bobfilez_fix`, `bobtorrent`, `bqt`, `fwber`, `marketing_agent`, `okgame`, `realestatecrm`); `openclaw-dashboard`, `projectM-upstream`, and `hyperporn` skipped unpublished; **`pincheck` verified `0 unpublished`**.
+- **Maps & Governance Docs:** Regenerated `STRUCTURAL_MAP.md` (`133/134`) and `SUBMODULE_DASHBOARD.md`; refreshed `VISION.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, and `.memory/main.md`.
+
+### 3. Consolidated Control Center (`:2999`), System Tray & Build Verification
+- **Control Center & Tray (`research/workspace-orchestrator` v2.0.0):** Live on `:2999` (`BelowNormal` priority) with native Windows System Tray app (`tray_controller.ps1` / `start_dashboard_tray.bat` / `start.bat dashboard|tray`).
+- **10/10 Go Builds Fixed:** Updated `hyper-go` package target from missing `./cmd/hyper` to `.` in `start.bat` and `research/workspace-orchestrator/server/index.js`, and wired automatic `D:\agent-cache` `GOCACHE`/`GOTMPDIR` defaults into `build.bat`, `start.bat`, and `server/index.js`.
+- **Always-Deploy Verification:** `build.bat` verified `4 OK / 0 failed / 1 skipped`, `start.bat build` verified `10 OK / 0 failed`, `pi-mono` `go test ./pkg/ai/` verified green, binaries preserved on disk, root pushed `0/0` vs `origin/main`.
+
+### 4. Coordination & Next Agent Notes
+- Coordinated via HyperNexus session bus (`antigravity-gemini` on `:7778`) and MS Edge CDP (`:9222` — note Bobbi `muse.ai` weekly usage resets `Sat Nov 14 18:38 EST`).
+- `HyperNexus` verified `0/0` vs `origin/main` (sibling lane owns uncommitted supervisor fix for degraded `session-1791239437228525100`; keep `HyperNexus` & `HyperNexus2old` fetch/status only).
+- 4 conflict-final branches (`bobfilez`, `freellm`, `veilid_reddit_facebook`, `hyperporn`) and commercial/maintenance gates remain reserved for Robert.
+
+## Prior
 # HANDOFF - v5.307.0 - 2026-11-14 - Protocol #298: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #298 (this session)

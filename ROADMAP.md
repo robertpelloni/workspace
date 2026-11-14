@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.307.0)
+## Current Status (v5.308.0)
+
+**Protocol #299 (2026-11-14):** Antigravity seamless handover after Muse `429` quota limit (resets Nov 16 00:00 UTC); triage 163 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); FFs `bobfilez_fix`, `okgame`, `bg_fix`; `Maestro` push ok; Phase 4 dirty-tracked & pushed `bobfilez` (+5), `bobtorrent` (+6), `marketing_agent` (+3), `realestatecrm` (+1), `bobcoin` (+1), `bobmani/hymnmania` (+1), `bobble` (+1); Phase 4b up-to-date; **17 submodule pointers staged** (`ArrowVortex`, `aimoneymachine_site`, `bcs`, `bg`, `bg_fix`, `bgtk`, `bob_and_lum_sitcom`, `bobble`, `bobcoin`, `bobfilez`, `bobfilez_fix`, `bobtorrent`, `bqt`, `fwber`, `marketing_agent`, `okgame`, `realestatecrm`), pincheck `0 unpublished`; Consolidated Control Center (`:2999`) + System Tray `v2.0.0` shipped; `hyper-go` build target fixed (`10/10` Go binaries OK in `start.bat build` + `4/4` OK in `build.bat`); disk healthy (`257.7 GB` free on `C:`, `131.9 GB` free on `D:`). 4 conflict branches retained for Robert. Always-deploy verified (`0/0` vs `origin/main`).
+
+ (v5.307.0)
 
 **Protocol #298 (2026-11-14):** triage 160 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); ArrowVortex release forward-MERGED OK; FFs bobfilez_fix/okgame (merge), bg_fix/bobsaver_fix (phase2); bobfilez dirty-committed (TODO/VERSION/fo.db), Maestro push ok, phase4 pushed bobfilez (+3), bobtorrent (+14), aimoneymachine_site (+3); hyperporn local main 2 ahead/3 behind origin, sync-conflict retained; phase4b up-to-date, 12 submodule pointers staged (fwber,ArrowVortex,bobcoin,bobfilez,bgtk,bqt,bcs,bg_fix,bobfilez_fix,bobsaver_fix,okgame,bobble), pincheck 0 unpublished; bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped unpublished, 4 branches retained conflict-final; disk healthy (285GB free) after stale-tmp-pack cleanup + Go cache on D:. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 

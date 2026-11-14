@@ -46,9 +46,11 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 for sm in submodules:
     info = get_git_info(sm)
     if info:
-        v = info['version'] if info['version'] else "N/A"
-        msg = info['msg'][:50] + ("..." if len(info['msg']) > 50 else "")
-        md += f"| {sm} | {v} | {info['branch']} | {info['commit']} | {info['date']} | {msg} |\n"
+        raw_v = (info['version'] or "").splitlines()
+        clean_v = next((l.strip() for l in raw_v if l.strip() and not l.startswith(("<", "=", ">", "#"))), "N/A").replace("|", "/")
+        msg_raw = (info['msg'] or "").replace("\r", " ").replace("\n", " ").replace("|", "/")
+        msg = msg_raw[:50] + ("..." if len(msg_raw) > 50 else "")
+        md += f"| {sm} | {clean_v} | {info['branch']} | {info['commit']} | {info['date']} | {msg} |\n"
 
 with open("SUBMODULE_DASHBOARD.md", "w", encoding="utf-8") as f:
     f.write(md)

@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-:: Omni-Workspace Master Start Script - v5.307.0
+:: Omni-Workspace Master Start Script - v5.308.0
 :: Builds and launches all Go binary services + Control Center (:2999)
 :: 7 projects, 10 Go binaries + Consolidated Control Center & Tray
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
@@ -101,6 +101,8 @@ goto :end
 ::  BUILD ALL - Compile every Go binary
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 :build_all
+if "%GOCACHE%"=="" if exist "D:\agent-cache" set "GOCACHE=D:\agent-cache\go-build"
+if "%GOTMPDIR%"=="" if exist "D:\agent-cache" set "GOTMPDIR=D:\agent-cache\go-tmp"
 echo  Building all Go binaries...
 echo.
 set "OK=0"
@@ -160,7 +162,7 @@ cd ..
 :: 7. Hyper Go
 echo  [7/7] hyper-go
 cd hyper
-go build -buildvcs=false -ldflags="-s -w" -o hyper-go.exe ./cmd/hyper >nul 2>&1
+go build -buildvcs=false -ldflags="-s -w" -o hyper-go.exe . >nul 2>&1
 if errorlevel 1 ( echo        FAIL hyper-go & set /a FAIL+=1 ) else ( echo        OK   hyper-go.exe & set /a OK+=1 )
 cd ..
 
@@ -228,7 +230,7 @@ goto :end
 
 :help
 echo.
-echo  Omni-Workspace Master Start Script - v5.307.0
+echo  Omni-Workspace Master Start Script - v5.308.0
 echo.
 echo  Usage: start.bat [command]
 echo.

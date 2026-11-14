@@ -1,3 +1,10 @@
+### Protocol #299 Outcomes (2026-11-14)
+
+- [x] v5.308.0 - Protocol #299: Seamless handover from Muse (`429` quota reset Nov 16 00:00 UTC); fast-forwarded `bobfilez_fix`, `okgame`, `bg_fix`; pushed `bobfilez` (+5), `bobtorrent` (+6), `marketing_agent` (+3), `realestatecrm` (+1), `bobcoin` (+1), `bobmani/hymnmania` (+1), `bobble` (+1); staged 17 published submodule pointers (`pincheck == 0` unpublished); regenerated `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md`
+- [x] Shipped Consolidated Workspace Control Center (`:2999`) + Native Windows System Tray (`research/workspace-orchestrator` v2.0.0, `start_dashboard_tray.bat`, `start.bat dashboard|tray`) at `BelowNormal` priority
+- [x] Fixed `hyper-go` build path (`.` instead of `./cmd/hyper`) and defaulted `GOCACHE`/`GOTMPDIR` to `D:\agent-cache` in `build.bat`, `start.bat`, and `server/index.js` (`build.bat` 4/4 OK, `start.bat build` 10/10 OK, `pi-mono` `./pkg/ai/` tests green)
+- [ ] Robert: disposition 4 retained conflict branches (`bobfilez`, `freellm`, `veilid_reddit_facebook`, `hyperporn`); Umbrella v6/v7 & `unitedbeats.org` menu confirmation with Bobbi (`muse.ai` usage resets Nov 14 18:38 EST); commercial GTM & maintenance window gates
+
 ### Protocol #298 Outcomes (2026-11-14)
 
 - [x] v5.307.0 - Protocol #298: triage 160 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); ArrowVortex release forward-MERGED OK; FFs bobfilez_fix/okgame (merge), bg_fix/bobsaver_fix (phase2); bobfilez dirty-committed (TODO/VERSION/fo.db), Maestro push ok, phase4 pushed bobfilez (+3), bobtorrent (+14), aimoneymachine_site (+3); hyperporn local main 2 ahead/3 behind origin, sync-conflict retained; phase4b up-to-date, 12 submodule pointers staged (fwber,ArrowVortex,bobcoin,bobfilez,bgtk,bqt,bcs,bg_fix,bobfilez_fix,bobsaver_fix,okgame,bobble), pincheck 0 unpublished; bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped unpublished, 4 branches retained conflict-final; disk healthy (285GB free) after stale-tmp-pack cleanup + Go cache on D:

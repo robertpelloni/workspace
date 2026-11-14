@@ -1,4 +1,19 @@
-## [v5.293.0] - 2026-11-12 - Protocol sync, Gate1 closed, deploy held
+# Changelog
+
+## [v5.308.0] - 2026-11-14 - Protocol #299: Repository Sync, Control Center v2.0 & 10/10 Go Builds
+
+### Synced & Shipped
+- **Submodules**: Triage 163 actionable across 114 scanned repos, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); fast-forwards `bobfilez_fix`, `okgame`, and `bg_fix`; `Maestro` push verified (`--no-verify` up-to-date); Phase 4 dirty-state tracked & pushed `bobfilez` (+5), `bobtorrent` (+6), `marketing_agent` (+3), `realestatecrm` (+1), `bobcoin` (+1), `bobmani/hymnmania` (+1), and `bobble` (+1); Phase 4b verified `fwber`, `bobmani/ksm-v2`, `electricsheep`, and `neverball` up-to-date; **17 submodule pointers staged** (`ArrowVortex`, `aimoneymachine_site`, `bcs`, `bg`, `bg_fix`, `bgtk`, `bob_and_lum_sitcom`, `bobble`, `bobcoin`, `bobfilez`, `bobfilez_fix`, `bobtorrent`, `bqt`, `fwber`, `marketing_agent`, `okgame`, `realestatecrm`) with `pincheck` verified at **0 unpublished** (`openclaw-dashboard`, `projectM-upstream`, `hyperporn` skipped unpublished).
+- **Consolidated Control Center (`:2999`) & System Tray (`v2.0.0`)**: Shipped `research/workspace-orchestrator` (`server/index.js`, `client/index.html`, `tray_controller.ps1`, `package.json` v2.0.0) and `start_dashboard_tray.bat` (`start.bat dashboard|tray`), running at `BelowNormal` CPU priority with `D:\agent-cache` Go build cache integration.
+- **10/10 Go Builds Fixed**: Fixed `hyper-go` build target in `start.bat` and `research/workspace-orchestrator/server/index.js` from missing `./cmd/hyper` to `.` (`hyper/main.go`); `build.bat` and `start.bat build` now pass cleanly with `GOCACHE`/`GOTMPDIR` routed to `D:\agent-cache`.
+- **Governance & Maps Refreshed**: Regenerated `STRUCTURAL_MAP.md` (`133/134` initialized) and `SUBMODULE_DASHBOARD.md` (sanitizing multiline/pipe cells), and updated `VISION.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, and `.memory/main.md` to `v5.308.0`.
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: `bobfilez` `backup/wip-leader-sync-20261107` (+1), `freellm` `temp-main` (+2), `veilid_reddit_facebook` `jules-scaffold-0.1.0-18345075036601368068` (+17), `hyperporn` `backup/wip-leader-sync-20261107` (+2).
+- Excluded: `HyperNexus` + `HyperNexus2old` (sibling lanes; fetch/status only — `HyperNexus` verified `0/0` vs `origin/main`), `openclaw-config` / `openclaw-dashboard` (foreign/diverged), `unitedbeats_site` (site lane), unpublished root pointers skipped by pincheck guard.
+
+### Coordination
+- Seamless handover from `muse-wonder-leader` (`01a1aa95-ba13-7573-81c8-8d1c0a06a63a`, hit Muse subscription quota `429` at `09:57 EST`, window resets `2026-11-16 00:00 UTC`) to Antigravity (`antigravity-gemini`). Coordinated on HyperNexus session bus (`:7778`) and MS Edge CDP (`:9222`).
 
 ## [v5.307.0] - 2026-11-14 - Protocol #298: Repository Sync & Intelligent Merge
 
@@ -236,6 +251,7 @@
 - Caught up on latest Antigravity sessions (`ff90f2fd` HyperNexus v1.0.48 shipped; `8e716423` RealEstateCRM build lane) and Codex Desktop rollout `01a1d0bc` (died at start: missing `MODEL_API_KEY`; live Codex lane runs via kernel bus id `codex-desktop-laptop`).
 - HyperNexus code + running kernel both v1.0.48, fetch-verified 0/0 vs GitLab origin/main.
 
+## [v5.293.0] - 2026-11-12 - Protocol sync, Gate1 closed, deploy held
 - Root 89a747201 clean, VERSION v5.293.0
 - realestatecrm ff 0be8dec to aa44329, 7 commits, only main, no feature branches
 - jules-autopilot ff d2538d3 to ff5b0fb, backup branch retained
