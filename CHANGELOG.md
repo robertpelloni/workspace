@@ -1,5 +1,20 @@
 ## [v5.293.0] - 2026-11-12 - Protocol sync, Gate1 closed, deploy held
 
+## [v5.307.0] - 2026-11-14 - Protocol #298: Repository Sync & Intelligent Merge
+
+### Synced
+- **Submodules**: triage 160 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); ArrowVortex release forward-MERGED OK; FFs bobfilez_fix/okgame (merge), bg_fix/bobsaver_fix (phase2); bobfilez dirty-committed (TODO/VERSION/fo.db), Maestro push ok, phase4 pushed bobfilez (+3), bobtorrent (+14), aimoneymachine_site (+3); hyperporn local main 2 ahead/3 behind origin, sync-conflict retained; phase4b up-to-date, 12 submodule pointers staged (fwber,ArrowVortex,bobcoin,bobfilez,bgtk,bqt,bcs,bg_fix,bobfilez_fix,bobsaver_fix,okgame,bobble), pincheck 0 unpublished; bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped unpublished, 4 branches retained conflict-final; disk healthy (285GB free) after stale-tmp-pack cleanup + Go cache on D:. Scan/triage covered 114 repos; unique branches remained only in upstream mirrors (fwber/hermes-agent `heads/upstream/*`, filtered), dependabot branches (filtered), excluded lanes, and the 4 retained conflicts below.
+- Reverse: veilid scaffold reverse-merge attempted, conflict-aborted (retained, no reverse). `bobmani/itgmania jules-12512815185672744343` verified fully contained in `release` (cherry 0), no reverse needed.
+- Origin sync: hyperporn origin-sync attempted (`+2/-3`), conflict-final, retained diverged; electricsheep/neverball upstream defaults unchanged (push up-to-date).
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling lanes; fetch/status only from leader lane), openclaw-config / openclaw-dashboard (foreign/diverged), unitedbeats_site (site lane), unpublished root pointers not staged (openclaw-dashboard, projectM-upstream, hyperporn skipped by pincheck guard)
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi logging leader check-ins, no v6/menu ruling yet; Gemini Master Next Steps options are Robert-reserved (mirrored to bus bm-mwg9jm35, not decided). Always-deploy followed on close-out.
+- HyperNexus code v1.0.70 fetch-verified 0/0 vs origin/main, running kernel v1.0.71; supervisor session still degraded (consecutiveFailures 0).
+
 ## [v5.306.0] - 2026-11-14 - Protocol #297: Repository Sync & Intelligent Merge
 
 ### Synced

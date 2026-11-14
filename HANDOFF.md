@@ -1,3 +1,19 @@
+# HANDOFF - v5.307.0 - 2026-11-14 - Protocol #298: Repository Sync & Intelligent Merge
+
+## Session - Protocol #298 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_298_*`)
+- Scan/triage: 114 repos. triage 160 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); ArrowVortex release forward-MERGED OK; FFs bobfilez_fix/okgame (merge), bg_fix/bobsaver_fix (phase2); bobfilez dirty-committed (TODO/VERSION/fo.db), Maestro push ok, phase4 pushed bobfilez (+3), bobtorrent (+14), aimoneymachine_site (+3); hyperporn local main 2 ahead/3 behind origin, sync-conflict retained; phase4b up-to-date, 12 submodule pointers staged (fwber,ArrowVortex,bobcoin,bobfilez,bgtk,bqt,bcs,bg_fix,bobfilez_fix,bobsaver_fix,okgame,bobble), pincheck 0 unpublished; bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped unpublished, 4 branches retained conflict-final; disk healthy (285GB free) after stale-tmp-pack cleanup + Go cache on D:.
+- Remaining verified unmerged = 4 retained branches + 2 dependabot (planet_fitness, bobcoin, filtered), all retained (list in CHANGELOG v5.307.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed bobsaver (+7), bcs (+1), aimoneymachine_site (+4); bobtorrent dirty-fail (.hypernexus/ untracked, untouched). HyperNexus code v1.0.70 / running kernel v1.0.71 from sibling lanes.
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
 # HANDOFF - v5.306.0 - 2026-11-14 - Protocol #297: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #297 (this session)
