@@ -1,0 +1,33 @@
+[
+  {
+    "repo": "bcs",
+    "action": "pushed",
+    "ahead": 1
+  },
+  {
+    "repo": "electricsheep",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "aimoneymachine_site",
+    "action": "pushed",
+    "ahead": 6
+  },
+  {
+    "repo": "neverball",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "hyperporn",
+    "action": "sync-conflict-final",
+    "ahead": 2,
+    "behind": 3
+  },
+  {
+    "repo": "autositcom",
+    "action": "pushed",
+    "ahead": 5
+  }
+]
