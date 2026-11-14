@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.305.0)
+## Current Status (v5.306.0)
+
+**Protocol #297 (2026-11-14):** triage 160 actionable, remaining 7 unmerged (4 retained conflicts + 3 dependabot filtered); FFs bobfilez_fix (merge) + bobsaver_fix (phase2), bobfilez bobui_web/fo.db dirty-committed, Maestro push ok, phase4 pushed bobsaver (+7), bcs (+1), aimoneymachine_site (+4); bobtorrent dirty-fail on untracked .hypernexus/ (lane-owned, untouched); phase4b up-to-date; 12 submodule pointers staged (fwber,bg,bobcoin,bobfilez,bgtk,bobsaver,bqt,bcs,bobmani,bobfilez_fix,bobsaver_fix,bobble); aimoneymachine_site pin unstaged unpublished on recheck; bobtorrent/openclaw-dashboard/projectM-upstream/hyperporn pins skipped unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; disk ENOSPC crisis resolved (stale git tmp packs + Go cache to D:, C: 200GB+ free after lane cleanup). 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.305.0)
 
 **Protocol #296 (2026-11-14):** triage 156 actionable, remaining 7 unmerged (4 retained conflicts + 3 dependabot filtered incl bobcoin new); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez build-msvc/CMakeCache.txt dirty-committed, Maestro push ok, phase4 pushed bobtorrent (+8), bcs (+2), aimoneymachine_site (+15), bobmani (+7), bobmani/pianogame (+3); phase4b all up-to-date; 10 submodule pointers staged (autositcom,bg_fix,bgtk,bob_and_lum_sitcom,bobble,bobcoin,bobfilez_fix,bobsgameweb,fwber,realestatecrm); bcs/bobfilez/bobmani/bobsaver/bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped or unstaged unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; GH token coordinated from root .env (verified robertpelloni, never printed); disk ENOSPC recovered by deleting stale git tmp packs + agent temp only. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 
