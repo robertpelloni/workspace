@@ -7,7 +7,7 @@
 - Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.302.0).
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
 - Phase4 pushed: aimoneymachine_site (+8 incl previously unpublished lane commits now published), autositcom (+5). bobsgameweb/bg_fix FFs are local submodule checkouts matching published tips.
-- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+- Build/deploy: `cmd /c build.bat` (v5.302.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push e60dd567ec + build commit, per always-deploy (10-min job b3c2a1fe).
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
