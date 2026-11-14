@@ -1,3 +1,19 @@
+# HANDOFF - v5.305.0 - 2026-11-14 - Protocol #296: Repository Sync & Intelligent Merge
+
+## Session - Protocol #296 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_296_*`)
+- Scan/triage: 114 repos. triage 156 actionable, remaining 7 unmerged (4 retained conflicts + 3 dependabot filtered incl bobcoin new); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez build-msvc/CMakeCache.txt dirty-committed, Maestro push ok, phase4 pushed bobtorrent (+8), bcs (+2), aimoneymachine_site (+15), bobmani (+7), bobmani/pianogame (+3); phase4b all up-to-date; 10 submodule pointers staged (autositcom,bg_fix,bgtk,bob_and_lum_sitcom,bobble,bobcoin,bobfilez_fix,bobsgameweb,fwber,realestatecrm); bcs/bobfilez/bobmani/bobsaver/bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped or unstaged unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; GH token coordinated from root .env (verified robertpelloni, never printed); disk ENOSPC recovered by deleting stale git tmp packs + agent temp only.
+- Remaining verified unmerged = 4 retained branches + 3 dependabot (planet_fitness, bobble, bobcoin, filtered), all retained (list in CHANGELOG v5.305.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed bobtorrent (+8), bcs (+2), aimoneymachine_site (+15), bobmani (+7), pianogame (+3); phase4b up-to-date. HyperNexus code v1.0.70 / running kernel v1.0.71 from sibling lanes.
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
 # HANDOFF - v5.304.0 - 2026-11-14 - Protocol #295: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #295 (this session)

@@ -1,3 +1,9 @@
+### Protocol #296 Outcomes (2026-11-14)
+
+- [x] v5.305.0 - Protocol #296: triage 156 actionable, remaining 7 unmerged (4 retained conflicts + 3 dependabot filtered incl bobcoin new); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez build-msvc/CMakeCache.txt dirty-committed, Maestro push ok, phase4 pushed bobtorrent (+8), bcs (+2), aimoneymachine_site (+15), bobmani (+7), bobmani/pianogame (+3); phase4b all up-to-date; 10 submodule pointers staged (autositcom,bg_fix,bgtk,bob_and_lum_sitcom,bobble,bobcoin,bobfilez_fix,bobsgameweb,fwber,realestatecrm); bcs/bobfilez/bobmani/bobsaver/bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped or unstaged unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; GH token coordinated from root .env (verified robertpelloni, never printed); disk ENOSPC recovered by deleting stale git tmp packs + agent temp only
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #295 Outcomes (2026-11-14)
 
 - [x] v5.304.0 - Protocol #295: triage 159 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez fo.db dirty-committed, Maestro push ok, phase4 pushed bobcoin/bobfilez/aimoneymachine_site, phase4b pushed fwber (repo moved to FWBerLLC org), 9 submodule pointers staged (fwber,bg,bobcoin,bgtk,bobsgameweb,bg_fix,bobfilez_fix,bobble,autositcom); bobfilez/aimoneymachine_site/openclaw-dashboard/bobmani/projectM-upstream/hyperporn pins skipped unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; unitedbeats_site moved to UnitedBeatsLLC org + WordPress v1.4.0 (pointer left unstaged)
