@@ -19,8 +19,10 @@ $ControlUrl = "http://127.0.0.1:2999"
 
 function Get-ControlCenterOverview {
     try {
-        $resp = Invoke-RestMethod -Uri "$ControlUrl/api/overview" -Method Get -TimeoutSec 2 -ErrorAction Stop
-        return $resp
+        $wc = New-Object System.Net.WebClient
+        $wc.Encoding = [System.Text.Encoding]::UTF8
+        $raw = $wc.DownloadString("$ControlUrl/api/overview")
+        return ($raw | ConvertFrom-Json)
     } catch {
         return $null
     }
