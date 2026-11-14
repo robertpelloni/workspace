@@ -7,7 +7,7 @@
 - Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.304.0).
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
 - Phase4/4b pushed: bobcoin (+1), bobfilez (+2), aimoneymachine_site (+14), fwber (moved to FWBerLLC org). HyperNexus at v1.0.69 (skill-sync + GitLab healthcheck fix) from sibling lanes.
-- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); root push 0b9fec5556, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
