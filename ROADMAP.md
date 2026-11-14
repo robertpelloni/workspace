@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.303.0)
+## Current Status (v5.304.0)
+
+**Protocol #295 (2026-11-14):** triage 159 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez fo.db dirty-committed, Maestro push ok, phase4 pushed bobcoin/bobfilez/aimoneymachine_site, phase4b pushed fwber (repo moved to FWBerLLC org), 9 submodule pointers staged (fwber,bg,bobcoin,bgtk,bobsgameweb,bg_fix,bobfilez_fix,bobble,autositcom); bobfilez/aimoneymachine_site/openclaw-dashboard/bobmani/projectM-upstream/hyperporn pins skipped unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; unitedbeats_site moved to UnitedBeatsLLC org + WordPress v1.4.0 (pointer left unstaged). 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.303.0)
 
 **Protocol #294 (2026-11-13):** 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 0 fast-forwards, 6 submodule pointers staged (bg, bgtk, bobble, bobcoin, fwber, marketing_agent); autositcom/bobfilez pins unstaged on pincheck recheck (lane WIP unpublished), pincheck 0 unpublished, 4 branches retained conflict-final. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 

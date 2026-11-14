@@ -1,15 +1,15 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-13 (Protocol #294, full regen)
+Generated: 2026-11-13 (Protocol #295, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | 91dad3007be1 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 3b5829217ac0 |
+| fwber | https://github.com/robertpelloni/fwber.git | ab5b3fcd8760 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 12717d6a319b |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
-| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | c91d9b2ca105 |
+| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | ba6b8136770b |
 | skillzhub | https://github.com/robertpelloni/skillzhub | c2b8aa26aa41 |
 | hermes-agent | https://github.com/robertpelloni/hermes-agent | 166ab639f437 |
 | multimousergy | https://github.com/robertpelloni/multimousergy.git | 70066c3a277d |
@@ -25,16 +25,16 @@ Generated: 2026-11-13 (Protocol #294, full regen)
 | agentirc | https://github.com/robertpelloni/agentirc.git | c8cef8a9d86b |
 | ai_game_engine | https://github.com/robertpelloni/ai_game_engine.git | 45ff892dffcf |
 | apophysis-j | https://github.com/robertpelloni/apophysis-j.git | a5b2c74f8dc6 |
-| bg | https://github.com/robertpelloni/bg.git | bb0ec9474ba3 |
+| bg | https://github.com/robertpelloni/bg.git | 68496b50b13d |
 | bobbybookmarks | https://github.com/robertpelloni/bobbybookmarks | 9fc00275dfd7 |
-| bobcoin | https://github.com/robertpelloni/bobcoin | 3ef062a6e819 |
+| bobcoin | https://github.com/robertpelloni/bobcoin | 9011d502da57 |
 | bobeditpro | https://github.com/robertpelloni/bobeditpro | 398d4a7fa95c |
-| bobfilez | https://github.com/robertpelloni/bobfilez | 120c7cfc7d7a |
-| bgtk | https://github.com/robertpelloni/bgtk | 18cfde9800cb |
+| bobfilez | https://github.com/robertpelloni/bobfilez | f68ba0203f29 |
+| bgtk | https://github.com/robertpelloni/bgtk | 15f9c510e76e |
 | bobium | https://github.com/robertpelloni/bobium | 49cd37190b86 |
 | bobsaver | https://github.com/robertpelloni/bobsaver | abd32a4eacb0 |
 | bobsgameonlinejava | https://github.com/robertpelloni/bobsgameonlinejava.git | 61629d3d2cbc |
-| bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | e745e243b88e |
+| bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | 999d7f568867 |
 | bobtorrent | https://github.com/robertpelloni/bobtorrent | 7b45478b1ed4 |
 | bobtrader | https://github.com/robertpelloni/bobtrader | 40cd07f4bb0a |
 | bobtrax | https://github.com/robertpelloni/bobtrax | 32e04eb146c9 |
@@ -49,7 +49,7 @@ Generated: 2026-11-13 (Protocol #294, full regen)
 | marketing_agent | https://github.com/robertpelloni/marketing_agent.git | a2a279dbcb25 |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | 4d47eaa67c58 |
-| aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 05f76146a9f8 |
+| aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 80ae52d8071b |
 | geany | https://github.com/robertpelloni/geany | 9bec4e3a8832 |
 | geiss | https://github.com/robertpelloni/geiss.git | f01bf253e2fa |
 | hyper | https://github.com/robertpelloni/hyper.git | bad07c0b2da9 |
@@ -74,15 +74,15 @@ Generated: 2026-11-13 (Protocol #294, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 05e242e1dc5b |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | a7e173f8ce82 |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 4956bafa2091 |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | 92415d6c9ce6 |
 | warp | https://github.com/robertpelloni/warp.git | 25d557224446 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | c0c806e0b2d3 |
 | xrnet | https://github.com/robertpelloni/xrnet | 6c537395b1b5 |
-| bobmani | https://github.com/robertpelloni/bobmani | b3f8aa5d11d4 |
+| bobmani | https://github.com/robertpelloni/bobmani | ef9305f248a9 |
 | MilkDrop3_fix | https://github.com/robertpelloni/MilkDrop3.git | 254704aef2e0 |
-| bg_fix | https://github.com/robertpelloni/bg.git | 02fc7a7522c1 |
-| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | 885ac38998a1 |
+| bg_fix | https://github.com/robertpelloni/bg.git | 08c36f42e230 |
+| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | 120c7cfc7d7a |
 | bobsaver_fix | https://github.com/robertpelloni/bobsaver.git | abd32a4eacb0 |
 | bobsgameonlinejava_fix | https://github.com/robertpelloni/bobsgameonlinejava.git | 61629d3d2cbc |
 | browser-use | https://github.com/robertpelloni/browser-use | cacead571470 |
@@ -122,15 +122,15 @@ Generated: 2026-11-13 (Protocol #294, full regen)
 | gods-eye-view | https://github.com/robertpelloni/gods-eye-view | a6a6c4469f80 |
 | ww3_game | https://github.com/robertpelloni/ww3_game.git | 740708eb7831 |
 | succubus.red | https://github.com/robertpelloni/succubus.red.git | b69feba53d8c |
-| bobble | https://github.com/robertpelloni/bobble.git | 9bf9a614d145 |
+| bobble | https://github.com/robertpelloni/bobble.git | c0eb11fe884e |
 | newz | https://github.com/robertpelloni/newz.git | 8ca290515bc9 |
 | explorerexedecompiled | https://github.com/robertpelloni/explorerexedecompiled.git | 6896c2e8f3b7 |
-| autositcom | https://github.com/robertpelloni/autositcom.git | 9c67ce11918f |
+| autositcom | https://github.com/robertpelloni/autositcom.git | a8546489ac28 |
 | webapp_factory | https://github.com/robertpelloni/webapp_factory.git | 07ccab221156 |
 | educational_video_pipeline | https://github.com/robertpelloni/educational_video_pipeline.git | 9a692dea7524 |
 | mparty | https://github.com/robertpelloni/mparty.git | 6208e281fcec |
 | make_elon_laugh | https://github.com/robertpelloni/make_elon_laugh.git | 8e6b0d612e4b |
-| unitedbeats_site | https://github.com/robertpelloni/unitedbeats_site.git | 3d777a1175ef |
+| unitedbeats_site | https://github.com/UnitedBeatsLLC/unitedbeats_site.git | f43b09aae93b |
 | sales_bot | https://github.com/robertpelloni/sales_bot.git | d1b494d3540a |
 | borg | https://github.com/robertpelloni/borg.git | 0af9a54b0e49 |
 | Folderum3-The-Last-Attempt | https://github.com/robertpelloni/Folderum3-The-Last-Attempt.git | 2541eb114b78 |

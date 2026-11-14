@@ -1,3 +1,19 @@
+# HANDOFF - v5.304.0 - 2026-11-14 - Protocol #295: Repository Sync & Intelligent Merge
+
+## Session - Protocol #295 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_295_*`)
+- Scan/triage: 114 repos. triage 159 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez fo.db dirty-committed, Maestro push ok, phase4 pushed bobcoin/bobfilez/aimoneymachine_site, phase4b pushed fwber (repo moved to FWBerLLC org), 9 submodule pointers staged (fwber,bg,bobcoin,bgtk,bobsgameweb,bg_fix,bobfilez_fix,bobble,autositcom); bobfilez/aimoneymachine_site/openclaw-dashboard/bobmani/projectM-upstream/hyperporn pins skipped unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; unitedbeats_site moved to UnitedBeatsLLC org + WordPress v1.4.0 (pointer left unstaged).
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.304.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4/4b pushed: bobcoin (+1), bobfilez (+2), aimoneymachine_site (+14), fwber (moved to FWBerLLC org). HyperNexus at v1.0.69 (skill-sync + GitLab healthcheck fix) from sibling lanes.
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
 # HANDOFF - v5.303.0 - 2026-11-13 - Protocol #294: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #294 (this session)

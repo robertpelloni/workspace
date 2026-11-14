@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-:: Omni-Workspace Master Start Script - v5.303.0
+:: Omni-Workspace Master Start Script - v5.304.0
 :: Builds and launches all Go binary services + Control Center (:2999)
 :: 7 projects, 10 Go binaries + Consolidated Control Center & Tray
 :: â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
@@ -228,7 +228,7 @@ goto :end
 
 :help
 echo.
-echo  Omni-Workspace Master Start Script - v5.303.0
+echo  Omni-Workspace Master Start Script - v5.304.0
 echo.
 echo  Usage: start.bat [command]
 echo.

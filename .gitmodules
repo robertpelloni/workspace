@@ -485,7 +485,7 @@ branch = master
 	url = https://github.com/robertpelloni/make_elon_laugh.git
 [submodule "unitedbeats_site"]
 	path = unitedbeats_site
-	url = https://github.com/robertpelloni/unitedbeats_site.git
+	url = https://github.com/UnitedBeatsLLC/unitedbeats_site.git
 [submodule "sales_bot"]
 	path = sales_bot
 	url = https://github.com/robertpelloni/sales_bot.git
