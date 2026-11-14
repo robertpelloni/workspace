@@ -7,7 +7,7 @@
 - Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.299.0).
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
 - Fix: invalid GITHUB_TOKEN env var (burned credential) was breaking HTTPS pushes for Maestro/ksm-v2/electricsheep/neverball; unsetting it restores keyring auth - all four verify Everything up-to-date. Robert: revoke/replace that token in Vault/env. GTM repo unitedbeats_hypernexus_gtm seeded earlier (e7109f6, submodule 021f1aaf4a).
-- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+- Build/deploy: `cmd /c build.bat` (v5.299.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push 471a4fd882 + build commit, per always-deploy (10-min job b3c2a1fe). NOTE: unset invalid GITHUB_TOKEN for git pushes until Robert replaces it.
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
