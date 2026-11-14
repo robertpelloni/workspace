@@ -10,7 +10,7 @@ const getPort = require('get-port');
 
 const app = express();
 const PORT = Number(process.env.PORT) || 2999;
-const WORKSPACE_ROOT = path.resolve(__dirname, '../../');
+const WORKSPACE_ROOT = path.resolve(__dirname, '../../../');
 const CLIENT_DIR = path.resolve(__dirname, '../client');
 
 app.use(cors());

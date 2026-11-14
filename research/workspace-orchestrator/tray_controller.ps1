@@ -15,7 +15,7 @@ param(
 $ErrorActionPreference = "SilentlyContinue"
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $WorkspaceRoot = Resolve-Path (Join-Path $ScriptDir "..\..") | Select-Object -ExpandProperty Path
-$ControlUrl = "http://localhost:2999"
+$ControlUrl = "http://127.0.0.1:2999"
 
 function Get-ControlCenterOverview {
     try {
