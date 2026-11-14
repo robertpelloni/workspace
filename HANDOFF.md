@@ -7,7 +7,7 @@
 - Remaining verified unmerged = 4 retained branches + 3 dependabot (planet_fitness, bobble, bobcoin, filtered), all retained (list in CHANGELOG v5.306.0).
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
 - Phase4 pushed bobsaver (+7), bcs (+1), aimoneymachine_site (+4); bobtorrent dirty-fail (.hypernexus/ untracked, untouched). HyperNexus code v1.0.70 / running kernel v1.0.71 from sibling lanes.
-- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (GOCACHE/GOTMPDIR on D:); root push 56b7c65ea, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
