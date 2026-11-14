@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.299.0)
+## Current Status (v5.300.0)
+
+**Protocol #291 (2026-11-13):** 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 6 submodule pointers staged (bg, bgtk, bob_and_lum_sitcom, fwber, marketing_agent, realestatecrm); aimoneymachine_site/bcs pins unstaged on pincheck recheck (lane WIP unpublished), pincheck 0 unpublished, 4 branches retained conflict-final. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.299.0)
 
 **Protocol #290 (2026-11-13):** 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 2 submodule pointers staged (fwber, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 
