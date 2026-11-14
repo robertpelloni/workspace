@@ -1,0 +1,667 @@
+[
+  {
+    "path": "hypercode",
+    "status": "NOT_INIT",
+    "tail": ""
+  },
+  {
+    "path": "hymnmania",
+    "status": "NOT_INIT",
+    "tail": ""
+  },
+  {
+    "path": "auto_dj_script",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "skillzhub",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ArrowVortex",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "multimousergy",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "realestatecrm",
+    "status": "OK",
+    "tail": "Fetching legacy\nFetching origin\nFrom https://github.com/candlestixxx/realestatecrm\n   e9322ca..0630517  main       -> legacy/main\n"
+  },
+  {
+    "path": "jules-autopilot",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "GWEN",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "JWildfire",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "superdawmcp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "fwber",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\n"
+  },
+  {
+    "path": "MarbleBlast",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "MilkDrop3",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "Maestro",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "agentirc",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ableton_psytrance_hymn_creator",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "OpenMBU",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ai_game_engine",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobcoin",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bg",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "apophysis-j",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobbybookmarks",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\n"
+  },
+  {
+    "path": "bobium",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobeditpro",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobfilez",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobsgameonlinejava",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bgtk",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobtrax",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bqt",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobzilla",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobtrader",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobtorrent",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobzzite",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bcs",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "crowdsourced_dance_club",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "dao",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "electricsheep",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "element-web",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "f-zerox",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "fcdm",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "aimoneymachine_site",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "geany",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "geiss",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "hyperharness",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "hyper",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "freellm",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "marketing_agent",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching github\n"
+  },
+  {
+    "path": "mcp-superassistant",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "native-fy",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "neverball",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "odcnn",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "onetool-mcp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "npp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "mk64",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "openclaw-config",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\n"
+  },
+  {
+    "path": "bobsaver",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "openclaw-dashboard",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "planet_fitness_stepmaniax_agent",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobsgameweb",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "psytrance_night_outreach_agent",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "slsk_discography_downloader_script",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "supersaber",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "projectm",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "pi-mono",
+    "status": "OK",
+    "tail": "pstream/fix/report-replacement-diagnostics\n   b4899f59e..97d539ce4  main       -> upstream/main\nerror: Could not read 671155307eca5177678d857d6f370ab14dcad7f3\nfatal: unable to parse commit 671155307eca5177678d857d6f370ab14dcad7f3\nerror: failed to write commit-graph\nerror: task 'commit-graph' failed\n"
+  },
+  {
+    "path": "timidity",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "veilid_reddit_facebook",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "sm64coopdx",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "tabby",
+    "status": "FAIL",
+    "tail": "Fetching origin\nFetching upstream\nFrom https://github.com/robertpelloni/tabby\n ! [rejected] v1.0.235   -> v1.0.235  (would clobber existing tag)\nerror: could not fetch origin\n"
+  },
+  {
+    "path": "vst_monster",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "xrnet",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "MilkDrop3_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bg_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "warp",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobfilez_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobsaver_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "HyperNexus",
+    "status": "OK",
+    "tail": "Fetching gitlab\nFetching origin\nFetching github\n"
+  },
+  {
+    "path": "bobsgameonlinejava_fix",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani/Simply-Love-SM5",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "browser-use",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "topaz-ffmpeg",
+    "status": "OK",
+    "tail": "Fetching upstream-topaz\nFetching upstream\nFetching origin\nFrom https://github.com/FFmpeg/FFmpeg\n   f8bb61cd57..cf8e0c40b6  master     -> upstream/master\n"
+  },
+  {
+    "path": "bobmani/arrowvortex",
+    "status": "OK",
+    "tail": "am\nFrom https://github.com/uvcat7/ArrowVortex\n - [deleted]         (none)     -> upstream/dependabot/github_actions/beta/github/codeql-action-4.39.2\n * [new branch]      dependabot/github_actions/beta/github/codeql-action-4.39.3 -> upstream/dependabot/github_actions/beta/github/codeql-action-4.39.3\n"
+  },
+  {
+    "path": "bobmani/ddc",
+    "status": "OK",
+    "tail": "Fetching upstream\nFetching origin\n"
+  },
+  {
+    "path": "bobmani/bobmania",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/hymnmania",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani/beatoraja",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\nFrom https://github.com/exch-bms2/beatoraja\n   641d7d07..e4778954  master     -> upstream/master\n"
+  },
+  {
+    "path": "bobmani/ddc_onset",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/ffr-difficulty-model",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/itgmania",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/leraine-studio",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/ksm-v2",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bobmani/linthesia",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bdwgc",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "libjruntime",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobsgameonline",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobmani/pianogame",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "grammars-v4",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "stepmania",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "tokdiet",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "okgame",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "jvm-cpp-runtime",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "muse",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "FFmpeg",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "jdk",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "llvm-project",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "TurntUpToddler",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "projectM-upstream",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "private_gemini_storage",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "hyperporn",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "foone_datetime_short",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ksm-v2",
+    "status": "OK",
+    "tail": "Fetching origin\nFetching upstream\n"
+  },
+  {
+    "path": "bob_and_lum_sitcom",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "gods-eye-view",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ww3_game",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "succubus.red",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "bobble",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "newz",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "explorerexedecompiled",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "hermes-agent",
+    "status": "OK",
+    "tail": "d/move-docs-rewrite  (forced update)\n + 8bbe8de50d1...0d3c336e43c sid/move-guards-follow-moves -> upstream/sid/move-guards-follow-moves  (forced update)\n   d818406f003..33426a018e9  sid/move-shims         -> upstream/sid/move-shims\n * [new tag]                 rc.5-v0.23.2           -> rc.5-v0.23.2\n"
+  },
+  {
+    "path": "autositcom",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "webapp_factory",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "educational_video_pipeline",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "mparty",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "make_elon_laugh",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "unitedbeats_site",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "sales_bot",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "borg",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "Folderum3-The-Last-Attempt",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "DataStreamBrowser",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "ADSFileSystem",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "CodeWhale-Extensions",
+    "status": "OK",
+    "tail": ""
+  },
+  {
+    "path": "HyperNexus2old",
+    "status": "FAIL",
+    "tail": "TIMEOUT/ERR Command 'git fetch --all --tags --prune' timed out after 120 seconds"
+  }
+]

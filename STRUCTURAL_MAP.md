@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-13 (Protocol #288, full regen)
+Generated: 2026-11-13 (Protocol #289, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | 6ce8188ad513 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 5eaae1708403 |
+| fwber | https://github.com/robertpelloni/fwber.git | 1fda2fcefc7f |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 021f1aaf4aee |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 0630517a432e |
@@ -74,7 +74,7 @@ Generated: 2026-11-13 (Protocol #288, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 05e242e1dc5b |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | cc64c2271a96 |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 24aa61ca0d0f |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | 92415d6c9ce6 |
 | warp | https://github.com/robertpelloni/warp.git | 25d557224446 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | c0c806e0b2d3 |
@@ -137,5 +137,6 @@ Generated: 2026-11-13 (Protocol #288, full regen)
 | CodeWhale-Extensions | https://github.com/robertpelloni/CodeWhale-Extensions.git | 8de05852325f |
 | DataStreamBrowser | https://github.com/robertpelloni/DataStreamBrowser.git | 70235cc7bda6 |
 | ADSFileSystem | https://github.com/robertpelloni/ADSFileSystem.git | 5ab73c6ff2c7 |
+| unitedbeats_hypernexus_gtm | https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git | e7109f6453a5 |
 
-Initialized: 132/133
+Initialized: 133/134
