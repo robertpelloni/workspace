@@ -1,3 +1,9 @@
+### Protocol #294 Outcomes (2026-11-13)
+
+- [x] v5.303.0 - Protocol #294: 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 0 fast-forwards, 6 submodule pointers staged (bg, bgtk, bobble, bobcoin, fwber, marketing_agent); autositcom/bobfilez pins unstaged on pincheck recheck (lane WIP unpublished), pincheck 0 unpublished, 4 branches retained conflict-final
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #293 Outcomes (2026-11-13)
 
 - [x] v5.302.0 - Protocol #293: 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 2 fast-forwards (bobsgameweb +2, bg_fix +4), 4 submodule pointers staged (aimoneymachine_site, bg_fix, bobsgameweb, fwber), pincheck 0 unpublished, pincheck 0 unpublished, 4 branches retained conflict-final
