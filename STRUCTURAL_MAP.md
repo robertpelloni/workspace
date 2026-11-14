@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-13 (Protocol #289, full regen)
+Generated: 2026-11-13 (Protocol #290, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | 1fda2fcefc7f |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 021f1aaf4aee |
+| fwber | https://github.com/robertpelloni/fwber.git | 855aa1fd23bc |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 258196a015fd |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 0630517a432e |
@@ -46,7 +46,7 @@ Generated: 2026-11-13 (Protocol #289, full regen)
 | dao | https://github.com/robertpelloni/dao.git | 3a5f1e4483a3 |
 | electricsheep | https://github.com/robertpelloni/electricsheep.git | f9450c5a5821 |
 | element-web | https://github.com/robertpelloni/element-web.git | a6a90b53dd9f |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 3e0e7704305d |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 2e2a7ecb0837 |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | 4d47eaa67c58 |
 | aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 374311f9e811 |
@@ -74,7 +74,7 @@ Generated: 2026-11-13 (Protocol #289, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 05e242e1dc5b |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 24aa61ca0d0f |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 091d5bfdd335 |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | 92415d6c9ce6 |
 | warp | https://github.com/robertpelloni/warp.git | 25d557224446 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | c0c806e0b2d3 |

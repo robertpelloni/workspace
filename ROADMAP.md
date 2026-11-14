@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.298.0)
+## Current Status (v5.299.0)
+
+**Protocol #290 (2026-11-13):** 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 2 submodule pointers staged (fwber, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.298.0)
 
 **Protocol #289 (2026-11-13):** 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 1 submodule pointer staged (fwber); new unitedbeats_hypernexus_gtm submodule added at e7109f6, pincheck 0 unpublished, 4 branches retained conflict-final. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 

@@ -1,3 +1,19 @@
+# HANDOFF - v5.299.0 - 2026-11-13 - Protocol #290: Repository Sync & Intelligent Merge
+
+## Session - Protocol #290 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_290_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 2 submodule pointers staged (fwber, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.299.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Fix: invalid GITHUB_TOKEN env var (burned credential) was breaking HTTPS pushes for Maestro/ksm-v2/electricsheep/neverball; unsetting it restores keyring auth - all four verify Everything up-to-date. Robert: revoke/replace that token in Vault/env. GTM repo unitedbeats_hypernexus_gtm seeded earlier (e7109f6, submodule 021f1aaf4a).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
 # HANDOFF - v5.298.0 - 2026-11-13 - Protocol #289: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #289 (this session)

@@ -1,0 +1,27 @@
+[
+  {
+    "repo": "Maestro",
+    "action": "push-fail",
+    "detail": "remote: Invalid username or token. Password authentication is not supported for Git operations.\nfatal: Authentication failed for 'https://github.com/robertpelloni/Maestro/'\n"
+  },
+  {
+    "repo": "bobfilez",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "conflict-final"
+  },
+  {
+    "repo": "freellm",
+    "branch": "temp-main",
+    "action": "conflict-final"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-final"
+  },
+  {
+    "repo": "hyperporn",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "conflict-final"
+  }
+]
