@@ -1,0 +1,48 @@
+[
+  {
+    "repo": "realestatecrm",
+    "action": "pushed",
+    "ahead": 1
+  },
+  {
+    "repo": "bg",
+    "action": "pushed",
+    "ahead": 2
+  },
+  {
+    "repo": "bcs",
+    "action": "pushed",
+    "ahead": 1
+  },
+  {
+    "repo": "electricsheep",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "aimoneymachine_site",
+    "action": "pushed",
+    "ahead": 1
+  },
+  {
+    "repo": "neverball",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "hyperporn",
+    "action": "sync-conflict-final",
+    "ahead": 2,
+    "behind": 3
+  },
+  {
+    "repo": "bob_and_lum_sitcom",
+    "action": "pushed",
+    "ahead": 1
+  },
+  {
+    "repo": "autositcom",
+    "action": "pushed",
+    "ahead": 2
+  }
+]

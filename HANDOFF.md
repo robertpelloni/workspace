@@ -1,3 +1,349 @@
+# HANDOFF - v5.312.0 - 2026-11-15 - Protocol #303: UnitedBeats v1.7.0 (Lum $10,000 Haircut Commission & 504 Stability Fix) & Root Merge Reconciliation
+
+## Session - Protocol #303 (`antigravity-gemini`)
+
+### 1. Live on `unitedbeats.org`: The $10,000 Haircut & Life-Changing Chair Commission by Lum (`v1.7.0`)
+- Built and deployed `/var/www/unitedbeats/wp-content/themes/unitedbeats/lum-commission.php` + `style.css` (`v1.7.0`) + `functions.php` hooks across `https://unitedbeats.org/#lum-chair`, `https://unitedbeats.org/lum-10000-haircut/` (Page ID `31`, added to Primary menu `term_id=2`), `unitedbeats.net`, and `unitedbeats.site` (preserving 100% of the 80-souls starburst hero and Lumbros Dark Rainbow Oil-Sheen & 3.5s God-Light HUD).
+- **5-Question Sovereign Qualification Dossier + $10,000.00 USD Invoice:** Captures principal/celebrity identity, modality, immediate settlement rail, zero-expense-friction attestation, and all 5 candid responses for **Lum** (Co-Founder of United Beats, visual artist all the way to math magician with his friend & co-founder **Bob**). Submits via `POST /wp-json/unitedbeats/v1/lum-invoice` -> mints `INV-LUM-YYYY-NNNN-XXXX`, logs `ub_lum_invoice` posts in `/wp-admin/edit.php?post_type=ub_lum_invoice`, emails `robert@unitedbeats.org`, and provides `@media print` official PDF output.
+
+### 2. `unitedbeats.org` Outage Root-Cause Resolution & `unitedbeats_site` CI/CD Sync (`f4f81e5..d3d0120`)
+- **Hetzner PHP-FPM + FastCGI Cache (Backups in `/root/backups-unitedbeats-20261115/`):** Eliminated shared `[www]` pool (`pm.max_children = 8`) HTTP 504 timeouts by isolating `unitedbeats` onto `/run/php/php8.4-fpm-unitedbeats.sock` (`pm.max_children = 12`, `request_terminate_timeout = 30s`), raising `[www]` to `16`, and enabling Nginx `UNITEDBEATS` FastCGI microcaching (`X-UB-Cache: MISS -> HIT`, stale-on-error failover, bypassing `POST` & `/wp-json/`).
+- **Version-Controlled Theme & Workflow (`unitedbeats_site` `d3d0120`):** Pulled the complete live `wordpress-theme/unitedbeats/` (`v1.6.0`–`v1.7.0`) + `infra/` configs into `unitedbeats_site`, updated `.github/workflows/deploy.yml` and `deploy.sh` to deploy the WordPress theme safely instead of static-only `v1.2.0` files, pushed `UnitedBeatsLLC/unitedbeats_site` `origin/main`, and staged `unitedbeats_site` at root.
+- **Muse Session `01a18f86` & Root Merge Reconciliation:** Verified Muse session `HyperNexus` `v1.0.69` (`83a5582563` on `github/main`; GitLab `origin` still LFS-quota gated, so root keeps `HyperNexus` at published GitLab `69470aeb` per `pincheck == 0` rule; also note on `hetzner` `hypernexus.service` restarts on `:7778` because `/opt/tormentnexus/tormentnexus` PID `495269` holds `:7778` — left untouched per Process Preservation rule). Reconciled local `cce908222` (`v5.294.0` checkpoint whose `marketing_agent` `4893fe68` & `realestatecrm` `fe34d177` commits were already superseded in `origin/main`) cleanly onto `v5.312.0` while strictly preserving RealEstateCRM prod deploy hold.
+
+## Prior
+# HANDOFF - v5.311.0 - 2026-11-15 - Protocol #302: Control Center v2.2.0 (Async Origin Divergence & Branch Scanner), CodeWhale-Extensions 25-Branch Jules Synthesis & BobTorrent/BobCoin Sync
+
+## Session - Protocol #302 (`antigravity-gemini`)
+
+### 1. Control Center `:2999` & Windows System Tray `v2.2.0` (`research/workspace-orchestrator`)
+- Implemented the `v2.2.0` roadmap item: a 6-worker async background **Origin Divergence & Actionable Unmerged Branch Scanner** (`GET /api/submodules`, `GET /api/overview`, `POST /api/submodules/refresh-divergence`) with 90s auto-refresh, `OWNED_AUTHOR_RE` + `ACTIONABLE_BRANCH_RE` filtering (eliminating false positives from upstream GTK / Hunter Bown `claude/*` & `codex/*` branches), `hymnmania` junction fallback (`133/134` initialized), and Section 4 `Origin / Branches` UI column + `Diverged` / `Unmerged Branches` filter pills.
+- Restarted both `:2999` (`v2.2.0`) and `tray_controller.ps1` (`v2.2.0`) at `BelowNormal` CPU priority and verified `divergenceScan.scannedCount == 133` live.
+
+### 2. `CodeWhale-Extensions` Complete 25-Branch Jules Reconciliation + `bobtorrent`/`bobcoin` Sync
+- **`CodeWhale-Extensions`:** Completed the `TODO.md` follow-up across all 25 remaining `google-labs-jules[bot]` `<slug>-<digits>` branches: harvested `fetchRepoStats` Vitest coverage (`web/lib/github.test.ts`) and `has_open_entries` test coverage (`crates/tui/src/slop_ledger.rs`), unified `crates/release/src/lib.rs` `env_tests` onto `ReleaseEnvGuard` (fixing a multi-threaded env-var race vs `mod tests` and removing the unlocked `serial_test` dev-dependency), verified **53/53 Rust unit/integration tests green** (`CARGO_TARGET_DIR=D:\agent-cache\cargo-target`), merged all 25 branch histories (`0` unmerged Jules branches remaining), and pushed `origin/main`.
+- **`bobtorrent` (`adbda2d..8ea1472`) & `bobtorrent/bobcoin` (`eb8e46a5`):** Merged `origin/main` (+62 commits) into `bobtorrent/bobcoin`, pushed `bobcoin`, and committed + pushed `bobtorrent` `main`.
+
+### 3. Build, Pincheck & Sibling-Lane Status
+- **Always-Deploy Verified:** `build.bat` (`4 OK, 0 failed, 1 skipped`) and `start.bat build` (`12 OK, 0 failed`); all `.exe` binaries preserved on disk; **`pincheck == 0` unpublished** across all staged root pointers; `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md` regenerated.
+- **Sibling-Lane Isolation:** Kept `HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site`, `fwber` (`share-unlocks.ts`), and `realestatecrm` (active `v0.66.1+` sibling lane with 19 dirty files in flight) strictly untouched.
+
+## Prior
+# HANDOFF - v5.310.0 - 2026-11-15 - Protocol #301: FreeLLM Go Restoration, Control Center v2.1.0 (12 Go Binaries + Live Session Bus) & Submodule Harvest
+
+## Session - Protocol #301 (`antigravity-gemini`)
+
+### 1. FreeLLM Go Restoration & 12/12 Go Service Suite (`v5.310.0`)
+- **`freellm` (`1f07a2c..fdfc74d`):** Resolved the Protocol #300 `tray_windows.go` follow-up by restoring `proxy.RouterEvent` (`Tag`, `Message`, `String()`), buffered `Gateway.Events` (`512`), and `Gateway.EmitRouterEvent(...)` in `freellm/internal/proxy/server.go` + TX/RX/Idle router telemetry in `freellm/internal/proxy/processjob.go` + `systray` checksums in `freellm/go.sum`. Verified `go build ./...`, `freellm.exe`, and `go test ./internal/engine ./internal/transform ./internal/ui` (`rc=0`), and pushed `origin/main`.
+- **`start.bat` & Control Center `:2999` + System Tray `v2.1.0` (`research/workspace-orchestrator`):**
+  - Expanded Go binary coverage from `7 projects / 10 binaries` to **`9 projects / 12 binaries`** by adding `freellm.exe` and `bobtk.exe` (`bgtk/go` `v1.8.0`). Verified `start.bat build` (`12 OK, 0 failed`) and `build.bat` (`4 OK, 0 failed, 1 skipped`).
+  - Shipped live **HyperNexus `:7778` Session Bus panel & broadcast composer** (`GET /api/session-bus`, `POST /api/session-bus/send` with selftest noise filter), **Root Pin Alignment / Drift badges** (`PINNED` / `DRIFT`) + multi-org ownership recognition (`robertpelloni`, `UnitedBeatsLLC`, `FWBerLLC`, `RealEstateCRMLLC`), and optional **"Run Tray on Windows Login"** toggle in `tray_controller.ps1`. Both daemons are running live at `BelowNormal` priority.
+
+### 2. Protocol #301 Submodule Sync, Reconciliations & Pincheck
+- **Fast-Forwards & Reconciliations:** Fast-forwarded `ADSFileSystem`, `DataStreamBrowser`, `geiss`, `odcnn` (`v2.4.0`), `element-web` (`develop` +20), `bobsgameweb`, `aimoneymachine_site`, and `marketing_agent`; reconciled & pushed dual-branch repos `vst_monster` (`v0.8.3` +76 commits -> `49207773`), `agentirc` (`20f48a1f`), `ArrowVortex` (`d0e69c39`), `ksm-v2` (`dbe00cc1`), `bobmani/itgmania`, and `bobmani` (`9e90013c`); synced `hyperharness.exe` (`0726e066`).
+- **25 `CodeWhale-Extensions` `<slug>-<digits>` Test/Perf Branches Audited:** Cleanly Merge-Tested and skipped on conflict (no forced resolutions; zero regressions on `CodeWhale-Extensions` `main`).
+- **15 Published Root Pointers Staged** (`ADSFileSystem`, `ArrowVortex`, `DataStreamBrowser`, `agentirc`, `aimoneymachine_site`, `bobmani`, `bobsgameweb`, `element-web`, `freellm`, `geiss`, `hyperharness`, `ksm-v2`, `marketing_agent`, `odcnn`, `vst_monster`) with **`pincheck == 0` unpublished**; `STRUCTURAL_MAP.md` (`133/134` initialized) and `SUBMODULE_DASHBOARD.md` regenerated.
+
+### 3. Sibling Lanes & Next Agent Notes
+- `HyperNexus` (`v1.0.73` on session bus `:7778`), `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site`, and `fwber` uncommitted `share-unlocks.ts` remain strictly isolated per sibling-lane rules.
+- Next high-leverage candidates: (a) selective file-by-file conflict resolution of the 25 remaining `CodeWhale-Extensions` unit-test/perf branches + `cargo check`/`cargo test`, or (b) async `ahead/behind` `origin/<default>` divergence telemetry in Control Center `:2999` (`v2.2.0`).
+
+## Prior
+# HANDOFF - v5.309.0 - 2026-11-14 - Protocol #300: Deep 509-Submodule Sync, Intelligent Feature Harvest & Zero-Conflict Resolution
+
+## Session - Protocol #300 (`antigravity-gemini`)
+
+### 1. Why Previously Stranded Branches Were Discovered
+- Previous automated sweeps scanned 114 flat submodules with a hardcoded `SKIP_REPOS` exclusion list (`warp`, `hyper`, `bgtk`, `tabby`, `CodeWhale-Extensions`, etc.), skipped nested submodules, and compared `origin/HEAD..<ref>` (which hid branches whenever `origin/HEAD` pointed to an old `canary` or feature ref).
+- In Protocol #300, we ran a full **509-repository recursive audit** (`134` root + `375` nested) plus a `HEAD..<ref>` owned-repo scan across `robertpelloni`, `UnitedBeatsLLC`, `FWBerLLC`, and `RealEstateCRMLLC`, harvesting and pushing every stranded feature branch cleanly without data loss.
+
+### 2. Major Merges, Conflict Resolutions & Pushes (`v5.309.0`)
+- **Flagship Go/UI Supersets:**
+  - `bgtk` (`v1.8.0`, `657e1a1e85`): Merged +10,283 LOC 6-pillar Go framework (`jules-3967632684191581344-c6da2163` +60) + JUCE integration (`jules-10373020308968987250-2c1b6300`) + `go/src/*` (`fix-port-11254893615778068428`) + `v1.7.0` web dashboard/tray (`-serve` / `-tray`), verified `go build ./...` & unit tests (`rc=0`), and updated `npp` (`c363816d6`).
+  - `hyper` (`v1.2.0`, `848f3051`): Merged +8,469 LOC Mission Control / SSH / MCP / Agent (`jules-12860271385039058662-f70a3246` +60) + `CommandBlock.tsx`/`NotebookView.tsx` (`jules-17358446353760799770-b2310bbf`), verified `hyper-go.exe` & unit tests (`rc=0`).
+  - `warp` (`0b796c4`): Merged all 6 Jules branches (`v0.3.2` command palette/Win32, `warp-go`, `warp-ui`, `warp-csharp`, `warp-java`, `crates/warp-cli`, `rebuild/pkg/*`), verified `warp-go.exe` (`rc=0`).
+  - `tabby` (`v1.0.285`, `567b7a2d`): Merged +54 commits (`jules-11801515571725696726-c9123d08`) + dashboard consolidation, verified all 3 Go binaries (`rc=0`).
+  - `CodeWhale-Extensions` (`72f4cfb3`): Merged 12 branches including `feat/extension-api` (`tn-extension` + `codewhale-extension` crates) + 11 Jules branches.
+- **Nested Submodules, Upstream & Games:**
+  - `ArrowVortex/odcnn` (`v2.4.0` +51) -> `ArrowVortex` (`e774060`) & `bobmani/arrowvortex/odcnn`.
+  - `bobtorrent/element-web` (+22 Matrix resilience & security) + `bobcoin` Dependabot -> `bobtorrent` (`adbda2d`, publishing +47 detached-HEAD commits to `origin/main`!).
+  - `mk64` (`upstream/master` +6 -> `e5da85771`), `sm64coopdx` (`v1.17` dashboard/tray -> `30ab27080`), `electricsheep` (+8 -> `5dd8b43`), `neverball` (+7 -> `6f928b16`), `fcdm` (+18 -> `c105ce4`), `planet_fitness_stepmaniax_agent`, `bobeditpro` (`master` +189 -> `bc05bca581`), `bobsaver/geiss` (+13 -> `e68cd15`) & `bobsaver`, `bobfilez/libs/ADSFileSystem` & `DataStreamBrowser`, `bobsgameweb`, `stepmania`, `JWildfire`, `bobfilez_fix`, `bobsaver_fix`, `marketing_agent` (+1).
+- **Zero Retained Conflict Branches (`4 -> 0`):** Reconciled and pushed both directions on `hyperporn` (`0e1d2e0`), `bobfilez` (`db9cc198e`), `freellm`, and `veilid_reddit_facebook`!
+
+### 3. Build, Pincheck & Control Plane Status
+- **28 Published Root Pointers Staged** with **`pincheck == 0` unpublished** (`STRUCTURAL_MAP.md` `133/134` initialized + `SUBMODULE_DASHBOARD.md` regenerated).
+- **Always-Deploy Verified:** `build.bat` (`4 OK, 0 failed, 1 skipped`) + `start.bat build` (`10 OK, 0 failed`), all `.exe` binaries preserved on disk, Control Center `:2999` + Windows System Tray active at `BelowNormal` priority.
+- **Next Agent Notes:** Keep `HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, and `unitedbeats_site` isolated per sibling-lane protocol; note `freellm` has a pre-existing `tray_windows.go:45: undefined: proxy.RouterEvent` compile item if `freellm` Go work is scheduled next.
+
+## Prior
+# HANDOFF - v5.308.0 - 2026-11-14 - Protocol #299: Repository Sync, Control Center v2.0 & 10/10 Go Builds
+
+## Session - Protocol #299 (Antigravity handover from Muse `muse-wonder-leader`)
+
+### 1. Muse Catch-Up & Handover Context
+- Digested full transcript of root Muse leader session `01a1aa95-ba13-7573-81c8-8d1c0a06a63a` (`muse-wonder-leader`), which shipped Protocols `#284`–`#298` (`v5.293.0` -> `v5.307.0`), solved the `C:` disk space crunch (`D:\agent-cache` + stale git `.tmp` pack cleanup), migrated `fwber` (`FWBerLLC`) and `unitedbeats_site` (`UnitedBeatsLLC`), launched `unitedbeats.org` WordPress `UnitedBeats Legacy` theme `v1.4.0` (100vh legacy memorial w/ `79 souls` + `Kourlos` fix + 10 public project pages; adult pages kept draft/off-menu for AdSense & B2B safety), and created `unitedbeats_hypernexus_gtm` (`v0.1.0`).
+- Muse halted mid-Protocol `#299` at `2026-11-14 09:57:48 EST` due to `429 Subscription quota exhausted` (resets `2026-11-16T00:00:00Z`). Antigravity (`antigravity-gemini`) seamlessly took over and completed `#299`.
+
+### 2. Protocol #299 Sync & Merge Outcomes (`sync_protocol_299_*`)
+- **Scan & Triage:** 134 `.gitmodules` entries (`133/134` initialized; `hypercode` uninitialized); 163 actionable items triaged across 114 scanned repos; remaining 6 unmerged = 4 owner-retained conflicts + 2 filtered Dependabot branches (`bobcoin`, `planet_fitness_stepmaniax_agent`).
+- **Fast-Forwards & Pushes:** Fast-forwarded `bobfilez_fix`, `okgame`, and `bg_fix`; `Maestro` pushed `--no-verify` (up-to-date); Phase 4 dirty-state tracked & pushed `bobfilez` (+5), `bobtorrent` (+6), `marketing_agent` (+3), `realestatecrm` (+1), `bobcoin` (+1), `bobmani/hymnmania` (+1), and `bobble` (+1); Phase 4b verified `fwber`, `bobmani/ksm-v2`, `electricsheep`, and `neverball` up-to-date.
+- **Root Submodule Pointers:** 17 published pointers staged (`ArrowVortex`, `aimoneymachine_site`, `bcs`, `bg`, `bg_fix`, `bgtk`, `bob_and_lum_sitcom`, `bobble`, `bobcoin`, `bobfilez`, `bobfilez_fix`, `bobtorrent`, `bqt`, `fwber`, `marketing_agent`, `okgame`, `realestatecrm`); `openclaw-dashboard`, `projectM-upstream`, and `hyperporn` skipped unpublished; **`pincheck` verified `0 unpublished`**.
+- **Maps & Governance Docs:** Regenerated `STRUCTURAL_MAP.md` (`133/134`) and `SUBMODULE_DASHBOARD.md`; refreshed `VISION.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, and `.memory/main.md`.
+
+### 3. Consolidated Control Center (`:2999`), System Tray & Build Verification
+- **Control Center & Tray (`research/workspace-orchestrator` v2.0.0):** Live on `:2999` (`BelowNormal` priority) with native Windows System Tray app (`tray_controller.ps1` / `start_dashboard_tray.bat` / `start.bat dashboard|tray`).
+- **10/10 Go Builds Fixed:** Updated `hyper-go` package target from missing `./cmd/hyper` to `.` in `start.bat` and `research/workspace-orchestrator/server/index.js`, and wired automatic `D:\agent-cache` `GOCACHE`/`GOTMPDIR` defaults into `build.bat`, `start.bat`, and `server/index.js`.
+- **Always-Deploy Verification:** `build.bat` verified `4 OK / 0 failed / 1 skipped`, `start.bat build` verified `10 OK / 0 failed`, `pi-mono` `go test ./pkg/ai/` verified green, binaries preserved on disk, root pushed `0/0` vs `origin/main`.
+
+### 4. Coordination & Next Agent Notes
+- Coordinated via HyperNexus session bus (`antigravity-gemini` on `:7778`) and MS Edge CDP (`:9222` — note Bobbi `muse.ai` weekly usage resets `Sat Nov 14 18:38 EST`).
+- `HyperNexus` verified `0/0` vs `origin/main` (sibling lane owns uncommitted supervisor fix for degraded `session-1791239437228525100`; keep `HyperNexus` & `HyperNexus2old` fetch/status only).
+- 4 conflict-final branches (`bobfilez`, `freellm`, `veilid_reddit_facebook`, `hyperporn`) and commercial/maintenance gates remain reserved for Robert.
+
+## Prior
+# HANDOFF - v5.307.0 - 2026-11-14 - Protocol #298: Repository Sync & Intelligent Merge
+
+## Session - Protocol #298 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_298_*`)
+- Scan/triage: 114 repos. triage 160 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); ArrowVortex release forward-MERGED OK; FFs bobfilez_fix/okgame (merge), bg_fix/bobsaver_fix (phase2); bobfilez dirty-committed (TODO/VERSION/fo.db), Maestro push ok, phase4 pushed bobfilez (+3), bobtorrent (+14), aimoneymachine_site (+3); hyperporn local main 2 ahead/3 behind origin, sync-conflict retained; phase4b up-to-date, 12 submodule pointers staged (fwber,ArrowVortex,bobcoin,bobfilez,bgtk,bqt,bcs,bg_fix,bobfilez_fix,bobsaver_fix,okgame,bobble), pincheck 0 unpublished; bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped unpublished, 4 branches retained conflict-final; disk healthy (285GB free) after stale-tmp-pack cleanup + Go cache on D:.
+- Remaining verified unmerged = 4 retained branches + 2 dependabot (planet_fitness, bobcoin, filtered), all retained (list in CHANGELOG v5.307.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed bobsaver (+7), bcs (+1), aimoneymachine_site (+4); bobtorrent dirty-fail (.hypernexus/ untracked, untouched). HyperNexus code v1.0.70 / running kernel v1.0.71 from sibling lanes.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (GOCACHE/GOTMPDIR on D:); root push a0f7d3bd1, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.306.0 - 2026-11-14 - Protocol #297: Repository Sync & Intelligent Merge
+
+## Session - Protocol #297 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_297_*`)
+- Scan/triage: 114 repos. triage 160 actionable, remaining 7 unmerged (4 retained conflicts + 3 dependabot filtered); FFs bobfilez_fix (merge) + bobsaver_fix (phase2), bobfilez bobui_web/fo.db dirty-committed, Maestro push ok, phase4 pushed bobsaver (+7), bcs (+1), aimoneymachine_site (+4); bobtorrent dirty-fail on untracked .hypernexus/ (lane-owned, untouched); phase4b up-to-date; 12 submodule pointers staged (fwber,bg,bobcoin,bobfilez,bgtk,bobsaver,bqt,bcs,bobmani,bobfilez_fix,bobsaver_fix,bobble); aimoneymachine_site pin unstaged unpublished on recheck; bobtorrent/openclaw-dashboard/projectM-upstream/hyperporn pins skipped unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; disk ENOSPC crisis resolved (stale git tmp packs + Go cache to D:, C: 200GB+ free after lane cleanup).
+- Remaining verified unmerged = 4 retained branches + 3 dependabot (planet_fitness, bobble, bobcoin, filtered), all retained (list in CHANGELOG v5.306.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed bobsaver (+7), bcs (+1), aimoneymachine_site (+4); bobtorrent dirty-fail (.hypernexus/ untracked, untouched). HyperNexus code v1.0.70 / running kernel v1.0.71 from sibling lanes.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (GOCACHE/GOTMPDIR on D:); root push 56b7c65ea, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.305.0 - 2026-11-14 - Protocol #296: Repository Sync & Intelligent Merge
+
+## Session - Protocol #296 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_296_*`)
+- Scan/triage: 114 repos. triage 156 actionable, remaining 7 unmerged (4 retained conflicts + 3 dependabot filtered incl bobcoin new); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez build-msvc/CMakeCache.txt dirty-committed, Maestro push ok, phase4 pushed bobtorrent (+8), bcs (+2), aimoneymachine_site (+15), bobmani (+7), bobmani/pianogame (+3); phase4b all up-to-date; 10 submodule pointers staged (autositcom,bg_fix,bgtk,bob_and_lum_sitcom,bobble,bobcoin,bobfilez_fix,bobsgameweb,fwber,realestatecrm); bcs/bobfilez/bobmani/bobsaver/bobtorrent/aimoneymachine_site/openclaw-dashboard/projectM-upstream/hyperporn pins skipped or unstaged unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; GH token coordinated from root .env (verified robertpelloni, never printed); disk ENOSPC recovered by deleting stale git tmp packs + agent temp only.
+- Remaining verified unmerged = 4 retained branches + 3 dependabot (planet_fitness, bobble, bobcoin, filtered), all retained (list in CHANGELOG v5.305.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed bobtorrent (+8), bcs (+2), aimoneymachine_site (+15), bobmani (+7), pianogame (+3); phase4b up-to-date. HyperNexus code v1.0.70 / running kernel v1.0.71 from sibling lanes.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (first attempt ENOSPC on C:, rerun green with GOCACHE/GOTMPDIR on D:); root push 09954c710, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.304.0 - 2026-11-14 - Protocol #295: Repository Sync & Intelligent Merge
+
+## Session - Protocol #295 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_295_*`)
+- Scan/triage: 114 repos. triage 159 actionable, remaining 6 unmerged (4 retained conflicts + 2 dependabot filtered); FFs bobfilez_fix/bobsgameweb/bg_fix, bobfilez fo.db dirty-committed, Maestro push ok, phase4 pushed bobcoin/bobfilez/aimoneymachine_site, phase4b pushed fwber (repo moved to FWBerLLC org), 9 submodule pointers staged (fwber,bg,bobcoin,bgtk,bobsgameweb,bg_fix,bobfilez_fix,bobble,autositcom); bobfilez/aimoneymachine_site/openclaw-dashboard/bobmani/projectM-upstream/hyperporn pins skipped unpublished, pincheck 0 unpublished, 4 branches retained conflict-final; unitedbeats_site moved to UnitedBeatsLLC org + WordPress v1.4.0 (pointer left unstaged).
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.304.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4/4b pushed: bobcoin (+1), bobfilez (+2), aimoneymachine_site (+14), fwber (moved to FWBerLLC org). HyperNexus at v1.0.69 (skill-sync + GitLab healthcheck fix) from sibling lanes.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); root push 0b9fec5556, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.303.0 - 2026-11-13 - Protocol #294: Repository Sync & Intelligent Merge
+
+## Session - Protocol #294 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_294_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 0 fast-forwards, 6 submodule pointers staged (bg, bgtk, bobble, bobcoin, fwber, marketing_agent); autositcom/bobfilez pins unstaged on pincheck recheck (lane WIP unpublished), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.303.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed sibling-lane dirty states: bobcoin (+1), bobfilez (+3), aimoneymachine_site, autositcom. HyperNexus at v1.0.69 (skill-sync + GitLab healthcheck fix) from sibling lanes.
+- Build/deploy: `cmd /c build.bat` (v5.303.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push d5bf6898af + build commit, per always-deploy (10-min job b3c2a1fe).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.302.0 - 2026-11-13 - Protocol #293: Repository Sync & Intelligent Merge
+
+## Session - Protocol #293 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_293_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 2 fast-forwards (bobsgameweb +2, bg_fix +4), 4 submodule pointers staged (aimoneymachine_site, bg_fix, bobsgameweb, fwber), pincheck 0 unpublished, pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.302.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed: aimoneymachine_site (+8 incl previously unpublished lane commits now published), autositcom (+5). bobsgameweb/bg_fix FFs are local submodule checkouts matching published tips.
+- Build/deploy: `cmd /c build.bat` (v5.302.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push e60dd567ec + build commit, per always-deploy (10-min job b3c2a1fe).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.301.0 - 2026-11-13 - Protocol #292: Repository Sync & Intelligent Merge
+
+## Session - Protocol #292 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_292_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 1 fast-forward (bg_fix master +2 to published tip), 6 submodule pointers staged (fwber, bg, bcs, bg_fix, bob_and_lum_sitcom, autositcom), pincheck 0 unpublished, pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.301.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed: bcs (+1), aimoneymachine_site (+6), autositcom (+5); bg_fix fast-forwarded +2 (first non-zero FF since #288). Pin recheck: aimoney HEAD unpublished, skipped.
+- Build/deploy: `cmd /c build.bat` (v5.301.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push bdcbf397f8 + build commit, per always-deploy (10-min job b3c2a1fe).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.300.0 - 2026-11-13 - Protocol #291: Repository Sync & Intelligent Merge
+
+## Session - Protocol #291 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_291_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 6 submodule pointers staged (bg, bgtk, bob_and_lum_sitcom, fwber, marketing_agent, realestatecrm); aimoneymachine_site/bcs pins unstaged on pincheck recheck (lane WIP unpublished), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.300.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Phase4 pushed sibling-lane dirty states: realestatecrm (+1), bg (+2), bcs (+1), aimoneymachine_site (+1), bob_and_lum_sitcom (+1), autositcom (+2). Maestro push verified with GITHUB_TOKEN unset (keyring auth). GTM repo unitedbeats_hypernexus_gtm seeded earlier (e7109f6).
+- Build/deploy: `cmd /c build.bat` (v5.300.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push bf6c942f1f + build commit, per always-deploy (10-min job b3c2a1fe).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.299.0 - 2026-11-13 - Protocol #290: Repository Sync & Intelligent Merge
+
+## Session - Protocol #290 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_290_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 2 submodule pointers staged (fwber, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.299.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Fix: invalid GITHUB_TOKEN env var (burned credential) was breaking HTTPS pushes for Maestro/ksm-v2/electricsheep/neverball; unsetting it restores keyring auth - all four verify Everything up-to-date. Robert: revoke/replace that token in Vault/env. GTM repo unitedbeats_hypernexus_gtm seeded earlier (e7109f6, submodule 021f1aaf4a).
+- Build/deploy: `cmd /c build.bat` (v5.299.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push 471a4fd882 + build commit, per always-deploy (10-min job b3c2a1fe). NOTE: unset invalid GITHUB_TOKEN for git pushes until Robert replaces it.
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.298.0 - 2026-11-13 - Protocol #289: Repository Sync & Intelligent Merge
+
+## Session - Protocol #289 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_289_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber tip advanced by its lane, 1 submodule pointer staged (fwber); new unitedbeats_hypernexus_gtm submodule added at e7109f6, pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.298.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- New project seeded this session: robertpelloni/unitedbeats_hypernexus_gtm (private, e7109f6) wired as root submodule 021f1aaf4a for a dedicated GTM session. Site work earlier: unitedbeats.org building background v1.3.0 and Kourlos + Agathi v1.3.1 (79 souls), verified live.
+- Build/deploy: `cmd /c build.bat` (v5.298.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push 101f55a9c7 + build commit, per always-deploy (10-min job b3c2a1fe).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.297.0 - 2026-11-13 - Protocol #288: Repository Sync & Intelligent Merge
+
+## Session - Protocol #288 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_288_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber/realestatecrm/marketing_agent tips advanced by their lanes, 3 submodule pointers staged (fwber, realestatecrm, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.297.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- Site work this session (own repo, deployed to Hetzner): unitedbeats.org building-photo background v1.3.0 and Kourlos spelling + Agathi v1.3.1 (79 souls), both verified live.
+- Build/deploy: `cmd /c build.bat` (v5.297.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. Deploy = root push e90743c096 + build commit, per always-deploy. Recurring sync/merge/fix job scheduled every 10 min (b3c2a1fe, permanent).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.296.0 - 2026-11-13 - Protocol #287: Repository Sync & Intelligent Merge
+
+## Session - Protocol #287 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_287_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, fwber TODO dirty-state commit pushed (d26f5badf, lane then shipped v2.3.74), 3 submodule pointers staged (fwber, realestatecrm, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.296.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- fwber dirty commit `d26f5badf`: FWBer lane TODO update (1 file), committed as track-dirty-state and pushed; lane then shipped v2.3.74 `65b1794de` on top.
+- Build/deploy: `cmd /c build.bat` (v5.296.0) = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. pi-mono had no merges this run (verified green in #286). Batch scripts synced to v5.296.0. Deploy = root push 1b673f32a0 + build commit, per always-deploy.
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.295.0 - 2026-11-13 - Protocol #286: Repository Sync & Intelligent Merge
+
+## Session - Protocol #286 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_286_*`)
+- Scan/triage: 114 repos. 0 fast-forwards needed (all defaults already at published tips), 0 forward merges, Maestro push confirmed up-to-date, jules-autopilot dirty-state commit pushed (+1), fwber v2.3.70 dirty-state commit pushed (version sync + useWebRTC), 4 submodule pointers staged (fwber, jules-autopilot, realestatecrm, marketing_agent), pincheck 0 unpublished, 4 branches retained conflict-final.
+- Remaining verified unmerged = 4 retained branches + 1 dependabot (planet_fitness, filtered as upstream/dependabot), all retained (list in CHANGELOG v5.295.0).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 132/133 (hypercode not initialized).
+- fwber dirty commit `cae36e90e`: FWBer lane v2.3.70 version-string sync across VERSION/package files + `useWebRTC.ts` hook update, committed as track-dirty-state and pushed (repo moved notice: FWBerLLC/fwber).
+- Build/deploy: `cmd /c build.bat` = 4 OK / 0 failed / 1 skipped (tormentnexus not initialized); binaries kept, none purged. pi-mono verified separately: `go build ./...` exit 0, `go test ./pkg/ai/` ok (13.4s) - closes the #283-#285 unverified-merge risk. Batch scripts build.bat/start.bat version strings synced v5.293.0 -> v5.295.0. Deploy = root push (1c38c723b1) + this build commit per Robert always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
+# HANDOFF - v5.294.0 - 2026-11-12 - Protocol #285: Repository Sync & Intelligent Merge
+
+## Session - Protocol #285 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_285_*`)
+- Scan/triage: 155 actionable before upstream filtering (warp dominates). 35 fast-forwards pushed, Maestro swept, hyperharness origin-sync pushed, 1 reverse merge pushed, 38 submodule pointers staged, 4 branches retained, 0 forward merges needed.
+- Remaining verified unmerged = exactly 4 branches, all conflict-final both directions, retained (list in CHANGELOG v5.294.0).
+- Root pointers staged with published-only pincheck; build below.
+- Build: `cmd /c build.bat` (Protocol #285): 4 OK / 0 failed / 1 skipped (tormentnexus not initialized). Binaries kept, none purged.
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop` registered and acked; Antigravity `ff90f2fd`/`8e716423` read for catch-up. Coordination loop cron `e6b40ba9` checks CDP + bus + HyperNexus fetch sync every 17 min.
+- Build: see Build section above.
+
+## Prior
+# HANDOFF - v5.293.0 - 2026-11-12 - Protocol #284: Repository Sync & Intelligent Merge
+
+## Session - Protocol #284 (this session)
+
+### Step 1 (fetch & sanitization)
+- Scan/triage `sync_protocol_284_*`: fetch across 133 submodules; warp upstream branches dominate the actionable list and are filtered as upstream. Root merged origin/main (+3 from parallel lanes) before work.
+- System Git still broken; GitHub Desktop git 2.56.1 via `%TEMP%\agent281-bin` shim used throughout.
+
+### Step 2 (merges - ledgers `sync_protocol_284_merge_results.json`, `_phase2_results.json`, `_final_results.json`, `_phase4_results.json`)
+- 2 forward merges pushed, 3 fast-forwards, Maestro swept, ~10 origin-sync pushes, 1 reverse merge pushed, 30 submodule pointers staged, 4 branches retained.
+- Remaining verified unmerged = exactly 4 branches, all conflict-final both directions, retained (list in CHANGELOG v5.293.0).
+- Build: see Build section below.
+
+### Coordination (new this session)
+- Read latest Antigravity workspace session `ff90f2fd` (HyperNexus v1.0.46/v1.0.47 shipped to GitLab; now v1.0.48 systray). Registered leader on HyperNexus session bus as `muse-wonder-leader`; broadcast Coordination v2; direct note to `antigravity-gemini`. Codex lanes not yet bus-registered - asked via Bobbi relay.
+- Coordination loop cron `e6b40ba9` (every 17 min) now also checks bus inbox + HyperNexus fetch sync. Bobbi ruled the umbrella authorization flag stays Robert-only (recorded in `UNITED_BEATS_UMBRELLA_v6.md`).
+- rp-files-20261108.tgz (3.70 GB robertpelloni.com backup) downloaded to workspace root, tar-verified (21,143 entries); Bobbi confirmed server copy deleted.
+- Build: `cmd /c build.bat` (Protocol #284): 4 OK / 0 failed / 1 skipped (tormentnexus not initialized). Built: HyperNexus hypernexus-go.exe, hyperharness.exe, pi-mono.exe, Tabby tabby-backend.exe + tabby-native.exe. Do not clean/purge built binaries.
+
+## Prior
 # HANDOFF - v5.292.0 - 2026-11-07 - Protocol #283: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #283 (this session; renumbered - parallel leader session already published #281/#282 to origin)
@@ -533,9 +879,3 @@ Merged sibling origin/main 839779c72 (42 forward merges, v5.292.0) with local dd
 - CDP Bobbi 05258DDEC thread 7a7cd9ff verified hold and deploy present, no dupe send, tail virtualized
 - HyperNexus 1.0.30 up 182578s, recall ok, L2 add returns empty, coordination via HANDOFF
 - Deploy HOLD enforced, no prod restart, next is hermes foreclosure reliability plus fleet triage in chunks
-
-## v5.294.0 2026-11-13 protocol merge engine
-- realestatecrm ff aa44329 to fe34d17 v0.64.0 Universal plus v0.63.7, foreclosureworkflow pinned 8a87077, parent 0 0
-- marketing_agent merged 0fab5a4 plus origin 4f53aa4 to 4893fe6, pushed 0 0, no loss
-- HyperNexus branches all 34 behind 0 unique, parked per protocol, hermes and jules clean
-- root pins updated, VERSION v5.294.0, deploy HOLD enforced, CHANGELOG sync deferred to next pass

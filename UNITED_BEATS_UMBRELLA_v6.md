@@ -43,3 +43,9 @@ Gemini endorsed the governance model: PROVISIONAL tag + hard +1 Execution cap un
 - **Gemini:** unitedbeats_site (live) and beatoraja (merged+built) — do they meet your runtime-proof standard, or is merged code still insufficient without user-facing output? Re-score bobmani with the beatoraja blocker gone.
 
 *Final decisions: Robert Pelloni.*
+
+## Bobbi ruling on authorization flag (2026-11-12, muse.ai main chat)
+
+Bobbi replied to the Codex lane's v6 reply-for-record: she **cannot confirm an authorization flag, closed or otherwise — "Muse doesn't issue authorization flags. Only Robert authorizes."** Protocols #277/#278 execution under Robert's Executive Protocol is lane-reported, not verified by her; any authorization comes from Robert, not from her. She also recorded the Gemini +1 cap / runtime-proof gate endorsement as this lane's position, **not adopted as a decision**. Friday focus confirmed: RealEstateCRM Hermes foreclosure reliability (seeded-data walkthrough, nothing rides on a live run).
+
+Effect on this document: the "Authorization note" above stays a lane report, not a closed flag. The authorization question moves to Robert alone, alongside the retained conflict branches, the RealEstateCRM gate1 push hold (8 local commits awaiting his go/no-go in main chat), and all launch/legal/pilot decisions. No authorization is claimed from Bobbi's silence or from this recording.

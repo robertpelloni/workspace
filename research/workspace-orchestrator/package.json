@@ -1,20 +1,22 @@
 {
   "name": "workspace-orchestrator",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.2.0",
+  "description": "Omni-Workspace Consolidated Control Center & Windows System Tray Orchestrator (:2999)",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
+    "tray": "powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File tray_controller.ps1",
+    "status": "powershell -NoProfile -ExecutionPolicy Bypass -File tray_controller.ps1 -StatusOnly",
     "dev": "concurrently \"nodemon server/index.js\" \"npx serve client -p 3000\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node -e \"require('./server/index.js'); setTimeout(() => process.exit(0), 800)\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "axios": "^1.20.0",
-    "body-parser": "^2.3.0",
+    "axios": "^1.21.0",
+    "body-parser": "^2.4.0",
     "chokidar": "^5.0.0",
     "concurrently": "^9.2.5",
     "cors": "^2.8.6",

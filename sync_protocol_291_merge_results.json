@@ -1,0 +1,31 @@
+[
+  {
+    "repo": "bobfilez",
+    "phase": "MERGE",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "freellm",
+    "phase": "MERGE",
+    "branch": "temp-main",
+    "action": "defer-dirty"
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "phase": "MERGE",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "action": "conflict-aborted",
+    "cherry_plus": 17,
+    "behind": 111,
+    "reverse": "reverse-conflict-aborted"
+  },
+  {
+    "repo": "hyperporn",
+    "phase": "MERGE",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "action": "conflict-aborted",
+    "cherry_plus": 1,
+    "behind": 2
+  }
+]

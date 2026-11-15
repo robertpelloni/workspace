@@ -3,72 +3,620 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omni-Workspace Dashboard</title>
+    <title>Omni-Workspace Control Center</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f1f5f9; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        .btn-start { background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); }
-        .btn-bun { background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%); color: #831843; }
-        .btn-stop { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); }
-        .btn-folder { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
-        .btn-exe { background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; background: radial-gradient(circle at top, #131c31 0%, #090d16 65%); color: #e2e8f0; min-height: 100vh; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass { background: rgba(15, 23, 42, 0.78); backdrop-filter: blur(12px); border: 1px solid rgba(148, 163, 184, 0.14); }
+        .glass-hover:hover { border-color: rgba(99, 102, 241, 0.45); box-shadow: 0 8px 28px rgba(15, 23, 42, 0.55); }
+        .tip { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 9999px; font-size: 10px; font-weight: 700; background: rgba(148, 163, 184, 0.16); color: #94a3b8; cursor: help; margin-left: 5px; flex-shrink: 0; }
+        .tip:hover { background: rgba(99, 102, 241, 0.35); color: #e0e7ff; }
+        .tip::after {
+            content: attr(data-tip);
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+            max-width: 270px;
+            padding: 7px 10px;
+            border-radius: 8px;
+            background: #020617;
+            border: 1px solid rgba(99, 102, 241, 0.45);
+            color: #e2e8f0;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 1.35;
+            white-space: normal;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.65);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.14s ease;
+            z-index: 60;
+        }
+        .tip:hover::after { opacity: 1; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #090d16; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
     </style>
 </head>
-<body class="p-8">
-    <div class="max-w-6xl mx-auto">
-        <header class="mb-12 flex justify-between items-center">
+<body class="p-4 md:p-7">
+    <div class="max-w-7xl mx-auto space-y-7">
+
+        <!-- TOP EXECUTIVE HEADER & SYSTEM LIFECYCLE BAR -->
+        <header class="glass rounded-2xl p-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             <div>
-                <h1 class="text-4xl font-bold tracking-tight text-white mb-2">Omni-Workspace</h1>
-                <p class="text-slate-400">Project Process & Port Orchestrator</p>
+                <div class="flex flex-wrap items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Omni-Workspace Control Center</h1>
+                    <span id="hdr-version" class="mono text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">v5.311.0</span>
+                    <span id="hdr-cc-ver" class="mono text-[11px] px-2.5 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/30">CC v2.2.0</span>
+                    <span id="hdr-git" class="mono text-xs px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">main @ —</span>
+                    <span class="mono text-[11px] px-2.5 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center">
+                        CPU: BelowNormal
+                        <span class="tip" data-tip="All background builds, Go services, and dev servers spawned from this Control Center run at BelowNormal Windows CPU priority so foreground apps never stutter.">?</span>
+                    </span>
+                </div>
+                <p class="text-xs md:text-sm text-slate-400 mt-1.5">
+                    Single-page federated command plane for live ports, multi-agent session bus, 12 Go binaries, 134 Git submodules, and governance docs.
+                </p>
             </div>
-            <div class="flex gap-4">
-                <button onclick="refresh()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-all text-sm font-semibold">Refresh List</button>
+
+            <div class="flex flex-wrap items-center gap-2.5">
+                <a href="#sec-ports" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700">Ports</a>
+                <a href="#sec-bus" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700">Session Bus</a>
+                <a href="#sec-go" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700">Go Suite</a>
+                <a href="#sec-projects" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700">Projects</a>
+                <a href="#sec-submodules" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700">Submodules</a>
+                <a href="#sec-docs" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700">Docs &amp; Memory</a>
+
+                <button onclick="refreshAll()" title="Immediately poll live port probes, Go daemon states, and running project logs." class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white shadow flex items-center">
+                    Refresh Now
+                    <span class="tip" data-tip="Polls /api/overview, /api/go-services, and /api/projects immediately. Auto-refresh also runs every 6 seconds.">?</span>
+                </button>
+                <button onclick="shutdownOrchestrator()" title="Gracefully stop managed child servers and shut down the Control Center backend." class="px-3.5 py-1.5 rounded-lg bg-rose-600/25 hover:bg-rose-600 text-rose-300 hover:text-white border border-rose-500/40 text-xs font-semibold transition flex items-center">
+                    Quit Server
+                    <span class="tip" data-tip="Stops dev servers spawned during this Control Center session and cleanly exits the port 2999 Node backend (never touches external HyperNexus, Jules, or Muse processes).">?</span>
+                </button>
             </div>
         </header>
 
-        <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Projects will be injected here -->
-        </div>
+        <!-- KPI SUMMARY STRIP -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="glass rounded-xl p-4">
+                <div class="text-xs text-slate-400 flex items-center">
+                    Infrastructure Ports Online
+                    <span class="tip" data-tip="Count of core workspace ports (:2999, :7778, :7779, :8082, :3006, :9222) accepting TCP connections on localhost.">?</span>
+                </div>
+                <div id="kpi-ports" class="text-2xl font-bold text-emerald-400 mono mt-1">— / 6</div>
+                <div class="text-[11px] text-slate-500 mt-0.5">Live TCP localhost probes</div>
+            </div>
+            <div class="glass rounded-xl p-4">
+                <div class="text-xs text-slate-400 flex items-center">
+                    Core Go Daemons Active
+                    <span class="tip" data-tip="Running binaries out of the 12 Go executables managed by start.bat (Tabby x3, Hermes, HyperHarness, Pi-Mono, NPP x2, Warp, Hyper, FreeLLM, BobTK).">?</span>
+                </div>
+                <div id="kpi-go" class="text-2xl font-bold text-sky-400 mono mt-1">— / 12</div>
+                <div id="kpi-go-built" class="text-[11px] text-slate-500 mt-0.5">— binaries compiled on disk</div>
+            </div>
+            <div class="glass rounded-xl p-4">
+                <div class="text-xs text-slate-400 flex items-center">
+                    Registered Git Submodules
+                    <span class="tip" data-tip="Canonical submodules declared in root .gitmodules and tracked across the Omni-Workspace.">?</span>
+                </div>
+                <div id="kpi-subs" class="text-2xl font-bold text-violet-400 mono mt-1">—</div>
+                <div id="kpi-subs-init" class="text-[11px] text-slate-500 mt-0.5">— initialized locally</div>
+            </div>
+            <div class="glass rounded-xl p-4">
+                <div class="text-xs text-slate-400 flex items-center">
+                    Spawned Dev Servers
+                    <span class="tip" data-tip="Node/Bun web applications launched on dynamic ports during this Control Center session.">?</span>
+                </div>
+                <div id="kpi-procs" class="text-2xl font-bold text-amber-400 mono mt-1">0</div>
+                <div id="kpi-updated" class="text-[11px] text-slate-500 mt-0.5">Last poll: —</div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: LIVE INFRASTRUCTURE & MULTI-AGENT PORT MATRIX -->
+        <section id="sec-ports" class="glass rounded-2xl p-5 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                    <h2 class="text-lg font-bold text-white flex items-center">
+                        1. Live Infrastructure &amp; Multi-Agent Port Matrix
+                        <span class="tip" data-tip="Real-time TCP health checks against PINK's active control planes, UIs, and the MS Edge CDP multi-agent browser bridge.">?</span>
+                    </h2>
+                    <p class="text-xs text-slate-400">Instant status and one-click jump links to every core service running on PINK.</p>
+                </div>
+            </div>
+            <div id="ports-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5"></div>
+        </section>
+
+        <!-- SECTION 1B: HYPERNEXUS MULTI-AGENT SESSION BUS FEED -->
+        <section id="sec-bus" class="glass rounded-2xl p-5 space-y-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div>
+                    <h2 class="text-lg font-bold text-white flex items-center">
+                        1B. HyperNexus Multi-Agent Session Bus (:7778)
+                        <span class="tip" data-tip="Live cross-harness coordination bus reading HyperNexus :7778 SQLite scratchpad records (Muse, Antigravity/Gemini, Codex, Pi-Mono).">?</span>
+                    </h2>
+                    <p class="text-xs text-slate-400">Real-time handover broadcasts, protocol milestones, and registered agent harnesses.</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-3">
+                    <label class="flex items-center gap-1.5 text-xs text-slate-300 cursor-pointer">
+                        <input id="bus-show-tests" type="checkbox" onchange="loadSessionBus()" class="rounded bg-slate-900 border-slate-700">
+                        <span>Show selftest/swarm heartbeats</span>
+                    </label>
+                    <span id="bus-status" class="mono text-[11px] px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-400">Polling :7778...</span>
+                </div>
+            </div>
+            <div id="bus-sessions" class="flex flex-wrap gap-1.5"></div>
+            <div id="bus-messages" class="space-y-2 max-h-[290px] overflow-y-auto pr-1"></div>
+            <form onsubmit="sendBusMessage(event)" class="flex flex-col sm:flex-row gap-2 pt-1">
+                <input id="bus-to" type="text" value="*" placeholder="To (* or session-id)" class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs mono text-slate-200 w-full sm:w-40 focus:outline-none focus:border-indigo-500">
+                <input id="bus-text" type="text" placeholder="Broadcast coordination note to all harnesses on :7778 session-bus..." class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-white flex-1 focus:outline-none focus:border-indigo-500">
+                <button type="submit" class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white">Post to Bus</button>
+            </form>
+        </section>
+
+        <!-- SECTION 2: CORE GO DAEMON SUITE (start.bat) -->
+        <section id="sec-go" class="glass rounded-2xl p-5 space-y-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div>
+                    <h2 class="text-lg font-bold text-white flex items-center">
+                        2. Core Go Daemon Suite (9 Projects · 12 Binaries)
+                        <span class="tip" data-tip="Direct web interface to all 12 Go binaries orchestrated by start.bat (including FreeLLM &amp; BobTK v1.8.0). Every build and process launch executes at BelowNormal priority.">?</span>
+                    </h2>
+                    <p class="text-xs text-slate-400">Monitor PIDs, binary sizes, compile status, or start/stop individual Go services without touching pre-existing workspace agents.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="goAction('start', 'all')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-semibold text-white flex items-center">
+                        Start All Built
+                        <span class="tip" data-tip="Launches all compiled Go binaries in this list at BelowNormal CPU priority.">?</span>
+                    </button>
+                    <button id="btn-build-all-go" onclick="goAction('build', 'all')" class="px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-xs font-semibold text-white flex items-center">
+                        Build All (12)
+                        <span class="tip" data-tip="Compiles all 12 Go binaries in place with -buildvcs=false (never deletes existing .exe artifacts).">?</span>
+                    </button>
+                    <button onclick="goAction('stop', 'all')" class="px-3 py-1.5 rounded-lg bg-rose-600/80 hover:bg-rose-600 text-xs font-semibold text-white flex items-center">
+                        Stop All Go Binaries
+                        <span class="tip" data-tip="Stops only the 12 Go binaries listed here; never terminates HyperNexus, Jules Autopilot, or Muse.">?</span>
+                    </button>
+                </div>
+            </div>
+            <div id="go-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+        </section>
+
+        <!-- SECTION 3: WORKSPACE PROJECT & EXECUTABLE LAUNCHER -->
+        <section id="sec-projects" class="glass rounded-2xl p-5 space-y-4">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+                <div>
+                    <h2 class="text-lg font-bold text-white flex items-center">
+                        3. Workspace Project &amp; Executable Launcher
+                        <span class="tip" data-tip="Discovers Node, Go, Rust, C++, and Python projects across the workspace root, research/, and superbobbyball/, letting you spawn dev servers on free ports or run compiled .exe binaries.">?</span>
+                    </h2>
+                    <p class="text-xs text-slate-400">Filter by domain, launch web apps via Node or Bun on conflict-free ports, inspect live stdout/stderr logs, or open folders in Explorer.</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <input id="proj-search" oninput="renderProjects()" type="text" placeholder="Search projects..." class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 w-48">
+                    <select id="proj-cat" onchange="renderProjects()" title="Filter projects by architectural category" class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
+                        <option value="ALL">All Categories</option>
+                        <option value="RUNNING">Running Only</option>
+                        <option value="AI & Agents">AI &amp; Agents</option>
+                        <option value="Rhythm & Audio">Rhythm &amp; Audio</option>
+                        <option value="IDEs & Toolkits">IDEs &amp; Toolkits</option>
+                        <option value="Games & Engines">Games &amp; Engines</option>
+                        <option value="Web & Platforms">Web &amp; Platforms</option>
+                    </select>
+                    <span id="proj-count" class="mono text-xs text-slate-400">0 shown</span>
+                </div>
+            </div>
+            <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 max-h-[620px] overflow-y-auto pr-1"></div>
+        </section>
+
+        <!-- SECTION 4: SUBMODULE SYNC & BRANCH REGISTRY -->
+        <section id="sec-submodules" class="glass rounded-2xl p-5 space-y-4">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+                <div>
+                    <h2 class="text-lg font-bold text-white flex items-center">
+                        4. Submodule Sync &amp; Branch Telemetry Registry
+                        <span class="tip" data-tip="Zero-overhead filesystem inspection of all 133 submodules registered in .gitmodules, showing current checked-out branch, short commit SHA, version, and upstream owner.">?</span>
+                    </h2>
+                    <p class="text-xs text-slate-400">Audit branch alignment across all `robertpelloni` and third-party submodules in milliseconds.</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <input id="sub-search" oninput="renderSubmodules()" type="text" placeholder="Filter 134 submodules..." class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 w-44">
+                    <select id="sub-owner" onchange="renderSubmodules()" title="Filter submodules by GitHub repository owner, divergence, or pin alignment" class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
+                        <option value="ALL">All Submodules</option>
+                        <option value="owned">Owned (robertpelloni + Orgs)</option>
+                        <option value="diverged">Ahead / Behind Origin (+N / -M)</option>
+                        <option value="branches">Actionable Feature Branches (&gt;0)</option>
+                        <option value="drifted">Drifted vs Root Pin</option>
+                        <option value="external">External Upstreams</option>
+                    </select>
+                    <button id="btn-div-scan" onclick="triggerDivergenceScan()" title="Refresh background git ahead/behind &amp; unmerged feature branch snapshots" class="px-2.5 py-1.5 rounded-lg bg-sky-600/25 hover:bg-sky-600 text-sky-200 hover:text-white border border-sky-500/35 text-xs font-semibold">Scan Divergence</button>
+                    <span id="sub-count" class="mono text-xs text-slate-400">0 shown</span>
+                </div>
+            </div>
+            <div class="overflow-x-auto max-h-[440px] overflow-y-auto rounded-xl border border-slate-800">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-slate-900/95 text-slate-400 sticky top-0 z-10">
+                        <tr>
+                            <th class="py-2.5 px-3 font-semibold">Submodule</th>
+                            <th class="py-2.5 px-3 font-semibold">Category</th>
+                            <th class="py-2.5 px-3 font-semibold">Owner</th>
+                            <th class="py-2.5 px-3 font-semibold">Branch</th>
+                            <th class="py-2.5 px-3 font-semibold">HEAD</th>
+                            <th class="py-2.5 px-3 font-semibold">Root Pin</th>
+                            <th class="py-2.5 px-3 font-semibold">Origin / Branches</th>
+                            <th class="py-2.5 px-3 font-semibold">Version</th>
+                            <th class="py-2.5 px-3 font-semibold text-right">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sub-tbody" class="divide-y divide-slate-800/70"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 5: IN-PAGE GOVERNANCE, MEMORY & UMBRELLA STRATEGY VIEWER -->
+        <section id="sec-docs" class="glass rounded-2xl p-5 space-y-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <div>
+                    <h2 class="text-lg font-bold text-white flex items-center">
+                        5. Governance, Memory &amp; Umbrella Strategy Reader
+                        <span class="tip" data-tip="Reads live markdown documents directly from C:\Users\hyper\workspace without navigating away from the single-page Control Center.">?</span>
+                    </h2>
+                    <p class="text-xs text-slate-400">Inspect `HANDOFF.md`, `ROADMAP.md`, `TODO.md`, `CHANGELOG.md`, `VISION.md`, `MEMORY.md`, `IDEAS.md`, and `UNITED_BEATS_UMBRELLA_v7.md` inline.</p>
+                </div>
+                <span id="doc-meta" class="mono text-[11px] text-slate-400">—</span>
+            </div>
+            <div id="doc-tabs" class="flex flex-wrap gap-1.5"></div>
+            <pre id="doc-viewer" class="mono text-xs leading-relaxed text-slate-200 bg-slate-950/90 border border-slate-800 rounded-xl p-4 max-h-[480px] overflow-auto whitespace-pre-wrap">Loading governance document...</pre>
+        </section>
+
     </div>
 
-    <!-- Log Modal -->
-    <div id="log-modal" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-8">
-        <div class="bg-slate-900 w-full max-w-4xl h-[80vh] rounded-2xl border border-slate-700 flex flex-col">
-            <div class="p-4 border-b border-slate-700 flex justify-between items-center">
-                <h3 id="log-title" class="font-bold">Project Logs</h3>
-                <button onclick="closeLogs()" class="text-slate-400 hover:text-white">&times; Close</button>
+    <!-- LIVE STDOUT/STDERR LOG MODAL -->
+    <div id="log-modal" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-6">
+        <div class="bg-slate-900 w-full max-w-4xl h-[78vh] rounded-2xl border border-slate-700 flex flex-col shadow-2xl">
+            <div class="p-4 border-b border-slate-800 flex justify-between items-center">
+                <h3 id="log-title" class="font-bold text-sm text-white mono">Project Logs</h3>
+                <button onclick="closeLogs()" class="px-3 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300">Close</button>
             </div>
-            <pre id="log-content" class="p-4 flex-1 overflow-auto text-xs font-mono text-green-400 bg-black"></pre>
+            <pre id="log-content" class="p-4 flex-1 overflow-auto text-xs mono text-emerald-400 bg-slate-950 whitespace-pre-wrap"></pre>
         </div>
     </div>
 
     <script>
-        const API = 'http://localhost:2999/api';
+        const API = `${window.location.origin.startsWith('http') ? window.location.origin : 'http://localhost:2999'}/api`;
+        const DOC_LIST = [
+            'HANDOFF.md', 'ROADMAP.md', 'TODO.md', 'CHANGELOG.md',
+            'VISION.md', 'MEMORY.md', 'DEPLOY.md', 'IDEAS.md',
+            'MASTER_IDEAS.md', 'UNITED_BEATS_UMBRELLA_v7.md', 'SUBMODULE_DASHBOARD.md'
+        ];
 
-        async function fetchProjects() {
+        let allProjects = [];
+        let allSubmodules = [];
+        let activeDoc = 'HANDOFF.md';
+
+        function esc(str) {
+            return String(str ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        }
+
+        async function loadOverview() {
+            const res = await fetch(`${API}/overview`);
+            const d = await res.json();
+            document.getElementById('hdr-version').textContent = d.version || 'v5.311.0';
+            if (d.controlCenterVersion) {
+                document.getElementById('hdr-cc-ver').textContent = `CC v${d.controlCenterVersion}`;
+            }
+            document.getElementById('hdr-git').textContent = `${d.branch} @ ${d.sha}`;
+
+            const onlinePorts = (d.ports || []).filter((p) => p.online).length;
+            document.getElementById('kpi-ports').textContent = `${onlinePorts} / ${(d.ports || []).length}`;
+            document.getElementById('kpi-go').textContent = `${d.goServicesRunning} / ${d.goServicesTotal}`;
+            document.getElementById('kpi-go-built').textContent = `${d.goServicesBuilt} / ${d.goServicesTotal} binaries compiled on disk`;
+            document.getElementById('kpi-subs').textContent = d.submodulesTotal;
+            document.getElementById('kpi-subs-init').textContent = `${d.submodulesInitialized} initialized locally`;
+            document.getElementById('kpi-procs').textContent = d.managedProcessesRunning;
+            document.getElementById('kpi-updated').textContent = `Last poll: ${new Date().toLocaleTimeString()}`;
+
+            const pg = document.getElementById('ports-grid');
+            pg.innerHTML = (d.ports || []).map((p) => `
+                <div class="rounded-xl p-3.5 border ${p.online ? 'bg-slate-900/75 border-emerald-500/30' : 'bg-slate-900/40 border-slate-800'} flex flex-col justify-between gap-2">
+                    <div class="flex items-start justify-between gap-2">
+                        <div>
+                            <div class="font-semibold text-sm text-white flex items-center">
+                                ${esc(p.name)}
+                                <span class="tip" data-tip="${esc(p.role)}">?</span>
+                            </div>
+                            <div class="text-[11px] text-slate-400 mt-0.5">${esc(p.role)}</div>
+                        </div>
+                        <span class="mono text-[11px] px-2 py-0.5 rounded-full font-semibold ${p.online ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-slate-800 text-slate-400'}">
+                            :${p.port} ${p.online ? 'ONLINE' : 'OFFLINE'}${p.meta ? ` (${esc(p.meta)})` : ''}
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between pt-1">
+                        <span class="mono text-[11px] text-slate-500">${esc(p.url)}</span>
+                        ${p.online ? `<a href="${esc(p.url)}" target="_blank" class="px-2.5 py-1 rounded bg-indigo-600/80 hover:bg-indigo-500 text-[11px] font-semibold text-white">Open</a>` : `<span class="text-[11px] text-slate-600">Inactive</span>`}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        async function loadGoServices() {
+            const res = await fetch(`${API}/go-services`);
+            const list = await res.json();
+            const gg = document.getElementById('go-grid');
+            gg.innerHTML = list.map((g) => {
+                const folderPath = `${g.exePath.replace(/[\\/][^\\/]+$/, '')}`.replace(/\\/g, '\\\\');
+                return `
+                <div class="rounded-xl p-3.5 bg-slate-900/70 border ${g.running ? 'border-sky-500/35' : 'border-slate-800'} flex flex-col justify-between gap-2.5">
+                    <div class="flex items-start justify-between gap-2">
+                        <div>
+                            <div class="font-semibold text-sm text-white flex items-center">
+                                <span class="mono">${esc(g.exe)}</span>
+                                <span class="tip" data-tip="${esc(g.desc)}">?</span>
+                            </div>
+                            <div class="text-[11px] text-slate-400 mt-0.5">${esc(g.desc)}</div>
+                        </div>
+                        <span class="mono text-[10px] px-2 py-0.5 rounded-full font-bold uppercase ${g.running ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : (g.built ? 'bg-slate-800 text-slate-300' : 'bg-amber-500/20 text-amber-300')}">
+                            ${g.running ? `RUNNING (${g.pids.join(',')})` : (g.built ? `READY · ${g.sizeMb}MB` : 'NOT BUILT')}
+                        </span>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+                        <span class="mono text-[11px] text-slate-500">${esc(g.cwd)}</span>
+                        <div class="flex gap-1.5">
+                            <button onclick="openFolder('${folderPath}')" title="Open service folder in Explorer" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200">Folder</button>
+                            <button onclick="goAction('build', '${esc(g.id)}')" title="Compile ${esc(g.exe)} at BelowNormal priority" class="px-2.5 py-1 rounded bg-sky-600/30 hover:bg-sky-600 text-[11px] text-sky-200 border border-sky-500/30">Build</button>
+                            ${g.running
+                                ? `<button onclick="goAction('stop', '${esc(g.id)}')" class="px-2.5 py-1 rounded bg-rose-600 hover:bg-rose-500 text-[11px] font-semibold text-white">Stop</button>`
+                                : `<button onclick="goAction('start', '${esc(g.id)}')" ${!g.built ? 'disabled' : ''} class="px-2.5 py-1 rounded ${g.built ? 'bg-emerald-600 hover:bg-emerald-500 text-white' : 'bg-slate-800 text-slate-500 cursor-not-allowed'} text-[11px] font-semibold">Start</button>`
+                            }
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        async function goAction(action, id) {
+            if (action === 'build' && id === 'all') {
+                const btn = document.getElementById('btn-build-all-go');
+                if (btn) btn.textContent = 'Building...';
+            }
+            await fetch(`${API}/go-services/${action}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id })
+            });
+            if (action === 'build' && id === 'all') {
+                const btn = document.getElementById('btn-build-all-go');
+                if (btn) btn.innerHTML = 'Build All (12) <span class="tip" data-tip="Compiles all 12 Go binaries in place with -buildvcs=false.">?</span>';
+            }
+            await Promise.all([loadOverview(), loadGoServices()]);
+        }
+
+        async function loadSessionBus() {
+            try {
+                const showTests = document.getElementById('bus-show-tests')?.checked ? '1' : '0';
+                const res = await fetch(`${API}/session-bus?includeTests=${showTests}`);
+                const d = await res.json();
+                const badge = document.getElementById('bus-status');
+                const sessWrap = document.getElementById('bus-sessions');
+                const msgWrap = document.getElementById('bus-messages');
+                if (!d.online) {
+                    badge.className = 'mono text-[11px] px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-400';
+                    badge.textContent = 'HyperNexus :7778 OFFLINE';
+                    sessWrap.innerHTML = '';
+                    msgWrap.innerHTML = '<div class="text-xs text-slate-500">HyperNexus scratchpad bus is currently offline on :7778.</div>';
+                    return;
+                }
+                badge.className = 'mono text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+                badge.textContent = `ONLINE · ${d.sessions.length} harnesses (${d.totalRawSessions} total)`;
+
+                sessWrap.innerHTML = d.sessions.slice(0, 18).map((s) => `
+                    <span class="mono text-[11px] px-2.5 py-0.5 rounded-full bg-indigo-500/15 text-indigo-200 border border-indigo-500/30" title="Harness: ${esc(s.harness)}">
+                        ${esc(s.id)} <span class="text-slate-400">(${esc(s.harness || 'bus')})</span>
+                    </span>
+                `).join('');
+
+                msgWrap.innerHTML = d.messages.length ? d.messages.map((m) => `
+                    <div class="rounded-xl p-3 bg-slate-900/75 border border-slate-800 text-xs space-y-1">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mono text-[11px]">
+                            <div>
+                                <span class="text-indigo-300 font-semibold">${esc(m.from)}</span>
+                                <span class="text-slate-500">→</span>
+                                <span class="text-emerald-300">${esc(m.to || '*')}</span>
+                                <span class="text-slate-600 ml-1.5">${esc(m.msg || '')}</span>
+                            </div>
+                            <span class="text-slate-500">${m.ts ? new Date(m.ts).toLocaleString() : ''}</span>
+                        </div>
+                        <div class="text-slate-200 leading-relaxed break-words">${esc(m.text || '')}</div>
+                    </div>
+                `).join('') : '<div class="text-xs text-slate-500">No coordination messages matching filter.</div>';
+            } catch {}
+        }
+
+        async function sendBusMessage(ev) {
+            ev.preventDefault();
+            const toEl = document.getElementById('bus-to');
+            const textEl = document.getElementById('bus-text');
+            const text = (textEl.value || '').trim();
+            if (!text) return;
+            await fetch(`${API}/session-bus/send`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ from: 'robert-control-center', to: toEl.value || '*', text })
+            });
+            textEl.value = '';
+            await loadSessionBus();
+        }
+
+        async function loadProjects() {
             const res = await fetch(`${API}/projects`);
-            return await res.json();
+            allProjects = await res.json();
+            renderProjects();
+        }
+
+        function renderProjects() {
+            const q = (document.getElementById('proj-search').value || '').toLowerCase();
+            const cat = document.getElementById('proj-cat').value;
+            const filtered = allProjects.filter((p) => {
+                if (cat === 'RUNNING' && !p.isRunning) return false;
+                if (cat !== 'ALL' && cat !== 'RUNNING' && p.category !== cat) return false;
+                if (q && !`${p.name} ${p.type} ${p.description} ${p.relPath}`.toLowerCase().includes(q)) return false;
+                return true;
+            });
+            document.getElementById('proj-count').textContent = `${filtered.length} / ${allProjects.length} shown`;
+
+            const grid = document.getElementById('project-grid');
+            grid.innerHTML = filtered.map((p) => {
+                const safePath = p.path.replace(/\\/g, '\\\\');
+                const safeName = p.name.replace(/'/g, "\\'");
+                return `
+                <div class="glass-hover rounded-xl p-4 bg-slate-900/65 border border-slate-800 flex flex-col justify-between gap-3 transition">
+                    <div>
+                        <div class="flex items-start justify-between gap-2">
+                            <button onclick="openFolder('${safePath}')" class="text-left font-bold text-sm text-indigo-300 hover:text-indigo-200 hover:underline truncate" title="Open ${esc(p.relPath)} in Windows Explorer">
+                                ${esc(p.name)}
+                            </button>
+                            <span class="mono text-[10px] px-2 py-0.5 rounded-full uppercase font-semibold ${p.isRunning ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-slate-800 text-slate-400'}">
+                                ${p.isRunning ? `:${p.port}` : esc(p.type)}
+                            </span>
+                        </div>
+                        <div class="text-[11px] text-slate-400 mt-1 flex items-center gap-2">
+                            <span>${esc(p.category)}</span>
+                            <span>·</span>
+                            <span class="mono">v${esc(p.version)}</span>
+                        </div>
+                        ${p.description ? `<p class="text-[11px] text-slate-500 mt-1 line-clamp-2">${esc(p.description)}</p>` : ''}
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <button onclick="openFolder('${safePath}')" title="Open directory in File Explorer" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200">Folder</button>
+                        ${p.hasExe ? `<button onclick="runExe('${safePath}')" title="Launch compiled .exe binary at BelowNormal CPU priority" class="px-2.5 py-1 rounded bg-amber-500/20 hover:bg-amber-500/35 text-amber-300 border border-amber-500/30 text-[11px] font-medium">Run Exe</button>` : ''}
+                        ${p.isRunning ? `
+                            <a href="http://localhost:${p.port}" target="_blank" class="px-2.5 py-1 rounded bg-indigo-600 hover:bg-indigo-500 text-[11px] font-semibold text-white">Open :${p.port}</a>
+                            <button onclick="showLogs('${safeName}')" class="px-2.5 py-1 rounded bg-slate-700 hover:bg-slate-600 text-[11px] text-white">Logs</button>
+                            <button onclick="stopProject('${safeName}')" class="px-2.5 py-1 rounded bg-rose-600 hover:bg-rose-500 text-[11px] font-semibold text-white">Stop</button>
+                        ` : (p.type === 'node' ? `
+                            <button onclick="startProject('${safeName}', '${safePath}', 'node')" title="Spawn npm dev/start on a dynamic free port at BelowNormal priority" class="px-2.5 py-1 rounded bg-emerald-600/85 hover:bg-emerald-500 text-[11px] font-semibold text-white">Run Node</button>
+                            <button onclick="startProject('${safeName}', '${safePath}', 'bun')" title="Spawn via Bun runtime on a dynamic free port" class="px-2.5 py-1 rounded bg-pink-500/25 hover:bg-pink-500/40 text-pink-200 border border-pink-500/30 text-[11px] font-semibold">Bun</button>
+                        ` : '')}
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        async function loadSubmodules() {
+            const res = await fetch(`${API}/submodules`);
+            allSubmodules = await res.json();
+            renderSubmodules();
+        }
+
+        async function triggerDivergenceScan() {
+            const btn = document.getElementById('btn-div-scan');
+            if (btn) btn.textContent = 'Scanning...';
+            await fetch(`${API}/submodules/refresh-divergence`, { method: 'POST' });
+            setTimeout(async () => {
+                await loadSubmodules();
+                if (btn) btn.textContent = 'Scan Divergence';
+            }, 2200);
+        }
+
+        function renderSubmodules() {
+            const q = (document.getElementById('sub-search').value || '').toLowerCase();
+            const ownerFilter = document.getElementById('sub-owner').value;
+            const rows = allSubmodules.filter((s) => {
+                if (ownerFilter === 'owned' && !s.isOwned) return false;
+                if (ownerFilter === 'external' && s.isOwned) return false;
+                if (ownerFilter === 'drifted' && (s.pinSynced !== false)) return false;
+                if (ownerFilter === 'diverged' && !((s.ahead || 0) > 0 || (s.behind || 0) > 0)) return false;
+                if (ownerFilter === 'branches' && !((s.actionableBranches || 0) > 0)) return false;
+                if (q && !`${s.path} ${s.branch} ${s.sha} ${s.owner} ${s.category} ${(s.actionableSample || []).join(' ')}`.toLowerCase().includes(q)) return false;
+                return true;
+            });
+            document.getElementById('sub-count').textContent = `${rows.length} / ${allSubmodules.length} shown`;
+            const tbody = document.getElementById('sub-tbody');
+            tbody.innerHTML = rows.map((s) => {
+                const safeAbs = s.absPath.replace(/\\/g, '\\\\');
+                const branchBadge = s.branch === 'detached'
+                    ? 'bg-amber-500/15 text-amber-300 border-amber-500/30'
+                    : (s.branch === 'uninitialized' ? 'bg-slate-800 text-slate-500 border-slate-700' : 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30');
+                const pinBadge = s.pinSynced === true
+                    ? '<span class="mono text-[10px] px-2 py-0.5 rounded border bg-emerald-500/15 text-emerald-300 border-emerald-500/30">PINNED</span>'
+                    : (s.pinSynced === false
+                        ? `<span class="mono text-[10px] px-2 py-0.5 rounded border bg-amber-500/15 text-amber-300 border-amber-500/30" title="Root index pins ${esc(s.pinnedSha)}">DRIFT (${esc(s.pinnedSha)})</span>`
+                        : '<span class="mono text-[10px] px-2 py-0.5 rounded border bg-slate-800 text-slate-500 border-slate-700">—</span>');
+
+                let divHtml = '<span class="mono text-[10px] text-slate-500">…</span>';
+                if (s.ahead !== null && s.behind !== null) {
+                    const syncPill = (s.ahead === 0 && s.behind === 0)
+                        ? `<span class="mono text-[10px] px-1.5 py-0.5 rounded bg-slate-800/80 text-slate-400" title="0/0 vs ${esc(s.originRef || 'origin')}">0/0</span>`
+                        : `<span class="mono text-[10px] px-1.5 py-0.5 rounded border ${(s.behind > 0) ? 'bg-amber-500/15 text-amber-300 border-amber-500/30' : 'bg-sky-500/15 text-sky-300 border-sky-500/30'}" title="vs ${esc(s.originRef || 'origin')}">+${s.ahead}/-${s.behind}</span>`;
+                    const brPill = (s.actionableBranches && s.actionableBranches > 0)
+                        ? ` <span class="mono text-[10px] px-1.5 py-0.5 rounded border bg-indigo-500/20 text-indigo-200 border-indigo-500/35" title="Unmerged branches: ${esc((s.actionableSample || []).join(', '))}">${s.actionableBranches} br</span>`
+                        : '';
+                    divHtml = syncPill + brPill;
+                }
+                return `
+                <tr class="hover:bg-slate-800/45">
+                    <td class="py-2 px-3 font-medium text-white mono">${esc(s.path)}</td>
+                    <td class="py-2 px-3 text-slate-400">${esc(s.category)}</td>
+                    <td class="py-2 px-3 mono ${s.isOwned ? 'text-indigo-300' : 'text-slate-400'}">${esc(s.owner)}</td>
+                    <td class="py-2 px-3"><span class="mono text-[11px] px-2 py-0.5 rounded border ${branchBadge}">${esc(s.branch)}</span></td>
+                    <td class="py-2 px-3 mono text-slate-300">${esc(s.sha)}</td>
+                    <td class="py-2 px-3">${pinBadge}</td>
+                    <td class="py-2 px-3 whitespace-nowrap">${divHtml}</td>
+                    <td class="py-2 px-3 mono text-slate-400">${esc(s.version)}</td>
+                    <td class="py-2 px-3 text-right space-x-1.5">
+                        ${s.url ? `<a href="${esc(s.url.replace(/\.git$/, ''))}" target="_blank" class="px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">GitHub</a>` : ''}
+                        <button onclick="openFolder('${safeAbs}')" class="px-2 py-0.5 rounded bg-indigo-600/30 hover:bg-indigo-600 text-indigo-200">Folder</button>
+                    </td>
+                </tr>
+                `;
+            }).join('');
+        }
+
+        function renderDocTabs() {
+            const wrap = document.getElementById('doc-tabs');
+            wrap.innerHTML = DOC_LIST.map((doc) => `
+                <button onclick="selectDoc('${doc}')" class="mono text-xs px-3 py-1.5 rounded-lg border transition ${activeDoc === doc ? 'bg-indigo-600 text-white border-indigo-500 font-semibold' : 'bg-slate-900/80 text-slate-300 border-slate-800 hover:bg-slate-800'}">
+                    ${doc}
+                </button>
+            `).join('');
+        }
+
+        async function selectDoc(doc) {
+            activeDoc = doc;
+            renderDocTabs();
+            const viewer = document.getElementById('doc-viewer');
+            const meta = document.getElementById('doc-meta');
+            viewer.textContent = `Loading ${doc}...`;
+            const res = await fetch(`${API}/docs/${encodeURIComponent(doc)}`);
+            if (!res.ok) {
+                viewer.textContent = `${doc} is not present on disk yet.`;
+                meta.textContent = doc;
+                return;
+            }
+            const d = await res.json();
+            meta.textContent = `${d.name} · ${(d.sizeBytes / 1024).toFixed(1)} KB · Updated ${new Date(d.updatedAt).toLocaleString()}`;
+            viewer.textContent = d.content;
         }
 
         async function startProject(name, path, engine) {
-            const btn = document.getElementById(`btn-${name}-${engine}`);
-            if (btn) {
-                btn.innerText = 'Starting...';
-                btn.disabled = true;
-            }
-            
             const res = await fetch(`${API}/start`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, path, engine })
             });
             const data = await res.json();
-            if (data.port) {
-                window.open(`http://localhost:${data.port}`, '_blank');
-            }
-            refresh();
+            if (data.port) window.open(`http://localhost:${data.port}`, '_blank');
+            await Promise.all([loadOverview(), loadProjects()]);
         }
 
         async function stopProject(name) {
@@ -77,7 +625,7 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name })
             });
-            refresh();
+            await Promise.all([loadOverview(), loadProjects()]);
         }
 
         async function openFolder(path) {
@@ -95,18 +643,14 @@
                 body: JSON.stringify({ path })
             });
             const data = await res.json();
-            if (data.error) {
-                alert('Error: ' + data.error);
-            } else {
-                alert('Started: ' + data.exe);
-            }
+            if (data.error) alert('Error: ' + data.error);
         }
 
         async function showLogs(name) {
-            const res = await fetch(`${API}/logs/${name}`);
+            const res = await fetch(`${API}/logs/${encodeURIComponent(name)}`);
             const data = await res.json();
-            document.getElementById('log-title').innerText = `Logs: ${name}`;
-            document.getElementById('log-content').innerText = data.logs;
+            document.getElementById('log-title').textContent = `Live Logs — ${name}`;
+            document.getElementById('log-content').textContent = data.logs;
             document.getElementById('log-modal').classList.remove('hidden');
         }
 
@@ -114,52 +658,21 @@
             document.getElementById('log-modal').classList.add('hidden');
         }
 
-        async function refresh() {
-            const projects = await fetchProjects();
-            const grid = document.getElementById('project-grid');
-            grid.innerHTML = projects.map(p => {
-                const safePath = p.path.replace(/\\/g, '\\\\');
-                return `
-                <div class="glass p-6 rounded-2xl shadow-xl transition-all hover:scale-[1.02] flex flex-col">
-                    <div class="flex justify-between items-start mb-4 cursor-pointer" onclick="openFolder('${safePath}')" title="Click to open folder">
-                        <h2 class="text-xl font-bold text-blue-400 hover:text-blue-300 underline">${p.name}</h2>
-                        <span class="px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider ${p.isRunning ? 'bg-green-500/20 text-green-400 border border-green-500/30' : 'bg-slate-700 text-slate-400'}">
-                            ${p.isRunning ? 'Running' : 'Idle'}
-                        </span>
-                    </div>
-                    <p class="text-xs text-slate-400 mb-2 truncate">${p.type} | v${p.version}</p>
-                    <p class="text-xs text-slate-500 mb-6 truncate" ondblclick="runExe('${safePath}')" title="Double click to run exe">${p.path.split('workspace')[1] || p.path}</p>
-                    
-                    <div class="mt-auto flex flex-col gap-3">
-                        <div class="flex gap-2">
-                            <button onclick="openFolder('${safePath}')" class="flex-1 py-1 px-2 btn-folder rounded text-xs font-bold text-white shadow">Folder</button>
-                            ${p.hasExe ? `<button ondblclick="runExe('${safePath}')" title="Double click to run" class="flex-1 py-1 px-2 btn-exe rounded text-xs font-bold text-white shadow">Run Exe</button>` : ''}
-                        </div>
-                        ${p.isRunning ? `
-                            <div class="flex gap-2">
-                                <a href="http://localhost:${p.port}" target="_blank" class="flex-1 py-2 px-4 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-center text-sm font-bold transition-all text-white">
-                                    Open (Port ${p.port})
-                                </a>
-                                <button onclick="showLogs('${p.name}')" class="p-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-white">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                                </button>
-                            </div>
-                            <button onclick="stopProject('${p.name}')" class="w-full py-2 btn-stop rounded-lg text-sm font-bold shadow-lg text-white">Stop Service</button>
-                        ` : `
-                            ${p.type === 'node' ? `
-                            <div class="flex gap-2">
-                                <button id="btn-${p.name}-node" onclick="startProject('${p.name}', '${safePath}', 'node')" class="flex-1 py-2 btn-start rounded-lg text-sm font-bold shadow-lg text-white">Run Node</button>
-                                <button id="btn-${p.name}-bun" onclick="startProject('${p.name}', '${safePath}', 'bun')" class="flex-1 py-2 btn-bun rounded-lg text-sm font-bold shadow-lg">Run Bun</button>
-                            </div>
-                            ` : ''}
-                        `}
-                    </div>
-                </div>
-            `}).join('');
+        async function shutdownOrchestrator() {
+            if (!confirm('Shut down the Workspace Control Center backend on port 2999?')) return;
+            await fetch(`${API}/shutdown`, { method: 'POST' });
+            document.body.innerHTML = '<div class="max-w-lg mx-auto mt-28 glass rounded-2xl p-8 text-center"><h2 class="text-xl font-bold text-white mb-2">Control Center Shut Down</h2><p class="text-sm text-slate-400">Port 2999 backend stopped cleanly. Restart anytime via <code>start.bat dashboard</code> or <code>start_dashboard_tray.bat</code>.</p></div>';
         }
 
-        refresh();
-        setInterval(refresh, 5000); // Auto refresh every 5s
+        async function refreshAll() {
+            await Promise.all([loadOverview(), loadSessionBus(), loadGoServices(), loadProjects(), loadSubmodules()]);
+        }
+
+        (async function init() {
+            renderDocTabs();
+            await Promise.all([loadOverview(), loadSessionBus(), loadGoServices(), loadProjects(), loadSubmodules(), selectDoc('HANDOFF.md')]);
+            setInterval(refreshAll, 6000);
+        })();
     </script>
 </body>
 </html>

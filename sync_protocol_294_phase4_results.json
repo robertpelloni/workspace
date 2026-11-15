@@ -1,0 +1,43 @@
+[
+  {
+    "repo": "bobcoin",
+    "action": "pushed",
+    "ahead": 1
+  },
+  {
+    "repo": "bobfilez",
+    "action": "pushed",
+    "ahead": 3
+  },
+  {
+    "repo": "electricsheep",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "aimoneymachine_site",
+    "action": "pushed",
+    "ahead": 3
+  },
+  {
+    "repo": "neverball",
+    "action": "checkout-fail",
+    "detail": "error: pathspec 'master' did not match any file(s) known to git\n"
+  },
+  {
+    "repo": "hyperporn",
+    "action": "sync-conflict-final",
+    "ahead": 2,
+    "behind": 3
+  },
+  {
+    "repo": "bobble",
+    "action": "pushed",
+    "ahead": 1
+  },
+  {
+    "repo": "autositcom",
+    "action": "pushed",
+    "ahead": 7
+  }
+]

@@ -1,0 +1,4311 @@
+[
+  {
+    "repo": "hermes-agent",
+    "branch": "upstream",
+    "current": "main",
+    "ahead": 55879,
+    "behind": 68,
+    "cherry_plus": 53346,
+    "subjects": [
+      "1408145c111 test(pm): the shared-Chromium fixture names the executable for the host target",
+      "603de4ccee6 fix(pm): update claims a default tool another checkout installed",
+      "cd482c63bf9 fix(pm): claiming a found pin leaves the caller's view on its own pin",
+      "dad713f77ab fix(pm): reusing another checkout's writable copy claims it",
+      "c401e1441dd fix(pm): an outdated read falls back only to the store's selected row"
+    ]
+  },
+  {
+    "repo": "bobeditpro",
+    "branch": "main",
+    "current": "master",
+    "ahead": 189,
+    "behind": 0,
+    "cherry_plus": 144,
+    "subjects": [
+      "bc05bca581 Merge commit '398d4a7fa95c02c386a68e79492f78748cf71bb3'",
+      "27d61fc3b1 Merge upstream/master: 129 commits from Audacity (au4)",
+      "4497da950b fix: remove stale muse submodule entry from index (no .gitmodules mapping)",
+      "3ae7ed4900 fix: update bobui submodule URL to bqt (repo renamed)",
+      "7470727394 fix: Use MUSE_COMPILE_ASAN in ASAN preset for cross-platform support (#11210)"
+    ]
+  },
+  {
+    "repo": "bobeditpro",
+    "branch": "upstream",
+    "current": "master",
+    "ahead": 1827,
+    "behind": 180,
+    "cherry_plus": 1405,
+    "subjects": [
+      "20f2d58974 Bump the framework (#12764)",
+      "9e5bef76dd Bump the framework",
+      "f6278e85df Spectrogram: use the painted frequency bounds for ruler ticks and centre-frequency drag (#12427)",
+      "9d26524667 Add Tracks preferences (#12563)",
+      "d7f97025cb Spectral selection: keep the track config when a selection is restored (#12441)"
+    ]
+  },
+  {
+    "repo": "bobfilez",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "current": "main",
+    "ahead": 1,
+    "behind": 8,
+    "cherry_plus": 1,
+    "subjects": [
+      "8708961a6 chore: preserve WIP before leader sync FF (20261107)"
+    ]
+  },
+  {
+    "repo": "bobfilez",
+    "branch": "upstream",
+    "current": "main",
+    "ahead": 62,
+    "behind": 47,
+    "cherry_plus": 62,
+    "subjects": [
+      "937d7eb42 time converstion fixed",
+      "be0e24483 working on testing time functions, 5 hours off when converting epoch time",
+      "38c568a08 added date lib, working on convert time to date",
+      "455b9541d test filename date parse",
+      "8f00addc0 parse filename time more"
+    ]
+  },
+  {
+    "repo": "bobtorrent",
+    "branch": "upstream",
+    "current": "master",
+    "ahead": 12,
+    "behind": 332,
+    "cherry_plus": 12,
+    "subjects": [
+      "4ad7c6d chore(deps): update dependency tape to v5.10.3 (#596)",
+      "0cec688 chore(deps): update actions/checkout action to v7 (#581)",
+      "f23ba5e chore(deps): update actions/cache action to v6 (#583)",
+      "c32f11f chore(deps): update actions/setup-node action to v7 (#586)",
+      "f424c49 chore(deps): update actions/stale action to v11 (#590)"
+    ]
+  },
+  {
+    "repo": "bobtrader",
+    "branch": "upstream",
+    "current": "main",
+    "ahead": 2,
+    "behind": 242,
+    "cherry_plus": 2,
+    "subjects": [
+      "edb64c2 Update README.md",
+      "19bd398 overall stability upgrade"
+    ]
+  },
+  {
+    "repo": "electricsheep",
+    "branch": "origin/jules-12868067778578944851-4867ca50",
+    "current": "main",
+    "ahead": 7,
+    "behind": 2,
+    "cherry_plus": 7,
+    "subjects": [
+      "f223632 Update architecture memory tracking for v1.1.0",
+      "60cdcd3 Track session 12868067778578944851 checkpoint log",
+      "216b1c5 Expose advanced diagnostics and logging settings in in-app ImGui overlay",
+      "b976909 Improve wxWidgets settings dialog sizing and layout styling",
+      "6081d0f Refine F1 in-app HUD hotkey toggling and telemetry controls"
+    ]
+  },
+  {
+    "repo": "electricsheep",
+    "branch": "origin/jules-4264994397503046839-283805b2",
+    "current": "main",
+    "ahead": 1,
+    "behind": 29,
+    "cherry_plus": 1,
+    "subjects": [
+      "a389b2a Phase 4 CI Validation: Add Github Actions and Documentations bump"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/backup/fdafa92-pre-borg-repin",
+    "current": "main",
+    "ahead": 1,
+    "behind": 731,
+    "cherry_plus": 1,
+    "subjects": [
+      "fdafa92d chore: update borg submodule to latest (v1.0.0-alpha.158)"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/dependabot/go_modules/go_modules-8b727544b6",
+    "current": "main",
+    "ahead": 1,
+    "behind": 105,
+    "cherry_plus": 1,
+    "subjects": [
+      "07cba528 chore(deps): bump github.com/labstack/echo/v4"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/dependabot/npm_and_yarn/npm_and_yarn-5360313e6a",
+    "current": "main",
+    "ahead": 1,
+    "behind": 96,
+    "cherry_plus": 1,
+    "subjects": [
+      "edc07533 chore(deps): bump the npm_and_yarn group across 13 directories with 12 updates"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/dependabot/npm_and_yarn/npm_and_yarn-d93facfbfd",
+    "current": "main",
+    "ahead": 1,
+    "behind": 116,
+    "cherry_plus": 1,
+    "subjects": [
+      "49915a08 chore(deps): bump the npm_and_yarn group across 3 directories with 5 updates"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/fix/jules-borg-pin",
+    "current": "main",
+    "ahead": 2,
+    "behind": 731,
+    "cherry_plus": 2,
+    "subjects": [
+      "d63fbc22 fix: re-pin borg submodule to published HEAD 964a130 (was unpublished f3314909, broke Jules recursive clone)",
+      "fdafa92d chore: update borg submodule to latest (v1.0.0-alpha.158)"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/gh-pages-hypernexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1086,
+    "cherry_plus": 1,
+    "subjects": [
+      "c5019714 Deploy HyperNexus site fff8bf454ae4b6c9c9e9be13b78938bfffbbcda1"
+    ]
+  },
+  {
+    "repo": "marketing_agent",
+    "branch": "github/gh-pages-tormentnexus",
+    "current": "main",
+    "ahead": 2,
+    "behind": 1086,
+    "cherry_plus": 2,
+    "subjects": [
+      "0c3da9e1 Deploy TormentNexus site 570a7f0ef4271c318e9a24f347afd66b72e99402",
+      "86b4774f Deploy TormentNexus site fff8bf454ae4b6c9c9e9be13b78938bfffbbcda1"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/github_actions/canary/actions/upload-artifact-7",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "0d1ea138 Bump actions/upload-artifact from 3 to 7"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/github_actions/canary/dawidd6/action-download-artifact-21",
+    "current": "main",
+    "ahead": 2,
+    "behind": 176,
+    "cherry_plus": 1,
+    "subjects": [
+      "8732d666 Merge branch 'main' into dependabot/github_actions/canary/dawidd6/action-download-artifact-21",
+      "1584f005 Bump dawidd6/action-download-artifact from 3.1.4 to 21"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/babel/parser-7.29.3",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "82940545 Bump @babel/parser from 7.24.4 to 7.29.3 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/electron-store-11.0.2",
+    "current": "main",
+    "ahead": 3,
+    "behind": 230,
+    "cherry_plus": 2,
+    "subjects": [
+      "478c91ff Merge branch 'dependabot/npm_and_yarn/app/canary/electron/remote-2.1.3' into dependabot/npm_and_yarn/app/canary/electron-store-11.0.2",
+      "da75ee41 Bump electron-store from 8.2.0 to 11.0.2 in /app",
+      "34888156 Bump @electron/remote from 2.1.2 to 2.1.3 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/electron/remote-2.1.3",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "34888156 Bump @electron/remote from 2.1.2 to 2.1.3 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/lodash-4.18.1",
+    "current": "main",
+    "ahead": 2,
+    "behind": 229,
+    "cherry_plus": 1,
+    "subjects": [
+      "569a174d Merge branch 'dependabot/npm_and_yarn/app/canary/electron/remote-2.1.3' into dependabot/npm_and_yarn/app/canary/lodash-4.18.1",
+      "34888156 Bump @electron/remote from 2.1.2 to 2.1.3 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/node-pty-1.1.0",
+    "current": "main",
+    "ahead": 1,
+    "behind": 161,
+    "cherry_plus": 0,
+    "subjects": [
+      "cfbdca77 Merge branch 'dependabot/npm_and_yarn/app/canary/parse-url-11.1.0' into dependabot/npm_and_yarn/app/canary/node-pty-1.1.0"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/os-locale-8.0.0",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "151d2c69 Bump os-locale from 5.0.0 to 8.0.0 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/queue-7.0.0",
+    "current": "main",
+    "ahead": 3,
+    "behind": 161,
+    "cherry_plus": 1,
+    "subjects": [
+      "07eba815 Merge branch 'main' into dependabot/npm_and_yarn/app/canary/queue-7.0.0",
+      "44d876bd Merge branch 'dependabot/npm_and_yarn/app/canary/os-locale-8.0.0' into dependabot/npm_and_yarn/app/canary/queue-7.0.0",
+      "151d2c69 Bump os-locale from 5.0.0 to 8.0.0 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/app/canary/react-18.3.1",
+    "current": "main",
+    "ahead": 2,
+    "behind": 158,
+    "cherry_plus": 1,
+    "subjects": [
+      "a7c3c64b Merge branch 'main' into dependabot/npm_and_yarn/app/canary/react-18.3.1",
+      "add4062c Bump react from 18.2.0 to 18.3.1 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/ava/typescript-6.0.0",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "0e8137d1 Bump @ava/typescript from 4.1.0 to 6.0.0"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/babel/preset-react-7.28.5",
+    "current": "main",
+    "ahead": 2,
+    "behind": 146,
+    "cherry_plus": 1,
+    "subjects": [
+      "f9b7f27c Merge branch 'main' into dependabot/npm_and_yarn/canary/babel/preset-react-7.28.5",
+      "6509535b Bump @babel/preset-react from 7.24.1 to 7.28.5"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/css-loader-7.1.4",
+    "current": "main",
+    "ahead": 2,
+    "behind": 152,
+    "cherry_plus": 1,
+    "subjects": [
+      "67c1081f Merge branch 'main' into dependabot/npm_and_yarn/canary/css-loader-7.1.4",
+      "2a3351bb Bump css-loader from 7.1.1 to 7.1.4"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/eslint-config-prettier-10.1.8",
+    "current": "main",
+    "ahead": 3,
+    "behind": 141,
+    "cherry_plus": 1,
+    "subjects": [
+      "2c811538 Merge branch 'main' into dependabot/npm_and_yarn/canary/eslint-config-prettier-10.1.8",
+      "9bc77a5d Merge branch 'main' into dependabot/npm_and_yarn/canary/eslint-config-prettier-10.1.8",
+      "fcc712aa Bump eslint-config-prettier from 9.1.0 to 10.1.8"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/eslint-plugin-json-schema-validator-5.5.1",
+    "current": "main",
+    "ahead": 3,
+    "behind": 230,
+    "cherry_plus": 2,
+    "subjects": [
+      "d10fc2f9 Merge branch 'dependabot/npm_and_yarn/canary/open-11.0.0' into dependabot/npm_and_yarn/canary/eslint-plugin-json-schema-validator-5.5.1",
+      "9766e8b5 Bump open from 8.4.2 to 11.0.0",
+      "306110b1 Bump eslint-plugin-json-schema-validator from 4.8.3 to 5.5.1"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/inquirer-13.4.1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "4f8bcf66 Bump inquirer from 9.2.18 to 13.4.1"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/multi-9d19999a5a",
+    "current": "main",
+    "ahead": 2,
+    "behind": 143,
+    "cherry_plus": 1,
+    "subjects": [
+      "44db3880 Merge branch 'main' into dependabot/npm_and_yarn/canary/multi-9d19999a5a",
+      "e7b45f8f Bump react and @types/react"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/open-11.0.0",
+    "current": "main",
+    "ahead": 2,
+    "behind": 141,
+    "cherry_plus": 1,
+    "subjects": [
+      "1ea3305e Merge branch 'main' into dependabot/npm_and_yarn/canary/open-11.0.0",
+      "9766e8b5 Bump open from 8.4.2 to 11.0.0"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "dependabot/npm_and_yarn/canary/prettier-3.8.2",
+    "current": "main",
+    "ahead": 4,
+    "behind": 143,
+    "cherry_plus": 2,
+    "subjects": [
+      "6460af79 Merge branch 'dependabot/npm_and_yarn/canary/multi-9d19999a5a' into dependabot/npm_and_yarn/canary/prettier-3.8.2",
+      "44db3880 Merge branch 'main' into dependabot/npm_and_yarn/canary/multi-9d19999a5a",
+      "ce3cbc98 Bump prettier from 3.2.5 to 3.8.2",
+      "e7b45f8f Bump react and @types/react"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/github_actions/canary/juliangruber/read-file-action-1.1.8",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "30be9480 Bump juliangruber/read-file-action from 1.1.7 to 1.1.8"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/app/canary/electron-is-dev-3.0.1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 348,
+    "cherry_plus": 1,
+    "subjects": [
+      "eeeadc8a Bump electron-is-dev from 2.0.0 to 3.0.1 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/app/canary/recast-0.23.11",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "29460b90 Bump recast from 0.23.6 to 0.23.11 in /app"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/ava-7.0.0",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "3769c421 Bump ava from 6.1.2 to 7.0.0"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/babel/preset-typescript-7.28.5",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "4cb8bcd8 Bump @babel/preset-typescript from 7.24.1 to 7.28.5"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/clsx-2.1.1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "6282f2e4 Bump clsx from 2.1.0 to 2.1.1"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/electronmon-2.0.4",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "8075619e Bump electronmon from 2.0.2 to 2.0.4"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/eslint-plugin-jsonc-2.21.1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "39fa9905 Bump eslint-plugin-jsonc from 2.15.1 to 2.21.1"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/react-redux-9.2.0",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "fa883cee Bump react-redux from 8.1.3 to 9.2.0"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/redux-and-redux-thunk-5.0.1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 339,
+    "cherry_plus": 1,
+    "subjects": [
+      "54de6dae Bump redux and redux-thunk"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/registry-url-7.2.0",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "c4b0f059 Bump registry-url from 6.0.1 to 7.2.0"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/reselect-5.1.1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "f5a3616d Bump reselect from 4.1.8 to 5.1.1"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/styled-jsx-5.1.7",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "b7ace652 Bump styled-jsx from 5.1.2 to 5.1.7"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/stylis-4.3.6",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "3cc82728 Bump stylis from 3.5.4 to 4.3.6"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/terser-5.46.1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "66b97a29 Bump terser from 5.30.3 to 5.46.1"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/types/async-retry-1.4.9",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "efe44c61 Bump @types/async-retry from 1.4.3 to 1.4.9"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/canary/types/node-25.6.0",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "029ec9ac Bump @types/node from 18.19.31 to 25.6.0"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/dependabot/npm_and_yarn/npm_and_yarn-01025cbd4d",
+    "current": "main",
+    "ahead": 1,
+    "behind": 230,
+    "cherry_plus": 1,
+    "subjects": [
+      "39f5d247 Bump the npm_and_yarn group across 2 directories with 19 updates"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/jules-12860271385039058662-f70a3246",
+    "current": "main",
+    "ahead": 60,
+    "behind": 170,
+    "cherry_plus": 49,
+    "subjects": [
+      "e467b155 feat(dashboard): add minimal required parameter helper and pre-validation v1.1.0",
+      "cd0220ac feat(ui): add minimal required parameter helper and pre-validation v1.1.0",
+      "665d39c5 feat: finalize v1.1.0 mission control consolidation and tests",
+      "f04ef912 feat: expand Playwright E2E UX tests for workflow templates v1.1.0",
+      "3331f6a1 feat: release v1.1.0 mission control and automation suites"
+    ]
+  },
+  {
+    "repo": "hyper",
+    "branch": "origin/jules-17358446353760799770-b2310bbf",
+    "current": "main",
+    "ahead": 1,
+    "behind": 186,
+    "cherry_plus": 1,
+    "subjects": [
+      "128922a1 docs: add COMMAND_BLOCKS_INSIGHTS.md detailing feature implementation"
+    ]
+  },
+  {
+    "repo": "freellm",
+    "branch": "temp-main",
+    "current": "main",
+    "ahead": 2,
+    "behind": 257,
+    "cherry_plus": 2,
+    "subjects": [
+      "b3f754a fix: regenerate go.sum after filter-repo history rewrite",
+      "71c3d9e fix: restore transformPlaintextToolCalls, cross-platform build"
+    ]
+  },
+  {
+    "repo": "mk64",
+    "branch": "upstream",
+    "current": "master",
+    "ahead": 6,
+    "behind": 52,
+    "cherry_plus": 6,
+    "subjects": [
+      "58cfcb022 Clarify vehicle ticking and fix some func spellings (#781)",
+      "ae9178b78 Update actors_extended.c (#779)",
+      "6ae9cf948 Add notes from a couple bugs (#778)",
+      "230fe2ec1 rename camera_start_cinematic_shot (#770)",
+      "2ccda00a8 Document and (under AVOID_UB) fix the attract timer hijacking an in-flight menu fade (#769)"
+    ]
+  },
+  {
+    "repo": "onetool-mcp",
+    "branch": "gh-pages",
+    "current": "main",
+    "ahead": 32,
+    "behind": 343,
+    "cherry_plus": 25,
+    "subjects": [
+      "df68d32 Deployed eac44ae with MkDocs version: 1.6.1",
+      "aefa0f1 Deployed 185160a with MkDocs version: 1.6.1",
+      "99bed32 Deployed 185160a with MkDocs version: 1.6.1",
+      "1180b90 Deployed 8fff23c with MkDocs version: 1.6.1",
+      "0d1b263 Deployed 54d8042 with MkDocs version: 1.6.1"
+    ]
+  },
+  {
+    "repo": "openclaw-config",
+    "branch": "origin/feat/email-steward-header-heuristics",
+    "current": "main",
+    "ahead": 1,
+    "behind": 138,
+    "cherry_plus": 1,
+    "subjects": [
+      "cca7587 feat(email-steward): add header heuristics before sub-agent body reads"
+    ]
+  },
+  {
+    "repo": "openclaw-dashboard",
+    "branch": "origin",
+    "current": "main",
+    "ahead": 8,
+    "behind": 6,
+    "cherry_plus": 6,
+    "subjects": [
+      "3592c28 Resolve security quality-gate findings and retain legacy pricing aliases",
+      "1c0d72d Initialize sensitive preview state before startup auth checks",
+      "d12f1e7 Fix security boundaries, pricing accuracy and deployment regressions",
+      "454285f Merge PR #41: recovery token hardening",
+      "7007235 Merge PR #31: custom provider pricing fallback"
+    ]
+  },
+  {
+    "repo": "openclaw-dashboard",
+    "branch": "origin/maintenance/security-pricing-2026-11-05",
+    "current": "main",
+    "ahead": 7,
+    "behind": 6,
+    "cherry_plus": 5,
+    "subjects": [
+      "1c0d72d Initialize sensitive preview state before startup auth checks",
+      "d12f1e7 Fix security boundaries, pricing accuracy and deployment regressions",
+      "454285f Merge PR #41: recovery token hardening",
+      "7007235 Merge PR #31: custom provider pricing fallback",
+      "d5f435e fix(auth): refine recovery-token file handling"
+    ]
+  },
+  {
+    "repo": "openclaw-dashboard",
+    "branch": "origin/maintenance/security-review-followup-2026-11-05",
+    "current": "main",
+    "ahead": 8,
+    "behind": 6,
+    "cherry_plus": 6,
+    "subjects": [
+      "3592c28 Resolve security quality-gate findings and retain legacy pricing aliases",
+      "1c0d72d Initialize sensitive preview state before startup auth checks",
+      "d12f1e7 Fix security boundaries, pricing accuracy and deployment regressions",
+      "454285f Merge PR #41: recovery token hardening",
+      "7007235 Merge PR #31: custom provider pricing fallback"
+    ]
+  },
+  {
+    "repo": "pi-mono",
+    "branch": "upstream",
+    "current": "main",
+    "ahead": 4401,
+    "behind": 358,
+    "cherry_plus": 4203,
+    "subjects": [
+      "827383a15 docs(chord): design.md current with the connection loop, sign-in lifetimes, themes, store notifications, group commit and sync",
+      "44aaba1f6 docs(p3): people note: what to read first, in full",
+      "87ae831f8 docs(p3): people, apps and locks (second edition: every decision of 2026-11-13, review findings, open questions)",
+      "97d539ce4 docs(p3): people: one owner, persons with roles in apps (kit additions, a full app)",
+      "d4d5157ee docs(p3): apps note, third edition: self.choose, one login per app, apps admitting other apps' users, the family app in full, mocks, an app's own sign-in"
+    ]
+  },
+  {
+    "repo": "planet_fitness_stepmaniax_agent",
+    "branch": "origin/dependabot/pip/pip-a223a3ed80",
+    "current": "main",
+    "ahead": 1,
+    "behind": 0,
+    "cherry_plus": 1,
+    "subjects": [
+      "5f0616b chore(deps): bump soupsieve"
+    ]
+  },
+  {
+    "repo": "projectm",
+    "branch": "main",
+    "current": "master",
+    "ahead": 2,
+    "behind": 39,
+    "cherry_plus": 0,
+    "subjects": [
+      "b6665d211 Merge commit '3be7393ebbd47e8c2642513e2f4cc2b5241be775'",
+      "f001a61b9 merge: origin/main-17361973617088245412 into main"
+    ]
+  },
+  {
+    "repo": "projectm",
+    "branch": "upstream",
+    "current": "master",
+    "ahead": 38,
+    "behind": 136,
+    "cherry_plus": 38,
+    "subjects": [
+      "eae22de40 Erase MilkdropShader's sampler and texsize declarations without scanning the whole shader each time",
+      "349b7cc2d Docs: add Android TV / Google TV section to README",
+      "7b6b04d4c Only read the git revision from projectM's own repository",
+      "e98fca85e Reduce minimum GLES version to 3.0",
+      "6f6480746 Fix out-of-bounds read in custom waveform code"
+    ]
+  },
+  {
+    "repo": "sm64coopdx",
+    "branch": "origin/feature/consolidated-dashboard-and-server-tray-v1.17-16848237908804950718",
+    "current": "main",
+    "ahead": 3,
+    "behind": 13,
+    "cherry_plus": 0,
+    "subjects": [
+      "55b8cf8d2 [build] Release v1.17: Consolidate Dashboard UI & Add Server Tray Manager",
+      "5684f574a Release v1.17: Consolidate Dashboard UI & Add Server Tray Manager",
+      "4120fe7ed Release v1.17: Consolidate Dashboard UI & Add Server Tray Manager"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "feature/cloud-dashboard-mcp-sse-389806464713532918",
+    "current": "main",
+    "ahead": 67,
+    "behind": 451,
+    "cherry_plus": 66,
+    "subjects": [
+      "775605d4bf refactor: rename TormentNexus to HyperNexus globally",
+      "d8ce11ee0a refactor: rename TormentNexus to HyperNexus globally",
+      "760b6e242e refactor: rename TormentNexus to HyperNexus globally",
+      "25d2bc16f9 refactor: globally rename TormentNexus to HyperNexus",
+      "7cdcbce65d fix: resolve compile errors and corrupted JSON struct tags"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gh-pages-hypernexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 451,
+    "cherry_plus": 1,
+    "subjects": [
+      "fb61b29a34 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gh-pages-tormentnexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 451,
+    "cherry_plus": 1,
+    "subjects": [
+      "fad3aaf3bc Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github",
+    "current": "main",
+    "ahead": 359,
+    "behind": 65,
+    "cherry_plus": 355,
+    "subjects": [
+      "b37ca5bf08 docs: revise README to reflect current state",
+      "e3fc22dc84 fix: repair merged Go build - rewrite upstream imports to local module, add routing metrics/account DB/shell helpers, hugot context API (v1.0.0-alpha.254)",
+      "291d5b721a chore: repo sync - upstream merge, submodule activation, version 1.0.0-alpha.254",
+      "a64d2a842b merge: sync origin/main (v1.0.29, unrelated history) into local main - local wins overlaps, remote-only files added (v1.0.0-alpha.254)",
+      "747ad9cb06 feat: memory extraction, migration, and 7.6K L2/L3 rebuild (v1.0.0-alpha.253)"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github/archive/cloud-dashboard-mcp-sse-775605d",
+    "current": "main",
+    "ahead": 67,
+    "behind": 451,
+    "cherry_plus": 66,
+    "subjects": [
+      "775605d4bf refactor: rename TormentNexus to HyperNexus globally",
+      "d8ce11ee0a refactor: rename TormentNexus to HyperNexus globally",
+      "760b6e242e refactor: rename TormentNexus to HyperNexus globally",
+      "25d2bc16f9 refactor: globally rename TormentNexus to HyperNexus",
+      "7cdcbce65d fix: resolve compile errors and corrupted JSON struct tags"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github/gh-pages-hypernexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 451,
+    "cherry_plus": 1,
+    "subjects": [
+      "fb61b29a34 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github/gh-pages-tormentnexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 451,
+    "cherry_plus": 1,
+    "subjects": [
+      "fad3aaf3bc Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "github/main",
+    "current": "main",
+    "ahead": 359,
+    "behind": 65,
+    "cherry_plus": 355,
+    "subjects": [
+      "b37ca5bf08 docs: revise README to reflect current state",
+      "e3fc22dc84 fix: repair merged Go build - rewrite upstream imports to local module, add routing metrics/account DB/shell helpers, hugot context API (v1.0.0-alpha.254)",
+      "291d5b721a chore: repo sync - upstream merge, submodule activation, version 1.0.0-alpha.254",
+      "a64d2a842b merge: sync origin/main (v1.0.29, unrelated history) into local main - local wins overlaps, remote-only files added (v1.0.0-alpha.254)",
+      "747ad9cb06 feat: memory extraction, migration, and 7.6K L2/L3 rebuild (v1.0.0-alpha.253)"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gitlab/feature/cloud-dashboard-mcp-sse-389806464713532918",
+    "current": "main",
+    "ahead": 67,
+    "behind": 451,
+    "cherry_plus": 66,
+    "subjects": [
+      "8d597c3286 refactor: rename TormentNexus to HyperNexus globally",
+      "b2139dd2de refactor: rename TormentNexus to HyperNexus globally",
+      "7ca65aad69 refactor: rename TormentNexus to HyperNexus globally",
+      "4d10231859 refactor: globally rename TormentNexus to HyperNexus",
+      "988750a1df fix: resolve compile errors and corrupted JSON struct tags"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gitlab/gh-pages-hypernexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 451,
+    "cherry_plus": 1,
+    "subjects": [
+      "fb61b29a34 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gitlab/gh-pages-tormentnexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 451,
+    "cherry_plus": 1,
+    "subjects": [
+      "fad3aaf3bc Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "gitlab/lane/muse-wonder-dashboard",
+    "current": "main",
+    "ahead": 15,
+    "behind": 43,
+    "cherry_plus": 15,
+    "subjects": [
+      "5f87ff044d feat(dashboard): cross-session coordination panel + sidebar dedupe (v1.0.30)",
+      "15dc9e211d fix(reasonix): stamp plugin manifest 1.0.30 (v1.0.30)",
+      "69470aebd1 docs: Muse loop-active 2026-11-12 (v1.0.30)",
+      "3642ef28f7 docs: Muse steady 2026-11-12 (v1.0.30)",
+      "d99b1cf786 docs: Muse lane-reply logged 2026-11-12 (v1.0.30)"
+    ]
+  },
+  {
+    "repo": "HyperNexus",
+    "branch": "origin/lane/muse-wonder-dashboard",
+    "current": "main",
+    "ahead": 15,
+    "behind": 43,
+    "cherry_plus": 15,
+    "subjects": [
+      "5f87ff044d feat(dashboard): cross-session coordination panel + sidebar dedupe (v1.0.30)",
+      "15dc9e211d fix(reasonix): stamp plugin manifest 1.0.30 (v1.0.30)",
+      "69470aebd1 docs: Muse loop-active 2026-11-12 (v1.0.30)",
+      "3642ef28f7 docs: Muse steady 2026-11-12 (v1.0.30)",
+      "d99b1cf786 docs: Muse lane-reply logged 2026-11-12 (v1.0.30)"
+    ]
+  },
+  {
+    "repo": "veilid_reddit_facebook",
+    "branch": "jules-scaffold-0.1.0-18345075036601368068",
+    "current": "main",
+    "ahead": 22,
+    "behind": 111,
+    "cherry_plus": 17,
+    "subjects": [
+      "bb5edd4 Gold Master Release v1.1.0-prod: Sovereign Social Network Finalized",
+      "edcb120 Gold Master Release v1.1.0-prod: Sovereign Social Network Finalized",
+      "822a46e Gold Master Final Polish: Release Notes and Integration Tests",
+      "e608c94 Finalize Gold Master v1.1.0-prod: Sovereign Social Network",
+      "cb8ee4f release: v1.1.0-prod Gold Master"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/abhishek/enable_cloud_mode_v2_on_dev",
+    "current": "main",
+    "ahead": 42,
+    "behind": 3,
+    "cherry_plus": 42,
+    "subjects": [
+      "071373f Enabled cloud mode input v2 on dogfood.",
+      "9187f64 robot feedback",
+      "efd3653 remove comments",
+      "c12b418 Slash command menu sidecar.",
+      "a9aebec robot feedback"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/abhishek/slash-command-menu",
+    "current": "main",
+    "ahead": 38,
+    "behind": 3,
+    "cherry_plus": 38,
+    "subjects": [
+      "a9aebec robot feedback",
+      "849517c remove comments",
+      "ed9dba4 Scrolling by arrow key works",
+      "9e5b8c6 Fix minor UI nits",
+      "67142a3 compact layout for description text"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/abhishek/slash-command-menu-sidecar",
+    "current": "main",
+    "ahead": 41,
+    "behind": 3,
+    "cherry_plus": 41,
+    "subjects": [
+      "9187f64 robot feedback",
+      "efd3653 remove comments",
+      "c12b418 Slash command menu sidecar.",
+      "a9aebec robot feedback",
+      "849517c remove comments"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/add-demo-launch-banner-experiment",
+    "current": "main",
+    "ahead": 14,
+    "behind": 3,
+    "cherry_plus": 14,
+    "subjects": [
+      "390b5a9 Add DEMO_LAUNCH_BANNER experiment",
+      "6bd99eb Add no-op telemetry context provider for remote server (#9232)",
+      "81910e2 Remove `warp --version` reference from CONTRIBUTING.md (#9249)",
+      "e12c14e Change image source in README (#9248)",
+      "d24408f Pin conversation list kebab button to the right side of items (#9245)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/advait/orchestration-pills",
+    "current": "main",
+    "ahead": 38,
+    "behind": 3,
+    "cherry_plus": 38,
+    "subjects": [
+      "5a68651 more fixes",
+      "acdee5c Revert \"revert partial fixes\"",
+      "e22eb1a revert partial fixes",
+      "75fb308 fixes",
+      "4fbb7ce updates to specs"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/aloke/autoupdate_remote_server",
+    "current": "main",
+    "ahead": 30,
+    "behind": 3,
+    "cherry_plus": 30,
+    "subjects": [
+      "c0a691a Address review: restore deregister-race guard and reconnect path",
+      "ce80335 Add autoupdate implementat",
+      "9299441 Shrink binary size for the standalone oz cli (#9301)",
+      "24a96d6 Sort tab configs alphabetically by name (#9258)",
+      "2d0d88f Add reconnection logic to remote server (#9289)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/asweet/pr-template",
+    "current": "main",
+    "ahead": 294,
+    "behind": 3,
+    "cherry_plus": 289,
+    "subjects": [
+      "70a9214 Fix PR template",
+      "f839f10 Rename files",
+      "6ae761f PR template for ssh tmux issues",
+      "7a95330 Updated README.md with new branding (#5388)",
+      "0c3d4ae Update the link to the docs in the rc file question"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/ben/add-cli-version",
+    "current": "main",
+    "ahead": 9,
+    "behind": 3,
+    "cherry_plus": 9,
+    "subjects": [
+      "375148e Pipe version through to CLI",
+      "c9a68ca [APP-4249] Set default cwd for project-scoped MCP servers (#9239)",
+      "3f120e4 [WAR-7381] Move \"Discard all\" to end of code review overflow menu (#9236)",
+      "7104a12 [APP-4261] Add tooltips to disabled git operation buttons (#9234)",
+      "c8f6526 Add fallback protoc install step on Windows build (#9230)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/captainsafia/fix-mirror-new-issues-token",
+    "current": "main",
+    "ahead": 342,
+    "behind": 3,
+    "cherry_plus": 337,
+    "subjects": [
+      "8ca9298 Fix mirror issue workflow token usage",
+      "92ddd31 Support mirroring issues to tracking repo (#8999)",
+      "8bf3fd1 Update README.md for Oz",
+      "572c5cd Fix log instructions link in SSH issue template",
+      "0097d3f Fix log instructions link in SSH TMUX issue template"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/danny/os-label-issues-action",
+    "current": "main",
+    "ahead": 306,
+    "behind": 3,
+    "cherry_plus": 301,
+    "subjects": [
+      "37dd303 Created os-label github action",
+      "11a0111 Update 03_ssh_tmux.yml with log intructions/field",
+      "3aacf69 Update 04_ssh_legacy.yml with log intructions/field",
+      "b903138 Update 01_bug_report.yml with log intructions/field",
+      "440294c added pre-submit checks and os options to templates (#5823)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/danny/readme-branding-update",
+    "current": "main",
+    "ahead": 292,
+    "behind": 3,
+    "cherry_plus": 287,
+    "subjects": [
+      "beb4378 Update README.md to match warpdotdev readme",
+      "a340a0d Update README.md",
+      "0c3d4ae Update the link to the docs in the rc file question",
+      "b38c845 Update updated grammar on terminal requestion, updated rc file question",
+      "d6b725e improved grammar on other terminal question"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/danny/update-issue-templates",
+    "current": "main",
+    "ahead": 344,
+    "behind": 3,
+    "cherry_plus": 339,
+    "subjects": [
+      "f92ddee updated config.yaml links",
+      "8c155d6 resolved merge conflicts",
+      "4956799 Fix mirror issue workflow token usage (#9001)",
+      "92ddd31 Support mirroring issues to tracking repo (#8999)",
+      "8bf3fd1 Update README.md for Oz"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/danny/updating-github-templates-for-the-win",
+    "current": "main",
+    "ahead": 302,
+    "behind": 3,
+    "cherry_plus": 297,
+    "subjects": [
+      "c02d5f4 added pre-submit checks and os options to templates",
+      "10d67c9 Non-empty description",
+      "50b2257 Remove markdown (#5631)",
+      "aaa1468 Simplify the SSH Tmux error reporting template (#5629)",
+      "f76df42 rerstored config.yml discord link"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/dependabot/github_actions/actions/upload-artifact-7.0.1",
+    "current": "main",
+    "ahead": 2,
+    "behind": 3,
+    "cherry_plus": 2,
+    "subjects": [
+      "4a034f9 build(deps): Bump actions/upload-artifact from 6.0.0 to 7.0.1",
+      "0dbd3d5 Initial public release of Warp."
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/dependabot/github_actions/google-github-actions/upload-cloud-storage-3.0.0",
+    "current": "main",
+    "ahead": 2,
+    "behind": 3,
+    "cherry_plus": 2,
+    "subjects": [
+      "9096c8d build(deps): Bump google-github-actions/upload-cloud-storage",
+      "0dbd3d5 Initial public release of Warp."
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/dependabot/github_actions/slackapi/slack-github-action-3.0.1",
+    "current": "main",
+    "ahead": 2,
+    "behind": 3,
+    "cherry_plus": 2,
+    "subjects": [
+      "9e2ab03 build(deps): Bump slackapi/slack-github-action from 1.16.0 to 3.0.1",
+      "0dbd3d5 Initial public release of Warp."
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/dependabot/github_actions/softprops/action-gh-release-3.0.0",
+    "current": "main",
+    "ahead": 2,
+    "behind": 3,
+    "cherry_plus": 2,
+    "subjects": [
+      "b7a5cc5 build(deps): Bump softprops/action-gh-release from 2.2.2 to 3.0.0",
+      "0dbd3d5 Initial public release of Warp."
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/dependabot/github_actions/taiki-e/install-action-2.75.12",
+    "current": "main",
+    "ahead": 2,
+    "behind": 3,
+    "cherry_plus": 2,
+    "subjects": [
+      "c89ef2d build(deps): Bump taiki-e/install-action from 1.17.3 to 2.75.12",
+      "0dbd3d5 Initial public release of Warp."
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/dev_release/v0.2026.04.29.08.57.dev",
+    "current": "main",
+    "ahead": 34,
+    "behind": 3,
+    "cherry_plus": 34,
+    "subjects": [
+      "d0f045c Auto oss vs cost efficient 50/50 A/B test (#9355)",
+      "f0c8b7f [APP-3801] implement remote environments auth (#9331)",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/edward/war-7378-use-forkpoint-commit",
+    "current": "main",
+    "ahead": 21,
+    "behind": 3,
+    "cherry_plus": 17,
+    "subjects": [
+      "f45d111 FORMAT",
+      "1738501 Reuse git branch metadata for fork-point detection",
+      "e7ae15e Refactor: Remove parent branch logic from code review",
+      "4e6c2c5 Merge branch 'master' into edward/war-7378-use-forkpoint-commit",
+      "dc8f3de clippy"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/evelyn/quality-544",
+    "current": "main",
+    "ahead": 35,
+    "behind": 3,
+    "cherry_plus": 35,
+    "subjects": [
+      "00cfdeb Fix counter leak when image processing future is aborted",
+      "1e857fa Add unit tests for BlocklistAIContextModel locking attachment logic",
+      "5800ffb QUALITY-544: Lock NLD for image-attached agent-view entry",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/freebsd-fixes",
+    "current": "main",
+    "ahead": 35,
+    "behind": 3,
+    "cherry_plus": 35,
+    "subjects": [
+      "9569745 style: format FreeBSD cfg updates",
+      "6ec7128 Permit FreeBSD targets at Linux-only cfg sites",
+      "f0c8b7f [APP-3801] implement remote environments auth (#9331)",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/harry/remote-1458-add-claude-specific-icons-for-cloud-mode-in-vertical-tabs",
+    "current": "main",
+    "ahead": 19,
+    "behind": 3,
+    "cherry_plus": 19,
+    "subjects": [
+      "ad8dd0f address agent comments",
+      "f99ed07 fix overlay hang default",
+      "17cf187 make icon api clearer",
+      "d561421 allow a per-render inset config",
+      "d1a5ecc fix status sizing"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/harry/remote-1465-add-oz-file-editcreation-hooks-for-better-snapshotting",
+    "current": "main",
+    "ahead": 30,
+    "behind": 3,
+    "cherry_plus": 30,
+    "subjects": [
+      "5054891 fix task crash",
+      "d96b098 add snapshot writer that hooks onto oz file changes",
+      "3bbed46 add product and tech specs",
+      "24a96d6 Sort tab configs alphabetically by name (#9258)",
+      "2d0d88f Add reconnection logic to remote server (#9289)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/hyc/readme-fix",
+    "current": "main",
+    "ahead": 306,
+    "behind": 3,
+    "cherry_plus": 301,
+    "subjects": [
+      "82748de Update README.md",
+      "11a0111 Update 03_ssh_tmux.yml with log intructions/field",
+      "3aacf69 Update 04_ssh_legacy.yml with log intructions/field",
+      "b903138 Update 01_bug_report.yml with log intructions/field",
+      "440294c added pre-submit checks and os options to templates (#5823)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/hyc/warp-2.0",
+    "current": "main",
+    "ahead": 319,
+    "behind": 3,
+    "cherry_plus": 314,
+    "subjects": [
+      "9ab5120 updated image",
+      "f367d60 Updated readme copy",
+      "e7ed9ee Move changes to hyc/warp-2.0 branch",
+      "1e334d2 Update logs documentation URL",
+      "3859d79 Update log-gathering documentation link"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/jules-18223913328910802532-f975ead7",
+    "current": "main",
+    "ahead": 16,
+    "behind": 0,
+    "cherry_plus": 16,
+    "subjects": [
+      "2f7f4d8 feat: release v0.3.2 categorized unified command palette",
+      "a4d81ec feat: release v0.3.2 categorized unified command palette",
+      "a3eb82c feat: release v0.3.1 alternate screen buffer manager for interactive CLI apps",
+      "4e819ab feat: release v0.3.0 UI redraw batching and anti-jitter optimization",
+      "48f2749 feat: release v0.2.9 Win32 RichEdit character formatting API"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/jules-3138507799654645753-de2e0a16",
+    "current": "main",
+    "ahead": 50,
+    "behind": 2,
+    "cherry_plus": 50,
+    "subjects": [
+      "3eaaa09 chore: Provide final project memory",
+      "48f3838 chore: Finalize memory and prep for session handoff",
+      "43b4628 chore: Finalize memory and prep for session handoff",
+      "f287b96 chore: Finalize memory and prepare session handoff",
+      "542e140 chore: provide final project memory"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/jules-3383282726720563606-26ce11ab",
+    "current": "main",
+    "ahead": 42,
+    "behind": 0,
+    "cherry_plus": 42,
+    "subjects": [
+      "21f9fe6 Finalize Go CLI scaffold",
+      "df4e0c3 Halt",
+      "7c1b24c Final update",
+      "a500249 Update",
+      "2da218d Update"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/jules-6107329301478487374-9f29fea8",
+    "current": "main",
+    "ahead": 5,
+    "behind": 0,
+    "cherry_plus": 5,
+    "subjects": [
+      "d4d97a2 docs: propose lightweight abstraction for agent state persistence",
+      "53d7294 test: validate agent cache isolation and ignore rules",
+      "b7822bb feat: consolidate Win32 dashboard layout and initialize shadow pilot telemetry",
+      "4a00bf0 feat: complete Go workspace architecture and UI unification",
+      "0662527 docs: add ROADMAP.md, TODO.md, and HANDOFF.md initialization"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/jules-7838558932905102480-46ce586a",
+    "current": "main",
+    "ahead": 3,
+    "behind": 2,
+    "cherry_plus": 3,
+    "subjects": [
+      "8743e67 chore(audit): Initial audit docs and app_menus refactor (v0.1.1)\\n\\n- Added audit docs: HANDOFF.md, VISION.md, ROADMAP.md, TODO.md, DEPLOY.md, CHANGELOG.md, VERSION.md, AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md, copilot-instructions.md\\n- Refactored MenuItem::Custom blocks in app_menus.rs as identified by TODO\\n- Added unit tests for overage_limit_modal pure data processing functions\\n- Bumped version to 0.1.1",
+      "f577dc0 chore(audit): Initial audit docs and app_menus refactor (v0.1.1)\\n\\n- Added audit docs: HANDOFF.md, VISION.md, ROADMAP.md, TODO.md, DEPLOY.md, CHANGELOG.md, VERSION.md, AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md, copilot-instructions.md\\n- Refactored MenuItem::Custom blocks in app_menus.rs as identified by TODO\\n- Added unit tests for overage_limit_modal pure data processing functions\\n- Bumped version to 0.1.1",
+      "e113847 chore(audit): Initial audit docs and app_menus refactor (v0.1.1)\\n\\n- Added audit docs: HANDOFF.md, VISION.md, ROADMAP.md, TODO.md, DEPLOY.md, CHANGELOG.md, VERSION.md, AGENTS.md, CLAUDE.md, GEMINI.md, GPT.md, copilot-instructions.md\\n- Refactored MenuItem::Custom blocks in app_menus.rs as identified by TODO\\n- Bumped version to 0.1.1"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/katarina/local-child-agent-parent-run-id-compat-warp",
+    "current": "main",
+    "ahead": 19,
+    "behind": 3,
+    "cherry_plus": 19,
+    "subjects": [
+      "ff550f9 Retry local child task creation without parent run id on 422",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)",
+      "57e8e3e Replay agent events on restore (#9251)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/katarina/quality-482-wake-up-remote-agent-on-new-events",
+    "current": "main",
+    "ahead": 28,
+    "behind": 2,
+    "cherry_plus": 27,
+    "subjects": [
+      "7209cdf Merge origin/master into katarina/quality-482-wake-up-remote-agent-on-new-events",
+      "1f88ed0 Fix WASM clippy for native wake paths",
+      "943b7b5 Fix WASM build for dormant Claude wake path",
+      "e20b902 Address remote agent wake review comments",
+      "43804ab Wake remote child agents on new events"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/kevin/fix-file-tree-loading-flicker",
+    "current": "main",
+    "ahead": 19,
+    "behind": 3,
+    "cherry_plus": 19,
+    "subjects": [
+      "da233fc Fix file tree loading flicker",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)",
+      "57e8e3e Replay agent events on restore (#9251)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/kevin/fix-read-files-out-of-bounds",
+    "current": "main",
+    "ahead": 22,
+    "behind": 3,
+    "cherry_plus": 22,
+    "subjects": [
+      "790a028 Fix read_files with out-of-bounds line ranges producing empty result",
+      "21cb7e5 Don't run SSH integration tests for PRs from forks. (#9304)",
+      "fc0ce9f Don't require login to open file from URI (#9300)",
+      "57225a8 Supply SSH key for channel config repo access (#9298)",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/kevin/migrate-ssh-install-setting-to-macro",
+    "current": "main",
+    "ahead": 19,
+    "behind": 3,
+    "cherry_plus": 19,
+    "subjects": [
+      "dd10009 Migrate SSH install setting to standard macros",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)",
+      "57e8e3e Replay agent events on restore (#9251)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/kevin/refactor-app-init-path",
+    "current": "main",
+    "ahead": 22,
+    "behind": 3,
+    "cherry_plus": 22,
+    "subjects": [
+      "f8ebef6 comments",
+      "d164057 clippy",
+      "8ad3f93 fmt",
+      "fd510b4 Refactor app initialization path to make sure remote server is initialized with the right setup",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/leon/configurable-context-window",
+    "current": "main",
+    "ahead": 20,
+    "behind": 3,
+    "cherry_plus": 20,
+    "subjects": [
+      "9d46a75 Add configurable per-profile context window setting",
+      "57225a8 Supply SSH key for channel config repo access (#9298)",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/lili/remote-1502-initial-harness-setup-client-side-for-codex",
+    "current": "main",
+    "ahead": 37,
+    "behind": 3,
+    "cherry_plus": 37,
+    "subjects": [
+      "ebd46f7 Fix compilation",
+      "35e5817 Add system prompt for codex",
+      "941ea8a Initial codex CLI harness setup",
+      "d0f045c Auto oss vs cost efficient 50/50 A/B test (#9355)",
+      "f0c8b7f [APP-3801] implement remote environments auth (#9331)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/lili/remote-1510-skip-trustauth-for-codex",
+    "current": "main",
+    "ahead": 37,
+    "behind": 3,
+    "cherry_plus": 37,
+    "subjects": [
+      "b2f68b8 Preseed settings files for codex",
+      "35e5817 Add system prompt for codex",
+      "941ea8a Initial codex CLI harness setup",
+      "d0f045c Auto oss vs cost efficient 50/50 A/B test (#9355)",
+      "f0c8b7f [APP-3801] implement remote environments auth (#9331)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/lucie/app-4154-bump-core-text",
+    "current": "main",
+    "ahead": 10,
+    "behind": 3,
+    "cherry_plus": 10,
+    "subjects": [
+      "c9503d3 bump core-text",
+      "7e189ea [APP-4260] Disable commit message editor during commit operation (#9235)",
+      "c9a68ca [APP-4249] Set default cwd for project-scoped MCP servers (#9239)",
+      "3f120e4 [WAR-7381] Move \"Discard all\" to end of code review overflow menu (#9236)",
+      "7104a12 [APP-4261] Add tooltips to disabled git operation buttons (#9234)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/maggs/fix-remote-server-failed-banner",
+    "current": "main",
+    "ahead": 34,
+    "behind": 3,
+    "cherry_plus": 34,
+    "subjects": [
+      "7f57538 oz review",
+      "0667b19 update error banner ui",
+      "37c071d don't show loading footer and banner at the same time",
+      "54c2d52 fix banner",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/matthew/review-sse-connection-strategy",
+    "current": "main",
+    "ahead": 52,
+    "behind": 3,
+    "cherry_plus": 52,
+    "subjects": [
+      "7fae114 Address review: collapse per-conversation maps; refine helpers and spec",
+      "dbf59c6 Re-integrate replay-on-restore into rewritten streamer",
+      "7fcc820 Address review: collapse ConsumerId, simplify driver fields, trim comments",
+      "1caf32e Move AgentView streamer (un)register into ActiveAgentViewsModel",
+      "9437002 Cleanup: extract streamer helpers, simplify driver state, trim comments"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/old-main",
+    "current": "main",
+    "ahead": 345,
+    "behind": 3,
+    "cherry_plus": 340,
+    "subjects": [
+      "fc9a22b Apply grace window after needs-info label event (#9118)",
+      "d41f888 Add workflow to auto-close stale needs-info issues (#9057)",
+      "0e35b39 Update issue template config links (#9067)",
+      "4956799 Fix mirror issue workflow token usage (#9001)",
+      "92ddd31 Support mirroring issues to tracking repo (#8999)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/APP-4321-active-tab-color-indication",
+    "current": "main",
+    "ahead": 34,
+    "behind": 3,
+    "cherry_plus": 34,
+    "subjects": [
+      "86570e7 Improve active tab indication for color-coded tabs (APP-4321)",
+      "f0c8b7f [APP-3801] implement remote environments auth (#9331)",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/REMOTE-1496/setup-commands-list",
+    "current": "main",
+    "ahead": 12,
+    "behind": 3,
+    "cherry_plus": 12,
+    "subjects": [
+      "6eb44ad [REMOTE-1496] Render Environment setup commands as unordered list",
+      "e12c14e Change image source in README (#9248)",
+      "d24408f Pin conversation list kebab button to the right side of items (#9245)",
+      "7e189ea [APP-4260] Disable commit message editor during commit operation (#9235)",
+      "c9a68ca [APP-4249] Set default cwd for project-scoped MCP servers (#9239)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/SAL-54-remove-less-horizontal-terminal-padding",
+    "current": "main",
+    "ahead": 18,
+    "behind": 3,
+    "cherry_plus": 18,
+    "subjects": [
+      "e54196e Remove stale feature flag: LessHorizontalTerminalPadding",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)",
+      "57e8e3e Replay agent events on restore (#9251)",
+      "4e80762 Don't let `./script/run` fail for external contributors. (#9268)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/close-needs-info-grace-window",
+    "current": "main",
+    "ahead": 345,
+    "behind": 3,
+    "cherry_plus": 340,
+    "subjects": [
+      "691ff3c Apply grace window after needs-info label event",
+      "d41f888 Add workflow to auto-close stale needs-info issues (#9057)",
+      "0e35b39 Update issue template config links (#9067)",
+      "4956799 Fix mirror issue workflow token usage (#9001)",
+      "92ddd31 Support mirroring issues to tracking repo (#8999)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/close-stale-needs-info-issues",
+    "current": "main",
+    "ahead": 343,
+    "behind": 3,
+    "cherry_plus": 338,
+    "subjects": [
+      "a80ec6b Add workflow to auto-close stale needs-info issues",
+      "4956799 Fix mirror issue workflow token usage (#9001)",
+      "92ddd31 Support mirroring issues to tracking repo (#8999)",
+      "8bf3fd1 Update README.md for Oz",
+      "572c5cd Fix log instructions link in SSH issue template"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/demo-launch-banner-experiment",
+    "current": "main",
+    "ahead": 14,
+    "behind": 3,
+    "cherry_plus": 14,
+    "subjects": [
+      "260b7ea Add DEMO_LAUNCH_BANNER experiment",
+      "6bd99eb Add no-op telemetry context provider for remote server (#9232)",
+      "81910e2 Remove `warp --version` reference from CONTRIBUTING.md (#9249)",
+      "e12c14e Change image source in README (#9248)",
+      "d24408f Pin conversation list kebab button to the right side of items (#9245)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/fix-close-needs-info-locked-issues",
+    "current": "main",
+    "ahead": 346,
+    "behind": 3,
+    "cherry_plus": 341,
+    "subjects": [
+      "8dcf25b Handle errors during patch in close-needs-info workflow",
+      "fc9a22b Apply grace window after needs-info label event (#9118)",
+      "d41f888 Add workflow to auto-close stale needs-info issues (#9057)",
+      "0e35b39 Update issue template config links (#9067)",
+      "4956799 Fix mirror issue workflow token usage (#9001)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/fix-manage-profiles-settings-link",
+    "current": "main",
+    "ahead": 22,
+    "behind": 3,
+    "cherry_plus": 22,
+    "subjects": [
+      "949c0b1 Open Profiles settings from Manage Profiles button",
+      "21cb7e5 Don't run SSH integration tests for PRs from forks. (#9304)",
+      "fc0ce9f Don't require login to open file from URI (#9300)",
+      "57225a8 Supply SSH key for channel config repo access (#9298)",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/implement-issue-9227",
+    "current": "main",
+    "ahead": 6,
+    "behind": 3,
+    "cherry_plus": 6,
+    "subjects": [
+      "2abf8df fix: remove empty fake file",
+      "c8f6526 Add fallback protoc install step on Windows build (#9230)",
+      "4a00689 Fix CI to work in the `warpdotdev/warp` repo. (#9226)",
+      "0ca787c ci: drop removed focus input from review-pull-request caller (#9231)",
+      "e20fa7a ci: pass OSS_WARP_API_KEY to oz-for-oss reusable workflows (#9220)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/implement-issue-9227-remove-fake-file",
+    "current": "main",
+    "ahead": 4,
+    "behind": 3,
+    "cherry_plus": 4,
+    "subjects": [
+      "aeed751 fix: remove empty fake file",
+      "0ca787c ci: drop removed focus input from review-pull-request caller (#9231)",
+      "e20fa7a ci: pass OSS_WARP_API_KEY to oz-for-oss reusable workflows (#9220)",
+      "0dbd3d5 Initial public release of Warp."
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/readme-build-link",
+    "current": "main",
+    "ahead": 32,
+    "behind": 3,
+    "cherry_plus": 32,
+    "subjects": [
+      "7c8dc6c Add Build Status section to README linking to build.warp.dev",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)",
+      "389716a Add client-side user setting for agent commit attribution (#9323)",
+      "9299441 Shrink binary size for the standalone oz cli (#9301)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/spec-issue-1154",
+    "current": "main",
+    "ahead": 33,
+    "behind": 3,
+    "cherry_plus": 33,
+    "subjects": [
+      "9a033bd spec: hide Warp icon from Dock for hotkey window",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)",
+      "389716a Add client-side user setting for agent commit attribution (#9323)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/spec-issue-9216",
+    "current": "main",
+    "ahead": 33,
+    "behind": 3,
+    "cherry_plus": 33,
+    "subjects": [
+      "481917a spec: configure clear command behavior",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)",
+      "389716a Add client-side user setting for agent commit attribution (#9323)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/update-pr-template",
+    "current": "main",
+    "ahead": 15,
+    "behind": 3,
+    "cherry_plus": 15,
+    "subjects": [
+      "219052a docs: bring back changelog section as a comment",
+      "c4a2a83 docs: simplify PR template for public contributors",
+      "6bd99eb Add no-op telemetry context provider for remote server (#9232)",
+      "81910e2 Remove `warp --version` reference from CONTRIBUTING.md (#9249)",
+      "e12c14e Change image source in README (#9248)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz-agent/wrap-warping-indicator-chips",
+    "current": "main",
+    "ahead": 19,
+    "behind": 3,
+    "cherry_plus": 19,
+    "subjects": [
+      "7eaa904 Wrap warping-indicator chips so they don't overflow narrow panes",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)",
+      "57e8e3e Replay agent events on restore (#9251)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz/add-demo-launch-banner-experiment",
+    "current": "main",
+    "ahead": 19,
+    "behind": 3,
+    "cherry_plus": 19,
+    "subjects": [
+      "9559486 Add DEMO_LAUNCH_BANNER experiment",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)",
+      "57e8e3e Replay agent events on restore (#9251)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz/show-all-personal-runs-in-conversation-list",
+    "current": "main",
+    "ahead": 10,
+    "behind": 3,
+    "cherry_plus": 10,
+    "subjects": [
+      "17b4455 Show all personal runs in conversation list",
+      "7e189ea [APP-4260] Disable commit message editor during commit operation (#9235)",
+      "c9a68ca [APP-4249] Set default cwd for project-scoped MCP servers (#9239)",
+      "3f120e4 [WAR-7381] Move \"Discard all\" to end of code review overflow menu (#9236)",
+      "7104a12 [APP-4261] Add tooltips to disabled git operation buttons (#9234)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/oz/show-all-personal-runs-in-conversation-list-v2",
+    "current": "main",
+    "ahead": 14,
+    "behind": 3,
+    "cherry_plus": 14,
+    "subjects": [
+      "75fd0de Show all personal runs in the conversation list",
+      "6bd99eb Add no-op telemetry context provider for remote server (#9232)",
+      "81910e2 Remove `warp --version` reference from CONTRIBUTING.md (#9249)",
+      "e12c14e Change image source in README (#9248)",
+      "d24408f Pin conversation list kebab button to the right side of items (#9245)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/petra/add-faq",
+    "current": "main",
+    "ahead": 17,
+    "behind": 3,
+    "cherry_plus": 16,
+    "subjects": [
+      "e36894f Add OpenAI partnership question and clarify training-data scope",
+      "ce553f4 Clarify contributor vs. collaborator distinction",
+      "65ebb90 Merge branch 'master' into petra/add-faq",
+      "97948d5 Add FAQ.md",
+      "6bd99eb Add no-op telemetry context provider for remote server (#9232)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/petra/faq-openai-and-training",
+    "current": "main",
+    "ahead": 19,
+    "behind": 3,
+    "cherry_plus": 19,
+    "subjects": [
+      "7c771bd Add OpenAI partnership question and clarify training-data scope",
+      "bc3fffa [APP-4285] Send slash commands as follow-ups with active AI streams (#9243)",
+      "bfdd079 Add FAQ.md (#9267)",
+      "ea269f3 Install libclang-dev and unzip in agent docker container (#9257)",
+      "57e8e3e Replay agent events on restore (#9251)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/preview_release/v0.2026.04.29.08.56.preview",
+    "current": "main",
+    "ahead": 34,
+    "behind": 3,
+    "cherry_plus": 34,
+    "subjects": [
+      "d0f045c Auto oss vs cost efficient 50/50 A/B test (#9355)",
+      "f0c8b7f [APP-3801] implement remote environments auth (#9331)",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/roland/APP-3114-scroll-selected-block-keybinding-editor-focused",
+    "current": "main",
+    "ahead": 31,
+    "behind": 3,
+    "cherry_plus": 31,
+    "subjects": [
+      "1523a65 Fix scroll-to-selected-block keybinding when editor input is focused",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)",
+      "389716a Add client-side user setting for agent commit attribution (#9323)",
+      "9299441 Shrink binary size for the standalone oz cli (#9301)",
+      "24a96d6 Sort tab configs alphabetically by name (#9258)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/safia/mirror-issues",
+    "current": "main",
+    "ahead": 341,
+    "behind": 3,
+    "cherry_plus": 336,
+    "subjects": [
+      "80dd238 Support mirroring issues to tracking repo",
+      "8bf3fd1 Update README.md for Oz",
+      "572c5cd Fix log instructions link in SSH issue template",
+      "0097d3f Fix log instructions link in SSH TMUX issue template",
+      "7fcaf5c updating links to docs"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/stable_release/v0.2026.04.29.08.56.stable",
+    "current": "main",
+    "ahead": 34,
+    "behind": 3,
+    "cherry_plus": 34,
+    "subjects": [
+      "d0f045c Auto oss vs cost efficient 50/50 A/B test (#9355)",
+      "f0c8b7f [APP-3801] implement remote environments auth (#9331)",
+      "c325d14 Update agent attribution setting (#9329)",
+      "ffe93a5 Fix git diff for first commit in commit message autogen (#9291)",
+      "c0feac2 Expand `~` in `warp://action/new_tab?path=` URLs (#9277)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/tab-dragging-recleaned",
+    "current": "main",
+    "ahead": 27,
+    "behind": 3,
+    "cherry_plus": 26,
+    "subjects": [
+      "ad34b1f Merge branch 'master' into tab-dragging-recleaned",
+      "a1f35fa Add FAQ entry for model subscription access (#9287)",
+      "21cb7e5 Don't run SSH integration tests for PRs from forks. (#9304)",
+      "5aa05a6 Remove and consolidate specs",
+      "fc0ce9f Don't require login to open file from URI (#9300)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/varoon/add-global-rulefiles",
+    "current": "main",
+    "ahead": 8,
+    "behind": 3,
+    "cherry_plus": 8,
+    "subjects": [
+      "756fd91 Address review: thinner safe logs, drop stale globals on read fail, project-only signal",
+      "ea8058b Center zero-state copy in Rules view; back-fill APP-3893 specs",
+      "6b23caf Refactor rule view to support file-backed global rules",
+      "9c45561 self-review: Refactor global rule indexing and watching",
+      "86ee7b6 Initial pass"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/warp-rebuild-v0.3.0-7581667912688729386",
+    "current": "main",
+    "ahead": 49,
+    "behind": 1,
+    "cherry_plus": 49,
+    "subjects": [
+      "79f61d9 Milestone v3.1.0: Warp Ultimate Verified Go LLM Harness",
+      "7f8b7b6 Milestone v3.1.0: Warp Ultimate Verified Go LLM Harness Completion",
+      "912bf82 Milestone v3.1.0: Warp Ultimate Verified Go LLM Harness",
+      "a96e297 Milestone v3.1.0: Warp Ultimate Go Rebuild - Parity & Verification Complete",
+      "7c6f0ab Milestone v3.1.0: Warp Ultimate Verified Go LLM Harness"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/zach/dedupe-workflow",
+    "current": "main",
+    "ahead": 338,
+    "behind": 3,
+    "cherry_plus": 333,
+    "subjects": [
+      "c8998a7 Security: Remove issue content from webhook payload",
+      "b4cf1ac Add workflow_dispatch for local testing",
+      "56c0676 Add GitHub Action to trigger PowerFixer dedupe on new issues",
+      "112b4f2 Update 04_ssh_legacy.yml ssh search link",
+      "2d08dda Update 03_ssh_tmux.yml ssh-tmux search link"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/zb/add-execution-support-ambient-agent-model",
+    "current": "main",
+    "ahead": 33,
+    "behind": 3,
+    "cherry_plus": 33,
+    "subjects": [
+      "5fa260b Refactor AmbientAgentViewModel to handle follow-up run executions.",
+      "c7794fd Add feature flag, API binding scaffolding for cloud->cloud handoff.",
+      "da4fcc6 Add support to ui/model layer for attaching a new backing session for a shared session viewer with the same terminal view/model",
+      "cc6e49d Remove `NotAmbientAgent` state from AmbientAgentViewModel.",
+      "389716a Add client-side user setting for agent commit attribution (#9323)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/zb/cloud-cloud-handoff-scaffolding",
+    "current": "main",
+    "ahead": 32,
+    "behind": 3,
+    "cherry_plus": 32,
+    "subjects": [
+      "c7794fd Add feature flag, API binding scaffolding for cloud->cloud handoff.",
+      "da4fcc6 Add support to ui/model layer for attaching a new backing session for a shared session viewer with the same terminal view/model",
+      "cc6e49d Remove `NotAmbientAgent` state from AmbientAgentViewModel.",
+      "389716a Add client-side user setting for agent commit attribution (#9323)",
+      "9299441 Shrink binary size for the standalone oz cli (#9301)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/zb/continue-cloud-tombstone",
+    "current": "main",
+    "ahead": 38,
+    "behind": 3,
+    "cherry_plus": 38,
+    "subjects": [
+      "608bcc4 Ensure cloud conversation status updates in response to execution completion",
+      "d0b4476 Dedupe optimistic + real follow-up queries and don't show tombstone for owned cloud mode convos",
+      "86d3adc PR 4",
+      "abdf1e6 Suppress replay upon joining session for follow-up",
+      "6b8a562 Add continue button to cloud conversation tombstone."
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/zb/reattachable-session-share",
+    "current": "main",
+    "ahead": 31,
+    "behind": 3,
+    "cherry_plus": 31,
+    "subjects": [
+      "da4fcc6 Add support to ui/model layer for attaching a new backing session for a shared session viewer with the same terminal view/model",
+      "cc6e49d Remove `NotAmbientAgent` state from AmbientAgentViewModel.",
+      "389716a Add client-side user setting for agent commit attribution (#9323)",
+      "9299441 Shrink binary size for the standalone oz cli (#9301)",
+      "24a96d6 Sort tab configs alphabetically by name (#9258)"
+    ]
+  },
+  {
+    "repo": "warp",
+    "branch": "origin/zb/refactor-ambient-agent-view-model",
+    "current": "main",
+    "ahead": 30,
+    "behind": 3,
+    "cherry_plus": 30,
+    "subjects": [
+      "cc6e49d Remove `NotAmbientAgent` state from AmbientAgentViewModel.",
+      "389716a Add client-side user setting for agent commit attribution (#9323)",
+      "9299441 Shrink binary size for the standalone oz cli (#9301)",
+      "24a96d6 Sort tab configs alphabetically by name (#9258)",
+      "2d0d88f Add reconnection logic to remote server (#9289)"
+    ]
+  },
+  {
+    "repo": "bobmani/Simply-Love-SM5",
+    "branch": "upstream",
+    "current": "itgmania-release",
+    "ahead": 39,
+    "behind": 82,
+    "cherry_plus": 39,
+    "subjects": [
+      "dd06138b Generate pack.ini for SRPG unlocks",
+      "14a535ac Remove (beta)",
+      "8cd37b87 Add HideInactiveSeries to ThemePrefs",
+      "6b5fbdbd Add DefaultSort to the OperatorMenu",
+      "b80027b6 Add Series sorting to theme"
+    ]
+  },
+  {
+    "repo": "bobmani/arrowvortex",
+    "branch": "jules-7500685366569110515-e7a3519c",
+    "current": "release",
+    "ahead": 3,
+    "behind": 18,
+    "cherry_plus": 0,
+    "subjects": [
+      "06efc00 Merge branch 'jules-7500685366569110515-e7a3519c'",
+      "73cb180 chore: auto checkpoint before sync",
+      "eba54f4 chore: auto checkpoint before sync"
+    ]
+  },
+  {
+    "repo": "bobmani/arrowvortex",
+    "branch": "upstream",
+    "current": "release",
+    "ahead": 68,
+    "behind": 438,
+    "cherry_plus": 65,
+    "subjects": [
+      "2437a4b ArrowVortex Release 1.1",
+      "5b63ff7 set macOS baseline version (#380)",
+      "e77e51c Fix MacOS Builds (Again) (#379)",
+      "63701bf intel mac compatibility (#378)",
+      "6a0f92a Fix typo in release.yml"
+    ]
+  },
+  {
+    "repo": "bobmani/beatoraja",
+    "branch": "upstream",
+    "current": "master",
+    "ahead": 258,
+    "behind": 414,
+    "cherry_plus": 237,
+    "subjects": [
+      "e4778954 Fixes #898 : Evaluate all random folder filters after an integer match",
+      "02567d28 Add opt-in Windows IME lifecycle diagnostics",
+      "de64fd30 TableEditorView : add drag-and-drop to the table editor",
+      "76afb549 KeyConfig : Place each 2P mode after its 1P counterpart in KeyConfig",
+      "641d7d07 KeyConfig : fix crash when exiting KeyConfig with Escape"
+    ]
+  },
+  {
+    "repo": "bobmani/itgmania",
+    "branch": "upstream",
+    "current": "release",
+    "ahead": 156,
+    "behind": 82,
+    "cherry_plus": 156,
+    "subjects": [
+      "8a3bf8884a Move unistd.h include into #ifdef __linux__",
+      "c86eea1bf2 Revert \"Revert symbol changes to RageFileManager_ReadAhead\"",
+      "aa741797ea Pull in SRPG pack.ini SL bugfix",
+      "edb45aec40 Revert symbol changes to RageFileManager_ReadAhead",
+      "b121d8bc01 Update Simply Love to 5.9.0"
+    ]
+  },
+  {
+    "repo": "bobmani/ksm-v2",
+    "branch": "upstream",
+    "current": "master",
+    "ahead": 158,
+    "behind": 139,
+    "cherry_plus": 158,
+    "subjects": [
+      "7dfd59b7 Linux\u3067\u5909\u63db\u30fb\u7121\u5909\u63db\u30ad\u30fc\u304c\u52b9\u304b\u306a\u3044\u554f\u984c\u3092\u4fee\u6b63",
+      "00c518bb Linux\u3067\u306fIME\u7121\u52b9\u5316\u306e\u30aa\u30d7\u30b7\u30e7\u30f3\u3092ON/OFF\u306e\u307f\u306b",
+      "477415ec IME\u7121\u52b9\u5316\u3092Linux\u7248\u306b\u3082\u5bfe\u5fdc",
+      "38e402ee \u9078\u66f2\u753b\u9762\u3067\u30d5\u30a9\u30eb\u30c0\u306e\u8aad\u307f\u8fbc\u307f\u4e2d\u306b\u30ed\u30fc\u30c7\u30a3\u30f3\u30b0\u8868\u793a\u3068\u9032\u6357\u3092\u8868\u793a\u3059\u308b\u3088\u3046\u306b",
+      "e72b087e \u9078\u66f2\u753b\u9762\u306e\u30ad\u30e3\u30c3\u30b7\u30e5DB\u518d\u751f\u6210\u306e\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\u6539\u5584"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "github",
+    "current": "main",
+    "ahead": 1,
+    "behind": 3219,
+    "cherry_plus": 1,
+    "subjects": [
+      "3dd36b750 docs: revise README (honest, current description)"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "github/main",
+    "current": "main",
+    "ahead": 1,
+    "behind": 3219,
+    "cherry_plus": 1,
+    "subjects": [
+      "3dd36b750 docs: revise README (honest, current description)"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin",
+    "current": "main",
+    "ahead": 441,
+    "behind": 3209,
+    "cherry_plus": 427,
+    "subjects": [
+      "091d5bfdd feat(product): Nexus Mailroom - Managed Hub key-vault feature story (v1.0.67)",
+      "24aa61ca0 docs(verdict): record key-vault concept verdict + post-payment scope (v1.0.66)",
+      "101679062 docs(deploy): refresh ops notes to current deploy contract (v1.0.65)",
+      "cc64c2271 docs(orchestrate): endpoint verified live, stale TODO closed (v1.0.64)",
+      "b2fe2a907 chore(cleanup): prune stale remote refs, deepseek re-verified 8/8 (v1.0.63)"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin/clean-main",
+    "current": "main",
+    "ahead": 418,
+    "behind": 3209,
+    "cherry_plus": 404,
+    "subjects": [
+      "ac8a49240 refactor(dashboard): complete home-view section decomposition, manual sync, repair trpc route tests (v1.0.47)",
+      "02f76857c chore: repo sync SYNC5, root script hardening, cdp chatgpt bridge, archive _tmp files (v1.0.46)",
+      "ac8f1f8f4 refactor(dashboard): extract governance-security section (v1.0.45)",
+      "8e1bba3b1 refactor(dashboard): extract research-workflows section (v1.0.44)",
+      "0d517ca7d deploy: kernel swap to repo build + Git for Windows reinstall (v1.0.43)"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin/feat/mimo-plugin-max-surface",
+    "current": "main",
+    "ahead": 418,
+    "behind": 3209,
+    "cherry_plus": 404,
+    "subjects": [
+      "ac8a49240 refactor(dashboard): complete home-view section decomposition, manual sync, repair trpc route tests (v1.0.47)",
+      "02f76857c chore: repo sync SYNC5, root script hardening, cdp chatgpt bridge, archive _tmp files (v1.0.46)",
+      "ac8f1f8f4 refactor(dashboard): extract governance-security section (v1.0.45)",
+      "8e1bba3b1 refactor(dashboard): extract research-workflows section (v1.0.44)",
+      "0d517ca7d deploy: kernel swap to repo build + Git for Windows reinstall (v1.0.43)"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin/fix/functionality-hardening",
+    "current": "main",
+    "ahead": 418,
+    "behind": 3209,
+    "cherry_plus": 404,
+    "subjects": [
+      "ac8a49240 refactor(dashboard): complete home-view section decomposition, manual sync, repair trpc route tests (v1.0.47)",
+      "02f76857c chore: repo sync SYNC5, root script hardening, cdp chatgpt bridge, archive _tmp files (v1.0.46)",
+      "ac8f1f8f4 refactor(dashboard): extract governance-security section (v1.0.45)",
+      "8e1bba3b1 refactor(dashboard): extract research-workflows section (v1.0.44)",
+      "0d517ca7d deploy: kernel swap to repo build + Git for Windows reinstall (v1.0.43)"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin/fix/test-local-embed",
+    "current": "main",
+    "ahead": 418,
+    "behind": 3209,
+    "cherry_plus": 404,
+    "subjects": [
+      "ac8a49240 refactor(dashboard): complete home-view section decomposition, manual sync, repair trpc route tests (v1.0.47)",
+      "02f76857c chore: repo sync SYNC5, root script hardening, cdp chatgpt bridge, archive _tmp files (v1.0.46)",
+      "ac8f1f8f4 refactor(dashboard): extract governance-security section (v1.0.45)",
+      "8e1bba3b1 refactor(dashboard): extract research-workflows section (v1.0.44)",
+      "0d517ca7d deploy: kernel swap to repo build + Git for Windows reinstall (v1.0.43)"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin/gh-pages-hypernexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 3219,
+    "cherry_plus": 0,
+    "subjects": [
+      "fb61b29a3 Deploy HyperNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin/gh-pages-tormentnexus",
+    "current": "main",
+    "ahead": 1,
+    "behind": 3219,
+    "cherry_plus": 1,
+    "subjects": [
+      "fad3aaf3b Deploy TormentNexus site 9e70d5f05baf7b87dd6a95b683e7054d91326a10"
+    ]
+  },
+  {
+    "repo": "HyperNexus2old",
+    "branch": "origin/lane/muse-wonder-dashboard",
+    "current": "main",
+    "ahead": 413,
+    "behind": 3209,
+    "cherry_plus": 399,
+    "subjects": [
+      "5f87ff044 feat(dashboard): cross-session coordination panel + sidebar dedupe (v1.0.30)",
+      "15dc9e211 fix(reasonix): stamp plugin manifest 1.0.30 (v1.0.30)",
+      "69470aebd docs: Muse loop-active 2026-11-12 (v1.0.30)",
+      "3642ef28f docs: Muse steady 2026-11-12 (v1.0.30)",
+      "d99b1cf78 docs: Muse lane-reply logged 2026-11-12 (v1.0.30)"
+    ]
+  },
+  {
+    "repo": "hyperporn",
+    "branch": "origin",
+    "current": "main",
+    "ahead": 3,
+    "behind": 2,
+    "cherry_plus": 3,
+    "subjects": [
+      "4b76282 docs: revise README (honest, current description)",
+      "86dfd77 chore: repo sync v1.1.0 - stage v8 pipeline, track DBs, retire sissy_parts4",
+      "85f5d63 Document full creation pipeline + Topaz 4K60 upscale stage"
+    ]
+  },
+  {
+    "repo": "hyperporn",
+    "branch": "origin/backup/wip-leader-sync-20261107",
+    "current": "main",
+    "ahead": 2,
+    "behind": 2,
+    "cherry_plus": 2,
+    "subjects": [
+      "2f7ffd2 chore: preserve WIP before leader sync FF (20261107)",
+      "85f5d63 Document full creation pipeline + Topaz 4K60 upscale stage"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/add-test-for-tool-error-invalid-input-1334347659824431821",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "f914d8c4 \ud83e\uddea Add test for ToolError::invalid_input"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/add-tests-for-tool-call-execution-subject-14270420329080243344",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "038d4085 test: add tests for ToolCall::execution_subject"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/add-update-version-env-tests-18050647854962982934",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "b05c9878 Add tests for update_version_from_env"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/chore/ai-pr-review-workflows",
+    "current": "main",
+    "ahead": 1,
+    "behind": 852,
+    "cherry_plus": 0,
+    "subjects": [
+      "ddc33d40 ci: add advisory Claude PR review workflow"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/chore/credit-reconcile-followup",
+    "current": "main",
+    "ahead": 1,
+    "behind": 795,
+    "cherry_plus": 0,
+    "subjects": [
+      "e38699fb chore(credit): reconcile machine credit for six harvested contributors"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/chore/remove-unused-prompt-persist-2942100257194239895",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 0,
+    "subjects": [
+      "2640ce50 chore(code-health): remove unused prompt_persist module"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/ci/light-change-runner-efficiency",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "1bf43a70 ci: keep light-change PRs off macOS/Windows runners"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/claude/codewhale-release-lane-steward-b9ytcs",
+    "current": "main",
+    "ahead": 7,
+    "behind": 22,
+    "cherry_plus": 7,
+    "subjects": [
+      "e883ac83 fix(web): map LongCat in provider facts drift check",
+      "f02c3abd chore(release): bump workspace to 0.8.67",
+      "1c461388 feat(providers): add Meituan LongCat as a first-class provider",
+      "c4b4ad57 docs(plugins): clarify overrides_path invariant",
+      "6446a3ea fix(onboarding): don't let Enter silently trust the workspace"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/claude/performance-improvement-issues-bjknbf",
+    "current": "main",
+    "ahead": 8,
+    "behind": 103,
+    "cherry_plus": 7,
+    "subjects": [
+      "ebf2313d fix(tui): close both @mention follow-ups from the PR #3902 review",
+      "45041538 Merge origin/main (v0.8.67) into the perf branch",
+      "80e058a7 fix(tui): close the async-window regressions found by adversarial review",
+      "5ee6893b perf(tui): render streaming markdown incrementally instead of re-parsing the whole message",
+      "0fc32aa5 perf(tui): move @mention completion walks off the UI thread"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3389-hotbar-command-surface-epic",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "8778b44d Add hotbar command surface"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3399-hotbar-action-source-adapters",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "3e8237c2 Prepare hotbar action source adapters"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3407-setup-tools-mcp-skills-plugins",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "b1516d4a Add setup tools inventory onboarding"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3408-setup-hotbar-optin",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "f40d2ea0 fix(setup): make Hotbar opt-in handoff returnable"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3488-unicode-cjk-width-qa",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "1781dbd5 test(tui): cover unicode markdown widths"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3731-hotbar-activation-affordances",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "7a616ba2 Polish hotbar activation affordances"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3757-startup-profile",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "4cd1c47a perf(tui): defer optional startup client work"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3875-provider-setup-wizard",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "2d0bb893 Validate provider keys before wizard persistence"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3939-engine-turn-policy-split",
+    "current": "main",
+    "ahead": 1,
+    "behind": 54,
+    "cherry_plus": 1,
+    "subjects": [
+      "96b7acb3 refactor(engine): split turn policy helpers"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3939-turn-policy-resolver",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "5797f9d1 refactor(#3939): split turn policy resolver",
+      "e70672f0 feat(#3944): add typed turn authority"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3940-engine-tool-catalog-policy",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "2b25e239 refactor(engine): add tool surface policy contract"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3941-effective-turn-policy",
+    "current": "main",
+    "ahead": 3,
+    "behind": 45,
+    "cherry_plus": 3,
+    "subjects": [
+      "ef7d6af6 feat(#3941): type effective turn policy",
+      "5797f9d1 refactor(#3939): split turn policy resolver",
+      "e70672f0 feat(#3944): add typed turn authority"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3941-engine-session-mode-split",
+    "current": "main",
+    "ahead": 1,
+    "behind": 54,
+    "cherry_plus": 1,
+    "subjects": [
+      "22da8550 Split visible session mode from turn policy"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3942-engine-subagent-policy-out",
+    "current": "main",
+    "ahead": 1,
+    "behind": 54,
+    "cherry_plus": 1,
+    "subjects": [
+      "f8e5b797 refactor(engine): centralize subagent launch policy"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3942-subagent-policy",
+    "current": "main",
+    "ahead": 5,
+    "behind": 45,
+    "cherry_plus": 5,
+    "subjects": [
+      "cbd95679 refactor(#3942): centralize subagent launch policy",
+      "ecba6df2 feat(#3947): surface policy narrowing metadata",
+      "ef7d6af6 feat(#3941): type effective turn policy",
+      "5797f9d1 refactor(#3939): split turn policy resolver",
+      "e70672f0 feat(#3944): add typed turn authority"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3943-engine-prompt-metadata-extract",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "d4296785 refactor(engine): extract turn metadata assembly"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3944-engine-mode-approval-trust",
+    "current": "main",
+    "ahead": 1,
+    "behind": 54,
+    "cherry_plus": 1,
+    "subjects": [
+      "2118c8da Extract engine mode and trust policy"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3944-turn-authority",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "e70672f0 feat(#3944): add typed turn authority"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3945-engine-mode-invariant-tests",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "ce712cfc test(engine): add mode policy invariant matrix"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3946-prompt-turn-metadata",
+    "current": "main",
+    "ahead": 6,
+    "behind": 45,
+    "cherry_plus": 6,
+    "subjects": [
+      "a07a626a refactor(#3946): extract turn metadata rendering",
+      "cbd95679 refactor(#3942): centralize subagent launch policy",
+      "ecba6df2 feat(#3947): surface policy narrowing metadata",
+      "ef7d6af6 feat(#3941): type effective turn policy",
+      "5797f9d1 refactor(#3939): split turn policy resolver"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3947-policy-narrowing-observable",
+    "current": "main",
+    "ahead": 4,
+    "behind": 45,
+    "cherry_plus": 4,
+    "subjects": [
+      "ecba6df2 feat(#3947): surface policy narrowing metadata",
+      "ef7d6af6 feat(#3941): type effective turn policy",
+      "5797f9d1 refactor(#3939): split turn policy resolver",
+      "e70672f0 feat(#3944): add typed turn authority"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3949-refactor-config-split",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "c6446ee6 refactor(#3949): extract provider capabilities to config module",
+      "309894a8 refactor(#3949): extract ApiProvider to config/provider.rs"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3950-subagent-runtime-split",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "3b291ccf refactor(#3950): split subagent routing and worktree helpers"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3952-refactor-chat-client-split",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "016cdec8 refactor(client): split SSE stream helpers"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3954-refactor-setup-wizard-split",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "5c0096c1 refactor(setup): split wizard model helpers"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3955-refactor-approval-risk-split",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "ac4f17f4 refactor(approval): split risk policy from modal view"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3956-prompt-source-modules",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "35f222b2 refactor(#3956): split prompt source modules"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3958-refactor-shell-process-split",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "17ea8c5f Refactor shell tool into split modules"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3961-version-prompt-persist",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "fb36940d feat(ui): make new-version prompt persistent and actionable (#3961)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3975-lsp-tool-surface",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "135fffef feat(#3975): expose LSP code intelligence tool"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3976-project-memory-recall",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "7fbd00e9 feat(#3976): add project-scoped memory recall"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3977-notebooks-archives",
+    "current": "main",
+    "ahead": 3,
+    "behind": 45,
+    "cherry_plus": 3,
+    "subjects": [
+      "994b7765 test(#3977): cover notebook and archive reads",
+      "793d9021 chore(#3977): clean archive reader warning",
+      "4e2a72ef feat(#3977): add notebook (.ipynb) and archive (.zip/.tar/.tgz) read support"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3978-rival-rule-imports",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "228d464d test(#3978): cover rival instruction imports",
+      "ee7c5d77 feat(#3978): import common rival project instruction files"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3979-content-hash-edits",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "b9853a1f fix(#3979): enforce apply patch expected hash target",
+      "deb3845d feat(#3979): add content-hash guarded edits"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3980-structural-code-tool",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "d0eb17d3 feat(#3980): add structural code search previews"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3981-dap-debugger-surface",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "224d1659 feat(#3981): add debugpy DAP tool surface"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3982-advisor-watcher-slice",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "50e51e8e feat(#3982): add optional advisor watcher"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3983-parent-turn-work-state",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "3a286ff0 chore(#3983): fix clippy warnings in work_state formatter",
+      "496c069f feat(#3983): inject Work-state block into parent model turns"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3984-work-state-docs",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "b1af3a2a docs(#3984): document work-state block injection for parent turns"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3985-feature-intro-ux",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "69482492 fix(#3985): gate feature-intro readiness on auth state"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3986-onboarding-config-path",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "36c5baf4 test(#3986): pin onboarding config path display",
+      "ba80d9a6 fix(#3986): show effective config path in API-key onboarding"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3987-ux-dense-rows-truncate-wrap",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "d8ac1b63 Tighten dense row truncation"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3990-ux-slash-autocomplete-aliases",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "3c862d62 fix(#3990): deduplicate alias display in slash autocomplete"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3991-ux-links-narrow-layout",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "218cff2e test(#3991): cover narrow links URL rendering",
+      "3b0996c3 fix(#3991): make /links readable at narrow TUI widths"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3993-ux-fleet-role-step-layout",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "b56d7430 test(#3993): cover fleet role layout at 80 cols",
+      "751c1da0 fix(#3993): prevent fleet role detail from overlapping list at 80 cols"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-3995-ux-model-picker-titles",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "37e88bc6 test(#3995): cover model picker short-pane titles",
+      "8d53fcb0 fix(#3995): show single-row titles as 'N/total' not 'N-N/total'"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-4010-whaleflow-runner",
+    "current": "main",
+    "ahead": 4,
+    "behind": 45,
+    "cherry_plus": 4,
+    "subjects": [
+      "90f18952 test(#4010): cover whaleflow pipeline orchestration",
+      "ca4da54c test(#4010): cover whaleflow agent orchestration paths",
+      "848ea4e3 feat(#4010): add agent-backed whaleflow executor",
+      "c1a45507 refactor(#4010): extract whaleflow leaf runner"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-4011-subagent-checkpoint-resume",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "cc3d3d7b feat(#4011): persist checkpoint worktree branches",
+      "9c030cc9 feat(#4011): resume subagents from checkpoints"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-4012-whaleflow-topologies",
+    "current": "main",
+    "ahead": 4,
+    "behind": 45,
+    "cherry_plus": 4,
+    "subjects": [
+      "7b4a11d4 feat(#4012): add whaleflow topology primitives",
+      "ca4da54c test(#4010): cover whaleflow agent orchestration paths",
+      "848ea4e3 feat(#4010): add agent-backed whaleflow executor",
+      "c1a45507 refactor(#4010): extract whaleflow leaf runner"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-4013-whaleflow-gates",
+    "current": "main",
+    "ahead": 4,
+    "behind": 45,
+    "cherry_plus": 4,
+    "subjects": [
+      "2e034422 feat(#4013): add whaleflow verification gates",
+      "ca4da54c test(#4010): cover whaleflow agent orchestration paths",
+      "848ea4e3 feat(#4010): add agent-backed whaleflow executor",
+      "c1a45507 refactor(#4010): extract whaleflow leaf runner"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-4014-subagent-completion-batching",
+    "current": "main",
+    "ahead": 1,
+    "behind": 45,
+    "cherry_plus": 1,
+    "subjects": [
+      "16f11f94 perf(subagents): batch parent completion handoffs"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-4015-whaleflow-context-budget",
+    "current": "main",
+    "ahead": 3,
+    "behind": 45,
+    "cherry_plus": 3,
+    "subjects": [
+      "43cf1e89 test(#4015): verify compact subagent artifact handoffs",
+      "51862173 perf(#4015): compact subagent completion handoffs",
+      "16f11f94 perf(subagents): batch parent completion handoffs"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-4016-worktree-pool-root-detection",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "941f1837 feat(#4016): manage subagent worktree leases",
+      "f292b4c1 fix(subagents): resolve worktree repos from container roots"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-next",
+    "current": "main",
+    "ahead": 21,
+    "behind": 98,
+    "cherry_plus": 18,
+    "subjects": [
+      "e7c4c0b1 feat(status): show policy narrowing diagnostics",
+      "b25ff412 test(engine): cover policy narrowing turn metadata",
+      "a75a34e5 refactor(approval): split risk policy from modal view",
+      "3aaa3f7e refactor(commands): share slash selection behavior",
+      "c2e56a5f feat(engine): surface policy narrowing in turn metadata"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/0868-refactor-codewhale-tools-crate-split",
+    "current": "main",
+    "ahead": 2,
+    "behind": 45,
+    "cherry_plus": 2,
+    "subjects": [
+      "49ddb53a chore(tools): clean split module formatting",
+      "85de92f8 refactor(#3950): split agent/tool module into sub-modules"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/3799-inline-approval",
+    "current": "main",
+    "ahead": 2,
+    "behind": 281,
+    "cherry_plus": 0,
+    "subjects": [
+      "d2ecb99e feat(tui): ship the Hotbar hidden by default until setup opt-in (#3807)",
+      "9ed42bba fix(tui): make the approval prompt inline instead of a full-screen takeover (#3799)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/approval-preview-hardening",
+    "current": "main",
+    "ahead": 1,
+    "behind": 583,
+    "cherry_plus": 0,
+    "subjects": [
+      "aa932760 fix(tui): count skipped approval preview files"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/config-extract-harness",
+    "current": "main",
+    "ahead": 1,
+    "behind": 817,
+    "cherry_plus": 0,
+    "subjects": [
+      "ea885c7c refactor(config): extract harness posture types into a harness module (#3311)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/config-extract-harness-posture",
+    "current": "main",
+    "ahead": 1,
+    "behind": 819,
+    "cherry_plus": 1,
+    "subjects": [
+      "de8c62d8 refactor(config): extract harness posture module"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/config-extract-provider-kind",
+    "current": "main",
+    "ahead": 2,
+    "behind": 819,
+    "cherry_plus": 2,
+    "subjects": [
+      "6f2ed3ed fix(ci): keep provider-registry drift check working after ProviderKind move",
+      "193cfa0c refactor(config): extract ProviderKind into a provider_kind module (#3311)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/config-split-providerkind",
+    "current": "main",
+    "ahead": 2,
+    "behind": 821,
+    "cherry_plus": 2,
+    "subjects": [
+      "615e2bed docs(config): fix stale 'test below' comment after extraction",
+      "16a9d0e3 refactor(config): extract provider default seeds into provider_defaults (#3311)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/finish-pr-3473",
+    "current": "main",
+    "ahead": 1,
+    "behind": 834,
+    "cherry_plus": 0,
+    "subjects": [
+      "86db513a feat(web): add fact-drift CI gate for version, providers, and tool inventory (#3415)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/install-script-website",
+    "current": "main",
+    "ahead": 1,
+    "behind": 833,
+    "cherry_plus": 0,
+    "subjects": [
+      "682d6ba3 feat(web): publish install script"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/issue-3083-provider-dashboard-actions",
+    "current": "main",
+    "ahead": 1,
+    "behind": 820,
+    "cherry_plus": 1,
+    "subjects": [
+      "35706067 feat(tui): show provider reasoning readiness"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/issue-3086-route-context-budget",
+    "current": "main",
+    "ahead": 2,
+    "behind": 802,
+    "cherry_plus": 1,
+    "subjects": [
+      "f839a0e4 test(tui): close route_budget review nits from #3523",
+      "54981c7c feat(tui): feed route limits into context budgets"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/issue-3474-selector-contrast",
+    "current": "main",
+    "ahead": 1,
+    "behind": 823,
+    "cherry_plus": 0,
+    "subjects": [
+      "85ae24bb fix(tui): harden picker selection contrast"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/mcp-remote-oauth",
+    "current": "main",
+    "ahead": 1,
+    "behind": 801,
+    "cherry_plus": 0,
+    "subjects": [
+      "fe154376 feat(tui): remote MCP OAuth login with bearer/header auth precedence"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/models-dev-catalog-cache",
+    "current": "main",
+    "ahead": 2,
+    "behind": 823,
+    "cherry_plus": 2,
+    "subjects": [
+      "ae8258b6 fix(config): address catalog cache review feedback",
+      "7abbb1c8 feat(config): Models.dev-backed catalog snapshot + secret-free live cache"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/models-dev-catalog-foundation",
+    "current": "main",
+    "ahead": 2,
+    "behind": 824,
+    "cherry_plus": 2,
+    "subjects": [
+      "32c1a646 fix(config): address Models.dev catalog review feedback",
+      "c02b8fd7 feat(config): add Models.dev catalog route foundation"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/models-dev-pricing",
+    "current": "main",
+    "ahead": 2,
+    "behind": 822,
+    "cherry_plus": 2,
+    "subjects": [
+      "6c19ad08 fix(config): address pricing review feedback",
+      "4f4c5fbb feat(config): offering pricing projection with provenance (#3085)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.63-wiki-terminology",
+    "current": "main",
+    "ahead": 3,
+    "behind": 1045,
+    "cherry_plus": 3,
+    "subjects": [
+      "3489d2cc fix: satisfy rust lint on provider check",
+      "b7fb823d fix: stabilize v0.8.63 wiki branch checks",
+      "899037ad docs: add v0.8.63 wiki and orchestration terminology"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-ablate-guards-dispositions",
+    "current": "main",
+    "ahead": 3,
+    "behind": 852,
+    "cherry_plus": 3,
+    "subjects": [
+      "74e975e8 fix(engine): drop unused with_tool_timeout builder; cover the generous default",
+      "fa53dd32 docs(prompt): encode reasoning dispositions in the constitution (B1-B9)",
+      "81ffa953 refactor(engine): remove in-turn loop_guard and raise execution caps"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-automation-id-hardening",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 1,
+    "subjects": [
+      "4466267e Harden automation storage ids"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-automation-settings",
+    "current": "main",
+    "ahead": 1,
+    "behind": 849,
+    "cherry_plus": 0,
+    "subjects": [
+      "ef4540fc feat(automation): explicit per-automation mode/shell/trust/approval settings (Track D2)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-bridge-docs",
+    "current": "main",
+    "ahead": 1,
+    "behind": 852,
+    "cherry_plus": 0,
+    "subjects": [
+      "2a5c5b76 docs(bridge): rebrand Feishu/WeCom bridge READMEs to CodeWhale + trust-boundary notes (Track D3)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-fix-doctor-api-key-source",
+    "current": "main",
+    "ahead": 1,
+    "behind": 854,
+    "cherry_plus": 0,
+    "subjects": [
+      "30f76094 fix(tui): cover all ApiKeySource variants in doctor label match"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-fleet-profiles",
+    "current": "main",
+    "ahead": 1,
+    "behind": 848,
+    "cherry_plus": 0,
+    "subjects": [
+      "7ae05bcb feat(fleet): Fleet profile types + config plumbing (Track E #3167, EPIC #3154)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-ledger-update",
+    "current": "main",
+    "ahead": 1,
+    "behind": 830,
+    "cherry_plus": 1,
+    "subjects": [
+      "4d288bdb docs: refresh v0.8.65 release ledger after Phase 1 merges"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-release-ledger",
+    "current": "main",
+    "ahead": 2,
+    "behind": 836,
+    "cherry_plus": 2,
+    "subjects": [
+      "a9b5d301 docs: update v0.8.65 phase one ledger",
+      "c2dc25fe docs: add v0.8.65 release ledger"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-remote-setup-doc",
+    "current": "main",
+    "ahead": 1,
+    "behind": 849,
+    "cherry_plus": 0,
+    "subjects": [
+      "694da2ab docs(rfc): revise REMOTE_SETUP_DESIGN.md Tailscale-first (Track D5)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-state-foreign-keys",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 1,
+    "subjects": [
+      "643e275d Enable state store foreign key cascades"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-storage-hardening",
+    "current": "main",
+    "ahead": 2,
+    "behind": 874,
+    "cherry_plus": 2,
+    "subjects": [
+      "095d084e WIP validate task before PR attempt artifact",
+      "d4746a28 Harden local state storage boundaries"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-subagent-mailbox-lag",
+    "current": "main",
+    "ahead": 2,
+    "behind": 854,
+    "cherry_plus": 0,
+    "subjects": [
+      "a81920a8 fix(tui): throttle per-agent sub-agent mailbox telemetry to cut UI lag",
+      "30f76094 fix(tui): cover all ApiKeySource variants in doctor label match"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-tool-surface-c1",
+    "current": "main",
+    "ahead": 1,
+    "behind": 848,
+    "cherry_plus": 0,
+    "subjects": [
+      "af9076cb refactor(tools): trim the eager tool surface \u2014 drop task_shell_* from active set, fold tool_search_* (Track C1)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.65-yolo-git-readonly-approval",
+    "current": "main",
+    "ahead": 1,
+    "behind": 839,
+    "cherry_plus": 0,
+    "subjects": [
+      "eec38f6c fix(tui): allow read-only git tag probes in yolo"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0.8.67-provider-token-links",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "b2891768 Expand links command to provider token directory"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0867-constitution-article-anchors",
+    "current": "main",
+    "ahead": 4,
+    "behind": 22,
+    "cherry_plus": 3,
+    "subjects": [
+      "37a7d50b polish 0.8.67 updater and fleet docs",
+      "e5394b8c Merge remote-tracking branch 'origin/main' into codex/v0867-constitution-article-anchors",
+      "cb8a3cef feat(v0.8.67): WhaleFlow tool, Codex sub-agent fix, fleet party, and release QA sweep",
+      "ebb37a44 release: prepare v0.8.67 local candidate"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/v0867-final-longcat-rebuild-20260705",
+    "current": "main",
+    "ahead": 11,
+    "behind": 22,
+    "cherry_plus": 10,
+    "subjects": [
+      "1c8178c8 docs(release): note v0.8.67 LongCat polish",
+      "a54a8dec fix(web): map LongCat in provider facts drift check",
+      "242ef6df feat(providers): add Meituan LongCat as a first-class provider",
+      "a8e5a018 docs(plugins): clarify overrides_path invariant",
+      "b12a7374 fix(onboarding): don't let Enter silently trust the workspace"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/codex/wip-v0865-milestone-checkout-snapshot",
+    "current": "main",
+    "ahead": 2,
+    "behind": 874,
+    "cherry_plus": 2,
+    "subjects": [
+      "0fbb03e4 WIP(docs): de-hardcoded agent guidance + roadmap feed updates",
+      "81091097 WIP(route): route_catalog + route_resolver modules and wiring"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/contribution-gate/pr-noaft-1782438551326",
+    "current": "main",
+    "ahead": 1,
+    "behind": 596,
+    "cherry_plus": 1,
+    "subjects": [
+      "dc2a6f37 chore: approve @noaft for pr contributions"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/copilot/fix-macos-runtime-issue",
+    "current": "main",
+    "ahead": 2,
+    "behind": 2577,
+    "cherry_plus": 1,
+    "subjects": [
+      "2bf84509 docs: note macOS Gatekeeper warning",
+      "52b4fdbb Initial plan"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/devin/1781221460-3080-interrupted-lifecycle",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 0,
+    "subjects": [
+      "4fd636e5 fix(tui): emit interrupted sub-agent lifecycle event and reconcile stale running cards"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/devin/1781225294-3095-fanout-backpressure",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 0,
+    "subjects": [
+      "41335722 feat(tui): queue interactive fanout launches behind a visible launch gate (#3095)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/devin/1781229000-3095-provider-wait-observability",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "4390c960 feat(tui): make provider wait observable with route, idle budget, and fanout preflight state"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/devin/1782247950-tui-composer-polish",
+    "current": "main",
+    "ahead": 3,
+    "behind": 824,
+    "cherry_plus": 3,
+    "subjects": [
+      "220392a5 Cover untitled composer chrome",
+      "4f2780d6 Update TUI QA composer readiness checks",
+      "600ec960 Polish composer panel title chrome"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/docs/harvest-merge-rule",
+    "current": "main",
+    "ahead": 1,
+    "behind": 798,
+    "cherry_plus": 0,
+    "subjects": [
+      "8d648bcd docs: require rebase/merge-commit (not squash) for harvested PRs"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/docs/live-truth-agent-guidance",
+    "current": "main",
+    "ahead": 3,
+    "behind": 872,
+    "cherry_plus": 3,
+    "subjects": [
+      "465f585f Make merge completion the normal issue workflow",
+      "45460272 Add PR completion loop to agent guidance",
+      "e8d96dea Refresh agent guidance around live state"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/docs/readme-version-0864",
+    "current": "main",
+    "ahead": 1,
+    "behind": 801,
+    "cherry_plus": 0,
+    "subjects": [
+      "9f6f2bb9 docs(readme): correct stale version comment to 0.8.64"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/feat/ctrl-s-send-queued-steer",
+    "current": "main",
+    "ahead": 4,
+    "behind": 1481,
+    "cherry_plus": 1,
+    "subjects": [
+      "f03ed213 Merge branch 'main' into feat/ctrl-s-send-queued-steer",
+      "c095402b Merge branch 'main' into feat/ctrl-s-send-queued-steer",
+      "ed56d313 Merge branch 'main' into feat/ctrl-s-send-queued-steer",
+      "716af373 feat(tui): Ctrl+S sends next queued message as a steer"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/feat/execpolicy-persist-rules-ui",
+    "current": "main",
+    "ahead": 24,
+    "behind": 2524,
+    "cherry_plus": 23,
+    "subjects": [
+      "52fb200c Merge main into feat/execpolicy-persist-rules-ui (resolve conflicts)",
+      "26ffc109 fix(execpolicy): share permission path normalization",
+      "9e4ea0df fix(tui): persist approval rules separately",
+      "41a3fe35 fix(tui): persist permission rules to resolved config",
+      "43adc166 fix(tui): pass approval input through events"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/feat/extension-api",
+    "current": "main",
+    "ahead": 3,
+    "behind": 22,
+    "cherry_plus": 3,
+    "subjects": [
+      "c4460f36 docs: add TormentNexus extension section to npm README",
+      "6174d11b feat: add TormentNexus extension crate with full Pi extension parity (hooks, tools, commands, shortcuts, L2 memory, RBAC)",
+      "9c9d1566 feat: add runtime extension API crate with lifecycle hooks"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/feat/i18n-mode-picker",
+    "current": "main",
+    "ahead": 1,
+    "behind": 798,
+    "cherry_plus": 0,
+    "subjects": [
+      "8f6a73d7 feat(tui): localize /mode picker and composer Vim indicator"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/feat/tui-text-truncation",
+    "current": "main",
+    "ahead": 1,
+    "behind": 803,
+    "cherry_plus": 0,
+    "subjects": [
+      "c17e8ef4 fix(tui): cap base URL length in the provider hint to curb overflow"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/feature/v0.8.48-crate-consolidation",
+    "current": "main",
+    "ahead": 18,
+    "behind": 2454,
+    "cherry_plus": 14,
+    "subjects": [
+      "8658ef29 fix(tui): tighten verification gate correctness",
+      "70743997 chore(release): finalize v0.8.47 \u2014 clippy fixes, npm bumps, contributor credits",
+      "503b82b8 feat(verify): Fin Flash inner-loop for edit_file correction (Option B)",
+      "64f97bdd feat(verify): fuzzy edit_file search correction (Option A)",
+      "a3a8723b feat(verify): auto-retry on verification failure"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix-dead-code-prompt-persist-18043110241679952750",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "dbbc103c \ud83e\uddf9 Clean up unused prompt persist functions"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix-n-plus-1-thread-detail-17939346021233864145",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "167b7ce2 fix: optimize get_thread_detail by batched item fetching"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix-testing-optional-str-7156451692135699724",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "3c05a13a test: add coverage for optional_str missing/invalid values"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix-too-many-arguments-18290017424165256247",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "673a7632 Refactor walk_for_completions to use SearchContext"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix-unused-has-open-entries-5836367800244141658",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "2ae60e35 \ud83e\uddf9 Remove unused `has_open_entries` in slop_ledger"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix-unused-streamevent-data-15635896297807192334",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "5549ac52 \ud83e\uddf9 Remove unused `stop_sequence` field and dead_code attributes"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix-working-set-args-3644023353456815746",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "1aea3e78 Refactor: Group search context parameters in working_set.rs"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix/1779-windows-shell-dispatch",
+    "current": "main",
+    "ahead": 1,
+    "behind": 2454,
+    "cherry_plus": 1,
+    "subjects": [
+      "7089b84c fix(tui): resolve Windows shell commands via PowerShell"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix/hook-command-injection-18378925457158465128",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "340581d4 Fix command injection via `sh -c` in hooks by using shlex tokenization"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix/mcp-drops-explicit-3524",
+    "current": "main",
+    "ahead": 1,
+    "behind": 799,
+    "cherry_plus": 0,
+    "subjects": [
+      "eb08f736 fix(tui): make MCP connection drops explicit (#3524)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix/mcp-shared-pool-3532",
+    "current": "main",
+    "ahead": 1,
+    "behind": 798,
+    "cherry_plus": 0,
+    "subjects": [
+      "594d262b fix(api): reuse a shared McpPool across HTTP API calls (#3532)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/fix/paste-large-text-hang",
+    "current": "main",
+    "ahead": 3,
+    "behind": 2524,
+    "cherry_plus": 2,
+    "subjects": [
+      "e09e60d1 Merge main into fix/paste-large-text-hang (resolve conflicts)",
+      "ef55d972 fix: defer paste consolidation to submit time \u2014 keep pasted text visible (#2159)",
+      "f54f89f5 fix: raise paste consolidation threshold to 32k chars + add progress message (#2159)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/harvest/pr-3437-approval-modal",
+    "current": "main",
+    "ahead": 1,
+    "behind": 816,
+    "cherry_plus": 0,
+    "subjects": [
+      "d6fcb585 feat(tui): clarify approval modal with a group divider and selected-row caret"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/harvest/pr-3440-provenance-docs",
+    "current": "main",
+    "ahead": 1,
+    "behind": 816,
+    "cherry_plus": 0,
+    "subjects": [
+      "e16f4a81 docs(web): add provenance / source-of-truth copy (footer, install, CNB)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/harvest/v0.8.48-community",
+    "current": "main",
+    "ahead": 84,
+    "behind": 2447,
+    "cherry_plus": 42,
+    "subjects": [
+      "0643d55e feat(integrations): add Railway Telegram agent",
+      "73fefb41 docs: expand Mac Studio PR harvest handoff",
+      "5b79d5e2 docs: add v0.8.48 contributor credits",
+      "41f97ffb chore: tighten v0.8.48 release readiness",
+      "41a6f977 chore: prepare v0.8.48 release harvest"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/integration/v0.8.47-unified",
+    "current": "main",
+    "ahead": 17,
+    "behind": 2454,
+    "cherry_plus": 13,
+    "subjects": [
+      "70743997 chore(release): finalize v0.8.47 \u2014 clippy fixes, npm bumps, contributor credits",
+      "503b82b8 feat(verify): Fin Flash inner-loop for edit_file correction (Option B)",
+      "64f97bdd feat(verify): fuzzy edit_file search correction (Option A)",
+      "a3a8723b feat(verify): auto-retry on verification failure",
+      "1cc84601 fix: MiMo model reset, remove cache-savings display, CHANGELOG symlink"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/1978-openrouter-compatible-base-url",
+    "current": "main",
+    "ahead": 1,
+    "behind": 872,
+    "cherry_plus": 0,
+    "subjects": [
+      "da2c4081 docs(provider): document OpenRouter-compatible base URLs"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/2608-route-foundation",
+    "current": "main",
+    "ahead": 6,
+    "behind": 852,
+    "cherry_plus": 6,
+    "subjects": [
+      "6f79b30f refactor(config): enforce ReadyRouteCandidate constructor monopoly + tighten empty-model guard",
+      "c600bde5 test(config): resolver + descriptor conformance tests for route foundation (#3084, #3384)",
+      "8575e1f6 feat(config): add RouteResolver as sole constructor of ReadyRouteCandidate (#3384)",
+      "3acc2f8c feat(config): add ReadyRouteCandidate with private constructor + route types (#3384)",
+      "4b9767ee feat(config): add ProviderDescriptor + ProviderModelOffering over existing registry (#3084)"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/2621-xiaomi-token-plan-catalog",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "39efb265 Add Xiaomi MiMo token plan catalog evidence"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/2629-siliconflow-tokenhub-route-fixtures",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "388a1914 test(provider): pin SiliconFlow TokenHub route diagnostics"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/2900-siliconflow-dsml-fixture",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "fdf94d6a Pin SiliconFlow DSML regression fixtures"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/2989-local-completion-status",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "35f10a60 WIP record unscored fleet exits as partial"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3004-auth-source-schema",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "886fbb0f WIP: add provider auth source schema"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3019-codex-responses-retry-tests",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "8f6069ef test(tui): cover Codex Responses retry edges"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3024-route-param-mapping",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "7cd808f7 WIP map OpenAI reasoning chat parameters"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3079-searxng-web-search",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "2869ea61 Add configured SearXNG web search backend"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3289-fleet-fanout-regression",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "c3ffb80d WIP: add Fleet fanout loadout fixture"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3320-bailian-dashscope-openai-fixture",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "3959b263 test(provider): document DashScope OpenAI-compatible fixture"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3357-qianfan-provider-fixture",
+    "current": "main",
+    "ahead": 3,
+    "behind": 849,
+    "cherry_plus": 3,
+    "subjects": [
+      "84e8ad5e fix(provider): qianfan env-var alias fallback skips empty values",
+      "35d9f224 Add Qianfan to web facts maps",
+      "402cfba6 feat(provider): add Qianfan route fixture"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3365-model-profile",
+    "current": "main",
+    "ahead": 1,
+    "behind": 872,
+    "cherry_plus": 0,
+    "subjects": [
+      "b94bf0b8 Add model capability profiles"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3366-canonical-work-surface",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 0,
+    "subjects": [
+      "cea23d6c WIP canonicalize model-visible work surface"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/3382-together-offering-validation",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 1,
+    "subjects": [
+      "764ed16f fix(tui): accept Together-owned DeepSeek routes"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/storage-path-hardening",
+    "current": "main",
+    "ahead": 1,
+    "behind": 872,
+    "cherry_plus": 0,
+    "subjects": [
+      "6113249e Harden local storage path boundaries"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/issue/v0865-storage-path-hardening",
+    "current": "main",
+    "ahead": 1,
+    "behind": 874,
+    "cherry_plus": 1,
+    "subjects": [
+      "5fe9b0cb WIP harden local state storage boundaries"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/perf-parallel-skill-sync-6158093827641497740",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "45b93228 perf: parallelize skill syncing in `sync_registry` using `join_all`"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/perf/parallelize-kv-draft-checks-7141645526793670879",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "9815aa66 perf: parallelize KV draft checks for PRs, issues, and stales"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/remove-unused-prompt-persist-4989335663632198223",
+    "current": "main",
+    "ahead": 3,
+    "behind": 1501,
+    "cherry_plus": 0,
+    "subjects": [
+      "52f311de Remove unused prompt_persist module",
+      "4e10bda4 Remove unused prompt_persist module",
+      "898e01a1 Remove unused prompt_persist module"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/scratch/v0.8.59-final-harvest",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1435,
+    "cherry_plus": 0,
+    "subjects": [
+      "2d5f2d23 fix(release): harden Windows shell env and PDF extraction"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/test-execution-failed-164910515851892921",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "e938ab81 \ud83e\uddea Add test for ToolError::execution_failed"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/test-required-u64-12574262811448518225",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "4efc5ebd test: add required_u64 edge cases test"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/test-tool-error-path-escape-10954025978238734836",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "8fc19af6 test: add test for ToolError::path_escape"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/test-tool-error-permission-denied-631744388609734625",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "180eac5c Add test for ToolError::permission_denied"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/test-toolerror-not-available-8448943810185998891",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "7138b711 Add test for ToolError::not_available"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/test/tool-error-missing-field-9709596818144160378",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "ad347026 Add unit test for ToolError::missing_field"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/testing-fetch-repo-stats-15633264489521112016",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "ce3ff36b Add tests for fetchRepoStats in github.ts"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/testing-improvement-mirror-asset-url-7836179193206692074",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "5adefeb3 test: add tests for mirror_asset_url formatting"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/testing-improvement-resolve-release-query-5235319121031014900",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "336ae4e3 \ud83e\uddea Add unit tests for resolve_release_query"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/testing-improvement-toolresult-success-6643528892316758319",
+    "current": "main",
+    "ahead": 1,
+    "behind": 1501,
+    "cherry_plus": 1,
+    "subjects": [
+      "b6accb06 \ud83e\uddea Add test for ToolResult::success constructor"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/work/fleet-model-selection",
+    "current": "main",
+    "ahead": 84,
+    "behind": 22,
+    "cherry_plus": 79,
+    "subjects": [
+      "3d00cb01 feat(fleet): frame /model as the operator, /fleet as the operator's team",
+      "439505f4 feat(fleet): roster shows concrete model or 'inherits operator', not class",
+      "56ee9a8a fix(fleet): box large FleetLedgerRecord variants (clippy::large_enum_variant)",
+      "c833e961 test(fleet): lock operator + concrete-model slots resolve to distinct models",
+      "65ee138f fix(fleet): make model classes inert; slots pin concrete model or inherit operator"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/work/v0.8.49/home-polish",
+    "current": "main",
+    "ahead": 2,
+    "behind": 2103,
+    "cherry_plus": 2,
+    "subjects": [
+      "b4e4d1d8 docs: add v0.8.49 overnight prep NOTES.md",
+      "bb71d6ca chore: home-polish for v0.8.49"
+    ]
+  },
+  {
+    "repo": "CodeWhale-Extensions",
+    "branch": "origin/work/v0.9.0-cutover",
+    "current": "main",
+    "ahead": 91,
+    "behind": 22,
+    "cherry_plus": 86,
+    "subjects": [
+      "c15e46ed refactor(fleet): clarify role hierarchy, adversarial reviewer, prune dead vocabulary",
+      "e1068748 docs(changelog): call out the subagent concurrency default bump",
+      "027cc7fd docs(changelog): record operator model inheritance, /workflow, and bare /goal",
+      "9487a690 feat(goal): bare /goal declares a goal from conversation context",
+      "df56c4d3 feat(commands): add context-dependent /workflow orchestration opt-in"
+    ]
+  }
+]
