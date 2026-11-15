@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: ================================================================
-:: Omni-Workspace Master Start Script - v5.310.0
+:: Omni-Workspace Master Start Script - v5.311.0
 :: Builds and launches all Go binary services + Control Center (:2999)
 :: 9 projects, 12 Go binaries + Consolidated Control Center & Tray
 :: ================================================================

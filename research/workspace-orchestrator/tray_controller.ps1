@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-    Omni-Workspace Control Center — Native Windows System Tray Controller (v2.1.0 / v5.310.0)
+    Omni-Workspace Control Center — Native Windows System Tray Controller (v2.2.0 / v5.311.0)
 .DESCRIPTION
     Provides a native Windows System.Windows.Forms.NotifyIcon tray application for
     monitoring and controlling the Omni-Workspace Control Center (:2999), HyperNexus (:7779),

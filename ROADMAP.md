@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.310.0)
+## Current Status (v5.311.0)
+
+**Protocol #302 (2026-11-15):** Upgraded Consolidated Workspace Control Center (`:2999`) + Windows System Tray to **`v2.2.0`** with a 6-worker async **Origin Divergence & Actionable Branch Scanner** (`refreshGitDivergenceSnapshot`, `POST /api/submodules/refresh-divergence`, `133/134` initialized via `hymnmania` junction detection, `Origin / Branches` column & filters); audited, synthesized, tested (**53/53 Rust tests green**), and reconciled all **25 remaining `CodeWhale-Extensions` Jules branches** (`0` unmerged Jules branches remaining, `ReleaseEnvGuard` lock unified, `fetchRepoStats` tests added, pushed `origin/main`); synced `bobtorrent/bobcoin` (+62 -> `eb8e46a5`) and pushed `bobtorrent` (`8ea1472`); staged published root submodule pointers (`pincheck == 0` unpublished); verified `build.bat` (`4/4` OK) and `start.bat build` (`12/12` Go binaries OK). Always-deploy verified (`0/0` vs `origin/main`).
+
+ (v5.310.0)
 
 **Protocol #301 (2026-11-15):** Restored `freellm` Go build & Windows tray telemetry (`proxy.RouterEvent` + `Gateway.Events` + unit tests -> `fdfc74d`); upgraded Consolidated Workspace Control Center (`:2999`) + System Tray to `v2.1.0` and expanded `start.bat` to **12/12 Go binaries** (adding `freellm.exe` & `bobtk.exe`, live HyperNexus `:7778` Session Bus feed & broadcast composer, `PINNED`/`DRIFT` root-pin badges, multi-org recognition, and Windows Login tray toggle); fast-forwarded standalone/active submodules (`ADSFileSystem`, `DataStreamBrowser`, `geiss`, `odcnn` `v2.4.0`, `element-web` +20, `bobsgameweb`, `aimoneymachine_site`, `marketing_agent`), reconciled & pushed dual-branch repos (`vst_monster` `v0.8.3` +76 commits, `agentirc`, `ArrowVortex`, `ksm-v2`, `bobmani/itgmania`, `bobmani`), and staged **15 published submodule pointers** (`pincheck == 0` unpublished); verified `build.bat` (`4/4` OK) and `start.bat build` (`12/12` Go binaries OK). Always-deploy verified (`0/0` vs `origin/main`).
 

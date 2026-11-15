@@ -1,3 +1,20 @@
+# HANDOFF - v5.311.0 - 2026-11-15 - Protocol #302: Control Center v2.2.0 (Async Origin Divergence & Branch Scanner), CodeWhale-Extensions 25-Branch Jules Synthesis & BobTorrent/BobCoin Sync
+
+## Session - Protocol #302 (`antigravity-gemini`)
+
+### 1. Control Center `:2999` & Windows System Tray `v2.2.0` (`research/workspace-orchestrator`)
+- Implemented the `v2.2.0` roadmap item: a 6-worker async background **Origin Divergence & Actionable Unmerged Branch Scanner** (`GET /api/submodules`, `GET /api/overview`, `POST /api/submodules/refresh-divergence`) with 90s auto-refresh, `OWNED_AUTHOR_RE` + `ACTIONABLE_BRANCH_RE` filtering (eliminating false positives from upstream GTK / Hunter Bown `claude/*` & `codex/*` branches), `hymnmania` junction fallback (`133/134` initialized), and Section 4 `Origin / Branches` UI column + `Diverged` / `Unmerged Branches` filter pills.
+- Restarted both `:2999` (`v2.2.0`) and `tray_controller.ps1` (`v2.2.0`) at `BelowNormal` CPU priority and verified `divergenceScan.scannedCount == 133` live.
+
+### 2. `CodeWhale-Extensions` Complete 25-Branch Jules Reconciliation + `bobtorrent`/`bobcoin` Sync
+- **`CodeWhale-Extensions`:** Completed the `TODO.md` follow-up across all 25 remaining `google-labs-jules[bot]` `<slug>-<digits>` branches: harvested `fetchRepoStats` Vitest coverage (`web/lib/github.test.ts`) and `has_open_entries` test coverage (`crates/tui/src/slop_ledger.rs`), unified `crates/release/src/lib.rs` `env_tests` onto `ReleaseEnvGuard` (fixing a multi-threaded env-var race vs `mod tests` and removing the unlocked `serial_test` dev-dependency), verified **53/53 Rust unit/integration tests green** (`CARGO_TARGET_DIR=D:\agent-cache\cargo-target`), merged all 25 branch histories (`0` unmerged Jules branches remaining), and pushed `origin/main`.
+- **`bobtorrent` (`adbda2d..8ea1472`) & `bobtorrent/bobcoin` (`eb8e46a5`):** Merged `origin/main` (+62 commits) into `bobtorrent/bobcoin`, pushed `bobcoin`, and committed + pushed `bobtorrent` `main`.
+
+### 3. Build, Pincheck & Sibling-Lane Status
+- **Always-Deploy Verified:** `build.bat` (`4 OK, 0 failed, 1 skipped`) and `start.bat build` (`12 OK, 0 failed`); all `.exe` binaries preserved on disk; **`pincheck == 0` unpublished** across all staged root pointers; `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md` regenerated.
+- **Sibling-Lane Isolation:** Kept `HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site`, `fwber` (`share-unlocks.ts`), and `realestatecrm` (active `v0.66.1+` sibling lane with 19 dirty files in flight) strictly untouched.
+
+## Prior
 # HANDOFF - v5.310.0 - 2026-11-15 - Protocol #301: FreeLLM Go Restoration, Control Center v2.1.0 (12 Go Binaries + Live Session Bus) & Submodule Harvest
 
 ## Session - Protocol #301 (`antigravity-gemini`)

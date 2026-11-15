@@ -52,7 +52,8 @@
                 <div class="flex flex-wrap items-center gap-2.5">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                     <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Omni-Workspace Control Center</h1>
-                    <span id="hdr-version" class="mono text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">v5.293.0</span>
+                    <span id="hdr-version" class="mono text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">v5.311.0</span>
+                    <span id="hdr-cc-ver" class="mono text-[11px] px-2.5 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/30">CC v2.2.0</span>
                     <span id="hdr-git" class="mono text-xs px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">main @ —</span>
                     <span class="mono text-[11px] px-2.5 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center">
                         CPU: BelowNormal
@@ -226,13 +227,16 @@
                     <p class="text-xs text-slate-400">Audit branch alignment across all `robertpelloni` and third-party submodules in milliseconds.</p>
                 </div>
                 <div class="flex flex-wrap items-center gap-2">
-                    <input id="sub-search" oninput="renderSubmodules()" type="text" placeholder="Filter 134 submodules..." class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 w-48">
-                    <select id="sub-owner" onchange="renderSubmodules()" title="Filter submodules by GitHub repository owner or pin alignment" class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
+                    <input id="sub-search" oninput="renderSubmodules()" type="text" placeholder="Filter 134 submodules..." class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 w-44">
+                    <select id="sub-owner" onchange="renderSubmodules()" title="Filter submodules by GitHub repository owner, divergence, or pin alignment" class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
                         <option value="ALL">All Submodules</option>
                         <option value="owned">Owned (robertpelloni + Orgs)</option>
-                        <option value="drifted">Ahead / Drifted vs Root Pin</option>
+                        <option value="diverged">Ahead / Behind Origin (+N / -M)</option>
+                        <option value="branches">Actionable Feature Branches (&gt;0)</option>
+                        <option value="drifted">Drifted vs Root Pin</option>
                         <option value="external">External Upstreams</option>
                     </select>
+                    <button id="btn-div-scan" onclick="triggerDivergenceScan()" title="Refresh background git ahead/behind &amp; unmerged feature branch snapshots" class="px-2.5 py-1.5 rounded-lg bg-sky-600/25 hover:bg-sky-600 text-sky-200 hover:text-white border border-sky-500/35 text-xs font-semibold">Scan Divergence</button>
                     <span id="sub-count" class="mono text-xs text-slate-400">0 shown</span>
                 </div>
             </div>
@@ -246,6 +250,7 @@
                             <th class="py-2.5 px-3 font-semibold">Branch</th>
                             <th class="py-2.5 px-3 font-semibold">HEAD</th>
                             <th class="py-2.5 px-3 font-semibold">Root Pin</th>
+                            <th class="py-2.5 px-3 font-semibold">Origin / Branches</th>
                             <th class="py-2.5 px-3 font-semibold">Version</th>
                             <th class="py-2.5 px-3 font-semibold text-right">Actions</th>
                         </tr>
@@ -303,7 +308,10 @@
         async function loadOverview() {
             const res = await fetch(`${API}/overview`);
             const d = await res.json();
-            document.getElementById('hdr-version').textContent = d.version || 'v5.293.0';
+            document.getElementById('hdr-version').textContent = d.version || 'v5.311.0';
+            if (d.controlCenterVersion) {
+                document.getElementById('hdr-cc-ver').textContent = `CC v${d.controlCenterVersion}`;
+            }
             document.getElementById('hdr-git').textContent = `${d.branch} @ ${d.sha}`;
 
             const onlinePorts = (d.ports || []).filter((p) => p.online).length;
@@ -510,6 +518,16 @@
             renderSubmodules();
         }
 
+        async function triggerDivergenceScan() {
+            const btn = document.getElementById('btn-div-scan');
+            if (btn) btn.textContent = 'Scanning...';
+            await fetch(`${API}/submodules/refresh-divergence`, { method: 'POST' });
+            setTimeout(async () => {
+                await loadSubmodules();
+                if (btn) btn.textContent = 'Scan Divergence';
+            }, 2200);
+        }
+
         function renderSubmodules() {
             const q = (document.getElementById('sub-search').value || '').toLowerCase();
             const ownerFilter = document.getElementById('sub-owner').value;
@@ -517,7 +535,9 @@
                 if (ownerFilter === 'owned' && !s.isOwned) return false;
                 if (ownerFilter === 'external' && s.isOwned) return false;
                 if (ownerFilter === 'drifted' && (s.pinSynced !== false)) return false;
-                if (q && !`${s.path} ${s.branch} ${s.sha} ${s.owner} ${s.category}`.toLowerCase().includes(q)) return false;
+                if (ownerFilter === 'diverged' && !((s.ahead || 0) > 0 || (s.behind || 0) > 0)) return false;
+                if (ownerFilter === 'branches' && !((s.actionableBranches || 0) > 0)) return false;
+                if (q && !`${s.path} ${s.branch} ${s.sha} ${s.owner} ${s.category} ${(s.actionableSample || []).join(' ')}`.toLowerCase().includes(q)) return false;
                 return true;
             });
             document.getElementById('sub-count').textContent = `${rows.length} / ${allSubmodules.length} shown`;
@@ -532,6 +552,17 @@
                     : (s.pinSynced === false
                         ? `<span class="mono text-[10px] px-2 py-0.5 rounded border bg-amber-500/15 text-amber-300 border-amber-500/30" title="Root index pins ${esc(s.pinnedSha)}">DRIFT (${esc(s.pinnedSha)})</span>`
                         : '<span class="mono text-[10px] px-2 py-0.5 rounded border bg-slate-800 text-slate-500 border-slate-700">—</span>');
+
+                let divHtml = '<span class="mono text-[10px] text-slate-500">…</span>';
+                if (s.ahead !== null && s.behind !== null) {
+                    const syncPill = (s.ahead === 0 && s.behind === 0)
+                        ? `<span class="mono text-[10px] px-1.5 py-0.5 rounded bg-slate-800/80 text-slate-400" title="0/0 vs ${esc(s.originRef || 'origin')}">0/0</span>`
+                        : `<span class="mono text-[10px] px-1.5 py-0.5 rounded border ${(s.behind > 0) ? 'bg-amber-500/15 text-amber-300 border-amber-500/30' : 'bg-sky-500/15 text-sky-300 border-sky-500/30'}" title="vs ${esc(s.originRef || 'origin')}">+${s.ahead}/-${s.behind}</span>`;
+                    const brPill = (s.actionableBranches && s.actionableBranches > 0)
+                        ? ` <span class="mono text-[10px] px-1.5 py-0.5 rounded border bg-indigo-500/20 text-indigo-200 border-indigo-500/35" title="Unmerged branches: ${esc((s.actionableSample || []).join(', '))}">${s.actionableBranches} br</span>`
+                        : '';
+                    divHtml = syncPill + brPill;
+                }
                 return `
                 <tr class="hover:bg-slate-800/45">
                     <td class="py-2 px-3 font-medium text-white mono">${esc(s.path)}</td>
@@ -540,6 +571,7 @@
                     <td class="py-2 px-3"><span class="mono text-[11px] px-2 py-0.5 rounded border ${branchBadge}">${esc(s.branch)}</span></td>
                     <td class="py-2 px-3 mono text-slate-300">${esc(s.sha)}</td>
                     <td class="py-2 px-3">${pinBadge}</td>
+                    <td class="py-2 px-3 whitespace-nowrap">${divHtml}</td>
                     <td class="py-2 px-3 mono text-slate-400">${esc(s.version)}</td>
                     <td class="py-2 px-3 text-right space-x-1.5">
                         ${s.url ? `<a href="${esc(s.url.replace(/\.git$/, ''))}" target="_blank" class="px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">GitHub</a>` : ''}
@@ -633,7 +665,7 @@
         }
 
         async function refreshAll() {
-            await Promise.all([loadOverview(), loadSessionBus(), loadGoServices(), loadProjects()]);
+            await Promise.all([loadOverview(), loadSessionBus(), loadGoServices(), loadProjects(), loadSubmodules()]);
         }
 
         (async function init() {

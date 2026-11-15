@@ -1,5 +1,5 @@
 # Omni-Workspace Submodule Dashboard
-**Last Updated:** 2026-11-15 00:36:29
+**Last Updated:** 2026-11-15 04:28:10
 
 ## Project Directory Structure Explanation
 This monorepo serves as a unified workspace and orchestrator for dozens of independent microservices, libraries, desktop applications, and AI agents.
@@ -14,8 +14,8 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | Path | Version | Branch | Commit | Date | Message |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | auto_dj_script | N/A | main | 'd6c1ffff' | '2026-11-12' | 'chore: track dirty state (Protocol #281)' |
-| fwber | 2.3.90 | main | '91aa76f16' | '2026-11-14' | 'feat: council governance API, unified hubs, scann... |
-| hymnmania | 5.97.9 | main | 'a74c058d7' | '2026-11-14' | 'chore: Protocol #300 deep recursive sync, feature... |
+| fwber | 2.3.91 | main | '93867fb7b' | '2026-11-15' | 'feat: token bridge economy, matchmaker bounties, ... |
+| hymnmania | 5.97.9 | main | 'bc8de8571' | '2026-11-15' | 'chore: Protocol #301 FreeLLM build fix, Control C... |
 | jules-autopilot | 3.7.3 | main | '56d0101' | '2026-11-13' | 'chore: track dirty state (Protocol #286)' |
 | realestatecrm | N/A | main | '5f1a64d' | '2026-11-14' | 'v0.66.0: Dual-mode Stripe/Mercury billing engine,... |
 | skillzhub | v0.1.31 | main | 'c2b8aa2' | '2026-11-12' | 'docs: revise README (honest, current description)... |
@@ -35,7 +35,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | apophysis-j | N/A | main | 'a5b2c74' | '2026-08-04' | 'Merge remote-tracking branch 'remotes/origin/jule... |
 | bg | N/A | master | 'f8e4e4f' | '2026-11-14' | 'v2.1.100: okgame networking ported to SDL3_net (c... |
 | bobbybookmarks | N/A | main | '9fc00275' | '2026-11-12' | 'docs: revise README (honest, current description)... |
-| bobcoin | N/A | main | '1e0ff408' | '2026-11-14' | 'chore(sync): intelligent merge origin/dependabot/... |
+| bobcoin | N/A | main | 'eb8e46a5' | '2026-11-15' | 'Merge remote-tracking branch 'origin/main'' |
 | bobeditpro | N/A | master | 'bc05bca581' | '2026-08-12' | 'Merge commit '398d4a7fa95c02c386a68e79492f78748cf... |
 | bobfilez | N/A | main | 'db9cc198e' | '2026-11-14' | 'chore(sync): reconcile backup/wip-leader-sync-202... |
 | bgtk | 1.8.0 | main | '657e1a1e85' | '2026-11-14' | 'chore(sync): record reconciled merge of origin/ma... |
@@ -43,7 +43,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bobsaver | N/A | main | '8cd1f179' | '2026-11-14' | 'chore(submodule): update JWildfire to published m... |
 | bobsgameonlinejava | N/A | main | '61629d3' | '2026-11-12' | 'merge: origin/feat/test-suite-and-parity-tests-2-... |
 | bobsgameweb | N/A | main | '8e7c06d0' | '2026-11-14' | 'v3.0.36: Hetzner live-only architecture, unified ... |
-| bobtorrent | 11.60.55 | main | 'adbda2d' | '2026-11-14' | 'chore(submodules): advance element-web (+22 Matri... |
+| bobtorrent | 11.60.55 | main | '8ea1472' | '2026-11-15' | 'chore: sync bobcoin submodule pointer (Protocol #... |
 | bobtrader | N/A | main | '40cd07f' | '2026-11-12' | 'merge: origin/jules-5976562378962147234-48a449c5 ... |
 | bobtrax | N/A | main | '32e04eb' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | bqt | N/A | main | '92bb40654b6' | '2026-11-14' | 'fix(v1.2.60): MeshNode double-start panic and pee... |
@@ -54,14 +54,14 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | dao | N/A | main | '3a5f1e4' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | electricsheep | N/A | main | '5dd8b43' | '2026-11-14' | 'chore(sync): intelligent merge origin/jules-42649... |
 | element-web | N/A | develop | '9e7918b63c' | '2026-11-10' | 'docs: update MEMORY.md with protocol resilience a... |
-| marketing_agent | 0.7.6 | main | '6bd96e33' | '2026-11-14' | 'release: v0.7.6 — Stripe key health observability... |
+| marketing_agent | 0.7.7 | main | 'd758df32' | '2026-11-15' | 'v0.7.7: filter bot/agent emails, rotate enrichmen... |
 | f-zerox | N/A | main | '4b3f564' | '2026-11-12' | 'merge: origin/feat-shiftability-v0.1.26-182880679... |
 | fcdm | N/A | main | 'c105ce4' | '2026-11-14' | 'chore(sync): intelligent merge origin/main (Proto... |
 | aimoneymachine_site | N/A | main | '1365c8f' | '2026-11-14' | 'v2.0.1: Hetzner-live-only deployment at /dashboar... |
 | geany | N/A | master | '9bec4e3a8' | '2026-11-12' | 'Protocol #284: merge jules-4044387856741810018-1f... |
 | geiss | N/A | main | 'e68cd15' | '2026-11-14' | 'perf(shadow): serve daemon's latest diff report i... |
 | hyper | N/A | main | '848f3051' | '2026-11-14' | 'chore(sync): record reconciled merge of jules-173... |
-| hyperharness | 0.5.0-alpha.5 | main | '0726e066' | '2026-11-15' | 'chore(build): sync refreshed hyperharness.exe fro... |
+| hyperharness | 0.5.0-alpha.5 | main | 'df2dbfdf' | '2026-11-15' | 'chore(build): sync refreshed hyperharness.exe fro... |
 | freellm | N/A | main | 'fdfc74d' | '2026-11-15' | 'fix(proxy,tray): restore RouterEvent telemetry ch... |
 | mcp-superassistant | 0.7.2 | main | '5efe6d1' | '2026-07-13' | 'chore: update refs and clean state' |
 | mk64 | 8.107.5 | master | 'e5da85771' | '2026-11-14' | 'chore(upstream): merge upstream/master +6 commits... |
@@ -82,7 +82,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | tabby | N/A | main | '567b7a2d' | '2026-11-14' | 'chore(sync): merge origin/main into main (Protoco... |
 | timidity | N/A | cvs | 'eff3cbe' | '2026-10-22' | 'docs: rewrite README from full repo analysis' |
 | topaz-ffmpeg | N/A | master | 'eaa1762ca4' | '2026-07-21' | 'added extra options' |
-| HyperNexus | 1.0.75 | main | '1239d9c145' | '2026-11-15' | 'feat: add HTTP latency & cache telemetry, durable... |
+| HyperNexus | 1.0.78 | main | '1f1d8c63bb' | '2026-11-15' | 'perf(memory,web): pre-indexed 61MB memories.json ... |
 | veilid_reddit_facebook | N/A | main | 'a7dd72a' | '2026-11-14' | 'chore(sync): reconcile jules-scaffold-0.1.0-18345... |
 | warp | N/A | main | '0b796c4' | '2026-11-14' | 'chore(sync): intelligent merge origin/warp-rebuil... |
 | vst_monster | N/A | main | '4920777' | '2026-11-15' | 'Merge remote-tracking branch 'origin/main' into j... |
@@ -122,7 +122,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | private_gemini_storage | N/A | main | '4e823c0' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | projectM-upstream | N/A | master | 'b238d09ec' | '2026-09-30' | 'Merge remote-tracking branch 'origin/master'' |
 | TurntUpToddler | 5.41.0 | main | 'd269bb8d' | '2026-08-09' | 'chore: version 5.41.0 — Suno pipeline, Kling, You... |
-| ksm-v2 | 2.0.0-alpha33 | master | 'cb6f7e93' | '2026-11-15' | 'Merge remote-tracking branch 'origin/main'' |
+| ksm-v2 | 2.0.0-alpha33 | master | 'dbe00cc1' | '2026-11-15' | 'Merge remote-tracking branch 'origin/master'' |
 | HyperNexus2old | 1.0.5 | main | 'd8c4b2f39' | '2026-09-30' | 'merge: origin/main -- integrate 4 remote commits ... |
 | hyperporn | 1.1.0 | main | '0e1d2e0' | '2026-11-14' | 'chore(sync): reconcile backup/wip-leader-sync-202... |
 | foone_datetime_short | N/A | main | '0979cbc' | '2026-11-12' | 'docs: revise README (honest, current description)... |
@@ -142,7 +142,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | sales_bot | N/A | main | 'd1b494d' | '2026-11-12' | 'Merge remote-tracking branch 'origin/main'' |
 | borg | N/A | main | '0af9a54' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | Folderum3-The-Last-Attempt | N/A | main | '2541eb1' | '2026-09-12' | 'Add files via upload' |
-| CodeWhale-Extensions | N/A | main | '72f4cfb3' | '2026-11-14' | 'chore(sync): merge origin/feat/extension-api (Pro... |
+| CodeWhale-Extensions | N/A | main | '9a30dee0' | '2026-11-15' | 'chore(lock): sync Cargo.lock after removing unuse... |
 | DataStreamBrowser | N/A | master | '8aeb446' | '2026-07-11' | 'chore: auto checkpoint before sync' |
 | ADSFileSystem | N/A | master | '920b7b6' | '2026-07-11' | 'chore: auto checkpoint before sync' |
 | unitedbeats_hypernexus_gtm | N/A | main | 'e7109f6' | '2026-11-13' | 'docs: seed HyperNexus 30-day B2B GTM plan v0.1.0' |

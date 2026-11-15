@@ -1,5 +1,18 @@
 # Changelog
 
+## [v5.311.0] - 2026-11-15 - Protocol #302: Control Center v2.2.0 (Async Origin Divergence & Branch Scanner), CodeWhale-Extensions 25-Branch Jules Synthesis & BobTorrent/BobCoin Sync
+
+### Synced, Synthesized & Shipped
+- **Consolidated Workspace Control Center (`:2999`) & Windows System Tray `v2.2.0` (`research/workspace-orchestrator`)**:
+  - Shipped asynchronous 6-worker background **Git Origin Divergence & Actionable Branch Scanner** (`refreshGitDivergenceSnapshot`, 90s cadence + `POST /api/submodules/refresh-divergence`), surfacing `ahead/behind` vs `origin/<default>` plus owned/Jules unmerged branch counts (`git for-each-ref --no-merged=HEAD` filtered by `OWNED_AUTHOR_RE` & `ACTIONABLE_BRANCH_RE`) across all **133/134** initialized submodules without blocking HTTP requests.
+  - Added `hymnmania` `bobmani/hymnmania` junction detection so `/api/overview` and `tray_controller.ps1` accurately report `133/134` initialized submodules alongside Section 4's new **Origin / Branches** column, `Diverged (5)` / `Unmerged Branches` filters, and `Scan Divergence` trigger.
+- **`CodeWhale-Extensions` Complete 25-Branch Jules Synthesis & Lockfile Hardening (`72f4cfb3..main`)**:
+  - Audited all 25 remaining `google-labs-jules[bot]` `<slug>-<digits>` branches line-by-line (4,036 diff lines): verified 21 branches were already superseded in `HEAD`, harvested the net-new `fetchRepoStats` unit test suite into `web/lib/github.test.ts` and `has_open_entries` test coverage into `crates/tui/src/slop_ledger.rs`, unified `crates/release/src/lib.rs` `env_tests` onto `ReleaseEnvGuard` (`Mutex`) to eliminate cross-module env-var test races and remove the unlocked `serial_test` dependency (`Cargo.lock` synced), verified **53/53 Rust tests green** (`codewhale-release` 35/35, `codewhale-tools` 15/15, `parity_tools` 3/3), recorded `-s ours` merge history across all 25 branches (**`0` unmerged Jules branches remaining**), and pushed `origin/main`.
+- **`bobtorrent` & `bobcoin` Submodule Synchronization (`adbda2d..8ea1472`)**:
+  - Merged `origin/main` (+62 upstream commits including SP1 Proof-of-Play WASM, Go game/casino updates, and E2E verification suites) into `bobtorrent/bobcoin` (`1e0ff408..eb8e46a5`), updated the `bobcoin` gitlink in `bobtorrent`, and pushed `bobtorrent` `origin/main` (`8ea1472`).
+- **Root Submodule Pointers & Always-Deploy Verification**:
+  - Verified `build.bat` (**`4 OK, 0 failed, 1 skipped`**) and `start.bat build` (**`12 OK, 0 failed`**), synced any refreshed Go binaries, staged verified published submodule pointers with **`pincheck == 0` unpublished** (isolating active sibling lanes `HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site`, `fwber`, `realestatecrm`), and regenerated `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md`.
+
 ## [v5.310.0] - 2026-11-15 - Protocol #301: FreeLLM Go Restoration, Control Center v2.1.0 (12 Go Binaries + Live Session Bus) & Submodule Harvest
 
 ### Synced, Fixed & Shipped

@@ -1,15 +1,15 @@
 # Workspace Monorepo — Brain Memory (`main`)
 
-*Last Updated: 2026-11-15 (v5.310.0 — Protocol #301)*
+*Last Updated: 2026-11-15 (v5.311.0 — Protocol #302)*
 
 ## Project Purpose
 
 Federated monorepo at `github.com/robertpelloni/workspace` orchestrating **134 root submodules** (`509` recursive submodule repositories across all layers) across AI agent harnesses (`HyperNexus`, `hyperharness`, `pi-mono`, `hermes-agent`, `freellm`, `Maestro`, `jules-autopilot`, `CodeWhale-Extensions`), terminals/IDEs (`tabby`, `warp`, `hyper`, `npp`, `bqt`, `bgtk`), games & rhythm engines (`bg`, `bobmani`, `hymnmania`, `ArrowVortex`, `beatoraja`, `mk64`, `sm64coopdx`, `neverball`, `bobsaver`), and commercial/web platforms (`fwber`, `realestatecrm`, `marketing_agent`, `unitedbeats_site`, `unitedbeats_hypernexus_gtm`).
 
-## Current State (`v5.310.0`)
+## Current State (`v5.311.0`)
 
-- **Executive Protocols #1–#301 Complete:** Deep 509-submodule recursive synchronization, hidden-branch & `<slug>-<digits>` Jules harvest (`bgtk` `v1.8.0`, `hyper` `v1.2.0`, `warp` +6 branches, `tabby` `v1.0.285`, `CodeWhale-Extensions` +12 branches, `vst_monster` `v0.8.3` +76 commits reconciled onto `main`, `freellm` `RouterEvent` + tray Go build restored, `ArrowVortex/odcnn` `v2.4.0`, `bobtorrent` +47 published, standalone `ADSFileSystem`/`DataStreamBrowser`/`geiss`/`odcnn`/`element-web` + dual-branch `agentirc`/`ArrowVortex`/`bobmani`/`ksm-v2` synced), **all 4 formerly retained conflict branches resolved (`0` retained conflicts remaining)**, and published-only root pointer pincheck (`0` unpublished pins).
-- **Consolidated Control Center (`:2999`) & System Tray (`v2.1.0`):** Live in `research/workspace-orchestrator/` (`start.bat dashboard` / `start.bat tray` / `start_dashboard_tray.bat`), running at `BelowNormal` CPU priority with **embedded HyperNexus `:7778` Session Bus live feed & broadcast**, root-pin drift telemetry, Windows Startup shortcut toggle, and full lifecycle management over all **12/12** Go binaries (`build.bat` 4/4 OK, `start.bat build` 12/12 OK).
+- **Executive Protocols #1–#302 Complete:** Deep 509-submodule recursive synchronization, hidden-branch & `<slug>-<digits>` Jules harvest (`bgtk` `v1.8.0`, `hyper` `v1.2.0`, `warp` +6 branches, `tabby` `v1.0.285`, `CodeWhale-Extensions` all 37 branches incl. 25 Jules test/perf branches reconciled with 53/53 Rust tests green & `0` unmerged Jules branches remaining, `vst_monster` `v0.8.3` +76 commits, `freellm` `RouterEvent` + tray Go build restored, `bobtorrent/bobcoin` +62 synced -> `bobtorrent` `8ea1472`, `ArrowVortex/odcnn` `v2.4.0`, standalone `ADSFileSystem`/`DataStreamBrowser`/`geiss`/`odcnn`/`element-web` + dual-branch `agentirc`/`ArrowVortex`/`bobmani`/`ksm-v2` synced), **all 4 formerly retained conflict branches resolved (`0` retained conflicts remaining)**, and published-only root pointer pincheck (`0` unpublished pins).
+- **Consolidated Control Center (`:2999`) & System Tray (`v2.2.0`):** Live in `research/workspace-orchestrator/` (`start.bat dashboard` / `start.bat tray` / `start_dashboard_tray.bat`), running at `BelowNormal` CPU priority with **async 6-worker `ahead/behind` origin divergence & actionable branch scanning across 133/134 submodules**, **embedded HyperNexus `:7778` Session Bus live feed & broadcast**, root-pin drift telemetry, Windows Startup shortcut toggle, and full lifecycle management over all **12/12** Go binaries (`build.bat` 4/4 OK, `start.bat build` 12/12 OK).
 - **Disk & Build Cache Healthy:** Stale git `.tmp` packs cleaned (`~258 GB` free on `C:`); Go caches routed to `D:\agent-cache\go-build` & `D:\agent-cache\go-tmp`.
 - **Org Migrations & GTM:** `fwber` -> `FWBerLLC`; `unitedbeats_site` -> `UnitedBeatsLLC` (`unitedbeats.org` live on WordPress `UnitedBeats Legacy` `v1.4.0` with 79 souls, `Kourlos` spelling fixed, and 10 public B2B/project pages); `unitedbeats_hypernexus_gtm` (`v0.1.0`) seeded for the 30-day HyperNexus B2B rollout.
 

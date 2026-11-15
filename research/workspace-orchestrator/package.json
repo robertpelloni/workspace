@@ -1,6 +1,6 @@
 {
   "name": "workspace-orchestrator",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Omni-Workspace Consolidated Control Center & Windows System Tray Orchestrator (:2999)",
   "main": "server/index.js",
   "scripts": {

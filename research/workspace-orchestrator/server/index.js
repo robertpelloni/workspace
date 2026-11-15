@@ -230,9 +230,113 @@ function postJsonLocal(url, bodyObj, timeoutMs = 2500) {
     });
 }
 
-const OWNED_ORGS = new Set(['robertpelloni', 'unitedbeatsllc', 'fwberllc', 'realestatecrmllc']);
+const OWNED_ORGS = new Set(['robertpelloni', 'unitedbeatsllc', 'fwberllc', 'realestatecrmllc', 'mdmatk']);
 const DESKTOP_GIT = 'C:\\Users\\hyper\\AppData\\Local\\GitHubDesktop\\app-3.6.11\\resources\\app\\git\\cmd\\git.exe';
 let cachedRootPins = { ts: 0, map: new Map() };
+const gitDivergenceCache = new Map(); // subPath -> { ahead, behind, originRef, actionableBranches, actionableSample, scannedAt }
+let divergenceScanState = { running: false, lastCompletedAt: null, scannedCount: 0 };
+
+function getGitBin() {
+    return fs.existsSync(DESKTOP_GIT) ? DESKTOP_GIT : 'git';
+}
+
+function execGitAsync(cwd, args, timeoutMs = 6000) {
+    return new Promise((resolve) => {
+        execFile(getGitBin(), args, { cwd, windowsHide: true, timeout: timeoutMs, maxBuffer: 2 * 1024 * 1024 }, (err, stdout) => {
+            if (err) return resolve({ ok: false, stdout: '' });
+            return resolve({ ok: true, stdout: String(stdout || '').trim() });
+        });
+    });
+}
+
+const ACTIONABLE_BRANCH_RE = /(^|\/)(jules[-/]|.*-\d{15,22}$|backup\/wip)/i;
+const OWNED_AUTHOR_RE = /(robert\s*pelloni|robertpelloni|google-labs-jules|jules\[bot\]|unitedbeats|fwber|hypernexus|tormentnexus|antigravity)/i;
+
+async function scanSubmoduleDivergenceOne(sub) {
+    if (!sub || sub.branch === 'uninitialized' || !fs.existsSync(sub.absPath)) return;
+    const candidates = [];
+    if (sub.branch && sub.branch !== 'detached' && sub.branch !== 'unknown') {
+        candidates.push(`origin/${sub.branch}`);
+    }
+    for (const fallback of ['origin/main', 'origin/master', 'origin/develop', 'origin/release']) {
+        if (!candidates.includes(fallback)) candidates.push(fallback);
+    }
+
+    let originRef = null;
+    let behind = 0;
+    let ahead = 0;
+    for (const ref of candidates) {
+        // eslint-disable-next-line no-await-in-loop
+        const lr = await execGitAsync(sub.absPath, ['rev-list', '--left-right', '--count', `${ref}...HEAD`], 4500);
+        if (lr.ok && lr.stdout) {
+            const parts = lr.stdout.split(/\s+/);
+            if (parts.length === 2) {
+                behind = parseInt(parts[0], 10) || 0;
+                ahead = parseInt(parts[1], 10) || 0;
+                originRef = ref;
+                break;
+            }
+        }
+    }
+
+    let actionableBranches = 0;
+    let actionableSample = [];
+    if (sub.isOwned) {
+        const unmerged = await execGitAsync(
+            sub.absPath,
+            ['for-each-ref', '--format=%(refname:short)|%(authorname)|%(authoremail)', '--no-merged=HEAD', 'refs/remotes/origin/'],
+            5000
+        );
+        if (unmerged.ok && unmerged.stdout) {
+            const filtered = [];
+            for (const rawLine of unmerged.stdout.split(/\r?\n/)) {
+                const [bRaw, authorName = '', authorEmail = ''] = rawLine.split('|');
+                const b = (bRaw || '').trim();
+                if (!b || b === 'origin/HEAD' || b === 'origin' || b === originRef || b === 'origin/gh-pages') continue;
+                if (b.includes('dependabot/') || b.startsWith('origin/upstream/')) continue;
+                if (ACTIONABLE_BRANCH_RE.test(b) || OWNED_AUTHOR_RE.test(`${authorName} ${authorEmail}`)) {
+                    filtered.push(b);
+                }
+            }
+            actionableBranches = filtered.length;
+            actionableSample = filtered.slice(0, 6).map((b) => b.replace(/^origin\//, ''));
+        }
+    }
+
+    gitDivergenceCache.set(sub.path, {
+        ahead,
+        behind,
+        originRef,
+        actionableBranches,
+        actionableSample,
+        scannedAt: new Date().toISOString()
+    });
+}
+
+async function refreshGitDivergenceSnapshot() {
+    if (divergenceScanState.running) return divergenceScanState;
+    divergenceScanState.running = true;
+    try {
+        const subs = parseSubmodulesFast();
+        const queue = subs.filter((s) => s.branch !== 'uninitialized');
+        let idx = 0;
+        const concurrency = 6;
+        const workers = Array.from({ length: concurrency }, async () => {
+            while (idx < queue.length) {
+                const current = queue[idx];
+                idx += 1;
+                // eslint-disable-next-line no-await-in-loop
+                await scanSubmoduleDivergenceOne(current);
+            }
+        });
+        await Promise.all(workers);
+        divergenceScanState.lastCompletedAt = new Date().toISOString();
+        divergenceScanState.scannedCount = queue.length;
+    } catch {} finally {
+        divergenceScanState.running = false;
+    }
+    return divergenceScanState;
+}
 
 function getRootPinnedShasSync() {
     const now = Date.now();
@@ -381,6 +485,14 @@ function parseSubmodulesFast() {
             }
         }
 
+        // Also recognize hymnmania junction to bobmani/hymnmania when top-level dir lacks direct .git
+        let resolvedGit = { branch, sha };
+        if (resolvedGit.branch === 'uninitialized' && subPath === 'hymnmania') {
+            const junctionTarget = path.join(WORKSPACE_ROOT, 'bobmani', 'hymnmania');
+            if (fs.existsSync(junctionTarget)) resolvedGit = readGitHeadFast(junctionTarget);
+        }
+        const div = gitDivergenceCache.get(subPath) || null;
+
         subs.push({
             name,
             path: subPath,
@@ -388,11 +500,16 @@ function parseSubmodulesFast() {
             url,
             owner: ownerRaw,
             isOwned,
-            branch,
+            branch: resolvedGit.branch,
             trackedBranch,
-            sha,
+            sha: resolvedGit.sha,
             pinnedSha,
-            pinSynced: branch !== 'uninitialized' && pinnedSha !== '—' ? sha === pinnedSha : null,
+            pinSynced: resolvedGit.branch !== 'uninitialized' && pinnedSha !== '—' ? resolvedGit.sha === pinnedSha : null,
+            ahead: div ? div.ahead : null,
+            behind: div ? div.behind : null,
+            originRef: div ? div.originRef : null,
+            actionableBranches: div ? div.actionableBranches : null,
+            actionableSample: div ? div.actionableSample : [],
             version,
             category: categorizeProject(subPath)
         });
@@ -536,6 +653,7 @@ app.get('/api/overview', async (req, res) => {
 
     res.json({
         version,
+        controlCenterVersion: '2.2.0',
         branch: rootGit.branch,
         sha: rootGit.sha,
         workspaceRoot: WORKSPACE_ROOT,
@@ -543,6 +661,9 @@ app.get('/api/overview', async (req, res) => {
         priority: 'BelowNormal',
         submodulesTotal: submodules.length,
         submodulesInitialized: initializedCount,
+        submodulesPinDrifted: submodules.filter((s) => s.pinSynced === false).length,
+        submodulesDiverged: submodules.filter((s) => (s.ahead || 0) > 0 || (s.behind || 0) > 0).length,
+        divergenceScan: divergenceScanState,
         goServicesRunning: goStates.filter((g) => g.running).length,
         goServicesBuilt: goStates.filter((g) => g.built).length,
         goServicesTotal: goStates.length,
@@ -630,6 +751,11 @@ app.post('/api/go-services/build', async (req, res) => {
 
 app.get('/api/submodules', (req, res) => {
     res.json(parseSubmodulesFast());
+});
+
+app.post('/api/submodules/refresh-divergence', (req, res) => {
+    refreshGitDivergenceSnapshot();
+    res.json({ ok: true, state: divergenceScanState });
 });
 
 app.get('/api/session-bus', async (req, res) => {
@@ -854,7 +980,10 @@ app.post('/api/shutdown', (req, res) => {
 });
 
 const server = app.listen(PORT, () => {
-    console.log(`Omni-Workspace Control Center v2.1.0 running at http://localhost:${PORT} (Priority: BelowNormal)`);
+    console.log(`Omni-Workspace Control Center v2.2.0 running at http://localhost:${PORT} (Priority: BelowNormal)`);
+    setTimeout(() => { refreshGitDivergenceSnapshot(); }, 1200);
+    const divTimer = setInterval(() => { refreshGitDivergenceSnapshot(); }, 90000);
+    if (typeof divTimer.unref === 'function') divTimer.unref();
 });
 
 module.exports = { app, server };
