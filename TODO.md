@@ -1,9 +1,18 @@
+### Protocol #300 Outcomes (2026-11-14)
+
+- [x] v5.309.0 - Protocol #300: Deep 509-submodule recursive audit (`134` root + `375` nested) & hidden-branch harvest across previously skipped repos and nested submodules
+- [x] Merged, tested & pushed `bgtk` `v1.8.0` (+10,283 LOC 6-pillar framework + dashboard/tray -> `npp`), `hyper` `v1.2.0` (+8,469 LOC Mission Control/SSH/MCP/Agent), `warp` (+6 Jules branches), `tabby` `v1.0.285` (+54), `CodeWhale-Extensions` (+12 branches incl. `feat/extension-api`), `ArrowVortex/odcnn` `v2.4.0` (+51) -> `ArrowVortex`, `bobtorrent/element-web` (+22) + `bobcoin` -> `bobtorrent` (+47 commits published to `origin/main`), `mk64` (`upstream/master` +6), `sm64coopdx` `v1.17`, `electricsheep`, `neverball`, `fcdm` (+18), `planet_fitness_stepmaniax_agent`, `bobeditpro` (`master` +189), `bobsaver/geiss` (+13), and `bobfilez/libs/*`
+- [x] Reconciled & pushed all 4 formerly retained conflict branches (`hyperporn`, `bobfilez`, `freellm`, `veilid_reddit_facebook`) in both directions (`0` retained conflict branches remaining)
+- [x] Staged 28 verified published submodule pointers (`pincheck == 0` unpublished), regenerated `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md`, and verified `build.bat` (`4/4` OK) + `start.bat build` (`10/10` Go binaries OK)
+- [ ] Optional follow-up: wire `proxy.RouterEvent` in `freellm/tray_windows.go`
+- [ ] Robert: Umbrella v6/v7 & `unitedbeats.org` menu confirmation with Bobbi; commercial GTM & maintenance window gates
+
 ### Protocol #299 Outcomes (2026-11-14)
 
 - [x] v5.308.0 - Protocol #299: Seamless handover from Muse (`429` quota reset Nov 16 00:00 UTC); fast-forwarded `bobfilez_fix`, `okgame`, `bg_fix`; pushed `bobfilez` (+5), `bobtorrent` (+6), `marketing_agent` (+3), `realestatecrm` (+1), `bobcoin` (+1), `bobmani/hymnmania` (+1), `bobble` (+1); staged 17 published submodule pointers (`pincheck == 0` unpublished); regenerated `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md`
 - [x] Shipped Consolidated Workspace Control Center (`:2999`) + Native Windows System Tray (`research/workspace-orchestrator` v2.0.0, `start_dashboard_tray.bat`, `start.bat dashboard|tray`) at `BelowNormal` priority
 - [x] Fixed `hyper-go` build path (`.` instead of `./cmd/hyper`) and defaulted `GOCACHE`/`GOTMPDIR` to `D:\agent-cache` in `build.bat`, `start.bat`, and `server/index.js` (`build.bat` 4/4 OK, `start.bat build` 10/10 OK, `pi-mono` `./pkg/ai/` tests green)
-- [ ] Robert: disposition 4 retained conflict branches (`bobfilez`, `freellm`, `veilid_reddit_facebook`, `hyperporn`); Umbrella v6/v7 & `unitedbeats.org` menu confirmation with Bobbi (`muse.ai` usage resets Nov 14 18:38 EST); commercial GTM & maintenance window gates
+- [x] Disposition 4 retained conflict branches (`bobfilez`, `freellm`, `veilid_reddit_facebook`, `hyperporn`) — completed in Protocol #300 (`v5.309.0`)
 
 ### Protocol #298 Outcomes (2026-11-14)
 

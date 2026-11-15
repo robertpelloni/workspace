@@ -1,6 +1,6 @@
 # Omni-Workspace Ideas & High-Leverage Improvements
 
-*Last Updated: 2026-11-14 (v5.308.0)*
+*Last Updated: 2026-11-14 (v5.309.0 — Protocol #300)*
 
 > See also [MASTER_IDEAS.md](MASTER_IDEAS.md) for the long-horizon architectural charter. This file tracks concrete, near-term engineering improvements surfaced across recent Executive Protocols.
 
@@ -13,6 +13,6 @@
 - **Automatic Rate-Limit Handover:** When a primary harness hits provider quota exhaustion (such as Muse `429 Subscription quota exhausted`), emit a structured `[bus-msg] HANDOVER_REQUEST` on `session-bus.mjs` so Antigravity, Pi-Mono (`pi-go.exe`), or Codex picks up the in-flight `sync_protocol_NNN` ledger automatically without losing a beat.
 
 ## 3. Submodule & Security Hygiene
-- **Guided Conflict Diff Viewer:** Generate a static side-by-side markdown summary for the 4 owner-retained conflict branches (`bobfilez`, `freellm`, `veilid_reddit_facebook`, `hyperporn`) so Robert can approve keep-ours / keep-theirs / cherry-pick in 60 seconds.
-- **Automated Dependabot Batch Verifier:** Run isolated test-builds on filtered Dependabot PR branches (`bobcoin`, `planet_fitness_stepmaniax_agent`, etc.) in a `D:\agent-cache` worktree before merging.
+- **Deep Recursive `HEAD..<ref>` Audit in Control Center:** Integrate the Protocol #300 509-submodule recursive scanner (`HEAD..<ref>` across nested submodules and `SKIP_REPOS` overrides) into Control Center `:2999` so feature branches hidden behind stale `origin/HEAD` pointers are immediately visible.
+- **Automated Dependabot Batch Verifier:** Run isolated test-builds on incoming Dependabot PR branches in a `D:\agent-cache` worktree before merging.
 - **HyperNexus SQLite Quiesce Helper:** Add a clean `/api/admin/checkpoint` endpoint to HyperNexus `:7778` to flush WAL + snapshot `tormentnexus.db` safely during a scheduled 2-minute maintenance window.

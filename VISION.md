@@ -1,4 +1,4 @@
-# Vision — Omni-Workspace (v5.308.0)
+# Vision — Omni-Workspace (v5.309.0)
 
 *Last Updated: 2026-11-14*
 
@@ -26,17 +26,17 @@ An **autonomous, self-healing, federated monorepo** of **134 submodules** spanni
 | Phase | Status | Milestone Highlights |
 |-------|--------|----------------------|
 | 1. Consolidation | Complete | 134 submodules mapped (`133/134` initialized), org migrations (`FWBerLLC`, `UnitedBeatsLLC`) |
-| 2. Zero-Loss Merge Engine | Complete | 299 Executive Protocols executed; automated triage, dirty-state preservation, and pincheck guard |
+| 2. Zero-Loss Merge Engine | Complete | 300 Executive Protocols executed; deep 509-submodule traversal, hidden-branch harvest, and pincheck guard |
 | 3. Global Build & Tray Control | Complete | `build.bat` (4/4 OK), `start.bat build` (10/10 Go binaries OK), `:2999` Control Center + System Tray |
 | 4. Federated Multi-Agent Ops | Active | HyperNexus `:7778` session bus + `:9222` Edge CDP bridge coordinating Muse, Antigravity, Codex, and Bobbi |
-| 5. Enterprise GTM & Hardening | In Progress | `unitedbeats.org` v1.4.0 live, `unitedbeats_hypernexus_gtm` seeded, Dependabot & conflict-branch disposition queued |
+| 5. Enterprise GTM & Hardening | In Progress | `unitedbeats.org` v1.4.0 live, `unitedbeats_hypernexus_gtm` seeded, all 4 retained conflict branches reconciled |
 
-## By the Numbers (v5.308.0)
+## By the Numbers (v5.309.0)
 
 | Metric | Current Verified State | Target (v6.0.0) |
 |--------|------------------------|-----------------|
-| Submodules Registered | 134 (`133` initialized) | 134+ (`100%` initialized) |
-| Executive Protocols Completed | 299 (`v5.308.0`) | Continuous autonomous cadence |
-| Core Go Service Binaries | 10 / 10 compiling (`start.bat build`) | 10+ with automated smoke tests |
-| Retained Conflict Branches | 4 (preserved for owner review) | 0 unresolved |
+| Submodules Registered | 134 root (`509` recursive across all layers) | 134+ (`100%` initialized) |
+| Executive Protocols Completed | 300 (`v5.309.0`) | Continuous autonomous cadence |
+| Core Go Service Binaries | 10 / 10 compiling (`start.bat build`) + `bobtk.exe` (`bgtk` v1.8.0) | 10+ with automated smoke tests |
+| Retained Conflict Branches | 0 (all 4 reconciled & pushed cleanly in #300) | 0 unresolved |
 | Control Plane Health | Live (`:2999`, `:7778`, `:7779`, `:9222`) | Full self-healing supervisor (`0` degraded) |

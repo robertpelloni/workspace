@@ -1,6 +1,6 @@
 # Omni-Workspace Memory
 
-*Last Updated: 2026-11-14 (v5.308.0 — Protocol #299)*
+*Last Updated: 2026-11-14 (v5.309.0 — Protocol #300)*
 
 ## Operational Facts & Standing Guardrails
 

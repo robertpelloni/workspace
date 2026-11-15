@@ -1,3 +1,30 @@
+# HANDOFF - v5.309.0 - 2026-11-14 - Protocol #300: Deep 509-Submodule Sync, Intelligent Feature Harvest & Zero-Conflict Resolution
+
+## Session - Protocol #300 (`antigravity-gemini`)
+
+### 1. Why Previously Stranded Branches Were Discovered
+- Previous automated sweeps scanned 114 flat submodules with a hardcoded `SKIP_REPOS` exclusion list (`warp`, `hyper`, `bgtk`, `tabby`, `CodeWhale-Extensions`, etc.), skipped nested submodules, and compared `origin/HEAD..<ref>` (which hid branches whenever `origin/HEAD` pointed to an old `canary` or feature ref).
+- In Protocol #300, we ran a full **509-repository recursive audit** (`134` root + `375` nested) plus a `HEAD..<ref>` owned-repo scan across `robertpelloni`, `UnitedBeatsLLC`, `FWBerLLC`, and `RealEstateCRMLLC`, harvesting and pushing every stranded feature branch cleanly without data loss.
+
+### 2. Major Merges, Conflict Resolutions & Pushes (`v5.309.0`)
+- **Flagship Go/UI Supersets:**
+  - `bgtk` (`v1.8.0`, `657e1a1e85`): Merged +10,283 LOC 6-pillar Go framework (`jules-3967632684191581344-c6da2163` +60) + JUCE integration (`jules-10373020308968987250-2c1b6300`) + `go/src/*` (`fix-port-11254893615778068428`) + `v1.7.0` web dashboard/tray (`-serve` / `-tray`), verified `go build ./...` & unit tests (`rc=0`), and updated `npp` (`c363816d6`).
+  - `hyper` (`v1.2.0`, `848f3051`): Merged +8,469 LOC Mission Control / SSH / MCP / Agent (`jules-12860271385039058662-f70a3246` +60) + `CommandBlock.tsx`/`NotebookView.tsx` (`jules-17358446353760799770-b2310bbf`), verified `hyper-go.exe` & unit tests (`rc=0`).
+  - `warp` (`0b796c4`): Merged all 6 Jules branches (`v0.3.2` command palette/Win32, `warp-go`, `warp-ui`, `warp-csharp`, `warp-java`, `crates/warp-cli`, `rebuild/pkg/*`), verified `warp-go.exe` (`rc=0`).
+  - `tabby` (`v1.0.285`, `567b7a2d`): Merged +54 commits (`jules-11801515571725696726-c9123d08`) + dashboard consolidation, verified all 3 Go binaries (`rc=0`).
+  - `CodeWhale-Extensions` (`72f4cfb3`): Merged 12 branches including `feat/extension-api` (`tn-extension` + `codewhale-extension` crates) + 11 Jules branches.
+- **Nested Submodules, Upstream & Games:**
+  - `ArrowVortex/odcnn` (`v2.4.0` +51) -> `ArrowVortex` (`e774060`) & `bobmani/arrowvortex/odcnn`.
+  - `bobtorrent/element-web` (+22 Matrix resilience & security) + `bobcoin` Dependabot -> `bobtorrent` (`adbda2d`, publishing +47 detached-HEAD commits to `origin/main`!).
+  - `mk64` (`upstream/master` +6 -> `e5da85771`), `sm64coopdx` (`v1.17` dashboard/tray -> `30ab27080`), `electricsheep` (+8 -> `5dd8b43`), `neverball` (+7 -> `6f928b16`), `fcdm` (+18 -> `c105ce4`), `planet_fitness_stepmaniax_agent`, `bobeditpro` (`master` +189 -> `bc05bca581`), `bobsaver/geiss` (+13 -> `e68cd15`) & `bobsaver`, `bobfilez/libs/ADSFileSystem` & `DataStreamBrowser`, `bobsgameweb`, `stepmania`, `JWildfire`, `bobfilez_fix`, `bobsaver_fix`, `marketing_agent` (+1).
+- **Zero Retained Conflict Branches (`4 -> 0`):** Reconciled and pushed both directions on `hyperporn` (`0e1d2e0`), `bobfilez` (`db9cc198e`), `freellm`, and `veilid_reddit_facebook`!
+
+### 3. Build, Pincheck & Control Plane Status
+- **28 Published Root Pointers Staged** with **`pincheck == 0` unpublished** (`STRUCTURAL_MAP.md` `133/134` initialized + `SUBMODULE_DASHBOARD.md` regenerated).
+- **Always-Deploy Verified:** `build.bat` (`4 OK, 0 failed, 1 skipped`) + `start.bat build` (`10 OK, 0 failed`), all `.exe` binaries preserved on disk, Control Center `:2999` + Windows System Tray active at `BelowNormal` priority.
+- **Next Agent Notes:** Keep `HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, and `unitedbeats_site` isolated per sibling-lane protocol; note `freellm` has a pre-existing `tray_windows.go:45: undefined: proxy.RouterEvent` compile item if `freellm` Go work is scheduled next.
+
+## Prior
 # HANDOFF - v5.308.0 - 2026-11-14 - Protocol #299: Repository Sync, Control Center v2.0 & 10/10 Go Builds
 
 ## Session - Protocol #299 (Antigravity handover from Muse `muse-wonder-leader`)

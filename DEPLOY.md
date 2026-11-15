@@ -1,6 +1,6 @@
 # Omni-Workspace Deployment & Maintenance Strategy
 
-*Last Updated: 2026-11-14 (v5.308.0 — Protocol #299)*
+*Last Updated: 2026-11-14 (v5.309.0 — Protocol #300)*
 
 ## 1. Standing Close-Out Policy (Always-Deploy)
 Per owner directive (2026-11-13), every Executive Protocol synchronization pass closes out with full verification and root deployment (`0/0` vs `origin/main`):

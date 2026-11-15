@@ -1,5 +1,5 @@
 # Omni-Workspace Submodule Dashboard
-**Last Updated:** 2026-11-14 17:45:52
+**Last Updated:** 2026-11-14 22:50:16
 
 ## Project Directory Structure Explanation
 This monorepo serves as a unified workspace and orchestrator for dozens of independent microservices, libraries, desktop applications, and AI agents.
@@ -14,14 +14,14 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | Path | Version | Branch | Commit | Date | Message |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | auto_dj_script | N/A | main | 'd6c1ffff' | '2026-11-12' | 'chore: track dirty state (Protocol #281)' |
-| fwber | 2.3.88 | main | '233f623de' | '2026-11-14' | 'feat: real /api/health DB+version check, deploy s... |
-| hymnmania | 5.97.9 | main | 'b7eb0fb29' | '2026-11-14' | 'chore: Protocol #298 build verified - 4 OK, v5.30... |
+| fwber | 2.3.89 | main | '91aa76f16' | '2026-11-14' | 'feat: council governance API, unified hubs, scann... |
+| hymnmania | 5.97.9 | main | 'a98ae149d' | '2026-11-14' | 'fix(tray): use WebClient in tray_controller.ps1 f... |
 | jules-autopilot | 3.7.3 | main | '56d0101' | '2026-11-13' | 'chore: track dirty state (Protocol #286)' |
-| realestatecrm | N/A | main | 'a82bd89' | '2026-11-14' | 'v0.65.0: Universal CRM tenant provisioning, 16-la... |
+| realestatecrm | N/A | main | '5f1a64d' | '2026-11-14' | 'v0.66.0: Dual-mode Stripe/Mercury billing engine,... |
 | skillzhub | v0.1.31 | main | 'c2b8aa2' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | hermes-agent | N/A | main | '166ab639f43' | '2026-10-19' | 'Protocol #261: track docs/config (1 files)' |
 | multimousergy | N/A | netmux-initial-architecture-10413382364036026152 | '70066c3' | '2026-11-05' | 'merge: main into netmux-initial-architecture-1041... |
-| ArrowVortex | v1.3.3 | release | 'd03a5fe' | '2026-11-12' | 'merge origin/release Jules re-pin with local Prot... |
+| ArrowVortex | v1.3.3 | release | 'e774060' | '2026-11-14' | 'chore(submodules): advance odcnn (v2.4.0 +51), dd... |
 | superdawmcp | N/A | jules-5372408556252106821-172735fe | '4736065' | '2026-11-05' | 'merge: main into jules-5372408556252106821-172735... |
 | GWEN | N/A | main | 'd4e2ebc' | '2026-06-24' | 'sync: session 19 add all files and merge branches... |
 | JWildfire | N/A | master | '76e7413' | '2026-10-19' | 'Protocol #261: track agent-memory/sessions, docs/... |
@@ -35,15 +35,15 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | apophysis-j | N/A | main | 'a5b2c74' | '2026-08-04' | 'Merge remote-tracking branch 'remotes/origin/jule... |
 | bg | N/A | master | 'f8e4e4f' | '2026-11-14' | 'v2.1.100: okgame networking ported to SDL3_net (c... |
 | bobbybookmarks | N/A | main | '9fc00275' | '2026-11-12' | 'docs: revise README (honest, current description)... |
-| bobcoin | N/A | main | 'b1d2eb25' | '2026-11-14' | 'chore: track dirty state (Protocol #299)' |
-| bobeditpro | N/A | master | '398d4a7fa9' | '2026-07-21' | 'auto: commit dirty working directory before recon... |
-| bobfilez | N/A | main | '1f5ca762c' | '2026-11-14' | 'chore: track dirty state (Protocol #299)' |
-| bgtk | 1.7.0 | main | '93f50de109' | '2026-11-14' | 'chore: retire root one-off scripts to archive (v1... |
+| bobcoin | N/A | main | '1e0ff408' | '2026-11-14' | 'chore(sync): intelligent merge origin/dependabot/... |
+| bobeditpro | N/A | master | 'bc05bca581' | '2026-08-12' | 'Merge commit '398d4a7fa95c02c386a68e79492f78748cf... |
+| bobfilez | N/A | main | 'db9cc198e' | '2026-11-14' | 'chore(sync): reconcile backup/wip-leader-sync-202... |
+| bgtk | 1.8.0 | main | '657e1a1e85' | '2026-11-14' | 'chore(sync): record reconciled merge of origin/ma... |
 | bobium | N/A | main | '49cd371' | '2026-11-12' | 'docs: revise README (honest, current description)... |
-| bobsaver | N/A | main | 'd9f64838' | '2026-11-14' | 'chore: bump geiss (shadow report cache)' |
+| bobsaver | N/A | main | '8cd1f179' | '2026-11-14' | 'chore(submodule): update JWildfire to published m... |
 | bobsgameonlinejava | N/A | main | '61629d3' | '2026-11-12' | 'merge: origin/feat/test-suite-and-parity-tests-2-... |
-| bobsgameweb | N/A | main | 'af3259fd' | '2026-11-14' | 'feat(dashboard): single Settings & Options surfac... |
-| bobtorrent | 11.60.55 | master | '2d68a45' | '2026-11-14' | 'docs: full-component smoke results (all binaries,... |
+| bobsgameweb | N/A | main | '1779bf03' | '2026-11-14' | 'v3.0.34: Sync bobui v1.2.60, single-source VERSIO... |
+| bobtorrent | 11.60.55 | master | 'adbda2d' | '2026-11-14' | 'chore(submodules): advance element-web (+22 Matri... |
 | bobtrader | N/A | main | '40cd07f' | '2026-11-12' | 'merge: origin/jules-5976562378962147234-48a449c5 ... |
 | bobtrax | N/A | main | '32e04eb' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | bqt | N/A | main | '92bb40654b6' | '2026-11-14' | 'fix(v1.2.60): MeshNode double-start panic and pee... |
@@ -52,46 +52,46 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | bcs | 0.3.32 | master | '598f23352' | '2026-11-14' | 'v0.3.32: declarative/BML build system repaired (c... |
 | crowdsourced_dance_club | N/A | main | 'bfb0bde' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | dao | N/A | main | '3a5f1e4' | '2026-11-12' | 'docs: revise README (honest, current description)... |
-| electricsheep | N/A | main | 'f9450c5' | '2026-11-12' | 'merge: origin/main sync (Protocol #281, local-win... |
+| electricsheep | N/A | main | '5dd8b43' | '2026-11-14' | 'chore(sync): intelligent merge origin/jules-42649... |
 | element-web | N/A | develop | 'a6a90b53dd' | '2026-06-14' | 'chore: regenerate pnpm-lock.yaml with security ov... |
-| marketing_agent | 0.7.4 | main | 'a072548a' | '2026-11-14' | 'release: v0.7.4 — cadence progression fix, unauth... |
+| marketing_agent | 0.7.5 | main | '7bd3c18d' | '2026-11-14' | 'release: v0.7.5 — Gate 2 server-side trial/subscr... |
 | f-zerox | N/A | main | '4b3f564' | '2026-11-12' | 'merge: origin/feat-shiftability-v0.1.26-182880679... |
-| fcdm | N/A | fitness-machine-foundation-15646876857894738390 | '4d47eaa' | '2026-11-12' | 'merge: origin/jules-9983641314289768934-948d1cd3 ... |
+| fcdm | N/A | main | 'c105ce4' | '2026-11-14' | 'chore(sync): intelligent merge origin/main (Proto... |
 | aimoneymachine_site | N/A | main | 'd55e594' | '2026-11-14' | 'build: v1.9.19 linux binary' |
 | geany | N/A | master | '9bec4e3a8' | '2026-11-12' | 'Protocol #284: merge jules-4044387856741810018-1f... |
 | geiss | N/A | main | 'f01bf25' | '2026-11-12' | 'merge: origin/jules-4513212691906134133-a66926f1 ... |
-| hyper | N/A | main | 'bad07c0b' | '2026-08-09' | 'merge: canary branch (accept canary versions)' |
+| hyper | N/A | main | '848f3051' | '2026-11-14' | 'chore(sync): record reconciled merge of jules-173... |
 | hyperharness | 0.5.0-alpha.5 | main | 'c126912e' | '2026-11-13' | 'chore: track dirty state (Protocol #281)' |
-| freellm | N/A | main | '9a8b19a' | '2026-11-12' | 'merge: origin/main sync (Protocol #281, local-win... |
+| freellm | N/A | main | '1f07a2c' | '2026-11-14' | 'chore(sync): reconcile temp-main history-rewrite ... |
 | mcp-superassistant | 0.7.2 | main | '5efe6d1' | '2026-07-13' | 'chore: update refs and clean state' |
-| mk64 | 8.107.5 | master | 'c18fb9932' | '2026-11-05' | 'fix: re-pin submodules to published commits (Jule... |
+| mk64 | 8.107.5 | master | 'e5da85771' | '2026-11-14' | 'chore(upstream): merge upstream/master +6 commits... |
 | native-fy | N/A | main | 'f1b1b72' | '2026-11-12' | 'docs: revise README (honest, current description)... |
-| neverball | 1.6.13-dev | main | '72fea4a9' | '2026-11-12' | 'merge: origin/main sync (Protocol #281, local-win... |
-| npp | 1.0.45 | master | '976def653' | '2026-11-12' | 'docs(vision): preserve Phase 2 SQLite autosave & ... |
+| neverball | 1.6.18-dev | main | '6f928b16' | '2026-11-14' | 'chore(sync): intelligent merge origin/jules-74709... |
+| npp | 1.0.45 | master | 'c363816d6' | '2026-11-14' | 'chore(submodule): advance bgtk to v1.8.0 (Protoco... |
 | odcnn | N/A | master | '288a363' | '2026-06-24' | 'sync: session 19 add all files and merge branches... |
 | onetool-mcp | N/A | main | '59d422d' | '2026-11-05' | 'merge: origin/main sync (Protocol #277, local-win... |
 | openclaw-config | 0.27.1 | main | '5ae3657' | '2026-07-15' | 'Merge branch 'main' of https://github.com/TechNic... |
 | openclaw-dashboard | N/A | main | 'fa8d772' | '2026-11-05' | 'merge: origin/main sync (Protocol #277)' |
 | pi-mono | N/A | main | '9edd4ff01' | '2026-11-12' | 'chore: track dirty state (Protocol #281)' |
-| planet_fitness_stepmaniax_agent | N/A | main | 'c430c9b' | '2026-11-12' | 'docs: revise README (honest, current description)... |
+| planet_fitness_stepmaniax_agent | N/A | main | 'acab0d1' | '2026-11-14' | 'chore(submodules): update fcdm & fitness_center_d... |
 | projectm | N/A | master | '76098fdd8' | '2026-11-12' | 'merge: origin/jules-13978659021516391227-ffb00a99... |
 | psytrance_night_outreach_agent | N/A | main | '9a8cc84' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | slsk_discography_downloader_script | N/A | main | '2c86104' | '2026-11-12' | 'Merge remote-tracking branch 'origin/main'' |
-| sm64coopdx | N/A | main | 'f3fb4db6a' | '2026-11-12' | 'merge: origin/jules-mmo-features-9604862245014919... |
+| sm64coopdx | N/A | main | '30ab27080' | '2026-11-14' | 'chore(sync): intelligent merge origin/feature/con... |
 | supersaber | N/A | main | '04014d5' | '2026-11-12' | 'merge: origin/jules-16182655854796579706-5da02c01... |
-| tabby | N/A | main | '05e242e1' | '2026-07-14' | 'chore: sync pending changes' |
+| tabby | N/A | main | '567b7a2d' | '2026-11-14' | 'chore(sync): merge origin/main into main (Protoco... |
 | timidity | N/A | cvs | 'eff3cbe' | '2026-10-22' | 'docs: rewrite README from full repo analysis' |
 | topaz-ffmpeg | N/A | master | 'eaa1762ca4' | '2026-07-21' | 'added extra options' |
-| HyperNexus | 1.0.72 | main | '2527988749' | '2026-11-14' | 'perf(memory,repograph): batch heat updates + scop... |
-| veilid_reddit_facebook | N/A | main | '92415d6' | '2026-11-12' | 'merge: origin/main sync (Protocol #281, local-win... |
-| warp | N/A | main | '25d5572' | '2026-06-14' | 'chore: add gitignore for .pi/ agent cache, add ne... |
+| HyperNexus | 1.0.73 | main | 'ba0550465d' | '2026-11-14' | 'chore(cdp): pin canonical Muse coordination threa... |
+| veilid_reddit_facebook | N/A | main | 'a7dd72a' | '2026-11-14' | 'chore(sync): reconcile jules-scaffold-0.1.0-18345... |
+| warp | N/A | main | '0b796c4' | '2026-11-14' | 'chore(sync): intelligent merge origin/warp-rebuil... |
 | vst_monster | N/A | jules-vst-monster-init-0.1.0-9631431859280147761 | 'c0c806e' | '2026-11-12' | 'merge: origin/vst-monster-dashboard-v0.2.2-174712... |
 | xrnet | N/A | main | '6c53739' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | bobmani | N/A | main | '7b3b375' | '2026-11-14' | 'feat(build): unified Rust+Go+TS verification with... |
 | MilkDrop3_fix | N/A | main | '254704a' | '2026-11-07' | 'merge: origin/main sync (Executive Protocol leade... |
 | bg_fix | N/A | master | 'f8e4e4f' | '2026-11-14' | 'v2.1.100: okgame networking ported to SDL3_net (c... |
-| bobfilez_fix | N/A | main | 'd44b20d4' | '2026-11-14' | 'feat: bobfilez v6.5.4 classify provider live (pre... |
-| bobsaver_fix | N/A | main | 'd9f64838' | '2026-11-14' | 'chore: bump geiss (shadow report cache)' |
+| bobfilez_fix | N/A | main | 'db9cc198' | '2026-11-14' | 'chore(sync): reconcile backup/wip-leader-sync-202... |
+| bobsaver_fix | N/A | main | '8cd1f179' | '2026-11-14' | 'chore(submodule): update JWildfire to published m... |
 | bobsgameonlinejava_fix | N/A | main | '61629d3' | '2026-11-12' | 'merge: origin/feat/test-suite-and-parity-tests-2-... |
 | browser-use | N/A | main | 'cacead571' | '2026-10-19' | 'Protocol #261: track agent-memory/sessions, docs/... |
 | bobmani/Simply-Love-SM5 | N/A | itgmania-release | '06a56f5f' | '2026-06-06' | 'Merge remote-tracking branch 'upstream/itgmania-b... |
@@ -112,7 +112,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | libjruntime | N/A | main | '05edb61' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | grammars-v4 | N/A | master | '504c4d9d' | '2026-10-19' | 'Protocol #261: track docs/config (1 files)' |
 | tokdiet | N/A | main | '5c4f57e' | '2026-06-23' | 'Increase undici request timeout to 900s for long-... |
-| stepmania | N/A | main | '9b5e6fc' | '2026-10-22' | 'docs: rewrite README from full repo analysis' |
+| stepmania | N/A | main | '6a05854' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | jvm-cpp-runtime | N/A | main | '24b7be0' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | okgame | N/A | main | '7b4102a20' | '2026-11-14' | 'feat(net): port networking from SDL2_net to SDL3_... |
 | muse | N/A | master | 'fe5e92ed' | '2026-04-14' | 'chore: save local progress before sync' |
@@ -124,7 +124,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | TurntUpToddler | 5.41.0 | main | 'd269bb8d' | '2026-08-09' | 'chore: version 5.41.0 — Suno pipeline, Kling, You... |
 | ksm-v2 | 2.0.0-alpha33 | master | 'b8ac26e4' | '2026-11-12' | 'merge: origin/master sync (Protocol #281, local-w... |
 | HyperNexus2old | 1.0.5 | main | 'd8c4b2f39' | '2026-09-30' | 'merge: origin/main -- integrate 4 remote commits ... |
-| hyperporn | N/A | main | '792a0f5' | '2026-11-12' | 'chore: track dirty state (Protocol #281)' |
+| hyperporn | 1.1.0 | main | '0e1d2e0' | '2026-11-14' | 'chore(sync): reconcile backup/wip-leader-sync-202... |
 | foone_datetime_short | N/A | main | '0979cbc' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | bob_and_lum_sitcom | N/A | main | '7e6991d' | '2026-11-14' | 'Release v1.7.3: port 14 scripts off Downloads pat... |
 | gods-eye-view | N/A | main | 'a6a6c446' | '2026-11-12' | 'merge: origin/jules-sovereign-governance-v0.2.0-3... |
@@ -142,7 +142,7 @@ This monorepo serves as a unified workspace and orchestrator for dozens of indep
 | sales_bot | N/A | main | 'd1b494d' | '2026-11-12' | 'Merge remote-tracking branch 'origin/main'' |
 | borg | N/A | main | '0af9a54' | '2026-11-12' | 'docs: revise README (honest, current description)... |
 | Folderum3-The-Last-Attempt | N/A | main | '2541eb1' | '2026-09-12' | 'Add files via upload' |
-| CodeWhale-Extensions | N/A | main | '8de05852' | '2026-11-12' | 'Protocol #284: merge origin/test/release-base-url... |
+| CodeWhale-Extensions | N/A | main | '72f4cfb3' | '2026-11-14' | 'chore(sync): merge origin/feat/extension-api (Pro... |
 | DataStreamBrowser | N/A | master | '70235cc' | '2026-03-01' | 'chore: save progress before update' |
 | ADSFileSystem | N/A | master | '5ab73c6' | '2026-02-26' | 'chore: save progress before update' |
 | unitedbeats_hypernexus_gtm | N/A | main | 'e7109f6' | '2026-11-13' | 'docs: seed HyperNexus 30-day B2B GTM plan v0.1.0' |
