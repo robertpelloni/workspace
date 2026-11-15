@@ -486,17 +486,30 @@ function parseSubmodulesFast() {
         }
 
         // Also recognize hymnmania junction to bobmani/hymnmania when top-level dir lacks direct .git
+        let resolvedAbsPath = absPath;
         let resolvedGit = { branch, sha };
         if (resolvedGit.branch === 'uninitialized' && subPath === 'hymnmania') {
             const junctionTarget = path.join(WORKSPACE_ROOT, 'bobmani', 'hymnmania');
-            if (fs.existsSync(junctionTarget)) resolvedGit = readGitHeadFast(junctionTarget);
+            if (fs.existsSync(junctionTarget)) {
+                resolvedAbsPath = junctionTarget;
+                resolvedGit = readGitHeadFast(junctionTarget);
+            }
         }
         const div = gitDivergenceCache.get(subPath) || null;
+        let nestedCount = 0;
+        const nestedGmPath = path.join(resolvedAbsPath, '.gitmodules');
+        if (resolvedGit.branch !== 'uninitialized' && fs.existsSync(nestedGmPath)) {
+            try {
+                const ngmRaw = fs.readFileSync(nestedGmPath, 'utf8');
+                const matches = ngmRaw.match(/\[submodule\s+"[^"]+"\]/g);
+                nestedCount = matches ? matches.length : 0;
+            } catch {}
+        }
 
         subs.push({
             name,
             path: subPath,
-            absPath,
+            absPath: resolvedAbsPath,
             url,
             owner: ownerRaw,
             isOwned,
@@ -510,6 +523,7 @@ function parseSubmodulesFast() {
             originRef: div ? div.originRef : null,
             actionableBranches: div ? div.actionableBranches : null,
             actionableSample: div ? div.actionableSample : [],
+            nestedCount,
             version,
             category: categorizeProject(subPath)
         });
@@ -653,7 +667,7 @@ app.get('/api/overview', async (req, res) => {
 
     res.json({
         version,
-        controlCenterVersion: '2.2.0',
+        controlCenterVersion: '2.3.0',
         branch: rootGit.branch,
         sha: rootGit.sha,
         workspaceRoot: WORKSPACE_ROOT,
@@ -661,6 +675,7 @@ app.get('/api/overview', async (req, res) => {
         priority: 'BelowNormal',
         submodulesTotal: submodules.length,
         submodulesInitialized: initializedCount,
+        submodulesNestedTotal: submodules.reduce((acc, s) => acc + (s.nestedCount || 0), 0),
         submodulesPinDrifted: submodules.filter((s) => s.pinSynced === false).length,
         submodulesDiverged: submodules.filter((s) => (s.ahead || 0) > 0 || (s.behind || 0) > 0).length,
         divergenceScan: divergenceScanState,
@@ -758,6 +773,163 @@ app.post('/api/submodules/refresh-divergence', (req, res) => {
     res.json({ ok: true, state: divergenceScanState });
 });
 
+async function getRepoSubmodulePinsAsync(repoDir) {
+    const pinMap = new Map();
+    const out = await execGitAsync(repoDir, ['ls-tree', 'HEAD'], 3000);
+    if (!out.ok || !out.stdout) return pinMap;
+    for (const line of out.stdout.split(/\r?\n/)) {
+        if (!line.startsWith('160000 ')) continue;
+        const tabIdx = line.indexOf('\t');
+        if (tabIdx === -1) continue;
+        const sha = line.slice(0, tabIdx).split(/\s+/)[2] || '';
+        const subPath = line.slice(tabIdx + 1).trim();
+        if (sha && subPath) pinMap.set(subPath, sha.slice(0, 8));
+    }
+    return pinMap;
+}
+
+app.get('/api/submodules/nested', async (req, res) => {
+    const targetRel = String(req.query.path || '').trim();
+    const rootSubs = parseSubmodulesFast();
+    const rootSub = rootSubs.find((s) => s.path === targetRel);
+    if (!rootSub) {
+        return res.status(404).json({ error: 'Root submodule not found' });
+    }
+
+    const items = [];
+    const visited = new Set();
+    const maxDepth = 4;
+
+    async function walkNested(parentAbs, relPrefix, depth) {
+        if (depth > maxDepth || !fs.existsSync(parentAbs)) return;
+        let realParent = parentAbs;
+        try { realParent = fs.realpathSync(parentAbs); } catch {}
+        const visitKey = `${realParent.toLowerCase()}::${depth}`;
+        if (visited.has(visitKey)) return;
+        visited.add(visitKey);
+
+        const gmPath = path.join(parentAbs, '.gitmodules');
+        if (!fs.existsSync(gmPath)) return;
+        let raw = '';
+        try { raw = fs.readFileSync(gmPath, 'utf8'); } catch { return; }
+        const pinMap = await getRepoSubmodulePinsAsync(parentAbs);
+        const blocks = raw.split(/\[submodule\s+"([^"]+)"\]/g);
+
+        for (let i = 1; i < blocks.length; i += 2) {
+            const name = blocks[i];
+            const body = blocks[i + 1] || '';
+            const pMatch = body.match(/^\s*path\s*=\s*(.+)$/m);
+            const uMatch = body.match(/^\s*url\s*=\s*(.+)$/m);
+            const childRel = pMatch ? pMatch[1].trim() : name;
+            const url = uMatch ? uMatch[1].trim() : '';
+            const childAbs = path.join(parentAbs, childRel);
+            const displayPath = relPrefix ? `${relPrefix}/${childRel}` : childRel;
+            const ownerRaw = (url.split('/')[3] || 'external').replace(/\.git$/i, '');
+            const isOwned = OWNED_ORGS.has(ownerRaw.toLowerCase());
+            const gitInfo = readGitHeadFast(childAbs);
+            const pinnedSha = pinMap.get(childRel) || '—';
+            const initialized = gitInfo.branch !== 'uninitialized';
+
+            const entry = {
+                name,
+                path: displayPath,
+                childRel,
+                absPath: childAbs,
+                depth,
+                url,
+                owner: ownerRaw,
+                isOwned,
+                branch: gitInfo.branch,
+                sha: gitInfo.sha,
+                pinnedSha,
+                pinSynced: initialized && pinnedSha !== '—' ? gitInfo.sha === pinnedSha : null,
+                initialized,
+                ahead: null,
+                behind: null,
+                originRef: null,
+                actionableBranches: 0,
+                actionableSample: []
+            };
+            items.push(entry);
+
+            if (initialized && items.length < 260) {
+                // eslint-disable-next-line no-await-in-loop
+                await walkNested(childAbs, displayPath, depth + 1);
+            }
+        }
+    }
+
+    await walkNested(rootSub.absPath, '', 1);
+
+    // Run bounded parallel divergence & unmerged-branch scan across initialized nested repos (up to 72 per request)
+    const initQueue = items.filter((it) => it.initialized).slice(0, 72);
+    let qIdx = 0;
+    const workers = Array.from({ length: 8 }, async () => {
+        while (qIdx < initQueue.length) {
+            const cur = initQueue[qIdx];
+            qIdx += 1;
+            const cands = [];
+            if (cur.branch && cur.branch !== 'detached' && cur.branch !== 'unknown') {
+                cands.push(`origin/${cur.branch}`);
+            }
+            for (const fb of ['origin/main', 'origin/master', 'origin/develop', 'origin/release']) {
+                if (!cands.includes(fb)) cands.push(fb);
+            }
+            for (const ref of cands) {
+                // eslint-disable-next-line no-await-in-loop
+                const lr = await execGitAsync(cur.absPath, ['rev-list', '--left-right', '--count', `${ref}...HEAD`], 3000);
+                if (lr.ok && lr.stdout) {
+                    const pts = lr.stdout.split(/\s+/);
+                    if (pts.length === 2) {
+                        cur.behind = parseInt(pts[0], 10) || 0;
+                        cur.ahead = parseInt(pts[1], 10) || 0;
+                        cur.originRef = ref;
+                        break;
+                    }
+                }
+            }
+            if (cur.isOwned) {
+                // eslint-disable-next-line no-await-in-loop
+                const um = await execGitAsync(
+                    cur.absPath,
+                    ['for-each-ref', '--format=%(refname:short)|%(authorname)|%(authoremail)', '--no-merged=HEAD', 'refs/remotes/origin/'],
+                    3000
+                );
+                if (um.ok && um.stdout) {
+                    const matched = [];
+                    for (const ln of um.stdout.split(/\r?\n/)) {
+                        const [bRaw, aName = '', aMail = ''] = ln.split('|');
+                        const b = (bRaw || '').trim();
+                        if (!b || b === 'origin/HEAD' || b === 'origin' || b === cur.originRef || b === 'origin/gh-pages') continue;
+                        if (b.includes('dependabot/') || b.startsWith('origin/upstream/')) continue;
+                        if (ACTIONABLE_BRANCH_RE.test(b) || OWNED_AUTHOR_RE.test(`${aName} ${aMail}`)) {
+                            matched.push(b.replace(/^origin\//, ''));
+                        }
+                    }
+                    cur.actionableBranches = matched.length;
+                    cur.actionableSample = matched.slice(0, 5);
+                }
+            }
+        }
+    });
+    await Promise.all(workers);
+
+    return res.json({
+        parent: {
+            path: rootSub.path,
+            branch: rootSub.branch,
+            sha: rootSub.sha,
+            owner: rootSub.owner,
+            url: rootSub.url
+        },
+        totalNested: items.length,
+        initializedNested: items.filter((i) => i.initialized).length,
+        divergedNested: items.filter((i) => (i.ahead || 0) > 0 || (i.behind || 0) > 0).length,
+        driftedNested: items.filter((i) => i.pinSynced === false).length,
+        items
+    });
+});
+
 app.get('/api/session-bus', async (req, res) => {
     const includeTests = req.query.includeTests === '1';
     const hnBase = (process.env.HYPERNEXUS_URL || 'http://127.0.0.1:7778').replace(/\/$/, '');
@@ -815,6 +987,59 @@ app.post('/api/session-bus/send', async (req, res) => {
         return res.status(502).json({ error: 'HyperNexus :7778 scratchpad unreachable' });
     }
     return res.json({ ok: true, msg: msgId, record });
+});
+
+app.get('/api/session-bus/handover', async (req, res) => {
+    const hnBase = (process.env.HYPERNEXUS_URL || 'http://127.0.0.1:7778').replace(/\/$/, '');
+    const payload = await fetchJsonLocal(`${hnBase}/api/memory/scratchpad/get`, 1500);
+    const map = (payload && (payload.scratchpad || (payload.data && payload.data.scratchpad))) || {};
+    let latest = null;
+    if (typeof map['bus:ledger:latest'] === 'string') {
+        try { latest = JSON.parse(map['bus:ledger:latest']); } catch {}
+    }
+    res.json({ online: Boolean(payload), ledger: latest });
+});
+
+app.post('/api/session-bus/handover', async (req, res) => {
+    const { from = 'control-center-ui', reason = 'CHECKPOINT', note = '' } = req.body || {};
+    let version = 'unknown';
+    try { version = fs.readFileSync(path.join(WORKSPACE_ROOT, 'VERSION'), 'utf8').trim(); } catch {}
+    const rootGit = readGitHeadFast(WORKSPACE_ROOT);
+    const subs = parseSubmodulesFast();
+    const goStates = await getGoServiceStates();
+    const ledger = {
+        kind: 'HANDOVER_LEDGER',
+        from: String(from).trim() || 'control-center-ui',
+        reason: String(reason).trim() || 'CHECKPOINT',
+        version,
+        controlCenterVersion: '2.3.0',
+        rootBranch: rootGit.branch,
+        rootSha: rootGit.sha,
+        submodulesInitialized: subs.filter((s) => s.branch !== 'uninitialized').length,
+        submodulesTotal: subs.length,
+        submodulesNestedTotal: subs.reduce((acc, s) => acc + (s.nestedCount || 0), 0),
+        submodulesPinDrifted: subs.filter((s) => s.pinSynced === false).length,
+        goServicesBuilt: goStates.filter((g) => g.built).length,
+        goServicesTotal: goStates.length,
+        note: String(note || '').trim(),
+        ts: Date.now(),
+        isoTime: new Date().toISOString()
+    };
+
+    const hnBase = (process.env.HYPERNEXUS_URL || 'http://127.0.0.1:7778').replace(/\/$/, '');
+    const msgId = `bm-${Date.now().toString(36)}`;
+    const text = `[HANDOVER_${ledger.reason}] ${ledger.version} @ ${ledger.rootSha} (${ledger.submodulesInitialized}/${ledger.submodulesTotal} root + ${ledger.submodulesNestedTotal} nested submodules, ${ledger.goServicesBuilt}/${ledger.goServicesTotal} Go built, ${ledger.submodulesPinDrifted} drifted pins)${ledger.note ? ' — ' + ledger.note : ''}`;
+    const [rLedger, rMsg] = await Promise.all([
+        postJsonLocal(`${hnBase}/api/memory/scratchpad/set`, { key: 'bus:ledger:latest', value: JSON.stringify(ledger) }, 3000),
+        postJsonLocal(`${hnBase}/api/memory/scratchpad/set`, {
+            key: `bus:msg:${msgId}`,
+            value: JSON.stringify({ msg: msgId, from: ledger.from, to: '*', text, ts: ledger.ts })
+        }, 3000)
+    ]);
+    if (rLedger.status !== 200 || rMsg.status !== 200) {
+        return res.status(502).json({ error: 'HyperNexus :7778 scratchpad unreachable' });
+    }
+    return res.json({ ok: true, msg: msgId, ledger });
 });
 
 app.get('/api/docs/:doc', (req, res) => {
@@ -980,7 +1205,7 @@ app.post('/api/shutdown', (req, res) => {
 });
 
 const server = app.listen(PORT, () => {
-    console.log(`Omni-Workspace Control Center v2.2.0 running at http://localhost:${PORT} (Priority: BelowNormal)`);
+    console.log(`Omni-Workspace Control Center v2.3.0 running at http://localhost:${PORT} (Priority: BelowNormal)`);
     setTimeout(() => { refreshGitDivergenceSnapshot(); }, 1200);
     const divTimer = setInterval(() => { refreshGitDivergenceSnapshot(); }, 90000);
     if (typeof divTimer.unref === 'function') divTimer.unref();

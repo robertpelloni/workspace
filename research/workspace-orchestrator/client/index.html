@@ -52,8 +52,8 @@
                 <div class="flex flex-wrap items-center gap-2.5">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                     <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Omni-Workspace Control Center</h1>
-                    <span id="hdr-version" class="mono text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">v5.311.0</span>
-                    <span id="hdr-cc-ver" class="mono text-[11px] px-2.5 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/30">CC v2.2.0</span>
+                    <span id="hdr-version" class="mono text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">v5.312.0</span>
+                    <span id="hdr-cc-ver" class="mono text-[11px] px-2.5 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/30">CC v2.3.0</span>
                     <span id="hdr-git" class="mono text-xs px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">main @ —</span>
                     <span class="mono text-[11px] px-2.5 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center">
                         CPU: BelowNormal
@@ -158,6 +158,7 @@
                 <input id="bus-to" type="text" value="*" placeholder="To (* or session-id)" class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs mono text-slate-200 w-full sm:w-40 focus:outline-none focus:border-indigo-500">
                 <input id="bus-text" type="text" placeholder="Broadcast coordination note to all harnesses on :7778 session-bus..." class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-white flex-1 focus:outline-none focus:border-indigo-500">
                 <button type="submit" class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white">Post to Bus</button>
+                <button type="button" onclick="emitHandoverSnapshot()" title="Write structured HANDOVER_LEDGER to bus:ledger:latest and broadcast snapshot on :7778" class="px-3 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/35 text-amber-200 border border-amber-500/35 text-xs font-semibold whitespace-nowrap">Emit Handover</button>
             </form>
         </section>
 
@@ -231,6 +232,7 @@
                     <select id="sub-owner" onchange="renderSubmodules()" title="Filter submodules by GitHub repository owner, divergence, or pin alignment" class="px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
                         <option value="ALL">All Submodules</option>
                         <option value="owned">Owned (robertpelloni + Orgs)</option>
+                        <option value="nested">Has Nested Submodules (&gt;0)</option>
                         <option value="diverged">Ahead / Behind Origin (+N / -M)</option>
                         <option value="branches">Actionable Feature Branches (&gt;0)</option>
                         <option value="drifted">Drifted vs Root Pin</option>
@@ -278,6 +280,36 @@
 
     </div>
 
+    <!-- NESTED SUBMODULE DEEP DRILL-DOWN MODAL (v2.3.0) -->
+    <div id="nested-modal" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4 md:p-6">
+        <div class="bg-slate-900 w-full max-w-6xl max-h-[84vh] rounded-2xl border border-slate-700 flex flex-col shadow-2xl">
+            <div class="p-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-3">
+                <div>
+                    <h3 id="nested-title" class="font-bold text-sm md:text-base text-white mono">Nested Submodule Drill-Down</h3>
+                    <p id="nested-subtitle" class="text-xs text-slate-400 mt-0.5">Recursive .gitmodules inspection across nested layers</p>
+                </div>
+                <button onclick="closeNestedDrawer()" class="px-3 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-200 font-semibold">Close</button>
+            </div>
+            <div class="overflow-auto flex-1 p-4">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-slate-950/90 text-slate-400 sticky top-0">
+                        <tr>
+                            <th class="py-2 px-2.5 font-semibold">Depth</th>
+                            <th class="py-2 px-2.5 font-semibold">Nested Path</th>
+                            <th class="py-2 px-2.5 font-semibold">Owner</th>
+                            <th class="py-2 px-2.5 font-semibold">Branch</th>
+                            <th class="py-2 px-2.5 font-semibold">HEAD</th>
+                            <th class="py-2 px-2.5 font-semibold">Parent Pin</th>
+                            <th class="py-2 px-2.5 font-semibold">Origin / Branches</th>
+                            <th class="py-2 px-2.5 font-semibold text-right">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="nested-tbody" class="divide-y divide-slate-800/70"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <!-- LIVE STDOUT/STDERR LOG MODAL -->
     <div id="log-modal" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-6">
         <div class="bg-slate-900 w-full max-w-4xl h-[78vh] rounded-2xl border border-slate-700 flex flex-col shadow-2xl">
@@ -319,7 +351,7 @@
             document.getElementById('kpi-go').textContent = `${d.goServicesRunning} / ${d.goServicesTotal}`;
             document.getElementById('kpi-go-built').textContent = `${d.goServicesBuilt} / ${d.goServicesTotal} binaries compiled on disk`;
             document.getElementById('kpi-subs').textContent = d.submodulesTotal;
-            document.getElementById('kpi-subs-init').textContent = `${d.submodulesInitialized} initialized locally`;
+            document.getElementById('kpi-subs-init').textContent = `${d.submodulesInitialized} init · ${d.submodulesNestedTotal ?? '—'} direct nested`;
             document.getElementById('kpi-procs').textContent = d.managedProcessesRunning;
             document.getElementById('kpi-updated').textContent = `Last poll: ${new Date().toLocaleTimeString()}`;
 
@@ -423,20 +455,28 @@
                     </span>
                 `).join('');
 
-                msgWrap.innerHTML = d.messages.length ? d.messages.map((m) => `
-                    <div class="rounded-xl p-3 bg-slate-900/75 border border-slate-800 text-xs space-y-1">
+                msgWrap.innerHTML = d.messages.length ? d.messages.map((m) => {
+                    const txt = String(m.text || '');
+                    const isHandover = /\[HANDOVER/i.test(txt);
+                    const isProtocol = /\[Protocol #\d+/i.test(txt);
+                    const cardBorder = isHandover ? 'border-amber-500/45 bg-amber-950/20' : (isProtocol ? 'border-emerald-500/35 bg-slate-900/85' : 'border-slate-800 bg-slate-900/75');
+                    return `
+                    <div class="rounded-xl p-3 border ${cardBorder} text-xs space-y-1">
                         <div class="flex flex-wrap items-center justify-between gap-2 mono text-[11px]">
-                            <div>
+                            <div class="flex items-center gap-1.5">
                                 <span class="text-indigo-300 font-semibold">${esc(m.from)}</span>
                                 <span class="text-slate-500">→</span>
                                 <span class="text-emerald-300">${esc(m.to || '*')}</span>
-                                <span class="text-slate-600 ml-1.5">${esc(m.msg || '')}</span>
+                                ${isHandover ? '<span class="px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[10px]">HANDOVER</span>' : ''}
+                                ${isProtocol ? '<span class="px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px]">PROTOCOL</span>' : ''}
+                                <span class="text-slate-600">${esc(m.msg || '')}</span>
                             </div>
                             <span class="text-slate-500">${m.ts ? new Date(m.ts).toLocaleString() : ''}</span>
                         </div>
-                        <div class="text-slate-200 leading-relaxed break-words">${esc(m.text || '')}</div>
+                        <div class="text-slate-200 leading-relaxed break-words">${esc(txt)}</div>
                     </div>
-                `).join('') : '<div class="text-xs text-slate-500">No coordination messages matching filter.</div>';
+                    `;
+                }).join('') : '<div class="text-xs text-slate-500">No coordination messages matching filter.</div>';
             } catch {}
         }
 
@@ -452,6 +492,17 @@
                 body: JSON.stringify({ from: 'robert-control-center', to: toEl.value || '*', text })
             });
             textEl.value = '';
+            await loadSessionBus();
+        }
+
+        async function emitHandoverSnapshot() {
+            const note = (document.getElementById('bus-text').value || '').trim();
+            await fetch(`${API}/session-bus/handover`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ from: 'robert-control-center', reason: 'CHECKPOINT', note })
+            });
+            document.getElementById('bus-text').value = '';
             await loadSessionBus();
         }
 
@@ -533,6 +584,7 @@
             const ownerFilter = document.getElementById('sub-owner').value;
             const rows = allSubmodules.filter((s) => {
                 if (ownerFilter === 'owned' && !s.isOwned) return false;
+                if (ownerFilter === 'nested' && !((s.nestedCount || 0) > 0)) return false;
                 if (ownerFilter === 'external' && s.isOwned) return false;
                 if (ownerFilter === 'drifted' && (s.pinSynced !== false)) return false;
                 if (ownerFilter === 'diverged' && !((s.ahead || 0) > 0 || (s.behind || 0) > 0)) return false;
@@ -544,6 +596,7 @@
             const tbody = document.getElementById('sub-tbody');
             tbody.innerHTML = rows.map((s) => {
                 const safeAbs = s.absPath.replace(/\\/g, '\\\\');
+                const safeSubPath = s.path.replace(/'/g, "\\'");
                 const branchBadge = s.branch === 'detached'
                     ? 'bg-amber-500/15 text-amber-300 border-amber-500/30'
                     : (s.branch === 'uninitialized' ? 'bg-slate-800 text-slate-500 border-slate-700' : 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30');
@@ -563,9 +616,12 @@
                         : '';
                     divHtml = syncPill + brPill;
                 }
+                const nestedBadge = (s.nestedCount && s.nestedCount > 0)
+                    ? ` <button onclick="openNestedDrawer('${safeSubPath}')" title="Inspect ${s.nestedCount} nested submodules recursively" class="ml-1.5 px-1.5 py-0.5 rounded bg-violet-500/20 hover:bg-violet-500/40 text-violet-200 border border-violet-500/35 text-[10px] mono font-semibold">${s.nestedCount} nested</button>`
+                    : '';
                 return `
                 <tr class="hover:bg-slate-800/45">
-                    <td class="py-2 px-3 font-medium text-white mono">${esc(s.path)}</td>
+                    <td class="py-2 px-3 font-medium text-white mono">${esc(s.path)}${nestedBadge}</td>
                     <td class="py-2 px-3 text-slate-400">${esc(s.category)}</td>
                     <td class="py-2 px-3 mono ${s.isOwned ? 'text-indigo-300' : 'text-slate-400'}">${esc(s.owner)}</td>
                     <td class="py-2 px-3"><span class="mono text-[11px] px-2 py-0.5 rounded border ${branchBadge}">${esc(s.branch)}</span></td>
@@ -573,13 +629,75 @@
                     <td class="py-2 px-3">${pinBadge}</td>
                     <td class="py-2 px-3 whitespace-nowrap">${divHtml}</td>
                     <td class="py-2 px-3 mono text-slate-400">${esc(s.version)}</td>
-                    <td class="py-2 px-3 text-right space-x-1.5">
+                    <td class="py-2 px-3 text-right space-x-1.5 whitespace-nowrap">
+                        ${(s.nestedCount && s.nestedCount > 0) ? `<button onclick="openNestedDrawer('${safeSubPath}')" class="px-2 py-0.5 rounded bg-violet-600/35 hover:bg-violet-600 text-violet-100">Drill-Down</button>` : ''}
                         ${s.url ? `<a href="${esc(s.url.replace(/\.git$/, ''))}" target="_blank" class="px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">GitHub</a>` : ''}
                         <button onclick="openFolder('${safeAbs}')" class="px-2 py-0.5 rounded bg-indigo-600/30 hover:bg-indigo-600 text-indigo-200">Folder</button>
                     </td>
                 </tr>
                 `;
             }).join('');
+        }
+
+        async function openNestedDrawer(subPath) {
+            const modal = document.getElementById('nested-modal');
+            const title = document.getElementById('nested-title');
+            const sub = document.getElementById('nested-subtitle');
+            const tbody = document.getElementById('nested-tbody');
+            title.textContent = `Nested Submodule Drill-Down — ${subPath}`;
+            sub.textContent = 'Scanning recursive .gitmodules and origin divergence...';
+            tbody.innerHTML = '<tr><td colspan="8" class="py-6 text-center text-slate-400 mono">Scanning nested submodule tree...</td></tr>';
+            modal.classList.remove('hidden');
+
+            try {
+                const res = await fetch(`${API}/submodules/nested?path=${encodeURIComponent(subPath)}`);
+                const d = await res.json();
+                if (!res.ok) {
+                    sub.textContent = d.error || 'Failed to inspect nested submodules';
+                    tbody.innerHTML = '';
+                    return;
+                }
+                sub.textContent = `${d.initializedNested} / ${d.totalNested} initialized recursively · ${d.divergedNested} diverged vs origin · ${d.driftedNested} drifted vs parent pin`;
+                tbody.innerHTML = (d.items || []).map((it) => {
+                    const safeAbs = (it.absPath || '').replace(/\\/g, '\\\\');
+                    const pinHtml = it.pinSynced === true
+                        ? '<span class="mono text-[10px] px-1.5 py-0.5 rounded border bg-emerald-500/15 text-emerald-300 border-emerald-500/30">PINNED</span>'
+                        : (it.pinSynced === false
+                            ? `<span class="mono text-[10px] px-1.5 py-0.5 rounded border bg-amber-500/15 text-amber-300 border-amber-500/30">DRIFT (${esc(it.pinnedSha)})</span>`
+                            : `<span class="mono text-[10px] text-slate-500">${esc(it.pinnedSha)}</span>`);
+                    let divHtml = '<span class="mono text-[10px] text-slate-500">—</span>';
+                    if (it.ahead !== null && it.behind !== null) {
+                        const syncPill = (it.ahead === 0 && it.behind === 0)
+                            ? `<span class="mono text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400" title="0/0 vs ${esc(it.originRef || 'origin')}">0/0</span>`
+                            : `<span class="mono text-[10px] px-1.5 py-0.5 rounded border ${(it.behind > 0) ? 'bg-amber-500/15 text-amber-300 border-amber-500/30' : 'bg-sky-500/15 text-sky-300 border-sky-500/30'}" title="vs ${esc(it.originRef || 'origin')}">+${it.ahead}/-${it.behind}</span>`;
+                        const brPill = (it.actionableBranches && it.actionableBranches > 0)
+                            ? ` <span class="mono text-[10px] px-1.5 py-0.5 rounded border bg-indigo-500/20 text-indigo-200 border-indigo-500/35" title="${esc((it.actionableSample || []).join(', '))}">${it.actionableBranches} br</span>`
+                            : '';
+                        divHtml = syncPill + brPill;
+                    }
+                    return `
+                    <tr class="hover:bg-slate-800/45">
+                        <td class="py-2 px-2.5 mono text-violet-300">L${it.depth}</td>
+                        <td class="py-2 px-2.5 mono text-white">${esc(it.path)}</td>
+                        <td class="py-2 px-2.5 mono ${it.isOwned ? 'text-indigo-300' : 'text-slate-400'}">${esc(it.owner)}</td>
+                        <td class="py-2 px-2.5 mono text-slate-200">${esc(it.branch)}</td>
+                        <td class="py-2 px-2.5 mono text-slate-300">${esc(it.sha)}</td>
+                        <td class="py-2 px-2.5">${pinHtml}</td>
+                        <td class="py-2 px-2.5 whitespace-nowrap">${divHtml}</td>
+                        <td class="py-2 px-2.5 text-right space-x-1 whitespace-nowrap">
+                            ${it.url ? `<a href="${esc(it.url.replace(/\.git$/, ''))}" target="_blank" class="px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">GitHub</a>` : ''}
+                            ${it.initialized ? `<button onclick="openFolder('${safeAbs}')" class="px-2 py-0.5 rounded bg-indigo-600/30 hover:bg-indigo-600 text-indigo-200">Folder</button>` : ''}
+                        </td>
+                    </tr>
+                    `;
+                }).join('');
+            } catch (e) {
+                sub.textContent = 'Error inspecting nested submodules: ' + e.message;
+            }
+        }
+
+        function closeNestedDrawer() {
+            document.getElementById('nested-modal').classList.add('hidden');
         }
 
         function renderDocTabs() {

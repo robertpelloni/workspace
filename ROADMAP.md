@@ -1,6 +1,8 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.312.0)
+## Current Status (v5.313.0)
+
+**Protocol #304 (2026-11-15):** Upgraded Consolidated Workspace Control Center (`:2999`) + Windows System Tray to **`v2.3.0`** with a recursive **Nested Submodule Deep Drill-Down Drawer** (`GET /api/submodules/nested?path=<subPath>`, `870` direct nested declarations, depth `L1`–`L4` async divergence & parent-pin drift inspection) and **Quota-Resilient Multi-Harness Handover Ledger** (`GET/POST /api/session-bus/handover` on `:7778`); discovered and repaired `--single-branch` `remote.origin.fetch` refspecs across **24 owned `robertpelloni` submodules**, harvesting & pushing stranded Jules/feature branches across **`bg` (+121 -> `5cdc4d46`) & `bg_fix`, `multimousergy` (+44 -> `6980001b3f`), `muse` (+43), `mk64`, `hermes-agent` (`ccb236f9f2a` +24) (+26 -> `b7142bee54`), `jvm-cpp-runtime` (+24 -> `0b78839`), `superdawmcp` (+20 -> `47dc2ed36b`), `okgame` (+16 -> `c6fdb3aac7`), `bobsgameonline` (+8 -> `d97b30a`), `libjruntime` (+4 -> `9e5d241`), and `bobeditpro` (+2 -> `a04f532b25`)**; rolled up nested submodule updates in `npp` (`c71c9e6fb`), `bobmani/itgmania` -> `bobmani` (`24f921e`), and `bobsaver` (`b41c7203`); pinned clean sibling releases `fwber` (`v2.3.92`), `realestatecrm` (`v0.66.1`), and `marketing_agent` (`v0.7.10`); verified `build.bat` (`4/4` OK) and `start.bat build` (`12/12` Go binaries OK) with `pincheck == 0` unpublished (`0/0` vs `origin/main`).
 
 **Protocol #303 (2026-11-15):** Deployed **UnitedBeats `v1.7.0`** on `hetzner` (`unitedbeats.org`, `.net`, `.site`) and synced `unitedbeats_site` (`f4f81e5..d3d0120`, pushed to `UnitedBeatsLLC/unitedbeats_site` `origin/main`): launched **The $10,000 Haircut & Life-Changing Chair Commission by Lum** (`lum-commission.php`, 5-question billionaire/celebrity qualification dossier, live-synced **$10,000.00 USD** Private Commission Invoice, `POST /wp-json/unitedbeats/v1/lum-invoice`, WP Admin `ub_lum_invoice` CPT, `/lum-10000-haircut/` permalink & menu entry, top-HUD gold CTA pill, and `@media print` PDF stylesheet), resolved `unitedbeats.org` HTTP 504 outages via dedicated `php8.4-fpm-unitedbeats.sock` (`pm.max_children = 12`) + Nginx `UNITEDBEATS` FastCGI microcaching (`X-UB-Cache: MISS -> HIT`), upgraded `unitedbeats_site` GitHub Actions `deploy.yml` & `deploy.sh` for WordPress theme deployment, and reconciled local `cce908222` root merge state onto `v5.312.0` (`pincheck == 0` unpublished).
 
@@ -151,4 +153,3 @@
 - v5.267.0: Feature branch merge round 2
 - v5.266.0: Repository sync, hyperharness merge
 - v5.265.0: Dependabot branch sweep
-

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-    Omni-Workspace Control Center — Native Windows System Tray Controller (v2.2.0 / v5.311.0)
+    Omni-Workspace Control Center — Native Windows System Tray Controller (v2.3.0 / v5.312.0)
 .DESCRIPTION
     Provides a native Windows System.Windows.Forms.NotifyIcon tray application for
     monitoring and controlling the Omni-Workspace Control Center (:2999), HyperNexus (:7779),
@@ -56,8 +56,9 @@ if ($StatusOnly -or ($args -contains "--status")) {
     } else {
         $portsOnline = @($ov.ports | Where-Object { $_.online }).Count
         $portsTotal = @($ov.ports).Count
-        Write-Output ("Omni-Workspace {0} | Ports: {1}/{2} | Go Daemons: {3}/{4} running ({5} built) | Submodules: {6}/{7}" -f `
-            $ov.version, $portsOnline, $portsTotal, $ov.goServicesRunning, $ov.goServicesTotal, $ov.goServicesBuilt, $ov.submodulesInitialized, $ov.submodulesTotal)
+        $nestedSuffix = if ($null -ne $ov.submodulesNestedTotal) { " ($($ov.submodulesNestedTotal) nested)" } else { "" }
+        Write-Output ("Omni-Workspace {0} | Ports: {1}/{2} | Go Daemons: {3}/{4} running ({5} built) | Submodules: {6}/{7}{8}" -f `
+            $ov.version, $portsOnline, $portsTotal, $ov.goServicesRunning, $ov.goServicesTotal, $ov.goServicesBuilt, $ov.submodulesInitialized, $ov.submodulesTotal, $nestedSuffix)
         exit 0
     }
 }

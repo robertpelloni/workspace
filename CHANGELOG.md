@@ -1,5 +1,28 @@
 # Changelog
 
+## [v5.313.0] - 2026-11-15 - Protocol #304: Control Center v2.3.0 (Nested Submodule Deep Drill-Down & Handover Ledger), Single-Branch Refspec Unlock & 11-Repo Feature Harvest
+
+### Synced, Unlocked & Shipped
+- **Consolidated Workspace Control Center (`:2999`) & Windows System Tray `v2.3.0` (`research/workspace-orchestrator`)**:
+  - Shipped one-click **Nested Submodule Deep Drill-Down Drawer (`GET /api/submodules/nested?path=<subPath>`)**, recursively inspecting up to depth 4 across all **870** nested submodule declarations (`L1`–`L4` depth, branch, `HEAD`, parent pin `PINNED`/`DRIFT`, and 8-worker async `ahead/behind` + actionable branch scanning), plus clickable `N nested` badges and `Has Nested Submodules (>0)` filtering in Section 4.
+  - Added **Quota-Resilient Multi-Harness Handover Ledger** (`GET/POST /api/session-bus/handover` writing `bus:ledger:latest` + `[HANDOVER_*]` broadcast on `:7778`, plus `Emit Handover` button and `HANDOVER`/`PROTOCOL` badges in Section 1B) and restarted both `:2999` & Windows System Tray daemons at `BelowNormal` CPU priority after server restart.
+- **Single-Branch Refspec Repair & Stranded Feature-Branch Harvest Across 24 Owned Submodules**:
+  - Discovered and fixed `--single-branch` `remote.origin.fetch` refspecs across **24 `robertpelloni` submodules** (while keeping giant external compiler repos `FFmpeg`, `jdk`, `llvm-project`, `grammars-v4` single-branch to preserve disk), unlocking remote Jules/feature branches previously invisible to workspace sync sweeps and harvesting/pushing **11 repositories (`+312` total merged commits)**:
+    - **`bg` (`f8e4e4f2..5cdc4d46` on `master`) & `bg_fix`**: Merged `jules-scoring-mechanics-8346944214018951559` (+97: nD parabolic bounce & WASM libretro emulator), `jules-7217655410406963640-912be204` (+8: `MapManager` game-loop integration), and `jules-2133027761516605954-0a593875` (+13), and fast-forwarded `bg_fix` (`5cdc4d46`).
+    - **`multimousergy` (`main` -> `6980001b3f`)**: Switched from feature checkout to `main`, merged `jules-14854883889989067132-dbf3fc2d` (+43: binary packet validation in `PacketSerializer` `v0.1.129`) + `netmux-initial-architecture-10413382364036026152`, and pushed `origin/main`.
+    - **`muse` (`master`)**: Merged `jules-7731780132859257498-b9e355ef` (+43) and pushed `origin/master`.
+    - **`mk64` (`e5da85771..b7142bee54` on `master`)**: Synthesized `enhancement/greatest-racing-game-3728563315125857798` (+25) and pushed `origin/master`.
+    - **`hermes-agent` (`166ab639f43..ccb236f9f2a` on `main`)**: Synthesized `multi-language-harness-init-10874059698763442895` (+24: `pkg/agent` VFS/patch/persona/git helpers, CGO-free native `go/parser` + polyglot `pkg/repomap` AST context map, dynamic TUI `/help` table, Python test mtime flake fixes, and Rust/C#/Java/TypeScript CLI scaffolds; `go test` & `hermes-agent-go.exe` green) and pushed `origin/main`.
+    - **`jvm-cpp-runtime` (`24b7be0..0b78839` on `main`)**: Merged `jules-8847694738038870517-92422947` (+24: C++ operator overloading convention helpers & tests) and pushed `origin/main`.
+    - **`superdawmcp` (`main` -> `47dc2ed36b`)**: Reconciled `main <-> origin/main`, merged `dynamic-schemas-submodules-18067879313263238256` (+19: Orchestrator Web Dashboard & UI integration) + `jules-5115124764836159209-8add44ab` (+1: Mixer & Plugin mobile remote screens), and pushed `origin/main`.
+    - **`okgame` (`main` -> `c6fdb3aac7`)**: Merged 4 branches (`feature-custom-editor-polish-2-*` +3, `jules-262311253048519738-*` +1, `jules-2238710835247309020-*` +1, `chore/version-2.0.28-dashboard-steam-governance-*` +9) and pushed `origin/main`.
+    - **`bobsgameonline` (`e2d97f8..d97b30a` on `main`)**, **`libjruntime` (`05edb61..9e5d241` on `main`, +4)**, and **`bobeditpro` (`bc05bca581..a04f532b25` on `master`, +2)**: Merged and pushed cleanly.
+- **Nested Submodule & Clean Sibling-Lane Roll-Ups**:
+  - Synced nested submodules and pushed parents on **`npp`** (`c363816d6..c71c9e6fb`: `bqt` +10, `bcs` +73), **`bobmani/itgmania`** (`d147171a6d..851f41eea3`: `bobcoin` +64 -> `eb8e46a5`) -> **`bobmani`** (`9e90013..24f921e`), and **`bobsaver`** (`8cd1f179..b41c7203`: `apophysis-j` +3).
+  - Pinned published clean sibling-lane releases on **`fwber`** (`v2.3.92` `a1ff54b76`: AI Avatar Studio, ZK proximity proofs, federated login, CRDT chat sync), **`realestatecrm`** (`v0.66.1` `90ad761`: dual-mode Stripe/Mercury billing & lead-only public forms), and **`marketing_agent`** (`v0.7.10` `69d437e2`: IMAP MIME/DSN bounce parser & `GitHubCrawler` fixes).
+- **Always-Deploy Build & Pincheck Verification**:
+  - Verified `build.bat` (**`4 OK, 0 failed, 1 skipped`**) and `start.bat build` (**`12 OK, 0 failed`**), synced refreshed Go binaries, enforced **`pincheck == 0` unpublished** across all staged root gitlinks (isolating active sibling lanes `HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site`), and regenerated `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md`.
+
 ## [v5.312.0] - 2026-11-15 - Protocol #303: UnitedBeats v1.7.0 (Lum $10,000 Haircut Commission & Invoice, PHP-FPM/FastCGI Outage Fix) & Root Merge Reconciliation
 
 ### Shipped, Stabilized & Synced

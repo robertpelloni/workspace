@@ -1,3 +1,11 @@
+### Protocol #304 Outcomes (2026-11-15)
+
+- [x] v5.313.0 - Protocol #304: Upgraded Consolidated Workspace Control Center (`:2999`) + Windows System Tray to **`v2.3.0`** (recursive `L1`–`L4` Nested Submodule Deep Drill-Down Drawer `GET /api/submodules/nested`, `870` nested declarations, plus `GET/POST /api/session-bus/handover` quota-resilient handover ledger on `:7778`)
+- [x] Unlocked `--single-branch` `remote.origin.fetch` refspecs across **24 owned `robertpelloni` submodules** and harvested/pushed stranded feature branches across 11 repositories (`+312` commits): `bg` (+121 -> `5cdc4d46`) & `bg_fix`, `multimousergy` (+44 -> `6980001b3f`), `muse` (+43), `mk64` (+26 -> `b7142bee54`), `hermes-agent` (+24 -> `ccb236f9f2a`), `jvm-cpp-runtime` (+24 -> `0b78839`), `superdawmcp` (+20 -> `47dc2ed36b`), `okgame` (+16 -> `c6fdb3aac7`), `bobsgameonline` (+8 -> `d97b30a`), `libjruntime` (+4 -> `9e5d241`), and `bobeditpro` (+2 -> `a04f532b25`)
+- [x] Synced nested submodules & pushed `npp` (`c71c9e6fb`), `bobmani/itgmania` -> `bobmani` (`24f921e`), and `bobsaver` (`b41c7203`); pinned clean sibling releases `fwber` (`v2.3.92`), `realestatecrm` (`v0.66.1`), and `marketing_agent` (`v0.7.10`); verified `build.bat` (`4/4` OK) + `start.bat build` (`12/12` OK) with `pincheck == 0` unpublished
+- [ ] Optional follow-up: surgical source-level conflict resolution on newly uncovered branches (`superdawmcp` `feat-v3.2.0-master-console-vst-inspector`, `bobeditpro` QML branches, `mk64` `modern-kart-mechanics` / `jules-15071162120158548018`)
+- [ ] Robert: Umbrella v6/v7 & `unitedbeats.org` menu confirmation with Bobbi; commercial GTM & maintenance window gates
+
 ### Protocol #303 Outcomes (2026-11-15)
 
 - [x] v5.312.0 - Protocol #303: Built & deployed **The $10,000 Haircut & Life-Changing Chair Commission by Lum** on `unitedbeats.org` (`#lum-chair` + `/lum-10000-haircut/` + `POST /wp-json/unitedbeats/v1/lum-invoice` + WP Admin `ub_lum_invoice` CPT + `@media print` official $10,000.00 USD PDF invoice)
@@ -384,4 +392,3 @@ The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams sync
 *Last updated: 2026-06-20*
 *Previous: v5.20.2 â€” geany btk submodule fix*
 *Next: v5.21.0 â€” pi-mono Phase 19/20 Assimilation Forward Merge*
-

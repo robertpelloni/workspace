@@ -1,3 +1,22 @@
+# HANDOFF - v5.313.0 - 2026-11-15 - Protocol #304: Control Center v2.3.0 (Nested Submodule Drill-Down & Handover Ledger), 24-Repo Single-Branch Refspec Unlock & Feature Harvest
+
+## Session - Protocol #304 (`antigravity-gemini`)
+
+### 1. Control Center `:2999` & Windows System Tray `v2.3.0` (`research/workspace-orchestrator`)
+- Upgraded `:2999` and `tray_controller.ps1` to **`v2.3.0`** and restarted both background daemons at `BelowNormal` CPU priority following the Antigravity server restart:
+  - **Nested Submodule Deep Drill-Down (`GET /api/submodules/nested?path=<subPath>`):** Recursively walks `.gitmodules` up to depth 4 (`870` direct nested declarations across `133/134` root submodules) with 8-worker async `ahead/behind` origin divergence & actionable branch scanning, clickable `N nested` / `Drill-Down` triggers, and `Has Nested Submodules (>0)` filter in Section 4.
+  - **Quota-Resilient Handover Ledger (`GET/POST /api/session-bus/handover`):** Writes structured `HANDOVER_LEDGER` state to `bus:ledger:latest` and broadcasts `[HANDOVER_*]` on HyperNexus `:7778`, with a one-click `Emit Handover` button and `HANDOVER`/`PROTOCOL` pills in Section 1B.
+
+### 2. Single-Branch Refspec Discovery, 11-Repo Feature Harvest & Nested Roll-Ups
+- **Root Cause Found & Repaired:** Audited all 133 initialized submodules and found **24 owned `robertpelloni` submodules** cloned with `--single-branch` `remote.origin.fetch` refspecs (hiding remote Jules/feature branches from all prior sync passes). Unlocked `+refs/heads/*:refs/remotes/origin/*` on all 24 owned repos (keeping `FFmpeg`, `jdk`, `llvm-project`, `grammars-v4` single-branch to conserve disk) and harvested + pushed clean & conflict-synthesized branches across **11 repositories (`+312` commits)**:
+  - `bg` (`f8e4e4f2..5cdc4d46` +121 commits across 3 Jules branches) + `bg_fix` (`5cdc4d46`), `multimousergy` (`main` -> `6980001b3f`, +44), `muse` (+43), `mk64` (`e5da85771..b7142bee54`, +26), `hermes-agent` (`166ab639f43..ccb236f9f2a`, +24: `multi-language-harness-init`, CGO-free Go AST `repomap`, dynamic TUI `/help`), `jvm-cpp-runtime` (`24b7be0..0b78839`, +24), `superdawmcp` (`main` -> `47dc2ed36b`, +20), `okgame` (`main` -> `c6fdb3aac7`, +16 across 4 branches), `bobsgameonline` (`e2d97f8..d97b30a`, +8), `libjruntime` (`05edb61..9e5d241`, +4), and `bobeditpro` (`bc05bca581..a04f532b25`, +2).
+- **Nested & Clean Lane Roll-Ups:** Synced nested submodules & pushed parents on `npp` (`c363816d6..c71c9e6fb`: `bqt` +10, `bcs` +73), `bobmani/itgmania` (`851f41eea3`: `bobcoin` +64) -> `bobmani` (`24f921e`), and `bobsaver` (`b41c7203`: `apophysis-j` +3); pinned clean published sibling releases on `fwber` (`v2.3.92` `a1ff54b76`), `realestatecrm` (`v0.66.1` `90ad761`), and `marketing_agent` (`v0.7.10` `69d437e2`).
+
+### 3. Build, Pincheck & Next Agent Candidates
+- **Always-Deploy Verified:** `build.bat` (`4 OK, 0 failed, 1 skipped`) and `start.bat build` (`12 OK, 0 failed`); **`pincheck == 0` unpublished** across all staged root pointers; `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md` regenerated; active dirty sibling lanes (`HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site`) untouched.
+- **Next High-Leverage Candidates:** Code-level conflict inspection & synthesis on newly uncovered branches with real source overlaps (`superdawmcp` `feat-v3.2.0-master-console-vst-inspector`, `bobeditpro` QML branches, `mk64` `modern-kart-mechanics` / `jules-15071162120158548018`).
+
+## Prior
 # HANDOFF - v5.312.0 - 2026-11-15 - Protocol #303: UnitedBeats v1.7.0 (Lum $10,000 Haircut Commission & 504 Stability Fix) & Root Merge Reconciliation
 
 ## Session - Protocol #303 (`antigravity-gemini`)
