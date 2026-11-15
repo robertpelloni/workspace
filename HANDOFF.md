@@ -1,3 +1,23 @@
+# HANDOFF - v5.310.0 - 2026-11-15 - Protocol #301: FreeLLM Go Restoration, Control Center v2.1.0 (12 Go Binaries + Live Session Bus) & Submodule Harvest
+
+## Session - Protocol #301 (`antigravity-gemini`)
+
+### 1. FreeLLM Go Restoration & 12/12 Go Service Suite (`v5.310.0`)
+- **`freellm` (`1f07a2c..fdfc74d`):** Resolved the Protocol #300 `tray_windows.go` follow-up by restoring `proxy.RouterEvent` (`Tag`, `Message`, `String()`), buffered `Gateway.Events` (`512`), and `Gateway.EmitRouterEvent(...)` in `freellm/internal/proxy/server.go` + TX/RX/Idle router telemetry in `freellm/internal/proxy/processjob.go` + `systray` checksums in `freellm/go.sum`. Verified `go build ./...`, `freellm.exe`, and `go test ./internal/engine ./internal/transform ./internal/ui` (`rc=0`), and pushed `origin/main`.
+- **`start.bat` & Control Center `:2999` + System Tray `v2.1.0` (`research/workspace-orchestrator`):**
+  - Expanded Go binary coverage from `7 projects / 10 binaries` to **`9 projects / 12 binaries`** by adding `freellm.exe` and `bobtk.exe` (`bgtk/go` `v1.8.0`). Verified `start.bat build` (`12 OK, 0 failed`) and `build.bat` (`4 OK, 0 failed, 1 skipped`).
+  - Shipped live **HyperNexus `:7778` Session Bus panel & broadcast composer** (`GET /api/session-bus`, `POST /api/session-bus/send` with selftest noise filter), **Root Pin Alignment / Drift badges** (`PINNED` / `DRIFT`) + multi-org ownership recognition (`robertpelloni`, `UnitedBeatsLLC`, `FWBerLLC`, `RealEstateCRMLLC`), and optional **"Run Tray on Windows Login"** toggle in `tray_controller.ps1`. Both daemons are running live at `BelowNormal` priority.
+
+### 2. Protocol #301 Submodule Sync, Reconciliations & Pincheck
+- **Fast-Forwards & Reconciliations:** Fast-forwarded `ADSFileSystem`, `DataStreamBrowser`, `geiss`, `odcnn` (`v2.4.0`), `element-web` (`develop` +20), `bobsgameweb`, `aimoneymachine_site`, and `marketing_agent`; reconciled & pushed dual-branch repos `vst_monster` (`v0.8.3` +76 commits -> `49207773`), `agentirc` (`20f48a1f`), `ArrowVortex` (`d0e69c39`), `ksm-v2` (`dbe00cc1`), `bobmani/itgmania`, and `bobmani` (`9e90013c`); synced `hyperharness.exe` (`0726e066`).
+- **25 `CodeWhale-Extensions` `<slug>-<digits>` Test/Perf Branches Audited:** Cleanly Merge-Tested and skipped on conflict (no forced resolutions; zero regressions on `CodeWhale-Extensions` `main`).
+- **15 Published Root Pointers Staged** (`ADSFileSystem`, `ArrowVortex`, `DataStreamBrowser`, `agentirc`, `aimoneymachine_site`, `bobmani`, `bobsgameweb`, `element-web`, `freellm`, `geiss`, `hyperharness`, `ksm-v2`, `marketing_agent`, `odcnn`, `vst_monster`) with **`pincheck == 0` unpublished**; `STRUCTURAL_MAP.md` (`133/134` initialized) and `SUBMODULE_DASHBOARD.md` regenerated.
+
+### 3. Sibling Lanes & Next Agent Notes
+- `HyperNexus` (`v1.0.73` on session bus `:7778`), `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site`, and `fwber` uncommitted `share-unlocks.ts` remain strictly isolated per sibling-lane rules.
+- Next high-leverage candidates: (a) selective file-by-file conflict resolution of the 25 remaining `CodeWhale-Extensions` unit-test/perf branches + `cargo check`/`cargo test`, or (b) async `ahead/behind` `origin/<default>` divergence telemetry in Control Center `:2999` (`v2.2.0`).
+
+## Prior
 # HANDOFF - v5.309.0 - 2026-11-14 - Protocol #300: Deep 509-Submodule Sync, Intelligent Feature Harvest & Zero-Conflict Resolution
 
 ## Session - Protocol #300 (`antigravity-gemini`)

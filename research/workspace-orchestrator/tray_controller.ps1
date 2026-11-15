@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-    Omni-Workspace Control Center — Native Windows System Tray Controller (v2.0.0 / v5.293.0)
+    Omni-Workspace Control Center — Native Windows System Tray Controller (v2.1.0 / v5.310.0)
 .DESCRIPTION
     Provides a native Windows System.Windows.Forms.NotifyIcon tray application for
     monitoring and controlling the Omni-Workspace Control Center (:2999), HyperNexus (:7779),
-    Jules Autopilot (:3006), and the 10 Go binary daemons at BelowNormal CPU priority.
+    Jules Autopilot (:3006), and the 12 Go binary daemons at BelowNormal CPU priority.
     Supports --status for non-interactive CLI health checks.
 #>
 
@@ -131,7 +131,7 @@ $startBackendItem.Add_Click({
     Start-ControlCenterBackend | Out-Null
 })
 
-$startGoAllItem = New-Object System.Windows.Forms.ToolStripMenuItem("Start All 10 Go Services (BelowNormal)")
+$startGoAllItem = New-Object System.Windows.Forms.ToolStripMenuItem("Start All 12 Go Services (BelowNormal)")
 $startGoAllItem.Add_Click({
     Start-ControlCenterBackend | Out-Null
     try {
@@ -139,12 +139,34 @@ $startGoAllItem.Add_Click({
     } catch {}
 })
 
-$stopGoAllItem = New-Object System.Windows.Forms.ToolStripMenuItem("Stop All 10 Go Services")
+$stopGoAllItem = New-Object System.Windows.Forms.ToolStripMenuItem("Stop All 12 Go Services")
 $stopGoAllItem.Add_Click({
     try {
         Invoke-RestMethod -Uri "$ControlUrl/api/go-services/stop" -Method Post -ContentType "application/json" -Body '{"id":"all"}' -TimeoutSec 5 | Out-Null
     } catch {
         Start-Process -FilePath (Join-Path $WorkspaceRoot "start.bat") -ArgumentList "stop" -WindowStyle Hidden
+    }
+})
+
+$startupFolder = [Environment]::GetFolderPath("Startup")
+$startupLnk = Join-Path $startupFolder "OmniWorkspaceTray.lnk"
+$startupToggleItem = New-Object System.Windows.Forms.ToolStripMenuItem("Run Tray on Windows Login")
+$startupToggleItem.Checked = (Test-Path $startupLnk)
+$startupToggleItem.Add_Click({
+    if (Test-Path $startupLnk) {
+        Remove-Item $startupLnk -Force -ErrorAction SilentlyContinue
+        $startupToggleItem.Checked = $false
+    } else {
+        try {
+            $wsh = New-Object -ComObject WScript.Shell
+            $sc = $wsh.CreateShortcut($startupLnk)
+            $sc.TargetPath = (Join-Path $WorkspaceRoot "start_dashboard_tray.bat")
+            $sc.WorkingDirectory = $WorkspaceRoot
+            $sc.WindowStyle = 7
+            $sc.Description = "Omni-Workspace Control Center & System Tray (:2999)"
+            $sc.Save()
+            $startupToggleItem.Checked = $true
+        } catch {}
     }
 })
 
@@ -181,6 +203,7 @@ $exitTrayOnlyItem.Add_Click({
 [void]$contextMenu.Items.Add($startGoAllItem)
 [void]$contextMenu.Items.Add($stopGoAllItem)
 [void]$contextMenu.Items.Add($stopBackendItem)
+[void]$contextMenu.Items.Add($startupToggleItem)
 [void]$contextMenu.Items.Add((New-Object System.Windows.Forms.ToolStripSeparator))
 [void]$contextMenu.Items.Add($exitTrayOnlyItem)
 [void]$contextMenu.Items.Add($quitAllItem)

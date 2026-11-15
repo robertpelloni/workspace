@@ -33,7 +33,7 @@ function setBelowNormalPriority(pid) {
 // Lower our own server priority on startup
 setBelowNormalPriority(process.pid);
 
-// Canonical Go Services from start.bat (7 projects, 10 binaries)
+// Canonical Go Services from start.bat (9 projects, 12 binaries)
 const GO_SERVICES = [
     {
         id: 'tabby-backend',
@@ -59,7 +59,7 @@ const GO_SERVICES = [
         buildCwd: 'tabby/tabby-go/wails-app',
         buildArgs: ['build', '-buildvcs=false', '-o', '../tabby-wails.exe', '.'],
         gui: true,
-        desc: 'Tabby Go desktop GUI shell powered by Wails.'
+        desc: 'Tabby Go desktop GUI shell powered by Wails (v1.0.285).'
     },
     {
         id: 'hermes-agent-go',
@@ -109,7 +109,7 @@ const GO_SERVICES = [
         cwd: 'warp',
         buildArgs: ['build', '-buildvcs=false', '-ldflags=-s -w', '-o', 'warp-go.exe', './cmd/warp'],
         gui: true,
-        desc: 'Warp Go GPU-accelerated block terminal, PTY runner, and integrated code editor.'
+        desc: 'Warp Go GPU-accelerated block terminal, command palette, and integrated editor (v0.3.2).'
     },
     {
         id: 'hyper-go',
@@ -118,7 +118,25 @@ const GO_SERVICES = [
         cwd: 'hyper',
         buildArgs: ['build', '-buildvcs=false', '-ldflags=-s -w', '-o', 'hyper-go.exe', '.'],
         gui: true,
-        desc: 'Hyper Go extensible terminal emulator with plugin architecture and custom UI.'
+        desc: 'Hyper Go v1.2.0 terminal emulator with Mission Control, SSH manager, and MCP integration.'
+    },
+    {
+        id: 'freellm',
+        project: 'freellm',
+        exe: 'freellm.exe',
+        cwd: 'freellm',
+        buildArgs: ['build', '-buildvcs=false', '-ldflags=-s -w', '-o', 'freellm.exe', './cmd/app'],
+        gui: true,
+        desc: 'FreeLLM survival-of-the-fittest multi-provider LLM router with Windows System Tray.'
+    },
+    {
+        id: 'bobtk',
+        project: 'bgtk',
+        exe: 'bobtk.exe',
+        cwd: 'bgtk/go',
+        buildArgs: ['build', '-buildvcs=false', '-ldflags=-s -w', '-o', 'bobtk.exe', '.'],
+        runArgs: ['-serve'],
+        desc: 'BobTK v1.8.0 6-pillar cross-platform audio/visual/AI framework & live web dashboard.'
     }
 ];
 
@@ -177,6 +195,71 @@ function fetchJsonLocal(url, timeoutMs = 600) {
         req.on('error', () => resolve(null));
         req.on('timeout', () => { req.destroy(); resolve(null); });
     });
+}
+
+function postJsonLocal(url, bodyObj, timeoutMs = 2500) {
+    return new Promise((resolve) => {
+        try {
+            const payload = JSON.stringify(bodyObj);
+            const u = new URL(url);
+            const req = http.request({
+                hostname: u.hostname,
+                port: u.port,
+                path: u.pathname + u.search,
+                method: 'POST',
+                timeout: timeoutMs,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Content-Length': Buffer.byteLength(payload)
+                }
+            }, (res) => {
+                let raw = '';
+                res.on('data', (c) => { raw += c; });
+                res.on('end', () => {
+                    try { resolve({ status: res.statusCode, data: JSON.parse(raw) }); }
+                    catch { resolve({ status: res.statusCode, data: null }); }
+                });
+            });
+            req.on('error', () => resolve({ status: 0, data: null }));
+            req.on('timeout', () => { req.destroy(); resolve({ status: 0, data: null }); });
+            req.write(payload);
+            req.end();
+        } catch {
+            resolve({ status: 0, data: null });
+        }
+    });
+}
+
+const OWNED_ORGS = new Set(['robertpelloni', 'unitedbeatsllc', 'fwberllc', 'realestatecrmllc']);
+const DESKTOP_GIT = 'C:\\Users\\hyper\\AppData\\Local\\GitHubDesktop\\app-3.6.11\\resources\\app\\git\\cmd\\git.exe';
+let cachedRootPins = { ts: 0, map: new Map() };
+
+function getRootPinnedShasSync() {
+    const now = Date.now();
+    if (now - cachedRootPins.ts < 12000 && cachedRootPins.map.size > 0) return cachedRootPins.map;
+    try {
+        const { execFileSync } = require('child_process');
+        const gitBin = fs.existsSync(DESKTOP_GIT) ? DESKTOP_GIT : 'git';
+        const out = execFileSync(gitBin, ['ls-tree', 'HEAD'], {
+            cwd: WORKSPACE_ROOT,
+            encoding: 'utf8',
+            windowsHide: true,
+            timeout: 2500
+        });
+        const pinMap = new Map();
+        for (const line of out.split(/\r?\n/)) {
+            if (!line.startsWith('160000 ')) continue;
+            const tabIdx = line.indexOf('\t');
+            if (tabIdx === -1) continue;
+            const sha = line.slice(0, tabIdx).split(/\s+/)[2] || '';
+            const subPath = line.slice(tabIdx + 1).trim();
+            if (sha && subPath) pinMap.set(subPath, sha.slice(0, 8));
+        }
+        cachedRootPins = { ts: now, map: pinMap };
+        return pinMap;
+    } catch {
+        return cachedRootPins.map;
+    }
 }
 
 let cachedTasklist = { ts: 0, map: new Map() };
@@ -263,6 +346,7 @@ function categorizeProject(name) {
 function parseSubmodulesFast() {
     const gmPath = path.join(WORKSPACE_ROOT, '.gitmodules');
     if (!fs.existsSync(gmPath)) return [];
+    const pinMap = getRootPinnedShasSync();
     const raw = fs.readFileSync(gmPath, 'utf8');
     const blocks = raw.split(/\[submodule\s+"([^"]+)"\]/g);
     const subs = [];
@@ -277,6 +361,9 @@ function parseSubmodulesFast() {
         const trackedBranch = bMatch ? bMatch[1].trim() : '';
         const absPath = path.join(WORKSPACE_ROOT, subPath);
         const { branch, sha } = readGitHeadFast(absPath);
+        const pinnedSha = pinMap.get(subPath) || '—';
+        const ownerRaw = (url.split('/')[3] || 'external').replace(/\.git$/i, '');
+        const isOwned = OWNED_ORGS.has(ownerRaw.toLowerCase());
 
         let version = '—';
         for (const vf of ['VERSION', 'VERSION.md', 'package.json']) {
@@ -299,10 +386,13 @@ function parseSubmodulesFast() {
             path: subPath,
             absPath,
             url,
-            owner: url.includes('robertpelloni') ? 'robertpelloni' : (url.split('/')[3] || 'external'),
+            owner: ownerRaw,
+            isOwned,
             branch,
             trackedBranch,
             sha,
+            pinnedSha,
+            pinSynced: branch !== 'uninitialized' && pinnedSha !== '—' ? sha === pinnedSha : null,
             version,
             category: categorizeProject(subPath)
         });
@@ -477,7 +567,7 @@ app.post('/api/go-services/start', async (req, res) => {
         const cwd = path.join(WORKSPACE_ROOT, svc.cwd);
         const exePath = path.join(cwd, svc.exe);
         if (!fs.existsSync(exePath)) continue;
-        const child = spawn(exePath, [], {
+        const child = spawn(exePath, svc.runArgs || [], {
             cwd,
             detached: true,
             windowsHide: !svc.gui,
@@ -540,6 +630,65 @@ app.post('/api/go-services/build', async (req, res) => {
 
 app.get('/api/submodules', (req, res) => {
     res.json(parseSubmodulesFast());
+});
+
+app.get('/api/session-bus', async (req, res) => {
+    const includeTests = req.query.includeTests === '1';
+    const hnBase = (process.env.HYPERNEXUS_URL || 'http://127.0.0.1:7778').replace(/\/$/, '');
+    const payload = await fetchJsonLocal(`${hnBase}/api/memory/scratchpad/get`, 1500);
+    if (!payload || typeof payload !== 'object') {
+        return res.json({ online: false, sessions: [], messages: [], totalRawSessions: 0 });
+    }
+    const map = payload.scratchpad || (payload.data && payload.data.scratchpad) || {};
+    const rawSessions = [];
+    const rawMessages = [];
+
+    for (const [k, v] of Object.entries(map)) {
+        if (typeof v !== 'string') continue;
+        if (k.startsWith('bus:reg:')) {
+            try { rawSessions.push(JSON.parse(v)); } catch {}
+        } else if (k.startsWith('bus:msg:') || k.startsWith('bus:out:')) {
+            try {
+                const parsed = JSON.parse(v);
+                parsed.kind = k.startsWith('bus:out:') ? 'reply' : 'msg';
+                rawMessages.push(parsed);
+            } catch {}
+        }
+    }
+
+    const isTestNoise = (s) => /^(xop-|bus-selftest-|w-spark-|w-wonder-|coord-mwh)/i.test(String(s || ''));
+    const sessions = rawSessions
+        .filter((s) => includeTests || (!isTestNoise(s.id) && !/test/i.test(s.harness || '')))
+        .sort((a, b) => (b.ts || 0) - (a.ts || 0));
+
+    const messages = rawMessages
+        .filter((m) => includeTests || (!isTestNoise(m.from) && !isTestNoise(m.to)))
+        .sort((a, b) => (b.ts || 0) - (a.ts || 0))
+        .slice(0, 40);
+
+    return res.json({
+        online: true,
+        sessions,
+        messages,
+        totalRawSessions: rawSessions.length
+    });
+});
+
+app.post('/api/session-bus/send', async (req, res) => {
+    const { from = 'control-center-ui', to = '*', text = '' } = req.body || {};
+    const cleanText = String(text).trim();
+    if (!cleanText) return res.status(400).json({ error: 'Message text is required' });
+    const hnBase = (process.env.HYPERNEXUS_URL || 'http://127.0.0.1:7778').replace(/\/$/, '');
+    const msgId = `bm-${Date.now().toString(36)}`;
+    const record = { msg: msgId, from: String(from).trim() || 'control-center-ui', to: String(to).trim() || '*', text: cleanText, ts: Date.now() };
+    const r = await postJsonLocal(`${hnBase}/api/memory/scratchpad/set`, {
+        key: `bus:msg:${msgId}`,
+        value: JSON.stringify(record)
+    }, 3000);
+    if (r.status !== 200) {
+        return res.status(502).json({ error: 'HyperNexus :7778 scratchpad unreachable' });
+    }
+    return res.json({ ok: true, msg: msgId, record });
 });
 
 app.get('/api/docs/:doc', (req, res) => {
@@ -705,7 +854,7 @@ app.post('/api/shutdown', (req, res) => {
 });
 
 const server = app.listen(PORT, () => {
-    console.log(`Omni-Workspace Control Center v2.0.0 running at http://localhost:${PORT} (Priority: BelowNormal)`);
+    console.log(`Omni-Workspace Control Center v2.1.0 running at http://localhost:${PORT} (Priority: BelowNormal)`);
 });
 
 module.exports = { app, server };

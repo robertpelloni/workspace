@@ -1,5 +1,28 @@
 # Changelog
 
+## [v5.310.0] - 2026-11-15 - Protocol #301: FreeLLM Go Restoration, Control Center v2.1.0 (12 Go Binaries + Live Session Bus) & Submodule Harvest
+
+### Synced, Fixed & Shipped
+- **FreeLLM Go Proxy, Telemetry & Windows System Tray Restored (`freellm` `1f07a2c..fdfc74d`)**:
+  - Restored `RouterEvent` (`Tag`, `Message`, `String()`), buffered `Gateway.Events` channel (`512`), and `Gateway.EmitRouterEvent(...)` in `freellm/internal/proxy/server.go`, wired TX/RX/Idle router telemetry emissions in `freellm/internal/proxy/processjob.go`, and synced `systray` checksums in `freellm/go.sum`.
+  - Verified `go build ./...` (`rc=0`), `freellm.exe` (`rc=0`), and unit tests across `./internal/engine`, `./internal/transform`, and `./internal/ui` (`rc=0`), resolving the Protocol #300 `tray_windows.go` follow-up item and pushing `fdfc74d` to `origin/main`.
+- **Consolidated Workspace Control Center (`:2999`) & Windows System Tray `v2.1.0` + `12/12` Go Service Suite (`start.bat`, `research/workspace-orchestrator`)**:
+  - Expanded `start.bat` (`v5.310.0`) and `research/workspace-orchestrator/server/index.js` from `7 projects / 10 Go binaries` to **`9 projects / 12 Go binaries`** by adding `freellm.exe` (`freellm`) and `bobtk.exe` (`bgtk/go` `v1.8.0`, `-serve`); verified `start.bat build` **`12 OK, 0 failed`** and `build.bat` **`4 OK, 0 failed, 1 skipped`**.
+  - Added live **HyperNexus `:7778` Multi-Agent Session Bus panel & broadcast composer** (`GET /api/session-bus`, `POST /api/session-bus/send`) reading/writing `bus:reg:*` & `bus:msg:*` scratchpad keys with automatic selftest heartbeat filtering.
+  - Added **Root Pin Alignment / Drift badges** (`PINNED` vs `DRIFT` via cached `git ls-tree HEAD`) and multi-org ownership detection (`robertpelloni`, `UnitedBeatsLLC`, `FWBerLLC`, `RealEstateCRMLLC`) across all 134 submodules in `/api/submodules`.
+  - Added optional **"Run Tray on Windows Login"** Startup shortcut toggle in `tray_controller.ps1` and restarted `:2999` + Windows System Tray at `BelowNormal` CPU priority.
+- **Protocol #301 Submodule Fast-Forwards & Dual-Branch Reconciliations**:
+  - **Standalone Top-Level & Newly Landed Submodules Fast-Forwarded**: `ADSFileSystem` (`5ab73c6f..920b7b63`), `DataStreamBrowser` (`70235cc7..8aeb4461`), `geiss` (`f01bf253..e68cd15b`), `odcnn` (`v2.4.0`, `288a3638..6971c071`), `element-web` (`develop` +20, `a6a90b53..9e7918b6`), `bobsgameweb` (`1779bf03..8e7c06d0`), `aimoneymachine_site` (`d55e5941..1365c8f0`), and `marketing_agent` (`e5c43b8c..6bd96e33`).
+  - **Dual-Branch Reconciliations & Nested Pointers Pushed**:
+    - `vst_monster` (`c0c806e0..49207773`): Reconciled `v0.2.0..v0.8.3` (+76 commits of VST/LV2/CLAP/AU/AAX plugin inspector & unattended MSI installer) with `origin/main` and pushed `main`.
+    - `agentirc` (`c8cef8a9..20f48a1f`): Reconciled `master` <- `origin/main` and pushed `master`.
+    - `ArrowVortex` (`e774060d..d0e69c39`): Reconciled `release` <- `origin/master` and pushed `release`.
+    - `ksm-v2` (`b8ac26e4..dbe00cc1`) & `bobmani/ksm-v2`: Reconciled `master` <- `origin/main` and pushed `master`.
+    - `bobmani/itgmania`: Reconciled `release` <- `origin/main` and pushed `release`.
+    - `bobmani` (`7b3b375b..9e90013c`): Synced `arrowvortex`, `itgmania`, `ksm-v2`, and `hymnmania` pointers and pushed `main`.
+    - `hyperharness` (`c126912e..0726e066`) & `pi-mono`: Verified and synced refreshed `.exe` binaries from `build.bat`.
+- **Root Submodule Pointers & Always-Deploy Verification**: Staged **15 verified published submodule pointers** (`ADSFileSystem`, `ArrowVortex`, `DataStreamBrowser`, `agentirc`, `aimoneymachine_site`, `bobmani`, `bobsgameweb`, `element-web`, `freellm`, `geiss`, `hyperharness`, `ksm-v2`, `marketing_agent`, `odcnn`, `vst_monster`) with **`pincheck == 0` unpublished** (`projectM-upstream` skipped unpublished; sibling lanes `HyperNexus`, `HyperNexus2old`, `openclaw-config`, `openclaw-dashboard`, `unitedbeats_site` isolated). Regenerated `STRUCTURAL_MAP.md` (`133/134` initialized) & `SUBMODULE_DASHBOARD.md`.
+
 ## [v5.309.0] - 2026-11-14 - Protocol #300: Deep 509-Submodule Sync, Intelligent Feature Harvest & Zero-Conflict Resolution
 
 ### Synced, Harvested & Shipped

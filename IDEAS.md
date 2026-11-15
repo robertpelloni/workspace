@@ -1,13 +1,15 @@
 # Omni-Workspace Ideas & High-Leverage Improvements
 
-*Last Updated: 2026-11-14 (v5.309.0 — Protocol #300)*
+*Last Updated: 2026-11-15 (v5.310.0 — Protocol #301)*
 
 > See also [MASTER_IDEAS.md](MASTER_IDEAS.md) for the long-horizon architectural charter. This file tracks concrete, near-term engineering improvements surfaced across recent Executive Protocols.
 
 ## 1. Control Center (`:2999`) & System Tray Enhancements
-- **Live Session Bus Feed in `:2999`:** Add a read-only panel in `research/workspace-orchestrator` polling `HyperNexus` `/api/agent-memory/recent` so recent `session-bus` messages across Muse, Antigravity, and Codex appear alongside port telemetry.
-- **One-Click Pincheck & Divergence Badge:** Surface `ahead/behind` counts per submodule in the `:2999` Submodule Matrix using background `git for-each-ref` snapshots.
-- **Windows Startup Shortcut Toggle:** Add an optional "Run Tray on Login" toggle in `tray_controller.ps1` (writing/removing a shortcut in `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup` only when explicitly toggled by Robert).
+- **Shipped in `v2.1.0` (Protocol #301):**
+  - [x] **Live Session Bus Feed & Broadcast in `:2999`:** Added `GET /api/session-bus` & `POST /api/session-bus/send` polling HyperNexus `:7778` scratchpad (`bus:reg:*`, `bus:msg:*`) with selftest noise filtering and live broadcast composer.
+  - [x] **Root Pin Alignment / Drift Badges & Multi-Org Ownership:** Added `PINNED` / `DRIFT` badges (`git ls-tree HEAD`) and multi-org recognition (`robertpelloni`, `UnitedBeatsLLC`, `FWBerLLC`, `RealEstateCRMLLC`) across the 134-submodule matrix, plus expanded Go binary management from `10` to `12` (`freellm.exe` + `bobtk.exe`).
+  - [x] **Windows Startup Shortcut Toggle:** Added optional `"Run Tray on Windows Login"` toggle in `tray_controller.ps1`.
+- **Next Up (`v2.2.0`):** Surface asynchronous `ahead/behind` `origin/<default>` counts per submodule in `:2999` using cached background `git for-each-ref` snapshots.
 
 ## 2. Quota-Resilient Multi-Harness Failover
 - **Automatic Rate-Limit Handover:** When a primary harness hits provider quota exhaustion (such as Muse `429 Subscription quota exhausted`), emit a structured `[bus-msg] HANDOVER_REQUEST` on `session-bus.mjs` so Antigravity, Pi-Mono (`pi-go.exe`), or Codex picks up the in-flight `sync_protocol_NNN` ledger automatically without losing a beat.

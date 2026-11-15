@@ -1,10 +1,18 @@
+### Protocol #301 Outcomes (2026-11-15)
+
+- [x] v5.310.0 - Protocol #301: Restored `freellm` Go proxy + Windows tray telemetry (`proxy.RouterEvent`, `Gateway.Events`, unit tests green -> `fdfc74d`)
+- [x] Upgraded Consolidated Workspace Control Center (`:2999`) + Windows System Tray to `v2.1.0` and expanded `start.bat` to **12/12 Go binaries** (`freellm.exe` + `bobtk.exe`, live HyperNexus `:7778` Session Bus feed & broadcast composer, `PINNED`/`DRIFT` root-pin badges, multi-org ownership badges, and Windows Login startup toggle)
+- [x] Synced & pushed standalone/dual-branch submodules (`ADSFileSystem`, `DataStreamBrowser`, `geiss`, `odcnn` `v2.4.0`, `element-web` +20, `bobsgameweb`, `aimoneymachine_site`, `marketing_agent`, `vst_monster` `v0.8.3` +76, `agentirc`, `ArrowVortex`, `ksm-v2`, `bobmani/itgmania`, `bobmani`, `hyperharness`), staged **15 verified published submodule pointers** (`pincheck == 0` unpublished), regenerated `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md`, and verified `build.bat` (`4/4` OK) + `start.bat build` (`12/12` OK)
+- [ ] Optional follow-up: selective conflict-resolution harvest of remaining 25 `CodeWhale-Extensions` unit-test/perf Jules branches (`cargo test` verified)
+- [ ] Robert: Umbrella v6/v7 & `unitedbeats.org` menu confirmation with Bobbi; commercial GTM & maintenance window gates
+
 ### Protocol #300 Outcomes (2026-11-14)
 
 - [x] v5.309.0 - Protocol #300: Deep 509-submodule recursive audit (`134` root + `375` nested) & hidden-branch harvest across previously skipped repos and nested submodules
 - [x] Merged, tested & pushed `bgtk` `v1.8.0` (+10,283 LOC 6-pillar framework + dashboard/tray -> `npp`), `hyper` `v1.2.0` (+8,469 LOC Mission Control/SSH/MCP/Agent), `warp` (+6 Jules branches), `tabby` `v1.0.285` (+54), `CodeWhale-Extensions` (+12 branches incl. `feat/extension-api`), `ArrowVortex/odcnn` `v2.4.0` (+51) -> `ArrowVortex`, `bobtorrent/element-web` (+22) + `bobcoin` -> `bobtorrent` (+47 commits published to `origin/main`), `mk64` (`upstream/master` +6), `sm64coopdx` `v1.17`, `electricsheep`, `neverball`, `fcdm` (+18), `planet_fitness_stepmaniax_agent`, `bobeditpro` (`master` +189), `bobsaver/geiss` (+13), and `bobfilez/libs/*`
 - [x] Reconciled & pushed all 4 formerly retained conflict branches (`hyperporn`, `bobfilez`, `freellm`, `veilid_reddit_facebook`) in both directions (`0` retained conflict branches remaining)
 - [x] Staged 28 verified published submodule pointers (`pincheck == 0` unpublished), regenerated `STRUCTURAL_MAP.md` (`133/134`) & `SUBMODULE_DASHBOARD.md`, and verified `build.bat` (`4/4` OK) + `start.bat build` (`10/10` Go binaries OK)
-- [ ] Optional follow-up: wire `proxy.RouterEvent` in `freellm/tray_windows.go`
+- [x] Optional follow-up: wire `proxy.RouterEvent` in `freellm/tray_windows.go` (completed in Protocol #301, `fdfc74d`)
 - [ ] Robert: Umbrella v6/v7 & `unitedbeats.org` menu confirmation with Bobbi; commercial GTM & maintenance window gates
 
 ### Protocol #299 Outcomes (2026-11-14)

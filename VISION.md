@@ -1,6 +1,6 @@
-# Vision — Omni-Workspace (v5.309.0)
+# Vision — Omni-Workspace (v5.310.0)
 
-*Last Updated: 2026-11-14*
+*Last Updated: 2026-11-15*
 
 ## The Ultimate Goal
 
@@ -14,7 +14,7 @@ An **autonomous, self-healing, federated monorepo** of **134 submodules** spanni
 - **Resource-Aware Execution:** Builds and daemons run at `BelowNormal` CPU priority with Go build caches offloaded to `D:\agent-cache`.
 
 ### 2. Unified Control Plane & Observability
-- **Consolidated Workspace Control Center (`:2999`) + Native Windows Tray:** Real-time visibility and lifecycle management over all 10 Go binaries, 134 submodules, infrastructure ports (`:2999`, `:7778`, `:7779`, `:8082`, `:3006`, `:9222`), and root governance documents.
+- **Consolidated Workspace Control Center (`:2999`) + Native Windows Tray (`v2.1.0`):** Real-time visibility and lifecycle management over all 12 Go binaries, 134 submodules (with root-pin drift & multi-org telemetry), HyperNexus `:7778` live Session Bus feed & broadcast, infrastructure ports (`:2999`, `:7778`, `:7779`, `:8082`, `:3006`, `:9222`), and root governance documents.
 - **HyperNexus Federation (`:7778` / `:7779`):** Cross-harness session bus (`session-bus.mjs`) and MS Edge CDP bridge (`cdp-bridge.mjs`) connecting CLI agents, IDE agents, and web reasoning threads (`muse.ai`, Gemini, ChatGPT).
 
 ### 3. Commercial & Ecosystem Execution
@@ -26,17 +26,17 @@ An **autonomous, self-healing, federated monorepo** of **134 submodules** spanni
 | Phase | Status | Milestone Highlights |
 |-------|--------|----------------------|
 | 1. Consolidation | Complete | 134 submodules mapped (`133/134` initialized), org migrations (`FWBerLLC`, `UnitedBeatsLLC`) |
-| 2. Zero-Loss Merge Engine | Complete | 300 Executive Protocols executed; deep 509-submodule traversal, hidden-branch harvest, and pincheck guard |
-| 3. Global Build & Tray Control | Complete | `build.bat` (4/4 OK), `start.bat build` (10/10 Go binaries OK), `:2999` Control Center + System Tray |
-| 4. Federated Multi-Agent Ops | Active | HyperNexus `:7778` session bus + `:9222` Edge CDP bridge coordinating Muse, Antigravity, Codex, and Bobbi |
+| 2. Zero-Loss Merge Engine | Complete | 301 Executive Protocols executed; deep 509-submodule traversal, hidden-branch harvest, and pincheck guard |
+| 3. Global Build & Tray Control | Complete | `build.bat` (4/4 OK), `start.bat build` (12/12 Go binaries OK), `:2999` Control Center + System Tray v2.1.0 |
+| 4. Federated Multi-Agent Ops | Active | HyperNexus `:7778` session bus (embedded live in `:2999`) + `:9222` Edge CDP bridge |
 | 5. Enterprise GTM & Hardening | In Progress | `unitedbeats.org` v1.4.0 live, `unitedbeats_hypernexus_gtm` seeded, all 4 retained conflict branches reconciled |
 
-## By the Numbers (v5.309.0)
+## By the Numbers (v5.310.0)
 
 | Metric | Current Verified State | Target (v6.0.0) |
 |--------|------------------------|-----------------|
 | Submodules Registered | 134 root (`509` recursive across all layers) | 134+ (`100%` initialized) |
-| Executive Protocols Completed | 300 (`v5.309.0`) | Continuous autonomous cadence |
-| Core Go Service Binaries | 10 / 10 compiling (`start.bat build`) + `bobtk.exe` (`bgtk` v1.8.0) | 10+ with automated smoke tests |
-| Retained Conflict Branches | 0 (all 4 reconciled & pushed cleanly in #300) | 0 unresolved |
-| Control Plane Health | Live (`:2999`, `:7778`, `:7779`, `:9222`) | Full self-healing supervisor (`0` degraded) |
+| Executive Protocols Completed | 301 (`v5.310.0`) | Continuous autonomous cadence |
+| Core Go Service Binaries | 12 / 12 compiling (`start.bat build`, incl. `freellm.exe` & `bobtk.exe`) | 12+ with automated smoke tests |
+| Retained Conflict Branches | 0 (all 4 reconciled & pushed cleanly) | 0 unresolved |
+| Control Plane Health | Live (`:2999` v2.1.0, `:7778`, `:7779`, `:9222`) | Full self-healing supervisor (`0` degraded) |

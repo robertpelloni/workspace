@@ -1,6 +1,6 @@
 # Omni-Workspace Deployment & Maintenance Strategy
 
-*Last Updated: 2026-11-14 (v5.309.0 — Protocol #300)*
+*Last Updated: 2026-11-15 (v5.310.0 — Protocol #301)*
 
 ## 1. Standing Close-Out Policy (Always-Deploy)
 Per owner directive (2026-11-13), every Executive Protocol synchronization pass closes out with full verification and root deployment (`0/0` vs `origin/main`):
@@ -26,7 +26,7 @@ Per owner directive (2026-11-13), every Executive Protocol synchronization pass 
 :: Global verification build (hyperharness, pi-mono, tabby-backend, tabby-native)
 cmd /c build.bat
 
-:: Full 10-binary Go service suite (tabby x3, hermes-agent, hyperharness, pi-go, npp x2, warp-go, hyper-go)
+:: Full 12-binary Go service suite (tabby x3, hermes-agent, hyperharness, pi-go, npp x2, warp-go, hyper-go, freellm, bobtk)
 cmd /c start.bat build
 
 :: Consolidated Control Center (:2999) + Windows System Tray Controller
