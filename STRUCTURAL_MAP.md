@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-14 (Protocol #313, full regen)
+Generated: 2026-11-14 (Protocol #314, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
 | fwber | https://github.com/robertpelloni/fwber.git | 2b19a5e6d34b |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 1306dc43405b |
+| hymnmania | https://github.com/robertpelloni/hymnmania | f3093860be35 |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | f8468f05b80b |
@@ -46,7 +46,7 @@ Generated: 2026-11-14 (Protocol #313, full regen)
 | dao | https://github.com/robertpelloni/dao.git | 3a5f1e4483a3 |
 | electricsheep | https://github.com/robertpelloni/electricsheep.git | 5dd8b43773b9 |
 | element-web | https://github.com/robertpelloni/element-web.git | 9e7918b63c95 |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | d4d2715a613e |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 1ef8788cb71f |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | c105ce449b1a |
 | aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 1365c8f09c3a |
