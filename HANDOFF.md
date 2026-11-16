@@ -1,3 +1,19 @@
+# HANDOFF - v5.334.0 - 2026-11-16 - Protocol #325: Repository Sync & Intelligent Merge
+
+## Session - Protocol #325 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_325_*`)
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 6 pointers staged (fwber, realestatecrm, marketing_agent, aimoneymachine_site, bob_and_lum_sitcom, bobble); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished; HN supervisor now reports stopped (fix verified).
+- Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered). mk64 revert-* retained deliberately.
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
+- Phase4: per ledgers sync_protocol_325_phase4* (lane pushes/checkout-fails resolved). HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- Supervisor session still degraded (exit status 1, cf 0). GH token in gitignored root .env verified robertpelloni (never printed); bus+CDP loop active.
+
+## Prior
 # HANDOFF - v5.333.0 - 2026-11-16 - Protocol #324: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #324 (this session)
@@ -227,7 +243,7 @@
 ## Session - Protocol #310 (this session)
 
 ### Steps 1-2 (ledgers `sync_protocol_310_*`)
-- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 0 submodule pointers moved (full steady state); retained 12 conflict branches re-verified conflict-final; phase4 checkout-fails resolved up-to-date (electricsheep/neverball); reverse veilid pushed; pincheck 0 unpublished.
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 0 submodule pointers moved (full steady state); retained 12 conflict branches re-verified conflict-final; phase4 pushed fwber (+1), aimoneymachine_site (+6), bobble (+1); reverse veilid pushed; pincheck 0 unpublished.
 - Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered). mk64 revert-* retained deliberately.
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
 - Phase4: lane pushes/checkout-fails resolved per ledgers sync_protocol_310_phase4*. HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).
