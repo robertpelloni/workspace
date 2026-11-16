@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.314.0)
+## Current Status (v5.315.0)
+
+**Protocol #306 (2026-11-16):** triage 53 actionable, 0 forward merges needed this cycle (workspace already harvested by Protocols #299-#305); all 12 non-dependabot actionable branches are the retained conflict set, re-verified conflict-final in merge/phase2/final; phase4 pushed hyperharness (+1) and pi-mono (+1) dirty-lane states; reverse-merged veilid jules branch and pushed; 4 submodule pointers staged (fwber, marketing_agent, hyperharness, pi-mono), pincheck 0 unpublished; openclaw-dashboard/projectM-upstream pins skipped unpublished; retained conflicts unchanged: multimousergy x11, JWildfire main+jules, bg/bg_fix jules-1394303886104622315, mk64 MegaMech/dec/revert-497/revert-638/revert-735/revert-739, bobfilez_fix recovery/detached-work. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.314.0)
 
 **Protocol #305 (2026-11-16):** triage 72 actionable (hermes-agent excluded: 4169-branch upstream mirror, Antigravity lane owns harvest), remaining 19 -> 13 after final sweep; forward merges: bobtorrent main, vst_monster main + 4 in merge pass; phase2X merged superdawmcp v3.1.0-mobile-remote-ux + feat-v3.2.0-master-console, bobeditpro both jules branches, libjruntime, okgame both branches; final sweep merged mk64 clang-format, modern-kart-mechanics, mk64-enhancements-extras, phase-1-decompilation-renaming, jules-15071162120158548018; phase4 pushed pi-mono (+1), bobmani/hymnmania (+1); reverse-merged veilid jules branch and pushed; 11 submodule pointers staged, pincheck 0 unpublished; retained conflicts: multimousergy x11, JWildfire main+jules, bg/bg_fix jules-1394303886104622315, mk64 MegaMech/dec/revert-497/revert-638/revert-735/revert-739, bobfilez_fix recovery/detached-work. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 

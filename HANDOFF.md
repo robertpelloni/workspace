@@ -1,3 +1,19 @@
+# HANDOFF - v5.315.0 - 2026-11-16 - Protocol #306: Repository Sync & Intelligent Merge
+
+## Session - Protocol #306 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_306_*`)
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges needed this cycle (workspace already harvested by Protocols #299-#305); all 12 non-dependabot actionable branches are the retained conflict set, re-verified conflict-final in merge/phase2/final; phase4 pushed hyperharness (+1) and pi-mono (+1) dirty-lane states; reverse-merged veilid jules branch and pushed; 4 submodule pointers staged (fwber, marketing_agent, hyperharness, pi-mono), pincheck 0 unpublished; openclaw-dashboard/projectM-upstream pins skipped unpublished; retained conflicts unchanged: multimousergy x11, JWildfire main+jules, bg/bg_fix jules-1394303886104622315, mk64 MegaMech/dec/revert-497/revert-638/revert-735/revert-739, bobfilez_fix recovery/detached-work.
+- Remaining verified unmerged = 14 (12 retained conflict branches listed above + dependabot multimousergy/bobsgameweb, filtered; fwber upstream dependabot x6 also filtered in triage). No branch deletions.
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
+- Phase4 pushed hyperharness (+1) and pi-mono (+1) lane states (verified); electricsheep/neverball checkout-fail then up-to-date. HyperNexus code v1.0.83 fetch-verified 0/0, running kernel v1.0.84 (sibling lanes own commits; leader fetch/status only).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor session still degraded (exit status 1, consecutiveFailures 0) on kernel v1.0.84; ownership with sibling lanes. GH token in gitignored root .env verified as robertpelloni (never printed); bus + CDP loop active.
+
+## Prior
 # HANDOFF - v5.314.0 - 2026-11-16 - Protocol #305: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #305 (this session)

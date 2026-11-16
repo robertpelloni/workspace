@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-14 (Protocol #305, full regen)
+Generated: 2026-11-14 (Protocol #306, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | 8b0e1c99b63b |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 067fbbea4d52 |
+| fwber | https://github.com/robertpelloni/fwber.git | 044c3de878f5 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | d4ea91c91ad5 |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 5fe897fa0d07 |
@@ -46,14 +46,14 @@ Generated: 2026-11-14 (Protocol #305, full regen)
 | dao | https://github.com/robertpelloni/dao.git | 3a5f1e4483a3 |
 | electricsheep | https://github.com/robertpelloni/electricsheep.git | 5dd8b43773b9 |
 | element-web | https://github.com/robertpelloni/element-web.git | 9e7918b63c95 |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | e23469669d7d |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 01aa4a359013 |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | c105ce449b1a |
 | aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 1365c8f09c3a |
 | geany | https://github.com/robertpelloni/geany | 9bec4e3a8832 |
 | geiss | https://github.com/robertpelloni/geiss.git | e68cd15b95ed |
 | hyper | https://github.com/robertpelloni/hyper.git | 848f3051afb5 |
-| hyperharness | https://github.com/robertpelloni/hyperharness | df2dbfdf5d83 |
+| hyperharness | https://github.com/robertpelloni/hyperharness | 06ea19c14030 |
 | freellm | https://github.com/robertpelloni/freellm | fdfc74d43477 |
 | mcp-superassistant | https://github.com/robertpelloni/mcp-superassistant | 5efe6d1771b0 |
 | mk64 | https://github.com/robertpelloni/mk64 | cba86d6cdc3d |
@@ -64,7 +64,7 @@ Generated: 2026-11-14 (Protocol #305, full regen)
 | onetool-mcp | https://github.com/robertpelloni/onetool-mcp | 59d422d2eeaa |
 | openclaw-config | https://github.com/TechNickAI/openclaw-config.git | 5ae3657477b5 |
 | openclaw-dashboard | https://github.com/tugcantopaloglu/openclaw-dashboard.git | fa8d772d7015 |
-| pi-mono | https://github.com/robertpelloni/pi-mono | 0edf40d528f7 |
+| pi-mono | https://github.com/robertpelloni/pi-mono | 51788f850f99 |
 | planet_fitness_stepmaniax_agent | https://github.com/robertpelloni/planet_fitness_stepmaniax_agent | acab0d13406d |
 | projectm | https://github.com/robertpelloni/projectm.git | 76098fdd8cb9 |
 | psytrance_night_outreach_agent | https://github.com/robertpelloni/psytrance_night_outreach_agent.git | 9a8cc847840b |
