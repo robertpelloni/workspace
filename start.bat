@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: ================================================================
-:: Omni-Workspace Master Start Script - v5.321.0
+:: Omni-Workspace Master Start Script - v5.322.0
 :: Builds and launches all Go binary services + Control Center (:2999)
 :: 9 projects, 12 Go binaries + Consolidated Control Center & Tray
 :: ================================================================
@@ -260,7 +260,7 @@ goto :end
 
 :help
 echo.
-echo  Omni-Workspace Master Start Script - v5.321.0
+echo  Omni-Workspace Master Start Script - v5.322.0
 echo.
 echo  Usage: start.bat [command]
 echo.
