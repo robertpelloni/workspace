@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-14 (Protocol #319, full regen)
+Generated: 2026-11-14 (Protocol #320, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | 8eb1350f83bd |
-| hymnmania | https://github.com/robertpelloni/hymnmania | df2f9f1c6cc1 |
+| fwber | https://github.com/robertpelloni/fwber.git | 9b5c81556e09 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 7c906230f297 |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 2fb61b86e702 |
