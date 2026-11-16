@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-14 (Protocol #314, full regen)
+Generated: 2026-11-14 (Protocol #315, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
 | fwber | https://github.com/robertpelloni/fwber.git | 2b19a5e6d34b |
-| hymnmania | https://github.com/robertpelloni/hymnmania | f3093860be35 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 1bcd5132378f |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | f8468f05b80b |
@@ -93,7 +93,7 @@ Generated: 2026-11-14 (Protocol #314, full regen)
 | bobmani/ddc | https://github.com/robertpelloni/ddc | 88ec337f1ec4 |
 | bobmani/ddc_onset | https://github.com/robertpelloni/ddc_onset | f35cf13f8b79 |
 | bobmani/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model | 0574a001c065 |
-| bobmani/hymnmania | https://github.com/robertpelloni/hymnmania | 5c22d536e361 |
+| bobmani/hymnmania | https://github.com/robertpelloni/hymnmania | a28911f9150d |
 | bobmani/itgmania | https://github.com/robertpelloni/itgmania | 851f41eea327 |
 | bobmani/ksm-v2 | https://github.com/robertpelloni/ksm-v2 | dbe00cc17d27 |
 | bobmani/leraine-studio | https://github.com/robertpelloni/leraine-studio | b8c77616eece |

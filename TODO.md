@@ -1,3 +1,9 @@
+### Protocol #315 Outcomes (2026-11-16)
+
+- [x] v5.324.0 - Protocol #315: triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #314 Outcomes (2026-11-16)
 
 - [x] v5.323.0 - Protocol #314: triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished
