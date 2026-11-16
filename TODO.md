@@ -1,3 +1,9 @@
+### Protocol #324 Outcomes (2026-11-16)
+
+- [x] v5.333.0 - Protocol #324: triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished; HyperNexus supervisor fix b114a65f6f landed by sibling lane
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #323 Outcomes (2026-11-16)
 
 - [x] v5.332.0 - Protocol #323: triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished
