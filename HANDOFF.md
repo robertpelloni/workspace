@@ -1,3 +1,19 @@
+# HANDOFF - v5.316.0 - 2026-11-16 - Protocol #307: Repository Sync & Intelligent Merge
+
+## Session - Protocol #307 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_307_*`)
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges (steady state); retained 12 conflict branches re-verified conflict-final; phase4 pushed marketing_agent (+1), hyperharness (+1); reverse veilid pushed; 4 submodule pointers staged (fwber, realestatecrm, marketing_agent, hyperharness), pincheck 0 unpublished.
+- Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
+- Phase4 pushed bobsaver (+7), bcs (+1), aimoneymachine_site (+4); bobtorrent dirty-fail (.hypernexus/ untracked, untouched). HyperNexus code v1.0.70 / running kernel v1.0.71 from sibling lanes.
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor fix from earlier session remains uncommitted in shared HyperNexus working tree (sibling lanes own that commit); leader lane fetch/status only there.
+
+## Prior
 # HANDOFF - v5.315.0 - 2026-11-16 - Protocol #306: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #306 (this session)

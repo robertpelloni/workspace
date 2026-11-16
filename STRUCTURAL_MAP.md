@@ -1,15 +1,15 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-14 (Protocol #306, full regen)
+Generated: 2026-11-14 (Protocol #307, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | 044c3de878f5 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | d4ea91c91ad5 |
+| fwber | https://github.com/robertpelloni/fwber.git | 2b19a5e6d34b |
+| hymnmania | https://github.com/robertpelloni/hymnmania | ad604d741902 |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
-| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 5fe897fa0d07 |
+| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 360ecbb606cb |
 | skillzhub | https://github.com/robertpelloni/skillzhub | c2b8aa26aa41 |
 | hermes-agent | https://github.com/robertpelloni/hermes-agent | ccb236f9f2a0 |
 | multimousergy | https://github.com/robertpelloni/multimousergy.git | 3e6007c81c68 |
@@ -46,14 +46,14 @@ Generated: 2026-11-14 (Protocol #306, full regen)
 | dao | https://github.com/robertpelloni/dao.git | 3a5f1e4483a3 |
 | electricsheep | https://github.com/robertpelloni/electricsheep.git | 5dd8b43773b9 |
 | element-web | https://github.com/robertpelloni/element-web.git | 9e7918b63c95 |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | 01aa4a359013 |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | d4d2715a613e |
 | f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
 | fcdm | https://github.com/robertpelloni/fcdm.git | c105ce449b1a |
 | aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | 1365c8f09c3a |
 | geany | https://github.com/robertpelloni/geany | 9bec4e3a8832 |
 | geiss | https://github.com/robertpelloni/geiss.git | e68cd15b95ed |
 | hyper | https://github.com/robertpelloni/hyper.git | 848f3051afb5 |
-| hyperharness | https://github.com/robertpelloni/hyperharness | 06ea19c14030 |
+| hyperharness | https://github.com/robertpelloni/hyperharness | 785ae2148ebf |
 | freellm | https://github.com/robertpelloni/freellm | fdfc74d43477 |
 | mcp-superassistant | https://github.com/robertpelloni/mcp-superassistant | 5efe6d1771b0 |
 | mk64 | https://github.com/robertpelloni/mk64 | cba86d6cdc3d |
@@ -74,7 +74,7 @@ Generated: 2026-11-14 (Protocol #306, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 567b7a2db566 |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 173676390e73 |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | f3380569e4ce |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | a7dd72a388a6 |
 | warp | https://github.com/robertpelloni/warp.git | 0b796c464109 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | 49207773ca73 |

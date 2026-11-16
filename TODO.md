@@ -1,3 +1,9 @@
+### Protocol #307 Outcomes (2026-11-16)
+
+- [x] v5.316.0 - Protocol #307: triage 53 actionable, 0 forward merges (steady state); retained 12 conflict branches re-verified conflict-final; phase4 pushed marketing_agent (+1), hyperharness (+1); reverse veilid pushed; 4 submodule pointers staged (fwber, realestatecrm, marketing_agent, hyperharness), pincheck 0 unpublished
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #306 Outcomes (2026-11-16)
 
 - [x] v5.315.0 - Protocol #306: triage 53 actionable, 0 forward merges needed this cycle (workspace already harvested by Protocols #299-#305); all 12 non-dependabot actionable branches are the retained conflict set, re-verified conflict-final in merge/phase2/final; phase4 pushed hyperharness (+1) and pi-mono (+1) dirty-lane states; reverse-merged veilid jules branch and pushed; 4 submodule pointers staged (fwber, marketing_agent, hyperharness, pi-mono), pincheck 0 unpublished; openclaw-dashboard/projectM-upstream pins skipped unpublished; retained conflicts unchanged: multimousergy x11, JWildfire main+jules, bg/bg_fix jules-1394303886104622315, mk64 MegaMech/dec/revert-497/revert-638/revert-735/revert-739, bobfilez_fix recovery/detached-work
