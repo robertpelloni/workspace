@@ -7,7 +7,7 @@
 - Remaining verified unmerged = 14 (12 retained conflict branches listed above + dependabot multimousergy/bobsgameweb, filtered; fwber upstream dependabot x6 also filtered in triage). No branch deletions.
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
 - Phase4 pushed hyperharness (+1) and pi-mono (+1) lane states (verified); electricsheep/neverball checkout-fail then up-to-date. HyperNexus code v1.0.83 fetch-verified 0/0, running kernel v1.0.84 (sibling lanes own commits; leader fetch/status only).
-- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (GOCACHE on D:); root push cc49e1c8c, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
