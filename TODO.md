@@ -1,3 +1,9 @@
+### Protocol #309 Outcomes (2026-11-16)
+
+- [x] v5.318.0 - Protocol #309: triage 53 actionable, 0 forward merges, 0 submodule pointers moved (full steady state); retained 12 conflict branches re-verified conflict-final; phase4 checkout-fails resolved up-to-date (electricsheep/neverball); reverse veilid pushed; pincheck 0 unpublished
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #308 Outcomes (2026-11-16)
 
 - [x] v5.317.0 - Protocol #308: triage 53 actionable, 0 forward merges (steady state); retained 12 conflict branches re-verified conflict-final; phase4 checkout-fails resolved up-to-date in phase4b (electricsheep/neverball); reverse veilid pushed; 1 submodule pointer staged (realestatecrm f8468f0, RealEstateCRM v0.66.4 steady state), pincheck 0 unpublished

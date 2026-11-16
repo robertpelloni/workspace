@@ -1,3 +1,19 @@
+# HANDOFF - v5.318.0 - 2026-11-16 - Protocol #309: Repository Sync & Intelligent Merge
+
+## Session - Protocol #309 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_309_*`)
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 0 submodule pointers moved (full steady state); retained 12 conflict branches re-verified conflict-final; phase4 checkout-fails resolved up-to-date (electricsheep/neverball); reverse veilid pushed; pincheck 0 unpublished.
+- Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
+- Phase4: electricsheep/neverball checkout-fail then up-to-date; no lane pushes needed. HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- Supervisor session still degraded (exit status 1, cf 0). GH token in gitignored root .env verified robertpelloni (never printed); bus+CDP loop active.
+
+## Prior
 # HANDOFF - v5.317.0 - 2026-11-16 - Protocol #308: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #308 (this session)
