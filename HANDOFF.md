@@ -7,7 +7,7 @@
 - Remaining after final sweep = 13 retained conflict branches (multimousergy x11, JWildfire main+jules, bg/bg_fix jules, mk64 MegaMech/dec/4 revert-*, bobfilez_fix recovery) + filtered dependabot (fwber upstream x6, multimousergy, bobsgameweb, bobcoin, planet_fitness in earlier repos). mk64 revert-* branches retained deliberately (merging them would revert merged work).
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
 - Phase4 pushed pi-mono (+1) and bobmani/hymnmania (+1) dirty-lane states (verified lane-authored); electricsheep/neverball checkout-fail then up-to-date in phase4b. HyperNexus code v1.0.83 fetch-verified 0/0, running kernel v1.0.84 (sibling lanes own commits; leader fetch/status only). Caught up via Antigravity Protocols #299-#304 (Control Center v2.3.0, UnitedBeats v1.7.0, refspec unlock harvest +312 commits).
-- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped; start.bat build 11 OK / 1 failed (npp-go cgo gcc parse error, pre-existing env issue in untouched npp @ c71c9e6fb, not a #305 regression); root push ce94fac21, 0/0. Do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
