@@ -2,6 +2,10 @@
 
 ## Current Status (v5.318.0)
 
+**Protocol #310 (2026-11-16):** triage 53 actionable, 0 forward merges, 0 submodule pointers moved (full steady state); retained 12 conflict branches re-verified conflict-final; phase4 checkout-fails resolved up-to-date (electricsheep/neverball); reverse veilid pushed; pincheck 0 unpublished. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.318.0)
+
 **Protocol #309 (2026-11-16):** triage 53 actionable, 0 forward merges, 0 submodule pointers moved (full steady state); retained 12 conflict branches re-verified conflict-final; phase4 checkout-fails resolved up-to-date (electricsheep/neverball); reverse veilid pushed; pincheck 0 unpublished. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 
  (v5.317.0)
