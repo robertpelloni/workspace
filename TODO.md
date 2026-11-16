@@ -1,3 +1,9 @@
+### Protocol #305 Outcomes (2026-11-16)
+
+- [x] v5.314.0 - Protocol #305: triage 72 actionable (hermes-agent excluded: 4169-branch upstream mirror, Antigravity lane owns harvest), remaining 19 -> 13 after final sweep; forward merges: bobtorrent main, vst_monster main + 4 in merge pass; phase2X merged superdawmcp v3.1.0-mobile-remote-ux + feat-v3.2.0-master-console, bobeditpro both jules branches, libjruntime, okgame both branches; final sweep merged mk64 clang-format, modern-kart-mechanics, mk64-enhancements-extras, phase-1-decompilation-renaming, jules-15071162120158548018; phase4 pushed pi-mono (+1), bobmani/hymnmania (+1); reverse-merged veilid jules branch and pushed; 11 submodule pointers staged, pincheck 0 unpublished; retained conflicts: multimousergy x11, JWildfire main+jules, bg/bg_fix jules-1394303886104622315, mk64 MegaMech/dec/revert-497/revert-638/revert-735/revert-739, bobfilez_fix recovery/detached-work
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #304 Outcomes (2026-11-15)
 
 - [x] v5.313.0 - Protocol #304: Upgraded Consolidated Workspace Control Center (`:2999`) + Windows System Tray to **`v2.3.0`** (recursive `L1`–`L4` Nested Submodule Deep Drill-Down Drawer `GET /api/submodules/nested`, `870` nested declarations, plus `GET/POST /api/session-bus/handover` quota-resilient handover ledger on `:7778`)

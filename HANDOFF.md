@@ -1,3 +1,19 @@
+# HANDOFF - v5.314.0 - 2026-11-16 - Protocol #305: Repository Sync & Intelligent Merge
+
+## Session - Protocol #305 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_305_*`)
+- Scan/triage: 114 repos. triage 72 actionable (hermes-agent excluded: 4169-branch upstream mirror, Antigravity lane owns harvest), remaining 19 -> 13 after final sweep; forward merges: bobtorrent main, vst_monster main + 4 in merge pass; phase2X merged superdawmcp v3.1.0-mobile-remote-ux + feat-v3.2.0-master-console, bobeditpro both jules branches, libjruntime, okgame both branches; final sweep merged mk64 clang-format, modern-kart-mechanics, mk64-enhancements-extras, phase-1-decompilation-renaming, jules-15071162120158548018; phase4 pushed pi-mono (+1), bobmani/hymnmania (+1); reverse-merged veilid jules branch and pushed; 11 submodule pointers staged, pincheck 0 unpublished; retained conflicts: multimousergy x11, JWildfire main+jules, bg/bg_fix jules-1394303886104622315, mk64 MegaMech/dec/revert-497/revert-638/revert-735/revert-739, bobfilez_fix recovery/detached-work.
+- Remaining after final sweep = 13 retained conflict branches (multimousergy x11, JWildfire main+jules, bg/bg_fix jules, mk64 MegaMech/dec/4 revert-*, bobfilez_fix recovery) + filtered dependabot (fwber upstream x6, multimousergy, bobsgameweb, bobcoin, planet_fitness in earlier repos). mk64 revert-* branches retained deliberately (merging them would revert merged work).
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
+- Phase4 pushed pi-mono (+1) and bobmani/hymnmania (+1) dirty-lane states (verified lane-authored); electricsheep/neverball checkout-fail then up-to-date in phase4b. HyperNexus code v1.0.83 fetch-verified 0/0, running kernel v1.0.84 (sibling lanes own commits; leader fetch/status only). Caught up via Antigravity Protocols #299-#304 (Control Center v2.3.0, UnitedBeats v1.7.0, refspec unlock harvest +312 commits).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- HyperNexus supervisor session still reports degraded (exit status 1, consecutiveFailures 0) on kernel v1.0.84; fix ownership stays with sibling lanes; leader lane fetch/status only there. GH token coordination: valid token in gitignored root .env, verified as robertpelloni, never printed.
+
+## Prior
 # HANDOFF - v5.313.0 - 2026-11-15 - Protocol #304: Control Center v2.3.0 (Nested Submodule Drill-Down & Handover Ledger), 24-Repo Single-Branch Refspec Unlock & Feature Harvest
 
 ## Session - Protocol #304 (`antigravity-gemini`)
