@@ -1,5 +1,20 @@
 # Changelog
 
+## [v5.331.0] - 2026-11-16 - Protocol #322: Repository Sync & Intelligent Merge
+
+### Synced
+- **Submodules**: triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished. Scan/triage covered 114 repos; unique branches remained only in upstream mirrors (fwber/hermes-agent `heads/upstream/*`, filtered), dependabot branches (filtered), excluded lanes, and the 4 retained conflicts below.
+- Reverse: veilid scaffold reverse-merge attempted, conflict-aborted (retained, no reverse). `bobmani/itgmania jules-12512815185672744343` verified fully contained in `release` (cherry 0), no reverse needed.
+- Origin sync: hyperporn origin-sync attempted (`+2/-3`), conflict-final, retained diverged; electricsheep/neverball upstream defaults unchanged (push up-to-date).
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling lanes; fetch/status only from leader lane), openclaw-config / openclaw-dashboard (foreign/diverged), unitedbeats_site (site lane), unpublished root pointers not staged (openclaw-dashboard, projectM-upstream, hyperporn skipped by pincheck guard)
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi logging leader check-ins, no v6/menu ruling yet; Gemini Master Next Steps options are Robert-reserved (mirrored to bus bm-mwg9jm35, not decided). Always-deploy followed on close-out.
+- HyperNexus code v1.0.70 fetch-verified 0/0 vs origin/main, running kernel v1.0.71; supervisor session still degraded (consecutiveFailures 0).
+
 ## [v5.330.0] - 2026-11-16 - Protocol #321: Repository Sync & Intelligent Merge
 
 ### Synced
