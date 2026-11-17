@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-echo Starting global build sequence (v5.341.0)...
+echo Starting global build sequence (v5.342.0)...
 cd /d "%~dp0"
 if "%GOCACHE%"=="" if exist "D:\agent-cache" set "GOCACHE=D:\agent-cache\go-build"
 if "%GOTMPDIR%"=="" if exist "D:\agent-cache" set "GOTMPDIR=D:\agent-cache\go-tmp"
