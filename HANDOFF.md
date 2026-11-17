@@ -1,3 +1,19 @@
+# HANDOFF - v5.343.0 - 2026-11-16 - Protocol #334: Repository Sync & Intelligent Merge
+
+## Session - Protocol #334 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_334_*`)
+- Scan/triage: 114 repos. triage 56 actionable, 1 fast-forward, 0 forward merges; bobfilez_fix PUSHFAIL root-caused (non-FF race between two clones of bobfilez) and fixed by leader (local-wins sync merge, pushed 0/0); retained 10 re-verified; pincheck 0 unpublished.
+- Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered). mk64 revert-* retained deliberately.
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
+- Phase4: per ledgers sync_protocol_334_phase4* (lane pushes/checkout-fails resolved). HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- Supervisor session still degraded (exit status 1, cf 0). GH token in gitignored root .env verified robertpelloni (never printed); bus+CDP loop active.
+
+## Prior
 # HANDOFF - v5.342.0 - 2026-11-16 - Protocol #333: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #333 (this session)
@@ -259,7 +275,7 @@
 ## Session - Protocol #317 (this session)
 
 ### Steps 1-2 (ledgers `sync_protocol_317_*`)
-- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished.
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 7 pointers staged (fwber, realestatecrm, bobfilez, bobtorrent, aimoneymachine_site, bobfilez_fix, okgame); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished.
 - Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered). mk64 revert-* retained deliberately.
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
 - Phase4: per ledgers sync_protocol_317_phase4* (lane pushes/checkout-fails resolved). HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).

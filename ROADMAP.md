@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.342.0)
+## Current Status (v5.343.0)
+
+**Protocol #334 (2026-11-16):** triage 56 actionable, 1 fast-forward, 0 forward merges; bobfilez_fix PUSHFAIL root-caused (non-FF race between two clones of bobfilez) and fixed by leader (local-wins sync merge, pushed 0/0); retained 10 re-verified; pincheck 0 unpublished. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.342.0)
 
 **Protocol #333 (2026-11-16):** triage 52 actionable, 1 fast-forward, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 
