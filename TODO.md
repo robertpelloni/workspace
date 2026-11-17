@@ -1,3 +1,9 @@
+### Protocol #331 Outcomes (2026-11-16)
+
+- [x] v5.340.0 - Protocol #331: triage 52 actionable, 1 fast-forward, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #330 Outcomes (2026-11-16)
 
 - [x] v5.339.0 - Protocol #330: triage 52 actionable, 2 fast-forwards, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished
