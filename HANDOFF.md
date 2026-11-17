@@ -1,3 +1,19 @@
+# HANDOFF - v5.339.0 - 2026-11-16 - Protocol #330: Repository Sync & Intelligent Merge
+
+## Session - Protocol #330 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_330_*`)
+- Scan/triage: 114 repos. triage 52 actionable, 2 fast-forwards, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished.
+- Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered). mk64 revert-* retained deliberately.
+- Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
+- Phase4: per ledgers sync_protocol_330_phase4* (lane pushes/checkout-fails resolved). HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).
+- Build/deploy: fill after running build.bat; do not clean binaries. Deploy = root push + build verification per Robert's always-deploy instruction (2026-11-13).
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; Codex `codex-desktop-laptop`, Antigravity `antigravity-gemini`, `muse-code-coord` registered. Coordination loop checks CDP + bus + HyperNexus fetch sync every ~17 min.
+- Supervisor session still degraded (exit status 1, cf 0). GH token in gitignored root .env verified robertpelloni (never printed); bus+CDP loop active.
+
+## Prior
 # HANDOFF - v5.338.0 - 2026-11-16 - Protocol #329: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #329 (this session)
@@ -131,7 +147,7 @@
 ## Session - Protocol #321 (this session)
 
 ### Steps 1-2 (ledgers `sync_protocol_321_*`)
-- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished.
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 11 pointers staged; retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished.
 - Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered). mk64 revert-* retained deliberately.
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
 - Phase4: per ledgers sync_protocol_321_phase4* (lane pushes/checkout-fails resolved). HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).
