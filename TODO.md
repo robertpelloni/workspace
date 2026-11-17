@@ -1,3 +1,9 @@
+### Protocol #335 Outcomes (2026-11-16)
+
+- [x] v5.344.0 - Protocol #335: triage 56 actionable, 2 fast-forwards, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #334 Outcomes (2026-11-16)
 
 - [x] v5.343.0 - Protocol #334: triage 56 actionable, 1 fast-forward, 0 forward merges; bobfilez_fix PUSHFAIL root-caused (non-FF race between two clones of bobfilez) and fixed by leader (local-wins sync merge, pushed 0/0); retained 10 re-verified; pincheck 0 unpublished
