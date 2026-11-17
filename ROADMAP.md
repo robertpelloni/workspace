@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.340.0)
+## Current Status (v5.341.0)
+
+**Protocol #332 (2026-11-16):** triage 52 actionable, 1 fast-forward, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.340.0)
 
 **Protocol #331 (2026-11-16):** triage 52 actionable, 1 fast-forward, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 
