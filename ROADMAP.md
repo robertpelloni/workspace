@@ -1,5 +1,9 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
+## v5.345.0 — 2026-11-20
+
+Adopt the published project scope updates for BobFilez, BobSaver, and the Bob toolkit repositories. Treat Bob’s Game Web as the canonical Bob’s Game build and retain the Java repository as a port source. Track the BobMania packaging and documentation fixes and BobTorrent’s expanded Go CI coverage.
+
 ## Current Status (v5.344.0)
 
 **Protocol #335 (2026-11-16):** triage 56 actionable, 2 fast-forwards, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.

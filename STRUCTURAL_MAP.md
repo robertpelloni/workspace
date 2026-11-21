@@ -1,142 +1,802 @@
-# STRUCTURAL MAP - Submodules
+# Structural map
 
-Generated: 2026-11-14 (Protocol #335, full regen)
+Generated 2026-11-20 for v5.345.0 from the root index and recursively available pinned Git trees. Sources come from the parent .gitmodules file. Relative URLs are shown as configured.
 
-| Submodule | Remote URL | Commit |
-|---|---|---|
-| auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
-| fwber | https://github.com/robertpelloni/fwber.git | c5461fb67d91 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 0ed343a8a1d4 |
-| hypercode | https://github.com/robertpelloni/hypercode | not initialized |
-| jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
-| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 6742f7b9c56b |
-| skillzhub | https://github.com/robertpelloni/skillzhub | c2b8aa26aa41 |
-| hermes-agent | https://github.com/robertpelloni/hermes-agent | ccb236f9f2a0 |
-| multimousergy | https://github.com/robertpelloni/multimousergy.git | 3e6007c81c68 |
-| ArrowVortex | https://github.com/robertpelloni/ArrowVortex | d0e69c391dff |
-| superdawmcp | https://github.com/robertpelloni/superdawmcp | a4fd97c4a366 |
-| GWEN | https://github.com/robertpelloni/GWEN.git | d4e2ebcc68a4 |
-| JWildfire | https://github.com/robertpelloni/JWildfire.git | e2539122e24d |
-| Maestro | https://github.com/robertpelloni/Maestro | f492a7e02621 |
-| MarbleBlast | https://github.com/robertpelloni/MarbleBlast | 1836894b1369 |
-| MilkDrop3 | https://github.com/robertpelloni/MilkDrop3.git | 254704aef2e0 |
-| OpenMBU | https://github.com/robertpelloni/OpenMBU | 6846cd030d11 |
-| ableton_psytrance_hymn_creator | https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git | a2022fa1b1d6 |
-| agentirc | https://github.com/robertpelloni/agentirc.git | 20f48a1f19a3 |
-| ai_game_engine | https://github.com/robertpelloni/ai_game_engine.git | 45ff892dffcf |
-| apophysis-j | https://github.com/robertpelloni/apophysis-j.git | a5b2c74f8dc6 |
-| bg | https://github.com/robertpelloni/bg.git | 5cdc4d4602bf |
-| bobbybookmarks | https://github.com/robertpelloni/bobbybookmarks | 9fc00275dfd7 |
-| bobcoin | https://github.com/robertpelloni/bobcoin | 724a671771c2 |
-| bobeditpro | https://github.com/robertpelloni/bobeditpro | 7811409f1029 |
-| bobfilez | https://github.com/robertpelloni/bobfilez | abbaea1ed168 |
-| bgtk | https://github.com/robertpelloni/bgtk | 657e1a1e8585 |
-| bobium | https://github.com/robertpelloni/bobium | 49cd37190b86 |
-| bobsaver | https://github.com/robertpelloni/bobsaver | 11ad1cee6c96 |
-| bobsgameonlinejava | https://github.com/robertpelloni/bobsgameonlinejava.git | 61629d3d2cbc |
-| bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | 8e7c06d01b60 |
-| bobtorrent | https://github.com/robertpelloni/bobtorrent | f2f8befc85be |
-| bobtrader | https://github.com/robertpelloni/bobtrader | 40cd07f4bb0a |
-| bobtrax | https://github.com/robertpelloni/bobtrax | 32e04eb146c9 |
-| bqt | https://github.com/robertpelloni/bqt | 92bb40654b68 |
-| bobzilla | https://github.com/robertpelloni/bobzilla | c820e3df6eda |
-| bobzzite | https://github.com/robertpelloni/bobzzite | 04af492c2bac |
-| bcs | https://github.com/robertpelloni/bcs | 598f233520dc |
-| crowdsourced_dance_club | https://github.com/robertpelloni/crowdsourced_dance_club.git | bfb0bde6fe8b |
-| dao | https://github.com/robertpelloni/dao.git | 5340b753f799 |
-| electricsheep | https://github.com/robertpelloni/electricsheep.git | 5dd8b43773b9 |
-| element-web | https://github.com/robertpelloni/element-web.git | 9e7918b63c95 |
-| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | b96340a1b3b6 |
-| f-zerox | https://github.com/robertpelloni/f-zerox | 4b3f564e2fbd |
-| fcdm | https://github.com/robertpelloni/fcdm.git | c105ce449b1a |
-| aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | b70654698759 |
-| geany | https://github.com/robertpelloni/geany | 9bec4e3a8832 |
-| geiss | https://github.com/robertpelloni/geiss.git | 4aefe940c5fe |
-| hyper | https://github.com/robertpelloni/hyper.git | 848f3051afb5 |
-| hyperharness | https://github.com/robertpelloni/hyperharness | 785ae2148ebf |
-| freellm | https://github.com/robertpelloni/freellm | fdfc74d43477 |
-| mcp-superassistant | https://github.com/robertpelloni/mcp-superassistant | 5efe6d1771b0 |
-| mk64 | https://github.com/robertpelloni/mk64 | cba86d6cdc3d |
-| native-fy | https://github.com/robertpelloni/native-fy | f1b1b72ff704 |
-| neverball | https://github.com/robertpelloni/neverball | 6f928b160f7e |
-| npp | https://github.com/robertpelloni/npp | c71c9e6fb1d0 |
-| odcnn | https://github.com/robertpelloni/odcnn.git | 6971c07139fd |
-| onetool-mcp | https://github.com/robertpelloni/onetool-mcp | 59d422d2eeaa |
-| openclaw-config | https://github.com/TechNickAI/openclaw-config.git | 5ae3657477b5 |
-| openclaw-dashboard | https://github.com/tugcantopaloglu/openclaw-dashboard.git | fa8d772d7015 |
-| pi-mono | https://github.com/robertpelloni/pi-mono | 51788f850f99 |
-| planet_fitness_stepmaniax_agent | https://github.com/robertpelloni/planet_fitness_stepmaniax_agent | acab0d13406d |
-| projectm | https://github.com/robertpelloni/projectm.git | 76098fdd8cb9 |
-| psytrance_night_outreach_agent | https://github.com/robertpelloni/psytrance_night_outreach_agent.git | 9a8cc847840b |
-| slsk_discography_downloader_script | https://github.com/robertpelloni/slsk_discography_downloader_script | 2c861044bce8 |
-| sm64coopdx | https://github.com/robertpelloni/sm64coopdx | 30ab27080eb9 |
-| supersaber | https://github.com/robertpelloni/supersaber | 04014d5ff8be |
-| tabby | https://github.com/robertpelloni/tabby | 567b7a2db566 |
-| timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
-| topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 40a4ee37a441 |
-| veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | a7dd72a388a6 |
-| warp | https://github.com/robertpelloni/warp.git | 0b796c464109 |
-| vst_monster | https://github.com/robertpelloni/vst_monster | 49207773ca73 |
-| xrnet | https://github.com/robertpelloni/xrnet | 6c537395b1b5 |
-| bobmani | https://github.com/robertpelloni/bobmani | f93708f2f860 |
-| MilkDrop3_fix | https://github.com/robertpelloni/MilkDrop3.git | 254704aef2e0 |
-| bg_fix | https://github.com/robertpelloni/bg.git | 5cdc4d4602bf |
-| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | 8b6c48722835 |
-| bobsaver_fix | https://github.com/robertpelloni/bobsaver.git | 11ad1cee6c96 |
-| bobsgameonlinejava_fix | https://github.com/robertpelloni/bobsgameonlinejava.git | 61629d3d2cbc |
-| browser-use | https://github.com/robertpelloni/browser-use | cacead571470 |
-| bobmani/Simply-Love-SM5 | https://github.com/robertpelloni/Simply-Love-SM5 | 06a56f5f5881 |
-| bobmani/arrowvortex | https://github.com/robertpelloni/arrowvortex | d0e69c391dff |
-| bobmani/beatoraja | https://github.com/robertpelloni/beatoraja | 759fe2770376 |
-| bobmani/bobmania | https://github.com/robertpelloni/bobmania | a80903eb3d3b |
-| bobmani/ddc | https://github.com/robertpelloni/ddc | 88ec337f1ec4 |
-| bobmani/ddc_onset | https://github.com/robertpelloni/ddc_onset | f35cf13f8b79 |
-| bobmani/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model | 0574a001c065 |
-| bobmani/hymnmania | https://github.com/robertpelloni/hymnmania | a28911f9150d |
-| bobmani/itgmania | https://github.com/robertpelloni/itgmania | 851f41eea327 |
-| bobmani/ksm-v2 | https://github.com/robertpelloni/ksm-v2 | dbe00cc17d27 |
-| bobmani/leraine-studio | https://github.com/robertpelloni/leraine-studio | b8c77616eece |
-| bobmani/linthesia | https://github.com/robertpelloni/linthesia | 4e0cced9e7d1 |
-| bobmani/pianogame | https://github.com/robertpelloni/pianogame | 6aae9ca2ad4b |
-| bdwgc | https://github.com/robertpelloni/bdwgc | 1d38c6d905a8 |
-| bobsgameonline | https://github.com/robertpelloni/bobsgameonline | d97b30ad39a4 |
-| libjruntime | https://github.com/robertpelloni/libjruntime | 08e5195e2c38 |
-| grammars-v4 | https://github.com/robertpelloni/grammars-v4 | 504c4d9d7fd6 |
-| tokdiet | https://github.com/robertpelloni/tokdiet | 5c4f57e2615e |
-| stepmania | https://github.com/robertpelloni/stepmania | 6a05854b78b5 |
-| jvm-cpp-runtime | https://github.com/robertpelloni/jvm-cpp-runtime | 0b7883921f64 |
-| okgame | https://github.com/robertpelloni/okgame | a6b2060287f5 |
-| muse | https://github.com/robertpelloni/muse | ad484ef28db4 |
-| FFmpeg | https://github.com/robertpelloni/FFmpeg | 4c2700257ce5 |
-| jdk | https://github.com/robertpelloni/jdk | 2e179fec7b51 |
-| llvm-project | https://github.com/robertpelloni/llvm-project | d6d4921b71e6 |
-| private_gemini_storage | https://github.com/robertpelloni/private_gemini_storage | 4e823c0b2a55 |
-| projectM-upstream | https://github.com/projectM-visualizer/projectM.git | b238d09ec6b3 |
-| TurntUpToddler | https://github.com/Dimensionalplane/TurntUpToddler | d269bb8d1537 |
-| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | dbe00cc17d27 |
-| HyperNexus2old | https://gitlab.com/robertpelloni/HyperNexus.git | d8c4b2f39fb4 |
-| hyperporn | https://github.com/robertpelloni/hyperporn | 0e1d2e0f75ac |
-| foone_datetime_short | https://github.com/robertpelloni/foone_datetime_short | 0979cbc34100 |
-| bob_and_lum_sitcom | https://github.com/robertpelloni/bob_and_lum_sitcom | 7c598b1eb161 |
-| gods-eye-view | https://github.com/robertpelloni/gods-eye-view | a6a6c4469f80 |
-| ww3_game | https://github.com/robertpelloni/ww3_game.git | 740708eb7831 |
-| succubus.red | https://github.com/robertpelloni/succubus.red.git | b69feba53d8c |
-| bobble | https://github.com/robertpelloni/bobble.git | e14abab6161f |
-| newz | https://github.com/robertpelloni/newz.git | 8ca290515bc9 |
-| explorerexedecompiled | https://github.com/robertpelloni/explorerexedecompiled.git | 6896c2e8f3b7 |
-| autositcom | https://github.com/robertpelloni/autositcom.git | 5857afdd640d |
-| webapp_factory | https://github.com/robertpelloni/webapp_factory.git | 07ccab221156 |
-| educational_video_pipeline | https://github.com/robertpelloni/educational_video_pipeline.git | 9a692dea7524 |
-| mparty | https://github.com/robertpelloni/mparty.git | 6208e281fcec |
-| make_elon_laugh | https://github.com/robertpelloni/make_elon_laugh.git | 8e6b0d612e4b |
-| unitedbeats_site | https://github.com/UnitedBeatsLLC/unitedbeats_site.git | 588084a49eac |
-| sales_bot | https://github.com/robertpelloni/sales_bot.git | d1b494d3540a |
-| borg | https://github.com/robertpelloni/borg.git | 0af9a54b0e49 |
-| Folderum3-The-Last-Attempt | https://github.com/robertpelloni/Folderum3-The-Last-Attempt.git | 2541eb114b78 |
-| CodeWhale-Extensions | https://github.com/robertpelloni/CodeWhale-Extensions.git | 9a30dee0c194 |
-| DataStreamBrowser | https://github.com/robertpelloni/DataStreamBrowser.git | 8aeb4461e30b |
-| ADSFileSystem | https://github.com/robertpelloni/ADSFileSystem.git | 920b7b63d25d |
-| unitedbeats_hypernexus_gtm | https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git | e7109f6453a5 |
+| Workspace path | Configured source | Pinned commit | Verification |
+|---|---|---|---|
+| ableton_psytrance_hymn_creator | https://github.com/robertpelloni/ableton_psytrance_hymn_creator.git | `a2022fa1b1d63d25066065900b6e5f8f3395e23d` | Verified locally |
+| ableton_psytrance_hymn_creator/hymnmania_src | https://github.com/robertpelloni/hymnmania.git | `cc236980a4a9687e8510e2d6195cd024ce92b085` | Checkout unavailable |
+| ADSFileSystem | https://github.com/robertpelloni/ADSFileSystem.git | `920b7b63d25df9db6c5fedd54cd6aa7fa1219be6` | Verified locally |
+| agentirc | https://github.com/robertpelloni/agentirc.git | `20f48a1f19a3dca64e8b88f2cb0690dd80ed30c2` | Verified locally |
+| ai_game_engine | https://github.com/robertpelloni/ai_game_engine.git | `45ff892dffcf1bbb1668fbaaf723679246fab425` | Verified locally |
+| ai_game_engine/third_party/godot-cpp | https://github.com/godotengine/godot-cpp.git | `738f7943cb638b6042f1354cdca1cba25bba26d0` | Checkout unavailable |
+| aimoneymachine_site | https://github.com/robertpelloni/aimoneymachine_site.git | `b70654698759cb69058cf73850091dff2ddd4d7d` | Verified locally |
+| apophysis-j | https://github.com/robertpelloni/apophysis-j.git | `a5b2c74f8dc6b3538297afdcb70d09d4a8bdfe58` | Verified locally |
+| ArrowVortex | https://github.com/robertpelloni/ArrowVortex | `d0e69c391dff10bed0b4a4137762d5b2bc8a8ea9` | Verified locally |
+| ArrowVortex/ddc_onset | https://github.com/robertpelloni/ddc_onset | `f35cf13f8b79b1e347e9d6c8b44acdb15d15c472` | Verified locally |
+| ArrowVortex/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model.git | `0574a001c065e198717470079b2881212ce0a3b7` | Verified locally |
+| ArrowVortex/lib/ddc | https://github.com/robertpelloni/ddc.git | `b9f6b51bc39e6a07ebfeb90f7c45decd3349acce` | Verified locally |
+| ArrowVortex/lib/ddc/ddc_onset | https://github.com/robertpelloni/ddc_onset | `5c0123ada10141422cca99e8eb41055d800a8cce` | Checkout unavailable |
+| ArrowVortex/lib/ddc/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model | `525f47bbdc52bf43517b28273acd82f7dd75cbe0` | Checkout unavailable |
+| ArrowVortex/odcnn | https://github.com/robertpelloni/odcnn | `6971c07139fd8bee1c8ba004f36dd499d6c79f32` | Verified locally |
+| auto_dj_script | https://github.com/robertpelloni/auto_dj_script | `d6c1ffff08d618765efc5b264067452f0fd9978e` | Verified locally |
+| autositcom | https://github.com/robertpelloni/autositcom.git | `5857afdd640d09223f7e3dfbe52b1560445456a4` | Verified locally |
+| bcs | https://github.com/robertpelloni/bcs | `ab46093ef44bc3988e6a0ea277361da9ddd07591` | Verified locally |
+| bcs/external/bqt-reference | https://github.com/robertpelloni/bqt | `d0b9a49f9b1f8dde36ebe89db86f88357386e86f` | Checkout unavailable |
+| bcs/external/juce | https://github.com/juce-framework/JUCE | `d60b7a78030661574a615b586d9325ba7a7fa7dd` | Checkout unavailable |
+| bcs/external/ultimatepp | https://github.com/ultimatepp/ultimatepp | `603d90b0f8f0b43f115e084e13e9e84751060bff` | Checkout unavailable |
+| bdwgc | https://github.com/robertpelloni/bdwgc | `1d38c6d905a83b006df843440b380e51a2119871` | Verified locally |
+| bg | https://github.com/robertpelloni/bg.git | `5cdc4d4602bf5a8ad06ed354687ec18e70904236` | Pinned tree unavailable locally |
+| bg_fix | https://github.com/robertpelloni/bg.git | `5cdc4d4602bf5a8ad06ed354687ec18e70904236` | Pinned tree unavailable locally |
+| bgtk | https://github.com/robertpelloni/bgtk | `91c13da344bc1af7548307eec288854b5a955218` | Verified locally |
+| bgtk/submodules/juce | https://github.com/juce-framework/JUCE | `d60b7a78030661574a615b586d9325ba7a7fa7dd` | Checkout unavailable |
+| bob_and_lum_sitcom | https://github.com/robertpelloni/bob_and_lum_sitcom | `7c598b1eb161398d4c4c15d6a1f2548cc46a70cc` | Pinned tree unavailable locally |
+| bobble | https://github.com/robertpelloni/bobble.git | `e14abab6161f294f9a9d380d87088f84924b9922` | Pinned tree unavailable locally |
+| bobbybookmarks | https://github.com/robertpelloni/bobbybookmarks | `9fc00275dfd793edf443c41d22fc0b13c340a375` | Verified locally |
+| bobcoin | https://github.com/robertpelloni/bobcoin | `724a671771c2ced11444c00692a6cf7e5c4642fe` | Verified locally |
+| bobeditpro | https://github.com/robertpelloni/bobeditpro | `7811409f1029119343957143d60397a496ca8a4e` | Pinned tree unavailable locally |
+| bobfilez | https://github.com/robertpelloni/bobfilez | `65884b5a89013ec21b227ab299e93ac3e95bf7e8` | Verified locally |
+| bobfilez/ai-file-sorter | https://github.com/hyperfield/ai-file-sorter | `4eaccb878b09af198392f23b2fc1144640293a1a` | Checkout unavailable |
+| bobfilez/libs/7zip | https://github.com/nicehash/NiceHashQuickMiner | `fea94d384103118be0d8c2675ad263060d6fb45f` | Checkout unavailable |
+| bobfilez/libs/ads | https://github.com/katahiromz/ads | `87fc3aac11c74e1aa6a510f2fd7e53b3afe633ff` | Checkout unavailable |
+| bobfilez/libs/ADSFileSystem | https://github.com/robertpelloni/ADSFileSystem | `5ab73c6ff2c7af685d25227b91b782141d8e5fcd` | Checkout unavailable |
+| bobfilez/libs/ADSIdentifier | https://github.com/HannahVernon/ADSIdentifier | `099e808b0d9e155a3355edfb6b8c74265313e3ab` | Checkout unavailable |
+| bobfilez/libs/ADSman | https://github.com/8gudbits/ADSman | `187e647309ac7c3c6fb0c54de6d0d271d1586426` | Checkout unavailable |
+| bobfilez/libs/AlternateDataStreams | https://github.com/narasimha14/AlternateDataStreams | `34cd1cb17f8c8eabe125cf470ca183e3fc770024` | Checkout unavailable |
+| bobfilez/libs/argon2 | https://github.com/winlibs/argon2 | `fb53ef37be212380d51877b70f514f3bf2c1ee40` | Checkout unavailable |
+| bobfilez/libs/audio-recognizer | https://github.com/wsieroci/audio-recognizer | `3028b6147dcd09f6b1bd418b8b0d2bacd7c8afc3` | Checkout unavailable |
+| bobfilez/libs/audiocraft | https://github.com/facebookresearch/audiocraft | `896ec7c47f5e5d1e5aa1e4b260c4405328bf009d` | Checkout unavailable |
+| bobfilez/libs/BLAKE3 | https://github.com/BLAKE3-team/BLAKE3.git | `8aa5145039b972ba30e98e788752d37d14568824` | Verified locally |
+| bobfilez/libs/bobgui | https://github.com/robertpelloni/bgtk | `341db5f713b7c6617f99539ccfd8a455a28b9938` | Checkout unavailable |
+| bobfilez/libs/bobui | https://github.com/robertpelloni/bqt.git | `d0b9a49f9b1f8dde36ebe89db86f88357386e86f` | Checkout unavailable |
+| bobfilez/libs/Bringing-Old-Photos-Back-to-Life | https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life | `33875eccf4ebcd3665cf38cc56f3a0ce563d3a9c` | Checkout unavailable |
+| bobfilez/libs/brotli | https://github.com/google/brotli | `4e6d8fbfa3d11b491105c12b579727522aa7e836` | Checkout unavailable |
+| bobfilez/libs/btk | https://github.com/robertpelloni/bcs.git | `695ec7cc072516496b595a525e534de9a0be5fc2` | Checkout unavailable |
+| bobfilez/libs/C | https://github.com/TheAlgorithms/C | `e5dad3fa8def3726ec850ca66a7f51521f8ad393` | Checkout unavailable |
+| bobfilez/libs/c-ares | https://github.com/winlibs/c-ares | `6c783a942d2bba34a2d3b742d5c7247ae30f284f` | Checkout unavailable |
+| bobfilez/libs/calibre | https://github.com/kovidgoyal/calibre | `0ef5c660d392339a8f2e449e923488520e8dd7e3` | Checkout unavailable |
+| bobfilez/libs/ckmame | https://github.com/nih-at/ckmame | `eee4d3aca141f0c4f7100e97f370aee511830f6d` | Checkout unavailable |
+| bobfilez/libs/cmark | https://github.com/commonmark/cmark | `956220463845ad7115fa91e03cd4f8b041e5ef63` | Checkout unavailable |
+| bobfilez/libs/cURL | https://github.com/winlibs/cURL | `b49adb2e4efd37ca3f76e8a80d16c3e2c5efdab0` | Checkout unavailable |
+| bobfilez/libs/cyrus-sasl | https://github.com/winlibs/cyrus-sasl | `63a75ce9293206aea981e9f3edcd96645bafd677` | Checkout unavailable |
+| bobfilez/libs/DataStreamBrowser | https://github.com/robertpelloni/DataStreamBrowser | `70235cc7bda6dc4b5fb57cf15700e6aaed397612` | Checkout unavailable |
+| bobfilez/libs/Dependencies | https://github.com/ImageMagick/Dependencies | `d0d107c213b698c611dd82df1a91c1bcf84858ee` | Checkout unavailable |
+| bobfilez/libs/dirent | https://github.com/winlibs/dirent | `f7d48413d5e862e46c306a9f5e5f4a8551c685c5` | Verified locally |
+| bobfilez/libs/dokany | https://github.com/dokan-dev/dokany | `c7a59fc68ddcfeb4474f2fe7f24be4eb264af6a2` | Checkout unavailable |
+| bobfilez/libs/dragonffi | https://github.com/aguinet/dragonffi | `90c66b3db9dd859f340e23eee7d65ab72a0e0122` | Checkout unavailable |
+| bobfilez/libs/dtl-diff | https://github.com/cubicdaiya/dtl | `32567bb9ec704f09040fb1ed7431a3d967e3df03` | Checkout unavailable |
+| bobfilez/libs/dunst | https://github.com/dunst-project/dunst | `2a0bc387adef75182914df33e13ea709ef10bee7` | Checkout unavailable |
+| bobfilez/libs/enchant | https://github.com/winlibs/enchant | `306f758741abb4a67b6e7143784d556eaacebdd9` | Checkout unavailable |
+| bobfilez/libs/fast-lzma2 | https://github.com/conor42/fast-lzma2 | `a793db99fade2957d2453035390f97e573acecb2` | Checkout unavailable |
+| bobfilez/libs/FFmpeg | https://github.com/FFmpeg/FFmpeg | `93f653f95c378c50524a11e0a4518c71be8de0b9` | Checkout unavailable |
+| bobfilez/libs/freetype | https://github.com/winlibs/freetype | `3d8e776a1f1800dea07d433e20c91e8a9a161c4f` | Checkout unavailable |
+| bobfilez/libs/fribidi | https://github.com/winlibs/fribidi | `cbcc997561d8e4b0d502b1741d60dc7dcee0da26` | Checkout unavailable |
+| bobfilez/libs/fstlib | https://github.com/fstpackage/fstlib | `4d61c19a874a56292a7ede56321c70db5a306cd6` | Checkout unavailable |
+| bobfilez/libs/fuse_xattrs | https://github.com/fbarriga/fuse_xattrs | `d1e304659a2381e04c715afc6425c66b663f277d` | Checkout unavailable |
+| bobfilez/libs/gdk-pixbuf | https://github.com/ImageMagick/gdk-pixbuf | `57b955e47bfa3634a310368816cb829d7812e430` | Checkout unavailable |
+| bobfilez/libs/getopt-win | https://github.com/ludvikjerabek/getopt-win | `36e55dd0f1b44f7b8d0405e74603a1d1b1a47eb0` | Checkout unavailable |
+| bobfilez/libs/getopt-win32 | https://github.com/nanoporetech/getopt-win32 | `b3de5c2928369d3477ee135bf83cceb711bd92f6` | Checkout unavailable |
+| bobfilez/libs/gettext | https://github.com/winlibs/gettext | `cd6fcaeffc493305f9c0081310efa0e063060da6` | Checkout unavailable |
+| bobfilez/libs/ghostpdl | https://github.com/ArtifexSoftware/ghostpdl | `94b98f43eb65399232b925c769b9d79507ae3616` | Checkout unavailable |
+| bobfilez/libs/glad | https://github.com/Dav1dde/glad | `e3c14f906127dea49ead20ff4d5878294d08b7ab` | Checkout unavailable |
+| bobfilez/libs/glib | https://github.com/winlibs/glib | `a7c0f6cae04c7aecbf02aee18e6cb7d9a4be27c7` | Checkout unavailable |
+| bobfilez/libs/hash-library | https://github.com/stbrumme/hash-library | `d389d18112bcf7e4786ec5e8723f3658a7f433d7` | Verified locally |
+| bobfilez/libs/hashcat | https://github.com/hashcat/hashcat | `2d71af3718ef76f69c675e933cb4900c40788c58` | Checkout unavailable |
+| bobfilez/libs/hashingImage | https://github.com/goongong/hashingImage | `f00adc99355a8bfdcca23ccb3a7ae937d8851b99` | Checkout unavailable |
+| bobfilez/libs/heif | https://github.com/nokiatech/heif | `363cf942bd45ec6772c52b04d7d0b016801c2db4` | Checkout unavailable |
+| bobfilez/libs/highlightjs | https://github.com/highlightjs/highlight.js | `d462399821324a40a9885b124de1f2789db31fc6` | Checkout unavailable |
+| bobfilez/libs/httpd | https://github.com/apache/httpd | `52e6887eced229f562e7cc6599184dcc6fced321` | Checkout unavailable |
+| bobfilez/libs/icu4c | https://github.com/winlibs/icu4c | `25b56cd344f49183b7c20909cb0558bf81d93673` | Checkout unavailable |
+| bobfilez/libs/image-hash | https://github.com/ytetsuro/image-hash | `a9dc7a96b2f289b4a9ba1ba9cc595c0228a38905` | Checkout unavailable |
+| bobfilez/libs/image_info | https://github.com/gottfrois/image_info | `1b6222dd953f463a082461b12d3a5fba354eb6e0` | Checkout unavailable |
+| bobfilez/libs/imagehash | https://github.com/vitali-fedulov/imagehash | `1a775c30f44071dcb07e16de67483686e0f646a6` | Checkout unavailable |
+| bobfilez/libs/imageinfo | https://github.com/xiaozhuai/imageinfo | `fcdb6e8fd8106305577a762de25b990db9858141` | Checkout unavailable |
+| bobfilez/libs/ImageMagick | https://github.com/ImageMagick/ImageMagick | `ed17fb27cbf850902ed5d32214e51731e0d2979f` | Checkout unavailable |
+| bobfilez/libs/imap | https://github.com/winlibs/imap | `4f5969e9dd677122f30416de044576644f612c71` | Checkout unavailable |
+| bobfilez/libs/Imath | https://github.com/AcademySoftwareFoundation/Imath | `2c6b657a04510650287a468634821b51ae260bb7` | Checkout unavailable |
+| bobfilez/libs/imghash-viewer | https://github.com/YannickAlex07/imghash-viewer | `8b72a9f3c654fa8de1d0a48408b537ed25e74708` | Checkout unavailable |
+| bobfilez/libs/jhead | https://github.com/Matthias-Wandel/jhead | `5007491cdc8c727c16ea6a27734535cfd0ed4349` | Checkout unavailable |
+| bobfilez/libs/json-c | https://github.com/json-c/json-c | `aab792578b4f081af6ed7b993475bcb2dbca8912` | Checkout unavailable |
+| bobfilez/libs/JUCE | https://github.com/juce-framework/JUCE.git | `762a87fc3039ed88b9774fdd206a34150243575a` | Checkout unavailable |
+| bobfilez/libs/libarchive | https://github.com/libarchive/libarchive | `5d25dac1a7af3614d4dcd909af8e151f09a9b556` | Checkout unavailable |
+| bobfilez/libs/libavif | https://github.com/winlibs/libavif | `14976153789c7ebf2ca24b22215a964bbc5be213` | Checkout unavailable |
+| bobfilez/libs/libbzip2 | https://github.com/winlibs/libbzip2 | `99d3c4812e2b98bc305ae4b867f35346946717f0` | Checkout unavailable |
+| bobfilez/libs/libde265 | https://github.com/strukturag/libde265 | `4d45a6b36767318237771e1b3faf41773c4af4ad` | Checkout unavailable |
+| bobfilez/libs/libevent | https://github.com/libevent/libevent | `1b7cc9b58d6a5fdd5f33a43168245c2e1f35291f` | Checkout unavailable |
+| bobfilez/libs/libexif | https://github.com/libexif/libexif | `0917cf4bdfe79c600a72145c477e2eb763345b01` | Checkout unavailable |
+| bobfilez/libs/libffi | https://github.com/libffi/libffi | `c5abbdad2f930f806791942776ccd45beeff1613` | Checkout unavailable |
+| bobfilez/libs/libgit2 | https://github.com/libgit2/libgit2 | `e490b18b70e3d9d870d4affeb177218d684c47e3` | Checkout unavailable |
+| bobfilez/libs/libheif | https://github.com/strukturag/libheif | `12a259a5882dd99d45ec5fc77e296a3b620d1e2e` | Checkout unavailable |
+| bobfilez/libs/libiconv | https://github.com/winlibs/libiconv | `accac417318a3eef7402685a268cab8037e62ba1` | Checkout unavailable |
+| bobfilez/libs/libimghash | https://github.com/shuttie/libimghash | `ec97409b2274896366bc75b1b4a6877227f4742b` | Checkout unavailable |
+| bobfilez/libs/libjpeg | https://github.com/winlibs/libjpeg | `ca1aee45c747aaf6f66aada3abe6353306ff502b` | Checkout unavailable |
+| bobfilez/libs/libjpeg-turbo | https://github.com/libjpeg-turbo/libjpeg-turbo | `afad69dafa6193d838ed075dc34652e646bf745e` | Checkout unavailable |
+| bobfilez/libs/libmcrypt | https://github.com/winlibs/libmcrypt | `1e93cbe97a463a2c0c62338d607b17fe011eb77e` | Checkout unavailable |
+| bobfilez/libs/libpng | https://github.com/winlibs/libpng | `5d1b8aa0f6a0f20d7962270ac5ebb64b5795a896` | Checkout unavailable |
+| bobfilez/libs/LibRaw | https://github.com/LibRaw/LibRaw | `2751f9692d9401875551693e0c7c88e8b71db115` | Checkout unavailable |
+| bobfilez/libs/librsync | https://github.com/librsync/librsync | `271744de428c0177e993f95c045d70b8cf2558f2` | Checkout unavailable |
+| bobfilez/libs/libsodium | https://github.com/winlibs/libsodium | `1777bbc853d2aeb124e7b842a11b916193db7bdf` | Checkout unavailable |
+| bobfilez/libs/libssh2 | https://github.com/winlibs/libssh2 | `b47abdf27c93ee1ff4705e88968c5c628a93107a` | Checkout unavailable |
+| bobfilez/libs/libtidy | https://github.com/winlibs/libtidy | `cfff694452b765cc9782f7ae9ed1f4743dd98156` | Checkout unavailable |
+| bobfilez/libs/libunistd | https://github.com/robinrowe/libunistd | `3f269dfc49249dd218cf229439b787164d1e3e03` | Checkout unavailable |
+| bobfilez/libs/libvbucket | https://github.com/membase/libvbucket | `5590fff683f5ae57f55728eccb4ce0b8acc42c44` | Checkout unavailable |
+| bobfilez/libs/libvips | https://github.com/libvips/libvips | `38a4c4fec9653922e7f41bc57eaa4c2031fcd8ac` | Checkout unavailable |
+| bobfilez/libs/libvpx | https://github.com/winlibs/libvpx | `5e76714446d78b5e6679ddf46b13d1d9a25dacf3` | Checkout unavailable |
+| bobfilez/libs/libwebp | https://github.com/winlibs/libwebp | `1b7801dd9a59c1dc5bda38895d8f94c815732a9f` | Checkout unavailable |
+| bobfilez/libs/libxml2 | https://github.com/GNOME/libxml2 | `c8eaf2236ff16667970f96f3f01e119c99d38ab2` | Checkout unavailable |
+| bobfilez/libs/libxmlplusplus | https://github.com/libxmlplusplus/libxmlplusplus | `187a53f6036f9e2310d4257a6e17345bdbd1143f` | Checkout unavailable |
+| bobfilez/libs/libxpm | https://github.com/winlibs/libxpm | `90f573b4ae2aed9bda5dbb6df3b9d86f1bec9099` | Checkout unavailable |
+| bobfilez/libs/libxslt | https://github.com/winlibs/libxslt | `c0076eaa6e0d1f99e01107e8db225a308eb1e543` | Checkout unavailable |
+| bobfilez/libs/libzip | https://github.com/nih-at/libzip | `fdb951209129e98c72628d7ec85c87b4efc2de64` | Checkout unavailable |
+| bobfilez/libs/lmdb | https://github.com/winlibs/lmdb | `337459047d55fbf52e634bc26285195d06ac145d` | Checkout unavailable |
+| bobfilez/libs/lsads | https://github.com/assarbad/lsads | `e2d15992822cccd7ce3911325accc08dc068cd0f` | Checkout unavailable |
+| bobfilez/libs/lvgl | https://github.com/lvgl/lvgl | `b1e19ac6a8de710eae6faaab4f59db57eadd5e76` | Checkout unavailable |
+| bobfilez/libs/lz4 | https://github.com/lz4/lz4 | `0774d05537f9762f838f7ab541b7765f1a729cb5` | Checkout unavailable |
+| bobfilez/libs/Magick.NET | https://github.com/dlemstra/Magick.NET | `17487f563045aa5119443f3b388df3ccd6051357` | Checkout unavailable |
+| bobfilez/libs/md4c | https://github.com/mity/md4c | `65c6c9d72cebd9a731aaa5597414ce04d9ea5de3` | Verified locally |
+| bobfilez/libs/MediaInfo | https://github.com/MediaArea/MediaInfo | `d327f8fe76208f0b70bc08e4b55dca508991500d` | Checkout unavailable |
+| bobfilez/libs/MediaInfoLib | https://github.com/MediaArea/MediaInfoLib | `dd11d7971107e1b554e41ed446387d22cb3198e9` | Checkout unavailable |
+| bobfilez/libs/metastore | https://github.com/przemoc/metastore | `8f0dd4c8788a94a3b3841207ac96662f5ce30d53` | Checkout unavailable |
+| bobfilez/libs/mm_file | https://github.com/jermp/mm_file | `5b5291360488095ce3617c48af0f5145fdf9e710` | Checkout unavailable |
+| bobfilez/libs/mpir | https://github.com/winlibs/mpir | `796ed2cee089c96dc254caec624fe9084c3a68c3` | Checkout unavailable |
+| bobfilez/libs/mpv | https://github.com/mpv-player/mpv | `e5486b96d7d06dd148337899bfdc46bf25101663` | Checkout unavailable |
+| bobfilez/libs/net-snmp | https://github.com/winlibs/net-snmp | `c243d83ad7188593ae005254c99583b53f291477` | Checkout unavailable |
+| bobfilez/libs/nghttp2 | https://github.com/winlibs/nghttp2 | `2a9c99ffa829858a2c0b245eeb4a6e7c9cae7c62` | Checkout unavailable |
+| bobfilez/libs/nihtest | https://github.com/nih-at/nihtest | `01d2588dbec93c7560236ad1b0ba5be30bc0a785` | Checkout unavailable |
+| bobfilez/libs/nihtest-cpp | https://github.com/nih-at/nihtest-cpp | `8eafcb2216bd0325dfc1b465226a51a616baa133` | Checkout unavailable |
+| bobfilez/libs/oniguruma | https://github.com/winlibs/oniguruma | `fceeeffdb609661ffaea9be4075c6ff4d6696611` | Checkout unavailable |
+| bobfilez/libs/openapv | https://github.com/AcademySoftwareFoundation/openapv | `0c7d6f1f75fdaa36165f506cb77b787153701f93` | Checkout unavailable |
+| bobfilez/libs/OpenColorIO | https://github.com/AcademySoftwareFoundation/OpenColorIO | `5a808fb57a94c7229640a97835c420c9a1fbd1fe` | Checkout unavailable |
+| bobfilez/libs/OpenCue | https://github.com/AcademySoftwareFoundation/OpenCue | `9551bc5625316aa124155fe51c8b00bcadc473f4` | Checkout unavailable |
+| bobfilez/libs/opencv | https://github.com/opencv/opencv | `837f715eec60b09afd3586eca999d8c645650594` | Checkout unavailable |
+| bobfilez/libs/openexr | https://github.com/AcademySoftwareFoundation/openexr | `a3ea48ac99cc2d9c24886e844fc9b99808f4b261` | Checkout unavailable |
+| bobfilez/libs/openfx | https://github.com/AcademySoftwareFoundation/openfx | `c22465ca9dc38a7beb35e80c7ecd87ee05affba0` | Checkout unavailable |
+| bobfilez/libs/openh264 | https://github.com/cisco/openh264 | `e3f5b10438e2bacc155cf54578222bd4236c9f06` | Checkout unavailable |
+| bobfilez/libs/OpenImageIO | https://github.com/AcademySoftwareFoundation/OpenImageIO | `93b909d13196a31154f23a5939ffa19c1d3d451d` | Checkout unavailable |
+| bobfilez/libs/openjpeg | https://github.com/uclouvain/openjpeg | `21b70b0d62807e270994f94302e323da4f0d776b` | Checkout unavailable |
+| bobfilez/libs/openldap | https://github.com/winlibs/openldap | `006411230eaf28f3201362f18a0e5903f9772f5c` | Checkout unavailable |
+| bobfilez/libs/OpenRV | https://github.com/AcademySoftwareFoundation/OpenRV | `27c479cbae09920ba7258e12dabcb688bf91f71b` | Checkout unavailable |
+| bobfilez/libs/openssl | https://github.com/winlibs/openssl | `8729d6d5b24d9475f5ee377631de0c0649438712` | Checkout unavailable |
+| bobfilez/libs/OpenTimelineIO | https://github.com/AcademySoftwareFoundation/OpenTimelineIO | `73803eff1dbf86b82bcf97179567a243f4036b90` | Checkout unavailable |
+| bobfilez/libs/p7zip | https://github.com/p7zip-project/p7zip | `6819e2dc1917e1267babddc6391cea56ead7123d` | Checkout unavailable |
+| bobfilez/libs/pandoc | https://github.com/jgm/pandoc | `780e605c95311a62b258f4f8b8394f8a2c8bf277` | Checkout unavailable |
+| bobfilez/libs/pcre2 | https://github.com/PCRE2Project/pcre2 | `ff92e0b9cea5b5ae3af12ba930d03556684f098b` | Checkout unavailable |
+| bobfilez/libs/perceptual-dct-hash | https://github.com/alangshur/perceptual-dct-hash | `9646476294a024f5e4515b5c3d5f61dacfc4d469` | Checkout unavailable |
+| bobfilez/libs/pHash | https://github.com/nihas101/pHash | `e98831e34240417a8d5f9006407dc2ea43c906b8` | Checkout unavailable |
+| bobfilez/libs/pHash.c | https://github.com/folksable/pHash.c | `1d7c056b980811d2d1138b9392fee9a03abf37e2` | Checkout unavailable |
+| bobfilez/libs/pngquant | https://github.com/kornelski/pngquant | `5b4e91f5dd6af27c928474ffd526bb69e17b0f37` | Checkout unavailable |
+| bobfilez/libs/poppler | https://gitlab.freedesktop.org/poppler/poppler | `046362e1ff80522a56e30ec44290d31d3c9c08f9` | Checkout unavailable |
+| bobfilez/libs/postgresql | https://github.com/winlibs/postgresql | `fb89b158e2e2b5c369aec807f09d8744bfdf20bb` | Checkout unavailable |
+| bobfilez/libs/Powershell-ADS | https://github.com/phlashko/Powershell-ADS | `5227a03cd5d9b882a389ff397660755febff0587` | Checkout unavailable |
+| bobfilez/libs/pslib | https://github.com/winlibs/pslib | `4c6b93bd12d52be36fb9a23745c3959a40266fdc` | Checkout unavailable |
+| bobfilez/libs/pthreads | https://github.com/winlibs/pthreads | `648488da5ce4c484777a9b4000ee8f213c789f05` | Checkout unavailable |
+| bobfilez/libs/pxz | https://github.com/jnovy/pxz | `824de5dd22df3ba54bfe2cdd76029a62e53201fe` | Checkout unavailable |
+| bobfilez/libs/qdbm | https://github.com/winlibs/qdbm | `586aa477ff42f0d307dc26adada275642630b28f` | Checkout unavailable |
+| bobfilez/libs/radare2 | https://github.com/radareorg/radare2 | `9fdf3fc4f56485c1eb2e6355e9ce5e049f69a568` | Checkout unavailable |
+| bobfilez/libs/rapidjson | https://github.com/Tencent/rapidjson | `24b5e7a8b27f42fa16b96fc70aade9106cf7102f` | Checkout unavailable |
+| bobfilez/libs/raylib | https://github.com/raysan5/raylib | `f00317bead662c6e7fd5dfc92f16ca37f8a2e08f` | Checkout unavailable |
+| bobfilez/libs/re2 | https://github.com/google/re2 | `972a15cedd008d846f1a39b2e88ce48d7f166cbd` | Checkout unavailable |
+| bobfilez/libs/rename-utils | https://github.com/nih-at/ckmame | `eee4d3aca141f0c4f7100e97f370aee511830f6d` | Checkout unavailable |
+| bobfilez/libs/RenStrm | https://github.com/hernandp/RenStrm | `3874e391b233fa170fb6070da45919e1bbf9ff41` | Checkout unavailable |
+| bobfilez/libs/ripgrep | https://github.com/BurntSushi/ripgrep | `d5b85d44057ff729a89be9c6549958c45d95aa99` | Checkout unavailable |
+| bobfilez/libs/securecopy | https://github.com/hansij66/securecopy | `a82171b398901989234a876b2a9af93293589d85` | Checkout unavailable |
+| bobfilez/libs/seek-tune | https://github.com/cgzirim/seek-tune | `a6507e8f1e4a3dce1053eb8ff4c57144d698966f` | Checkout unavailable |
+| bobfilez/libs/SharpADS | https://github.com/ricardojoserf/SharpADS | `ea6d0b9dc6c26ed9ad9c3c76390a74e5ce91c4c3` | Checkout unavailable |
+| bobfilez/libs/ShazamAPI | https://github.com/Numenorean/ShazamAPI | `ff8f89d1af6d962f54a519766c7ca9f5e13de0f1` | Checkout unavailable |
+| bobfilez/libs/ShazamIO | https://github.com/shazamio/ShazamIO | `b5321b5c15d88ed98663420e63916704c6537512` | Checkout unavailable |
+| bobfilez/libs/sigil | https://github.com/Sigil-Ebook/Sigil | `cb51d1a5f13e3ab070cd3c0abc8bfe0368517c2b` | Checkout unavailable |
+| bobfilez/libs/sqlite | https://github.com/sqlite/sqlite | `b48ca02d640e55cbdb9e451278fb44b0017524f3` | Checkout unavailable |
+| bobfilez/libs/sqlite3 | https://github.com/winlibs/sqlite3 | `1317473784d608cfe3193628ccbe27ed2dedc3fe` | Verified locally |
+| bobfilez/libs/ssdeep | https://github.com/winlibs/ssdeep | `a326864d8cd766333028e772f4e90fa3b7320405` | Checkout unavailable |
+| bobfilez/libs/sumatrapdf | https://github.com/sumatrapdfreader/sumatrapdf | `2854c78d63bf14585c6ed054e0a2befb27d5216b` | Checkout unavailable |
+| bobfilez/libs/SysmonForLinux | https://github.com/microsoft/SysmonForLinux | `3689db550997ef17d38e0a66858c2663f048ed11` | Checkout unavailable |
+| bobfilez/libs/the_silver_searcher | https://github.com/ggreer/the_silver_searcher | `a61f1780b64266587e7bc30f0f5f71c6cca97c0f` | Checkout unavailable |
+| bobfilez/libs/TinyEXIF | https://github.com/cdcseacave/TinyEXIF | `b6ea1b7bbe4e684cc8d87e1d4891a9e88e668667` | Verified locally |
+| bobfilez/libs/tinyphash | https://github.com/Wassasin/tinyphash | `7c7c503d331cc8fd5507db58e5813398f3939189` | Checkout unavailable |
+| bobfilez/libs/tinyxml2 | https://github.com/leethomason/tinyxml2 | `8224e427b655b83dae5e2298f1e6919523a78737` | Verified locally |
+| bobfilez/libs/ultimatepp | https://github.com/ultimatepp/ultimatepp | `325e1c2a5c41a6a0ad2aa65a71fa69d6a6fcb93e` | Checkout unavailable |
+| bobfilez/libs/util-linux | https://github.com/util-linux/util-linux | `9a6d1e94551a690a29d67dff721df593bed22195` | Checkout unavailable |
+| bobfilez/libs/vlc | https://github.com/videolan/vlc | `b6bc8a93a8deac0689d2bc32d5ae5a35c6bf7ffe` | Checkout unavailable |
+| bobfilez/libs/Windows | https://github.com/ImageMagick/Windows | `00ddd4dfc905f970f1ab658d9a86afce9ea9d387` | Checkout unavailable |
+| bobfilez/libs/wineditline | https://github.com/winlibs/wineditline | `60eb709bb4bbf21e653074069562bf824b68aa31` | Checkout unavailable |
+| bobfilez/libs/WizardsToolkit | https://github.com/ImageMagick/WizardsToolkit | `8360ff177b9584846661d266cb2403f2296ad7f9` | Checkout unavailable |
+| bobfilez/libs/wkhtmltopdf | https://github.com/wkhtmltopdf/wkhtmltopdf | `024b2b2bb459dd904d15b911d04c6df4ff2c9031` | Checkout unavailable |
+| bobfilez/libs/xattrlib | https://github.com/amdf/xattrlib | `286d38bdd76b3594a3cf93d5f671526ee216f343` | Checkout unavailable |
+| bobfilez/libs/xattrs | https://github.com/hrbrmstr/xattrs | `9fd00c6eaaaf787dfefd4cb9716be6b7ea02912a` | Checkout unavailable |
+| bobfilez/libs/xxHash | https://github.com/Cyan4973/xxHash | `ee252bc560a0c9e7cc9050702849a57df2a618a4` | Verified locally |
+| bobfilez/libs/ziptools | https://github.com/nih-at/ziptools | `24ccea5f67792895f2781149c38027b45d41221f` | Checkout unavailable |
+| bobfilez/libs/zlib | https://github.com/winlibs/zlib | `0089522e62e6b5d4950e62bd20f0cb06a9288413` | Checkout unavailable |
+| bobfilez/libs/zstd | https://github.com/facebook/zstd | `5c7b7bad26808e6b40ac3b3d0075466e27738a9d` | Checkout unavailable |
+| bobfilez/VERT | https://github.com/VERT-sh/vert | `e1c83ba4adf067c2ff60fa192e0cb029715d596a` | Checkout unavailable |
+| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | `65884b5a89013ec21b227ab299e93ac3e95bf7e8` | Verified locally |
+| bobfilez_fix/ai-file-sorter | https://github.com/hyperfield/ai-file-sorter | `4eaccb878b09af198392f23b2fc1144640293a1a` | Checkout unavailable |
+| bobfilez_fix/libs/7zip | https://github.com/nicehash/NiceHashQuickMiner | `fea94d384103118be0d8c2675ad263060d6fb45f` | Checkout unavailable |
+| bobfilez_fix/libs/ads | https://github.com/katahiromz/ads | `87fc3aac11c74e1aa6a510f2fd7e53b3afe633ff` | Checkout unavailable |
+| bobfilez_fix/libs/ADSFileSystem | https://github.com/robertpelloni/ADSFileSystem | `5ab73c6ff2c7af685d25227b91b782141d8e5fcd` | Checkout unavailable |
+| bobfilez_fix/libs/ADSIdentifier | https://github.com/HannahVernon/ADSIdentifier | `099e808b0d9e155a3355edfb6b8c74265313e3ab` | Checkout unavailable |
+| bobfilez_fix/libs/ADSman | https://github.com/8gudbits/ADSman | `187e647309ac7c3c6fb0c54de6d0d271d1586426` | Checkout unavailable |
+| bobfilez_fix/libs/AlternateDataStreams | https://github.com/narasimha14/AlternateDataStreams | `34cd1cb17f8c8eabe125cf470ca183e3fc770024` | Checkout unavailable |
+| bobfilez_fix/libs/argon2 | https://github.com/winlibs/argon2 | `fb53ef37be212380d51877b70f514f3bf2c1ee40` | Checkout unavailable |
+| bobfilez_fix/libs/audio-recognizer | https://github.com/wsieroci/audio-recognizer | `3028b6147dcd09f6b1bd418b8b0d2bacd7c8afc3` | Checkout unavailable |
+| bobfilez_fix/libs/audiocraft | https://github.com/facebookresearch/audiocraft | `896ec7c47f5e5d1e5aa1e4b260c4405328bf009d` | Checkout unavailable |
+| bobfilez_fix/libs/BLAKE3 | https://github.com/BLAKE3-team/BLAKE3.git | `8aa5145039b972ba30e98e788752d37d14568824` | Checkout unavailable |
+| bobfilez_fix/libs/bobgui | https://github.com/robertpelloni/bgtk | `341db5f713b7c6617f99539ccfd8a455a28b9938` | Checkout unavailable |
+| bobfilez_fix/libs/bobui | https://github.com/robertpelloni/bqt.git | `d0b9a49f9b1f8dde36ebe89db86f88357386e86f` | Checkout unavailable |
+| bobfilez_fix/libs/Bringing-Old-Photos-Back-to-Life | https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life | `33875eccf4ebcd3665cf38cc56f3a0ce563d3a9c` | Checkout unavailable |
+| bobfilez_fix/libs/brotli | https://github.com/google/brotli | `4e6d8fbfa3d11b491105c12b579727522aa7e836` | Checkout unavailable |
+| bobfilez_fix/libs/btk | https://github.com/robertpelloni/bcs.git | `695ec7cc072516496b595a525e534de9a0be5fc2` | Checkout unavailable |
+| bobfilez_fix/libs/C | https://github.com/TheAlgorithms/C | `e5dad3fa8def3726ec850ca66a7f51521f8ad393` | Checkout unavailable |
+| bobfilez_fix/libs/c-ares | https://github.com/winlibs/c-ares | `6c783a942d2bba34a2d3b742d5c7247ae30f284f` | Checkout unavailable |
+| bobfilez_fix/libs/calibre | https://github.com/kovidgoyal/calibre | `0ef5c660d392339a8f2e449e923488520e8dd7e3` | Checkout unavailable |
+| bobfilez_fix/libs/ckmame | https://github.com/nih-at/ckmame | `eee4d3aca141f0c4f7100e97f370aee511830f6d` | Checkout unavailable |
+| bobfilez_fix/libs/cmark | https://github.com/commonmark/cmark | `956220463845ad7115fa91e03cd4f8b041e5ef63` | Checkout unavailable |
+| bobfilez_fix/libs/cURL | https://github.com/winlibs/cURL | `b49adb2e4efd37ca3f76e8a80d16c3e2c5efdab0` | Checkout unavailable |
+| bobfilez_fix/libs/cyrus-sasl | https://github.com/winlibs/cyrus-sasl | `63a75ce9293206aea981e9f3edcd96645bafd677` | Checkout unavailable |
+| bobfilez_fix/libs/DataStreamBrowser | https://github.com/robertpelloni/DataStreamBrowser | `70235cc7bda6dc4b5fb57cf15700e6aaed397612` | Checkout unavailable |
+| bobfilez_fix/libs/Dependencies | https://github.com/ImageMagick/Dependencies | `d0d107c213b698c611dd82df1a91c1bcf84858ee` | Checkout unavailable |
+| bobfilez_fix/libs/dirent | https://github.com/winlibs/dirent | `f7d48413d5e862e46c306a9f5e5f4a8551c685c5` | Checkout unavailable |
+| bobfilez_fix/libs/dokany | https://github.com/dokan-dev/dokany | `c7a59fc68ddcfeb4474f2fe7f24be4eb264af6a2` | Checkout unavailable |
+| bobfilez_fix/libs/dragonffi | https://github.com/aguinet/dragonffi | `90c66b3db9dd859f340e23eee7d65ab72a0e0122` | Checkout unavailable |
+| bobfilez_fix/libs/dtl-diff | https://github.com/cubicdaiya/dtl | `32567bb9ec704f09040fb1ed7431a3d967e3df03` | Checkout unavailable |
+| bobfilez_fix/libs/dunst | https://github.com/dunst-project/dunst | `2a0bc387adef75182914df33e13ea709ef10bee7` | Checkout unavailable |
+| bobfilez_fix/libs/enchant | https://github.com/winlibs/enchant | `306f758741abb4a67b6e7143784d556eaacebdd9` | Checkout unavailable |
+| bobfilez_fix/libs/fast-lzma2 | https://github.com/conor42/fast-lzma2 | `a793db99fade2957d2453035390f97e573acecb2` | Checkout unavailable |
+| bobfilez_fix/libs/FFmpeg | https://github.com/FFmpeg/FFmpeg | `93f653f95c378c50524a11e0a4518c71be8de0b9` | Checkout unavailable |
+| bobfilez_fix/libs/freetype | https://github.com/winlibs/freetype | `3d8e776a1f1800dea07d433e20c91e8a9a161c4f` | Checkout unavailable |
+| bobfilez_fix/libs/fribidi | https://github.com/winlibs/fribidi | `cbcc997561d8e4b0d502b1741d60dc7dcee0da26` | Checkout unavailable |
+| bobfilez_fix/libs/fstlib | https://github.com/fstpackage/fstlib | `4d61c19a874a56292a7ede56321c70db5a306cd6` | Checkout unavailable |
+| bobfilez_fix/libs/fuse_xattrs | https://github.com/fbarriga/fuse_xattrs | `d1e304659a2381e04c715afc6425c66b663f277d` | Checkout unavailable |
+| bobfilez_fix/libs/gdk-pixbuf | https://github.com/ImageMagick/gdk-pixbuf | `57b955e47bfa3634a310368816cb829d7812e430` | Checkout unavailable |
+| bobfilez_fix/libs/getopt-win | https://github.com/ludvikjerabek/getopt-win | `36e55dd0f1b44f7b8d0405e74603a1d1b1a47eb0` | Checkout unavailable |
+| bobfilez_fix/libs/getopt-win32 | https://github.com/nanoporetech/getopt-win32 | `b3de5c2928369d3477ee135bf83cceb711bd92f6` | Checkout unavailable |
+| bobfilez_fix/libs/gettext | https://github.com/winlibs/gettext | `cd6fcaeffc493305f9c0081310efa0e063060da6` | Checkout unavailable |
+| bobfilez_fix/libs/ghostpdl | https://github.com/ArtifexSoftware/ghostpdl | `94b98f43eb65399232b925c769b9d79507ae3616` | Checkout unavailable |
+| bobfilez_fix/libs/glad | https://github.com/Dav1dde/glad | `e3c14f906127dea49ead20ff4d5878294d08b7ab` | Checkout unavailable |
+| bobfilez_fix/libs/glib | https://github.com/winlibs/glib | `a7c0f6cae04c7aecbf02aee18e6cb7d9a4be27c7` | Checkout unavailable |
+| bobfilez_fix/libs/hash-library | https://github.com/stbrumme/hash-library | `d389d18112bcf7e4786ec5e8723f3658a7f433d7` | Checkout unavailable |
+| bobfilez_fix/libs/hashcat | https://github.com/hashcat/hashcat | `2d71af3718ef76f69c675e933cb4900c40788c58` | Checkout unavailable |
+| bobfilez_fix/libs/hashingImage | https://github.com/goongong/hashingImage | `f00adc99355a8bfdcca23ccb3a7ae937d8851b99` | Checkout unavailable |
+| bobfilez_fix/libs/heif | https://github.com/nokiatech/heif | `363cf942bd45ec6772c52b04d7d0b016801c2db4` | Checkout unavailable |
+| bobfilez_fix/libs/highlightjs | https://github.com/highlightjs/highlight.js | `d462399821324a40a9885b124de1f2789db31fc6` | Checkout unavailable |
+| bobfilez_fix/libs/httpd | https://github.com/apache/httpd | `52e6887eced229f562e7cc6599184dcc6fced321` | Checkout unavailable |
+| bobfilez_fix/libs/icu4c | https://github.com/winlibs/icu4c | `25b56cd344f49183b7c20909cb0558bf81d93673` | Checkout unavailable |
+| bobfilez_fix/libs/image-hash | https://github.com/ytetsuro/image-hash | `a9dc7a96b2f289b4a9ba1ba9cc595c0228a38905` | Checkout unavailable |
+| bobfilez_fix/libs/image_info | https://github.com/gottfrois/image_info | `1b6222dd953f463a082461b12d3a5fba354eb6e0` | Checkout unavailable |
+| bobfilez_fix/libs/imagehash | https://github.com/vitali-fedulov/imagehash | `1a775c30f44071dcb07e16de67483686e0f646a6` | Checkout unavailable |
+| bobfilez_fix/libs/imageinfo | https://github.com/xiaozhuai/imageinfo | `fcdb6e8fd8106305577a762de25b990db9858141` | Checkout unavailable |
+| bobfilez_fix/libs/ImageMagick | https://github.com/ImageMagick/ImageMagick | `ed17fb27cbf850902ed5d32214e51731e0d2979f` | Checkout unavailable |
+| bobfilez_fix/libs/imap | https://github.com/winlibs/imap | `4f5969e9dd677122f30416de044576644f612c71` | Checkout unavailable |
+| bobfilez_fix/libs/Imath | https://github.com/AcademySoftwareFoundation/Imath | `2c6b657a04510650287a468634821b51ae260bb7` | Checkout unavailable |
+| bobfilez_fix/libs/imghash-viewer | https://github.com/YannickAlex07/imghash-viewer | `8b72a9f3c654fa8de1d0a48408b537ed25e74708` | Checkout unavailable |
+| bobfilez_fix/libs/jhead | https://github.com/Matthias-Wandel/jhead | `5007491cdc8c727c16ea6a27734535cfd0ed4349` | Checkout unavailable |
+| bobfilez_fix/libs/json-c | https://github.com/json-c/json-c | `aab792578b4f081af6ed7b993475bcb2dbca8912` | Checkout unavailable |
+| bobfilez_fix/libs/JUCE | https://github.com/juce-framework/JUCE.git | `762a87fc3039ed88b9774fdd206a34150243575a` | Checkout unavailable |
+| bobfilez_fix/libs/libarchive | https://github.com/libarchive/libarchive | `5d25dac1a7af3614d4dcd909af8e151f09a9b556` | Checkout unavailable |
+| bobfilez_fix/libs/libavif | https://github.com/winlibs/libavif | `14976153789c7ebf2ca24b22215a964bbc5be213` | Checkout unavailable |
+| bobfilez_fix/libs/libbzip2 | https://github.com/winlibs/libbzip2 | `99d3c4812e2b98bc305ae4b867f35346946717f0` | Checkout unavailable |
+| bobfilez_fix/libs/libde265 | https://github.com/strukturag/libde265 | `4d45a6b36767318237771e1b3faf41773c4af4ad` | Checkout unavailable |
+| bobfilez_fix/libs/libevent | https://github.com/libevent/libevent | `1b7cc9b58d6a5fdd5f33a43168245c2e1f35291f` | Checkout unavailable |
+| bobfilez_fix/libs/libexif | https://github.com/libexif/libexif | `0917cf4bdfe79c600a72145c477e2eb763345b01` | Checkout unavailable |
+| bobfilez_fix/libs/libffi | https://github.com/libffi/libffi | `c5abbdad2f930f806791942776ccd45beeff1613` | Checkout unavailable |
+| bobfilez_fix/libs/libgit2 | https://github.com/libgit2/libgit2 | `e490b18b70e3d9d870d4affeb177218d684c47e3` | Checkout unavailable |
+| bobfilez_fix/libs/libheif | https://github.com/strukturag/libheif | `12a259a5882dd99d45ec5fc77e296a3b620d1e2e` | Checkout unavailable |
+| bobfilez_fix/libs/libiconv | https://github.com/winlibs/libiconv | `accac417318a3eef7402685a268cab8037e62ba1` | Checkout unavailable |
+| bobfilez_fix/libs/libimghash | https://github.com/shuttie/libimghash | `ec97409b2274896366bc75b1b4a6877227f4742b` | Checkout unavailable |
+| bobfilez_fix/libs/libjpeg | https://github.com/winlibs/libjpeg | `ca1aee45c747aaf6f66aada3abe6353306ff502b` | Checkout unavailable |
+| bobfilez_fix/libs/libjpeg-turbo | https://github.com/libjpeg-turbo/libjpeg-turbo | `afad69dafa6193d838ed075dc34652e646bf745e` | Checkout unavailable |
+| bobfilez_fix/libs/libmcrypt | https://github.com/winlibs/libmcrypt | `1e93cbe97a463a2c0c62338d607b17fe011eb77e` | Checkout unavailable |
+| bobfilez_fix/libs/libpng | https://github.com/winlibs/libpng | `5d1b8aa0f6a0f20d7962270ac5ebb64b5795a896` | Checkout unavailable |
+| bobfilez_fix/libs/LibRaw | https://github.com/LibRaw/LibRaw | `2751f9692d9401875551693e0c7c88e8b71db115` | Checkout unavailable |
+| bobfilez_fix/libs/librsync | https://github.com/librsync/librsync | `271744de428c0177e993f95c045d70b8cf2558f2` | Checkout unavailable |
+| bobfilez_fix/libs/libsodium | https://github.com/winlibs/libsodium | `1777bbc853d2aeb124e7b842a11b916193db7bdf` | Checkout unavailable |
+| bobfilez_fix/libs/libssh2 | https://github.com/winlibs/libssh2 | `b47abdf27c93ee1ff4705e88968c5c628a93107a` | Checkout unavailable |
+| bobfilez_fix/libs/libtidy | https://github.com/winlibs/libtidy | `cfff694452b765cc9782f7ae9ed1f4743dd98156` | Checkout unavailable |
+| bobfilez_fix/libs/libunistd | https://github.com/robinrowe/libunistd | `3f269dfc49249dd218cf229439b787164d1e3e03` | Checkout unavailable |
+| bobfilez_fix/libs/libvbucket | https://github.com/membase/libvbucket | `5590fff683f5ae57f55728eccb4ce0b8acc42c44` | Checkout unavailable |
+| bobfilez_fix/libs/libvips | https://github.com/libvips/libvips | `38a4c4fec9653922e7f41bc57eaa4c2031fcd8ac` | Checkout unavailable |
+| bobfilez_fix/libs/libvpx | https://github.com/winlibs/libvpx | `5e76714446d78b5e6679ddf46b13d1d9a25dacf3` | Checkout unavailable |
+| bobfilez_fix/libs/libwebp | https://github.com/winlibs/libwebp | `1b7801dd9a59c1dc5bda38895d8f94c815732a9f` | Checkout unavailable |
+| bobfilez_fix/libs/libxml2 | https://github.com/GNOME/libxml2 | `c8eaf2236ff16667970f96f3f01e119c99d38ab2` | Checkout unavailable |
+| bobfilez_fix/libs/libxmlplusplus | https://github.com/libxmlplusplus/libxmlplusplus | `187a53f6036f9e2310d4257a6e17345bdbd1143f` | Checkout unavailable |
+| bobfilez_fix/libs/libxpm | https://github.com/winlibs/libxpm | `90f573b4ae2aed9bda5dbb6df3b9d86f1bec9099` | Checkout unavailable |
+| bobfilez_fix/libs/libxslt | https://github.com/winlibs/libxslt | `c0076eaa6e0d1f99e01107e8db225a308eb1e543` | Checkout unavailable |
+| bobfilez_fix/libs/libzip | https://github.com/nih-at/libzip | `fdb951209129e98c72628d7ec85c87b4efc2de64` | Checkout unavailable |
+| bobfilez_fix/libs/lmdb | https://github.com/winlibs/lmdb | `337459047d55fbf52e634bc26285195d06ac145d` | Checkout unavailable |
+| bobfilez_fix/libs/lsads | https://github.com/assarbad/lsads | `e2d15992822cccd7ce3911325accc08dc068cd0f` | Checkout unavailable |
+| bobfilez_fix/libs/lvgl | https://github.com/lvgl/lvgl | `b1e19ac6a8de710eae6faaab4f59db57eadd5e76` | Checkout unavailable |
+| bobfilez_fix/libs/lz4 | https://github.com/lz4/lz4 | `0774d05537f9762f838f7ab541b7765f1a729cb5` | Checkout unavailable |
+| bobfilez_fix/libs/Magick.NET | https://github.com/dlemstra/Magick.NET | `17487f563045aa5119443f3b388df3ccd6051357` | Checkout unavailable |
+| bobfilez_fix/libs/md4c | https://github.com/mity/md4c | `65c6c9d72cebd9a731aaa5597414ce04d9ea5de3` | Checkout unavailable |
+| bobfilez_fix/libs/MediaInfo | https://github.com/MediaArea/MediaInfo | `d327f8fe76208f0b70bc08e4b55dca508991500d` | Checkout unavailable |
+| bobfilez_fix/libs/MediaInfoLib | https://github.com/MediaArea/MediaInfoLib | `dd11d7971107e1b554e41ed446387d22cb3198e9` | Checkout unavailable |
+| bobfilez_fix/libs/metastore | https://github.com/przemoc/metastore | `8f0dd4c8788a94a3b3841207ac96662f5ce30d53` | Checkout unavailable |
+| bobfilez_fix/libs/mm_file | https://github.com/jermp/mm_file | `5b5291360488095ce3617c48af0f5145fdf9e710` | Checkout unavailable |
+| bobfilez_fix/libs/mpir | https://github.com/winlibs/mpir | `796ed2cee089c96dc254caec624fe9084c3a68c3` | Checkout unavailable |
+| bobfilez_fix/libs/mpv | https://github.com/mpv-player/mpv | `e5486b96d7d06dd148337899bfdc46bf25101663` | Checkout unavailable |
+| bobfilez_fix/libs/net-snmp | https://github.com/winlibs/net-snmp | `c243d83ad7188593ae005254c99583b53f291477` | Checkout unavailable |
+| bobfilez_fix/libs/nghttp2 | https://github.com/winlibs/nghttp2 | `2a9c99ffa829858a2c0b245eeb4a6e7c9cae7c62` | Checkout unavailable |
+| bobfilez_fix/libs/nihtest | https://github.com/nih-at/nihtest | `01d2588dbec93c7560236ad1b0ba5be30bc0a785` | Checkout unavailable |
+| bobfilez_fix/libs/nihtest-cpp | https://github.com/nih-at/nihtest-cpp | `8eafcb2216bd0325dfc1b465226a51a616baa133` | Checkout unavailable |
+| bobfilez_fix/libs/oniguruma | https://github.com/winlibs/oniguruma | `fceeeffdb609661ffaea9be4075c6ff4d6696611` | Checkout unavailable |
+| bobfilez_fix/libs/openapv | https://github.com/AcademySoftwareFoundation/openapv | `0c7d6f1f75fdaa36165f506cb77b787153701f93` | Checkout unavailable |
+| bobfilez_fix/libs/OpenColorIO | https://github.com/AcademySoftwareFoundation/OpenColorIO | `5a808fb57a94c7229640a97835c420c9a1fbd1fe` | Checkout unavailable |
+| bobfilez_fix/libs/OpenCue | https://github.com/AcademySoftwareFoundation/OpenCue | `9551bc5625316aa124155fe51c8b00bcadc473f4` | Checkout unavailable |
+| bobfilez_fix/libs/opencv | https://github.com/opencv/opencv | `837f715eec60b09afd3586eca999d8c645650594` | Checkout unavailable |
+| bobfilez_fix/libs/openexr | https://github.com/AcademySoftwareFoundation/openexr | `a3ea48ac99cc2d9c24886e844fc9b99808f4b261` | Checkout unavailable |
+| bobfilez_fix/libs/openfx | https://github.com/AcademySoftwareFoundation/openfx | `c22465ca9dc38a7beb35e80c7ecd87ee05affba0` | Checkout unavailable |
+| bobfilez_fix/libs/openh264 | https://github.com/cisco/openh264 | `e3f5b10438e2bacc155cf54578222bd4236c9f06` | Checkout unavailable |
+| bobfilez_fix/libs/OpenImageIO | https://github.com/AcademySoftwareFoundation/OpenImageIO | `93b909d13196a31154f23a5939ffa19c1d3d451d` | Checkout unavailable |
+| bobfilez_fix/libs/openjpeg | https://github.com/uclouvain/openjpeg | `21b70b0d62807e270994f94302e323da4f0d776b` | Checkout unavailable |
+| bobfilez_fix/libs/openldap | https://github.com/winlibs/openldap | `006411230eaf28f3201362f18a0e5903f9772f5c` | Checkout unavailable |
+| bobfilez_fix/libs/OpenRV | https://github.com/AcademySoftwareFoundation/OpenRV | `27c479cbae09920ba7258e12dabcb688bf91f71b` | Checkout unavailable |
+| bobfilez_fix/libs/openssl | https://github.com/winlibs/openssl | `8729d6d5b24d9475f5ee377631de0c0649438712` | Checkout unavailable |
+| bobfilez_fix/libs/OpenTimelineIO | https://github.com/AcademySoftwareFoundation/OpenTimelineIO | `73803eff1dbf86b82bcf97179567a243f4036b90` | Checkout unavailable |
+| bobfilez_fix/libs/p7zip | https://github.com/p7zip-project/p7zip | `6819e2dc1917e1267babddc6391cea56ead7123d` | Checkout unavailable |
+| bobfilez_fix/libs/pandoc | https://github.com/jgm/pandoc | `780e605c95311a62b258f4f8b8394f8a2c8bf277` | Checkout unavailable |
+| bobfilez_fix/libs/pcre2 | https://github.com/PCRE2Project/pcre2 | `ff92e0b9cea5b5ae3af12ba930d03556684f098b` | Checkout unavailable |
+| bobfilez_fix/libs/perceptual-dct-hash | https://github.com/alangshur/perceptual-dct-hash | `9646476294a024f5e4515b5c3d5f61dacfc4d469` | Checkout unavailable |
+| bobfilez_fix/libs/pHash | https://github.com/nihas101/pHash | `e98831e34240417a8d5f9006407dc2ea43c906b8` | Checkout unavailable |
+| bobfilez_fix/libs/pHash.c | https://github.com/folksable/pHash.c | `1d7c056b980811d2d1138b9392fee9a03abf37e2` | Checkout unavailable |
+| bobfilez_fix/libs/pngquant | https://github.com/kornelski/pngquant | `5b4e91f5dd6af27c928474ffd526bb69e17b0f37` | Checkout unavailable |
+| bobfilez_fix/libs/poppler | https://gitlab.freedesktop.org/poppler/poppler | `046362e1ff80522a56e30ec44290d31d3c9c08f9` | Checkout unavailable |
+| bobfilez_fix/libs/postgresql | https://github.com/winlibs/postgresql | `fb89b158e2e2b5c369aec807f09d8744bfdf20bb` | Checkout unavailable |
+| bobfilez_fix/libs/Powershell-ADS | https://github.com/phlashko/Powershell-ADS | `5227a03cd5d9b882a389ff397660755febff0587` | Checkout unavailable |
+| bobfilez_fix/libs/pslib | https://github.com/winlibs/pslib | `4c6b93bd12d52be36fb9a23745c3959a40266fdc` | Checkout unavailable |
+| bobfilez_fix/libs/pthreads | https://github.com/winlibs/pthreads | `648488da5ce4c484777a9b4000ee8f213c789f05` | Checkout unavailable |
+| bobfilez_fix/libs/pxz | https://github.com/jnovy/pxz | `824de5dd22df3ba54bfe2cdd76029a62e53201fe` | Checkout unavailable |
+| bobfilez_fix/libs/qdbm | https://github.com/winlibs/qdbm | `586aa477ff42f0d307dc26adada275642630b28f` | Checkout unavailable |
+| bobfilez_fix/libs/radare2 | https://github.com/radareorg/radare2 | `9fdf3fc4f56485c1eb2e6355e9ce5e049f69a568` | Checkout unavailable |
+| bobfilez_fix/libs/rapidjson | https://github.com/Tencent/rapidjson | `24b5e7a8b27f42fa16b96fc70aade9106cf7102f` | Checkout unavailable |
+| bobfilez_fix/libs/raylib | https://github.com/raysan5/raylib | `f00317bead662c6e7fd5dfc92f16ca37f8a2e08f` | Checkout unavailable |
+| bobfilez_fix/libs/re2 | https://github.com/google/re2 | `972a15cedd008d846f1a39b2e88ce48d7f166cbd` | Checkout unavailable |
+| bobfilez_fix/libs/rename-utils | https://github.com/nih-at/ckmame | `eee4d3aca141f0c4f7100e97f370aee511830f6d` | Checkout unavailable |
+| bobfilez_fix/libs/RenStrm | https://github.com/hernandp/RenStrm | `3874e391b233fa170fb6070da45919e1bbf9ff41` | Checkout unavailable |
+| bobfilez_fix/libs/ripgrep | https://github.com/BurntSushi/ripgrep | `d5b85d44057ff729a89be9c6549958c45d95aa99` | Checkout unavailable |
+| bobfilez_fix/libs/securecopy | https://github.com/hansij66/securecopy | `a82171b398901989234a876b2a9af93293589d85` | Checkout unavailable |
+| bobfilez_fix/libs/seek-tune | https://github.com/cgzirim/seek-tune | `a6507e8f1e4a3dce1053eb8ff4c57144d698966f` | Checkout unavailable |
+| bobfilez_fix/libs/SharpADS | https://github.com/ricardojoserf/SharpADS | `ea6d0b9dc6c26ed9ad9c3c76390a74e5ce91c4c3` | Checkout unavailable |
+| bobfilez_fix/libs/ShazamAPI | https://github.com/Numenorean/ShazamAPI | `ff8f89d1af6d962f54a519766c7ca9f5e13de0f1` | Checkout unavailable |
+| bobfilez_fix/libs/ShazamIO | https://github.com/shazamio/ShazamIO | `b5321b5c15d88ed98663420e63916704c6537512` | Checkout unavailable |
+| bobfilez_fix/libs/sigil | https://github.com/Sigil-Ebook/Sigil | `cb51d1a5f13e3ab070cd3c0abc8bfe0368517c2b` | Checkout unavailable |
+| bobfilez_fix/libs/sqlite | https://github.com/sqlite/sqlite | `b48ca02d640e55cbdb9e451278fb44b0017524f3` | Checkout unavailable |
+| bobfilez_fix/libs/sqlite3 | https://github.com/winlibs/sqlite3 | `1317473784d608cfe3193628ccbe27ed2dedc3fe` | Checkout unavailable |
+| bobfilez_fix/libs/ssdeep | https://github.com/winlibs/ssdeep | `a326864d8cd766333028e772f4e90fa3b7320405` | Checkout unavailable |
+| bobfilez_fix/libs/sumatrapdf | https://github.com/sumatrapdfreader/sumatrapdf | `2854c78d63bf14585c6ed054e0a2befb27d5216b` | Checkout unavailable |
+| bobfilez_fix/libs/SysmonForLinux | https://github.com/microsoft/SysmonForLinux | `3689db550997ef17d38e0a66858c2663f048ed11` | Checkout unavailable |
+| bobfilez_fix/libs/the_silver_searcher | https://github.com/ggreer/the_silver_searcher | `a61f1780b64266587e7bc30f0f5f71c6cca97c0f` | Checkout unavailable |
+| bobfilez_fix/libs/TinyEXIF | https://github.com/cdcseacave/TinyEXIF | `b6ea1b7bbe4e684cc8d87e1d4891a9e88e668667` | Checkout unavailable |
+| bobfilez_fix/libs/tinyphash | https://github.com/Wassasin/tinyphash | `7c7c503d331cc8fd5507db58e5813398f3939189` | Checkout unavailable |
+| bobfilez_fix/libs/tinyxml2 | https://github.com/leethomason/tinyxml2 | `8224e427b655b83dae5e2298f1e6919523a78737` | Checkout unavailable |
+| bobfilez_fix/libs/ultimatepp | https://github.com/ultimatepp/ultimatepp | `325e1c2a5c41a6a0ad2aa65a71fa69d6a6fcb93e` | Checkout unavailable |
+| bobfilez_fix/libs/util-linux | https://github.com/util-linux/util-linux | `9a6d1e94551a690a29d67dff721df593bed22195` | Checkout unavailable |
+| bobfilez_fix/libs/vlc | https://github.com/videolan/vlc | `b6bc8a93a8deac0689d2bc32d5ae5a35c6bf7ffe` | Checkout unavailable |
+| bobfilez_fix/libs/Windows | https://github.com/ImageMagick/Windows | `00ddd4dfc905f970f1ab658d9a86afce9ea9d387` | Checkout unavailable |
+| bobfilez_fix/libs/wineditline | https://github.com/winlibs/wineditline | `60eb709bb4bbf21e653074069562bf824b68aa31` | Checkout unavailable |
+| bobfilez_fix/libs/WizardsToolkit | https://github.com/ImageMagick/WizardsToolkit | `8360ff177b9584846661d266cb2403f2296ad7f9` | Checkout unavailable |
+| bobfilez_fix/libs/wkhtmltopdf | https://github.com/wkhtmltopdf/wkhtmltopdf | `024b2b2bb459dd904d15b911d04c6df4ff2c9031` | Checkout unavailable |
+| bobfilez_fix/libs/xattrlib | https://github.com/amdf/xattrlib | `286d38bdd76b3594a3cf93d5f671526ee216f343` | Checkout unavailable |
+| bobfilez_fix/libs/xattrs | https://github.com/hrbrmstr/xattrs | `9fd00c6eaaaf787dfefd4cb9716be6b7ea02912a` | Checkout unavailable |
+| bobfilez_fix/libs/xxHash | https://github.com/Cyan4973/xxHash | `ee252bc560a0c9e7cc9050702849a57df2a618a4` | Checkout unavailable |
+| bobfilez_fix/libs/ziptools | https://github.com/nih-at/ziptools | `24ccea5f67792895f2781149c38027b45d41221f` | Checkout unavailable |
+| bobfilez_fix/libs/zlib | https://github.com/winlibs/zlib | `0089522e62e6b5d4950e62bd20f0cb06a9288413` | Checkout unavailable |
+| bobfilez_fix/libs/zstd | https://github.com/facebook/zstd | `5c7b7bad26808e6b40ac3b3d0075466e27738a9d` | Checkout unavailable |
+| bobfilez_fix/VERT | https://github.com/VERT-sh/vert | `e1c83ba4adf067c2ff60fa192e0cb029715d596a` | Checkout unavailable |
+| bobium | https://github.com/robertpelloni/bobium | `49cd37190b86b9fb8a0e5046c207e43897d05abe` | Verified locally |
+| bobmani | https://github.com/robertpelloni/bobmani | `fd8cbe03771905febf4cf22abcffd2855a82a5f0` | Verified locally |
+| bobmani/arrowvortex | git@github.com:robertpelloni/arrowvortex.git | `d0e69c391dff10bed0b4a4137762d5b2bc8a8ea9` | Verified locally |
+| bobmani/arrowvortex/ddc_onset | https://github.com/robertpelloni/ddc_onset | `f35cf13f8b79b1e347e9d6c8b44acdb15d15c472` | Checkout unavailable |
+| bobmani/arrowvortex/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model.git | `0574a001c065e198717470079b2881212ce0a3b7` | Checkout unavailable |
+| bobmani/arrowvortex/lib/ddc | https://github.com/robertpelloni/ddc.git | `b9f6b51bc39e6a07ebfeb90f7c45decd3349acce` | Checkout unavailable |
+| bobmani/arrowvortex/odcnn | https://github.com/robertpelloni/odcnn | `6971c07139fd8bee1c8ba004f36dd499d6c79f32` | Checkout unavailable |
+| bobmani/beatoraja | git@github.com:robertpelloni/beatoraja.git | `759fe277037667817341ea1438fc7f2ef143effb` | Verified locally |
+| bobmani/beatoraja/lr2oraja-endlessdream | https://github.com/seraxis/lr2oraja-endlessdream | `d4995153b0a759859ebc8f859dd868abae39db5a` | Checkout unavailable |
+| bobmani/bobmania | git@github.com:robertpelloni/bobmania.git | `a80903eb3d3bf90ab8a7736da94f87fb23be8034` | Verified locally |
+| bobmani/ddc | git@github.com:robertpelloni/ddc.git | `88ec337f1ec41f009339ae9e83e1af0a11e43694` | Verified locally |
+| bobmani/ddc_onset | git@github.com:robertpelloni/ddc_onset.git | `f35cf13f8b79b1e347e9d6c8b44acdb15d15c472` | Verified locally |
+| bobmani/ffr-difficulty-model | git@github.com:robertpelloni/ffr-difficulty-model.git | `0574a001c065e198717470079b2881212ce0a3b7` | Verified locally |
+| bobmani/hymnmania | git@github.com:robertpelloni/hymnmania.git | `a28911f9150d6b39318d152f0f21fa6053814a6d` | Pinned tree unavailable locally |
+| bobmani/itgmania | git@github.com:robertpelloni/itgmania.git | `851f41eea327cca2a19820274dfd944f7179f9db` | Pinned tree unavailable locally |
+| bobmani/ksm-v2 | git@github.com:robertpelloni/ksm-v2.git | `dbe00cc17d274dd32c98d8b4a2a7bbacdce18d2d` | Verified locally |
+| bobmani/ksm-v2/kshootmania/ThirdParty/CoTaskLib | https://github.com/m4saka/CoTaskLib.git | `de940f0951c918a70054444de272c0e261429a73` | Checkout unavailable |
+| bobmani/ksm-v2/kshootmania/ThirdParty/NocoUI | https://github.com/m4saka/NocoUI.git | `4b91ce08f15d0e24dd3f5270f51ea024a270a6c0` | Checkout unavailable |
+| bobmani/ksm-v2/kshootmania/ThirdParty/SQLiteCpp | https://github.com/SRombauts/SQLiteCpp.git | `7302cd30b853e2d3d4f2ae1456b01180d068681e` | Checkout unavailable |
+| bobmani/ksm-v2/ksmaxis | https://github.com/kshootmania/ksmaxis.git | `301bfbe4fd1fbdf1d62390a8cf033f13d1e400ff` | Checkout unavailable |
+| bobmani/leraine-studio | git@github.com:robertpelloni/leraine-studio.git | `b8c77616eeceb808b0da179460b13f81a39c81fc` | Verified locally |
+| bobmani/linthesia | git@github.com:robertpelloni/linthesia.git | `4e0cced9e7d1c2a9afbddf2e13a8fd712f948e22` | Verified locally |
+| bobmani/linthesia/pianogame | ../pianogame.git | `d8964b9f65e9f4e7feb3a73618a291f032d93628` | Checkout unavailable |
+| bobmani/pianogame | git@github.com:robertpelloni/pianogame.git | `6aae9ca2ad4b6bb3d2c889e96cbf3e5b1f978704` | Pinned tree unavailable locally |
+| bobmani/Simply-Love-SM5 | git@github.com:robertpelloni/Simply-Love-SM5.git | `06a56f5f58816485720487734b5e0021e206816b` | Verified locally |
+| bobsaver | https://github.com/robertpelloni/bobsaver | `91fa68ac7d1781a2ceded1a5f5e1e9867adc8161` | Verified locally |
+| bobsaver/apophysis-j | https://github.com/robertpelloni/apophysis-j | `a5b2c74f8dc6b3538297afdcb70d09d4a8bdfe58` | Checkout unavailable |
+| bobsaver/electricsheep | https://github.com/robertpelloni/electricsheep | `5dd8b43773b948af884e39dcc801dad29c15275c` | Checkout unavailable |
+| bobsaver/geiss | https://github.com/robertpelloni/geiss | `4aefe940c5fe5a7fe69be2d30ee5ab4ef38085de` | Checkout unavailable |
+| bobsaver/JWildfire | https://github.com/robertpelloni/JWildfire | `e2539122e24d14715576d73abf9b39a30e0f0973` | Checkout unavailable |
+| bobsaver/MilkDrop3 | https://github.com/robertpelloni/MilkDrop3.git | `254704aef2e0d9d1eb49bafc3293bd323245f5f3` | Checkout unavailable |
+| bobsaver/projectm | https://github.com/robertpelloni/projectm | `c06ea109e8ef774f2efadf80c197f399b9fdcb12` | Checkout unavailable |
+| bobsaver_fix | https://github.com/robertpelloni/bobsaver.git | `91fa68ac7d1781a2ceded1a5f5e1e9867adc8161` | Verified locally |
+| bobsaver_fix/apophysis-j | https://github.com/robertpelloni/apophysis-j | `a5b2c74f8dc6b3538297afdcb70d09d4a8bdfe58` | Checkout unavailable |
+| bobsaver_fix/electricsheep | https://github.com/robertpelloni/electricsheep | `5dd8b43773b948af884e39dcc801dad29c15275c` | Checkout unavailable |
+| bobsaver_fix/geiss | https://github.com/robertpelloni/geiss | `4aefe940c5fe5a7fe69be2d30ee5ab4ef38085de` | Checkout unavailable |
+| bobsaver_fix/JWildfire | https://github.com/robertpelloni/JWildfire | `e2539122e24d14715576d73abf9b39a30e0f0973` | Checkout unavailable |
+| bobsaver_fix/MilkDrop3 | https://github.com/robertpelloni/MilkDrop3.git | `254704aef2e0d9d1eb49bafc3293bd323245f5f3` | Checkout unavailable |
+| bobsaver_fix/projectm | https://github.com/robertpelloni/projectm | `c06ea109e8ef774f2efadf80c197f399b9fdcb12` | Checkout unavailable |
+| bobsgameonline | https://github.com/robertpelloni/bobsgameonline | `d97b30ad39a4eeaee33e7172ca717088e29f4331` | Pinned tree unavailable locally |
+| bobsgameonlinejava | https://github.com/robertpelloni/bobsgameonlinejava.git | `e3fde1adb719b55f857b18e9b02553e43eef5f68` | Verified locally |
+| bobsgameonlinejava/bobcoin | https://github.com/robertpelloni/bobcoin | `a2f5eca95ad7b9d87be94c9b1b58032f4519877a` | Checkout unavailable |
+| bobsgameonlinejava/libs/aseprite-file | https://github.com/elgopher/aseprite-file | `06b6189291d36f7c877aef50c6172cf5087466c7` | Checkout unavailable |
+| bobsgameonlinejava/libs/bobui | https://github.com/robertpelloni/bqt | `d0b9a49f9b1f8dde36ebe89db86f88357386e86f` | Checkout unavailable |
+| bobsgameonlinejava/libs/commons-lang | https://github.com/apache/commons-lang | `d58c7ed8d4d3283ee5fbd01a866ce9a10ecf80a8` | Checkout unavailable |
+| bobsgameonlinejava/libs/jinput | https://github.com/jinput/jinput | `85b8f1bb589a428e7f481c7278cf8d19a14a5686` | Checkout unavailable |
+| bobsgameonlinejava/libs/lwjgl3 | https://github.com/LWJGL/lwjgl3 | `8adda2367a10f0283ba7ac27a2222fcf7fc67212` | Checkout unavailable |
+| bobsgameonlinejava/libs/lz4-java | https://github.com/lz4/lz4-java | `be9ce5759ec6cce99544c7112e434be11aedb1a8` | Checkout unavailable |
+| bobsgameonlinejava/libs/micromod | https://github.com/martincameron/micromod | `83b5d9aebddb528ea177e115b0afed5d75f6b92a` | Checkout unavailable |
+| bobsgameonlinejava/libs/mysql-connector-j | https://github.com/mysql/mysql-connector-j | `fac9201148ebe3f84a5754cb86ebbacaf1cdce7f` | Checkout unavailable |
+| bobsgameonlinejava/libs/twl-lwjgl3 | https://github.com/ThemableWidgetLibrary/twl-lwjgl3 | `647ec3479a42dec7ed8d1240e203f20075614857` | Checkout unavailable |
+| bobsgameonlinejava/libs/xpp3 | https://github.com/codelibs/xpp3 | `a591a4efe53dd978f459f9f8bacc41f5726b0a1f` | Checkout unavailable |
+| bobsgameonlinejava/libs/xz-java | https://github.com/tukaani-project/xz-java | `f14a603924233993c245efc85ae4aca320bf360e` | Checkout unavailable |
+| bobsgameonlinejava/references/aseprite | https://github.com/aseprite/aseprite | `18fd7d4d6f8264b1c3bb910ecb18dc8c55ae335f` | Checkout unavailable |
+| bobsgameonlinejava/references/aseprite-guide | https://github.com/PandaDevOfficial/aseprite-guide | `afcf05a6bbc2e7ed016d006d0e8acd0070dc238b` | Checkout unavailable |
+| bobsgameonlinejava/references/blockbench | https://github.com/JannisX11/blockbench | `1fa9166fdf7b80b254d164d816d436dad937b839` | Checkout unavailable |
+| bobsgameonlinejava/references/bottled-up-tilemap | https://github.com/Dark-Peace/bottled-up-tilemap | `b41ff2ee2ee086f3b5a897c520456d032d832e77` | Checkout unavailable |
+| bobsgameonlinejava/references/csprite | https://github.com/csprite/csprite | `1b373cdba23ae047331112b80e497bda4b1646ea` | Checkout unavailable |
+| bobsgameonlinejava/references/Cytopia | https://github.com/CytopiaTeam/Cytopia | `042b6c2d8d9a382d108424593478f5c4b8dadc14` | Checkout unavailable |
+| bobsgameonlinejava/references/defold | https://github.com/defold/defold | `1dfb82a46aaae46ba69ae8b7e75de3c22f9b89b2` | Checkout unavailable |
+| bobsgameonlinejava/references/DTile | https://github.com/MagnonGames/DTile | `9607aeeb2d5e9bd6770ae9b29d507c925084ae4f` | Checkout unavailable |
+| bobsgameonlinejava/references/goxel | https://github.com/guillaumechereau/goxel | `411bcd7f53c3147ca17a4cfa8ef47c27c8605ce1` | Checkout unavailable |
+| bobsgameonlinejava/references/grafx2 | https://github.com/miniupnp/grafx2 | `8e1f63acf7dc70e02ca1221ab13ec63253cfcb8f` | Checkout unavailable |
+| bobsgameonlinejava/references/grafx2-dos | https://github.com/deverac/grafx2-dos | `a40ff053585679c396a584bb1aa5cdb61f749df0` | Checkout unavailable |
+| bobsgameonlinejava/references/GrowTools | https://github.com/GuckTubeYT/GrowTools | `f53134748618548c994ce9332b88dcb0b1904987` | Checkout unavailable |
+| bobsgameonlinejava/references/LibreSprite | https://github.com/LibreSprite/LibreSprite | `250fd6537d2c0030634d4d51e6c46f395fb721ec` | Checkout unavailable |
+| bobsgameonlinejava/references/love2d | https://github.com/love2d/love | `1700570115987f467289951a61a91fb1ecbb68a5` | Checkout unavailable |
+| bobsgameonlinejava/references/OgmoEditor3-CE | https://github.com/Ogmo-Editor-3/OgmoEditor3-CE | `7af50e5270a6b950d8b5d2185546cdb8f4d166df` | Checkout unavailable |
+| bobsgameonlinejava/references/phaser | https://github.com/phaserjs/phaser | `cbac24f55c12256275ffd68239c9e9825dfef1a1` | Checkout unavailable |
+| bobsgameonlinejava/references/piskel | https://github.com/piskelapp/piskel | `24bf37ac38228672bf73837bdb8bd680b3e1df03` | Checkout unavailable |
+| bobsgameonlinejava/references/Pixelorama | https://github.com/Orama-Interactive/Pixelorama | `b6785a4177bbc575c79e563080541063c07e3c72` | Checkout unavailable |
+| bobsgameonlinejava/references/PixiEditor | https://github.com/PixiEditor/PixiEditor | `a1fbca2a111ea961e939bcc116a9d5897b44b96a` | Checkout unavailable |
+| bobsgameonlinejava/references/PyxleOS | https://github.com/Dakkra/PyxleOS | `66fc0529a27c29650718f1a161985ae01d1c25bc` | Checkout unavailable |
+| bobsgameonlinejava/references/raster-master | https://github.com/RetroNick2020/raster-master | `524e23f7535242b266cc98a5e2b2845b7c005a15` | Checkout unavailable |
+| bobsgameonlinejava/references/Raylib-Examples | https://github.com/Pakz001/Raylib-Examples | `8d0ee0442fe93b4fe2139a023395e1527a51741f` | Checkout unavailable |
+| bobsgameonlinejava/references/retro-game-editor | https://github.com/haroldo-ok/retro-game-editor | `f5029917eb35ebd55ff5435bab67eaab8b7ebf06` | Checkout unavailable |
+| bobsgameonlinejava/references/rx | https://github.com/cloudhead/rx | `c4cff5bb7037874c7dd23d3bee93b767251474e9` | Checkout unavailable |
+| bobsgameonlinejava/references/Simple-Sprite-Tile-2D | https://github.com/wmltogether/Simple-Sprite-Tile-2D | `1f6dd89a06841508f063c19d55845a68a5dddb63` | Checkout unavailable |
+| bobsgameonlinejava/references/SpeedEd | https://github.com/jval1972/SpeedEd | `8ece0036359bc81db82f3b811b3e37d6e8b3b500` | Checkout unavailable |
+| bobsgameonlinejava/references/sprite-studio-64 | https://github.com/tstamborski/sprite-studio-64 | `ff841243ecb4ae6c2874aadb8cfe612202093fc6` | Checkout unavailable |
+| bobsgameonlinejava/references/stipple-effect | https://github.com/stipple-effect/stipple-effect | `3fa312f398bd5bda44ea34b54315f601b5d0dbba` | Checkout unavailable |
+| bobsgameonlinejava/references/tactile | https://github.com/albin-johansson/tactile | `88d3d2cef92a3252b831f677cb30a2d02fb7767d` | Checkout unavailable |
+| bobsgameonlinejava/references/Tile-Studio | https://github.com/Wiering/Tile-Studio | `f5ebefeaf31639988c874e149cb149c010705e2a` | Checkout unavailable |
+| bobsgameonlinejava/references/tiled | https://github.com/mapeditor/tiled | `674e8227f40e42ab279724ed9261368f1cdd67f6` | Checkout unavailable |
+| bobsgameonlinejava/references/tilemap-editor | https://github.com/blurymind/tilemap-editor | `f27a4e0b7215b3eb3fff19ffe58ccd41a913805f` | Checkout unavailable |
+| bobsgameonlinejava/references/tilemap-studio | https://github.com/Rangi42/tilemap-studio | `cdb3ecf7fc49225a754f3c7bee6e939c5053d018` | Checkout unavailable |
+| bobsgameonlinejava/references/voidsprite | https://github.com/counter185/voidsprite | `6724c42a51e5d0f6d34933ed0b1f73766ed0cf08` | Checkout unavailable |
+| bobsgameonlinejava_fix | https://github.com/robertpelloni/bobsgameonlinejava.git | `e3fde1adb719b55f857b18e9b02553e43eef5f68` | Verified locally |
+| bobsgameonlinejava_fix/bobcoin | https://github.com/robertpelloni/bobcoin | `a2f5eca95ad7b9d87be94c9b1b58032f4519877a` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/aseprite-file | https://github.com/elgopher/aseprite-file | `06b6189291d36f7c877aef50c6172cf5087466c7` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/bobui | https://github.com/robertpelloni/bqt | `d0b9a49f9b1f8dde36ebe89db86f88357386e86f` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/commons-lang | https://github.com/apache/commons-lang | `d58c7ed8d4d3283ee5fbd01a866ce9a10ecf80a8` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/jinput | https://github.com/jinput/jinput | `85b8f1bb589a428e7f481c7278cf8d19a14a5686` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/lwjgl3 | https://github.com/LWJGL/lwjgl3 | `8adda2367a10f0283ba7ac27a2222fcf7fc67212` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/lz4-java | https://github.com/lz4/lz4-java | `be9ce5759ec6cce99544c7112e434be11aedb1a8` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/micromod | https://github.com/martincameron/micromod | `83b5d9aebddb528ea177e115b0afed5d75f6b92a` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/mysql-connector-j | https://github.com/mysql/mysql-connector-j | `fac9201148ebe3f84a5754cb86ebbacaf1cdce7f` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/twl-lwjgl3 | https://github.com/ThemableWidgetLibrary/twl-lwjgl3 | `647ec3479a42dec7ed8d1240e203f20075614857` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/xpp3 | https://github.com/codelibs/xpp3 | `a591a4efe53dd978f459f9f8bacc41f5726b0a1f` | Checkout unavailable |
+| bobsgameonlinejava_fix/libs/xz-java | https://github.com/tukaani-project/xz-java | `f14a603924233993c245efc85ae4aca320bf360e` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/aseprite | https://github.com/aseprite/aseprite | `18fd7d4d6f8264b1c3bb910ecb18dc8c55ae335f` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/aseprite-guide | https://github.com/PandaDevOfficial/aseprite-guide | `afcf05a6bbc2e7ed016d006d0e8acd0070dc238b` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/blockbench | https://github.com/JannisX11/blockbench | `1fa9166fdf7b80b254d164d816d436dad937b839` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/bottled-up-tilemap | https://github.com/Dark-Peace/bottled-up-tilemap | `b41ff2ee2ee086f3b5a897c520456d032d832e77` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/csprite | https://github.com/csprite/csprite | `1b373cdba23ae047331112b80e497bda4b1646ea` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/Cytopia | https://github.com/CytopiaTeam/Cytopia | `042b6c2d8d9a382d108424593478f5c4b8dadc14` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/defold | https://github.com/defold/defold | `1dfb82a46aaae46ba69ae8b7e75de3c22f9b89b2` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/DTile | https://github.com/MagnonGames/DTile | `9607aeeb2d5e9bd6770ae9b29d507c925084ae4f` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/goxel | https://github.com/guillaumechereau/goxel | `411bcd7f53c3147ca17a4cfa8ef47c27c8605ce1` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/grafx2 | https://github.com/miniupnp/grafx2 | `8e1f63acf7dc70e02ca1221ab13ec63253cfcb8f` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/grafx2-dos | https://github.com/deverac/grafx2-dos | `a40ff053585679c396a584bb1aa5cdb61f749df0` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/GrowTools | https://github.com/GuckTubeYT/GrowTools | `f53134748618548c994ce9332b88dcb0b1904987` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/LibreSprite | https://github.com/LibreSprite/LibreSprite | `250fd6537d2c0030634d4d51e6c46f395fb721ec` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/love2d | https://github.com/love2d/love | `1700570115987f467289951a61a91fb1ecbb68a5` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/OgmoEditor3-CE | https://github.com/Ogmo-Editor-3/OgmoEditor3-CE | `7af50e5270a6b950d8b5d2185546cdb8f4d166df` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/phaser | https://github.com/phaserjs/phaser | `cbac24f55c12256275ffd68239c9e9825dfef1a1` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/piskel | https://github.com/piskelapp/piskel | `24bf37ac38228672bf73837bdb8bd680b3e1df03` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/Pixelorama | https://github.com/Orama-Interactive/Pixelorama | `b6785a4177bbc575c79e563080541063c07e3c72` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/PixiEditor | https://github.com/PixiEditor/PixiEditor | `a1fbca2a111ea961e939bcc116a9d5897b44b96a` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/PyxleOS | https://github.com/Dakkra/PyxleOS | `66fc0529a27c29650718f1a161985ae01d1c25bc` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/raster-master | https://github.com/RetroNick2020/raster-master | `524e23f7535242b266cc98a5e2b2845b7c005a15` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/Raylib-Examples | https://github.com/Pakz001/Raylib-Examples | `8d0ee0442fe93b4fe2139a023395e1527a51741f` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/retro-game-editor | https://github.com/haroldo-ok/retro-game-editor | `f5029917eb35ebd55ff5435bab67eaab8b7ebf06` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/rx | https://github.com/cloudhead/rx | `c4cff5bb7037874c7dd23d3bee93b767251474e9` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/Simple-Sprite-Tile-2D | https://github.com/wmltogether/Simple-Sprite-Tile-2D | `1f6dd89a06841508f063c19d55845a68a5dddb63` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/SpeedEd | https://github.com/jval1972/SpeedEd | `8ece0036359bc81db82f3b811b3e37d6e8b3b500` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/sprite-studio-64 | https://github.com/tstamborski/sprite-studio-64 | `ff841243ecb4ae6c2874aadb8cfe612202093fc6` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/stipple-effect | https://github.com/stipple-effect/stipple-effect | `3fa312f398bd5bda44ea34b54315f601b5d0dbba` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/tactile | https://github.com/albin-johansson/tactile | `88d3d2cef92a3252b831f677cb30a2d02fb7767d` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/Tile-Studio | https://github.com/Wiering/Tile-Studio | `f5ebefeaf31639988c874e149cb149c010705e2a` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/tiled | https://github.com/mapeditor/tiled | `674e8227f40e42ab279724ed9261368f1cdd67f6` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/tilemap-editor | https://github.com/blurymind/tilemap-editor | `f27a4e0b7215b3eb3fff19ffe58ccd41a913805f` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/tilemap-studio | https://github.com/Rangi42/tilemap-studio | `cdb3ecf7fc49225a754f3c7bee6e939c5053d018` | Checkout unavailable |
+| bobsgameonlinejava_fix/references/voidsprite | https://github.com/counter185/voidsprite | `6724c42a51e5d0f6d34933ed0b1f73766ed0cf08` | Checkout unavailable |
+| bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | `e0b30831c758c5ed29e4cee6f321485fb05746a5` | Verified locally |
+| bobsgameweb/submodules/bobui | https://github.com/robertpelloni/bqt.git | `92bb40654b683d337a04ee82f4ee7c2d964bfc06` | Checkout unavailable |
+| bobtorrent | https://github.com/robertpelloni/bobtorrent | `5f9f9461c5e6a424fd38cd137901e46be2ce226d` | Verified locally |
+| bobtorrent/bobcoin | https://github.com/robertpelloni/bobcoin | `eb8e46a58a883c1b5118b5b13521cf226fd8450f` | Checkout unavailable |
+| bobtorrent/element-web | https://github.com/robertpelloni/element-web | `9e7918b63c959735caf576edbee04afea23aa13d` | Checkout unavailable |
+| bobtrader | https://github.com/robertpelloni/bobtrader | `40cd07f4bb0a89ef553130f7998e312cc0f51250` | Verified locally |
+| bobtrader/submodules/page-02/Bohr1005__xcrypto | https://github.com/Bohr1005/xcrypto.git | `3d9fb4d153f43408ce2bed2625a32014c1d3bf08` | Checkout unavailable |
+| bobtrader/submodules/page-02/ctubio__Krypto-trading-bot | https://github.com/ctubio/Krypto-trading-bot.git | `f592cc3cf9b3ca01f2cae2efe8eb0a9c18961e3f` | Checkout unavailable |
+| bobtrader/submodules/page-02/jammy928__CoinExchange_CryptoExchange_Java | https://github.com/jammy928/CoinExchange_CryptoExchange_Java.git | `8adf508b996020d3efbeeb2473d7235bd01436fa` | Checkout unavailable |
+| bobtrader/submodules/page-02/JulyIghor__QtBitcoinTrader | https://github.com/JulyIghor/QtBitcoinTrader.git | `79415373d91c4031bda79256394c1cd51b837f1c` | Checkout unavailable |
+| bobtrader/submodules/page-02/pirate__crypto-trader | https://github.com/pirate/crypto-trader.git | `ec5d7094685a0c00ddee246e27b36f9e8c9b09c7` | Checkout unavailable |
+| bobtrader/submodules/page-02/Roibal__Cryptocurrency-Trading-Bots-Python-Beginner-Advance | https://github.com/Roibal/Cryptocurrency-Trading-Bots-Python-Beginner-Advance.git | `6cd9f639ac7f9d914d556738ca3aeeef53618146` | Checkout unavailable |
+| bobtrader/submodules/page-02/scrtlabs__catalyst | https://github.com/scrtlabs/catalyst.git | `2e8029780f2381da7a0729f7b52505e5db5f535b` | Checkout unavailable |
+| bobtrader/submodules/page-02/taniman__profit-trailer | https://github.com/taniman/profit-trailer.git | `04d8f20b17cd6e463aa66a0cc868efc68e78a060` | Checkout unavailable |
+| bobtrader/submodules/page-02/TraderAlice__OpenAlice | https://github.com/TraderAlice/OpenAlice.git | `03284431c68d71ae8461fa181dc77dd59f1e4a60` | Checkout unavailable |
+| bobtrader/submodules/page-02/warp-id__solana-trading-bot | https://github.com/warp-id/solana-trading-bot.git | `4c9304ace338544b1295d6dd11772f5661f9d250` | Checkout unavailable |
+| bobtrader/submodules/page-03/AdeelMufti__CryptoBot | https://github.com/AdeelMufti/CryptoBot.git | `6cbdfea43af9690d289f92db6b1b3b371abbd2fb` | Checkout unavailable |
+| bobtrader/submodules/page-03/Ekliptor__WolfBot | https://github.com/Ekliptor/WolfBot.git | `0f45aae699713c5947020ae79d9c4acf423bca59` | Checkout unavailable |
+| bobtrader/submodules/page-03/kelvinau__crypto-arbitrage | https://github.com/kelvinau/crypto-arbitrage.git | `44a3469fe3a6ca3aaf20ab175ea927f75b0b0c7a` | Checkout unavailable |
+| bobtrader/submodules/page-03/markusaksli__TradeBot | https://github.com/markusaksli/TradeBot.git | `2296fe6c18365f4150a4d47b64b16c26ef4576b6` | Checkout unavailable |
+| bobtrader/submodules/page-03/saniales__golang-crypto-trading-bot | https://github.com/saniales/golang-crypto-trading-bot.git | `02695e5d0901d973199d8de56b16c4d691724f9b` | Checkout unavailable |
+| bobtrader/submodules/page-03/steeply__gbot-trader | https://github.com/steeply/gbot-trader.git | `c8240aae4d895338b1658b5346883a25a53a094c` | Checkout unavailable |
+| bobtrader/submodules/page-04/ArsenAbazian__CryptoTradingFramework | https://github.com/ArsenAbazian/CryptoTradingFramework.git | `196207865c8c5d0105f27d5a0335ba6148649346` | Checkout unavailable |
+| bobtrader/submodules/page-04/bitisanop__CryptoExchange_TradingPlatform_CoinExchange | https://github.com/bitisanop/CryptoExchange_TradingPlatform_CoinExchange.git | `9ad7651e72d9901987f1ffc9b43d205791426b67` | Checkout unavailable |
+| bobtrader/submodules/page-04/blockplusim__crypto_trading_service_for_tradingview | https://github.com/blockplusim/crypto_trading_service_for_tradingview.git | `2265e6edbe448fd3b617c9caa113bd5caf83bf2b` | Checkout unavailable |
+| bobtrader/submodules/page-04/c9s__bbgo | https://github.com/c9s/bbgo.git | `8fe99f2ebc3d62351d9b4765ef82181fabf60170` | Checkout unavailable |
+| bobtrader/submodules/page-04/ccxt__ccxt | https://github.com/ccxt/ccxt.git | `91f29389c13cf9ba884249be5820006ef6ee70e7` | Checkout unavailable |
+| bobtrader/submodules/page-04/hackingthemarkets__binance-tutorials | https://github.com/hackingthemarkets/binance-tutorials.git | `791930d6419820c447ee3f36fa9f97cb9e57267f` | Checkout unavailable |
+| bobtrader/submodules/page-04/paulcpk__freqtrade-strategies-that-work | https://github.com/paulcpk/freqtrade-strategies-that-work.git | `1e154a2f6b9aeecbaacb7db5ed6b866603daee2c` | Checkout unavailable |
+| bobtrader/submodules/page-05/6551Team__opennews-mcp | https://github.com/6551Team/opennews-mcp.git | `e329f36187e4a51a0878823e4fdd4d8f42134e80` | Checkout unavailable |
+| bobtrader/submodules/page-05/AI4Finance-Foundation__FinRL_Crypto | https://github.com/AI4Finance-Foundation/FinRL_Crypto.git | `495a4286e293e55d334680d821b93ac658abff80` | Checkout unavailable |
+| bobtrader/submodules/page-05/asavinov__intelligent-trading-bot | https://github.com/asavinov/intelligent-trading-bot.git | `db0d6a049d80ae4bdb0681751cd3d6df400563b7` | Checkout unavailable |
+| bobtrader/submodules/page-05/CyberPunkMetalHead__gateio-crypto-trading-bot-binance-announcements-new-coins | https://github.com/CyberPunkMetalHead/gateio-crypto-trading-bot-binance-announcements-new-coins.git | `180763fa167ede0a7534d485a3c4c7b3030b43ec` | Checkout unavailable |
+| bobtrader/submodules/page-05/JPStrydom__Crypto-Trading-Bot | https://github.com/JPStrydom/Crypto-Trading-Bot.git | `94b5aab261a35d99bc044267baf4735f0ee3f89a` | Checkout unavailable |
+| bobtrader/submodules/page-05/Mathieu2301__TradingView-API | https://github.com/Mathieu2301/TradingView-API.git | `eb17f570e4c74b9a635c475b4a07e9c92fba33c5` | Checkout unavailable |
+| bobtrader/submodules/page-05/ned0flanders__Cryptocoinopoly | https://github.com/ned0flanders/Cryptocoinopoly.git | `ec6969fbb54b759fbfb7c6f7554fbbe1403b5a31` | Checkout unavailable |
+| bobtrader/submodules/page-05/nicolasbonnici__cryptobot | https://github.com/nicolasbonnici/cryptobot.git | `78bdf1e31916eb7f2b4899e398712a53b009c744` | Checkout unavailable |
+| bobtrader/submodules/page-06/andresilvasantos__bitprophet | https://github.com/andresilvasantos/bitprophet.git | `693765a9b9667cedb137fae556385f45ec811b54` | Checkout unavailable |
+| bobtrader/submodules/page-06/fabston__TradingView-Webhook-Bot | https://github.com/fabston/TradingView-Webhook-Bot.git | `7eff8f9e9e13f350d7a3f258329285eb3a0bbd37` | Checkout unavailable |
+| bobtrader/submodules/page-06/johndpope__CryptoCurrencyTrader | https://github.com/johndpope/CryptoCurrencyTrader.git | `d0dd8178431ad7003f321468a3f8447a7151b2e0` | Checkout unavailable |
+| bobtrader/submodules/page-06/MohammedRashad__Crypto-Copy-Trader | https://github.com/MohammedRashad/Crypto-Copy-Trader.git | `26016c5d8d99095337bc95116296196967106214` | Checkout unavailable |
+| bobtrader/submodules/page-06/nicknochnack__LLMAgentCrypto | https://github.com/nicknochnack/LLMAgentCrypto.git | `cddada6555c15b21d1e7151c8678f189cd77ce57` | Checkout unavailable |
+| bobtrader/submodules/page-06/unterstein__binance-trader | https://github.com/unterstein/binance-trader.git | `8c3d471a566f6164aebf4df74c3741eaf60e2538` | Checkout unavailable |
+| bobtrader/submodules/page-06/wangzhe3224__awesome-systematic-trading | https://github.com/wangzhe3224/awesome-systematic-trading.git | `db1ef1869662c6266ecbf9a7895df6c0be26636e` | Checkout unavailable |
+| bobtrader/submodules/page-06/whittlem__pycryptobot | https://github.com/whittlem/pycryptobot.git | `1fa9aaef141725623899230daa585e17fa7ba007` | Checkout unavailable |
+| bobtrax | https://github.com/robertpelloni/bobtrax | `32e04eb146c93451e088df84cdd88ce4386be4ce` | Verified locally |
+| bobtrax/ardour | https://github.com/Ardour/ardour | `80151197730d4a094ca1b48f9e675e86df7fbf82` | Checkout unavailable |
+| bobtrax/bobui | https://github.com/robertpelloni/bqt | `5e8ea5784a3530af2850f657286157cb2bb27e94` | Checkout unavailable |
+| bobtrax/lmms | https://github.com/LMMS/lmms | `e215cd0c3120baf6badcb25443246c03a9f2cec0` | Checkout unavailable |
+| bobtrax/muse | https://github.com/robertpelloni/muse | `fe5e92edca92e355654acbaeb24f1a0c8103f9b4` | Checkout unavailable |
+| bobtrax/zrythm | https://github.com/zrythm/zrythm | `4967fd053471d359239bdd79987cd79b08151953` | Checkout unavailable |
+| bobzilla | https://github.com/robertpelloni/bobzilla | `c820e3df6edabcd331a59edaec1ce25b4230ee28` | Verified locally |
+| bobzilla/mozilla-unified | (unconfigured) | `5836a062726f715fda621338a17b51aff30d0a8c` | Checkout unavailable |
+| bobzzite | https://github.com/robertpelloni/bobzzite | `04af492c2bac33ca93b9f28e71388d8fa6864925` | Verified locally |
+| borg | https://github.com/robertpelloni/borg.git | `0af9a54b0e4997515021013050bb99f2266cb9c7` | Verified locally |
+| bqt | https://github.com/robertpelloni/bqt | `1fb9530163e81b0a7e220176f349dbebec635d3e` | Verified locally |
+| bqt/submodules/juce | https://github.com/juce-framework/JUCE | `d60b7a78030661574a615b586d9325ba7a7fa7dd` | Checkout unavailable |
+| bqt/submodules/ultimatepp | https://github.com/ultimatepp/ultimatepp | `1a56dd3a4a02112563eb9e16f62f17bba8a0edd1` | Checkout unavailable |
+| browser-use | https://github.com/robertpelloni/browser-use | `cacead57147001d95e71e94a44d80cb5366c7892` | Verified locally |
+| CodeWhale-Extensions | https://github.com/robertpelloni/CodeWhale-Extensions.git | `9a30dee0c194ece6d0b56676d65515f0a7af5eed` | Verified locally |
+| crowdsourced_dance_club | https://github.com/robertpelloni/crowdsourced_dance_club.git | `bfb0bde6fe8b794d6688f8e83b6b9e00734a946e` | Verified locally |
+| crowdsourced_dance_club/external/auto_dj_script | https://github.com/robertpelloni/auto_dj_script.git | `acd2f45cc329e7b1eb4132e8be1370b729d63b71` | Checkout unavailable |
+| dao | https://github.com/robertpelloni/dao.git | `5340b753f7998fc58e35e22c58af3479628212ec` | Verified locally |
+| DataStreamBrowser | https://github.com/robertpelloni/DataStreamBrowser.git | `8aeb4461e30b3d4cfce60cd4eae14a1036150177` | Verified locally |
+| educational_video_pipeline | https://github.com/robertpelloni/educational_video_pipeline.git | `9a692dea7524e4fece3d2f51664f3f2a58d9d60f` | Verified locally |
+| electricsheep | https://github.com/robertpelloni/electricsheep.git | `5dd8b43773b948af884e39dcc801dad29c15275c` | Verified locally |
+| element-web | https://github.com/robertpelloni/element-web.git | `9e7918b63c959735caf576edbee04afea23aa13d` | Verified locally |
+| explorerexedecompiled | https://github.com/robertpelloni/explorerexedecompiled.git | `6896c2e8f3b7d622a85f00de4b0b669879e37ef2` | Verified locally |
+| f-zerox | https://github.com/robertpelloni/f-zerox | `4b3f564e2fbd3b72655a9f31a81e032b3ff01638` | Verified locally |
+| f-zerox/bobcoin | https://github.com/robertpelloni/bobcoin | `507cc7666b01d32dea2e1619fe114fcadfc01f99` | Verified locally |
+| f-zerox/tools/asm-differ | https://github.com/simonlindholm/asm-differ | `0dd09af8f8008f1f880327cf0aca3b26d2562ea2` | Checkout unavailable |
+| f-zerox/tools/asm-processor | https://github.com/simonlindholm/asm-processor | `f3b2f85a5bc7e8ae2030ea5a83ea8aa0bcbede03` | Checkout unavailable |
+| f-zerox/tools/ido5.3_cc | https://github.com/n64decomp/ido5.3_cc | `faa773c7e70fc38b1e5337bfe3ef05fb0702b2f4` | Checkout unavailable |
+| f-zerox/tools/splat | https://github.com/ethteck/splat/ | `7548b9771e6f8418507b23434187fb07741af6d4` | Checkout unavailable |
+| fcdm | https://github.com/robertpelloni/fcdm.git | `c105ce449b1a18e8691dd8a47e995b7beaa121d3` | Verified locally |
+| fcdm/extern/bobcoin | https://github.com/robertpelloni/bobcoin | `64575ee33e33ba9672805d1dfd18e28976ae5294` | Checkout unavailable |
+| FFmpeg | https://github.com/robertpelloni/FFmpeg | `4c2700257ce55df6fab486c65236958577023a81` | Verified locally |
+| Folderum3-The-Last-Attempt | https://github.com/robertpelloni/Folderum3-The-Last-Attempt.git | `2541eb114b7872623f71517370c751058371c586` | Verified locally |
+| foone_datetime_short | https://github.com/robertpelloni/foone_datetime_short | `0979cbc341008c353c82a5863c344c73d84943a2` | Verified locally |
+| freellm | https://github.com/robertpelloni/freellm | `fdfc74d43477771ddcb66550b499f556bfa9f50c` | Verified locally |
+| freellm/third_party/headroom | (unconfigured) | `b0cd0329c75c8556c51c1c96dc19f2ab6a23677d` | Checkout unavailable |
+| freellm/third_party/LLMLingua | (unconfigured) | `c90d8e6b2569a04b108b488b42ae9046a92fd646` | Checkout unavailable |
+| freellm/third_party/rtk | (unconfigured) | `a8b34b7d9c8989a386f3797e12ccebff1af39b0c` | Checkout unavailable |
+| freellm/third_party/tokdiet | (unconfigured) | `b659c86935b28014f17d8154ceb86addddd9344b` | Checkout unavailable |
+| fwber | https://github.com/robertpelloni/fwber.git | `c5461fb67d917e82862f1f78fb8837621e3f110c` | Verified locally |
+| geany | https://github.com/robertpelloni/geany | `9bec4e3a8832141c7e9e3268d6880422a43bd617` | Verified locally |
+| geany/subprojects/bobgui | https://github.com/robertpelloni/bobgui | `6e89d519042b2374dd0ecd93e675b8eccf80b26a` | Checkout unavailable |
+| geany/subprojects/bobui | https://github.com/robertpelloni/bobui | `d0b9a49f9b1f8dde36ebe89db86f88357386e86f` | Checkout unavailable |
+| geany/subprojects/btk | https://github.com/robertpelloni/btk | `695ec7cc072516496b595a525e534de9a0be5fc2` | Checkout unavailable |
+| geany/variants/geany-bobgui/subprojects/libffi | https://github.com/libffi/libffi | `d02afc25e8ea3aac9e78e227748e1fd7c9f14c82` | Checkout unavailable |
+| geiss | https://github.com/robertpelloni/geiss.git | `4aefe940c5fe5a7fe69be2d30ee5ab4ef38085de` | Verified locally |
+| geiss/aios | https://github.com/robertpelloni/aios.git | `ad9de6c0b355353837260383cf4bcd0a223aa2c5` | Checkout unavailable |
+| geiss/bobmani | https://github.com/robertpelloni/bobmani.git | `0a3aa31965166244d8bc70dc19e6abeb05d336a7` | Checkout unavailable |
+| geiss/borg | https://github.com/robertpelloni/borg.git | `0af9a54b0e4997515021013050bb99f2266cb9c7` | Checkout unavailable |
+| geiss/fwber | https://github.com/robertpelloni/fwber.git | `55130b326504bfdf0d9515b1783343cd20332606` | Checkout unavailable |
+| gods-eye-view | https://github.com/robertpelloni/gods-eye-view | `a6a6c4469f8029731056468dd48aabf1225aff99` | Verified locally |
+| grammars-v4 | https://github.com/robertpelloni/grammars-v4 | `504c4d9d7fd66d9bd5ecb03978d6686630e22b9b` | Verified locally |
+| GWEN | https://github.com/robertpelloni/GWEN.git | `d4e2ebcc68a4eb456d20993562f47322acd906a4` | Verified locally |
+| hax | (unconfigured) | `45199a64a62008620f7a27d13e2daaf8b63bb45d` | Verified locally |
+| hermes-agent | https://github.com/robertpelloni/hermes-agent | `ccb236f9f2a03f9e252e1472263b71b42d06dd16` | Pinned tree unavailable locally |
+| hyper | https://github.com/robertpelloni/hyper.git | `848f3051afb57dce2c49b46cef34fb7221697798` | Verified locally |
+| hyperharness | https://github.com/robertpelloni/hyperharness | `785ae2148ebf65bd24e8e8f72f61c7506ca3af7d` | Verified locally |
+| hyperharness/adrenaline | https://github.com/shobrook/adrenaline | `7520e9cc96d936b9e473bc1074a9b9712076d69d` | Checkout unavailable |
+| hyperharness/aider | https://github.com/paul-gauthier/aider | `5dc9490bb35f9729ef2c95d00a19ccd30c26339c` | Checkout unavailable |
+| hyperharness/amazon-q-developer-cli | https://github.com/aws/amazon-q-developer-cli | `15cc8f3cd18c4272925ce1c7053268eedff1ea0a` | Checkout unavailable |
+| hyperharness/auggie | https://github.com/augmentcode/auggie | `96479b7a290083de8e72878cecf9c90c0fb400ad` | Checkout unavailable |
+| hyperharness/azure-ai-cli | https://github.com/Azure/azure-ai-cli | `8d3b8e4a9d3e1faa69681dcc1f5ba443e0ba104f` | Checkout unavailable |
+| hyperharness/bito-cli | https://github.com/gitbito/CLI | `cb3a77903b48171c24cad3db07172fd3cc9ff8ee` | Checkout unavailable |
+| hyperharness/byterover-cli | https://github.com/campfirein/byterover-cli | `1052ac1a5dd0fde4da8693d4712064f7876c269c` | Checkout unavailable |
+| hyperharness/claude-code | https://github.com/yasasbanukaofficial/claude-code | `a371abbe75ffa0d0a3c92290e2bbf56a7ef54367` | Checkout unavailable |
+| hyperharness/claude-code-templates | https://github.com/davila7/claude-code-templates | `77b087e2153e35250cd3cc7c192218a2d990b6ed` | Checkout unavailable |
+| hyperharness/code-cli | https://github.com/just-every/code | `dd8a84a21b04686e4b5c71fecba582d847d2b277` | Checkout unavailable |
+| hyperharness/copilot-cli | https://github.com/github/copilot-cli | `841e7a57ba6ec683d710826c113f3c0cdd8f0940` | Checkout unavailable |
+| hyperharness/crush | https://github.com/charmbracelet/crush | `c98fc5459982d35fd6152718ad1148c0256625bd` | Checkout unavailable |
+| hyperharness/dolt | https://github.com/dolthub/dolt | `5bace43533ea3ed1e99560f9da6e58285a25b5bb` | Checkout unavailable |
+| hyperharness/factory-cli | https://github.com/Factory-AI/factory | `892925c655a97e7a0bc7d558236015ebb22cb214` | Checkout unavailable |
+| hyperharness/gemini-cli | https://github.com/google-gemini/gemini-cli | `3fd7d263466b9e5d30b2da1ebf85dae956a0fb86` | Checkout unavailable |
+| hyperharness/goose | https://github.com/block/goose | `4facf56cbab049142809d9afa4648ebe6823ba80` | Checkout unavailable |
+| hyperharness/grok-cli | https://github.com/superagent-ai/grok-cli | `fb97af83f06dca873281d60168430f06c8de6324` | Checkout unavailable |
+| hyperharness/jules-extension | https://github.com/gemini-cli-extensions/jules | `9f2fc14a41e8b604bdaf2d50ae6041cdc5507175` | Checkout unavailable |
+| hyperharness/kilocode | https://github.com/Kilo-Org/kilocode | `aab1e99aefd67b415eaac2379e51cc39d99fd51d` | Checkout unavailable |
+| hyperharness/kimi-cli | https://github.com/MoonshotAI/kimi-cli | `9ab1286b8fe4e6bcd116949a27ce5e0ac3389c82` | Checkout unavailable |
+| hyperharness/litellm | https://github.com/BerriAI/litellm | `dc9297d36f6b9ef0965ff365664c7696bc4131a8` | Checkout unavailable |
+| hyperharness/llamafile | https://github.com/Mozilla-Ocho/llamafile | `334e66444a96d5429fd2d667301bd067029b1eb5` | Checkout unavailable |
+| hyperharness/llm-cli | https://github.com/simonw/llm | `0392226e6630746ef51ffd309c2bee6a5f72b58e` | Checkout unavailable |
+| hyperharness/mistral-vibe | https://github.com/mistralai/mistral-vibe | `c96a6dbb34d34f8a868b3f67b279ecabbf1aa616` | Checkout unavailable |
+| hyperharness/ollama | https://github.com/ollama/ollama | `6362e0a30887bdd4f69e07a94e8a513383576204` | Checkout unavailable |
+| hyperharness/open-interpreter | https://github.com/OpenInterpreter/open-interpreter | `f12ce327eeee679d2f2f22ce23018b0db9ae092f` | Checkout unavailable |
+| hyperharness/opencode | https://github.com/anomalyco/opencode | `97178e54b8c0940719a64f1a8595c794cbf1e50b` | Checkout unavailable |
+| hyperharness/pi-cli | https://github.com/badlogic/pi-mono | `2a32a605a9f18a5f0191f65358a2e764b2f69fc7` | Checkout unavailable |
+| hyperharness/qwen-code-cli | https://github.com/dinoanderson/qwen_cli_coder | `dbf277291908dc45a1fee1c8b635ffe26e4f9d97` | Checkout unavailable |
+| hyperharness/rowboat | https://github.com/rowboatlabs/rowboat | `9dc29dd17a9db9404b05ac8665919ad89d8ea1a0` | Checkout unavailable |
+| hyperharness/smithery-cli | https://github.com/smithery-ai/cli | `407ac3b33944a585357379bc213fdf1ee55464d7` | Checkout unavailable |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | `69470aebd17f0704c86b3d9c0b397922548ec2bf` | Verified locally |
+| HyperNexus/lumbros.me | https://github.com/candlestixxx/lumbros.me | `16261e00c12afe745a2d3e58168c12f27b80e1f8` | Verified locally |
+| HyperNexus/vendor/deepseek-harness | https://github.com/deepseek-ai/deepseek-harness.git | `fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159` | Verified locally |
+| HyperNexus/vendor/grok-build | https://github.com/xai-org/grok-build.git | `2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8` | Verified locally |
+| HyperNexus2old | https://gitlab.com/robertpelloni/HyperNexus.git | `055da2d07c8584ec87047277b607762d2b217d36` | Verified locally |
+| HyperNexus2old/vendor/deepseek-harness | https://github.com/deepseek-ai/deepseek-harness.git | `47f943859bef60e4160492346772ded9b24f765a` | Checkout unavailable |
+| HyperNexus2old/vendor/grok-build | https://github.com/xai-org/grok-build.git | `eb267feff13129e568df38fb6fdf0ceb65f735d6` | Checkout unavailable |
+| hyperporn | https://github.com/robertpelloni/hyperporn | `0e1d2e0f75aceb0740c12aed748391908a7ee87e` | Checkout unavailable |
+| ios_transfer | (unconfigured) | `fa74920d84be79faee6c56decabcb1a869fa13f4` | Checkout unavailable |
+| jdk | https://github.com/robertpelloni/jdk | `2e179fec7b5113a3b526ee4ad5c66d6b7f0179e2` | Verified locally |
+| jules-autopilot | https://github.com/robertpelloni/jules-autopilot | `56d0101830e39207fda0da9837760d67e2c0e8f3` | Verified locally |
+| JWildfire | https://github.com/robertpelloni/JWildfire.git | `e2539122e24d14715576d73abf9b39a30e0f0973` | Pinned tree unavailable locally |
+| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | `dbe00cc17d274dd32c98d8b4a2a7bbacdce18d2d` | Verified locally |
+| ksm-v2/kshootmania/ThirdParty/CoTaskLib | https://github.com/m4saka/CoTaskLib.git | `de940f0951c918a70054444de272c0e261429a73` | Checkout unavailable |
+| ksm-v2/kshootmania/ThirdParty/NocoUI | https://github.com/m4saka/NocoUI.git | `4b91ce08f15d0e24dd3f5270f51ea024a270a6c0` | Checkout unavailable |
+| ksm-v2/kshootmania/ThirdParty/SQLiteCpp | https://github.com/SRombauts/SQLiteCpp.git | `7302cd30b853e2d3d4f2ae1456b01180d068681e` | Checkout unavailable |
+| ksm-v2/ksmaxis | https://github.com/kshootmania/ksmaxis.git | `301bfbe4fd1fbdf1d62390a8cf033f13d1e400ff` | Checkout unavailable |
+| libjruntime | https://github.com/robertpelloni/libjruntime | `08e5195e2c38cdf8bbde98c928964397c605cc75` | Pinned tree unavailable locally |
+| llvm-project | https://github.com/robertpelloni/llvm-project | `d6d4921b71e66540bcf582e41b202d533fbfe762` | Verified locally |
+| Maestro | https://github.com/robertpelloni/Maestro | `f492a7e02621eb3b73aa723efa88b6939188de47` | Verified locally |
+| make_elon_laugh | https://github.com/robertpelloni/make_elon_laugh.git | `8e6b0d612e4b0fce2dd9698497021b4d2c3c925e` | Verified locally |
+| MarbleBlast | https://github.com/robertpelloni/MarbleBlast | `1836894b13694cf95fffe220ff55c3a3894f8473` | Verified locally |
+| marketing_agent | https://github.com/robertpelloni/marketing_agent.git | `b96340a1b3b6b89514522c31eee7ee21972f0b89` | Verified locally |
+| mcp-superassistant | https://github.com/robertpelloni/mcp-superassistant | `5efe6d1771b02490f4458bf7a1fcce86586245e9` | Verified locally |
+| mcp-superassistant/packages/byterover-cipher | https://github.com/campfirein/cipher.git | `4fc0d4038fa3025c0258eae30a9cadb3e881d40d` | Checkout unavailable |
+| MilkDrop3 | https://github.com/robertpelloni/MilkDrop3.git | `254704aef2e0d9d1eb49bafc3293bd323245f5f3` | Verified locally |
+| MilkDrop3/bg | https://github.com/robertpelloni/bg.git | `8f5f25ac54cd5a088bb85901e8a1e551b2ccfc40` | Checkout unavailable |
+| MilkDrop3/bobmani | https://github.com/robertpelloni/bobmani.git | `8a88f848db6f10a87d558c33bb7386ce89560839` | Checkout unavailable |
+| MilkDrop3/fwber | https://github.com/robertpelloni/fwber.git | `e4ea9fbe05c50450810b057c35a0f1bbc165a813` | Checkout unavailable |
+| MilkDrop3_fix | https://github.com/robertpelloni/MilkDrop3.git | `254704aef2e0d9d1eb49bafc3293bd323245f5f3` | Verified locally |
+| MilkDrop3_fix/bg | https://github.com/robertpelloni/bg.git | `8f5f25ac54cd5a088bb85901e8a1e551b2ccfc40` | Checkout unavailable |
+| MilkDrop3_fix/bobmani | https://github.com/robertpelloni/bobmani.git | `8a88f848db6f10a87d558c33bb7386ce89560839` | Checkout unavailable |
+| MilkDrop3_fix/fwber | https://github.com/robertpelloni/fwber.git | `e4ea9fbe05c50450810b057c35a0f1bbc165a813` | Checkout unavailable |
+| mk64 | https://github.com/robertpelloni/mk64 | `cba86d6cdc3dec783ee3348e9459e75cee0db63b` | Verified locally |
+| mk64/doxygen-awesome-css | https://github.com/jothepro/doxygen-awesome-css.git | `46483f1e5a70ffb9ecd3b82d0a1cd1b24edf13da` | Checkout unavailable |
+| mk64/tools/asm-differ | https://github.com/simonlindholm/asm-differ | `0dd09af8f8008f1f880327cf0aca3b26d2562ea2` | Checkout unavailable |
+| mk64/tools/blender/fast64 | https://github.com/Fast-64/fast64.git | `b13010949567e4a2bf44ba3ccc18b06427243153` | Checkout unavailable |
+| mk64/tools/decomp-permuter | https://github.com/simonlindholm/decomp-permuter | `8556c81d80d1c1af98a858c8f4dc951357f29139` | Checkout unavailable |
+| mk64/tools/torch | https://github.com/HarbourMasters/torch | `7f5d55f9de53f96e61c11399cb3066f8dd8e835e` | Checkout unavailable |
+| mparty | https://github.com/robertpelloni/mparty.git | `6208e281fcec026fbc5e47fe8a36346e522b88f1` | Verified locally |
+| multimousergy | https://github.com/robertpelloni/multimousergy.git | `3e6007c81c68ec12bdb47fee8808b7a314692d1b` | Pinned tree unavailable locally |
+| muse | https://github.com/robertpelloni/muse | `ad484ef28db40672d2d61a00689b10714282010c` | Pinned tree unavailable locally |
+| native-fy | https://github.com/robertpelloni/native-fy | `f1b1b72ff704c75101615ec11d1027c59fcb579e` | Verified locally |
+| neverball | https://github.com/robertpelloni/neverball | `6f928b160f7e56d862f46c2fbe0db73bbb1fa504` | Verified locally |
+| newz | https://github.com/robertpelloni/newz.git | `8ca290515bc9a332d18d65682aebd5e0e23786ec` | Verified locally |
+| npp | https://github.com/robertpelloni/npp | `c71c9e6fb1d02b8b39dc5d1e7c601de5a4225400` | Verified locally |
+| npp/bcs | https://github.com/robertpelloni/bcs.git | `598f233520dc325261efad3666666887d6b9604b` | Checkout unavailable |
+| npp/bgtk | https://github.com/robertpelloni/bgtk.git | `657e1a1e858547ffd28f48aab6b53787f3d89871` | Checkout unavailable |
+| npp/bqt | https://github.com/robertpelloni/bqt.git | `92bb40654b683d337a04ee82f4ee7c2d964bfc06` | Checkout unavailable |
+| npp/textfx | https://github.com/rainman74/NPPTextFX2.git | `71ec1ead277ef311ed3216df3c1ce19ea4985518` | Checkout unavailable |
+| odcnn | https://github.com/robertpelloni/odcnn.git | `6971c07139fd8bee1c8ba004f36dd499d6c79f32` | Verified locally |
+| okgame | https://github.com/robertpelloni/okgame | `a6b2060287f516aac9f14ceb2cb44fdedaca5570` | Pinned tree unavailable locally |
+| onetool-mcp | https://github.com/robertpelloni/onetool-mcp | `59d422d2eeaaad0d019904483ff1b2ec0bf955c5` | Verified locally |
+| openclaw-config | https://github.com/TechNickAI/openclaw-config.git | `95f781d90b3d2ee3e58ce144e06fc38d197f9b70` | Verified locally |
+| openclaw-dashboard | https://github.com/tugcantopaloglu/openclaw-dashboard.git | `3592c28498c635cd720f218a62343b0ca2d01cfd` | Verified locally |
+| OpenMBU | https://github.com/robertpelloni/OpenMBU | `6846cd030d1120499ab61f2bd059ec1c94c17acd` | Verified locally |
+| pi-mono | https://github.com/robertpelloni/pi-mono | `51788f850f9906fd823de662ee1992cebbaa56c1` | Verified locally |
+| planet_fitness_stepmaniax_agent | https://github.com/robertpelloni/planet_fitness_stepmaniax_agent | `acab0d13406d5ecde9b665edc29e452eee8a8d1d` | Verified locally |
+| planet_fitness_stepmaniax_agent/fcdm | https://github.com/robertpelloni/fcdm.git | `c105ce449b1a18e8691dd8a47e995b7beaa121d3` | Checkout unavailable |
+| planet_fitness_stepmaniax_agent/fitness_center_dance_machine | https://github.com/robertpelloni/fcdm.git | `c105ce449b1a18e8691dd8a47e995b7beaa121d3` | Checkout unavailable |
+| private_gemini_storage | https://github.com/robertpelloni/private_gemini_storage | `4e823c0b2a553acaddda37ec0cc95f0d79f94971` | Verified locally |
+| projectm | https://github.com/robertpelloni/projectm.git | `76098fdd8cb9ab572b33b0411ab538a77c71a551` | Verified locally |
+| projectM-upstream | https://github.com/projectM-visualizer/projectM.git | `349b7cc2db312d47cef6be24c6856ced6643a385` | Verified locally |
+| projectM-upstream/vendor/projectm-eval | https://github.com/projectM-visualizer/projectm-eval.git | `22fb0cfd8f2dfbcd2b68f2443e7f44e19b32c09a` | Checkout unavailable |
+| projectm/vendor/projectm-eval | https://github.com/projectM-visualizer/projectm-eval.git | `2a1c1a93f9cf0a4039894df919d0a593054ab976` | Checkout unavailable |
+| psytrance_night_outreach_agent | https://github.com/robertpelloni/psytrance_night_outreach_agent.git | `9a8cc847840b1857e5bb7422619dc063ee46770a` | Verified locally |
+| realestatecrm | https://github.com/robertpelloni/realestatecrm.git | `6742f7b9c56b44d908a392b4fd249f32b11019a4` | Verified locally |
+| realestatecrm/apps/aicrm | https://github.com/RealEstateCRMLLC/aicrm.git | `0d4f5340f9d667169c6e2f111a64a33eaa804e16` | Pinned tree unavailable locally |
+| realestatecrm/apps/contentplanner | https://github.com/RealEstateCRMLLC/socialmediacontentplanner.git | `eab8de31ef6a7547fe67cb3a1e2528e1471bea83` | Pinned tree unavailable locally |
+| realestatecrm/apps/foreclosureworkflow | https://github.com/RealEstateCRMLLC/forclosureworkflow.git | `bc803fff43a02b7a77550e9597113e063828baab` | Pinned tree unavailable locally |
+| realestatecrm/apps/leadcaller | https://github.com/RealEstateCRMLLC/realestateleadcaller.git | `a4973e77a6b6b96f95ff1b47ab11617e2e46c973` | Pinned tree unavailable locally |
+| realestatecrm/apps/leadg | https://github.com/RealEstateCRMLLC/leadG.git | `1276b8040d25b5670ea0b0bd7c0e2fcc0a50484a` | Pinned tree unavailable locally |
+| realestatecrm/apps/legacyleads | https://github.com/RealEstateCRMLLC/LegacyLeads.git | `4974c89ae7f8f2ecf4d5ce183784c740f829835c` | Verified locally |
+| realestatecrm/apps/media-workflow | https://github.com/RealEstateCRMLLC/re-agent-workflow-media-1.git | `3e5603cd8b02858bec202402673d54e4a641e043` | Verified locally |
+| realestatecrm/apps/prototype | https://github.com/RealEstateCRMLLC/realestateprototype.git | `1e760fd2a9413bbc553a63968274d8797fa32a22` | Verified locally |
+| sales_bot | https://github.com/robertpelloni/sales_bot.git | `d1b494d3540aa9242487d9fbf52d7d7a0d87cb42` | Verified locally |
+| sales_bot/vendor/piper | https://github.com/rhasspy/piper.git | `73c04d81d5590ecc46e522de3601ce7fb29fc2be` | Checkout unavailable |
+| sales_bot/vendor/yolov11-edge | https://github.com/ultralytics/ultralytics.git | `974dda2fcf2a869b8238d1cc9aa960f99b6695ea` | Checkout unavailable |
+| skillzhub | https://github.com/robertpelloni/skillzhub | `c2b8aa26aa412d8dd08618681e875dbe2490a654` | Verified locally |
+| slsk_discography_downloader_script | https://github.com/robertpelloni/slsk_discography_downloader_script | `2c861044bce8f48bfcc97777273f2393910562bb` | Verified locally |
+| sm64coopdx | https://github.com/robertpelloni/sm64coopdx | `30ab27080eb9d82ac8c9a1b259c607ef5f0329cb` | Verified locally |
+| stepmania | https://github.com/robertpelloni/stepmania | `6a05854b78b5833c4d5e80b39b98a3bfb7d93127` | Verified locally |
+| succubus.red | https://github.com/robertpelloni/succubus.red.git | `b69feba53d8c5c35081bc6cd98fdc40cd633fa83` | Verified locally |
+| succubus.red/references/talkinghead | https://github.com/met4citizen/talkinghead.git | `eed58d198076a7e1e825f804802921c4d3804d46` | Checkout unavailable |
+| succubus.red/references/webwaifu3 | https://github.com/xsploit/webwaifu3.git | `830d7df5004e2f1d0809539cc1458743d8e5e8bd` | Checkout unavailable |
+| superdawmcp | https://github.com/robertpelloni/superdawmcp | `a4fd97c4a36699fb8f7fbcbb2982bdab544fdf42` | Pinned tree unavailable locally |
+| supersaber | https://github.com/robertpelloni/supersaber | `04014d5ff8be26dc786e89e9e31801ec4069eaf8` | Verified locally |
+| tabby | https://github.com/robertpelloni/tabby | `567b7a2db5666bc5fa6609de22820c1467311554` | Verified locally |
+| timidity | https://github.com/robertpelloni/timidity.git | `eff3cbe5e74a13b3c9ba624c5365257ee6c32928` | Verified locally |
+| tokdiet | https://github.com/robertpelloni/tokdiet | `5c4f57e2615e4b486d33aa104e5f1a733fa4365b` | Verified locally |
+| topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | `eaa1762ca45b78344af8c1a99d7482b58791bee0` | Verified locally |
+| TurntUpToddler | https://github.com/Dimensionalplane/TurntUpToddler | `d269bb8d153770ac5d913be2a8d4942e2183cb0d` | Verified locally |
+| unitedbeats_hypernexus_gtm | https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git | `e7109f6453a5e7e9e51562d90d7060b19cf2225e` | Checkout unavailable |
+| unitedbeats_site | https://github.com/UnitedBeatsLLC/unitedbeats_site.git | `d3d012023b19df5f44817791f03cb520c6eb695a` | Verified locally |
+| veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | `a7dd72a388a6342a8d3cc1ba7aeef86bbba13fdc` | Verified locally |
+| vst_monster | https://github.com/robertpelloni/vst_monster | `49207773ca738b97e09ab70361fd6d639238a352` | Verified locally |
+| warp | https://github.com/robertpelloni/warp.git | `0b796c4641094116d13ebd3c29a337785e7a106e` | Verified locally |
+| warp/submodules/aider | https://github.com/paul-gauthier/aider | `5dc9490bb35f9729ef2c95d00a19ccd30c26339c` | Checkout unavailable |
+| warp/submodules/codex-cli | https://github.com/just-every/code | `42f85444a487c225eb595d64d644d41103b04934` | Checkout unavailable |
+| warp/submodules/pi-mono | https://github.com/badlogic/pi-mono | `788a044483da3d3c1fe1b4603fde7ffac0fbae3f` | Checkout unavailable |
+| webapp_factory | https://github.com/robertpelloni/webapp_factory.git | `07ccab221156a93bfaffba16b7cc8fa12c67d18e` | Verified locally |
+| webapp_factory/submodules/platforms | https://github.com/vercel/platforms.git | `bd3cd5c26e5fe7d10f3d093243d3a31b018a6987` | Checkout unavailable |
+| webapp_factory/submodules/scrapingant | https://github.com/ScrapingAnt/scrapingant-client-python.git | `a0cff7e61bcde56c65cf1900a5dda6e6124afebe` | Checkout unavailable |
+| webapp_factory/submodules/shadcn-ui | https://github.com/shadcn-ui/ui.git | `35983528c233250b990f6172f1a60df228409a37` | Checkout unavailable |
+| ww3_game | https://github.com/robertpelloni/ww3_game.git | `740708eb7831feaa656cf7217025aa151183fb82` | Verified locally |
+| ww3_game/mcp-servers/godot/Coding-Solo.godot-mcp | https://github.com/Coding-Solo/godot-mcp.git | `1209744fad78f3998f98c7394fd0f6ef50da5281` | Verified locally |
+| ww3_game/mcp-servers/godot/ee0pdt.Godot-MCP | https://github.com/ee0pdt/Godot-MCP.git | `b7d08eb43ac938bf64ebd27e474619b8cc020ecc` | Verified locally |
+| ww3_game/mcp-servers/godot/hi-godot.godot-ai | https://github.com/hi-godot/godot-ai.git | `a799acfa49cd9510738b7976355aae85cf7577b9` | Verified locally |
+| ww3_game/mcp-servers/godot/IvanMurzak.Godot-MCP | https://github.com/IvanMurzak/Godot-MCP.git | `7da5311e4cb98a0ca8f231d7d0b756764b142dcf` | Verified locally |
+| ww3_game/mcp-servers/godot/tomyud1.godot-mcp | https://github.com/tomyud1/godot-mcp.git | `2c1f30088437d9d842eb6b32069f93b979e718ec` | Verified locally |
+| ww3_game/mcp-servers/godot/tugcantopaloglu.godot-mcp | https://github.com/tugcantopaloglu/godot-mcp.git | `88f0fbc69a08225d4fdec32f921209e127f52395` | Verified locally |
+| ww3_game/mcp-servers/godot/yurineko73.Godot-MCP-Native | https://github.com/yurineko73/Godot-MCP-Native.git | `eef4807190e7765e69d59c9e707d0ba170f6770d` | Verified locally |
+| ww3_game/mcp-servers/unity/AnkleBreaker.unity-mcp-plugin | https://github.com/AnkleBreaker-Studio/unity-mcp-plugin.git | `3b28d4cea5911db575bbb5ab07f3241dfd024cf3` | Verified locally |
+| ww3_game/mcp-servers/unity/AnkleBreaker.unity-mcp-server | https://github.com/AnkleBreaker-Studio/unity-mcp-server.git | `a669788cd367de7f0b7bfd657a66807a9156628a` | Verified locally |
+| ww3_game/mcp-servers/unity/CoderGamester.mcp-unity | https://github.com/CoderGamester/mcp-unity.git | `d572dc88f1b982a0fdfc09cd14cfdfd760b658e8` | Verified locally |
+| ww3_game/mcp-servers/unity/CoplayDev.unity-mcp | https://github.com/CoplayDev/unity-mcp.git | `ed4e205d31a545bac3686d5e19210e67959aeddd` | Verified locally |
+| ww3_game/mcp-servers/unity/FunplayAI.funplay-unity-mcp | https://github.com/FunplayAI/funplay-unity-mcp.git | `b7ed08f0345fb83b10b5be92a3632437185577b2` | Verified locally |
+| ww3_game/mcp-servers/unity/Glade-tool.glade-mcp | https://github.com/Glade-tool/glade-mcp.git | `a27155a07ba7c6752c061aed58b2850b5f1eef6a` | Verified locally |
+| ww3_game/mcp-servers/unity/isuzu-shiranui.UnityMCP | https://github.com/isuzu-shiranui/UnityMCP.git | `7647bcab0ef8af53aff4c8f76cda502343d501ce` | Verified locally |
+| ww3_game/mcp-servers/unity/IvanMurzak.Unity-MCP | https://github.com/IvanMurzak/Unity-MCP.git | `bd88296546d38edc27f0d568197a85edbbc04fab` | Verified locally |
+| ww3_game/mcp-servers/unity/jackwrichards.UnityMCP | https://github.com/jackwrichards/UnityMCP.git | `91d84c1239ccae1c3939889c37c90fec431e9048` | Verified locally |
+| ww3_game/mcp-servers/unreal/appleweed.UnrealMCPBridge | https://github.com/appleweed/UnrealMCPBridge.git | `58eb1fa02a8fb2a75b5c4000d10e19c575fb901a` | Verified locally |
+| ww3_game/mcp-servers/unreal/ChiR24.Unreal_mcp | https://github.com/ChiR24/Unreal_mcp.git | `5e8313978eefea545b3562bed5ffa3a7b2edfb6f` | Verified locally |
+| ww3_game/mcp-servers/unreal/chongdashu.unreal-mcp | https://github.com/chongdashu/unreal-mcp.git | `4e5f00da50733190481311e254d16d137a84ef33` | Verified locally |
+| ww3_game/mcp-servers/unreal/GenOrca.unreal-mcp | https://github.com/GenOrca/unreal-mcp.git | `f7986db239516aa4299ddc6f54d713253bd82631` | Verified locally |
+| ww3_game/mcp-servers/unreal/IvanMurzak.Unreal-MCP | https://github.com/IvanMurzak/Unreal-MCP.git | `de1d37a4054bf0b798ecad6b73ac1a77457b24cf` | Verified locally |
+| ww3_game/mcp-servers/unreal/kvick-games.UnrealMCP | https://github.com/kvick-games/UnrealMCP.git | `f989d0e77a4bae68c0dfc92bbcaf24ceefd06efb` | Verified locally |
+| ww3_game/mcp-servers/unreal/runreal.unreal-mcp | https://github.com/runreal/unreal-mcp.git | `90fb0177b34b428f6e803567a4bd746974478239` | Verified locally |
+| ww3_game/mcp-servers/unreal/sam-david.unreal-mcp | https://github.com/sam-david/unreal-mcp.git | `8b88ec3a79f74e90e8ddb0509cc8f68f8ab22011` | Verified locally |
+| xrnet | https://github.com/robertpelloni/xrnet | `6c537395b1b5c1d367133e9d3bcd5e120a964de4` | Verified locally |
+| xrnet/submodules/bobcoin | (unconfigured) | `64575ee33e33ba9672805d1dfd18e28976ae5294` | Checkout unavailable |
 
-Initialized: 133/134
+## Root .gitmodules entries without a root gitlink
+
+| Configured path | Configured source |
+|---|---|
+| bobmani/arrowvortex | https://github.com/robertpelloni/arrowvortex |
+| bobmani/beatoraja | https://github.com/robertpelloni/beatoraja |
+| bobmani/bobmania | https://github.com/robertpelloni/bobmania |
+| bobmani/ddc | https://github.com/robertpelloni/ddc |
+| bobmani/ddc_onset | https://github.com/robertpelloni/ddc_onset |
+| bobmani/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model |
+| bobmani/hymnmania | https://github.com/robertpelloni/hymnmania |
+| bobmani/itgmania | https://github.com/robertpelloni/itgmania |
+| bobmani/ksm-v2 | https://github.com/robertpelloni/ksm-v2 |
+| bobmani/leraine-studio | https://github.com/robertpelloni/leraine-studio |
+| bobmani/linthesia | https://github.com/robertpelloni/linthesia |
+| bobmani/pianogame | https://github.com/robertpelloni/pianogame |
+| bobmani/Simply-Love-SM5 | https://github.com/robertpelloni/Simply-Love-SM5 |
+| hymnmania | https://github.com/robertpelloni/hymnmania |
+| hypercode | https://github.com/robertpelloni/hypercode |
+| jvm-cpp-runtime | https://github.com/robertpelloni/jvm-cpp-runtime |

@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-echo Starting global build sequence (v5.344.0)...
+echo Starting global build sequence (v5.345.0)...
 cd /d "%~dp0"
 if "%GOCACHE%"=="" if exist "D:\agent-cache" set "GOCACHE=D:\agent-cache\go-build"
 if "%GOTMPDIR%"=="" if exist "D:\agent-cache" set "GOTMPDIR=D:\agent-cache\go-tmp"
@@ -32,8 +32,14 @@ if not exist tormentnexus\go (
             echo   Using npm with --no-audit...
             call npm install --no-audit --no-fund --ignore-scripts 2>&1
         )
-        echo   npm run build...
-        call npm run build 2>&1
+        if errorlevel 1 (
+            echo   FAIL dashboard dependency installation
+            set /a FAIL+=1
+        ) else (
+            echo   npm run build...
+            call npm run build 2>&1
+            if errorlevel 1 ( echo   FAIL dashboard build & set /a FAIL+=1 ) else ( echo   OK dashboard build & set /a OK+=1 )
+        )
     ) else (
         echo   SKIP No package.json found
         set /a SKIP+=1
@@ -78,4 +84,5 @@ if not exist tabby\tabby-go (
 
 echo Build sequence finished: %OK% OK, %FAIL% failed, %SKIP% skipped.
 if %FAIL% gtr 0 exit /b 1
+exit /b 0
 

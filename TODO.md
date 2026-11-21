@@ -1,3 +1,8 @@
+## v5.345.0 follow-up
+
+- Review DAO’s tracked-file removals and Veilid’s database removal before advancing their root pins.
+- Reconcile the remaining feature branches with overlapping implementations and verify nested pins whose commit objects are absent locally.
+
 ### Protocol #335 Outcomes (2026-11-16)
 
 - [x] v5.344.0 - Protocol #335: triage 56 actionable, 2 fast-forwards, 0 forward merges; retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished
