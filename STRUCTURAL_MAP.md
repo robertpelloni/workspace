@@ -515,7 +515,7 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | bobsgameonlinejava_fix/references/tilemap-editor | https://github.com/blurymind/tilemap-editor | `f27a4e0b7215b3eb3fff19ffe58ccd41a913805f` | Checkout unavailable |
 | bobsgameonlinejava_fix/references/tilemap-studio | https://github.com/Rangi42/tilemap-studio | `cdb3ecf7fc49225a754f3c7bee6e939c5053d018` | Checkout unavailable |
 | bobsgameonlinejava_fix/references/voidsprite | https://github.com/counter185/voidsprite | `6724c42a51e5d0f6d34933ed0b1f73766ed0cf08` | Checkout unavailable |
-| bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | `e0b30831c758c5ed29e4cee6f321485fb05746a5` | Verified locally |
+| bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | `e241959a5cf5ad6bcf8f6270ea2116697ef36da7` | Verified locally |
 | bobsgameweb/submodules/bobui | https://github.com/robertpelloni/bqt.git | `92bb40654b683d337a04ee82f4ee7c2d964bfc06` | Checkout unavailable |
 | bobtorrent | https://github.com/robertpelloni/bobtorrent | `5f9f9461c5e6a424fd38cd137901e46be2ce226d` | Verified locally |
 | bobtorrent/bobcoin | https://github.com/robertpelloni/bobcoin | `eb8e46a58a883c1b5118b5b13521cf226fd8450f` | Checkout unavailable |

@@ -3,20 +3,21 @@
 ## Repository updates
 
 - Root local main fast-forwarded from 8002d9c26 to 0a097abc0. GitHub reports no upstream parent for the root repository. Merged the root dependency branch in 27988ed5f after checking the manifest and lockfile changes.
-- Staged 12 fast-forward gitlink updates reachable from their configured tracking branches. Updated these clean local checkouts: bobsgameonlinejava, bobsaver, bobsgameweb, bobtorrent, bqt, bcs, bobfilez_fix, bobsaver_fix, bobmani, bobsgameonlinejava_fix, bgtk. Preserved the dirty BobFilez checkout while advancing its root pin. HymnMania’s separate local main also fast-forwarded to a28911f.
+- Published 12 fast-forward gitlink updates reachable from their configured tracking branches. Updated these clean local checkouts: bobsgameonlinejava, bobsaver, bobsgameweb, bobtorrent, bqt, bcs, bobfilez_fix, bobsaver_fix, bobmani, bobsgameonlinejava_fix, bgtk. Preserved the dirty BobFilez checkout while advancing its root pin. HymnMania’s separate local main also fast-forwarded to a28911f.
+- Bob’s Game Web merged its dependency branch in e241959a. Both npm lockfile trees passed in a clean fixture. The push was verified before advancing the root pin.
 - Held DAO and Veilid pins at their prior commits. The proposed changes remove tracked DAO files and Veilid’s SQLite database. The root’s tracked session, memory, and database files remain in Git.
 - BobbyBookmarks’ backup branch conflicts in the Go API, database, manifest, and frontend. The default branch already contains a separately integrated dual-HUD implementation. Keep the backup reference, including its database snapshots, pending comparison. BobMania’s active master already includes the Jules dashboard audit fix and spline editor code. The old Jules and overlay snapshot tips would remove engine files from the restored tree in a wholesale integration.
 
 ## Recursive inventory and remaining work
 
-- At this checkpoint, the local declaration walk found 993 locations, including 181 initialized repositories with the root included. Explicit recursive fetch had logged 83 successes and 11 timeouts. The GitHub branch inventory returned branch refs for 115 of 116 owned repositories. Ancestry comparison and reconciliation are incomplete.
+- At this checkpoint, the local declaration walk found 993 locations, including 181 initialized repositories with the root included. Explicit recursive fetch had logged 96 successes and 32 timeouts at this checkpoint. The GitHub branch inventory returned branch refs for 115 of 116 owned repositories. Ancestry comparison and reconciliation are incomplete. Finish the source and branch scans with complete histories where local submodules are shallow.
 - STRUCTURAL_MAP.md has 120 root gitlinks and 775 total discovered pins. It marks 618 unavailable checkouts or trees and lists 16 root configuration entries with no root gitlink.
 - No local feature branch, stash, or pre-existing untracked file was removed. The dirty root agent-memory file and unrelated work were kept out of the release commit. The two running HyperNexus PIDs predated this session and were left running.
 
 ## Validation
 
 - Both root build scripts passed success and failure exit-code checks using a controlled Go fixture. Dashboard JavaScript syntax and its npm lockfile tree passed. Root npm reported the same invalid jose and gcp-metadata entries on both the old and merged lockfiles.
-- Actual builds used separate output directories. The default Tabby build could not resolve vendored Sentry and UUID packages. Read-only and offline build attempts were launched to determine how much of the system could be built before closing the session.
+- Actual builds used separate output directories. The default Tabby build could not resolve vendored Sentry and UUID packages. Read-only builds of the full batch targets reached their time limits. The dependency retry downloaded the missing Tabby modules into the Go cache and started another isolated backend build. Full compilation, deployment, and service restart remain unverified.
 
 ## Prior sessions
 
