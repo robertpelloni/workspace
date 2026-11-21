@@ -30,8 +30,8 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | bg_fix | https://github.com/robertpelloni/bg.git | `5cdc4d4602bf5a8ad06ed354687ec18e70904236` | Pinned tree unavailable locally |
 | bgtk | https://github.com/robertpelloni/bgtk | `91c13da344bc1af7548307eec288854b5a955218` | Verified locally |
 | bgtk/submodules/juce | https://github.com/juce-framework/JUCE | `d60b7a78030661574a615b586d9325ba7a7fa7dd` | Checkout unavailable |
-| bob_and_lum_sitcom | https://github.com/robertpelloni/bob_and_lum_sitcom | `7c598b1eb161398d4c4c15d6a1f2548cc46a70cc` | Pinned tree unavailable locally |
-| bobble | https://github.com/robertpelloni/bobble.git | `e14abab6161f294f9a9d380d87088f84924b9922` | Pinned tree unavailable locally |
+| bob_and_lum_sitcom | https://github.com/robertpelloni/bob_and_lum_sitcom | `f126054345f83cde1f570f1ceeb9a11df7fd276d` | Pinned tree unavailable locally |
+| bobble | https://github.com/robertpelloni/bobble.git | `652904a9e73224a4f13f30a65f17a74b47d4d4e6` | Pinned tree unavailable locally |
 | bobbybookmarks | https://github.com/robertpelloni/bobbybookmarks | `9fc00275dfd793edf443c41d22fc0b13c340a375` | Verified locally |
 | bobcoin | https://github.com/robertpelloni/bobcoin | `724a671771c2ced11444c00692a6cf7e5c4642fe` | Verified locally |
 | bobeditpro | https://github.com/robertpelloni/bobeditpro | `7811409f1029119343957143d60397a496ca8a4e` | Pinned tree unavailable locally |
