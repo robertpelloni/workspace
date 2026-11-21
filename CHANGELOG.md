@@ -5,6 +5,7 @@
 - Integrated the root and Bob’s Game Web dependency branches and advanced verified, published submodule pins.
 - Made the master start script stop after a failed build and made the global build report dashboard install and build failures.
 - Made build_all.bat resolve from its own directory and let start.bat use the top-level BQT checkout if the nested Go sources are missing.
+- Integrated KSM v2.0.0-alpha33 mock rankings and dashboard work and updated the standalone and BobMania pins.
 - Rebuilt the structural map from Git trees, including pinned commits for unavailable checkouts.
 
 ## [v5.344.0] - 2026-11-16 - Protocol #335: Repository Sync & Intelligent Merge

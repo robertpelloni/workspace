@@ -26,12 +26,88 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | bcs/external/juce | https://github.com/juce-framework/JUCE | `d60b7a78030661574a615b586d9325ba7a7fa7dd` | Checkout unavailable |
 | bcs/external/ultimatepp | https://github.com/ultimatepp/ultimatepp | `603d90b0f8f0b43f115e084e13e9e84751060bff` | Checkout unavailable |
 | bdwgc | https://github.com/robertpelloni/bdwgc | `1d38c6d905a83b006df843440b380e51a2119871` | Verified locally |
-| bg | https://github.com/robertpelloni/bg.git | `5cdc4d4602bf5a8ad06ed354687ec18e70904236` | Pinned tree unavailable locally |
-| bg_fix | https://github.com/robertpelloni/bg.git | `5cdc4d4602bf5a8ad06ed354687ec18e70904236` | Pinned tree unavailable locally |
+| bg | https://github.com/robertpelloni/bg.git | `5cdc4d4602bf5a8ad06ed354687ec18e70904236` | Verified locally |
+| bg/bobsgameonlinejava | https://github.com/robertpelloni/bobsgameonlinejava.git | `61629d3d2cbcad04828767942452f39478a9d2e4` | Checkout unavailable |
+| bg/bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | `af3259fd76bb8be372e5e241d2765bec487b7557` | Checkout unavailable |
+| bg/okgame | https://github.com/robertpelloni/okgame | `7b4102a207e79c6e09e324316d52399458b7176a` | Checkout unavailable |
+| bg/references/ai/ControlNet | https://github.com/lllyasviel/ControlNet | `ed85cd1e25a5ed592f7d8178495b4483de0331bf` | Checkout unavailable |
+| bg/references/ai/diffusers | https://github.com/huggingface/diffusers | `2d0110f8182d18834d5039b19232e5761023b5f6` | Checkout unavailable |
+| bg/references/ai/shap-e | https://github.com/openai/shap-e | `50131012ee11c9d2617f3886c10f000d3c7a3b43` | Checkout unavailable |
+| bg/references/ai/stable-diffusion | https://github.com/CompVis/stable-diffusion | `21f890f9da3cfbeaba8e2ac3c425ee9e998d5229` | Checkout unavailable |
+| bg/references/editors/aseprite | https://github.com/aseprite/aseprite | `2ed0f145fbece15875c1f9a206ff248a156a8791` | Checkout unavailable |
+| bg/references/editors/aseprite-guide | https://github.com/PandaDevOfficial/aseprite-guide | `471c8ec9539fdffc11c77a1fbff2676f83fec2fb` | Checkout unavailable |
+| bg/references/editors/blockbench | https://github.com/JannisX11/blockbench | `8fe8d9d9568de8233d77cd592744acad495d46b0` | Checkout unavailable |
+| bg/references/editors/bottled-up-tilemap | https://github.com/Dark-Peace/bottled-up-tilemap | `7a9338631c26572ae4466a0f4b7069e2f96bcb91` | Checkout unavailable |
+| bg/references/editors/csprite | https://github.com/csprite/csprite | `11eca901493dbf29e9b306a884b056276f106f6e` | Checkout unavailable |
+| bg/references/editors/Cytopia | https://github.com/CytopiaTeam/Cytopia | `b67e255d3870ddf02bf2a489bba93473a6f59a4b` | Checkout unavailable |
+| bg/references/editors/DTile | https://github.com/MagnonGames/DTile | `22a977f4e3fd68c4637d49ee83584ccb270e7905` | Checkout unavailable |
+| bg/references/editors/goxel | https://github.com/guillaumechereau/goxel | `c84ad6dc6dbff474ba2ac04af84a727278d9927e` | Checkout unavailable |
+| bg/references/editors/grafx2 | https://github.com/miniupnp/grafx2 | `94b1babf194ad681c9b7ae8e4965bcdbb25ce981` | Checkout unavailable |
+| bg/references/editors/grafx2-dos | https://github.com/deverac/grafx2-dos | `4258bdd7dd527b33cb0f4a7486642587af122d59` | Checkout unavailable |
+| bg/references/editors/GrowTools | https://github.com/GuckTubeYT/GrowTools | `fe146b80d55f6e37b1ef2f59bd86a28176f29f0c` | Checkout unavailable |
+| bg/references/editors/LibreSprite | https://github.com/LibreSprite/LibreSprite | `f06050a6227470cc6450a912a0748f6db7ae83a7` | Checkout unavailable |
+| bg/references/editors/OgmoEditor3-CE | https://github.com/Ogmo-Editor-3/OgmoEditor3-CE | `b2a52159ebbf7b8a43b8a42243b7a96d3af847f7` | Checkout unavailable |
+| bg/references/editors/piskel | https://github.com/piskelapp/piskel | `a6b9c02daefceb10093f71e92d52d16920ccb16e` | Checkout unavailable |
+| bg/references/editors/Pixelorama | https://github.com/Orama-Interactive/Pixelorama | `3ba9bfc19c2b5df8d69faf28fddedbeb166410a1` | Checkout unavailable |
+| bg/references/editors/PixiEditor | https://github.com/PixiEditor/PixiEditor | `d6d21b4aaf2682677570bc83cd25ebb50acaa2ec` | Checkout unavailable |
+| bg/references/editors/PyxleOS | https://github.com/Dakkra/PyxleOS | `624359cff5b6fcaf4651adee59f93ec6122f07b1` | Checkout unavailable |
+| bg/references/editors/raster-master | https://github.com/RetroNick2020/raster-master | `9679bafca5c53984d256b5a534aa701fcffd7c7a` | Checkout unavailable |
+| bg/references/editors/Raylib-Examples | https://github.com/Pakz001/Raylib-Examples | `abe00d9bcccf829de94fbc03aa3a5246a3a3a1ad` | Checkout unavailable |
+| bg/references/editors/retro-game-editor | https://github.com/haroldo-ok/retro-game-editor | `2a93781210a5e85119f410038bad2078b1b987eb` | Checkout unavailable |
+| bg/references/editors/rx | https://github.com/cloudhead/rx | `1bcbe90527ad0bb89c99cec40667f6b961ec8d9e` | Checkout unavailable |
+| bg/references/editors/Simple-Sprite-Tile-2D | https://github.com/wmltogether/Simple-Sprite-Tile-2D | `c5ba692d68741bba67810ed04c106ab0958f1730` | Checkout unavailable |
+| bg/references/editors/SpeedEd | https://github.com/jval1972/SpeedEd | `0be20dca362ac7805a8f9c6672145a18790fddee` | Checkout unavailable |
+| bg/references/editors/sprite-studio-64 | https://github.com/tstamborski/sprite-studio-64 | `ecd1b733cd3ea436310870e6978d391a3591ab8f` | Checkout unavailable |
+| bg/references/editors/stipple-effect | https://github.com/stipple-effect/stipple-effect | `a47e8fa81de16feb31318bdeae6db30662998ebd` | Checkout unavailable |
+| bg/references/editors/tactile | https://github.com/albin-johansson/tactile | `eb98a4c7c19278240d67df606d72306105a666d1` | Checkout unavailable |
+| bg/references/editors/Tile-Studio | https://github.com/Wiering/Tile-Studio | `d0f5d2e09a07ece717469cf585b5f319fb9b0a1e` | Checkout unavailable |
+| bg/references/editors/tiled | https://github.com/mapeditor/tiled | `ad2c29df8ed347ed23fca1b9f5ed7431a8d9e580` | Checkout unavailable |
+| bg/references/editors/tilemap-editor | https://github.com/blurymind/tilemap-editor | `758cdbb308e611da85efefa5cf1c89b5d38b6584` | Checkout unavailable |
+| bg/references/editors/tilemap-studio | https://github.com/Rangi42/tilemap-studio | `244378b5be0c6080e9c990e3e08cabdd0f959fe9` | Checkout unavailable |
+| bg/references/editors/voidsprite | https://github.com/counter185/voidsprite | `2abe4df079771290fbefe23b76e6b2491af1c3ab` | Checkout unavailable |
+| bg_fix | https://github.com/robertpelloni/bg.git | `5cdc4d4602bf5a8ad06ed354687ec18e70904236` | Verified locally |
+| bg_fix/bobsgameonlinejava | https://github.com/robertpelloni/bobsgameonlinejava.git | `61629d3d2cbcad04828767942452f39478a9d2e4` | Checkout unavailable |
+| bg_fix/bobsgameweb | https://github.com/robertpelloni/bobsgameweb.git | `af3259fd76bb8be372e5e241d2765bec487b7557` | Checkout unavailable |
+| bg_fix/okgame | https://github.com/robertpelloni/okgame | `7b4102a207e79c6e09e324316d52399458b7176a` | Checkout unavailable |
+| bg_fix/references/ai/ControlNet | https://github.com/lllyasviel/ControlNet | `ed85cd1e25a5ed592f7d8178495b4483de0331bf` | Checkout unavailable |
+| bg_fix/references/ai/diffusers | https://github.com/huggingface/diffusers | `2d0110f8182d18834d5039b19232e5761023b5f6` | Checkout unavailable |
+| bg_fix/references/ai/shap-e | https://github.com/openai/shap-e | `50131012ee11c9d2617f3886c10f000d3c7a3b43` | Checkout unavailable |
+| bg_fix/references/ai/stable-diffusion | https://github.com/CompVis/stable-diffusion | `21f890f9da3cfbeaba8e2ac3c425ee9e998d5229` | Checkout unavailable |
+| bg_fix/references/editors/aseprite | https://github.com/aseprite/aseprite | `2ed0f145fbece15875c1f9a206ff248a156a8791` | Checkout unavailable |
+| bg_fix/references/editors/aseprite-guide | https://github.com/PandaDevOfficial/aseprite-guide | `471c8ec9539fdffc11c77a1fbff2676f83fec2fb` | Checkout unavailable |
+| bg_fix/references/editors/blockbench | https://github.com/JannisX11/blockbench | `8fe8d9d9568de8233d77cd592744acad495d46b0` | Checkout unavailable |
+| bg_fix/references/editors/bottled-up-tilemap | https://github.com/Dark-Peace/bottled-up-tilemap | `7a9338631c26572ae4466a0f4b7069e2f96bcb91` | Checkout unavailable |
+| bg_fix/references/editors/csprite | https://github.com/csprite/csprite | `11eca901493dbf29e9b306a884b056276f106f6e` | Checkout unavailable |
+| bg_fix/references/editors/Cytopia | https://github.com/CytopiaTeam/Cytopia | `b67e255d3870ddf02bf2a489bba93473a6f59a4b` | Checkout unavailable |
+| bg_fix/references/editors/DTile | https://github.com/MagnonGames/DTile | `22a977f4e3fd68c4637d49ee83584ccb270e7905` | Checkout unavailable |
+| bg_fix/references/editors/goxel | https://github.com/guillaumechereau/goxel | `c84ad6dc6dbff474ba2ac04af84a727278d9927e` | Checkout unavailable |
+| bg_fix/references/editors/grafx2 | https://github.com/miniupnp/grafx2 | `94b1babf194ad681c9b7ae8e4965bcdbb25ce981` | Checkout unavailable |
+| bg_fix/references/editors/grafx2-dos | https://github.com/deverac/grafx2-dos | `4258bdd7dd527b33cb0f4a7486642587af122d59` | Checkout unavailable |
+| bg_fix/references/editors/GrowTools | https://github.com/GuckTubeYT/GrowTools | `fe146b80d55f6e37b1ef2f59bd86a28176f29f0c` | Checkout unavailable |
+| bg_fix/references/editors/LibreSprite | https://github.com/LibreSprite/LibreSprite | `f06050a6227470cc6450a912a0748f6db7ae83a7` | Checkout unavailable |
+| bg_fix/references/editors/OgmoEditor3-CE | https://github.com/Ogmo-Editor-3/OgmoEditor3-CE | `b2a52159ebbf7b8a43b8a42243b7a96d3af847f7` | Checkout unavailable |
+| bg_fix/references/editors/piskel | https://github.com/piskelapp/piskel | `a6b9c02daefceb10093f71e92d52d16920ccb16e` | Checkout unavailable |
+| bg_fix/references/editors/Pixelorama | https://github.com/Orama-Interactive/Pixelorama | `3ba9bfc19c2b5df8d69faf28fddedbeb166410a1` | Checkout unavailable |
+| bg_fix/references/editors/PixiEditor | https://github.com/PixiEditor/PixiEditor | `d6d21b4aaf2682677570bc83cd25ebb50acaa2ec` | Checkout unavailable |
+| bg_fix/references/editors/PyxleOS | https://github.com/Dakkra/PyxleOS | `624359cff5b6fcaf4651adee59f93ec6122f07b1` | Checkout unavailable |
+| bg_fix/references/editors/raster-master | https://github.com/RetroNick2020/raster-master | `9679bafca5c53984d256b5a534aa701fcffd7c7a` | Checkout unavailable |
+| bg_fix/references/editors/Raylib-Examples | https://github.com/Pakz001/Raylib-Examples | `abe00d9bcccf829de94fbc03aa3a5246a3a3a1ad` | Checkout unavailable |
+| bg_fix/references/editors/retro-game-editor | https://github.com/haroldo-ok/retro-game-editor | `2a93781210a5e85119f410038bad2078b1b987eb` | Checkout unavailable |
+| bg_fix/references/editors/rx | https://github.com/cloudhead/rx | `1bcbe90527ad0bb89c99cec40667f6b961ec8d9e` | Checkout unavailable |
+| bg_fix/references/editors/Simple-Sprite-Tile-2D | https://github.com/wmltogether/Simple-Sprite-Tile-2D | `c5ba692d68741bba67810ed04c106ab0958f1730` | Checkout unavailable |
+| bg_fix/references/editors/SpeedEd | https://github.com/jval1972/SpeedEd | `0be20dca362ac7805a8f9c6672145a18790fddee` | Checkout unavailable |
+| bg_fix/references/editors/sprite-studio-64 | https://github.com/tstamborski/sprite-studio-64 | `ecd1b733cd3ea436310870e6978d391a3591ab8f` | Checkout unavailable |
+| bg_fix/references/editors/stipple-effect | https://github.com/stipple-effect/stipple-effect | `a47e8fa81de16feb31318bdeae6db30662998ebd` | Checkout unavailable |
+| bg_fix/references/editors/tactile | https://github.com/albin-johansson/tactile | `eb98a4c7c19278240d67df606d72306105a666d1` | Checkout unavailable |
+| bg_fix/references/editors/Tile-Studio | https://github.com/Wiering/Tile-Studio | `d0f5d2e09a07ece717469cf585b5f319fb9b0a1e` | Checkout unavailable |
+| bg_fix/references/editors/tiled | https://github.com/mapeditor/tiled | `ad2c29df8ed347ed23fca1b9f5ed7431a8d9e580` | Checkout unavailable |
+| bg_fix/references/editors/tilemap-editor | https://github.com/blurymind/tilemap-editor | `758cdbb308e611da85efefa5cf1c89b5d38b6584` | Checkout unavailable |
+| bg_fix/references/editors/tilemap-studio | https://github.com/Rangi42/tilemap-studio | `244378b5be0c6080e9c990e3e08cabdd0f959fe9` | Checkout unavailable |
+| bg_fix/references/editors/voidsprite | https://github.com/counter185/voidsprite | `2abe4df079771290fbefe23b76e6b2491af1c3ab` | Checkout unavailable |
 | bgtk | https://github.com/robertpelloni/bgtk | `91c13da344bc1af7548307eec288854b5a955218` | Verified locally |
 | bgtk/submodules/juce | https://github.com/juce-framework/JUCE | `d60b7a78030661574a615b586d9325ba7a7fa7dd` | Checkout unavailable |
-| bob_and_lum_sitcom | https://github.com/robertpelloni/bob_and_lum_sitcom | `f126054345f83cde1f570f1ceeb9a11df7fd276d` | Pinned tree unavailable locally |
-| bobble | https://github.com/robertpelloni/bobble.git | `652904a9e73224a4f13f30a65f17a74b47d4d4e6` | Pinned tree unavailable locally |
+| bob_and_lum_sitcom | https://github.com/robertpelloni/bob_and_lum_sitcom | `f126054345f83cde1f570f1ceeb9a11df7fd276d` | Verified locally |
+| bobble | https://github.com/robertpelloni/bobble.git | `652904a9e73224a4f13f30a65f17a74b47d4d4e6` | Verified locally |
 | bobbybookmarks | https://github.com/robertpelloni/bobbybookmarks | `9fc00275dfd793edf443c41d22fc0b13c340a375` | Verified locally |
 | bobcoin | https://github.com/robertpelloni/bobcoin | `724a671771c2ced11444c00692a6cf7e5c4642fe` | Verified locally |
 | bobeditpro | https://github.com/robertpelloni/bobeditpro | `7811409f1029119343957143d60397a496ca8a4e` | Pinned tree unavailable locally |
@@ -382,7 +458,7 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | bobfilez_fix/libs/zstd | https://github.com/facebook/zstd | `5c7b7bad26808e6b40ac3b3d0075466e27738a9d` | Checkout unavailable |
 | bobfilez_fix/VERT | https://github.com/VERT-sh/vert | `e1c83ba4adf067c2ff60fa192e0cb029715d596a` | Checkout unavailable |
 | bobium | https://github.com/robertpelloni/bobium | `49cd37190b86b9fb8a0e5046c207e43897d05abe` | Verified locally |
-| bobmani | https://github.com/robertpelloni/bobmani | `fd8cbe03771905febf4cf22abcffd2855a82a5f0` | Verified locally |
+| bobmani | https://github.com/robertpelloni/bobmani | `6d62fdf26f55513cf556e091701e251d165fc9bd` | Verified locally |
 | bobmani/arrowvortex | git@github.com:robertpelloni/arrowvortex.git | `d0e69c391dff10bed0b4a4137762d5b2bc8a8ea9` | Verified locally |
 | bobmani/arrowvortex/ddc_onset | https://github.com/robertpelloni/ddc_onset | `f35cf13f8b79b1e347e9d6c8b44acdb15d15c472` | Checkout unavailable |
 | bobmani/arrowvortex/ffr-difficulty-model | https://github.com/robertpelloni/ffr-difficulty-model.git | `0574a001c065e198717470079b2881212ce0a3b7` | Checkout unavailable |
@@ -394,9 +470,13 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | bobmani/ddc | git@github.com:robertpelloni/ddc.git | `88ec337f1ec41f009339ae9e83e1af0a11e43694` | Verified locally |
 | bobmani/ddc_onset | git@github.com:robertpelloni/ddc_onset.git | `f35cf13f8b79b1e347e9d6c8b44acdb15d15c472` | Verified locally |
 | bobmani/ffr-difficulty-model | git@github.com:robertpelloni/ffr-difficulty-model.git | `0574a001c065e198717470079b2881212ce0a3b7` | Verified locally |
-| bobmani/hymnmania | git@github.com:robertpelloni/hymnmania.git | `a28911f9150d6b39318d152f0f21fa6053814a6d` | Pinned tree unavailable locally |
-| bobmani/itgmania | git@github.com:robertpelloni/itgmania.git | `851f41eea327cca2a19820274dfd944f7179f9db` | Pinned tree unavailable locally |
-| bobmani/ksm-v2 | git@github.com:robertpelloni/ksm-v2.git | `dbe00cc17d274dd32c98d8b4a2a7bbacdce18d2d` | Verified locally |
+| bobmani/hymnmania | git@github.com:robertpelloni/hymnmania.git | `a28911f9150d6b39318d152f0f21fa6053814a6d` | Verified locally |
+| bobmani/hymnmania/submodules/ableton_psytrance_hymn_creator | https://github.com/robertpelloni/ableton_psytrance_hymn_creator | `522f7bc6f186611c0e442b0c30e53082da9dc676` | Checkout unavailable |
+| bobmani/itgmania | git@github.com:robertpelloni/itgmania.git | `851f41eea327cca2a19820274dfd944f7179f9db` | Verified locally |
+| bobmani/itgmania/bobcoin | https://github.com/robertpelloni/bobcoin | `eb8e46a58a883c1b5118b5b13521cf226fd8450f` | Checkout unavailable |
+| bobmani/itgmania/Themes/Simply Love | https://github.com/Simply-Love/Simply-Love-SM5.git | `e9ac235bb9f86a3441128a1b9ed4649dcc6eca55` | Checkout unavailable |
+| bobmani/itgmania/Themes/Simply-Love-SM5 | https://github.com/robertpelloni/Simply-Love-SM5.git | `06a56f5f58816485720487734b5e0021e206816b` | Checkout unavailable |
+| bobmani/ksm-v2 | git@github.com:robertpelloni/ksm-v2.git | `d58401f7339b3c7475c784f5267638ecabb8804f` | Verified locally |
 | bobmani/ksm-v2/kshootmania/ThirdParty/CoTaskLib | https://github.com/m4saka/CoTaskLib.git | `de940f0951c918a70054444de272c0e261429a73` | Checkout unavailable |
 | bobmani/ksm-v2/kshootmania/ThirdParty/NocoUI | https://github.com/m4saka/NocoUI.git | `4b91ce08f15d0e24dd3f5270f51ea024a270a6c0` | Checkout unavailable |
 | bobmani/ksm-v2/kshootmania/ThirdParty/SQLiteCpp | https://github.com/SRombauts/SQLiteCpp.git | `7302cd30b853e2d3d4f2ae1456b01180d068681e` | Checkout unavailable |
@@ -404,7 +484,7 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | bobmani/leraine-studio | git@github.com:robertpelloni/leraine-studio.git | `b8c77616eeceb808b0da179460b13f81a39c81fc` | Verified locally |
 | bobmani/linthesia | git@github.com:robertpelloni/linthesia.git | `4e0cced9e7d1c2a9afbddf2e13a8fd712f948e22` | Verified locally |
 | bobmani/linthesia/pianogame | ../pianogame.git | `d8964b9f65e9f4e7feb3a73618a291f032d93628` | Checkout unavailable |
-| bobmani/pianogame | git@github.com:robertpelloni/pianogame.git | `6aae9ca2ad4b6bb3d2c889e96cbf3e5b1f978704` | Pinned tree unavailable locally |
+| bobmani/pianogame | git@github.com:robertpelloni/pianogame.git | `6aae9ca2ad4b6bb3d2c889e96cbf3e5b1f978704` | Verified locally |
 | bobmani/Simply-Love-SM5 | git@github.com:robertpelloni/Simply-Love-SM5.git | `06a56f5f58816485720487734b5e0021e206816b` | Verified locally |
 | bobsaver | https://github.com/robertpelloni/bobsaver | `91fa68ac7d1781a2ceded1a5f5e1e9867adc8161` | Verified locally |
 | bobsaver/apophysis-j | https://github.com/robertpelloni/apophysis-j | `a5b2c74f8dc6b3538297afdcb70d09d4a8bdfe58` | Checkout unavailable |
@@ -420,7 +500,7 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | bobsaver_fix/JWildfire | https://github.com/robertpelloni/JWildfire | `e2539122e24d14715576d73abf9b39a30e0f0973` | Checkout unavailable |
 | bobsaver_fix/MilkDrop3 | https://github.com/robertpelloni/MilkDrop3.git | `254704aef2e0d9d1eb49bafc3293bd323245f5f3` | Checkout unavailable |
 | bobsaver_fix/projectm | https://github.com/robertpelloni/projectm | `c06ea109e8ef774f2efadf80c197f399b9fdcb12` | Checkout unavailable |
-| bobsgameonline | https://github.com/robertpelloni/bobsgameonline | `d97b30ad39a4eeaee33e7172ca717088e29f4331` | Pinned tree unavailable locally |
+| bobsgameonline | https://github.com/robertpelloni/bobsgameonline | `d97b30ad39a4eeaee33e7172ca717088e29f4331` | Verified locally |
 | bobsgameonlinejava | https://github.com/robertpelloni/bobsgameonlinejava.git | `e3fde1adb719b55f857b18e9b02553e43eef5f68` | Verified locally |
 | bobsgameonlinejava/bobcoin | https://github.com/robertpelloni/bobcoin | `a2f5eca95ad7b9d87be94c9b1b58032f4519877a` | Checkout unavailable |
 | bobsgameonlinejava/libs/aseprite-file | https://github.com/elgopher/aseprite-file | `06b6189291d36f7c877aef50c6172cf5087466c7` | Checkout unavailable |
@@ -614,7 +694,7 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | grammars-v4 | https://github.com/robertpelloni/grammars-v4 | `504c4d9d7fd66d9bd5ecb03978d6686630e22b9b` | Verified locally |
 | GWEN | https://github.com/robertpelloni/GWEN.git | `d4e2ebcc68a4eb456d20993562f47322acd906a4` | Verified locally |
 | hax | (unconfigured) | `45199a64a62008620f7a27d13e2daaf8b63bb45d` | Verified locally |
-| hermes-agent | https://github.com/robertpelloni/hermes-agent | `ccb236f9f2a03f9e252e1472263b71b42d06dd16` | Pinned tree unavailable locally |
+| hermes-agent | https://github.com/robertpelloni/hermes-agent | `ccb236f9f2a03f9e252e1472263b71b42d06dd16` | Verified locally |
 | hyper | https://github.com/robertpelloni/hyper.git | `848f3051afb57dce2c49b46cef34fb7221697798` | Verified locally |
 | hyperharness | https://github.com/robertpelloni/hyperharness | `785ae2148ebf65bd24e8e8f72f61c7506ca3af7d` | Verified locally |
 | hyperharness/adrenaline | https://github.com/shobrook/adrenaline | `7520e9cc96d936b9e473bc1074a9b9712076d69d` | Checkout unavailable |
@@ -655,17 +735,22 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | HyperNexus2old | https://gitlab.com/robertpelloni/HyperNexus.git | `055da2d07c8584ec87047277b607762d2b217d36` | Verified locally |
 | HyperNexus2old/vendor/deepseek-harness | https://github.com/deepseek-ai/deepseek-harness.git | `47f943859bef60e4160492346772ded9b24f765a` | Checkout unavailable |
 | HyperNexus2old/vendor/grok-build | https://github.com/xai-org/grok-build.git | `eb267feff13129e568df38fb6fdf0ceb65f735d6` | Checkout unavailable |
-| hyperporn | https://github.com/robertpelloni/hyperporn | `0e1d2e0f75aceb0740c12aed748391908a7ee87e` | Checkout unavailable |
+| hyperporn | https://github.com/robertpelloni/hyperporn | `0e1d2e0f75aceb0740c12aed748391908a7ee87e` | Verified locally |
+| hyperporn/vendor/ComfyUI | https://github.com/Comfy-Org/ComfyUI.git | `c5de4955bb91a2b136027a698aaecb8d19e3d892` | Checkout unavailable |
+| hyperporn/vendor/sd-scripts | https://github.com/kohya-ss/sd-scripts.git | `cb70b96858477e716a2096292ab8aab433277f38` | Checkout unavailable |
+| hyperporn/vendor/topaz-ffmpeg | https://github.com/robertpelloni/FFmpeg.git | `eaa1762ca45b78344af8c1a99d7482b58791bee0` | Checkout unavailable |
 | ios_transfer | (unconfigured) | `fa74920d84be79faee6c56decabcb1a869fa13f4` | Checkout unavailable |
 | jdk | https://github.com/robertpelloni/jdk | `2e179fec7b5113a3b526ee4ad5c66d6b7f0179e2` | Verified locally |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | `56d0101830e39207fda0da9837760d67e2c0e8f3` | Verified locally |
 | JWildfire | https://github.com/robertpelloni/JWildfire.git | `e2539122e24d14715576d73abf9b39a30e0f0973` | Pinned tree unavailable locally |
-| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | `dbe00cc17d274dd32c98d8b4a2a7bbacdce18d2d` | Verified locally |
+| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | `d58401f7339b3c7475c784f5267638ecabb8804f` | Verified locally |
 | ksm-v2/kshootmania/ThirdParty/CoTaskLib | https://github.com/m4saka/CoTaskLib.git | `de940f0951c918a70054444de272c0e261429a73` | Checkout unavailable |
 | ksm-v2/kshootmania/ThirdParty/NocoUI | https://github.com/m4saka/NocoUI.git | `4b91ce08f15d0e24dd3f5270f51ea024a270a6c0` | Checkout unavailable |
 | ksm-v2/kshootmania/ThirdParty/SQLiteCpp | https://github.com/SRombauts/SQLiteCpp.git | `7302cd30b853e2d3d4f2ae1456b01180d068681e` | Checkout unavailable |
 | ksm-v2/ksmaxis | https://github.com/kshootmania/ksmaxis.git | `301bfbe4fd1fbdf1d62390a8cf033f13d1e400ff` | Checkout unavailable |
-| libjruntime | https://github.com/robertpelloni/libjruntime | `08e5195e2c38cdf8bbde98c928964397c605cc75` | Pinned tree unavailable locally |
+| libjruntime | https://github.com/robertpelloni/libjruntime | `08e5195e2c38cdf8bbde98c928964397c605cc75` | Verified locally |
+| libjruntime/bdwgc | https://github.com/robertpelloni/bdwgc | `1d38c6d905a83b006df843440b380e51a2119871` | Checkout unavailable |
+| libjruntime/grammars-v4 | https://github.com/robertpelloni/grammars-v4 | `5a9a89fa7274878bdb93877c4be5d56859c08e5e` | Checkout unavailable |
 | llvm-project | https://github.com/robertpelloni/llvm-project | `d6d4921b71e66540bcf582e41b202d533fbfe762` | Verified locally |
 | Maestro | https://github.com/robertpelloni/Maestro | `f492a7e02621eb3b73aa723efa88b6939188de47` | Verified locally |
 | make_elon_laugh | https://github.com/robertpelloni/make_elon_laugh.git | `8e6b0d612e4b0fce2dd9698497021b4d2c3c925e` | Verified locally |
@@ -689,7 +774,7 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | mk64/tools/torch | https://github.com/HarbourMasters/torch | `7f5d55f9de53f96e61c11399cb3066f8dd8e835e` | Checkout unavailable |
 | mparty | https://github.com/robertpelloni/mparty.git | `6208e281fcec026fbc5e47fe8a36346e522b88f1` | Verified locally |
 | multimousergy | https://github.com/robertpelloni/multimousergy.git | `3e6007c81c68ec12bdb47fee8808b7a314692d1b` | Pinned tree unavailable locally |
-| muse | https://github.com/robertpelloni/muse | `ad484ef28db40672d2d61a00689b10714282010c` | Pinned tree unavailable locally |
+| muse | https://github.com/robertpelloni/muse | `ad484ef28db40672d2d61a00689b10714282010c` | Verified locally |
 | native-fy | https://github.com/robertpelloni/native-fy | `f1b1b72ff704c75101615ec11d1027c59fcb579e` | Verified locally |
 | neverball | https://github.com/robertpelloni/neverball | `6f928b160f7e56d862f46c2fbe0db73bbb1fa504` | Verified locally |
 | newz | https://github.com/robertpelloni/newz.git | `8ca290515bc9a332d18d65682aebd5e0e23786ec` | Verified locally |
@@ -699,7 +784,97 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | npp/bqt | https://github.com/robertpelloni/bqt.git | `92bb40654b683d337a04ee82f4ee7c2d964bfc06` | Checkout unavailable |
 | npp/textfx | https://github.com/rainman74/NPPTextFX2.git | `71ec1ead277ef311ed3216df3c1ce19ea4985518` | Checkout unavailable |
 | odcnn | https://github.com/robertpelloni/odcnn.git | `6971c07139fd8bee1c8ba004f36dd499d6c79f32` | Verified locally |
-| okgame | https://github.com/robertpelloni/okgame | `a6b2060287f516aac9f14ceb2cb44fdedaca5570` | Pinned tree unavailable locally |
+| okgame | https://github.com/robertpelloni/okgame | `a6b2060287f516aac9f14ceb2cb44fdedaca5570` | Verified locally |
+| okgame/lib/aom | https://github.com/libsdl-org/aom | `79401f2946940984aaf3dc50e42d34be2e7bbac9` | Checkout unavailable |
+| okgame/lib/bobsgameonlinejava | https://github.com/robertpelloni/bobsgameonlinejava | `73cc979497fe998e45ee0ba01fcd933bff4c0067` | Checkout unavailable |
+| okgame/lib/boost | https://github.com/boostorg/boost | `1a80576db6b70828803819fb6925132193bc5d0e` | Checkout unavailable |
+| okgame/lib/cppcodec | https://github.com/tplgy/cppcodec | `8019b8b580f8573c33c50372baec7039dfe5a8ce` | Checkout unavailable |
+| okgame/lib/Craft | https://github.com/fogleman/Craft | `d6888a6e1e54340358ce25b1220f410541360b6b` | Checkout unavailable |
+| okgame/lib/CTPL | https://github.com/vit-vit/CTPL | `437e135dbd94eb65b45533d9ce8ee28b5bd37b6d` | Checkout unavailable |
+| okgame/lib/dav1d | https://github.com/libsdl-org/dav1d | `c5726277ffa8764665ea08f865e46912a41f2309` | Checkout unavailable |
+| okgame/lib/defold-astar | https://github.com/selimanac/defold-astar | `3d8d117c2750f5e07f60d630b0f84e5d753099f7` | Checkout unavailable |
+| okgame/lib/FBNeo | https://github.com/libretro/FBNeo | `bd23644d7cc28ee6348ba2f66a7e3ad17303230a` | Checkout unavailable |
+| okgame/lib/flac | https://github.com/libsdl-org/flac | `343f3481562213cdc4f196af87da0d26bf2530ad` | Checkout unavailable |
+| okgame/lib/freetype | https://github.com/libsdl-org/freetype | `a6d486002dc6fb26dadfbca45bcab02e1250963a` | Checkout unavailable |
+| okgame/lib/gambatte-libretro | https://github.com/libretro/gambatte-libretro | `155bdda7899604c471def7953558d52ce8c84906` | Checkout unavailable |
+| okgame/lib/game-music-emu | https://github.com/libsdl-org/game-music-emu | `1815b97e01e68b16a8f07daef8c71bd52f36d307` | Checkout unavailable |
+| okgame/lib/Genesis-Plus-GX | https://github.com/ekeeke/Genesis-Plus-GX | `c7ecd07f0a08db1cdd6871d788476bfac55be638` | Checkout unavailable |
+| okgame/lib/glad | https://github.com/Dav1dde/glad | `cef3f890c450a14701407c9fe50f5fd02f7440b7` | Checkout unavailable |
+| okgame/lib/glew | https://github.com/nigels-com/glew | `79cd72e8ec9a800624265f474c787a3d897f6195` | Checkout unavailable |
+| okgame/lib/glfw | https://github.com/glfw/glfw | `b00e6a8a88ad1b60c0a045e696301deb92c9a13e` | Checkout unavailable |
+| okgame/lib/gpsp | https://github.com/libretro/gpsp | `eca3bee1e2d2043d42f0480012c1e7ec85498f88` | Checkout unavailable |
+| okgame/lib/GWEN | https://github.com/robertpelloni/GWEN | `5a4fab42ae8a734c8bb0bc435a5bb734d1ba6ea9` | Checkout unavailable |
+| okgame/lib/harfbuzz | https://github.com/libsdl-org/harfbuzz | `9fc44028fe28b46e0694e15f425b3b023895473e` | Checkout unavailable |
+| okgame/lib/highway | https://github.com/libsdl-org/highway | `c34a36fb145de0a922a6e719b217033e1ff2eece` | Checkout unavailable |
+| okgame/lib/imgui | https://github.com/ocornut/imgui | `d7b40ab9a9799ba0ce94e6e8ee96d5b3ac55483a` | Checkout unavailable |
+| okgame/lib/jpeg | https://github.com/libsdl-org/jpeg | `5eaedb78e0e78dbff07f71143eb21f9081e2cef7` | Checkout unavailable |
+| okgame/lib/libavif | https://github.com/libsdl-org/libavif | `b357f083ea5ae0ee7b09a65a48621f345e710588` | Checkout unavailable |
+| okgame/lib/libjxl | https://github.com/libsdl-org/libjxl | `6553831b39a542d6450e76ca5afb64520649d838` | Checkout unavailable |
+| okgame/lib/libmodplug | https://github.com/Konstanty/libmodplug | `d1b97ed0020bc620a059d3675d1854b40bd2608d` | Checkout unavailable |
+| okgame/lib/libpng | https://github.com/libsdl-org/libpng | `3061454d980de7d53608f594194cfac722721d2a` | Checkout unavailable |
+| okgame/lib/libretro-common | https://github.com/libretro/libretro-common | `d45d9f60ed7673bb6f73d0d81fd3999b020463e5` | Checkout unavailable |
+| okgame/lib/libretro-fceumm | https://github.com/libretro/libretro-fceumm | `448a231618186b2af0bb9d6e37aeca05467e112f` | Checkout unavailable |
+| okgame/lib/libretro-lutro | https://github.com/libretro/libretro-lutro | `6d724ad3d52ba5e476502c256e91185f76047c1e` | Checkout unavailable |
+| okgame/lib/libretro-samples | https://github.com/libretro/libretro-samples | `bce193bc1b8c9a3da43b2ead0158a69e28b37ed8` | Checkout unavailable |
+| okgame/lib/libretro-super | https://github.com/libretro/libretro-super | `de9b276a4dc4adce0e7dd716ed857d84d6354980` | Checkout unavailable |
+| okgame/lib/libtiff | https://github.com/libsdl-org/libtiff | `f66239cb1f46be8ef676ced463a66a8ddf8c4017` | Checkout unavailable |
+| okgame/lib/libtimidity | https://github.com/sezero/libtimidity | `46561e4361c901f21a7b8cfe7c2faf26e6711a2d` | Checkout unavailable |
+| okgame/lib/libusb | https://github.com/libusb/libusb | `ccc1c53a1e7f1d37a172ebddd1c9e1c0ab79cc6e` | Checkout unavailable |
+| okgame/lib/libwebp | https://github.com/libsdl-org/libwebp | `5003e5609eedc5680b8d838a962cbb9a6e9709ce` | Checkout unavailable |
+| okgame/lib/libxmp | https://github.com/libsdl-org/libxmp | `301a9c0ae9dcdde7dd5ec336ad497e228fb52568` | Checkout unavailable |
+| okgame/lib/lz4-java | https://github.com/lz4/lz4-java | `be9ce5759ec6cce99544c7112e434be11aedb1a8` | Checkout unavailable |
+| okgame/lib/Maelstrom | https://github.com/libsdl-org/Maelstrom | `a677dea04a41d170763085ae2014e5e8c6e81f78` | Checkout unavailable |
+| okgame/lib/md5-c | https://github.com/Zunawe/md5-c | `f3529b666b7ae8b80b0a9fa88ac2a91b389909c7` | Checkout unavailable |
+| okgame/lib/melonDS | https://github.com/melonDS-emu/melonDS | `42e09ba54980b64c59991e446b5384484f5619a3` | Checkout unavailable |
+| okgame/lib/mgba | https://github.com/libretro/mgba | `6dce57eef127dc4cc292644f38196e0e7c58590c` | Checkout unavailable |
+| okgame/lib/MicroPather | https://github.com/leethomason/MicroPather | `33a3b8403f1bc3937c9d364fe6c3977169bee3b5` | Checkout unavailable |
+| okgame/lib/MilkDrop3 | https://github.com/robertpelloni/MilkDrop3 | `218af5825c41a62d7871c3180507ce965ca7ab66` | Checkout unavailable |
+| okgame/lib/miniz | https://github.com/richgel999/miniz | `5cf1e56a9c968c11fdd1a6414f3a95f84314c437` | Checkout unavailable |
+| okgame/lib/MODPlay | https://github.com/prochazkaml/MODPlay | `112110382fd94a6dacb030c90e34ddec3817dc7f` | Checkout unavailable |
+| okgame/lib/mpg123 | https://github.com/libsdl-org/mpg123 | `2eb4320e161247a15f991a30e7919902a3629f19` | Checkout unavailable |
+| okgame/lib/mpv | https://github.com/mpv-player/mpv | `5921fe50bb8472301dd79f1e73129ad17e6b16e3` | Checkout unavailable |
+| okgame/lib/nanogui | https://github.com/wjakob/nanogui | `e9ec8a1a9861cf578d9c6e85a6420080aa715c03` | Checkout unavailable |
+| okgame/lib/nanogui-sdl | https://gitlab.com/MrPepperoni/nanogui-sdl | `3d0ed0efc4f017fb33e346da4d0447bf5ec8a6e4` | Checkout unavailable |
+| okgame/lib/nestopia | https://github.com/libretro/nestopia | `b0fd87dd07e3c52903435d302b04e5e97796f127` | Checkout unavailable |
+| okgame/lib/nngui | https://github.com/draekko/nngui | `c2b6c2b63816c70ecf0b04c2821335643d913b6a` | Checkout unavailable |
+| okgame/lib/Nuklear | https://github.com/Immediate-Mode-UI/Nuklear | `8c9b37637617377291f7ac5f27eb868b3aa44080` | Checkout unavailable |
+| okgame/lib/ogg | https://github.com/libsdl-org/ogg | `06a5e0262cdc28aa4ae6797627a783b5010440f0` | Checkout unavailable |
+| okgame/lib/opus | https://github.com/libsdl-org/opus | `788cc89ce4f2c42025d8c70ec1b4457dc89cd50f` | Checkout unavailable |
+| okgame/lib/opusfile | https://github.com/libsdl-org/opusfile | `6dfd29e7adb87f2e193575fc3fa88cbf1a0b27df` | Checkout unavailable |
+| okgame/lib/paulxstretch | https://github.com/essej/paulxstretch | `b6175e904a445809b45b3a5ee8e18501055cd2ef` | Checkout unavailable |
+| okgame/lib/picodrive | https://github.com/libretro/picodrive | `f0d4a0118a9733a1f10bce5a4ac772c474f9300d` | Checkout unavailable |
+| okgame/lib/plutosvg | https://github.com/libsdl-org/plutosvg | `cc385fd83ebf890507c8cae37e3fe96cf166fed1` | Checkout unavailable |
+| okgame/lib/plutovg | https://github.com/libsdl-org/plutovg | `dabf47cff0ecc0684406b3b81e417099a2cdb790` | Checkout unavailable |
+| okgame/lib/poco | https://github.com/pocoproject/poco | `62a0fcc0731c8abd5aed5aa142974af976242d68` | Checkout unavailable |
+| okgame/lib/projectm | https://github.com/robertpelloni/projectm | `f063da6579338216c766143595c29852ddb7a2d5` | Checkout unavailable |
+| okgame/lib/raylib | https://github.com/raysan5/raylib | `019cc889fc808b1cfe18e9e4bc10ccdc5de7d430` | Checkout unavailable |
+| okgame/lib/RetroArch | https://github.com/libretro/RetroArch | `b32f4ca7ca375e952e6d57e1b1163834c73d44d7` | Checkout unavailable |
+| okgame/lib/retroarch-assets | https://github.com/libretro/retroarch-assets | `cd17f64cff4eaff187a0702d17520ccb9a760fe3` | Checkout unavailable |
+| okgame/lib/retroarch-joypad-autoconfig | https://github.com/libretro/retroarch-joypad-autoconfig | `794a2f18cdb7b5c3565e75c2a663f598e3f90e24` | Checkout unavailable |
+| okgame/lib/SDL | https://github.com/libsdl-org/SDL | `03ceaca19c06732381b39d5353f05d1d1805199d` | Checkout unavailable |
+| okgame/lib/sdl2-compat | https://github.com/libsdl-org/sdl2-compat | `91d36b8d9d06958e2663623d100d12b596675120` | Checkout unavailable |
+| okgame/lib/SDL2_gfx | https://github.com/giroletm/SDL2_gfx | `d985671e7ff715ff349f48295a9a6377d4927c35` | Checkout unavailable |
+| okgame/lib/SDL_gesture | https://github.com/libsdl-org/SDL_gesture | `dfd3001d3bf0cac291384f225aa6ca48c39a2e89` | Checkout unavailable |
+| okgame/lib/SDL_image | https://github.com/libsdl-org/SDL_image | `0b5fd67f1559b98b656257981d75b6209c73581a` | Checkout unavailable |
+| okgame/lib/SDL_mixer | https://github.com/libsdl-org/SDL_mixer | `a2d867c1830e2a48089dbfefc1a5fdb6e8c80a7a` | Checkout unavailable |
+| okgame/lib/SDL_native_midi | https://github.com/libsdl-org/SDL_native_midi | `64236646bc50ba7a196c2cc05dad86f0bde3f55f` | Checkout unavailable |
+| okgame/lib/SDL_net | https://github.com/libsdl-org/SDL_net | `5af3b068ea13f888be954801c0b8c17993811850` | Checkout unavailable |
+| okgame/lib/SDL_rtf | https://github.com/libsdl-org/SDL_rtf | `0bdba67b48e67f2c7d80a08720dcce8b54b01018` | Checkout unavailable |
+| okgame/lib/SDL_ttf | https://github.com/libsdl-org/SDL_ttf | `e544547773d386eaf92f2b98e4c582d2b5a1249a` | Checkout unavailable |
+| okgame/lib/sigar | https://github.com/hyperic/sigar | `ad47dc3b494e9293d1f087aebb099bdba832de5e` | Checkout unavailable |
+| okgame/lib/snes9x | https://github.com/libretro/snes9x | `e755ae51b61f49e4ac48bdeaa16e3c72e70db0e5` | Checkout unavailable |
+| okgame/lib/snes9x2010 | https://github.com/libretro/snes9x2010 | `a7a4bfaed4c6408908c76af20ad625e1645c3d11` | Checkout unavailable |
+| okgame/lib/Snippets | https://github.com/DanielGibson/Snippets | `7bad19703feb1cc393fda4438c8415889cccb1c6` | Checkout unavailable |
+| okgame/lib/soundtouch | https://codeberg.org/soundtouch/soundtouch | `f738b1132ec1fd56efc90367898244cf52d9e6a5` | Checkout unavailable |
+| okgame/lib/stb | https://github.com/libsdl-org/stb | `31c1ad37456438565541f4919958214b6e762fb4` | Checkout unavailable |
+| okgame/lib/timidity | https://github.com/robertpelloni/timidity | `f726f8f75b022afd31d80f61b296fd40a2ab2316` | Checkout unavailable |
+| okgame/lib/tremor | https://github.com/libsdl-org/tremor | `18a673fc97d95dffff3ccdeea7d493b2a6ab4481` | Checkout unavailable |
+| okgame/lib/UACME | https://github.com/hfiref0x/UACME | `6daa8d486250c20189a803838c3654aad73a541d` | Checkout unavailable |
+| okgame/lib/vba-next | https://github.com/libretro/vba-next | `d0ec7f3e209a91b903bb9d2c2397fef2bb3cca32` | Checkout unavailable |
+| okgame/lib/vbam-libretro | https://github.com/libretro/vbam-libretro | `e8b2875d6cad10fc3c7c9f57bb5f1acc324d7c10` | Checkout unavailable |
+| okgame/lib/vorbis | https://github.com/libsdl-org/vorbis | `68a7fc2246e734f1a311b06083fc1249551c4412` | Checkout unavailable |
+| okgame/lib/WavPack | https://github.com/libsdl-org/WavPack | `bb4071629cdb791c8eeb61903e0c65a29e3dc52a` | Checkout unavailable |
+| okgame/lib/zlib | https://github.com/libsdl-org/zlib | `da607da739fa6047df13e66a2af6b8bec7c2a498` | Checkout unavailable |
 | onetool-mcp | https://github.com/robertpelloni/onetool-mcp | `59d422d2eeaaad0d019904483ff1b2ec0bf955c5` | Verified locally |
 | openclaw-config | https://github.com/TechNickAI/openclaw-config.git | `95f781d90b3d2ee3e58ce144e06fc38d197f9b70` | Verified locally |
 | openclaw-dashboard | https://github.com/tugcantopaloglu/openclaw-dashboard.git | `3592c28498c635cd720f218a62343b0ca2d01cfd` | Verified locally |
@@ -715,11 +890,11 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | projectm/vendor/projectm-eval | https://github.com/projectM-visualizer/projectm-eval.git | `2a1c1a93f9cf0a4039894df919d0a593054ab976` | Checkout unavailable |
 | psytrance_night_outreach_agent | https://github.com/robertpelloni/psytrance_night_outreach_agent.git | `9a8cc847840b1857e5bb7422619dc063ee46770a` | Verified locally |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | `6742f7b9c56b44d908a392b4fd249f32b11019a4` | Verified locally |
-| realestatecrm/apps/aicrm | https://github.com/RealEstateCRMLLC/aicrm.git | `0d4f5340f9d667169c6e2f111a64a33eaa804e16` | Pinned tree unavailable locally |
-| realestatecrm/apps/contentplanner | https://github.com/RealEstateCRMLLC/socialmediacontentplanner.git | `eab8de31ef6a7547fe67cb3a1e2528e1471bea83` | Pinned tree unavailable locally |
-| realestatecrm/apps/foreclosureworkflow | https://github.com/RealEstateCRMLLC/forclosureworkflow.git | `bc803fff43a02b7a77550e9597113e063828baab` | Pinned tree unavailable locally |
-| realestatecrm/apps/leadcaller | https://github.com/RealEstateCRMLLC/realestateleadcaller.git | `a4973e77a6b6b96f95ff1b47ab11617e2e46c973` | Pinned tree unavailable locally |
-| realestatecrm/apps/leadg | https://github.com/RealEstateCRMLLC/leadG.git | `1276b8040d25b5670ea0b0bd7c0e2fcc0a50484a` | Pinned tree unavailable locally |
+| realestatecrm/apps/aicrm | https://github.com/RealEstateCRMLLC/aicrm.git | `0d4f5340f9d667169c6e2f111a64a33eaa804e16` | Verified locally |
+| realestatecrm/apps/contentplanner | https://github.com/RealEstateCRMLLC/socialmediacontentplanner.git | `eab8de31ef6a7547fe67cb3a1e2528e1471bea83` | Verified locally |
+| realestatecrm/apps/foreclosureworkflow | https://github.com/RealEstateCRMLLC/forclosureworkflow.git | `bc803fff43a02b7a77550e9597113e063828baab` | Verified locally |
+| realestatecrm/apps/leadcaller | https://github.com/RealEstateCRMLLC/realestateleadcaller.git | `a4973e77a6b6b96f95ff1b47ab11617e2e46c973` | Verified locally |
+| realestatecrm/apps/leadg | https://github.com/RealEstateCRMLLC/leadG.git | `1276b8040d25b5670ea0b0bd7c0e2fcc0a50484a` | Verified locally |
 | realestatecrm/apps/legacyleads | https://github.com/RealEstateCRMLLC/LegacyLeads.git | `4974c89ae7f8f2ecf4d5ce183784c740f829835c` | Verified locally |
 | realestatecrm/apps/media-workflow | https://github.com/RealEstateCRMLLC/re-agent-workflow-media-1.git | `3e5603cd8b02858bec202402673d54e4a641e043` | Verified locally |
 | realestatecrm/apps/prototype | https://github.com/RealEstateCRMLLC/realestateprototype.git | `1e760fd2a9413bbc553a63968274d8797fa32a22` | Verified locally |
@@ -740,7 +915,7 @@ Generated 2026-11-20 for v5.345.0 from the root index and recursively available 
 | tokdiet | https://github.com/robertpelloni/tokdiet | `5c4f57e2615e4b486d33aa104e5f1a733fa4365b` | Verified locally |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | `eaa1762ca45b78344af8c1a99d7482b58791bee0` | Verified locally |
 | TurntUpToddler | https://github.com/Dimensionalplane/TurntUpToddler | `d269bb8d153770ac5d913be2a8d4942e2183cb0d` | Verified locally |
-| unitedbeats_hypernexus_gtm | https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git | `e7109f6453a5e7e9e51562d90d7060b19cf2225e` | Checkout unavailable |
+| unitedbeats_hypernexus_gtm | https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git | `e7109f6453a5e7e9e51562d90d7060b19cf2225e` | Verified locally |
 | unitedbeats_site | https://github.com/UnitedBeatsLLC/unitedbeats_site.git | `d3d012023b19df5f44817791f03cb520c6eb695a` | Verified locally |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | `a7dd72a388a6342a8d3cc1ba7aeef86bbba13fdc` | Verified locally |
 | vst_monster | https://github.com/robertpelloni/vst_monster | `49207773ca738b97e09ab70361fd6d639238a352` | Verified locally |
