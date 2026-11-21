@@ -7,7 +7,9 @@ setlocal enabledelayedexpansion
 :: 9 projects, 12 Go binaries + Consolidated Control Center & Tray
 :: ================================================================
 
-cd /d "%~dp0"
+cd /d "%~dp0" || exit /b 1
+set "BQT_DIR=npp\bqt"
+if not exist "%BQT_DIR%\go.mod" if exist "bqt\go.mod" set "BQT_DIR=bqt"
 
 :: --- Parse command ----------------------------------------------
 set "ACTION=%1"
@@ -72,9 +74,9 @@ echo  [5/9] NPP Go
 cd npp\go-port
 start /b /belownormal npp-go.exe >nul 2>&1
 cd ..\..
-cd npp\bqt
+pushd "%BQT_DIR%" || exit /b 1
 start /b /belownormal npp_bqt.exe >nul 2>&1
-cd ..\..
+popd
 echo        OK  npp-go, npp_bqt
 
 :: 6. Warp Go
@@ -162,10 +164,15 @@ cd npp\go-port
 go build -buildvcs=false -ldflags="-s -w" -o npp-go.exe ./cmd/ultra >nul 2>&1
 if errorlevel 1 ( echo        FAIL npp-go & set /a FAIL+=1 ) else ( echo        OK   npp-go.exe & set /a OK+=1 )
 cd ..\..
-cd npp\bqt
-go build -buildvcs=false -o npp_bqt.exe . >nul 2>&1
-if errorlevel 1 ( echo        FAIL npp_bqt & set /a FAIL+=1 ) else ( echo        OK   npp_bqt.exe & set /a OK+=1 )
-cd ..\..
+if exist "%BQT_DIR%\go.mod" (
+    pushd "%BQT_DIR%" || exit /b 1
+    go build -buildvcs=false -o npp_bqt.exe . >nul 2>&1
+    if errorlevel 1 ( echo        FAIL npp_bqt & set /a FAIL+=1 ) else ( echo        OK   npp_bqt.exe & set /a OK+=1 )
+    popd
+) else (
+    echo        FAIL npp_bqt ^(Go sources missing^)
+    set /a FAIL+=1
+)
 
 :: 6. Warp Go
 echo  [6/9] warp-go

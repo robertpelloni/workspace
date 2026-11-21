@@ -1,6 +1,5 @@
 @echo off
-set WORKSPACE=C:\Users\hyper\workspace
-cd /d %WORKSPACE%
+cd /d "%~dp0" || exit /b 1
 
 echo Starting Global Build Process...
 

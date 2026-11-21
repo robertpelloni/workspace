@@ -10,13 +10,13 @@
 
 ## Recursive inventory and remaining work
 
-- At this checkpoint, the local declaration walk found 993 locations, including 181 initialized repositories with the root included. Explicit recursive fetch attempted all 180 initialized submodule repositories with remotes. At this checkpoint, 178 had succeeded and 2 remained unsuccessful. The GitHub branch inventory returned branch refs for 115 of 116 owned repositories. The ancestry audit had produced results for 43 repositories at this checkpoint. Account-wide reconciliation is incomplete. Finish the source and branch scans with complete histories where local submodules are shallow.
+- At this checkpoint, the local declaration walk found 993 locations, including 181 initialized repositories with the root included. Explicit recursive fetch attempted all 180 initialized submodule repositories with remotes. After retrying the failures, 178 succeeded and 2 remained unsuccessful. GitHub branch inventory covered 116 owned repositories, including a separate retry for AI Game Engine. The ancestry audit recorded 43 repository outcomes at this checkpoint. Account-wide reconciliation is incomplete. Finish the source and branch scans with complete histories where local submodules are shallow.
 - STRUCTURAL_MAP.md has 120 root gitlinks and 775 total discovered pins. It marks 618 unavailable checkouts or trees and lists 16 root configuration entries with no root gitlink.
 - No local feature branch, stash, or pre-existing untracked file was removed. The dirty root agent-memory file and unrelated work were kept out of the release commit. The two running HyperNexus PIDs predated this session and were left running.
 
 ## Validation
 
-- Both root build scripts passed success and failure exit-code checks using a controlled Go fixture. Dashboard JavaScript syntax and its npm lockfile tree passed. Root npm reported the same invalid jose and gcp-metadata entries on both the old and merged lockfiles.
+- The root build scripts passed controlled success and failure checks. The BQT path test passed for the nested, top-level, and missing-source cases. build_all.bat resolved all three child scripts from a fixture directory with spaces. Dashboard JavaScript syntax and its npm lockfile tree passed. Root npm reported the same invalid jose and gcp-metadata entries on both the old and merged lockfiles.
 - Actual builds used separate output directories. The default Tabby build could not resolve vendored Sentry and UUID packages. Read-only builds of the full batch targets reached their time limits. The dependency retry downloaded the missing Tabby modules into the Go cache and started another isolated backend build. The first Tabby backend retry also timed out. The Tabby working tree was 58 commits behind the workspace’s pin, so the exact pinned source was used for a separate build attempt. Full compilation, deployment, and service restart remain unverified.
 
 ## Prior sessions
