@@ -584,3 +584,6 @@ The ROADMAP calls for **Phase 4: Production Hardening**. With all upstreams sync
 *Last updated: 2026-06-20*
 *Previous: v5.20.2 â€” geany btk submodule fix*
 *Next: v5.21.0 â€” pi-mono Phase 19/20 Assimilation Forward Merge*
+## v5.345.0 follow-up
+- Review DAO’s tracked-file removals and Veilid’s database removal before advancing their root pins.
+- Reconcile the remaining feature branches with overlapping implementations and verify nested pins whose commit objects are absent locally.

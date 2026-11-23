@@ -1,4 +1,4 @@
-# HANDOFF - v5.345.0 - 2026-11-16 - Protocol #336: Repository Sync & Intelligent Merge
+# HANDOFF - v5.346.0 - 2026-11-16 - Protocol #336: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #336 (this session)
 
@@ -14,6 +14,30 @@
 - Supervisor session still degraded (exit status 1, cf 0). GH token in gitignored root .env verified robertpelloni (never printed); bus+CDP loop active.
 
 ## Prior
+# Handoff — v5.345.0 — 2026-11-20
+
+## Repository updates
+
+- Root local main fast-forwarded from 8002d9c26 to 0a097abc0. GitHub reports no upstream parent for the root repository. Merged the root dependency branch in 27988ed5f after checking the manifest and lockfile changes.
+- Published 15 distinct root gitlink updates reachable from their configured tracking branches. Updated these clean local checkouts: bobsgameonlinejava, bobsaver, bobsgameweb, bobtorrent, bqt, bcs, bobfilez_fix, bobsaver_fix, bobmani, bobsgameonlinejava_fix, bgtk. Preserved the dirty BobFilez checkout while advancing its root pin. HymnMania’s local main fast-forwarded to a28911f. Its overlapping worktree was restored to 0219502 to preserve the root-tracked HymnMania files. AI Game Engine’s local main fast-forwarded to 45ff892 after fetching full history and confirming that its three feature tips are already reachable from main.
+- Bob’s Game Web merged its dependency branch in e241959a. Both npm lockfile trees passed in a clean fixture. The push was verified before advancing the root pin.
+- Merged KSM master into main at d58401f, resolving README and package version conflicts and carrying the v2.0.0-alpha33 dashboard and mock score receiver. Verified the mock ranking routes, invalid inputs, score ordering, cap, and score file. Published BobMania’s nested KSM pointer at 6d62fdf, then updated the root’s KSM and BobMania pins.
+- Held DAO and Veilid pins at their prior commits. The proposed changes remove tracked DAO files and Veilid’s SQLite database. The root’s tracked session, memory, and database files remain in Git. The additional Bob and Lum Sitcom and Bobble pin updates passed ancestry, remote reachability, and whitespace checks. Bobble also fast-forwarded locally. Bob and Lum Sitcom’s local checkout has untracked files and stayed in place.
+- BobbyBookmarks’ backup branch conflicts in the Go API, database, manifest, and frontend. The default branch already contains a separately integrated dual-HUD implementation. Keep the backup reference, including its database snapshots, pending comparison. BobMania’s active master already includes the Jules dashboard audit fix and spline editor code. The old Jules and overlay snapshot tips would remove engine files from the restored tree in a wholesale integration.
+
+## Recursive inventory and remaining work
+
+- At this checkpoint, the local declaration walk found 993 locations, including 181 initialized repositories with the root included. Fetched all 180 initially configured submodule checkouts after retries. The two remaining fetches, bg and bg_fix, used blob filtering. Initialized and fetched the pinned hyperporn and unitedbeats_hypernexus_gtm checkouts. Restored the three missing files caused by Windows path length and set core.longpaths in the affected clone. GitHub branch inventory covered 116 owned repositories, including a separate retry for AI Game Engine. The ancestry audit recorded 43 repository outcomes at this checkpoint. Account-wide reconciliation is incomplete. Finish the source and branch scans with complete histories where local submodules are shallow.
+- STRUCTURAL_MAP.md has 120 root gitlinks and 950 total discovered pins. It marks 774 unavailable checkouts or trees and lists 16 root configuration entries with no root gitlink.
+- Preserved local feature refs, stashes, and pre-existing untracked files. Finish reverse merges for active retained branches and resolve overlapping implementation or history issues before further integration. The dirty root agent-memory file and unrelated work were kept out of the release commit. The two running HyperNexus PIDs predated this session and were left running.
+
+## Validation
+
+- The root build scripts passed controlled success and failure checks. The BQT path test passed for the nested, top-level, and missing-source cases. build_all.bat resolved all three child scripts from a fixture directory with spaces. Dashboard JavaScript syntax and its npm lockfile tree passed. Root npm reported the same invalid jose and gcp-metadata entries on both the old and merged lockfiles.
+- Actual builds used separate output directories. The default Tabby build could not resolve vendored Sentry and UUID packages. Read-only builds of the full batch targets reached their time limits. The dependency retry downloaded the missing Tabby modules into the Go cache and started another isolated backend build. The first Tabby backend retry also timed out. The Tabby working tree was 58 commits behind the workspace’s pin, so the exact pinned source was used for a separate build attempt. Full compilation, deployment, and service restart remain unverified.
+
+## Prior sessions
+
 # HANDOFF - v5.344.0 - 2026-11-16 - Protocol #335: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #335 (this session)
@@ -339,7 +363,7 @@
 ## Session - Protocol #315 (this session)
 
 ### Steps 1-2 (ledgers `sync_protocol_315_*`)
-- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 21 pointers staged (week-gap catch-up harvest); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished.
+- Scan/triage: 114 repos. triage 53 actionable, 0 forward merges, 0 pointers moved (full steady state); retained 12 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished.
 - Remaining verified unmerged = 14 (12 retained conflicts + dependabot multimousergy/bobsgameweb filtered). mk64 revert-* retained deliberately.
 - Root pointers staged with published-only pincheck (0 unpublished); STRUCTURAL_MAP regenerated 133/134 (hypercode not initialized).
 - Phase4: per ledgers sync_protocol_315_phase4* (lane pushes/checkout-fails resolved). HyperNexus code f3380569e4 v1.0.84 = running kernel; supervisor degraded (sibling lanes).

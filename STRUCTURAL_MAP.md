@@ -6,7 +6,7 @@ Generated: 2026-11-14 (Protocol #336, full regen)
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
 | fwber | https://github.com/robertpelloni/fwber.git | 1167776e53e4 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 0a097abc0eb9 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | f91cc77edc8d |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 9fac2d90e2d8 |
@@ -114,7 +114,7 @@ Generated: 2026-11-14 (Protocol #336, full regen)
 | private_gemini_storage | https://github.com/robertpelloni/private_gemini_storage | 4e823c0b2a55 |
 | projectM-upstream | https://github.com/projectM-visualizer/projectM.git | b238d09ec6b3 |
 | TurntUpToddler | https://github.com/Dimensionalplane/TurntUpToddler | d269bb8d1537 |
-| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | 8f8c6d22203b |
+| ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | d58401f7339b |
 | HyperNexus2old | https://gitlab.com/robertpelloni/HyperNexus.git | d8c4b2f39fb4 |
 | hyperporn | https://github.com/robertpelloni/hyperporn | 0e1d2e0f75ac |
 | foone_datetime_short | https://github.com/robertpelloni/foone_datetime_short | 0979cbc34100 |

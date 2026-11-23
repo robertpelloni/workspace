@@ -281,3 +281,6 @@
 - v5.267.0: Feature branch merge round 2
 - v5.266.0: Repository sync, hyperharness merge
 - v5.265.0: Dependabot branch sweep
+## v5.345.0 — 2026-11-20
+Adopt the published project scope updates for BobFilez, BobSaver, and the Bob toolkit repositories. Treat Bob’s Game Web as the canonical Bob’s Game build and retain the Java repository as a port source. Track the BobMania packaging and documentation fixes and BobTorrent’s expanded Go CI coverage. KSM v2.0.0-alpha33 now carries the unified dashboard and mock ranking receiver on its default branch. Production rankings and the full GUI build remain open.
+## Current Status (v5.344.0)

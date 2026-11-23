@@ -1,12 +1,18 @@
 # Workspace Monorepo — Brain Memory (`main`)
 
-*Last Updated: 2026-11-15 (v5.313.0 — Protocol #304)*
+*Last Updated: 2026-11-20 (v5.345.0)*
 
 ## Project Purpose
 
 Federated monorepo at `github.com/robertpelloni/workspace` orchestrating **134 root submodules** (`870` direct nested declarations across layers) across AI agent harnesses (`HyperNexus`, `hyperharness`, `pi-mono`, `hermes-agent`, `freellm`, `Maestro`, `jules-autopilot`, `CodeWhale-Extensions`), terminals/IDEs (`tabby`, `warp`, `hyper`, `npp`, `bqt`, `bgtk`), games & rhythm engines (`bg`, `bobmani`, `hymnmania`, `ArrowVortex`, `beatoraja`, `mk64`, `sm64coopdx`, `neverball`, `bobsaver`), and commercial/web platforms (`fwber`, `realestatecrm`, `marketing_agent`, `unitedbeats_site`, `unitedbeats_hypernexus_gtm`).
 
-## Current State (`v5.313.0`)
+## Current State
+
+- The root advanced to the published v5.344.0 baseline, integrated the root dependency branch, and prepared v5.345.0 with 15 verified gitlink updates.
+- The structural map records 120 root gitlinks and 950 discovered pins across all visible levels. Some nested checkouts or pinned trees were unavailable locally.
+- Full branch reconciliation and production build verification remain open. See HANDOFF.md for the retained branches, build status, and local checkout exceptions.
+
+## Prior state (v5.313.0)
 
 - **Executive Protocols #1–#304 Complete:** Deep recursive synchronization, single-branch `remote.origin.fetch` refspec repair across 24 owned repos, and hidden-branch / `<slug>-<digits>` Jules harvest (`bgtk` `v1.8.0`, `hyper` `v1.2.0`, `warp` +6 branches, `tabby` `v1.0.285`, `CodeWhale-Extensions` all 37 branches w/ 53/53 Rust tests green, `bg` +121 -> `5cdc4d46` & `bg_fix`, `multimousergy` +44 -> `6980001b3f`, `muse` +43, `mk64` +26 -> `b7142bee54`, `hermes-agent` +24 -> `ccb236f9f2a`, `jvm-cpp-runtime` +24 -> `0b78839`, `superdawmcp` +20 -> `47dc2ed36b`, `okgame` +16 -> `c6fdb3aac7`, `bobsgameonline` +8 -> `d97b30a`, `libjruntime` +4 -> `9e5d241`, `bobeditpro` +2 -> `a04f532b25`, `vst_monster` `v0.8.3` +76, `freellm` Go tray restored, `npp` `c71c9e6fb`, `bobmani` `24f921e`, `bobsaver` `b41c7203`, `bobtorrent` `8ea1472`, `fwber` `v2.3.92`, `realestatecrm` `v0.66.1`, `marketing_agent` `v0.7.10`), **all 4 formerly retained conflict branches resolved (`0` retained conflicts remaining)**, and published-only root pointer pincheck (`0` unpublished pins).
 - **Consolidated Control Center (`:2999`) & System Tray (`v2.3.0`):** Live in `research/workspace-orchestrator/` (`start.bat dashboard` / `start.bat tray` / `start_dashboard_tray.bat`), running at `BelowNormal` CPU priority with **recursive `L1`–`L4` Nested Submodule Deep Drill-Down (`GET /api/submodules/nested`, `870` declarations)**, **async 6-worker `ahead/behind` origin divergence & actionable branch scanning across 133/134 submodules**, **embedded HyperNexus `:7778` Session Bus live feed, broadcast & structured `HANDOVER_LEDGER`**, root-pin drift telemetry, Windows Startup shortcut toggle, and full lifecycle management over all **12/12** Go binaries (`build.bat` 4/4 OK, `start.bat build` 12/12 OK).
