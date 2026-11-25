@@ -7,7 +7,7 @@
 - Phase4: 3 actions; electricsheep/neverball checkout-fail (retained); bobfilez_fix pushed +1 (no ordering race this cycle).
 - Root pointers: 3 staged (bobfilez, bobfilez_fix, ironbeat v0.3.1), pincheck 0 unpublished (projectM-upstream skipped); STRUCTURAL_MAP regenerated 139/140.
 - Coordination: bus stress-tested (register/send/inbox/reply/ack/thread); `sessions --fresh` liveness tooling committed in HyperNexus (39719ef23a, leader). Per-project success criteria issued to the six named lanes; outcome check verified from repos (realestatecrm v0.67.29 smoke-32, ironbeat v0.3.1 live vs :7778, fwber Cypress 20 green vs prod, bobfilez v6.5.122, unitedbeats hub current). ShiftBeat nested ironbeat pin drift (v0.2.0 vs v0.3.1) re-tasked (bus bm-mwwpiykz). Gemini/ChatGPT priority-matrix evals pending in their threads.
-- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (v5.348.0, root 0/0). Do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; co-master coordination with Bobbi (muse.ai UnitedBeats sidechat via CDP 9222). Company docs authoritative home: unitedbeats hub (UnitedBeatsLLC/unitedbeats).
