@@ -507,3 +507,6 @@ branch = master
 [submodule "unitedbeats_hypernexus_gtm"]
 	path = unitedbeats_hypernexus_gtm
 	url = https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git
+[submodule "ironbeat"]
+	path = ironbeat
+	url = https://github.com/robertpelloni/ironbeat.git
