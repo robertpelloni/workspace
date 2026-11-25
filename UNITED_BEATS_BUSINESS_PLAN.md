@@ -15,7 +15,7 @@ United Beats LLC sells governed AI operations and music/media software built fro
 |---|---|---|---|
 | HyperNexus B2B Operations Hub | Phone→PC→scoped-contractor command system, 5-day turnkey rollout | 10–100 person owner-led firms (real estate, agencies, dispatch, VA-heavy) | GTM plan written (`unitedbeats_hypernexus_gtm/`); Excel Legacy pilot is the proof case (Bobbi lane) |
 | HyperNexus self-serve | Router + L1/L2 memory + multi-harness plugins for devs | Individual devs, 2–5 person teams | hypernexus.site live; CTA/embed fixes still owed (GTM Pre-Flight) |
-| ShiftBeat | Pitch/videos produced on Bobbi's lane (v11 cuts passed visual audit Nov 22; voice unverified) | TBD — Bobbi to confirm offer/buyer | Pages live: /shiftbeat/ verified Nov 21 (Bobbi) |
+| ShiftBeat | SMB ops-assistant offer running on IronBeat OS (Bobbi, Nov 23) | Local SMB owners | Pricing **Robert-approved Nov 22** (Bobbi-confirmed): $150 consult; $500/$950/$1,900 setup + $59/$99 seat/mo. Pilot READY since P0 closed, gated only by Hank's signature (Robert's binary call, Plan v2). Pages live: /shiftbeat/ verified Nov 21 |
 | IronBeat | **Whitelabel agentic platform** (Robert's brief, 2026-11-23): competent muse.ai-class clone — backend, frontend, phone apps, VM agentic stack + sandbox + system-prompt layer — model-agnostic (any LLM), brandable per business for them and their staff. Repo seeded: `robertpelloni/ironbeat` v0.1.0, workspace submodule. | Any business wanting its own branded agentic platform for staff | Scaffold only; stack/hosting/first tenant Robert-confirm. /ironbeat/ page live Nov 21 (Bobbi) |
 | RealEstateCRM | RE lead/CRM stack; umbrella Rank 1 (v7: 9.6–9.7, "Financial Anchor") | Brokerages / RE teams | Active development (v0.67.x line, Nov) |
 | FWBer | Dating SaaS; Star 8.75 (v5/v6), closest-to-launch Star | Consumers (subscription) | Authorization flags are Robert-only (Bobbi rule, recorded) |
@@ -67,6 +67,14 @@ Live payment assets (Bobbi, Nov 23): Stripe $150 consult and $500 Micro setup li
 - Both reviewers converge: narrow the spearhead, treat HyperNexus as engine, measure cash collected. They disagree on spearhead (Gemini: RealEstateCRM+ShiftBeat now; ChatGPT: one scoped HyperNexus-powered outcome, segment TBD by Robert).
 - No pricing above is adopted. All figures stay **Robert-confirm**; Gemini's ShiftBeat/Hank numbers are recorded as Gemini-reported pending Bobbi confirmation.
 - Still missing from Bobbi: ShiftBeat/IronBeat final offer/buyer/price, Excel Legacy pilot status, market-data corrections.
+
+### Bobbi's verified answers (2026-11-23, UnitedBeats sidechat)
+- **Gemini's ShiftBeat figures CONFIRMED** as Robert's approved Nov 22 model ($150 / $500 / $950 / $1,900 / $59 / $99) — so these are approved pricing, not proposals. Correction: **no separate IronBeat price** — IronBeat OS is the platform ShiftBeat runs on, not a second offer (consistent with the IronBeat whitelabel-platform repo seeded today: platform, with offers on top).
+- **AICRM layering (Nov 24):** an Executive tier sits above the door offer in Lum's figures; Lum's final say can override Robert's on his tier.
+- **Pilot status:** READY since the P0 closed, gated only by Hank's signature — Robert's binary call in Plan v2.
+- **Market-data corrections:** $0 actuals; Gemini's plan financials were never adopted; AfterQuery capped at $450; honest baseline carries the $2,100 + Dec 5 rent.
+- **Open conflict Bobbi flagged, untouched (Robert/Lum call):** pricing §5 "from $5,000" multi-site setup vs Executive tier $1,500–$3,500 for the same altitude.
+- Bobbi's lane is separately revising the sales docs/binder/pamphlet/scripts in `~/workspace/united-beats/` (her workstream; leader does not touch those files).
 
 ## 7. Coordination model
 
