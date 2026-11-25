@@ -1,3 +1,19 @@
+# HANDOFF - v5.348.0 - 2026-11-24 - Protocol #338: Repository Sync & Intelligent Merge
+
+## Session - Protocol #338 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_338_*`)
+- Scan/triage: 53 actionable. Merge: 1 fast-forward, 0 forward merges; phase2/final retained set unchanged. Remaining verified unmerged = 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery/detached-work, bg + bg_fix jules, multimousergy x11, 2 dependabot filtered) - untouched, no deletions.
+- Phase4: 3 actions; electricsheep/neverball checkout-fail (retained); bobfilez_fix pushed +1 (no ordering race this cycle).
+- Root pointers: 3 staged (bobfilez, bobfilez_fix, ironbeat v0.3.1), pincheck 0 unpublished (projectM-upstream skipped); STRUCTURAL_MAP regenerated 139/140.
+- Coordination: bus stress-tested (register/send/inbox/reply/ack/thread); `sessions --fresh` liveness tooling committed in HyperNexus (39719ef23a, leader). Per-project success criteria issued to the six named lanes; outcome check verified from repos (realestatecrm v0.67.29 smoke-32, ironbeat v0.3.1 live vs :7778, fwber Cypress 20 green vs prod, bobfilez v6.5.122, unitedbeats hub current). ShiftBeat nested ironbeat pin drift (v0.2.0 vs v0.3.1) re-tasked (bus bm-mwwpiykz). Gemini/ChatGPT priority-matrix evals pending in their threads.
+- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; co-master coordination with Bobbi (muse.ai UnitedBeats sidechat via CDP 9222). Company docs authoritative home: unitedbeats hub (UnitedBeatsLLC/unitedbeats).
+- HyperNexus: 0/0, code = running kernel v1.0.84 healthy; leader lane fetch/status only there (own tooling commits by name excepted).
+
+## Prior
 # HANDOFF - v5.347.0 - 2026-11-24 - Protocol #337: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #337 (this session)

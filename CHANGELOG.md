@@ -1,4 +1,17 @@
-## [v5.347.0] - 2026-11-24 - Protocol #337: Repository Sync & Intelligent Merge
+## [v5.348.0] - 2026-11-24 - Protocol #338: Repository Sync & Intelligent Merge
+
+### Synced
+- **Submodules**: Protocol #338: triage 53 actionable; 1 fast-forward, 0 forward merges; phase2/final retained set unchanged; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 3 actions (electricsheep/neverball checkout-fail retained; bobfilez_fix pushed +1, no race this cycle); 3 pointers staged (bobfilez, bobfilez_fix, ironbeat v0.3.1), pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Coordination cycle: bus stress-tested end-to-end; sessions --fresh liveness tooling committed in HyperNexus (39719ef23a); per-project success criteria issued to realestatecrm/HyperNexus/ironbeat/fwber/bobfilez/unitedbeats-shiftbeat lanes; outcome check verified from repos (realestatecrm v0.67.29 smoke 32, ironbeat v0.3.1 live vs :7778, fwber Cypress 20 green, bobfilez v6.5.122); shiftbeat nested ironbeat pin drift (v0.2.0 vs v0.3.1) re-tasked. HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verification follows this commit; do not clean binaries..
+- Reverse: veilid scaffold reverse-merge attempted, conflict-aborted (retained, no reverse). `bobmani/itgmania jules-12512815185672744343` verified fully contained in `release` (cherry 0), no reverse needed.
+- Origin sync: hyperporn origin-sync attempted (`+2/-3`), conflict-final, retained diverged; electricsheep/neverball upstream defaults unchanged (push up-to-date).
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling lanes; fetch/status only from leader lane), openclaw-config / openclaw-dashboard (foreign/diverged), unitedbeats_site (site lane), unpublished root pointers not staged (openclaw-dashboard, projectM-upstream, hyperporn skipped by pincheck guard)
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi logging leader check-ins, no v6/menu ruling yet; Gemini Master Next Steps options are Robert-reserved (mirrored to bus bm-mwg9jm35, not decided). Always-deploy followed on close-out.
+- HyperNexus code v1.0.70 fetch-verified 0/0 vs origin/main, running kernel v1.0.71; supervisor session still degraded (consecutiveFailures 0).
 
 ### Synced
 - **Submodules**: Protocol #337: triage 53 actionable; 2 fast-forwards, 0 forward merges; phase2 12 actions; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 6 actions (electricsheep/neverball checkout-fail retained; bobfilez_fix PUSHFAIL fixed by leader local-wins sync 3fe20fcc6; bobmani/hymnmania +1, ironbeat +1 pushed); 9 pointers staged, pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Cycle extras: IronBeat whitelabel agentic platform repo created (robertpelloni/ironbeat v0.1.0, root submodule); unitedbeats hub (UnitedBeatsLLC/unitedbeats) authoritative for company docs; Bobbi verified ShiftBeat pricing (approved Nov 22) folded into UNITED_BEATS_BUSINESS_PLAN.md. HyperNexus 0/0, kernel v1.0.84 healthy (fetch-only leader lane). Build/deploy: build.bat verification follows this commit; do not clean binaries..
@@ -13,6 +26,9 @@
 - Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi logging leader check-ins, no v6/menu ruling yet; Gemini Master Next Steps options are Robert-reserved (mirrored to bus bm-mwg9jm35, not decided). Always-deploy followed on close-out.
 - HyperNexus code v1.0.70 fetch-verified 0/0 vs origin/main, running kernel v1.0.71; supervisor session still degraded (consecutiveFailures 0).
 
+
+
+## [v5.347.0] - 2026-11-24 - Protocol #337: Repository Sync & Intelligent Merge
 
 ## [v5.346.0] - 2026-11-16 - Protocol #336: Repository Sync & Intelligent Merge
 

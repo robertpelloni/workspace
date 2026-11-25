@@ -1,3 +1,9 @@
+### Protocol #338 Outcomes (2026-11-24)
+
+- [x] v5.348.0 - Protocol #338: Protocol #338: triage 53 actionable; 1 fast-forward, 0 forward merges; phase2/final retained set unchanged; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 3 actions (electricsheep/neverball checkout-fail retained; bobfilez_fix pushed +1, no race this cycle); 3 pointers staged (bobfilez, bobfilez_fix, ironbeat v0.3.1), pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Coordination cycle: bus stress-tested end-to-end; sessions --fresh liveness tooling committed in HyperNexus (39719ef23a); per-project success criteria issued to realestatecrm/HyperNexus/ironbeat/fwber/bobfilez/unitedbeats-shiftbeat lanes; outcome check verified from repos (realestatecrm v0.67.29 smoke 32, ironbeat v0.3.1 live vs :7778, fwber Cypress 20 green, bobfilez v6.5.122); shiftbeat nested ironbeat pin drift (v0.2.0 vs v0.3.1) re-tasked. HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verified after commit; do not clean binaries.
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #337 Outcomes (2026-11-16)
 
 - [x] v5.345.0 - Protocol #337: triage 56 actionable, 9 fast-forwards, 2 forward merges (bobmania jules + overlay-snapshot, push pending in phase4); retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished; week-gap catch-up: realestatecrm v0.67.26, HN baae0f4872
