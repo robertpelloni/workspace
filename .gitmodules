@@ -519,3 +519,9 @@ branch = master
 [submodule "masterbeat"]
 	path = masterbeat
 	url = https://github.com/UnitedBeatsLLC/masterbeat.git
+[submodule "hyperbeat"]
+	path = hyperbeat
+	url = https://github.com/UnitedBeatsLLC/hyperbeat.git
+[submodule "dance"]
+	path = dance
+	url = https://github.com/UnitedBeatsLLC/dance.git
