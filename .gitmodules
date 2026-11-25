@@ -510,3 +510,6 @@ branch = master
 [submodule "ironbeat"]
 	path = ironbeat
 	url = https://github.com/robertpelloni/ironbeat.git
+[submodule "unitedbeats"]
+	path = unitedbeats
+	url = https://github.com/UnitedBeatsLLC/unitedbeats.git
