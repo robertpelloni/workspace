@@ -1,3 +1,9 @@
+### Protocol #337 Outcomes (2026-11-16)
+
+- [x] v5.345.0 - Protocol #337: triage 56 actionable, 9 fast-forwards, 2 forward merges (bobmania jules + overlay-snapshot, push pending in phase4); retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished; week-gap catch-up: realestatecrm v0.67.26, HN baae0f4872
+- [ ] Robert: disposition 4 retained conflict branches; umbrella v6 corrections window still open with Bobbi
+- [x] pi-mono verified in #286 (`go build ./...` exit 0, `go test ./pkg/ai/` ok); re-run only if pi-mono merges land
+
 ### Protocol #336 Outcomes (2026-11-16)
 
 - [x] v5.345.0 - Protocol #336: triage 56 actionable, 9 fast-forwards, 2 forward merges (bobmania jules + overlay-snapshot, push pending in phase4); retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished; week-gap catch-up: realestatecrm v0.67.26, HN baae0f4872

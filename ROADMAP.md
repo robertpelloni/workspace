@@ -2,6 +2,10 @@
 
 ## Current Status (v5.345.0)
 
+**Protocol #337 (2026-11-16):** triage 56 actionable, 9 fast-forwards, 2 forward merges (bobmania jules + overlay-snapshot, push pending in phase4); retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished; week-gap catch-up: realestatecrm v0.67.26, HN baae0f4872. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.345.0)
+
 **Protocol #336 (2026-11-16):** triage 56 actionable, 9 fast-forwards, 2 forward merges (bobmania jules + overlay-snapshot, push pending in phase4); retained 10 re-verified conflict-final; reverse veilid pushed; pincheck 0 unpublished; week-gap catch-up: realestatecrm v0.67.26, HN baae0f4872. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 
  (v5.344.0)
