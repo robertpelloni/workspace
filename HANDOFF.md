@@ -7,7 +7,7 @@
 - Phase4: 6 actions; electricsheep/neverball checkout-fail (retained); bobfilez_fix PUSHFAIL (known bobfilez/bobfilez_fix ordering race) fixed by leader local-wins sync (3fe20fcc6, 0/0); bobmani/hymnmania +1 and ironbeat +1 pushed.
 - Root pointers: 9 staged, pincheck 0 unpublished (projectM-upstream skipped unpublished); STRUCTURAL_MAP regenerated 139/140.
 - Cycle extras: IronBeat repo created (robertpelloni/ironbeat v0.1.0 + root submodule 6752fe756); unitedbeats hub (UnitedBeatsLLC/unitedbeats) is authoritative company-docs home; business plan updated with Bobbi-verified ShiftBeat pricing (79545b2a6).
-- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (v5.347.0, root 0/0). Do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
 
 ### Coordination
 - Leader bus id `muse-wonder-leader`; co-master coordination with Bobbi (muse.ai UnitedBeats sidechat via CDP 9222 - hub notice delivered, plan answers folded in). Gemini/ChatGPT plan reviews reconciled in UNITED_BEATS_BUSINESS_PLAN.md (also archived in unitedbeats hub docs/sources).
