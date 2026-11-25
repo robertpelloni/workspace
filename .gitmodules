@@ -513,3 +513,6 @@ branch = master
 [submodule "unitedbeats"]
 	path = unitedbeats
 	url = https://github.com/UnitedBeatsLLC/unitedbeats.git
+[submodule "shiftbeat"]
+	path = shiftbeat
+	url = https://github.com/UnitedBeatsLLC/shiftbeat.git
