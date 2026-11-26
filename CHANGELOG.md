@@ -1,4 +1,17 @@
-## [v5.352.0] - 2026-11-26 - Protocol #340: Repository Sync & Intelligent Merge
+## [v5.353.0] - 2026-11-26 - Protocol #340: Repository Sync & Intelligent Merge
+
+### Synced
+- **Submodules**: Protocol #343: triage 53 actionable; 0 fast-forwards, 0 forward merges (quiet cycle); phase2 12 actions; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 2 actions (electricsheep/neverball checkout-fail retained); 0 pointers staged, pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Lane cycle: DANCE v0.3.0 MediaPipe pose feed 11/11. HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verification follows this commit; do not clean binaries.. Scan/triage covered 114 repos; unique branches remained only in upstream mirrors (fwber/hermes-agent `heads/upstream/*`, filtered), dependabot branches (filtered), excluded lanes, and the 4 retained conflicts below.
+- Reverse: veilid scaffold reverse-merge attempted, conflict-aborted (retained, no reverse). `bobmani/itgmania jules-12512815185672744343` verified fully contained in `release` (cherry 0), no reverse needed.
+- Origin sync: hyperporn origin-sync attempted (`+2/-3`), conflict-final, retained diverged; electricsheep/neverball upstream defaults unchanged (push up-to-date).
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling lanes; fetch/status only from leader lane), openclaw-config / openclaw-dashboard (foreign/diverged), unitedbeats_site (site lane), unpublished root pointers not staged (openclaw-dashboard, projectM-upstream, hyperporn skipped by pincheck guard)
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi logging leader check-ins, no v6/menu ruling yet; Gemini Master Next Steps options are Robert-reserved (mirrored to bus bm-mwg9jm35, not decided). Always-deploy followed on close-out.
+- HyperNexus code v1.0.70 fetch-verified 0/0 vs origin/main, running kernel v1.0.71; supervisor session still degraded (consecutiveFailures 0).
 
 ### Synced
 - **Submodules**: Protocol #342: triage 53 actionable; 0 fast-forwards, 0 forward merges (quiet cycle - lanes pushed own bumps); phase2 12 actions; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 2 actions (electricsheep/neverball checkout-fail retained); 0 pointers staged, pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Lane highlight: IronBeat v0.5.0 B1 part 2 complete - kernel MCP tool-calling via approval intents, live proof, 19/19 tests; MasterBeat v0.4.0 course mode 18/18. HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verification follows this commit; do not clean binaries.. Scan/triage covered 114 repos; unique branches remained only in upstream mirrors (fwber/hermes-agent `heads/upstream/*`, filtered), dependabot branches (filtered), excluded lanes, and the 4 retained conflicts below.
@@ -83,6 +96,9 @@
 
 
 
+
+
+## [v5.352.0] - 2026-11-26 - Protocol #340: Repository Sync & Intelligent Merge
 
 ## [v5.351.0] - 2026-11-26 - Protocol #340: Repository Sync & Intelligent Merge
 
