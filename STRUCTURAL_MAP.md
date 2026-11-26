@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-14 (Protocol #338, full regen)
+Generated: 2026-11-14 (Protocol #339, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
 | fwber | https://github.com/robertpelloni/fwber.git | 228829220e87 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | d8c3a51c26c5 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 2fe6447ded88 |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 2142f051eb9c |
@@ -29,7 +29,7 @@ Generated: 2026-11-14 (Protocol #338, full regen)
 | bobbybookmarks | https://github.com/robertpelloni/bobbybookmarks | 9fc00275dfd7 |
 | bobcoin | https://github.com/robertpelloni/bobcoin | 724a671771c2 |
 | bobeditpro | https://github.com/robertpelloni/bobeditpro | 7811409f1029 |
-| bobfilez | https://github.com/robertpelloni/bobfilez | 168cff2df574 |
+| bobfilez | https://github.com/robertpelloni/bobfilez | 0418a23bbfcf |
 | bgtk | https://github.com/robertpelloni/bgtk | 657e1a1e8585 |
 | bobium | https://github.com/robertpelloni/bobium | 49cd37190b86 |
 | bobsaver | https://github.com/robertpelloni/bobsaver | 91fa68ac7d17 |
@@ -74,7 +74,7 @@ Generated: 2026-11-14 (Protocol #338, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 567b7a2db566 |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 39719ef23ab9 |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 2b51032026d9 |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | 6419def772c3 |
 | warp | https://github.com/robertpelloni/warp.git | 0b796c464109 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | 49207773ca73 |
@@ -82,7 +82,7 @@ Generated: 2026-11-14 (Protocol #338, full regen)
 | bobmani | https://github.com/robertpelloni/bobmani | 6d62fdf26f55 |
 | MilkDrop3_fix | https://github.com/robertpelloni/MilkDrop3.git | 254704aef2e0 |
 | bg_fix | https://github.com/robertpelloni/bg.git | c4af53b5170c |
-| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | 37ce1dd62f52 |
+| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | d0c202f2619f |
 | bobsaver_fix | https://github.com/robertpelloni/bobsaver.git | 91fa68ac7d17 |
 | bobsgameonlinejava_fix | https://github.com/robertpelloni/bobsgameonlinejava.git | e3fde1adb719 |
 | browser-use | https://github.com/robertpelloni/browser-use | cacead571470 |
@@ -116,7 +116,7 @@ Generated: 2026-11-14 (Protocol #338, full regen)
 | TurntUpToddler | https://github.com/Dimensionalplane/TurntUpToddler | d269bb8d1537 |
 | ksm-v2 | https://github.com/robertpelloni/ksm-v2.git | 8f8c6d22203b |
 | HyperNexus2old | https://gitlab.com/robertpelloni/HyperNexus.git | d8c4b2f39fb4 |
-| hyperporn | https://github.com/robertpelloni/hyperporn | e8f42ad31006 |
+| hyperporn | https://github.com/robertpelloni/hyperporn | 8932a6d41b57 |
 | foone_datetime_short | https://github.com/robertpelloni/foone_datetime_short | 0979cbc34100 |
 | bob_and_lum_sitcom | https://github.com/robertpelloni/bob_and_lum_sitcom | bbe964c18bba |
 | gods-eye-view | https://github.com/robertpelloni/gods-eye-view | a6a6c4469f80 |
@@ -138,11 +138,11 @@ Generated: 2026-11-14 (Protocol #338, full regen)
 | DataStreamBrowser | https://github.com/robertpelloni/DataStreamBrowser.git | 8aeb4461e30b |
 | ADSFileSystem | https://github.com/robertpelloni/ADSFileSystem.git | 920b7b63d25d |
 | unitedbeats_hypernexus_gtm | https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git | e7109f6453a5 |
-| ironbeat | https://github.com/robertpelloni/ironbeat.git | 7b8d656a4351 |
-| unitedbeats | https://github.com/UnitedBeatsLLC/unitedbeats.git | e9f526deaea8 |
-| shiftbeat | https://github.com/UnitedBeatsLLC/shiftbeat.git | 6ea57dc137a0 |
-| masterbeat | https://github.com/UnitedBeatsLLC/masterbeat.git | 88db70a99be7 |
-| hyperbeat | https://github.com/UnitedBeatsLLC/hyperbeat.git | f30e926af682 |
-| dance | https://github.com/UnitedBeatsLLC/dance.git | 0f9cd70d4de1 |
+| ironbeat | https://github.com/robertpelloni/ironbeat.git | 61893a4a102b |
+| unitedbeats | https://github.com/UnitedBeatsLLC/unitedbeats.git | 665d394de637 |
+| shiftbeat | https://github.com/UnitedBeatsLLC/shiftbeat.git | 41815f01fb52 |
+| masterbeat | https://github.com/UnitedBeatsLLC/masterbeat.git | 1a2b703d280e |
+| hyperbeat | https://github.com/UnitedBeatsLLC/hyperbeat.git | 76ee5bbe3682 |
+| dance | https://github.com/UnitedBeatsLLC/dance.git | 76ff5cc89299 |
 
 Initialized: 139/140

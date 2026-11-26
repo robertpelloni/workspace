@@ -1,3 +1,21 @@
+# HANDOFF - v5.349.0 - 2026-11-26 - Protocol #339: Repository Sync & Intelligent Merge
+
+## Session - Protocol #339 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_339_*`)
+- Scan/triage: 53 actionable. Merge: 2 fast-forwards, 0 forward merges; phase2 12 actions. Remaining verified unmerged = 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery/detached-work, bg + bg_fix jules, multimousergy x11, 2 dependabot filtered) - untouched, no deletions.
+- Phase4: 3 actions; electricsheep/neverball checkout-fail (retained); bobfilez pushed +1.
+- Root pointers: 3 staged (bobfilez, bobfilez_fix, hyperporn), pincheck 0 unpublished (projectM-upstream skipped); STRUCTURAL_MAP regenerated 139/140.
+- Scan improvement: warp/hermes-agent excluded from branch scan (upstream mirrors, merge-filtered anyway) + parallelized scan_repo - cycle time cut from ~30 min serial grind.
+- Dashboard: HYPERNEXUS_DASHBOARD_ANALYSIS.md (55+ pages -> 7 value-ordered sections) tasked to HyperNexus dashboard lane (:7779 rebuild Robert-gated); unitedbeats lane delivered Control Center v1.1.0 + tray.ps1 (Start/Stop/Quit, BelowNormal, servers 200, err logs empty).
+- Business plan: Gemini corrections folded in (Hank $500+$500 not $700/wk, Robert cancelled Hank outreach - hands-off; tax-copy compliance purge); outcome checks + pin-drift fix verified. Bobbi/Gemini personal roasts still pending in their threads; ChatGPT roast delivered.
+- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+
+### Coordination
+- Master coordinator: muse-wonder-leader (bus) + Bobbi (muse.ai, CDP 9222). Lanes heartbeating: recrm, fwber, ironbeat, unitedbeats, muse-code-laptop (HyperNexus). Stack correction broadcast: IronBeat stack Robert-locked Nov 25 (Go kernel + Node tenant API, full VM/user, LiteLLM/Bifrost + Postgres/pgvector).
+- HyperNexus: 0/0, code = running kernel v1.0.84 healthy; leader lane fetch/status only there (own tooling commits by name excepted).
+
+## Prior
 # HANDOFF - v5.348.0 - 2026-11-24 - Protocol #338: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #338 (this session)
