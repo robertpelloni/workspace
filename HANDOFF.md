@@ -6,7 +6,7 @@
 - Scan/triage: 53 actionable. Merge: 0 fast-forwards, 0 forward merges (quiet cycle); phase2 12 actions. Remaining verified unmerged = 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery/detached-work, bg + bg_fix jules, multimousergy x11, 2 dependabot filtered) - untouched, no deletions.
 - Phase4: 2 actions; electricsheep/neverball checkout-fail (retained). Pointers: 0 staged, pincheck 0 unpublished; STRUCTURAL_MAP regenerated 139/140.
 - Lane cycle: HyperBeat v0.4.0 generator v2 (difficulty estimator + target-meter generation, honestly labeled proxy, 13/13).
-- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (v5.354.0, root 0/0). Do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
 
 ### Coordination
 - Master coordinator: muse-wonder-leader (bus) + Bobbi (muse.ai, CDP 9222). 30-min loop cron 14610be7. Bobbi/Gemini personal roasts still unproduced in-thread; ChatGPT roast delivered.
