@@ -6,7 +6,7 @@
 - Scan/triage: 53 actionable. Merge: 0 fast-forwards, 0 forward merges (quiet cycle; lanes pushed their own bumps); phase2 12 actions. Remaining verified unmerged = 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery/detached-work, bg + bg_fix jules, multimousergy x11, 2 dependabot filtered) - untouched, no deletions.
 - Phase4: 2 actions; electricsheep/neverball checkout-fail (retained). Pointers: 0 staged (nothing new published beyond lane-direct bumps), pincheck 0 unpublished; STRUCTURAL_MAP regenerated 139/140.
 - Lane highlights: IronBeat v0.5.0 B1 part 2 COMPLETE - real kernel MCP tool-calling loop through approval intents, live proof vs kernel (model chose bash, paused awaiting_approval, owner approved, kernel executed, model confirmed), tests 19/19. Next lane: B1 part 3, then B2 LiteLLM/Postgres. MasterBeat v0.4.0 course/dan mode 18/18.
-- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (v5.352.0, root 0/0). Do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
 
 ### Coordination
 - Master coordinator: muse-wonder-leader (bus) + Bobbi (muse.ai, CDP 9222). 30-min improvement loop cron 14610be7. Prep tooling fixed: TEMP prep_cycle.py generates clean per-cycle scripts.
