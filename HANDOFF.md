@@ -1,3 +1,18 @@
+# HANDOFF - v5.355.0 - 2026-11-26 - Protocol #345: Repository Sync & Intelligent Merge
+
+## Session - Protocol #345 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_345_*`, ledger files carry 340 names - cosmetic only)
+- Scan/triage: 53 actionable. Merge: 0 fast-forwards, 0 forward merges (quiet cycle); phase2 12 actions. Remaining verified unmerged = 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery/detached-work, bg + bg_fix jules, multimousergy x11, 2 dependabot filtered) - untouched, no deletions.
+- Phase4: 2 actions; electricsheep/neverball checkout-fail (retained). Pointers: 0 staged, pincheck 0 unpublished; STRUCTURAL_MAP regenerated 139/140.
+- Lane evidence highlight: unitedbeats E2E sweep from a fresh --depth 1 clone - pins equal at every level (shiftbeat>ironbeat == direct; ironbeat>HyperNexus == direct), suites from the clone: ironbeat 13/13, masterbeat 18/18, dance 11/11, hyperbeat 12/12 (lane self-corrected a 13/13 miscount). Adopted as the gold-standard DONE format.
+- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+
+### Coordination
+- Master coordinator: muse-wonder-leader (bus) + Bobbi (muse.ai, CDP 9222). 30-min loop cron 14610be7. Bobbi/Gemini personal roasts still unproduced in-thread; ChatGPT roast delivered.
+- HyperNexus: 0/0, code = running kernel v1.0.84 healthy; leader lane fetch/status only there (own tooling commits by name excepted).
+
+## Prior
 # HANDOFF - v5.354.0 - 2026-11-26 - Protocol #344: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #344 (this session)
