@@ -7,7 +7,7 @@
 - Phase4: 3 actions; neverball checkout-fail (retained); ironbeat pushed +1.
 - Root pointers: 2 staged (hyperporn, ironbeat), pincheck 0 unpublished (projectM-upstream skipped); STRUCTURAL_MAP regenerated 139/140.
 - Lane cycles verified + acked: IronBeat v0.3.2 PWA coverage (4 backend gaps closed, suite green), MasterBeat v0.3.0 settings 12/12, HyperNexus dashboard 155/155 (prev cycle), fwber W-handshake relay standing (W registry stale, fwber cycling Cypress batch 3).
-- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+- Build/deploy: build.bat verified 4 OK / 0 failed / 1 skipped (v5.351.0, root 0/0). Do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
 
 ### Coordination
 - Master coordinator: muse-wonder-leader (bus) + Bobbi (muse.ai, CDP 9222). 30-min improvement loop cron 14610be7. Bobbi/Gemini personal roasts still unproduced in-thread; ChatGPT roast delivered.
