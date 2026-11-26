@@ -1,12 +1,12 @@
 # STRUCTURAL MAP - Submodules
 
-Generated: 2026-11-14 (Protocol #339, full regen)
+Generated: 2026-11-14 (Protocol #340, full regen)
 
 | Submodule | Remote URL | Commit |
 |---|---|---|
 | auto_dj_script | https://github.com/robertpelloni/auto_dj_script | d6c1ffff08d6 |
 | fwber | https://github.com/robertpelloni/fwber.git | 228829220e87 |
-| hymnmania | https://github.com/robertpelloni/hymnmania | 2fe6447ded88 |
+| hymnmania | https://github.com/robertpelloni/hymnmania | 6d37f295157e |
 | hypercode | https://github.com/robertpelloni/hypercode | not initialized |
 | jules-autopilot | https://github.com/robertpelloni/jules-autopilot | 56d0101830e3 |
 | realestatecrm | https://github.com/robertpelloni/realestatecrm.git | 2142f051eb9c |
@@ -74,7 +74,7 @@ Generated: 2026-11-14 (Protocol #339, full regen)
 | tabby | https://github.com/robertpelloni/tabby | 567b7a2db566 |
 | timidity | https://github.com/robertpelloni/timidity.git | eff3cbe5e74a |
 | topaz-ffmpeg | https://github.com/TopazLabs/ffmpeg | eaa1762ca45b |
-| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 2b51032026d9 |
+| HyperNexus | https://gitlab.com/robertpelloni/HyperNexus.git | 54f5adada140 |
 | veilid_reddit_facebook | https://github.com/robertpelloni/veilid_reddit_facebook | 6419def772c3 |
 | warp | https://github.com/robertpelloni/warp.git | 0b796c464109 |
 | vst_monster | https://github.com/robertpelloni/vst_monster | 49207773ca73 |
@@ -82,7 +82,7 @@ Generated: 2026-11-14 (Protocol #339, full regen)
 | bobmani | https://github.com/robertpelloni/bobmani | 6d62fdf26f55 |
 | MilkDrop3_fix | https://github.com/robertpelloni/MilkDrop3.git | 254704aef2e0 |
 | bg_fix | https://github.com/robertpelloni/bg.git | c4af53b5170c |
-| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | d0c202f2619f |
+| bobfilez_fix | https://github.com/robertpelloni/bobfilez.git | 0418a23bbfcf |
 | bobsaver_fix | https://github.com/robertpelloni/bobsaver.git | 91fa68ac7d17 |
 | bobsgameonlinejava_fix | https://github.com/robertpelloni/bobsgameonlinejava.git | e3fde1adb719 |
 | browser-use | https://github.com/robertpelloni/browser-use | cacead571470 |
@@ -138,9 +138,9 @@ Generated: 2026-11-14 (Protocol #339, full regen)
 | DataStreamBrowser | https://github.com/robertpelloni/DataStreamBrowser.git | 8aeb4461e30b |
 | ADSFileSystem | https://github.com/robertpelloni/ADSFileSystem.git | 920b7b63d25d |
 | unitedbeats_hypernexus_gtm | https://github.com/robertpelloni/unitedbeats_hypernexus_gtm.git | e7109f6453a5 |
-| ironbeat | https://github.com/robertpelloni/ironbeat.git | 61893a4a102b |
-| unitedbeats | https://github.com/UnitedBeatsLLC/unitedbeats.git | 665d394de637 |
-| shiftbeat | https://github.com/UnitedBeatsLLC/shiftbeat.git | 41815f01fb52 |
+| ironbeat | https://github.com/robertpelloni/ironbeat.git | 4049be3107b8 |
+| unitedbeats | https://github.com/UnitedBeatsLLC/unitedbeats.git | 7c9615d329e8 |
+| shiftbeat | https://github.com/UnitedBeatsLLC/shiftbeat.git | 148a3fa114ec |
 | masterbeat | https://github.com/UnitedBeatsLLC/masterbeat.git | 1a2b703d280e |
 | hyperbeat | https://github.com/UnitedBeatsLLC/hyperbeat.git | 76ee5bbe3682 |
 | dance | https://github.com/UnitedBeatsLLC/dance.git | 76ff5cc89299 |

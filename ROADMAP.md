@@ -1,6 +1,10 @@
 # ROADMAP.md â€” HymnMania & Workspace
 
-## Current Status (v5.349.0)
+## Current Status (v5.350.0)
+
+**Protocol #340 (2026-11-26):** Protocol #340: triage 53 actionable; 1 fast-forward, 0 forward merges; phase2 12 actions; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 2 actions (electricsheep/neverball checkout-fail retained); 1 pointer staged (bobfilez_fix), pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Dashboard: HyperNexus lane DONE - /dashboard/mcp consolidated to 9 labeled tabs (orphaned views mounted), sweep 155/155, tsc clean (2b51032026); tray verified in kernel binary (Open Dashboard :7779, API Index :7778, log window, autostart, confirm-gated Exit All; not clicked - would stop servers); :7779 rebuild Robert-gated. Lane cycles: MasterBeat v0.3.0 settings 12/12, HyperBeat v0.3.0 calibration 10/10, DANCE v0.2.1 8/8. HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verified after commit; do not clean binaries.. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
+
+ (v5.349.0)
 
 **Protocol #339 (2026-11-26):** Protocol #339: triage 53 actionable; 2 fast-forwards, 0 forward merges; phase2 12 actions; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 3 actions (electricsheep/neverball checkout-fail retained; bobfilez pushed +1); 3 pointers staged (bobfilez, bobfilez_fix, hyperporn), pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Scan sped up: warp/hermes-agent excluded from branch scan (upstream mirrors, merge-filtered anyway) + parallel scan. Cycle extras: HYPERNEXUS_DASHBOARD_ANALYSIS (55+ pages to 7 sections) tasked to dashboard lane; unitedbeats Control Center v1.1.0 + tray delivered by lane; Gemini corrections folded into business plan (Hank 500+500, hands-off; tax-copy purge); lane DONE cycles verified (MasterBeat/DANCE/HyperBeat, HyperNexus 155/155). HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verified after commit; do not clean binaries.. 4 conflict branches retained for Robert. Always-deploy is now the standing close-out rule.
 

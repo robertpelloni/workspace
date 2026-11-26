@@ -1,3 +1,20 @@
+# HANDOFF - v5.350.0 - 2026-11-26 - Protocol #340: Repository Sync & Intelligent Merge
+
+## Session - Protocol #340 (this session)
+
+### Steps 1-2 (ledgers `sync_protocol_340_*`)
+- Scan/triage: 53 actionable. Merge: 1 fast-forward, 0 forward merges; phase2 12 actions. Remaining verified unmerged = 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery/detached-work, bg + bg_fix jules, multimousergy x11, 2 dependabot filtered) - untouched, no deletions.
+- Phase4: 2 actions; electricsheep/neverball checkout-fail (retained).
+- Root pointers: 1 staged (bobfilez_fix), pincheck 0 unpublished (projectM-upstream skipped); STRUCTURAL_MAP regenerated 139/140.
+- Dashboard: HyperNexus lane DONE - /dashboard/mcp consolidated to 9 labeled tabs (orphaned Enclave/Namespaces/Endpoints/Policies/Tool Sets/Saved Scripts views mounted), sweep 155/155, tsc clean (2b51032026). Tray verified in kernel binary: Open Dashboard :7779, API Index :7778, log window, autostart toggle, confirm-gated Exit All (not clicked - would stop servers). :7779 elevated rebuild Robert-gated; browser verification follows it.
+- Lane cycles verified: MasterBeat v0.3.0 settings 12/12, HyperBeat v0.3.0 calibration wizard 10/10, DANCE v0.2.1 velocity zones 8/8, unitedbeats Control Center v1.1.0 + tray servers 200 BelowNormal.
+- Build/deploy: build.bat verification follows this commit; do not clean binaries. Deploy = root push + build per Robert's always-deploy instruction.
+
+### Coordination
+- Master coordinator: muse-wonder-leader (bus) + Bobbi (muse.ai, CDP 9222). Heartbeating lanes: recrm, fwber, ironbeat, unitedbeats, muse-code-laptop (HyperNexus). 30-min improvement loop cron 14610be7.
+- HyperNexus: 0/0, code = running kernel v1.0.84 healthy (frequent sibling-lane swaps); leader lane fetch/status only there (own tooling commits by name excepted).
+
+## Prior
 # HANDOFF - v5.349.0 - 2026-11-26 - Protocol #339: Repository Sync & Intelligent Merge
 
 ## Session - Protocol #339 (this session)

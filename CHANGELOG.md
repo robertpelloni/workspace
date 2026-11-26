@@ -1,4 +1,17 @@
-## [v5.349.0] - 2026-11-26 - Protocol #339: Repository Sync & Intelligent Merge
+## [v5.350.0] - 2026-11-26 - Protocol #340: Repository Sync & Intelligent Merge
+
+### Synced
+- **Submodules**: Protocol #340: triage 53 actionable; 1 fast-forward, 0 forward merges; phase2 12 actions; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 2 actions (electricsheep/neverball checkout-fail retained); 1 pointer staged (bobfilez_fix), pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Dashboard: HyperNexus lane DONE - /dashboard/mcp consolidated to 9 labeled tabs (orphaned views mounted), sweep 155/155, tsc clean (2b51032026); tray verified in kernel binary (Open Dashboard :7779, API Index :7778, log window, autostart, confirm-gated Exit All; not clicked - would stop servers); :7779 rebuild Robert-gated. Lane cycles: MasterBeat v0.3.0 settings 12/12, HyperBeat v0.3.0 calibration 10/10, DANCE v0.2.1 8/8. HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verification follows this commit; do not clean binaries.. Scan/triage covered 114 repos; unique branches remained only in upstream mirrors (fwber/hermes-agent `heads/upstream/*`, filtered), dependabot branches (filtered), excluded lanes, and the 4 retained conflicts below.
+- Reverse: veilid scaffold reverse-merge attempted, conflict-aborted (retained, no reverse). `bobmani/itgmania jules-12512815185672744343` verified fully contained in `release` (cherry 0), no reverse needed.
+- Origin sync: hyperporn origin-sync attempted (`+2/-3`), conflict-final, retained diverged; electricsheep/neverball upstream defaults unchanged (push up-to-date).
+
+### Retained for Robert (untouched, no deletions)
+- 4 conflict branches, conflict both directions (plain, `-X theirs`, reverse), never forced: bobfilez `backup/wip-leader-sync-20261107` (+1), freellm `temp-main` (+2), veilid `jules-scaffold-0.1.0` (+17), hyperporn `backup/wip-leader-sync-20261107` (+2)
+- Excluded: HyperNexus + HyperNexus2old (sibling lanes; fetch/status only from leader lane), openclaw-config / openclaw-dashboard (foreign/diverged), unitedbeats_site (site lane), unpublished root pointers not staged (openclaw-dashboard, projectM-upstream, hyperporn skipped by pincheck guard)
+
+### Coordination
+- Leader bus id `muse-wonder-leader`; CDP check-ins to Bobbi (muse.ai) verified sent (composer cleared); Bobbi logging leader check-ins, no v6/menu ruling yet; Gemini Master Next Steps options are Robert-reserved (mirrored to bus bm-mwg9jm35, not decided). Always-deploy followed on close-out.
+- HyperNexus code v1.0.70 fetch-verified 0/0 vs origin/main, running kernel v1.0.71; supervisor session still degraded (consecutiveFailures 0).
 
 ### Synced
 - **Submodules**: Protocol #339: triage 53 actionable; 2 fast-forwards, 0 forward merges; phase2 12 actions; remaining unmerged 14 retained (mk64 revert-* deliberate, bobfilez_fix recovery, bg/bg_fix jules, multimousergy x11, 2 dependabot filtered); phase4 3 actions (electricsheep/neverball checkout-fail retained; bobfilez pushed +1); 3 pointers staged (bobfilez, bobfilez_fix, hyperporn), pincheck 0 unpublished; STRUCTURAL_MAP 139/140. Scan sped up: warp/hermes-agent excluded from branch scan (upstream mirrors, merge-filtered anyway) + parallel scan. Cycle extras: HYPERNEXUS_DASHBOARD_ANALYSIS (55+ pages to 7 sections) tasked to dashboard lane; unitedbeats Control Center v1.1.0 + tray delivered by lane; Gemini corrections folded into business plan (Hank 500+500, hands-off; tax-copy purge); lane DONE cycles verified (MasterBeat/DANCE/HyperBeat, HyperNexus 155/155). HyperNexus 0/0 kernel v1.0.84 healthy. Build/deploy: build.bat verification follows this commit; do not clean binaries..
@@ -41,6 +54,9 @@
 
 
 
+
+
+## [v5.349.0] - 2026-11-26 - Protocol #339: Repository Sync & Intelligent Merge
 
 ## [v5.348.0] - 2026-11-24 - Protocol #338: Repository Sync & Intelligent Merge
 
